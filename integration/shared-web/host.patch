@@ -251,3 +251,16 @@ index 98e6c59..0280593 100644
 +  }
 +  startCtisWorker();
 +}
+diff --git a/tests/oauth-journey.test.mjs b/tests/oauth-journey.test.mjs
+index 4eb83cf..2dba51a 100644
+--- a/tests/oauth-journey.test.mjs
++++ b/tests/oauth-journey.test.mjs
+@@ -15,7 +15,7 @@ test('OAuth continuation, account binding and one-use approval', async t => {
+  '@/app/lib/oauth-connections':`export const hasChatGPTConnection=async()=>globalThis.oauthFixture.connected===true;export const hasClaudeConnection=async()=>globalThis.oauthFixture.claudeConnected===true;`,
+  'next/server':`export const NextResponse={redirect:(url,status=307)=>new Response(null,{status,headers:{location:String(url)}})};`,
+  '@/app/lib/auth':`export const authenticatedUser=async()=>globalThis.oauthFixture.user; export const opaqueToken=()=>crypto.randomUUID();export const hashToken=x=>'hash-'+x;export const deleteRequestSession=async()=>{globalThis.oauthFixture.user=null};export const clearSessionCookie=()=>{globalThis.oauthFixture.cleared=true};`,
+- '@/app/lib/oauth-config':`export const oauthIssuer=()=> 'https://intel.trialagents.com';export const pipelineResource=(claude=false)=> 'https://mcp.trialagents.com/'+(claude?'pipeline-claude':'pipeline')+'/mcp';export const oauthClaudeResource=()=> 'https://mcp.trialagents.com/claude/mcp';`,
++ '@/app/lib/oauth-config':`export const oauthIssuer=()=> 'https://intel.trialagents.com';export const pipelineResource=(claude=false)=> 'https://mcp.trialagents.com/'+(claude?'pipeline-claude':'pipeline')+'/mcp';export const ctisResource=()=> 'https://mcp.trialagents.com/ctis/claude';export const oauthClaudeResource=()=> 'https://mcp.trialagents.com/claude/mcp';`,
+  '@/app/lib/oauth-account-lock':`export const lockResearchOAuthAccount=async()=>{};`,
+  '@/app/lib/oauth-server':`export const registeredClient=async()=>({clientName:'ChatGPT',redirectUris:globalThis.oauthFixture.redirectUris||['https://client.invalid/callback']});`,
+  '@/app/lib/oauth-validation':`export const validAuthorizationRequest=p=>({clientId:p.get('client_id'),redirectUri:p.get('redirect_uri'),state:p.get('state'),codeChallenge:p.get('code_challenge'),resource:p.get('resource'),scope:p.get('scope')});`,
