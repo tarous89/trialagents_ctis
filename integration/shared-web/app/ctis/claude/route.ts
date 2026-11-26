@@ -4,5 +4,5 @@ import {ctisClaudeMcp} from '@/app/lib/ctis/adapter';
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
 const off=()=>new Response(null,{status:404});
-const handle=(request:Request)=>process.env.CTIS_MCP_ENABLED==='true'?ctisClaudeMcp(request):off();
+const handle=(request:Request)=>process.env.CTIS_MCP_ENABLED!=='false'?ctisClaudeMcp(request):off();
 export const GET=handle,POST=handle,DELETE=handle;

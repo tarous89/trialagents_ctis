@@ -134,7 +134,7 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 10. Phases
 
-Status: phases 1–9 are done (see `tests/`). Phase 10 is prepared: the shared web branch (`intel_agent_app` `claude/ctis-integration`) and the shared MCP branch (`intel_mcp` `claude/ctis-ingress`) are pushed, with everything off behind flags. Deployment, domain, live checks and the directory submission remain; see [RELEASE.md](RELEASE.md).
+Status: phases 1–9 are done (see `tests/`). Phase 10 is prepared: the shared web branch (`intel_agent_app` `claude/ctis-integration`) and the shared MCP branch (`intel_mcp` `claude/ctis-ingress`) are merged; CTIS is on by default once deployed. The domain move, live checks and the directory submission remain; see [RELEASE.md](RELEASE.md).
 
 **Claude plugin release:** `claude plugin validate .` (marketplace) and `claude plugin validate plugins/claude` (plugin) pass. `python3 scripts/package-plugins.py` writes `dist/trialagents-ctis-claude-<version>.zip` for the directory submission. Keep the version in `plugins/claude/.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` the same (the packager checks). The "Open in Claude/ChatGPT" header links point to the connectors page until the directory listings exist.
 

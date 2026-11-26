@@ -1,12 +1,12 @@
 diff --git a/app/api/stripe/webhook/route.ts b/app/api/stripe/webhook/route.ts
-index 721ddde..8c04dbc 100644
+index 721ddde..1331eb6 100644
 --- a/app/api/stripe/webhook/route.ts
 +++ b/app/api/stripe/webhook/route.ts
 @@ -39,6 +39,10 @@ export async function POST(request: NextRequest) {
        const {pipelineWebhook}=await import("@/app/lib/pipeline/adapter");
        if(await pipelineWebhook(event))return NextResponse.json({received:true});
      }
-+    if(process.env.CTIS_ENABLED==="true" && event.data?.object?.metadata?.ctis_account){
++    if(process.env.CTIS_ENABLED!=="false" && event.data?.object?.metadata?.ctis_account){
 +      const {ctisWebhook}=await import("@/app/lib/ctis/adapter");
 +      if(await ctisWebhook(event))return NextResponse.json({received:true});
 +    }
@@ -125,7 +125,7 @@ index ad366fa..ce2b155 100644
 + return oauthResource().replace(/\/mcp$/, '')+'/ctis/claude';
 +}
 diff --git a/app/lib/oauth-validation.ts b/app/lib/oauth-validation.ts
-index d3b5b16..674cfac 100644
+index d3b5b16..70a2a86 100644
 --- a/app/lib/oauth-validation.ts
 +++ b/app/lib/oauth-validation.ts
 @@ -1,5 +1,5 @@
@@ -139,7 +139,7 @@ index d3b5b16..674cfac 100644
        oauthResource(),
        ...(process.env.MCP_RESEARCH_ACCESS_ENABLED === "true" ? [oauthResearchResource()] : []),
        ...(process.env.PIPELINE_MCP_ENABLED==='true'?[pipelineResource(),pipelineResource(true)]:[]),
-+      ...(process.env.CTIS_MCP_ENABLED==='true'?[ctisResource()]:[]),
++      ...(process.env.CTIS_MCP_ENABLED!=='false'?[ctisResource()]:[]),
        ...(process.env.MCP_CLAUDE_ACCESS_ENABLED === "true" ? [oauthClaudeResource()] : []),
      ].includes(resource))
      || !scope
@@ -232,7 +232,7 @@ index 5a077d7..4134f22 100644
      const retired = siteAgentUrl(request, "/settings");
      retired.search = ""; // Never forward old checkout IDs or test parameters.
 diff --git a/scripts/start-render.mjs b/scripts/start-render.mjs
-index 98e6c59..0280593 100644
+index 98e6c59..af785e2 100644
 --- a/scripts/start-render.mjs
 +++ b/scripts/start-render.mjs
 @@ -54,3 +54,15 @@ if(process.env.PIPELINE_ENABLED==='true'){
@@ -241,7 +241,7 @@ index 98e6c59..0280593 100644
  }
 +
 +// TrialAgents CTIS shares this service: its worker applies the schema, publishes the catalog and sends email.
-+if(process.env.CTIS_ENABLED==='true'){
++if(process.env.CTIS_ENABLED!=='false'){
 +  function startCtisWorker(){
 +    if(stopping)return;
 +    const worker=spawn(process.execPath,['scripts/ctis-worker.mjs'],{stdio:'inherit',env:process.env});
