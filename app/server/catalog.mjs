@@ -3,7 +3,7 @@
 import {createHash} from 'node:crypto'
 import {parse as parseYaml} from 'yaml'
 import {z} from 'zod'
-import JSZip from 'jszip'
+import {templateFields} from './word.mjs'
 
 export const categories=['requirements','content','word','workflow']
 const json=JSON.stringify
@@ -26,7 +26,8 @@ const headers={
   word:z.strictObject({...common,category:z.literal('word').optional(),kind:z.enum(['layout','form']),doc_type:z.string().default('all'),countries:all,languages:all,
     file:z.string().regex(/^[a-z0-9-]+\.docx$/).optional(),
     slots:z.array(z.strictObject({id:z.string().regex(/^[A-Za-z0-9_.-]{1,40}$/),required:z.boolean().default(false),
-      accepts:z.enum(['text','blocks']).default('blocks'),sections:z.literal('all').optional(),description:z.string().optional()})).min(1)}),
+      accepts:z.enum(['text','blocks','choice','checkbox']).default('blocks'),values:z.array(z.string()).optional(),default:z.string().optional(),
+      sections:z.literal('all').optional(),description:z.string().optional()})).min(1)}),
   workflow:z.strictObject({...common,category:z.literal('workflow').optional(),applies_to:z.array(z.string()).min(1)})
 }
 
@@ -39,20 +40,22 @@ export function frontMatter(text){
 
 // Content guide body: "## S01 · Title" sections with "Key: value" lines, and a "## Checklist" of "- C01 text".
 const keys={'fill':'fill','must say':'must_say','standard wording':'standard_wording','sources':'sources','check':'check',
-  'leave as placeholder':'placeholder','optional':'optional','repeat':'repeat'}
+  'leave as placeholder':'placeholder','optional':'optional','repeat':'repeat','layout':'layout'}
 export function parseContentBody(body){
-  const out={intro:'',sections:[],checklist:[]},errors=[]
+  const out={intro:'',sections:[],checklist:[],layout:''},errors=[]
   let current=null,mode='intro'
   for(const raw of body.split(/\r?\n/)){
     const line=raw.trimEnd()
     const h=/^##\s+(.+)$/.exec(line)
     if(h){
       if(/^checklist$/i.test(h[1].trim())){mode='checklist';current=null;continue}
+      if(/^layout$/i.test(h[1].trim())){mode='layout';current=null;continue}
       const s=/^([A-Za-z0-9_.-]{1,40})\s*[·:—–-]\s*(.+)$/.exec(h[1].trim())
       if(!s){errors.push('Section heading "'+h[1]+'" must look like "## S01 · Title"');current=null;mode='skip';continue}
       current={id:s[1],title:s[2].trim(),notes:''};out.sections.push(current);mode='section';continue
     }
     if(mode==='intro'){out.intro+=(out.intro?'\n':'')+line;continue}
+    if(mode==='layout'){out.layout+=(out.layout?'\n':'')+line;continue}
     if(mode==='checklist'){
       const c=/^[-*]\s+([A-Za-z0-9_.-]{1,40})\s+(.+)$/.exec(line.trim())
       if(c)out.checklist.push({id:c[1],text:c[2].trim()})
@@ -64,7 +67,7 @@ export function parseContentBody(body){
     if(key)current[key]=current[key]?current[key]+'\n'+kv[2]:kv[2]
     else if(line.trim())current.notes+=(current.notes?'\n':'')+line.trim()
   }
-  out.intro=out.intro.trim()
+  out.intro=out.intro.trim();out.layout=out.layout.trim()
   for(const s of out.sections){
     if(!s.fill)errors.push(s.id+': add a "Fill:" line ('+fillLevels.join(', ')+')')
     else if(!fillLevels.includes(s.fill.trim()))errors.push(s.id+': Fill must be one of '+fillLevels.join(', '))
@@ -76,19 +79,8 @@ export function parseContentBody(body){
   return {parsed:out,errors}
 }
 
-// Tags of all content controls in a .docx, by part (document, header, footer).
-export async function docxTags(buffer){
-  const zip=await JSZip.loadAsync(buffer),tags=[]
-  const parts=Object.keys(zip.files).filter(n=>/^word\/(document|header\d*|footer\d*)\.xml$/.test(n))
-  check(parts.includes('word/document.xml'),'not a Word document')
-  for(const part of parts){
-    const xml=await zip.file(part).async('string')
-    for(const m of xml.matchAll(/<w:sdtPr>[\s\S]*?<\/w:sdtPr>/g)){
-      const t=/<w:tag w:val="([^"]*)"/.exec(m[0]);if(t)tags.push({tag:t[1],part:part.slice(5,-4).replace(/\d+$/,'')})
-    }
-  }
-  return tags
-}
+// Every fillable field of a .docx: content controls, {{codes}}, conditional variables and checkboxes.
+export const docxFields=templateFields
 function check(c,m){if(!c)throw new Error(m)}
 
 // files: [{path:'content/x.md', text}] and [{path:'word/x.docx', buffer}]
@@ -117,11 +109,17 @@ export async function buildCatalog(files){
         const file='word/'+(h.file??h.id+'.docx'),buffer=docx.get(file)
         if(!buffer){errors.push(where+': missing '+file);continue}
         item.file={path:file,sha256:sha(buffer),size:buffer.length,buffer}
-        try{item.tags=await docxTags(buffer)}catch(e){errors.push(file+': '+e.message);continue}
-        const tagSet=new Set(item.tags.map(t=>t.tag))
-        for(const s of h.slots)if(!tagSet.has(s.id))errors.push(where+': slot '+s.id+' has no content control tagged "'+s.id+'" in '+file)
-        for(const t of tagSet)if(!h.slots.some(s=>s.id===t))warnings.push(where+': content control "'+t+'" in '+file+' is not a declared slot')
-        if(h.kind==='form'&&h.slots.some(s=>s.sections||s.accepts!=='text'))errors.push(where+': form slots accept text only')
+        try{item.tags=await docxFields(buffer)}catch(e){errors.push(file+': '+e.message);continue}
+        const found=new Map(item.tags.map(f=>[f.id,f]))
+        for(const s of h.slots)if(!found.has(s.id))errors.push(where+': slot '+s.id+' is not in '+file+' (as {{'+s.id+'}} or a content control tagged "'+s.id+'")')
+        for(const f of item.tags){
+          const s=h.slots.find(x=>x.id===f.id)
+          if(!s){(h.kind==='form'?errors:warnings).push(where+': '+file+' has '+(f.kinds.includes('condition')?'a condition on ':'a field ')+f.id+' that is not a declared slot; describe it so the assistant knows what to fill');continue}
+          if(f.kinds.includes('condition')&&s.accepts!=='choice')errors.push(where+': '+f.id+' decides which parts of the form are kept; declare it with accepts: choice and its values ('+f.values.join(', ')+')')
+          if(s.accepts==='choice'&&s.values)for(const v of f.values)if(!s.values.includes(v))errors.push(where+': '+f.id+' is tested for "'+v+'" in '+file+' but its values are '+s.values.join(', '))
+          if(f.kinds.includes('checkbox')&&s.accepts!=='checkbox')errors.push(where+': '+f.id+' is a checkbox; declare it with accepts: checkbox')
+        }
+        if(h.kind==='form'&&h.slots.some(s=>s.sections||s.accepts==='blocks'))errors.push(where+': form slots accept text, choice or checkbox only')
       }
       items.push(item)
     }catch(e){errors.push(where+': '+e.message)}
@@ -143,7 +141,7 @@ export async function buildCatalog(files){
       if(d.authority_form&&byId.get(d.authority_form)?.header.kind!=='form')errors.push(r.path+': '+d.doc_type+' authority_form '+d.authority_form+' is not a Word template of kind form')
       if(!items.some(i=>i.category==='content'&&i.header.doc_type===d.doc_type))warnings.push(r.path+': no content guide yet for '+d.doc_type)
     }
-  const wfTargets=['planning','draft','checklist','qc','style','team','guide','custom','revision','findings']
+  const wfTargets=['planning','draft','checklist','qc','style','team','guide','custom','revision','findings','design']
   for(const w of items.filter(i=>i.category==='workflow'))for(const a of w.header.applies_to)if(!wfTargets.includes(a))errors.push(w.path+': applies_to '+a+' is not one of '+wfTargets.join(', '))
   if(!items.some(i=>i.id==='default-layout'))errors.push('word/default-layout.md: the default Word layout is required')
   return {items,errors,warnings,digest:sha(json(items.map(({file,path,...i})=>({...i,file:file&&{sha256:file.sha256}})).sort((a,b)=>a.id<b.id?-1:1)))}
@@ -196,12 +194,23 @@ export function catalogView(release,{today=new Date().toISOString().slice(0,10)}
     workflow:target=>of('workflow').filter(w=>w.header.applies_to.includes(target)),
     // Everything one deliverable needs from the catalog.
     forDeliverable(document,stepType,{submission_type=''}={}){
-      const guide=api.contentGuide(document)
+      const guide=api.contentGuide(document),requirements=api.requirementRows(document,{submission_type})
+      const template=['draft','style'].includes(stepType)?api.wordTemplate(document,guide):null
       return {
         content_guide:guide,
-        word_template:stepType==='style'?api.wordTemplate(document,guide):null,
-        requirements:api.requirementRows(document,{submission_type}),
-        workflow:[...api.workflow(stepType),...api.workflow('findings')]
+        word_template:stepType==='style'?template:null,
+        requirements,
+        workflow:[...api.workflow(stepType),...api.workflow('findings')],
+        // Layout: general design rules first, then what this document's guide, template and country say. Specific wins.
+        layout:['draft','style'].includes(stepType)?{
+          general:[...api.workflow('design').map(w=>({from:w.id,text:w.body})),...(template?.header.kind==='layout'&&template.body?[{from:template.id,text:template.body}]:[])],
+          specific:[
+            ...(guide?.parsed.layout?[{from:guide.id,text:guide.parsed.layout}]:[]),
+            ...(guide?.parsed.sections.filter(x=>x.layout).map(x=>({from:guide.id,section:x.id,text:x.layout}))??[]),
+            ...requirements.filter(r=>r.national_notes).map(r=>({from:r.from,text:r.national_notes}))
+          ],
+          rule:'Apply the general rules, then the specific instructions; where they disagree, the specific instruction wins. Forms are never restyled.'
+        }:null
       }
     },
     search({query='',category,country,language,doc_type}={}){

@@ -15,5 +15,6 @@ Write the document from the content guide, the sources and the fill levels.
 - `site`: write a placeholder block with the text from "Leave as placeholder".
 - `blank`: leave the section empty.
 - Participant-facing documents: plain language in the document's language, short sentences, second person.
+- Layout: follow the step's `layout` instructions (general design rules, then the content guide's and country's specific instructions, which win). Choose blocks accordingly: tables, timelines, notes and lists, not only paragraphs.
 - Report findings for anything the user must supply or decide. Fix what you can from the sources before saving.
 - Save the full content with `save_ctis` (`save_version`, `base` = current version number, 0 for the first).

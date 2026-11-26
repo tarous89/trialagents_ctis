@@ -3,21 +3,13 @@ import assert from 'node:assert/strict'
 import {readFile} from 'node:fs/promises'
 import {fileURLToPath} from 'node:url'
 import {randomUUID} from 'node:crypto'
-import JSZip from 'jszip'
 import {PGlite} from '@electric-sql/pglite'
-import {buildCatalog,catalogView,publishCatalog,currentCatalog,catalogFile,docxTags} from '../app/server/catalog.mjs'
+import {buildCatalog,catalogView,publishCatalog,currentCatalog,catalogFile,docxFields} from '../app/server/catalog.mjs'
 import {readCatalogDir} from '../app/server/catalog-files.mjs'
 import {ctis} from '../app/server/store.mjs'
 
 const catalogDir=fileURLToPath(new URL('../catalog',import.meta.url))
 
-// A fictional German recruitment form with tagged fields.
-async function formDocx(tags){
-  const zip=new JSZip()
-  const sdt=t=>`<w:sdt><w:sdtPr><w:tag w:val="${t}"/></w:sdtPr><w:sdtContent><w:p><w:r><w:t>…</w:t></w:r></w:p></w:sdtContent></w:sdt>`
-  zip.file('word/document.xml',`<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${tags.map(sdt).join('')}</w:body></w:document>`)
-  return zip.generateAsync({type:'nodebuffer'})
-}
 const md=(header,body='')=>'---\n'+header.trim()+'\n---\n'+body
 const fixtures=async()=>[
   {path:'requirements/part-i.md',text:md(`
@@ -43,7 +35,7 @@ use_when: Part II documents for Germany.
 reference: https://example.org/de
 documents:
   - {doc_type: participant-information-consent, name: Participant information and consent, required: always, languages: [de], per: population}
-  - {doc_type: recruitment-arrangements, name: Recruitment arrangements, required: conditional, condition: When participants are recruited by advertisement, authority_form: de-recruitment-form}`,'Signatures are wet ink.')},
+  - {doc_type: recruitment-arrangements, name: Recruitment arrangements, required: conditional, condition: When participants are recruited by advertisement, authority_form: recruitment-consent-procedure-de}`,'Signatures are wet ink.')},
   {path:'content/participant-information-consent.md',text:md(`
 id: participant-information-consent
 name: Participant information and consent
@@ -82,19 +74,6 @@ Fill: study
 ## S02 · Freiwilligkeit
 Fill: standard
 Standard wording: Die Teilnahme ist freiwillig.`)},
-  {path:'word/de-recruitment-form.md',text:md(`
-id: de-recruitment-form
-name: German recruitment arrangements form (fictional)
-kind: form
-doc_type: recruitment-arrangements
-countries: [DE]
-version: 1.0
-effective: 2026-01-01
-use_when: The authority form for recruitment arrangements in Germany.
-slots:
-  - {id: study_title, accepts: text, required: true}
-  - {id: eu_ct_number, accepts: text}`)},
-  {path:'word/de-recruitment-form.docx',buffer:await formDocx(['study_title','eu_ct_number'])},
   {path:'content/future-guide.md',text:md(`
 id: future-guide
 name: Not yet effective
@@ -109,7 +88,7 @@ test('the shipped catalog is valid and the default layout has its slots',async()
   const built=await buildCatalog(await readCatalogDir(catalogDir))
   assert.deepEqual(built.errors,[])
   const layout=built.items.find(i=>i.id==='default-layout')
-  assert.deepEqual(layout.tags.map(t=>t.tag+'@'+t.part).sort(),['body@document','footer@footer','header@header','title@document'])
+  assert.deepEqual(layout.tags.map(t=>t.id+'@'+t.parts.join()).sort(),['body@document','footer@footer','footer_ids@footer','page_label@footer','page_of@footer','subtitle@document','title@document'])
   const guides=built.items.filter(i=>i.category==='workflow').flatMap(i=>i.header.applies_to)
   for(const t of ['planning','draft','checklist','qc','style','revision','findings'])assert.ok(guides.includes(t),t)
 })
@@ -117,7 +96,7 @@ test('the shipped catalog is valid and the default layout has its slots',async()
 test('validation explains what to fix',async()=>{
   const base=[...await readCatalogDir(catalogDir),...await fixtures()]
   const bad=await buildCatalog([...base,
-    {path:'content/broken.md',text:md('id: broken\nname: Broken\npart: II\nversion: 1\neffective: 2026-01-01\nuse_when: x\nword_template: de-recruitment-form','## S01 Title\n## S02 · Ok\nFill: maybe\n## S03 · Std\nFill: standard')},
+    {path:'content/broken.md',text:md('id: broken\nname: Broken\npart: II\nversion: 1\neffective: 2026-01-01\nuse_when: x\nword_template: recruitment-consent-procedure-de','## S01 Title\n## S02 · Ok\nFill: maybe\n## S03 · Std\nFill: standard')},
     {path:'requirements/fr.md',text:md('id: fr\nname: France\npart: II\ncountry: FR\nversion: 1\neffective: 2026-01-01\nuse_when: x\ndocuments:\n  - {doc_type: pic, name: PIC, required: always, authority_form: default-layout}')},
     {path:'word/no-file.md',text:md('id: no-file\nname: x\nkind: layout\nversion: 1\neffective: 2026-01-01\nuse_when: x\nslots:\n  - {id: title}')},
     {path:'workflow/planning-copy.md',text:md('id: planning\nname: dup\nversion: 1\neffective: 2026-01-01\nuse_when: x\napplies_to: [nowhere]')}])
@@ -125,7 +104,7 @@ test('validation explains what to fix',async()=>{
   has(/broken\.md: Section heading "S01 Title" must look like/)
   has(/broken\.md: S02: Fill must be one of/)
   has(/broken\.md: S03: standard sections need/)
-  has(/broken\.md: section S02 has no slot in Word template de-recruitment-form/)
+  has(/broken\.md: section S02 has no slot in Word template recruitment-consent-procedure-de/)
   has(/fr\.md: pic authority_form default-layout is not a Word template of kind form/)
   has(/no-file\.md: missing word\/no-file\.docx/)
   has(/applies_to nowhere/)
@@ -148,7 +127,7 @@ test('matching: requirements by submission type, the most specific content guide
   assert.equal(cat.contentGuide(es).id,'participant-information-consent')
   assert.equal(cat.wordTemplate(es).id,'default-layout')
   const form={id:'D05',part:'II',country:'DE',language:'de',doc_type:'recruitment-arrangements',catalog:{}}
-  assert.equal(cat.wordTemplate(form).id,'de-recruitment-form')
+  assert.equal(cat.wordTemplate(form).id,'recruitment-consent-procedure-de')
   assert.equal(cat.contentGuide({...de,catalog:{content_guide:'participant-information-consent'}}).id,'participant-information-consent','the plan can pin an item')
   assert.equal(cat.contentGuide({id:'D01',part:'I',country:'EU',language:'en',doc_type:'protocol-synopsis',catalog:{}}),null,'items not yet effective are ignored')
   const bundle=cat.forDeliverable(de,'qc',{submission_type:'initial'})
@@ -156,7 +135,7 @@ test('matching: requirements by submission type, the most specific content guide
   assert.deepEqual(bundle.requirements.map(r=>[r.doc_type,r.per,r.from]),[['participant-information-consent','population','de']])
   assert.deepEqual(bundle.workflow.map(w=>w.id),['source-qc','findings'])
   assert.equal(cat.forDeliverable(form,'style').word_template.header.kind,'form')
-  assert.deepEqual(cat.search({query:'consent',country:'DE'}).map(i=>i.id).sort(),['participant-information-consent','participant-information-consent-de'])
+  assert.deepEqual(cat.search({query:'consent',country:'DE'}).map(i=>i.id).sort(),['default-layout','participant-information-consent','participant-information-consent-de','recruitment-consent-procedure-de'])
   assert.deepEqual(cat.search({category:'requirements',doc_type:'recruitment-arrangements'}).map(i=>i.id),['de'])
 })
 
@@ -181,6 +160,6 @@ test('publishing is idempotent and a store document resolves its catalog items',
     assert.equal(style.word_template.id,'default-layout')
     assert.equal(style.requirements[0].from,'de')
     const file=await db.transaction(q=>catalogFile(q,cat.release,'default-layout'))
-    assert.deepEqual((await docxTags(file.buffer)).map(t=>t.tag).sort(),['body','footer','header','title'])
+    assert.deepEqual((await docxFields(file.buffer)).map(t=>t.id).sort(),['body','footer','footer_ids','page_label','page_of','subtitle','title'])
   }finally{await pg.close()}
 })
