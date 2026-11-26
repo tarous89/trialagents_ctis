@@ -144,7 +144,7 @@ Why the server writes the file rather than Claude: Claude can only edit a .docx 
 | Header button | **Open TrialAgents app ↗** | **Open in Claude**, **Open in ChatGPT**: open the plugin's directory page |
 | New project | Posts "Start a new TrialAgents CTIS project." into the chat | Offers Claude or ChatGPT (no form) |
 | Revise | Posts "Revise D04-QC …" into the chat | Disabled, tooltip "Available in Claude or ChatGPT" |
-| Continue the loop | A **Continue (next deliverable)** button posts "Continue the TrialAgents CTIS plan for EX-101 …" into the chat | Disabled, same tooltip |
+| Continue the loop | A **Continue (next deliverable)** button posts "Continue the TrialAgents CTIS plan for EX-101 …" into the chat | Not shown: runs start in Claude or ChatGPT |
 | Comment, reply, resolve | Yes | Yes |
 | Ignore and continue, Approve, Share, Download, Versions, Restore, Duplicate, Upload | Yes | Yes |
 
