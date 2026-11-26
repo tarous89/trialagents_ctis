@@ -2,12 +2,13 @@ import {createHash,randomUUID} from 'node:crypto'
 import {z} from 'zod'
 import {check,parse,inputs,splitDeliverable,stepTypes,stepNames,uuid} from './rules.mjs'
 import {projectAccess,requireOwner,requireEdit,requireComment,teamActive} from './access.mjs'
-import {loadBoard,visibleBoard} from './board.mjs'
+import {loadBoard,visibleBoard,effectiveResources} from './board.mjs'
 import {cell,documentStatuses,finalStatus,nextStep,canApprove,orderedDocuments,issueCount,ACTION_REQUIRED,APPROVED} from './status.mjs'
 import {applyChanges} from './content.mjs'
 import {attachUpload,searchPassages,snippet,storeFile,readFile as readStoredFile} from './sources.mjs'
 import {currentCatalog,catalogFile} from './catalog.mjs'
 import {fillTemplate} from './word.mjs'
+import {stepContext} from './step-context.mjs'
 const DOCX='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 
 const json=JSON.stringify
@@ -35,14 +36,6 @@ function deliverableOf(c,board,code){
   const d=board.documents.find(x=>x.id===doc),s=board.steps.find(x=>x.id===step)
   check(d&&s&&c.access.canSeeStep(doc,step),'Deliverable '+code+' not found',404)
   return {doc,step,d,s,key:cell(doc,step)}
-}
-
-async function effectiveResources(q,projectId,documentId){
-  return q(`SELECT r.id,r.category,r.name,r.type,r.version,r.doc_date,r.file_mode FROM ctis.resource r
-    WHERE (r.id IN (SELECT resource_id FROM ctis.project_resource WHERE project_id=$1)
-        OR r.id IN (SELECT resource_id FROM ctis.document_resource_override WHERE project_id=$1 AND document_id=$2 AND op='add'))
-      AND r.id NOT IN (SELECT resource_id FROM ctis.document_resource_override WHERE project_id=$1 AND document_id=$2 AND op='remove')
-    ORDER BY r.category,r.name`,[projectId,documentId])
 }
 
 const projectView=(p,extra={})=>({id:p.id,code:p.code,name:p.name,sponsor:p.sponsor,phase:p.phase,eu_ct_number:p.eu_ct_number,
@@ -192,6 +185,23 @@ const ops={
     return planView({...c,access:{...c.access,project}},await loadBoard(q,project))
   }},
 
+  'step.context':{project:true,async run(c){
+    const board=await loadBoard(c.q,c.access.project),canRun=c.access.owner||c.access.projectRole==='editor'
+    if(c.input.deliverable){const [doc,step]=splitDeliverable(c.input.deliverable);check(c.access.canSeeStep(doc,step),'Deliverable '+c.input.deliverable+' not found',404)}
+    else check(canRun,'Only the owner or a project editor can run the plan. Name a deliverable you can work on.',403)
+    try{return await stepContext({q:c.q,project:c.access.project,board,catalog:await currentCatalog(c.q),deliverable:c.input.deliverable,revise:c.input.revise,canRun})}
+    catch(e){check(false,e.message,e.status??500)}
+  }},
+  'catalog.planning':{async run(c){
+    const cat=await currentCatalog(c.q),out=cat.planning(c.input)
+    const guide=cat.workflow('planning')[0]
+    return {...out,instructions:guide?{id:guide.id,version:guide.version,text:guide.body}:null}
+  }},
+  'catalog.search':{async run(c){return {items:(await currentCatalog(c.q)).search(c.input)}}},
+  'catalog.item':{async run(c){
+    const i=(await currentCatalog(c.q)).get(c.input.id);check(i,'Catalog item '+c.input.id+' not found',404)
+    return {...i.header,category:i.category,text:i.body,checklist:i.parsed?.checklist}
+  }},
   'next.step':{project:true,input:empty,async run(c){
     check(c.access.owner||c.access.projectRole==='editor','Only the owner or a project editor can run the plan',403)
     return nextStep(await loadBoard(c.q,c.access.project))

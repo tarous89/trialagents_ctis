@@ -44,7 +44,7 @@ All detailed instructions (planning, steps, QC, Word, revision) come from the se
 | `read_ctis_catalog` | Yes | Search and read catalog items by regulatory code, country and language: planning checklists (Part I and each country), naming instructions, content templates, styling instructions, workflow guides. Used mainly for planning. |
 | `get_ctis_step` | Yes | Everything for one deliverable, or for the next one in a project (`next: true`): see §4. With `revise: true` it returns the revision context. |
 | `read_ctis_source` | Yes | Search and read passages of a stored source (protocol, IB, manuals) by text, section or page, with locators for quoting. |
-| `save_ctis` | **No** | The only write tool. One `action` per call: `create_project`, `update_project`, `save_plan`, `record_resource`, `save_version`, `reply`. Returns the saved IDs, versions and `next`. |
+| `save_ctis` | **No** | The only write tool. One `action` per call: `create_project`, `update_project`, `save_plan`, `record_resource`, `save_version`, `reply`. Returns the saved IDs, versions and `next_hint`. Its input is one flat object (Claude does not accept a top-level choice of schemas); the server checks the fields each action needs. |
 
 Annotations: the five read tools have `readOnlyHint: true`, `openWorldHint: false`. `save_ctis` has `readOnlyHint: false`, `destructiveHint: false` (everything it writes is a new version or a new record; nothing is overwritten or deleted), `idempotentHint: true` (every call carries a `request_id`; a retry returns the first result), `openWorldHint: false`. Owners can turn on email notifications for drafts and findings; those go only to people the owner already shares with.
 

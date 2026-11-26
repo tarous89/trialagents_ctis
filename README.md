@@ -38,6 +38,8 @@ Use Node 24. `npm ci` then `npm test`. `npm run check:catalog` validates `catalo
 | `app/server/catalog.mjs` | Catalog parsing, validation, matching to a document, publishing |
 | `app/server/word.mjs` | Fills Word templates: coded fields and conditional regions, content controls, checkboxes, and content blocks for layouts |
 | `app/server/sources.mjs` | Stored sources: text extraction (PDF, Word, text) with page or section locators, search |
+| `app/server/step-context.mjs` | The bundle `get_ctis_step` returns: instructions, content template, styling, planning checklist, input, sources, threads |
+| `mcp/tools.mjs`, `mcp/http.mjs` | The MCP server for Claude: six tools (five read-only, one write), OAuth audience and discovery |
 | `catalog/` | The catalog itself (see its README) |
 
 ## Next step

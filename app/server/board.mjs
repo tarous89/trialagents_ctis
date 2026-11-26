@@ -29,3 +29,12 @@ export function visibleBoard(board,a){
   if(a.owner||a.grants.some(g=>g.scope==='project'))return board
   return {...board,documents:board.documents.filter(d=>a.canSeeDocument(d.id))}
 }
+
+// Sources and templates for one document: the project list, plus additions, minus removals.
+export async function effectiveResources(q,projectId,documentId){
+  return q(`SELECT r.id,r.category,r.name,r.type,r.version,r.doc_date,r.file_mode FROM ctis.resource r
+    WHERE (r.id IN (SELECT resource_id FROM ctis.project_resource WHERE project_id=$1)
+        OR r.id IN (SELECT resource_id FROM ctis.document_resource_override WHERE project_id=$1 AND document_id=$2 AND op='add'))
+      AND r.id NOT IN (SELECT resource_id FROM ctis.document_resource_override WHERE project_id=$1 AND document_id=$2 AND op='remove')
+    ORDER BY r.category,r.name`,[projectId,documentId])
+}

@@ -134,7 +134,7 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 10. Phases
 
-Status: phases 1–4 are done (see `tests/`).
+Status: phases 1–5 are done (see `tests/`). The app-only frame tool for the workspace inside Claude comes with phase 7.
 
 | Phase | Work | Done when |
 |---|---|---|

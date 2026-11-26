@@ -14,6 +14,7 @@
     "url": "https://github.com/tarous89/trialagents_ctis.git"
   },
   "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
     "@xmldom/xmldom": "0.9.12",
     "jszip": "3.10.2",
     "mammoth": "1.13.0",
