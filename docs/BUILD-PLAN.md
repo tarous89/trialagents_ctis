@@ -62,7 +62,7 @@ Schema `ctis` in the shared application database (`intel-agent-control-db`), add
 | `file` | `id`, owner, name, MIME type, size, SHA-256, contents (`bytea`, in the database for now) |
 | `share_grant` | As TECHNICAL §5 |
 | `catalog_release`, `catalog_item` | Release (git SHA, published at); item (id, category, version, header, body, file) |
-| `audit`, `receipt`, `mail`, `stripe_event`, `frame_access`, `preference` | As Pipeline |
+| `audit`, `receipt`, `mail`, `stripe_event` | As Pipeline; notification settings are `account.preferences` |
 
 Statuses, the next step and "where we stand" are derived from these tables, never stored (TECHNICAL §2). There is no loop cursor to go stale.
 
@@ -72,20 +72,20 @@ Statuses, the next step and "where we stand" are derived from these tables, neve
 
 | Module | Responsibility |
 |---|---|
-| `store.mjs` | Transactions, revision checks, idempotent receipts, audit in the same transaction |
-| `access.mjs` | Owner and grant resolution, compact grant list with `access_version` (TECHNICAL §5) |
-| `status.mjs` | Statuses, final status, next step |
-| `plan.mjs` | Save plan (documents, steps, not applicable, codes, filenames), plan revisions |
-| `versions.mjs` | Save version (full, or changes only for revisions), restore, snapshots, finding threads from saved findings |
-| `threads.mjs` | Comments, replies, mentions, resolve, anchors to earlier wording |
+| `store.mjs` | Every operation (`ctis(db, services)`): transactions, revision checks, idempotent receipts, audit in the same transaction; plans, versions (full, or changes only for revisions), threads, restore, duplicate, sharing, files, export, preferences |
+| `access.mjs` | Owner and grant resolution, compact grant list (TECHNICAL §5); invitation email on first share |
+| `status.mjs`, `board.mjs` | Statuses, final status and next step; the plan board with effective sources and templates |
+| `rules.mjs` | Shared limits and validation |
+| `content.mjs` | Applies a revision's changed sections to the previous version |
 | `step-context.mjs` | The `get_ctis_step` bundle (MCP §4), revision context |
-| `catalog.mjs` | Load, match and serve catalog items for a deliverable |
-| `sources.mjs` | Uploads, text extraction, chunking with locators, search |
+| `catalog.mjs`, `catalog-files.mjs` | Load, validate, publish, match and serve catalog items |
+| `sources.mjs` | Uploads (stored in `ctis.file`), text extraction, chunking with locators, search |
 | `word.mjs` | Template outline and filling (§5) |
-| `files.mjs` | File storage and access-checked downloads |
-| `export.mjs` | Download all: approved final documents plus a manifest |
-| `sharing.mjs`, `billing.mjs`, `mail.mjs` | Grants, Team plan, notifications (Pipeline patterns) |
-| `frame.mjs` | Short-lived token for the workspace inside Claude to call the app API directly |
+| `api.mjs` | The browser API (`/api/ctis/…`), with access-checked downloads and Download all |
+| `billing.mjs`, `mail.mjs` | Team plan with Stripe; email outbox and delivery (Pipeline patterns) |
+| `examples.mjs` | Fictional example data for the dev server and tests |
+
+The workspace inside Claude needs no token of its own: it calls the app-only MCP tool `ctis_workspace_request` on the signed-in connection.
 
 ## 5. Word filling
 
@@ -134,15 +134,9 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 10. Phases
 
-Status: phases 1–9 are done (see `tests/`). Phase 10 (shared services, domain, live checks, directory submission) remains.
+Status: phases 1–9 are done (see `tests/`). Phase 10 is prepared: the shared web branch (`intel_agent_app` `claude/ctis-integration`) and the shared MCP branch (`intel_mcp` `claude/ctis-ingress`) are pushed, with everything off behind flags. Deployment, domain, live checks and the directory submission remain; see [RELEASE.md](RELEASE.md).
 
 **Claude plugin release:** `claude plugin validate .` (marketplace) and `claude plugin validate plugins/claude` (plugin) pass. `python3 scripts/package-plugins.py` writes `dist/trialagents-ctis-claude-<version>.zip` for the directory submission. Keep the version in `plugins/claude/.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` the same (the packager checks). The "Open in Claude/ChatGPT" header links point to the connectors page until the directory listings exist.
-
-**Wiring left for phase 10 in the shared web service** (prepared in this repository):
-- `integration/shared-web/app/ctis-account/` and `ctis-account.patch`: the embedded account page for Settings → Personal and Support (the patch adds a `product` option to the shared account settings; it applies cleanly to `intel_agent_app` as of commit a4fbd62).
-- Stripe: create `stripeBilling({stripeRequest, stripeMode})` with the shared Stripe client; pass it to `ctis(db, {billing})`; in the existing signed webhook route, call `billing.webhook(db, event)` (it returns false for events that are not about CTIS). Price lookup key `trialagents_ctis_team_eur_49_monthly_v1`, created on first checkout if missing.
-- Email: run `deliverMail(db, send)` every minute in the existing worker, with the shared mail provider and `job.id` as idempotency key.
-- Sign-in: `/auth?mode=login&ctis=1` should return to `ctis.trialagents.com`, as `pipeline=1` does for Pipeline.
 
 | Phase | Work | Done when |
 |---|---|---|
@@ -150,7 +144,7 @@ Status: phases 1–9 are done (see `tests/`). Phase 10 (shared services, domain,
 | 2. Core | Store, access, plan, versions, threads, status, next step | Tests cover every rule in TECHNICAL §2 and MCP §5 (order, blocking, continue, no cascade, approval binding) |
 | 3. Catalog | Loader, validator, publish script, default layout, workflow guides, fictional example items | A deliverable resolves its content template, template and requirements; an invalid catalog fails CI |
 | 4. Sources and Word | Uploads, text extraction, source search, Word outline and fill | Fixture templates fill correctly; forms reject restyling; a stored protocol is searchable with locators |
-| 5. MCP | Six tools, frame tool, HTTP handler, instructions, step context | Over the MCP transport a scripted client runs EX-101: plan, loop to a block, resume from a new session, revise with changes only |
+| 5. MCP | Six tools, the app-only workspace tool, HTTP handler, instructions, step context | Over the MCP transport a scripted client runs EX-101: plan, loop to a block, resume from a new session, revise with changes only |
 | 6. Web app | Browser screens against the API | Chromium tests of the prototype flows; visual check against the prototype on desktop and mobile |
 | 7. Workspace in Claude | Widget build, header variant, message posting, uploads | Works in Claude web and desktop; Claude Code gets text and a link |
 | 8. Profile, billing, mail | Settings → Personal and Support embed the shared TrialAgents account settings (as Pipeline's `pipeline-account`, here `ctis-account`). Team plan: **€49 per month per owner account** (one subscription covers sharing all the owner's projects, unlimited people), Stripe Checkout, customer portal and signed webhook as in Pipeline's `billing.mjs`. Email notifications with personal switches | Pipeline's billing and grant test list passes for CTIS in Stripe test mode; profile changes show in every TrialAgents app |
@@ -161,8 +155,8 @@ Status: phases 1–9 are done (see `tests/`). Phase 10 (shared services, domain,
 
 ## 11. Before phase 10
 
-- **File storage.** Decided: files are stored in the Render database (`bytea` in `ctis.file`) for now. `files.mjs` is the only module that reads or writes them, so moving to S3-compatible storage later is a change to that module plus a one-off copy. Revisit when storage size or user numbers grow.
-- **Shared web and MCP repositories.** Phase 10 patches the shared web service (`intel_agent_app`) and MCP service (`intel_mcp`) as Pipeline does. This session cannot see those repositories, so the patches will be written against Pipeline's integration files and need checking against the live services.
+- **File storage.** Decided: files are stored in the Render database (`bytea` in `ctis.file`) for now. `store.mjs` and `sources.mjs` are the only modules that read or write them, so moving to S3-compatible storage later is a change there plus a one-off copy. Revisit when storage size or user numbers grow.
+- **Shared web and MCP repositories.** Done: the integration was built and checked against both repositories; see [RELEASE.md](RELEASE.md).
 
 ## 12. URLs
 
@@ -174,14 +168,13 @@ Same structure as Pipeline, with `pipeline` replaced by `ctis`. Pipeline's custo
 | `https://ctis.trialagents.com/?project=…&document=…&step=…&section=…` | `/?workspace=…&section=…` | Deep links are query parameters on `/`, never paths |
 | `https://ctis.trialagents.com/auth?mode=login&ctis=1` | `/auth?mode=login&pipeline=1` | Shared TrialAgents sign-in, returning to CTIS |
 | `https://ctis.trialagents.com/ctis-account` | `/pipeline-account` | Account page |
-| `https://ctis.trialagents.com/ctis-embedded` | `/pipeline-embedded` | Workspace shown inside Claude |
-| `https://ctis.trialagents.com/api/ctis`, `/api/ctis/frame` | `/api/pipeline`, `/api/pipeline/frame` | App API; frame API for the workspace inside Claude |
+| `https://ctis.trialagents.com/api/ctis` | `/api/pipeline` | App API. The workspace inside Claude is one bundled file served by the MCP server and uses no page or API on this host |
 | `https://ctis.trialagents.com/ctis-info/{about,support,privacy,terms,connectors}` | `/pipeline-info/…` | Public listing, legal and setup pages |
 | `https://mcp.trialagents.com/ctis/claude` | `/pipeline/claude` | MCP for Claude, forwarded to the web service |
 | `https://mcp.trialagents.com/ctis/chatgpt` | `/pipeline/chatgpt` | MCP for ChatGPT (later) |
 | `https://mcp.trialagents.com/.well-known/oauth-protected-resource/ctis/{claude,chatgpt}` | `…/pipeline/{claude,chatgpt}` | OAuth resource metadata |
 
-Inside the shared web service these are the folders `app/ctis-app`, `app/ctis-account`, `app/ctis-embedded`, `app/ctis-info/[section]`, `app/api/ctis`, `app/ctis/claude`, `app/ctis/chatgpt` and `app/.well-known/oauth-protected-resource/ctis/…`. `app/ctis/claude` and `app/ctis/chatgpt` sit next to the existing public CTIS guide pages (`app/ctis/route.ts`, `app/ctis/[country]/[language]/…`). Fixed folder names take priority over the `[country]` pattern, and the guides always have two segments (country and language), so neither affects the other.
+Inside the shared web service these are the folders `app/ctis-app`, `app/ctis-account`, `app/ctis-info/[section]`, `app/api/ctis`, `app/ctis/claude` (and `app/ctis/chatgpt` later) and `app/.well-known/oauth-protected-resource/ctis/…`. `app/ctis/claude` and `app/ctis/chatgpt` sit next to the existing public CTIS guide pages (`app/ctis/route.ts`, `app/ctis/[country]/[language]/…`). Fixed folder names take priority over the `[country]` pattern, and the guides always have two segments (country and language), so neither affects the other.
 
 ### What changes on ctis.trialagents.com
 

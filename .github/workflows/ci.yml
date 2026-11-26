@@ -18,3 +18,12 @@ jobs:
       - run: npx playwright-core install --with-deps chromium
       - run: npm run check:catalog
       - run: npm test
+  shared-mcp:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'httpx>=0.27,<1' starlette 'pytest>=8,<9'
+      - run: python -m pytest -q integration/shared-mcp

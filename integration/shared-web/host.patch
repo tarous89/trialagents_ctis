@@ -1,0 +1,253 @@
+diff --git a/app/api/stripe/webhook/route.ts b/app/api/stripe/webhook/route.ts
+index 721ddde..8c04dbc 100644
+--- a/app/api/stripe/webhook/route.ts
++++ b/app/api/stripe/webhook/route.ts
+@@ -39,6 +39,10 @@ export async function POST(request: NextRequest) {
+       const {pipelineWebhook}=await import("@/app/lib/pipeline/adapter");
+       if(await pipelineWebhook(event))return NextResponse.json({received:true});
+     }
++    if(process.env.CTIS_ENABLED==="true" && event.data?.object?.metadata?.ctis_account){
++      const {ctisWebhook}=await import("@/app/lib/ctis/adapter");
++      if(await ctisWebhook(event))return NextResponse.json({received:true});
++    }
+     if (await publicationWebhook(event)) return NextResponse.json({ received: true });
+     if (await combinedSubscriptionWebhook(event)) return NextResponse.json({ received: true });
+     if (await workspacePurchaseWebhook(event)) return NextResponse.json({ received: true });
+diff --git a/app/auth/page.tsx b/app/auth/page.tsx
+index 18da2a6..af930e9 100644
+--- a/app/auth/page.tsx
++++ b/app/auth/page.tsx
+@@ -24,6 +24,7 @@ async function readResponseData(response: Response) {
+ 
+ export default function AuthPage() {
+   const [pipelineLogin,setPipelineLogin]=useState(false);
++  const [ctisLogin,setCtisLogin]=useState(false);
+   const [connecting, setConnecting] = useState(false);
+   const [connectionReady, setConnectionReady] = useState(false);
+   const [connectionInfo,setConnectionInfo]=useState<any>(null);
+@@ -45,6 +46,7 @@ export default function AuthPage() {
+     const timer = window.setTimeout(() => {
+       const params = new URLSearchParams(window.location.search);
+       setPipelineLogin(window.location.hostname==="pipeline.trialagents.com");
++      setCtisLogin(window.location.hostname==="ctis.trialagents.com");
+       setOauthReturn(oauthReturnPath(params.get("return_to")));
+       setSavedResearch(researchReturnPath(params.get("research")));
+       setMode(params.get("mode") === "login" ? "login" : "signup");
+@@ -97,7 +99,7 @@ export default function AuthPage() {
+     const sharedToken = new URLSearchParams(window.location.search).get('shared');
+     const sharedPlan = new URLSearchParams(window.location.search).get('plan');
+     const sharedReturn = sharedToken && /^[a-f0-9]{64}$/.test(sharedToken) ? `/share/${sharedToken}` + (sharedPlan==='month'||sharedPlan==='year' ? `?checkout=1&plan=${sharedPlan}` : '') : null;
+-    const destination = oauthReturnPath(new URLSearchParams(window.location.search).get("return_to")) ?? (window.location.hostname==="pipeline.trialagents.com" ? "/" : null) ?? researchReturnPath(new URLSearchParams(window.location.search).get("research")) ?? sharedReturn ?? (combinedPreviewReturn ? combinedReturnPath(new URLSearchParams(window.location.search).get("returnTo"))
++    const destination = oauthReturnPath(new URLSearchParams(window.location.search).get("return_to")) ?? (["pipeline.trialagents.com","ctis.trialagents.com"].includes(window.location.hostname) ? "/" : null) ?? researchReturnPath(new URLSearchParams(window.location.search).get("research")) ?? sharedReturn ?? (combinedPreviewReturn ? combinedReturnPath(new URLSearchParams(window.location.search).get("returnTo"))
+       : new URLSearchParams(window.location.search).get("agent") === "site"
+         ? "/" : validWorkspaceReturn ? `/workspace?workspace=${workspaceReturn}` : `/?${destinationParams.toString()}`);
+     try {
+@@ -148,14 +150,14 @@ export default function AuthPage() {
+           <img className="brand-icon" src="/trialagents-mark-black.png" alt="" />
+           <span className="parent-brand">Trial Agents</span>
+         </a>
+-        <a href={pipelineLogin?"/":`${TRIAL_AGENTS_HOME}#intelagent`}>← Back to home</a>
++        <a href={pipelineLogin||ctisLogin?"/":`${TRIAL_AGENTS_HOME}#intelagent`}>← Back to home</a>
+       </header>
+ 
+       <section className="auth-panel ta-card">
+         <img className="auth-mark" src="/trialagents-mark-black.png" alt="" />
+         <h1>{mode === "signup" ? (oauthReturn || savedResearch ? "Create your TrialAgents account" : "Create your account") : "Welcome back"}</h1>
+         <p className="auth-subtitle">
+-          {pipelineLogin ? (mode==="signup"?"Create your TrialAgents account to start a Pipeline workspace.":"Sign in to your Pipeline workspace.") : connecting ? (connectionInfo?.account_project?'Log in to your TrialAgents account to save your project and extend your access.':'Log in or create an account to keep this project and its custom outputs.') : oauthReturn ? "Connect your account to save your search results, projects and custom views for later use in TrialAgents." : savedResearch ? "Sign in to open your private TrialAgents Intel research. Free accounts can view the top ten; full lists require active paid account access." : mode === "signup"
++          {ctisLogin ? (mode==="signup"?"Create your TrialAgents account to start with TrialAgents CTIS.":"Sign in to TrialAgents CTIS.") : pipelineLogin ? (mode==="signup"?"Create your TrialAgents account to start a Pipeline workspace.":"Sign in to your Pipeline workspace.") : connecting ? (connectionInfo?.account_project?'Log in to your TrialAgents account to save your project and extend your access.':'Log in or create an account to keep this project and its custom outputs.') : oauthReturn ? "Connect your account to save your search results, projects and custom views for later use in TrialAgents." : savedResearch ? "Sign in to open your private TrialAgents Intel research. Free accounts can view the top ten; full lists require active paid account access." : mode === "signup"
+             ? carriedConcept
+               ? "Your report plan is being prepared while you create your account."
+               : intent === "max" ? "Create your account to begin a Max Report." : "One account for Intel.agent and Site.agent."
+diff --git a/app/components/AccountSettings.tsx b/app/components/AccountSettings.tsx
+index ea629d0..6a0595d 100644
+--- a/app/components/AccountSettings.tsx
++++ b/app/components/AccountSettings.tsx
+@@ -42,7 +42,7 @@ async function readResponseData(response: Response) {
+   }
+ }
+ 
+-function SettingsContent({combined=false,reviewAccess=false,embedded=false,projectId,pipelineSection}:{pipelineSection?:"account"|"support";combined?:boolean;reviewAccess?:boolean;embedded?:boolean;projectId?:string}) {
++function SettingsContent({combined=false,reviewAccess=false,embedded=false,projectId,pipelineSection,product="pipeline"}:{pipelineSection?:"account"|"support";product?:"pipeline"|"ctis";combined?:boolean;reviewAccess?:boolean;embedded?:boolean;projectId?:string}) {
+   const [pricing, setPricing] = useState<{ site: { price: string; discountPercent: number }; intel: { price: string; discountPercent: number } } | null>(null);
+   const requestedTab=useSearchParams().get("tab");
+   const [tab, setTab] = useState<SettingsTab>(pipelineSection??(["subscription","billing"].includes(requestedTab??"")?"billing":"account"));
+@@ -68,7 +68,7 @@ function SettingsContent({combined=false,reviewAccess=false,embedded=false,proje
+     // eslint-disable-next-line react-hooks/set-state-in-effect
+     setSiteAgentHost(window.location.hostname.toLowerCase() === "site.trialagents.com");
+     function openLogin() {
+-      if (pipelineSection && window.top) window.top.location.replace("/auth?mode=login&pipeline=1");
++      if (pipelineSection && window.top) window.top.location.replace("/auth?mode=login&"+product+"=1");
+       else window.location.replace("/auth?mode=login");
+     }
+     void fetch(pipelineSection === "account" ? "/api/auth/session?profile=pipeline" : "/api/auth/session", { cache: "no-store" }).then(async (response) => {
+@@ -144,12 +144,12 @@ function SettingsContent({combined=false,reviewAccess=false,embedded=false,proje
+         method: "POST",
+         headers: { "Content-Type": "application/json" },
+         body: JSON.stringify({
+-          name: `${profile.firstName} ${profile.lastName}`.trim() || (pipelineSection ? "TrialAgents Pipeline user" : "TrialAgents Intel user"),
++          name: `${profile.firstName} ${profile.lastName}`.trim() || (pipelineSection ? (product==="ctis" ? "TrialAgents CTIS user" : "TrialAgents Pipeline user") : "TrialAgents Intel user"),
+           email: profile.email,
+           message: supportMessage,
+           formType: "support",
+           interest: "intel",
+-          source: pipelineSection?"pipeline_app_support":"intel_app_support",
++          source: pipelineSection?product+"_app_support":"intel_app_support",
+         }),
+       });
+       const data = await readResponseData(response);
+diff --git a/app/lib/oauth-account-lock.ts b/app/lib/oauth-account-lock.ts
+index cd63636..4242ca6 100644
+--- a/app/lib/oauth-account-lock.ts
++++ b/app/lib/oauth-account-lock.ts
+@@ -1,8 +1,8 @@
+ import {sql} from 'drizzle-orm';
+ import type {getDb} from '@/db';
+-import {pipelineResource,oauthClaudeResource,oauthResearchResource} from './oauth-config';
++import {pipelineResource,ctisResource,oauthClaudeResource,oauthResearchResource} from './oauth-config';
+ 
+ /** Serialize research token issuance with owner-requested disconnection only. */
+ export async function lockResearchOAuthAccount(tx:Pick<ReturnType<typeof getDb>,'execute'>,userId:string,resource:string){
+- if(resource===oauthResearchResource()||resource===oauthClaudeResource()||resource===pipelineResource()||resource===pipelineResource(true))await tx.execute(sql`select pg_advisory_xact_lock(hashtext(${`research-oauth:${userId}`}),hashtext(${resource}))`);
++ if(resource===oauthResearchResource()||resource===oauthClaudeResource()||resource===pipelineResource()||resource===pipelineResource(true)||resource===ctisResource())await tx.execute(sql`select pg_advisory_xact_lock(hashtext(${`research-oauth:${userId}`}),hashtext(${resource}))`);
+ }
+diff --git a/app/lib/oauth-config.ts b/app/lib/oauth-config.ts
+index ad366fa..ce2b155 100644
+--- a/app/lib/oauth-config.ts
++++ b/app/lib/oauth-config.ts
+@@ -28,3 +28,8 @@ export function oauthClaudeResource() {
+ export function pipelineResource(claude=false){
+  return oauthResource().replace(/\/mcp$/, '')+(claude?'/pipeline-claude/mcp':'/pipeline/mcp');
+ }
++
++/** TrialAgents CTIS: served by this web service at /ctis/claude, forwarded from the MCP hostname. */
++export function ctisResource(){
++ return oauthResource().replace(/\/mcp$/, '')+'/ctis/claude';
++}
+diff --git a/app/lib/oauth-validation.ts b/app/lib/oauth-validation.ts
+index d3b5b16..674cfac 100644
+--- a/app/lib/oauth-validation.ts
++++ b/app/lib/oauth-validation.ts
+@@ -1,5 +1,5 @@
+ import { createHash } from "node:crypto";
+-import { OAUTH_OFFLINE_SCOPE, OAUTH_SCOPE, pipelineResource, oauthClaudeResource, oauthResource, oauthResearchResource } from "./oauth-config";
++import { OAUTH_OFFLINE_SCOPE, OAUTH_SCOPE, pipelineResource, ctisResource, oauthClaudeResource, oauthResource, oauthResearchResource } from "./oauth-config";
+ 
+ const PKCE_CHALLENGE = /^[A-Za-z0-9_-]{43}$/;
+ const PKCE_VERIFIER = /^[A-Za-z0-9\-._~]{43,128}$/;
+@@ -45,6 +45,7 @@ export function validAuthorizationRequest(params: URLSearchParams) {
+       oauthResource(),
+       ...(process.env.MCP_RESEARCH_ACCESS_ENABLED === "true" ? [oauthResearchResource()] : []),
+       ...(process.env.PIPELINE_MCP_ENABLED==='true'?[pipelineResource(),pipelineResource(true)]:[]),
++      ...(process.env.CTIS_MCP_ENABLED==='true'?[ctisResource()]:[]),
+       ...(process.env.MCP_CLAUDE_ACCESS_ENABLED === "true" ? [oauthClaudeResource()] : []),
+     ].includes(resource))
+     || !scope
+diff --git a/app/oauth/authorize/route.ts b/app/oauth/authorize/route.ts
+index 88613b0..2494814 100644
+--- a/app/oauth/authorize/route.ts
++++ b/app/oauth/authorize/route.ts
+@@ -4,7 +4,7 @@ import { randomUUID } from "node:crypto";
+ import { eq, sql } from "drizzle-orm";
+ import { NextRequest, NextResponse } from "next/server";
+ import { authenticatedUser, opaqueToken, clearSessionCookie, deleteRequestSession } from "@/app/lib/auth";
+-import { pipelineResource, oauthClaudeResource, oauthIssuer } from "@/app/lib/oauth-config";
++import { pipelineResource, ctisResource, oauthClaudeResource, oauthIssuer } from "@/app/lib/oauth-config";
+ import { registeredClient } from "@/app/lib/oauth-server";
+ import { validAuthorizationRequest } from "@/app/lib/oauth-validation";
+ import { getDb } from "@/db";
+@@ -46,10 +46,11 @@ export async function GET(request: NextRequest) {
+   });
+   const callbackHost = new URL(parameters.redirectUri).origin;
+   const isPipeline=[pipelineResource(),pipelineResource(true)].includes(parameters.resource);
+-  const connected=(parameters.resource===oauthClaudeResource()||parameters.resource===pipelineResource(true))
+-    ? await hasClaudeConnection(user.id,true,parameters.clientId,isPipeline?parameters.resource:undefined)
++  const isCtis=parameters.resource===ctisResource();
++  const connected=(parameters.resource===oauthClaudeResource()||parameters.resource===pipelineResource(true)||isCtis)
++    ? await hasClaudeConnection(user.id,true,parameters.clientId,isPipeline||isCtis?parameters.resource:undefined)
+     : await hasChatGPTConnection(user.id,true,parameters.clientId,isPipeline?parameters.resource:undefined);
+-  return consentPage(requestId, client.clientName, callbackHost, user.email,connected,isPipeline);
++  return consentPage(requestId, client.clientName, callbackHost, user.email,connected,isPipeline,isCtis);
+ }
+ 
+ export async function POST(request: NextRequest) {
+@@ -118,11 +119,11 @@ export async function POST(request: NextRequest) {
+   return NextResponse.redirect(redirect, 303);
+ }
+ 
+-function consentPage(requestId: string, clientName: string, callbackHost: string, email: string,connected=false,isPipeline=false) {
++function consentPage(requestId: string, clientName: string, callbackHost: string, email: string,connected=false,isPipeline=false,isCtis=false) {
+   return html(`
+     <div class="brand"><img src="/trialagents-mark-black.png" width="28" height="28" alt=""><span>TrialAgents</span></div>
+     <h1>${connected?`${escapeHtml(clientName)} connected`:`Connect TrialAgents to ${escapeHtml(clientName)}`}</h1>
+-    <p class="lead">${connected?'Your account is connected. ':''}${isPipeline?'Open and update your permitted Pipeline workspaces using your current team role.':'Save your search results, projects and custom views for later use in TrialAgents.'}</p>
++    <p class="lead">${connected?'Your account is connected. ':''}${isCtis?'Plan, draft and check your TrialAgents CTIS projects, and the documents shared with you, within your access.':isPipeline?'Open and update your permitted Pipeline workspaces using your current team role.':'Save your search results, projects and custom views for later use in TrialAgents.'}</p>
+     <p class="identity">Continue as <strong>${escapeHtml(email)}</strong></p>
+     <form method="post" action="/oauth/authorize">
+       <input type="hidden" name="request_id" value="${escapeHtml(requestId)}">
+@@ -130,7 +131,7 @@ function consentPage(requestId: string, clientName: string, callbackHost: string
+       <div class="alternatives"><button class="text-action" type="submit" name="decision" value="change">Change account</button><button class="text-action" type="submit" name="decision" value="deny">Cancel</button></div>
+       <p id="status" role="status" aria-live="polite"></p>
+     </form>
+-    <p class="privacy">Authorize ${escapeHtml(clientName)} to ${isPipeline?'read and manage Pipeline data within your permissions':'access and save research in this account'}. Disconnect anytime in TrialAgents Settings.</p>
++    <p class="privacy">Authorize ${escapeHtml(clientName)} to ${isCtis?'read and save TrialAgents CTIS projects within your access':isPipeline?'read and manage Pipeline data within your permissions':'access and save research in this account'}. Disconnect anytime in TrialAgents Settings.</p>
+   `, 200, callbackHost);
+ }
+ 
+diff --git a/next.config.ts b/next.config.ts
+index d5fc576..7d5f4eb 100644
+--- a/next.config.ts
++++ b/next.config.ts
+@@ -4,7 +4,10 @@ import { PHASE_PRODUCTION_BUILD } from "next/constants";
+ const nextConfig: NextConfig = {
+   // Internal research requests allow 13 MiB (12 MiB normalized snapshot).
+   // Keep the proxy buffer above that limit so Next does not truncate valid JSON.
+-  experimental: { proxyClientMaxBodySize: 16 * 1024 * 1024 },
++  // TrialAgents CTIS uploads source files up to 25 MB as base64 JSON (about 34 MB).
++  experimental: { proxyClientMaxBodySize: 40 * 1024 * 1024 },
++  // pdf.js and mammoth (CTIS source text extraction) load their own files at run time.
++  serverExternalPackages: ["pdfjs-dist", "mammoth"],
+ };
+ 
+ export default async function config(phase: string): Promise<NextConfig> {
+diff --git a/proxy.ts b/proxy.ts
+index 5a077d7..4134f22 100644
+--- a/proxy.ts
++++ b/proxy.ts
+@@ -55,6 +55,16 @@ export function proxy(request: NextRequest) {
+     const url=request.nextUrl.clone();url.pathname="/pipeline-app";return NextResponse.rewrite(url);
+   }
+ 
++  // TrialAgents CTIS: only "/" is the app (deep links are query parameters); every other path is the shared site's.
++  if(hostname==="ctis.trialagents.com" && pathname==="/"){
++    const url=request.nextUrl.clone();url.pathname="/ctis-app";return NextResponse.rewrite(url);
++  }
++  // Addresses of the replaced Replit app open the new app (old IDs and parameters are not carried over).
++  if(hostname==="ctis.trialagents.com" && /^\/(app(\/.*)?|projects\/?|project\/.+|new\/?|settings\/?|templates\/?|template-generator\/?|render\/?)$/.test(pathname)){
++    const url=request.nextUrl.clone();url.protocol="https:";url.hostname="ctis.trialagents.com";url.port="";url.pathname="/";url.search="";
++    return NextResponse.redirect(url,308);
++  }
++
+   if (pathname === "/payment-test" || pathname === "/payment-test/") {
+     const retired = siteAgentUrl(request, "/settings");
+     retired.search = ""; // Never forward old checkout IDs or test parameters.
+diff --git a/scripts/start-render.mjs b/scripts/start-render.mjs
+index 98e6c59..0280593 100644
+--- a/scripts/start-render.mjs
++++ b/scripts/start-render.mjs
+@@ -54,3 +54,15 @@ if(process.env.PIPELINE_ENABLED==='true'){
+   }
+   startPipelineMail();
+ }
++
++// TrialAgents CTIS shares this service: its worker applies the schema, publishes the catalog and sends email.
++if(process.env.CTIS_ENABLED==='true'){
++  function startCtisWorker(){
++    if(stopping)return;
++    const worker=spawn(process.execPath,['scripts/ctis-worker.mjs'],{stdio:'inherit',env:process.env});
++    children.add(worker);
++    worker.once('error',()=>console.error('ctis_worker_spawn_failed'));
++    worker.once('close',()=>{children.delete(worker);if(!stopping)setTimeout(startCtisWorker,15000).unref();});
++  }
++  startCtisWorker();
++}

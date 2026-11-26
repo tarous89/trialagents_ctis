@@ -147,5 +147,5 @@ Empty states point to the assistant first.
 ## 10. Open points to verify on the hosts
 
 - Posting a message from the workspace into the chat (MCP Apps message request in Claude; `sendFollowUpMessage` in ChatGPT) on web, desktop and mobile.
-- File upload from inside the workspace iframe (allowed connect domains for `ctis.trialagents.com`).
+- File upload from inside the workspace (sent through `ctis_workspace_request`, up to 8 MB) on web, desktop and mobile.
 - How Claude groups read-only tools in its permission settings.

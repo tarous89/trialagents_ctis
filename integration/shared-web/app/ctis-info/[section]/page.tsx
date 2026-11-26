@@ -1,6 +1,7 @@
 // Public listing, setup, support and legal pages for TrialAgents CTIS (ctis.trialagents.com/ctis-info/<section>),
 // as Pipeline's pipeline-info pages. Linked from the Claude plugin manifest and the OAuth resource metadata.
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { PLUGIN_PUBLISHER_ADDRESS as address, PLUGIN_PUBLISHER_NAME as publisher } from '@/app/lib/plugin-publisher';
 import styles from './information.module.css';
@@ -39,7 +40,7 @@ const pages = {
     description: 'Get help with connections, project access, documents, sharing or billing.',
     body: <>
       <p>For product support, privacy requests or a security concern, email us below. Tell us whether you were using the browser, Claude or ChatGPT, the project and deliverable code (for example D04-QC), what you were trying to do, and the error message if there was one. Keep passwords, access tokens and patient data out of your message.</p>
-      <p>For setup steps or help with sign-in and permissions, see the <a href="/ctis-info/connectors">connector guide</a>.</p>
+      <p>For setup steps or help with sign-in and permissions, see the <Link href="/ctis-info/connectors">connector guide</Link>.</p>
     </>,
   },
   privacy: {
@@ -108,8 +109,10 @@ export default async function CtisInformation({ params }: PageProps) {
         </div>
         <nav className={styles.links} aria-label="TrialAgents CTIS information">
           {Object.entries(pages).filter(([id]) => id !== section).map(([id, info]) => (
-            <a key={id} href={'/ctis-info/' + id}>{info.title}</a>
+            <Link key={id} href={'/ctis-info/' + id}>{info.title}</Link>
           ))}
+          {/* The app is a route handler, not a Next page: load it in full. */}
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
           <a href="/">Open TrialAgents app</a>
         </nav>
       </article>

@@ -1,0 +1,1 @@
+export function ctisApi(options:{run:(user:any,request:any,source?:string)=>Promise<any>;currentUser:(request:Request)=>Promise<unknown>;origin?:string;source?:string}):(request:Request)=>Promise<Response>;
