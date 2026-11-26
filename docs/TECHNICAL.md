@@ -81,7 +81,7 @@ When a version is saved, store the effective list as an immutable snapshot on th
 
 ## 5. Sharing and permissions
 
-Not an organisation model. Every user owns their own projects (free). Sharing is a paid feature of the owner's account (Team plan, €49 per month).
+Not an organisation model. Every user owns their own projects (free). Sharing is a paid feature of the owner's account (Team plan, €49 per month per owner account, unlimited people; Stripe as in Pipeline).
 
 ### Grants
 

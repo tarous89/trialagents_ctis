@@ -134,7 +134,7 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 10. Phases
 
-Status: phases 1–6 are done (see `tests/`). The app-only frame tool for the workspace inside Claude comes with phase 7. Left for later phases on the browser side: Team plan checkout and email notifications (phase 8), the plugin directory links behind "Open in Claude/ChatGPT" (phase 9; they point to the connectors page until then), and profile editing, which belongs to the shared TrialAgents account page (phase 10).
+Status: phases 1–7 are done (see `tests/`). Next, phase 8: profile settings, Stripe checkout and notifications, as in Pipeline. The plugin directory links behind "Open in Claude/ChatGPT" come with phase 9 (they point to the connectors page until then).
 
 | Phase | Work | Done when |
 |---|---|---|
@@ -145,7 +145,7 @@ Status: phases 1–6 are done (see `tests/`). The app-only frame tool for the wo
 | 5. MCP | Six tools, frame tool, HTTP handler, instructions, step context | Over the MCP transport a scripted client runs EX-101: plan, loop to a block, resume from a new session, revise with changes only |
 | 6. Web app | Browser screens against the API | Chromium tests of the prototype flows; visual check against the prototype on desktop and mobile |
 | 7. Workspace in Claude | Widget build, header variant, message posting, uploads | Works in Claude web and desktop; Claude Code gets text and a link |
-| 8. Sharing, billing, mail | Grants, Team plan in Stripe test mode, notifications | Pipeline's billing and grant test list passes for CTIS |
+| 8. Profile, billing, mail | Settings → Personal and Support embed the shared TrialAgents account settings (as Pipeline's `pipeline-account`, here `ctis-account`). Team plan: **€49 per month per owner account** (one subscription covers sharing all the owner's projects, unlimited people), Stripe Checkout, customer portal and signed webhook as in Pipeline's `billing.mjs`. Email notifications with personal switches | Pipeline's billing and grant test list passes for CTIS in Stripe test mode; profile changes show in every TrialAgents app |
 | 9. Plugin and info pages | Plugin package, marketplace, public pages | Plugin installs in Claude Code and loads the `ctis` skill and the server |
 | 10. Launch | Shared web and MCP integration, domain and TLS, staging, live check with a real Claude account, directory submission | The EX-101 scenario below passes live |
 

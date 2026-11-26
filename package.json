@@ -16,6 +16,7 @@
     "url": "https://github.com/tarous89/trialagents_ctis.git"
   },
   "dependencies": {
+    "@modelcontextprotocol/ext-apps": "2.0.4",
     "@modelcontextprotocol/server": "2.4.0",
     "@xmldom/xmldom": "0.9.12",
     "esbuild": "0.28.2",

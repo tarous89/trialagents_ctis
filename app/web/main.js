@@ -1,7 +1,7 @@
 // TrialAgents CTIS browser app: navigation, Projects and the document plan.
 import {call,write,exportUrl} from './api.js'
 import {E,$,all,icon,railIcon,host,ctry,countryName,languageName,fmtDate,plural,statusLabel,statusClass,finalLabel,categories,tone,
-  toast,modal,closeModal,drawer,closeDrawer,field,options,formData,memberStates,assistantOnly,initials} from './ui.js'
+  toast,modal,closeModal,drawer,closeDrawer,field,options,formData,memberStates,assistantOnly,initials,askAssistant} from './ui.js'
 import {marks,pencil,dupIcon} from './icons.js'
 import {openDeliverable} from './reader.js'
 import {registryPage,registryEvents,registrySubmit} from './registry.js'
@@ -24,7 +24,7 @@ export function go(view,{project=null,deliverable=null,section,replace=false}={}
   const q=new URLSearchParams()
   if(project)q.set('project',project);if(deliverable)q.set('deliverable',deliverable)
   if(!project&&view!=='projects')q.set('tab',view);if(view==='settings')q.set('section',state.section)
-  history[replace?'replaceState':'pushState'](null,'','/'+(q.size?'?'+q:''))
+  if(host==='browser')history[replace?'replaceState':'pushState'](null,'','/'+(q.size?'?'+q:''))
   return render()
 }
 window.addEventListener('popstate',()=>{readUrl();render()})
@@ -32,7 +32,7 @@ window.addEventListener('popstate',()=>{readUrl();render()})
 function shell(){
   $('#assistant-actions').innerHTML=host==='browser'
     ?['Claude','ChatGPT'].map(n=>'<a class="assistant-link" href="'+assistantUrl[n]+'" target="_blank" rel="noopener" title="Get TrialAgents CTIS in '+n+'">'+marks[n]+'<span>Open in '+n+'</span></a>').join('')
-    :'<a class="assistant-link" href="https://ctis.trialagents.com/'+(state.project?'?project='+encodeURIComponent(state.project):'')+'" target="_blank" rel="noopener">Open TrialAgents app ↗</a>'
+    :'<button type="button" class="assistant-link" data-open-app title="Open this workspace in TrialAgents CTIS">Open TrialAgents app ↗</button>'
   const a=state.account,tab=k=>'<button type="button" data-tab="'+k.toLowerCase()+'" class="'+((state.view===k.toLowerCase()||(k==='Projects'&&state.view==='plan'))?'active':'')+'" aria-label="'+k+'" title="'+k+'">'+railIcon(k)+'<span>'+k+'</span></button>'
   $('#rail').innerHTML='<nav class="rail-nav" aria-label="Workspace">'+['Projects','Sources','Templates'].map(tab).join('')+'</nav>'+tab('Settings')
     +(a?'<button type="button" class="rail-account" data-tab="settings" title="Your profile and sign-in"><span class="avatar-rail">'+E(initials(a.name))+'</span><span><strong>'+E(a.name)+'</strong><small>'+E(a.email)+'</small></span></button>':'')
@@ -139,6 +139,7 @@ async function planPage(){
   const legend='<details class="legend"><summary>'+icon('info')+' Alert guide</summary><div class="legendPanel"><h3>Review alerts</h3>'+Object.entries(categories).map(([k,a])=>'<div class="legendRow" style="'+tone(k)+'"><i>'+icon(a.icon)+'</i><div><strong>'+a.label+'</strong><small>'+a.who+'</small><p>'+a.description+'</p></div></div>').join('')+'</div></details>'
   return head+'<section class="sheet"><div class="sheethead"><div><h2>Document plan</h2><p id="tally">'+plural(total,'document')+' · '+plural(steps.length,'step')+(plan.summary.need_action?' · '+plan.summary.need_action+' need action':'')+'</p></div><div class="tools">'
     +(owner?'<button class="btn" data-edit-steps title="Choose which steps run for every document">'+icon('sliders')+'Edit steps</button>':'')
+    +(host!=='browser'&&plan.next?.deliverable?'<button class="btn" data-continue-plan title="Ask '+E(window.ctisHost?.name??'the assistant')+' to run the plan from '+E(plan.next.deliverable)+'">'+icon('play')+'Continue ('+E(plan.next.deliverable)+')</button>':'')
     +'<a class="btn primary" href="'+exportUrl(p.id)+'" title="Download every approved final document as one ZIP file">'+icon('download')+'Download all</a></div></div>'
     +'<div class="filterbar"><div class="filters"><span class="ficon">'+icon('filter')+'</span><select data-filter="part" aria-label="Filter by submission part">'+options([['','All parts'],['I','Part I'],['II','Part II']],f.part)+'</select>'
     +'<select data-filter="country" aria-label="Filter by country">'+options([['','All countries'],...countries.map(c=>[c,countryName(c)])],f.country)+'</select>'
@@ -175,6 +176,17 @@ function stepsDialog(){
   }
 }
 
+// ---------- inside an assistant ----------
+const appLink=()=>'https://ctis.trialagents.com/'+(state.project?'?project='+encodeURIComponent(state.project)+(state.deliverable?'&deliverable='+encodeURIComponent(state.deliverable):''):'')
+async function hostLink(href){
+  const u=new URL(href,'https://ctis.trialagents.com')
+  if(u.pathname==='/api/ctis/download'){
+    const f=await call('version.file',{project:u.searchParams.get('project'),input:{deliverable:u.searchParams.get('deliverable'),...(u.searchParams.get('n')?{n:+u.searchParams.get('n')}:{})}})
+    return window.ctisHost.download(f).catch(()=>window.ctisHost.openLink(u.href))
+  }
+  return window.ctisHost.openLink(u.href)
+}
+
 // ---------- events ----------
 document.addEventListener('click',async e=>{
   const b=e.target.closest('button,a');if(!b)return
@@ -185,7 +197,11 @@ document.addEventListener('click',async e=>{
     if(d.tab){if(d.filterProject)state.filters[d.tab]={project:d.filterProject};return go(d.tab)}
     if(d.project)return go('plan',{project:d.project})
     if(d.cell)return go('plan',{project:state.project,deliverable:d.cell})
-    if(d.newProject!==undefined)return newProjectDialog()
+    if(d.newProject!==undefined)return host==='browser'?newProjectDialog():askAssistant('Start a new TrialAgents CTIS project.')
+    if(d.openApp!==undefined)return window.ctisHost.openLink(appLink())
+    if(d.continuePlan!==undefined)return askAssistant('Continue the TrialAgents CTIS plan for '+state.plan.project.code+' (project '+state.plan.project.id+').')
+    // Inside an assistant, links open through the host; Word files download through it.
+    if(host!=='browser'&&b.tagName==='A'){e.preventDefault();return hostLink(b.getAttribute('href'))}
     if(d.editProject)return projectDrawer(d.editProject)
     if(d.duplicateProject){const {projects}=await call('project.list');return duplicateDialog(projects.find(p=>p.id===d.duplicateProject)??state.plan.project)}
     if(d.editSteps!==undefined)return stepsDialog()
@@ -210,7 +226,8 @@ document.addEventListener('submit',async e=>{
 
 ;(async()=>{
   Object.assign(nav,{state,render,go})
-  readUrl()
-  try{state.account=await call('account.read')}catch(e){if(e.status===401){$('#page').innerHTML='<section class="panel empty-panel"><h2>Sign in to TrialAgents CTIS</h2><p><a class="primary btn" href="/auth?mode=login&ctis=1">Sign in</a></p></section>';return}}
+  if(host==='browser')readUrl()
+  else{try{await window.ctisHost.ready}catch{};const t=window.ctisHost.initial();if(t)Object.assign(state,{view:t.view,project:t.project,deliverable:t.deliverable})}
+  try{state.account=await call('account.read')}catch(e){if(e.status===401){$('#page').innerHTML='<section class="panel empty-panel"><h2>Sign in to TrialAgents CTIS</h2><p><a class="primary btn" href="'+(host==='browser'?'':'https://ctis.trialagents.com')+'/auth?mode=login&ctis=1">Sign in</a></p></section>';return}}
   render()
 })()

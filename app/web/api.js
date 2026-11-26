@@ -3,6 +3,8 @@ export class ApiError extends Error{constructor(message,status,details){super(me
 const uuid=()=>crypto.randomUUID?.()??'10000000-1000-4000-8000-100000000000'.replace(/[018]/g,c=>(c^crypto.getRandomValues(new Uint8Array(1))[0]&15>>c/4).toString(16))
 
 export async function call(op,{project,input={},revision,write=false}={}){
+  // Inside an assistant the workspace has no direct line to the app: requests travel through the host (see host-claude.js).
+  if(window.ctisHost?.request)return window.ctisHost.request({op,project,input,revision,requestId:write?uuid():undefined})
   const res=await fetch('/api/ctis',{method:'POST',credentials:'same-origin',headers:{'content-type':'application/json'},
     body:JSON.stringify({op,project,input,revision,requestId:write?uuid():undefined})})
   const body=await res.json().catch(()=>({error:'The server did not answer. Try again.'}))

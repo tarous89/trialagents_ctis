@@ -1,6 +1,6 @@
 // The deliverable dialog: the document, its review threads, versions, sources, and the workflow actions.
 import {call,write,downloadUrl} from './api.js'
-import {E,$,icon,statusLabel,statusClass,categories,tone,languageName,fmtDate,fmtTime,initials,inline,plural,toast,modal,closeModal,drawer,closeDrawer,field,options,assistantOnly,formData} from './ui.js'
+import {E,$,icon,host,statusLabel,statusClass,categories,tone,languageName,fmtDate,fmtTime,initials,inline,plural,toast,modal,closeModal,drawer,closeDrawer,field,options,assistantOnly,formData,askAssistant} from './ui.js'
 
 let ctx=null // {project, code, data, n, history, compose, quote, section, onChange}
 
@@ -170,6 +170,7 @@ document.addEventListener('click',async e=>{
     if(d.docResRemove)return write('document.resources.set',{project:ctx.project,input:{document:ctx.data.document.id,remove:[d.docResRemove]}}).then(async()=>{await load();sourcesDialog()})
     if(d.docResAdd!==undefined)return write('document.resources.set',{project:ctx.project,input:{document:ctx.data.document.id,add:[$('#docresadd').value]}}).then(async()=>{await load();sourcesDialog()})
     if(d.invite!==undefined)return inviteDialog()
+    if(d.revise!==undefined&&host!=='browser')return askAssistant('Revise '+ctx.code+' in TrialAgents CTIS (project '+ctx.project+'), using the open comments and any changed sources.')
     if(b.id==='selection-toolbar'){const sel=getSelection(),node=sel.anchorNode?.parentElement?.closest('.para');ctx.compose={quote:sel.toString().trim().slice(0,2000),section:node?.dataset.section};sel.removeAllRanges();return redraw()}
   }catch(err){toast(err.message)}
 })

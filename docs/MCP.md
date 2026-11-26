@@ -26,7 +26,7 @@ name: ctis
 description: Plan, draft, check and finalise CTIS clinical trial application documents (Part I and Part II) in a TrialAgents CTIS project. Use whenever the user mentions TrialAgents CTIS, a CTIS submission or application, a substantial modification, or asks to plan, draft, QC, style, revise or continue documents such as participant information, consent forms or recruitment material.
 ---
 
-Start with `get_ctis_step` when the user wants to continue or revise, `read_ctis_catalog` (planning guide) when they want a new submission, otherwise `read_ctis` or `open_ctis`. Every result ends with `next`: do that next. Take everything a step needs from `get_ctis_step`, not from earlier messages. Save each step with `save_ctis` and continue with the `next` it returns until it says to stop. Never approve documents, ignore findings or share; tell the user where to do it in the app.
+Show the workspace with `open_ctis` on the first TrialAgents CTIS request in a conversation and right after saving a plan. Start with `get_ctis_step` when the user wants to continue or revise, `read_ctis_catalog` (planning guide) when they want a new submission, otherwise `read_ctis` or `open_ctis`. Every result ends with `next`: do that next. Take everything a step needs from `get_ctis_step`, not from earlier messages. Save each step with `save_ctis` and continue with the `next` it returns until it says to stop. Never approve documents, ignore findings or share; tell the user where to do it in the app.
 
 Where Claude shows MCP Apps (web, desktop, mobile) the workspace appears in the conversation. Elsewhere (Claude Code) answer in text and give the link the tool returns. Never build links or IDs yourself.
 ```
@@ -62,7 +62,7 @@ Done in the app (browser or the workspace inside Claude) through the app's own A
 - Delete or archive a project, restore a version, duplicate a project
 - Upload files (sources, Word layouts)
 
-The workspace inside Claude talks to `ctis.trialagents.com` directly with a short-lived token from an app-only tool (`connect_ctis_frame`, hidden from the model, as in Pipeline). People's clicks therefore never trigger Claude permission prompts.
+The workspace inside Claude is one bundled file (an MCP App) and makes no requests to `ctis.trialagents.com`. It reads and saves through an app-only tool, `ctis_workspace_request`, on the same MCP connection, as in Pipeline. Claude keeps that tool from the model. It runs as the signed-in person and is recorded as "Claude workspace" in Logs, so people's own clicks (approve, Ignore and continue, comments) work there; creating projects and recording sources stay with the assistant. Word files download through Claude; other links open in the browser.
 
 ## 4. Step context
 
@@ -142,13 +142,16 @@ Why the server writes the file rather than Claude: Claude can only edit a .docx 
 | Action | Workspace in Claude | Browser |
 |---|---|---|
 | Header button | **Open TrialAgents app ↗** | **Open in Claude**, **Open in ChatGPT**: open the plugin's directory page |
-| New project | Posts "Create a new TrialAgents CTIS project" into the chat | Offers Claude or ChatGPT (no form) |
-| Revise | Posts "Revise D04-QC" into the chat | Disabled, tooltip "Available in Claude or ChatGPT" |
-| Continue the loop | Posts "Continue EX-101" into the chat | Disabled, same tooltip |
+| New project | Posts "Start a new TrialAgents CTIS project." into the chat | Offers Claude or ChatGPT (no form) |
+| Revise | Posts "Revise D04-QC …" into the chat | Disabled, tooltip "Available in Claude or ChatGPT" |
+| Continue the loop | A **Continue (next deliverable)** button posts "Continue the TrialAgents CTIS plan for EX-101 …" into the chat | Disabled, same tooltip |
 | Comment, reply, resolve | Yes | Yes |
 | Ignore and continue, Approve, Share, Download, Versions, Restore, Duplicate, Upload | Yes | Yes |
 
 Empty states point to the assistant first.
+
+| Downloads | Word files download through Claude; Download all and source files open in the browser | Direct downloads |
+| Uploads | Up to 8 MB (larger files in the browser) | Up to 25 MB |
 
 ## 10. Open points to verify on the hosts
 

@@ -59,3 +59,9 @@ export function inline(text){
     .replace(/\[\[([^\]]+)\]\]/g,'<mark class="missingInfo" title="Missing information">[$1]</mark>').replace(/(^|[^*])\*([^*\s][^*]*)\*/g,'$1<em>$2</em>')
 }
 export const plainText=text=>String(text??'').replace(/\*\*|__|\[\[|\]\]/g,'')
+
+// Inside an assistant, actions only it can do are sent to the chat as a message.
+export async function askAssistant(text){
+  try{await window.ctisHost.sendMessage(text);toast('Sent to '+window.ctisHost.name)}
+  catch{modal('<div class="modalhead"><div><h2 id="overlaytitle">Copy this message to '+window.ctisHost.name+'</h2></div><button type="button" class="iconbtn" data-close aria-label="Close">'+icon('close')+'</button></div><div class="modalbody pad"><p>The message could not be sent from the workspace.</p><textarea readonly rows="3" style="width:100%">'+E(text)+'</textarea></div>')}
+}

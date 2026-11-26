@@ -1,6 +1,6 @@
 // Sources and Templates: every document an assistant used, by name, version and date, with the projects that use it.
 import {call,write,sourceUrl,fileToBase64} from './api.js'
-import {E,$,icon,fmtDate,fmtSize,toast,drawer,closeDrawer,field,options,formData} from './ui.js'
+import {E,$,icon,host,fmtDate,fmtSize,toast,drawer,closeDrawer,field,options,formData} from './ui.js'
 import {pencil} from './icons.js'
 import {nav} from './nav.js'
 
@@ -61,7 +61,8 @@ document.addEventListener('change',async e=>{
   }
   if(t.dataset.upload&&t.files[0]){
     const file=t.files[0],out=t.closest('form').querySelector('output')
-    if(file.size>25*1024*1024){out.textContent='Files can be up to 25 MB';return}
+    const limit=host==='browser'?25:8
+    if(file.size>limit*1024*1024){out.textContent=host==='browser'?'Files can be up to 25 MB':'Files over 8 MB: upload them in the TrialAgents CTIS app';return}
     out.textContent='Uploading…'
     try{
       const r=await write('resource.upload',{input:{resource:t.dataset.upload,name:file.name,mime:file.type,content_base64:await fileToBase64(file)}})
