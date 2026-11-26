@@ -183,10 +183,8 @@ Inside the shared web service these are the folders `app/ctis-app`, `app/ctis-ac
 | `/admin` | Removed. Catalog content is edited in `catalog/` in this repository |
 | `/auth`, `/reset-password` | Shared TrialAgents sign-in and password reset (same paths) |
 | `/privacy-policy`, `/terms-of-service` | Shared pages at the same paths |
-| `/ctis`, `/ctis/:country/:lang/:slug` (public CTIS guides) | Same guides from the shared service. Redirect (308) to `https://trialagents.com/ctis/…`, so each page has one address |
-| `/reports`, `/reports/:slug`, `/report/*` | Redirect (308) to `https://trialagents.com/reports/…`, after checking that the report addresses match |
 | `/trial*`, `/trials*` | Already redirect to `/`; keep |
-| `/sitemap.xml`, `/sitemap-ctis.xml`, `/sitemap-reports.xml`, `/sitemap-trials.xml` | Redirect to `https://trialagents.com/sitemap.xml` |
+| `/ctis/*`, `/reports/*`, `/report/*`, sitemaps (public guides, blogs and reports) | Out of scope. No redirects or changes; CTIS adds nothing at these paths except `/ctis/claude` and `/ctis/chatgpt` |
 | `/unsubscribe`, `/uploads/*`, `/report-previews/*`, `/lead_gen`, `/api/*` | Removed (no active users) |
 
-Outside `ctis.trialagents.com`: the `https://trialagents.com/ctis-agent` landing page (`app/components/CtisAgentLanding.tsx`) describes the old product ("download fully drafted documents", per-country package pricing) and its login and signup buttons point to `ctis.trialagents.com/auth`. Its links keep working; its text and pricing should be updated to the new product (Claude and ChatGPT, free individual use, Team €49 per month).
+Outside `ctis.trialagents.com`: the `https://trialagents.com/ctis-agent` landing page stays as it is for now.
