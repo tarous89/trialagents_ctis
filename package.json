@@ -1,0 +1,20 @@
+{
+  "name": "@trialagents/ctis",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TrialAgents CTIS: hosted app, MCP server and assistant plugins for CTIS clinical trial applications.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tarous89/trialagents_ctis.git"
+  },
+  "dependencies": {
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.17"
+  }
+}

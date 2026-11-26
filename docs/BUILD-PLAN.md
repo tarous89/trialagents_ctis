@@ -134,6 +134,8 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 10. Phases
 
+Status: phases 1 and 2 are done (see `tests/`).
+
 | Phase | Work | Done when |
 |---|---|---|
 | 1. Scaffold | `package.json`, build, CI, pglite test harness, schema | `npm test` passes in CI with an empty schema |

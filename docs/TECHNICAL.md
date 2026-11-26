@@ -98,6 +98,7 @@ share_grants(
 - Access is immediate on creation; there is no acceptance step. `grantee_user_id` is filled when the email signs in.
 - The grantee can be mentioned as soon as the grant exists.
 - Only the owner creates, changes or revokes grants and approves final documents.
+- Grants work only while the owner's Team plan is active. When it lapses, shared people lose access; the owner keeps everything and grants come back on renewal.
 - A grantee sees sources and templates only with a project-scope grant.
 - Commenter: read and comment. Editor: also Revise and Ignore and continue (through their own assistant or the web app).
 
@@ -116,7 +117,8 @@ share_grants(
 ## 6. Versions
 
 - Versions are immutable and kept in full. Each has number, created_at, created_by, via (`Claude` | `ChatGPT` | `Browser`), content (structured blocks), findings, and the resource snapshot.
-- Restore creates a new version copied from the chosen one (`restored_from = n`). History is never rewritten.
+- Restore creates a new version copied from the chosen one (`restored_from = n`), and that version's open findings come back on their original threads. History is never rewritten.
+- Each version stores a snapshot of its open findings.
 - Comment threads are attached to the deliverable and anchored to a version and text range. When wording changes, the anchor is marked as earlier wording.
 
 ## 7. MCP tools

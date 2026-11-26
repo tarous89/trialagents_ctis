@@ -96,6 +96,8 @@ The workspace inside Claude talks to `ctis.trialagents.com` directly with a shor
 - the first step of the next document, when this document reached its final step or is blocked, or
 - `stop`, with a summary, when every document is final or blocked.
 
+**Running a step needs its input.** A step works on the current version of the step before it, so that step must have a version, and nothing earlier in the document may be blocking (unless a person used Ignore and continue). The server refuses the save otherwise and says which deliverable to look at.
+
 **What blocks a document.** Any unresolved finding or comment on the current version: missing data, conflicting information, decision needed, open comment (from a person or the assistant), source changed. The loop then moves to the next document, so as much work as possible gets done. A person unblocks with **Ignore and continue** (this version only) or by resolving, or asks Claude to revise.
 
 **New versions do not cascade.** Revising D04 Draft to v2 does not rerun D04's later steps or other documents. Later steps that were based on v1 show "Source changed" until the user asks to rerun them.
@@ -117,6 +119,8 @@ Fact by fact, per [CATALOG.md fill levels](CATALOG.md#fill-levels):
 ## 7. Revision
 
 `get_ctis_step` with `revise: true` returns the version being revised, open comments with replies and anchored text, changes to the document's sources and templates since that version, and the step instructions. Claude sends back only the changed sections (`save_version` with `changes`: section id → new content, plus which threads each change answers). The server builds the new version from the previous one and the changes, keeps the rest unchanged, and shows what changed. With no comments and no changes, Claude asks what to change.
+
+When Claude says a change answers a comment, the server adds Claude's reply to the thread and resolves it; anyone can reopen it. Findings on sections the revision did not touch carry over to the new version; findings on changed sections are closed unless Claude reports them again (a finding reported with the same key keeps its thread and number).
 
 ## 8. Word files
 
