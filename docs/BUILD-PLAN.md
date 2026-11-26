@@ -117,43 +117,6 @@ On deploy it writes a new `catalog_release`. Versions record the exact item vers
 - Widget: `ui://trialagents-ctis/claude-workspace-v1.html`, bundled. `connectDomains: ["https://ctis.trialagents.com"]` so the workspace can call the app API and upload files.
 - Anonymous requests get connection guidance. All data access goes through the store with the caller's grants.
 
-## 12. URLs
-
-Same structure as Pipeline, with `pipeline` replaced by `ctis`. Pipeline's custom-view sandbox (`/pipeline-renderer`) has no CTIS counterpart because CTIS has no authored views.
-
-| Public URL | Pipeline equivalent | Served by |
-|---|---|---|
-| `https://ctis.trialagents.com/` | `https://pipeline.trialagents.com/` | Shared web service; the host's `/` is rewritten to `/ctis-app` |
-| `https://ctis.trialagents.com/?project=…&document=…&step=…&section=…` | `/?workspace=…&section=…` | Deep links are query parameters on `/`, never paths |
-| `https://ctis.trialagents.com/auth?mode=login&ctis=1` | `/auth?mode=login&pipeline=1` | Shared TrialAgents sign-in, returning to CTIS |
-| `https://ctis.trialagents.com/ctis-account` | `/pipeline-account` | Account page |
-| `https://ctis.trialagents.com/ctis-embedded` | `/pipeline-embedded` | Workspace shown inside Claude |
-| `https://ctis.trialagents.com/api/ctis`, `/api/ctis/frame` | `/api/pipeline`, `/api/pipeline/frame` | App API; frame API for the workspace inside Claude |
-| `https://ctis.trialagents.com/ctis-info/{about,support,privacy,terms,connectors}` | `/pipeline-info/…` | Public listing, legal and setup pages |
-| `https://mcp.trialagents.com/ctis/claude` | `/pipeline/claude` | MCP for Claude, forwarded to the web service |
-| `https://mcp.trialagents.com/ctis/chatgpt` | `/pipeline/chatgpt` | MCP for ChatGPT (later) |
-| `https://mcp.trialagents.com/.well-known/oauth-protected-resource/ctis/{claude,chatgpt}` | `…/pipeline/{claude,chatgpt}` | OAuth resource metadata |
-
-Inside the shared web service these are the folders `app/ctis-app`, `app/ctis-account`, `app/ctis-embedded`, `app/ctis-info/[section]`, `app/api/ctis`, `app/ctis/claude`, `app/ctis/chatgpt` and `app/.well-known/oauth-protected-resource/ctis/…`. `app/ctis/claude` and `app/ctis/chatgpt` sit next to the existing public CTIS guide pages (`app/ctis/route.ts`, `app/ctis/[country]/[language]/…`). Fixed folder names take priority over the `[country]` pattern, and the guides always have two segments (country and language), so neither affects the other.
-
-### What changes on ctis.trialagents.com
-
-`ctis.trialagents.com` moves from the Replit app to the shared Render web service. As with Pipeline, only `/` is rewritten to the CTIS app; every other path is handled by the shared service's existing routes.
-
-| Old Replit address | After the switch |
-|---|---|
-| `/`, `/app`, `/app/*`, `/projects`, `/project/:id`, `/new`, `/settings`, `/templates`, `/template-generator`, `/render` | Replaced by the new app. Redirect (308) to `/` |
-| `/admin` | Removed. Catalog content is edited in `catalog/` in this repository |
-| `/auth`, `/reset-password` | Shared TrialAgents sign-in and password reset (same paths) |
-| `/privacy-policy`, `/terms-of-service` | Shared pages at the same paths |
-| `/ctis`, `/ctis/:country/:lang/:slug` (public CTIS guides) | Same guides from the shared service. Redirect (308) to `https://trialagents.com/ctis/…`, so each page has one address |
-| `/reports`, `/reports/:slug`, `/report/*` | Redirect (308) to `https://trialagents.com/reports/…`, after checking that the report addresses match |
-| `/trial*`, `/trials*` | Already redirect to `/`; keep |
-| `/sitemap.xml`, `/sitemap-ctis.xml`, `/sitemap-reports.xml`, `/sitemap-trials.xml` | Redirect to `https://trialagents.com/sitemap.xml` |
-| `/unsubscribe`, `/uploads/*`, `/report-previews/*`, `/lead_gen`, `/api/*` | Removed (no active users) |
-
-Outside `ctis.trialagents.com`: the `https://trialagents.com/ctis-agent` landing page (`app/components/CtisAgentLanding.tsx`) describes the old product ("download fully drafted documents", per-country package pricing) and its login and signup buttons point to `ctis.trialagents.com/auth`. Its links keep working; its text and pricing should be updated to the new product (Claude and ChatGPT, free individual use, Team €49 per month).
-
 ## 8. Web app and workspace
 
 One UI codebase in `app/web`, written fresh against the API and reusing Pipeline's shell CSS and components. The prototype is the visual and behavioural reference.
@@ -190,3 +153,40 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 - **File storage.** Decided: files are stored in the Render database (`bytea` in `ctis.file`) for now. `files.mjs` is the only module that reads or writes them, so moving to S3-compatible storage later is a change to that module plus a one-off copy. Revisit when storage size or user numbers grow.
 - **Shared web and MCP repositories.** Phase 10 patches the shared web service (`intel_agent_app`) and MCP service (`intel_mcp`) as Pipeline does. This session cannot see those repositories, so the patches will be written against Pipeline's integration files and need checking against the live services.
+
+## 12. URLs
+
+Same structure as Pipeline, with `pipeline` replaced by `ctis`. Pipeline's custom-view sandbox (`/pipeline-renderer`) has no CTIS counterpart because CTIS has no authored views.
+
+| Public URL | Pipeline equivalent | Served by |
+|---|---|---|
+| `https://ctis.trialagents.com/` | `https://pipeline.trialagents.com/` | Shared web service; the host's `/` is rewritten to `/ctis-app` |
+| `https://ctis.trialagents.com/?project=…&document=…&step=…&section=…` | `/?workspace=…&section=…` | Deep links are query parameters on `/`, never paths |
+| `https://ctis.trialagents.com/auth?mode=login&ctis=1` | `/auth?mode=login&pipeline=1` | Shared TrialAgents sign-in, returning to CTIS |
+| `https://ctis.trialagents.com/ctis-account` | `/pipeline-account` | Account page |
+| `https://ctis.trialagents.com/ctis-embedded` | `/pipeline-embedded` | Workspace shown inside Claude |
+| `https://ctis.trialagents.com/api/ctis`, `/api/ctis/frame` | `/api/pipeline`, `/api/pipeline/frame` | App API; frame API for the workspace inside Claude |
+| `https://ctis.trialagents.com/ctis-info/{about,support,privacy,terms,connectors}` | `/pipeline-info/…` | Public listing, legal and setup pages |
+| `https://mcp.trialagents.com/ctis/claude` | `/pipeline/claude` | MCP for Claude, forwarded to the web service |
+| `https://mcp.trialagents.com/ctis/chatgpt` | `/pipeline/chatgpt` | MCP for ChatGPT (later) |
+| `https://mcp.trialagents.com/.well-known/oauth-protected-resource/ctis/{claude,chatgpt}` | `…/pipeline/{claude,chatgpt}` | OAuth resource metadata |
+
+Inside the shared web service these are the folders `app/ctis-app`, `app/ctis-account`, `app/ctis-embedded`, `app/ctis-info/[section]`, `app/api/ctis`, `app/ctis/claude`, `app/ctis/chatgpt` and `app/.well-known/oauth-protected-resource/ctis/…`. `app/ctis/claude` and `app/ctis/chatgpt` sit next to the existing public CTIS guide pages (`app/ctis/route.ts`, `app/ctis/[country]/[language]/…`). Fixed folder names take priority over the `[country]` pattern, and the guides always have two segments (country and language), so neither affects the other.
+
+### What changes on ctis.trialagents.com
+
+`ctis.trialagents.com` moves from the Replit app to the shared Render web service. As with Pipeline, only `/` is rewritten to the CTIS app; every other path is handled by the shared service's existing routes.
+
+| Old Replit address | After the switch |
+|---|---|
+| `/`, `/app`, `/app/*`, `/projects`, `/project/:id`, `/new`, `/settings`, `/templates`, `/template-generator`, `/render` | Replaced by the new app. Redirect (308) to `/` |
+| `/admin` | Removed. Catalog content is edited in `catalog/` in this repository |
+| `/auth`, `/reset-password` | Shared TrialAgents sign-in and password reset (same paths) |
+| `/privacy-policy`, `/terms-of-service` | Shared pages at the same paths |
+| `/ctis`, `/ctis/:country/:lang/:slug` (public CTIS guides) | Same guides from the shared service. Redirect (308) to `https://trialagents.com/ctis/…`, so each page has one address |
+| `/reports`, `/reports/:slug`, `/report/*` | Redirect (308) to `https://trialagents.com/reports/…`, after checking that the report addresses match |
+| `/trial*`, `/trials*` | Already redirect to `/`; keep |
+| `/sitemap.xml`, `/sitemap-ctis.xml`, `/sitemap-reports.xml`, `/sitemap-trials.xml` | Redirect to `https://trialagents.com/sitemap.xml` |
+| `/unsubscribe`, `/uploads/*`, `/report-previews/*`, `/lead_gen`, `/api/*` | Removed (no active users) |
+
+Outside `ctis.trialagents.com`: the `https://trialagents.com/ctis-agent` landing page (`app/components/CtisAgentLanding.tsx`) describes the old product ("download fully drafted documents", per-country package pricing) and its login and signup buttons point to `ctis.trialagents.com/auth`. Its links keep working; its text and pricing should be updated to the new product (Claude and ChatGPT, free individual use, Team €49 per month).
