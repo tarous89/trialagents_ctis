@@ -60,42 +60,32 @@ index 18da2a6..af930e9 100644
                ? "Your report plan is being prepared while you create your account."
                : intent === "max" ? "Create your account to begin a Max Report." : "One account for Intel.agent and Site.agent."
 diff --git a/app/components/AccountSettings.tsx b/app/components/AccountSettings.tsx
-index ea629d0..6a0595d 100644
+index ea629d0..22c8fa8 100644
 --- a/app/components/AccountSettings.tsx
 +++ b/app/components/AccountSettings.tsx
-@@ -42,7 +42,7 @@ async function readResponseData(response: Response) {
-   }
- }
- 
--function SettingsContent({combined=false,reviewAccess=false,embedded=false,projectId,pipelineSection}:{pipelineSection?:"account"|"support";combined?:boolean;reviewAccess?:boolean;embedded?:boolean;projectId?:string}) {
-+function SettingsContent({combined=false,reviewAccess=false,embedded=false,projectId,pipelineSection,product="pipeline"}:{pipelineSection?:"account"|"support";product?:"pipeline"|"ctis";combined?:boolean;reviewAccess?:boolean;embedded?:boolean;projectId?:string}) {
-   const [pricing, setPricing] = useState<{ site: { price: string; discountPercent: number }; intel: { price: string; discountPercent: number } } | null>(null);
-   const requestedTab=useSearchParams().get("tab");
-   const [tab, setTab] = useState<SettingsTab>(pipelineSection??(["subscription","billing"].includes(requestedTab??"")?"billing":"account"));
-@@ -68,7 +68,7 @@ function SettingsContent({combined=false,reviewAccess=false,embedded=false,proje
-     // eslint-disable-next-line react-hooks/set-state-in-effect
-     setSiteAgentHost(window.location.hostname.toLowerCase() === "site.trialagents.com");
-     function openLogin() {
--      if (pipelineSection && window.top) window.top.location.replace("/auth?mode=login&pipeline=1");
-+      if (pipelineSection && window.top) window.top.location.replace("/auth?mode=login&"+product+"=1");
-       else window.location.replace("/auth?mode=login");
-     }
-     void fetch(pipelineSection === "account" ? "/api/auth/session?profile=pipeline" : "/api/auth/session", { cache: "no-store" }).then(async (response) => {
 @@ -144,12 +144,12 @@ function SettingsContent({combined=false,reviewAccess=false,embedded=false,proje
          method: "POST",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({
 -          name: `${profile.firstName} ${profile.lastName}`.trim() || (pipelineSection ? "TrialAgents Pipeline user" : "TrialAgents Intel user"),
-+          name: `${profile.firstName} ${profile.lastName}`.trim() || (pipelineSection ? (product==="ctis" ? "TrialAgents CTIS user" : "TrialAgents Pipeline user") : "TrialAgents Intel user"),
++          name: `${profile.firstName} ${profile.lastName}`.trim() || (pipelineSection ? (ctisAccount() ? "TrialAgents CTIS user" : "TrialAgents Pipeline user") : "TrialAgents Intel user"),
            email: profile.email,
            message: supportMessage,
            formType: "support",
            interest: "intel",
 -          source: pipelineSection?"pipeline_app_support":"intel_app_support",
-+          source: pipelineSection?product+"_app_support":"intel_app_support",
++          source: pipelineSection?(ctisAccount()?"ctis":"pipeline")+"_app_support":"intel_app_support",
          }),
        });
        const data = await readResponseData(response);
+@@ -282,4 +282,7 @@ function SettingsContent({combined=false,reviewAccess=false,embedded=false,proje
+ 
+ 
+ 
++// TrialAgents CTIS embeds these settings at /ctis-account, as Pipeline does at /pipeline-account.
++function ctisAccount(){return typeof window!=="undefined"&&window.location.pathname.startsWith("/ctis-account")}
++
+ export default function SettingsWorkspace(props:Parameters<typeof SettingsContent>[0]){return <Suspense fallback={<p role="status">Opening settings…</p>}><SettingsContent {...props}/></Suspense>;}
 diff --git a/app/lib/oauth-account-lock.ts b/app/lib/oauth-account-lock.ts
 index cd63636..4242ca6 100644
 --- a/app/lib/oauth-account-lock.ts
@@ -144,19 +134,18 @@ index d3b5b16..70a2a86 100644
      ].includes(resource))
      || !scope
 diff --git a/app/oauth/authorize/route.ts b/app/oauth/authorize/route.ts
-index 88613b0..2494814 100644
+index 88613b0..03211f8 100644
 --- a/app/oauth/authorize/route.ts
 +++ b/app/oauth/authorize/route.ts
-@@ -4,7 +4,7 @@ import { randomUUID } from "node:crypto";
- import { eq, sql } from "drizzle-orm";
+@@ -5,6 +5,7 @@ import { eq, sql } from "drizzle-orm";
  import { NextRequest, NextResponse } from "next/server";
  import { authenticatedUser, opaqueToken, clearSessionCookie, deleteRequestSession } from "@/app/lib/auth";
--import { pipelineResource, oauthClaudeResource, oauthIssuer } from "@/app/lib/oauth-config";
-+import { pipelineResource, ctisResource, oauthClaudeResource, oauthIssuer } from "@/app/lib/oauth-config";
+ import { pipelineResource, oauthClaudeResource, oauthIssuer } from "@/app/lib/oauth-config";
++import { ctisResource } from "@/app/lib/ctis-resource";
  import { registeredClient } from "@/app/lib/oauth-server";
  import { validAuthorizationRequest } from "@/app/lib/oauth-validation";
  import { getDb } from "@/db";
-@@ -46,10 +46,11 @@ export async function GET(request: NextRequest) {
+@@ -46,10 +47,11 @@ export async function GET(request: NextRequest) {
    });
    const callbackHost = new URL(parameters.redirectUri).origin;
    const isPipeline=[pipelineResource(),pipelineResource(true)].includes(parameters.resource);
@@ -171,29 +160,32 @@ index 88613b0..2494814 100644
  }
  
  export async function POST(request: NextRequest) {
-@@ -118,11 +119,11 @@ export async function POST(request: NextRequest) {
+@@ -118,7 +120,10 @@ export async function POST(request: NextRequest) {
    return NextResponse.redirect(redirect, 303);
  }
  
 -function consentPage(requestId: string, clientName: string, callbackHost: string, email: string,connected=false,isPipeline=false) {
 +function consentPage(requestId: string, clientName: string, callbackHost: string, email: string,connected=false,isPipeline=false,isCtis=false) {
++  // TrialAgents CTIS wording replaces the research wording. It is swapped in here rather than written into the
++  // template lines below, because Pipeline's deploy-time patch (trialagents_pipeline pipeline-oauth.patch) edits them.
++  const html=(content:string,status:number,callbackOrigin?:string)=>page(isCtis?ctisWording(content):content,status,callbackOrigin);
    return html(`
      <div class="brand"><img src="/trialagents-mark-black.png" width="28" height="28" alt=""><span>TrialAgents</span></div>
      <h1>${connected?`${escapeHtml(clientName)} connected`:`Connect TrialAgents to ${escapeHtml(clientName)}`}</h1>
--    <p class="lead">${connected?'Your account is connected. ':''}${isPipeline?'Open and update your permitted Pipeline workspaces using your current team role.':'Save your search results, projects and custom views for later use in TrialAgents.'}</p>
-+    <p class="lead">${connected?'Your account is connected. ':''}${isCtis?'Plan, draft and check your TrialAgents CTIS projects, and the documents shared with you, within your access.':isPipeline?'Open and update your permitted Pipeline workspaces using your current team role.':'Save your search results, projects and custom views for later use in TrialAgents.'}</p>
-     <p class="identity">Continue as <strong>${escapeHtml(email)}</strong></p>
-     <form method="post" action="/oauth/authorize">
-       <input type="hidden" name="request_id" value="${escapeHtml(requestId)}">
-@@ -130,7 +131,7 @@ function consentPage(requestId: string, clientName: string, callbackHost: string
-       <div class="alternatives"><button class="text-action" type="submit" name="decision" value="change">Change account</button><button class="text-action" type="submit" name="decision" value="deny">Cancel</button></div>
-       <p id="status" role="status" aria-live="polite"></p>
-     </form>
--    <p class="privacy">Authorize ${escapeHtml(clientName)} to ${isPipeline?'read and manage Pipeline data within your permissions':'access and save research in this account'}. Disconnect anytime in TrialAgents Settings.</p>
-+    <p class="privacy">Authorize ${escapeHtml(clientName)} to ${isCtis?'read and save TrialAgents CTIS projects within your access':isPipeline?'read and manage Pipeline data within your permissions':'access and save research in this account'}. Disconnect anytime in TrialAgents Settings.</p>
-   `, 200, callbackHost);
+@@ -138,6 +143,13 @@ function oauthPage(title: string, message: string, status: number) {
+   return html(`<p class="eyebrow">Trial Agents · Intel MCP</p><h1>${escapeHtml(title)}</h1><p class="lead">${escapeHtml(message)}</p>`, status);
  }
  
++const CTIS_WORDING:[string,string][]=[
++  ['Save your search results, projects and custom views for later use in TrialAgents.','Plan, draft and check your TrialAgents CTIS projects, and the documents shared with you, within your access.'],
++  ['access and save research in this account','read and save TrialAgents CTIS projects within your access'],
++];
++function ctisWording(content:string){return CTIS_WORDING.reduce((text,[from,to])=>text.replace(from,to),content)}
++function page(content: string, status: number, callbackOrigin?: string) {return html(content,status,callbackOrigin)}
++
+ function html(content: string, status: number, callbackOrigin?: string) {
+   const nonce = opaqueToken();
+   // Chrome checks form-action across the full POST redirect chain. ChatGPT's
 diff --git a/next.config.ts b/next.config.ts
 index d5fc576..7d5f4eb 100644
 --- a/next.config.ts
@@ -252,15 +244,14 @@ index 98e6c59..af785e2 100644
 +  startCtisWorker();
 +}
 diff --git a/tests/oauth-journey.test.mjs b/tests/oauth-journey.test.mjs
-index 4eb83cf..2dba51a 100644
+index 4eb83cf..58d9a29 100644
 --- a/tests/oauth-journey.test.mjs
 +++ b/tests/oauth-journey.test.mjs
-@@ -15,7 +15,7 @@ test('OAuth continuation, account binding and one-use approval', async t => {
-  '@/app/lib/oauth-connections':`export const hasChatGPTConnection=async()=>globalThis.oauthFixture.connected===true;export const hasClaudeConnection=async()=>globalThis.oauthFixture.claudeConnected===true;`,
-  'next/server':`export const NextResponse={redirect:(url,status=307)=>new Response(null,{status,headers:{location:String(url)}})};`,
-  '@/app/lib/auth':`export const authenticatedUser=async()=>globalThis.oauthFixture.user; export const opaqueToken=()=>crypto.randomUUID();export const hashToken=x=>'hash-'+x;export const deleteRequestSession=async()=>{globalThis.oauthFixture.user=null};export const clearSessionCookie=()=>{globalThis.oauthFixture.cleared=true};`,
-- '@/app/lib/oauth-config':`export const oauthIssuer=()=> 'https://intel.trialagents.com';export const pipelineResource=(claude=false)=> 'https://mcp.trialagents.com/'+(claude?'pipeline-claude':'pipeline')+'/mcp';export const oauthClaudeResource=()=> 'https://mcp.trialagents.com/claude/mcp';`,
-+ '@/app/lib/oauth-config':`export const oauthIssuer=()=> 'https://intel.trialagents.com';export const pipelineResource=(claude=false)=> 'https://mcp.trialagents.com/'+(claude?'pipeline-claude':'pipeline')+'/mcp';export const ctisResource=()=> 'https://mcp.trialagents.com/ctis/claude';export const oauthClaudeResource=()=> 'https://mcp.trialagents.com/claude/mcp';`,
-  '@/app/lib/oauth-account-lock':`export const lockResearchOAuthAccount=async()=>{};`,
-  '@/app/lib/oauth-server':`export const registeredClient=async()=>({clientName:'ChatGPT',redirectUris:globalThis.oauthFixture.redirectUris||['https://client.invalid/callback']});`,
+@@ -21,6 +21,7 @@ test('OAuth continuation, account binding and one-use approval', async t => {
   '@/app/lib/oauth-validation':`export const validAuthorizationRequest=p=>({clientId:p.get('client_id'),redirectUri:p.get('redirect_uri'),state:p.get('state'),codeChallenge:p.get('code_challenge'),resource:p.get('resource'),scope:p.get('scope')});`,
+  'drizzle-orm':`export const eq=(a,b)=>b;export const sql=()=>null;`,
+  '@/db/schema':`export const oauthAuthorizationRequests={kind:'request',id:'id'};export const oauthAuthorizationCodes={kind:'code'};`,
++ '@/app/lib/ctis-resource':`export const ctisResource=()=> 'https://mcp.trialagents.com/ctis/claude';`,
+  '@/db':`const f=()=>globalThis.oauthFixture;const db={execute:async()=>{},select:()=>({from:()=>({where:id=>({limit:async()=>f().record?.id===id?[f().record]:[]})})}),insert:table=>({values:async v=>{if(table.kind==='request')f().record=v;else f().codes.push(v)}}),delete:()=>({where:async()=>{f().record=null}}),transaction:async fn=>fn(db)};export const getDb=()=>db;`
+  };
+  await build({stdin:{contents:"export * from './app/lib/oauth-return.ts'; export * from './app/oauth/authorize/route.ts';",resolveDir:process.cwd()},bundle:true,platform:'node',format:'esm',outfile:join(dir,'api.mjs'),plugins:[{name:'fixtures',setup(b){b.onResolve({filter:/.*/},a=>modules[a.path]?{path:a.path,namespace:'fixture'}:null);b.onLoad({filter:/.*/,namespace:'fixture'},a=>({contents:modules[a.path],loader:'ts'}));}}]});

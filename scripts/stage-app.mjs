@@ -19,6 +19,7 @@ for(const dir of ['app/server','mcp','catalog'])await cp(path.join(root,dir),pat
 await cp(path.join(src,'types'),lib,{recursive:true})
 await cp(path.join(src,'lib/adapter.ts'),path.join(lib,'adapter.ts'))
 await cp(path.join(src,'worker.mjs'),path.join(host,'scripts/ctis-worker.mjs'))
+await cp(path.join(src,'tests'),path.join(host,'tests'),{recursive:true})
 await mkdir(path.join(host,'public/ctis-assets'),{recursive:true})
 for(const f of ['ctis.html','ctis.js','ctis-claude.html'])await cp(path.join(root,'dist',f),path.join(host,'public/ctis-assets',f))
 const sha=execFileSync('git',['-C',root,'rev-parse','HEAD']).toString().trim()
@@ -29,4 +30,14 @@ const pkgPath=path.join(host,'package.json'),pkg=JSON.parse(await readFile(pkgPa
 for(const name of ['zod','yaml','jszip','@xmldom/xmldom','mammoth','pdfjs-dist','@modelcontextprotocol/server'])if(!pkg.dependencies[name])pkg.dependencies[name]=ours[name]
 pkg.dependencies=Object.fromEntries(Object.entries(pkg.dependencies).sort(([a],[b])=>a<b?-1:1))
 await writeFile(pkgPath,JSON.stringify(pkg,null,2)+'\n')
+// Render stages Pipeline onto the same checkout at every deploy (trialagents_pipeline scripts/stage-app.mjs), and its
+// patches must still apply. With PIPELINE_SRC set to a Pipeline checkout at the commit Render pins, check that here.
+if(process.env.PIPELINE_SRC){
+  for(const patch of ['pipeline-oauth.patch','pipeline-account.patch']){
+    const file=path.join(process.env.PIPELINE_SRC,'integration/shared-web',patch)
+    const check=(...args)=>execFileSync('git',['-C',host,'apply','--check',...args,file],{stdio:'pipe'})
+    try{check('--reverse')}catch{try{check()}catch(e){throw new Error('Pipeline\'s '+patch+' no longer applies: '+String(e.stderr))}}
+  }
+  console.log('Pipeline deploy patches still apply')
+}
 console.log('Staged TrialAgents CTIS '+sha.slice(0,7)+' into '+host+'. Run npm install there.')

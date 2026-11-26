@@ -32,6 +32,12 @@ cd /path/to/intel_agent_app && npm install && npx tsc --noEmit && npx next build
 
 `app/lib/ctis/SOURCE.md` records the CTIS commit that was vendored. Edit CTIS here, never in the vendored copy.
 
+**Pipeline is staged at deploy time.** Render's build command for `intel-agent-app` runs Pipeline's `scripts/stage-app.mjs` (at a pinned commit) on the `main` checkout, which applies `pipeline-oauth.patch` and `pipeline-account.patch` to shared files (`app/oauth/authorize/route.ts`, `app/components/AccountSettings.tsx`, `app/lib/oauth-config.ts`, `app/components/ChatGPTConnection.tsx`, `tests/oauth-journey.test.mjs`). `host.patch` must leave every line those patches change or use as context exactly as it is, or the deploy fails. Check before opening a shared web PR:
+
+```bash
+PIPELINE_SRC=/path/to/trialagents_pipeline-at-the-pinned-commit node scripts/stage-app.mjs /path/to/intel_agent_app
+```
+
 ## 2. Settings
 
 Shared web service (`intel-agent-app`):
