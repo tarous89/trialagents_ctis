@@ -72,7 +72,7 @@ export const inputs={
     claims:z.array(claim).max(2000).optional(), findings:z.array(finding).max(200).default([]),
     addressed:z.array(addressed).max(200).default([]),
     fill:z.record(z.string(),z.unknown()).optional(), catalog:z.array(z.strictObject({id:text(200),version:text(50)})).max(50).default([]),
-    note:text(1000).default('')
+    note:text(1000).default(''), continue_past:z.boolean().default(false)
   }).refine(v=>!!v.content!==!!v.changes,'send either content or changes'),
   'version.restore':z.strictObject({deliverable,n:z.int().positive(),base:z.int().positive()}),
   'deliverable.read':z.strictObject({deliverable,n:z.int().positive().optional()}),

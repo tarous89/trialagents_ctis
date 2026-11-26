@@ -71,7 +71,7 @@ test('a finding blocks the document; the loop moves on to the next document',asy
   assert.equal(qc.status.status,'action_required')
   assert.deepEqual(qc.findings,[{number:1,category:'conflict',text:'The source caps reimbursement at €50 for documented expenses.'}])
   assert.equal(qc.next.deliverable,'D07-DR')
-  await assert.rejects(run(owner,w('version.save',{deliverable:'D04-ST',base:0,content:doc(section('S01','x'))}),'Claude'),err(409,/needs action/))
+  await assert.rejects(run(owner,w('version.save',{deliverable:'D04-ST',base:0,content:doc(section('S01','x'))}),'Claude'),err(409,/needs action.*ask whether to move on/))
 })
 
 test('people-only actions are refused from an assistant; ignore and continue is per version',async()=>{
@@ -189,16 +189,32 @@ test('sources: project list, document overrides and the snapshot on each version
   assert.deepEqual((await run(owner,r('deliverable.read',{deliverable:'D07-DR'}))).version.resources.map(x=>x.name),['EX-101 protocol'],'snapshots never change')
 })
 
-test('duplicate keeps plan and current drafts as v1, not comments, approvals or shares',async()=>{
+test('duplicate copies the plan and the sources and templates, but no deliverables',async()=>{
   await assert.rejects(run(owner,w('project.duplicate',{code:'EX-101-SM1',name:'EX-101 substantial modification 1'}),'Claude'),err(403))
   const copy=await run(owner,w('project.duplicate',{code:'EX-101-SM1',name:'EX-101 substantial modification 1'}),'web')
   const read=await run(owner,{op:'project.read',project:copy.project.id,input:{}})
   assert.deepEqual(read.documents.map(d=>d.id),['D01','D04','D07'])
-  const d01=read.documents.find(d=>d.id==='D01')
-  assert.deepEqual(d01.cells.map(c=>c.version),[1,1,1,null]);assert.equal(d01.final.status,'awaiting_approval')
+  assert.ok(read.documents.every(d=>d.cells.every(c=>c.version===null)))
+  assert.equal(read.documents[0].cells.at(-1).status,'not_applicable')
+  assert.deepEqual(read.next,{deliverable:'D01-DR',document:'D01',step:'DR'})
   const d04=await run(owner,{op:'deliverable.read',project:copy.project.id,input:{deliverable:'D04-QC'}})
-  assert.ok(d04.threads.every(t=>t.kind==='finding'))
-  await assert.rejects(run(editor,{op:'project.read',project:copy.project.id,input:{}}),err(404))
+  assert.equal(d04.version,null);assert.deepEqual(d04.threads,[])
+  assert.deepEqual(d04.resources.map(x=>x.name),['Country operations manual'],'document overrides are copied')
+  await assert.rejects(run(editor,{op:'project.read',project:copy.project.id,input:{}}),err(404),'shares are not copied')
+})
+
+test('when the user asks to move on, the assistant runs the next step and flags what is unresolved',async()=>{
+  await run(owner,w('version.save',{deliverable:'D07-CL',base:0,content:doc(section('S01','Contact section missing.')),
+    findings:[{category:'missing',text:'Provide the local study contact.',section:'S01'}]}),'Claude')
+  const ask={deliverable:'D07-QC',base:0,content:doc(section('S01','Visita en la semana 12.'))}
+  await assert.rejects(run(owner,w('version.save',ask),'Claude'),e=>e.status===409&&e.details.blocked_by[0]==='D07-CL')
+  const moved=await run(owner,w('version.save',{...ask,continue_past:true}),'Claude')
+  assert.deepEqual(moved.past_issues,[{deliverable:'D07-CL',version:1,source_changed:false,open:[{number:1,category:'missing',text:'Provide the local study contact.'}]}])
+  const d07=(await run(owner,r('project.read'))).documents.find(d=>d.id==='D07')
+  assert.deepEqual(d07.cells.slice(1,3).map(c=>[c.status,c.continued]),[['action_required',true],['done',false]],'the earlier step stays action required')
+  assert.deepEqual((await run(owner,r('deliverable.read',{deliverable:'D07-QC'}))).version.past_issues[0].deliverable,'D07-CL')
+  const {entries}=await run(owner,{op:'logs',input:{limit:5}})
+  assert.ok(entries.some(e=>e.action==='continue.set'&&e.source==='Claude'&&e.details.asked_in_chat))
 })
 
 test('every change is in Logs with who and through which client',async()=>{

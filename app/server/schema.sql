@@ -50,6 +50,7 @@ CREATE TABLE IF NOT EXISTS ctis.version (
  project_id uuid NOT NULL, document_id text NOT NULL, step_id text NOT NULL, n integer NOT NULL CHECK(n>0),
  content jsonb NOT NULL, claims jsonb NOT NULL DEFAULT '[]', findings jsonb NOT NULL DEFAULT '[]', fill jsonb, file_id uuid,
  basis jsonb, resources jsonb NOT NULL DEFAULT '[]', catalog jsonb NOT NULL DEFAULT '[]', note text NOT NULL DEFAULT '',
+ past_issues jsonb NOT NULL DEFAULT '[]', -- earlier steps the user chose to move past, with their open issues
  restored_from integer, actor text NOT NULL, actor_name text NOT NULL, source text NOT NULL,
  created_at timestamptz NOT NULL DEFAULT now(),
  PRIMARY KEY(project_id,document_id,step_id,n),

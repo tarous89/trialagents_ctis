@@ -6,7 +6,7 @@ This is the reference for building TrialAgents CTIS: the hosted app, its databas
 
 | Term | Meaning |
 |---|---|
-| **Project** | One CTIS submission. One project has exactly one plan. A new submission or amendment is a new project, usually created by duplicating one. |
+| **Project** | One CTIS submission. One project has exactly one plan. A new submission or amendment is a new project, usually created by duplicating one. Duplication copies the details, sources and templates and the plan, not the deliverables. |
 | **Plan** | The documents of the project (rows) × the steps (columns), plus the pinned final document. |
 | **Document** | One output for a part, country, language and variant, for example "Participant information & consent · Germany · German". Has a code such as `D04`. |
 | **Step** | A stage every document goes through. Default: Draft, Checklist, Source QC, Style. Steps are plan-wide; they can be paused for the plan or marked not applicable for a single document. |
@@ -52,7 +52,7 @@ Specified in [MCP.md §5](MCP.md#5-the-loop). In short:
 1. **Plan.** The assistant reads the planning guide and submission requirements from the catalog and saves the plan. It opens in the workspace at once; there is no confirmation step. The user asks for changes in the chat and says when to start.
 2. **Order.** Part I first, then each country's documents top to bottom. A document runs through all its steps before the next document starts.
 3. **One step at a time, context from the server.** Each step's context comes from `get_ctis_step`, never from chat history, so a run can resume in any conversation.
-4. **Blocks.** Any unresolved finding or comment on the current version blocks that document (missing data, conflicting information, decision needed, open comment, source changed). The loop moves to the next document. **Ignore and continue** (a person, this version only) unblocks it.
+4. **Blocks.** Any unresolved finding or comment on the current version blocks that document (missing data, conflicting information, decision needed, open comment, source changed). The loop moves to the next document. **Ignore and continue** (this version only) unblocks it: a person clicks it in the app, or asks the assistant to move on, which records it and flags the unresolved issues on the next version.
 5. **No cascade.** A new version of an earlier step does not rerun later steps or other documents; those show "Source changed" until the user asks for a rerun.
 6. **Revise.** The server sends the version, open comments and source changes; the assistant returns only the changed sections.
 7. **Approve.** Only the project owner, in the app. Never a tool.

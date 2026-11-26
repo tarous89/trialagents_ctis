@@ -57,7 +57,7 @@ Why read tools are split: each has one clear job and its own input, which keeps 
 Done in the app (browser or the workspace inside Claude) through the app's own API, never by Claude:
 
 - Approve final document
-- Ignore and continue / Undo
+- Ignore and continue / Undo as a button. In the chat, the user can ask Claude to move on past unresolved issues; see §5.
 - Share, change or revoke access, invite, billing
 - Delete or archive a project, restore a version, duplicate a project
 - Upload files (sources, Word layouts)
@@ -96,7 +96,9 @@ The workspace inside Claude talks to `ctis.trialagents.com` directly with a shor
 - the first step of the next document, when this document reached its final step or is blocked, or
 - `stop`, with a summary, when every document is final or blocked.
 
-**Running a step needs its input.** A step works on the current version of the step before it, so that step must have a version, and nothing earlier in the document may be blocking (unless a person used Ignore and continue). The server refuses the save otherwise and says which deliverable to look at.
+**Running a step needs its input.** A step works on the current version of the step before it, so that step must have a version.
+
+**Moving on when the user asks.** The loop never runs past unresolved issues on its own. If the user asks Claude to go to the next step anyway, Claude first tells them what is unresolved, then saves with `continue_past: true`. The server records an Ignore and continue on the earlier step for its current version (logged as asked in the chat), and the new version lists those unresolved issues so they stay visible. Without `continue_past` the save is refused with the list of what needs action.
 
 **What blocks a document.** Any unresolved finding or comment on the current version: missing data, conflicting information, decision needed, open comment (from a person or the assistant), source changed. The loop then moves to the next document, so as much work as possible gets done. A person unblocks with **Ignore and continue** (this version only) or by resolving, or asks Claude to revise.
 

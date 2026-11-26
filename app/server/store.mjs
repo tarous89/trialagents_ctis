@@ -3,7 +3,7 @@ import {z} from 'zod'
 import {check,parse,inputs,splitDeliverable,stepTypes,stepNames,uuid} from './rules.mjs'
 import {projectAccess,requireOwner,requireEdit,requireComment,teamActive} from './access.mjs'
 import {loadBoard,visibleBoard} from './board.mjs'
-import {cell,documentStatuses,finalStatus,nextStep,canApprove,orderedDocuments,ACTION_REQUIRED,APPROVED} from './status.mjs'
+import {cell,documentStatuses,finalStatus,nextStep,canApprove,orderedDocuments,issueCount,ACTION_REQUIRED,APPROVED} from './status.mjs'
 import {applyChanges} from './content.mjs'
 
 const json=JSON.stringify
@@ -130,21 +130,8 @@ const ops={
     await q('INSERT INTO ctis.step(project_id,id,type,name,instruction,position,paused) SELECT $2,id,type,name,instruction,position,paused FROM ctis.step WHERE project_id=$1 AND removed_at IS NULL',[src.id,id])
     await q('INSERT INTO ctis.cell_na SELECT $2,n.document_id,n.step_id FROM ctis.cell_na n JOIN ctis.document d ON d.project_id=$2 AND d.id=n.document_id JOIN ctis.step s ON s.project_id=$2 AND s.id=n.step_id WHERE n.project_id=$1',[src.id,id])
     await q('INSERT INTO ctis.document_resource_override SELECT $2,o.document_id,o.resource_id,o.op FROM ctis.document_resource_override o JOIN ctis.document d ON d.project_id=$2 AND d.id=o.document_id WHERE o.project_id=$1',[src.id,id])
-    // Current drafts come across as v1. A basis that pointed at the input's current version keeps pointing at its copy.
-    const board=await loadBoard(q,src),author=[c.user.id,person(c.user),c.source]
-    for(const [key,cur] of board.current){
-      const [doc,step]=key.split('|')
-      if(!board.documents.some(d=>d.id===doc)||!board.steps.some(s=>s.id===step))continue
-      const basis=cur.basis?{step:cur.basis.step,n:board.current.get(cell(doc,cur.basis.step))?.n===cur.basis.n?1:0}:null
-      await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,basis,resources,catalog,note,actor,actor_name,source)
-        SELECT $2,document_id,step_id,1,content,claims,fill,$5,resources,catalog,$6,$7,$8,$9 FROM ctis.version WHERE project_id=$1 AND document_id=$3 AND step_id=$4 AND n=$10`,
-        [src.id,id,doc,step,json(basis),'Copied from '+src.code+' '+doc+'-'+step+' v'+cur.n,...author,cur.n])
-      // Open findings stay with the content; comments, approvals and sharing are not copied.
-      await q(`INSERT INTO ctis.thread(id,project_id,document_id,step_id,number,kind,category,version_n,anchor,text,key,actor,actor_name,source)
-        SELECT gen_random_uuid(),$2,document_id,step_id,row_number() OVER (ORDER BY number),kind,category,1,anchor,text,key,actor,actor_name,source
-        FROM ctis.thread WHERE project_id=$1 AND document_id=$3 AND step_id=$4 AND kind='finding' AND status='open'`,[src.id,id,doc,step])
-      await snapshotFindings(q,id,doc,step,1)
-    }
+    // Only the plan and the sources and templates are copied: no deliverables, comments, approvals or shares.
+    await q('INSERT INTO ctis.plan_revision(project_id,rev,body,actor,actor_name,source) SELECT $2,1,body,$3,$4,$5 FROM ctis.plan_revision WHERE project_id=$1 AND rev=$6',[src.id,id,c.user.id,person(c.user),c.source,src.plan_rev])
     await audit(c,'project.duplicated',p.code,{from:src.code,from_project:src.id},p)
     return {project:projectView(p)}
   }},
@@ -210,7 +197,7 @@ const ops={
     const board=await loadBoard(c.q,c.access.project),{doc,step,d,s,key}=deliverableOf(c,board,c.input.deliverable),pid=c.access.project.id
     const versions=await c.q('SELECT n,created_at,actor_name,source,restored_from,note FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 ORDER BY n',[pid,doc,step])
     const n=c.input.n??versions.at(-1)?.n
-    const version=n?await one(c.q,'SELECT n,content,claims,fill,file_id,basis,resources,catalog,note,restored_from,actor_name,source,created_at FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[pid,doc,step,n]):null
+    const version=n?await one(c.q,'SELECT n,content,claims,fill,file_id,basis,resources,catalog,note,past_issues,restored_from,actor_name,source,created_at FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[pid,doc,step,n]):null
     check(!c.input.n||version,'Version '+c.input.n+' not found',404)
     const threads=await c.q(`SELECT t.number,t.kind,t.category,t.version_n,t.anchor,t.text,t.status,t.mentions,t.actor_name,t.source,t.created_at,t.resolved_by,
         coalesce((SELECT json_agg(json_build_object('text',r.text,'by',r.actor_name,'source',r.source,'at',r.created_at) ORDER BY r.id) FROM ctis.thread_reply r WHERE r.thread_id=t.id),'[]') AS replies
@@ -231,7 +218,19 @@ const ops={
     const applicable=statuses.filter(x=>x.status!=='not_applicable'),idx=applicable.findIndex(x=>x.step===step),prev=applicable[idx-1]
     if(prev){
       check(prev.version,'Run '+doc+'-'+prev.step+' first: this step works on its output.',409,{blocked_by:doc+'-'+prev.step})
-      check(!st.blockedBy,doc+'-'+st.blockedBy+' needs action. Resolve it, revise it, or use Ignore and continue in TrialAgents CTIS.',409,{blocked_by:doc+'-'+st.blockedBy})
+    }
+    // Earlier steps with unresolved issues: refused unless the user asked to move on; then they are continued and flagged.
+    const pastIssues=applicable.slice(0,Math.max(idx,0)).filter(x=>x.version&&!x.continued&&issueCount(board,doc,x.step)>0)
+    let flagged=[]
+    if(pastIssues.length){
+      const codes=pastIssues.map(x=>doc+'-'+x.step)
+      check(i.continue_past,codes.join(', ')+' needs action. Tell the user what is unresolved and ask whether to move on anyway; if they agree, save again with continue_past: true.',409,{blocked_by:codes})
+      for(const x of pastIssues){
+        await q('INSERT INTO ctis.continued(project_id,document_id,step_id,version_n,actor) VALUES($1,$2,$3,$4,$5) ON CONFLICT(project_id,document_id,step_id) DO UPDATE SET version_n=EXCLUDED.version_n,actor=EXCLUDED.actor,created_at=now()',[pid,doc,x.step,x.version,c.user.id])
+        const open=await q("SELECT number,category,text FROM ctis.thread WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND status='open' ORDER BY number",[pid,doc,x.step])
+        flagged.push({deliverable:doc+'-'+x.step,version:x.version,source_changed:x.sourceChanged,open})
+        await audit(c,'continue.set',doc+'-'+x.step,{n:x.version,asked_in_chat:true,for:i.deliverable})
+      }
     }
     const basis=prev?{step:prev.step,n:prev.version}:null
     let content=i.content,claims=i.claims??[],touched=null
@@ -244,9 +243,9 @@ const ops={
     const ids=new Set(content.sections.map(s=>s.id))
     for(const x of [...claims,...i.findings])check(!x.section||ids.has(x.section),'Unknown section '+x.section)
     const n=curN+1
-    await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,basis,resources,catalog,note,actor,actor_name,source)
-      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)`,
-      [pid,doc,step,n,json(content),json(claims),i.fill?json(i.fill):null,json(basis),json(await effectiveResources(q,pid,doc)),json(i.catalog),i.note,c.user.id,person(c.user),c.source])
+    await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,basis,resources,catalog,note,past_issues,actor,actor_name,source)
+      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15)`,
+      [pid,doc,step,n,json(content),json(claims),i.fill?json(i.fill):null,json(basis),json(await effectiveResources(q,pid,doc)),json(i.catalog),i.note,json(flagged),c.user.id,person(c.user),c.source])
     // Findings: re-reported keys keep their thread and number; in a revision, findings on untouched sections carry over; others are superseded.
     const open=await q("SELECT id,number,key,anchor FROM ctis.thread WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND kind='finding' AND status='open'",[pid,doc,step])
     const keep=new Set(),saved=[]
@@ -277,7 +276,7 @@ const ops={
     await touch(c)
     await audit(c,'version.saved',i.deliverable,{n,mode:i.changes?'changes':'full',findings:saved.length,addressed:i.addressed.map(a=>a.thread)})
     const after=await loadBoard(q,c.access.project)
-    return {deliverable:i.deliverable,n,status:documentStatuses(after,doc).find(x=>x.step===step),findings:saved,
+    return {deliverable:i.deliverable,n,status:documentStatuses(after,doc).find(x=>x.step===step),findings:saved,past_issues:flagged,
       next:c.access.owner||c.access.projectRole==='editor'?nextStep(after):null}
   }},
 

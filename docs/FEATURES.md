@@ -29,7 +29,7 @@ For each project you can:
 
 - **Open it** to see its document plan.
 - **Edit its details:** name, study code, sponsor, EU CT number (once CTIS assigns it), member states, and the sources and templates used for the whole project.
-- **Duplicate it.** The copy keeps the details, the sources and templates and the document plan with its current drafts. Approvals, comments and sharing are not copied.
+- **Duplicate it.** The copy keeps the details, the sources and templates and the document plan (documents and steps). It starts with no deliverables: no drafts, comments, approvals or sharing are copied.
 
 Member states are chosen from a searchable list of all countries in CTIS: the 27 EU countries plus Iceland, Liechtenstein and Norway.
 
