@@ -59,7 +59,7 @@ Schema `ctis` in the shared application database (`intel-agent-control-db`), add
 | `resource` | `id`, `owner_id`, `category` (source, template), name, type, version, document date, scope, notes, `file_mode`, link, `file_id`, who, via |
 | `resource_text` | `(resource_id, chunk)`: locator (section, page, table), text, `tsvector` for `read_ctis_source` |
 | `project_resource`, `document_resource_override` | As TECHNICAL §4 |
-| `file` | `id`, owner, name, MIME type, size, SHA-256, storage key |
+| `file` | `id`, owner, name, MIME type, size, SHA-256, contents (`bytea`, in the database for now) |
 | `share_grant` | As TECHNICAL §5 |
 | `catalog_release`, `catalog_item` | Release (git SHA, published at); item (id, category, version, header, body, file) |
 | `audit`, `receipt`, `mail`, `stripe_event`, `frame_access`, `preference` | As Pipeline |
@@ -151,5 +151,5 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 11. Before phase 10
 
-- **File storage.** The shared database (`bytea`, as the old app did) is simplest. Private object storage (S3-compatible, Frankfurt) suits protocols and IBs of tens of MB better. Recommended: object storage, behind `files.mjs` so it can change.
+- **File storage.** Decided: files are stored in the Render database (`bytea` in `ctis.file`) for now. `files.mjs` is the only module that reads or writes them, so moving to S3-compatible storage later is a change to that module plus a one-off copy. Revisit when storage size or user numbers grow.
 - **Shared web and MCP repositories.** Phase 10 patches the shared web service (`intel_agent_app`) and MCP service (`intel_mcp`) as Pipeline does. This session cannot see those repositories, so the patches will be written against Pipeline's integration files and need checking against the live services.
