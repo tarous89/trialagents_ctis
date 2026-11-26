@@ -27,7 +27,9 @@ python3 prototype/source/build.py
 
 ## Develop
 
-Use Node 24. `npm ci` then `npm test`. `npm run check:catalog` validates `catalog/`. Tests run the server against an in-process PostgreSQL (PGlite), so no database is needed.
+Use Node 24. `npm ci` then `npm test` (the browser tests use Chromium through `playwright-core`; in a fresh environment run `npx playwright-core install chromium` once). `npm run check:catalog` validates `catalog/`.
+
+`npm run dev` starts the app at http://localhost:4600 on an in-memory database with the catalog and fictional example data (EX-101, a shared BX-212). Add `?as=sofia` (a commenter on one EX-101 document) or `?as=maria` (owner of BX-212) to switch the signed-in person. `npm run build` writes `dist/ctis.html` and `dist/ctis.js`. Tests run the server against an in-process PostgreSQL (PGlite), so no database is needed.
 
 | Path | What it is |
 |---|---|
@@ -40,6 +42,8 @@ Use Node 24. `npm ci` then `npm test`. `npm run check:catalog` validates `catalo
 | `app/server/sources.mjs` | Stored sources: text extraction (PDF, Word, text) with page or section locators, search |
 | `app/server/step-context.mjs` | The bundle `get_ctis_step` returns: instructions, content template, styling, planning checklist, input, sources, threads |
 | `mcp/tools.mjs`, `mcp/http.mjs` | The MCP server for Claude: six tools (five read-only, one write), OAuth audience and discovery |
+| `app/server/api.mjs` | The browser app's API (`/api/ctis`, downloads, Download all) |
+| `app/web/` | The browser app: shell, Projects, Plan, the deliverable reader, Sources, Templates, Settings. Styles and icons come from the approved prototype |
 | `catalog/` | The catalog itself (see its README) |
 
 ## Next step

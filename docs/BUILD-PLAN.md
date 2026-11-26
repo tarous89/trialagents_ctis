@@ -134,7 +134,7 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 10. Phases
 
-Status: phases 1–5 are done (see `tests/`). The app-only frame tool for the workspace inside Claude comes with phase 7.
+Status: phases 1–6 are done (see `tests/`). The app-only frame tool for the workspace inside Claude comes with phase 7. Left for later phases on the browser side: Team plan checkout and email notifications (phase 8), the plugin directory links behind "Open in Claude/ChatGPT" (phase 9; they point to the connectors page until then), and profile editing, which belongs to the shared TrialAgents account page (phase 10).
 
 | Phase | Work | Done when |
 |---|---|---|

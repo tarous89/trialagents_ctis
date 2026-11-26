@@ -1,0 +1,39 @@
+/* Additions to the prototype styles for production-only elements. */
+.pl a.btn,.ctis a.btn{text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.assistant-actions a.assistant-link{text-decoration:none}
+[data-only-assistant]{opacity:.55;cursor:not-allowed}
+.ctis .missingInfo,.pl .missingInfo{background:#9ef0f7;color:inherit;padding:0 2px;border-radius:2px}
+.ctis .paper .prose p{margin:0 0 10px}
+.ctis .paper .prose ul,.ctis .paper .prose ol{margin:0 0 10px 1.2em;padding:0}
+.ctis .paper .prose h4{margin:12px 0 6px;font-size:1rem}
+.ctis .paper table.visitTable{border-collapse:collapse;width:100%;margin:6px 0 12px}
+.ctis .paper table.visitTable th,.ctis .paper table.visitTable td{border:1px solid #c9d3dd;padding:6px 9px;text-align:left;vertical-align:top;font-size:.95rem}
+.ctis .paper table.visitTable tr:first-child th{background:#eaf3fc}
+.ctis .paper table.infoTable th{background:transparent;font-weight:600;width:42%}
+.ctis .paper .caption{color:#5d6b7a;font-style:italic;font-size:.9rem}
+.ctis .paper .noteBox{border-radius:6px;padding:10px 12px;margin:6px 0 12px;background:#eaf3fc}
+.ctis .paper .noteBox.warning{background:#fef2f2}
+.ctis .paper .noteBox.summary{background:#ecfdf5}
+.ctis .paper .timeline{display:flex;align-items:stretch;gap:6px;margin:8px 0 10px;flex-wrap:wrap}
+.ctis .paper .tlStep{flex:1;min-width:90px;background:#dcedfc;border-radius:6px;padding:8px;text-align:center}
+.ctis .paper .tlStep strong{display:block;color:#034b8a}
+.ctis .paper .tlStep small{display:block;color:#3d4d60}
+.ctis .paper .tlArrow{align-self:center;color:#034b8a;font-weight:700}
+.ctis .paper .pagebreak{border:0;border-top:1px dashed #c9d3dd;margin:16px 0}
+.ctis .para{cursor:pointer}
+.ctis .claimtag{display:inline-flex;align-items:center;gap:3px;font-size:.75rem;color:#536478;margin-left:6px}
+.ctis .claimtag svg{width:13px;height:13px}
+.ctis .evidenceCard .claimtext{margin:4px 0 6px;font-weight:500}
+.ctis .notice{margin:8px 0;padding:8px 10px;border-radius:6px;background:#e9edf3;color:#3d4d60;font-size:.85rem;display:flex;gap:6px;align-items:flex-start}
+.ctis .reslist{list-style:none;padding:0;margin:0 0 12px}
+.ctis .reslist li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #e1e6ec}
+.pl .checkgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:4px 12px;max-height:180px;overflow:auto;padding:4px 0}
+.pl .checklist{display:flex;flex-direction:column;gap:4px;max-height:200px;overflow:auto}
+.pl .chk{display:flex;gap:6px;align-items:center;font-weight:400}
+.pl .rowbtns{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end;margin-top:12px}
+.ctis .stepline{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #e1e6ec}
+.ctis .stepline .lead{flex:1}
+.ctis .stepacts{display:flex;gap:4px}
+.ctis #overlay .modalbody.pad,.ctis #overlay form.pad{padding:18px 22px}
+.pl table.logs td{font-size:.875rem}
+@media (max-width:600px){.ctis .paper .timeline{flex-direction:column}.ctis .paper .tlArrow{transform:rotate(90deg)}}

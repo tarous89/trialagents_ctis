@@ -8,7 +8,7 @@ export async function projectAccess(q,user,projectId,{lock=false,open=true}={}){
   const [project]=await q('SELECT * FROM ctis.project WHERE id=$1 AND archived_at IS NULL'+(lock?' FOR UPDATE':''),[projectId])
   check(project,'Project not found',404)
   if(project.owner_id===user.id)return access(project,'owner',[])
-  const grants=await q(`SELECT g.id,g.scope,g.document_id,g.step_id,g.role,g.first_opened_at FROM ctis.share_grant g JOIN ctis.account a ON a.user_id=g.owner_id
+  const grants=await q(`SELECT g.id,g.scope,g.document_id,g.step_id,g.role,g.first_opened_at,g.created_at FROM ctis.share_grant g JOIN ctis.account a ON a.user_id=g.owner_id
     WHERE g.project_id=$1 AND g.revoked_at IS NULL AND (g.grantee_user_id=$2 OR lower(g.grantee_email)=lower($3))
       AND a.plan='team' AND (a.paid_until IS NULL OR a.paid_until>now())`,[projectId,user.id,user.email])
   check(grants.length,'Project not found',404)

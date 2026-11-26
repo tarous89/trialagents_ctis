@@ -91,7 +91,11 @@ const ops={
     const out=async(p,extra)=>{const a=await projectAccess(c.q,c.user,p.id,{open:false});return projectView(p,{...extra,...summarize(visibleBoard(await loadBoard(c.q,p),a))})}
     const sources=new Map((await c.q('SELECT project_id,count(*)::int AS n FROM ctis.project_resource WHERE project_id=ANY($1::uuid[]) GROUP BY 1',[own.map(p=>p.id)])).map(r=>[r.project_id,r.n]))
     return {projects:await Promise.all(own.map(p=>out(p,{resources:sources.get(p.id)||0}))),
-      shared:await Promise.all(shared.map(p=>out(p,{owner_name:p.owner_name})))}
+      shared:await Promise.all(shared.map(async p=>{
+        const a=await projectAccess(c.q,c.user,p.id,{open:false})
+        const names=new Map((await c.q('SELECT id,name FROM ctis.document WHERE project_id=$1',[p.id])).map(d=>[d.id,d.name]))
+        return {...await out(p,{owner_name:p.owner_name}),access:a.grants.map(g=>({scope:g.scope,document:g.document_id,document_name:names.get(g.document_id)??null,step:g.step_id,role:g.role,since:g.created_at}))}
+      }))}
   }},
   'project.create':{write:true,async run(c){
     const i=c.input,id=randomUUID()
@@ -100,7 +104,13 @@ const ops={
     await audit(c,'project.created',p.code,{name:p.name},p)
     return {project:projectView(p)}
   }},
-  'project.read':{project:true,input:empty,async run(c){return planView(c,await loadBoard(c.q,c.access.project))}},
+  'project.read':{project:true,input:empty,async run(c){
+    const view=planView(c,await loadBoard(c.q,c.access.project))
+    // Sources and templates of the project, for the plan header and Project details (owner and whole-project shares).
+    view.resources=c.access.canSeeResources?await c.q(`SELECT r.id,r.category,r.name,r.type,r.version,r.doc_date,r.file_mode FROM ctis.resource r
+      JOIN ctis.project_resource pr ON pr.resource_id=r.id WHERE pr.project_id=$1 ORDER BY r.category,r.name`,[c.access.project.id]):null
+    return view
+  }},
   'project.update':{project:true,write:true,async run(c){
     requireOwner(c.access);expectRevision(c)
     const fields=Object.entries(c.input).filter(([,v])=>v!==undefined)
@@ -504,6 +514,60 @@ const ops={
   'share.update':{project:true,write:true,people:true,async run(c){return changeShare(c,'role')}},
   'share.revoke':{project:true,write:true,people:true,async run(c){return changeShare(c,'revoke')}},
 
+  'account.read':{input:empty,async run(c){
+    const a=await one(c.q,'SELECT user_id,email,display_name,plan,paid_until,created_at FROM ctis.account WHERE user_id=$1',[c.user.id])
+    return {id:a.user_id,email:a.email,name:a.display_name,plan:a.plan,team:teamActive(a),paid_until:a.paid_until,since:a.created_at}
+  }},
+  // The Sources or Templates registry: everything the person owns, with the projects and deliverables that use it.
+  'resource.list':{async run(c){
+    const rows=await c.q(`SELECT r.id,r.category,r.name,r.type,r.version,r.doc_date,r.notes,r.file_mode,r.link,r.actor_name,r.source,r.created_at,
+        f.name AS file_name,f.size AS file_size,
+        coalesce((SELECT json_agg(json_build_object('id',p.id,'code',p.code,'name',p.name) ORDER BY p.code) FROM ctis.project_resource pr JOIN ctis.project p ON p.id=pr.project_id
+          WHERE pr.resource_id=r.id AND p.archived_at IS NULL),'[]') AS projects,
+        (SELECT count(DISTINCT (v.project_id,v.document_id,v.step_id))::int FROM ctis.version v,jsonb_array_elements(v.resources) e WHERE e->>'id'=r.id::text) AS used_in
+      FROM ctis.resource r LEFT JOIN ctis.file f ON f.id=r.file_id WHERE r.owner_id=$1 AND r.category=$2 ORDER BY r.name`,[c.user.id,c.input.category])
+    return {resources:rows}
+  }},
+  'resource.update':{write:true,async run(c){
+    const {id,...fields}=c.input
+    const r=await one(c.q,'SELECT * FROM ctis.resource WHERE id=$1 AND owner_id=$2',[id,c.user.id]);check(r,'Source or template not found',404)
+    const set=Object.entries(fields).filter(([,v])=>v!==undefined);check(set.length,'Nothing to change')
+    await c.q(`UPDATE ctis.resource SET ${set.map(([k],i)=>k+'=$'+(i+2)).join(',')},updated_at=now() WHERE id=$1`,[id,...set.map(([,v])=>v)])
+    await audit(c,'resource.updated',r.name,{id,before:Object.fromEntries(set.map(([k])=>[k,r[k]])),after:Object.fromEntries(set)},{owner_id:c.user.id,id:null})
+    return {resource:id}
+  }},
+  'resource.file':{async run(c){
+    const r=await one(c.q,'SELECT owner_id,file_id FROM ctis.resource WHERE id=$1',[c.input.id]);check(r?.file_id,'No stored file',404)
+    if(r.owner_id!==c.user.id){
+      // People the whole project is shared with may open the project's stored sources.
+      const projects=(await c.q('SELECT project_id FROM ctis.project_resource WHERE resource_id=$1',[c.input.id])).map(x=>x.project_id)
+      let ok=false
+      for(const p of projects){try{const a=await projectAccess(c.q,c.user,p,{open:false});if(a.canSeeResources){ok=true;break}}catch{}}
+      check(ok,'No stored file',404)
+    }
+    const f=await readStoredFile(c.q,r.file_id)
+    return {name:f.name,mime:f.mime,size:f.size,content_base64:f.buffer.toString('base64')}
+  }},
+  // Settings → Team: everyone the owner shares with, per item.
+  'share.list':{input:empty,async run(c){
+    return {shares:await c.q(`SELECT g.id,g.grantee_email AS email,g.scope,g.document_id AS document,g.step_id AS step,g.role,g.created_at,g.first_opened_at,
+        p.id AS project,p.code,p.name AS project_name,d.name AS document_name
+      FROM ctis.share_grant g JOIN ctis.project p ON p.id=g.project_id LEFT JOIN ctis.document d ON d.project_id=g.project_id AND d.id=g.document_id
+      WHERE g.owner_id=$1 AND g.revoked_at IS NULL AND p.archived_at IS NULL ORDER BY lower(g.grantee_email),p.code,g.created_at`,[c.user.id])}
+  }},
+  // Download all: the approved version of every final document, with a manifest.
+  'export.package':{project:true,input:empty,async run(c){
+    const board=await loadBoard(c.q,c.access.project),files=[],manifest=[]
+    for(const d of orderedDocuments(visibleBoard(board,c.access))){
+      const f=finalStatus(board,d.id)
+      if(f.status!=='approved'){manifest.push({document:d.id,name:d.name,status:f.status});continue}
+      const v=await one(c.q,'SELECT file_id,content FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[c.access.project.id,d.id,f.step,f.version])
+      const name=d.filename+'_v'+f.version+(v.file_id?'.docx':'.txt')
+      const buffer=v.file_id?(await readStoredFile(c.q,v.file_id)).buffer:Buffer.from(v.content.sections.map(x=>(x.heading?x.heading+'\n\n':'')+x.blocks.map(b=>b.text??(b.items??[]).join('\n')??'').join('\n\n')).join('\n\n'))
+      files.push({name,buffer});manifest.push({document:d.id,name:d.name,file:name,deliverable:d.id+'-'+f.step,version:f.version,status:'approved'})
+    }
+    return {project:c.access.project.code,files:files.map(f=>({name:f.name,content_base64:f.buffer.toString('base64')})),manifest}
+  }},
   'logs':{async run(c){
     const p=c.request.project
     if(p){c.access=await projectAccess(c.q,c.user,p);check(c.access.owner||c.access.projectRole,'Logs are available to the owner and to people the whole project is shared with',403)}
