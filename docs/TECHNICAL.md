@@ -178,5 +178,4 @@ Rebuild with `python3 prototype/source/build.py`. The prototype is a design refe
 - Should editors be allowed to share further? Currently owner only.
 - Should a shared person see the rest of the plan greyed out for context? Currently they see only what is shared.
 - Exact host support for a widget posting a message into the chat, and for file upload from the widget, in Claude and ChatGPT.
-- Format of authority forms that are PDF rather than Word.
 - Price and trial for the Team plan beyond €49 per month.

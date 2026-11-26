@@ -90,7 +90,7 @@ This answers documents that can only partly be completed centrally (for example 
 
 ## 4. Word template
 
-A .docx file plus a small header:
+A .docx file (Word only; authority forms included) plus a small header:
 
 | Field | Meaning |
 |---|---|
