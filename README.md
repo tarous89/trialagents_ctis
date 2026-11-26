@@ -27,7 +27,7 @@ python3 prototype/source/build.py
 
 ## Develop
 
-Use Node 24. `npm ci` then `npm test`. Tests run the server against an in-process PostgreSQL (PGlite), so no database is needed.
+Use Node 24. `npm ci` then `npm test`. `npm run check:catalog` validates `catalog/`. Tests run the server against an in-process PostgreSQL (PGlite), so no database is needed.
 
 | Path | What it is |
 |---|---|
@@ -35,6 +35,8 @@ Use Node 24. `npm ci` then `npm test`. Tests run the server against an in-proces
 | `app/server/status.mjs` | Statuses, final status, approval rule and the loop's next step (pure functions) |
 | `app/server/store.mjs` | Every operation: projects, plans, versions, threads, continue, approval, sources, sharing, logs |
 | `app/server/rules.mjs` | Input schemas and the content model |
+| `app/server/catalog.mjs` | Catalog parsing, validation, matching to a document, publishing |
+| `catalog/` | The catalog itself (see its README) |
 
 ## Next step
 

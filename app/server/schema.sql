@@ -140,3 +140,17 @@ CREATE TABLE IF NOT EXISTS ctis.receipt (
  actor text NOT NULL, key uuid NOT NULL, digest text NOT NULL, result jsonb NOT NULL,
  created_at timestamptz NOT NULL DEFAULT now(), PRIMARY KEY(actor,key)
 );
+
+-- Content catalog (docs/CATALOG.md). Each deploy that changes catalog/ publishes a new release; versions record what they used.
+CREATE TABLE IF NOT EXISTS ctis.catalog_release (
+ id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY, sha text NOT NULL DEFAULT '', digest text NOT NULL UNIQUE,
+ items integer NOT NULL, published_at timestamptz NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS ctis.catalog_item (
+ release_id bigint NOT NULL REFERENCES ctis.catalog_release ON DELETE CASCADE, id text NOT NULL,
+ category text NOT NULL CHECK(category IN ('requirements','content','word','workflow')),
+ version text NOT NULL, effective text NOT NULL, name text NOT NULL, use_when text NOT NULL,
+ header jsonb NOT NULL, body text NOT NULL, parsed jsonb, tags jsonb,
+ file_name text, file_sha256 text, file bytea,
+ PRIMARY KEY(release_id,id)
+);

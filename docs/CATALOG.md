@@ -19,7 +19,35 @@ Users can add their own items of the same kinds (a sponsor content guide, an SOP
 
 ## 2. Submission requirements
 
-One file for Part I and one per member state. Each lists documents as rows:
+One file for Part I (`requirements/part-i.md`, `part: I`, `country: EU`) and one per member state (`requirements/de.md`, `part: II`, `country: DE`). The header lists the documents; the text below the header holds national notes, which are passed to the assistant as they are.
+
+```markdown
+---
+id: de
+name: Germany – Part II
+part: II
+country: DE
+version: 1.0
+effective: 2027-01-01
+use_when: Part II documents for Germany.
+reference: https://… (authority page)
+checked: 2026-11-20
+documents:
+  - doc_type: participant-information-consent
+    name: Participant information and informed consent form
+    required: always
+    languages: [de]
+    per: population
+  - doc_type: recruitment-arrangements
+    name: Recruitment arrangements
+    required: conditional
+    condition: When participants are recruited by advertisement
+    authority_form: de-recruitment-form
+---
+Signatures on consent forms are wet ink unless the ethics committee accepts electronic signatures.
+```
+
+Fields of each document row:
 
 | Field | Example |
 |---|---|
@@ -35,7 +63,7 @@ One file for Part I and one per member state. Each lists documents as rows:
 | `authority_form` | Reference to a Word template of kind `form`, if the authority prescribes one |
 | `reference` | Link to the authority page or legal basis, and the date it was checked |
 
-Submission types are open: the assistant plans any type. A row with `submission_types: all` applies to every type.
+Submission types are open: the assistant plans any type. A row without `submission_types` (or with `all`) applies to every type. `languages` and `submission_types` default to `all`, `per` to `trial`.
 
 ## 3. Content guide
 
@@ -74,6 +102,8 @@ Leave as placeholder: [Name, phone and address of the site study team]
 - C03 Reimbursement wording matches the country requirements.
 ```
 
+Recognised lines inside a section: `Fill:` (required), `Must say:`, `Standard wording:` (required for `standard`), `Sources:`, `Check:`, `Leave as placeholder:`, `Optional: yes`, `Repeat: yes`. Other lines are kept as notes. Headings are `## <id> · <title>`; the checklist is `## Checklist` followed by `- C01 text` lines. `doc_type` defaults to the file's `id`; a country or language variant sets `doc_type` to the base guide's type and narrows `countries` or `languages`.
+
 ### Fill levels
 
 Each section, field or table cell has one fill level. It decides what the assistant writes and what Source QC expects.
@@ -98,6 +128,26 @@ A .docx file (Word only; authority forms included) plus a small header:
 | `kind` | `layout`: TrialAgents or user styling, content is poured into it. `form`: authority form, only its fields are filled; nothing else changes |
 | `doc_type`, `countries`, `languages` | Where it applies |
 | `slots` | Named places to fill, matching content guide section ids (`S01` …), plus `header`, `footer`, table and cell ids |
+
+The header, in `word/<id>.md` next to `word/<id>.docx`:
+
+```markdown
+---
+id: de-recruitment-form
+name: Recruitment arrangements form (Germany)
+kind: form
+doc_type: recruitment-arrangements
+countries: [DE]
+version: 1.0
+effective: 2027-01-01
+use_when: The authority form for recruitment arrangements in Germany.
+slots:
+  - {id: study_title, accepts: text, required: true}
+  - {id: eu_ct_number, accepts: text}
+---
+```
+
+A layout can have one slot per content guide section (slot ids = section ids) or one `body` slot with `sections: all` that receives every section in order, as the default layout does.
 
 **Preparing a template.** Put a Word content control (Developer → Rich text content control) where each section goes and set its Tag to the section id. For a form, tag each field or table cell. A template without tags still works: the server lists its paragraphs, tables, cells, headers and footers with ids and the assistant fills by those, but tagged templates are more reliable and should be the default for catalog items.
 
@@ -133,7 +183,9 @@ catalog/
   workflow/      planning.md, draft.md, checklist.md, source-qc.md, …
 ```
 
-A deploy validates the files (header fields, slot ids that match content guide sections, links between items) and publishes them as a new catalog version. Plugins never change. Runs record the exact catalog versions they used.
+Every file has `id` (lowercase words joined by hyphens, the same as the file name), `name`, `version`, `effective` (YYYY-MM-DD; an item is ignored until that date) and `use_when`. Workflow guides add `applies_to` (planning, a step type, revision or findings).
+
+Run `npm run check:catalog` to see errors and warnings before committing; CI runs it on every push. A deploy validates the files (header fields, slot ids that match content guide sections, links between items) and publishes them as a new catalog version. Plugins never change. Runs record the exact catalog versions they used.
 
 ## 8. Starting content
 
