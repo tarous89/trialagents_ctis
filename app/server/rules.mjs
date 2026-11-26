@@ -98,6 +98,7 @@ export const inputs={
   'resource.update':z.strictObject({id:uuid,name:name.optional(),type:text(100).min(1).optional(),version:text(50).optional(),doc_date:text(40).optional(),notes:text(2000).optional(),
     link:z.url().refine(u=>/^https?:/.test(u),'must be http or https').optional()}),
   'resource.file':z.strictObject({id:uuid}),
+  'preferences.save':z.strictObject(Object.fromEntries(['draft','finding','comment','invite','approval','source'].map(k=>[k,z.boolean().optional()]))),
   'step.context':z.strictObject({deliverable:deliverable.optional(),revise:z.boolean().default(false)}),
   'catalog.planning':z.strictObject({countries:z.array(country).max(30).default([]),submission_type:text(200).default('')}),
   'catalog.search':z.strictObject({query:text(200).default(''),category:z.enum(['planning','content','styling','workflow']).optional(),country:country.optional(),language:z.string().regex(/^[a-z]{2}$/).optional(),code:text(80).optional()}),

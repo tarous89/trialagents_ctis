@@ -32,6 +32,16 @@ export async function startDev({port=4600,build=true,quiet=false}={}){
         res.writeHead(r.status,Object.fromEntries(r.headers));res.end(Buffer.from(await r.arrayBuffer()));return
       }
       if(url.pathname==='/ctis-assets/ctis.js'){res.writeHead(200,{'content-type':'text/javascript; charset=utf-8'});res.end(await readFile(new URL('dist/ctis.js',root)));return}
+      // Stand-in for the shared TrialAgents account page (integration/shared-web/app/ctis-account) on the real site.
+      if(url.pathname==='/ctis-account'){
+        const u=who({headers:new Headers(req.headers)}),esc=x=>String(x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))
+        const support=url.searchParams.get('tab')==='support'
+        res.writeHead(200,{'content-type':'text/html; charset=utf-8'})
+        res.end('<!doctype html><meta charset="utf-8"><body style="margin:0;font-family:system-ui"><div class="ctis-account" style="border:1px solid #d4dce4;border-radius:12px;padding:20px;background:#fff">'
+          +(support?'<h2 style="margin:0 0 8px;font-size:16px">Support</h2><p>Message the TrialAgents team (shared account page on the real site).</p><textarea rows="5" style="width:100%"></textarea>'
+            :'<h2 style="margin:0 0 8px;font-size:16px">Personal details</h2><p>Your TrialAgents account (shared account page on the real site).</p><p><strong>'+esc(u.firstName+' '+u.lastName)+'</strong><br>'+esc(u.email)+'</p><p>Password, sign-out and assistant connections are managed here.</p>')
+          +'</div></body>');return
+      }
       if(url.pathname==='/'){
         const headers={'content-type':'text/html; charset=utf-8'}
         if(people[url.searchParams.get('as')])headers['set-cookie']='dev_user='+url.searchParams.get('as')+'; Path=/; SameSite=Lax'

@@ -1,6 +1,6 @@
 // Settings: Personal, Team, Logs, Billing, Notifications, Support.
 import {call,write} from './api.js'
-import {E,icon,sectionIcon,fmtDate,fmtTime,initials,toast,options,formData} from './ui.js'
+import {E,icon,host,sectionIcon,fmtDate,fmtTime,initials,toast,options,formData} from './ui.js'
 import {nav} from './nav.js'
 
 const actions={'project.created':'Created project','project.updated':'Changed project details','project.duplicated':'Duplicated project','project.archived':'Archived project',
@@ -20,12 +20,8 @@ export async function settingsPage(state){
 
 const panel=(title,body,extra='')=>'<section class="panel'+(extra?' '+extra:'')+'"><h2>'+title+'</h2>'+body+'</section>'
 const sections_={
-  async Personal(state){
-    const a=state.account
-    return panel('Profile','<div class="pad"><div class="avatarline"><span class="avatar-lg">'+E(initials(a.name))+'</span><div><strong>'+E(a.name)+'</strong><small>'+E(a.email)+'</small></div></div>'
-      +'<p>Your name, email and password belong to your TrialAgents account, shared with the other TrialAgents apps.</p><p><a class="btn" href="/ctis-account">Manage your TrialAgents account</a></p></div>')
-      +'<div class="assistant-settings-cards">'+['Claude','ChatGPT'].map(n=>panel(n,'<div class="pad"><p>Add TrialAgents CTIS to '+n+' and sign in with this account. '+n+' can then read your projects, plan submissions, and save drafts and reviews for you to approve.</p><p class="muted">Each change made through '+n+' is recorded as '+n+' in Logs.</p><a class="btn" href="https://ctis.trialagents.com/ctis-info/connectors#'+n.toLowerCase()+'" target="_blank" rel="noopener">How to connect '+n+'</a></div>')).join('')+'</div>'
-  },
+  // Profile, password and support are the shared TrialAgents account settings (as in Pipeline), embedded here.
+  async Personal(state){return accountFrame('account','Personal')},
   async Team(state){
     const {shares}=await call('share.list')
     const team=state.account.team
@@ -51,26 +47,64 @@ const sections_={
       +'</tbody></table></div>'+(logState.before?'<p class="pad"><button type="button" class="textbtn" data-logs-more>Show earlier activity</button></p>':''))
   },
   async Billing(state){
-    const a=state.account
-    return panel('Your plan','<div class="pad">'+(a.team?'<p><span class="tag good">TrialAgents CTIS Team</span> €49 per month. You can share deliverables, documents and projects with unlimited people.</p>'+(a.paid_until?'<p class="muted">Paid until '+fmtDate(a.paid_until)+'</p>':'')
-      :'<p><strong>Individual</strong> · free. Your own projects, with Claude and ChatGPT, without limits.</p><p><strong>TrialAgents CTIS Team</strong> · €49 per month. Share a deliverable, a document or a whole project with unlimited people. People you share with comment, or edit through their own assistant.</p><p class="muted">Online checkout for the Team plan opens soon. Until then, contact support to upgrade.</p><a class="btn primary" href="mailto:contact@trialagents.com?subject=TrialAgents%20CTIS%20Team">Contact us to upgrade</a>')+'</div>')
+    const a=state.account,returned=new URLSearchParams(location.search).get('checkout')==='done'
+    if(a.team)return '<section class="combined-billing-card panel"><div class="pad"><p><span class="tag good">Active</span></p><strong>TrialAgents CTIS Team · Monthly subscription</strong><p>€49 per month · Unlimited people to share with</p>'
+      +(a.paid_until?'<p class="muted">Paid through '+fmtDate(a.paid_until)+'</p>':'')+(a.billing.customer?'<button type="button" data-billing-portal>Manage billing</button> <output></output>':'')+'</div></section>'
+    return (returned?'<div class="notice pad">Payment is being confirmed. This page shows the Team plan as soon as Stripe confirms it.</div>':'')
+      +'<section class="combined-premium-banner pipeline-team-offer" aria-label="TrialAgents CTIS Team"><div class="combined-premium-pitch"><span class="combined-premium-eyebrow">TrialAgents CTIS Team</span><h2>Review submissions as a team.</h2><p>Bring reviewers into the exact document and passage.</p><ul><li>Invite people to a deliverable, a document or a whole project</li><li>Reviewers comment, or edit through their own assistant</li><li>No assistant account needed to comment</li><li>Audit history and owner approval records</li></ul></div>'
+      +'<div class="combined-premium-offers"><p class="combined-offers-heading">Team subscription</p><button type="button" data-upgrade title="Start the Team subscription"'+(a.billing_available?'':' disabled')+'><span>Monthly</span><strong>€49 <small>/ month</small></strong><span class="combined-offer-action">Upgrade to Team</span></button>'
+      +'<p>'+(a.billing_available?'Individual use stays free. The Team subscription renews monthly and can be canceled in Billing.':'Checkout is not available on this server.')+'</p><output></output></div></section>'
   },
   async Notifications(){
-    return panel('Email notifications','<div class="pad"><p>Email notifications for drafts, findings, comments, approvals and changed sources are coming soon. Until then, check Logs for what changed.</p></div>')
+    const {types}=await call('preferences.read')
+    return panel('Email notifications','<form class="pad gearform" id="prefsform">'+types.map(t=>'<label class="mail-pref"><span><strong>'+E(t.label)+'</strong><small>'+E(t.description)+'</small></span><input name="'+t.id+'" type="checkbox" role="switch"'+(t.on?' checked':'')+'></label>').join('')
+      +'<p class="muted">You always get an email when someone shares something with you.</p><button class="primary">Save preferences</button> <output></output></form>')
   },
-  async Support(){
-    return panel('Support','<div class="pad"><p>Questions, problems or ideas: write to <a href="mailto:contact@trialagents.com">contact@trialagents.com</a>.</p><ul><li><a href="/ctis-info/connectors" target="_blank" rel="noopener">Connect Claude or ChatGPT</a></li><li><a href="/ctis-info/privacy" target="_blank" rel="noopener">Privacy</a></li><li><a href="/ctis-info/terms" target="_blank" rel="noopener">Terms</a></li></ul></div>')
-  }
+  async Support(){return accountFrame('support','Support')}
+}
+
+function accountFrame(tab,label){
+  if(host!=='browser')return panel(label,'<div class="pad"><p>Your '+(tab==='support'?'support requests':'profile, password and sign-in')+' are managed in your TrialAgents account.</p><button type="button" data-open-account="'+tab+'">Open '+label+' in TrialAgents</button></div>')
+  return '<div id="account-holder" data-tab="'+tab+'"></div>'
+}
+// The account page is served by the same site; size the frame to its content.
+export function mountAccountFrame(){
+  const holder=document.getElementById('account-holder');if(!holder||holder.firstChild)return
+  const frame=document.createElement('iframe')
+  frame.className='account-frame';frame.title=holder.dataset.tab==='support'?'Support':'Personal';frame.src='/ctis-account?tab='+holder.dataset.tab
+  frame.style.cssText='width:100%;border:0;min-height:420px;display:block'
+  frame.addEventListener('load',()=>{
+    const content=frame.contentDocument?.querySelector('.ctis-account');if(!content)return
+    const fit=()=>{frame.style.height=Math.ceil(content.getBoundingClientRect().height)+'px'}
+    new ResizeObserver(fit).observe(content);fit()
+  })
+  holder.append(frame)
 }
 
 export async function settingsEvents(b,state){
   const d=b.dataset
+  if(d.openAccount){await window.ctisHost.openLink('https://ctis.trialagents.com/?tab=settings&section='+(d.openAccount==='support'?'Support':'Personal'));return true}
+  if(d.upgrade!==undefined||d.billingPortal!==undefined){
+    const out=b.parentElement.querySelector('output')
+    try{
+      b.disabled=true
+      const {url}=await write(d.upgrade!==undefined?'billing.checkout':'billing.portal')
+      const u=new URL(url);if(u.protocol!=='https:'||!['checkout.stripe.com','billing.stripe.com'].includes(u.hostname))throw new Error('Unexpected billing address')
+      if(host==='browser')location.assign(url);else await window.ctisHost.openLink(url)
+    }catch(err){if(out)out.textContent=err.message;b.disabled=false}
+    return true
+  }
   if(d.settingsSection){state.section=d.settingsSection;await nav.go('settings',{section:d.settingsSection});return true}
   if(d.shareRevoke){await write('share.revoke',{project:d.projectId,input:{id:d.shareRevoke}});toast('Stopped sharing');await nav.render();return true}
   if(d.logsMore!==undefined){const r=await call('logs',{project:logState.project||undefined,input:{limit:100,before:logState.before}});logState.entries.push(...r.entries);logState.before=r.before;await nav.render();return true}
   return false
 }
-export async function settingsSubmit(){return false}
+export async function settingsSubmit(form){
+  if(form.id!=='prefsform')return false
+  const prefs=Object.fromEntries([...form.querySelectorAll('input[type=checkbox]')].map(i=>[i.name,i.checked]))
+  await write('preferences.save',{input:prefs});form.querySelector('output').textContent='Saved'
+  return true
+}
 document.addEventListener('change',async e=>{
   const t=e.target
   if(t.dataset.shareRole){try{await write('share.update',{project:t.dataset.projectId,input:{id:t.dataset.shareRole,role:t.value}});toast('Access changed')}catch(err){toast(err.message)}return}

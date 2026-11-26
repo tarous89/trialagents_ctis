@@ -108,4 +108,22 @@ test('Settings: Logs show who did what and through which client; duplicate start
   assert.equal(await page.locator('#matrix .state.done').count(),0)
 })
 
+test('Settings: Personal embeds the TrialAgents account page; Billing offers the Team plan; notification switches save',async()=>{
+  await open('/?tab=settings&section=Personal')
+  await page.frameLocator('#account-holder iframe').locator('text=Personal details').waitFor()
+  assert.match(await page.frameLocator('#account-holder iframe').locator('.ctis-account').innerText(),/alex\.morgan@example\.com/)
+  await page.click('[data-settings-section="Billing"]')
+  assert.match(await text('.settings-sections'),/Active[\s\S]*TrialAgents CTIS Team · Monthly subscription[\s\S]*€49 per month/,'Alex has the Team plan')
+  await open('/?as=sofia');await page.click('[data-tab="settings"]');await page.click('[data-settings-section="Billing"]')
+  assert.match(await text('.settings-sections'),/Review submissions as a team[\s\S]*€49/,'the free plan sees the offer')
+  assert.ok(await page.locator('[data-upgrade]').isDisabled(),'no Stripe on the dev server');assert.match(await text('.settings-sections'),/not available on this server/)
+  await page.goto(dev.url+'/?as=alex');await page.waitForSelector('#page h1');await page.click('[data-tab="settings"]')
+  await page.click('[data-settings-section="Notifications"]');await page.waitForSelector('#prefsform')
+  assert.equal(await page.locator('#prefsform input[name=source]').isChecked(),false,'source changes are off by default')
+  await page.uncheck('#prefsform input[name=draft]');await page.click('#prefsform button.primary')
+  await page.waitForSelector('#prefsform output:has-text("Saved")')
+  await page.click('[data-settings-section="Logs"]');await page.click('[data-settings-section="Notifications"]');await page.waitForSelector('#prefsform')
+  assert.equal(await page.locator('#prefsform input[name=draft]').isChecked(),false)
+})
+
 test('no page errors',()=>assert.deepEqual(errors,[]))

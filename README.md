@@ -43,6 +43,8 @@ Use Node 24. `npm ci` then `npm test` (the browser tests use Chromium through `p
 | `app/server/step-context.mjs` | The bundle `get_ctis_step` returns: instructions, content template, styling, planning checklist, input, sources, threads |
 | `mcp/tools.mjs`, `mcp/http.mjs` | The MCP server for Claude: six tools (five read-only, one write), OAuth audience and discovery |
 | `app/server/api.mjs` | The browser app's API (`/api/ctis`, downloads, Download all) |
+| `app/server/billing.mjs`, `app/server/mail.mjs` | Team plan through Stripe (checkout, portal, webhook); email notifications (outbox and delivery) |
+| `integration/shared-web/` | What the shared web service adds for CTIS (the embedded account page) |
 | `app/web/` | The browser app: shell, Projects, Plan, the deliverable reader, Sources, Templates, Settings. Styles and icons come from the approved prototype |
 | `catalog/` | The catalog itself (see its README) |
 

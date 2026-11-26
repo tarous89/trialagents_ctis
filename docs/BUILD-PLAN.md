@@ -134,7 +134,13 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 10. Phases
 
-Status: phases 1–7 are done (see `tests/`). Next, phase 8: profile settings, Stripe checkout and notifications, as in Pipeline. The plugin directory links behind "Open in Claude/ChatGPT" come with phase 9 (they point to the connectors page until then).
+Status: phases 1–8 are done (see `tests/`). The plugin directory links behind "Open in Claude/ChatGPT" come with phase 9 (they point to the connectors page until then).
+
+**Wiring left for phase 10 in the shared web service** (prepared in this repository):
+- `integration/shared-web/app/ctis-account/` and `ctis-account.patch`: the embedded account page for Settings → Personal and Support (the patch adds a `product` option to the shared account settings; it applies cleanly to `intel_agent_app` as of commit a4fbd62).
+- Stripe: create `stripeBilling({stripeRequest, stripeMode})` with the shared Stripe client; pass it to `ctis(db, {billing})`; in the existing signed webhook route, call `billing.webhook(db, event)` (it returns false for events that are not about CTIS). Price lookup key `trialagents_ctis_team_eur_49_monthly_v1`, created on first checkout if missing.
+- Email: run `deliverMail(db, send)` every minute in the existing worker, with the shared mail provider and `job.id` as idempotency key.
+- Sign-in: `/auth?mode=login&ctis=1` should return to `ctis.trialagents.com`, as `pipeline=1` does for Pipeline.
 
 | Phase | Work | Done when |
 |---|---|---|

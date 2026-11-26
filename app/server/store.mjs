@@ -10,6 +10,11 @@ import {currentCatalog,catalogFile} from './catalog.mjs'
 import {fillTemplate} from './word.mjs'
 import {stepContext} from './step-context.mjs'
 const DOCX='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+import {enqueue,link as mailLink,mailTypes,wants} from './mail.mjs'
+
+// Notifications go to the project owner (and mentioned people); the outbox checks access and switches again at send time.
+async function ownerEmail(q,project){return (await one(q,'SELECT email FROM ctis.account WHERE user_id=$1',[project.owner_id]))?.email}
+const hour=()=>new Date().toISOString().slice(0,13)
 
 const json=JSON.stringify
 const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])])):v
@@ -323,7 +328,19 @@ const ops={
     await snapshotFindings(q,pid,doc,step,n)
     await touch(c)
     await audit(c,'version.saved',i.deliverable,{n,mode:i.changes?'changes':'full',findings:saved.length,addressed:i.addressed.map(a=>a.thread)})
+    {
+      const p=c.access.project,to=await ownerEmail(q,p),d=docRow.name,code=p.code
+      if(stepRow.type==='draft')await enqueue(q,{owner:p.owner_id,project:pid,recipient:to,category:'draft',dedupe:'draft:'+pid+':'+hour()+':'+to,delay:600,
+        subject:'Drafts saved in '+code,message:person(c.user)+' ('+c.source+') saved new drafts in '+code+', starting with '+i.deliverable+' · '+d+'.',link:mailLink(pid)})
+      const fresh=saved.filter(f=>!open.some(t=>t.number===f.number))
+      if(fresh.length)await enqueue(q,{owner:p.owner_id,project:pid,recipient:to,category:'finding',dedupe:'finding:'+pid+':'+i.deliverable+':'+n,
+        subject:i.deliverable+' needs action',message:fresh.length+(fresh.length===1?' finding':' findings')+' opened on '+i.deliverable+' · '+d+':\n'+fresh.map(f=>'#'+f.number+' '+f.text).join('\n'),link:mailLink(pid,i.deliverable)})
+    }
     const after=await loadBoard(q,c.access.project)
+    const fin=finalStatus(after,doc)
+    if(fin.status==='awaiting_approval'&&fin.step===step){const p=c.access.project,to=await ownerEmail(q,p)
+      await enqueue(q,{owner:p.owner_id,project:pid,recipient:to,category:'approval',dedupe:'approval:'+pid+':'+i.deliverable+':'+n,
+        subject:docRow.name+' is ready for your approval',message:i.deliverable+' v'+n+' in '+p.code+' is ready. Approve the final document in TrialAgents CTIS.',link:mailLink(pid,i.deliverable)})}
     return {deliverable:i.deliverable,n,status:documentStatuses(after,doc).find(x=>x.step===step),findings:saved,past_issues:flagged,file:fileId?docRow.filename+'_v'+n+'.docx':null,
       next:c.access.owner||c.access.projectRole==='editor'?nextStep(after):null}
   }},
@@ -361,6 +378,7 @@ const ops={
       VALUES($1,$2,$3,$4,$5,'comment','comment',$6,$7,$8,$9,$10,$11,$12)`,[randomUUID(),pid,doc,step,number,i.version,json(i.anchor),i.text,i.mentions,c.user.id,person(c.user),c.source])
     await touch(c)
     await audit(c,'comment.created',i.deliverable,{number,mentions:i.mentions})
+    await notifyComment(c,i.deliverable,number,i.text,i.mentions)
     return {deliverable:i.deliverable,number}
   }},
   'thread.reply':{project:true,write:true,async run(c){
@@ -370,6 +388,7 @@ const ops={
     await c.q('INSERT INTO ctis.thread_reply(thread_id,text,mentions,actor,actor_name,source) VALUES($1,$2,$3,$4,$5,$6)',[t.id,i.text,i.mentions,c.user.id,person(c.user),c.source])
     await touch(c)
     await audit(c,'thread.replied',i.deliverable,{number:i.number})
+    await notifyComment(c,i.deliverable,i.number,i.text,i.mentions,true)
     return {deliverable:i.deliverable,number:i.number}
   }},
   'thread.resolve':{project:true,write:true,async run(c){return setThread(c,'resolved')}},
@@ -420,6 +439,10 @@ const ops={
     const attached=!!(c.access&&i.attach_to_project&&c.access.owner)
     if(attached)await c.q('INSERT INTO ctis.project_resource VALUES($1,$2) ON CONFLICT DO NOTHING',[c.access.project.id,id])
     await audit(c,'resource.recorded',i.name,{id,category:i.category,version:i.version,attached},c.access?.project??{owner_id:ownerId,id:null})
+    const older=await one(c.q,"SELECT version FROM ctis.resource WHERE owner_id=$1 AND category=$2 AND lower(name)=lower($3) AND id<>$4 AND version<>$5 ORDER BY created_at DESC LIMIT 1",[ownerId,i.category,i.name,id,i.version])
+    if(older){const to=(await one(c.q,'SELECT email FROM ctis.account WHERE user_id=$1',[ownerId]))?.email
+      await enqueue(c.q,{owner:ownerId,project:c.access?.project.id,recipient:to,category:'source',dedupe:'source:'+id,subject:'New version of '+i.name,
+        message:i.name+(i.version?' v'+i.version:'')+' was recorded'+(older.version?' (earlier: v'+older.version+')':'')+'. Documents made with the earlier version may need a rerun.',link:mailLink(c.access?.project.id)})}
     return {resource:id,attached}
   }},
   // Uploads come through the app (browser or the workspace inside an assistant), never as tool arguments.
@@ -509,14 +532,38 @@ const ops={
       [id,p.owner_id,i.email,p.id,i.scope,i.document??null,i.step??null,i.role])
     await c.q('UPDATE ctis.account SET access_version=access_version+1 WHERE user_id=$1',[p.owner_id])
     await audit(c,'share.created',i.email,{id,scope:i.scope,document:i.document,step:i.step,role:i.role})
+    const what=i.scope==='project'?'the project '+p.name:(await one(c.q,'SELECT name FROM ctis.document WHERE project_id=$1 AND id=$2',[p.id,i.document])).name+(i.step?' ('+i.document+'-'+i.step+')':'')+' in '+p.code
+    await enqueue(c.q,{owner:p.owner_id,project:p.id,recipient:i.email,category:'share',dedupe:'share:'+id,
+      subject:person(c.user)+' shared '+p.code+' with you',message:person(c.user)+' shared '+what+' with you on TrialAgents CTIS. You can '+(i.role==='editor'?'comment and edit':'read and comment')+'. Sign in with this email address to open it.',link:mailLink(p.id,i.scope==='deliverable'?i.document+'-'+i.step:null)})
     return {share:id}
   }},
   'share.update':{project:true,write:true,people:true,async run(c){return changeShare(c,'role')}},
   'share.revoke':{project:true,write:true,people:true,async run(c){return changeShare(c,'revoke')}},
 
   'account.read':{input:empty,async run(c){
-    const a=await one(c.q,'SELECT user_id,email,display_name,plan,paid_until,created_at FROM ctis.account WHERE user_id=$1',[c.user.id])
-    return {id:a.user_id,email:a.email,name:a.display_name,plan:a.plan,team:teamActive(a),paid_until:a.paid_until,since:a.created_at}
+    const a=await one(c.q,'SELECT user_id,email,display_name,plan,paid_until,created_at,customer,subscription,checkout FROM ctis.account WHERE user_id=$1',[c.user.id])
+    return {id:a.user_id,email:a.email,name:a.display_name,plan:a.plan,team:teamActive(a),paid_until:a.paid_until,since:a.created_at,
+      billing:{customer:!!a.customer,subscription:!!a.subscription,checkout_started:!!a.checkout},billing_available:!!c.services.billing}
+  }},
+  // Team plan: Stripe Checkout and the customer portal. People only; the URL opens in the browser.
+  'billing.checkout':{write:true,people:true,input:empty,async run(c){
+    check(c.services.billing,'Billing is unavailable',503)
+    const a=await one(c.q,'SELECT * FROM ctis.account WHERE user_id=$1 FOR UPDATE',[c.user.id])
+    const r=await c.services.billing.checkout(c.q,a,c.user)
+    await audit(c,'billing.checkout',null,{},{owner_id:c.user.id,id:null})
+    return r
+  }},
+  'billing.portal':{people:true,input:empty,async run(c){
+    check(c.services.billing,'Billing is unavailable',503)
+    return c.services.billing.portal(c.q,await one(c.q,'SELECT * FROM ctis.account WHERE user_id=$1',[c.user.id]))
+  }},
+  'preferences.read':{input:empty,async run(c){
+    const a=await one(c.q,'SELECT preferences FROM ctis.account WHERE user_id=$1',[c.user.id])
+    return {types:mailTypes.map(([id,label,description])=>({id,label,description,on:wants(a.preferences,id)}))}
+  }},
+  'preferences.save':{write:true,async run(c){
+    await c.q('UPDATE ctis.account SET preferences=preferences||$2 WHERE user_id=$1',[c.user.id,json(c.input)])
+    return {saved:true}
   }},
   // The Sources or Templates registry: everything the person owns, with the projects and deliverables that use it.
   'resource.list':{async run(c){
@@ -581,6 +628,13 @@ async function snapshotFindings(q,pid,doc,step,n){
   await q(`UPDATE ctis.version SET findings=coalesce((SELECT json_agg(json_build_object('number',number,'category',category,'text',text,'anchor',anchor,'key',key) ORDER BY number)
       FROM ctis.thread WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND kind='finding' AND status='open'),'[]') WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4`,[pid,doc,step,n])
 }
+async function notifyComment(c,code,number,text,mentions,reply=false){
+  const p=c.access.project,owner=await ownerEmail(c.q,p),me=c.user.email.toLowerCase()
+  const to=new Set([...(p.owner_id!==c.user.id?[owner]:[]),...mentions].map(e=>e.toLowerCase()).filter(e=>e!==me))
+  for(const r of to)await enqueue(c.q,{owner:p.owner_id,project:p.id,recipient:r,category:'comment',dedupe:'comment:'+p.id+':'+code+':'+number+':'+Date.now()+':'+r,
+    subject:(mentions.map(m=>m.toLowerCase()).includes(r)?person(c.user)+' mentioned you on ':person(c.user)+(reply?' replied on ':' commented on '))+code,
+    message:person(c.user)+' on '+code+' #'+number+' in '+p.code+':\n'+text,link:mailLink(p.id,code)})
+}
 async function setThread(c,status){
   const i=c.input,board=await loadBoard(c.q,c.access.project),{doc,step}=deliverableOf(c,board,i.deliverable)
   requireComment(c.access,doc,step)
@@ -606,7 +660,8 @@ export const operations=Object.keys(ops)
 
 // execute(user, {op, project?, input, requestId?, revision?}, source) -> result
 // source: 'web', 'Claude', 'ChatGPT', or the assistant workspace ('Claude workspace'), recorded in Logs.
-export function ctis(db){
+// services: {billing} (stripeBilling); omitted in tests and in the dev server.
+export function ctis(db,services={}){
   return async function execute(user,request,source='web'){
     check(user?.id&&user.email,'Sign in to TrialAgents CTIS',401)
     const def=ops[request?.op];check(def,'Unknown operation '+request?.op,400)
@@ -623,7 +678,7 @@ export function ctis(db){
         const prior=await one(q,'SELECT digest,result FROM ctis.receipt WHERE actor=$1 AND key=$2',[user.id,request.requestId])
         if(prior){check(prior.digest===d,'This request ID was already used for a different change',409);return prior.result}
       }
-      const c={q,user,source,input,request}
+      const c={q,user,source,input,request,services}
       if(def.project)c.access=await projectAccess(q,user,request.project,{lock:!!def.write})
       const result=JSON.parse(json(await def.run(c)))
       if(def.write)await q('INSERT INTO ctis.receipt(actor,key,digest,result) VALUES($1,$2,$3,$4)',[user.id,request.requestId,d,json(result)])

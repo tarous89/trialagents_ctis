@@ -162,3 +162,21 @@ CREATE TABLE IF NOT EXISTS ctis.resource_text (
  PRIMARY KEY(resource_id,chunk)
 );
 CREATE INDEX IF NOT EXISTS ctis_resource_text_search ON ctis.resource_text USING gin(to_tsvector('simple',text));
+
+-- Team plan billing (Stripe), per owner account. paid_until is set only from verified Stripe events.
+ALTER TABLE ctis.account ADD COLUMN IF NOT EXISTS stripe_mode text;
+ALTER TABLE ctis.account ADD COLUMN IF NOT EXISTS customer text;
+ALTER TABLE ctis.account ADD COLUMN IF NOT EXISTS subscription text;
+ALTER TABLE ctis.account ADD COLUMN IF NOT EXISTS checkout text;
+CREATE UNIQUE INDEX IF NOT EXISTS ctis_account_customer ON ctis.account(stripe_mode,customer) WHERE customer IS NOT NULL;
+CREATE TABLE IF NOT EXISTS ctis.stripe_event (mode text NOT NULL, id text NOT NULL, PRIMARY KEY(mode,id));
+
+-- Email notifications: personal switches, and an outbox written in the same transaction as the change.
+ALTER TABLE ctis.account ADD COLUMN IF NOT EXISTS preferences jsonb NOT NULL DEFAULT '{}';
+CREATE TABLE IF NOT EXISTS ctis.mail (
+ id uuid PRIMARY KEY, owner_id text NOT NULL, project_id uuid, recipient text NOT NULL, category text NOT NULL,
+ subject text NOT NULL, message text NOT NULL, link text NOT NULL DEFAULT '', dedupe text UNIQUE NOT NULL,
+ due_at timestamptz NOT NULL DEFAULT now(), attempts integer NOT NULL DEFAULT 0, sent_at timestamptz,
+ created_at timestamptz NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS ctis_mail_due ON ctis.mail(due_at) WHERE sent_at IS NULL;

@@ -5,7 +5,7 @@ import {E,$,all,icon,railIcon,host,ctry,countryName,languageName,fmtDate,plural,
 import {marks,pencil,dupIcon} from './icons.js'
 import {openDeliverable} from './reader.js'
 import {registryPage,registryEvents,registrySubmit} from './registry.js'
-import {settingsPage,settingsEvents,settingsSubmit} from './settings.js'
+import {settingsPage,settingsEvents,settingsSubmit,mountAccountFrame} from './settings.js'
 import {nav} from './nav.js'
 
 export const state={view:'projects',project:null,deliverable:null,section:'Personal',filters:{},account:null,plan:null}
@@ -45,7 +45,7 @@ export async function render(){
     // The plan lives in its own .ctis container, outside the .pl page styles (as in the prototype).
     if(state.view==='plan')page.innerHTML='<div id="planpage" class="ctis">'+await planPage()+'</div>'
     else if(state.view==='sources'||state.view==='templates')page.innerHTML=await registryPage(state.view==='sources'?'source':'template',state)
-    else if(state.view==='settings')page.innerHTML=await settingsPage(state)
+    else if(state.view==='settings'){page.innerHTML=await settingsPage(state);mountAccountFrame()}
     else page.innerHTML=await projectsPage()
     page.className=state.view==='plan'?'':'pl'
     if(state.view==='plan'&&state.deliverable)openDeliverable(state.project,state.deliverable,{onChange:()=>render(),onClose:()=>go('plan',{project:state.project,replace:true})})

@@ -112,6 +112,11 @@ share_grants(
 ### Billing gate
 
 - `account.plan = individual | team`. Creating a grant requires `team`.
+- Team plan: €49 per month per owner account through Stripe Checkout; the customer portal manages cards, invoices and cancellation. Only verified Stripe webhooks change the plan (each event once; the state is read back from Stripe). After cancellation, sharing works until the end of the paid period.
+
+### Email notifications
+
+Changes write to an outbox in the same transaction; a worker delivers them and checks again, at send time, that the recipient still has access and still wants that kind of email. Personal switches: draft ready, finding opened, comment or mention, shared item opened, ready for your approval (all on), source changed (off). An email about something shared with you always goes out. Drafts are grouped per project and hour.
 - Every Invite entry point (deliverable, Settings → Team, @mention) routes an individual-plan owner to Billing with a short notice.
 
 ## 6. Versions

@@ -1,4 +1,5 @@
 import {check} from './rules.mjs'
+import {enqueue,link} from './mail.mjs'
 
 // One person's access to one project: the owner, or the union of their active grants.
 // Grants are effective only while the owner's Team plan is active (docs/TECHNICAL.md §5).
@@ -14,6 +15,12 @@ export async function projectAccess(q,user,projectId,{lock=false,open=true}={}){
   check(grants.length,'Project not found',404)
   const unseen=grants.filter(g=>!g.first_opened_at).map(g=>g.id)
   if(open)await q('UPDATE ctis.share_grant SET grantee_user_id=$2,first_opened_at=coalesce(first_opened_at,now()) WHERE id=ANY($1::uuid[]) OR (project_id=$3 AND lower(grantee_email)=lower($4) AND grantee_user_id IS NULL)',[unseen,user.id,projectId,user.email])
+  // The owner hears once when a person first opens what was shared ("invite" switch).
+  if(open&&unseen.length){
+    const [o]=await q('SELECT email FROM ctis.account WHERE user_id=$1',[project.owner_id])
+    await enqueue(q,{owner:project.owner_id,project:project.id,recipient:o?.email,category:'invite',dedupe:'opened:'+unseen.sort().join(','),
+      subject:(user.email)+' opened what you shared',message:user.email+' opened '+project.code+' for the first time.',link:link(project.id)})
+  }
   return access(project,'grantee',grants)
 }
 
