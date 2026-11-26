@@ -6,7 +6,7 @@ This file describes what the product does, in plain English. The technical desig
 
 ## How it works in one paragraph
 
-You ask Claude or ChatGPT to prepare a submission. The assistant uses the TrialAgents country rules to propose a plan: every document the submission needs, per country and language. You confirm it. The assistant then takes each document through the agreed steps (for example Draft, Source QC, Checklist, Style), one document at a time, top to bottom. It stops only where a person is needed. You review the final document, comment where something is wrong, and approve it. Approved documents can be downloaded together.
+You ask Claude or ChatGPT to prepare a submission. The assistant uses the TrialAgents submission requirements to propose a plan: every document the submission needs, per country and language. The plan opens in the workspace straight away; ask for changes in the chat, then tell it to start. The assistant takes each document through the agreed steps (by default Draft, Checklist, Source QC, Style), one document at a time, top to bottom. Where a person is needed it leaves that document waiting and moves on to the next. You review the final document, comment where something is wrong, and approve it. Approved documents can be downloaded together.
 
 ## Where things are
 
