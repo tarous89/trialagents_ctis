@@ -134,7 +134,9 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 10. Phases
 
-Status: phases 1–8 are done (see `tests/`). The plugin directory links behind "Open in Claude/ChatGPT" come with phase 9 (they point to the connectors page until then).
+Status: phases 1–9 are done (see `tests/`). Phase 10 (shared services, domain, live checks, directory submission) remains.
+
+**Claude plugin release:** `claude plugin validate .` (marketplace) and `claude plugin validate plugins/claude` (plugin) pass. `python3 scripts/package-plugins.py` writes `dist/trialagents-ctis-claude-<version>.zip` for the directory submission. Keep the version in `plugins/claude/.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` the same (the packager checks). The "Open in Claude/ChatGPT" header links point to the connectors page until the directory listings exist.
 
 **Wiring left for phase 10 in the shared web service** (prepared in this repository):
 - `integration/shared-web/app/ctis-account/` and `ctis-account.patch`: the embedded account page for Settings → Personal and Support (the patch adds a `product` option to the shared account settings; it applies cleanly to `intel_agent_app` as of commit a4fbd62).

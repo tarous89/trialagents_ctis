@@ -18,18 +18,9 @@ This file defines what Claude sees: the plugin, its one skill, the MCP tools and
 | App | `https://ctis.trialagents.com` |
 | Layout | `plugins/claude/.claude-plugin/plugin.json`, `plugins/claude/.mcp.json`, `plugins/claude/skills/ctis/SKILL.md`, `plugins/claude/README.md`, `.claude-plugin/marketplace.json` (as in Pipeline) |
 
-### Skill (draft)
+### Skill
 
-```markdown
----
-name: ctis
-description: Plan, draft, check and finalise CTIS clinical trial application documents (Part I and Part II) in a TrialAgents CTIS project. Use whenever the user mentions TrialAgents CTIS, a CTIS submission or application, a substantial modification, or asks to plan, draft, QC, style, revise or continue documents such as participant information, consent forms or recruitment material.
----
-
-Show the workspace with `open_ctis` on the first TrialAgents CTIS request in a conversation and right after saving a plan. Start with `get_ctis_step` when the user wants to continue or revise, `read_ctis_catalog` (planning guide) when they want a new submission, otherwise `read_ctis` or `open_ctis`. Every result ends with `next`: do that next. Take everything a step needs from `get_ctis_step`, not from earlier messages. Save each step with `save_ctis` and continue with the `next` it returns until it says to stop. Never approve documents, ignore findings or share; tell the user where to do it in the app.
-
-Where Claude shows MCP Apps (web, desktop, mobile) the workspace appears in the conversation. Elsewhere (Claude Code) answer in text and give the link the tool returns. Never build links or IDs yourself.
-```
+The skill is [`plugins/claude/skills/ctis/SKILL.md`](../plugins/claude/skills/ctis/SKILL.md). A test checks that every tool it names exists on the server.
 
 All detailed instructions (planning, steps, QC, Word, revision) come from the server, so they can change without a plugin release.
 

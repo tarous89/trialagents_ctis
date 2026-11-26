@@ -1,0 +1,19 @@
+{
+  "name": "trialagents-ctis",
+  "owner": {
+    "name": "Atlas Consulting",
+    "email": "contact@trialagents.com",
+    "url": "https://trialagents.com"
+  },
+  "metadata": {
+    "description": "TrialAgents CTIS plugin for Claude: plan, draft, check and finalise CTIS clinical trial application documents."
+  },
+  "plugins": [
+    {
+      "name": "trialagents-ctis",
+      "source": "./plugins/claude",
+      "description": "Prepare CTIS clinical trial applications with Claude: plan the documents per country, draft, check every fact against its source, and fill the Word templates.",
+      "version": "0.1.0"
+    }
+  ]
+}
