@@ -5,6 +5,10 @@ import {projectAccess,requireOwner,requireEdit,requireComment,teamActive} from '
 import {loadBoard,visibleBoard} from './board.mjs'
 import {cell,documentStatuses,finalStatus,nextStep,canApprove,orderedDocuments,issueCount,ACTION_REQUIRED,APPROVED} from './status.mjs'
 import {applyChanges} from './content.mjs'
+import {attachUpload,searchPassages,snippet,storeFile,readFile as readStoredFile} from './sources.mjs'
+import {currentCatalog,catalogFile} from './catalog.mjs'
+import {fillTemplate} from './word.mjs'
+const DOCX='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 
 const json=JSON.stringify
 const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])])):v
@@ -243,14 +247,38 @@ const ops={
     const ids=new Set(content.sections.map(s=>s.id))
     for(const x of [...claims,...i.findings])check(!x.section||ids.has(x.section),'Unknown section '+x.section)
     const n=curN+1
-    await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,basis,resources,catalog,note,past_issues,actor,actor_name,source)
-      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15)`,
-      [pid,doc,step,n,json(content),json(claims),i.fill?json(i.fill):null,json(basis),json(await effectiveResources(q,pid,doc)),json(i.catalog),i.note,json(flagged),c.user.id,person(c.user),c.source])
+    // Catalog items used, and for a Style step the filled Word file.
+    const docRow=board.documents.find(x=>x.id===doc),stepRow=board.steps.find(x=>x.id===step)
+    const cat=await currentCatalog(q),guide=cat.contentGuide(docRow)
+    const used=[...i.catalog,...(guide?[{id:guide.id,version:guide.version}]:[])]
+    let fileId=null
+    const wordFindings=[]
+    if(stepRow.type==='style'){
+      const tpl=cat.wordTemplate(docRow,guide)
+      check(tpl||!i.fill,'No Word template is available for this document',409)
+      if(tpl){
+        const slots=tpl.header.slots,unknown=Object.keys(i.fill??{}).filter(k=>!slots.some(x=>x.id===k))
+        check(!unknown.length,'Unknown Word fields: '+unknown.join(', ')+'. Template '+tpl.id+' has: '+slots.map(x=>x.id).join(', '))
+        const owner=c.access.project.owner_id,source=await catalogFile(q,cat.release,tpl.id)
+        let r
+        try{r=await fillTemplate(source.buffer,{kind:tpl.header.kind,slots,values:i.fill??{},content,
+          files:async id=>{const f=await readStoredFile(q,id);return f&&f.owner_id===owner?f:null}})}
+        catch(e){check(false,'The Word template '+tpl.id+' could not be filled: '+e.message,422)}
+        fileId=await storeFile(q,{ownerId:owner,name:docRow.filename+'_v'+n+'.docx',mime:DOCX,buffer:r.buffer})
+        for(const m of r.missing){const sl=slots.find(x=>x.id===m);wordFindings.push({category:'missing',text:'Fill the Word field '+m+(sl?.description?': '+sl.description:''),key:'word-'+m})}
+        for(const img of r.images.filter(x=>!x.ok))wordFindings.push({category:'missing',text:'An image could not be added: upload it as a PNG or JPEG file in the workspace.',key:'image-'+img.file})
+        used.push({id:tpl.id,version:tpl.version})
+      }
+    }
+    const findings=[...i.findings,...wordFindings.filter(w=>!i.findings.some(f=>f.key===w.key))]
+    await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,file_id,basis,resources,catalog,note,past_issues,actor,actor_name,source)
+      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)`,
+      [pid,doc,step,n,json(content),json(claims),i.fill?json(i.fill):null,fileId,json(basis),json(await effectiveResources(q,pid,doc)),json(used),i.note,json(flagged),c.user.id,person(c.user),c.source])
     // Findings: re-reported keys keep their thread and number; in a revision, findings on untouched sections carry over; others are superseded.
     const open=await q("SELECT id,number,key,anchor FROM ctis.thread WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND kind='finding' AND status='open'",[pid,doc,step])
     const keep=new Set(),saved=[]
     let number=await nextNumber(q,pid,doc,step)
-    for(const f of i.findings){
+    for(const f of findings){
       const anchor=json({section:f.section,quote:f.quote})
       const known=f.key&&await one(q,'SELECT id,number FROM ctis.thread WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND key=$4',[pid,doc,step,f.key])
       if(known){
@@ -276,7 +304,7 @@ const ops={
     await touch(c)
     await audit(c,'version.saved',i.deliverable,{n,mode:i.changes?'changes':'full',findings:saved.length,addressed:i.addressed.map(a=>a.thread)})
     const after=await loadBoard(q,c.access.project)
-    return {deliverable:i.deliverable,n,status:documentStatuses(after,doc).find(x=>x.step===step),findings:saved,past_issues:flagged,
+    return {deliverable:i.deliverable,n,status:documentStatuses(after,doc).find(x=>x.step===step),findings:saved,past_issues:flagged,file:fileId?docRow.filename+'_v'+n+'.docx':null,
       next:c.access.owner||c.access.projectRole==='editor'?nextStep(after):null}
   }},
 
@@ -373,6 +401,51 @@ const ops={
     if(attached)await c.q('INSERT INTO ctis.project_resource VALUES($1,$2) ON CONFLICT DO NOTHING',[c.access.project.id,id])
     await audit(c,'resource.recorded',i.name,{id,category:i.category,version:i.version,attached},c.access?.project??{owner_id:ownerId,id:null})
     return {resource:id,attached}
+  }},
+  // Uploads come through the app (browser or the workspace inside an assistant), never as tool arguments.
+  'resource.upload':{write:true,people:true,async run(c){
+    const i=c.input,buffer=Buffer.from(i.content_base64,'base64')
+    const r=await one(c.q,'SELECT * FROM ctis.resource WHERE id=$1',[i.resource]);check(r,'Source or template not found',404)
+    if(r.owner_id!==c.user.id){
+      check(c.request.project,'Only the owner can upload this file',403)
+      c.access=await projectAccess(c.q,c.user,c.request.project,{lock:true})
+      check(c.access.project.owner_id===r.owner_id&&(c.access.owner||c.access.projectRole==='editor'),'Only the owner or a project editor can upload this file',403)
+    }
+    let out
+    try{out=await attachUpload(c.q,{resourceId:r.id,ownerId:r.owner_id,name:i.name,mime:i.mime,buffer})}
+    catch(e){check(false,e.message,e.status??400)}
+    await audit(c,'resource.uploaded',r.name,{id:r.id,file:i.name,size:buffer.length,passages:out.chunks},c.access?.project??{owner_id:r.owner_id,id:null})
+    return {resource:r.id,passages:out.chunks,note:out.scanned?'No text was found: the PDF may be a scan. It is stored, but cannot be searched or quoted.':null}
+  }},
+  'source.search':{project:true,async run(c){
+    check(c.access.canSeeResources,'Sources are visible to the owner and to people the whole project is shared with',403)
+    const i=c.input,pid=c.access.project.id
+    const allowed=i.document?(await effectiveResources(c.q,pid,i.document)).map(r=>r.id)
+      :(await c.q(`SELECT resource_id AS id FROM ctis.project_resource WHERE project_id=$1 UNION SELECT resource_id FROM ctis.document_resource_override WHERE project_id=$1 AND op='add'`,[pid])).map(r=>r.id)
+    const ids=i.resource?allowed.filter(x=>x===i.resource):allowed
+    check(!i.resource||ids.length,'That source is not used in this project',404)
+    const names=new Map((await c.q('SELECT id,name,version,file_mode FROM ctis.resource WHERE id=ANY($1::uuid[])',[allowed])).map(r=>[r.id,r]))
+    const rows=await searchPassages(c.q,ids,i.query,i.limit)
+    return {query:i.query,passages:rows.map(r=>({resource:r.resource_id,name:names.get(r.resource_id).name,version:names.get(r.resource_id).version,passage:r.chunk,locator:r.locator,text:snippet(r.text,i.query)})),
+      not_stored:[...names.values()].filter(r=>ids.includes(r.id)&&r.file_mode!=='stored').map(r=>r.name)}
+  }},
+  'source.read':{project:true,async run(c){
+    check(c.access.canSeeResources,'Sources are visible to the owner and to people the whole project is shared with',403)
+    const i=c.input,pid=c.access.project.id
+    const ok=await one(c.q,`SELECT 1 FROM ctis.project_resource WHERE project_id=$1 AND resource_id=$2 UNION SELECT 1 FROM ctis.document_resource_override WHERE project_id=$1 AND resource_id=$2 AND op='add'`,[pid,i.resource])
+    check(ok,'That source is not used in this project',404)
+    const r=await one(c.q,'SELECT name,version FROM ctis.resource WHERE id=$1',[i.resource])
+    const rows=await c.q('SELECT chunk,locator,text FROM ctis.resource_text WHERE resource_id=$1 AND chunk>=$2 ORDER BY chunk LIMIT $3',[i.resource,i.from,i.count])
+    const total=(await one(c.q,'SELECT count(*)::int AS n FROM ctis.resource_text WHERE resource_id=$1',[i.resource])).n
+    return {resource:i.resource,name:r.name,version:r.version,passages:rows.map(x=>({passage:x.chunk,locator:x.locator,text:x.text})),total}
+  }},
+  'version.file':{project:true,async run(c){
+    const i=c.input,board=await loadBoard(c.q,c.access.project),{doc,step,key}=deliverableOf(c,board,i.deliverable)
+    const n=i.n??board.current.get(key)?.n
+    const v=n&&await one(c.q,'SELECT file_id FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[c.access.project.id,doc,step,n])
+    check(v?.file_id,'This version has no Word file',404)
+    const f=await readStoredFile(c.q,v.file_id)
+    return {name:f.name,mime:f.mime,size:f.size,content_base64:f.buffer.toString('base64')}
   }},
   'resources.set':{project:true,write:true,async run(c){
     requireOwner(c.access)

@@ -134,7 +134,7 @@ Screens (TECHNICAL §9): Projects, Project plan, Deliverable dialog, Sources, Te
 
 ## 10. Phases
 
-Status: phases 1–3 are done (see `tests/`).
+Status: phases 1–4 are done (see `tests/`).
 
 | Phase | Work | Done when |
 |---|---|---|

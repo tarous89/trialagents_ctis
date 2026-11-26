@@ -35,7 +35,9 @@ const headers={
 export function frontMatter(text){
   const m=/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(text)
   if(!m)throw new Error('missing the --- header ---')
-  return {header:parseYaml(m[1])??{},body:m[2].trim()}
+  // Versions stay exactly as written (YAML would turn 2.0 into 2).
+  const yaml=m[1].replace(/^(version:[ \t]*)([^'"\s][^\n]*?)[ \t]*$/m,(_,k,v)=>k+JSON.stringify(v))
+  return {header:parseYaml(yaml)??{},body:m[2].trim()}
 }
 
 // Content guide body: "## S01 · Title" sections with "Key: value" lines, and a "## Checklist" of "- C01 text".

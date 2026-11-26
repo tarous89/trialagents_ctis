@@ -154,3 +154,11 @@ CREATE TABLE IF NOT EXISTS ctis.catalog_item (
  file_name text, file_sha256 text, file bytea,
  PRIMARY KEY(release_id,id)
 );
+
+-- Text of stored sources, in chunks with locators (page, section), for search and quoting.
+CREATE TABLE IF NOT EXISTS ctis.resource_text (
+ resource_id uuid NOT NULL REFERENCES ctis.resource ON DELETE CASCADE, chunk integer NOT NULL,
+ locator jsonb NOT NULL DEFAULT '{}', text text NOT NULL,
+ PRIMARY KEY(resource_id,chunk)
+);
+CREATE INDEX IF NOT EXISTS ctis_resource_text_search ON ctis.resource_text USING gin(to_tsvector('simple',text));

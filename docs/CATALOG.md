@@ -102,7 +102,16 @@ Leave as placeholder: [Name, phone and address of the site study team]
 - C03 Reimbursement wording matches the country requirements.
 ```
 
-Recognised lines inside a section: `Fill:` (required), `Must say:`, `Standard wording:` (required for `standard`), `Sources:`, `Check:`, `Leave as placeholder:`, `Optional: yes`, `Repeat: yes`. Other lines are kept as notes. Headings are `## <id> · <title>`; the checklist is `## Checklist` followed by `- C01 text` lines. `doc_type` defaults to the file's `id`; a country or language variant sets `doc_type` to the base guide's type and narrows `countries` or `languages`.
+Recognised lines inside a section: `Fill:` (required), `Must say:`, `Standard wording:` (required for `standard`), `Sources:`, `Check:`, `Leave as placeholder:`, `Layout:` (how to present this section, for example "table with columns Visit, Timing, Procedures" or "timeline of the visits"), `Optional: yes`, `Repeat: yes`. Other lines are kept as notes. Headings are `## <id> · <title>`; the checklist is `## Checklist` followed by `- C01 text` lines. `doc_type` defaults to the file's `id`; a country or language variant sets `doc_type` to the base guide's type and narrows `countries` or `languages`.
+
+### Layout instructions
+
+Layout guidance reaches the assistant in two layers, for the Draft and Style steps:
+
+1. **General design rules** for every document that is not an authority form: `workflow/design.md`, plus the notes in the Word template's own `.md` (for example which styles the default layout offers).
+2. **Specific instructions**: the content guide's `## Layout` section (document-wide, for example "start with a summary box; one page maximum for the recruitment flyer"), its `Layout:` lines per section, and the `national_notes` of the matching submission requirement row.
+
+Where they disagree, the specific instruction wins. Authority forms are never restyled.
 
 ### Fill levels
 
@@ -149,9 +158,16 @@ slots:
 
 A layout can have one slot per content guide section (slot ids = section ids) or one `body` slot with `sections: all` that receives every section in order, as the default layout does.
 
-**Preparing a template.** Put a Word content control (Developer → Rich text content control) where each section goes and set its Tag to the section id. For a form, tag each field or table cell. A template without tags still works: the server lists its paragraphs, tables, cells, headers and footers with ids and the assistant fills by those, but tagged templates are more reliable and should be the default for catalog items.
+**Preparing a template.** Two kinds of fields work, and a template can mix them:
 
-**Filling.** The assistant never handles the .docx file itself. It sends the content for each slot (paragraphs, lists, tables, images from stored files, header and footer text, repeated rows or sections, removal of optional sections) and the server writes the .docx, keeping the template's styles. Unfilled required slots come back as Missing data. See [MCP.md](MCP.md#word-files).
+- **Coded fields**, the convention of the earlier CTIS app: type `{{code}}` where a value goes (for example `{{kv102}}` or `{{v01100}}`), and wrap optional parts in `{{#code === "value"}}` … `{{/}}`. Conditions can combine terms with `&&` and `||`. This is how pre-ticked Yes/No variants work: one region per answer. Word may split a code across formatting runs; the server joins it back.
+- **Word content controls** (Developer → Rich text content control) whose Tag is the slot id. A checkbox content control with a tag becomes a `checkbox` slot.
+
+Every field must be declared as a slot in the `.md` header with a description, so the assistant knows what to write. Slots accept `text`, `blocks` (layouts only), `choice` (with `values`, for the variables tested in `{{#…}}` regions) or `checkbox`, and may have a `default`. The validator reports any field in the `.docx` that is not declared, and any declared slot it cannot find.
+
+YAML tip: put a value in quotes when it contains a colon followed by a space, for example `description: 'Footer line, for example "Protocol: EX-101"'`.
+
+**Filling.** The assistant never handles the .docx file itself. It sends the content for each slot (text, choices, checkboxes; for layouts also blocks: headings, paragraphs, lists, tables, timelines, notes, images from stored files) and the server writes the .docx, keeping the template's styles. Inline marks work in any text: `**bold**`, `*italic*`, `__underline__` and `[[missing information]]`, which is highlighted. Required slots left empty come back as Missing data findings. See [MCP.md](MCP.md#8-word-files).
 
 ## 5. Workflow guides
 
@@ -166,6 +182,7 @@ Maintained with the app, versioned like the rest:
 | `fill-word` | Mapping final content to template slots; forms vs layouts |
 | `revision` | Using comments, source changes and the previous version; changing only what is needed |
 | `findings` | The five finding types and when each blocks |
+| `design` | General design rules for documents that are not authority forms |
 
 ## 6. Labelling and selection
 
@@ -189,7 +206,7 @@ Run `npm run check:catalog` to see errors and warnings before committing; CI run
 
 ## 8. Starting content
 
-- Default Word layout: port the styling in `trialagents_ctis_old/server/config/ctis-defaults.json` (Arial 12, green headings, page margins, table of contents) into `word/default-layout.docx`.
-- German participant information: `trialagents_ctis_old/templates/patient_information_consent_de_coded.docx` is a candidate first `layout`.
-- Population and consent planning rules: `trialagents_ctis_old/server/prompts/phase1-analyze.txt` and `pop-dep-*.txt` feed the `planning` and content guides.
-- Country requirements: provided by you.
+- `word/default-layout.docx`: the patient information design of the earlier CTIS app (sample L1 SIS and ICF, Spain): blue title box, shaded section bands, bordered study information table, cyan highlight for missing information, blue footer rule with document details, page numbers and the protocol and EU trial numbers. Used for every non-formal document unless a content guide names another template. Generated by `scripts/build-default-layout.mjs`.
+- `word/recruitment-consent-procedure-de.docx`: the MedEthicsEU and CTAG recruitment and informed consent procedure template v2.0, coded for Germany, with all 29 fields described.
+- Population and consent planning rules: `trialagents_ctis_old/server/prompts/phase1-analyze.txt` and `pop-dep-*.txt` feed the `planning` guide and content guides.
+- Country requirements and content guides: provided by you.

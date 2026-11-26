@@ -36,6 +36,8 @@ Use Node 24. `npm ci` then `npm test`. `npm run check:catalog` validates `catalo
 | `app/server/store.mjs` | Every operation: projects, plans, versions, threads, continue, approval, sources, sharing, logs |
 | `app/server/rules.mjs` | Input schemas and the content model |
 | `app/server/catalog.mjs` | Catalog parsing, validation, matching to a document, publishing |
+| `app/server/word.mjs` | Fills Word templates: coded fields and conditional regions, content controls, checkboxes, and content blocks for layouts |
+| `app/server/sources.mjs` | Stored sources: text extraction (PDF, Word, text) with page or section locators, search |
 | `catalog/` | The catalog itself (see its README) |
 
 ## Next step
