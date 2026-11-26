@@ -130,7 +130,7 @@ const ops={
     const p=await one(q,`INSERT INTO ctis.project(id,owner_id,code,name,sponsor,phase,submission_type,eu_ct_number,countries,duplicated_from,plan_rev)
       SELECT $2,owner_id,coalesce($3,code),coalesce($4,name||' (copy)'),sponsor,phase,submission_type,'',countries,id,1 FROM ctis.project WHERE id=$1 RETURNING *`,[src.id,id,c.input.code??null,c.input.name??null])
     await q('INSERT INTO ctis.project_resource SELECT $2,resource_id FROM ctis.project_resource WHERE project_id=$1',[src.id,id])
-    await q('INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,doc_type,filename,position,catalog) SELECT $2,id,name,part,country,language,variant,doc_type,filename,position,catalog FROM ctis.document WHERE project_id=$1 AND removed_at IS NULL',[src.id,id])
+    await q('INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,code,filename,position,catalog) SELECT $2,id,name,part,country,language,variant,code,filename,position,catalog FROM ctis.document WHERE project_id=$1 AND removed_at IS NULL',[src.id,id])
     await q('INSERT INTO ctis.step(project_id,id,type,name,instruction,position,paused) SELECT $2,id,type,name,instruction,position,paused FROM ctis.step WHERE project_id=$1 AND removed_at IS NULL',[src.id,id])
     await q('INSERT INTO ctis.cell_na SELECT $2,n.document_id,n.step_id FROM ctis.cell_na n JOIN ctis.document d ON d.project_id=$2 AND d.id=n.document_id JOIN ctis.step s ON s.project_id=$2 AND s.id=n.step_id WHERE n.project_id=$1',[src.id,id])
     await q('INSERT INTO ctis.document_resource_override SELECT $2,o.document_id,o.resource_id,o.op FROM ctis.document_resource_override o JOIN ctis.document d ON d.project_id=$2 AND d.id=o.document_id WHERE o.project_id=$1',[src.id,id])
@@ -171,10 +171,10 @@ const ops={
         [pid,s.id,s.type,s.name||stepNames[s.type],s.instruction,i,s.paused])
     await q('UPDATE ctis.step SET removed_at=now() WHERE project_id=$1 AND removed_at IS NULL AND NOT (id=ANY($2))',[pid,[...taken]])
     for(const [i,d] of documents.entries())
-      await q(`INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,doc_type,filename,position,catalog) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
+      await q(`INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,code,filename,position,catalog) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
         ON CONFLICT(project_id,id) DO UPDATE SET name=EXCLUDED.name,part=EXCLUDED.part,country=EXCLUDED.country,language=EXCLUDED.language,variant=EXCLUDED.variant,
-          doc_type=EXCLUDED.doc_type,filename=EXCLUDED.filename,position=EXCLUDED.position,catalog=EXCLUDED.catalog,removed_at=NULL`,
-        [pid,d.id,d.name,d.part,d.country,d.language,d.variant,d.doc_type,d.filename,i,json(d.catalog)])
+          code=EXCLUDED.code,filename=EXCLUDED.filename,position=EXCLUDED.position,catalog=EXCLUDED.catalog,removed_at=NULL`,
+        [pid,d.id,d.name,d.part,d.country,d.language,d.variant,d.code,d.filename,i,json(d.catalog)])
     await q('UPDATE ctis.document SET removed_at=now() WHERE project_id=$1 AND removed_at IS NULL AND NOT (id=ANY($2))',[pid,[...docIds]])
     await q('DELETE FROM ctis.cell_na WHERE project_id=$1',[pid])
     for(const x of na)await q('INSERT INTO ctis.cell_na VALUES($1,$2,$3) ON CONFLICT DO NOTHING',[pid,x.document,x.step])
@@ -249,25 +249,25 @@ const ops={
     const n=curN+1
     // Catalog items used, and for a Style step the filled Word file.
     const docRow=board.documents.find(x=>x.id===doc),stepRow=board.steps.find(x=>x.id===step)
-    const cat=await currentCatalog(q),guide=cat.contentGuide(docRow)
+    const cat=await currentCatalog(q),guide=cat.contentTemplate(docRow)
     const used=[...i.catalog,...(guide?[{id:guide.id,version:guide.version}]:[])]
     let fileId=null
     const wordFindings=[]
     if(stepRow.type==='style'){
-      const tpl=cat.wordTemplate(docRow,guide)
-      check(tpl||!i.fill,'No Word template is available for this document',409)
-      if(tpl){
-        const slots=tpl.header.slots,unknown=Object.keys(i.fill??{}).filter(k=>!slots.some(x=>x.id===k))
-        check(!unknown.length,'Unknown Word fields: '+unknown.join(', ')+'. Template '+tpl.id+' has: '+slots.map(x=>x.id).join(', '))
+      const styling=cat.styling(docRow,guide)
+      check(styling||!i.fill,'No styling is available for this document',409)
+      if(styling){
+        const tpl=styling.file,slots=styling.slots,unknown=Object.keys(i.fill??{}).filter(k=>!slots.some(x=>x.id===k))
+        check(!unknown.length,'Unknown Word fields: '+unknown.join(', ')+'. Styling '+styling.item.id+' has: '+slots.map(x=>x.id).join(', '))
         const owner=c.access.project.owner_id,source=await catalogFile(q,cat.release,tpl.id)
         let r
-        try{r=await fillTemplate(source.buffer,{kind:tpl.header.kind,slots,values:i.fill??{},content,
+        try{r=await fillTemplate(source.buffer,{kind:styling.kind,slots,values:i.fill??{},content,
           files:async id=>{const f=await readStoredFile(q,id);return f&&f.owner_id===owner?f:null}})}
-        catch(e){check(false,'The Word template '+tpl.id+' could not be filled: '+e.message,422)}
+        catch(e){check(false,'The Word file of styling '+styling.item.id+' could not be filled: '+e.message,422)}
         fileId=await storeFile(q,{ownerId:owner,name:docRow.filename+'_v'+n+'.docx',mime:DOCX,buffer:r.buffer})
         for(const m of r.missing){const sl=slots.find(x=>x.id===m);wordFindings.push({category:'missing',text:'Fill the Word field '+m+(sl?.description?': '+sl.description:''),key:'word-'+m})}
         for(const img of r.images.filter(x=>!x.ok))wordFindings.push({category:'missing',text:'An image could not be added: upload it as a PNG or JPEG file in the workspace.',key:'image-'+img.file})
-        used.push({id:tpl.id,version:tpl.version})
+        for(const x of styling.chain)used.push({id:x.id,version:x.version})
       }
     }
     const findings=[...i.findings,...wordFindings.filter(w=>!i.findings.some(f=>f.key===w.key))]

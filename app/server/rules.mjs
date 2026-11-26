@@ -19,7 +19,7 @@ export const sectionId=z.string().regex(/^[A-Za-z0-9_.-]{1,40}$/,'must be a shor
 
 export const stepTypes={draft:'DR',checklist:'CL',qc:'QC',style:'ST',team:'TR',guide:'IG',custom:'CS'}
 export const stepNames={draft:'Draft',checklist:'Checklist',qc:'Source QC',style:'Style',team:'Team review',guide:'Internal guidelines',custom:'Custom step'}
-export const defaultSteps=['draft','checklist','qc','style']
+export const defaultSteps=['draft','qc','style']
 
 // Content: ordered sections of typed blocks. Block types follow the old CTIS renderer.
 const block=z.discriminatedUnion('type',[
@@ -63,7 +63,7 @@ export const inputs={
   'project.duplicate':z.strictObject({code:text(40).min(1).optional(),name:name.optional()}),
   'plan.save':z.strictObject({
     documents:z.array(z.strictObject({id:documentId,name,part:z.enum(['I','II']),country:z.union([country,z.literal('EU')]),language:z.string().regex(/^[a-z]{2}$/),
-      variant:text(100).default(''),doc_type:text(100).default(''),filename:text(200).min(1),catalog:z.record(z.string(),z.string()).default({})})).max(300),
+      variant:text(100).default(''),code:z.string().regex(/^([A-Za-z0-9][A-Za-z0-9_.-]{0,60})?$/,'use the regulatory code, for example L1_SIS-ICF').default(''),filename:text(200).min(1),catalog:z.record(z.string(),z.string()).default({})})).max(300),
     steps:z.array(z.strictObject({id:stepId.optional(),type:z.enum(Object.keys(stepTypes)),name:text(100).optional(),instruction:text(4000).default(''),paused:z.boolean().default(false)})).min(1).max(20),
     not_applicable:z.array(z.strictObject({document:documentId,step:stepId})).max(3000).default([])
   }),

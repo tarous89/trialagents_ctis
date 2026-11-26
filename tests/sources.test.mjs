@@ -41,8 +41,8 @@ before(async()=>{
   const p=await run(owner,{op:'project.create',requestId:randomUUID(),input:{code:'EX-101',name:'EX-101',countries:['DE','ES']}})
   project=p.project.id
   await run(owner,w('plan.save',{documents:[
-    {id:'D04',name:'Patienteninformation',part:'II',country:'DE',language:'de',doc_type:'participant-information-consent',filename:'EX101_ICF_DE_de'},
-    {id:'D05',name:'Recruitment arrangements',part:'II',country:'DE',language:'en',doc_type:'recruitment-arrangements',filename:'EX101_REC_DE'}],
+    {id:'D04',name:'SIS and ICF – adults',part:'II',country:'DE',language:'de',code:'L1_SIS-ICF',variant:'adults',filename:'EX101_L1_SIS-ICF_adults_DE_de'},
+    {id:'D05',name:'Recruitment arrangements',part:'II',country:'DE',language:'en',code:'K1_recruitment-arrangements',filename:'EX101_K1_recruitment-arrangements_DE_en'}],
     steps:[{type:'draft'},{type:'style'}]}))
   revision=1
 })
@@ -56,7 +56,7 @@ test('uploads are people-only; PDF and Word sources become searchable passages w
   await assert.rejects(run(owner,w('resource.upload',upload),'Claude'),e=>e.status===403)
   const up=await run(owner,w('resource.upload',upload),'web')
   assert.equal(up.passages,2)
-  const docx=(await fillTemplate(await readFile(new URL('../catalog/word/default-layout.docx',import.meta.url)),{kind:'layout',slots:[{id:'body',sections:'all'}],
+  const docx=(await fillTemplate(await readFile(new URL('../catalog/styling/default-layout.docx',import.meta.url)),{kind:'layout',slots:[{id:'body',sections:'all'}],
     content:{title:'Country manual',sections:[{id:'DE',heading:'Germany',blocks:[{type:'paragraph',text:'Documented travel expenses may be reimbursed up to 50 EUR per visit.'}]},
       {id:'ES',heading:'Spain',blocks:[{type:'paragraph',text:'Participants direct questions to the local study team.'}]}]}})).buffer
   await run(owner,w('resource.upload',{resource:manual.resource,name:'manual.docx',mime:'',content_base64:docx.toString('base64')}),'Claude workspace')
@@ -76,17 +76,17 @@ test('a Style step fills the default layout and reports required fields left emp
   await run(owner,w('version.save',{deliverable:'D04-DR',base:0,content}),'Claude')
   await assert.rejects(run(owner,w('version.save',{deliverable:'D04-ST',base:0,content,fill:{nonsense:'x'}}),'Claude'),/Unknown Word fields: nonsense/)
   const st=await run(owner,w('version.save',{deliverable:'D04-ST',base:0,content,fill:{subtitle:'Erwachsene',page_label:'Seite ',page_of:' von '}}),'Claude')
-  assert.equal(st.file,'EX101_ICF_DE_de_v1.docx')
+  assert.equal(st.file,'EX101_L1_SIS-ICF_adults_DE_de_v1.docx')
   assert.deepEqual(st.findings.map(f=>f.category+':'+f.text.split(':')[0]),['missing:Fill the Word field footer'])
   const f=await run(owner,r('version.file',{deliverable:'D04-ST'}))
   const zip=await JSZip.loadAsync(Buffer.from(f.content_base64,'base64'))
   const text=(await zip.file('word/document.xml').async('string')).replace(/<[^>]+>/g,'')
   assert.match(text,/Patienteninformation und Einwilligungserklärung/);assert.match(text,/Erwachsene/);assert.match(text,/Einleitung/)
   const v=(await run(owner,r('deliverable.read',{deliverable:'D04-ST'}))).version
-  assert.deepEqual(v.catalog.map(x=>x.id),['default-layout'])
+  assert.deepEqual(v.catalog.map(x=>x.id),['L1_SIS-ICF','default'],'the styling used and the base it took its Word file from')
   // The footer arrives in a revision: the Word finding is closed and the file is rebuilt.
   const fixed=await run(owner,w('version.save',{deliverable:'D04-ST',base:1,content,fill:{subtitle:'Erwachsene',footer:'Patienteninformation - v1.0'}}),'Claude')
-  assert.equal(fixed.status.status,'done');assert.equal(fixed.file,'EX101_ICF_DE_de_v2.docx')
+  assert.equal(fixed.status.status,'done');assert.equal(fixed.file,'EX101_L1_SIS-ICF_adults_DE_de_v2.docx')
 })
 
 test('a Style step fills the authority form, choosing which sections it keeps',async()=>{
@@ -101,5 +101,5 @@ test('a Style step fills the authority form, choosing which sections it keeps',a
   const text=xml.replace(/<[^>]+>/g,'')
   assert.ok(!text.includes('{{'));assert.match(text,/2026-500123-45-00/);assert.match(text,/☒ No, not applicable\. Please continue with section 4\./)
   const v=(await run(owner,r('deliverable.read',{deliverable:'D05-ST'}))).version
-  assert.deepEqual(v.catalog,[{id:'recruitment-consent-procedure-de',version:'2.0'}])
+  assert.deepEqual(v.catalog,[{id:'K1_recruitment-arrangements_DE',version:'2.0'}])
 })

@@ -9,18 +9,18 @@ This is the reference for building TrialAgents CTIS: the hosted app, its databas
 | **Project** | One CTIS submission. One project has exactly one plan. A new submission or amendment is a new project, usually created by duplicating one. Duplication copies the details, sources and templates and the plan, not the deliverables. |
 | **Plan** | The documents of the project (rows) × the steps (columns), plus the pinned final document. |
 | **Document** | One output for a part, country, language and variant, for example "Participant information & consent · Germany · German". Has a code such as `D04`. |
-| **Step** | A stage every document goes through. Default: Draft, Checklist, Source QC, Style. Steps are plan-wide; they can be paused for the plan or marked not applicable for a single document. |
+| **Step** | A stage every document goes through. Default: Draft, Source QC, Style (the Draft step checks the content template's checklist). Steps are plan-wide; they can be paused for the plan or marked not applicable for a single document. |
 | **Deliverable** | One document at one step. Has a code such as `D04-QC`. Has versions. |
 | **Version** | One saved result of a deliverable. Immutable. Carries who, when, through which assistant, and the sources and templates used. |
 | **Final document** | The approved version of the document's last applicable step. |
 | **Source** | A study document used as evidence (protocol, IB, manuals). |
-| **Template** | A writing template, checklist, Word layout or SOP recorded by a user. TrialAgents' own submission requirements, content guides, Word templates and workflow guides form the catalog ([CATALOG.md](CATALOG.md)); they are not listed to users but are recorded in each version's snapshot. |
+| **Template** | A writing template, checklist, Word layout or SOP recorded by a user. TrialAgents' own planning checklists, naming instructions, content templates, styling instructions and workflow guides form the catalog ([CATALOG.md](CATALOG.md)); they are not listed to users but are recorded in each version's snapshot. |
 | **Share** | Access given to one email for one deliverable, document or project, with a role. |
 
 ### Codes
 
 - Document code: `D` + two digits, assigned by the plan (`D01` …). Stable within a project and copied by duplication.
-- Step code: `DR` Draft, `CL` Checklist, `QC` Source QC, `ST` Style, `TR` Team review, `IG` Internal guidelines, `CS` custom. Compare versions and Compare across documents are dropped as step types; the Versions view already compares versions.
+- Step code: `DR` Draft, `CL` Checklist (optional), `QC` Source QC, `ST` Style, `TR` Team review, `IG` Internal guidelines, `CS` custom. Compare versions and Compare across documents are dropped as step types; the Versions view already compares versions.
 - Deliverable code: `<document>-<step>`, for example `D04-QC`. Shown only inside the opened deliverable and in logs, not in the plan table.
 - Document and deliverable naming and codes are part of the plan the assistant proposes.
 
@@ -49,7 +49,7 @@ Findings types (shown in the review panel): missing data, conflicting informatio
 
 Specified in [MCP.md §5](MCP.md#5-the-loop). In short:
 
-1. **Plan.** The assistant reads the planning guide and submission requirements from the catalog and saves the plan. It opens in the workspace at once; there is no confirmation step. The user asks for changes in the chat and says when to start.
+1. **Plan.** The assistant reads the planning checklists and naming instructions from the catalog and saves the plan, naming each document by its regulatory code (for example `L1_SIS-ICF`, variant `adults`). It opens in the workspace at once; there is no confirmation step. The user asks for changes in the chat and says when to start.
 2. **Order.** Part I first, then each country's documents top to bottom. A document runs through all its steps before the next document starts.
 3. **One step at a time, context from the server.** Each step's context comes from `get_ctis_step`, never from chat history, so a run can resume in any conversation.
 4. **Blocks.** Any unresolved finding or comment on the current version blocks that document (missing data, conflicting information, decision needed, open comment, source changed). The loop moves to the next document. **Ignore and continue** (this version only) unblocks it: a person clicks it in the app, or asks the assistant to move on, which records it and flags the unresolved issues on the next version.

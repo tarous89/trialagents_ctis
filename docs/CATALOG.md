@@ -1,30 +1,50 @@
 # TrialAgents CTIS: content catalog
 
-The catalog is the content TrialAgents maintains and serves to Claude and ChatGPT through the MCP. It is separate from the app: the app stays generic (projects, plans, steps, versions, review), and everything specific to CTIS, countries or document types lives here, so it can be updated without a new app or plugin release.
+The catalog is the content TrialAgents serves to Claude and ChatGPT through the MCP. The app stays generic: projects, plans, steps, versions and review. Everything specific to CTIS, countries and documents lives here, so it can be updated without a new app or plugin release.
 
-The assistant decides what the submission needs. The catalog gives it labelled material to use when it fits. When nothing in the catalog fits, the assistant works from the sources and its own knowledge and says so in the step output.
+The assistant decides what the submission needs. The catalog gives it labelled material to use when it fits. When nothing in the catalog fits, the assistant works from the sources and its own knowledge and says so.
 
-## 1. Categories
+Everything uses regulatory naming: the Annex I section letter and number and a short name, for example `K1_recruitment-arrangements` or `L1_SIS-ICF`, then the variant and the country where there is one: `L1_SIS-ICF_adults_ES`.
 
-There are four categories. The first three are per submission content and are provided by TrialAgents (you). The fourth is how the assistant works and is maintained with the app.
+## 1. What the MCP provides
 
-| Category | One item per | Answers | Used in steps |
+| Item | Folder and file | One per | Used for |
 |---|---|---|---|
-| **Submission requirements** | Part I (one item) and each member state (one item each) | Which documents are needed, when, in which language, with which national rules | Planning, Checklist |
-| **Content guide** | Document type, optionally a country or language variant | What goes in the document: sections, what each must say, standard wording, what is filled for the study vs left for the site, checklist items | Draft, Checklist, Source QC |
-| **Word template** | Document type, optionally a country or language variant | The final .docx to populate. Either a TrialAgents **layout** (styled template) or an authority **form** (filled as is, never restyled) | Style / Fill form |
-| **Workflow guide** | Step type, plus planning and revision | How to plan, draft, check, run Source QC, fill Word, revise and report findings | All steps |
+| **Planning checklist** | `planning/Part-I.md`, `planning/DE.md`, … | Part I, and each member state | Which documents a submission needs, by regulatory code, when, in which language and variants, with national notes and an optional country naming rule |
+| **Naming instructions** | `planning/naming.md` | One | Codes, variants, names and filenames of documents |
+| **Content template** | `content/L1_SIS-ICF_adults_ES.md` | Regulatory document, optionally per variant, country and language | What the document says: sections, fill levels, standard wording, and its **template checklist** |
+| **Styling instructions** | `styling/K1_recruitment-arrangements_DE.md` (+ `.docx`), `styling/L1_SIS-ICF.md` | Regulatory document, optionally per variant, country and language | How the document looks: an authority form filled as is, or a layout, plus written styling rules |
+| **Workflow guides** | `workflow/…` | Step | How the assistant plans, drafts, runs Source QC, styles and revises (maintained with the app) |
 
-Users can add their own items of the same kinds (a sponsor content guide, an SOP checklist, a company Word layout). Theirs are recorded in the Templates registry; TrialAgents catalog items are not listed there but are recorded in each version's "Used in this version" snapshot.
+Users can add their own items of the same kinds (a sponsor content template, an SOP checklist, a company Word layout). Theirs are recorded in the Templates registry; TrialAgents items are not listed there but are recorded in each version's "Used in this version" snapshot.
 
-## 2. Submission requirements
+### Matching a document
 
-One file for Part I (`requirements/part-i.md`, `part: I`, `country: EU`) and one per member state (`requirements/de.md`, `part: II`, `country: DE`). The header lists the documents; the text below the header holds national notes, which are passed to the assistant as they are.
+Every document in a plan has a `code` and a `variant`, plus its part, country and language. For each document the MCP picks the most specific item: variant beats no variant, country beats all countries, language beats all languages. A plan can pin a specific item for a document. Items whose `effective` date is in the future are ignored until then.
+
+- **Content template:** same `code`; a variant-specific template only serves that variant.
+- **Styling:** the content template's `styling`, else the most specific styling with the same `code`, else the default styling.
+
+## 2. Common header
+
+Every file starts with a header between `---` lines:
+
+| Field | Meaning |
+|---|---|
+| `id` | The file name without `.md`, using regulatory naming (`L1_SIS-ICF_adults_ES`). Letters, digits, `_`, `.` and `-`. |
+| `name` | Readable name |
+| `version` | Kept exactly as written (`2.0` stays `2.0`) |
+| `effective` | `YYYY-MM-DD`; ignored until then |
+| `use_when` | One or two sentences the assistant reads to decide whether the item fits |
+
+Put a value in quotes when it contains a colon followed by a space, for example `use_when: 'Germany: Part II'`.
+
+## 3. Planning checklist
 
 ```markdown
 ---
-id: de
-name: Germany – Part II
+id: DE
+name: Germany – Part II planning checklist
 part: II
 country: DE
 version: 1.0
@@ -32,181 +52,173 @@ effective: 2027-01-01
 use_when: Part II documents for Germany.
 reference: https://… (authority page)
 checked: 2026-11-20
+naming: '<study>_<code>_<variant>_DE_de'
 documents:
-  - doc_type: participant-information-consent
-    name: Participant information and informed consent form
+  - code: L1_SIS-ICF
+    name: Subject information sheet and informed consent form
+    variants: [adults, minors]
     required: always
     languages: [de]
     per: population
-  - doc_type: recruitment-arrangements
+    national_notes: Signature blocks as a table; wet-ink signatures.
+  - code: K1_recruitment-arrangements
     name: Recruitment arrangements
-    required: conditional
-    condition: When participants are recruited by advertisement
-    authority_form: de-recruitment-form
+    required: always
 ---
-Signatures on consent forms are wet ink unless the ethics committee accepts electronic signatures.
+National notes that apply to the whole country.
 ```
 
-Fields of each document row:
-
-| Field | Example |
+| Row field | Meaning |
 |---|---|
-| `doc_type` | `participant-information-consent` (links to the content guide and Word template) |
-| `name` | Participant information and informed consent form |
-| `part` | `I` or `II` |
-| `required` | `always` · `conditional` · `optional` |
-| `condition` | "When minors are enrolled", "Substantial modification affecting Part II" |
-| `submission_types` | `initial`, `substantial-modification`, `additional-msc`, `transition`, … or `all` |
-| `languages` | `de`; or "national language(s), English accepted for documents not intended for participants" |
-| `per` | `trial` · `site` · `population` (one document per site, per population, …) |
-| `national_notes` | Signatures, fees, formats, upload location in CTIS |
-| `authority_form` | Reference to a Word template of kind `form`, if the authority prescribes one |
-| `reference` | Link to the authority page or legal basis, and the date it was checked |
+| `code` | Regulatory code; links to content templates and styling |
+| `name` | Document name |
+| `variants` | Populations or versions this document comes in; empty for one version |
+| `required` | `always`, `conditional` (with `condition`) or `optional` |
+| `submission_types` | `initial`, `substantial-modification`, `additional-msc`, … or `all` (default) |
+| `languages` | Required languages; default `all` |
+| `per` | `trial` (default), `site` or `population` |
+| `national_notes` | Country rules for this document, passed to the assistant with the styling instructions |
 
-Submission types are open: the assistant plans any type. A row without `submission_types` (or with `all`) applies to every type. `languages` and `submission_types` default to `all`, `per` to `trial`.
+Part I uses `id: Part-I`, `part: I` and `country: EU`. Submission types are open: the assistant plans any type.
 
-## 3. Content guide
+## 4. Naming instructions
 
-One file per document type. Markdown with a small header, so it is easy to write and Claude reads it directly.
+`planning/naming.md` (`kind: naming`) describes codes, variants, names and filenames in plain text. A country checklist's `naming` field adds or overrides a rule for that country.
+
+## 5. Content template
 
 ```markdown
 ---
-id: participant-information-consent
-name: Participant information and informed consent form
+id: L1_SIS-ICF_adults_ES
+name: L1 SIS and ICF – adults – Spain
+code: L1_SIS-ICF
+variant: adults
 part: II
-countries: [all]          # or [DE] for a German variant
-languages: [all]
+countries: [ES]
+languages: [es]
 version: 1.0
 effective: 2027-01-01
-use_when: Adult participants able to consent. Use the minors guide for assent.
-word_template: pic-layout  # or an authority form id
+use_when: Adult participants able to consent, Spain.
+styling: L1_SIS-ICF_ES        # optional; otherwise matched by code
 ---
 
-## S01 · Study purpose
+## S01 · Introducción
 Fill: study
-Must say: why the study is done, in plain language, reading age about 12.
+Must say: why the study is done, in plain language.
 Sources: protocol synopsis, objectives.
 
-## S02 · Taking part is voluntary
+## S02 · Participación voluntaria
 Fill: standard
-Standard wording: "Taking part is voluntary. You can stop at any time without giving a reason…"
-Check: the protocol must not contradict this (for example a mandatory follow-up after withdrawal).
+Standard wording: La participación es voluntaria…
+Check: the protocol must not contradict this.
 
-## S07 · Site contact
+## S09 · Contacto del centro
 Fill: site
-Leave as placeholder: [Name, phone and address of the site study team]
+Leave as placeholder: [Nombre, teléfono y dirección del equipo del estudio]
 
 ## Checklist
 - C01 Every section S01–S12 is present, in order.
-- C02 Visit schedule matches the protocol schedule of activities.
-- C03 Reimbursement wording matches the country requirements.
+- C02 The visit schedule matches the protocol schedule of activities.
 ```
 
-Recognised lines inside a section: `Fill:` (required), `Must say:`, `Standard wording:` (required for `standard`), `Sources:`, `Check:`, `Leave as placeholder:`, `Layout:` (how to present this section, for example "table with columns Visit, Timing, Procedures" or "timeline of the visits"), `Optional: yes`, `Repeat: yes`. Other lines are kept as notes. Headings are `## <id> · <title>`; the checklist is `## Checklist` followed by `- C01 text` lines. `doc_type` defaults to the file's `id`; a country or language variant sets `doc_type` to the base guide's type and narrows `countries` or `languages`.
+Recognised lines inside a section: `Fill:` (required), `Must say:`, `Standard wording:` (required for `standard`), `Sources:`, `Check:`, `Leave as placeholder:`, `Optional: yes`, `Repeat: yes`. Other lines are kept as notes.
 
-### Layout instructions
-
-Layout guidance reaches the assistant in two layers, for the Draft and Style steps:
-
-1. **General design rules** for every document that is not an authority form: `workflow/design.md`, plus the notes in the Word template's own `.md` (for example which styles the default layout offers).
-2. **Specific instructions**: the content guide's `## Layout` section (document-wide, for example "start with a summary box; one page maximum for the recruitment flyer"), its `Layout:` lines per section, and the `national_notes` of the matching submission requirement row.
-
-Where they disagree, the specific instruction wins. Authority forms are never restyled.
+**The template checklist** is the `## Checklist` section, when the document has one. The Draft step checks the draft against it (and against the planning checklist row) before saving, so plans need no separate Checklist step.
 
 ### Fill levels
-
-Each section, field or table cell has one fill level. It decides what the assistant writes and what Source QC expects.
 
 | Fill level | The assistant | Source QC expects | If it cannot be filled |
 |---|---|---|---|
 | `study` | Writes it from the sources | A source passage for every fact | Missing data (blocks) |
 | `standard` | Uses the standard wording, adapted only as allowed | Standard wording reference; checks the protocol does not contradict it | Contradiction → Conflicting information (blocks) |
 | `user` | Asks the user (sponsor name, insurance, contact) | User-supplied, recorded with who and when | Missing data (blocks) |
-| `site` | Leaves a visible placeholder | Nothing | Not a finding. Shown as a placeholder in the document |
+| `site` | Leaves a visible placeholder | Nothing | Not a finding |
 | `blank` | Leaves it empty | Nothing | Not a finding |
 
-This answers documents that can only partly be completed centrally (for example forms where only the study title and code are known): their content guide marks the rest `site` or `blank`.
+## 6. Styling instructions
 
-## 4. Word template
+A styling item either has its **own Word file** (a form or a layout) or adds **written instructions on top of a base** styling.
 
-A .docx file (Word only; authority forms included) plus a small header:
-
-| Field | Meaning |
-|---|---|
-| `id`, `name`, `version`, `effective` | Identity |
-| `kind` | `layout`: TrialAgents or user styling, content is poured into it. `form`: authority form, only its fields are filled; nothing else changes |
-| `doc_type`, `countries`, `languages` | Where it applies |
-| `slots` | Named places to fill, matching content guide section ids (`S01` …), plus `header`, `footer`, table and cell ids |
-
-The header, in `word/<id>.md` next to `word/<id>.docx`:
+**With its own file** (`styling/K1_recruitment-arrangements_DE.md` next to `K1_recruitment-arrangements_DE.docx`):
 
 ```markdown
 ---
-id: de-recruitment-form
-name: Recruitment arrangements form (Germany)
-kind: form
-doc_type: recruitment-arrangements
+id: K1_recruitment-arrangements_DE
+name: K1 Recruitment arrangements – Germany
+code: K1_recruitment-arrangements
 countries: [DE]
-version: 1.0
-effective: 2027-01-01
+kind: form            # form: filled as is, never restyled; layout: content is poured in
+file: K1_recruitment-arrangements_DE.docx
+version: 2.0
+effective: 2026-01-01
 use_when: The authority form for recruitment arrangements in Germany.
 slots:
-  - {id: study_title, accepts: text, required: true}
-  - {id: eu_ct_number, accepts: text}
+  - {id: kv102, accepts: text, required: true, description: EU CT number}
+  - {id: kv108, accepts: choice, values: ["true", "false"], description: Incapacitated adults included?}
 ---
+Notes for the assistant.
 ```
 
-A layout can have one slot per content guide section (slot ids = section ids) or one `body` slot with `sections: all` that receives every section in order, as the default layout does.
+**On top of a base** (`styling/L1_SIS-ICF_ES.md`, no `.docx`):
 
-**Preparing a template.** Two kinds of fields work, and a template can mix them:
+```markdown
+---
+id: L1_SIS-ICF_ES
+name: L1 styling – Spain
+code: L1_SIS-ICF
+countries: [ES]
+base: L1_SIS-ICF      # default: the default styling
+version: 1.0
+effective: 2027-01-01
+use_when: L1 documents for Spain.
+---
+- Use a table for the schedule of visits and procedures.
+- Show the treatment phases as a timeline.
+- Put the data protection section in a summary box.
+```
 
-- **Coded fields**, the convention of the earlier CTIS app: type `{{code}}` where a value goes (for example `{{kv102}}` or `{{v01100}}`), and wrap optional parts in `{{#code === "value"}}` … `{{/}}`. Conditions can combine terms with `&&` and `||`. This is how pre-ticked Yes/No variants work: one region per answer. Word may split a code across formatting runs; the server joins it back.
-- **Word content controls** (Developer → Rich text content control) whose Tag is the slot id. A checkbox content control with a tag becomes a `checkbox` slot.
+The Word file, kind and slots come from the first item in the `base` chain that has a file. The default styling (`styling/default.md` with `default-layout.docx`) is the end of every chain.
 
-Every field must be declared as a slot in the `.md` header with a description, so the assistant knows what to write. Slots accept `text`, `blocks` (layouts only), `choice` (with `values`, for the variables tested in `{{#…}}` regions) or `checkbox`, and may have a `default`. The validator reports any field in the `.docx` that is not declared, and any declared slot it cannot find.
+**How styling reaches the assistant** (Draft and Style steps): general instructions first, then specific ones; where they disagree, the specific one wins.
 
-YAML tip: put a value in quotes when it contains a colon followed by a space, for example `description: 'Footer line, for example "Protocol: EX-101"'`.
+1. General: `workflow/design.md`, then the base stylings' text (default, then `L1_SIS-ICF`).
+2. Specific: this document's styling text (`L1_SIS-ICF_ES`), then the planning checklist row's `national_notes`.
 
-**Filling.** The assistant never handles the .docx file itself. It sends the content for each slot (text, choices, checkboxes; for layouts also blocks: headings, paragraphs, lists, tables, timelines, notes, images from stored files) and the server writes the .docx, keeping the template's styles. Inline marks work in any text: `**bold**`, `*italic*`, `__underline__` and `[[missing information]]`, which is highlighted. Required slots left empty come back as Missing data findings. See [MCP.md](MCP.md#8-word-files).
+Authority forms get only their own notes: they are never restyled.
 
-## 5. Workflow guides
+### Fields in a Word file
 
-Maintained with the app, versioned like the rest:
+Two kinds of fields work, and a file can mix them:
+
+- **Coded fields**, the convention of the earlier CTIS app: `{{code}}` where a value goes (`{{kv102}}`, `{{v01100}}`), and optional parts wrapped in `{{#code === "value"}}` … `{{/}}`. Conditions can combine terms with `&&` and `||`. Pre-ticked Yes/No variants work this way: one region per answer. Word may split a code across formatting runs; the server joins it back.
+- **Word content controls** (Developer → Rich text content control) whose Tag is the slot id. A checkbox content control with a tag is a `checkbox` slot.
+
+Every field is declared as a slot with a description, so the assistant knows what to write. Slots accept `text`, `blocks` (layouts only), `choice` (with `values`, for the variables tested in `{{#…}}` regions) or `checkbox`, and may have a `default`. A layout's slot with `sections: all` receives every content section in order.
+
+**Filling.** The assistant never handles the .docx itself. It sends the content for each slot and the server writes the file, keeping the template's styles. Layout content uses blocks: headings, paragraphs, lists, tables (style `info` for the study information table), timelines, notes, images from stored files. Inline marks work in any text: `**bold**`, `*italic*`, `__underline__` and `[[missing information]]`, which is highlighted. Required slots left empty come back as Missing data findings. See [MCP.md §8](MCP.md#8-word-files).
+
+## 7. Workflow guides
 
 | Guide | Covers |
 |---|---|
-| `planning` | Reading the protocol, choosing submission requirements, populations and variants, document naming and codes, default steps |
-| `draft` | Using the content guide, sources and fill levels; writing per section |
-| `checklist` | Checking the draft against the content guide checklist and the submission requirements |
-| `source-qc` | Fact-level evidence: every `study` fact gets a source passage; `standard` wording is checked for contradiction; how to quote and locate passages |
-| `fill-word` | Mapping final content to template slots; forms vs layouts |
+| `planning` | Reading the protocol, planning checklists, populations and variants, naming, default steps |
+| `draft` | Using the content template, sources and fill levels; the template checklist; choosing blocks by the styling instructions |
+| `checklist` | The optional separate Checklist step |
+| `source-qc` | Fact-level evidence; standard wording checked for contradiction; quoting and locating passages |
+| `fill-word` | Filling forms and layouts |
 | `revision` | Using comments, source changes and the previous version; changing only what is needed |
-| `findings` | The five finding types and when each blocks |
-| `design` | General design rules for documents that are not authority forms |
+| `findings` | The finding types and when each blocks |
+| `design` | General styling instructions for documents that are not authority forms |
 
-## 6. Labelling and selection
+## 8. How you deliver it
 
-Every item carries `use_when` in one or two sentences, plus its scope fields. The MCP filters by part, country, language, document type and submission type and returns the matches with `use_when`, so the assistant can choose. Planning returns the matching submission requirements; each step's context already contains the content guide, Word template outline and workflow guide for that deliverable, so the assistant rarely has to search.
+Add or change files in `catalog/` and run `npm run check:catalog`: it lists errors with what to fix, and warnings (for example a planning checklist row with no content template yet). CI runs it on every push. A deploy publishes a new catalog release when anything changed; no plugin release is needed. Every version records the exact catalog items it used.
 
-## 7. How you deliver it
+## 9. What is included
 
-Put files in `catalog/` in this repository:
-
-```
-catalog/
-  requirements/  part-i.md, de.md, es.md, …
-  content/       participant-information-consent.md, recruitment-material.md, …
-  word/          pic-layout.docx + pic-layout.md, de-recruitment-form.docx + .md, …
-  workflow/      planning.md, draft.md, checklist.md, source-qc.md, …
-```
-
-Every file has `id` (lowercase words joined by hyphens, the same as the file name), `name`, `version`, `effective` (YYYY-MM-DD; an item is ignored until that date) and `use_when`. Workflow guides add `applies_to` (planning, a step type, revision or findings).
-
-Run `npm run check:catalog` to see errors and warnings before committing; CI runs it on every push. A deploy validates the files (header fields, slot ids that match content guide sections, links between items) and publishes them as a new catalog version. Plugins never change. Runs record the exact catalog versions they used.
-
-## 8. Starting content
-
-- `word/default-layout.docx`: the patient information design of the earlier CTIS app (sample L1 SIS and ICF, Spain): blue title box, shaded section bands, bordered study information table, cyan highlight for missing information, blue footer rule with document details, page numbers and the protocol and EU trial numbers. Used for every non-formal document unless a content guide names another template. Generated by `scripts/build-default-layout.mjs`.
-- `word/recruitment-consent-procedure-de.docx`: the MedEthicsEU and CTAG recruitment and informed consent procedure template v2.0, coded for Germany, with all 29 fields described.
-- Population and consent planning rules: `trialagents_ctis_old/server/prompts/phase1-analyze.txt` and `pop-dep-*.txt` feed the `planning` guide and content guides.
-- Country requirements and content guides: provided by you.
+- `planning/naming.md`: naming instructions.
+- `styling/default.md` + `default-layout.docx`: the patient information design of the earlier CTIS app (sample L1 SIS and ICF, Spain): blue title box, shaded section bands, bordered study information table, cyan highlight for missing information, blue footer rule with document details, page numbers in the document's language and the protocol and EU trial numbers. Generated by `scripts/build-default-layout.mjs`.
+- `styling/L1_SIS-ICF.md`: L1 styling rules for every country, on top of the default.
+- `styling/K1_recruitment-arrangements_DE.md` + `.docx`: the MedEthicsEU and CTAG recruitment and informed consent procedure template v2.0, coded, with all 29 fields described.
+- Workflow guides.
+- To be provided: planning checklists for Part I and each country, content templates, and country styling.

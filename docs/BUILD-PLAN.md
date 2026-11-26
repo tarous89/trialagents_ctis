@@ -14,7 +14,7 @@ app/
 mcp/
   tools.mjs          Tool descriptors, zod schemas, server instructions
   http.mjs           Streamable HTTP handler, OAuth audiences, widget resource
-catalog/             Submission requirements, content guides, Word templates, workflow guides
+catalog/             Planning checklists and naming, content templates, styling instructions, workflow guides
 plugins/claude/      .claude-plugin/plugin.json, .mcp.json, skills/ctis/SKILL.md, README.md
 .claude-plugin/marketplace.json
 integration/
@@ -104,11 +104,11 @@ The workspace shows the content from the blocks with Download Word; there is no 
 `scripts/publish-catalog.mjs` validates `catalog/`:
 
 - required header fields
-- slot ids that match content guide sections
-- links between requirements, content guides and Word templates
+- styling bases that lead to a Word file
+- links between planning checklists, content templates and styling
 - unique ids and versions
 
-On deploy it writes a new `catalog_release`. Versions record the exact item versions they used. The first content is the default Word layout (ported from `ctis-defaults.json`), the workflow guides, and one fictional content guide and requirement file used by tests and the EX-101 example. Your real country requirements and templates are added as files later.
+On deploy it writes a new `catalog_release`. Versions record the exact item versions they used. The first content is the default Word layout (ported from `ctis-defaults.json`), the workflow guides, and one fictional content template and requirement file used by tests and the EX-101 example. Your real country requirements and templates are added as files later.
 
 ## 7. MCP server
 
@@ -140,7 +140,7 @@ Status: phases 1–4 are done (see `tests/`).
 |---|---|---|
 | 1. Scaffold | `package.json`, build, CI, pglite test harness, schema | `npm test` passes in CI with an empty schema |
 | 2. Core | Store, access, plan, versions, threads, status, next step | Tests cover every rule in TECHNICAL §2 and MCP §5 (order, blocking, continue, no cascade, approval binding) |
-| 3. Catalog | Loader, validator, publish script, default layout, workflow guides, fictional example items | A deliverable resolves its content guide, template and requirements; an invalid catalog fails CI |
+| 3. Catalog | Loader, validator, publish script, default layout, workflow guides, fictional example items | A deliverable resolves its content template, template and requirements; an invalid catalog fails CI |
 | 4. Sources and Word | Uploads, text extraction, source search, Word outline and fill | Fixture templates fill correctly; forms reject restyling; a stored protocol is searchable with locators |
 | 5. MCP | Six tools, frame tool, HTTP handler, instructions, step context | Over the MCP transport a scripted client runs EX-101: plan, loop to a block, resume from a new session, revise with changes only |
 | 6. Web app | Browser screens against the API | Chromium tests of the prototype flows; visual check against the prototype on desktop and mobile |

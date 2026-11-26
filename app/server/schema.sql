@@ -22,7 +22,7 @@ CREATE INDEX IF NOT EXISTS ctis_project_owner ON ctis.project(owner_id) WHERE ar
 CREATE TABLE IF NOT EXISTS ctis.document (
  project_id uuid NOT NULL REFERENCES ctis.project ON DELETE CASCADE, id text NOT NULL CHECK(id ~ '^D[0-9]{2,3}$'),
  name text NOT NULL, part text NOT NULL CHECK(part IN ('I','II')), country text NOT NULL, language text NOT NULL,
- variant text NOT NULL DEFAULT '', doc_type text NOT NULL DEFAULT '', filename text NOT NULL, position integer NOT NULL,
+ variant text NOT NULL DEFAULT '', code text NOT NULL DEFAULT '', filename text NOT NULL, position integer NOT NULL,
  catalog jsonb NOT NULL DEFAULT '{}', removed_at timestamptz,
  PRIMARY KEY(project_id,id)
 );
@@ -148,7 +148,7 @@ CREATE TABLE IF NOT EXISTS ctis.catalog_release (
 );
 CREATE TABLE IF NOT EXISTS ctis.catalog_item (
  release_id bigint NOT NULL REFERENCES ctis.catalog_release ON DELETE CASCADE, id text NOT NULL,
- category text NOT NULL CHECK(category IN ('requirements','content','word','workflow')),
+ category text NOT NULL CHECK(category IN ('planning','content','styling','workflow')),
  version text NOT NULL, effective text NOT NULL, name text NOT NULL, use_when text NOT NULL,
  header jsonb NOT NULL, body text NOT NULL, parsed jsonb, tags jsonb,
  file_name text, file_sha256 text, file bytea,

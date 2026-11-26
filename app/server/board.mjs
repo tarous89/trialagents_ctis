@@ -4,7 +4,7 @@ import {cell} from './status.mjs'
 export async function loadBoard(q,project){
   const id=project.id
   const [documents,steps,na,current,issues,continued,approvals]=await Promise.all([
-    q('SELECT id,name,part,country,language,variant,doc_type,filename,position,catalog FROM ctis.document WHERE project_id=$1 AND removed_at IS NULL ORDER BY position',[id]),
+    q('SELECT id,name,part,country,language,variant,code,filename,position,catalog FROM ctis.document WHERE project_id=$1 AND removed_at IS NULL ORDER BY position',[id]),
     q('SELECT id,type,name,instruction,position,paused FROM ctis.step WHERE project_id=$1 AND removed_at IS NULL ORDER BY position',[id]),
     q('SELECT document_id,step_id FROM ctis.cell_na WHERE project_id=$1',[id]),
     q('SELECT DISTINCT ON (document_id,step_id) document_id,step_id,n,basis,created_at,source FROM ctis.version WHERE project_id=$1 ORDER BY document_id,step_id,n DESC',[id]),

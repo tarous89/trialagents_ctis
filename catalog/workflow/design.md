@@ -1,12 +1,12 @@
 ---
 id: design
-name: Document design
+name: General styling instructions
 version: 1.0
 effective: 2026-11-26
 use_when: Drafting or styling any document that is not an authority form.
 applies_to: [design]
 ---
-General rules for a clear, well-designed document. The specific instructions that come with the step (content guide, Word template, country notes) come first where they disagree.
+General rules for a clear, well-designed document. The styling instructions for the specific document and country come first where they disagree.
 
 - Start with the study information table (`table`, style `info`, no header row): study title, short title, protocol number with version and date, EU trial number, sponsor, and for participant documents the principal investigator and site.
 - One section per topic, with a short heading in the reader's words ("What happens at each visit?"). Sections become shaded bands in the default layout.

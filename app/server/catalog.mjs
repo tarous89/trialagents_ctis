@@ -5,29 +5,36 @@ import {parse as parseYaml} from 'yaml'
 import {z} from 'zod'
 import {templateFields} from './word.mjs'
 
-export const categories=['requirements','content','word','workflow']
+export const categories=['planning','content','styling','workflow']
 const json=JSON.stringify
 const sha=b=>createHash('sha256').update(b).digest('hex')
 const all=z.array(z.string()).default(['all'])
 const date=z.union([z.string().regex(/^\d{4}-\d{2}-\d{2}$/),z.date().transform(d=>d.toISOString().slice(0,10))])
-const id=z.string().regex(/^[a-z0-9][a-z0-9-]{1,80}$/,'must be lowercase words joined by hyphens')
+// IDs and codes follow regulatory naming: K1_recruitment-arrangements_DE, L1_SIS-ICF_adults_ES.
+const id=z.string().regex(/^[A-Za-z0-9][A-Za-z0-9_.-]{0,80}$/,'use letters, digits, _ . and - only, for example L1_SIS-ICF_adults_ES')
+const code=z.string().regex(/^[A-Za-z0-9][A-Za-z0-9_.-]{0,60}$/,'use the regulatory code, for example L1_SIS-ICF or K1_recruitment-arrangements')
 const common={id,name:z.string().min(1),version:z.union([z.string(),z.number()]).transform(String),effective:date,use_when:z.string().min(1)}
 const fillLevels=['study','standard','user','site','blank']
+const slot=z.strictObject({id:z.string().regex(/^[A-Za-z0-9_.-]{1,40}$/),required:z.boolean().default(false),
+  accepts:z.enum(['text','blocks','choice','checkbox']).default('blocks'),values:z.array(z.string()).optional(),default:z.string().optional(),
+  sections:z.literal('all').optional(),description:z.string().optional()})
 
 const headers={
-  requirements:z.strictObject({...common,category:z.literal('requirements').optional(),part:z.enum(['I','II']),country:z.string().regex(/^([A-Z]{2}|EU)$/),
-    reference:z.string().optional(),checked:date.optional(),
-    documents:z.array(z.strictObject({
-      doc_type:id,name:z.string().min(1),required:z.enum(['always','conditional','optional']),condition:z.string().optional(),
-      submission_types:all,languages:all,per:z.enum(['trial','site','population']).default('trial'),
-      authority_form:id.optional(),national_notes:z.string().optional()
-    })).min(1)}).refine(h=>(h.part==='I')===(h.country==='EU'),'Part I uses country EU; Part II uses a member state code'),
-  content:z.strictObject({...common,category:z.literal('content').optional(),doc_type:id.optional(),part:z.enum(['I','II']),countries:all,languages:all,word_template:id.optional()}),
-  word:z.strictObject({...common,category:z.literal('word').optional(),kind:z.enum(['layout','form']),doc_type:z.string().default('all'),countries:all,languages:all,
-    file:z.string().regex(/^[a-z0-9-]+\.docx$/).optional(),
-    slots:z.array(z.strictObject({id:z.string().regex(/^[A-Za-z0-9_.-]{1,40}$/),required:z.boolean().default(false),
-      accepts:z.enum(['text','blocks','choice','checkbox']).default('blocks'),values:z.array(z.string()).optional(),default:z.string().optional(),
-      sections:z.literal('all').optional(),description:z.string().optional()})).min(1)}),
+  // Planning checklist (Part I or one country) or the naming instructions.
+  planning:z.union([
+    z.strictObject({...common,category:z.literal('planning').optional(),kind:z.literal('naming')}),
+    z.strictObject({...common,category:z.literal('planning').optional(),kind:z.literal('checklist').default('checklist'),
+      part:z.enum(['I','II']),country:z.string().regex(/^([A-Z]{2}|EU)$/),reference:z.string().optional(),checked:date.optional(),naming:z.string().optional(),
+      documents:z.array(z.strictObject({
+        code,name:z.string().min(1),variants:z.array(z.string()).default([]),required:z.enum(['always','conditional','optional']),condition:z.string().optional(),
+        submission_types:all,languages:all,per:z.enum(['trial','site','population']).default('trial'),national_notes:z.string().optional()
+      })).min(1)}).refine(h=>(h.part==='I')===(h.country==='EU'),'Part I uses country EU; Part II uses a member state code')
+  ]),
+  content:z.strictObject({...common,category:z.literal('content').optional(),code,variant:z.string().default(''),part:z.enum(['I','II']),countries:all,languages:all,styling:id.optional()}),
+  // Styling instructions: a form or layout with its own .docx, or instructions on top of a base styling (default: the default layout).
+  styling:z.strictObject({...common,category:z.literal('styling').optional(),code:z.union([code,z.literal('all')]),variant:z.string().default(''),countries:all,languages:all,
+    kind:z.enum(['layout','form']).optional(),file:z.string().regex(/^[A-Za-z0-9_.-]+\.docx$/).optional(),base:id.optional(),slots:z.array(slot).optional()})
+    .refine(h=>h.file?h.kind&&h.slots?.length:!h.slots&&!h.kind,'a styling with its own file needs kind and slots; one without a file takes them from its base'),
   workflow:z.strictObject({...common,category:z.literal('workflow').optional(),applies_to:z.array(z.string()).min(1)})
 }
 
@@ -42,22 +49,20 @@ export function frontMatter(text){
 
 // Content guide body: "## S01 · Title" sections with "Key: value" lines, and a "## Checklist" of "- C01 text".
 const keys={'fill':'fill','must say':'must_say','standard wording':'standard_wording','sources':'sources','check':'check',
-  'leave as placeholder':'placeholder','optional':'optional','repeat':'repeat','layout':'layout'}
+  'leave as placeholder':'placeholder','optional':'optional','repeat':'repeat'}
 export function parseContentBody(body){
-  const out={intro:'',sections:[],checklist:[],layout:''},errors=[]
+  const out={intro:'',sections:[],checklist:[]},errors=[]
   let current=null,mode='intro'
   for(const raw of body.split(/\r?\n/)){
     const line=raw.trimEnd()
     const h=/^##\s+(.+)$/.exec(line)
     if(h){
       if(/^checklist$/i.test(h[1].trim())){mode='checklist';current=null;continue}
-      if(/^layout$/i.test(h[1].trim())){mode='layout';current=null;continue}
       const s=/^([A-Za-z0-9_.-]{1,40})\s*[·:—–-]\s*(.+)$/.exec(h[1].trim())
       if(!s){errors.push('Section heading "'+h[1]+'" must look like "## S01 · Title"');current=null;mode='skip';continue}
       current={id:s[1],title:s[2].trim(),notes:''};out.sections.push(current);mode='section';continue
     }
     if(mode==='intro'){out.intro+=(out.intro?'\n':'')+line;continue}
-    if(mode==='layout'){out.layout+=(out.layout?'\n':'')+line;continue}
     if(mode==='checklist'){
       const c=/^[-*]\s+([A-Za-z0-9_.-]{1,40})\s+(.+)$/.exec(line.trim())
       if(c)out.checklist.push({id:c[1],text:c[2].trim()})
@@ -69,7 +74,7 @@ export function parseContentBody(body){
     if(key)current[key]=current[key]?current[key]+'\n'+kv[2]:kv[2]
     else if(line.trim())current.notes+=(current.notes?'\n':'')+line.trim()
   }
-  out.intro=out.intro.trim();out.layout=out.layout.trim()
+  out.intro=out.intro.trim()
   for(const s of out.sections){
     if(!s.fill)errors.push(s.id+': add a "Fill:" line ('+fillLevels.join(', ')+')')
     else if(!fillLevels.includes(s.fill.trim()))errors.push(s.id+': Fill must be one of '+fillLevels.join(', '))
@@ -101,14 +106,14 @@ export async function buildCatalog(files){
       if(h.id+'.md'!==name)warnings.push(where+': file name should be '+h.id+'.md')
       const item={id:h.id,category,version:h.version,effective:h.effective,name:h.name,use_when:h.use_when,header:h,body,path:f.path}
       if(category==='content'){
-        const {parsed,errors:e}=parseContentBody(body);item.parsed=parsed;item.header.doc_type??=h.id
+        const {parsed,errors:e}=parseContentBody(body);item.parsed=parsed
         errors.push(...e.map(x=>where+': '+x))
         if(!parsed.sections.length)errors.push(where+': add at least one "## S01 · Title" section')
         const dup=parsed.sections.map(s=>s.id).filter((x,i,a)=>a.indexOf(x)!==i)
         if(dup.length)errors.push(where+': duplicate section ids '+[...new Set(dup)].join(', '))
       }
-      if(category==='word'){
-        const file='word/'+(h.file??h.id+'.docx'),buffer=docx.get(file)
+      if(category==='styling'&&h.file){
+        const file='styling/'+h.file,buffer=docx.get(file)
         if(!buffer){errors.push(where+': missing '+file);continue}
         item.file={path:file,sha256:sha(buffer),size:buffer.length,buffer}
         try{item.tags=await docxFields(buffer)}catch(e){errors.push(file+': '+e.message);continue}
@@ -130,98 +135,102 @@ export async function buildCatalog(files){
   for(const i of items){if(ids.has(i.id))errors.push(i.path+': id '+i.id+' is also used by '+ids.get(i.id));else ids.set(i.id,i.path)}
   const byId=new Map(items.map(i=>[i.id,i]))
   // Links between items.
-  for(const c of items.filter(i=>i.category==='content')){
-    const t=c.header.word_template&&byId.get(c.header.word_template)
-    if(c.header.word_template&&t?.category!=='word'){errors.push(c.path+': word_template '+c.header.word_template+' is not a Word template');continue}
-    if(t&&!t.header.slots.some(s=>s.sections==='all')){
-      const slots=new Set(t.header.slots.map(s=>s.id))
-      for(const s of c.parsed.sections)if(!slots.has(s.id))errors.push(c.path+': section '+s.id+' has no slot in Word template '+t.id)
-    }
+  for(const st of items.filter(i=>i.category==='styling'&&!i.header.file)){
+    const seen=new Set([st.id]);let b=st.header.base??'default',ok=false
+    while(b&&!seen.has(b)){seen.add(b);const x=byId.get(b);if(x?.category!=='styling')break;if(x.header.file){ok=true;break};b=x.header.base??'default'}
+    if(!ok)errors.push(st.path+': base '+(st.header.base??'default')+' does not lead to a styling with a .docx file')
   }
-  for(const r of items.filter(i=>i.category==='requirements'))
-    for(const d of r.header.documents){
-      if(d.authority_form&&byId.get(d.authority_form)?.header.kind!=='form')errors.push(r.path+': '+d.doc_type+' authority_form '+d.authority_form+' is not a Word template of kind form')
-      if(!items.some(i=>i.category==='content'&&i.header.doc_type===d.doc_type))warnings.push(r.path+': no content guide yet for '+d.doc_type)
-    }
+  for(const c of items.filter(i=>i.category==='content')){
+    const t=c.header.styling&&byId.get(c.header.styling)
+    if(c.header.styling&&t?.category!=='styling')errors.push(c.path+': styling '+c.header.styling+' is not a styling instruction')
+  }
+  for(const r of items.filter(i=>i.category==='planning'&&i.header.kind==='checklist'))
+    for(const d of r.header.documents)
+      if(!items.some(i=>i.category==='content'&&i.header.code===d.code))warnings.push(r.path+': no content template yet for '+d.code)
   const wfTargets=['planning','draft','checklist','qc','style','team','guide','custom','revision','findings','design']
   for(const w of items.filter(i=>i.category==='workflow'))for(const a of w.header.applies_to)if(!wfTargets.includes(a))errors.push(w.path+': applies_to '+a+' is not one of '+wfTargets.join(', '))
-  if(!items.some(i=>i.id==='default-layout'))errors.push('word/default-layout.md: the default Word layout is required')
+  if(!items.some(i=>i.id==='default'&&i.category==='styling'&&i.header.file))errors.push('styling/default.md: the default styling (with its .docx) is required')
   return {items,errors,warnings,digest:sha(json(items.map(({file,path,...i})=>({...i,file:file&&{sha256:file.sha256}})).sort((a,b)=>a.id<b.id?-1:1)))}
 }
 
 // ---------- matching ----------
 const slug=s=>String(s||'').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')
 const fits=(list,value)=>list.includes('all')||list.includes(value)
-const specificity=(i,country,language)=>(i.header.countries?.includes(country)?2:0)+(i.header.languages?.includes(language)?1:0)
+const typeFits=(types,type)=>!type||types.includes('all')||types.some(t=>slug(type).includes(slug(t))||slug(t).includes(slug(type)))
+const specificity=(i,d)=>(i.header.variant&&i.header.variant===d.variant?4:0)+(i.header.countries?.includes(d.country)?2:0)+(i.header.languages?.includes(d.language)?1:0)
+const matches=(i,d)=>(!i.header.variant||i.header.variant===d.variant)&&fits(i.header.countries,d.country)&&fits(i.header.languages,d.language)
+const best=(list,d)=>list.filter(i=>matches(i,d)).sort((a,b)=>specificity(b,d)-specificity(a,d))[0]??null
 const effectiveNow=(i,today)=>i.effective<=today
 const summary=i=>({id:i.id,category:i.category,name:i.name,version:i.version,effective:i.effective,use_when:i.use_when,
-  ...(i.category==='word'?{kind:i.header.kind,doc_type:i.header.doc_type}:{}),...(i.category==='content'?{doc_type:i.header.doc_type}:{}),
-  ...(i.category==='requirements'?{part:i.header.part,country:i.header.country}:{})})
+  ...(i.header.code?{code:i.header.code}:{}),...(i.header.variant?{variant:i.header.variant}:{}),
+  ...(i.category==='styling'?{kind:i.header.kind??'layout',countries:i.header.countries}:{}),...(i.category==='content'?{countries:i.header.countries}:{}),
+  ...(i.category==='planning'&&i.header.kind!=='naming'?{part:i.header.part,country:i.header.country}:{})})
 
 export function catalogView(release,{today=new Date().toISOString().slice(0,10)}={}){
   const items=release.items.filter(i=>effectiveNow(i,today))
   const byId=new Map(items.map(i=>[i.id,i]))
   const of=c=>items.filter(i=>i.category===c)
+  const checklists=()=>of('planning').filter(i=>i.header.kind!=='naming')
   const api={
     release:release.id,
     get:id=>byId.get(id),
-    // Part I plus each country, rows filtered by submission type when one is given.
-    requirements({countries=[],submission_type=''}={}){
-      const type=slug(submission_type)
-      const rows=r=>r.header.documents.filter(d=>!type||d.submission_types.includes('all')||d.submission_types.some(t=>type.includes(slug(t))||slug(t).includes(type)))
-      const found=[of('requirements').find(r=>r.header.part==='I'),...countries.map(c=>of('requirements').find(r=>r.header.country===c))]
+    naming:()=>byId.get('naming')??null,
+    // Planning checklists for Part I and each country, rows filtered by submission type, plus the naming instructions.
+    planning({countries=[],submission_type=''}={}){
+      const found=[checklists().find(r=>r.header.part==='I'),...countries.map(c=>checklists().find(r=>r.header.country===c))]
+      const naming=api.naming()
       return {
-        items:found.filter(Boolean).map(r=>({...summary(r),reference:r.header.reference,checked:r.header.checked,notes:r.body,documents:rows(r)})),
+        checklists:found.filter(Boolean).map(r=>({...summary(r),reference:r.header.reference,checked:r.header.checked,naming:r.header.naming,notes:r.body,
+          documents:r.header.documents.filter(d=>typeFits(d.submission_types,submission_type))})),
+        naming:naming?{id:naming.id,version:naming.version,text:naming.body}:null,
         missing:[...(found[0]?[]:['Part I']),...countries.filter((c,i)=>!found[i+1])]
       }
     },
-    contentGuide(document){
-      const pinned=document.catalog?.content_guide&&byId.get(document.catalog.content_guide)
-      if(pinned)return pinned
-      return of('content').filter(i=>i.header.doc_type===document.doc_type&&fits(i.header.countries,document.country)&&fits(i.header.languages,document.language))
-        .sort((a,b)=>specificity(b,document.country,document.language)-specificity(a,document.country,document.language))[0]??null
+    planningRows(d,{submission_type=''}={}){
+      const r=checklists().find(x=>d.part==='I'?x.header.part==='I':x.header.country===d.country)
+      return r?r.header.documents.filter(x=>x.code===d.code&&(!x.variants.length||x.variants.includes(d.variant))&&typeFits(x.submission_types,submission_type)).map(x=>({...x,from:r.id})):[]
     },
-    wordTemplate(document,guide=api.contentGuide(document)){
-      const pinned=document.catalog?.word_template&&byId.get(document.catalog.word_template)
-      if(pinned)return pinned
-      if(guide?.header.word_template&&byId.has(guide.header.word_template))return byId.get(guide.header.word_template)
-      const match=of('word').filter(i=>i.header.doc_type===document.doc_type&&fits(i.header.countries,document.country)&&fits(i.header.languages,document.language))
-        .sort((a,b)=>specificity(b,document.country,document.language)-specificity(a,document.country,document.language))[0]
-      return match??byId.get('default-layout')??null
+    contentTemplate(d){
+      const pinned=d.catalog?.content&&byId.get(d.catalog.content)
+      return pinned??best(of('content').filter(i=>i.header.code===d.code),d)
     },
-    requirementRows(document,{submission_type=''}={}){
-      const r=of('requirements').find(x=>document.part==='I'?x.header.part==='I':x.header.country===document.country)
-      return r?r.header.documents.filter(d=>d.doc_type===document.doc_type&&(!submission_type||d.submission_types.includes('all')||d.submission_types.some(t=>slug(submission_type).includes(slug(t))))).map(d=>({...d,from:r.id})):[]
+    // The styling for a document: the most specific instruction, with the file, kind and slots it inherits from its base.
+    styling(d,content=api.contentTemplate(d)){
+      const pick=d.catalog?.styling&&byId.get(d.catalog.styling)
+        ||content?.header.styling&&byId.get(content.header.styling)
+        ||best(of('styling').filter(i=>i.header.code===d.code),d)
+        ||best(of('styling').filter(i=>i.header.code==='all'&&i.id!=='default'),d)
+        ||byId.get('default')
+      if(!pick)return null
+      const chain=[pick];let b=pick
+      while(!b.header.file){b=byId.get(b.header.base??'default');if(!b||chain.includes(b))return null;chain.push(b)}
+      return {item:pick,file:b,kind:b.header.kind,slots:b.header.slots,chain}
     },
     workflow:target=>of('workflow').filter(w=>w.header.applies_to.includes(target)),
     // Everything one deliverable needs from the catalog.
-    forDeliverable(document,stepType,{submission_type=''}={}){
-      const guide=api.contentGuide(document),requirements=api.requirementRows(document,{submission_type})
-      const template=['draft','style'].includes(stepType)?api.wordTemplate(document,guide):null
+    forDeliverable(d,stepType,{submission_type=''}={}){
+      const content=api.contentTemplate(d),planning=api.planningRows(d,{submission_type})
+      const styling=['draft','style'].includes(stepType)?api.styling(d,content):null
       return {
-        content_guide:guide,
-        word_template:stepType==='style'?template:null,
-        requirements,
-        workflow:[...api.workflow(stepType),...api.workflow('findings')],
-        // Layout: general design rules first, then what this document's guide, template and country say. Specific wins.
-        layout:['draft','style'].includes(stepType)?{
-          general:[...api.workflow('design').map(w=>({from:w.id,text:w.body})),...(template?.header.kind==='layout'&&template.body?[{from:template.id,text:template.body}]:[])],
-          specific:[
-            ...(guide?.parsed.layout?[{from:guide.id,text:guide.parsed.layout}]:[]),
-            ...(guide?.parsed.sections.filter(x=>x.layout).map(x=>({from:guide.id,section:x.id,text:x.layout}))??[]),
-            ...requirements.filter(r=>r.national_notes).map(r=>({from:r.from,text:r.national_notes}))
-          ],
-          rule:'Apply the general rules, then the specific instructions; where they disagree, the specific instruction wins. Forms are never restyled.'
-        }:null
+        content_template:content,
+        planning_checklist:planning,
+        styling:styling&&{id:styling.item.id,version:styling.item.version,file:styling.file.id,kind:styling.kind,slots:stepType==='style'?styling.slots:undefined,
+          // General instructions first (the design guide, then the base stylings), then the specific ones. Specific wins. Forms are never restyled.
+          instructions:[
+            ...(styling.kind==='layout'?api.workflow('design').map(w=>({from:w.id,level:'general',text:w.body})):[]),
+            ...[...styling.chain].reverse().filter(x=>x.body).map(x=>({from:x.id,level:x===styling.item?'specific':'general',text:x.body})),
+            ...planning.filter(r=>r.national_notes).map(r=>({from:r.from,level:'specific',text:r.national_notes}))
+          ]},
+        workflow:[...api.workflow(stepType),...api.workflow('findings')]
       }
     },
-    search({query='',category,country,language,doc_type}={}){
+    search({query='',category,country,language,code}={}){
       const words=slug(query).split('-').filter(Boolean)
       return items.filter(i=>(!category||i.category===category)
-        &&(!country||(i.category==='requirements'?i.header.country===country||i.header.part==='I':fits(i.header.countries??['all'],country)))
+        &&(!country||(i.category==='planning'?i.header.kind==='naming'||i.header.country===country||i.header.part==='I':fits(i.header.countries??['all'],country)))
         &&(!language||fits(i.header.languages??['all'],language))
-        &&(!doc_type||i.header.doc_type===doc_type||(i.category==='requirements'&&i.header.documents.some(d=>d.doc_type===doc_type)))
-        &&words.every(w=>slug([i.id,i.name,i.use_when,i.header.doc_type].join(' ')).includes(w)))
+        &&(!code||i.header.code===code||(i.category==='planning'&&i.header.documents?.some(d=>d.code===code)))
+        &&words.every(w=>slug([i.id,i.name,i.use_when,i.header.code].join(' ')).includes(w)))
         .map(summary)
     },
     summary

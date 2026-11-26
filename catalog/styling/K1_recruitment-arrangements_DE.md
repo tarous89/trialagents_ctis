@@ -1,8 +1,9 @@
 ---
-id: recruitment-consent-procedure-de
-name: Recruitment and informed consent procedure (MedEthicsEU and CTAG template v2.0)
+id: K1_recruitment-arrangements_DE
+name: K1 Recruitment arrangements – Germany (MedEthicsEU and CTAG template v2.0)
+code: K1_recruitment-arrangements
 kind: form
-doc_type: recruitment-arrangements
+file: K1_recruitment-arrangements_DE.docx
 countries: [DE]
 languages: [all]
 version: 2.0

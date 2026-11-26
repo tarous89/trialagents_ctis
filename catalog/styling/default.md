@@ -1,11 +1,12 @@
 ---
-id: default-layout
-name: TrialAgents default layout
+id: default
+name: Default styling
+code: all
 kind: layout
-doc_type: all
+file: default-layout.docx
 version: 1.1
 effective: 2026-11-26
-use_when: 'Any document without its own template or authority form, in particular participant information and consent documents in every country. Blue title box, shaded section bands, bordered information tables, cyan highlight for missing information.'
+use_when: 'Any document that is not an authority form and has no styling of its own. The layout follows the patient information design (blue title box, shaded section bands, bordered information tables, cyan highlight for missing information).'
 slots:
   - id: title
     accepts: text

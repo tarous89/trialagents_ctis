@@ -3,10 +3,10 @@ id: checklist
 name: Checklist
 version: 1.0
 effective: 2026-11-26
-use_when: Running a Checklist step.
+use_when: Running a separate Checklist step (optional; the Draft step already checks the template checklist).
 applies_to: [checklist]
 ---
-Check the current draft against the content guide's checklist and the submission requirement rows for this document.
+Check the current draft against the content template's checklist and the planning checklist row for this document.
 
 - Go item by item (C01, C02, …, then each requirement and national note). For each, record passed, fixed, or a finding.
 - Fix in the output what you can fix from the draft and the sources: missing mandatory sections, order, wrong document name, wrong language variant. Say what you fixed.

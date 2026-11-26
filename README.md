@@ -9,7 +9,7 @@ TrialAgents CTIS helps regulatory teams prepare CTIS clinical trial applications
 | [docs/FEATURES.md](docs/FEATURES.md) | Plain-English feature list: what the product does and how people use it. |
 | [docs/TECHNICAL.md](docs/TECHNICAL.md) | Technical design: data model, statuses, sharing and permissions, hosting, UI rules. |
 | [docs/MCP.md](docs/MCP.md) | MCP server and Claude plugin: tools and permissions, the assistant loop, Source QC, revision, Word filling. |
-| [docs/CATALOG.md](docs/CATALOG.md) | Content TrialAgents serves through the MCP: submission requirements, content guides, Word templates, workflow guides. |
+| [docs/CATALOG.md](docs/CATALOG.md) | Content TrialAgents serves through the MCP, in regulatory naming: planning checklists, naming instructions, content templates (with their checklists), styling instructions, workflow guides. |
 | [docs/product-spec-2026-11-26.md](docs/product-spec-2026-11-26.md) | Earlier product spec, kept for history. TECHNICAL.md supersedes it. |
 | [docs/BUILD-PLAN.md](docs/BUILD-PLAN.md) | Build plan: repository layout, database, server modules, Word filling, catalog publishing, phases. |
 | [prototype/TrialAgents-CTIS.html](prototype/TrialAgents-CTIS.html) | Clickable prototype. Download it and open it in a browser. |

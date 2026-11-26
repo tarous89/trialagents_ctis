@@ -1,4 +1,4 @@
-// Writes catalog/word/default-layout.docx: the TrialAgents default Word layout.
+// Writes catalog/styling/default-layout.docx: the TrialAgents default Word layout.
 // Design: the earlier CTIS app's patient information documents (sample L1_SIS_and_ICF_main_adult_patients_ES_es):
 // blue title box, shaded section bands, bordered info tables, cyan highlight for missing information, blue footer rule.
 // Slots are Word content controls tagged title, subtitle, body, footer and footer_ids (docs/CATALOG.md §4).
@@ -80,6 +80,6 @@ add('word/numbering.xml',numbering)
 add('word/settings.xml',settings)
 add('word/footer1.xml',footer)
 add('word/_rels/document.xml.rels',head+`<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rIdStyles" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/><Relationship Id="rIdNumbering" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/numbering" Target="numbering.xml"/><Relationship Id="rIdSettings" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings" Target="settings.xml"/><Relationship Id="rIdFooter" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer" Target="footer1.xml"/></Relationships>`)
-const out=new URL('../catalog/word/default-layout.docx',import.meta.url)
+const out=new URL('../catalog/styling/default-layout.docx',import.meta.url)
 await writeFile(out,await zip.generateAsync({type:'nodebuffer',compression:'DEFLATE',platform:'UNIX'}))
 console.log('Wrote',out.pathname)

@@ -41,7 +41,7 @@ All detailed instructions (planning, steps, QC, Word, revision) come from the se
 |---|---|---|
 | `open_ctis` | Yes | Show the workspace: projects, a project's plan, or one deliverable. |
 | `read_ctis` | Yes | Projects, a plan with statuses, a deliverable with its versions and threads, the sources and templates of a project. Text answers without opening the workspace. |
-| `read_ctis_catalog` | Yes | Search and read catalog items: submission requirements for countries and a submission type, content guides, Word template outlines, workflow guides. Used mainly for planning. |
+| `read_ctis_catalog` | Yes | Search and read catalog items by regulatory code, country and language: planning checklists (Part I and each country), naming instructions, content templates, styling instructions, workflow guides. Used mainly for planning. |
 | `get_ctis_step` | Yes | Everything for one deliverable, or for the next one in a project (`next: true`): see §4. With `revise: true` it returns the revision context. |
 | `read_ctis_source` | Yes | Search and read passages of a stored source (protocol, IB, manuals) by text, section or page, with locators for quoting. |
 | `save_ctis` | **No** | The only write tool. One `action` per call: `create_project`, `update_project`, `save_plan`, `record_resource`, `save_version`, `reply`. Returns the saved IDs, versions and `next`. |
@@ -72,9 +72,9 @@ The workspace inside Claude talks to `ctis.trialagents.com` directly with a shor
 |---|---|
 | `deliverable` | Code (`D04-QC`), document, part, country, language, variant, step, filename |
 | `instructions` | The workflow guide for this step type, plus any plan-level instruction for the step |
-| `content_guide` | The matching content guide: sections, fill levels, standard wording, checklist |
-| `word_template` | Style step only: template kind (layout or form) and its slot outline |
-| `requirements` | The submission requirement rows for this document |
+| `content_template` | The matching content template (by code, variant, country, language): sections, fill levels, standard wording, template checklist |
+| `styling` | Draft and Style steps: the styling instructions, general first and specific last (specific wins), and for the Style step the Word file's kind (layout or form) and slots |
+| `planning_checklist` | The planning checklist row(s) for this document, with national notes |
 | `input` | The version this step works on (normally the previous step's current version) |
 | `sources` | Effective sources and user templates, with handles for `read_ctis_source` |
 | `threads` | Open findings and comments on the current version, with replies and anchored text |
@@ -84,9 +84,9 @@ The workspace inside Claude talks to `ctis.trialagents.com` directly with a shor
 
 ## 5. The loop
 
-**Default steps:** Draft → Checklist → Source QC → Style. Checklist comes before Source QC because Source QC is the step most likely to need a person. Comments can be added on any deliverable at any step. Optional steps the assistant can add when useful: Team review, Internal guidelines, and custom steps.
+**Default steps:** Draft → Source QC → Style. The Draft step checks its output against the content template's checklist (and the planning checklist row) before saving, so no separate Checklist step is needed. Comments can be added on any deliverable at any step. Optional steps the assistant can add when the user wants them: Checklist, Team review, Internal guidelines, and custom steps.
 
-**Plan.** Claude reads the planning guide and the submission requirements, then saves the plan with `save_ctis` `save_plan`. The plan opens in the workspace straight away. There is no separate confirmation: the user asks for changes in the chat (each saves a new plan revision), and says when to start.
+**Plan.** Claude reads the planning guide, the planning checklists and the naming instructions, then saves the plan with `save_ctis` `save_plan`. The plan opens in the workspace straight away. There is no separate confirmation: the user asks for changes in the chat (each saves a new plan revision), and says when to start.
 
 **Order.** Part I top to bottom, then each country's Part II documents top to bottom. One document runs through all its steps before the next document starts.
 
@@ -113,7 +113,7 @@ Starting a fresh conversation for every step is not possible: neither Claude nor
 Fact by fact, per [CATALOG.md fill levels](CATALOG.md#fill-levels):
 
 - Every `study` fact links to a source passage: source record, version, locator (section, page, table) and the quoted passage.
-- `standard` wording links to the content guide and is checked against the protocol. A contradiction is **Conflicting information**.
+- `standard` wording links to the content template and is checked against the protocol. A contradiction is **Conflicting information**.
 - `user` values record who supplied them and when.
 - `site` and `blank` items are placeholders, not findings.
 - A fact without a passage is **Missing data**.
@@ -126,12 +126,12 @@ When Claude says a change answers a comment, the server adds Claude's reply to t
 
 ## 8. Word files
 
-The style step fills a Word template: a catalog layout, an authority form, or the user's own layout.
+The Style step fills the Word file of the document's styling: an authority form (for example `K1_recruitment-arrangements_DE`), a layout (the default L1 design), or the user's own layout.
 
-- `get_ctis_step` returns the template's slot outline: tagged sections, header, footer, tables and cells, text boxes, optional sections, repeatable rows.
-- Claude sends `save_version` with `fill`: content for each slot (paragraphs, lists, tables, images from stored files), header and footer text, repeated rows and sections, and optional sections to remove.
-- The server writes the .docx, keeps every style of the template, and returns a preview, the filename and any unfilled required slots as Missing data.
-- An authority form (`kind: form`) is never restyled: only its fields and cells change.
+- `get_ctis_step` returns the styling: its instructions (general first, specific last) and the Word file's slots with their descriptions. Slots are coded fields (`{{kv102}}`), yes/no choices that keep or remove parts of a form, checkboxes, and for layouts the title, subtitle, body, footer and page words.
+- Claude sends `save_version` with the content and `fill`: a value for each slot. Layout content uses blocks (headings, paragraphs, lists, tables, timelines, notes, images from stored files) and inline marks (`**bold**`, `__underline__`, `[[missing information]]`).
+- The server writes the .docx, keeps every style of the template, stores it on the version (`<filename>_v<n>.docx`) and reports required slots left empty as Missing data findings.
+- An authority form (`kind: form`) is never restyled: only its fields, choices and checkboxes change.
 
 Why the server writes the file rather than Claude: Claude can only edit a .docx inside its code sandbox, whose network access is restricted by default, so it cannot reliably fetch the template from TrialAgents or send the result back. Passing a .docx through a tool call as text costs tens of thousands of tokens per document and breaks on large files. Having Claude decide the content and the server write the file gives the same result in Claude and ChatGPT and leaves authority forms intact. Claude still controls every part of the document (header, footer, tables, images, sections) through the slots.
 

@@ -5,14 +5,14 @@ import JSZip from 'jszip'
 import {templateFields,fillTemplate,evaluateCondition} from '../app/server/word.mjs'
 import {frontMatter} from '../app/server/catalog.mjs'
 
-const file=name=>readFile(new URL('../catalog/word/'+name,import.meta.url))
-const header=async name=>frontMatter(await readFile(new URL('../catalog/word/'+name,import.meta.url),'utf8')).header
+const file=name=>readFile(new URL('../catalog/styling/'+name,import.meta.url))
+const header=async name=>frontMatter(await readFile(new URL('../catalog/styling/'+name,import.meta.url),'utf8')).header
 const xmlOf=async(buffer,part='word/document.xml')=>(await JSZip.loadAsync(buffer)).file(part).async('string')
 const textOf=xml=>[...xml.matchAll(/<w:t[^>]*>([^<]*)<\/w:t>/g)].map(m=>m[1]).join('')
 const count=(s,re)=>(s.match(re)||[]).length
 
 test('the recruitment form: every coded field and condition is found, including codes Word split across runs',async()=>{
-  const fields=await templateFields(await file('recruitment-consent-procedure-de.docx'))
+  const fields=await templateFields(await file('K1_recruitment-arrangements_DE.docx'))
   const codes=fields.filter(f=>f.kinds.includes('code')).map(f=>f.id)
   assert.equal(codes.length,25)
   assert.ok(['kv101','kv102','date','v01100','v01121'].every(c=>codes.includes(c)))
@@ -21,7 +21,7 @@ test('the recruitment form: every coded field and condition is found, including 
 })
 
 test('filling the form keeps its design: answers in place, Yes or No ticked, sections switched off show N/A',async()=>{
-  const original=await file('recruitment-consent-procedure-de.docx'),h=await header('recruitment-consent-procedure-de.md')
+  const original=await file('K1_recruitment-arrangements_DE.docx'),h=await header('K1_recruitment-arrangements_DE.md')
   const values={kv101:'A study of EX-101',kv102:'2026-500123-45-00',date:'15 August 2026',v01100:'Line one\nLine two',v01101:'By the treating physician.',
     kv108:'true',v01109:'ANSWER-3-1',v01110:'ANSWER-3-2',kv107:'false',v01111:'MUST-NOT-APPEAR',kv109:'false',kv110:'false'}
   const r=await fillTemplate(original,{kind:'form',slots:h.slots,values})
@@ -48,7 +48,7 @@ test('conditions: && binds tighter than ||; unknown values are false; regions mu
 })
 
 test('the default layout: content in the template styles, slots unwrapped, inline marks, lists, tables, timeline and footer',async()=>{
-  const h=await header('default-layout.md')
+  const h=await header('default.md')
   const content={title:'Hoja de información',sections:[
     {id:'S00',heading:'',blocks:[{type:'table',style:'info',header:false,rows:[['Título del estudio','[[no facilitado]]']]}]},
     {id:'S01',heading:'Introducción',blocks:[{type:'paragraph',text:'Lea **con atención** y __decida__.'},{type:'list',style:'number',items:['a','b']},{type:'list',style:'number',items:['c']},
@@ -73,7 +73,7 @@ test('the default layout: content in the template styles, slots unwrapped, inlin
 test('images from stored files and tagged checkboxes',async()=>{
   // 1×1 PNG
   const png=Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==','base64')
-  const h=await header('default-layout.md')
+  const h=await header('default.md')
   const r=await fillTemplate(await file('default-layout.docx'),{kind:'layout',slots:h.slots,values:{footer:'x'},
     content:{title:'T',sections:[{id:'S01',heading:'Figure',blocks:[{type:'image',file:'00000000-0000-4000-8000-000000000001',caption:'Visit schedule'}]}]},
     files:async id=>id.endsWith('1')?{buffer:png}:null})
