@@ -1,0 +1,134 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Consent Form - Healthy Adults",
+  "doc_name_local": "Tájékoztatáson alapuló beleegyező nyilatkozat – egészséges felnőtt önkéntes",
+  "target_country": "Hungary",
+  "country_code": "HU",
+  "target_language": "Hungarian",
+  "language_code": "hu",
+  "doc_type": "healthy_adults",
+  "file_name": "L1_SIS and ICF_healthy",
+  "sort_order": 1,
+  "description": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - 1.0 verzió - [date]",
+   "Protokollszám: [töltse ki] | EUCT szám: [töltse ki]"
+  ],
+  "info_table": [
+   "A klinikai vizsgálat teljes címe",
+   "A klinikai vizsgálat rövid címe",
+   "Protokollszám [adja meg a verziót és a dátumot]",
+   "EUCT szám",
+   "Szponzor [teljes címmel]",
+   "Vizsgálatvezető",
+   "Vizsgálóhely neve",
+   "Vizsgálóhely címe",
+   "A tájékoztatást végző személy neve",
+   "A tájékoztatást végző személy beosztása / munkaköre",
+   "A vizsgálati alany neve",
+   "A vizsgálati alany születési helye",
+   "A vizsgálati alany születési ideje"
+  ],
+  "content_instructions": "Ezt a sablont kizárólag 18 éves vagy idősebb, egészséges felnőtt önkéntesek számára használja. A végleges dokumentum magyar nyelvű, egyetlen dokumentumba foglalt tájékoztatáson alapuló beleegyező nyilatkozat legyen, egyetlen végleges aláírássorozattal. Ne használjon betegséget, kezelési szükségletet vagy alternatív terápiát feltételező szöveget; világosan közölje, hogy a részvétel nem kezelés és közvetlen egészségügyi előny általában nem várható. Ismertesse a vizsgálati gyógyszer kutatási jellegét, célját, dózisát, randomizációt/placebót/vakítást, bentfekvést vagy megfigyelést, minden eljárást, az összes vérmennyiséget, korlátozásokat, ismert és ismeretlen kockázatokat, reprodukciós előírásokat, biztonsági utánkövetést, költségtérítést és – csak ha jogszerűen alkalmazandó – díjazást. A betegkártyát a fázis IV. és bioegyenértékűségi vizsgálatok kivételével kezelje a fő ICF mellékleteként, ha a vizsgálatra alkalmazandó. A magyar KFEB adatvédelmi követelményeit teljes körűen építse be. A fő vizsgálaton kívüli jövőbeni/másodlagos felhasználást ne tartalmazza. Humángenetikai vizsgálathoz külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum szükséges; a genetikai mintavétel visszautasítása nem akadályozhatja a fő vizsgálatban való további részvételt. A vizsgálati alany kódszáma az ICF-ben nem szerepelhet. Költségtérítésként csak igazolt költségek téríthetők; egyéb juttatás vagy díj csak a magyar szabályok szerinti nem-terápiás farmakokinetikai/interakciós, I. fázisú vagy bioegyenértékűségi vizsgálatban szerepeltethető. Ha az önkéntes nem tud olvasni/írni és szóban ad beleegyezést, használja a két tanús sablont.",
+  "styling_instructions": "Használjon világos, jól tagolt fejezeteket, rövid bekezdéseket és közérthető magyar nyelvet. A teljes dokumentumban következetesen az „Ön” megszólítást használja; ne keverje a tegező és magázó formákat. A szakmai rövidítéseket első előforduláskor magyarázza meg. A vizsgálati látogatások és eljárások bemutatására használható áttekinthető táblázat. A véglegesítés előtt távolítson el minden szerzői utasítást, példát, nem alkalmazandó alternatívát és feltételes modult. Ne tüntessen fel vizsgálati alany kódszámot a dokumentumban. A betegkártya külön mellékletként készüljön. A genetikai tájékoztató és beleegyező nyilatkozat külön dokumentum legyen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>TÁJÉKOZTATÁSON ALAPULÓ BELEEGYEZŐ NYILATKOZAT – EGÉSZSÉGES FELNŐTT ÖNKÉNTES</b>\n\n<b>Szerzői utasítás:</b> Töltse ki az információs táblázat minden alkalmazandó mezőjét. A vizsgálati alany nevét, születési helyét és születési idejét tüntesse fel; vizsgálati kódszámot ne.",
+   "section_style": "H1 document headline, Rich body text, Info table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Tisztelt Hölgyem/Uram!\n\nAzért keressük meg, mert felajánljuk Önnek a részvételt a(z) [vizsgálat rövid neve] klinikai vizsgálatban egészséges önkéntesként. A klinikai vizsgálat kutatási tevékenység; az Ön részvétele nem kezelés.\n\nA részvétel teljesen önkéntes. Kérjük, olvassa el ezt a dokumentumot, tegye fel kérdéseit, és szánjon elegendő időt a döntésre. Ha nem vesz részt, vagy később visszavonja beleegyezését, emiatt nem érheti hátrány.\n\nA klinikai vizsgálat szponzora: [név és teljes cím].",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. Miért van szükség egészséges önkéntesekre, és mit vizsgálunk?</b>\n\nEgészséges önkéntesek bevonásával azt szeretnénk megtudni, hogy [biztonságosság / tolerálhatóság / farmakokinetika / farmakodinamika / más pontos cél].\n\nA(z) [név] vizsgálati gyógyszer [közérthető hatásmechanizmus és fejlesztési állapot]. [Ha első emberi alkalmazás: ezt világosan jelezze.] Korábbi tapasztalatok: [rövid, döntéshez szükséges információ].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Mi a klinikai vizsgálat célja?</b>\n\nA vizsgálat célja [pontos cél]. Várhatóan [szám] egészséges önkéntes vesz részt Magyarországon és [szám] világszerte.\n\n<b>Szerzői utasítás:</b> Ne sorolja fel a beválasztási/kizárási kritériumokat; csak a szükséges alkalmassági vizsgálatokat ismertesse.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Hogyan történik a vizsgálati gyógyszer beadása?</b>\n\nÖn [vizsgálati gyógyszert / placebót] kap [forma, adag, gyakoriság, időtartam].\n\n[Randomizáció esetén:] A csoportba sorolás véletlenszerű. Az egyes lehetőségek valószínűsége: [töltse ki].\n[Placebo esetén:] A placebo nem tartalmaz hatóanyagot. A placebo esélye: [töltse ki].\n[Vakítás esetén:] [Ön / Ön és a vizsgáló] nem tudja, melyik kezelést kapja; sürgős biztonsági okból ez feloldható.\n[Dózisemelés esetén:] A következő dózisszint csak a rendelkezésre álló biztonsági adatok értékelése után kezdhető meg.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Milyen vizsgálatok, mintavételek és esetleges benttartózkodások várják?</b>\n\nAz Ön részvétele várhatóan [időtartam], [szám] vizittel és [szám] benttartózkodással. Egy alkalom várható időtartama: [töltse ki].\n\nAz alkalmasság ellenőrzéséhez a következő vizsgálatok történnek: [felsorolás].\n\nLátogatás / időpont\tIdőtartam\tVizsgálati gyógyszer / placebo\tVizsgálatok és mintavételek\tBenttartózkodás / korlátozás\n[szűrés]\t[töltse ki]\t[töltse ki]\t[töltse ki]\t[töltse ki]\n[adagolás]\t[töltse ki]\t[töltse ki]\t[töltse ki]\t[töltse ki]\n[utánkövetés]\t[töltse ki]\t[töltse ki]\t[töltse ki]\t[töltse ki]\n\nA klinikai vizsgálat során összesen körülbelül [X] ml vért veszünk.\n\n<b>[Csak ha a fő klinikai vizsgálatban biológiai mintát vesznek vagy használnak:] Biológiai minták a fő klinikai vizsgálatban</b>\nA(z) [mintatípus] mintából összesen [mennyiség], [gyakoriság] kerül levételre a(z) [konkrét fő vizsgálati cél] céljára. A mintákat [kódolt / anonimizált] formában [laboratórium/szervezet, ország] kapja meg. Tárolási hely: [hely]. Tárolási idő: [időtartam]. A vizsgálat céljának befejezése után: [megsemmisítés / protokoll szerinti kezelés].\n\n[Humángenetikai vizsgálat esetén:] Humángenetikai vizsgálat céljából végzett mintavételhez külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum szükséges. A genetikai mintavétel külön visszautasítható; visszautasítása nem akadályozza a klinikai vizsgálat további részében való részvételt.\n\n[Csak protokoll szerint kifejezetten önállóan választható, nem genetikai eljárás esetén:] [név, cél, mi történik, kockázat]. Ennek elutasítása nem akadályozza a fő vizsgálatban való részvételt; döntését a beleegyező részben külön jelölheti.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Mit várunk Öntől?</b>\n\nTartsa be a vizsgálati csoport utasításait és a protokoll szerinti [étkezési / alkohol- / dohányzási / koffein- / gyógyszer- / fizikai aktivitási / vezetési / egyéb] korlátozásokat. Más gyógyszerről, étrend-kiegészítőről, oltásról, új panaszról vagy sürgős ellátásról mielőbb tájékoztassa a vizsgálati csoportot. [Ha alkalmazandó:] Ne vegyen részt egyidejűleg más klinikai vizsgálatban.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Betegkártya [nem alkalmazandó fázis IV. és bioegyenértékűségi vizsgálatban]</b>\n\nHa a vizsgálatra betegkártya-követelmény vonatkozik, betegkártyát kap. A kártyán [név, születési idő, protokollszám, vizsgálati gyógyszer és hatásmód, indikáció, ellenjavallatok, veszélyes interakciók, vizsgálóhely és 24 órás orvosi elérhetőség, egyéb biztonsági információ] szerepel. Saját biztonsága érdekében a vizsgálat alatt mindig tartsa magánál. A neve és vizsgálati kódszáma kizárólag betegbiztonsági okból, a betegkártyán szerepelhet együtt.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Milyen kockázatokkal, mellékhatásokkal és kellemetlenségekkel járhat a részvétel?</b>\n\nA vizsgálati gyógyszer ismert és jelenleg még nem ismert nemkívánatos hatásokat is okozhat. Különösen első emberi alkalmazásnál vagy magasabb dózisoknál bizonytalanság állhat fenn.\n\nLegfontosabb ismert kockázatok: [tételes, közérthető felsorolás gyakorisággal/súlyossággal, ha ismert].\nEljárások kockázatai: [vérvétel / biopszia / sugárzás / éhezés / hosszú benttartózkodás / egyéb].\n\nÚj vagy rosszabbodó panasz esetén azonnal jelezze: [kapcsolat].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Terhesség, szoptatás és fogamzásgátlás</b>\n\n<b>Szerzői utasítás:</b> Tartsa meg ezt a fejezetet, ha reproduktív korú résztvevők bevonása lehetséges. Ismertesse a klinikai vizsgálat nemző- vagy fogamzóképességre, fennálló vagy későbbi terhességre, illetve az embrióra/magzatra gyakorolt ismert vagy nem ismert hatását. Terhességi tesztet, fogamzásgátlást, szoptatási vagy ivarsejt-adományozási előírást csak akkor tartson meg, ha a protokoll előírja.\n\nA vizsgálati gyógyszer nemző- vagy fogamzóképességre, fennálló vagy későbbi terhességre, embrióra/magzatra vagy szoptatott gyermekre gyakorolt hatása [nem ismert / ismert kockázat]. [Csak ha a protokoll előírja:] [fogamzásgátlás pontos módja és időtartama], [terhességi tesztek], [sperma/petesejt-adományozás tilalma]. Terhesség esetén haladéktalanul jelezze a vizsgálatvezetőnek; a terhesség utánkövetéséhez külön tájékoztatást és beleegyezést kap.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Várható-e Önnek közvetlen egészségügyi előnye?</b>\n\nNem várható, hogy a részvételből közvetlen egészségügyi előnye származzon. Az alkalmassági vizsgálatok, orvosi ellenőrzések, költségtérítés vagy esetleges díjazás nem tekinthetők egészségügyi előnynek. A megszerzett ismeretek segíthetik a gyógyszerfejlesztést és jövőbeli betegek ellátását.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>10. Mi történik, ha nem vesz részt?</b>\n\nHa nem vesz részt, nem kap vizsgálati gyógyszert vagy placebót és nem végzik el a kutatási célú eljárásokat. Ez nem érinti hátrányosan az Ön szokásos egészségügyi ellátását vagy jogait.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>Vizsgálattal összefüggő egészségkárosodás</b>\nHa a klinikai vizsgálattal összefüggésben egészségkárosodás éri, illetve személyiségi joga sérül, jogosult lehet kezelésre, kártérítésre, kártalanításra és sérelemdíjra a vonatkozó magyar jogszabályok, különösen a 2005. évi XCV. törvény 21. § (1) bekezdése szerint.\n\nBiztosító: [név]\nMagyarországi elérhetőség: [cím]\nKapcsolattartó: [név]\nTelefon: [telefonszám]\nKárbejelentés módja: [töltse ki].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>12. Költségek, költségtérítés és esetleges díjazás</b>\n\nA vizsgálati gyógyszert és a kutatási célú vizsgálatokat a Szponzor finanszírozza.\n\n<b>[Ha költségtérítés van:]</b> A Szponzor megtéríti az alábbi, ténylegesen felmerült és igazolt költségeket: [pontos, teljes költségtípusok és szabályok].\n<b>[Ha nincs költségtérítés:]</b> A részvételhez kapcsolódó költségtérítés nem jár.\n\n<b>[Ha külső szolgáltató végzi a költségtérítést:]</b> A költségtérítést a(z) [szolgáltató neve] végzi. Lényeges feltételek: [töltse ki]. Átadott adatok: [pontos felsorolás]. Adatkezelési feltételek és esetleges díjak: [töltse ki].\n\n[Csak ha jogszerűen alkalmazandó nem-terápiás farmakokinetikai/interakciós, I. fázisú vagy bioegyenértékűségi vizsgálatban:] A részvételért [összeg / pontos számítás és arányos kifizetés korai befejezés esetén] díjazás jár.\n\n<b>Szerzői utasítás:</b> Más esetben részvételi díjazást ne szerepeltessen.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>13. Önkéntes-e a részvétel, és hogyan fejezheti be?</b>\n\nA részvétel önkéntes. Beleegyezését bármikor, indoklás nélkül, szóban vagy írásban visszavonhatja.\n\nHa csak a vizsgálati gyógyszer alkalmazását hagyja abba, de a részvételt nem vonja vissza: [biztonsági utánkövetés]. Ha a klinikai vizsgálatban való részvételi szándékát visszavonja, Önről a klinikai vizsgálat céljára további egészségügyi adat nem gyűjthető; a korábban jogszerűen gyűjtött adatok a vizsgálat értékelésében továbbra is felhasználhatók.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>14. Hogyan kezeljük személyes adatait és mintáit?</b>\n\n<b>Adatvédelem</b>\nA személyes és egészségügyi adatok kezelésére különösen az (EU) 2016/679 rendelet (GDPR), a 2011. évi CXII. törvény, az 1997. évi XLVII. törvény, a 2005. évi XCV. törvény, az 1997. évi CLIV. törvény és a 35/2005. (VIII. 26.) EüM rendelet vonatkozik. [Humángenetikai vizsgálat esetén: továbbá a 2008. évi XXI. törvény.]\n\nAdatkezelő(k): [név, cím és szerep]\nAdatvédelmi tisztviselő / adatvédelmi kapcsolat: [név és elérhetőség]\nAz adatkezelés célja: [pontos cél]. Az adatkezelés jogalapja a KFEB követelménye szerint az érintett hozzájárulása.\nA kezelt adatok: [a tényleges adatkategóriák tételes felsorolása].\n\nA vizsgálóhelyről személyes és különleges adatok kizárólag [kódolt / anonimizált] formában továbbíthatók. Kódolt adatok esetén a kódkulcs nem továbbítható. Az azonosítható adatokba csak a vizsgálóhelyen tekinthetnek be az erre jogosult [vizsgálati személyzet / monitor / auditor / hatósági ellenőr / etikai bizottság erre jogosult személye / egyéb tényleges jogosult], és azokról nem készíthetnek másolatot. Titoktartási kötelezettség terheli őket.\n\nA kódolt/anonimizált adatok címzettjei: [szervezetek/szervezettípusok és országok]. [Ha harmadik országba történik továbbítás: ország és alkalmazott garancia.] Az adatokat [hely] helyen [időtartam / végdátum] ideig tárolják.\n\nHa adatkezelési jogai sérülnek, kapcsolatba léphet [adatkezelő/adatvédelmi tisztviselő], és panaszt tehet a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH). NAIH postai cím: [aktuális cím]. Internet: [aktuális webcím].\n\n<b>[Csak ha a fő klinikai vizsgálatban biológiai mintát vesznek vagy használnak:] Biológiai minták a fő klinikai vizsgálatban</b>\nA(z) [mintatípus] mintából összesen [mennyiség], [gyakoriság] kerül levételre a(z) [konkrét fő vizsgálati cél] céljára. A mintákat [kódolt / anonimizált] formában [laboratórium/szervezet, ország] kapja meg. Tárolási hely: [hely]. Tárolási idő: [időtartam]. A vizsgálat céljának befejezése után: [megsemmisítés / protokoll szerinti kezelés].\n\n[Humángenetikai vizsgálat esetén:] Humángenetikai vizsgálat céljából végzett mintavételhez külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum szükséges. A genetikai mintavétel külön visszautasítható; visszautasítása nem akadályozza a klinikai vizsgálat további részében való részvételt.\n\n<b>Szerzői utasítás:</b> A fő vizsgálat célján kívüli jövőbeni/másodlagos felhasználást ne ismertesse; ehhez a külön secondary-use sablont használja.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>15. Kap-e új információkat és tájékoztatást az eredményekről?</b>\n\nA biztonságát vagy folytatási döntését befolyásoló új információról megfelelő időben tájékoztatják. A vizsgálat eredményeinek összefoglalója az alkalmazandó uniós követelmények szerint nyilvánosan elérhető lesz az EU klinikai vizsgálati adatbázisának nyilvános felületén. [Ha alkalmazandó: egyéni eredmények / kezelési csoport / fontos véletlen lelet közlésének módja.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>Kit kereshet kérdéseivel?</b>\nVizsgálatvezető: [név, beosztás/munkakör]\nVizsgálóhely: [név és cím]\nTelefon: [telefonszám]\nE-mail: [e-mail]\n24 órás sürgősségi kapcsolat: [ha alkalmazandó]\n\nAdatvédelmi kapcsolattartó: [név és elérhetőség]\nNAIH: [aktuális postai cím és internetes elérhetőség]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>BELEEGYEZŐ NYILATKOZAT</b>\n\nKijelentem, hogy megkaptam és megértettem a tájékoztatást; kérdéseket tehettem fel és elegendő időt kaptam; tudom, hogy a részvétel nem kezelés és közvetlen egészségügyi előny nem várható; ismerem a kockázatokat, eljárásokat, korlátozásokat, biztosítást és adatkezelést [és, ha alkalmazandó, a költségtérítés részleteit]; tudom, hogy részvételem önkéntes és beleegyezésemet bármikor, indoklás nélkül, szóban vagy írásban visszavonhatom; hozzájárulok a jelen dokumentumban ismertetett kötelező eljárásokhoz, adatkezeléshez és mintavételekhez; [humángenetikai vizsgálat esetén:] tudom, hogy humángenetikai vizsgálathoz külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum szükséges; [ha alkalmazandó] megkaptam/meg fogom kapni a betegkártyát; és a dokumentum egy eredeti példányát megkapom.\n\n[Csak protokoll szerint önállóan választható, nem genetikai tevékenység:]\n[tevékenység neve/célja] – Beleegyezem: Igen □  Nem □\n[Ismételje szükség szerint; ezekhez ne készítsen külön aláírássorozatot.]\n\n<b>A vizsgálati alany</b>\nNév: ____________________\nSzületési hely: ____________________\nSzületési idő: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\n<b>A tájékoztatást végző személy / vizsgálatvezető</b>\nNév: ____________________\nBeosztás / munkakör: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\nA dokumentum egy eredeti, aláírt és dátummal ellátott példányát az érintett kapja meg; egy eredeti példány a kutatási dokumentációban kerül megőrzésre.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

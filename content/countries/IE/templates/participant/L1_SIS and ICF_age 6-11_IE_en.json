@@ -1,0 +1,83 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Study Information and Assent Form – Children aged 6–11",
+  "target_country": "Ireland",
+  "country_code": "IE",
+  "target_language": "English",
+  "language_code": "en",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protocol number: [fill in] | EU trial number: [fill in]"
+  ],
+  "info_table": [
+   "Trial title",
+   "Short trial title",
+   "Protocol number [add version and date]",
+   "EU trial number",
+   "Sponsor [with full address]",
+   "Principal investigator",
+   "Site name",
+   "Site address",
+   "Study identification number",
+   "Co-investigator(s) [names, titles and contact details]",
+   "Data controller(s)",
+   "Data Protection Officer [name and contact details]"
+  ],
+  "content_instructions": "Use for children aged 6–11. Address the child directly in simple, age-appropriate language. Explain why the study is being done, what will happen, how long it lasts, main risks/discomforts, possible benefit, applicable biological samples or genetic testing, basic privacy and the right to say no or stop. Include only study-dependent modules that actually apply. This document records assent, not legal consent; parent/guardian consent is separate. Exclude detailed adult legal/data-protection wording and secondary/future use.",
+  "styling_instructions": "Use clear participant-facing question headings and short sections. Use a clean readable font such as Calibri, Arial, Verdana or Tahoma at about 12 point. Avoid block capitals and unnecessary legalistic text. Use tables or simple flow charts when they improve understanding. Keep the child’s assent record visually distinct from any genuinely optional choices. Use Yes/No boxes only for optional activities. Use separate fields for printed name, date and signature."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Hello!</b>\n<b>Drafting note:</b> Adapt words, examples and length to the child's age and understanding. Pictures or other communication supports may be used. This is an assent form, not the parent/guardian consent form.\nWe are asking if you would like to be in a research study. A research study helps doctors and researchers learn more. Your parent or guardian will also get information and will be asked for permission.\n\nYou can ask questions. You can say no. If you start and later want to stop, tell us or tell an adult you trust.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Why are we doing the study?</b>\nExplain in a few short sentences what doctors/researchers want to learn and why children like this child are being asked.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>What will happen if you are in the study?</b>\nExplain the medicine/treatment or placebo in simple words, visits, tests, how long it lasts and what is different from usual care. If chance/randomisation is used, explain it simply.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>Will anything hurt or feel uncomfortable?</b>\nExplain the main side effects, needle sticks, scans or other uncomfortable things honestly. Say what staff can do to help and that the child should tell staff if something hurts or they want to stop.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>Could the study help you?</b>\nSay simply whether it might help the child, whether that is uncertain, or whether no direct benefit is expected.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>What happens to samples and information about you?</b>\nExplain simply that information about the child's health will be used for this study and kept safely.\n\n<b>[Conditional – biological samples]</b> Explain what is taken, for example blood or another sample, how much, why, and whether it is required or optional.\n\n<b>[Conditional – genetic testing]</b> Explain in very simple words that genes/DNA may be tested, why, and whether the test is required or optional. Explain any child-relevant possibility of learning something unexpected. Do not discuss future/secondary research in this form.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>Can you say no or stop?</b>\nYes. You can say no now or tell us later that you want to stop. You do not need to give a reason. Your usual care will continue. Your parent/guardian cannot make you stay in the study if you clearly do not want to continue.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Who can you ask?</b>\nYou can ask [study doctor/nurse/name] or your parent/guardian any questions. Contact: [INSERT].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>What do you think?</b>\n<b>Drafting note:</b> Use a signature/mark only when meaningful for the child. Do not treat silence or lack of objection as assent. Required main-trial samples/genetic testing are explained as part of the overall study choice; only genuinely optional activities receive separate choices below.\n\n☐ I want to be in the study.\n☐ I do not want to be in the study.\n☐ I am not sure and want to talk more.\n\n<b>[Conditional – optional sample/test]</b>\n☐ I am happy to have the optional [sample/test].\n☐ I do not want the optional [sample/test].\n\n<b>[Conditional – optional genetic test]</b>\n☐ I am happy to have the optional genetic/DNA test that was explained to me.\n☐ I do not want that optional test.\n\nChild’s name: ____________________\nChild’s signature/mark (if appropriate): ____________________  Date: __________\n\nPerson explaining the study: ____________________  Role: __________\nSignature: ____________________  Date: __________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

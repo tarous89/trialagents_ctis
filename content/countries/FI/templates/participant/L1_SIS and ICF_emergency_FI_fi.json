@@ -1,0 +1,101 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Emergency Enrolment and Deferred Consent Form",
+  "doc_name_local": "Tiedote ja suostumus tutkimuksen jatkamiseen hätätilanteessa tapahtuneen mukaan ottamisen jälkeen",
+  "target_country": "Finland",
+  "country_code": "FI",
+  "target_language": "Finnish",
+  "language_code": "fi",
+  "doc_type": "emergency_enrollment",
+  "file_name": "L1_SIS and ICF_emergency",
+  "sort_order": "3",
+  "description": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versio 1.0 - [date]",
+   "Tutkimussuunnitelman numero: [täytä] | EU-tutkimusnumero: [täytä]"
+  ],
+  "info_table": [
+   "Tutkimuksen nimi",
+   "Tutkimuksen lyhyt nimi",
+   "Tutkimuksen koodi [jos soveltuu]",
+   "Tutkimussuunnitelman numero [lisää versio ja päivämäärä]",
+   "EU-tutkimusnumero",
+   "Toimeksiantaja [täydellinen osoite]",
+   "Johtava tutkija",
+   "Tutkimuskeskuksen nimi",
+   "Tutkimuskeskuksen osoite",
+   "Hätätilanteessa mukaan ottamisen päivämäärä ja kellonaika"
+  ],
+  "content_instructions": "Perusta asiakirja Tukijan T/447/2026-malliin ja Suomen kliinistä lääketutkimusta koskevaan sääntelyyn. Kirjoita vain päätöksenteon kannalta olennaiset tiedot tiiviillä, ymmärrettävällä suomen kielellä. Vältä toistoa, tarpeetonta ammattisanastoa, käskevää tai houkuttelevaa ilmaisua sekä sanamuotoja, jotka olettavat osallistumisen. Selitä vierasperäiset ja tekniset termit ensimmäisellä käyttökerralla. Käytä valittua puhuttelumuotoa johdonmukaisesti. Suullinen tieto, mahdollisuus kysymyksiin ja riittävä harkinta-aika kuuluvat suostumusprosessiin. Kuvaa vain tutkimussuunnitelman mukaiset toimenpiteet, tiedot, näytteet, vastaanottajat, siirrot, säilytysajat, korvaukset ja riskit. Pidä yksityiskohtaiset toimintaohjeet erillisessä ohjeessa, mutta kerro tiedotteessa kaikki osallistumispäätökseen vaikuttavat rasitteet ja rajoitukset. Jos tutkimuksessa käytetään ionisoivaa säteilyä, noudata Tukijan T/447/2026-säteilyohjetta: kerro joko ettei lisäaltistusta synny tavanomaiseen hoitoon verrattuna tai kuvaa tutkimuskohtaisesti kuvantaminen, hyöty, annos, riskin ymmärrettävä merkitys, toistojen määrä ja kokonaisaltistus. Jos tutkimuksessa on hajautettuja elementtejä, kuten etävastaanottoja tai sähköinen suostumus, kuvaa ne siltä osin kuin ne vaikuttavat osallistumiseen. Tietosuojassa yksilöi rekisterinpitäjä(t), todelliset käsittelyperusteet sanallisesti ja GDPR:n artikla-/alakohtatasolla, tietolähteet, vastaanottajat, mahdollinen suora etäpääsy potilastietoihin, säilytys, EU/ETA:n ulkopuoliset maat ja siirtomekanismi sekä tosiasiassa soveltuvat rekisteröidyn oikeudet. Älä käytä tutkittaville suunnatussa materiaalissa sanaa rotu; käytä tarvittaessa käsitettä etninen tausta. Tuleva tai muu tutkimussuunnitelman ulkopuolinen käyttö ei kuulu näihin malleihin; sitä varten käytetään erillistä tulevan/toissijaisen käytön tiedotetta ja suostumusta. Poista kaikki laatimisohjeet, vaihtoehdot ja soveltumattomat moduulit ennen osallistujalle annettavaa lopullista asiakirjaa. Käytä tätä mallia, kun tutkittava on jo otettu kliiniseen lääketutkimukseen lääketutkimusasetuksen 35 artiklan mukaisessa hätätilanteessa ilman ennakolta saatua tietoon perustuvaa suostumusta, koska tutkittava ei voinut antaa suostumusta eikä laillisesti nimettyä edustajaa voitu tavoittaa tarvittavassa hoitoikkunassa. Tukijan T/448/2026 mukaan Part II -menettelyssä on kuvattava sekä hätätilanteen tunnistaminen ja dokumentointi että menettely suostumuksen saamiseksi tutkimuksen jatkamiseen. Tämä asiakirja pyytää suostumusta vain tutkimuksen jatkamiseen; se ei pyydä jälkikäteistä hyväksyntää jo annetulle hätähoidolle tai jo tehdyille tutkimustoimille. Erottele selvästi mitä on jo tapahtunut ja kerätty ennen tiedonantoa ja mitä tapahtuu vain, jos jatkamiseen annetaan suostumus. Pyydä suostumus ilman aiheetonta viivytystä tutkittavalta tai laillisesti nimetyltä edustajalta sen mukaan, kumpi voi ottaa kantaa ensin. Jos edustaja antaa suostumuksen ensin, tutkittavan oma suostumus hankitaan heti, kun hän kykenee sen antamaan. Tutkittavan ilmaisemaa vastustusta kunnioitetaan. Jos suostumusta jatkamiseen ei anneta, uusia tutkimuskohtaisia toimia ja uutta tutkimustiedon/näytteiden keruuta ei tehdä. Kerro oikeudesta vastustaa hätätilanteessa jo saatujen tutkimustietojen käyttöä ja kuinka vastustus ilmoitetaan; älä esitä jatkosuostumusta jo tapahtuneiden toimien hyväksyntänä tai lupaa automaattista poistamista, jota laki ei edellytä. Lopulliseen asiakirjaan jätetään vain tilanteessa käytettävä allekirjoituspolku, mutta mallissa voidaan säilyttää ehdollinen tutkittavan ja edustajan allekirjoitusosio. Renderöi ennen info_tablea/varsinaista sisältöä otsikko ”TIEDOTE KLIINISESTÄ LÄÄKETUTKIMUKSESTA” (ikä-/käyttötarkennus voidaan lisätä alaotsikoksi), vaikka otsikko ei sisälly template_content-kenttään.",
+  "styling_instructions": "A4 portrait layout; approximately 1 cm top, 2 cm bottom, 2 cm left and 1.5 cm right margins. Use 11–12 pt body text with bold hierarchical headings; drafting instructions/examples appear in italics. Use a separate consent heading and signature section with clearly aligned signature, printed-name and date fields."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Tietoa hätätilanteessa tapahtuneesta mukaan ottamisesta\n\nTeidät otettiin mukaan tähän kliiniseen lääketutkimukseen [päivämäärä] klo [aika] äkillisessä vakavassa tai henkeä uhkaavassa tilanteessa. Tuolloin Teille ei voitu antaa tutkimuksesta kaikkia tietoja eikä Teiltä voitu saada tietoon perustuvaa suostumusta. Myöskään laillisesti nimettyä edustajaa ei voitu tavoittaa siinä ajassa, jossa tutkimukseen liittyvä toimenpide oli tehtävä. Mukaan ottaminen tapahtui hyväksytyn tutkimussuunnitelman ja hätätilannemenettelyn mukaisesti.\n\nTeille annetaan nyt tutkimuksesta täydet tiedot ja Teitä pyydetään päättämään, haluatteko jatkaa tutkimuksessa. Nyt annettava suostumus ei ole jo annettujen hoitojen tai jo tehtyjen tutkimustoimien jälkikäteinen hyväksyntä.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Osallistumisen vapaaehtoisuus ja päätös tutkimuksen jatkamisesta\n\nTutkimuksen jatkaminen on vapaaehtoista. Jos päätätte jatkaa, Teitä pyydetään vahvistamaan suostumuksenne allekirjoituksella. Voitte myös kieltäytyä jatkamasta tai keskeyttää osallistumisen myöhemmin syytä ilmoittamatta ilman, että se vaikuttaa oikeuteenne saada tarvitsemaanne hoitoa.\n\nJos ette anna suostumusta tutkimuksen jatkamiseen, uudet tutkimuskohtaiset toimet ja uuden tutkimustiedon tai näytteiden kerääminen lopetetaan. Tavallinen hoito jatkuu lääketieteellisen tarpeen mukaan. Teille kerrotaan myös oikeudestanne vastustaa hätätilanteessa jo saatujen tutkimustietojen käyttöä ja miten vastustus ilmoitetaan.\n\nLukekaa rauhassa tämä tiedote. Voitte esittää kysymyksiä ja Teille annetaan riittävästi aikaa tehdä päätös.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Tutkimuksen toteuttaja\n\nTämän tutkimuksen toteuttavat (johtava tutkija, tutkimuskeskus, toimeksiantaja, toteuttajaorganisaatio). Tutkimuksen rekisterinpitäjä on x <i>(rekisterinpitäjän vastuu voi myös olla jaettu)</i>, joka vastaa tutkimuksen henkilötietojen käsittelyn lainmukaisuudesta sekä tietosuojaan liittyvästä tiedonannosta.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Tutkimuksen tausta ja tarkoitus\n\nTämän lääketutkimuksen tavoitteena on selvittää, onko (uusi) tutkimuslääke/lääke tehokas ja turvallinen x:n hoidossa/ehkäisyssä/jne. Lisäksi on tarkoitus selvittää <i>(keskeiset toissijaiset tavoitteet)</i>.\n\nTutkimuslääke (nimi) on <i>(lyhyt neutraali kuvaus ja tutkimuksen perustelu)</i>. <i>(Jos lume/vertailu on käytössä, selitä ja perustele ymmärrettävästi.)</i>\n\nTutkimukseen osallistuu noin x tutkittavaa x maassa. Suomessa tutkimukseen osallistuu x tutkittavaa.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Tutkimusmenetelmät ja tutkimuksen toimenpiteet\n\n<b>Mitä on jo tapahtunut</b>\n<i>(Kuvaa aikajärjestyksessä tutkimuslääke/vertailu/lume, satunnaistaminen ja sokkoutus, tutkimuskohtaiset toimenpiteet, tutkimukset, tiedot ja näytteet, jotka on jo annettu, tehty tai kerätty ennen tämän tiedotteen antamista. Erota ne tavallisesta hätähoidosta.)</i>\n\n<b>Mitä tapahtuu, jos suostutte jatkamaan</b>\nTutkimuksen jäljellä oleva osallistumisaika on noin x päivää/viikkoa/kuukautta. Jatkossa tutkimukseen kuuluu x käyntiä/yhteydenottoa ja <i>(jäljellä olevat tutkimuslääkkeet, tutkimukset, näytteet ja turvallisuusseuranta)</i>.\n\n<i>(Kuvaa mahdollinen geenimääritys vain, jos se kuuluu tähän tutkimukseen, ja erottele jo aloitettu/tehty analyysi tulevista toimista. Kerro, että tutkimuskohtainen geenitesti rajoittuu tähän tutkimukseen.)</i>\n\n<i>(Kuvaa lisääntymisturvallisuutta koskevat toimet vain, jos ne ovat relevantteja tutkimuksen jäljellä olevassa vaiheessa.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Tutkimuksen mahdolliset hyödyt tutkittavalle\n\nTässä vaiheessa ei pystytä luotettavasti arvioimaan, onko tutkimukseen osallistumisesta Teille hyötyä. Tutkimuksesta voidaan kuitenkin saada hyödyllistä tietoa tutkimuslääkkeestä ja tutkittavasta sairaudesta tai hätätilanteesta. <i>(Kuvaa realistinen mahdollinen suora hyöty ja tulosten/sattumalöydösten ilmoittaminen; älä esitä jo tapahtunutta hätätoimenpidettä suostumuksen perusteella hyväksyttynä.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Tutkimuksesta mahdollisesti aiheutuvat haitat ja epämukavuudet\n\nKuvaa sekä jo saadusta tutkimuslääkkeestä tai jo tehdyistä tutkimustoimenpiteistä aiheutuvat riskit että tutkimuksen jatkamiseen liittyvät vakavimmat ja tavallisimmat odotettavissa olevat haitat. Vakavat haitat ja niiden todennäköisyys tulee selvittää erikseen.\n\nTutkimukseen voi liittyä myös odottamattomia haittoja. Jos tutkimuksen aikana saadaan turvallisuuden tai tutkimuksen jatkamisen kannalta oleellista uutta tietoa, tutkijalääkäri ottaa välittömästi yhteyttä ja keskustelee tutkimuksen jatkosta. <i>(Anna vastaavat tiedot myös vertailuvalmisteista ja tutkimustoimenpiteistä.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Tietojen luottamuksellisuus ja tietosuoja\n\nTässä tutkimuksessa käsitellään henkilötietojanne. Ennen tämän tiedotteen antamista on jo voitu kerätä <i>(yksilöi hätätilanteessa kerätyt tiedot ja näytteet)</i>. Jos suostutte jatkamaan, kerätään lisäksi <i>(yksilöi tulevat tiedot/näytteet)</i>.\n\nTiedot ja näytteet käsitellään pseudonymisoituina eli koodattuina. Henkilötietojen käsittelyperusteet, säilytys vähintään 25 vuotta <i>(täsmennä)</i>, vastaanottajat, tarkastusoikeudet, mahdolliset ulkomaiset siirrot ja soveltuvat oikeudet kuvataan Tukijan T/447/2026-mallin mukaisesti.\n\nJos ette anna suostumusta jatkamiseen, Teillä on oikeus vastustaa tutkimuksessa jo saatujen tietojen käyttöä. Vastustuksen voi ilmoittaa [tutkijalääkärille/yhteyshenkilölle] seuraavasti: [yhteystapa]. <i>(Selitä tutkimuskohtaisesti ja sovellettavan lain mukaisesti, mitä vastustuksesta seuraa jo kerätyille tiedoille ja jo tehdyille analyyseille; älä lupaa automaattista poistamista, jos sitä ei voida toteuttaa.)</i>\n\nRekisterinpitäjän tietosuojavastaavan yhteystiedot: ______________________________. Valituksen voi tehdä tietosuojavaltuutetulle.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Tutkimuksen kustannukset ja taloudelliset selvitykset\n\nTutkimuslääke ja kaikki tutkimukseen liittyvät toimenpiteet ovat maksuttomia. Tutkimuskäynneistä aiheutuvat mahdolliset matkakustannukset korvataan todellisten kustannusten mukaan tositteiden perusteella. <i>(Kuvaa muut soveltuvat tutkimuskohtaiset korvaukset Tukijan mallin ja Suomen sääntelyn mukaisesti.)</i>\n\nTutkimuksen rahoituksesta vastaa xxx. <i>(Kuvaa tutkimuskeskukselle/henkilökunnalle maksettavat korvaukset ja olennaiset sidonnaisuudet.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "Tutkittavien vakuutusturva\n\nJos tutkimuslääkkeestä tai tutkimuksen takia tehdystä toimenpiteestä aiheutuu henkilövahinko, siitä voi hakea korvausta.\n\nTutkimuslääkkeestä aiheutuneesta vahingosta haetaan korvausta Lääkevahinkovakuutuksesta. Lääkevahinkovakuutus korvaa tutkimuslääkkeestä aiheutuneita odottamattomia haittoja vakuutusehdoissa tarkemmin säädellyin edellytyksin. <i>(Ellei lääke ole Lääkevahinkovakuutuksen piirissä ja tutkittavien turvaksi on otettu joku muu vakuutus, tämä kappale muutetaan sen mukaisesti.)</i>\n\nMuusta syystä kuin tutkimuslääkkeestä aiheutuneista henkilövahingoista haetaan korvausta tutkimuskeskuksen potilasvakuutuksesta. Se korvaa potilasvakuutuslain mukaisesti terveyden‐ ja sairaanhoidon yhteydessä aiheutuneita henkilövahinkoja laissa tarkemmin säädellyin edellytyksin. Potilasvakuutuskeskus huolehtii potilasvahinkojen korvauskäsittelystä.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "Tutkimuksen päättyminen tai keskeyttäminen\n\nJos suostutte jatkamaan, voitte myöhemmin keskeyttää tutkimukseen osallistumisen milloin tahansa. Tutkijalääkäri tai toimeksiantaja voi myös joutua keskeyttämään osallistumisen ennenaikaisesti. Jos näin tapahtuu, kanssanne keskustellaan keskeyttämiseen liittyvistä toimenpiteistä ja tavallisen hoidon jatkosta.\n\nTutkimuksen päättymisen jälkeen kerrotaan, mitä lääkettä/tutkimuslääkettä olette saanut <i>(ellei ole asianmukaisesti perusteltua syytä toimia toisin)</i>. Tietoa tutkimuksesta ja yhteenveto tuloksista julkaistaan EU-tietokannassa https://euclinicaltrials.eu/.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "Lisätietoja\n\nLisätietoja tutkimuksesta voi kysyä tutkijalääkäriltä tai muulta tutkimushenkilökunnalta. Heidän kanssaan voi keskustella haittavaikutuksista, oireista, henkilötietojen käsittelystä, oikeudesta vastustaa jo saatujen tietojen käyttöä sekä tutkimuksen jatkamisesta tai lopettamisesta.\n\nYhteystiedot:\n<i>(tutkijan/tutkimushenkilökunnan yhteystiedot)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "SUOSTUMUS TUTKIMUKSEN JATKAMISEEN HÄTÄTILANTEESSA TAPAHTUNEEN MUKAAN OTTAMISEN JÄLKEEN\n\nMinulle on kerrottu, että minut otettiin tähän kliiniseen lääketutkimukseen hätätilanteessa ennen kuin minulta voitiin saada tietoon perustuva suostumus. Olen saanut nyt kirjallisen ja suullisen selvityksen tutkimuksesta, siitä mitä on jo tapahtunut sekä siitä, mitä tapahtuu, jos jatkan tutkimuksessa. Olen saanut vastaukset kysymyksiini ja riittävästi aikaa tehdä päätös.\n\nYmmärrän, että nyt antamani suostumus koskee tutkimuksen jatkamista eikä ole jo annettujen hoitojen tai jo tehtyjen tutkimustoimien jälkikäteinen hyväksyntä. Ymmärrän, että jatkaminen on vapaaehtoista ja että voin keskeyttää myöhemmin ilman vaikutusta tarvitsemaani hoitoon.\n\nOlen tietoinen siitä, että henkilötietojani voidaan käsitellä myös ulkomaisen viranomaisen suorittaman tarkastuksen sekä toimeksiantajan edustajan suorittaman laadunvarmistustoiminnan yhteydessä.\n\n<b>Allekirjoituksellani vahvistan, että suostun vapaaehtoisesti jatkamaan tässä asiakirjassa kuvattua tutkimusta.</b>\n\nTutkittavan nimi: ____________________________________\n____________________________________    _________________\nTutkittavan allekirjoitus                Päiväys\n\n<b>[Ehdollinen – käytä vain, jos tutkittava ei vielä kykene antamaan suostumusta ja laillisesti nimetty edustaja voi ottaa kantaa ensin]</b>\nOlen saanut tutkimuksesta täydet tiedot ja annan laillisesti nimettynä edustajana suostumuksen tutkittavan tutkimuksen jatkamiseen. Ymmärrän, että tutkittavalta pyydetään oma tietoon perustuva suostumus heti, kun hän kykenee sen antamaan, ja että hänen ilmaisemaansa vastustusta kunnioitetaan.\n\nOlen tietoinen siitä, että tutkittavan henkilötietoja voidaan käsitellä myös ulkomaisen viranomaisen suorittaman tarkastuksen sekä toimeksiantajan edustajan suorittaman laadunvarmistustoiminnan yhteydessä.\nEdustajan nimi: ____________________________________\nEdustamisen peruste / suhde tutkittavaan: ____________________________________\n____________________________________    _________________\nEdustajan allekirjoitus                  Päiväys\n\n<b>Suostumus vastaanotettu</b>\n____________________________________    _________________\nSuostumuksen vastaanottajan allekirjoitus  Päiväys\n____________________________________\nNimenselvennys\n\nAlkuperäinen allekirjoitettu asiakirja jää tutkijalääkärin arkistoon ja paperikopio tai sähköinen tallenne annetaan suostumuksen antaneelle henkilölle.",
+   "section_style": "Section break, H2 document subline, Rich body text, Signature section"
+  }
+ ]
+}

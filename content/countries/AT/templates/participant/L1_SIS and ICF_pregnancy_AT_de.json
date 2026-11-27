@@ -1,0 +1,99 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Participants",
+  "doc_name_local": "Information und Einwilligung zur Schwangerschaftsnachbeobachtung – Teilnehmerin",
+  "target_country": "Austria",
+  "country_code": "AT",
+  "target_language": "German",
+  "language_code": "de",
+  "doc_type": "pregnant_participants",
+  "file_name": "L1_SIS and ICF_pregnancy",
+  "sort_order": "7",
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+  "target_population": "[Beschreibung der Population laut Prüfplan]",
+  "target_population_label": "[Kurzbezeichnung der Population]",
+  "footer": [
+   "[Dokumentname] - [Kurzbezeichnung der Population] - Version 1.0 - [Datum]",
+   "Prüfplannummer: [ausfüllen] | EU-CT-Nummer: [ausfüllen]"
+  ],
+  "info_table": [
+   "Titel der klinischen Prüfung",
+   "Kurztitel der klinischen Prüfung",
+   "Prüfplannummer [Version und Datum ergänzen]",
+   "EU-CT-Nummer",
+   "Sponsor [mit vollständiger Anschrift und Länderangabe]",
+   "Verantwortliche Prüfärztin/verantwortlicher Prüfarzt",
+   "Name des Prüfzentrums",
+   "Anschrift des Prüfzentrums"
+  ],
+  "content_instructions": "LÄNGENLIMIT: Zielumfang 5 bis höchstens 8 Seiten; nur schwangerschaftsspezifische Informationen aufnehmen. Bei mehr als 10 Seiten ist eine 1- bis höchstens 2-seitige Kurzzusammenfassung erforderlich. Diese Vorlage ergänzt die Haupt-Einwilligung und betrifft eine Teilnehmerin, die während oder im protokolldefinierten Expositionszeitraum schwanger wird. Nach österreichischer Guidance sind Absetzen des Prüfmedikaments, Widerrufsrecht, fortgesetzte Protokollmaßnahmen, mögliche Entblindung, zusätzlich erhobene Daten und Erhebungsweg ausdrücklich zu beschreiben. Eine gesonderte Einwilligung ist jedenfalls erforderlich, wenn zusätzliche Daten außerhalb von Prüfplan/Pregnancy Monitoring Form erhoben, behandelnde Ärzte kontaktiert oder Gesundheitsdaten des Kindes nach der Geburt erfasst werden. Die Einwilligung während der Schwangerschaft deckt keine postnatalen Gesundheitsdaten des Kindes ab; dafür den getrennten nachgeburtlichen Abschnitt verwenden. Eine Nachbeobachtung des Kindes über 6 Monate hinaus ist zu begründen. Neu ergänzte oder angepasste Texte sind in kurzen, leicht verständlichen Sätzen zu formulieren; Fachbegriffe aus der österreichischen Musterinformation bleiben unverändert, neu eingeführte Fachbegriffe sind kurz zu erklären.",
+  "styling_instructions": "LÄNGEN- UND LAYOUTVORGABE: Das Dokument muss so kurz wie mit einer vollständigen, informierten Entscheidung vereinbar bleiben. Umfasst die endgültige Teilnehmerinformation mehr als 10 Seiten, ist eine klar getrennte Kurzzusammenfassung von 1 bis höchstens 2 Seiten einzufügen; sie darf den Haupttext nicht wortgleich wiederholen. A4-Hochformat verwenden. Kurztitel sowie Version/Datum in der Kopfzeile und „Seite X von NN“ in der Fußzeile führen. Nummerierte, fett hervorgehobene Überschriften und gut lesbaren Fließtext verwenden. Listen für Abläufe, Risiken, Pflichten und Wahlmöglichkeiten nutzen. Bearbeitungshinweise, nicht gewählte Alternativen, Hervorhebungen für die Redaktion und nicht anwendbare Abschnitte vor Ausgabe entfernen. Die Einwilligungs- oder Zustimmungserklärung als klar getrennten letzten Hauptabschnitt mit ausreichend großen Ankreuz-, Namens-, Datums- und Unterschriftsfeldern darstellen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Sehr geehrte Studienteilnehmerin!\n\nBei Ihnen ist während der klinischen Prüfung oder innerhalb des im Prüfplan festgelegten Zeitraums nach der letzten Behandlung eine Schwangerschaft eingetreten. Wir bitten Sie um eine gesonderte Einwilligung zur Erhebung von Informationen über den Verlauf und Ausgang der Schwangerschaft.\n\nDiese Einwilligung betrifft die Schwangerschaftsnachbeobachtung. Ob das Prüfmedikament abgesetzt wird und ob andere Studienmaßnahmen fortgesetzt werden, richtet sich getrennt nach dem Prüfplan und der medizinischen Beurteilung.\n\n<b>Die Nachbeobachtung ist freiwillig. Sie können sie jederzeit ohne Angabe von Gründen ablehnen oder beenden. Dies hat keine nachteiligen Folgen für Ihre gewöhnliche medizinische Betreuung.</b>",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Warum werden Schwangerschaftsdaten erhoben?</b>\n\nSie waren ...... ausgesetzt. Es ist bekannt/unklar, ob dies Auswirkungen auf Sie, die Schwangerschaft, das ungeborene Kind oder das geborene Kind haben kann. Die Daten werden benötigt, um die Sicherheit von ...... besser zu beurteilen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Was geschieht mit dem Prüfmedikament und der Verblindung?</b>\n\nDas Prüfmedikament wird abgesetzt / unterbrochen / fortgesetzt. <i>(Nicht Zutreffendes löschen und das im genehmigten Prüfplan vorgesehene Vorgehen sowie die Begründung beschreiben.)</i>\n\nDie Verblindung wird aufgehoben / nicht aufgehoben. <i>(Nicht Zutreffendes löschen.)</i>\n\nÄnderungen anderer Medikamente und die medizinischen Folgen des Absetzens sind zu beschreiben.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Welche Risiken und Unsicherheiten sind bekannt?</b>\n\nBekannte, vermutete und unbekannte Risiken für Sie, Embryo/Fötus und Kind: ...... . Verwenden Sie nur studienspezifisch belegte Angaben und erklären Sie Unsicherheit klar.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Welche Informationen werden erhoben?</b>\n\nEs werden folgende Daten erhoben: Zeitpunkt und Umfang der Exposition, Begleitmedikamente, relevante Vorerkrankungen, Schwangerschaftsverlauf, Untersuchungen, Komplikationen und Schwangerschaftsausgang.\n\nZusätzliche Untersuchungen oder Proben: ...... <i>(nur wenn tatsächlich geplant, medizinisch begründet und separat erklärt).</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Wie und wie lange erfolgt die Nachbeobachtung?</b>\n\nKontakte finden statt am/ungefähr: ...... . Die Datenerhebung endet ...... . Kontakt erfolgt □ persönlich □ telefonisch □ schriftlich □ über behandelnde Ärztinnen/Ärzte.\n\nEine über 6 Monate nach der Geburt hinausgehende Beobachtung des Kindes ist gesondert zu begründen. Gesundheitsdaten des geborenen Kindes dürfen nicht allein auf Grundlage der während der Schwangerschaft erteilten Einwilligung erhoben werden.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Kontakt mit behandelnden Ärztinnen/Ärzten</b>\n\nWir möchten folgende Ärztin/folgenden Arzt bzw. Einrichtung kontaktieren: ...... . Zweck und Datenumfang: ...... . Dies geschieht nur mit Ihrer gesonderten Zustimmung und einer erforderlichen Entbindung von der Verschwiegenheit.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Was geschieht mit Ihren Daten?</b>\n\nIhre Schwangerschaftsdaten werden pseudonymisiert und mit Ihren pseudonymisierten Studiendaten verknüpft.\n\nIm Rahmen dieser Schwangerschaftsnachbeobachtung werden Daten über Sie erhoben und verarbeitet. Es ist grundsätzlich zu unterscheiden zwischen:\n\n1) Personenbezogenen Daten, anhand derer eine Person direkt identifizierbar ist (z.B. Name, Geburtsdatum, Adresse, Sozialversicherungsnummer, Bildaufnahmen...).\n\n2) Pseudonymisierten personenbezogenen Daten, das sind Daten, bei denen alle Informationen, die direkte Rückschlüsse auf die konkrete Person zulassen, entweder entfernt, durch einen Code (z. B. eine Zahl) ersetzt oder (z.B. im Fall von Bildaufnahmen) unkenntlich gemacht werden. Es kann jedoch trotz Einhaltung dieser Maßnahmen nicht vollkommen ausgeschlossen werden, dass es unzulässigerweise zu einer Re-Identifizierung kommt. \n\n3) Anonymisierten Daten, bei denen eine Rückführung auf die konkrete Person ausgeschlossen werden kann. \n\n\n\nZugang zu den Daten, anhand derer Sie direkt identifizierbar sind (siehe Punkt 1), haben der Prüfarzt und andere Mitarbeiter des Prüfzentrums, die an der Schwangerschaftsnachbeobachtung oder Ihrer medizinischen Versorgung mitwirken. Zusätzlich können autorisierte und zur Verschwiegenheit verpflichtete Beauftragte des Sponsors ......... (<i>der Sponsor ist</i> <i>in jedem Fall inkl Länderangabe anzugeben</i>) sowie Beauftragte von in- und/ oder ausländischen Gesundheitsbehörden und jeweils zuständige Ethikkommissionen in diese Daten Einsicht nehmen, soweit dies für die Überprüfung der ordnungsgemäßen Durchführung der Schwangerschaftsnachbeobachtung notwendig ist. Sämtliche Personen, die Zugang zu diesen Daten erhalten, unterliegen im Umgang mit den Daten den jeweils geltenden nationalen Datenschutzbestimmungen und/oder der EU-Datenschutz-Grundverordnung (DSGVO). \n\n\n\nDer Code, der eine Zuordnung der pseudonymisierten Daten zu Ihrer Person ermöglicht, wird nur an Ihrem Prüfzentrum aufbewahrt. \n\n\n\n<i>(Bei klinischen Prüfungen mit externem Sponsor ist folgender Satz zu ergänzen</i>):\n\nEine Weitergabe der Daten, insbesondere an den Sponsor und seine Vertragspartner,<b> </b>erfolgt nur in pseudonymisierter oder anonymisierter Form. \n\n\n\n<i>(Bei klinischen Prüfungen ohne externen Sponsor, bei denen eine Weitergabe pseudonymisierter Daten an kommerzielle Vertragspartner erfolgt, ist folgender Satz zu ergänzen</i>):\n\nEine Weitergabe der Daten, insbesondere an .....(<i>hier ist der Empfänger der Daten konkret anzugeben</i>) erfolgt nur in pseudonymisierter oder anonymisierter Form. \n\n\n\n(<i>Wenn es weder einen externen Sponsor gibt, noch</i> <i>eine Weitergabe pseudonymisierter Daten an kommerzielle Vertragspartner erfolgt, ist folgender Satz zu ergänzen):</i>\n\nEine Weitergabe der Daten<b> </b>erfolgt nur in pseudonymisierter oder anonymisierter Form. \n\n\n\n\n\n<i>(Bei Weitergabe an Sponsor und seine Vertragspartner oder kommerzieller Vertragspartner ist zu ergänzen):</i>\n\nIm Rahmen dieser Schwangerschaftsnachbeobachtung ist eine Weitergabe an …. <i>(hier ist der Empfänger der Daten konkret anzugeben) </i>geplant.\n\n\n\nEine Weitergabe der Daten erfolgt nur in pseudonymisierter oder anonymisierter Form. \n\n\n\n\n\nFür etwaige Veröffentlichungen werden nur die pseudonymisierten oder anonymisierten Daten verwendet. \n\n\n\n<i>(Die folgenden Optionen betreffen die Weitergabe von Daten in Länder außerhalb der EU/EWR. Nicht zutreffende Optionen sind zu löschen. Bei einer Weitergabe sind das jeweilige Land und der Empfänger anzugeben.)</i>\n\n<b>[Option 1 – keine Weitergabe außerhalb der EU/EWR]</b>\nIm Rahmen dieser Schwangerschaftsnachbeobachtung ist keine Weitergabe von Daten in Länder außerhalb der EU/EWR (Drittland) vorgesehen.\n\n<b>[Option 2 – Angemessenheitsbeschluss]</b>\nFür manche Drittländer liegt ein Angemessenheitsbeschluss vor, der ein gleichwertiges Datenschutzniveau gewährleistet, wie es in EU/EWR-Ländern aufgrund der DSGVO gegeben ist. Der Empfänger der Daten hat seinen Sitz in ...... <i>(hier das Drittland angeben)</i>; für dieses Land wurde ein Angemessenheitsbeschluss der Europäischen Kommission erlassen.\n\nDie Übermittlung erfolgt zu folgendem Zweck: ...... .\n\n<b>[Option 3 – kein Angemessenheitsbeschluss]</b>\nIm Rahmen dieser Schwangerschaftsnachbeobachtung ist auch eine Weitergabe von pseudonymisierten Daten in Länder außerhalb der EU/EWR (Drittland) vorgesehen. Diese Drittländer unterliegen nicht den strengen Datenschutzvorgaben der EU (DSGVO). Dadurch besteht das Risiko, dass Sie die Ihnen gemäß DSGVO zustehenden Rechte nicht durchsetzen können. Daher werden ergänzende Maßnahmen getroffen, um Ihre Daten zu schützen.\n\nDer Empfänger der Daten ...... <i>(Empfänger und Land angeben)</i> ist vertraglich durch Abschluss der sogenannten Standarddatenschutzklauseln verpflichtet, Ihre Daten angemessen zu schützen und ausschließlich für die Zwecke dieser Studie zu verwenden.\n\nDie Übermittlung erfolgt zu folgendem Zweck: ...... .\n\n<i>(Bei einer Übermittlung in die USA sind Empfänger, Zweck und das bestehende Datenschutzniveau in verständlicher Form anzugeben. Es ist anzugeben, ob geeignete DSGVO-konforme Garantien und Vereinbarungen bestehen; falls nicht, sind die wesentlichen verbleibenden Risiken in einfacher Sprache zu beschreiben.)</i>\n\nIhre Einwilligung bildet die Rechtsgrundlage für die Verarbeitung Ihrer personenbezogenen Daten (Art 9 Abs. 2 lit a DSGVO i.V.m § 41 AMG). Sie können die Einwilligung zur Erhebung und Verarbeitung Ihrer Daten jederzeit ohne Begründung widerrufen. Nach Ihrem Widerruf werden keine weiteren Daten mehr über Sie erhoben. Die bis zum Widerruf erhobenen Daten können allerdings weiter im Rahmen dieser Schwangerschaftsnachbeobachtung verarbeitet werden. Wenn Sie mit der Verarbeitung Ihrer Daten nicht einverstanden sind, können Sie nicht an dieser Schwangerschaftsnachbeobachtung teilnehmen.\n\nNach der DSGVO stehen Ihnen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch zu, soweit dies die Ziele der Schwangerschaftsnachbeobachtung nicht unmöglich macht oder ernsthaft beeinträchtigt und soweit dem nicht andere gesetzliche Vorschriften widersprechen.\n\nDas gemäß DSGVO vorgesehene Recht auf Löschung Ihrer im Rahmen dieser Schwangerschaftsnachbeobachtung verarbeiteten Daten steht Ihnen aufgrund von Regelungen nach dem Arzneimittelgesetz nicht zu. Zusätzlich ist bei einer klinischen Prüfung nach dem Arzneimittelgesetz das Recht auf Datenübertragbarkeit außer Kraft gesetzt.\n\nDie voraussichtliche Dauer der Schwangerschaftsnachbeobachtung ist ......  (<i>hier ist die derzeit erwartete bzw. geplante Dauer der Schwangerschaftsnachbeobachtung anzugeben</i>). Die Dauer der Speicherung Ihrer Daten über das Ende der Schwangerschaftsnachbeobachtung hinaus ist durch Rechtsvorschriften geregelt (Arzneimittelstudie mindestens 25 Jahre).\n\n<i>Optionale Speicherung oder Verwendung von Daten außerhalb der im Prüfplan festgelegten Zwecke der klinischen Prüfung ist nicht in diesem Hauptdokument zu beschreiben. Dafür ist die gesonderte Information und Einwilligung „Sekundäre und zukünftige Verwendung von Daten oder Bioproben“ zu verwenden.</i> Falls Sie Fragen zum Umgang mit Ihren Daten in dieser Schwangerschaftsnachbeobachtung haben, wenden Sie sich zunächst an Ihren Prüfarzt. Dieser kann Ihr Anliegen ggf. an die Personen, die für den Datenschutz verantwortlich sind, weiterleiten.\n\nKontaktdaten der Datenschutzbeauftragten der an dieser klinischen Prüfung beteiligten Institutionen:\n\nDatenschutzbeauftragte:r des Prüfzentrums/der beteiligten Institution: [Name und zentrenspezifische Kontaktdaten]\n\nDatenschutzverantwortliche:r des Krankenanstaltenträgers: [zentrenspezifische Kontaktdaten]\n\n<i>(Im Falle eines externen Sponsors ist auch die folgende Angabe zu ergänzen)</i>\n\nDatenschutzbeauftragte:r des Sponsors: [Name und Kontaktdaten, sofern zutreffend]\n\nName, Anschrift und Kontaktdaten des Sponsors: [einfügen]\n\nSie haben das Recht, bei der österreichischen Datenschutzbehörde eine Beschwerde über den Umgang mit Ihren Daten einzubringen (<u>www.dsb.gv.at; E-Mail: dsb@dsb.gv.at </u>).\n\nFalls nach der Geburt Gesundheitsdaten des Kindes erhoben werden, gelten die in diesem Abschnitt beschriebenen Empfänger, Übermittlungen, Schutzmaßnahmen, Aufbewahrungsfristen, Rechte und Kontaktstellen entsprechend für die Daten des Kindes. Die obsorgeberechtigte Person kann die Datenschutzrechte für das Kind ausüben.\n\n<i>(Falls ein externer Dienstleister eingesetzt wird: Name und Sitz, Zweck, Ablauf, erforderliche Daten, Aufbewahrungsdauer, etwaige Drittlandübermittlung und verpflichtende oder freiwillige Nutzung angeben; bei freiwilliger Nutzung eine Ja/Nein-Entscheidung vorsehen. Bei Hausbesuchen zusätzlich die Tätigkeiten sowie die österreichische Berufsberechtigung und Qualifikation des eingesetzten Personals angeben.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Entstehen Kosten oder gibt es eine Vergütung?</b>\n\nEs entstehen keine zusätzlichen Kosten / folgende Kosten: ...... . Notwendige Reise- oder sonstige Auslagen werden wie folgt ersetzt: ...... .\n\n<i>(Falls zutreffend: externen Anbieter, Zahlungsart und Wahlmöglichkeit angeben.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>9. Freiwilligkeit und Widerruf</b>\n\nSie können einzelne Kontakte, den Kontakt mit Behandelnden oder die gesamte zusätzliche Nachbeobachtung ablehnen. Dies beeinflusst Ihre normale Versorgung nicht. Soweit Sie weiterhin an der Hauptprüfung teilnehmen, gelten deren eigene Widerrufsregeln getrennt.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>10. Ansprechpartner</b>\n\nPrüfärztin/Prüfarzt: ......\nKontakt für Schwangerschaftsnachbeobachtung: ......\nDatenschutzkontakt: ......\nPatientenanwaltschaft/Patientenvertretung: ......",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>11. Einwilligung zur Schwangerschaftsnachbeobachtung</b>\n\nName der Teilnehmerin: ...... Geburtsdatum: ...... Teilnehmernummer: ......\n\nIch wurde über Zweck, Daten, Dauer, Kontaktwege, Risiken, Datenschutz und Widerruf informiert. Fragen wurden beantwortet; ich hatte ausreichend Zeit.\n\n□ Ich stimme der beschriebenen Schwangerschaftsnachbeobachtung bis zur Geburt zu.\n□ Ich stimme ihr nicht zu.\n□ Ich erlaube die Kontaktaufnahme mit den genannten behandelnden Ärztinnen/Ärzten und entbinde sie hierfür im beschriebenen Umfang von der Verschwiegenheit. Ja □ Nein □\n\n......................................................................................................\nDatum und Unterschrift der Teilnehmerin\n\n......................................................................................................\nDatum, Name und Unterschrift der informierenden Prüfärztin/des informierenden Prüfarztes",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>12. Gesonderte Einwilligung nach der Geburt – Gesundheitsdaten des Kindes</b>\n\n<i>(Diesen Einwilligungsblock erst nach der Geburt verwenden. Er bezieht sich auf die in den vorstehenden Abschnitten vollständig beschriebenen Gesundheitsdaten des Kindes, Erhebungswege, Empfänger, Dauer und Datenschutzangaben. Die vor der Geburt erteilte Einwilligung zur Schwangerschaftsnachbeobachtung ersetzt diese gesonderte Einwilligung nicht. Bei Mehrlingsgeburten entsprechend anpassen.)</i>\n\nDie von Ihnen erteilte Einwilligung bildet die Rechtsgrundlage für die Verarbeitung der personenbezogenen Daten Ihres Kindes (Art 9 Abs. 2 lit a DSGVO i.V.m § 41 AMG).\n\n□ Ich willige als obsorgeberechtigte Person in die in dieser Information beschriebene Erhebung und Verarbeitung der Gesundheitsdaten meines Kindes nach der Geburt ein.\n□ Ich willige nicht ein.\n\nName der obsorgeberechtigten Person: ......\nGrundlage der Obsorge: ......\n\n......................................................................................................\nDatum und Unterschrift der obsorgeberechtigten Person\n\n......................................................................................................\nDatum, Name und Unterschrift der aufklärenden Person",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+[
+ {
+  "id": "kv101",
+  "kind": "text",
+  "question": "—",
+  "instruction": "[INSERT: Full title of the clinical trial, as in the protocol]",
+  "condition": null
+ },
+ {
+  "id": "kv102",
+  "kind": "text",
+  "question": "— EU Trial Number:",
+  "instruction": "[INSERT: EU trial number; leave empty in an initial application until CTIS assigns it]",
+  "condition": null
+ }
+]

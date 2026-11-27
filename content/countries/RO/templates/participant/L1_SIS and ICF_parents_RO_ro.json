@@ -1,0 +1,134 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Trial Information and Consent Form - Parents",
+  "doc_name_local": "Informații pentru părinte/reprezentant legal și consimțământ informat pentru participarea minorului",
+  "target_country": "Romania",
+  "country_code": "RO",
+  "target_language": "Romanian",
+  "language_code": "ro",
+  "doc_type": "parents",
+  "file_name": "L1_SIS and ICF_parents",
+  "sort_order": 5,
+  "description": "Must be completed for studies involving minor participants (younger than 18 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versiunea 1.0 - [date]",
+   "Numărul protocolului: [completați] | Numărul studiului UE: [completați]"
+  ],
+  "info_table": [
+   "Titlul complet al studiului clinic",
+   "Titlul scurt al studiului clinic",
+   "Numărul protocolului [adăugați versiunea și data]",
+   "Numărul studiului UE",
+   "Sponsor [cu adresa completă]",
+   "Investigator principal",
+   "Denumirea centrului",
+   "Adresa centrului"
+  ],
+  "content_instructions": "Utilizați pentru participarea minorilor sub 18 ani. Documentul se adresează părintelui/reprezentantului legal, iar minorul este participantul care primește tratamentul, efectuează procedurile și ale cărui date/probe sunt utilizate. Conform art. 15 alin. (2) din Ordinul nr. 3390/2022, pe lângă consimțământul informat al reprezentantului legal este obligatoriu acordul minorului care este capabil să își formeze o opinie și să evalueze informațiile oferite. Nu folosiți o vârstă legală fixă pentru acord; evaluați capacitatea individuală. Oferiți minorului informația separată adecvată vârstei (Children 6–11 sau Adolescents 12–17) și respectați refuzul său expres. Nu presupuneți automat că sunt necesare semnăturile ambilor părinți; documentați semnătura reprezentantului/reprezentanților care au autoritatea legală necesară pentru cazul concret, potrivit procedurii aprobate. Dacă minorul împlinește 18 ani în timpul studiului și continuă participarea, obțineți propriul consimțământ informat ca adult. Pentru probe biologice și testare moleculară/genetică obligatorii în studiul principal folosiți aceeași logică a șablonului principal. Pentru fiecare activitate cu adevărat opțională, reprezentantul legal trebuie să aibă o alegere distinctă DA/NU, semnătură și dată; dacă minorul este capabil să își formeze o opinie și să evalueze informația, documentați și acordul său pentru activitatea respectivă în formularul adecvat vârstei. Nu includeți utilizare secundară/viitoare. Pentru minori nu se pot acorda stimulente financiare sau de altă natură participantului sau reprezentantului legal, cu excepția compensării cheltuielilor sau pierderilor de venit direct legate de participare; un mic semn de apreciere poate fi inclus numai dacă a fost evaluat și aprobat explicit de CNBMDM. Interviul pentru obținerea consimțământului trebuie realizat de un medic membru al echipei de investigație, instruit corespunzător privind protocolul și buna practică în studiul clinic.",
+  "styling_instructions": "Folosiți capitole scurte, titluri clare și paragrafe ușor de parcurs. Explicați termenii medicali într-un limbaj simplu și păstrați un ton neutru, necoercitiv. Eliminați toate instrucțiunile pentru autor, exemplele, alternativele nealese și secțiunile neaplicabile înainte de finalizare. Păstrați formatarea, terminologia și logica generală consecvente cu șablonul românesc pentru pacienți adulți."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMAȚII PENTRU PĂRINTE/REPREZENTANT LEGAL ȘI CONSIMȚĂMÂNT INFORMAT PENTRU PARTICIPAREA MINORULUI</b>\n\n<b>Instrucțiune pentru autor:</b> Acest document nu înlocuiește informația separată pentru copil/adolescent.",
+   "section_style": "H1 document headline, Rich body text, Info table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Stimată doamnă / Stimate domn,\n\nVă rugăm să decideți, în calitate de părinte/reprezentant legal, dacă minorul pe care îl reprezentați poate participa la studiul clinic [titlu]. Minorul este persoana care va primi tratamentul, va efectua procedurile și ale cărei date și probe vor fi utilizate.\n\nDecizia este voluntară și refuzul sau retragerea consimțământului nu va afecta îngrijirea medicală obișnuită a minorului. Minorul va primi informații adaptate vârstei și maturității. Dacă este capabil să își formeze o opinie și să evalueze informațiile, acordul său de a participa este obligatoriu. Refuzul său expres trebuie respectat.\n\nSponsorul este [denumire].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. De ce este propusă participarea și ce se studiază?</b>\n\nParticiparea este propusă deoarece minorul [afecțiune/motiv]. Se investighează [medicament/utilizare]. [Descrieți simplu statutul de autorizare și experiența relevantă.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Care este scopul studiului?</b>\n\nScopul este [eficacitate/siguranță/doză/alt obiectiv] la [populație]. Explicați de ce cercetarea trebuie realizată la minori și beneficiul direct sau beneficiul pentru populația pediatrică prevăzut de protocol, fără a exagera beneficiile.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Ce tratament va primi minorul?</b>\n\nMinorul va primi [medicament/tratament standard/placebo], [formă/doză/frecvență/durată].\n\n[Descrieți grupele, randomizarea, probabilitățile, placebo, orbirea și tratamentul de salvare dacă se aplică.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Ce vizite, investigații și proceduri va avea minorul?</b>\n\nParticiparea va dura [durată] și va include aproximativ [număr] vizite.\n\n<b>Recoltare de sânge - păstrați numai dacă se aplică:</b>\nCantitatea totală de sânge recoltată de la minor va fi aproximativ [X] ml.\n\nVizită/perioadă\tCând\tDurată\tTratament/investigații\tCe este suplimentar față de îngrijirea obișnuită\n[completați]\t[completați]\t[completați]\t[completați]\t[completați]\n\n<b>Module condiționale:</b>\n• probe biologice obligatorii: [tip/cantitate/scop și informații relevante despre păstrare/transfer];\n• material biologic existent: [sursă/scop/consimțământ nou dacă este necesar];\n• testare moleculară/genetică obligatorie: [scop și implicații relevante];\n• test/procedură/recoltare/analiză opțională: [descriere]. Refuzul nu afectează participarea principală și alegerea se documentează separat;\n• proceduri invazive, radiații, spitalizare, jurnale sau monitorizare: [sarcină și riscuri].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Ce se așteaptă de la dumneavoastră și de la minor?</b>\n\nAjutați la respectarea vizitelor, tratamentului și instrucțiunilor. Informați echipa despre medicamente, simptome, internări sau schimbări importante. Explicați minorului cerințele într-un mod pe care îl poate înțelege și informați medicul dacă refuză o procedură sau dorește să se oprească.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Ce este diferit față de îngrijirea obișnuită?</b>\n\nFață de îngrijirea obișnuită, minorul va [vizite suplimentare/proceduri/medicament de studiu/randomizare/placebo/alte activități]. Descrieți clar timpul și sarcina suplimentară.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Care sunt riscurile și neplăcerile?</b>\n\n[Medicamentul] poate provoca reacții adverse cunoscute și necunoscute. Cele mai importante sunt [lista]. Riscurile și neplăcerile procedurilor sunt [lista]. Dacă apare o problemă nouă sau agravată, contactați medicul investigator la [contact].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Sarcina și măsurile reproductive</b>\n\n<b>Instrucțiune pentru autor:</b> Păstrați numai pentru minorii pentru care aceste măsuri sunt relevante. Explicați sensibil și adecvat vârstei testele de sarcină, contracepția, restricțiile privind donarea de spermă/ovocite și pașii în caz de sarcină, exact conform protocolului. Respectați confidențialitatea și siguranța minorului. Urmărirea sarcinii se face prin documentul dedicat.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Ce beneficiu poate avea minorul?</b>\n\n[Nu se așteaptă un beneficiu direct / medicamentul poate avea un posibil beneficiu concret, dar acesta nu este garantat.] Starea de sănătate poate să nu se îmbunătățească sau se poate agrava.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>10. Ce alte opțiuni de tratament există?</b>\n\nDacă minorul nu participă sau se retrage, poate primi tratamentele și îngrijirea disponibile în România: [opțiuni și principalele beneficii/riscuri].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>11. Asigurare, vătămare legată de studiu și despăgubire</b>\n\nPentru acest studiu există [asigurare / mecanism de despăgubire] conform cerințelor aplicabile. [Introduceți asigurătorul, referința poliței și contactul relevant, dacă se aplică.]\n\nDacă minorul suferă o vătămare sau o problemă de sănătate care ar putea avea legătură cu studiul, contactați medicul investigator la [contact]. Minorului i se va asigura evaluarea și îngrijirea medicală necesară, iar orice drept la despăgubire se stabilește conform legii aplicabile și mecanismului aprobat pentru studiu.\n\nPrin semnarea formularului, minorul și reprezentantul legal nu renunță la drepturile legale aplicabile.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>12. Costuri și rambursări</b>\n\nProcedurile efectuate exclusiv pentru studiu nu ar trebui să genereze costuri pentru minor. [Păstrați numai dacă formularul aprobat pentru studiu prevede rambursări/compensații:] Pot fi compensate cheltuielile și pierderile de venit direct legate de participarea minorului, conform următoarelor reguli: [călătorie/cazare/hrană/pierderi de venit/altele].\n\n<b>Regulă pentru autor:</b> Nu includeți stimulente financiare sau de altă natură pentru minor sau reprezentantul legal. Un mic semn de apreciere poate fi inclus numai dacă a fost evaluat și aprobat explicit de CNBMDM.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>13. Consimțământul este voluntar și poate fi retras?</b>\n\nPuteți refuza sau retrage consimțământul fără motiv și fără efect negativ asupra îngrijirii minorului. Minorul poate spune „nu” sau poate cere să se oprească, iar opoziția sa expresă trebuie respectată. După oprire poate fi recomandată o evaluare de siguranță. Explicați ce se întâmplă cu tratamentul, datele și probele deja obținute.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>14. Cum vor fi protejate datele și gestionate probele minorului?</b>\n\nSe aplică Regulamentul (UE) 2016/679 și Legea nr. 190/2018. [Descrieți operatorii, DPO, categoriile de date, destinatarii, transferurile, păstrarea și drepturile aplicabile.] Datele și, dacă se aplică, probele minorului vor fi de regulă codificate/pseudonimizate. Accesul la documentele sursă este permis numai persoanelor autorizate pentru controlul studiului.\n\n[Păstrați numai dacă se aplică: Probele necesare studiului principal se folosesc numai pentru scopurile descrise.] Utilizarea secundară/viitoare nu se include aici.\n\nDacă sunt prelucrate date de contact ale părintelui/reprezentantului, descrieți-le distinct de datele minorului.\n\n<b>Instrucțiune condițională:</b> Dacă date genetice, biometrice sau privind sănătatea minorului sunt utilizate pentru decizii automatizate/profilare, verificați art. 3 alin. (1) din Legea nr. 190/2018 și includeți consimțământ explicit separat dacă acesta este temeiul utilizat.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>15. Veți fi informați despre informații noi și rezultate?</b>\n\nInformațiile noi relevante pentru siguranță sau decizia de continuare vor fi comunicate reprezentantului și, într-un mod adecvat, minorului. Rezultatele studiului vor fi publicate în sistemul UE pentru studii clinice fără identificarea minorului.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>16. Câți participanți vor lua parte?</b>\n\nSe estimează aproximativ [număr] participanți în România și [număr] la nivel global.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>17. Pe cine puteți contacta?</b>\n\nMedic investigator: [nume, telefon, e-mail, contact de urgență]\nÎntrebări privind drepturile/etica minorului: [contact aprobat]\nProtecția datelor: [operator/DPO].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b>CONSIMȚĂMÂNTUL PĂRINTELUI/REPREZENTANTULUI LEGAL PENTRU PARTICIPAREA MINORULUI</b>\n\nConfirm că am primit și am discutat informațiile, am avut suficient timp și posibilitatea de a pune întrebări. Înțeleg că participarea este voluntară, că minorul trebuie informat potrivit vârstei și maturității și că, dacă este capabil să își formeze o opinie și să evalueze informațiile, acordul său este obligatoriu. Sunt de acord cu participarea minorului și cu procedurile obligatorii descrise.\n\n<b>Minor:</b>\nNume și prenume: __________________  Data nașterii: __________\n\n<b>Texte condiționale - studiu principal:</b>\n• Sunt de acord cu recoltarea și utilizarea probelor biologice obligatorii ale minorului, astfel cum sunt descrise. [Păstrați numai dacă se aplică.]\n• Sunt de acord cu testarea moleculară/genetică obligatorie a minorului, astfel cum este descrisă. [Păstrați numai dacă se aplică.]\n\n<b>Activitate opțională independentă - repetați pentru fiecare:</b>\nSunt de acord cu [test/procedură/recoltare/analiză și scop]. DA □ NU □\nSemnătura reprezentantului legal: __________________  Data: __________\n<b>Instrucțiune:</b> Dacă minorul este capabil să își formeze o opinie și să evalueze informația, documentați și acordul său pentru aceeași activitate în formularul adecvat vârstei.\n\n<b>Text condițional - decizii automatizate/profilare:</b>\nDacă art. 3 alin. (1) din Legea nr. 190/2018 este aplicabil și temeiul este consimțământul explicit:\nSunt de acord în mod explicit ca datele minorului [genetice/biometrice/de sănătate] să fie utilizate pentru [proces/scop].\nDA □ NU □\nSemnătura reprezentantului legal: __________________  Data: __________\n\n<b>Consimțământul părintelui/reprezentantului legal pentru studiul principal:</b>\nNumele și prenumele: __________________\nCalitate juridică: __________________\nSemnătură: __________________  Data: __________\n\n<b>Al doilea părinte/reprezentant legal - păstrați numai dacă este necesar:</b>\nNume: __________________  Calitate juridică: __________________\nSemnătură: __________________  Data: __________\n\n<b>Acordul minorului:</b>\nA fost furnizată informația adecvată vârstei și maturității: DA □\nAcordul minorului, dacă este capabil să își formeze o opinie și să evalueze informațiile, este documentat în: [Children 6–11 / Adolescents 12–17 / altă formă aprobată].\n\n<b>Declarația medicului:</b>\nDeclar că sunt medic, membru al echipei de investigație, cu pregătire/experiență în lucrul cu copii și instruit corespunzător privind protocolul și buna practică în studiul clinic. Am informat reprezentantul și minorul potrivit rolului și capacității fiecăruia și am verificat caracterul liber al deciziei.\nNume: __________________  Semnătură: __________________  Data: __________\n\n<b>Instrucțiune pentru autor:</b> Dacă minorul împlinește 18 ani și continuă participarea, obțineți propriul consimțământ informat folosind șablonul pentru adult.\n\nUn exemplar datat și semnat este oferit reprezentantului legal, iar minorul primește informația adecvată vârstei.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

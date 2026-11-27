@@ -1,0 +1,65 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Informatie over onderzoek voor kinderen tot 12 jaar",
+  "target_country": "Netherlands",
+  "country_code": "NL",
+  "target_language": "Dutch",
+  "language_code": "nl",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versie 1.0 - [date]",
+   "Protocolnummer: [invullen] | EU-onderzoeksnummer: [invullen]",
+   "Studiecode: [XXX] | versie [nr.]"
+  ],
+  "info_table": [
+   "Titel van het onderzoek",
+   "Korte titel van het onderzoek",
+   "Protocolnummer [voeg versie en datum toe]",
+   "EU-onderzoeksnummer",
+   "Opdrachtgever [met volledig adres]",
+   "Hoofdonderzoeker",
+   "Naam onderzoekscentrum",
+   "Adres onderzoekscentrum"
+  ],
+  "content_instructions": "Write directly to children under 12 in simple, age-appropriate Dutch. Explain the study purpose, procedures, duration, benefits and disadvantages concretely; state clearly that participation is voluntary and that the child may stop or ask questions; and provide study contact details and space for the child’s questions.",
+  "styling_instructions": "Use a large bold document title, blue-shaded bold module headings, bold emphasis on key phrases, child-friendly medical illustrations, bullet lists, and a bordered writing area for questions."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Waar gaat het over?</b>\nWe willen je vragen om mee te doen aan een onderzoek naar je <b>hart en je bloed</b>. We willen graag weten of we aan je bloed kunnen zien hoe gezond jouw hart is.\nJe mag zelf beslissen of je meedoet.\n",
+   "section_style": "H3 module title, Rich body text, Small image"
+  },
+  {
+   "section_number": 2,
+   "section_content": "\n<b>Wat gaat er gebeuren?</b>\nWe gaan <b>1x bloed prikken</b> en <b>1x een hartfilmpje maken</b>:",
+   "section_style": "H3 module title, Rich body text, Full-width image"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>Wanneer en hoe lang?</b>\nJe komt <b>1x</b> naar het ziekenhuis, het duurt <b>45 minuten</b>.\n",
+   "section_style": "H3 module title, Rich body text, Small image"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>Wat zijn de voordelen en nadelen?  </b>\n• Er zijn <b>geen voordelen</b> voor jou. Meedoen helpt de onderzoekers het hart beter te begrijpen. Zo kunnen ze later andere kinderen sneller beter maken..\n• Bloed prikken kan <b>heel even pijn</b> doen. Een hartecho doet geen pijn.\n• Als je <b>niet meedoet</b> aan het  onderzoek, heb je geen nadelen. Dan krijg je de behandeling die je normaal ook zou krijgen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "\n<b>Belangrijk om te weten:</b>\n• Meedoen is <b>niet verplicht</b>\n• Je mag altijd <b>stoppen zonder dat je hoeft te vertellen waarom</b>\n• Je mag altijd <b>vragen stellen</b>. ",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "\n<b>Als je vragen hebt</b>\nVragen kun je met je ouders bespreken. Of je kunt ze samen aan de onderzoeker Jan Voorbeeld stellen.\nJe kunt de onderzoeker mailen op: vraagdeonderzoeker@ziekenhuis.nl.\n\n<b><u>Schrijf jouw vragen hier op:</u></b>\n\n\n\n\n\n\n\n\n",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  }
+ ]
+}

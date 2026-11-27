@@ -1,0 +1,133 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Trial Information and Consent Form - Parents",
+  "doc_name_local": "Trial Information and Consent Form – Parent / Guardian",
+  "target_country": "Ireland",
+  "country_code": "IE",
+  "target_language": "English",
+  "language_code": "en",
+  "doc_type": "parents",
+  "file_name": "L1_SIS and ICF_parents",
+  "sort_order": "5",
+  "description": "Must be completed for studies involving minor participants (younger than 18 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protocol number: [fill in] | EU trial number: [fill in]"
+  ],
+  "info_table": [
+   "Trial title",
+   "Short trial title",
+   "Protocol number [add version and date]",
+   "EU trial number",
+   "Sponsor [with full address]",
+   "Principal investigator",
+   "Site name",
+   "Site address",
+   "Study identification number",
+   "Co-investigator(s) [names, titles and contact details]",
+   "Data controller(s)",
+   "Data Protection Officer [name and contact details]"
+  ],
+  "content_instructions": "Tailor the document to the specific clinical trial; remove sections and alternatives that do not apply and add study-specific information needed for an informed decision. Use clear Irish English, plain language consistent with National Adult Literacy Agency principles, approximately a 12-year-old reading level where feasible, short paragraphs, descriptive headings and bullets. Spell out abbreviations on first use and explain unavoidable medical or technical terms. Keep the document consistent with the approved protocol, CTIS Part II dossier and Irish site arrangements. Describe research versus usual care, purpose, why the person is invited, procedures in the order experienced, duration, risks and burdens, possible benefits, alternatives where relevant, voluntariness and withdrawal, insurance/injury arrangements, costs/reimbursement, results, contacts and ethics approval. For Irish data protection, identify the personal data used, sources, controllers/processors/recipients, retention, security, medical-record access, transfers outside the EEA and participant-facing safeguards, rights, Data Protection Officer and complaint route; use a simple study-specific explanation of the GDPR lawful basis and include explicit consent for health-research data where applicable. For biological samples used within the main trial, state sample type and amount, whether collection/use is mandatory or optional, purpose, coding, storage location and duration, analyses, recipients/transfers, security and what happens after analysis or withdrawal. For genetic or genomic testing within the main trial, state whether it is mandatory or optional, the type and purpose of testing, limits to anonymity, foreseeable privacy/family risks, handling of individual or incidental findings, storage/security, transfers and any relevant commercial involvement. Required study procedures, required biological samples and required genetic/genomic testing must be clearly described and, when applicable, included in the Required acknowledgements list with an individual confirmation checkbox. Use separate Yes/No choices only for genuinely optional activities that may be refused without preventing the main activity covered by the form. Do not include optional storage or secondary/future research beyond the approved main-trial purposes; that belongs only in the separate Secondary and Future Use template. Use for Irish regulated clinical-trial participants under 16 who require consent from a parent or guardian acting as the legally designated representative. The child remains the participant. Provide separate age-appropriate assent information where the child can form an opinion. A child’s refusal or withdrawal must be respected. When the participant reaches 16, obtain their own informed consent for continued regulated-study participation and associated data processing.",
+  "styling_instructions": "Use clear participant-facing question headings and short sections. Use a clean readable font such as Calibri, Arial, Verdana or Tahoma at about 12 point. Avoid block capitals and unnecessary legalistic text. Use tables or simple flow charts when they improve understanding. Present required acknowledgements as a clear list with one checkbox beside each applicable acknowledgement and the final dated signature. Do not use Yes/No choices or initials for required acknowledgements. Use Yes/No choices only for genuinely optional components. Where optional components are included, present their confirmation/signature separately from the main consent signature. Use separate fields for printed name, date and signature."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Information for parent / guardian</b>\n<b>Drafting note:</b> For Irish regulated research, use this parent/guardian consent pathway for participants under 16. A parent or guardian can fulfil the legally designated representative role for a minor. Do not use this form as the child's assent form.\nYou are being asked whether you give permission for your child to take part in a clinical trial. Your child is the trial participant. Read this information carefully, ask questions and take the time you need.\n\nYour child will also receive information suited to their age and understanding. If your child can form and express an opinion, their refusal or later wish to stop must be respected.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Why is the trial being done and why is your child being invited?</b>\nExplain the condition, study purpose, why children are included, why this child may be eligible, and expected number/age range of participants. Use lay language and identify experimental treatment/procedures.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>What will happen if your child takes part?</b>\nDescribe screening, study treatment/comparator/placebo, randomisation/blinding, visits, procedures, sample amounts, duration, responsibilities and follow-up from the child’s perspective. Make clear what differs from usual care and what parents/guardians need to do.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>What are the possible benefits?</b>\nExplain realistic possible benefit to the child or state clearly if no direct benefit is expected. Do not overstate benefit.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>What are the risks, side effects and burdens for your child?</b>\nDescribe foreseeable and unknown risks, pain/discomfort, practical burdens, reproductive risks where relevant, privacy risks and safety monitoring. Explain how distress/refusal is handled. Include genetic-testing risks where applicable.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>What other treatment options are available?</b>\nDescribe relevant usual treatment and alternatives, including what happens if you or your child decide against the trial.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>What will happen to your child's samples and genetic information?</b>\n<b>Drafting note:</b> Include when biological samples are used in the main trial. State sample type/amount, timing, whether required or optional, purpose, coding, storage location/duration, laboratories/recipients, transfers and what happens after analysis or withdrawal.\n\n<b>[Conditional – genetic/genomic testing]</b> Explain type/purpose, whether required or optional, limits to anonymity, foreseeable family/privacy risks, incidental or individual findings and how they may be communicated, counselling, storage/security, transfers and commercial involvement.\n\nDo not include secondary/future research here. If optional future use is proposed, use the separate Secondary and Future Use template.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>What information about your child will be used?</b>\nDescribe data categories/sources, relevant medical-record access, coding, controllers/processors/recipients, study-specific lawful basis, retention, security, transfers outside the EEA and safeguards. Identify the Data Protection Officer and complaint route. Explain the Irish health-research data consent approach that applies to the child without unnecessary legal detail.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>What are your child's data-protection rights?</b>\nExplain applicable rights and any research-related limitations, how a parent/guardian can exercise them while the child is under the applicable age, and how the child's own rights will be handled as they mature.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Will you and your child receive results?</b>\nExplain how overall study results are made available and whether clinically relevant individual findings/incidental findings will be communicated to the child and/or parent/guardian.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>What happens if something goes wrong?</b>\nDescribe trial-injury insurance/indemnity, medical care and how suspected harm should be reported.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>Will participation cost anything or be reimbursed?</b>\nState costs, reimbursement of child/parent travel or other participation-related expenses, and any compensation. Avoid undue influence.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>Is participation voluntary and can permission be withdrawn?</b>\nYou may say no or later withdraw permission without giving a reason and without affecting your child’s usual care. Your child’s own refusal or wish to stop must also be respected. Explain safety follow-up and what happens to data and main-trial samples after withdrawal.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>[Conditional – include only if the child may still be participating when they reach age 16]</b>\n<b>What happens when your child turns 16?</b>\nIf your child reaches age 16 while still participating in the regulated study, they must receive appropriate information and provide their own informed consent for continued participation and associated study data processing. If samples/data are held for separate secondary research beyond age 16, obtain the participant’s own consent for that continued use.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>Who is organising, funding and approving the trial?</b>\nIdentify sponsor, investigator/site, funding, relevant commercial interests and the approving Irish research ethics committee.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>Who can you contact?</b>\nProvide study/urgent contact details, Data Protection Officer and complaint routes.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>CONSENT FORM – parent / guardian</b>\n<b>Required acknowledgements and permission for your child’s participation</b>\n<b>Drafting note:</b> Keep only statements that apply. Delete non-applicable conditional statements. Do not use Yes/No choices or initials for required acknowledgements. Place one confirmation checkbox beside each applicable required acknowledgement.\n\nChild’s name / study ID: ____________________\nParent/guardian name: ____________________\n\nBy signing below, I confirm that:\n☐ I have received and understood the information, had enough time to decide and had my questions answered.\n☐ I understand that my child will receive age-appropriate information and that a clear refusal or wish to stop must be respected.\n☐ I give permission for my child to take part in the trial, including the required procedures described.\n☐ I understand how my child’s personal data will be handled for this study.\n<b>[Conditional – explicit consent for the child’s health-research data]</b> ☐ I give explicit consent for my child’s health data to be processed for the research described.\n<b>[Conditional – required medical-record access]</b> ☐ I give permission for the required study-related access to my child’s relevant medical records described in the leaflet.\n<b>[Conditional – required biological samples]</b> ☐ I agree to the required collection, use and storage of my child’s biological samples for the main-trial purposes described.\n<b>[Conditional – required genetic/genomic testing]</b> ☐ I agree to the required genetic/genomic testing within the main trial as described.\n<b>[Conditional – other required study procedure]</b> ☐ [INSERT REQUIRED STUDY-SPECIFIC ACKNOWLEDGEMENT].\n☐ I will receive a signed copy of the information and Consent Form.\n",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>Optional choices</b>\n<b>Your child may still take part in the rest of the main trial if an optional choice below is answered “No”. The child’s own view should also be sought where they can understand the choice.</b>\n<b>Drafting note:</b> Include only genuinely optional components that can be refused without preventing the main activity covered by this form.\n\n<b>[Conditional – optional sample/test]</b> I agree to the optional [sample/test] for my child.  Yes ☐  No ☐\n<b>[Conditional – optional genetic/genomic testing]</b> I agree to the optional genetic/genomic testing for my child.  Yes ☐  No ☐\n<b>[Conditional – optional recording/other procedure]</b> I agree to the optional [procedure].  Yes ☐  No ☐\n\n<b>[Conditional – include when one or more optional choices are present]</b>\n<b>Confirmation of optional choices</b>\nI confirm that the optional choices marked above reflect my decisions for my child.\nParent/guardian name: ____________________  Date: __________  Signature: ____________________",
+   "section_style": "H3 module title, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>Signatures</b>\nParent/guardian name: ____________________  Date: __________  Signature: ____________________\nRelationship / guardianship basis: ____________________\n\n<b>[Conditional – second parent/guardian only if required for the specific guardianship/site situation]</b>\nName: ____________________  Date: __________  Signature: ____________________\n\nPerson taking consent: ____________________  Role/qualification: ____________________\nDate: __________  Signature: ____________________\n\nA signed copy should be provided to the parent/guardian. Use the separate child/adolescent assent form as applicable.",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

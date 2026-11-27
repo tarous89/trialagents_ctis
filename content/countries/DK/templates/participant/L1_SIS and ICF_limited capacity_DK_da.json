@@ -1,0 +1,83 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Tilpasset deltagerinformation og erklæring om tilsagn eller modstand",
+  "target_country": "Denmark",
+  "country_code": "DK",
+  "target_language": "Danish",
+  "language_code": "da",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": "2",
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protokolnummer: [udfyld] | EU-forsøgsnummer: [udfyld]"
+  ],
+  "info_table": [
+   "Forsøgets titel",
+   "Forsøgets korte titel",
+   "Protokolnummer [tilføj version og dato]",
+   "EU-forsøgsnummer",
+   "Sponsor [med fuld adresse]",
+   "Forsøgsansvarlig (investigator)",
+   "Forsøgsstedets navn",
+   "Forsøgsstedets adresse",
+   "Forsøgsstedets telefonnummer og e-mail",
+   "Dokumentversion og dato",
+   "Forsøgsdeltagerens navn eller kode",
+   "Anvendt kommunikationsstøtte"
+  ],
+  "content_instructions": "Brug kun til en voksen forsøgsdeltager, som ikke kan afgive juridisk gyldigt informeret samtykke, men som kan forstå enkel information eller udtrykke en mening med ord, tegn, hjælpemidler, kropssprog eller adfærd. Dokumentet skal altid ledsage den separate danske information og samtykkeerklæring til den relevante stedfortræder. Den juridiske samtykkevej må ikke gentages her: ved værgemål kan værgen samtykke, hvis værgemålet omfatter forsøg; for øvrige voksne uden handleevne kræves samtykke fra nærmeste pårørende og en uafhængig forsøgsværge. Henvend informationen direkte til deltageren og tilpas ord, billeder og kommunikationsstøtte til personens forståelse. Deltagerens aktuelle tilkendegivelser skal tillægges betydning, og enhver tydelig mundtlig eller ikke-mundtlig protest mod deltagelse eller en konkret procedure skal respekteres, også under forsøget. Registrér deltagernes vilje, usikkerhed eller manglende mulighed for at udtrykke sig; præsenter ikke erklæringen som juridisk samtykke. Beskriv kun hovedforsøgets nødvendige information, obligatoriske og direkte forsøgsrelaterede valgfrie prøver/tests, risici, alternativer og data i enkel form. Medtag ikke sekundær/fremtidig brug, graviditetsopfølgning, stedfortræderens underskrift, upartisk vidne eller akut inklusion. Hvis deltageren genvinder handleevnen, skal eget skriftligt informeret samtykke indhentes med voksenskabelonen før fortsat deltagelse. <i>[Redaktionsnote: Hvis personoplysninger eller biologisk materiale behandles i eller overføres til lande uden for EU/EØS, angiv de konkrete lande, formålet med hver behandling eller overførsel og de relevante garantier efter GDPR kapitel V. Tilføj ikke et særskilt Ja/Nej-valg alene for overførslen. Hvis overførslen kun sker som led i en reelt valgfri og uafhængig aktivitet, knyttes Ja/Nej-valget til selve aktiviteten og ikke til GDPR-overførselsmekanismen.]</i> Bevar redaktionsnoterne i denne skabelon. Alle instruktioner til skabelonbrugeren skal markeres som <i>[Redaktionsnote: ...]</i>. Redaktionsnoter, tomme alternativer og ikke-relevante moduler fjernes først fra det endelige deltagerdokument før udlevering til deltageren eller beslutningstageren.",
+  "styling_instructions": "Bevar skabelonens afsnitsstruktur og overskrifter. Angiv dokumentversion og dato ved hver ændring, og gentag protokolnummer, EU-forsøgsnummer, dokumentversion og dato i sidefoden. Brug korte afsnit, tydelige overskrifter og tabeller eller bokse, når det forbedrer forståelsen. Fjern alle redaktionsnoter, ikke-valgte alternativer og ikke-relevante tekstblokke før udlevering. Erklæringsafsnit skal have tydelige felter til navn, dato og underskrift eller anden meningsfuld dokumentation. Brug stor letlæselig skrift, enkel tekst, piktogrammer eller anden støttet kommunikation efter behov. Hold dokumentet klart kortere end stedfortræderinformationen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Kære [navn]\n\nVi vil spørge, om du vil være med i et forskningsforsøg.\n\nDenne information forklarer forsøget med enkle ord.\n\nDin mening er vigtig. Du må sige eller vise, at du vil være med, ikke vil være med eller vil stoppe.\n\nEn anden person får en separat information og giver det juridiske samtykke på dine vegne. Det kan være [værge / nærmeste pårørende sammen med en uafhængig forsøgsværge]. Den person må ikke beslutte, at forsøget skal gennemføres mod din vilje.\n\nDu kan få hjælp af en person, du stoler på, og bruge billeder, tegn, oplæsning eller andre hjælpemidler.\n\n<b>Kontaktperson:</b>\nNavn og funktion: [indsæt]\nTelefon: [indsæt]\nE-mail: [indsæt]\n[Hvis relevant: Akut kontakt: [indsæt].]\n\n<i>[Redaktionsnote: Gør dokumentet kortere og enklere end stedfortræderinformationen. Tilpas det individuelt og dokumentér kommunikationsstøtten.]</i>",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Hvorfor laver vi forsøget?</b>\n\nVi vil lære mere om [sygdom, medicin, behandling eller undersøgelse].\n\nDu bliver spurgt, fordi [kort og konkret grund].\n\n[Vælg det, der passer:]\n• Vi vil undersøge, om [medicin/behandling] er sikker.\n• Vi vil undersøge, om [medicin/behandling] kan hjælpe mod [sygdom eller symptom].\n• Vi sammenligner [behandling 1] med [behandling 2/placebo].\n• Vi vil undersøge, om [test eller hjælpemiddel] virker.\n\n[Hvis placebo eller tilfældig fordeling bruges: Forklar det med meget enkle ord eller et billede.]\n\n<b>Vil du have mere forklaret?</b>\n□ Ja",
+   "section_style": "H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>Hvad sker der, hvis du er med?</b>\n\nForsøget varer cirka [uger/måneder/år].\n\nDu skal komme til [antal] besøg på [sted]. Et besøg varer cirka [tid].\n\nVi skal:\n• tale med dig om [emne]\n• undersøge [kropsdel eller funktion]\n• tage [blod/urin/anden prøve]\n• give dig [medicin/behandling]\n• lave [scan, hjertemåling eller anden undersøgelse]\n• [anden handling]\n\n[Hvis relevant: En computer bestemmer tilfældigt, hvilken behandling du får.]\n\n[Hvis relevant: Du og lægen ved måske ikke, hvilken behandling du får. Lægen kan få det oplyst, hvis det er nødvendigt for din sikkerhed.]\n\n<b>Det, du selv skal gøre</b>\nDu skal [tage medicin, møde fastende, bruge dagbog eller andet]. Du kan få hjælp af [person].\n\n[Hvis relevant: Forklar enkelt, hvad der er anderledes end almindelig behandling.]\n\n| Hvornår | Hvad sker der? | Hvor længe? |\n| [indsæt] | [indsæt] | [indsæt] |",
+   "section_style": "H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>Prøver og oplysninger om dig</b>\n\n[Hvis der ikke bruges biologisk materiale: Slet prøvedelen.]\n\nVi tager eller bruger [blod, urin, spyt, væv eller andet]. Der tages [antal] prøver og cirka [mængde]. Prøverne bruges til [kort formål].\n\n[Hvis obligatorisk genetisk analyse indgår: Vi undersøger også [DNA/gener] for at [kort formål]. Det er en nødvendig del af forsøget. Forklar DNA med ord eller billeder, personen kan forstå.]\n\n[Hvis en prøve eller test er valgfri i hovedforsøget: [Prøve/test] er ikke nødvendig for resten af forsøget. Vi spørger særskilt, hvad du mener. Hvis du tydeligt siger eller viser nej, bliver den valgfrie handling ikke lavet.]\n\nDine oplysninger får en kode. Det betyder, at de fleste ikke ser dit navn. Godkendte personer kan kontrollere oplysningerne og skal holde dem hemmelige.\n\nVi gemmer oplysningerne i [periode]. [Hvis relevant: Prøverne gemmes hos [sted] i [periode] og bliver derefter [destrueret/anonymiseret].]\n\nDenne information omfatter ikke fremtidig eller anden forskning.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>Hvad kan være godt eller svært?</b>\n\n[Vælg én:]\n• Forsøget forventes ikke at hjælpe dig direkte.\n• [Behandling] kan måske hjælpe med [konkret nytte], men vi ved det ikke sikkert.\n\nDet kan være svært eller ubehageligt at være med:\n• [medicin] kan give [vigtig bivirkning]\n• [undersøgelse] kan gøre ondt eller være ubehagelig\n• blodprøver kan svie og give et blåt mærke\n• besøgene tager tid\n• der kan være risici, som lægerne endnu ikke kender\n\nFortæl eller vis det med det samme, hvis du får det dårligt, bliver bange eller ikke vil have lavet en undersøgelse.\n\n[Hvis relevant: Forklar kort risiko ved stråling, graviditet eller et ufødt barn. Graviditetsopfølgning må ikke beskrives her.]",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>Må du sige nej eller stoppe?</b>\n\nJa.\n\nDu må sige eller vise, at du ikke vil være med.\n\nDu må også sige nej til en bestemt undersøgelse. Forskerne skal respektere tydelig modstand, også hvis du ikke bruger ord.\n\nDu må stoppe senere uden at forklare hvorfor. Det ændrer ikke din almindelige behandling.\n\nLægen kan også stoppe forsøget, hvis det ikke er sikkert at fortsætte.\n\nHvis der kommer vigtig ny viden, bliver den forklaret for dig på en måde, du kan forstå, og din mening bliver spurgt igen.\n\n[Hvis du stopper: Forklar enkelt, om der er en nødvendig sikkerhedskontrol, og hvad der sker med allerede indsamlede oplysninger og prøver.]\n\nHvis du senere igen kan træffe beslutningen selv, får du den fulde vokseninformation og bliver bedt om selv at give skriftligt samtykke.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>Hvad sker der, hvis du ikke er med?</b>\n\n[Hvis forsøget har behandlingsmæssigt sigte: Du får stadig den almindelige behandling. Din læge forklarer andre muligheder.]\n\n[Hvis forsøget ikke er behandling: Hvis du ikke er med, får du ikke forsøgsmedicinen eller forsøgsundersøgelserne. Det ændrer ikke din almindelige hjælp.]\n\n<b>Skader, erstatning og udgifter</b>\nHvis du bliver skadet på grund af forsøget, gælder de danske regler om behandling, klage og erstatning. Den person, der giver samtykke på dine vegne, får den fulde information.\n\n[Hvis relevant: Nødvendige transportudgifter bliver dækket efter [regler]. Der gives ikke en betaling, som kan presse beslutningen.]\n\n<b>Resultater</b>\nResultaterne bliver offentliggjort uden dit navn. [Hvis relevant: De vigtigste resultater bliver forklaret for dig på en måde, du kan forstå.]",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Hvem kan du spørge?</b>\n\nForsøgsansvarlig eller kontaktperson: [navn og titel]\nAfdeling og hospital: [indsæt]\nTelefon: [indsæt]\nE-mail: [indsæt]\nTræffetid: [indsæt]\n[Hvis relevant: Akut telefon: [indsæt].]\n\nDu må altid have en person, du stoler på, med til samtalen.\n\n<b>Dine spørgsmål eller det, du vil fortælle:</b>\n\n\n\n\n\n",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>Erklæring om deltagerens tilkendegivelse, usikkerhed eller modstand</b>\n\n<i>[Redaktionsnote: Dette er ikke juridisk informeret samtykke. Den relevante stedfortræders samtykke dokumenteres i den separate danske stedfortræderskabelon.]</i>\n\nForsøget er blevet forklaret for mig med [enkle ord, billeder, tegn, oplæsning eller andet hjælpemiddel].\n\nJeg har kunnet stille spørgsmål på den måde, jeg kan.\n\nJeg ved, at jeg må sige eller vise nej og må stoppe senere.\n\n<b>Min mening:</b>\n□ Jeg vil gerne være med.\n□ Jeg vil ikke være med.\n□ Jeg er usikker.\n□ Jeg kan ikke tydeligt sige eller vise, hvad jeg mener.\n\n[Hvis relevant: Min mening om den valgfrie [prøve/test]:\n□ Jeg vil gerne have, at den bliver lavet.\n□ Jeg vil ikke have, at den bliver lavet.\n□ Jeg kan ikke tydeligt sige eller vise, hvad jeg mener.]\n\nForsøgsdeltagerens navn: ______________________________\n\n[Kun hvis muligt og meningsfuldt:]\nUnderskrift, tegn eller mærke: __________________  Dato: __________\n\n<b>Dokumentation fra den person, der gav informationen</b>\n\nJeg har tilpasset informationen til deltagerens forståelse og brugt: [beskriv ord, billeder, tegn, kommunikationshjælp eller støtteperson].\n\nDeltageren udtrykte følgende mening eller reaktion: [beskriv ord, tegn, kropssprog eller adfærd].\n\nDeltagerens tilkendegivelse var:\n□ tydeligt tilsagn til deltagelse\n□ tydelig protest mod deltagelse\n□ tydelig protest mod følgende handling: [indsæt]\n□ usikker eller uklar tilkendegivelse\n□ ingen mulighed for at vurdere en klar mening på dette tidspunkt\n\nManglende protest er ikke i sig selv et tilsagn om deltagelse.\n\nNavn og funktion: ______________________________\nUnderskrift: ______________________________  Dato: __________\n\nStedfortræderens samtykke dokumenteres på et separat dokument. Forsøgsdeltageren og stedfortræderen får en kopi af den relevante information og dokumentation.",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section, Info/warning/note box"
+  }
+ ]
+}

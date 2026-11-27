@@ -1,0 +1,89 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Informação Adaptada e Registo da Vontade do Participante Adulto sem Capacidade para Prestar Consentimento Esclarecido",
+  "target_country": "Portugal",
+  "country_code": "PT",
+  "target_language": "Portuguese",
+  "language_code": "pt",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": 2,
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versão 1.0 - [date]",
+   "Número do protocolo: [preencher] | Número do ensaio UE: [preencher]"
+  ],
+  "info_table": [
+   "Título do ensaio",
+   "Título curto do ensaio",
+   "Número do protocolo [adicionar versão e data]",
+   "Número do ensaio UE",
+   "Promotor [com endereço completo]",
+   "Investigador principal",
+   "Nome do centro de ensaio",
+   "Endereço do centro de ensaio",
+   "Contacto do centro",
+   "Contacto de emergência",
+   "Representante local",
+   "Entidade financiadora do ensaio",
+   "Versão do FCI"
+  ],
+  "content_instructions": "Versão adaptada e simplificada para um participante adulto incapaz de prestar consentimento esclarecido, mas que possa compreender informação adaptada e/ou expressar uma vontade. Utilizar apenas se o participante não tiver dado nem recusado dar consentimento esclarecido antes do início da incapacidade. Este documento acompanha e não substitui o consentimento do representante legalmente autorizado. A informação deve ser adaptada à capacidade real do participante e qualquer desejo explícito de recusar ou retirar-se deve ser respeitado. Se recuperar capacidade, deve prestar o seu próprio consentimento esclarecido antes de continuar. A utilização secundária/futura de dados ou amostras é tratada em documento separado.",
+  "styling_instructions": "Manter esta versão substancialmente mais curta e simples do que o documento do representante; como orientação de simplificação, procurar cerca de 3–5 páginas. Usar letra grande e legível, frases curtas, muito espaço em branco, sequência linear e títulos em forma de pergunta. Permitir imagens, pictogramas, leitura em voz alta ou comunicação aumentativa quando necessário. Preservar a lógica CEIC de negrito para conteúdo recomendado e retirar notas editoriais/não aplicáveis antes da versão final. A secção de expressão de vontade deve apresentar separadamente participação, recusa e incerteza e permitir assinatura, marca ou outro meio adequado de expressão quando significativo."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Esta informação é para si</b>\n\nFoi-lhe proposto participar num ensaio clínico. Vamos explicar-lhe o ensaio de uma forma simples e adequada ao que consegue compreender.\n\nNeste momento, outra pessoa — o seu representante legalmente autorizado — recebe informação mais completa e é quem pode dar a autorização legal para a participação num documento separado. <b>Mesmo assim, a sua opinião e a sua vontade são importantes.</b>\n\nPode fazer perguntas. Pode pedir que expliquem outra vez, usar imagens, gestos ou outro apoio. Pode dizer que não, mostrar que não quer alguma coisa ou pedir para parar.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Porque está a ser realizado este ensaio clínico?</b>\n\nEste ensaio clínico está a ser realizado para verificar se o medicamento [experimental, se aplicável] [identificar medicamento] é eficaz e/ou seguro [adaptar] no tratamento de [doença/condição em palavras simples].\n\nFoi convidado(a) porque [explicar de forma simples o motivo]. O médico terá de confirmar se pode participar.\n\nO ensaio foi autorizado pelo INFARMED, I.P. e obteve parecer favorável da CEIC.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>O que vai acontecer?</b>\n\nSe participar, poderá receber [nome do medicamento], [comparador ativo] ou placebo, conforme o ensaio. Um placebo parece o medicamento do ensaio, mas não contém a substância ativa.\n\nSe houver sorteio, explicar simplesmente: <b>um sistema decide ao acaso qual o tratamento que recebe</b>. Se o tratamento ficar oculto, explicar quem não saberá a opção atribuída e que o médico pode descobrir se isso for necessário para a sua segurança.\n\nA participação dura cerca de [período]. Terá [número] visitas. Serão feitos: [tratamento], [análises], [exames], [colheitas de sangue], [outros procedimentos]. Explicar apenas as atividades principais e o que poderá ser desconfortável.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>Pode ajudá-lo(a)?</b>\n\nNão existe certeza de que a sua saúde melhore por participar. A sua condição pode melhorar, ficar na mesma ou piorar. Mesmo que não beneficie diretamente, o que aprendermos poderá ajudar no futuro outras pessoas com a mesma doença.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>O que pode ser desagradável ou perigoso?</b>\n\nO medicamento pode causar efeitos indesejados. Os mais importantes são: [explicar em palavras simples]. Também podem existir riscos que ainda não conhecemos.\n\nAlguns procedimentos podem causar dor, desconforto ou outros riscos: [explicar]. Diga ou mostre à equipa se tiver dor, medo, mal-estar ou se não quiser continuar um procedimento.\n\nO Promotor tem um seguro para eventuais danos relacionados com o ensaio, de acordo com a legislação nacional. O seu representante recebe a informação completa sobre o seguro. A participação neste ensaio clínico não implica quaisquer custos para si relacionados com o ensaio. As despesas inerentes à participação serão reembolsadas conforme explicado ao seu representante.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>O que deve fazer durante o ensaio?</b>\n\nExplique apenas as regras importantes para este participante: [tomar o medicamento], [ir às visitas], [informar sobre outros medicamentos], [avisar se se sentir mal], [outras regras simples].\n\nSe houver regras de contraceção, testes de gravidez ou outras medidas reprodutivas, explicar apenas se aplicáveis e de forma adequada à capacidade de compreensão.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>O que acontece aos seus dados e amostras?</b>\n\nAs informações sobre a sua saúde serão protegidas. A maior parte será identificada por um código em vez do seu nome. Apenas pessoas autorizadas poderão ver a informação necessária para realizar e verificar o ensaio.\n\n[Incluir apenas se forem recolhidas ou utilizadas amostras biológicas no ensaio principal.] Serão recolhidas/utilizadas [sangue/urina/tecido/outra amostra], [quantidade/frequência explicada de forma simples], para [testes/objetivo deste ensaio]. As amostras terão um código em vez do seu nome, serão analisadas em [local], guardadas durante [período] e depois [destruídas/outro destino aplicável].\n\n[Incluir apenas se forem realizadas análises genéticas no ensaio principal.] Com [amostra] serão estudados alguns dos seus genes para [objetivo explicado de forma simples]. [Se aplicável, explicar de forma simples se podem surgir resultados inesperados e como serão tratados.]\n\nO seu representante recebe a informação completa sobre proteção de dados e amostras. <b>Utilizações futuras ou fora dos objetivos deste ensaio são tratadas separadamente.</b>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Pode dizer não ou pedir para parar</b>\n\n<b>Pode dizer ou mostrar que não quer participar.</b> Pode recusar uma atividade ou pedir para parar mais tarde. Se não quiser realizar uma atividade, o médico explicará o que isso significa para a continuação da sua participação. Não precisa de explicar porquê. <b>Mesmo que o seu representante tenha autorizado a participação, uma vontade clara de não participar ou de parar será respeitada.</b>\n\nSe não participar ou parar, continuará a receber os melhores cuidados de saúde disponíveis. O médico explicará as alternativas de tratamento. Se parar o medicamento, podem ser aconselhados alguns exames ou contactos para a sua segurança.\n\n<b>Se decidir não participar ou pedir para deixar de participar, não serão recolhidos novos dados para o ensaio. Os dados já recolhidos podem continuar a ser utilizados quando necessário para garantir a integridade científica do ensaio e cumprir obrigações legais.</b>\n\nO médico, o Promotor ou as autoridades também podem parar a participação por razões de segurança ou porque o ensaio terminou. Se recuperar capacidade para prestar consentimento, receberá a informação completa para adultos e será pedido o seu próprio consentimento antes de continuar.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>Informação nova, resultados e contactos</b>\n\nSe surgir informação nova importante para decidir se quer continuar, ela será explicada de forma adequada à sua capacidade.\n\nO resumo dos resultados gerais do ensaio ficará disponível no Sistema de Informação de Ensaios Clínicos (CTIS): https://euclinicaltrials.eu . O seu representante recebe a informação mais detalhada.\n\nMédico investigador / contacto do centro: [nome e contacto]\nContacto de emergência: [contacto]",
+   "section_style": "H3 module title, Rich body text, Info table"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>REGISTO DA VONTADE E DA FORMA DE COMUNICAÇÃO</b>\n\n<b>Nome do participante:</b> _______________________________________________\n\nA informação foi explicada com: □ linguagem simples □ leitura em voz alta □ imagens/símbolos □ gestos □ dispositivo de comunicação □ apoio de pessoa de confiança □ outro: __________\n\nDepois de receber informação adaptada, o participante expressou/mostrou:\n□ Quero participar/continuar a participar.\n□ Não quero participar/continuar.\n□ Não tenho a certeza e quero mais tempo ou explicações.\n□ Não foi possível obter uma expressão fiável de vontade. Esta opção não significa concordância.\n\nPalavras, gestos, comportamento ou outra forma de expressão relevante: __________________________\n\n[Incluir apenas se existir uma atividade opcional do ensaio principal e se o participante conseguir compreender essa escolha; adaptar ao procedimento.]\n\n[Se se tratar de uma análise genética opcional:] Foi explicado que esta análise genética é opcional e pretende [objetivo simples].\n□ Quero participar nesta análise genética opcional.\n□ Não quero participar nesta análise genética opcional.\n\nAssinatura, marca ou outro meio de expressão do participante, quando significativo e possível: ____________________\nData: ___/___/_____\n\n<b>Confirmação do médico investigador</b>\nConfirmo que adaptei a informação à capacidade de compreensão e comunicação do participante, respondi às perguntas, disponibilizei tempo adequado e registei a vontade expressa ou observada sem pressão.\n\nNome: __________________  Assinatura: __________________  Data: ___/___/_____\n\n<i>Este registo não constitui consentimento esclarecido juridicamente válido e não substitui o consentimento do representante legalmente autorizado, documentado separadamente. Se o participante recuperar capacidade para consentir, deverá ser obtido o seu próprio consentimento esclarecido antes de continuar.</i>",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

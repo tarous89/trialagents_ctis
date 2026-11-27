@@ -1,0 +1,97 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Document d’information adaptée et formulaire d’adhésion du participant majeur hors d’état de consentir",
+  "target_country": "France",
+  "country_code": "FR",
+  "target_language": "French",
+  "language_code": "fr",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": 2,
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Numéro de protocole : [à compléter] | Numéro d’essai UE : [à compléter]"
+  ],
+  "info_table": [
+   "Titre de la recherche",
+   "Titre abrégé de la recherche",
+   "Numéro de protocole [ajouter la version et la date]",
+   "Numéro d’essai UE [ou, le cas échéant, numéro EudraCT / ID-RCB applicable]",
+   "Promoteur [avec adresse complète]",
+   "Investigateur principal / coordonnateur",
+   "Nom du lieu de recherche",
+   "Adresse du lieu de recherche",
+   "Version et date du document",
+   "Nom, prénom et date de naissance du participant",
+   "Nom du représentant et référence du formulaire d’autorisation associé"
+  ],
+  "content_instructions": "Use this separate adapted document for an adult who cannot provide legally valid consent but can receive some information or express a view. It accompanies the representative authorisation and never replaces it. Use short sentences, concrete words and communication aids suited to the person. Explain the essential study purpose, procedures, risks, alternatives, data and contacts. Seek the person’s personal adherence and document refusal, uncertainty or inability to communicate. Never override an explicit refusal or later wish to stop. If capacity returns, use the adult-patient SIS/ICF to obtain personal informed consent for continued participation.",
+  "styling_instructions": "Use an accessible, highly readable and materially shorter format than the adult SIS. Use short question headings, 12-point or larger type, generous spacing, pictures or supported-communication tools where useful, and a clear adherence/objection record."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMATIONS ADAPTÉES SUR LA RECHERCHE</b>\nBonjour,\n\nNous voulons vous parler d’une recherche sur [<i>produit, traitement ou procédure</i>] pour [<i>problème de santé</i>]. Une autre personne autorisée par la loi reçoit des informations détaillées et donne l’autorisation juridique. Mais votre avis compte aussi.\n\nNous allons vous expliquer les choses avec des mots, des images ou une aide adaptée. Vous pouvez montrer que vous êtes d’accord, que vous ne voulez pas, que vous n’êtes pas sûr(e) ou que vous voulez arrêter.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b><u>Pourquoi fait-on cette recherche ?</u></b>\n<i>Expliquer en quelques phrases simples ce que les chercheurs veulent apprendre et pourquoi la personne est invitée.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b><u>Que va-t-on vous donner ou vous faire ?</u></b>\n<i>Expliquer le produit, le traitement, le placebo ou le tirage au sort si cela s’applique, puis les visites, examens, prises de sang et la durée.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b><u>Est-ce que cela peut vous aider ?</u></b>\n<i>Expliquer le bénéfice possible ou l’absence de bénéfice personnel attendu. Ne rien promettre.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b><u>Qu’est-ce qui peut être difficile ou dangereux ?</u></b>\n<i>Expliquer les principaux risques, douleurs, peurs, contraintes et risques inconnus.</i>\nVous pouvez dire stop à un geste ou signaler que quelque chose ne va pas.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b><u>Y a-t-il d’autres soins possibles ?</u></b>\n<i>Expliquer simplement les autres possibilités de traitement ou de prise en charge.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b><u>Pouvez-vous refuser ou arrêter ?</u></b>\nOui. Vous pouvez dire non, faire un geste de refus ou demander d’arrêter. Votre refus doit être respecté, même si votre représentant a donné son autorisation. Vous ne perdrez pas vos soins habituels.\n\nAprès l’arrêt, l’équipe vous expliquera les soins ou le suivi de sécurité encore nécessaires.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b><u>[Si cela s’applique] Que deviennent vos prélèvements ?</u></b>\n<i>Expliquer simplement ce qui sera prélevé, pourquoi, si cela fait mal, combien de temps cela sera conservé et si un examen génétique est prévu.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b><u>Que deviennent les informations sur vous ?</u></b>\nLes informations sur votre santé seront protégées. Votre nom sera remplacé par un numéro dans les données utilisées pour la recherche. Seules les personnes autorisées pourront consulter les informations nécessaires.\n\nVous pouvez demander à l’investigateur ou à votre représentant de vous expliquer comment ces informations sont utilisées et quels sont vos droits.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b><u>Qui peut répondre à vos questions ?</u></b>\nVous pouvez poser une question maintenant ou plus tard, avec l’aide d’une personne de votre choix.\nContact : [<i>nom, téléphone, e-mail</i>].\n\nLa recherche a été examinée par un Comité de protection des personnes et, lorsque cela est requis, autorisée par l’autorité compétente.\n\nLes résultats globaux pourront vous être expliqués si vous le souhaitez.\n\nLes frais liés à la recherche sont pris en charge par le promoteur. Une assurance est prévue en cas de dommage lié à la recherche.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b><u>Que se passe-t-il si votre capacité change ?</u></b>\nSi vous retrouvez la capacité de consentir, l’équipe vous remettra l’information complète et recueillera votre propre consentement avant toute poursuite.\n\n[Le cas échéant] Si votre compréhension évolue sans rétablissement de la capacité de consentir, l’information adaptée et votre adhésion seront réévaluées.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>VOTRE AVIS</b>\nL’information a été donnée avec : □ mots simples □ images □ pictogrammes □ interprète □ dispositif de communication □ autre : ______\n\nVotre avis :\n□ Je veux participer / continuer.\n□ Je ne veux pas participer / continuer.\n□ Je ne suis pas sûr(e).\n□ Je n’arrive pas à montrer clairement mon avis.\n\nMots, gestes ou comportements observés : [<i>à décrire précisément</i>]\nSignature, marque ou autre expression du participant, si possible : __________ Date : __________\n\nJe confirme avoir adapté l’information, vérifié la compréhension autant que possible et respecté l’expression de la personne.\nSignature de l’investigateur / professionnel : __________ Date : __________\nNom et fonction : __________________________________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

@@ -41,8 +41,8 @@ def fields(path):
         if not q:
             p=next(sdt.iterancestors(W+'p'),None)
             q=text(p).replace(instr,'').strip() if p is not None else ''
-        kind='choice' if instr.startswith('[AUSWAHL') else 'text'
-        cond=re.match(r'\[FALLS ([^–]+) –',instr)
+        kind='choice' if instr.startswith('[CHOOSE') else 'text'
+        cond=re.match(r'\[IF ([^–]+) –',instr)
         out.append({'id':tag.get(W+'val'),'kind':kind,'question':re.sub(r'\s+',' ',q)[:400],'instruction':instr,'condition':cond.group(1).strip() if cond else None})
     return out
 if __name__=='__main__':

@@ -1,0 +1,96 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Participants",
+  "doc_name_local": "Informação e Declaração de Consentimento Esclarecido para Seguimento da Gravidez da Participante e Dados do Bebé",
+  "target_country": "Portugal",
+  "country_code": "PT",
+  "target_language": "Portuguese",
+  "language_code": "pt",
+  "doc_type": "pregnant_participants",
+  "file_name": "L1_SIS and ICF_pregnancy",
+  "sort_order": 7,
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versão 1.0 - [date]",
+   "Número do protocolo: [preencher] | Número do ensaio UE: [preencher]"
+  ],
+  "info_table": [
+   "Título do ensaio",
+   "Título curto do ensaio",
+   "Número do protocolo [adicionar versão e data]",
+   "Número do ensaio UE",
+   "Promotor [com endereço completo]",
+   "Investigador principal",
+   "Nome do centro de ensaio",
+   "Endereço do centro de ensaio",
+   "Contacto do centro",
+   "Contacto de emergência",
+   "Representante local",
+   "Entidade financiadora do ensaio",
+   "Versão do FCI",
+   "Número/código de identificação da participante no ensaio",
+   "Código do seguimento da gravidez"
+  ],
+  "content_instructions": "Documento independente e focado para uma participante que engravide durante o ensaio clínico ou no período de exposição definido no protocolo. Complementa e não substitui o consentimento do ensaio principal. Separar claramente a decisão voluntária de fornecer dados para seguimento da gravidez das decisões clínicas sobre interrupção/continuação do medicamento experimental, eventual quebra de ocultação e continuação no ensaio, que dependem do protocolo aprovado e avaliação médica. Recolher apenas dados proporcionais necessários para segurança da gravidez e, quando previsto, do bebé. O seguimento identificável do bebé após o nascimento deve ser autorizado no bloco específico aplicável. Aplicar as regras CEIC de minimização dos dados da criança e excluir utilização secundária/futura ou procedimentos não necessários ao seguimento.",
+  "styling_instructions": "O negrito identifica secções ou texto cuja inclusão é recomendada; o texto sugerido pode ser adaptado. As caixas de texto e notas entre parênteses retos contêm informação de apoio à elaboração e devem ser adaptadas ou removidas antes da versão final. Utilizar títulos claros, parágrafos curtos, espaçamento confortável e tamanho de letra facilmente legível, mantendo o documento simples, objetivo e sem redundâncias."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Esta informação complementa o seu consentimento do ensaio clínico</b>\n\nRecebeu este documento porque engravidou durante o ensaio clínico ou dentro do período de exposição definido no protocolo após [medicamento/intervenção].\n\nPretende-se recolher informação sobre a sua gravidez para conhecer melhor a segurança de [medicamento/intervenção] durante a gravidez.\n\n<b>A decisão de permitir este seguimento é voluntária.</b> Pode recusar ou retirar a sua autorização mais tarde, sem ter de explicar porquê e sem prejuízo dos seus cuidados de saúde.\n\nEste documento diz respeito ao seguimento da gravidez e, quando aplicável, aos dados do bebé. Não substitui o consentimento que já prestou para o ensaio clínico.",
+   "section_style": "H1 document headline, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Porque é pedido o seguimento da gravidez?</b>\n\nFoi exposta a [medicamento experimental/comparador/procedimento relevante] em [indicar período em relação à gravidez].\n\n[Explicar em linguagem simples os riscos conhecidos, suspeitos ou desconhecidos para a participante, embrião/feto e bebé. Não incluir riscos genéricos sem relação com a exposição.]\n\nPara avaliar uma possível relação entre a exposição e um acontecimento na gravidez, é importante conhecer as datas/período da exposição e a idade gestacional no momento relevante.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. O que acontece ao medicamento do ensaio e à sua participação?</b>\n\n[Adaptar ao procedimento aprovado no protocolo.]\n\nO [medicamento experimental/comparador] será [interrompido/suspenso/continuado] e [a ocultação será/não será quebrada], conforme [protocolo e avaliação médica]. O médico investigador explicará as razões, as alternativas e qualquer medida de segurança necessária.\n\n<b>O consentimento para este seguimento da gravidez não autoriza, por si só, a continuação de exposição experimental durante a gravidez.</b>\n\n[Se o protocolo permitir que a participante continue a receber medicamento experimental ou procedimentos específicos do ensaio durante a gravidez, descrever apenas a continuação aprovada e a respetiva justificação benefício/risco. Confirmar que a situação cumpre as condições aplicáveis do Regulamento (UE) n.º 536/2014, incluindo o artigo 33.º.]\n\nA sua decisão sobre o seguimento da gravidez é distinta da decisão sobre continuar ou não no ensaio principal. [Se a recusa de uma avaliação de segurança indispensável impedir a continuação no ensaio, explicar concretamente essa consequência sem a apresentar como penalização.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Que informação será recolhida?</b>\n\n[Manter apenas as categorias previstas e necessárias.]\n\nPoderão ser recolhidos:\n- data/período, dose e duração da exposição ao medicamento/intervenção;\n- idade gestacional no momento da exposição;\n- medicamentos concomitantes relevantes e antecedentes clínicos relacionados com a gravidez;\n- evolução da gravidez e exames clínicos já realizados no âmbito dos cuidados habituais;\n- acontecimentos obstétricos relevantes, como [adaptar aos resultados clínicos previstos];\n- resultado da gravidez.\n\n<b>A informação solicitada deve ser proporcional ao quadro clínico e limitada ao necessário para avaliar a segurança.</b>\n\n[Não acrescentar exames, amostras, análises genéticas ou procedimentos apenas para este seguimento, salvo se realmente previstos, clinicamente justificados e explicados com os respetivos riscos e consentimento aplicável.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Como e durante quanto tempo será feito o seguimento?</b>\n\nO seguimento decorrerá através de [contactos telefónicos/questionários/visitas/outro], aproximadamente em [indicar momentos/frequência], até [indicar fim do seguimento da gravidez].\n\nParte da informação poderá já existir nos dados do ensaio ou na sua história clínica.\n\n[Se aplicável] Poderá ser necessário contactar [obstetra/médico de família/maternidade/outro profissional ou instituição] ou consultar os registos relevantes para obter apenas os dados descritos neste documento. Esta opção será autorizada separadamente na declaração de consentimento.\n\n<b>Este seguimento não substitui os seus cuidados pré-natais ou obstétricos.</b>\n\nSe surgir nova informação importante que possa ser relevante para a sua saúde, para a gravidez ou para o bebé, esta ser-lhe-á comunicada atempadamente pelo médico investigador.\n\n[Se estiver previsto seguimento da saúde do bebé após o nascimento, utilizar a secção específica deste documento. Em regra, a recolha de resultados clínicos da criança deve terminar até 1 ano de vida; qualquer período superior a 12 meses deve ser excecional, justificado e aprovado.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Existem benefícios, riscos, custos ou compensação?</b>\n\nPode não existir qualquer benefício direto para si ou para o bebé por permitir este seguimento. A informação poderá ajudar a conhecer melhor a segurança de [medicamento/intervenção] durante a gravidez.\n\nOs incómodos do seguimento são [tempo para contactos/questionários e eventual consulta de registos, adaptar]. [Descrever qualquer procedimento adicional real e respetivos riscos.]\n\nA participação neste seguimento não implica quaisquer custos para si relacionados com a recolha de informação. [Se existirem despesas extraordinárias necessárias, explicar o respetivo reembolso.] Não é devido pagamento pela autorização para recolher os dados da gravidez.\n\nAs decisões sobre os seus cuidados durante a gravidez permanecem entre si e os profissionais responsáveis pela sua assistência.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Como serão protegidos e utilizados os seus dados?</b>\n\nOs dados do seguimento da gravidez serão ligados aos seus dados do ensaio através do seu código de participante. O Promotor receberá, em regra, dados codificados e não o seu nome ou outros identificadores diretos.\n\nO acesso a dados identificáveis no centro ficará limitado às pessoas autorizadas e às entidades legalmente habilitadas quando necessário para verificar o ensaio ou cumprir obrigações aplicáveis.\n\n[Indicar os destinatários efetivos, prestadores de serviços e, se aplicável, transferências para fora do Espaço Económico Europeu e as garantias utilizadas.]\n\n<b>Proteção reforçada dos dados do bebé:</b> para fora do centro de ensaio, utilizar apenas a informação necessária. De acordo com a orientação CEIC, podem ser comunicados o ano de nascimento e a idade gestacional quando necessários; não devem sair do centro o nome ou as iniciais da criança, nem a data exata de nascimento ou de parto.\n\nOs dados serão conservados durante [indicar período aplicável]. [Distinguir, quando necessário, dados incorporados na documentação essencial do ensaio de outros dados identificativos locais.]\n\nO tratamento dos dados deve cumprir o RGPD e a Lei n.º 58/2019. [Indicar a base legal aplicável ao centro e ao Promotor para cada finalidade relevante; não apresentar o consentimento para o seguimento como única base legal quando existam obrigações legais/regulamentares de segurança.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Pode retirar a sua autorização?</b>\n\nPode retirar a autorização para este seguimento a qualquer momento através de [contacto].\n\nDepois da retirada, não serão recolhidos novos dados diretamente de si para este seguimento com base neste consentimento. Os dados já recolhidos e a informação que o centro ou o Promotor tenham de conservar ou tratar para cumprir obrigações legais, regulamentares ou de segurança poderão continuar a ser utilizados nos limites aplicáveis.\n\nA retirada deste seguimento não retira automaticamente o seu consentimento do ensaio principal. Se também quiser deixar o ensaio clínico, deverá comunicar essa decisão à equipa; aplicam-se então as regras de retirada do consentimento do ensaio principal.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Com quem pode falar?</b>\n\nMédico investigador: [nome e contacto]\n\nContacto específico para seguimento da gravidez: [nome, função, telefone, e-mail e horário]\n\nEncarregado de Proteção de Dados do centro: [contacto]\n\nEncarregado de Proteção de Dados do Promotor: [contacto, se aplicável]\n\nSe considerar que o tratamento dos seus dados viola as regras de proteção de dados, poderá apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD):\n\n<b>CNPD - Comissão Nacional de Proteção de Dados</b>\n<b>Av. D. Carlos I, 134 - 1.º, 1200-651 Lisboa</b>\n<b>Tel.: +351 213 928 400 | E-mail: geral@cnpd.pt</b>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>9. DECLARAÇÃO DE CONSENTIMENTO PARA O SEGUIMENTO DA GRAVIDEZ</b>\n\n<b>Nome da participante:</b> _______________________________________________\n<b>Número/código de participante:</b> ______________________________________\n\nDeclaro que:\n- li [ou foi-me lida, se aplicável] e compreendi esta informação;\n- tive oportunidade para colocar questões e recebi respostas satisfatórias;\n- compreendo que a autorização para o seguimento da gravidez é voluntária e distinta do meu consentimento para o ensaio principal;\n- compreendo que este documento não autoriza, por si só, a continuação do medicamento experimental durante a gravidez;\n- compreendo que posso retirar esta autorização e quais são os limites aplicáveis aos dados já recolhidos;\n- receberei uma cópia deste documento depois de assinado.\n\n<b>Autorizo a recolha e utilização dos meus dados para o seguimento da gravidez conforme descrito neste documento:</b>\nSim □   Não □\n\n[Incluir apenas se estiver previsto contacto com profissionais/instituições externos.]\n<b>Autorizo o contacto com [profissional/instituição] e o acesso/partilha da informação necessária descrita neste documento:</b>\nSim □   Não □\n\nNome: ______________________________________\nAssinatura: _________________________________\nData: ___/___/_____\n\n<b>MÉDICO INVESTIGADOR / PROFISSIONAL QUE PRESTOU A INFORMAÇÃO</b>\n\nConfirmo que expliquei o objetivo, riscos/limitações relevantes, informação a recolher, duração, voluntariedade, proteção de dados, consequências para o ensaio principal quando aplicáveis e possibilidade de retirada, e respondi às questões colocadas.\n\nNome: ______________________________________\nAssinatura: _________________________________\nData: ___/___/_____",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>10. [SE APLICÁVEL] SEGUIMENTO DA SAÚDE DO BEBÉ APÓS O NASCIMENTO</b>\n\n[Utilizar apenas quando o protocolo preveja recolha identificável de dados de saúde da criança após o nascimento. Eliminar se não aplicável.]\n\nPretende-se recolher apenas informação necessária sobre [resultados neonatais e/ou desenvolvimento físico/psicomotor], através de [fonte/contactos], até [indicar período]. Em regra, o seguimento deve terminar até 1 ano de vida; um período superior a 12 meses deve ser excecionalmente justificado e aprovado.\n\nA informação da criança será minimizada e protegida. Para fora do centro não serão enviados o nome ou as iniciais da criança nem a data exata de nascimento/parto; utilizar-se-ão, quando necessários, o ano de nascimento, idade gestacional e dados de saúde codificados.\n\n<b>DECLARAÇÃO DE CONSENTIMENTO PARA DADOS DO BEBÉ</b>\n\nNome da criança: [manter apenas no centro, se necessário] _______________________________\nAno de nascimento: __________\n\nDeclaro que recebi e compreendi a informação sobre os dados da criança que serão recolhidos, as fontes, duração, destinatários, proteção e possibilidade de retirada.\n\n<b>Autorizo, na qualidade de pessoa com responsabilidade parental aplicável, a recolha e utilização dos dados de saúde da criança conforme descrito acima:</b>\nSim □   Não □\n\nNome do pai/mãe/representante: __________________________________\nQualidade: __________________________________\nAssinatura: _________________________________\nData: ___/___/_____\n\n[Adicionar segundo bloco de pai/mãe/representante apenas quando exigido pela responsabilidade parental aplicável.]\n\n[Em caso de nascimento múltiplo, adaptar o bloco a cada criança.]",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

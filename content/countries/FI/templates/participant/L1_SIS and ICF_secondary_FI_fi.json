@@ -1,0 +1,94 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Secondary and Future Use of Data or Biosamples",
+  "doc_name_local": "Suostumus biologisten näytteiden ja niihin liittyvien tietojen käyttöön tulevissa tutkimuksissa",
+  "target_country": "Finland",
+  "country_code": "FI",
+  "target_language": "Finnish",
+  "language_code": "fi",
+  "doc_type": "secondary_use",
+  "file_name": "L1_SIS and ICF_secondary",
+  "sort_order": "8",
+  "description": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versio 1.0 - [date]",
+   "Tutkimussuunnitelman numero: [täytä] | EU-tutkimusnumero: [täytä]"
+  ],
+  "info_table": [
+   "Tutkimuksen nimi",
+   "Tutkimuksen lyhyt nimi",
+   "Tutkimussuunnitelman numero [lisää versio ja päivämäärä]",
+   "EU-tutkimusnumero",
+   "Toimeksiantaja [täydellinen osoite]",
+   "Johtava tutkija",
+   "Tutkimuskeskuksen nimi",
+   "Tutkimuskeskuksen osoite"
+  ],
+  "content_instructions": "Käytä tätä erillistä tiedote- ja suostumusasiakirjaa kliinisen lääketutkimuksen tutkimussuunnitelman ulkopuoliseen, vapaaehtoiseen biologisten näytteiden ja niihin liittyvien tietojen tulevaan käyttöön. Kerro, että kyse on pääasiallisessa kliinisessä lääketutkimuksessa kerättyjen biologisten näytteiden ja niihin liittyvien tietojen jatkokäytöstä tai käsittelystä, mukaan lukien tarvittaessa käsittely ulkomailla sijaitsevassa biopankissa tai laboratoriossa. Kuvaa tämänhetkinen tieto tulevien tutkimusten käyttötarkoituksesta ja säilytysajasta. Jos tulevasta käytöstä ei vielä ole tarkkaa tietoa, kerro tämä nimenomaisesti ja perustele se. Tee selväksi, että suostumus on vapaaehtoinen ja että henkilö voi osallistua pääasialliseen kliiniseen lääketutkimukseen myös ilman tätä suostumusta. Suostumus voidaan peruuttaa milloin tahansa ilman kielteisiä seurauksia. Peruuttamisen jälkeen näytteitä ja tietoja ei saa käyttää uusissa tutkimuksissa; ennen peruuttamista aloitetut tutkimukset voidaan saattaa loppuun, ja väliaikainen säilyttäminen voi olla tarpeen esimerkiksi tutkimustulosten luotettavuuden varmistamiseksi. Anna selkeä yhteydenottotapa suostumuksen peruuttamista ja lisätietoja varten. Nimeä tulevien tutkimusten toteuttamisesta vastaava toimeksiantaja ja rekisterinpitäjä sekä kuvaa tarvittaessa sisäiset tai muut menettelyt, joilla yksittäiset tulevat tutkimusprojektit hyväksytään eettisesti kestävällä tavalla. Kuvaa lyhyesti biologiset näytteet, niihin liittyvät tiedot ja niiden suunniteltu käyttö. Jos näytteistä tehdään geneettisiä analyyseja, selitä yleistajuisesti, mitä analyysit tarkoittavat ja sisältävät. Selitä erikseen erityiset näytetyypit, kuten PBMC-näytteet, jos niitä käytetään. Kerro, annetaanko näytteenantajalle yksilöllisiä tutkimustuloksia. Näytteenantajalla on oikeus kieltäytyä tiedon vastaanottamisesta. Jos yksilöllisiä tuloksia annetaan, kuvaa niiden mahdollinen merkitys terveydelle sekä validointi, jatkohoito ja mahdolliset jatkotoimenpiteet. Lähtökohtaisesti tulevissa tutkimuksissa käytetään vain pääasiallisessa kliinisessä lääketutkimuksessa jo otettuja ja siihen enää tarvitsemattomia näytteitä, jolloin uusia toimenpiteitä ei aiheudu. Jos tätä varten otetaan ylimääräisiä näytteitä, kuvaa ne nimenomaisesti. Ilmoita näytteiden säilytys- ja tutkimuspaikka, säilytysaika ja se, että näytteet tuhotaan säilytysajan päättyessä, ellei tutkimuskohtaisesti sovelleta muuta kuvattua käsittelyä. Kerro, ettei näytteiden luovuttamisesta odoteta suoraa henkilökohtaista hyötyä, mutta jatkokäyttö voi edistää tiedettä ja hyödyttää potilaita tulevaisuudessa; kuvaa mahdolliset todelliset haitat tai rasitukset eikä oleteta niiden puuttumista, jos ylimääräisiä toimenpiteitä tehdään. Tietosuojaosassa kuvaa vain tutkimuksen kannalta välttämättömät henkilötiedot, henkilöllisyyden tuntevat tahot, salassapitovelvollisuus, pseudonymisointi/koodaus ja tunnistetietojen erillään säilyttäminen. Nimeä rekisterinpitäjä, valittu GDPR:n mukainen käsittelyperuste ja rekisterin säilytysaika. Jos tietoja siirretään EU:n tai ETA:n ulkopuolelle, nimeä maat ja kuvaa sovellettava siirtoperuste tai suojatoimi GDPR:n 45, 47, 46.2 tai 49 artiklan mukaisesti. Nimeä myös muut henkilötietojen vastaanottajat. Kuvaa ne rekisteröidyn oikeudet, jotka liittyvät valittuun henkilötietojen käsittelyperusteeseen, ensisijainen yhteydenottotaho oikeuksien käyttämiseksi, mahdollisuus tehdä valitus Suomen tietosuojavaltuutetulle sekä rekisterinpitäjän tietosuojavastaavan yhteystiedot. Sisällytä erilliset kohdat suostumuksen peruuttamiselle, tutkimustuloksista saatavalle tiedolle ja oikeudelle kieltäytyä tietojen vastaanottamisesta sekä tutkimuskeskuksen, tutkijalääkärin ja tutkimushoitajan yhteystiedoille. Suostumusosan tulee yksilöidä toimeksiantaja ja kliininen lääketutkimus/EU-tutkimusnumero, jonka yhteydessä näytteet ja tiedot kerättiin. Suostumuksessa vahvistetaan kirjallisen ja suullisen tiedon saaminen, riittävä tieto näytteiden ja tietojen keräämisestä, säilyttämisestä, luovuttamisesta ja muusta käsittelystä, suostumuksen kattavuuden ymmärtäminen, kysymysten käsittely ja riittävä harkinta-aika. Suostumus on vapaaehtoinen ja peruutettavissa milloin tahansa ilman kielteisiä seurauksia tai vaikutusta asemaan terveydenhuollon asiakkaana. Peruuttamisen jälkeen näytteitä ja tietoja ei käytetä uusiin tutkimuksiin. Sisällytä päivätyt allekirjoitukset näytteenantajalle ja suostumuksen vastaanottajalle sekä nimenselvennykset. Alkuperäinen allekirjoitettu asiakirja jää nimetyn tahon arkistoon ja kopio annetaan näytteenantajalle.",
+  "styling_instructions": "A4 pystysuuntainen asiakirja; noin 1 cm ylämarginaali, 2 cm alamarginaali, 2 cm vasen marginaali ja 1,5 cm oikea marginaali. Käytä noin 12 pt leipätekstiä, 13 pt lihavoituja osio-otsikoita ja 14 pt lihavoitua asiakirjaotsikkoa. Pidä suostumusosa erillisenä H2-tason osiona ja käytä selkeitä allekirjoitus-, nimenselvennys- ja päiväyskenttiä."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Pyyntö antaa suostumus tuleviin tutkimuksiin\n\nTeiltä pyydetään suostumusta kliinisen lääketutkimuksen (EU-tutkimusnumero) yhteydessä kerättyjen biologisten näytteiden ja niihin liittyvien tietojen jatkokäyttöön. <i>(Jos näytteitä tai tietoja käsitellään ulkomailla sijaitsevassa biopankissa tai laboratoriossa, lisää tieto käsittelypaikasta ja maasta.)</i> Kyse on kliinisen lääketutkimuksen tutkimussuunnitelman ulkopuolisesta näytteiden ja niihin liittyvien tietojen käytöstä. Kerättyjä biologisia näytteitä ja niihin liittyviä tietoja voidaan käyttää tulevaisuudessa tehtäviin tarkemmin määrittelemättömiin lääketieteellisiin tutkimuksiin. [lisää tämänhetkinen tieto käyttötarkoituksesta ja säilytysajasta].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Osallistumisen vapaaehtoisuus\n\nSuostumuksen antaminen näytteiden ja tietojen jatkokäyttöä varten on vapaaehtoista. Voitte osallistua kliiniseen lääketutkimukseen, vaikka ette antaisi suostumusta näytteiden ja tietojen jatkokäyttöön. Jos päätätte antaa suostumuksenne, teitä pyydetään allekirjoittamaan tiedotteen lopussa oleva suostumusasiakirja. Voitte peruuttaa suostumuksenne syytä ilmoittamatta milloin tahansa. Tällöin näytteitä ja tietoja ei enää käsitellä uusissa tutkimuksissa. Ennen peruuttamista aloitetut tutkimukset voidaan suorittaa loppuun. Näytteiden ja tietojen säilyttäminen väliaikaisesti myös peruuttamisen jälkeen voi olla välttämätöntä esimerkiksi tutkimustulosten luotettavuuden varmistamiseksi. Jos haluatte peruuttaa suostumuksenne tai kysyä lisätietoja näytteiden jatkokäytöstä, tietosuojalainsäädännöstä jne., voitte ottaa yhteyttä __________________ (yhteystiedot löytyvät tämän asiakirjan lopusta).",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Tulevien tutkimusten toteuttaja\n\nNäytteiden ja tietojen jatkokäyttöä koskevan tutkimuksen toteuttamisesta vastaa toimeksiantaja ________________, joka toimii myös tutkimuksen rekisterinpitäjänä.  Rekisterinpitäjä vastaa tutkimuksen yhteydessä tapahtuvan henkilötietojen käsittelyn lainmukaisuudesta.\n\nToimeksiantaja vastaa tutkimuksen suorittamisesta eettisesti kestävällä tavalla. [Tähän voi lisätä tiedon sisäisistä tai muista prosesseista, joilla yksittäiset tutkimusprojektit hyväksytään.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Tulevien tutkimusten tausta ja tarkoitus\n\n[Lyhyt kuvaus kerättävistä biologisista näytteistä ja niihin liittyvistä tiedoista sekä käyttötarkoituksesta. Lyhyt selitys siitä, kuinka näytteitä ja tietoja voidaan käyttää. Jos näytteistä tehdään geneettisiä analyyseja, lisätään yleistajuinen selvitys siitä, mitä nämä analyysit tarkoittavat ja mitä ne pitävät sisällään. Esimerkiksi perifeerisen veren mononukleaaristen solunäytteiden eli PBMC-näytteiden kerääminen ja käyttö tulee selvittää erikseen.]\n\n[Jos näytteiden ja niitä koskevien tietojen tulevasta käytöstä ei ole vielä tietoa, tämä tulee kertoa ja perustella]\n\n[Tiedotteessa tulee kertoa, annetaanko näytteenantajalle yksilöllistä tietoa tutkimusten tuloksista. Näytteenantajalla on oikeus kieltäytyä tiedon vastaanottamisesta. Jos tutkimustuloksista annetaan tietoa, sen mahdollinen merkitys näytteenantajan terveyteen tulee selvittää (miten validointi, jatkohoito ja mahdolliset toimenpiteet toteutetaan)].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Toimenpiteet ja näytteiden käsittely\n\n<i>(Valitse tutkimuksen mukaan:)</i> Tulevissa tutkimuksissa käytetään vain aiemmin mainitussa kliinisessä lääketutkimuksessa otettuja näytteitä, joita ei enää tarvita sitä varten. Tästä syystä Teille ei aiheudu ylimääräisiä toimenpiteitä. <i>(Jos tulevaa käyttöä varten otetaan ylimääräisiä näytteitä, poista edellinen virke ja kuvaa näytteenotto, määrä, ajankohta sekä siihen liittyvät haitat ja rasitukset.)</i>\n\nTutkimusta varten tarvittavat näytteet siirretään säilytettäväksi ja tutkittavaksi laboratorioon, joka sijaitsee_____________. Näytteitä säilytetään ________ vuotta, minkä jälkeen ne tuhotaan. Tarvittaessa lisätietoja voi pyytää tutkimuskeskukselta.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Mahdolliset hyödyt ja haitat\n\nNäytteen luovuttamisesta ei ole odotettavissa Teille suoraa hyötyä. Tietojen ja biologisten näytteiden jatkokäyttö voi edistää tieteen kehitystä, josta voi olla myös hyötyä potilaille tulevaisuudessa. <i>(Jos uusia näytteitä ei oteta:)</i> Näytteiden ja tietojen jatkokäytöstä ei aiheudu Teille ylimääräisiä tutkimustoimenpiteitä. <i>(Jos ylimääräisiä näytteitä otetaan, korvaa tämä virke tutkimuskohtaisella kuvauksella näytteenottoon liittyvistä haitoista ja rasituksista.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Tietojen luottamuksellisuus ja tietosuoja\n\nTulevissa tutkimuksissa käsitellään henkilötietoja. Rekistereihin tallennetaan vain tutkimuksen kannalta välttämättömiä henkilötietoja. Henkilöllisyytenne on ainoastaan [lisää tieto] tiedossa, ja he kaikki ovat salassapitovelvollisia. Kaikkia kerättäviä tietoja ja otettuja näytteitä käsitellään pseudonymisoituina eli koodattuina. Yksilöivät tunnisteet (henkilötunnus, nimi jne.) on korvattu koodinumeroilla, eikä tietoja tai näytteitä voida tunnistaa tutkimuksiin liittyvistä tutkimustuloksista, selvityksistä tai julkaisuista. Nämä yksilöivät tunnisteet säilytetään erillään koodatuista tiedoista.\n\nNimeänne, henkilötunnustanne tai yhteystietojanne ei anneta tutkimuksen toimeksiantajalle.\n\nHenkilötietojen käsittelyperusteena on EU:n yleisen tietosuoja-asetuksen (2016/679) mukaisesti [lisää tieto]. Tutkimustuloksissa ja muissa asiakirjoissa tutkittavaan viitataan vain tunnistekoodilla. Rekisteriä säilytetään [lisää tieto] vuotta.\n\n<i>(Säilytä seuraava kappale vain, jos henkilötietoja siirretään EU:n tai ETA:n ulkopuolelle. Muussa tapauksessa poista koko kappale.)</i> Tietoja siirretään koodattuna EU:n ja ETA:n ulkopuolisiin maihin [lisää tieto, mihin maihin], joissa tietosuoja ei välttämättä ole samalla tasolla kuin EU:ssa. Tällöin toimeksiantaja varmistaa, että henkilötiedot siirretään asianmukaisesti (perustuen tietosuoja-asetuksen 45 artiklan mukaiseen komission päätökseen, 47 artiklan mukaiseen yritystä koskeviin sitoviin sääntöihin, 46.2 artiklan mukaisiin tietosuojaa koskeviin vakiolausekkeisiin tai 49 artiklan mukaisiin poikkeuksiin ja suojatoimiin). Henkilötietoja voidaan luovuttaa myös muille tahoille [lisää tieto]. Siinäkin tapauksessa kaikkia osapuolia sitovat em. salassapitovelvollisuudet.\n\nTeillä on oikeus nähdä teistä kerätyt henkilötiedot ja pyytää tarvittaessa korjauksia [lisää mahdolliset muut valittuihin henkilötietojen käsittelyperusteisiin liittyvät oikeudet]. Mikäli haluatte käyttää oikeuksianne, yksityisyytenne turvaamiseksi ottakaa ensisijaisesti yhteyttä [lisää tieto]. Yhteystiedot ovat tiedotteen lopussa.\n\nTietosuoja-asetuksen tai tietosuojalain (1050/2018) vastaisesta käytöstä voi tehdä valituksen valvontaviranomaiselle (Suomessa tietosuojavaltuutettu, Lintulahdenkuja 4 (PL 800), 00531 Helsinki, p. 0295666700, sähköposti: tietosuoja(a)om.fi).\n\nRekisterinpitäjän tietosuojavastaavan yhteystiedot: [lisää tieto]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Suostumuksen peruuttaminen\n\nJos päätätte peruuttaa suostumuksenne ja osallistumisenne tuleviin tutkimuksiin, ottakaa yhteyttä________________.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Tietojen saaminen tutkimustuloksista\n\n[Lisää tieto, kerrotaanko tuloksista. Kerro myös, voiko näytteenantaja valita, voiko hän kieltäytyä tietojen vastaanottamisesta.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "Lisätietoja\n\nLisätietoja voitte kysyä tutkimuspaikasta.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "Yhteystiedot\n\nTutkimuskeskus:__________________________________________________________\n\nTutkijalääkäri:_______________________Puhelin:______________________________\n\nTutkimushoitaja:____________________Puhelin:______________________________",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "Suostumus biologisten näytteiden ja niihin liittyvien tietojen käyttöön tulevissa tutkimuksissa\n\nToimeksiantaja: [lisää tieto]\n\nKliininen lääketutkimus, jonka yhteydessä näytteet ja tiedot kerätään: [EU-tutkimusnumero]\n\nOlen perehtynyt annettuun selvitykseen ja saanut riittävästi tietoa biologisten näytteiden ja niihin liittyvien tietojen käsittelystä (kerääminen, säilyttäminen, luovuttaminen jne.) tulevissa tutkimuksissa. Tulevia tutkimuksia koskevan suostumuksen kattavuudesta on kerrottu minulle myös suullisesti ja olen saanut riittävän vastauksen kaikkiin kysymyksiini. Selvitykset antoi_____________ [henkilön nimi]. Minulla on ollut riittävästi aikaa harkita suostumuksen antamista.\n\nYmmärrän, että suostumuksen antaminen on vapaaehtoista.\n\nMinulla on oikeus milloin tahansa syytä ilmoittamatta peruuttaa suostumukseni. Suostumuksen peruuttamisesta ei aiheudu minulle mitään kielteisiä seuraamuksia, eikä se vaikuta asemaani terveydenhuollon asiakkaana. Suostumuksen peruuttamisen jälkeen näytteitä ja tietoja ei käytetä uusissa tutkimuksissa.\n\nAllekirjoituksellani vahvistan, että annan suostumukseni tässä asiakirjassa kuvattuun biologisten näytteiden ja niihin liittyvien tietojen käyttöön tulevissa tutkimuksissa ja annan suostumuksen vapaaehtoisesti.\n\nNäytteenantajan allekirjoitus __________________________               Päiväys____________\n\nNimenselvennös _______________________________\n\n\n\nSuostumus vastaanotettu\n\nSuostumuksen vastaanottajan allekirjoitus_________________       Päiväys____________\n\nNimenselvennös___________________\n\n\n\nAlkuperäinen allekirjoitettu asiakirja jää [lisää taho] arkistoon ja kopio annetaan\n\nnäytteenantajalle.",
+   "section_style": "H2 document subline, Rich body text, Signature section"
+  }
+ ]
+}

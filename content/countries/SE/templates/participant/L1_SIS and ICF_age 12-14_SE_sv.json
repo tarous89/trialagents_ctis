@@ -1,0 +1,84 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Information till ungdomar 12–14 år och dokumentation av inställning",
+  "target_country": "Sweden",
+  "country_code": "SE",
+  "target_language": "Swedish",
+  "language_code": "sv",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 12-14",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving adolescent participants aged 12-14 years. It supplements consent from the legal guardians and records the adolescent’s informed willingness or objection.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protokollnummer: [FYLL I: protokollnummer] | EU-prövningsnummer: [FYLL I: EU-prövningsnummer]"
+  ],
+  "info_table": [
+   "Prövningens titel",
+   "Kort titel för prövningen",
+   "Protokollnummer [FYLL I: version och datum]",
+   "EU-prövningsnummer",
+   "Sponsor [FYLL I: fullständig adress]",
+   "Ansvarig prövare",
+   "Prövningsställets namn",
+   "Prövningsställets adress"
+  ],
+  "content_instructions": "Utgå från Kliniska Studier Sveriges svenska mall för klinisk läkemedelsprövning enligt CTR och ICH-GCP E6 (R3), version 7 daterad 2025-11-12. Använd ett klart, enkelt, neutralt och sakligt språk, rikta texten direkt till mottagaren, skriv ut förkortningar första gången och undvik vädjande eller förskönande formuleringar. Anpassa alla exempel och platshållare till protokollet och ta bort instruktioner och alternativ som inte gäller. Beskriv tydligt vad som är forskning och vad som är ordinarie vård. Ange sponsor, prövningsställe, ansvarig prövare, EU-prövningsnummer, prövningens titel, version och kontaktuppgifter. Beskriv endast faktiska data, prov, procedurer, mottagare och överföringar. Ange personuppgiftsansvarig, ändamål, rättslig grund, pseudonymisering, lagring, rättigheter, dataskyddsombud och klagomål till Integritetsskyddsmyndigheten. När Biobankslag (2023:38) är tillämplig ska ansvarig svensk biobank, provtyper, kodning, ändamål, lagringstid, mottagare, hantering efter analys och återkallelse beskrivas. Obligatoriska prov och analyser inom huvudprövningen omfattas av huvudsamtycket när de är fullt beskrivna. Fristående framtida eller sekundär användning ska hanteras i mallen för sekundär och framtida användning. Använd för ungdomar 12–14 år tillsammans med vårdnadshavarnas separata samtycke. Informationen ska vara direkt, ärlig och åldersanpassad men täcka alla beslutskritiska delar. Ungdomen lämnar inte det juridiskt bindande samtycket men ska ge en tydlig egen inställning; tystnad får inte behandlas som instämmande. Prövningen får inte genomföras om ungdomen förstår vad den innebär och motsätter sig. När ungdomen fyller 15 år under prövningen och förstår vad den innebär ska eget informerat samtycke inhämtas innan fortsatt deltagande. Informationen till barnet eller ungdomen ska ges både muntligt och skriftligt, vara anpassad till ålder och mognad och lämnas av prövaren eller en annan medlem av prövningsteamet med erfarenhet av att arbeta med barn. Ungdomens vägran mot en viss procedur ska respekteras. Om proceduren är nödvändig för säkerheten eller krävs enligt det godkända prövningsprotokollet kan deltagandet behöva avslutas; detta och den medicinska uppföljningen ska förklaras åldersanpassat.",
+  "styling_instructions": "Behåll den svenska källmallens tydliga avsnittsstruktur. Sidhuvudet ska ange EU-prövningsnummer, prövningens titel på svenska och dokumentversion. Använd endast följande tydligt typade markeringar i template_content och metadata: [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] som en fristående rad eller ett fristående stycke för text som endast är riktad till författaren och alltid ska tas bort; [FYLL I: ...] inline för uppgifter eller ord som ska ersättas med prövningsspecifik deltagartext; och [VALFRI TEXT – BEHÅLL ELLER TA BORT] som en fristående rad direkt före ett fullständigt valfritt stycke, en fullständig punkt, ett fullständigt samtyckesval, ett helt valfritt avsnitt eller ett helt valfritt signaturblock. [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] och [VALFRI TEXT – BEHÅLL ELLER TA BORT] får aldrig placeras inne i en deltagarmening eller punkt. Markeringar får inte nästlas. Alla markeringar, ej valda alternativ och irrelevanta avsnitt ska vara borttagna innan dokumentet lämnas till läsaren. Behåll systemvariablerna [document name], [population label] och [date] oförändrade. Använd korta stycken, tydliga rubriker och separata fält för namn, datum och underskrift. Använd ett tydligt ungdomsanpassat språk och håll dokumentet kortare än vuxeninformationen utan att ta bort beslutskritiska uppgifter."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Information till dig som är 12–14 år\n\nVi vill fråga om du vill vara med i en klinisk prövning. En klinisk prövning är forskning om läkemedel. Dina vårdnadshavare måste ge sitt samtycke, men du ska också få information och kunna säga vad du själv vill.\n\nLäs i lugn och ro. Fråga om ord eller delar du inte förstår. Du får säga nej eller sluta senare.",
+   "section_style": "H2 document subline, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Varför görs prövningen och varför frågar vi dig?\n\nDu har [FYLL I: sjukdom eller tillstånd]. Prövningen undersöker [FYLL I: läkemedel, säkerhet, dos eller effekt]. Du tillfrågas eftersom [FYLL I: konkret skäl].\n\nPrövningen genomförs vid [FYLL I: plats] av [FYLL I: sponsor och ansvarig prövare]. Denna kliniska prövning är granskad och godkänd av regulatorisk läkemedelsmyndighet i Sverige.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Vad händer om du är med?\n\nDeltagandet varar cirka [FYLL I: prövningsspecifik uppgift] och omfattar [FYLL I: antal] besök. Du får [FYLL I: prövningsläkemedel/jämförelsebehandling/placebo]. Placebo är en behandling som ser likadan ut men saknar det verksamma ämnet.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om randomisering.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\nEn slump avgör vilken grupp du kommer i.\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om blindning.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\nDu och/eller läkaren vet inte vilken behandling du får, om det inte behöver tas reda på för din säkerhet.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv besök, undersökningar, provmängder, frågor, dagbok, restriktioner och vad som skiljer sig från vanlig vård.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Vilka risker, biverkningar och jobbiga saker finns?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv de viktigaste kända och okända biverkningarna, procedurrisker, blodprov, strålning, tidsåtgång, integritetsrisker och åldersrelevanta frågor om graviditet och preventivmedel. Ange vad ungdomen ska göra vid symtom och hur riskerna övervakas.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Kan du ha nytta av att vara med?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Välj ett av alternativen och anpassa det till prövningen.]\nDu kan möjligen få [FYLL I: prövningsspecifik uppgift], men det är inte säkert. / Du förväntas inte få direkt nytta. Prövningen kan ge kunskap som hjälper andra ungdomar eller patienter i framtiden.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Vad händer med uppgifter och prov om dig?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv på begripligt språk vilka uppgifter och prov som används, kodning, journalåtkomst, vilka som får kontrollera prövningen, lagringstid, biobank och genetiska analyser. Förklara att vårdnadshavarna får mer detaljerad information.]\n\nOm prov eller uppgifter ska sparas för framtida forskning ska det vara ett separat frivilligt val som inte påverkar deltagandet i huvudprövningen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Försäkring, kostnader och resultat\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv kort vilket skydd som gäller vid prövningsskada, eventuella kostnader eller ersatta resor och hur ungdomen kan få information om prövningens samlade resultat och eventuella individuella fynd.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Du bestämmer över din egen medverkan\n\nDu får säga nej, sluta eller säga att du inte vill genomföra en viss procedur utan att ange varför. Din vägran ska respekteras och påverkar inte din vanliga vård. Om proceduren behövs för din säkerhet eller krävs enligt det godkända prövningsprotokollet kan du behöva sluta i prövningen. Personalen ska då förklara vad detta innebär och vilken medicinsk uppföljning du får. Berätta för prövningspersonalen eller en vuxen du litar på.\n\nOm du fyller 15 år under prövningen och förstår vad prövningen innebär ska ditt uttryckliga informerade samtycke inhämtas innan du kan fortsätta delta.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Vem kan du fråga?\n\nAnsvarig prövare: [FYLL I: namn, telefon, e-post]\nKontaktperson: [FYLL I: namn, telefon, e-post]\nAkut kontakt: [FYLL I: prövningsspecifik uppgift]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "Din inställning till prövningen\n\nDetta dokumenterar vad du själv vill men ersätter inte vårdnadshavarnas juridiska samtycke.\n\n□ Jag vill vara med.\n□ Jag vill inte vara med.\n□ Jag är osäker och vill ha mer information.\n\nJag har fått information som jag förstår, kunnat ställa frågor och vet att jag får säga nej eller sluta.\n\n| Ungdomens underskrift | Namnförtydligande | Datum |\n|  |  |  |\n\nJag intygar att informationen anpassades till ungdomens ålder och mognad, att frågor besvarades och att ungdomens uttryckta inställning dokumenterades.\n\n| Underskrift av den som informerade | Namn och funktion | Datum |\n|  |  |  |",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section, Standard table"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Emergency Enrolment and Deferred Consent Form",
+  "doc_name_local": "Tájékoztatáson alapuló beleegyező nyilatkozat – sürgősségi bevonást követő folytatás",
+  "target_country": "Hungary",
+  "country_code": "HU",
+  "target_language": "Hungarian",
+  "language_code": "hu",
+  "doc_type": "emergency_enrollment",
+  "file_name": "L1_SIS and ICF_emergency",
+  "sort_order": 3,
+  "description": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - 1.0 verzió - [date]",
+   "Protokollszám: [töltse ki] | EUCT szám: [töltse ki]"
+  ],
+  "info_table": [
+   "A klinikai vizsgálat teljes címe",
+   "A klinikai vizsgálat rövid címe",
+   "Protokollszám [adja meg a verziót és a dátumot]",
+   "EUCT szám",
+   "Szponzor [teljes címmel]",
+   "Vizsgálatvezető",
+   "Vizsgálóhely neve",
+   "Vizsgálóhely címe",
+   "A tájékoztatást végző személy neve",
+   "A tájékoztatást végző személy beosztása / munkaköre",
+   "A vizsgálati alany neve",
+   "A vizsgálati alany születési helye",
+   "A vizsgálati alany születési ideje",
+   "[Csak ha nyilatkozattételre jogosult személy ad beleegyezést:] neve",
+   "[Csak ha nyilatkozattételre jogosult személy ad beleegyezést:] születési helye és ideje",
+   "[Csak ha nyilatkozattételre jogosult személy ad beleegyezést:] jogállása / jogosultságának alapja"
+  ],
+  "content_instructions": "Ezt a sablont kizárólag olyan, előzetesen jóváhagyott sürgősségi klinikai vizsgálati bevonás után használja, amikor a vizsgálati alany a sürgős szükség idején nem volt képes tájékoztatáson alapuló beleegyezést adni és az Eütv. 16. § szerinti nyilatkozattételre jogosult személy beleegyezése sem volt a szükséges időablakban beszerezhető. A sürgősségi bevonásnak meg kell felelnie az alkalmazandó uniós követelményeknek, az Eütv. 160. §-ának és a jóváhagyott protokollnak. A dokumentum célja a folytatáshoz szükséges utólagos tájékoztatás és beleegyezés, nem a már elvégzett sürgős beavatkozás visszamenőleges jóváhagyása. Világosan válassza szét, mi történt már a beleegyezés előtt, és mi történik csak akkor, ha a résztvevő/nyilatkozattételre jogosult személy hozzájárul a folytatáshoz. A teljes felnőtt fő sablon lényegi tartalmát tartsa meg: cél, vizsgálati gyógyszer, randomizáció/placebo/vakítás, eljárások, kockázatok, előnyök, alternatívák a döntés időpontjától, biztosítás/kártérítés, költségek, adatkezelés, minták, eredmények és kapcsolatok. A résztvevőt vagy a nyilatkozattételre jogosult személyt késedelem nélkül tájékoztatni kell, attól függően, kit lehet előbb érdemben bevonni; amint a résztvevő visszanyeri beleegyezési képességét, saját beleegyezését is meg kell szerezni. A beleegyezés hiánya esetén új kutatási eljárás ne történjen; különítse el a már jogszerűen gyűjtött adatok/minták kezelését a jövőbeli adatgyűjtéstől. Ne ígérjen automatikus törlést. Humángenetikai mintavételhez külön genetikai dokumentum szükséges; új genetikai mintavétel csak az alkalmazandó külön beleegyezéssel történhet. A fő vizsgálaton kívüli jövőbeni/másodlagos felhasználást ne tartalmazza. Egy dokumentumhoz egyetlen végleges aláírássorozat tartozzon. A végleges, jogilag beleegyezést tartalmazó dokumentum címében tartsa meg a KFEB által használt „Tájékoztatáson alapuló beleegyező nyilatkozat” megnevezést. A végleges dokumentumban csak azt az aláírási útvonalat tartsa meg, amelyet ténylegesen használnak: a vizsgálati alanyét, ha már képes dönteni, vagy a nyilatkozattételre jogosult személyét, ha őt lehet előbb bevonni. A beleegyezés előtt gyűjtött adatok tekintetében ismertesse az alkalmazandó uniós szabály szerinti tiltakozási jogot, annak gyakorlási módját és jogi korlátait.",
+  "styling_instructions": "Használjon világos, jól tagolt fejezeteket, rövid bekezdéseket és közérthető magyar nyelvet. A teljes dokumentumban következetesen az „Ön” megszólítást használja; ne keverje a tegező és magázó formákat. A szakmai rövidítéseket első előforduláskor magyarázza meg. A vizsgálati látogatások és eljárások bemutatására használható áttekinthető táblázat. A véglegesítés előtt távolítson el minden szerzői utasítást, példát, nem alkalmazandó alternatívát és feltételes modult. Ne tüntessen fel vizsgálati alany kódszámot a dokumentumban. A betegkártya külön mellékletként készüljön. A genetikai tájékoztató és beleegyező nyilatkozat külön dokumentum legyen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>TÁJÉKOZTATÁSON ALAPULÓ BELEEGYEZŐ NYILATKOZAT – SÜRGŐSSÉGI BEVONÁST KÖVETŐ FOLYTATÁS</b>\n<b>Szerzői utasítás:</b> Csak a jóváhagyott sürgősségi bevonási eljárás után használja. Ne fogalmazzon úgy, mintha a résztvevő visszamenőleg engedélyezné a már elvégzett sürgős ellátást vagy kutatási beavatkozást.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Tisztelt Hölgyem/Uram!\n\nEgy hirtelen kialakult, súlyos/sürgős egészségi állapot során Önt bevonták a(z) [vizsgálat rövid neve] klinikai vizsgálatba. Abban az időpontban Ön nem volt képes megkapni a teljes tájékoztatást és beleegyezést adni, és a nyilatkozattételre jogosult személy beleegyezése sem volt a szükséges időablakban beszerezhető. A bevonás az előzetesen jóváhagyott vizsgálati terv és sürgősségi eljárás szerint történt.\n\nMost teljes körű tájékoztatást kap arról, mi történt már, és mi történne ezután. Arra kérjük, döntsön arról, hozzájárul-e a klinikai vizsgálatban való folytatáshoz. Ez a döntés nem jelenti a már elvégzett sürgős ellátás vagy beavatkozás visszamenőleges jóváhagyását.\n\n[Ha a résztvevő még nem képes beleegyezni:] A tájékoztatást és a döntési lehetőséget a nyilatkozattételre jogosult személy kapja meg. Amint a résztvevő képes lesz önállóan dönteni, saját tájékoztatását és beleegyezését is meg kell szerezni.\n\nSzponzor: [név és teljes cím].",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. Miért történt a sürgősségi bevonás, és mit vizsgálunk?</b>\n\nA sürgősségi bevonás oka: [sürgős egészségi állapot közérthető leírása]. A klinikai vizsgálat közvetlenül ehhez az állapothoz kapcsolódik, és [miért nem lehetett a vizsgálatot hasonló eredményességgel sürgős állapotú személy bevonása nélkül elvégezni / jóváhagyott indok röviden].\n\nA(z) [név] vizsgálati gyógyszer [rövid hatásmechanizmus, fejlesztési/engedélyezési státusz]. A sürgősségi bevonás lehetséges közvetlen klinikai előnye: [töltse ki], de ez nem garantálható.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Mi a klinikai vizsgálat célja?</b>\n\nA vizsgálat célja [hatásosság / biztonságosság / tolerálhatóság / adag / egyéb] értékelése [állapot] esetén. Várható résztvevőszám: [Magyarország / világszerte].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Mi történt már, és milyen kezelés történik a folytatás esetén?</b>\n\n<b>A döntés előtt már megtörtént:</b>\n• [vizsgálati gyógyszer / standard kezelés / placebo, dózis és időpont];\n• [randomizáció és vakítás, ha alkalmazandó];\n• [egyéb kutatási/sürgős beavatkozás].\n\n<b>Ha hozzájárul a folytatáshoz:</b>\n• [további vizsgálati gyógyszer / kezelés, adag, időtartam];\n• [további randomizált/vakított kezelés, ha alkalmazandó].\n\n[Placebo esetén:] A placebo nem tartalmaz hatóanyagot; a placebo-csoportba kerülés valószínűsége [töltse ki]. [Vakítás esetén:] sürgős biztonsági okból a kezelés feloldható.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Milyen eljárások történtek már, és mi történik a folytatás esetén?</b>\n\n<b>Már megtörtént:</b> [vizsgálatok, mintavételek, adatgyűjtés, időpont].\n\n<b>Csak a folytatáshoz adott beleegyezés után:</b>\nLátogatás / időszak\tMikor\tIdőtartam\tKezelés és eljárások\tMi történik kutatási célból\n[töltse ki]\t[töltse ki]\t[töltse ki]\t[töltse ki]\t[töltse ki]\n\nA teljes vérmennyiség a vizsgálat során körülbelül [X] ml, ebből a jelen döntés előtt [Y] ml-t vettek le.\n\n[Ha a fő vizsgálatban biológiai mintavétel történt vagy történik:] A fő vizsgálathoz szükséges biológiai mintáknál külön adja meg, mi került már levételre és mi kerülne levételre ezután: [típus, mennyiség, cél, tárolási hely/idő, maradék kezelés].\n\n[Ha humángenetikai vizsgálat céljából mintavétel történt vagy új mintavétel tervezett:] Humángenetikai vizsgálat céljából új minta csak a külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum szerint vehető. A már korábban sürgősségi körülmények között levett minta genetikai felhasználását ne feltételezze automatikusan; a jóváhagyott protokoll és a magyar genetikai szabályok szerint kezelje.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Mit várunk Öntől, ha folytatja?</b>\n\nA folytatás esetén [gyógyszerszedés / vizitek / napló / korlátozások / panaszok és egyéb gyógyszerek jelentése / biztonsági utánkövetés]. Csak a jelen döntést követő kötelezettségeket írja le.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Mi volt és mi lesz eltérő a szokásos sürgősségi/utókezeléstől?</b>\n\nMár elvégzett, kutatási célú többletelemek: [töltse ki]. A folytatás esetén végzendő kutatási többletelemek: [töltse ki].\n\n[Betegkártya, ha alkalmazandó:] A betegkártyán szereplő biztonsági adatok és a mindig magánál tartás követelménye: [töltse ki].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Milyen kockázatokkal és kellemetlenségekkel járhat?</b>\n\n<b>A már kapott kezelés/eljárások kockázatai:</b> [ismert és ismeretlen kockázatok].\n<b>A folytatás további kockázatai:</b> [ismert és ismeretlen kockázatok, eljárási terhek].\n\nA már bekövetkezett expozíció kockázatait akkor is világosan ismertesse, ha a résztvevő még a tájékoztatás előtt kapta a kezelést. Új vagy romló panasz esetén: [kontakt].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Terhesség, szoptatás és fogamzásgátlás</b>\n\n[Ha a résztvevő reproduktív korú:] Ismertesse a már történt expozíció és a folytatás nemző-/fogamzóképességre, fennálló vagy későbbi terhességre és embrióra/magzatra gyakorolt ismert vagy nem ismert hatását. [Csak ha a protokoll előírja:] a szükséges terhességi teszteket, fogamzásgátlást, szoptatási vagy ivarsejt-adományozási előírásokat. Terhesség esetén a követendő eljárás: [töltse ki]. A terhesség utánkövetéséhez külön dokumentumot használjon.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Milyen előny várható?</b>\n\nA sürgősségi bevonás jóváhagyott indoka szerint a vizsgálati beavatkozás várhatóan [közvetlen klinikailag jelentős lehetséges előny]. Ez az előny nem garantálható. [A folytatás további lehetséges előnye / ha nincs további közvetlen előny, ezt közölje.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>10. Milyen kezelési lehetőségek vannak ettől a döntési ponttól?</b>\n\nHa nem járul hozzá a folytatáshoz, a jelenlegi állapotának megfelelő, Magyarországon elfogadott ellátást kapja. Lehetőségek: [standard kezelés / támogató ellátás / egyéb]. A vizsgálati kezelés megszakításának lehetséges következményei: [töltse ki].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>Vizsgálattal összefüggő egészségkárosodás</b>\nHa a klinikai vizsgálattal összefüggésben egészségkárosodás éri, illetve személyiségi joga sérül, jogosult lehet kezelésre, kártérítésre, kártalanításra és sérelemdíjra a vonatkozó magyar jogszabályok, különösen a 2005. évi XCV. törvény 21. § (1) bekezdése szerint.\n\nBiztosító: [név]\nMagyarországi elérhetőség: [cím]\nKapcsolattartó: [név]\nTelefon: [telefonszám]\nKárbejelentés módja: [töltse ki].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>12. Költségek és költségtérítés</b>\n\nA klinikai vizsgálat kutatási célú gyógyszereit és eljárásait a Szponzor finanszírozza.\n\n<b>[Ha költségtérítés van:]</b> A Szponzor megtéríti a jelen döntéstől kezdődő részvétel miatt alábbi, ténylegesen felmerült és igazolt költségeket: [pontos, teljes költségtípusok és szabályok].\n<b>[Ha nincs költségtérítés:]</b> A részvételhez kapcsolódó költségtérítés nem jár.\n\n<b>[Ha külső szolgáltató végzi a költségtérítést:]</b> A költségtérítést a(z) [szolgáltató neve] végzi. Lényeges feltételek: [töltse ki]. Átadott adatok: [pontos felsorolás]. Adatkezelési feltételek és esetleges díjak: [töltse ki].\n\nMás díjazást csak akkor szerepeltessen, ha a magyar szabályok szerint kifejezetten megengedett.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>13. Önkéntes-e a folytatás, és mi történik, ha nemet mond?</b>\n\nA folytatáshoz adott beleegyezés önkéntes. Megtagadhatja, vagy később bármikor, indoklás nélkül, szóban vagy írásban visszavonhatja. Emiatt a szokásos ellátásban nem érheti hátrány.\n\nHa nem járul hozzá a folytatáshoz, új kutatási eljárás és új klinikai vizsgálati célú egészségügyi adatgyűjtés nem történik. [Orvosilag szükséges ellátás vagy biztonsági ellenőrzés pontosítása.] A jelen döntés előtt jogszerűen gyűjtött adatok a vizsgálat biztonságának és megbízhatóságának biztosításához továbbra is felhasználhatók; a minták kezelését [pontosan ismertesse].\n\n<b>[Csak ha a klinikai vizsgálat folytatásához nem adnak beleegyezést:] A jelen döntés előtt gyűjtött adatokkal kapcsolatos tiltakozás</b>\nÖn / a nyilatkozattételre jogosult személy tiltakozhat a sürgősségi bevonás és a jelen tájékoztatás között gyűjtött adatok felhasználásával szemben. A tiltakozás módja: [kapcsolattartó és eljárás]. Az alkalmazandó jogi és gyakorlati korlátokat: [pontosan ismertesse].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>14. Hogyan kezeljük a már összegyűjtött és a jövőben gyűjtendő adatokat és mintákat?</b>\n\n<b>Adatvédelem</b>\nA személyes és egészségügyi adatok kezelésére különösen az (EU) 2016/679 rendelet (GDPR), a 2011. évi CXII. törvény, az 1997. évi XLVII. törvény, a 2005. évi XCV. törvény, az 1997. évi CLIV. törvény és a 35/2005. (VIII. 26.) EüM rendelet vonatkozik. [Humángenetikai vizsgálat esetén: továbbá a 2008. évi XXI. törvény.]\n\nAdatkezelő(k): [név, cím és szerep]\nAdatvédelmi tisztviselő / adatvédelmi kapcsolat: [név és elérhetőség]\nAz adatkezelés célja: [pontos cél]. Az adatkezelés jogalapja a KFEB követelménye szerint az érintett, illetve ha az érintett nem jogosult önállóan nyilatkozni, a nevében jogszerűen nyilatkozó személy hozzájárulása.\nA kezelt adatok: [a tényleges adatkategóriák tételes felsorolása].\n\nA vizsgálóhelyről személyes és különleges adatok kizárólag [kódolt / anonimizált] formában továbbíthatók. Kódolt adatok esetén a kódkulcs nem továbbítható. Az azonosítható adatokba csak a vizsgálóhelyen tekinthetnek be az erre jogosult [vizsgálati személyzet / monitor / auditor / hatósági ellenőr / etikai bizottság erre jogosult személye / egyéb tényleges jogosult], és azokról nem készíthetnek másolatot. Titoktartási kötelezettség terheli őket.\n\nA kódolt/anonimizált adatok címzettjei: [szervezetek/szervezettípusok és országok]. [Ha harmadik országba történik továbbítás: ország és alkalmazott garancia.] Az adatokat [hely] helyen [időtartam / végdátum] ideig tárolják.\n\nHa adatkezelési jogai sérülnek, kapcsolatba léphet [adatkezelő/adatvédelmi tisztviselő], és panaszt tehet a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH). NAIH postai cím: [aktuális cím]. Internet: [aktuális webcím].\n\n<b>A döntés előtt gyűjtött adatok és minták:</b> [típusok, cél, jogszerű további kezelés, megőrzés].\n<b>Csak a folytatás esetén gyűjtendő adatok és minták:</b> [típusok, cél, tárolás].\n\nA fő vizsgálaton kívüli jövőbeni/másodlagos felhasználást ne építse be. [Humángenetikai vizsgálat esetén:] külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum szükséges.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>15. Kap-e új információkat és eredményeket?</b>\n\nA biztonságát vagy a folytatási döntést befolyásoló új információról megfelelő időben tájékoztatják. A klinikai vizsgálat összefoglaló eredménye az EU klinikai vizsgálati adatbázis nyilvános felületén elérhetővé válik. [Egyéni eredmények/kezelési csoport/véletlen lelet, ha alkalmazandó.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>Kit kereshet kérdéseivel?</b>\nVizsgálatvezető: [név, beosztás/munkakör]\nVizsgálóhely: [név és cím]\nTelefon: [telefonszám]\nE-mail: [e-mail]\n24 órás sürgősségi kapcsolat: [ha alkalmazandó]\n\nAdatvédelmi kapcsolattartó: [név és elérhetőség]\nNAIH: [aktuális postai cím és internetes elérhetőség]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>UTÓLAGOS BELEEGYEZŐ NYILATKOZAT A KLINIKAI VIZSGÁLAT FOLYTATÁSÁHOZ</b>\n\nKijelentem, hogy tájékoztattak arról, hogy sürgős helyzetben, előzetes beleegyezés nélkül vontak be a klinikai vizsgálatba; megértettem, hogy e nyilatkozat nem a már elvégzett sürgős ellátás vagy beavatkozás visszamenőleges jóváhagyása; megkaptam a teljes tájékoztatást arról, mi történt már és mi történne a folytatás esetén; kérdezhettem és elegendő időt kaptam; megértettem a kockázatokat, lehetséges előnyöket, alternatívákat, biztosítást, adat- és mintakezelést; tudom, hogy a folytatás önkéntes és később is visszavonható; és önként hozzájárulok a klinikai vizsgálat folytatásához, a jelen dokumentumban ismertetett jövőbeli kötelező eljárásokhoz, adatkezeléshez és mintavételekhez.\n\n<b>Elsődleges út – a vizsgálati alany képes saját beleegyezést adni</b>\nNév: ____________________\nSzületési hely: ____________________\nSzületési idő: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\n<b>Feltételes út – a vizsgálati alany még nem képes beleegyezni</b>\nA nyilatkozattételre jogosult személy neve: ____________________\nSzületési hely és idő: ____________________\nJogállás / jogosultság alapja: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n<b>Szerzői utasítás:</b> E blokkot csak addig használja, amíg a résztvevő nem képes saját döntésre; amint visszanyeri ezt a képességet, saját beleegyezését késedelem nélkül meg kell szerezni.\n\n<b>A tájékoztatást végző személy / vizsgálatvezető</b>\nNév: ____________________\nBeosztás / munkakör: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\nA dokumentum egy eredeti, aláírt és dátummal ellátott példányát az érintett kapja meg; egy eredeti példány a kutatási dokumentációban kerül megőrzésre.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

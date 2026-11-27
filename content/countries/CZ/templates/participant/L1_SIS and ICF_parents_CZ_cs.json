@@ -1,0 +1,135 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Trial Information and Consent Form - Parents",
+  "doc_name_local": "Informace pro rodiče nebo zákonné zástupce / Informovaný souhlas s účastí dítěte",
+  "target_country": "Czech Republic",
+  "country_code": "CZ",
+  "target_language": "Czech",
+  "language_code": "cs",
+  "doc_type": "parents",
+  "file_name": "L1_SIS and ICF_parents",
+  "sort_order": 5,
+  "description": "Must be completed for studies involving minor participants (younger than 18 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - verze 1.0 - [date]",
+   "Číslo protokolu: [doplňte] | EU CT číslo: [doplňte]",
+   "Identifikace klinického hodnocení: [doplňte] | verze dokumentu: [doplňte]"
+  ],
+  "info_table": [
+   "Celý název klinického hodnocení",
+   "Zkrácený název klinického hodnocení",
+   "Číslo protokolu [doplňte verzi a datum]",
+   "EU CT číslo",
+   "Zadavatel [včetně úplné adresy]",
+   "Hlavní zkoušející",
+   "Název pracoviště",
+   "Adresa pracoviště"
+  ],
+  "content_instructions": "Použijte pro rodiče nebo jiné zákonné zástupce nezletilého účastníka. Dítě je účastníkem klinického hodnocení; veškerá léčba, rizika, přínosy, údaje a vzorky se vztahují k dítěti. Rodičovský souhlas nenahrazuje samostatné informace přiměřené věku dítěte. Dítě musí být zapojeno podle věku a vyspělosti a jeho výslovné odmítnutí nebo přání přestat musí být respektováno. Pro věkové skupiny 12–14 a 15–17 let připravte samostatné české písemné informace; mladší děti mohou vyjádřit vůli na dětském formuláři, přičemž podpis dítěte mladšího 11 let není povinný. Jeden podpis rodiče nebo zákonného zástupce je pro klinická hodnocení předkládaná prostřednictvím CTIS základní podpisová cesta. Druhý podpis ponechte pouze tehdy, pokud jej vyžaduje schválený postup nebo právní postavení dítěte. Uveďte jen přiměřené náhrady výdajů, nikoli pobídky. Povinné vzorky a genetická vyšetření hlavního hodnocení patří do hlavního souhlasu; budoucí nebo sekundární použití nikoli. Pokud dítě dosáhne 18 let, vyžádejte jeho vlastní informovaný souhlas pro pokračování. Zachovejte české požadavky na EU CT číslo, stejnopis, přístup ke zdravotnické dokumentaci, EMA výsledky a etickou komisi pouze e-mailem. Rozsah konečných základních informací pro rodiče nebo zákonné zástupce nesmí přesáhnout 8 stran; pouze ve specifických případech lze akceptovat až 10 stran.",
+  "styling_instructions": "Konečný dokument musí být pouze v češtině. Konečné základní informace pro rodiče nebo zákonné zástupce mají mít nejvýše 8 stran; pouze ve specifických případech lze akceptovat až 10 stran. Nepoužívejte přílohy. Použijte přehledné kapitoly a odstavce, standardní velikost písma, například Times New Roman 12 nebo Arial 11, a srozumitelný, citlivý jazyk bez nevysvětlených zkratek a odborných výrazů. Každá strana musí být očíslována a označena číslem verze, datem vydání a identifikací klinického hodnocení. Před finalizací odstraňte všechny pokyny pro zpracovatele, příklady, nevybrané alternativy a neaplikovatelné části. Pro plán návštěv a výkonů použijte přehlednou tabulku, pokud to zlepšuje srozumitelnost. Obecné zaškrtávací otázky ano/ne nepoužívejte; výjimkou jsou odůvodněné, skutečně nezávislé volitelné činnosti s vlastním podpisem a datem."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMACE PRO RODIČE NEBO ZÁKONNÉ ZÁSTUPCE / INFORMOVANÝ SOUHLAS S ÚČASTÍ DÍTĚTE</b>\n\n<b>Pokyn pro zpracovatele:</b> V konečné verzi ponechte celý název klinického hodnocení a EU CT číslo. Odstraňte všechny pokyny, příklady a neaplikovatelné možnosti. Tento dokument nenahrazuje samostatné věkově nebo schopnostně přizpůsobené informace pro účastníka.",
+   "section_style": "H1 document headline, Rich body text, Info table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Vážená paní, vážený pane,\n\nžádáme Vás, abyste zvážil/a účast, kterou má podstoupit Vaše dítě, v klinickém hodnocení [název]. Klinické hodnocení je výzkumná činnost. Vaše dítě je osobou, která bude dostávat léčbu, podstupovat vyšetření a jejíž údaje a vzorky budou používány.\n\nRozhodnutí je dobrovolné. Před rozhodnutím obdržíte dostatek času a můžete klást otázky. Odmítnutí nebo pozdější odvolání souhlasu nebude mít nepříznivý vliv na léčbu a péči dítěte.\n\nVaše dítě dostane informace přizpůsobené věku, vyspělosti a schopnosti porozumět a bude zapojen/a do rozhodování v nejvyšší možné míře. Výslovné odmítnutí nebo přání přestat musí být respektováno.\n\nZadavatelem je [název zadavatele].\n\n<b>Podmíněný text – komerční zadavatel:</b>\nZkoušející lékař je zadavatelem za práci související s hodnocením odměněn.",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. Proč je účast nabízena a co se zkoumá?</b>\n\nÚčast je nabízena proto, že Vaše dítě [má diagnózu / zdravotní stav / patří do cílové skupiny: popište srozumitelně bez seznamu kritérií].\n\nZkoumá se [název přípravku] pro [zkoumané použití]. Stručně vysvětlete, zda přípravek není schválen, je schválen v jiné indikaci nebo se používá v nové dávce či kombinaci. Uveďte dosavadní zkušenosti důležité pro rozhodnutí.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Cíl klinického hodnocení</b>\n\nCílem je zjistit [účinnost / bezpečnost / snášenlivost / dávku / jiný přesný cíl] přípravku [název] u [populace].\n\n<b>Pediatrický kontext:</b>\nVysvětlete, proč je zapojení dětí nutné, jaký přímý přínos nebo přínos pro dětskou populaci se očekává a proč jsou rizika a zátěž přijatelné.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Jak bude léčba probíhat?</b>\n\nVaše dítě bude dostávat [přípravek / standardní léčbu / placebo] jako [forma], v dávce [doplňte] po dobu [doplňte].\n\n<b>Skupiny:</b>\n• Skupina A: [léčba, dávka a délka]\n• Skupina B: [léčba, dávka a délka]\n\nPokud je použito náhodné rozdělení, placebo nebo zaslepení, vysvětlete pravděpodobnost a význam srozumitelně. V naléhavém případě lze zaslepení odhalit pro bezpečnost.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Jaká vyšetření a postupy čekají Vaše dítě?</b>\n\nÚčast bude trvat [doba] a zahrne přibližně [počet] návštěv. Před zařazením budou provedena vyšetření potřebná k ověření vhodnosti.\n\nNávštěva / období\tKdy\tDélka\tLéčba a vyšetření\tCo je navíc oproti běžné péči\n[Screening]\t[doplňte]\t[doplňte]\t[doplňte]\t[doplňte]\n[Další návštěvy]\t[doplňte]\t[doplňte]\t[doplňte]\t[doplňte]\n\nCelkové množství odebrané krve bude přibližně [X] ml.\n\n<b>Podmíněné moduly:</b>\n• Povinné vzorky nebo genetická vyšetření pro hlavní hodnocení: [typ, množství, účel, rizika].\n• Skutečně volitelný test nebo odběr v hlavním protokolu: odmítnutí nebrání hlavní účasti a má samostatnou volbu.\n• Invazivní vyšetření, záření, hospitalizace, dotazníky, deník nebo elektronické sledování: [rozsah a rizika].",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Co se očekává od Vás a od dítěte?</b>\n\nPomozte zajistit návštěvy, podávání léčby, vedení deníku a dodržování pokynů. Informujte studijní tým o dalších lécích, nových potížích, hospitalizaci nebo změně péče.\n\nPožadavky vysvětlete také Vašemu dítěti způsobem, kterému může rozumět. Pokud Vaše dítě odmítne konkrétní výkon nebo si přeje přestat, sdělte to ihned zkoušejícímu.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Co je jiné oproti běžné léčbě?</b>\n\nVe srovnání s běžnou péčí bude Vaše dítě [chodit častěji na návštěvy / podstupovat další vyšetření / dostávat hodnocený přípravek / být náhodně zařazen/a / podstupovat jiné výzkumné postupy]. Uveďte konkrétní časovou a praktickou zátěž.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Jaká jsou možná rizika, nežádoucí účinky a nepříjemnosti?</b>\n\nPřípravek [název] může způsobit známé i dosud neznámé nežádoucí účinky. Při novém nebo zhoršujícím se zdravotním problému dítěte kontaktujte zkoušejícího lékaře [kontakt].\n\n<b>Nejdůležitější rizika:</b>\n• [riziko, četnost a závažnost]\n\n<b>Rizika výkonů a zátěž:</b>\n• [odběr krve, biopsie, záření, bolest, strach, časová zátěž]\n\n<b>Pokyn:</b> Rizika nesnižujte a přizpůsobte jejich vysvětlení také účastníkovi.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Těhotenství, kojení a antikoncepce</b>\n\nCelou kapitolu odstraňte, pokud není relevantní. U dospívajícího dítěte uveďte požadavky citlivě a přiměřeně věku; zohledněte soukromí a bezpečnost dítěte.\n\nU dítěte ve věku 15–17 let musí být v konečném dokumentu viditelně uvedeno, že požadavky na antikoncepci se vztahují pouze tehdy, pokud je dítě sexuálně aktivní. Sexuální abstinence je, je-li dodržována, považována za vysoce spolehlivou metodu antikoncepce.\n\nPopište známá nebo neznámá reprodukční rizika, těhotenské testy, povolené metody antikoncepce, zákaz darování zárodečných buněk a postup při těhotenství dítěte nebo partnerky účastníka. Sledování těhotenství musí být řešeno samostatným dokumentem.\n\n<b>Pokyn pro zpracovatele:</b> Pro věkovou skupinu 15–17 let neuvádějte sterilizační metody ani nitroděložní tělíska jako možnosti antikoncepce.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Jaký může mít Vaše dítě prospěch?</b>\n\nVyberte jednu možnost:\n• Neočekává se přímý zdravotní přínos; získané informace mohou pomoci budoucím pacientům.\n• Přípravek může [konkrétní možný přínos], ale přínos není zaručen.\n\nZdravotní stav se může nezměnit nebo zhoršit.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>10. Jiné dostupné možnosti léčby</b>\n\nPokud Vaše dítě nebude zařazen/a nebo účast skončí, může dostávat léčbu běžně dostupnou v České republice: [možnosti, hlavní přínosy a rizika]. Zkoušející lékař vysvětlí vhodné možnosti.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>11. Pojištění, újma na zdraví a odškodnění</b>\n\nVšichni účastníci klinického hodnocení jsou pojištěni podle platné legislativy ČR.\n\nPokud v souvislosti s účastí dojde k újmě na zdraví dítěte, obraťte se na zkoušejícího lékaře [jméno a kontakt]. Bude zajištěna a zdarma poskytnuta odpovídající lékařská péče. Dotčená osoba má právo na odškodnění v souladu s platnými právními předpisy.\n\nPodpisem informovaného souhlasu se nikdo nevzdává žádného zákonného práva.\n\n<b>Pokyn pro zpracovatele:</b> Kapitolu ponechte stručnou a neomezujte zákonná práva.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>12. Náklady, náhrada výdajů a případná odměna</b>\n\nHodnocené přípravky a výzkumná vyšetření hradí zadavatel. Přiměřené výdaje spojené s účastí dítěte, například cestovné, stravné nebo doložená ztráta příjmu doprovázející osoby, budou hrazeny takto: [pravidla].\n\nZa účast dítěte nebo rozhodování rodiče nesmí být nabízena nepřiměřená odměna; lze hradit pouze přiměřené výdaje a zátěž v mezích schválených etickou komisí.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>13. Je souhlas dobrovolný a lze jej odvolat?</b>\n\nMůžete souhlas odmítnout nebo odvolat bez udání důvodu a bez nepříznivého vlivu na léčbu dítěte. Vaše dítě může odmítnout nebo kdykoliv vyjádřit přání přestat; toto přání musí být respektováno.\n\nPo ukončení může být nabídnuta zdravotně potřebná bezpečnostní kontrola. Popište, co se stane s léčbou, údaji a vzorky. Již zákonně získané údaje mohou být uchovány pro bezpečnost a spolehlivost.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>14. Jak bude nakládáno s údaji a biologickými vzorky dítěte?</b>\n\nSamostatné sdělení ke zpracování osobních údajů obdržíte. Údaje a vzorky budou zadavateli předávány pouze v kódované podobě. Totožnost dítěte zůstává na pracovišti.\n\nDo zdravotnické dokumentace mohou pro kontrolu nahlížet zkoušející, studijní tým, monitor, auditoři, regulační orgány a etická komise; jsou vázáni mlčenlivostí.\n\nPovinné vzorky pro hlavní hodnocení budou uchovávány v [místo] po dobu [doba] a použity jen pro popsané účely. Budoucí nebo sekundární použití nepatří do tohoto dokumentu.\n\nPokud se zpracovávají také identifikační nebo kontaktní údaje rodiče/zástupce, popište je odděleně od údajů dítěte.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>15. Budete informováni o nových skutečnostech a výsledcích?</b>\n\nPokud se objeví nová informace, která může ovlivnit bezpečnost nebo rozhodnutí pokračovat, zkoušející lékař ji Vám a účastníkovi neprodleně sdělí. Bude možné znovu zvážit pokračování a podle potřeby bude vyžádáno nové potvrzení.\n\n<b>Výsledky klinického hodnocení:</b>\nSouhrn výsledků bude zveřejněn na webu Evropské agentury pro léčivé přípravky (EMA): https://euclinicaltrials.eu.\n\n<b>Podmíněné texty:</b>\n• Po ukončení hodnocení budou sděleny [hlavní výsledky / léčebná skupina], pokud je to možné a bylo o to požádáno.\n• Individuální výsledky nebo závažný náhodný nález budou sděleny a řešeny takto: [doplňte].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>16. Kolik účastníků se zapojí?</b>\n\nPředpokládá se přibližně [počet] účastníků v České republice a [počet] celosvětově.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>17. Koho můžete kontaktovat?</b>\n\n<b>Zdravotní problémy, otázky o klinickém hodnocení a naléhavé situace:</b>\nZkoušející lékař: [jméno]\nTelefon: [číslo]\nE-mail: [e-mail]\nDostupnost / pohotovostní kontakt: [doplňte]\n\n<b>Další kvalifikovaný a snadno dostupný lékař určený zadavatelem:</b>\n[jméno, pracoviště, telefon, e-mail a dostupnost]\n\n<b>Otázky týkající se etických aspektů a práv dítěte:</b>\nEtická komise: [název přidělené etické komise]\nE-mail: [eticka.komise@sukl.gov.cz nebo e-mail konkrétní etické komise]\n\n<b>Pokyn pro zpracovatele:</b> U etické komise neuvádějte telefonní číslo.\n\n<b>Otázky týkající se zpracování osobních údajů:</b>\n[Odkaz na samostatné sdělení ke zpracování osobních údajů a příslušné kontakty.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b>INFORMOVANÝ SOUHLAS RODIČE / ZÁKONNÉHO ZÁSTUPCE S ÚČASTÍ DÍTĚTE</b>\n\nPotvrzuji/potvrzujeme, že:\n• obdržel/a/i jsme a porozuměl/a/i informacím o klinickém hodnocení a měl/a/i jsme dostatek času k rozhodnutí;\n• zkoušející lékař vysvětlil účel, léčbu, postupy, rizika, možné přínosy, alternativy, pojištění, náklady a nakládání s údaji a vzorky dítěte;\n• měli jsme možnost klást otázky a obdrželi odpovědi;\n• dítě dostalo informace přiměřené věku a vyspělosti a bylo zapojeno do rozhodování;\n• výslovné odmítnutí dítěte nebo pozdější přání přestat bude respektováno;\n• souhlas je dobrovolný a lze jej odvolat bez nepříznivého vlivu na léčbu dítěte;\n• souhlasíme s účastí dítěte a s povinnými postupy popsanými v informacích;\n• obdrželi jsme samostatné sdělení ke zpracování osobních údajů;\n• souhlasíme s oprávněným přístupem ke zdravotnické dokumentaci dítěte pro kontrolu klinického hodnocení;\n• údaje a vzorky dítěte budou předávány pouze v kódované podobě;\n• podpisem se dítě ani rodiče nevzdávají žádného zákonného práva;\n• obdrželi jsme datovaný a podepsaný stejnopis.\n\n<b>Dítě:</b>\nJméno a příjmení: ______________________________\nDatum narození: ______________________________\n\n<b>Rodič / zákonný zástupce:</b>\nJméno a příjmení: ______________________________\nVztah / právní postavení: ______________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\n<b>Podmíněný druhý podpis – ponechte pouze tehdy, pokud jej vyžaduje schválený postup nebo právní postavení dítěte:</b>\nJméno a příjmení: ______________________________\nVztah / právní postavení: ______________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\n<b>Pokyn pro zpracovatele:</b> Jeden podpis rodiče nebo zákonného zástupce je základní podpisová cesta. Druhý podpis přidejte pouze tehdy, pokud je pro konkrétní dítě vyžadován schváleným postupem nebo jeho právním postavením.\n\n<b>Podmíněný blok – skutečně volitelný test nebo odběr:</b>\nSouhlasím/souhlasíme s [název a účel]. Ano □ Ne □\nPodpis(y) rodiče/rodičů podle stejných pravidel jako hlavní souhlas: __________________  Datum: __________\n\n<b>Vyjádření dítěte:</b>\nDítě obdrželo informace přiměřené věku a vyspělosti. Jeho vyjádření je zaznamenáno v samostatné dětské nebo adolescentní informaci / na tomto formuláři, je-li to schváleno.\nPodpis dítěte mladšího 11 let není povinný. U dítěte, které je schopné vyjádřit názor, musí být odmítnutí respektováno.\n\nProhlašuji, že jsem rodiče/zákonné zástupce a dítě informoval/a přiměřeně jejich roli a schopnosti porozumět, odpověděl/a na otázky a získal/a souhlas jako zkoušející lékař.\n\nJméno a příjmení zkoušejícího lékaře: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\n<b>Pokyn pro zpracovatele:</b> Pokud dítě během klinického hodnocení dosáhne 18 let a je schopné souhlasu, musí před pokračováním obdržet standardní informace pro dospělého pacienta a udělit vlastní informovaný souhlas.\n\nJeden datovaný a podepsaný stejnopis obdržel rodič / zákonný zástupce a jeden stejnopis zůstává na pracovišti. Dítě obdrží svou věkově přiměřenou informaci.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Standard table, Signature section"
+  }
+ ]
+}

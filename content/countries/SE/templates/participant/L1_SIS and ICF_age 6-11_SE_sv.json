@@ -1,0 +1,79 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Information till barn 6–11 år och dokumentation av barnets inställning",
+  "target_country": "Sweden",
+  "country_code": "SE",
+  "target_language": "Swedish",
+  "language_code": "sv",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protokollnummer: [FYLL I: protokollnummer] | EU-prövningsnummer: [FYLL I: EU-prövningsnummer]"
+  ],
+  "info_table": [
+   "Prövningens titel",
+   "Kort titel för prövningen",
+   "Protokollnummer [FYLL I: version och datum]",
+   "EU-prövningsnummer",
+   "Sponsor [FYLL I: fullständig adress]",
+   "Ansvarig prövare",
+   "Prövningsställets namn",
+   "Prövningsställets adress"
+  ],
+  "content_instructions": "Utgå från Kliniska Studier Sveriges svenska mall för klinisk läkemedelsprövning enligt CTR och ICH-GCP E6 (R3), version 7 daterad 2025-11-12. Använd ett klart, enkelt, neutralt och sakligt språk, rikta texten direkt till mottagaren, skriv ut förkortningar första gången och undvik vädjande eller förskönande formuleringar. Anpassa alla exempel och platshållare till protokollet och ta bort instruktioner och alternativ som inte gäller. Beskriv tydligt vad som är forskning och vad som är ordinarie vård. Ange sponsor, prövningsställe, ansvarig prövare, EU-prövningsnummer, prövningens titel, version och kontaktuppgifter. Beskriv endast faktiska data, prov, procedurer, mottagare och överföringar. Ange personuppgiftsansvarig, ändamål, rättslig grund, pseudonymisering, lagring, rättigheter, dataskyddsombud och klagomål till Integritetsskyddsmyndigheten. När Biobankslag (2023:38) är tillämplig ska ansvarig svensk biobank, provtyper, kodning, ändamål, lagringstid, mottagare, hantering efter analys och återkallelse beskrivas. Obligatoriska prov och analyser inom huvudprövningen omfattas av huvudsamtycket när de är fullt beskrivna. Fristående framtida eller sekundär användning ska hanteras i mallen för sekundär och framtida användning. Använd för barn 6–11 år tillsammans med vårdnadshavarnas separata information och samtycke. Skriv mycket kort, konkret och åldersanpassat med korta meningar och möjlighet till bilder eller symboler. Dokumentet registrerar barnets egen inställning och är inte juridiskt informerat samtycke. Barnet ska få veta att det får säga nej eller sluta utan att vården påverkas och att vägran mot en enskild procedur ska respekteras. Om proceduren är nödvändig för säkerheten eller krävs enligt det godkända prövningsprotokollet kan deltagandet behöva avslutas; detta ska förklaras på ett åldersanpassat sätt. Om barnet förstår vad prövningen innebär och motsätter sig får prövningen inte genomföras. Ta bara med information som barnet behöver för att förstå vad som händer, de viktigaste riskerna och vem barnet kan prata med. Informationen till barnet eller ungdomen ska ges både muntligt och skriftligt, vara anpassad till ålder och mognad och lämnas av prövaren eller en annan medlem av prövningsteamet med erfarenhet av att arbeta med barn.",
+  "styling_instructions": "Behåll den svenska källmallens tydliga avsnittsstruktur. Sidhuvudet ska ange EU-prövningsnummer, prövningens titel på svenska och dokumentversion. Använd endast följande tydligt typade markeringar i template_content och metadata: [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] som en fristående rad eller ett fristående stycke för text som endast är riktad till författaren och alltid ska tas bort; [FYLL I: ...] inline för uppgifter eller ord som ska ersättas med prövningsspecifik deltagartext; och [VALFRI TEXT – BEHÅLL ELLER TA BORT] som en fristående rad direkt före ett fullständigt valfritt stycke, en fullständig punkt, ett fullständigt samtyckesval, ett helt valfritt avsnitt eller ett helt valfritt signaturblock. [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] och [VALFRI TEXT – BEHÅLL ELLER TA BORT] får aldrig placeras inne i en deltagarmening eller punkt. Markeringar får inte nästlas. Alla markeringar, ej valda alternativ och irrelevanta avsnitt ska vara borttagna innan dokumentet lämnas till läsaren. Behåll systemvariablerna [document name], [population label] och [date] oförändrade. Använd korta stycken, tydliga rubriker och separata fält för namn, datum och underskrift. Använd stor lättläst text, generöst radavstånd och vid behov enkla bilder eller symboler. Håll slutdokumentet väsentligt kortare än vuxeninformationen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Hej [FYLL I: barnets namn]!\n\nVi vill fråga om du vill vara med i en studie. En studie är när läkare och andra försöker lära sig mer om en sjukdom eller en medicin.\n\nDina vårdnadshavare får mer information och bestämmer om de tillåter att du är med. Men vi vill också veta vad du själv tycker. Du får säga nej.",
+   "section_style": "H2 document subline, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Varför gör vi studien?\n\nVi vill lära oss mer om [FYLL I: sjukdomen/medicinen/behandlingen]. Du får frågan eftersom [FYLL I: enkel och icke-stigmatiserande förklaring].\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Ange läkemedlets namn och förklara kort om det är nytt och vad forskarna vill veta.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Vad händer om du är med?\n\nStudien tar ungefär [FYLL I: tid]. Du kommer till [FYLL I: sjukhus/klinik] ungefär [FYLL I: antal] gånger.\n\nDet här kommer att hända:\n• [FYLL I: undersökning eller besök]\n• [FYLL I: medicin/placebo; förklara placebo som en medicin utan det verksamma ämnet om relevant]\n• [FYLL I: blodprov och enkel mängdjämförelse]\n• [FYLL I: frågor, bilder eller andra moment]\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Förklara lottdragning och att läkaren kanske inte vet vilken behandling barnet får, om relevant.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Gör det ont eller kan något kännas jobbigt?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv de viktigaste riskerna och obehagen med ord barnet förstår.]\n\nEtt blodprov kan sticka och ge ett litet blåmärke.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Behåll följande text endast om den gäller.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n[FYLL I: kort åldersanpassad beskrivning av andra procedurer och biverkningar.]\n\nBerätta direkt för en vuxen om något gör ont, känns läskigt eller om du mår dåligt.\n\nDet kan också finnas risker som läkarna ännu inte känner till. Personalen följer hur du mår och kan stoppa medicinen eller studien om det behövs.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Kan studien hjälpa dig?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Välj ett av alternativen och anpassa det till prövningen.]\nStudien kanske kan hjälpa dig genom [FYLL I: prövningsspecifik uppgift], men det är inte säkert. / Studien förväntas inte hjälpa dig direkt. Det vi lär oss kan hjälpa andra barn i framtiden.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Vad händer med prov och information om dig?\n\nVi sparar information om [FYLL I: enkla kategorier] och kanske [FYLL I: blod/urin/annat prov]. Ditt namn ersätts med en kod så långt det går. Bara personer som behöver kontrollera studien får se vem uppgifterna gäller.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om genetisk undersökning är nödvändig: Förklara mycket enkelt vad som undersöks och om barnet kan få information om resultat.]\n\nDina vårdnadshavare får den fullständiga informationen om data, journal och biobank.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Du får säga nej eller sluta\n\nDet är frivilligt att vara med. Du får säga nej nu eller senare. Du behöver inte förklara varför. Du får också säga nej till en undersökning om den känns fel. Ibland kan du då behöva sluta i studien, till exempel om undersökningen behövs för att studien ska vara säker. Personalen ska förklara vad som händer och vilken vård du får.\n\nSäg till läkaren, sjuksköterskan, dina vårdnadshavare eller en annan vuxen du litar på. Du får samma vanliga vård även om du säger nej eller slutar.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Vem kan du fråga?\n\nAnsvarig läkare: [FYLL I: namn]\nSjuksköterska/kontaktperson: [FYLL I: namn]\nTelefon: [FYLL I: prövningsspecifik uppgift]\n\nDu får fråga hur många gånger du vill.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Vad tycker du?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Detta dokumenterar barnets inställning och är inte ett juridiskt samtycke. Fyll i på det sätt som passar barnet och dokumentera barnets uttryckta eller observerade inställning.]\n\n□ Jag vill vara med.\n□ Jag vill inte vara med.\n□ Jag är osäker och vill prata mer.\n□ Jag kan inte visa tydligt vad jag tycker just nu.\n\nBarnets egna ord, tecken eller beteende: [FYLL I: prövningsspecifik uppgift]\nHjälp eller kommunikationssätt som användes: [FYLL I: prövningsspecifik uppgift]\n\n| Barnets namn | Barnets underskrift eller märke, om barnet vill och kan | Datum |\n|  |  |  |\n\nJag intygar att barnet fick information anpassad till ålder och mognad, kunde ställa frågor och inte uttryckte motstånd mot deltagandet / uttryckte följande motstånd: [FYLL I: prövningsspecifik uppgift].\n\n| Underskrift av den som informerade barnet | Namn och funktion | Datum |\n|  |  |  |",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section, Standard table"
+  }
+ ]
+}

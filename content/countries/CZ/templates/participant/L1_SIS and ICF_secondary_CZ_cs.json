@@ -1,0 +1,86 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Secondary and Future Use of Data or Biosamples",
+  "doc_name_local": "Informace a souhlas s budoucím nebo sekundárním použitím údajů a biologických vzorků",
+  "target_country": "Czech Republic",
+  "country_code": "CZ",
+  "target_language": "Czech",
+  "language_code": "cs",
+  "doc_type": "secondary_use",
+  "file_name": "L1_SIS and ICF_secondary",
+  "sort_order": 8,
+  "description": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - verze 1.0 - [date]",
+   "Číslo protokolu: [doplňte] | EU CT číslo: [doplňte]",
+   "Identifikace klinického hodnocení: [doplňte] | verze dokumentu: [doplňte]"
+  ],
+  "info_table": [
+   "Celý název klinického hodnocení",
+   "Zkrácený název klinického hodnocení",
+   "Číslo protokolu [doplňte verzi a datum]",
+   "EU CT číslo",
+   "Zadavatel [včetně úplné adresy]",
+   "Hlavní zkoušející",
+   "Název pracoviště",
+   "Adresa pracoviště",
+   "Identifikace sbírky / biobanky, pokud je relevantní"
+  ],
+  "content_instructions": "Použijte jako samostatný, zcela dobrovolný dokument pro uchovávání nebo použití údajů, biologických vzorků či genetického materiálu mimo povinné účely hlavního klinického hodnocení. Odmítnutí nebo pozdější odvolání tohoto souhlasu nesmí ovlivnit účast v hlavním hodnocení, léčbu, péči, odškodnění ani jiné výhody. Zachovejte pouze identifikaci hlavního hodnocení a odstraňte obecné části o hodnoceném přípravku, randomizaci, návštěvách, léčebných alternativách a hlavních studijních rizicích. Přesně vymezte, jaké údaje a vzorky budou použity, zda jsou zbytkové, dříve odebrané nebo nově odebírané, zdroj a období, genetické nebo genomické analýzy, propojení s jinými databázemi, účel nebo oblast budoucího výzkumu, správce sbírky, místo a dobu uchování, kódování či anonymizaci, příjemce, podmínky přístupu, mezinárodní předání, publikaci, zničení a nakládání po odvolání souhlasu. Podle požadavků SÚKL u biologických vzorků uveďte dobu uchování, zda zůstanou pseudonymizované nebo budou plně anonymizované, a primární účel budoucího výzkumu. Základní souhlas s popsaným budoucím nebo sekundárním použitím potvrďte jedním podpisem a datem. Pouze skutečně nezávislé volitelné rozhodnutí, které lze přijmout nebo odmítnout bez vlivu na základní použití a ostatní volby, například samostatně volitelnou genetickou nebo genomickou analýzu, nový dodatečný odběr, budoucí kontakt nebo sdělení individuálních či náhodných nálezů, opatřete vlastní volbou Ano/Ne, podpisem a datem. Pokud jsou použití údajů a použití biologických vzorků nabízeny jako dvě skutečně nezávislá rozhodnutí, musí mít každé vlastní podpis a datum. V jedné vygenerované verzi ponechte pouze podpisovou cestu odpovídající cílové populaci: samostatně souhlasící dospělý, rodič nebo zákonný zástupce dítěte, nebo zákonně ustanovený zástupce dospělého. Účastník s možností porozumět musí dostat přizpůsobené informace a jeho nesouhlas musí být respektován. Samostatné sdělení ke zpracování osobních údajů musí popsat správce, právní základy, práva, předání a kontakty. Zachovejte EU CT číslo, český etický kontakt pouze e-mailem a datovaný podepsaný stejnopis. Rozsah konečného samostatného dokumentu nesmí přesáhnout 4 strany.",
+  "styling_instructions": "Dokument musí být samostatný, stručný a vizuálně oddělený od hlavního informovaného souhlasu. Použijte přehledné nadpisy, jednoduché tabulky pro druhy údajů a vzorků, dobu uchování a příjemce a přehlednou skupinu voleb. Základní souhlas potvrďte jednou podpisovou částí. Každou ponechanou skutečně nezávislou volitelnou volbu opatřete vlastním podpisem a datem. V konečné verzi ponechte pouze jednu podpisovou cestu odpovídající cílové populaci. Použijte standardní velikost písma, například Times New Roman 12 nebo Arial 11. Každá strana musí obsahovat identifikaci hlavního klinického hodnocení, EU CT číslo, verzi a datum. Před finalizací odstraňte pokyny, nevybrané alternativy a neaplikovatelné podpisové cesty."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMACE A SOUHLAS S BUDOUCÍM NEBO SEKUNDÁRNÍM POUŽITÍM ÚDAJŮ A BIOLOGICKÝCH VZORKŮ</b>\n\nTento dokument se týká pouze použití údajů nebo vzorků mimo povinné účely hlavního klinického hodnocení [název, číslo protokolu, EU CT číslo].\n\n<b>Pokyn pro zpracovatele – výběr cílové a podpisové cesty:</b> Zvolte jednu cílovou populaci a odpovídající podpisovou cestu. V celém dokumentu důsledně upravte označení osoby poskytující souhlas a účastníka; pokud nejde o tutéž osobu, nesměšujte jejich role. Ostatní cílové a podpisové cesty před finalizací odstraňte.\n\n• samostatně souhlasící dospělý účastník;\n• rodič nebo zákonný zástupce nezletilého účastníka;\n• zákonně ustanovený zástupce dospělého účastníka neschopného souhlasu;\n• účastník dostávající přizpůsobené informace a vyjadřující vlastní vůli.\n\nRozhodnutí je zcela dobrovolné. Odmítnutí nebo pozdější odvolání souhlasu neovlivní účast v hlavním klinickém hodnocení, běžnou léčbu, zdravotní péči ani náhrady.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Jaké údaje a vzorky chceme použít?</b>\n\n<b>Údaje:</b>\n• [konkrétní zdravotní a studijní údaje]\n• [výsledky vyšetření, snímky, dotazníky, genetické údaje]\n• [údaje z jiných databází a způsob propojení]\n\n<b>Biologické vzorky:</b>\n• typ: [krev, tkáň, DNA, RNA, jiný materiál]\n• zdroj: [zbytkový materiál z hlavního hodnocení / dříve archivovaný materiál / nový dodatečný odběr]\n• množství: [doplňte]\n• období získání: [doplňte]\n\n<b>Podmíněný modul – nový dodatečný odběr:</b>\nPopište přesný postup, množství, četnost, fyzická rizika, nepohodlí a skutečnost, že odmítnutí neovlivní hlavní hodnocení. Tento odběr musí mít samostatnou volbu Ano/Ne, která bude potvrzena společným podpisem pro všechna označená rozhodnutí.\n\n<b>Pokyn pro zpracovatele:</b> Neuvádějte obecné kategorie, které se nepoužijí. Povinné údaje a vzorky hlavního hodnocení do tohoto dokumentu nepřenášejte.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Pro jaký další výzkum mohou být údaje a vzorky použity?</b>\n\nÚdaje a vzorky mohou být použity pro [konkrétní onemocnění / léčbu / skupinu onemocnění / obecně zdravotnický výzkum: zvolte nejužší prakticky možný rozsah].\n\nBudoucí výzkumné otázky mohou být [již známé a uvedené / dosud neznámé v rámci popsané oblasti]. Použití může zahrnovat [biomarkery / genetické analýzy / genomické analýzy / validaci metod / propojení údajů].\n\nNebudou povoleny tyto účely: [např. reprodukční klonování, neurčené komerční použití, jiné výslovně vyloučené oblasti].\n\n<b>Genetické a genomické analýzy:</b>\nPopište, zda se zkoumají jednotlivé geny, panel genů, exom, genom nebo jiné dědičné informace, jaký je účel a zda mohou vzniknout údaje významné pro rodinu. Je-li genetická analýza skutečně nezávislou volbou, použijte samostatný souhlas.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Kde a jak dlouho budou údaje a vzorky uchovávány?</b>\n\nSprávce sbírky / biobanky: [název, adresa a odpovědná osoba]\nMísto uchování údajů: [místo a země]\nMísto uchování vzorků: [místo a země]\nDoba uchování údajů: [konkrétní doba nebo objektivní kritérium]\nDoba uchování vzorků: [konkrétní doba]\n\nÚdaje a vzorky budou [pseudonymizované – označené kódem a stále spojitelné přes klíč / plně anonymizované – bez praktické možnosti zpětného spojení]. Uveďte, kdy a kdo může provést anonymizaci.\n\nPo uplynutí doby budou údaje a vzorky [zničeny / anonymizovány / uchovány podle jiného popsaného pravidla]. Uveďte postup a odpovědnou organizaci.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Kdo může získat přístup nebo materiál?</b>\n\nPřístup mohou získat pouze schválené výzkumné projekty a příjemci, například [zadavatel, akademické instituce, laboratoře, spolupracující společnosti, správci databází].\n\nŽádosti posuzuje [výbor / správce], který ověřuje soulad s rozsahem souhlasu, etikou, ochranou údajů a vědeckým účelem. Příjemci musí chránit důvěrnost a nesmějí se pokoušet zjistit totožnost účastníka.\n\n<b>Předání mimo Evropský hospodářský prostor:</b>\nKonkrétní země: [doplňte]. Účel: [doplňte]. Záruky ochrany údajů: [doplňte podle samostatného sdělení]. Nevytvářejte samostatnou volbu pouze pro právní mechanismus předání; samostatná volba je vhodná jen tehdy, když lze skutečně nezávisle odmítnout celou aktivitu nebo konkrétní zemi.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Může účastník očekávat osobní přínos a jaká jsou rizika?</b>\n\nNeočekává se přímý zdravotní přínos. Výzkum může přinést poznatky pro budoucí pacienty nebo vývoj léčby, ale není jisté, zda k tomu dojde.\n\n<b>Rizika:</b>\n• ztráta důvěrnosti nebo nechtěné opětovné rozpoznání;\n• citlivost genetických nebo rodinných informací;\n• fyzická rizika pouze tehdy, pokud je plánován nový dodatečný odběr;\n• [jiná konkrétní rizika].\n\n<b>Individuální nebo náhodné nálezy:</b>\nVyberte a popište: [nebudou aktivně vyhledávány ani vraceny / mohou být vráceny pouze klinicky významné a ověřitelné nálezy / účastník může samostatně zvolit, zda chce být kontaktován]. Uveďte, kdo nález posoudí, kdo jej sdělí, zda je potřebné potvrzení v akreditované laboratoři a jaké mohou být důsledky pro rodinu.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Lze souhlas později odvolat?</b>\n\nAno. Souhlas lze odvolat kontaktováním [jméno / pracoviště / e-mail / telefon]. Nové použití identifikovatelných nebo pseudonymizovaných údajů a zbývajících vzorků se zastaví od okamžiku, kdy je odvolání prakticky zpracováno, v rozsahu dovoleném právními pravidly.\n\nNelze vždy odstranit nebo zničit:\n• údaje nebo vzorky již plně anonymizované;\n• vzorky již spotřebované;\n• výsledky již vytvořené, zveřejněné nebo zahrnuté do souhrnných analýz;\n• údaje, které musí být uchovány kvůli zákonné povinnosti nebo spolehlivosti již provedeného výzkumu.\n\nPopište konkrétní postup destrukce zbývajícího identifikovatelného materiálu a dobu potřebnou k provedení žádosti.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Jak budou chráněny osobní údaje?</b>\n\nSamostatné sdělení ke zpracování osobních údajů uvádí správce, právní základy, účely, kategorie údajů, příjemce, dobu uchování, předání mimo EHP, práva a kontakty.\n\nÚdaje budou zpravidla označeny kódem. Klíč ke kódu zůstane na [místo] a přístup bude omezen. Pro kontrolu souladu se souhlasem a právními pravidly mohou mít nezbytný přístup členové studijního týmu, monitor, auditoři, regulační orgány a etická komise; jsou vázáni mlčenlivostí.\n\nVýsledky budou zveřejněny pouze v podobě, která běžně neumožní rozpoznat účastníka. Účastník může podat stížnost u Úřadu pro ochranu osobních údajů.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Kontakty a vztah k hlavnímu klinickému hodnocení</b>\n\nKontakt pro otázky, odvolání souhlasu nebo žádost o zničení vzorků: [jméno, pracoviště, telefon, e-mail]\nKontakt pro ochranu osobních údajů: [správce / pověřenec, kontakt]\nEtická komise – otázky o právech: [název], e-mail [eticka.komise@sukl.gov.cz nebo konkrétní e-mail]. U etické komise neuvádějte telefonní číslo.\n\nHlavní klinické hodnocení: [celý název]\nČíslo protokolu: [doplňte]\nEU CT číslo: [doplňte]\n\nOdmítnutí tohoto dokumentu nemění žádný souhlas ani povinnost v hlavním hodnocení.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>SOUHLAS A SAMOSTATNÁ ROZHODNUTÍ</b>\n\nPotvrzuji, že jsem obdržel/a informace o budoucím nebo sekundárním použití, měl/a jsem možnost klást otázky a dostatek času k rozhodnutí. Souhlasím s nezbytným oprávněným přístupem ke zdrojové dokumentaci pro kontrolu tohoto použití v rozsahu popsaném v informacích. Rozumím tomu, že tento souhlas je dobrovolný, lze jej odvolat a odmítnutí neovlivní hlavní klinické hodnocení ani péči.\n\n<b>Pokyn pro zpracovatele:</b> Ponechte pouze aplikovatelné volby. Základní popsané použití údajů a/nebo biologických vzorků potvrďte jedním podpisem a datem v příslušné podpisové cestě. Pouze volbu, kterou lze přijmout nebo odmítnout zcela nezávisle na základním použití a na ostatních volbách, opatřete vlastní volbou Ano/Ne, podpisem a datem. Pokud volba není skutečně nezávislá, zahrňte ji do základního souhlasu nebo ji odstraňte.\n\n<b>Základní volba – popsané budoucí nebo sekundární použití:</b>\nSouhlasím s popsaným použitím [údajů / biologických vzorků / údajů a biologických vzorků – ponechte relevantní].\n\nAno □    Ne □\n\n<b>Pokyn pro zpracovatele:</b> Pokud lze použití údajů a použití biologických vzorků přijmout nebo odmítnout nezávisle na sobě, rozdělte je na dvě samostatné volby a ke každé přidejte vlastní podpis a datum.\n\n<b>Samostatná volba 1 – genetické nebo genomické analýzy, pouze pokud jsou skutečně nezávislé:</b>\nAno □    Ne □\nPodpis osoby poskytující souhlas: __________________  Datum: __________\n\n<b>Samostatná volba 2 – nový dodatečný odběr [přesný výkon a množství], pouze pokud je skutečně nezávislý:</b>\nAno □    Ne □\nPodpis osoby poskytující souhlas: __________________  Datum: __________\n\n<b>Samostatná volba 3 – budoucí kontakt kvůli novému výzkumu, pouze pokud je skutečně nabízen jako nezávislá volba:</b>\nAno □    Ne □\nPreferovaný kontakt: __________________\nPodpis osoby poskytující souhlas: __________________  Datum: __________\n\n<b>Samostatná volba 4 – sdělení individuálních nebo náhodných nálezů, pouze pokud je skutečně nabízeno jako nezávislá volba:</b>\nAno □    Ne □\nPodpis osoby poskytující souhlas: __________________  Datum: __________\n\n<b>Pokyn pro zpracovatele – podpisová cesta:</b> Ponechte pouze jednu z následujících podpisových cest podle cílové populace a ostatní odstraňte. Přizpůsobená informace a vyjádření vůle účastníka nenahrazují právně účinný souhlas rodiče nebo zákonně ustanoveného zástupce, pokud je takový souhlas vyžadován.\n\n<b>Podpisová cesta A – samostatně souhlasící dospělý:</b>\nJméno účastníka: ______________________________\nPodpis potvrzující základní výše uvedené rozhodnutí: __________________  Datum: __________\n\n<b>Podpisová cesta B – rodič / zákonný zástupce dítěte:</b>\nJméno dítěte: __________________  Datum narození: __________\nRodič / zákonný zástupce: __________________\nPodpis potvrzující základní výše uvedené rozhodnutí: __________________  Datum: __________\n\n<b>Podmíněný druhý podpis – ponechte pouze tehdy, pokud jej vyžaduje schválený postup nebo právní postavení dítěte:</b>\nRodič / zákonný zástupce: __________________\nPodpis: __________________  Datum: __________\nVyjádření dítěte nebo dospívajícího podle věku a vyspělosti: □ souhlasí □ nesouhlasí □ nejisté □ nelze zjistit. Výslovný nesouhlas musí být respektován.\n\n<b>Podpisová cesta C – zákonně ustanovený zástupce dospělého:</b>\nJméno účastníka: __________________\nJméno zástupce: __________________\nVztah / právní oprávnění: __________________\nPodpis zástupce potvrzující základní výše uvedené rozhodnutí: __________________  Datum: __________\nVyjádření účastníka, je-li možné: □ souhlasí □ nesouhlasí □ nejisté □ nelze zjistit.\n\nProhlašuji, že jsem informace a jednotlivé volby vysvětlil/a srozumitelně, odpověděl/a na otázky a poskytl/a dostatek času k rozhodnutí.\n\nJméno a funkce osoby poskytující informace: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\nJeden datovaný a podepsaný stejnopis obdržela podepisující osoba a jeden stejnopis zůstává na pracovišti.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Standard table, Signature section"
+  }
+ ]
+}

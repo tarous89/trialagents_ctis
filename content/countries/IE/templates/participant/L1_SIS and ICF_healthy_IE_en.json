@@ -1,0 +1,173 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Consent Form - Healthy Adults",
+  "doc_name_local": "Study Participant Information Leaflet and Consent Form – Healthy Adults",
+  "target_country": "Ireland",
+  "country_code": "IE",
+  "target_language": "English",
+  "language_code": "en",
+  "doc_type": "healthy_adults",
+  "file_name": "L1_SIS and ICF_healthy",
+  "sort_order": "1",
+  "description": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protocol number: [fill in] | EU trial number: [fill in]"
+  ],
+  "info_table": [
+   "Trial title",
+   "Short trial title",
+   "Protocol number [add version and date]",
+   "EU trial number",
+   "Sponsor [with full address]",
+   "Principal investigator",
+   "Site name",
+   "Site address",
+   "Study identification number",
+   "Co-investigator(s) [names, titles and contact details]",
+   "Data controller(s)",
+   "Data Protection Officer [name and contact details]"
+  ],
+  "content_instructions": "Tailor the document to the specific clinical trial; remove sections and alternatives that do not apply and add study-specific information needed for an informed decision. Use clear Irish English, plain language consistent with National Adult Literacy Agency principles, approximately a 12-year-old reading level where feasible, short paragraphs, descriptive headings and bullets. Spell out abbreviations on first use and explain unavoidable medical or technical terms. Keep the document consistent with the approved protocol, CTIS Part II dossier and Irish site arrangements. Describe research versus usual care, purpose, why the person is invited, procedures in the order experienced, duration, risks and burdens, possible benefits, alternatives where relevant, voluntariness and withdrawal, insurance/injury arrangements, costs/reimbursement, results, contacts and ethics approval. For Irish data protection, identify the personal data used, sources, controllers/processors/recipients, retention, security, medical-record access, transfers outside the EEA and participant-facing safeguards, rights, Data Protection Officer and complaint route; use a simple study-specific explanation of the GDPR lawful basis. Include explicit consent for processing health-research data as the default for capable participants; remove it only where an approved Irish alternative or consent-declaration route applies. For biological samples used within the main trial, state sample type and amount, whether collection/use is mandatory or optional, purpose, coding, storage location and duration, analyses, recipients/transfers, security and what happens after analysis or withdrawal. For genetic or genomic testing within the main trial, state whether it is mandatory or optional, the type and purpose of testing, limits to anonymity, foreseeable privacy/family risks, handling of individual or incidental findings, storage/security, transfers and any relevant commercial involvement. Required study procedures, required biological samples and required genetic/genomic testing must be clearly described and, when applicable, included in the Required acknowledgements list with an individual confirmation checkbox. Use separate Yes/No choices only for genuinely optional activities that may be refused without preventing the main activity covered by the form. Do not include optional storage or secondary/future research beyond the approved main-trial purposes; that belongs only in the separate Secondary and Future Use template. Use only for capable healthy adults aged 18 years or older. Remove diagnosis, disease-treatment and standard-therapy language. Explain why healthy volunteers are needed and state clearly that no personal health benefit is expected. Describe screening, first-in-human/dose-escalation features where applicable, restrictions, unknown risks, payment and proportional payment on early discontinuation. Access to medical records or contact with a usual healthcare provider should be included only if the protocol genuinely requires it.",
+  "styling_instructions": "Use clear participant-facing question headings and short sections. Use a clean readable font such as Calibri, Arial, Verdana or Tahoma at about 12 point. Avoid block capitals and unnecessary legalistic text. Use tables or simple flow charts when they improve understanding. Present required acknowledgements as a clear list with one checkbox beside each applicable acknowledgement and the final dated signature. Do not use Yes/No choices or initials for required acknowledgements. Use Yes/No choices only for genuinely optional components. Where optional components are included, present their confirmation/signature separately from the main consent signature. Use separate fields for printed name, date and signature."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "You are invited to take part as a healthy adult volunteer in a clinical trial. Participation is research, not treatment. Before deciding, read this information carefully, ask questions and take the time you need. You may discuss it with family, friends or your GP if you wish.\n\nThis leaflet has four main parts:\nPart 1 – The Research Project\nPart 2 – Data Protection\nPart 3 – Costs, Funding and Approval\nPart 4 – Further Information",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Part 1 – The Research Project\nWhy is this study being done?</b>\n<b>Drafting note:</b> Do not describe participation as treatment.\nExplain in plain language why healthy adults are needed and the actual objectives, such as safety, tolerability, pharmacokinetics or pharmacodynamics. Mention first-in-human use, dose escalation or previous human exposure only when applicable.",
+   "section_style": "Section break, H2 document subline, H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>Why have I been invited to take part?</b>\nExplain that the person is invited as a healthy adult and how screening will confirm eligibility. State the expected number and characteristics of participants. Avoid disease-specific language.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "\n<b>Do I have to take part?  Can I withdraw?</b>\nExplain:\n· that participation is <b>voluntary</b>;\n· that a decision <u>not</u> to consent will have <b>no adverse consequences</b>; \n· that consent can be withdrawn at any time. Advise when and how consent can be <b>withdrawn</b> (e.g. before anonymisation of the data or publication of results) and the effect of any such withdrawal. \n· the process of withdrawal, i.e. <i>contact XXX on 01-XXXXXX</i> \n<b><u>SAMPLE TEXT: </u></b>\n<i>Example (for studies based in clinical care setting): You don't have to take part in this study.  It is entirely voluntary. If you decide not to take part  it won’t affect your current or future medical care. You can change your mind about taking part in the study and opt out at any time even if the study has started. If you decide to opt out, it won’t affect your current or future medical care. You don't have to give a reason for not taking part or for opting out. If you wish to opt out, please contact [insert name, role and contact details] who will be able to organise this for you. </i>\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>What happens if I change my mind?</b>\nParticipation is voluntary and you may withdraw at any time without giving a reason or affecting your usual care. Explain exactly how to withdraw and any safety implications or final safety visit offered.\n\nExplain what happens to information and samples already collected. Do not promise that all research data can automatically be deleted: some information may need to remain for trial integrity, safety reporting or legal/regulatory requirements. For remaining identifiable biological samples, explain whether they can be destroyed or otherwise withdrawn from further main-trial use, and the limits where samples have already been analysed, used up or results generated.",
+   "section_style": "H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>How will the study be carried out?</b>\nGive a general overview of screening, study groups, dosing, placebo/randomisation/blinding where applicable, inpatient stays, study visits, follow-up and total duration.",
+   "section_style": "H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>What will happen to me if I decide to take part?</b>\nDescribe screening and every study procedure in the order experienced, including who performs it, duration/location, dosing, blood/sample volumes, tests and safety monitoring. Explain any first-in-human or dose-escalation design in simple language. State all applicable restrictions involving medicines, supplements, alcohol, food/fasting, smoking, exercise, driving, contraception, donation or participation in other trials. Identify mandatory versus genuinely optional tests, samples and genetic testing.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>What will happen to my samples and genetic information?</b>\n<b>Drafting note:</b> Include this section whenever biological samples are collected, used or stored for the main trial. Remove only if no biological material is involved.\n\nState exactly which samples are collected or used, including existing clinical samples where applicable, the amount, when and how they are collected, and whether each sample or test is required for the main trial or genuinely optional. Explain the main-trial purpose, coding/pseudonymisation, storage location and duration, laboratories or other recipients, transfers outside the EEA, security, and whether samples are destroyed, used up or retained only for the approved main-trial purpose after analysis.\n\n<b>[Conditional – genetic/genomic testing within the main trial]</b>\nExplain the type and purpose of genetic testing in plain language; whether it is required or optional; the fact that DNA is unique and cannot be regarded as completely anonymous; foreseeable privacy, family or discrimination risks; whether individual results or incidental findings may be returned and how; any counselling available; storage/security and transfers of genetic material/data; and any relevant commercial involvement.\n\nDo not include storage or use for unspecified future or secondary research here. Use the separate Secondary and Future Use template for any activity outside the main-trial purposes.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>Are there any benefits to taking part?</b>\nState clearly that no personal health benefit is expected. Screening, medical checks, test results, payment and reimbursement are not health benefits. Explain only the potential contribution to research knowledge.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Are there any risks or inconveniences if I take part?</b>\nDescribe known and reasonably foreseeable intervention risks, unknown risks (especially first-in-human), dose-related risks, procedural burdens, restrictions and reproductive risks. Explain precautions and stopping rules. Include confidentiality/data risk and, when applicable, the genetic-testing risks described in the samples/genetics section.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>What happens if something goes wrong when I’m taking part in the study? </b><b><i>(May not apply)</i></b>\n· This paragraph may not apply to your study.\n· If your study involves a risk and you have measures in place if the risk does materialise, let the participant know; e.g. counselling in case of psychological distress, genetic counselling in case of certain genetic results, referral to a <b><u>named</u></b> specialist or <b><u>named</u></b> counselling service if something clinically relevant is discovered etc. \n· If your study is sponsored by a company, and they have signed an indemnity agreement, let the participant know.\n<b><u>SAMPLE TEXT</u></b>:\n<i>In the unlikely event that you are harmed in any way, the researchers on this study are covered by insurance through [INSERT DETAIL]. This insurance will cover you if you are injured as a result of taking part in this study.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>What happens if I decide not to take part?</b>\nParticipation is not treatment. Explain that declining means the person will not receive the investigational intervention or study procedures and will not affect their ordinary healthcare or other rights.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "\n<b>Will I be told the outcome of the study? Will I be told the results of any tests or investigations performed as part of this study that relate to me?</b>\n· Provide clarification whether: \n  · Any outcome from the research that would <b>impact directly or indirectly on the participant’s health</b> will be reported to him/her.\n  · The <b>results of the research</b> will be reported to the participant.\n\n· Important items to address in this section include: \n  · How the <b>results of the research</b> will be disseminated e.g. medical journals, medical conferences. \n<b><u>SAMPLE TEXT</u></b>:\n<i>The results of the study will be reported in medical/scientific journals and disclosed at medical/scientific conferences.  No information which reveals your identity will be disclosed. </i>\n",
+   "section_style": "H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "\n<b>Part 2 – Data Protection</b>\nThe following information should also be included as standard in Participant Information Leaflets, in order to ensure compliance with the 2018 Health Research Regulations. \n<b>What information about me (personal data) will be used as part of this study? Will my medical records be accessed?</b>\nProvide a description of the <b>personal data</b> to be collected and used. List each item you intend to record.\n· Important items to address in this section include: \n  · Whether the participant’s <b>medical records</b> will be accessed.\n  · Why <b>identifiable data</b> rather than <b>anonymised data</b> is required.\n",
+   "section_style": "Section break, H2 document subline, H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "\n<b>What will happen to my personal data?</b>\nOutline <b>what will happen</b> to the participant’s personal data. Include details of other data controllers, data processors, third parties that will have access to the personal data.\n· Confirm that arrangements are in place so that personal data will be processed <b>only as is necessary</b> to achieve the objective of the health research and will not be processed in a way that damage or distress will be caused to the participant.\n· State the <b>length of time</b> the personal data will be kept (in an identifiable or pseudonymised format) and why it is necessary to keep it for that period.\n· State the arrangements to be made for the personal data to be <b>archived or destroyed.</b>\n· State whether the personal data collected will leave the <b>State</b> and if so what countries it will go to and why it is going to those countries. \n· If applicable, state the existence of automated decision-making, including profiling and information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject.\n· State how long the signed Consent Form will be retained and why. If its retention period differs from the research data, explain this separately.\n· If personal data are transferred outside the EEA, identify the receiving organisation(s) and country/countries and explain in simple terms the safeguards used to protect the participant’s data and privacy rights. Avoid unnecessary operational detail in the participant-facing text.\n",
+   "section_style": "H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "\n<b>Who will access and use my personal data as part of this study? </b>\n· Name the <b>individuals</b> (i.e. PI, Co-Investigator, TCD/SJH study team etc.) who will access (or have access to) the participant’s personal data as part of this study including those who will access their medical records (if relevant).  \n· Identify any <b>healthcare providers</b> or other persons from whom personal data will be sought.\n· Specify any person to whom it is intended to <b>disclose</b> the personal data collected (whether in an identifiable, pseudonymised or anonymised form).\n· Will the data leave the site/Ireland/ the EU?\n",
+   "section_style": "H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "\n\n<b>Will my personal data be kept confidential? How will my data be kept safe? </b>\nOutline the <b>confidentiality and security measures</b> in relation to the participant’s data.\n· Describe the <b>data security arrangements</b> in place.\n· Confirm that a <b>Risk Assessment </b>of the <b>data protection implications</b> of the health research and /or a <b>Data Protection Impact Assessment</b> was carried out and an indication of the level of risk identified by either or both.\n· State whether any <b>presentation or publication</b> in relation to the study could identify the participant. \n· Confirm that the persons carrying out the research or otherwise having access to the personal data are <b>bound by a professional code of secrecy</b> (like doctors) or a <b>contractual code of secrecy</b> (that would mean disciplinary action for employees who disclosed or facilitated unauthorised access to the personal data) or some other arrangement that emphasises confidentiality (this may be applicable in the case of medical students).\n· Confirm that <b>training in data protection law</b> and practice has been provided to those individuals involved in carrying out the research.\n<b><u>SAMPLE TEXT:</u></b>\n<i>Your privacy is important to us. We take many steps to make sure that we protect your confidentiality and keep your data safe. Here are some examples of how we do this:</i>\n<i>However, if something did go wrong we …..</i>\n· Where applicable, explain any limits to confidentiality, for example where disclosure may be necessary because of a serious risk of harm, a professional duty, legal process or Garda investigation. Explain, where possible, how the participant would be informed about the action taken.\n",
+   "section_style": "H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "\n<b>What is the lawful basis to use my personal data?</b>\nState the <b>lawful basis</b> for the use of the participant’s personal data. \n· Identify the lawful basis for the processing of data by reference to Article 6 and Article 9 of the GDPR.\n\n<b><u>SAMPLE TEXT</u></b><b>:</b>\n<i>By law, we can use your personal information for scientific research in the public interest. [Insert the study-specific lawful bases under Articles 6 and 9 of the GDPR.] We will also ask for your explicit consent to use your data where required for this health research.</i>",
+   "section_style": "H3 module title, Standard table, Rich body text, Footnote/small text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "\n<b>What are my rights?</b>\n<i> You are entitled to:</i>\n· <i>The right to access to your data and receive a copy of it</i>\n· <i>The right to restrict or object to processing of your data</i>\n· <i>The right to object to any further processing of the information we hold about you (except where it is de-identified)</i>\n· <i>The right to have inaccurate information about you corrected or deleted</i>\n· <i>The right to receive your data in a portable format and to have it transferred to another data controller</i>\n· <i>The right to request deletion of your data</i>\n\n<i>By law you can exercise the following rights in relation to your personal data, unless the request would make it impossible or very difficult to conduct the research. You can exercise these rights by contacting [insert study contact details] or the Data Protection Officer at [insert organisation and contact details].</i>\n",
+   "section_style": "H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 20,
+   "section_content": "\n<b>Part 3 – Costs, Funding and Approval</b>\n<b>Has this study been approved by a research ethics committee? </b>\nProvide details of the <b>research ethics committee</b> that gave ethical approval to the research including:\n· The <b>name and contact details</b> of the committee that gave ethical approval to the research (does <u>not</u> need to be a named individual);\n· Whether any of the persons carrying out the research have <b>a link</b> to the committee or the institution behind the committee;\n· The <b>date</b> ethical approval was given by the committee; \n· <b>Reporting arrangements</b> agreed with the committee; \n· Any <b>conditions</b> attached to the research by the committee. \n<b><u>SAMPLE TEXT</u></b>:\n<i>Yes, this study has been approved by [insert name of Research Ethics Committee]. Approval was granted on [INSERT DATE].</i>\n",
+   "section_style": "Section break, H2 document subline, H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 21,
+   "section_content": "\n<b>Who is organising and funding this study? Will the results be used for commercial purposes?</b>\nOutline the funding for the study\nQuestions to consider answering in this paragraph:   \n· Who is conducting the research?  \n· Who is funding the research?  \n· Are you getting a grant to do this research?  \n· Are you conducting the research for the purposes of obtaining an academic qualification?  \n· Is a pharmaceutical company funding this study?  \n· Are you being paid to recruit participants to this study?\n· Will the results be disclosed for commercial purposes?\n· Disclose relevant industry or other third-party involvement and explain whether the sponsor, researchers, collaborators or commercial partners may benefit from the research or its results. If participant data or samples will be shared with such parties, describe that sharing consistently in the relevant data/sample sections.\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 22,
+   "section_content": "<b>Will I be paid, reimbursed or have any costs?</b>\nState the payment amount, basis and timing; proportional payment if participation ends early; reimbursement of travel or other reasonable expenses; and any participant costs. Do not describe payment as a benefit.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 23,
+   "section_content": "<b>Part 4 – Further Information</b>\n<b>Who should I contact for information or complaints? </b>\n<i>If you have any concerns or questions, you can contact:</i>\n· <i>Principal Investigator: [INSERT CONTACT DETAILS HERE].</i>\n· <i>Data Protection Officer: [INSERT NAME/ROLE AND CONTACT DETAILS].</i>\n<i>Under GDPR, if you are not satisfied with how your data is being processed, you have the right to lodge a complaint with the Data Protection Commission, 21 Fitzwilliam Square South, Dublin 2, Ireland. Website: www.dataprotection.ie.</i>",
+   "section_style": "H2 document subline, H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 24,
+   "section_content": "<b>Will I be contacted again?</b>\nState whether and when the study team will contact the participant again for study visits, safety follow-up, clinically relevant findings or study results. If the participant wishes to take part, explain the next consent step and that they will receive a copy of the information leaflet and signed Consent Form.",
+   "section_style": "H3 module title, Standard table, Rich body text"
+  },
+  {
+   "section_number": 25,
+   "section_content": "<b>CONSENT FORM</b>\n<b>Required acknowledgements</b>\n<b>Drafting note:</b> Keep only statements that apply. Delete non-applicable conditional statements. Do not use Yes/No choices or initials for required acknowledgements. Place one confirmation checkbox beside each applicable required acknowledgement.\n\n<b>Study title:</b> [INSERT DETAILS]\n<b>Participant name / study ID: [INSERT DETAILS]</b>\n\nBy signing below, I confirm that:\n☐ I have read and understood the Participant Information Leaflet. The information has been explained to me, I have had enough time to decide, and my questions have been answered.\n☐ I understand that taking part is voluntary and that I may stop at any time without giving a reason or affecting my ordinary healthcare or other rights.\n☐ I give informed consent to take part as a healthy volunteer after being informed about what participation involves, including the relevant risks, burdens and alternatives.\n☐ I understand how my personal data will be used for this study and how my privacy and confidentiality will be protected.\n<b>[Default – include for a capable participant unless an approved Irish alternative/consent-declaration route applies]</b> ☐ I give explicit consent for my health data to be processed for the research described in the Participant Information Leaflet.\n<b>[Conditional – required medical-record access]</b> ☐ I give permission for the required access to relevant medical records described in the Participant Information Leaflet.\n<b>[Conditional – required biological samples]</b> ☐ I agree to the required collection, use and storage of biological samples described in the Participant Information Leaflet.\n<b>[Conditional – required genetic/genomic testing]</b> ☐ I agree to the required genetic/genomic testing described in the Participant Information Leaflet.\n<b>[Conditional – other required study procedure]</b> ☐ [INSERT REQUIRED STUDY-SPECIFIC ACKNOWLEDGEMENT].\n☐ I will receive a copy of the Participant Information Leaflet and signed Consent Form.\n",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 26,
+   "section_content": "<b>Optional choices</b>\n<b>You may answer “No” to any choice below without refusing the main activity covered by this Consent Form.</b>\n<b>Drafting note:</b> Include only genuinely optional components that can be refused without preventing the main activity covered by this form.\n\n<b>[Conditional – optional biological sample/test within the main trial]</b>\nI agree to the optional [sample/test] described in the Participant Information Leaflet.\nYes ☐    No ☐\n\n<b>[Conditional – optional genetic/genomic testing within the main trial]</b>\nI agree to the optional genetic/genomic testing described in the Participant Information Leaflet.\nYes ☐    No ☐\n\n<b>[Conditional – optional audio/visual recording]</b>\nI agree to the optional audio and/or visual recording described in the Participant Information Leaflet.\nYes ☐    No ☐\n\n<b>[Add other genuinely optional main-trial procedures or permissions only where applicable.]</b>\n\n<b>[Conditional – include when one or more optional choices are present]</b>\n<b>Confirmation of optional choices</b>\nI confirm that the optional choices marked above reflect my decisions.\nParticipant name: ____________________  Date: __________  Signature: ____________________",
+   "section_style": "H3 module title, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 27,
+   "section_content": "<b>Signatures</b>\nAfter reading the Consent Form, if you have no further questions and agree to take part, please sign below.\n\n__________________________    ____________________    ____________________\nName of Participant             Date (Date/Month/Year)    Signature\n\n__________________________    ____________________    ____________________    ____________________\nName of person taking consent   Role/qualification        Date                  Signature\n\nA signed copy of the Consent Form and Participant Information Leaflet should be provided to the participant.",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

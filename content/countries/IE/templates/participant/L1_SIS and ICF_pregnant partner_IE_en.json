@@ -1,0 +1,108 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Partners",
+  "doc_name_local": "Pregnancy Follow-up Information and Consent Form – Pregnant Partner",
+  "target_country": "Ireland",
+  "country_code": "IE",
+  "target_language": "English",
+  "language_code": "en",
+  "doc_type": "pregnant_partners",
+  "file_name": "L1_SIS and ICF_pregnant partner",
+  "sort_order": "7",
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protocol number: [fill in] | EU trial number: [fill in]"
+  ],
+  "info_table": [
+   "Trial title",
+   "Short trial title",
+   "Protocol number [add version and date]",
+   "EU trial number",
+   "Sponsor [with full address]",
+   "Principal investigator",
+   "Site name",
+   "Site address",
+   "Study identification number",
+   "Co-investigator(s) [names, titles and contact details]",
+   "Data controller(s)",
+   "Data Protection Officer [name and contact details]"
+  ],
+  "content_instructions": "Use only for pregnancy follow-up of the pregnant partner of a trial participant. She is not a participant in the main clinical trial and gives consent for her own pregnancy follow-up and data. Explain paternal exposure, pregnancy-safety purpose, relevant risks/uncertainties, minimum maternal/pregnancy/outcome and applicable infant data, sources and follow-up period, healthcare-professional contact, relevant biological samples/genetic testing only if actually planned, focused data handling and withdrawal. Include explicit consent for processing health-research data as the default for a capable person; remove it only where an approved Irish alternative or consent-declaration route applies. Required follow-up activities belong in the Required acknowledgements list with an individual confirmation checkbox; use Yes/No only for genuinely optional activities. Do not repeat the trial participant’s main-trial information or include secondary/future use. Only for trials enrolling adolescents aged 12–15 where a pregnant partner may also be under 16, add a concise drafting note requiring confirmation of the appropriate Irish consent and health-data-processing pathway before use.",
+  "styling_instructions": "Use clear participant-facing question headings and short sections. Use a clean readable font such as Calibri, Arial, Verdana or Tahoma at about 12 point. Avoid block capitals and unnecessary legalistic text. Use tables or simple flow charts when they improve understanding. Present required acknowledgements as a clear list with one checkbox beside each applicable acknowledgement and the final dated signature. Do not use Yes/No choices or initials for required acknowledgements. Use Yes/No choices only for genuinely optional components. Where optional components are included, present their confirmation/signature separately from the main consent signature. Use separate fields for printed name, date and signature."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Pregnancy follow-up information for the pregnant partner</b>\n<b>Drafting note:</b> This form is addressed to the pregnant partner because the pregnancy/health information belongs to them. Do not ask the trial participant to consent on the partner’s behalf. Use this capable-person form for age 16+.\nYour partner is taking part in a clinical trial and was exposed to the investigational medicine/intervention around the time of conception. You are not taking part in the clinical trial and you are not receiving the investigational treatment. We are asking for your consent to collect information about your pregnancy and its outcome for safety follow-up.\n\nYour decision will not affect your healthcare, your child’s healthcare or your partner’s participation in the clinical trial.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Why are we collecting this information?</b>\nExplain why paternal/partner exposure could be relevant, what is known or uncertain about possible effects on conception, pregnancy, fetus or child, and why pregnancy outcomes are collected for safety evaluation.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>What information will be collected?</b>\nList the minimum maternal/pregnancy information, outcome information, relevant medicines/medical history and any proposed infant information. Explain how it will be linked to the trial participant’s coded exposure information without unnecessarily revealing either person’s identity.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>How will the information be collected and for how long?</b>\nState timepoints, exact follow-up duration, whether information comes directly from the pregnant partner or from relevant medical records/obstetrician/maternity hospital, and whether any additional examinations are involved.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>What are the risks, inconvenience and possible benefits?</b>\nExplain relevant known/uncertain reproductive risks and the inconvenience/privacy risk of follow-up. State that no personal medical benefit is expected from providing follow-up information unless there is a specific justified benefit.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>Will any samples or genetic tests be collected?</b>\n<b>Drafting note:</b> Remove if follow-up is data-only. If biological samples or genetic/genomic testing are proposed for the pregnant partner, state exactly what, why, amount, timing, required/optional status, coding, storage, recipients/transfers, genetic privacy/family risks, findings policy and what happens after analysis. Do not include future/secondary research here.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>What happens to your personal data?</b>\nExplain controllers, purposes, pseudonymisation/linkage, recipients, relevant medical-record access, study-specific lawful basis and any applicable explicit health-research consent, security, retention, transfers outside the EEA and safeguards, rights, Data Protection Officer and Data Protection Commission complaint route. Access to records must be limited to information relevant to pregnancy follow-up.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Can you say no or withdraw?</b>\nYes. Pregnancy follow-up is voluntary. Refusal or withdrawal does not affect your care, your child’s care or the trial participant’s study participation. Explain what happens to information/samples already collected and what new collection will stop.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>What about information about the baby after birth?</b>\nIf identifiable information about the child is collected after birth, describe the data and duration and obtain separate consent from the appropriate parent/guardian after birth. Do not rely automatically on the pregnant partner’s prenatal consent.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Costs, reimbursement, results and contacts</b>\nState any costs/reimbursement, whether relevant safety information will be shared, study contact details, Data Protection Officer and complaint route. Provide information the pregnant partner can share with their obstetrician about any relevant pregnancy risk regardless of whether they consent to follow-up.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>CONSENT TO PREGNANCY FOLLOW-UP – pregnant partner</b>\n<b>Required acknowledgements</b>\n<b>Drafting note:</b> Keep only statements that apply. Delete non-applicable conditional statements. Do not use Yes/No choices or initials for required acknowledgements. Place one confirmation checkbox beside each applicable required acknowledgement.\n\nBy signing below, I confirm that:\n☐ I have read and understood the pregnancy follow-up information, had time to decide and had my questions answered.\n☐ I voluntarily agree to the collection and use of my pregnancy and health information for the safety follow-up described.\n<b>[Default – include for a capable participant unless an approved Irish alternative/consent-declaration route applies]</b> ☐ I give explicit consent for my health data to be processed for the pregnancy follow-up described.\n☐ I agree that my coded pregnancy information may be linked with the trial participant’s coded study exposure information as described.\n<b>[Conditional – contact with obstetrician/other healthcare professional]</b> ☐ I agree that the study investigator may contact my [obstetrician/midwife/GP/maternity hospital] to obtain information relevant to my pregnancy and its outcome.\n<b>[Conditional – required relevant medical-record access]</b> ☐ I agree to the required access to the pregnancy-related medical information described in this leaflet.\n<b>[Conditional – required sample]</b> ☐ I agree to the required [sample] described for pregnancy follow-up.\n<b>[Conditional – required genetic/genomic testing]</b> ☐ I agree to the required genetic/genomic testing described for pregnancy follow-up.\n<b>[Conditional – other required pregnancy-follow-up activity]</b> ☐ [INSERT REQUIRED STUDY-SPECIFIC ACKNOWLEDGEMENT].\n",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>Optional pregnancy-follow-up choices</b>\n<b>You may answer “No” to any choice below and still take part in the remainder of the pregnancy follow-up.</b>\n<b>Drafting note:</b> Include only genuinely optional components that can be refused without preventing the pregnancy follow-up.\n\n<b>[Conditional – optional sample/test]</b> I agree to the optional [sample/test].  Yes ☐  No ☐\n<b>[Conditional – optional genetic/genomic testing]</b> I agree to the optional genetic/genomic testing.  Yes ☐  No ☐\n\n<b>[Conditional – include when one or more optional choices are present]</b>\n<b>Confirmation of optional choices</b>\nI confirm that the optional choices marked above reflect my decisions.\nPregnant partner name: ____________________  Date: __________  Signature: ____________________",
+   "section_style": "H3 module title, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>[Conditional – post-birth infant safety follow-up]</b>\n<b>Drafting note:</b> Use only after the child is born and only when identifiable infant health information is collected as part of protocol-defined pregnancy safety follow-up. Obtain consent from the appropriate parent/guardian; do not rely solely on consent given before birth. Keep only applicable required statements. Do not use Yes/No choices or initials for required statements; place one confirmation checkbox beside each applicable statement.\n\nBy signing below, I confirm that:\n☐ I have received information about the infant follow-up, including what information will be collected, from whom and for how long.\n☐ I consent to collection and use of my child’s health information for the infant safety follow-up described.\n<b>[Conditional – contact with child’s healthcare professional]</b> ☐ I agree that the study team may contact my child’s [paediatrician/GP/hospital] for the infant information described.\n\nParent/guardian name: ____________________  Relationship: ____________________\nDate: __________  Signature: ____________________",
+   "section_style": "H3 module title, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>Signatures</b>\nPregnant partner name: ____________________  Date: __________  Signature: ____________________\n\nPerson taking consent: ____________________  Role/qualification: ____________________\nDate: __________  Signature: ____________________\n\nA signed copy should be provided to the pregnant partner.\n\n<b>[Drafting note – only for trials enrolling adolescents aged 12–15 where a pregnant partner may also be under 16: Before using this form for a pregnant partner under 16, confirm with the Irish site/research ethics committee the appropriate consent and health-data-processing pathway. The pregnant partner is not a participant in the main clinical trial, so do not automatically apply the regulated-trial minor consent pathway. Adapt any assent, parent/guardian consent and signature fields to the approved pathway. The male trial participant cannot consent on her behalf.]</b>",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

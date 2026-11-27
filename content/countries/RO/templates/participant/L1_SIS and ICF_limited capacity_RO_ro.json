@@ -1,0 +1,84 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Informații adaptate pentru participantul adult cu capacitate limitată / Exprimarea voinței privind participarea",
+  "target_country": "Romania",
+  "country_code": "RO",
+  "target_language": "Romanian",
+  "language_code": "ro",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": 2,
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versiunea 1.0 - [date]",
+   "Numărul protocolului: [completați] | Numărul studiului UE: [completați]"
+  ],
+  "info_table": [
+   "Titlul complet al studiului clinic",
+   "Titlul scurt al studiului clinic",
+   "Numărul protocolului [adăugați versiunea și data]",
+   "Numărul studiului UE",
+   "Sponsor [cu adresa completă]",
+   "Investigator principal",
+   "Denumirea centrului",
+   "Adresa centrului"
+  ],
+  "content_instructions": "Utilizați numai pentru un adult care nu poate oferi singur consimțământ informat valabil, dar este în măsură să primească informații adaptate, să își formeze o opinie și să evalueze cel puțin informațiile relevante pentru participare. Documentul însoțește obligatoriu consimțământul reprezentantului legal și nu îl înlocuiește. Conform art. 15 alin. (3) din Ordinul nr. 3390/2022, pentru această categorie sunt obligatorii atât semnătura participantului, cât și semnătura reprezentantului legal pe formularul de consimțământ informat. Asigurați-vă că formularul reprezentantului legal conține ambele semnături; semnătura din acest document adaptat este suplimentară și documentează informarea și voința participantului. Folosiți propoziții scurte, materiale vizuale sau mijloace de comunicare asistată după nevoie. Explicați natura de cercetare, ce se va întâmpla, principalele riscuri/neplăceri, beneficiul posibil sau lipsa lui, alternativele, voluntaritatea, datele/probele și contactele. Participantul poate refuza sau se poate opune participării ori unei proceduri, iar opoziția sa trebuie respectată. Dacă își recapătă capacitatea de consimțământ, obțineți propriul consimțământ informat pentru continuare. Nu includeți cercetare viitoare/secundară. Nu oferiți stimulente; numai cheltuieli/pierderi de venit direct legate de participare pot fi compensate, conform Anexei nr. 7.",
+  "styling_instructions": "Folosiți un format mai scurt decât șablonul principal, cu propoziții scurte, font ușor de citit, spațiere generoasă și, dacă ajută, imagini, simboluri sau comunicare asistată. Evitați terminologia juridică în textul adresat participantului. Eliminați toate instrucțiunile neaplicabile."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMAȚII ADAPTATE PENTRU PARTICIPANTUL ADULT / EXPRIMAREA VOINȚEI PRIVIND PARTICIPAREA</b>\n\n<b>Instrucțiune pentru autor:</b> Adaptați textul la capacitatea reală de înțelegere și comunicare. Acest document se utilizează împreună cu formularul de consimțământ al reprezentantului legal.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Ce este acest studiu?</b>\n\nMedicii fac un studiu de cercetare pentru a afla mai multe despre [medicament/tratament]. Cercetarea nu este același lucru cu îngrijirea obișnuită.\n\nReprezentantul dumneavoastră legal primește informații complete și trebuie să își dea consimțământul. Medicul vă explică și dumneavoastră studiul, deoarece opinia dumneavoastră este importantă.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. De ce vi se propune participarea?</b>\n\nVi se propune pentru că [explicație simplă a afecțiunii/motivului]. Se studiază [denumire/descriere simplă]. Scopul este să aflăm [1–2 propoziții simple].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Ce se va întâmpla?</b>\n\nDacă participați:\n• veți primi [medicament/placebo/tratament] [cum și cât de des];\n• veți veni la aproximativ [număr] vizite;\n• veți face [principalele investigații];\n• [Dacă se recoltează sânge:] se vor recolta aproximativ [X] ml sânge în total;\n• participarea va dura aproximativ [durată].\n\n[Explicați simplu randomizarea/placebo/orbirea dacă se aplică.]\n\n<b>Module condiționale:</b> Explicați simplu probele biologice obligatorii, testarea moleculară/genetică obligatorie și procedurile dureroase sau solicitante. Pentru o activitate cu adevărat opțională, spuneți clar că poate fi refuzată fără pierderea participării principale.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Ce poate fi bun și ce poate fi neplăcut?</b>\n\n<b>Beneficiu posibil:</b> [Poate exista un beneficiu, dar nu este sigur / nu se așteaptă un beneficiu direct.]\n\n<b>Riscuri și neplăceri:</b>\n• [principalul risc în cuvinte simple]\n• [durere/neplăcere a procedurilor]\n• [timp/alte sarcini]\n\nDacă vă simțiți rău, vă doare ceva sau vă este teamă, spuneți imediat medicului sau unei persoane de încredere.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Puteți spune „nu” sau vă puteți opri?</b>\n\nDa. Puteți spune sau arăta că nu doriți să participați ori că doriți să vă opriți. Puteți refuza și o anumită procedură. Nu trebuie să explicați de ce. Îngrijirea dumneavoastră obișnuită nu va fi afectată.\n\nDacă nu sunteți sigur/ă, puteți cere mai multe explicații sau timp.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Ce se întâmplă cu datele și probele dumneavoastră?</b>\n\nInformațiile despre sănătatea dumneavoastră vor fi protejate și, de regulă, marcate cu un cod. [Dacă în studiu se folosesc probe biologice: Probele dumneavoastră vor fi, de asemenea, protejate și gestionate conform regulilor studiului.] Persoanele autorizate pot verifica dosarul medical pentru controlul studiului și trebuie să respecte confidențialitatea.\n\n[Păstrați numai dacă se aplică: Probele necesare studiului principal se folosesc numai pentru scopurile studiului principal descrise aici.] Cercetarea viitoare sau secundară necesită un document separat.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Ce altceva este important?</b>\n\nPentru studiu există [asigurare/mecanism de despăgubire]. Dacă studiul vă provoacă o vătămare, spuneți medicului.\n\nNu vi se oferă stimulente pentru a accepta participarea. [Dacă sunt prevăzute și aprobate pentru acest studiu: Cheltuielile direct legate de participare pot fi rambursate conform regulilor aprobate.]\n\nDacă apare o informație nouă importantă, medicul v-o va explica într-un mod pe care îl puteți înțelege.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Pe cine puteți întreba?</b>\n\nMedic investigator: [nume]\nTelefon: [număr]\nE-mail: [e-mail]\nPersoană de încredere aleasă de dumneavoastră: [dacă doriți]\nÎntrebări privind drepturile: [contact aprobat].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>EXPRIMAREA VOINȚEI PARTICIPANTULUI</b>\n\nInformațiile mi-au fost explicate într-un mod pe care îl pot înțelege. Am putut pune întrebări.\n\n□ Doresc să particip.\n□ Nu doresc să particip.\n□ Nu sunt sigur/ă și doresc mai multe explicații sau timp.\n\n<b>Instrucțiune pentru autor:</b> Pentru această categorie, art. 15 alin. (3) din Ordinul nr. 3390/2022 impune atât semnătura participantului, cât și semnătura reprezentantului legal pe formularul de consimțământ informat. Asigurați-vă că participantul semnează și formularul reprezentantului legal; acest bloc nu îl înlocuiește.\n\nNumele participantului: ______________________________\nSemnătura participantului: ______________________________\nData: ____ / ____ / ______\n\n<b>Activitate opțională independentă - dacă se aplică:</b>\nDoresc să particip la [test/procedură/recoltare/analiză]. DA □ NU □\nSemnătura participantului: __________________  Data: __________\n<b>Instrucțiune:</b> Consimțământul reprezentantului legal pentru aceeași activitate trebuie documentat separat atunci când este necesar.\n\n<b>Declarația medicului:</b>\nDeclar că sunt medic, membru al echipei de investigație și instruit corespunzător privind protocolul și buna practică în studiul clinic. Am adaptat explicațiile la capacitatea participantului, am verificat înțelegerea și am documentat voința sa. Opoziția participantului va fi respectată.\nNume: __________________  Semnătură: __________________  Data: __________\n\nConsimțământul juridic al reprezentantului legal este documentat în formularul separat, care trebuie să includă și semnătura participantului conform regulii de mai sus.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

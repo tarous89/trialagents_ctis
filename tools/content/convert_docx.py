@@ -1,15 +1,21 @@
 """Convert old variable-based CTIS DOCX templates to labelled-instruction templates.
 Every instruction becomes one run in character style 'TAInstruction' (italic, yellow highlight),
-text '[KEYWORD: text]'. Keywords (DE): EINFÜGEN, FALLS, SONST, AUSWAHL, HINWEIS."""
+text '[KEYWORD: text]'. Keywords: INSERT, IF, OTHERWISE, CHOOSE, NOTE."""
 import sys,zipfile,re,json,copy,shutil,os
 from lxml import etree
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; w='{%s}'%W
 V={}
-KV={'kv101':'Vollständiger Titel der klinischen Prüfung, wie im Prüfplan','kv102':'EU-Prüfungsnummer (EU CT number); bei Erstantrag vor Vergabe leer lassen und in CTIS ergänzen','kv103':'Sponsor mit vollständiger Anschrift','date':'Datum dieser Dokumentversion'}
-COND={'kv104':'in der Prüfung neue Proben von den Teilnehmenden entnommen werden','kv105':'vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden','kv106':'Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden','kv107':'in Deutschland Minderjährige eingeschlossen werden','kv108':'in Deutschland nicht einwilligungsfähige Erwachsene eingeschlossen werden','kv109':'Teilnehmende vorkommen können, deren Einwilligung von einem unparteiischen Zeugen bezeugt werden muss','kv110':'Teilnehmende in einer Notfallsituation eingeschlossen werden'}
+KV={'kv101':'Full title of the clinical trial, as in the protocol','kv102':'EU trial number; leave empty in an initial application until CTIS assigns it','kv103':'Sponsor with full address','date':'Date of this document version'}
+COND={'kv104':'the trial collects new samples from participants','kv105':'existing archived samples (e.g. diagnostic or biobank material) are used','kv106':'samples are stored for future use beyond the protocol','kv107':'minors are included in this Member State','kv108':'incapacitated adults are included in this Member State','kv109':'participants may need consent witnessed by an impartial witness','kv110':'participants are included in an emergency situation'}
+def fid(code): return 'v'+code[-3:]   # country-neutral id: v01100 -> v100
+def neutral(t):
+    t=t.replace('Germanyl','Germany')
+    t=re.sub(r'\b(in|into) (precise & technical )?German( language| Language)?\b',r'\1 \2the answer language',t)
+    t=re.sub(r'\bGerman\b','the answer language',t)
+    t=re.sub(r'\bGermany\b','the Member State concerned',t)
+    return t
 def desc(code):
-    v=V[code]['description'].strip()
-    return v
+    return neutral(V[code]['description'].strip())
 def instr_run(text,rpr_src=None):
     r=etree.Element(w+'r'); rp=etree.SubElement(r,w+'rPr')
     etree.SubElement(rp,w+'rStyle').set(w+'val','TAInstruction')
@@ -62,11 +68,11 @@ def inline_segments(s):
             kv,val,inner=m.group(1),m.group(2),m.group(3).strip()
             vm=re.fullmatch(r'\{\{(v\d{5})\}\}',inner)
             if val=='true':
-                segs.append(('i','[FALLS '+COND[kv]+' – EINFÜGEN: '+(desc(vm.group(1)) if vm else inner)+']',vm.group(1) if vm else None))
+                segs.append(('i','[IF '+COND[kv]+' – INSERT: '+(desc(vm.group(1)) if vm else inner)+']',fid(vm.group(1)) if vm else None))
             else:
-                segs.append(('i','[SONST: „'+(inner or 'N/A')+'“ eintragen]'))
-        elif m.group(4): segs.append(('i','[EINFÜGEN: '+desc(m.group(4))+']',m.group(4)))
-        else: segs.append(('i','[EINFÜGEN: '+KV[m.group(5)]+']',m.group(5)))
+                segs.append(('i','[OTHERWISE: enter "'+(inner or 'N/A')+'"]'))
+        elif m.group(4): segs.append(('i','[INSERT: '+desc(m.group(4))+']',fid(m.group(4))))
+        else: segs.append(('i','[INSERT: '+KV[m.group(5)]+']',m.group(5)))
     segs.append(('t',s[pos:]))
     return segs
 def make_p(text,ref_p,fid=None):
@@ -93,7 +99,7 @@ def convert(root):
             while j<len(ps) and ptext(ps[j]).strip()!='{{/}}': inner.append(ps[j]); j+=1
             end=ps[j] if j<len(ps) else None
             if val=='true':
-                p.addprevious(make_p('[AUSWAHL: Zutreffendes ankreuzen. „Ja“ nur, falls '+COND[kv]+'; sonst „Nein“.]',p,kv))
+                p.addprevious(make_p('[CHOOSE: tick "Yes" only if '+COND[kv]+'; otherwise tick "No".]',p,kv))
                 for q in inner:
                     for t_ in q.iter(w+'t'):
                         if t_.text: t_.text=t_.text.replace('☒','☐')
@@ -116,9 +122,9 @@ def convert(root):
         if not txt.strip(): rp.remove(h); continue
         if txt.lstrip().startswith('['):
             inner=txt.strip().strip('[]').strip()
-            kw='EINFÜGEN' if re.match(r'(Enter|Provide|provide)',inner) else 'HINWEIS'
+            kw='INSERT' if re.match(r'(Enter|Provide|provide)',inner) else 'NOTE'
             stats['auto']=stats.get('auto',0)+1
-            new=field(instr_run('['+kw+': '+inner+']',rp),'f%02d'%stats['auto'] if kw=='EINFÜGEN' else None)
+            new=field(instr_run('['+kw+': '+inner+']',rp),'f%02d'%stats['auto'] if kw=='INSERT' else None)
             r.addprevious(new); r.getparent().remove(r); stats['cyan']+=1
         else:
             rp.remove(h)  # checkbox options etc stay as form text
@@ -126,7 +132,7 @@ def convert(root):
     for t in ([] if KEEP_WORD_PLACEHOLDERS else list(body.iter(w+'t'))):
         if t.text and 'Click or tap here to enter text' in t.text:
             r=t.getparent(); label=context_label(r)
-            new=instr_run('[EINFÜGEN'+(': '+label if label else '')+']',r.find(w+'rPr'))
+            new=instr_run('[INSERT'+(': '+label if label else '')+']',r.find(w+'rPr'))
             r.addprevious(new); r.getparent().remove(r); stats['sdt_placeholders']+=1
             sdt=next((a for a in new.iterancestors(w+'sdt')),None)
             if sdt is not None:

@@ -1,0 +1,155 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Secondary and Future Use of Data or Biosamples",
+  "doc_name_local": "Informativa e consenso per l’uso secondario di dati e campioni biologici",
+  "target_country": "Italia",
+  "country_code": "IT",
+  "target_language": "Italiano",
+  "language_code": "it",
+  "doc_type": "secondary_use",
+  "file_name": "L1_SIS and ICF_secondary",
+  "sort_order": "8",
+  "description": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - Versione 1.0 - [date]",
+   "Numero di protocollo: [compilare] | Numero UE della sperimentazione: [compilare]"
+  ],
+  "info_table": [
+   "Titolo della sperimentazione",
+   "Titolo breve della sperimentazione in termini comprensibili per il partecipante",
+   "Numero di protocollo [aggiungere versione e data]",
+   "Numero UE della sperimentazione",
+   "Promotore/sponsor [con indirizzo completo]",
+   "Sperimentatore principale",
+   "Nome del centro di sperimentazione",
+   "Indirizzo del centro di sperimentazione",
+   "Titolo dell’attività opzionale di uso secondario",
+   "Versione e data del presente documento",
+   "Titolare/i del trattamento e relativi recapiti",
+   "Responsabile della protezione dei dati (RPD/DPO) e relativi recapiti",
+   "Struttura, laboratorio o biobanca di conservazione [se applicabile]",
+   "Comitato etico competente"
+  ],
+  "content_instructions": "Predisporre questo documento come modulo autonomo e facoltativo, collegato ma separato dal consenso alla sperimentazione principale. Il rifiuto o la revoca non devono influire sulla partecipazione alla sperimentazione principale, sulle cure, sui rapporti con il centro o sui benefici spettanti. Descrivere soltanto i dati, i campioni e le attività realmente previsti: categorie di dati; tipo, origine, quantità e modalità di raccolta dei campioni; eventuali prelievi aggiuntivi; analisi genetiche o genomiche; collegamenti con altre banche dati; finalità scientifiche; destinatari; sedi e durata di conservazione; codifica o pseudonimizzazione; accessi; trasferimenti; pubblicazioni; distruzione, cancellazione o anonimizzazione. Non usare formule indeterminate come “qualsiasi ricerca futura”. Scegliere e dichiarare chiaramente se il consenso riguarda: (a) un uso secondario già definito entro un ambito di ricerca delimitato; oppure (b) la sola conservazione e il ricontatto per ottenere un nuovo consenso specifico prima di una futura ricerca non ancora definita. Per dati genetici o campioni destinati ad analisi genetiche, includere le informazioni e le scelte richieste dalla disciplina italiana, comprese eventuali notizie inattese e il diritto di sapere o non sapere. Identificare correttamente i titolari, i responsabili, le basi giuridiche ai sensi degli articoli 6 e 9 GDPR, i diritti esercitabili e i relativi limiti; non confondere il consenso informato alla ricerca con la base giuridica privacy. Non presentare le deroghe eccezionali applicabili a soggetti deceduti o non contattabili come alternativa ordinaria al consenso del partecipante contattabile. Prevedere opzioni separate soltanto per attività realmente indipendenti, quali prelievo aggiuntivo, analisi genetica, collegamento con fonti esterne, ricontatto, restituzione di risultati individuali, uso brevettuale o trasferimenti basati sul consenso. Consegnare al partecipante una copia datata e firmata del documento.",
+  "styling_instructions": "Organizzare il documento nelle sezioni A-D: premessa, sintesi, approfondimenti e consenso. Mantenere la sintesi entro 1-2 pagine e usare linguaggio semplice, diretto e non tecnico. Eliminare tutti i moduli non applicabili invece di lasciarli come alternative nel documento finale. Utilizzare titoli in forma di domanda, brevi tabelle per dati/campioni e ciclo di vita, caselle di scelta chiaramente separate e campi distinti per nome, data, ora e firma del partecipante e della persona che raccoglie il consenso. Evidenziare graficamente che l’attività è facoltativa e separata dalla sperimentazione principale."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Questo documento è composto delle seguenti sezioni:\nA. PREMESSA\nB. SEZIONE INFORMATIVA. SINTESI: INFORMAZIONI CHIAVE\nC. SEZIONE INFORMATIVA. APPROFONDIMENTI\nD. SEZIONE ESPRESSIONE DEL CONSENSO\n\n<i>Questo documento riguarda esclusivamente un’attività facoltativa di raccolta, conservazione o uso di dati e/o campioni biologici al di fuori delle finalità obbligatorie della sperimentazione principale. La decisione relativa a questa attività è distinta dal consenso alla sperimentazione principale.</i>",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>A. PREMESSA</b>\n<i>Gentile Signora/Signore,</i>\n<i>Lei ha ricevuto o riceverà separatamente le informazioni sulla sperimentazione clinica indicata all’inizio di questo documento. Le chiediamo ora di valutare un’attività aggiuntiva e facoltativa che riguarda i Suoi dati e/o campioni biologici.</i>\n<i>Può accettare o rifiutare liberamente. Il rifiuto non modifica la Sua partecipazione alla sperimentazione principale, le cure che riceve, il rapporto con i medici o gli altri diritti e benefici che Le spettano. Anche dopo aver accettato potrà cambiare idea nei limiti descritti in questo documento.</i>\n<i>Legga attentamente le informazioni, faccia tutte le domande che ritiene utili e si prenda il tempo necessario per decidere. Può discuterne con il Suo medico, i familiari o una persona di fiducia.</i>\n\n<b>ISTRUZIONE PER LA REDAZIONE:</b> QUESTO DOCUMENTO DEVE INTEGRARE, NON DUPLICARE, IL FOGLIO INFORMATIVO DELLA SPERIMENTAZIONE PRINCIPALE. RIPORTARE SOLO LE INFORMAZIONI NECESSARIE PER LA DECISIONE SULL’USO SECONDARIO.",
+   "section_style": "Section break, H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>B. SEZIONE INFORMATIVA</b>\n<b>SINTESI: INFORMAZIONI CHIAVE</b> <i>(non più di 1-2 pagine)</i>\n<i>Questa sintesi descrive gli aspetti essenziali dell’attività facoltativa. La sezione C fornisce maggiori dettagli.</i>",
+   "section_style": "Section break, H2 document subline, Summary section, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b><i>- Perché mi viene chiesto questo consenso separato?</i></b>\n<i>Durante la sperimentazione principale vengono raccolti dati e/o campioni per gli scopi descritti nel relativo protocollo. Con questo documento Le chiediamo separatamente il permesso di [conservare/raccogliere/utilizzare] i seguenti dati e/o campioni anche per finalità scientifiche ulteriori rispetto a quelle obbligatorie della sperimentazione principale: [DESCRIVERE IN MODO BREVE E SPECIFICO].</i>\n<i>Questa attività non è necessaria per partecipare alla sperimentazione principale.</i>\n\nINDICARE SE LA RICHIESTA È RIVOLTA A TUTTI I PARTECIPANTI O SOLO A UN SOTTOGRUPPO E SPIEGARE IL CRITERIO IN TERMINI COMPRENSIBILI.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b><i>- Che cosa verrà raccolto o utilizzato?</i></b>\nCOMPILARE SOLTANTO LE VOCI APPLICABILI E CANCELLARE LE ALTRE.\n\n<b>Dati già raccolti nella sperimentazione principale:</b> [ELENCARE LE CATEGORIE, AD ES. DATI CLINICI, ESAMI DI LABORATORIO, IMMAGINI, DATI SU FARMACI, QUESTIONARI].\n<b>Dati aggiuntivi:</b> [SPECIFICARE QUALI DATI, DA CHI SARANNO RACCOLTI, CON QUALE FREQUENZA E DA QUALI FONTI].\n<b>Campioni residui:</b> [TIPO DI CAMPIONE, QUANTITÀ O FRAZIONE, ORIGINE, DATA/PERIODO DI RACCOLTA].\n<b>Campioni aggiuntivi:</b> [TIPO, QUANTITÀ, NUMERO DI PRELIEVI, MODALITÀ E MOMENTO DELLA RACCOLTA].\n<b>Materiali diagnostici:</b> [VETRINI, BLOCCHETTI, IMMAGINI, REFERTI O ALTRO; SPECIFICARE SE SARANNO RESTITUITI].\n<b>Dati genetici/genomici:</b> [TIPO DI ANALISI E INFORMAZIONI CHE POTREBBERO ESSERE GENERATE].\n<b>Collegamento con altre fonti:</b> [REGISTRI, CARTELLE CLINICHE, BANCHE DATI O ALTRE FONTI; INDICARE CHI EFFETTUA IL COLLEGAMENTO].\n\nNON DEFINIRE COME “ANONIMI” DATI O CAMPIONI CHE RESTANO COLLEGABILI AL PARTECIPANTE TRAMITE UN CODICE.",
+   "section_style": "H3 module title, Rich body text, H4 section title"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b><i>- Per quali ricerche potranno essere usati?</i></b>\n<b>ISTRUZIONE: SCEGLIERE UNA SOLA DELLE SEGUENTI ARCHITETTURE PRINCIPALI E CANCELLARE L’ALTRA.</b>\n\n<b>OPZIONE A — USO SECONDARIO GIÀ DEFINITO O DELIMITATO</b>\n<i>I dati e/o campioni potranno essere usati esclusivamente per ricerche riguardanti [DESCRIVERE PATOLOGIA, AREA SCIENTIFICA, OBIETTIVI O CATEGORIE DI PROGETTI IN MODO SUFFICIENTEMENTE DETERMINATO]. Le singole ricerche dovranno essere scientificamente valide, approvate secondo le procedure applicabili e coerenti con l’ambito qui descritto.</i>\nINDICARE SE POSSONO ESSERE SVILUPPATE DOMANDE DI RICERCA NON ANCORA DEFINITE, MA SOLO ENTRO L’AMBITO INDICATO.\n\n<b>OPZIONE B — SOLA CONSERVAZIONE E RICONTATTO</b>\n<i>I dati e/o campioni saranno conservati per un massimo di [PERIODO] senza essere utilizzati in una nuova ricerca non ancora descritta. Qualora venga proposto un nuovo progetto, potrà essere ricontattato/a e riceverà informazioni specifiche per decidere se prestare un nuovo consenso. Se non sarà possibile ottenere il nuovo consenso, i dati e/o campioni non saranno utilizzati per tale progetto, salvo una diversa base prevista dalla legge e le relative garanzie.</i>\n\nNON USARE FORMULE COME “PER QUALSIASI RICERCA FUTURA” SENZA LIMITI DI AMBITO, DURATA, GOVERNANCE E ACCESSO.",
+   "section_style": "H3 module title, Rich body text, H4 section title"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b><i>- Cosa comporta per me accettare?</i></b>\n<i>Se vengono usati soltanto dati o campioni già disponibili, non sono previste visite o procedure aggiuntive.</i>\n\nSE SONO PREVISTI PRELIEVI, IMMAGINI, QUESTIONARI O ALTRE ATTIVITÀ AGGIUNTIVE, DESCRIVERE SEPARATAMENTE:\n• numero, durata e luogo delle attività;\n• quantità di sangue o altro materiale raccolto;\n• eventuale anestesia, sedazione o misure per ridurre il dolore;\n• chi sostiene i costi;\n• quali attività sono esclusivamente di ricerca e non sarebbero effettuate altrimenti.\n\n<i>Potrà essere ricontattato/a soltanto per [SPECIFICARE: NUOVO CONSENSO, AGGIORNAMENTO DI DATI, RESTITUZIONE DI RISULTATI O ALTRO], se avrà espresso una scelta positiva separata.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b><i>- Quali sono i possibili benefici e rischi?</i></b>\n<b>Benefici</b>\n<i>Non è previsto un beneficio diretto per la Sua salute. Le conoscenze ottenute potrebbero contribuire alla ricerca futura e, in prospettiva, aiutare altre persone.</i>\n\n<b>Rischi e inconvenienti</b>\n<i>Il rischio principale è una perdita di riservatezza o un uso non autorizzato di informazioni che La riguardano. Il rischio viene ridotto mediante codici, separazione dei dati identificativi, limitazione degli accessi e misure di sicurezza, ma non può essere eliminato completamente.</i>\n<i>Le informazioni genetiche possono riguardare anche familiari biologici e possono avere implicazioni per la salute o le scelte riproduttive.</i>\nAGGIUNGERE I RISCHI FISICI SOLO SE SONO PREVISTE PROCEDURE AGGIUNTIVE, DESCRIVENDONE PROBABILITÀ, GRAVITÀ E MISURE DI RIDUZIONE.\nNON PRESENTARE COMPENSI, CONTROLLI O RISULTATI DI RICERCA COME BENEFICI CLINICI.",
+   "section_style": "H3 module title, Rich body text, H4 section title"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b><i>- Sono libero/a di rifiutare o cambiare idea?</i></b>\n<i>Sì. La scelta è libera e facoltativa. Può rifiutare senza fornire spiegazioni e senza conseguenze sulla sperimentazione principale o sulle cure.</i>\n<i>Può inoltre revocare il consenso all’attività opzionale contattando [NOME/RECAPITO]. Dopo la revoca non saranno avviate nuove attività basate su questo consenso. Gli effetti concreti della revoca sui dati e sui campioni già utilizzati sono spiegati nella sezione “Che cosa succede se revoco il consenso?”.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>C. SEZIONE INFORMATIVA. APPROFONDIMENTI</b>\n<b>1. Come saranno identificati e collegati i miei dati e campioni?</b>\n<i>I dati e i campioni saranno identificati con un codice. Il Suo nome e gli altri identificativi diretti saranno conservati separatamente dalla chiave che collega il codice alla Sua identità. Solo il personale espressamente autorizzato potrà utilizzare tale chiave quando necessario.</i>\nINDICARE:\n• chi genera e conserva il codice;\n• dove è conservata la chiave;\n• chi può ricondurre il codice all’identità;\n• per quanto tempo la chiave viene mantenuta;\n• se e quando dati o campioni saranno resi anonimi in modo irreversibile.\n\n<i>I dati codificati o pseudonimizzati restano dati personali finché qualcuno può ragionevolmente ricondurli a Lei.</i>",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>2. Chi decide quali progetti possono utilizzare i dati o i campioni?</b>\nDESCRIVERE LA GOVERNANCE REALE, INCLUSI:\n• titolare o soggetto responsabile della raccolta;\n• biobanca, comitato di accesso o altro organo di valutazione;\n• criteri scientifici, etici e di protezione dei dati;\n• obbligo di approvazione del comitato etico quando applicabile;\n• accordi che vietano usi ulteriori non autorizzati e trasferimenti a terzi;\n• modalità con cui il partecipante può chiedere informazioni sul progetto o sui progetti approvati.\n\n<i>Ogni progetto dovrà rispettare l’ambito di ricerca descritto in questo documento e la normativa applicabile.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>3. Dove e per quanto tempo saranno conservati?</b>\n<i>I dati saranno conservati presso [SEDE/SISTEMA] e i campioni presso [LABORATORIO/BIOBANCA, INDIRIZZO E RESPONSABILE]. Saranno conservati per [PERIODO DETERMINATO O CRITERIO CHIARO], calcolato da [EVENTO INIZIALE].</i>\nINDICARE SE DATI E CAMPIONI HANNO TEMPI DIVERSI.\nDESCRIVERE LE MISURE DI SICUREZZA RILEVANTI IN TERMINI COMPRENSIBILI, SENZA DETTAGLI CHE POSSANO COMPROMETTERLE. PER DATI GENETICI E CAMPIONI, PREVEDERE CIFRATURA O PSEUDONIMIZZAZIONE E TRATTAMENTO SEPARATO DAGLI IDENTIFICATIVI DIRETTI.\n<i>Alla scadenza, i dati e i campioni saranno [DISTRUTTI/CANCELLATI/RESTITUITI/RESI ANONIMI IN MODO IRREVERSIBILE], salvo obblighi di legge o una nuova scelta valida e documentata.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>4. Chi potrà accedere, ricevere o controllare i dati e i campioni?</b>\nELENCARE I SOGGETTI O LE CATEGORIE REALMENTE COINVOLTE E IL LORO RUOLO, AD ESEMPIO:\n• centro di sperimentazione e promotore;\n• laboratorio o biobanca;\n• università, IRCCS, enti e istituti di ricerca;\n• fornitori di servizi nominati responsabili del trattamento;\n• collaboratori in progetti congiunti;\n• autorità, comitato etico, monitor, revisori o ispettori autorizzati.\n\n<i>I soggetti che non devono conoscere la Sua identità riceveranno soltanto dati e/o campioni contrassegnati dal codice. L’accesso ai documenti originali potrà avvenire solo quando necessario e da parte di soggetti autorizzati, nel rispetto della riservatezza.</i>\nINDICARE SE I DESTINATARI SONO RESPONSABILI, CONTITOLARI O TITOLARI AUTONOMI E DOVE È DISPONIBILE L’ELENCO AGGIORNATO.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>5. I dati o i campioni saranno trasferiti fuori dallo Spazio economico europeo?</b>\n<i>[SÌ/NO]. Se sì, saranno trasferiti o resi accessibili a [PAESI, ORGANIZZAZIONI O CATEGORIE DI DESTINATARI] per [FINALITÀ].</i>\nINDICARE LA GARANZIA APPLICATA: DECISIONE DI ADEGUATEZZA, CLAUSOLE CONTRATTUALI STANDARD, ALTRA GARANZIA DELL’ARTICOLO 46 GDPR O, SOLO SE EFFETTIVAMENTE APPLICABILE, UNA DEROGA DELL’ARTICOLO 49. DESCRIVERE COME OTTENERE COPIA O INFORMAZIONI SULLE GARANZIE.\nNON INSERIRE UNA CASELLA DI CONSENSO AL TRASFERIMENTO SE IL TRASFERIMENTO È BASATO SU UN’ALTRA GARANZIA E NON È UNA SCELTA REALMENTE INDIPENDENTE.\n<i>I risultati potranno essere pubblicati o presentati solo in forma aggregata o comunque tale da non renderLa identificabile.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>6. Saranno effettuate analisi genetiche o genomiche? Potrebbero emergere risultati inattesi?</b>\nINSERIRE QUESTA SEZIONE SOLO SE APPLICABILE.\n<i>Le analisi previste sono [DESCRIVERE TIPO E SCOPO]. Potrebbero produrre informazioni sulla Sua salute presente o futura, sulla risposta a farmaci, sulla predisposizione a malattie o su caratteristiche condivise con familiari biologici.</i>\nINDICARE SE I RISULTATI INDIVIDUALI SARANNO VALIDATI E RESTITUITI. NON PROMETTERE LA RESTITUZIONE DI RISULTATI ESPLORATIVI O NON VALIDATI.\n<i>Potrebbero emergere risultati inattesi. Lei potrà esprimere separatamente se desidera ricevere soltanto informazioni che rappresentino un beneficio concreto e diretto in termini di terapia, prevenzione o consapevolezza delle scelte riproduttive, oppure se non desidera riceverle, nei limiti previsti dalla legge.</i>\nINDICARE CHI COMUNICHERÀ I RISULTATI, CON QUALI TEMPI, ATTRAVERSO QUALE PROFESSIONISTA E SE È PREVISTA CONSULENZA GENETICA. DESCRIVERE EVENTUALI LIMITI AL DIRITTO DI NON SAPERE E LE CONDIZIONI PER COMUNICAZIONI A SOGGETTI DELLA STESSA LINEA GENETICA, SE REALMENTE APPLICABILI.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>7. I risultati potrebbero essere brevettati o avere un uso commerciale?</b>\n<i>I risultati scientifici ottenuti potrebbero contribuire allo sviluppo di prodotti, metodi diagnostici, medicinali o altre invenzioni e potrebbero essere oggetto di brevetto o valorizzazione economica.</i>\n<i>La donazione dei dati o dei campioni non attribuisce automaticamente al partecipante diritti di proprietà intellettuale o una quota degli eventuali ricavi, salvo quanto diversamente previsto dalla legge o da accordi espressi.</i>\nSE UNA DOMANDA DI BREVETTO PUÒ AVERE PER OGGETTO O UTILIZZARE MATERIALE BIOLOGICO UMANO, DESCRIVERE L’USO E PREVEDERE UN CONSENSO ESPRESSO, LIBERO E INFORMATO SEPARATO.\nCANCELLARE L’INTERA SEZIONE SE NON È PREVISTO ALCUN USO BREVETTUALE O COMMERCIALE.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>8. Chi tratta i miei dati e su quale base?</b>\nINDICARE PER CIASCUN TITOLARE:\n• denominazione, indirizzo e contatti;\n• finalità e ruolo effettivo;\n• contatto del RPD/DPO;\n• base giuridica dell’articolo 6 GDPR;\n• condizione dell’articolo 9 GDPR per dati sanitari, genetici o altre categorie particolari.\n\n<i>Il consenso informato a questa attività opzionale è distinto dalla base giuridica utilizzata per ciascuna operazione di trattamento. Se il trattamento è fondato sul Suo consenso esplicito, potrà revocarlo in qualsiasi momento senza pregiudicare la liceità delle attività svolte prima della revoca.</i>\nNON INDICARE AUTOMATICAMENTE IL CONSENSO COME UNICA BASE GIURIDICA. VERIFICARE IL RUOLO DEL CENTRO, DEL PROMOTORE, DELLA BIOBANCA E DEGLI EVENTUALI PARTNER PER QUESTA SPECIFICA ATTIVITÀ SECONDARIA.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>9. Quali sono i miei diritti e come posso esercitarli?</b>\n<i>Nei casi e nei limiti previsti dalla normativa, può chiedere l’accesso ai dati, la rettifica, la cancellazione, la limitazione del trattamento, l’opposizione e, quando applicabile, la portabilità. Può inoltre revocare i consensi prestati.</i>\n<i>Per esercitare i diritti può contattare [TITOLARE/RECAPITI] oppure [RPD/DPO]. Può proporre reclamo al Garante per la protezione dei dati personali o rivolgersi all’autorità giudiziaria.</i>\nDESCRIVERE IN MODO SPECIFICO EVENTUALI LIMITAZIONI APPLICABILI ALLA RICERCA SCIENTIFICA E LE GARANZIE SOSTITUTIVE. INDICARE COME IL CENTRO AIUTERÀ A COLLEGARE IL CODICE ALL’IDENTITÀ QUANDO IL PROMOTORE O ALTRI TITOLARI NON CONOSCONO DIRETTAMENTE IL NOME DEL PARTECIPANTE.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>10. Che cosa succede se revoco il consenso?</b>\n<i>Può revocare il consenso contattando [RECAPITO]. Dal momento in cui la revoca viene ricevuta, non saranno raccolti nuovi dati o campioni né avviati nuovi usi basati su tale consenso.</i>\n<i>I campioni residui ancora identificabili saranno [DISTRUTTI/RESTITUITI/RESI ANONIMI] e i dati ancora identificabili saranno [CANCELLATI/RESI ANONIMI], salvo gli obblighi di conservazione o altre condizioni previste dalla legge e descritte qui: [SPECIFICARE].</i>\n<i>La revoca non può eliminare ciò che è già stato utilizzato in analisi concluse, pubblicazioni o risultati aggregati; non consente inoltre di recuperare campioni già consumati o dati resi realmente anonimi in modo irreversibile. Indicare se e come saranno informati i destinatari ai quali i dati o campioni sono già stati trasferiti.</i>\nNON USARE UNA FORMULA GENERICA SE IL PROGETTO PREVEDE LIMITI ULTERIORI: DESCRIVERLI IN MODO CHIARO, PROPORZIONATO E GIURIDICAMENTE VERIFICATO.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b>11. Sono previsti costi, rimborsi, compensi o copertura per eventuali danni?</b>\n<i>Non sosterrà costi per l’attività opzionale e non riceverà un compenso per la messa a disposizione dei dati o dei campioni, salvo quanto specificato di seguito.</i>\nSE SONO PREVISTE VISITE O PROCEDURE AGGIUNTIVE, INDICARE EVENTUALI RIMBORSI, COSTI, COPERTURA ASSICURATIVA E MODALITÀ DI ASSISTENZA IN CASO DI DANNO.\nSE NON SONO PREVISTE PROCEDURE AGGIUNTIVE, DICHIARARLO E CANCELLARE I RIFERIMENTI A RISCHI FISICI E ASSICURAZIONE NON APPLICABILI.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 21,
+   "section_content": "<b>12. L’attività è stata valutata dal Comitato Etico e chi posso contattare?</b>\n<i>Il presente documento e l’attività descritta sono stati valutati dal Comitato Etico [DENOMINAZIONE] in data [DATA], quando richiesto.</i>\n<b>Per domande scientifiche o sulla raccolta dei campioni:</b> [NOME, RUOLO, TELEFONO, E-MAIL].\n<b>Per revocare il consenso o esercitare i diritti sui dati:</b> [TITOLARE/REFERENTE, TELEFONO, E-MAIL, INDIRIZZO].\n<b>Responsabile della protezione dei dati:</b> [RECAPITI].\n<b>Per segnalazioni indipendenti:</b> [COMITATO ETICO/DIREZIONE SANITARIA, SE APPLICABILE].\n\n______________________________   ___/___/______   _________   ____________________________\nNome della persona che ha consegnato l’informativa   Data   Ora   Firma",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  },
+  {
+   "section_number": 22,
+   "section_content": "<b>D. SEZIONE ESPRESSIONE DEL CONSENSO</b>\n<i>1 copia per il partecipante e 1 copia per il centro. Cancellare tutte le scelte non applicabili. Non raggruppare in un’unica casella attività che il partecipante può ragionevolmente scegliere separatamente.</i>\n\nTitolo della sperimentazione: _______________________________________________________________\nTitolo dell’attività opzionale: ______________________________________________________________\nNumero di protocollo, versione e data: _______________________________________________________\nNumero UE della sperimentazione: ____________________________________________________________\nPromotore/sponsor: _______________________________________________________________________\nCentro e Sperimentatore principale: __________________________________________________________\nVersione e data del presente documento: _____________________________________________________\n\nIo sottoscritto/a ______________________________________________________________\nnato/a a ______________________________________________ il ___/___/______\n\n<b>DICHIARO</b>\n▢ di aver ricevuto e letto le informazioni sull’attività facoltativa di uso secondario;\n▢ di aver compreso che questa scelta è separata dalla sperimentazione principale e che il rifiuto non avrà conseguenze sulle cure o sulla partecipazione alla sperimentazione;\n▢ di aver ricevuto spiegazioni sui dati e/o campioni interessati, sulle finalità, sulla durata, sui destinatari, sui rischi di riservatezza e sulle modalità di revoca;\n▢ di aver potuto fare domande e di aver ricevuto risposte soddisfacenti;\n▢ di aver avuto tempo sufficiente per decidere;\n▢ di aver ricevuto una copia datata e firmata del presente documento.\n\n<b>SCELTA PRINCIPALE — necessaria soltanto per aderire a questa attività opzionale</b>\n▢ ACCONSENTO   ▢ NON ACCONSENTO all’uso dei seguenti dati e/o campioni per le finalità e nei limiti descritti nel presente documento: [DESCRIZIONE SINTETICA].\n\n<b>SCELTE SEPARATE — inserire solo se realmente indipendenti</b>\n▢ ACCONSENTO   ▢ NON ACCONSENTO all’uso di dati già raccolti nella sperimentazione principale.\n▢ ACCONSENTO   ▢ NON ACCONSENTO all’uso di campioni residui già raccolti.\n▢ ACCONSENTO   ▢ NON ACCONSENTO al seguente prelievo o procedura aggiuntiva: [SPECIFICARE].\n▢ ACCONSENTO   ▢ NON ACCONSENTO alle analisi genetiche/genomiche descritte.\n▢ ACCONSENTO   ▢ NON ACCONSENTO al collegamento con [SPECIFICARE FONTE O BANCA DATI].\n▢ ACCONSENTO   ▢ NON ACCONSENTO alla conservazione fino a [DATA/PERIODO] esclusivamente per essere ricontattato/a e valutare un nuovo consenso specifico.\n▢ ACCONSENTO   ▢ NON ACCONSENTO a essere ricontattato/a per [NUOVO CONSENSO/AGGIORNAMENTO DATI/ALTRO].\n▢ ACCONSENTO   ▢ NON ACCONSENTO all’uso del materiale biologico ai fini di una domanda di brevetto, come descritto nel documento.\n▢ ACCONSENTO   ▢ NON ACCONSENTO al trasferimento in [PAESE/DESTINATARIO] basato sul mio consenso esplicito. <i>Inserire soltanto quando il consenso è la base effettiva del trasferimento e il rifiuto è una scelta praticabile.</i>\n\n<b>RISULTATI INDIVIDUALI E NOTIZIE INATTESE — solo se sono previste analisi genetiche o altre analisi potenzialmente informative</b>\n▢ DESIDERO   ▢ NON DESIDERO ricevere risultati individuali validati che possano offrire un beneficio concreto e diretto in termini di terapia o prevenzione.\n▢ DESIDERO   ▢ NON DESIDERO ricevere risultati individuali validati rilevanti per scelte riproduttive consapevoli.\n▢ DESIDERO   ▢ NON DESIDERO ricevere altre notizie inattese descritte nel documento: [SPECIFICARE].\n\n________________________________________   ___/___/______   _________   ________________________\nNome per esteso del partecipante                 Data              Ora              Firma\n\nSE IL PARTECIPANTE NON PUÒ LEGGERE, SCRIVERE O FIRMARE, UTILIZZARE IL MODULO NAZIONALE APPROPRIATO CON TESTIMONE IMPARZIALE. SE IL PARTECIPANTE È MINORE O NON HA CAPACITÀ DI PRESTARE IL CONSENSO, UTILIZZARE IL DOCUMENTO SPECIFICO PER RAPPRESENTANTE E, QUANDO APPLICABILE, L’ASSENSO DEL PARTECIPANTE.",
+   "section_style": "Section break, H2 document subline, Footnote/small text, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 23,
+   "section_content": "<b>DICHIARAZIONE DELLA PERSONA CHE HA FORNITO LE INFORMAZIONI E RACCOLTO IL CONSENSO</b>\n\nIo sottoscritto/a Prof./Dr./Dott.ssa __________________________________________, in qualità di [RUOLO],\n\n<b>DICHIARO</b>\n▢ di aver spiegato la natura facoltativa e separata dell’attività;\n▢ di aver descritto in modo comprensibile i dati e/o campioni interessati, le finalità, le procedure, i rischi, la conservazione, i destinatari, i trasferimenti e le modalità di revoca;\n▢ di aver verificato, per quanto possibile, che il partecipante abbia compreso le informazioni;\n▢ di aver dato tempo sufficiente per domande e riflessione;\n▢ di non aver esercitato coercizione o influenza indebita;\n▢ di aver registrato separatamente le scelte espresse dal partecipante;\n▢ di aver consegnato al partecipante una copia datata e firmata del documento.\n\n_____________________________________________________   _________\nLuogo e data                                                                  Ora\n\n_____________________________________________________   _________________________________\nNome e cognome in stampatello                                        Firma (e timbro, se previsto)\n\n<i>Il presente modulo deve essere conservato insieme alla relativa sezione informativa e collegato alla documentazione della sperimentazione principale senza sostituirne il consenso.</i>",
+   "section_style": "Section break, H2 document subline, Rich body text, Checkbox group, Signature section, Footnote/small text"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Participants",
+  "doc_name_local": "Information og samtykke til graviditetsopfølgning – gravid forsøgsdeltager",
+  "target_country": "Denmark",
+  "country_code": "DK",
+  "target_language": "Danish",
+  "language_code": "da",
+  "doc_type": "pregnant_participants",
+  "file_name": "L1_SIS and ICF_pregnancy",
+  "sort_order": "7",
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protokolnummer: [udfyld] | EU-forsøgsnummer: [udfyld]"
+  ],
+  "info_table": [
+   "Forsøgets titel",
+   "Forsøgets korte titel",
+   "Protokolnummer [tilføj version og dato]",
+   "EU-forsøgsnummer",
+   "Sponsor [med fuld adresse]",
+   "Forsøgsansvarlig (investigator)",
+   "Forsøgsstedets navn",
+   "Forsøgsstedets adresse",
+   "Forsøgsstedets telefonnummer og e-mail",
+   "Dokumentversion og dato",
+   "Forsøgsdeltagerens navn eller kode",
+   "Dato for konstateret graviditet",
+   "Forventet fødselstidspunkt"
+  ],
+  "content_instructions": "Brug kun til en kvindelig forsøgsdeltager, som er blevet gravid under hovedforsøget eller inden for den protokolbestemte periode efter sidste udsættelse. Dokumentet er et frivilligt supplement til den oprindelige deltagerinformation og samtykke og omfatter kun indsamling af oplysninger om graviditet, moderens helbred, graviditetsudfald og eventuel børneopfølgning. Det må ikke bruges som samtykke til fortsat forsøgsbehandling eller fortsatte forsøgsprocedurer under graviditeten. Hvis forsøgslægemidlet eller andre forsøgsinterventioner skal fortsætte under graviditeten, skal protokollen, risiko-benefit-begrundelsen og Part II-materialet udtrykkeligt dække gravide deltagere, og der skal anvendes den nødvendige separate re-information og samtykkeprocedure. Beskriv kun studiespecifikke kendte, mistænkte eller ukendte risici for den gravide, embryoet, fosteret eller barnet samt de konkrete konsekvenser for forsøgslægemiddel, afblinding, lægemidler og sikkerhedsopfølgning. Medtag kun nødvendige datakategorier, kilder, tidspunkter, kobling, adgang, modtagere, overførsler og opbevaring. Ekstra undersøgelser eller prøver må kun medtages, hvis de faktisk er protokolbeskrevne og godkendte, og skal beskrives fuldt ud med særskilt frivilligt valg. Hvis en sådan undersøgelse eller prøve medtages, skal den samme behørigt kvalificerede læge, der er autoriseret i Danmark, give den mundtlige information og modtage samtykket. Medtag ikke sekundær/fremtidig forskning. Samtykke under graviditeten omfatter ikke automatisk nye personoplysninger om barnet efter fødslen; planlagt børneopfølgning kræver særskilt samtykke efter fødslen fra den eller de personer, der har forældremyndigheden, efter danske regler. <i>[Redaktionsnote: Hvis personoplysninger eller biologisk materiale behandles i eller overføres til lande uden for EU/EØS, angiv de konkrete lande, formålet med hver behandling eller overførsel og de relevante garantier efter GDPR kapitel V. Tilføj ikke et særskilt Ja/Nej-valg alene for overførslen. Hvis overførslen kun sker som led i en reelt valgfri og uafhængig aktivitet, knyttes Ja/Nej-valget til selve aktiviteten og ikke til GDPR-overførselsmekanismen.]</i> Bevar redaktionsnoterne i denne skabelon. Alle instruktioner til skabelonbrugeren skal markeres som <i>[Redaktionsnote: ...]</i>. Redaktionsnoter, tomme alternativer og ikke-relevante moduler fjernes først fra det endelige deltagerdokument før udlevering til deltageren eller beslutningstageren.",
+  "styling_instructions": "Bevar skabelonens afsnitsstruktur og overskrifter. Angiv dokumentversion og dato ved hver ændring, og gentag protokolnummer, EU-forsøgsnummer, dokumentversion og dato i sidefoden. Brug korte afsnit, tydelige overskrifter og tabeller eller bokse, når det forbedrer forståelsen. Fjern alle redaktionsnoter, ikke-valgte alternativer og ikke-relevante tekstblokke før udlevering. Erklæringsafsnit skal have tydelige felter til navn, dato og underskrift eller anden meningsfuld dokumentation. Hold dokumentet fokuseret på graviditetsopfølgning og placer den separate børneerklæring på en ny side efter fødslen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Kære [navn]\n\nDu deltager eller har deltaget i det kliniske forsøg, der er angivet ovenfor. Du er blevet gravid under forsøget eller inden for [periode] efter din sidste dosis eller forsøgsrelaterede udsættelse.\n\nVi vil spørge, om vi må følge graviditeten og indsamle oplysninger om dit helbred og graviditetens udfald. [Hvis relevant: Efter fødslen vil vi særskilt spørge den eller de personer, der har forældremyndigheden, om oplysninger om barnets helbred.]\n\nDenne information supplerer din oprindelige deltagerinformation. Den erstatter ikke dit samtykke til hovedforsøget.\n\nDit valg om graviditetsopfølgning afgør ikke i sig selv, om du skal fortsætte eller stoppe forsøgslægemidlet eller andre forsøgsprocedurer. Det besluttes særskilt ud fra protokollen, sikkerheden og din lægelige behandling.\n\nDet er frivilligt at deltage i den forskningsmæssige graviditetsopfølgning. Lovpligtig sikkerhedsrapportering og eventuel snævert afgrænset obligatorisk opfølgning kan fortsætte uafhængigt af dette frivillige samtykke. Et nej eller en senere tilbagetrækning påvirker ikke din almindelige behandling.\n\nKontaktperson: [navn, titel, telefon og e-mail]\n[Hvis relevant: Akut kontakt: [indsæt].]",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Formål med graviditetsopfølgningen</b>\n\nVi ved måske ikke nok om virkningen af [forsøgslægemiddel/behandling/procedure] på en graviditet, embryoet, fosteret eller barnet.\n\nOplysningerne bruges til at:\n• vurdere sikkerheden ved [navn]\n• følge dit helbred under og efter graviditeten\n• dokumentere graviditetsudfald og eventuelle sikkerhedssignaler\n• opfylde relevante sikkerhedsrapporteringsforpligtelser\n• [andet konkret protokolbestemt formål]\n\nOplysningerne kobles til dine kodede oplysninger fra hovedforsøget om dosis, tidspunkt for udsættelse, behandlingsgruppe og relevante sikkerhedsoplysninger.\n\nDenne tilladelse omfatter ikke anden eller fremtidig forskning.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>Betydning for hovedforsøget</b>\n\n<b>Udfyld studiespecifikt og fjern ikke-relevante alternativer:</b>\n\nNår graviditeten er konstateret:\n• [forsøgslægemidlet stoppes straks / sættes på pause / fortsættes kun efter konkret lægelig og protokolmæssig vurdering]\n• [blindingen brydes, hvis det er nødvendigt for din eller fosterets sikkerhed]\n• [bestemte lægemidler eller procedurer stoppes eller ændres]\n• [du tilbydes nødvendige sikkerhedsundersøgelser]\n• [du fortsætter eller stopper andre dele af hovedforsøget]\n\nDin almindelige graviditetsbehandling varetages af [jordemoder, praktiserende læge, fødeafdeling eller specialist].\n\n<b>Vigtig begrænsning</b>\nDenne graviditetsopfølgning giver ikke i sig selv tilladelse til fortsat forsøgsbehandling under graviditeten.\n\n[Hvis protokollen tillader fortsat forsøgslægemiddel eller forsøgsintervention under graviditeten: Beskriv den særlige godkendte risiko-benefit-begrundelse, alle risici, alternativer og den separate re-samtykkeprocedure. Hvis dette ikke er fuldt dækket og godkendt, skal forsøgsinterventionen ikke fortsætte på grundlag af denne skabelon.]",
+   "section_style": "H3 module title, H4 section title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>Relevante risici</b>\n\nBeskriv kun kendte, mistænkte eller rimeligt mulige studiespecifikke risici:\n\n• risiko for dig: [indsæt]\n• risiko for embryo eller foster: [indsæt]\n• risiko for graviditetens forløb eller fødslen: [indsæt]\n• mulig risiko for barnet efter fødslen: [indsæt]\n• usikkerheder eller manglende viden: [indsæt]\n• konsekvenser ved stop eller ændring af [forsøgslægemiddel/anden behandling]: [indsæt]\n\nAngiv kilden til den vigtigste viden i lægmandssprog, fx erfaring fra dyr, tidligere graviditeter hos mennesker eller lægemidlets virkemåde. Undgå spekulative lister.\n\nDu skal straks kontakte [navn/telefon] ved [konkrete alarmsymptomer eller situationer].\n\nVed akutte problemer skal du søge almindelig akut hjælp og fortælle, at du deltager eller har deltaget i forsøget.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>Oplysninger, der indsamles</b>\n\n<b>Oplysninger fra hovedforsøget</b>\n• forsøgslægemiddel, dosis og datoer for udsættelse\n• behandlingsgruppe og eventuel afblinding\n• relevante andre lægemidler og behandlinger\n• relevante sygdomme, undersøgelser og bivirkninger\n• [andre nødvendige forsøgsoplysninger]\n\n<b>Oplysninger om dig og graviditeten</b>\n• nødvendige kontaktoplysninger\n• alder [brug kun fødselsdato, hvis nødvendigt]\n• dato for positiv test, sidste menstruation, anslået befrugtning og forventet fødselstidspunkt\n• relevante tidligere graviditeter og helbredsforhold\n• relevante lægemidler og behandlinger\n• graviditetens forløb og komplikationer\n• relevante resultater fra almindelige graviditetsundersøgelser\n• graviditetens udfald\n• oplysninger om fødsel og dit helbred efter fødslen\n• [andre strengt nødvendige oplysninger]\n\n<b>Oplysninger om barnet efter fødslen</b>\n[Behold kun hvis særskilt børneopfølgning er planlagt:]\n• graviditetsuge og helbred ved fødslen\n• [kun hvis nødvendigt: køn, fødselsvægt, længde og hovedomfang]\n• medfødte forhold, komplikationer og relevante behandlinger\n• helbred og udvikling til [alder/tidspunkt]\n\nFør fødslen behandles oplysninger om fosteret som en del af dine graviditetsoplysninger. Nye oplysninger om barnet efter fødslen indsamles først efter særskilt forældresamtykke.",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>Opfølgningens form og varighed</b>\n\nOplysningerne indsamles fra:\n• dig ved [besøg, telefon, video eller elektronisk spørgeskema]\n• dine kodede data i hovedforsøget\n• din patientjournal og supplerende systemer\n• [jordemoder, praktiserende læge, fødeafdeling eller hospital], hvis den nødvendige adgang eller tilladelse foreligger\n• [efter fødslen: barnets behandlende sundhedspersoner efter særskilt samtykke]\n\n| Tidspunkt | Oplysninger eller aktivitet | Kilde/kontaktform |\n| [indsæt] | [indsæt] | [indsæt] |\n\nDin graviditetsopfølgning slutter [konkret tidspunkt].\n\n[Hvis børneopfølgning planlægges: Barnets opfølgning slutter ved [X måneder/år].]\n\n<b>Ekstra graviditetsrelaterede forsøgsaktiviteter</b>\n[Hvis ingen ekstra aktiviteter: Skriv, at der ikke udføres ekstra forsøgsundersøgelser eller prøver ud over almindelig behandling og allerede godkendt sikkerhedsopfølgning.]\n\n[Kun hvis en ekstra undersøgelse eller prøve er protokolbeskrevet og godkendt: Beskriv præcist aktivitet, antal, mængde, tidspunkt, formål, risiko og om den kan fravælges uden konsekvens for anden opfølgning. Indsæt et særskilt ja/nej-valg i samtykkeerklæringen.]",
+   "section_style": "H3 module title, H4 section title, Rich body text, Standard table, Info/warning/note box"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>Behandling af dine oplysninger</b>\n\nDen/de dataansvarlige er [navn, adresse og kontakt]. Databeskyttelsesrådgiver eller privatlivskontakt: [kontakt].\n\nFormålet er [graviditetssikkerhed, lovpligtig sikkerhedsrapportering, kontrol og vurdering af forsøgets sikkerhed].\n\nDine graviditetsoplysninger mærkes med en kode og kobles til dine kodede oplysninger i hovedforsøget. Sponsor og andre modtagere får normalt ikke dit navn.\n\nOplysningerne kan modtages af [sponsor, CRO, laboratorier hvis relevant, sikkerhedsafdeling, kontrollører og myndigheder]. De opbevares i [periode eller objektivt kriterium].\n\nGodkendte kontrollører og Lægemiddelstyrelsen kan få adgang til nødvendige journaloplysninger som led i kontrol af forsøget.\n\n<i>[Redaktionsnote: Hvis personoplysninger eller biologisk materiale behandles i eller overføres til lande uden for EU/EØS, angiv de konkrete lande, formålet med hver behandling eller overførsel og de relevante garantier efter GDPR kapitel V. Tilføj ikke et særskilt Ja/Nej-valg alene for overførslen. Hvis overførslen kun sker som led i en reelt valgfri og uafhængig aktivitet, knyttes Ja/Nej-valget til selve aktiviteten og ikke til GDPR-overførselsmekanismen.]</i>\n\nBehandlingen sker efter GDPR og den danske databeskyttelseslov. Den fulde GDPR-information skal beskrive behandlingsgrundlag, rettigheder, kontaktvej og klageadgang til Datatilsynet.\n\nDenne erklæring er samtykke til den beskrevne graviditetsopfølgning og må ikke forveksles med et eventuelt særskilt dataretligt samtykke.",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Frivillighed og tilbagetrækning</b>\n\nJa. Du kan sige nej til graviditetsopfølgningen eller stoppe senere uden at give en grund.\n\nEt nej eller en tilbagetrækning påvirker ikke din almindelige graviditetsbehandling eller anden nødvendig behandling.\n\nHvis du stopper, indsamler vi ikke nye oplysninger til den frivillige forskningsmæssige graviditetsopfølgning.\n\nOplysninger, der allerede er indsamlet, kan fortsat blive brugt og opbevaret, når det er nødvendigt for sikkerhedsrapportering, kontrol, forsøgets pålidelighed eller lovpligtig dokumentation. Forklar de konkrete konsekvenser i GDPR-informationen.\n\nAt stoppe graviditetsopfølgningen er ikke automatisk det samme som at trække dit samtykke til hovedforsøget tilbage. Hvis du også vil stoppe hovedforsøget, skal du sige det særskilt.",
+   "section_style": "H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>Oplysninger om barnet efter fødslen</b>\n\n[Behold kun hvis opfølgning af barnet er planlagt.]\n\nDit samtykke under graviditeten giver ikke automatisk tilladelse til at indsamle nye personoplysninger om barnet efter fødslen.\n\nEfter fødslen skal den eller de personer, der har forældremyndigheden, modtage information og underskrive den særskilte erklæring nedenfor.\n\nVed fælles forældremyndighed skal begge forældremyndighedsindehavere som udgangspunkt samtykke. Hvis kun én har forældremyndigheden, skal dette dokumenteres. En eventuel fuldmagt skal følge den danske procedure.\n\nOplysninger om barnet bruges kun til den beskrevne opfølgning og ikke til fremtidig eller anden forskning.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Udgifter, mulig nytte og kontakt</b>\n\nDet koster dig [ikke noget/følgende udgifter] at deltage i opfølgningen.\n\n[Hvis relevant: Rimelige transportudgifter eller andre dokumenterede udgifter godtgøres efter [vilkår].]\n\nDu kan ikke regne med en personlig helbredsmæssig fordel. Opfølgningen kan bidrage til bedre viden om sikkerheden ved [navn].\n\nKontaktperson i forsøget: [navn og titel]\nAfdeling og hospital: [indsæt]\nTelefon: [indsæt]\nE-mail: [indsæt]\nTræffetid: [indsæt]\n[Hvis relevant: Akut kontakt: [indsæt].]\n\nDatabeskyttelsesrådgiver: [kontakt]\nKlagekontakt: [indsæt]\nDu kan klage over behandlingen af personoplysninger til Datatilsynet.",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>Samtykkeerklæring – gravid forsøgsdeltager</b>\n\nJeg har modtaget og forstået informationen om graviditetsopfølgningen.\n\nJeg har kunnet stille spørgsmål og har haft passende tid til at beslutte mig.\n\nJeg ved:\n• at det er frivilligt, og at jeg kan stoppe\n• at dette samtykke supplerer, men ikke erstatter, mit samtykke til hovedforsøget\n• at samtykket ikke i sig selv giver tilladelse til fortsat forsøgsbehandling under graviditeten\n• hvilke oplysninger der indsamles, kobles, bruges, opbevares og eventuelt overføres\n\nJeg giver samtykke til, at de beskrevne oplysninger om mig, graviditeten og graviditetsudfaldet indsamles, bruges, kobles til mine kodede hovedforsøgsdata og opbevares til den beskrevne opfølgning.\n\n[Hvis relevant: Jeg giver tilladelse til, at [jordemoder/læge/hospital] kontaktes og udleverer de konkret beskrevne oplysninger.]\n\n[Kun hvis godkendte valgfrie ekstra aktiviteter findes:]\n□ Ja, jeg giver samtykke til [ekstra undersøgelse] som beskrevet.\n□ Nej, jeg giver ikke samtykke.\n\n□ Ja, jeg giver samtykke til [ekstra prøve og mængde] som beskrevet.\n□ Nej, jeg giver ikke samtykke.\n\nNavn: ______________________________\nUnderskrift: ______________________________  Dato: __________\n\n<i>[Redaktionsnote: Vælg den erklæring, der svarer til den anvendte opfølgningsvej, og slet den anden før udlevering.]</i>\n\n<b>Kun graviditetsdataopfølgning</b>\n<b>Erklæring fra den person, der gav informationen</b>\nJeg erklærer, at informationen er givet, spørgsmål er besvaret, og samtykket efter min vurdering er frivilligt. Jeg har gjort klart, at fortsat forsøgsbehandling under graviditeten kræver en særskilt protokolmæssig og lægelig beslutning.\n\n<b>Godkendt ekstra undersøgelse eller prøve</b>\n<b>Erklæring fra lægen, der gav den mundtlige information og modtog samtykket</b>\nJeg erklærer, at jeg er behørigt kvalificeret og autoriseret som læge i Danmark, og at jeg har givet den mundtlige information og modtaget samtykket. Jeg har gjort klart, at fortsat forsøgsbehandling under graviditeten kræver en særskilt protokolmæssig og lægelig beslutning.\n\nNavn og funktion: ______________________________\nUnderskrift: ______________________________  Dato: __________\n\nDeltageren får en kopi af informationen og den underskrevne erklæring.",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>Særskilt samtykke efter fødslen – oplysninger om barnet</b>\n\n<i>[Brug kun hvis nye oplysninger om barnet skal indsamles efter fødslen. Udfyld og underskriv efter fødslen.]</i>\n\nBarnets navn: ______________________________\nFødselsdato: ______________________________\n\nVi har modtaget information om, hvilke oplysninger om barnets fødsel, helbred og udvikling der indsamles, fra hvilke kilder, til hvilket formål og indtil hvilket tidspunkt.\n\nVi giver samtykke til, at de beskrevne oplysninger om barnet indsamles, bruges, kobles til moderens kodede forsøgs- og graviditetsoplysninger og opbevares til denne opfølgning.\n\n[Hvis relevant: Vi giver tilladelse til, at [barnets læge/hospital] kontaktes og udleverer de konkret beskrevne oplysninger.]\n\nForældremyndighedsindehaver 1:\nNavn: ______________________________\nUnderskrift: ______________________________  Dato: __________\n\nForældremyndighedsindehaver 2 [ved fælles forældremyndighed]:\nNavn: ______________________________\nUnderskrift: ______________________________  Dato: __________\n\n[Hvis kun én underskriver: dokumentation for eneforældremyndighed eller gyldig fuldmagt: [indsæt].]\n\n<b>Erklæring fra den person, der gav informationen</b>\nNavn og funktion: ______________________________\nUnderskrift: ______________________________  Dato: __________\n\nDen eller de forældremyndighedsindehavere får en kopi af informationen og den underskrevne erklæring.",
+   "section_style": "H2 document subline, Rich body text, Signature section, Info/warning/note box"
+  }
+ ]
+}

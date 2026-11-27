@@ -1,0 +1,137 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Trial Information and Consent Form - Parents",
+  "doc_name_local": "Tájékoztatáson alapuló beleegyező nyilatkozat – nyilatkozattételre jogosult személy részére, kiskorú részvételéhez",
+  "target_country": "Hungary",
+  "country_code": "HU",
+  "target_language": "Hungarian",
+  "language_code": "hu",
+  "doc_type": "parents",
+  "file_name": "L1_SIS and ICF_parents",
+  "sort_order": 5,
+  "description": "Must be completed for studies involving minor participants (younger than 18 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - 1.0 verzió - [date]",
+   "Protokollszám: [töltse ki] | EUCT szám: [töltse ki]"
+  ],
+  "info_table": [
+   "A klinikai vizsgálat teljes címe",
+   "A klinikai vizsgálat rövid címe",
+   "Protokollszám [adja meg a verziót és a dátumot]",
+   "EUCT szám",
+   "Szponzor [teljes címmel]",
+   "Vizsgálatvezető",
+   "Vizsgálóhely neve",
+   "Vizsgálóhely címe",
+   "A tájékoztatást végző személy neve",
+   "A tájékoztatást végző személy beosztása / munkaköre",
+   "A kiskorú vizsgálati alany neve",
+   "A kiskorú vizsgálati alany születési helye",
+   "A kiskorú vizsgálati alany születési ideje",
+   "A nyilatkozattételre jogosult személy neve",
+   "A nyilatkozattételre jogosult személy születési helye és ideje",
+   "A nyilatkozattételre jogosult személy jogállása / jogosultságának alapja"
+  ],
+  "content_instructions": "Ezt a sablont 18 év alatti vizsgálati alany klinikai vizsgálatához használja a kiskorú nevében nyilatkozattételre jogosult személy részére. A címzett a szülő/törvényes képviselő vagy más, az Eütv. 16. § alapján ténylegesen nyilatkozattételre jogosult személy; a kiskorú a vizsgálati alany. A kezelést, eljárásokat, kockázatokat, adatokat és mintákat mindig a kiskorúra vonatkoztatva írja le. A kiskorút életkorának és érettségének megfelelően külön is tájékoztatni kell, és valószínűsíthető akaratát/véleményét figyelembe kell venni; használja a 6–11 éves gyermek vagy 12–17 éves serdülő külön tájékoztató/véleménynyilatkozatát. A 16. életévét betöltött kiskorúnál ellenőrizze, hogy az Eütv. alapján megnevezett-e más nyilatkozattételre jogosult személyt; ezt a sablont csak a ténylegesen jogosult személy írhatja alá. Ne állítson általános két-szülős aláírási kötelezettséget; második jogosulti aláírásblokkot csak akkor tartson meg, ha az adott jogi helyzetben ténylegesen szükséges. A kiskorú tiltakozását és a részvétel megszüntetésére irányuló akaratát a vonatkozó szabályok szerint tiszteletben kell tartani. A gyermekgyógyászati vizsgálatban a fájdalmat, szorongást, félelmet és egyéb terhelést minimalizálni kell. A teljes fő vizsgálati tartalmat a felnőtt fő sablon alapján tartsa meg, lokalizálva a kiskorúra. A magyar KFEB adatvédelmi tájékoztatást ebben a külön dokumentumban is teljesítse. Humángenetikai vizsgálathoz külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum szükséges. A fő vizsgálaton kívüli jövőbeni/másodlagos felhasználást ne tartalmazza. A kiskorú nagykorúvá válásakor, ha a részvétel folytatódik, standard felnőtt ICF-fel saját beleegyezését kell kérni. Egy dokumentumhoz egyetlen végleges aláírássorozat tartozzon. A végleges, jogilag beleegyezést tartalmazó dokumentum címében tartsa meg a KFEB által használt „Tájékoztatáson alapuló beleegyező nyilatkozat” megnevezést.",
+  "styling_instructions": "Használjon világos, jól tagolt fejezeteket, rövid bekezdéseket és közérthető magyar nyelvet. A teljes dokumentumban következetesen az „Ön” megszólítást használja; ne keverje a tegező és magázó formákat. A szakmai rövidítéseket első előforduláskor magyarázza meg. A vizsgálati látogatások és eljárások bemutatására használható áttekinthető táblázat. A véglegesítés előtt távolítson el minden szerzői utasítást, példát, nem alkalmazandó alternatívát és feltételes modult. Ne tüntessen fel vizsgálati alany kódszámot a dokumentumban. A betegkártya külön mellékletként készüljön. A genetikai tájékoztató és beleegyező nyilatkozat külön dokumentum legyen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>TÁJÉKOZTATÁSON ALAPULÓ BELEEGYEZŐ NYILATKOZAT – NYILATKOZATTÉTELRE JOGOSULT SZEMÉLY RÉSZÉRE, KISKORÚ RÉSZVÉTELÉHEZ</b>\n<b>Szerzői utasítás:</b> A kiskorú és a nyilatkozattételre jogosult személy adatait különítse el. Vizsgálati kódszámot ne tüntessen fel. A kiskorúnak külön életkorhoz igazított tájékoztatót adjon.",
+   "section_style": "H1 document headline, Rich body text, Info table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Tisztelt Szülő / Nyilatkozattételre Jogosult Személy!\n\nArra kérjük, mérlegelje az Ön által képviselt kiskorú részvételét a(z) [vizsgálat rövid neve] klinikai vizsgálatban. A klinikai vizsgálat kutatási tevékenység. A gyermek/serdülő lesz a vizsgálati alany: ő kapja a kezelést, rajta végzik az eljárásokat, és az ő egészségügyi adatait és mintáit kezelik.\n\nAz Ön döntése önkéntes. Az elutasítás vagy későbbi visszavonás nem járhat hátránnyal a kiskorú számára. A kiskorút életkorának és érettségének megfelelően külön tájékoztatjuk, lehetőséget kap kérdezni és véleményt mondani. Véleményét és ellenkezését a vonatkozó szabályok szerint figyelembe kell venni.\n\nSzponzor: [név és teljes cím].",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. Miért ajánljuk fel a kiskorú részvételét, és mit vizsgálunk?</b>\n\nA részvételt azért ajánljuk fel, mert a kiskorú [betegség/állapot/célpopuláció közérthetően]. A(z) [név] vizsgálati gyógyszer [rövid hatásmechanizmus és engedélyezési státusz]. Korábbi tapasztalatok: [döntéshez szükséges rövid információ].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Mi a klinikai vizsgálat célja?</b>\n\nA vizsgálat célja [hatásosság / biztonságosság / tolerálhatóság / megfelelő adag / egyéb] értékelése kiskorúaknál. Várhatóan [szám] kiskorú vesz részt Magyarországon és [szám] világszerte.\n\n<b>Szerzői utasítás:</b> A résztvevővédelmi logikát közérthetően ismertesse; ne másolja be a jogszabályi alkalmassági listát.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Milyen kezelést kap a kiskorú?</b>\n\nA kiskorú [vizsgálati gyógyszert / standard kezelést / placebót] kap [forma, adag, gyakoriság, időtartam].\n[Randomizáció:] A csoportba sorolás véletlenszerű; esélyek: [töltse ki].\n[Placebo:] A placebo nem tartalmaz hatóanyagot; placebo esélye: [töltse ki].\n[Vakítás:] [A kiskorú / Ön és a kiskorú / a vizsgáló] nem tudja / nem tudják, hogy a kiskorú melyik kezelést kapja; sürgős biztonsági okból ez az információ hozzáférhetővé tehető.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Milyen vizsgálatok és eljárások várják a kiskorút?</b>\n\nA részvétel [időtartam], körülbelül [szám] vizittel. Az alkalmasság ellenőrzéséhez [vizsgálatok].\n\nLátogatás / időszak\tMikor\tIdőtartam\tKezelés és vizsgálatok\tMi történik csak kutatási célból\n[töltse ki]\t[töltse ki]\t[töltse ki]\t[töltse ki]\t[töltse ki]\n\nÖsszes vérmennyiség: körülbelül [X] ml. A vér- és egyéb mintavételt, fájdalmas/invazív eljárást és sugárterhelést életkorhoz igazodva, a fájdalom, szorongás és félelem lehető legkisebbre csökkentésével tervezze.\n\n<b>[Csak ha a fő klinikai vizsgálatban a kiskorútól biológiai mintát vesznek vagy korábbi mintáját használják:] Biológiai minták a fő klinikai vizsgálatban</b>\nA(z) [mintatípus] mintából összesen [mennyiség], [gyakoriság] kerül levételre a(z) [konkrét fő vizsgálati cél] céljára. A mintákat [kódolt / anonimizált] formában [laboratórium/szervezet, ország] kapja meg. Tárolási hely: [hely]. Tárolási idő: [időtartam]. A vizsgálat céljának befejezése után: [megsemmisítés / protokoll szerinti kezelés].\n\n[Ha a kiskorúval kapcsolatban humángenetikai vizsgálat történik:] Humángenetikai vizsgálat céljából végzett mintavételhez külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum szükséges. A genetikai mintavétel külön visszautasítható; visszautasítása nem akadályozza a klinikai vizsgálat további részében való részvételt.\n\n[Csak protokoll szerinti önállóan választható, nem genetikai tevékenység:] [név/cél/eljárás/kockázat]. Elutasítása nem érinti a fő vizsgálatban való részvételt. A kiskorú véleményét is külön kérje a korának megfelelő dokumentumban.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Mit várunk Öntől és a kiskorútól?</b>\n\nSegítsen a vizitek, gyógyszerszedés, napló, korlátozások és biztonsági ellenőrzések betartásában. Jelezze az új panaszokat, gyógyszereket, kórházi kezelést, terhességet – ha életkor és állapot szerint releváns – és azt is, ha a kiskorú tiltakozik vagy szeretné abbahagyni a részvételt.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Mi tér el a szokásos ellátástól, és mi a betegkártya szerepe?</b>\n\nA kutatási célú többletkezelések, vizsgálatok, mintavételek és időbeli terhek: [töltse ki].\n\n[Betegkártya, ha alkalmazandó; nem fázis IV. vagy bioegyenértékűségi vizsgálatban:] A kiskorú betegkártyát kap [kötelező tartalom], amelyet saját biztonsága érdekében a vizsgálat alatt tartson magánál / a gondviselő biztosítsa, hogy elérhető legyen. A név és vizsgálati kódszám kizárólag betegbiztonsági okból szerepelhet együtt a betegkártyán.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Milyen kockázatok, mellékhatások és kellemetlenségek lehetnek?</b>\n\nA kiskorút érintő legfontosabb ismert kockázatok: [tételes, életkorhoz érthetően is megfogalmazható leírás]. Olyan nemkívánatos esemény is előfordulhat, amelyet még nem ismerünk. Eljárási kockázatok és terhek: [töltse ki].\n\nA vizsgálatot úgy kell végezni, hogy a fájdalmat, szorongást, félelmet és egyéb terhelést a lehető legkisebbre csökkentsék. Új vagy romló panasz esetén: [kontakt].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Terhesség, szoptatás és fogamzásgátlás</b>\n\n[Ha a kiskorú életkora és pubertása alapján a reproduktív kor releváns:] Ismertesse a nemző-/fogamzóképességre, fennálló vagy későbbi terhességre és embrióra/magzatra gyakorolt ismert vagy nem ismert hatást érzékeny, életkorhoz igazított nyelven. [Csak ha a protokoll előírja:] terhességi tesztek, fogamzásgátlási, szoptatási és ivarsejt-adományozási előírások: [töltse ki]. Terhesség esetén a következő lépések: [töltse ki]; a terhesség utánkövetéséhez külön dokumentum szükséges.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Milyen előnye lehet a kiskorúnak?</b>\n\n[Válassza:] Közvetlen egészségügyi előny nem várható. / A vizsgálati gyógyszer [lehetséges előny], de ez nem garantálható. A kiskorú állapota változatlan maradhat vagy romolhat is.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>10. Milyen egyéb kezelési lehetőségek állnak rendelkezésre?</b>\n\nHa nem járul hozzá a részvételhez, a kiskorú számára a következő, Magyarországon elfogadott kezelési lehetőségek állnak rendelkezésre: [lehetőségek és fő előnyök/kockázatok]. Ha a már megkezdett kezelés megszakadna a vizsgálat miatt, ennek következményei: [töltse ki].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>Vizsgálattal összefüggő egészségkárosodás</b>\nHa a klinikai vizsgálattal összefüggésben egészségkárosodás éri a kiskorút, illetve személyiségi joga sérül, a kiskorú jogosult lehet kezelésre, kártérítésre, kártalanításra és sérelemdíjra a vonatkozó magyar jogszabályok, különösen a 2005. évi XCV. törvény 21. § (1) bekezdése szerint.\n\nBiztosító: [név]\nMagyarországi elérhetőség: [cím]\nKapcsolattartó: [név]\nTelefon: [telefonszám]\nKárbejelentés módja: [töltse ki].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>12. Költségek és költségtérítés</b>\n\nA vizsgálati gyógyszert és kutatási célú eljárásokat a Szponzor finanszírozza.\n\n<b>[Ha költségtérítés van:]</b> A Szponzor megtéríti a kiskorú részvételével és szükséges kísérésével összefüggő alábbi, ténylegesen felmerült és igazolt költségeket: [pontos, teljes költségtípusok és szabályok].\n<b>[Ha nincs költségtérítés:]</b> A részvételhez kapcsolódó költségtérítés nem jár.\n\n<b>[Ha külső szolgáltató végzi a költségtérítést:]</b> A költségtérítést a(z) [szolgáltató neve] végzi. Lényeges feltételek: [töltse ki]. Átadott adatok: [pontos felsorolás]. Adatkezelési feltételek és esetleges díjak: [töltse ki].\n\nA részvételért vagy a szülő/jogosult döntéséért ösztönző díjazás nem adható.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>13. Önkéntes-e a döntés és hogyan szüntethető meg a részvétel?</b>\n\nA beleegyezés önkéntes és bármikor, indoklás nélkül visszavonható, a kiskorú hátránya nélkül. A kiskorú véleményét és egyértelmű ellenkezését a vonatkozó szabályok szerint figyelembe kell venni.\n\nHa a részvételi szándékot visszavonják, a klinikai vizsgálat céljára a kiskorúról további egészségügyi adat nem gyűjthető; a korábban gyűjtött adatok továbbra is felhasználhatók. [Orvosilag szükséges biztonsági ellátás/utánkövetés.] Ha a kiskorú betölti a 18. életévét és a vizsgálat folytatódik, saját felnőtt beleegyezése szükséges.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>14. Hogyan kezeljük a kiskorú és az Ön adatait, valamint a mintákat?</b>\n\nA kiskorú egészségügyi és vizsgálati adataira a következők vonatkoznak:\n\n<b>Adatvédelem</b>\nA személyes és egészségügyi adatok kezelésére különösen az (EU) 2016/679 rendelet (GDPR), a 2011. évi CXII. törvény, az 1997. évi XLVII. törvény, a 2005. évi XCV. törvény, az 1997. évi CLIV. törvény és a 35/2005. (VIII. 26.) EüM rendelet vonatkozik. [Humángenetikai vizsgálat esetén: továbbá a 2008. évi XXI. törvény.]\n\nAdatkezelő(k): [név, cím és szerep]\nAdatvédelmi tisztviselő / adatvédelmi kapcsolat: [név és elérhetőség]\nAz adatkezelés célja: [pontos cél]. Az adatkezelés jogalapja a KFEB követelménye szerint az érintett, illetve ha az érintett nem jogosult önállóan nyilatkozni, a nevében jogszerűen nyilatkozó személy hozzájárulása.\nA kezelt adatok: [a tényleges adatkategóriák tételes felsorolása].\n\nA vizsgálóhelyről személyes és különleges adatok kizárólag [kódolt / anonimizált] formában továbbíthatók. Kódolt adatok esetén a kódkulcs nem továbbítható. Az azonosítható adatokba csak a vizsgálóhelyen tekinthetnek be az erre jogosult [vizsgálati személyzet / monitor / auditor / hatósági ellenőr / etikai bizottság erre jogosult személye / egyéb tényleges jogosult], és azokról nem készíthetnek másolatot. Titoktartási kötelezettség terheli őket.\n\nA kódolt/anonimizált adatok címzettjei: [szervezetek/szervezettípusok és országok]. [Ha harmadik országba történik továbbítás: ország és alkalmazott garancia.] Az adatokat [hely] helyen [időtartam / végdátum] ideig tárolják.\n\nHa adatkezelési jogai sérülnek, kapcsolatba léphet [adatkezelő/adatvédelmi tisztviselő], és panaszt tehet a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH). NAIH postai cím: [aktuális cím]. Internet: [aktuális webcím].\n\nA nyilatkozattételre jogosult személy saját adatai közül [név, elérhetőség, kapcsolat/jogosultság és annak igazolásához szükséges adatok] kezelhetők a beleegyezési folyamat dokumentálására.\n\n<b>[Csak ha a fő klinikai vizsgálatban a kiskorútól biológiai mintát vesznek vagy korábbi mintáját használják:] Biológiai minták a fő klinikai vizsgálatban</b>\nA(z) [mintatípus] mintából összesen [mennyiség], [gyakoriság] kerül levételre a(z) [konkrét fő vizsgálati cél] céljára. A mintákat [kódolt / anonimizált] formában [laboratórium/szervezet, ország] kapja meg. Tárolási hely: [hely]. Tárolási idő: [időtartam]. A vizsgálat céljának befejezése után: [megsemmisítés / protokoll szerinti kezelés].\n\n[Ha a kiskorúval kapcsolatban humángenetikai vizsgálat történik:] Humángenetikai vizsgálat céljából végzett mintavételhez külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum szükséges. A genetikai mintavétel külön visszautasítható; visszautasítása nem akadályozza a klinikai vizsgálat további részében való részvételt.\n\nA fő vizsgálat célján kívüli jövőbeni/másodlagos felhasználást ne tartalmazza.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>15. Kapnak-e új információkat és eredményeket?</b>\n\nA biztonságot vagy a folytatási döntést befolyásoló új információt Önnel és a kiskorúval életkorának/érettségének megfelelően is közölni kell. A klinikai vizsgálat összefoglaló eredménye az EU klinikai vizsgálati adatbázisának nyilvános felületén hozzáférhetővé válik.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>Kit kereshet kérdéseivel a kiskorú részvételével kapcsolatban?</b>\nVizsgálatvezető: [név, beosztás/munkakör]\nVizsgálóhely: [név és cím]\nTelefon: [telefonszám]\nE-mail: [e-mail]\n24 órás sürgősségi kapcsolat: [ha alkalmazandó]\n\nAdatvédelmi kapcsolattartó: [név és elérhetőség]\nNAIH: [aktuális postai cím és internetes elérhetőség]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>BELEEGYEZŐ NYILATKOZAT</b>\n\nKijelentem, hogy megkaptam és megértettem a klinikai vizsgálat tájékoztatását; kérdezhettem és elegendő időt kaptam; megértettem a kiskorú kezelését, eljárásait, kockázatait, lehetséges előnyeit, alternatíváit, adat- és mintakezelését és biztosítását [valamint, ha alkalmazandó, a költségtérítés részleteit]; tudom, hogy a döntés önkéntes és visszavonható; tudom, hogy a kiskorút külön, életkorának megfelelően tájékoztatni kell, és beleegyezésemnek a véleményalkotásra és helyzetértékelésre képes kiskorú valószínűsíthető akaratát kell tükröznie; a nyilatkozattételi jogosultságom körében hozzájárulok a kiskorú jelen dokumentumban ismertetett személyes és egészségügyi adatainak kezeléséhez; és beleegyezem a kiskorú részvételébe és a jelen dokumentumban ismertetett kötelező eljárásokba.\n\n[Protokoll szerinti önállóan választható nem genetikai tevékenység:] [név/cél] – Beleegyezem a kiskorú nevében: Igen □  Nem □\n\n<b>A kiskorú vizsgálati alany</b>\nNév: ____________________\nSzületési hely: ____________________\nSzületési idő: ____________________\n\n<b>[A 14. életévét betöltött kiskorú esetén:] A kiskorú saját beleegyezése is szükséges a nyilatkozattételre jogosult személy beleegyezése mellett.</b>\nA kiskorú aláírása: ____________________  Dátum: ____ / ____ / ______\n\n<b>A nyilatkozattételre jogosult személy</b>\nNév: ____________________\nSzületési hely és idő: ____________________\nKapcsolat / jogállás: ____________________\nJogosultság alapja: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\n[Csak ha az adott jogi helyzetben ténylegesen további nyilatkozattételre jogosult személy aláírása szükséges:]\nNév/jogállás: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\n<b>A tájékoztatást végző személy / vizsgálatvezető</b>\nNév: ____________________\nBeosztás / munkakör: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\nA dokumentum egy eredeti, aláírt és dátummal ellátott példányát az érintett kapja meg; egy eredeti példány a kutatási dokumentációban kerül megőrzésre.\n\n<b>Szerzői utasítás:</b> A kiskorú saját véleményét a külön gyermek- vagy serdülő-tájékoztatóban rögzítse. A 14. életévét betöltött kiskorú saját jogilag szükséges beleegyezését a fenti aláírási blokkban dokumentálja; ne hozzon létre külön beleegyezési folyamatot.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

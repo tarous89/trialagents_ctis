@@ -1,0 +1,85 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Nuoren tutkimustiedote ja oma suostumus (12–14-vuotiaat)",
+  "target_country": "Finland",
+  "country_code": "FI",
+  "target_language": "Finnish",
+  "language_code": "fi",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 12-14",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versio 1.0 - [date]",
+   "Tutkimussuunnitelman numero: [täytä] | EU-tutkimusnumero: [täytä]"
+  ],
+  "info_table": [
+   "Tutkimuksen nimi",
+   "Tutkimuksen lyhyt nimi",
+   "Tutkimuksen koodi [jos soveltuu]",
+   "Tutkimussuunnitelman numero [lisää versio ja päivämäärä]",
+   "EU-tutkimusnumero",
+   "Toimeksiantaja [täydellinen osoite]",
+   "Johtava tutkija",
+   "Tutkimuskeskuksen nimi",
+   "Tutkimuskeskuksen osoite"
+  ],
+  "content_instructions": "Perusta asiakirja Tukijan T/447/2026-malliin ja Suomen kliinistä lääketutkimusta koskevaan sääntelyyn. Kirjoita vain päätöksenteon kannalta olennaiset tiedot tiiviillä, ymmärrettävällä suomen kielellä. Vältä toistoa, tarpeetonta ammattisanastoa, käskevää tai houkuttelevaa ilmaisua sekä sanamuotoja, jotka olettavat osallistumisen. Selitä vierasperäiset ja tekniset termit ensimmäisellä käyttökerralla. Käytä valittua puhuttelumuotoa johdonmukaisesti. Suullinen tieto, mahdollisuus kysymyksiin ja riittävä harkinta-aika kuuluvat suostumusprosessiin. Kuvaa vain tutkimussuunnitelman mukaiset toimenpiteet, tiedot, näytteet, vastaanottajat, siirrot, säilytysajat, korvaukset ja riskit. Pidä yksityiskohtaiset toimintaohjeet erillisessä ohjeessa, mutta kerro tiedotteessa kaikki osallistumispäätökseen vaikuttavat rasitteet ja rajoitukset. Jos tutkimuksessa käytetään ionisoivaa säteilyä, noudata Tukijan T/447/2026-säteilyohjetta: kerro joko ettei lisäaltistusta synny tavanomaiseen hoitoon verrattuna tai kuvaa tutkimuskohtaisesti kuvantaminen, hyöty, annos, riskin ymmärrettävä merkitys, toistojen määrä ja kokonaisaltistus. Jos tutkimuksessa on hajautettuja elementtejä, kuten etävastaanottoja tai sähköinen suostumus, kuvaa ne siltä osin kuin ne vaikuttavat osallistumiseen. Tietosuojassa yksilöi rekisterinpitäjä(t), todelliset käsittelyperusteet sanallisesti ja GDPR:n artikla-/alakohtatasolla, tietolähteet, vastaanottajat, mahdollinen suora etäpääsy potilastietoihin, säilytys, EU/ETA:n ulkopuoliset maat ja siirtomekanismi sekä tosiasiassa soveltuvat rekisteröidyn oikeudet. Älä käytä tutkittaville suunnatussa materiaalissa sanaa rotu; käytä tarvittaessa käsitettä etninen tausta. Tuleva tai muu tutkimussuunnitelman ulkopuolinen käyttö ei kuulu näihin malleihin; sitä varten käytetään erillistä tulevan/toissijaisen käytön tiedotetta ja suostumusta. Poista kaikki laatimisohjeet, vaihtoehdot ja soveltumattomat moduulit ennen osallistujalle annettavaa lopullista asiakirjaa. Käytä tätä mallia 12–14-vuotiaalle nuorelle. Tieto annetaan suoraan nuorelle, ikään ja kehitystasoon sopivana, mutta olennaiset tutkimustiedot säilytetään. Alle 15-vuotiaan oma kirjallinen suostumus ei yksin anna laillista lupaa kliiniseen lääketutkimukseen; huoltajan tai muun laillisen edustajan erillinen suostumus tarvitaan. Nuorelta pyydetään oma kirjallinen suostumus huoltajan tai muun laillisen edustajan suostumuksen lisäksi. Nuoren kieltäytymistä tai myöhempää halua lopettaa kunnioitetaan. Selitä tutkimuksen tarkoitus, tutkimuslääke, satunnaistaminen/lume/sokkoutus, käynnit, toimenpiteet, näytteet, riskit, mahdolliset hyödyt, hoitovaihtoehdot, vapaaehtoisuus, tietosuoja, kustannukset/vakuutus ja tulokset ymmärrettävästi. Lisää raskaustestit, ehkäisy ja lisääntymisriskit vain, jos ne koskevat tutkimusta ja nuorta; käytä asiallista ikätasoista kieltä. Geenitestit kuvataan vain tutkimussuunnitelman mukaisina ja siten, että nuori ymmärtää niiden merkityksen. Täydellinen huoltajan SIS/ICF annetaan erikseen. Renderöi ennen info_tablea/varsinaista sisältöä otsikko ”TIEDOTE KLIINISESTÄ LÄÄKETUTKIMUKSESTA” (ikä-/käyttötarkennus voidaan lisätä alaotsikoksi), vaikka otsikko ei sisälly template_content-kenttään.",
+  "styling_instructions": "A4 pystysuunnassa. Käytä selkeää, helposti luettavaa 11–12 pt tai kohderyhmän mukaan suurempaa kirjasinta, lyhyitä kappaleita, runsaasti tyhjää tilaa ja selkeitä otsikoita. Käytä kuvia, symboleja tai muuta viestintätukea vain, jos ne parantavat ymmärtämistä. Allekirjoitus- ja tahdonilmaisukohdissa on oltava selkeät nimi-, päiväys- ja allekirjoitus/merkintäkentät."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Sinua pyydetään mukaan kliiniseen lääketutkimukseen\n\nSinua pyydetään mukaan tutkimukseen, jossa selvitetään [lyhyt tarkoitus]. Sinua pyydetään, koska [sairaus/tilanne ja lyhyt syy, miksi voisit sopia tutkimukseen].\n\nTämä tiedote kertoo, mitä tutkimus tarkoittaa sinulle. Myös huoltajasi saa tutkimuksesta täydelliset tiedot ja häneltä pyydetään erillinen suostumus. Sinun oma mielipiteesi ja suostumuksesi ovat tärkeitä.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Miksi tutkimus tehdään?\n\nTutkimuksen tarkoitus on selvittää [ensisijainen tavoite] ja [keskeiset muut tavoitteet]. Tutkimuslääke on [nimi] ja sitä tutkitaan, koska [lyhyt neutraali perustelu].\n\n[Jos relevantti: Lääkettä on aiemmin saanut noin x henkilöä.] [Jos lumevertailu: selitä, mitä lume tarkoittaa ja miksi sitä käytetään.]\n\nTutkimukseen osallistuu noin x henkilöä x maassa ja Suomessa noin x.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Mitä tutkimuksessa tapahtuu?\n\nTutkimus kestää kohdallasi noin [aika]. Siihen kuuluu [x] käyntiä ja [mahdolliset etäyhteydet/seuranta].\n\nSaat [tutkimuslääkkeen/vertailuhoidon/placebon] [miten ja kuinka usein]. [Jos satunnaistaminen: ryhmä valitaan sattumanvaraisesti, eikä sinä tai lääkäri valitse ryhmää. Kerro todennäköisyys.] [Jos sokkoutus: selitä kuka ei tiedä ryhmää ja miten tieto voidaan tarvittaessa avata turvallisuuden vuoksi.]\n\nSinulta otetaan [näytteet ja kokonaismäärä], tehdään [tärkeimmät tutkimukset] ja sinua pyydetään [päiväkirja/kyselyt/muut tehtävät]. Kerro myös, mikä on ylimääräistä tavalliseen hoitoosi verrattuna ja mitä rajoituksia tutkimukseen liittyy.\n\n<i>(Jos lisääntymisturvallisuus on relevantti: kerro raskaustestit, ehkäisy tai muut turvallisuustoimet lyhyesti, suoraan ja ikätasoisesti.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Mitä näytteille ja tiedoillesi tapahtuu?\n\nTietojasi ja näytteitäsi käsitellään luottamuksellisesti ja niitä käytetään vain tutkimuksessa kuvatulla tavalla. Tutkimuksen valvontaa varten tarvittavia tietoja voivat nähdä siihen oikeutetut henkilöt. Huoltajasi saa tarkemmat tiedot tietojen ja näytteiden käsittelystä ja säilyttämisestä.\n\n[Jos geenitesti kuuluu tutkimukseen: selitä ymmärrettävästi, mitä tutkitaan ja miksi. Kerro, että testi kuuluu vain tähän tutkimukseen eikä tuloksia käytetä muuhun tarkoitukseen.]\n\n[Jos tietoja/näytteitä siirretään ulkomaille: kerro lyhyesti maat ja suojaus. Huoltajan tiedotteessa annetaan täydelliset GDPR-tiedot.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Voiko tutkimuksesta olla hyötyä?\n\n[Valitse ja mukauta:] Tutkimuksesta voi ehkä olla sinulle hyötyä [konkreettinen mahdollinen hyöty], mutta sitä ei voida luvata. / Tutkimuksen ei odoteta hyödyttävän sinua suoraan.\n\nTutkimuksesta voidaan saada uutta tietoa [sairaudesta/lääkkeestä], joka voi auttaa tulevia potilaita.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Mitä haittoja tai epämukavuutta voi tulla?\n\nTutkimuslääkkeen tavallisimmat haitat ovat [selkokielinen luettelo]. Vakavat tai lääketieteellisesti tärkeät riskit ovat [kuvaa ja kerro todennäköisyys]. Myös sellaisia haittoja voi tulla, joita ei vielä tunneta.\n\nTutkimustoimenpiteet voivat aiheuttaa [verinäytteet, kuvantaminen, koepalat, muu kipu/epämukavuus]. Kerro myös tutkimukseen liittyvät arjen rasitteet ja rajoitukset.\n\nJos saat uuden oireen tai voit huonosti, kerro siitä heti tutkimuslääkärille tai hoitajalle.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Mitä tapahtuu, jos et osallistu?\n\n[Jos kyseessä on potilastutkimus: Sinun ei tarvitse osallistua tutkimukseen saadaksesi hoitoa. Jos et osallistu, vaihtoehdot ovat [tavanomainen hoito/muu hoito/seuranta].] [Muussa tutkimuksessa: Jos et osallistu, et saa tutkimuslääkettä eikä sinulle tehdä tutkimukseen liittyviä toimenpiteitä.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Osallistuminen on vapaaehtoista ja voit lopettaa\n\nSinun ei ole pakko osallistua. Alle 15-vuotiaana tarvitset osallistumiseen myös huoltajasi tai muun laillisen edustajasi suostumuksen. Jos itse et halua osallistua, kerro siitä. Pelkkä se, ettet vastusta, ei tarkoita että haluat olla mukana.\n\nJos osallistut ja muutat myöhemmin mielesi, voit lopettaa milloin tahansa ilman syytä. Se ei vaikuta tarvitsemaasi hoitoon. Siihen mennessä kerättyjä tietoja voidaan käyttää tutkimusaineistossa ja turvallisuusarvioinnissa, kun se on välttämätöntä.\n\nMyös tutkimuslääkäri tai toimeksiantaja voi lopettaa osallistumisesi turvallisuus- tai muusta tutkimukseen liittyvästä syystä. Sinulle ja huoltajallesi kerrotaan, mitä sen jälkeen tapahtuu.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Kustannukset, vakuutukset, tulokset ja yhteystiedot\n\nTutkimuslääke ja tutkimukseen liittyvät toimenpiteet ovat maksuttomia. Alaikäiselle ei makseta tutkimukseen osallistumisesta kannustinta. Tarpeellisia matkakuluja ja huoltajan ansionmenetystä voidaan korvata soveltuvien ehtojen mukaan.\n\nJos tutkimuslääkkeestä tai tutkimustoimenpiteestä aiheutuu vahinko, siitä voi hakea korvausta. Huoltajasi saa tarkemmat tiedot vakuutuksista.\n\nKun tutkimus on valmis, sen tuloksista julkaistaan yhteenveto. [Kerro, mitä yksilöllisiä tuloksia tai merkittäviä terveystietoja nuorelle ilmoitetaan.]\n\nYhteyshenkilö: [nimi, puhelin, sähköposti].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "NUOREN OMA SUOSTUMUS (12–14-VUOTIAAT)\n\nOlen saanut tutkimuksesta kirjallista ja suullista tietoa tavalla, jonka ymmärrän. Olen saanut kysyä kysymyksiä ja minulla on ollut aikaa miettiä osallistumista. Ymmärrän, että osallistuminen on vapaaehtoista ja että voin myöhemmin lopettaa ilman, että se vaikuttaa hoitooni.\n\n<b>Haluan osallistua tässä asiakirjassa kuvattuun tutkimukseen.</b>\n\nTämä oma suostumukseni ei yksin anna laillista lupaa osallistumiseen. Huoltajani tai muu laillinen edustajani antaa erillisen suostumuksen.\n\nNuoren nimi: ____________________________________\n____________________________________    _________________\nNuoren allekirjoitus                     Päiväys\n\n<b>Suostumuksen vastaanottajan vahvistus</b>\nVahvistan, että nuorelle on annettu ikä- ja kehitystasoon sopiva kirjallinen ja suullinen tieto, hänellä on ollut mahdollisuus kysymyksiin ja riittävä harkinta-aika, ja hänen oma vapaaehtoinen tahtonsa on selvitetty.\n\n____________________________________    _________________\nAllekirjoitus                            Päiväys\n____________________________________\nNimi ja ammattinimike",
+   "section_style": "Section break, H2 document subline, Rich body text, Signature section"
+  }
+ ]
+}

@@ -1,0 +1,167 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Trial Information and Consent Form - Parents",
+  "doc_name_local": "Document d’information et formulaire de consentement des titulaires de l’autorité parentale",
+  "target_country": "France",
+  "country_code": "FR",
+  "target_language": "French",
+  "language_code": "fr",
+  "doc_type": "parents",
+  "file_name": "L1_SIS and ICF_parents",
+  "sort_order": 5,
+  "description": "Must be completed for studies involving minor participants (younger than 18 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Numéro de protocole : [à compléter] | Numéro d’essai UE : [à compléter]"
+  ],
+  "info_table": [
+   "Titre de la recherche",
+   "Titre abrégé de la recherche",
+   "Numéro de protocole [ajouter la version et la date]",
+   "Numéro d’essai UE [ou, le cas échéant, numéro EudraCT / ID-RCB applicable]",
+   "Promoteur [avec adresse complète]",
+   "Investigateur principal / coordonnateur",
+   "Nom du lieu de recherche",
+   "Adresse du lieu de recherche",
+   "Version et date du document",
+   "Nom, prénom et date de naissance du mineur",
+   "Nom et qualité du ou des titulaires de l’autorité parentale / représentant légal"
+  ],
+  "content_instructions": "Adapt the document to the specific research, RIPH category, investigational product or device and participant population. Ensure consistency with the protocol without copying scientific protocol language. Use clear and understandable French, short sentences, active voice, non-technical terminology and consistent wording for each concept. Define abbreviations at first use and, where needed, in the glossary. Do not use the expression « tomber enceinte ». Clearly distinguish standard care from research-specific treatments, procedures, risks and constraints. Structure the information in three parts: information about the research; participant rights and management of collected data; and a glossary where useful. The version submitted to the Comité de protection des personnes must correspond to the version presented to participants; provide access links for electronic information or consent materials. Adapt and complete the participant-rights and data-protection wording with the controller and DPO details, legal basis, purposes, data categories, recipients, confidentiality measures, transfers, retention period, participant rights, CNIL complaint route, and secondary-use or SNDS information where applicable. Include specific prior written consent for genetic examinations and separate consent for optional studies. Include consent for sharing strictly necessary information with the treating physician where applicable. Prepare separate adapted documents for minors, protected adults and participants unable to consent where applicable. Use this document for the person or persons authorised under French law to consent to a minor’s participation. The child is the participant. Provide the child with separate age- and maturity-adapted information, seek the child’s personal adherence and never override an explicit refusal or later wish to stop. Consent is normally given by both holders of parental authority. A single present holder may consent only where the research has minimal risks and constraints, the minor is not a healthy volunteer, and the other holder cannot respond within the methodologically compatible timeframe. For a minor under guardianship, and where the CPP identifies a serious risk to privacy or bodily integrity, apply the family-council or guardianship-judge pathway. Obtain the participant’s own informed consent if the minor reaches legal adulthood during participation.",
+  "styling_instructions": "Use an airy, readable layout with clear subheadings; subheadings may be written as participant-facing questions. Add a table of contents when the document exceeds 6 pages. The information document should ideally not exceed 15 pages and should use 12-point font. Avoid colored text, avoid placing the sponsor logo on every page and do not require participant initials or page-by-page paraphs. Keep the consent form visually separate from the participant information document."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b> </b>\n<b>PARTIE 1 : INFORMATIONS SUR LA RECHERCHE</b>\nMadame / Monsieur / Madame, Monsieur, [<i>à adapter</i>],\n\nLe Dr/Pr [<i>nom, prénom</i>] vous propose d’autoriser la participation de votre enfant / du mineur que vous représentez à une recherche impliquant la personne humaine ayant pour objectif d’évaluer [<i>produit, procédure ou stratégie</i>] dans [<i>affection</i>].\n\nVotre décision est libre. Vous pouvez lire ce document, discuter avec vos proches et le médecin traitant de l’enfant, poser toutes vos questions et disposer d’un délai suffisant de réflexion. Le mineur recevra une information adaptée à son âge et à sa capacité de compréhension et sera associé à la décision dans la mesure du possible. Son refus ou son souhait d’arrêter devra être respecté.",
+   "section_style": "H2 document subline, Rich body text, Standard table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b><u>Contexte et justification / Pourquoi cette recherche est-elle mise en place chez des mineurs ?</u></b>\nDécrire brièvement la pathologie, le rationnel pédiatrique et pourquoi la participation de mineurs est nécessaire.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b><u>Présentation de la recherche / En quoi la recherche consiste-t-elle ?</u></b>\n<i>Préciser les objectifs, la population, l’effectif, les lieux, la durée de participation de l’enfant et les sources de financement.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b><u>Traitements / produits / stratégies à l’étude / Que recevra votre enfant ?</u></b>\n<i>Décrire les éléments expérimentaux, les modalités d’administration, le tirage au sort, les groupes, le placebo et l’insu éventuels. Distinguer clairement les soins habituels des actes réalisés pour la recherche.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b><u>Déroulement / Que se passera-t-il pour votre enfant et que devrez-vous faire ?</u></b>\nUn examen médical déterminera si votre enfant peut participer.\n- <i>Insérer un calendrier compréhensible des visites, examens, administrations et suivis.</i>\n- <i>Décrire les procédures particulières, les contraintes, les effets sur l’école ou la vie quotidienne et les responsabilités du représentant.</i>\n- <i>Expliquer comment l’information sera adaptée au mineur et comment son avis sera recherché et documenté.</i>\n- <i>Préciser que l’investigateur peut interrompre la participation pour des raisons de sécurité ou d’intérêt du mineur.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b><u>Alternatives médicales / Quelles sont les alternatives pour votre enfant ?</u></b>\n<i>Décrire les traitements ou stratégies disponibles en cas de non-participation et leurs limites.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b><u>Bénéfices attendus, contraintes et risques / Quels sont les bénéfices et risques pour votre enfant ?</u></b>\n<i>Décrire les bénéfices individuels et collectifs, sans les garantir, ainsi que les risques graves même rares, les risques fréquents même peu graves, les risques inconnus, la douleur, la peur et les contraintes propres à la recherche.</i>\n<i>Inclure les risques reproductifs et les mesures de contraception uniquement lorsqu’ils sont adaptés à l’âge, au développement et au protocole.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b><u>Remboursement des frais</u></b>\nLes frais supplémentaires directement liés à la participation du mineur seront pris en charge par le promoteur. Préciser les remboursements de transport, hébergement, repas et, le cas échéant, perte de revenus du représentant. Aucune somme ne doit constituer une incitation à faire participer le mineur.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b><u>[Le cas échéant] Prélèvement, utilisation et conservation d’échantillons biologiques du mineur</u></b>\nDécrire la nature, le nombre, le volume, la méthode, les risques, la finalité, le codage, le lieu et la durée de conservation, les responsables, destinataires, transferts et le sort final des échantillons. Distinguer les prélèvements de soin et ceux propres à la recherche. [Le cas échéant, si des échantillons déjà conservés sont utilisés, notamment des tissus d’archives] Des échantillons déjà prélevés chez le mineur dans le cadre de ses soins ou d’une recherche précédente, notamment [<i>nature des échantillons ou tissus d’archives</i>], conservés à [<i>source et lieu de conservation</i>], seront utilisés dans la présente recherche afin de [<i>analyses et finalité précise</i>]. Préciser leur codage, les destinataires, les transferts éventuels, la durée de conservation et leur sort final.\n\nToute utilisation future hors de la recherche principale relève du modèle distinct d’utilisation secondaire.\n\n<i>[Note de rédaction : préciser si les prélèvements ou l’utilisation des échantillons sont nécessaires pour participer à la recherche ou facultatifs. Lorsqu’ils sont facultatifs, préciser que leur refus n’affecte ni la participation du mineur à la recherche ni sa prise en charge et prévoir un choix distinct dans le formulaire de consentement.]</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b><u>[Le cas échéant] Examen des caractéristiques génétiques du mineur</u></b>\nDes examens des caractéristiques génétiques du mineur seront réalisés afin de [<i>nature et finalité précise</i>].\n\n[Le cas échéant] Décrire les résultats incidents possibles, le choix d’en être informé ou non, les conséquences familiales et les modalités de conseil, de prévention ou de prise en charge. Associer le mineur selon sa capacité de compréhension.\n\nAucun examen ne sera réalisé sans l’autorisation expresse, écrite et préalable requise.\n\n<i>[Note de rédaction : inclure uniquement si la recherche prévoit un examen des caractéristiques génétiques. Décrire dans la présente note d’information la nature et la finalité de l’examen et, selon le cas, les résultats incidents, le choix d’en être informé ou non, les conséquences familiales, la fiabilité de l’examen et les possibilités de prévention ou de prise en charge. Recueillir dans le formulaire d’autorisation une autorisation expresse, écrite, préalable et distincte. Si l’examen est indispensable, préciser que le refus empêche la participation ; s’il est facultatif, préciser que le refus n’affecte pas la participation.]</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b><u>[Le cas échéant] Études optionnelles</u></b>\nUne ou plusieurs études optionnelles peuvent être proposées pour votre enfant. Pour chacune, préciser l’objectif, les procédures supplémentaires, les risques ou contraintes, les données et/ou échantillons concernés et la durée. Vous êtes libre d’accepter ou de refuser sans conséquence sur la recherche principale ni sur la prise en charge du mineur. Le choix sera recueilli séparément et le mineur sera associé selon sa capacité de compréhension.\n\n<i>[Note de rédaction : supprimer cette section si aucune étude optionnelle n’est prévue.]</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b><u>Fin de participation / Que se passera-t-il si la participation s’arrête ?</u></b>\n<i>Décrire la prise en charge en cas de retrait par le représentant, de refus ou de retrait d’adhésion du mineur, d’exclusion, d’arrêt prématuré et à la fin de la recherche.</i>\nSi le participant atteint l’âge de la majorité au cours de la recherche, son propre consentement libre et éclairé devra être obtenu avant la poursuite de sa participation.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "\n<b><u>Durée de conservation des données</u></b><b> </b>\nPréciser la durée de conservation des données ou les critères utilisés pour déterminer leur durée \n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b><u>Dispositions législatives et réglementaires</u></b>\n[À adapter au régime applicable] Cette recherche a reçu l’avis favorable du Comité de protection des personnes [<i>nom du CPP</i>] le [<i>date</i>] et, lorsqu’une autorisation de l’autorité compétente est requise, l’autorisation de l’Agence nationale de sécurité du médicament et des produits de santé (ANSM) le [<i>date</i>]. [Le cas échéant, préciser le règlement européen ou l’article national applicable.]\n\nLe traitement des données personnelles du mineur dans le cadre de la recherche est conforme à la méthodologie de référence MR-001* établie par la Commission nationale de l’informatique et des libertés (CNIL).\n\n[Si le traitement ne respecte pas l’ensemble des conditions de la MR-001, supprimer la phrase précédente et utiliser :] Le traitement des données personnelles du mineur bénéficie d’une autorisation de la CNIL en date du [<i>date</i>].\n\n<i>[Note de rédaction : conserver uniquement la voie applicable dans le document final.]</i>\n\nPour couvrir sa responsabilité et celle de toute personne intervenant dans la réalisation de la recherche, le [<i>promoteur</i>] a souscrit une assurance de responsabilité civile auprès de [<i>nom de la société, adresse, numéro de contrat</i>].\n[Le cas échéant] Une convention a été établie entre l’établissement de santé et le promoteur, qui prend en charge les frais supplémentaires et contreparties financières engendrés par la recherche.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b><u>PARTIE 2 : INFORMATIONS SUR LES DROITS DU PARTICIPANT ET SUR LA GESTION DES DONNÉES RECUEILLIES</u></b>\n\n<b><u>Comment la décision de participation est-elle prise ?</u></b>\nL’autorisation du ou des titulaires de l’autorité parentale ou du représentant légal est libre et peut être refusée ou retirée à tout moment sans responsabilité ni préjudice pour le mineur. Le mineur reçoit une information adaptée à sa capacité de compréhension, est consulté dans la mesure où son état le permet et son adhésion personnelle est recherchée. Il ne peut être passé outre à son refus ni à la révocation de son acceptation.\n\n[Note de rédaction] Le consentement est en principe donné par les deux titulaires de l’autorité parentale. Le seul titulaire présent ne peut consentir que si les trois conditions prévues à l’article L. 1122-2 sont réunies : risques et contraintes minimes, mineur non volontaire sain et impossibilité pour l’autre titulaire de répondre dans un délai compatible avec la recherche.\n\nVous serez informé(e) de toute nouvelle information susceptible de modifier la décision. Le mineur ou ses représentants pourront demander les informations de santé détenues dans le cadre de la recherche et les résultats globaux selon les modalités précisées.",
+   "section_style": "H2 document subline, H3 module title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b><u>Comment les données personnelles de votre enfant / du mineur que vous représentez seront-elles traitées dans le cadre de la recherche ?</u></b>\nSi vous autorisez la participation, les données personnelles de votre enfant / du mineur que vous représentez, y compris ses données de santé, feront l’objet d’un traitement par le promoteur en qualité de responsable du traitement.\nLes données suivantes seront recueillies : <i>[lister toutes et uniquement les catégories de données effectivement traitées, y compris celles obtenues auprès de tiers ou par appariement ; ajouter chaque catégorie particulière applicable et justifier brièvement la nécessité des catégories les plus sensibles].</i>\n\n[Le cas échéant] Pour cette recherche, le promoteur utilisera également des données déjà recueillies dans le cadre des soins de votre enfant / du mineur que vous représentez ou d’une recherche précédente, provenant de [<i>source</i>] et concernant [<i>catégories de données</i>]. Vous pouvez exercer les droits relatifs à ces données, notamment le droit d’opposition, auprès de [<i>contact</i>].\n\n[Le cas échéant] Les données nécessaires pour vérifier votre identité et votre qualité de représentant seront traitées séparément pour documenter l’autorisation.\n\n[Le cas échéant] Des enregistrements de la voix et/ou de l’image du mineur seront réalisés afin de [<i>finalité précise</i>]. Ils seront [<i>codés / directement identifiants</i>], accessibles à [<i>destinataires</i>], [<i>transférés vers les pays suivants : à préciser</i>] et conservés pendant [<i>durée</i>].\n\n[Choisir l’option applicable :\n– Ces enregistrements sont nécessaires pour participer à la recherche.\n– Ces enregistrements sont facultatifs. Vous pouvez les refuser sans que cela n’affecte la participation du mineur ni sa prise en charge.]\n\n<i>[Note de rédaction : décrire uniquement les enregistrements réellement prévus et supprimer les options non applicables.]</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b><u>Quelle est la base juridique et la finalité du traitement des données ?</u></b>\nLe traitement des données de votre enfant / du mineur que vous représentez est nécessaire à la réalisation de la recherche et repose sur [<i>base légale choisie par le promoteur</i>] ainsi que sur la nécessité du traitement à des fins de recherche scientifique. Les données du représentant sont traitées uniquement pour documenter son identité, sa qualité et l’autorisation donnée.\nLe responsable de traitement met en œuvre des mesures appropriées pour garantir les droits et libertés de la personne concernée et ne recueille que les données nécessaires.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b><u>Comment la confidentialité des données sera-t-elle assurée ?</u></b>\nLes données de votre enfant / du mineur que vous représentez seront traitées de manière confidentielle conformément à la Loi Informatique et Libertés et au RGPD. Elles seront codées : un numéro remplacera les nom et prénom dans les données utilisées pour la recherche. Seul l’investigateur conservera la correspondance entre ce code et l’identité.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b><u>Qui aura accès aux données dans le cadre de la recherche ?</u></b>\nLes informations identifiantes seront accessibles uniquement aux personnes autorisées : équipe médicale ou de recherche, personnes chargées du contrôle de qualité mandatées par le promoteur, autorités sanitaires ou de contrôle, délégué à la protection des données si celui-ci est contacté et, en cas de litige, personnel habilité de l’assureur.\nLes données codées pourront être accessibles au promoteur, aux personnes agissant pour son compte, aux entités directement impliquées et aux experts indépendants, dans la limite de leurs missions. [<i>Adapter les destinataires, prestataires et transferts à la recherche.</i>]",
+   "section_style": "H3 module title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b><u>Quels sont les droits relatifs aux données du mineur ?</u></b>\nVous pouvez, en qualité de titulaire de l’autorité parentale ou de représentant légal et selon les conditions applicables, exercer les droits d’accès, de rectification, de limitation, d’opposition et d’effacement concernant les données du mineur. Le mineur pourra exercer lui-même ces droits lorsqu’il sera en mesure de le faire ou lorsqu’il aura acquis la capacité juridique.\n\nL’exercice de certains droits peut être limité lorsque les données sont nécessaires à la sécurité, au respect d’une obligation légale ou lorsque l’effacement compromettrait gravement les objectifs de la recherche.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 21,
+   "section_content": "<b><u>Comment exercer ces droits ?</u></b>\nLes demandes peuvent être adressées en premier lieu à l’investigateur, qui connaît l’identité de votre enfant / du mineur que vous représentez, ou au délégué à la protection des données du promoteur [<i>coordonnées</i>]. Une réclamation peut être déposée auprès de la CNIL si l’exercice des droits rencontre une difficulté.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 22,
+   "section_content": "<b><u>[Le cas échéant] Quelles sont les conditions de transfert des données codées hors de l’Union européenne ?</u></b>\nLes données codées de votre enfant / du mineur que vous représentez seront transférées vers les pays suivants : [<i>liste exhaustive</i>], à [<i>destinataires</i>], pour [<i>finalité</i>]. Préciser pour chaque pays la décision d’adéquation, les garanties appropriées ou la dérogation applicable et indiquer comment obtenir une copie des garanties.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 23,
+   "section_content": "<b><u>Les données codées et/ou les échantillons biologiques de votre enfant pourront-ils être réutilisés ?</u></b>\nToute réutilisation facultative des données ou des échantillons en dehors des objectifs de la recherche principale doit être présentée séparément et faire l’objet de la décision prévue dans le modèle « Utilisation secondaire des données ou échantillons biologiques ». Le refus n’affecte pas la participation à la recherche principale ni la prise en charge.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 24,
+   "section_content": "<b><u>Vos contacts</u></b>\nPromoteur de la recherche et responsable du traitement : [<i>adresse postale, téléphone, adresse électronique et, le cas échéant, site internet</i>]\n[Le cas échéant] Autre responsable du traitement : [<i>adresse postale, téléphone, adresse électronique et, le cas échéant, site internet</i>]\nInvestigateur principal / coordonnateur de la recherche : [<i>adresse postale, téléphone, adresse électronique et, le cas échéant, site internet</i>]\nInvestigateur du lieu de recherche : [<i>adresse postale, téléphone, adresse électronique et, le cas échéant, site internet</i>]\n[Le cas échéant] Sous-traitant : [<i>adresse postale, téléphone, adresse électronique et, le cas échéant, site internet</i>]\n[Le cas échéant] Autre professionnel de la recherche : [<i>adresse postale, téléphone, adresse électronique et, le cas échéant, site internet</i>]\nDélégué à la protection des données : [<i>adresse postale, téléphone, adresse électronique et, le cas échéant, site internet</i>]\nCommission nationale de l’informatique et des libertés (CNIL) : [<i>lien ou coordonnées actualisées</i>]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 25,
+   "section_content": "\n<b><u>PARTIE 3 : GLOSSAIRE</u></b><b> </b>\n \n<b>Recherche </b>\n<b>Impliquant la personne humaine  </b>\tLes recherches organisées et pratiquées sur l’être humain en vue du développement des connaissances biologiques ou médicales sont désignées par le terme « recherche impliquant la personne humaine » (article L. 1121-1 du Code de la santé publique) \n<b>Promoteur </b>\tPersonne physique ou morale responsable de la recherche, qui en assure la gestion et qui vérifie que son financement est prévu. \n<b>Investigateur </b>\tPersonne physique chargée de surveiller et de diriger la recherche sur un lieu de recherche. \n<b>RGPD </b>\tRèglement Général sur la Protection des Données. \nRèglement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données<b> </b>\n<b>Étude randomisée </b>\tÉtude au sein de laquelle l’attribution dans un groupe se fait de façon aléatoire par tirage au sort. \n<b>Placebo  </b>\tSubstance sans principe actif. \n<b>Résultats globaux </b>\tRésultats de la recherche résultant de l’analyse de toutes les données de celle-ci. \n<b>Données personnelles </b>\tDonnée se rapportant à une personne physique identifiée ou identifiable. Les données de santé sont des données à caractère personnel particulières car sensibles. \n<b>Données codées </b>\n<b>Ou pseudonymisées </b>\tLe codage ou la pseudonymisation consiste à remplacer les données directement identifiantes (nom, prénom, etc.) d’un jeu de données par des données indirectement identifiantes (alias, numéro, etc.). \n<b>Méthodologie de référence (MR) </b>\tProcédure simplifiée encadrant l’accès aux données de santé pour les promoteurs de recherche \n<b>Traitement des données </b>\tUn traitement de données personnelles est une opération, ou ensemble d’opérations, portant sur des données personnelles, quel que soit le procédé utilisé (collecte, enregistrement, organisation, conservation, adaptation, modification, extraction, consultation, utilisation, communication par transmission ou diffusion ou toute autre forme de mise à disposition, rapprochement). \n \n<b> </b>",
+   "section_style": "H2 document subline, Standard table"
+  },
+  {
+   "section_number": 26,
+   "section_content": "<b><u>FORMULAIRE DE CONSENTEMENT DES TITULAIRES DE L’AUTORITÉ PARENTALE / DU REPRÉSENTANT LÉGAL</u></b>\nTitre complet de la recherche + titre court le cas échéant\n\nMineur participant : [<i>nom, prénom, date de naissance</i>]\n\nJe / Nous soussigné(e)(s) [<i>nom(s), prénom(s), qualité(s)</i>] autorise/autorisons librement la participation du mineur identifié ci-dessus et confirme/confirmons :\n• avoir reçu une information claire, compris les objectifs, procédures, risques, contraintes, bénéfices attendus et alternatives ;\n• avoir disposé d’un délai suffisant et obtenu des réponses aux questions ;\n• savoir que l’autorisation peut être refusée ou retirée sans conséquence sur la prise en charge du mineur ;\n• savoir que le mineur reçoit une information adaptée, que son adhésion est recherchée et que son refus ou souhait d’arrêter doit être respecté ;\n• avoir été informé(e)(s) des règles relatives aux données, échantillons, assurance, résultats globaux et droits ;\n• savoir qu’un consentement personnel sera demandé au participant s’il atteint la majorité pendant la recherche ;\n• avoir reçu un exemplaire signé du présent formulaire.\n\n[Choisir la situation applicable et supprimer les autres]\n□ Les deux titulaires de l’autorité parentale signent.\n□ Un seul titulaire signe parce que les trois conditions de l’article L. 1122-2 sont réunies ; documenter l’impossibilité de recueillir l’accord de l’autre titulaire dans le délai compatible.\n□ Une seule personne dispose légalement de l’autorité ou de la représentation ; préciser le fondement : [<i>à compléter</i>].\n□ Autorisation complémentaire du conseil de famille ou du juge requise : [<i>référence</i>].\n\n[Le cas échéant] J’ai / Nous avons été informé(e)(s) du prélèvement et/ou de l’utilisation et de la conservation des échantillons biologiques du mineur pour les besoins de la recherche, selon les modalités décrites dans le document d’information.\n\n[Le cas échéant, si le prélèvement ou l’utilisation d’échantillons est facultatif]\nJ’autorise / Nous autorisons le prélèvement et/ou l’utilisation et la conservation des échantillons biologiques du mineur selon les modalités décrites dans le document d’information.\nOui □          Non □\nCe choix n’affectera ni sa participation à la recherche ni sa prise en charge.\n\n<i>[Note de rédaction : ne prévoir un choix distinct Oui / Non que pour un prélèvement ou une utilisation d’échantillons véritablement facultatif.]</i>\n[Le cas échéant] Je / Nous consens / consentons à l’examen des caractéristiques génétiques du mineur afin de [<i>finalité</i>], selon les modalités décrites dans le présent document. Oui □ Non □\n[Le cas échéant, si les enregistrements sont nécessaires à la recherche]\nJ’autorise / Nous autorisons l’enregistrement et l’utilisation de la voix et/ou de l’image du mineur afin de [<i>finalité</i>], selon les modalités décrites dans le document d’information.\n\n[Le cas échéant, si les enregistrements sont facultatifs]\nJ’autorise / Nous autorisons l’enregistrement et l’utilisation de la voix et/ou de l’image du mineur afin de [<i>finalité</i>], selon les modalités décrites dans le document d’information.\nOui □          Non □\nCe choix n’affectera ni sa participation à la recherche ni sa prise en charge.\n\n<i>[Note de rédaction : conserver uniquement la version applicable.]</i>\n[Le cas échéant] J’ai / Nous avons été informé(e)(s) que toute étude optionnelle proposée au mineur fera l’objet d’un document d’information et d’une autorisation séparés.\n[Le cas échéant] Accord pour informer le médecin traitant de l’enfant lorsque strictement nécessaire : Oui □ Non □\n\nSignature du titulaire / représentant 1 : __________ Date : __________\nNom, prénom, qualité : __________________________________\n\nSignature du titulaire / représentant 2 : __________ Date : __________\nNom, prénom, qualité : __________________________________\n\nSignature de l’investigateur ou du professionnel ayant délivré l’information : __________ Date : __________\nNom et fonction : __________________________________\n\nL’expression du mineur est documentée dans le formulaire adapté correspondant, lorsqu’elle peut être recueillie.",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

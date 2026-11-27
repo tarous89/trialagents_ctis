@@ -1,0 +1,134 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Emergency Enrolment and Deferred Consent Form",
+  "doc_name_local": "Nachträgliche Teilnehmerinformation und Einwilligungserklärung nach Notfalleinschluss",
+  "target_country": "Austria",
+  "country_code": "AT",
+  "target_language": "German",
+  "language_code": "de",
+  "doc_type": "emergency_enrollment",
+  "file_name": "L1_SIS and ICF_emergency",
+  "sort_order": "3",
+  "description": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+  "target_population": "[Beschreibung der Population laut Prüfplan]",
+  "target_population_label": "[Kurzbezeichnung der Population]",
+  "footer": [
+   "[Dokumentname] - [Kurzbezeichnung der Population] - Version 1.0 - [Datum]",
+   "Prüfplannummer: [ausfüllen] | EU-CT-Nummer: [ausfüllen]"
+  ],
+  "info_table": [
+   "Titel der klinischen Prüfung",
+   "Kurztitel der klinischen Prüfung",
+   "Prüfplannummer [Version und Datum ergänzen]",
+   "EU-CT-Nummer",
+   "Sponsor [mit vollständiger Anschrift und Länderangabe]",
+   "Verantwortliche Prüfärztin/verantwortlicher Prüfarzt",
+   "Name des Prüfzentrums",
+   "Anschrift des Prüfzentrums"
+  ],
+  "content_instructions": "LÄNGENLIMIT: Möglichst gleich lang oder kürzer als die Erwachsenen-Hauptinformation; bei mehr als 10 Seiten ist eine 1- bis höchstens 2-seitige Kurzzusammenfassung erforderlich. In Österreich ist bei Notfallstudien zusätzlich eine nachträgliche Information und Einwilligungserklärung einzureichen, die nach Wiedererlangung der Einwilligungsfähigkeit vorzulegen ist. Verwenden Sie die österreichische Erwachseneninformation als Anker, ändern Sie jedoch Einführung, Zeitform und Entscheidung: klar trennen zwischen bereits erfolgten Maßnahmen und der freiwilligen Entscheidung über die Fortsetzung. Keine rückwirkende Genehmigung formulieren. Erläutern Sie Daten und Proben vor und nach der nachträglichen Einwilligung, die Folgen einer Ablehnung und den Umgang mit bereits erhobenen Informationen nach österreichischem Recht. Versicherungs- und Datenschutzpflichttext beibehalten. Eigene Einwilligung unverzüglich einholen; falls zuerst eine Erwachsenenvertretung erreicht wird, deren Entscheidung gesondert dokumentieren. Neu ergänzte oder angepasste Texte sind in kurzen, leicht verständlichen Sätzen zu formulieren; Fachbegriffe aus der österreichischen Musterinformation bleiben unverändert, neu eingeführte Fachbegriffe sind kurz zu erklären.",
+  "styling_instructions": "LÄNGEN- UND LAYOUTVORGABE: Das Dokument muss so kurz wie mit einer vollständigen, informierten Entscheidung vereinbar bleiben. Umfasst die endgültige Teilnehmerinformation mehr als 10 Seiten, ist eine klar getrennte Kurzzusammenfassung von 1 bis höchstens 2 Seiten einzufügen; sie darf den Haupttext nicht wortgleich wiederholen. A4-Hochformat verwenden. Kurztitel sowie Version/Datum in der Kopfzeile und „Seite X von NN“ in der Fußzeile führen. Nummerierte, fett hervorgehobene Überschriften und gut lesbaren Fließtext verwenden. Listen für Abläufe, Risiken, Pflichten und Wahlmöglichkeiten nutzen. Bearbeitungshinweise, nicht gewählte Alternativen, Hervorhebungen für die Redaktion und nicht anwendbare Abschnitte vor Ausgabe entfernen. Die Einwilligungs- oder Zustimmungserklärung als klar getrennten letzten Hauptabschnitt mit ausreichend großen Ankreuz-, Namens-, Datums- und Unterschriftsfeldern darstellen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Sehr geehrte Patientin, sehr geehrter Patient!\n\nSie wurden während einer plötzlichen schweren oder lebensbedrohlichen medizinischen Notfallsituation in die oben genannte klinische Prüfung eingeschlossen. Zu diesem Zeitpunkt konnten Sie nicht ausreichend informiert werden oder wirksam einwilligen. Eine zur Vertretung befugte Person war innerhalb des notwendigen Behandlungszeitfensters nicht erreichbar. Der Einschluss erfolgte entsprechend dem genehmigten Prüfplan und dem bewerteten Notfallverfahren.\n\nDiese Information betrifft nicht eine rückwirkende Genehmigung der bereits notwendigen Notfallmaßnahme. Sie werden jetzt so bald wie möglich vollständig informiert und entscheiden freiwillig, ob die klinische Prüfung fortgesetzt werden darf.\n\n<b>Sie können die weitere Teilnahme ablehnen oder später jederzeit ohne Angabe von Gründen beenden. Dies hat keine nachteiligen Folgen für Ihre weitere medizinische Betreuung.</b>\n\nZu dieser klinischen Prüfung sowie zur nachträglichen Information und Einwilligungserklärung wurde von der zuständigen Ethikkommission eine befürwortende Stellungnahme abgegeben.",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Was ist der Zweck der klinischen Prüfung?</b>\n\nDer Zweck ist ...... <i>(wie im Prüfplan in einfacher Sprache beschreiben und erklären, warum die Behandlung nur im Notfallfenster begonnen werden konnte).</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Welche Behandlungsmöglichkeiten gibt es ab jetzt?</b>\n\nBeschreiben Sie die ab dem jetzigen Entscheidungszeitpunkt verfügbaren Behandlungen außerhalb der klinischen Prüfung und deren Vor- und Nachteile. Bereits erfolgte Notfallmaßnahmen sind getrennt darzustellen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Was ist bereits geschehen und wie würde die Prüfung weiterlaufen?</b>\n\nBereits vor dieser Information wurden folgende Maßnahmen durchgeführt: ...... <i>(Prüfmedikament, Randomisierung, Verblindung, Eingriffe, Daten und Proben mit Zeitpunkt angeben).</i>\n\nWenn Sie der Fortsetzung zustimmen, erfolgen noch: ...... <i>(Behandlung, Besuche, Untersuchungen, Nachbeobachtung, Daten- und Probengewinnung angeben).</i>\n\nIhre gesamte Teilnahme dauert voraussichtlich NN. Experimentelle Maßnahmen kennzeichnen. EU-CT-Nummer und Zugang zu Ergebnissen wie in der Erwachsenen-Hauptvorlage angeben.\n\n<i>(Falls genetische Untersuchungen vorgesehen sind, ist studienspezifisch festzulegen, ob sie medizinischen oder wissenschaftlichen Zwecken dienen, welche Proben und Analysen betroffen sind, ob persönliche Ergebnisse mitgeteilt werden und welche Zustimmung, Beratung und Laboranforderungen gelten.)</i>\n\n<i>(Falls genetische Untersuchungen stattfinden, sind Zweck, Art und Umfang der Analyse, verwendetes Material, Untersuchungs- und Aufbewahrungsort sowie die Regelung zur Mitteilung persönlicher Ergebnisse studienspezifisch zu beschreiben. Es ist anzugeben, ob die Untersuchung medizinischen oder wissenschaftlichen Zwecken dient und welche Beratung beziehungsweise welches Recht auf Nichtwissen gilt; genetische Untersuchungen außerhalb des beschriebenen Studienumfangs sind nicht umfasst.)</i>\n\n<i>(Falls ein externer Dienstleister eingesetzt wird: Name und Sitz, Zweck, Ablauf, erforderliche Daten, Aufbewahrungsdauer, etwaige Drittlandübermittlung und verpflichtende oder freiwillige Nutzung angeben; bei freiwilliger Nutzung eine Ja/Nein-Entscheidung vorsehen. Bei Hausbesuchen zusätzlich die Tätigkeiten sowie die österreichische Berufsberechtigung und Qualifikation des eingesetzten Personals angeben.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Was ist ...... <i>(Bezeichnung des Prüfmedikamentes)</i>?</b>\n\nZulassungsstatus, bereits verabreichte Dosis, mögliche weitere Dosis, Vergleichsbehandlung, Randomisierung und Verblindung verständlich beschreiben. Erklären Sie, ob und wann eine Entblindung erfolgt ist oder erfolgen kann.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Welchen möglichen Nutzen gibt es?</b>\n\nDer Notfalleinschluss setzte einen möglichen direkten klinisch relevanten Nutzen voraus. Beschreiben Sie den möglichen Nutzen, ohne ihn zu garantieren. Stellen Sie klar, welcher Nutzen bereits angestrebt wurde und welcher von einer Fortsetzung erwartet werden könnte.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Welche Risiken, Beschwerden und Belastungen gibt es?</b>\n\nBeschreiben Sie Risiken der bereits erhaltenen Prüfbehandlung und Risiken der weiteren Teilnahme, einschließlich unbekannter Risiken und der studienbedingten Maßnahmen. Häufigkeiten in verständlicher Form angeben.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Zusätzliche Arzneimittel und Behandlungen</b>\n\nAb jetzt geltende Einschränkungen und notwendige Informationen an andere behandelnde Ärzte angeben. Notfälle sind ausgenommen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Auswirkungen auf die Lebensführung und Verpflichtungen</b>\n\nNur ab jetzt anwendbare Verpflichtungen und deren Gründe beschreiben. Bereits erfüllte oder nicht mehr relevante Vorgaben nicht als zukünftige Pflicht darstellen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>9. Was ist bei Symptomen, Begleiterscheinungen oder Verletzungen zu tun?</b>\n\nAlle Beschwerden seit der Notfallbehandlung und während einer Fortsetzung sind dem Prüfarzt mitzuteilen; schwerwiegende Ereignisse sofort. Kontaktdaten und 24-Stunden-Nummer angeben.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "\n\n<b>10.\tVersicherung</b>\n\nAls Teilnehmer an dieser klinischen Prüfung besteht für Sie der gesetzlich vorgeschriebene verschuldensunabhängige Versicherungsschutz (Personenschadenversicherung<i> </i>gemäß § 40 Arzneimittelgesetz)<i>,</i> der alle Schäden abdeckt, die an Ihrem Leben oder Ihrer Gesundheit durch die an Ihnen durchgeführten Maßnahmen der klinischen Prüfung verursacht werden können, mit Ausnahme von Schäden auf Grund von Veränderungen des Erbmaterials in Zellen der Keimbahn.\n\nDie Versicherung wurde für Sie bei der ...... <i>(Versicherungsgesellschaft, Adresse, Telefonnummer)</i> unter der Polizzennummer ...... abgeschlossen. Auf Wunsch können Sie in die Versicherungsunterlagen Einsicht nehmen.\n\nIm Schadensfall können Sie sich direkt an den Versicherer wenden und Ihre Ansprüche selbständig geltend machen. Für den Versicherungsvertrag ist österreichisches Recht anwendbar, die Versicherungsansprüche sind in Österreich einklagbar.\n\nZur Unterstützung können Sie sich auch an die Patientenanwaltschaft, Patientenvertretung oder Patientenombudsschaft wenden.\n\n\n\nUm den Versicherungsschutz nicht zu gefährden\n\n- dürfen Sie sich während der Dauer der klinischen Prüfung einer anderen medizinischen Behandlung nur im Einvernehmen mit Ihrem behandelnden Prüfarzt unterziehen <b>(ausgenommen davon sind Notfälle).</b> Dies gilt auch für die zusätzliche Einnahme von Medikamenten oder die Teilnahme an einer anderen Studie.\n\n- müssen Sie dem behandelnden Prüfarzt - oder der oben genannten Versicherungsgesellschaft - eine Gesundheitsschädigung, die als Folge der klinischen Prüfung eingetreten sein könnte, unverzüglich mitteilen.\n\n- müssen Sie alles Zumutbare tun um Ursache, Hergang und Folgen des Versicherungsfalles aufzuklären und den entstandenen Schaden gering zu halten. Dazu gehört ggf. auch, dass Sie Ihre behandelnden Ärzte ermächtigen, vom Versicherer geforderte Auskünfte zu erteilen.\n\n- ...... <i>(Bitte listen Sie allfällige weitere Obliegenheiten auf.)</i>\n\n\n\n(<i>Für klinische Prüfungen, an denen möglicherweise gebärfähige Frauen teilnehmen, müssen die folgenden Absätze eingefügt werden:)</i>\n\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>11. Informationen zu Schwangerschaft und Zeugungsfähigkeit</b>\n\nNur anwendbare Risiken und ab jetzt erforderliche Maßnahmen aufnehmen. Eine gesonderte Schwangerschaftsnachbeobachtung verwenden, wenn zusätzliche Daten oder Daten des Kindes nach der Geburt erhoben werden sollen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>12. Was geschieht, wenn Sie nicht fortsetzen oder später widerrufen?</b>\n\nSie können die Fortsetzung ablehnen oder später widerrufen. Die normale medizinische Versorgung wird fortgesetzt. Nach einem Widerruf werden keine neuen Daten oder Proben zu Studienzwecken erhoben; gesetzlich erforderliche Sicherheitsmeldungen bleiben unberührt.\n\nDie bis zu dieser Information im Rahmen des Notfalleinschlusses erhobenen Daten werden nur im gesetzlich zulässigen Umfang weiterverarbeitet. Sie entscheiden in der Einwilligungserklärung gesondert, ob Sie dieser weiteren Verarbeitung zustimmen; gesetzlich verpflichtende Sicherheitsmeldungen sowie gesetzliche Aufbewahrungs- und Dokumentationspflichten bleiben unberührt.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>13. Datenschutz</b>\n\nVor dieser Information wurden im Rahmen des genehmigten Notfalleinschlusses bereits folgende Daten und gegebenenfalls Proben erhoben: ...... . Nach Ihrer Einwilligung zur Fortsetzung werden folgende weiteren Daten und gegebenenfalls Proben erhoben: ...... .\n\nIm Rahmen dieser klinischen Prüfung werden Daten über Sie erhoben und verarbeitet. Es ist grundsätzlich zu unterscheiden zwischen:\n\n1) Personenbezogenen Daten, anhand derer eine Person direkt identifizierbar ist (z.B. Name, Geburtsdatum, Adresse, Sozialversicherungsnummer, Bildaufnahmen...).\n\n2) Pseudonymisierten personenbezogenen Daten, das sind Daten, bei denen alle Informationen, die direkte Rückschlüsse auf die konkrete Person zulassen, entweder entfernt, durch einen Code (z. B. eine Zahl) ersetzt oder (z.B. im Fall von Bildaufnahmen) unkenntlich gemacht werden. Es kann jedoch trotz Einhaltung dieser Maßnahmen nicht vollkommen ausgeschlossen werden, dass es unzulässigerweise zu einer Re-Identifizierung kommt. \n\n3) Anonymisierten Daten, bei denen eine Rückführung auf die konkrete Person ausgeschlossen werden kann. \n\n\n\nZugang zu den Daten, anhand derer Sie direkt identifizierbar sind (siehe Punkt 1), haben der Prüfarzt und andere Mitarbeiter des Prüfzentrums, die an der klinischen Prüfung oder Ihrer medizinischen Versorgung mitwirken. Zusätzlich können autorisierte und zur Verschwiegenheit verpflichtete Beauftragte des Sponsors ......... (<i>der Sponsor ist</i> <i>in jedem Fall inkl Länderangabe anzugeben</i>) sowie Beauftragte von in- und/ oder ausländischen Gesundheitsbehörden und jeweils zuständige Ethikkommissionen in diese Daten Einsicht nehmen, soweit dies für die Überprüfung der ordnungsgemäßen Durchführung der klinischen Prüfung notwendig ist. Sämtliche Personen, die Zugang zu diesen Daten erhalten, unterliegen im Umgang mit den Daten den jeweils geltenden nationalen Datenschutzbestimmungen und/oder der EU-Datenschutz-Grundverordnung (DSGVO). \n\n\n\nDer Code, der eine Zuordnung der pseudonymisierten Daten zu Ihrer Person ermöglicht, wird nur an Ihrem Prüfzentrum aufbewahrt. \n\n\n\n<i>(Bei klinischen Prüfungen mit externem Sponsor ist folgender Satz zu ergänzen</i>):\n\nEine Weitergabe der Daten, insbesondere an den Sponsor und seine Vertragspartner,<b> </b>erfolgt nur in pseudonymisierter oder anonymisierter Form. \n\n\n\n<i>(Bei klinischen Prüfungen ohne externen Sponsor, bei denen eine Weitergabe pseudonymisierter Daten an kommerzielle Vertragspartner erfolgt, ist folgender Satz zu ergänzen</i>):\n\nEine Weitergabe der Daten, insbesondere an .....(<i>hier ist der Empfänger der Daten konkret anzugeben</i>) erfolgt nur in pseudonymisierter oder anonymisierter Form. \n\n\n\n(<i>Wenn es weder einen externen Sponsor gibt, noch</i> <i>eine Weitergabe pseudonymisierter Daten an kommerzielle Vertragspartner erfolgt, ist folgender Satz zu ergänzen):</i>\n\nEine Weitergabe der Daten<b> </b>erfolgt nur in pseudonymisierter oder anonymisierter Form. \n\n\n\n\n\n<i>(Bei Weitergabe an Sponsor und seine Vertragspartner oder kommerzieller Vertragspartner ist zu ergänzen):</i>\n\nIm Rahmen dieser klinischen Prüfung ist eine Weitergabe an …. <i>(hier ist der Empfänger der Daten konkret anzugeben) </i>geplant.\n\n\n\nEine Weitergabe der Daten erfolgt nur in pseudonymisierter oder anonymisierter Form. \n\n\n\n\n\nFür etwaige Veröffentlichungen werden nur die pseudonymisierten oder anonymisierten Daten verwendet. \n\n\n\n<i>(Die folgenden Optionen betreffen die Weitergabe von Daten in Länder außerhalb der EU/EWR. Nicht zutreffende Optionen sind zu löschen. Bei einer Weitergabe sind das jeweilige Land und der Empfänger anzugeben.)</i>\n\n<b>[Option 1 – keine Weitergabe außerhalb der EU/EWR]</b>\nIm Rahmen dieser klinischen Prüfung ist keine Weitergabe von Daten in Länder außerhalb der EU/EWR (Drittland) vorgesehen.\n\n<b>[Option 2 – Angemessenheitsbeschluss]</b>\nFür manche Drittländer liegt ein Angemessenheitsbeschluss vor, der ein gleichwertiges Datenschutzniveau gewährleistet, wie es in EU/EWR-Ländern aufgrund der DSGVO gegeben ist. Der Empfänger der Daten hat seinen Sitz in ...... <i>(hier das Drittland angeben)</i>; für dieses Land wurde ein Angemessenheitsbeschluss der Europäischen Kommission erlassen.\n\nDie Übermittlung erfolgt zu folgendem Zweck: ...... .\n\n<b>[Option 3 – kein Angemessenheitsbeschluss]</b>\nIm Rahmen dieser klinischen Prüfung ist auch eine Weitergabe von pseudonymisierten Daten in Länder außerhalb der EU/EWR (Drittland) vorgesehen. Diese Drittländer unterliegen nicht den strengen Datenschutzvorgaben der EU (DSGVO). Dadurch besteht das Risiko, dass Sie die Ihnen gemäß DSGVO zustehenden Rechte nicht durchsetzen können. Daher werden ergänzende Maßnahmen getroffen, um Ihre Daten zu schützen.\n\nDer Empfänger der Daten ...... <i>(Empfänger und Land angeben)</i> ist vertraglich durch Abschluss der sogenannten Standarddatenschutzklauseln verpflichtet, Ihre Daten angemessen zu schützen und ausschließlich für die Zwecke dieser Studie zu verwenden.\n\nDie Übermittlung erfolgt zu folgendem Zweck: ...... .\n\n<i>(Bei einer Übermittlung in die USA sind Empfänger, Zweck und das bestehende Datenschutzniveau in verständlicher Form anzugeben. Es ist anzugeben, ob geeignete DSGVO-konforme Garantien und Vereinbarungen bestehen; falls nicht, sind die wesentlichen verbleibenden Risiken in einfacher Sprache zu beschreiben.)</i>\n\nIhre Einwilligung bildet die Rechtsgrundlage für die Verarbeitung Ihrer personenbezogenen Daten (Art 9 Abs. 2 lit a DSGVO i.V.m § 41 AMG). Sie können die Einwilligung zur Erhebung und Verarbeitung Ihrer Daten jederzeit ohne Begründung widerrufen. Nach Ihrem Widerruf werden keine weiteren Daten mehr über Sie erhoben. Die bis zum Widerruf erhobenen Daten können allerdings weiter im Rahmen dieser klinischen Prüfung verarbeitet werden. Wenn Sie mit der Verarbeitung Ihrer Daten nicht einverstanden sind, können Sie nicht an dieser klinischen Prüfung teilnehmen.\n\nNach der DSGVO stehen Ihnen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch zu, soweit dies die Ziele der klinischen Prüfung nicht unmöglich macht oder ernsthaft beeinträchtigt und soweit dem nicht andere gesetzliche Vorschriften widersprechen.\n\nDas gemäß DSGVO vorgesehene Recht auf Löschung Ihrer im Rahmen dieser klinischen Prüfung verarbeiteten Daten steht Ihnen aufgrund von Regelungen nach dem Arzneimittelgesetz nicht zu. Zusätzlich ist bei einer klinischen Prüfung nach dem Arzneimittelgesetz das Recht auf Datenübertragbarkeit außer Kraft gesetzt.\n\nDie voraussichtliche Dauer der klinischen Prüfung ist ......  (<i>hier ist die derzeit erwartete bzw. geplante  Dauer der klinischen Prüfung,  anzugeben</i>). Die Dauer der Speicherung Ihrer Daten über das Ende oder den Abbruch der klinischen Prüfung hinaus ist durch Rechtsvorschriften geregelt (Arzneimittelstudie mindestens 25 Jahre).\n\n<i>Optionale Speicherung oder Verwendung von Daten außerhalb der im Prüfplan festgelegten Zwecke der klinischen Prüfung ist nicht in diesem Hauptdokument zu beschreiben. Dafür ist die gesonderte Information und Einwilligung „Sekundäre und zukünftige Verwendung von Daten oder Bioproben“ zu verwenden.</i> Falls Sie Fragen zum Umgang mit Ihren Daten in dieser klinischen Prüfung haben, wenden Sie sich zunächst an Ihren Prüfarzt. Dieser kann Ihr Anliegen ggf. an die Personen, die für den Datenschutz verantwortlich sind, weiterleiten.\n\nKontaktdaten der Datenschutzbeauftragten der an dieser klinischen Prüfung beteiligten Institutionen:\n\nDatenschutzbeauftragte:r des Prüfzentrums/der beteiligten Institution: [Name und zentrenspezifische Kontaktdaten]\n\nDatenschutzverantwortliche:r des Krankenanstaltenträgers: [zentrenspezifische Kontaktdaten]\n\n<i>(Im Falle eines externen Sponsors ist auch die folgende Angabe zu ergänzen)</i>\n\nDatenschutzbeauftragte:r des Sponsors: [Name und Kontaktdaten, sofern zutreffend]\n\nName, Anschrift und Kontaktdaten des Sponsors: [einfügen]\n\nSie haben das Recht, bei der österreichischen Datenschutzbehörde eine Beschwerde über den Umgang mit Ihren Daten einzubringen (<u>www.dsb.gv.at; E-Mail: dsb@dsb.gv.at </u>).",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>14. Entstehen Kosten? Gibt es Kostenersatz?</b>\n\nDurch die Fortsetzung entstehen keine zusätzlichen Kosten / folgende Kosten entstehen: ...... . Reise- und andere notwendige Kosten werden wie folgt ersetzt: ...... .\n\n<i>(Falls zutreffend: externen Anbieter, Zahlungsart und Wahlmöglichkeit angeben.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>15. Möglichkeit zur Diskussion weiterer Fragen</b>\n\nPrüfarzt: ......\n24-Stunden-Notfallnummer: ......\nDatenschutzkontakt: ......\nPatientenanwaltschaft/Patientenvertretung: ......",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>16. Wo kann ich weitere Informationen einholen?</b>\n\n<i>(Kontaktstelle gemäß § 42 AMG angeben.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>17. Sollen andere behandelnde Ärzte informiert werden?</b>\n\nNur die ab jetzt geplante Kontaktaufnahme und erforderliche Zustimmung beschreiben.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>18. Kurzzusammenfassung</b>\n\n<i>Bei mehr als 10 Seiten eine 1- bis höchstens 2-seitige Zusammenfassung einfügen. Deutlich zwischen bereits Geschehenem, der jetzigen Entscheidung und zukünftigen Maßnahmen unterscheiden.</i>",
+   "section_style": "H2 document subline, Summary section, Info/warning/note box, Rich body text"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b>19. Nachträgliche Einwilligung zur Fortsetzung</b>\n\nName und Geburtsdatum der Prüfungsteilnehmerin/des Prüfungsteilnehmers: ......\n\nIch wurde darüber informiert, warum ich in der Notfallsituation ohne vorherige Einwilligung eingeschlossen wurde, was bereits geschehen ist und was bei einer Fortsetzung noch erfolgen wird. Ich habe die vollständige Information erhalten, konnte Fragen stellen und hatte ausreichend Zeit.\n\nIch weiß, dass ich nicht rückwirkend die Notfallmaßnahme genehmige, sondern jetzt freiwillig über die Fortsetzung entscheide.\n\n□ Ich stimme der weiteren Teilnahme und der ab jetzt beschriebenen Daten- und Probenverarbeitung zu.\n□ Ich stimme einer Fortsetzung nicht zu.\n\n<b>Gesonderte Entscheidung zu den bereits erhobenen Daten</b>\n\n□ Ich stimme der weiteren Verarbeitung der bis zu dieser Information im Rahmen des Notfalleinschlusses erhobenen personenbezogenen Daten zu.\n□ Ich stimme dieser weiteren Verarbeitung nicht zu, soweit keine gesetzliche Verpflichtung zur Verarbeitung oder Aufbewahrung besteht.\n\n<i>(Falls vor dieser Information Proben erhoben wurden und hierfür eine gesonderte Entscheidung erforderlich ist, eine entsprechende Ja/Nein-Entscheidung ergänzen.)</i>\n\n<i>(Nur aufnehmen, wenn nach dieser Einwilligung eine freiwillige optionale genetische Untersuchung angeboten wird.)</i>\n\n<b>Gesonderte Einwilligung zur optionalen genetischen Untersuchung</b>\n\nIch habe die Information zur optionalen genetischen Untersuchung in Abschnitt ...... erhalten und verstanden.\n\n□ Ich willige in die dort beschriebene optionale genetische Untersuchung ein.\n□ Ich willige nicht ein.\n\n......................................................................................................\nDatum und Unterschrift der Prüfungsteilnehmerin/des Prüfungsteilnehmers\n\n<i>(Weitere anwendbare optionale Entscheidungen, ausgenommen genetische Untersuchungen, einzeln aufführen.)</i> ...... Ja □ Nein □\n\n......................................................................................................\nDatum, Name und Unterschrift der Prüfungsteilnehmerin/des Prüfungsteilnehmers\n\n......................................................................................................\nDatum, Name und Unterschrift der aufklärenden Prüfärztin/des aufklärenden Prüfarztes\n\n<i>(Falls zuerst eine Erwachsenenvertretung erreicht wird, gesonderten vertretungsbezogenen Unterschriftsblock ergänzen und die eigene Einwilligung unverzüglich nach Wiedererlangung der Einwilligungsfähigkeit einholen.)</i>\n\nEine unterzeichnete Kopie wurde ausgehändigt.",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

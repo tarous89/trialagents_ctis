@@ -1,0 +1,80 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Mukautettu tutkimustiedote ja osallistumishalukkuuden ilmaisu",
+  "target_country": "Finland",
+  "country_code": "FI",
+  "target_language": "Finnish",
+  "language_code": "fi",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": "2",
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versio 1.0 - [date]",
+   "Tutkimussuunnitelman numero: [täytä] | EU-tutkimusnumero: [täytä]"
+  ],
+  "info_table": [
+   "Tutkimuksen nimi",
+   "Tutkimuksen lyhyt nimi",
+   "Tutkimuksen koodi [jos soveltuu]",
+   "Tutkimussuunnitelman numero [lisää versio ja päivämäärä]",
+   "EU-tutkimusnumero",
+   "Toimeksiantaja [täydellinen osoite]",
+   "Johtava tutkija",
+   "Tutkimuskeskuksen nimi",
+   "Tutkimuskeskuksen osoite"
+  ],
+  "content_instructions": "Perusta asiakirja Tukijan T/447/2026-malliin ja Suomen kliinistä lääketutkimusta koskevaan sääntelyyn. Kirjoita vain päätöksenteon kannalta olennaiset tiedot tiiviillä, ymmärrettävällä suomen kielellä. Vältä toistoa, tarpeetonta ammattisanastoa, käskevää tai houkuttelevaa ilmaisua sekä sanamuotoja, jotka olettavat osallistumisen. Selitä vierasperäiset ja tekniset termit ensimmäisellä käyttökerralla. Käytä valittua puhuttelumuotoa johdonmukaisesti. Suullinen tieto, mahdollisuus kysymyksiin ja riittävä harkinta-aika kuuluvat suostumusprosessiin. Kuvaa vain tutkimussuunnitelman mukaiset toimenpiteet, tiedot, näytteet, vastaanottajat, siirrot, säilytysajat, korvaukset ja riskit. Pidä yksityiskohtaiset toimintaohjeet erillisessä ohjeessa, mutta kerro tiedotteessa kaikki osallistumispäätökseen vaikuttavat rasitteet ja rajoitukset. Jos tutkimuksessa käytetään ionisoivaa säteilyä, noudata Tukijan T/447/2026-säteilyohjetta: kerro joko ettei lisäaltistusta synny tavanomaiseen hoitoon verrattuna tai kuvaa tutkimuskohtaisesti kuvantaminen, hyöty, annos, riskin ymmärrettävä merkitys, toistojen määrä ja kokonaisaltistus. Jos tutkimuksessa on hajautettuja elementtejä, kuten etävastaanottoja tai sähköinen suostumus, kuvaa ne siltä osin kuin ne vaikuttavat osallistumiseen. Tietosuojassa yksilöi rekisterinpitäjä(t), todelliset käsittelyperusteet sanallisesti ja GDPR:n artikla-/alakohtatasolla, tietolähteet, vastaanottajat, mahdollinen suora etäpääsy potilastietoihin, säilytys, EU/ETA:n ulkopuoliset maat ja siirtomekanismi sekä tosiasiassa soveltuvat rekisteröidyn oikeudet. Älä käytä tutkittaville suunnatussa materiaalissa sanaa rotu; käytä tarvittaessa käsitettä etninen tausta. Tuleva tai muu tutkimussuunnitelman ulkopuolinen käyttö ei kuulu näihin malleihin; sitä varten käytetään erillistä tulevan/toissijaisen käytön tiedotetta ja suostumusta. Poista kaikki laatimisohjeet, vaihtoehdot ja soveltumattomat moduulit ennen osallistujalle annettavaa lopullista asiakirjaa. Käytä tätä lyhyttä mukautettua asiakirjaa täysi-ikäiselle tutkittavalle, joka ei voi itse antaa oikeudellisesti pätevää tietoon perustuvaa suostumusta mutta kykenee ymmärtämään osan tiedoista ja ilmaisemaan tahtoa, epävarmuutta tai vastustusta. Laillisesti nimetty edustaja antaa oikeudellisesti pätevän suostumuksen erillisellä Legal Representative -asiakirjalla. Tämä asiakirja ei ole korvaava oikeudellinen suostumus. Käytä lyhyitä lauseita, konkreettisia sanoja ja tarvittaessa selkokieltä, kuvia, symboleja, tulkkia tai muita viestintäkeinoja. Kerro tutkimuksen tarkoitus, mitä tutkittavalle tehdään, tärkeimmät mahdolliset hyödyt, riskit ja epämukavuudet sekä oikeus sanoa ei tai lopettaa. Tutkittavan ilmaistu tai havainnoitu vastustus on dokumentoitava ja sitä kunnioitettava. Allekirjoitus tai merkki otetaan vain, jos se on tutkittavalle merkityksellinen ja mahdollinen. Tiedon antanut henkilö dokumentoi käytetyn viestintätuen ja tutkittavan tahdon. Jos tutkittava myöhemmin palautuu suostumuskykyiseksi, käytä Adult Patients -mallia ja hanki hänen oma tietoon perustuva suostumuksensa viipymättä tutkimuksen jatkamiseksi. Renderöi ennen info_tablea/varsinaista sisältöä otsikko ”TIEDOTE KLIINISESTÄ LÄÄKETUTKIMUKSESTA” (ikä-/käyttötarkennus voidaan lisätä alaotsikoksi), vaikka otsikko ei sisälly template_content-kenttään.",
+  "styling_instructions": "A4 pystysuunnassa. Käytä selkeää, helposti luettavaa 11–12 pt tai kohderyhmän mukaan suurempaa kirjasinta, lyhyitä kappaleita, runsaasti tyhjää tilaa ja selkeitä otsikoita. Käytä kuvia, symboleja tai muuta viestintätukea vain, jos ne parantavat ymmärtämistä. Allekirjoitus- ja tahdonilmaisukohdissa on oltava selkeät nimi-, päiväys- ja allekirjoitus/merkintäkentät."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Sinua pyydetään mukaan tutkimukseen\n\nTämä on kliininen lääketutkimus. Tutkimuksessa halutaan oppia lisää [sairaudesta/tilanteesta] ja [tutkimuslääkkeestä/hoidosta].\n\nSinulle kerrotaan tutkimuksesta siksi, että haluamme kuulla, mitä sinä ajattelet osallistumisesta. [Laillisesti nimetyn edustajan nimi/rooli] saa tutkimuksesta täydelliset tiedot ja häneltä pyydetään erillinen suostumus.\n\nSinun mielipiteesi on tärkeä. Jos sanot tai osoitat, ettet halua osallistua, sitä kunnioitetaan.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Mitä tutkimuksessa tapahtuu?\n\nJos olet mukana, sinulle tehdään seuraavia asioita:\n• saat [tutkimuslääkkeen/vertailuhoidon/placebon];\n• käyt [x] kertaa tutkimuskeskuksessa;\n• sinulta otetaan [näytteet] [x kertaa];\n• sinulle tehdään [tärkeimmät tutkimukset];\n• tutkimus kestää noin [aika].\n\n<i>(Jos satunnaistaminen, lume tai sokkoutus on tärkeä ymmärtää, selitä se yhdellä tai kahdella hyvin lyhyellä lauseella. Käytä tarvittaessa kuvia tai muuta viestintätukea.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Voiko tutkimuksesta olla hyötyä?\n\n[Valitse ja mukauta:] Tutkimus voi ehkä auttaa sinua [konkreettinen mahdollinen hyöty], mutta emme tiedä sitä varmasti. / Tutkimuksen ei odoteta auttavan sinua suoraan.\n\nTutkimuksesta voidaan saada tietoa, joka voi auttaa lääkäreitä ja muita ihmisiä tulevaisuudessa.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Voiko jokin tuntua pahalta tai epämukavalta?\n\nTutkimuslääke voi aiheuttaa [tärkeimmät haitat yksinkertaisin sanoin]. [Tutkimus/toimenpide] voi tuntua [kipu/epämukavuus]. Myös sellaisia haittoja voi tulla, joita ei vielä tunneta.\n\nKerro heti, jos sinulla on kipua, sinua pelottaa, voit huonosti tai et halua jatkaa.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Voit sanoa ei tai lopettaa\n\nSinun ei ole pakko osallistua tutkimukseen. Voit sanoa ei. Jos olet ensin mukana, voit myöhemmin sanoa, ettet halua jatkaa. Sinun ei tarvitse kertoa syytä.\n\nVoit kertoa tahtosi sanoilla, eleillä, merkeillä, viestintävälineellä tai muulla tavalla. Tutkimushenkilökunta seuraa myös vointiasi ja reaktioitasi.\n\nJos sanot ei tai osoitat vastustusta, sitä kunnioitetaan. Se ei vaikuta tavalliseen hoitoosi tai apuun, jota saat.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Mitä tiedoillesi ja näytteillesi tapahtuu?\n\nTutkimusta varten kerätään vain tarvittavia tietoja ja näytteitä. Ne merkitään koodilla ja niitä käsitellään luottamuksellisesti. Tutkimusta tarkastavat henkilöt voivat nähdä tarpeellisia tietoja, mutta heillä on salassapitovelvollisuus.\n\nTarkemmat tiedot henkilötietojen ja näytteiden käsittelystä annetaan [laillisesti nimetylle edustajalle] täydellisessä tutkimustiedotteessa. <i>(Kerro tässä vain sellainen lisätieto, joka auttaa juuri tätä tutkittavaa ymmärtämään, mitä hänelle tapahtuu.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Kustannukset, vahingot ja tutkimuksen tulokset\n\nTutkimukseen osallistumisesta ei aiheudu sinulle ylimääräisiä tutkimuskustannuksia. [Jos relevantti: tarpeelliset matkakulut korvataan.]\n\nJos tutkimuslääkkeestä tai tutkimuksen toimenpiteestä aiheutuu vahinko, Suomessa on tutkimukseen soveltuvat lääkevahinko- ja potilasvakuutusjärjestelyt. Tarkemmat tiedot annetaan edustajallesi.\n\nKun tutkimus on valmis, tutkimuksen tuloksista julkaistaan yhteenveto EU-tietokannassa. [Jos relevantti: sinulle voidaan kertoa tuloksista myös yksinkertaisesti.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Keneltä voit kysyä?\n\nVoit kysyä tutkimuksesta milloin tahansa.\n\nYhteyshenkilö: [nimi]\nPuhelin: [numero]\nSähköposti: [osoite]\n\nVoit myös puhua [läheiselle/edustajalle/turvalliselle henkilölle].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "TUTKITTAVAN TAHDON ILMAISU\n\nTämä kohta ei ole oikeudellisesti pätevä tietoon perustuva suostumus. Se dokumentoi tutkittavan oman tahdon mukautetun tiedon jälkeen.\n\nTutkittava: [ ] haluaa olla mukana  [ ] ei halua olla mukana  [ ] on epävarma  [ ] ei pysty ilmaisemaan selkeää kantaa\n\nTahto ilmaistiin: [sanoilla / eleillä / merkeillä / viestintävälineellä / käyttäytymisellä / muulla tavalla]\n\nTutkittavan omat sanat, merkit tai havaittu reaktio: ____________________________________\n\nTutkittavan nimi: ____________________________________\n\n____________________________________    _________________\nTutkittavan allekirjoitus/merkki, jos mielekäs ja mahdollinen   Päiväys\n\n<b>Tiedon antaneen henkilön vahvistus</b>\n\nOlen mukauttanut tiedon tutkittavan ymmärryskykyyn, käyttänyt seuraavaa viestintätukea: ______________________, arvioinut ymmärtämistä mahdollisuuksien mukaan ja dokumentoinut tutkittavan ilmaiseman tai havaitun tahdon. Vahvistan, että tutkittavan mahdollista vastustusta kunnioitetaan.\n\n____________________________________    _________________\nAllekirjoitus                            Päiväys\n____________________________________\nNimi ja rooli",
+   "section_style": "Section break, H2 document subline, Rich body text, Signature section"
+  }
+ ]
+}

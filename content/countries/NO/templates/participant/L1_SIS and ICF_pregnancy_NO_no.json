@@ -1,0 +1,94 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Participants",
+  "doc_name_local": "Informasjon og samtykke til graviditetsoppfølging – studiedeltaker",
+  "target_country": "Norway",
+  "country_code": "NO",
+  "target_language": "Norwegian",
+  "language_code": "no",
+  "doc_type": "pregnant_participants",
+  "file_name": "L1_SIS and ICF_pregnancy",
+  "sort_order": "7",
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versjon 1.0 - [date]",
+   "Protokollnummer: [fyll inn] | EU CT-nummer: [fyll inn]"
+  ],
+  "info_table": [
+   "Studietittel",
+   "Forkortet studietittel",
+   "Protokollnummer [legg til versjon og dato]",
+   "EU CT-nummer",
+   "Sponsor [med fullstendig adresse]",
+   "Hovedutprøver",
+   "Navn på studiesenter",
+   "Adresse til studiesenter"
+  ],
+  "content_instructions": "Bruk bare for en kvinnelig studiedeltaker som blir gravid under hovedstudien eller i den protokollbestemte perioden etter siste eksponering. Dokumentet supplerer hovedsamtykket og gjelder kun innsamling av opplysninger om graviditet, mors helse, graviditetsutfall og eventuell oppfølging av barnet. Det skal ikke brukes som samtykke til å fortsette studielegemiddel eller andre eksperimentelle prosedyrer under graviditeten. Beskriv studiespesifikke risikoer og konkrete sikkerhetstiltak, avblinding, behandlingsstopp eller medisinsk oppfølging. Samle bare nødvendige opplysninger og bruk separat samtykke etter fødselen dersom nye opplysninger om barnet skal innhentes. Avslag eller tilbaketrekking skal ikke påvirke ordinær behandling. Ikke oppgi GDPR-behandlingsgrunnlag eller rettigheter i dette samtykket; separat personverninformasjon skal gis. Bruk som standard et konkret år som er minst 25 år etter End of Trial. Bruk samme år som i hovedstudiens informasjonsskriv, protokoll, personverninformasjon og sikkerhetsdokumentasjon, med mindre protokollen eller en uttrykkelig godkjenning fastsetter en annen periode.",
+  "styling_instructions": "Bruk kort, tydelig norsk og skrifttype uten seriffer. Hold graviditetsoppfølgingen tydelig atskilt fra samtykke til hovedstudien og eventuell fortsatt behandling. Behold separate signaturseksjoner for deltakeren og eventuell oppfølging av barnet."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "INVITASJON TIL GRAVIDITETSOPPFØLGING\n\nDu deltar eller har deltatt i studien [studietittel, protokollnummer og EU CT-nummer]. Du er blitt gravid under studien eller innen [periode] etter siste dose eller annen studieeksponering.\n\nVi ber om ditt samtykke til å samle inn opplysninger om deg, graviditeten og utfallet. Dette dokumentet supplerer det opprinnelige samtykket til hovedstudien.",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "FORMÅLET MED OPPFØLGINGEN\n\nVi vet kanskje ikke nok om hvordan [studielegemiddel/behandling/prosedyre] kan påvirke deg, graviditeten, embryoet, fosteret eller barnet.\n\nFormålet er å samle nødvendig sikkerhetsinformasjon om eksponeringen, graviditetsforløpet og utfallet.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "HVA BETYR GRAVIDITETEN FOR HOVEDSTUDIEN?\n\nDette samtykket gjelder ikke fortsatt bruk av studielegemiddel eller fortsatt deltakelse i andre studieprosedyrer.\n\n[Beskriv studiespesifikt hva som skjer når graviditet oppdages: pause eller stopp av studielegemiddel, avblinding, endring av andre legemidler, graviditetstest, sikkerhetskontroller og kontakt med behandlende lege.]\n\nDersom studielegemiddelet eller andre eksperimentelle prosedyrer skal fortsette under graviditeten, må dette være særskilt dekket av protokollen, risiko–nytte-vurderingen, godkjenningene og en egen re-informasjons- og samtykkeprosess.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "KJENTE ELLER MULIGE RISIKOER\n\n[Beskriv bare kjente, mistenkte eller ukjente studiespesifikke risikoer for den gravide, embryoet, fosteret eller barnet, og risiko ved å stoppe eller endre behandling.]\n\n[Forklar hvilke symptomer eller situasjoner som krever rask kontakt og hvilke medisinske tiltak som er planlagt.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "HVILKE OPPLYSNINGER SAMLES INN?\n\nVi samler bare inn nødvendige opplysninger:\n\n• studielegemiddel, dose og tidspunkt for eksponering\n• relevante andre legemidler og sykdommer\n• relevante opplysninger om din helse før og under graviditeten\n• forventet termin, undersøkelser og komplikasjoner\n• graviditetsutfall\n• [Hvis helseopplysninger om barnet skal samles inn etter fødselen: Beskriv hvilke opplysninger som samles inn, datakilder, formål, tidspunkter, oppfølgingsperiode, mottakere, eventuell overføring og lagringstid. Opplys at innsamlingen først starter etter separat samtykke fra den eller de med foreldreansvar.]\n\n[Beskriv eventuelle protokollbestemte prøver eller undersøkelser særskilt med formål, risiko og belastning. Ikke legg dem til dersom de ikke faktisk er planlagt og godkjent. Hvis graviditetsoppfølgingen innebærer en ekstra forskningsprosedyre utover ordinær medisinsk oppfølging som kan medføre skade eller mer enn minimal fysisk belastning, opplys også kort om hvilken relevant skade-/erstatningsordning som gjelder og hvem deltakeren kan kontakte. Bruk maksimalt 1–2 korte setninger om dette. Eksempel: «Hvis du blir skadet som følge av [ekstra studieprosedyre], kan du ha rett til erstatning gjennom [relevant ordning]. Kontakt [navn/rolle] for mer informasjon.» Utelat dette dersom oppfølgingen bare består av innsamling av opplysninger eller ordinær medisinsk oppfølging.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "HVORDAN OG HVOR LENGE SAMLES OPPLYSNINGENE INN?\n\nOpplysningene innhentes fra [deg], [hovedstudiens data], [journal], [fastlege/jordmor/fødeavdeling/annet helsepersonell] på følgende tidspunkter: [angi].\n\nEksternt helsepersonell kontaktes bare dersom du har samtykket og nødvendig taushetsfritak er dokumentert.\n\nOppfølgingen varer til [konkret tidspunkt]. [Hvis barnet følges etter fødselen, angi periode og bruk separat samtykke.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "HVA SKJER MED OPPLYSNINGENE?\n\nOpplysningene brukes bare til den beskrevne sikkerhetsoppfølgingen. Alle opplysningene vil bli avidentifisert. Det betyr at vi bruker en kode for å knytte opplysningene til deg og dine øvrige studiedata. Navnelisten som kobler koden til deg, oppbevares på [sted] og er bare tilgjengelig for ansvarlig personell.\n\nOpplysningene lagres frem til [konkret år] og kan deles med [sponsor, studiesenter, sikkerhetsdatabase, myndigheter og kontrollører] i avidentifisert form. [Ved overføring: oppgi land eller «innenfor EU/EØS».]\n\nSponsor og studiesenteret er ansvarlige for behandling i samsvar med norsk rett og GDPR. Du får separat personverninformasjon. Behandlingsgrunnlag og GDPR-rettigheter skal ikke oppgis i dette samtykket.\n\nResultater rapporteres slik at du og barnet normalt ikke kan gjenkjennes. Kontrollpersoner har taushetsplikt.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "FRIVILLIGHET OG MULIGHET FOR Å TREKKE SAMTYKKET\n\nDet er frivillig å delta i graviditetsoppfølgingen. Du kan si nei eller senere trekke samtykket uten å oppgi noen grunn og uten at det påvirker ordinær behandling.\n\nHvis du trekker samtykket, samles det ikke inn nye opplysninger. Opplysninger som allerede er registrert, blir ikke slettet og kan brukes videre når nødvendig for sikkerhetsrapportering og kontroll.\n\nStopp eller fortsatt deltakelse i hovedstudien avgjøres separat etter protokollen og medisinsk vurdering.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "MULIGE FORDELER, ULEMPER OG UTGIFTER\n\nDu forventes ikke å få direkte helsemessig fordel av datainnsamlingen. Oppfølgingen kan gi bedre kunnskap om sikkerheten ved [legemiddel/behandling].\n\nUlempene er tidsbruk og deling av opplysninger om helse og graviditet. Det finnes en liten risiko for at fortrolige opplysninger kan komme på avveie.\n\nOppfølgingen koster deg [ikke noe / beskriv]. Nødvendige reiseutgifter dekkes av [angi hvem og vilkårene].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "GODKJENNINGER OG KONTAKT\n\n[Angi at oppfølgingen inngår i den REK KULMU- og DMP-godkjente studien og oppgi EU CT-nummer.]\n\nHar du spørsmål, opplever problemer eller ønsker å trekke samtykket, kontakt:\nNavn: [fyll inn]\nTelefon: [fyll inn]\nE-post: [fyll inn]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "SAMTYKKE – GRAVID STUDIEDELTAKER\n\nJeg samtykker til den beskrevne graviditetsoppfølgingen og til at nødvendige opplysninger om min helse, eksponering, graviditeten og utfallet samles inn, kobles til mine kodede studiedata og brukes som beskrevet.\n\n[Hvis relevant:] Jeg samtykker til at studiepersonalet innhenter nødvendige opplysninger fra [navngitt helsepersonell/institusjon] og fritar dem fra taushetsplikten for disse opplysningene.\n\nJeg forstår at dette ikke er samtykke til fortsatt studiebehandling under graviditeten.\n\nJeg bekrefter at jeg har fått informasjon, fått spørsmål besvart, hatt tilstrekkelig tid til å ta stilling og mottatt en kopi.\n\nSted og dato\tDeltakers signatur\n\n\n\tNavn med store bokstaver\n\n\nBEKREFTELSE PÅ AT INFORMASJON ER GITT\n\nSted og dato\tSignatur\n\n\nNavn og rolle",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  },
+  {
+   "section_number": 12,
+   "section_content": "SEPARAT SAMTYKKE ETTER FØDSEL – OPPLYSNINGER OM BARNET [BRUK KUN HVIS AKTUELT]\n\n[Fylles ut etter fødselen dersom nye helseopplysninger om barnet skal samles inn. Beskriv opplysningene, kildene, formålet og oppfølgingsperioden.]\n\n<i>[Redaksjonsnote: For forskning som inngår i en legemiddelutprøving skal alle personer med foreldreansvar samtykke. Behold begge signaturfelt når to personer har foreldreansvar. Behold ett signaturfelt bare når én person alene har foreldreansvaret. Dokumenter grunnlaget. Fjern denne redaksjonsnoten før dokumentet gis til mottakeren.]</i>\n\nBarnets navn/fødselsdato eller kode: [fyll inn]\n\nSom den eller de med foreldreansvar samtykker jeg/vi til innsamling og bruk av barnets opplysninger som beskrevet i avsnitt [sett inn avsnittsnummer].\n\nSted og dato\tSignatur foreldreansvarlig\n\n\n\tNavn med store bokstaver\n\n\nSted og dato\tSignatur foreldreansvarlig\n\n\n\tNavn med store bokstaver",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

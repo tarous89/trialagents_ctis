@@ -1,0 +1,54 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Informasjonsskriv til barn under 12 år",
+  "target_country": "Norway",
+  "country_code": "NO",
+  "target_language": "Norwegian",
+  "language_code": "no",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versjon 1.0 - [date]",
+   "Protokollnummer: [fyll inn] | EU CT-nummer: [fyll inn]"
+  ],
+  "info_table": [
+   "Studietittel",
+   "Forkortet studietittel",
+   "Protokollnummer [legg til versjon og dato]",
+   "EU CT-nummer",
+   "Sponsor [med fullstendig adresse]",
+   "Hovedutprøver",
+   "Navn på studiesenter",
+   "Adresse til studiesenter"
+  ],
+  "content_instructions": "Bruk malen for skriftlig informasjon til barn under 12 år som skal delta i legemiddelutprøvinger omfattet av Clinical Trials Regulation (CTR) EU nr. 536/2014. Fjern markert tekst og tekst i hakeparenteser og erstatt den med studiespesifikt innhold. Informasjonen skal være kort, konkret og tilpasset barnets alder og forståelse. Forklar hvorfor barnet blir spurt, hva som skal skje, hvor lenge det varer, om noe kan gjøre vondt eller være ubehagelig, og hvem barnet kan spørre. Opplys tydelig at barnet kan si nei eller stoppe når som helst uten negative konsekvenser. Informasjon om prevensjon og graviditet skal ikke tas med. Det kan utarbeides separate versjoner for ulike aldersgrupper når det er hensiktsmessig.",
+  "styling_instructions": "Bruk et enkelt, alderspasset oppsett med korte og tydelige spørsmål som moduloverskrifter. Bruk bilder og illustrasjoner der det er hensiktsmessig. Fjern markert instruksjonstekst og hakeparenteser i sluttversjonen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Hvorfor blir du spurt om å være med?\n[Dette forklares på en enkel måte som barnet kan forstå. Bakgrunnen kan være at barnet har en sykdom eller tilstand og at man nå skal prøve ut en ny medisin, for å se om dette kan gi bedre behandling for barn med denne sykdommen/tilstanden.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "\n\nHVA VIL SKJE HVIS DU DELTAR?\n[Forbered barnet på hva som skal skje. Det må komme frem hva som eventuelt er nytt for barnet, hva studien betyr av nye prosedyrer sammenliknet med standard behandling. Noen begreper kan være vanskelige å forstå for barnet og bør derfor unngås eller omskrives slik at det blir forståelig. For barn er det først og fremst prosedyren som er viktig (hvilke undersøkelser skal gjøres, hvilke prøver skal tas og hvor skal dette skje). Dersom barnet/ungdommen skal utføre bestemte typer oppgaver må det fremkomme. Det oppfordres til å bruke bilder og/eller illustrasjoner.]\n[Det er viktig for barnet å vite hvor lang tid undersøkelsene tar, og/eller hvor lenge en eventuell behandling skal vare, om man blir sliten, hvem som skal være til stede osv. Barn har rett til å ha følge fra pårørende. Det er også godt for barnet å vite at andre barn er med i studien.]\n[Forklar svært kort om barnet kan ha personlig nytte, eller om dette er usikkert eller ikke forventes, og de viktigste risikoene, ulempene eller ubehagene. Bruk totalt 2–4 korte setninger til barnet. Eksempler: «Det er ikke sikkert at medisinen hjelper deg.» «Blodprøven kan gjøre litt vondt.» «Det kan også være bivirkninger vi ikke kjenner ennå.» Bruk nøytralt språk og ta bare med studiespesifikke forhold barnet trenger for å forstå hva deltakelsen kan bety for barnet. Ikke bruk lange bivirkningslister.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "\nHVA VIL SKJE HVIS DU IKKE DELTAR?\n[Barnet skal opplyses om at det er frivillig å delta og at hen kan si nei eller stoppe når som helst uten negative konsekvenser for vanlig behandling eller oppfølging. Bruk 1–2 korte setninger.]\n\nHVEM KAN DU SPØRRE?\nHvis du har spørsmål eller vil stoppe, kan du snakke med [navn/rolle].\nTelefon: [nummer]\nE-post: [adresse]\n[Oppgi én fast kontaktperson som er vant til å snakke med barn. Hold kontaktinformasjonen til navn/rolle, telefon og e-post.]\n\n[Hvis det anses hensiktsmessig, er det anledning til å utforme informasjon for ulike aldersgrupper.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "[Tas kun med dersom det er hensiktsmessig for barnets alder og modenhet]\n\nSIGNATUR FRA BARNET\n\nJeg ønsker å være med på denne studien.\n\nSted og dato\tBarnets signatur",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Emergency Enrolment and Deferred Consent Form",
+  "doc_name_local": "Emergency Enrolment Information and Deferred Consent Form",
+  "target_country": "Ireland",
+  "country_code": "IE",
+  "target_language": "English",
+  "language_code": "en",
+  "doc_type": "emergency_enrollment",
+  "file_name": "L1_SIS and ICF_emergency",
+  "sort_order": "3",
+  "description": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protocol number: [fill in] | EU trial number: [fill in]"
+  ],
+  "info_table": [
+   "Trial title",
+   "Short trial title",
+   "Protocol number [add version and date]",
+   "EU trial number",
+   "Sponsor [with full address]",
+   "Principal investigator",
+   "Site name",
+   "Site address",
+   "Study identification number",
+   "Co-investigator(s) [names, titles and contact details]",
+   "Data controller(s)",
+   "Data Protection Officer [name and contact details]"
+  ],
+  "content_instructions": "Tailor the document to the specific clinical trial; remove sections and alternatives that do not apply and add study-specific information needed for an informed decision. Use clear Irish English, plain language consistent with National Adult Literacy Agency principles, approximately a 12-year-old reading level where feasible, short paragraphs, descriptive headings and bullets. Spell out abbreviations on first use and explain unavoidable medical or technical terms. Keep the document consistent with the approved protocol, CTIS Part II dossier and Irish site arrangements. Describe research versus usual care, purpose, why the person is invited, procedures in the order experienced, duration, risks and burdens, possible benefits, alternatives where relevant, voluntariness and withdrawal, insurance/injury arrangements, costs/reimbursement, results, contacts and ethics approval. For Irish data protection, identify the personal data used, sources, controllers/processors/recipients, retention, security, medical-record access, transfers outside the EEA and participant-facing safeguards, rights, Data Protection Officer and complaint route; use a simple study-specific explanation of the GDPR lawful basis. When the participant is providing deferred consent, include explicit consent for processing health-research data as the default; remove it only where an approved Irish alternative or consent-declaration route applies. Do not apply this as representative consent when an adult participant lacks capacity. For biological samples used within the main trial, state sample type and amount, whether collection/use is mandatory or optional, purpose, coding, storage location and duration, analyses, recipients/transfers, security and what happens after analysis or withdrawal. For genetic or genomic testing within the main trial, state whether it is mandatory or optional, the type and purpose of testing, limits to anonymity, foreseeable privacy/family risks, handling of individual or incidental findings, storage/security, transfers and any relevant commercial involvement. Required study procedures, required biological samples and required genetic/genomic testing must be clearly described and, when applicable, included in the Required acknowledgements list with an individual confirmation checkbox. Use separate Yes/No choices only for genuinely optional activities that may be refused without preventing the main activity covered by the form. Do not include optional storage or secondary/future research beyond the approved main-trial purposes; that belongs only in the separate Secondary and Future Use template. Use only after lawful emergency enrolment before prior informed consent. The decision documented here is whether to continue participation, not retrospective authorisation of the emergency intervention. Seek information/consent as soon as possible from the participant or Irish legally designated representative, whichever can appropriately be approached first. If representative consent is obtained, obtain the participant’s own consent when capacity returns. For incapacitated-adult data processing, confirm the Irish HRCDC/data-processing route outside the participant-facing consent. Address the participant directly throughout using “you/your”. Where the participant remains unable to provide deferred consent, retain a conditional legally designated representative signature block at the end; do not rewrite the information leaflet to address the representative.",
+  "styling_instructions": "Use clear participant-facing question headings and short sections. Use a clean readable font such as Calibri, Arial, Verdana or Tahoma at about 12 point. Avoid block capitals and unnecessary legalistic text. Use tables or simple flow charts when they improve understanding. Present required acknowledgements as a clear list with one checkbox beside each applicable acknowledgement and the final dated signature. Do not use Yes/No choices or initials for required acknowledgements. Use Yes/No choices only for genuinely optional components. Where optional components are included, present their confirmation/signature separately from the main consent signature. Use separate fields for printed name, date and signature."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Important information about emergency enrolment</b>\n<b>Drafting note:</b> Do not ask the participant/representative to retrospectively authorise the emergency intervention. Clearly separate what has already happened from what requires consent from now on.\nYou were enrolled in this clinical trial during a sudden serious medical emergency before informed consent could be obtained. At that time you could not make the decision and a legally designated representative could not be reached within the treatment window. Enrolment followed the approved emergency procedure.\n\nYou are now being given this information as soon as possible. If you are able to decide, you will be asked whether you consent to continue in the trial. If you are still unable to provide consent, a legally designated representative may be asked to provide permission for continued participation until you are able to decide for yourself.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Why is the trial being done and why were you enrolled?</b>\nExplain the condition/emergency, study purpose, why the investigational intervention had to be given within a short time, and why the participant met the approved emergency-enrolment criteria. Keep the legal eligibility checklist out of the participant-facing text.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>What has already happened?</b>\nDescribe the investigational treatment/comparator/placebo, randomisation/blinding, emergency procedures, data collected and biological samples already taken before deferred consent. Explain known relevant risks and what care has already been provided.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>What will happen if you agree to continue?</b>\nDescribe all remaining study treatment, visits, procedures, samples, follow-up and duration in chronological order. Distinguish study procedures from usual medical care and identify mandatory versus optional components.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>What are the possible benefits, risks and alternatives from now on?</b>\nExplain possible direct benefit without guarantee, foreseeable/unknown risks from treatment already received and continued participation, burdens, reproductive risks, and relevant treatment alternatives from the current decision point.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>What will happen to my samples and genetic information?</b>\n<b>Drafting note:</b> Include this section whenever biological samples are collected, used or stored for the main trial. Remove only if no biological material is involved.\n\nState exactly which samples are collected or used, including existing clinical samples where applicable, the amount, when and how they are collected, and whether each sample or test is required for the main trial or genuinely optional. Explain the main-trial purpose, coding/pseudonymisation, storage location and duration, laboratories or other recipients, transfers outside the EEA, security, and whether samples are destroyed, used up or retained only for the approved main-trial purpose after analysis.\n\n<b>[Conditional – genetic/genomic testing within the main trial]</b>\nExplain the type and purpose of genetic testing in plain language; whether it is required or optional; the fact that DNA is unique and cannot be regarded as completely anonymous; foreseeable privacy, family or discrimination risks; whether individual results or incidental findings may be returned and how; any counselling available; storage/security and transfers of genetic material/data; and any relevant commercial involvement.\n\nDo not include storage or use for unspecified future or secondary research here. Use the separate Secondary and Future Use template for any activity outside the main-trial purposes.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>What happens to information already collected and information collected from now on?</b>\nExplain separately: (1) data obtained before deferred consent; (2) data that will be collected if continued participation is agreed; and (3) what happens if continued participation is refused. Cover medical-record access, coding, controllers/recipients, study-specific lawful basis, retention, security, transfers, rights and contact details. Do not promise deletion of data already needed for safety, trial integrity or legal obligations.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Can you refuse continued participation or stop later?</b>\nYes. You may refuse to continue or later withdraw without giving a reason and without losing usual care. Explain any medically necessary follow-up and what happens to remaining main-trial samples/data. If a legally designated representative gives deferred consent first, obtain the participant’s own consent as soon as the participant regains capacity.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>What happens if something goes wrong?</b>\nDescribe study-related injury/insurance arrangements and the contact route for suspected harm.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Costs, reimbursement, results and contacts</b>\nState any costs/reimbursement, how overall and relevant individual results will be communicated, sponsor/funding/ethics approval, principal investigator/study contact, urgent contact, Data Protection Officer and complaint route.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>DEFERRED CONSENT – participant now able to consent</b>\n<b>Required acknowledgements</b>\n<b>Drafting note:</b> Keep only statements that apply from the point deferred consent is sought. Delete non-applicable conditional statements. Do not use Yes/No choices or initials for required acknowledgements. Place one confirmation checkbox beside each applicable required acknowledgement.\n\nBy signing below, I confirm that:\n☐ I have been told why I was enrolled during the emergency, what has already happened and what would happen if I continue. I had enough time to ask questions and decide.\n☐ I voluntarily consent to continue in the clinical trial from now on.\n☐ I understand how my study data, including information collected before this consent, will be handled as described in the leaflet.\n<b>[Default – include for a capable participant unless an approved Irish alternative/consent-declaration route applies]</b> ☐ I give explicit consent for my health data to be processed for the research described.\n<b>[Conditional – required biological samples from now on]</b> ☐ I agree to the required main-trial samples described.\n<b>[Conditional – required genetic/genomic testing from now on]</b> ☐ I agree to the required main-trial genetic/genomic testing described.\n<b>[Conditional – other required procedure from now on]</b> ☐ [INSERT REQUIRED STUDY-SPECIFIC ACKNOWLEDGEMENT].\n",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>Optional choices from now on</b>\n<b>You may answer “No” to any choice below and still continue in the remainder of the main trial.</b>\n<b>Drafting note:</b> Include only genuinely optional components that can be refused without preventing the main activity covered by this form.\n\n<b>[Conditional – optional sample/test]</b> I agree to the optional [sample/test].  Yes ☐  No ☐\n<b>[Conditional – optional genetic/genomic testing]</b> I agree to the optional genetic/genomic testing.  Yes ☐  No ☐\n<b>[Add other genuinely optional main-trial activities if applicable.]</b>\n\n<b>[Conditional – include when one or more optional choices are present]</b>\n<b>Confirmation of optional choices</b>\nI confirm that the optional choices marked above reflect the decisions made for continued participation.\nName of person confirming optional choices: ____________________\nRole (participant / legally designated representative): ____________________\nDate: __________  Signature: ____________________",
+   "section_style": "H3 module title, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>[Conditional – legally designated representative consent while the participant remains unable to consent]</b>\n<b>Drafting note:</b> Include this signature block only while the participant remains unable to consent. Confirm that the representative meets the Irish definition. Obtain the participant’s own consent when capacity returns. Do not present representative consent as consent to processing the incapacitated adult’s health-research data.\n\nBy signing below, I confirm that I have been informed about the emergency enrolment and the participant’s current situation, and I give permission for the participant to continue in the trial, subject to the participant’s own wishes and later consent if capacity returns.\n\nRepresentative name: ____________________ Relationship/basis: ____________________\nDate: __________ Signature: ____________________",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>Study-team signature</b>\nName of person taking deferred consent: ____________________\nRole/qualification: ____________________\nDate: __________ Signature: ____________________\n\nA signed copy should be provided to the participant or representative.",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

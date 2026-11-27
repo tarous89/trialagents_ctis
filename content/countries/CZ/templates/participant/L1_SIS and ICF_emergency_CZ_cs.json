@@ -1,0 +1,135 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Emergency Enrolment and Deferred Consent Form",
+  "doc_name_local": "Informace o zařazení v naléhavé situaci / Dodatečný informovaný souhlas s pokračováním",
+  "target_country": "Czech Republic",
+  "country_code": "CZ",
+  "target_language": "Czech",
+  "language_code": "cs",
+  "doc_type": "emergency_enrollment",
+  "file_name": "L1_SIS and ICF_emergency",
+  "sort_order": 3,
+  "description": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - verze 1.0 - [date]",
+   "Číslo protokolu: [doplňte] | EU CT číslo: [doplňte]",
+   "Identifikace klinického hodnocení: [doplňte] | verze dokumentu: [doplňte]"
+  ],
+  "info_table": [
+   "Celý název klinického hodnocení",
+   "Zkrácený název klinického hodnocení",
+   "Číslo protokolu [doplňte verzi a datum]",
+   "EU CT číslo",
+   "Zadavatel [včetně úplné adresy]",
+   "Hlavní zkoušející",
+   "Název pracoviště",
+   "Adresa pracoviště"
+  ],
+  "content_instructions": "Použijte pouze pro účastníka, který byl v souladu se schváleným protokolem zařazen do klinického hodnocení během náhlé závažné nebo život ohrožující situace bez předchozího informovaného souhlasu, protože účastník nebyl schopen souhlasu a zákonně ustanovený zástupce nebyl v terapeutickém okně dostupný. Dokument se týká dodatečného souhlasu s pokračováním, nikoli zpětného schválení již provedené neodkladné intervence. Jasně oddělte, co již proběhlo, od toho, co bude následovat. Informace a souhlas musí být získány bez zbytečného odkladu od účastníka nebo jeho zákonně ustanoveného zástupce, podle toho, koho lze oslovit dříve; jakmile účastník znovu získá schopnost souhlasu, vyžádejte jeho vlastní souhlas. Pokud pokračování není odsouhlaseno, vysvětlete další standardní péči, bezpečnostní sledování a zacházení s již získanými údaji a vzorky bez slibu automatického výmazu. Zachovejte běžné české části o rizicích, přínosech, alternativách, pojištění, údajích, vzorcích, výsledcích a kontaktech. Budoucí nebo sekundární použití nezahrnujte. Potvrzení o samostatném záznamu nezávislého svědka zahrňte pouze tehdy, pokud byl takový svědek při prvotním nouzovém zařazení vyžadován schváleným protokolem nebo českým postupem. Nevyžadujte podpis svědka na pozdějším formuláři dodatečného souhlasu. Rozsah konečných základních informací nesmí přesáhnout 8 stran; pouze ve specifických případech lze akceptovat až 10 stran.",
+  "styling_instructions": "Konečný dokument musí být pouze v češtině. Použijte přehledné kapitoly a odstavce, standardní velikost písma, například Times New Roman 12 nebo Arial 11, a srozumitelný, citlivý jazyk bez nevysvětlených zkratek a odborných výrazů. Každá strana musí být očíslována a označena číslem verze, datem vydání a identifikací klinického hodnocení. Před finalizací odstraňte všechny pokyny pro zpracovatele, příklady, nevybrané alternativy a neaplikovatelné části. Pro plán návštěv a výkonů použijte přehlednou tabulku, pokud to zlepšuje srozumitelnost. Obecné zaškrtávací otázky ano/ne nepoužívejte; výjimkou jsou odůvodněné, skutečně nezávislé volitelné činnosti s vlastním podpisem a datem."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMACE O ZAŘAZENÍ V NALÉHAVÉ SITUACI / DODATEČNÝ INFORMOVANÝ SOUHLAS S POKRAČOVÁNÍM V KLINICKÉM HODNOCENÍ</b>\n\n<b>Pokyn pro zpracovatele:</b> V konečné verzi ponechte celý název klinického hodnocení a EU CT číslo. Použijte pouze po schváleném nouzovém zařazení. Dokument nesmí vyvolávat dojem, že účastník zpětně schvaluje neodkladnou péči nebo již provedenou intervenci.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Vážená paní, vážený pane,\n\nběhem náhlé závažné nebo život ohrožující situace jste byl/a zařazen/a do klinického hodnocení [název]. V daném okamžiku jste nebyl/a schopen/schopna obdržet informace a udělit souhlas a zákonně ustanovený zástupce nebyl v době, kdy bylo nutné jednat, dostupný. Zařazení proběhlo podle předem schváleného protokolu a postupu pro naléhavé situace.\n\nNyní Vám poskytujeme úplné informace a žádáme Vás, abyste rozhodl/a, zda souhlasíte s pokračováním. Toto rozhodnutí neznamená zpětné schválení již poskytnuté neodkladné péče.\n\nMůžete pokračování odmítnout nebo později účast ukončit bez udání důvodu a bez nepříznivého vlivu na další léčbu a péči. Dostanete dostatek času a můžete klást otázky.\n\n<b>Podmíněná cesta – účastník stále není schopen souhlasu:</b>\nInformace a rozhodnutí jsou bez zbytečného odkladu poskytnuty zákonně ustanovenému zástupci. Jakmile účastník znovu získá schopnost souhlasu, obdrží informace a bude požádán o vlastní souhlas s pokračováním.\n\nZadavatelem je [název zadavatele].",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. Proč jste byl/a zařazen/a a co se zkoumá?</b>\n\nByl/a jste zařazen/a proto, že nastala [popište naléhavý zdravotní stav] a klinické hodnocení se vztahuje přímo k tomuto stavu. V terapeutickém okně nebylo možné získat předchozí informovaný souhlas.\n\nZkoumá se [název přípravku nebo postupu], protože [stručně vysvětlete výzkumný účel a potenciální přímý klinicky významný přínos]. Přínos není zaručen. Uveďte schvalovací status a dosavadní zkušenosti důležité pro rozhodnutí.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Cíl klinického hodnocení</b>\n\nCílem tohoto klinického hodnocení je zjistit [účinnost / bezpečnost / snášenlivost / vhodnou dávku / farmakokinetiku / jiný přesný cíl] přípravku [název] při léčbě [diagnóza].\n\n<b>Příklady – vyberte a upravte:</b>\n• Zjišťujeme, zda přípravek [název] pomáhá [konkrétní očekávaný účinek] a jaké může mít nežádoucí účinky.\n• Porovnáváme přípravek [název] s [standardní léčba / aktivní srovnávací přípravek / placebem].\n• Zjišťujeme, která z dávek [uveďte dávky nebo rozsah] je nejvhodnější.\n\n<b>Pokyn pro zpracovatele:</b> Neuvádějte zařazovací ani vyřazovací kritéria. Jejich posouzení je odpovědností zkoušejícího lékaře.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Jaká léčba již byla podána a co bude následovat?</b>\n\n<b>Co již proběhlo před tímto rozhodnutím:</b>\n• [hodnocený přípravek / placebo / standardní léčba, dávka a čas]\n• [randomizace a zaslepení, pokud relevantní]\n• [další neodkladné postupy]\n\n<b>Co bude následovat, pokud souhlasíte s pokračováním:</b>\n• [další dávky nebo léčba]\n• [návštěvy, vyšetření a sledování]\n• [doba účasti]\n\nPokud je hodnocení zaslepené, informace o přidělené léčbě lze v naléhavém případě zjistit, je-li to nutné pro bezpečnost.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Jaké postupy již proběhly a jaké Vás ještě čekají?</b>\n\n<b>Již provedené postupy:</b>\n• [vyšetření, odběry, vzorky, záznamy a čas]\n\n<b>Plánované postupy po souhlasu s pokračováním:</b>\nNávštěva / období\tKdy\tDélka\tLéčba a vyšetření\tCo je navíc oproti běžné péči\n[doplňte]\t[doplňte]\t[doplňte]\t[doplňte]\t[doplňte]\n\nCelkové množství krve, včetně již odebrané krve, bude přibližně [X] ml; z toho před dodatečným souhlasem bylo odebráno [Y] ml.\n\nPovinné vzorky a genetická vyšetření pro hlavní hodnocení popište odděleně podle toho, zda již proběhly nebo jsou teprve plánovány. Skutečně volitelnou činnost lze provést až po samostatném souhlasu, pokud nejde o dříve schválený nouzový výkon.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Co se od Vás očekává, pokud budete pokračovat?</b>\n\nPokud souhlasíte s pokračováním, dodržujte pokyny zkoušejícího lékaře, hlaste nové obtíže, další léčbu, hospitalizaci nebo těhotenství a dostavte se na plánované bezpečnostní kontroly. Uveďte konkrétní omezení a povinnosti, které se vztahují pouze na budoucí účast.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Co bylo a bude jiné oproti běžné léčbě?</b>\n\n<b>Již proběhlé výzkumné prvky:</b> [hodnocený přípravek, randomizace, další vyšetření nebo odběry].\n\n<b>Budoucí výzkumné prvky při pokračování:</b> [další léčba, návštěvy, vyšetření, odběry a časová zátěž].\n\nNevytvářejte dojem, že všechny postupy byly součástí běžné neodkladné péče.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Jaká jsou možná rizika, nežádoucí účinky a nepříjemnosti?</b>\n\nPopište rizika léčby a postupů, které již účastník podstoupil, a odděleně rizika pokračování. Uveďte známá i neznámá rizika, riziko zhoršení stavu, procedurální rizika a co má účastník udělat při nových obtížích. Kontakt: [telefon].\n\n<b>Pokyn pro zpracovatele:</b> Rizika již podané léčby nesmí být zamlčena jen proto, že k expozici došlo před souhlasem.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Těhotenství, kojení a antikoncepce</b>\n\n<b>Pokyn pro zpracovatele:</b> Celou kapitolu odstraňte, pokud klinické hodnocení nepředstavuje reprodukční riziko nebo se nevztahuje na daného pacienta. Požadavky musí přesně odpovídat protokolu a aktuálním doporučením CTFG. Uveďte je stručně a srozumitelně. U klinického hodnocení fáze IV, v němž je registrovaný přípravek používán v souladu s rozhodnutím o registraci, přizpůsobte požadavky na antikoncepci platnému SmPC.\n\nÚčinky přípravku [název] na nenarozené dítě nebo kojené dítě [nejsou známy / mohou zahrnovat: doplňte]. Z tohoto důvodu [ženy, které mohou otěhotnět / muži s partnerkou, která může otěhotnět] mají používat [přesný srozumitelný popis povolených metod] po dobu [během léčby a přesná doba po poslední dávce].\n\n<b>Vyberte a upravte:</b>\n• Pokud můžete otěhotnět, bude před zařazením a během klinického hodnocení prováděn těhotenský test v termínech [doplňte].\n• Pokud kojíte, [nemůžete se účastnit / je nutné kojení ukončit podle protokolu a lékařského doporučení].\n• Pokud byste během klinického hodnocení otěhotněla nebo pokud by otěhotněla Vaše partnerka, informujte ihned zkoušejícího lékaře. Další postup, léčba a případné sledování těhotenství s Vámi budou projednány samostatně.\n• Po dobu [doplňte] nesmíte darovat [sperma / vajíčka].\n• [Podmíněně:] Před zahájením léčby můžete se zkoušejícím lékařem probrat možnost uchování zárodečných buněk.\n\nZkoušející lékař Vám požadavky na antikoncepci vysvětlí a podle potřeby doporučí konzultaci s gynekologem nebo jiným odborným lékařem.",
+   "section_style": "Section break, H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Jaký můžete mít z účasti prospěch?</b>\n\n<b>Vyberte jednu možnost a upravte:</b>\n• Neočekává se, že by pro Vás účast v klinickém hodnocení měla přímý zdravotní přínos. Informace získané v tomto klinickém hodnocení mohou pomoci zlepšit budoucí léčbu pacientů s [diagnóza].\n• Přípravek [název] může [konkrétní možný přínos], ale není jisté, zda Vám pomůže. Právě proto se klinické hodnocení provádí.\n• Můžete mít prospěch z [konkrétní, medicínsky věrohodný a protokolem podložený možný přínos], tento přínos však nelze zaručit.\n\nVáš zdravotní stav se během klinického hodnocení může také nezměnit nebo se může zhoršit.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>10. Jiné dostupné možnosti léčby od tohoto okamžiku</b>\n\nPokud nesouhlasíte s pokračováním, bude Vám poskytována léčba běžně dostupná v České republice podle Vašeho aktuálního zdravotního stavu. Možnosti od tohoto okamžiku jsou: [standardní léčba, podpůrná péče, další postupy]. Zkoušející lékař vysvětlí jejich hlavní přínosy a rizika.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>11. Pojištění, újma na zdraví a odškodnění</b>\n\nVšichni účastníci klinického hodnocení jsou pojištěni podle platné legislativy ČR.\n\n<b>Podmíněný text:</b>\nPojištění sjednal [název zadavatele] u pojišťovny [název pojišťovny].\n\nPokud v souvislosti s účastí v klinickém hodnocení dojde k újmě na Vašem zdraví, obraťte se na zkoušejícího lékaře [jméno a kontakt]. Bude Vám zajištěna a zdarma poskytnuta odpovídající lékařská péče. Máte právo na odškodnění v souladu s platnými právními předpisy.\n\nPodpisem tohoto informovaného souhlasu se nevzdáváte žádného ze svých zákonných práv.\n\n<b>Pokyn pro zpracovatele:</b> Kapitolu ponechte stručnou. Neomezujte poskytnutí péče formulací, že bude hrazena jen v rozsahu nepokrytém veřejným zdravotním pojištěním. Neuvádějte složité vztahy mezi zadavatelem, pracovištěm a pojišťovnou.",
+   "section_style": "Section break, H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>12. Náklady, náhrada výdajů a případná odměna</b>\n\nHodnocené léčivé přípravky a vyšetření prováděná v rámci klinického hodnocení hradí zadavatel. Zadavatel hradí také nadstandardní úkony vyžadované klinickým hodnocením, například [doplňte, pokud relevantní].\n\n<b>Náhrada výdajů:</b>\nVýdaje spojené s účastí Vám budou nahrazeny takto:\n• cestovní výdaje: [částka / pravidla / doklady]\n• stravné: [částka / pravidla]\n• ušlá mzda: [pravidla]\n• časová náročnost, nepohodlí, bolestivé výkony nebo hospitalizace: [konkrétní částka nebo pravidla]\n• jiné: [doplňte]\n\nPodrobnosti o postupu proplacení Vám vysvětlí zkoušející lékař.\n\n<b>Podmíněný text – odměna za účast:</b>\nZa účast obdržíte odměnu ve výši [částka a podmínky]. Pokud účast ukončíte dříve, bude odměna vypočtena takto: [pravidla].\n\n<b>Pokyn pro zpracovatele:</b> Odměnu za účast lze uvést pouze u klinických hodnocení fáze I, bioekvivalence nebo farmakokinetiky a nesmí být poskytována zranitelným subjektům. Náhrada přiměřených výdajů není odměnou. Uveďte konkrétní částky nebo přesná pravidla výpočtu.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>13. Je pokračování dobrovolné a můžete je ukončit?</b>\n\nSouhlas s pokračováním je dobrovolný. Můžete jej odmítnout nebo později odvolat bez udání důvodu a bez nepříznivého vlivu na běžnou léčbu.\n\nPokud nepokračujete, nové výzkumné postupy se neprovedou. Může být doporučena zdravotně potřebná nebo dobrovolná protokolem stanovená bezpečnostní kontrola; popište její rozsah a rozlište ji od běžné péče.\n\nJiž získané údaje a výsledky mohou být nadále použity a uchovány, pokud je to nutné pro bezpečnost, spolehlivost nebo zákonné povinnosti. U biologických vzorků popište, zda lze zbývající identifikovatelný materiál zničit a jaká omezení platí.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>14. Jak bude nakládáno s údaji a biologickými vzorky?</b>\n\nSamostatné sdělení ke zpracování osobních údajů obdržíte. Rozlište údaje a vzorky získané před dodatečným souhlasem a ty, které mají být získávány po souhlasu s pokračováním.\n\nVšechny údaje a odebrané vzorky získané v klinickém hodnocení budou odeslány zadavateli pouze v kódované podobě. Údaje umožňující zjistit Vaši totožnost tak neopustí pracoviště zkoušejícího lékaře.\n\nDo Vašich osobních záznamů ve zdravotnické dokumentaci mají přístup zkoušející lékař, členové studijního týmu, pověření zástupci zadavatele (např. monitor a auditoři), osoby pověřené národními kontrolními úřady nebo lékovými agenturami a členové etické komise, tedy osoby pověřené dohledem nad průběhem klinického hodnocení. Tyto osoby jsou vázány povinnou mlčenlivostí.\n\nPokud pokračování není odsouhlaseno, vysvětlete právo vznést námitku proti dalšímu použití již získaných údajů a praktické důsledky podle platných pravidel. Neslibujte automatické vymazání nebo zničení, pokud již byly údaje analyzovány nebo musí být uchovány.\n\nBudoucí nebo sekundární použití mimo hlavní hodnocení do tohoto dokumentu nezahrnujte.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>15. Budete informován/a o nových skutečnostech a výsledcích?</b>\n\nPokud se objeví nová informace, která může ovlivnit Vaši bezpečnost nebo rozhodnutí pokračovat v klinickém hodnocení, zkoušející lékař Vám ji neprodleně sdělí. Budete mít možnost znovu zvážit svou účast. Pokud se rozhodnete pokračovat v účasti, budete požádán/a o potvrzení souhlasu s pokračováním formou dodatku k informacím pro pacienta / informovanému souhlasu.\n\n<b>Výsledky klinického hodnocení:</b>\nSouhrn výsledků bude zveřejněn na webu Evropské agentury pro léčivé přípravky (EMA): https://euclinicaltrials.eu.\n\n<b>Podmíněné texty – vyberte podle protokolu:</b>\n• Po ukončení klinického hodnocení Vám zkoušející sdělí [hlavní výsledky / Vaši léčebnou skupinu], pokud si to budete přát a bude to možné.\n• Individuální výsledky vyšetření Vám budou sděleny takto: [doplňte].\n• Náhodný nález důležitý pro Vaše zdraví bude řešen takto: [doplňte, včetně toho, zda a komu může být informace předána].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>16. Kolik pacientů se klinického hodnocení zúčastní?</b>\n\nPředpokládá se účast přibližně [počet] pacientů v České republice a [počet] pacientů celosvětově.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>17. Koho můžete kontaktovat?</b>\n\n<b>Zdravotní problémy, otázky o klinickém hodnocení a naléhavé situace:</b>\nZkoušející lékař: [jméno]\nTelefon: [číslo]\nE-mail: [e-mail]\nDostupnost / pohotovostní kontakt: [doplňte]\n\n<b>Další kvalifikovaný a snadno dostupný lékař určený zadavatelem:</b>\n[jméno, pracoviště, telefon, e-mail a dostupnost]\n\n<b>Otázky týkající se etických aspektů a Vašich práv:</b>\nEtická komise: [název přidělené etické komise]\nE-mail: [eticka.komise@sukl.gov.cz nebo e-mail konkrétní etické komise]\n\n<b>Pokyn pro zpracovatele:</b> U etické komise neuvádějte telefonní číslo.\n\n<b>Otázky týkající se zpracování osobních údajů:</b>\n[Odkaz na samostatné sdělení ke zpracování osobních údajů a příslušné kontakty.]",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b>DODATEČNÝ INFORMOVANÝ SOUHLAS S POKRAČOVÁNÍM V KLINICKÉM HODNOCENÍ</b>\n\nPotvrzuji, že:\n• byl/a jsem informován/a, že jsem byl/a během naléhavé situace zařazen/a do klinického hodnocení bez předchozího souhlasu podle schváleného postupu;\n• rozumím tomu, že tímto formulářem nezpětně neschvaluji neodkladnou péči nebo již provedenou intervenci;\n• obdržel/a jsem úplné informace o tom, co již proběhlo a co bude následovat;\n• měl/a jsem možnost klást otázky a dostal/a jsem dostatek času k rozhodnutí;\n• rozumím rizikům, možným přínosům, alternativám, pojištění, nákladům, údajům a vzorkům;\n• vím, že mohu pokračování odmítnout nebo kdykoliv později skončit bez nepříznivého vlivu na běžnou péči;\n• dobrovolně souhlasím s pokračováním v klinickém hodnocení a s budoucími povinnými postupy popsanými v informacích;\n• souhlasím s oprávněným přístupem ke zdravotnické dokumentaci pro kontrolu hodnocení;\n• obdržel/a jsem datovaný a podepsaný stejnopis.\n\nJméno a příjmení účastníka: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\n<b>Podmíněná cesta – zákonně ustanovený zástupce:</b>\nJméno zástupce: ______________________________\nVztah / právní oprávnění: ______________________________\nSouhlasím s pokračováním zastupovaného účastníka do doby, než může rozhodnout sám. Podpis: __________________  Datum: __________\n\n<b>Pokyn:</b> Jakmile účastník znovu získá schopnost souhlasu, vyžádejte jeho vlastní podpis na tomto nebo standardním dospělém formuláři podle schváleného postupu.\n\n<b>Podmíněné potvrzení – ponechte pouze tehdy, pokud byl při prvotním nouzovém zařazení podle schváleného postupu vyžadován nezávislý svědek:</b>\nPotvrzuji, že samostatný záznam nezávislého svědka o prvotním nouzovém zařazení byl řádně vyhotoven, podepsán a je uložen v dokumentaci klinického hodnocení.\n\nProhlašuji, že jsem informace poskytl/a bez zbytečného odkladu, srozumitelně vysvětlil/a minulou i budoucí část hodnocení, odpověděl/a na otázky a získal/a souhlas jako zkoušející lékař.\n\nJméno zkoušejícího lékaře: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\nJeden datovaný a podepsaný stejnopis obdržel účastník nebo zástupce a jeden stejnopis zůstává na pracovišti.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

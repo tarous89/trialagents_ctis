@@ -1,0 +1,85 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Informatiebrief en instemmingsformulier voor volwassen patiënten die niet zelf kunnen beslissen",
+  "target_country": "Netherlands",
+  "country_code": "NL",
+  "target_language": "Dutch",
+  "language_code": "nl",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": 2,
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versie 1.0 - [date]",
+   "Protocolnummer: [invullen] | EU-onderzoeksnummer: [invullen]",
+   "Studiecode: [XXX] | versie [nr.]"
+  ],
+  "info_table": [
+   "Titel van het onderzoek",
+   "Korte titel van het onderzoek",
+   "Protocolnummer [voeg versie en datum toe]",
+   "EU-onderzoeksnummer",
+   "Opdrachtgever [met volledig adres]",
+   "Hoofdonderzoeker",
+   "Naam onderzoekscentrum",
+   "Adres onderzoekscentrum"
+  ],
+  "content_instructions": "Gebruik uitsluitend voor een volwassen patiënt die geen geldige toestemming kan geven, maar wel eenvoudige informatie kan begrijpen of met woorden, gebaren, hulpmiddelen of gedrag een mening kan uiten. Dit document hoort altijd bij de afzonderlijke informatiebrief en toestemming van de wettelijk vertegenwoordiger. Spreek de deelnemer rechtstreeks aan, gebruik korte concrete zinnen en pas woorden, afbeeldingen en communicatiehulpmiddelen aan de persoon aan. Leg één keer uit dat de vertegenwoordiger de officiële toestemming geeft. Respecteer iedere duidelijke weigering, ieder verzet tegen een handeling en iedere wens om te stoppen, ook als de vertegenwoordiger toestemming heeft gegeven. Neem geen verklaringen, bevoegdheidsgegevens of handtekening van de vertegenwoordiger op; die staan in het afzonderlijke vertegenwoordigersdocument. Vraag de eigen geïnformeerde toestemming met het volwassen-patiëntentemplate als de deelnemer later weer zelf kan beslissen. Beschrijf alleen het hoofdonderzoek. Neem geen deelnameprikkel op; beschrijf alleen vergoeding van noodzakelijke deelnamekosten. Neem geen tekst op voor onpartijdige getuigen, noodinsluiting, zwangerschapsfollow-up of ander/toekomstig onderzoek. Leg verplichte en optionele testen, afnames en DNA-onderzoek eenvoudig uit en leg de mening of het eventuele verzet van de deelnemer vast. Behoud toepasselijke Nederlandse standaardtekst, schrijf op B1-niveau of eenvoudiger en verwijder alle niet-toepasselijke alternatieven.",
+  "styling_instructions": "Gebruik Arial, Calibri, Open Sans of Atkinson Hyperlegible met een minimale lettergrootte van 12 pt of 16 px. Gebruik een gelaagde opbouw, duidelijke sectietitels, deelnemersvragen met selectievakjes en voldoende schrijfruimte. Verwijder vóór afronding alle instructietekst, niet-gekozen alternatieven, niet-toepasselijke secties en overmatige witruimte. Houd paginanummering, bijlagen en interne verwijzingen consistent. Gebruik waar nuttig eenvoudige pictogrammen, foto’s of andere communicatiehulpmiddelen en houd dit document duidelijk korter en eenvoudiger dan de informatie voor de wettelijk vertegenwoordiger."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Beste [naam],\n\nWe willen u vragen of u meedoet aan onderzoek om de zorg te verbeteren. Dit heet medisch-wetenschappelijk onderzoek.\n\nDeze brief legt het onderzoek uit in eenvoudige woorden.\n\nUw mening is belangrijk. U mag zeggen of laten merken dat u wel of niet wilt meedoen. U mag ook later zeggen of laten merken dat u wilt stoppen.\n\nUw vertegenwoordiger krijgt een aparte informatiebrief. De vertegenwoordiger geeft de officiële toestemming voor het onderzoek. Als u duidelijk niet wilt meedoen of wilt stoppen, respecteert de onderzoeker dat.\n\nLees of bekijk deze informatie rustig samen met iemand die u vertrouwt. U mag vragen stellen aan de onderzoeker.\n\n<b>Kies en vul in, of verwijder als niet van toepassing:</b>\nWilt u praten met een arts of onderzoeker die niet betrokken is bij dit onderzoek? Kijk bij de contactgegevens voor een naam en telefoonnummer.",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "\f\n<b>1. Waarom dit onderzoek?</b>\n\n<b>Vul in met korte, concrete zinnen. Kies alleen wat van toepassing is:</b>\n\nWe doen dit onderzoek omdat we meer willen weten over [aandoening/ middel/ behandeling/ test].\n\n• We willen weten of [naam middel/ behandeling] veilig is.\n• We willen weten of [naam middel/ behandeling] helpt bij [aandoening of klacht].\n• We vergelijken [behandeling 1] met [behandeling 2/ een middel zonder werkzame stof].\n• We willen weten of [naam test of hulpmiddel] goed werkt.\n\n<b>Vul in, of verwijder als niet van toepassing:</b>\nEen middel zonder werkzame stof heet een placebo. Een loting kan bepalen welke behandeling u krijgt. U en de onderzoeker weten tijdens het onderzoek misschien niet welke behandeling u krijgt. [Leg dit met een eenvoudig voorbeeld uit.]\n\n<b>□</b> Ik wil meer uitleg over waarom dit onderzoek wordt gedaan\n\n<b>Welke vragen heeft u?</b>",
+   "section_style": "Section break, H3 module title, Rich body text, Info/warning/note box, Checkbox group"
+  },
+  {
+   "section_number": 3,
+   "section_content": "\f\n<b>2. Wat gebeurt er als u meedoet?</b>\n\n<b>Hoe lang duurt het?</b>\nHet onderzoek duurt voor u ongeveer [X weken/ maanden/ jaren].\n\n<b>Kunt u meedoen?</b>\nVoor de start doet de onderzoeker [testen] om te kijken of u kunt meedoen. Leg deze testen eenvoudig uit.\n\n<b>Onderzoeksdeelnemers</b>\nVoor dit onderzoek zijn [X] deelnemers nodig.\n\n<b>Waar moet u naartoe?</b>\nU komt [X] keer naar [ziekenhuis/ onderzoekscentrum/ andere plaats]. Een afspraak duurt ongeveer [X minuten/ uur].\n\n<b>Wat doet de onderzoeker?</b>\n<b>Kies, vul in en verwijder wat niet van toepassing is:</b>\n\n• De onderzoeker stelt vragen over [onderwerp].\n• De onderzoeker onderzoekt uw lichaam.\n• We prikken bloed. Dit gebeurt [X] keer. In totaal nemen we ongeveer [hoeveelheid] bloed af.\n• We maken een hartfilmpje (ECG).\n• We maken een scan van [lichaamsdeel].\n• U krijgt [naam middel/ behandeling].\n• [Andere handeling in eenvoudige woorden].\n\n<b>Vul in:</b> Leg eenvoudig uit welke handelingen verplicht zijn om mee te doen.\n\n<b>Vul in, of verwijder als niet van toepassing:</b>\n[Naam test, afname of DNA-onderzoek] is niet verplicht. U kunt ook zonder deze handeling aan de rest van het onderzoek meedoen. De onderzoeker vraagt apart wat u hiervan vindt.\n\n<b>Vul in, of verwijder als niet van toepassing:</b>\nDit onderzoek kan gevolgen hebben voor een ongeboren kind. De onderzoeker legt uit wat u daarom moet doen of laten.\n\n<b>Wat is anders dan bij uw gewone zorg?</b>\nAls u meedoet, is dit anders dan uw gewone zorg: [eenvoudig beschrijven].\n\n<b>□</b> Ik wil meer uitleg over wat er gebeurt\n\n<b>Welke vragen heeft u?</b>",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 4,
+   "section_content": "\f\n<b>3. Waar kunt u last van krijgen?</b>\n\nMeedoen kan vervelend of spannend zijn.\n\n<b>Vul in met de belangrijkste risico’s en ongemakken. Eén onderwerp per bullet:</b>\n\n• U kunt last krijgen van [bijwerking of klacht].\n• [Onderzoek of handeling] kan [pijn/ angst/ moeheid/ ander ongemak] geven.\n• We weten nog niet alle bijwerkingen van [middel/ behandeling].\n\nVertel het meteen aan de onderzoeker als u zich niet goed voelt of als u een handeling niet wilt.\nKijk bij de contactgegevens voor een naam en telefoonnummer.\n\n<b>□</b> Ik wil meer uitleg over bijwerkingen en klachten\n\n<b>Welke vragen heeft u?</b>",
+   "section_style": "Section break, H3 module title, Rich body text, Info/warning/note box, Checkbox group"
+  },
+  {
+   "section_number": 5,
+   "section_content": "\f\n<b>4. Mag u nee zeggen of stoppen?</b>\n\nJa. U mag zeggen of laten merken dat u niet wilt meedoen.\n\nUw vertegenwoordiger geeft de officiële toestemming. Toch doet u niet mee als u duidelijk weigert. Als u zich verzet tegen het onderzoek, stopt het onderzoek voor u meteen.\n\nEen handeling die nodig is voor uw gewone medische zorg staat los van het onderzoek.\n\nU mag tijdens het onderzoek altijd zeggen of laten merken dat u wilt stoppen. U hoeft niet uit te leggen waarom. Dit heeft geen nadeel voor uw gewone zorg.\n\nDe onderzoeker kan ook besluiten dat u stopt, bijvoorbeeld als doorgaan niet veilig is of als de opdrachtgever, overheid of medisch-ethische commissie het onderzoek stopt.\n\nDe onderzoeker vertelt u nieuwe informatie die belangrijk kan zijn voor uw keuze om door te gaan. De onderzoeker vraagt opnieuw wat u ervan vindt en legt uw mening vast.\n\n<b>Vul in, of verwijder als niet van toepassing:</b>\nAls u stopt, gaan uw gewone behandelingen door. [Leg eenvoudig uit wat er met het onderzoeksmiddel en noodzakelijke veiligheidscontroles gebeurt.]\n\nAls u later weer zelf goed over deelname kunt beslissen, vraagt de onderzoeker uw eigen toestemming met een nieuwe informatiebrief.\n\n<b>□</b> Ik wil meer uitleg over nee zeggen of stoppen\n\n<b>Welke vragen heeft u?</b>",
+   "section_style": "Section break, H3 module title, Rich body text, Info/warning/note box, Checkbox group"
+  },
+  {
+   "section_number": 6,
+   "section_content": "\f\n<b>5. Wat gebeurt er met uw gegevens en lichaamsmateriaal?</b>\n\nVoor het onderzoek verzamelen en gebruiken we informatie over u. <indien van toepassing> We gebruiken ook [bloed/ urine/ weefsel/ ander lichaamsmateriaal].\n\nUw gegevens en lichaamsmateriaal worden veilig bewaard. Uw gegevens krijgen een code. Zo weet niet iedereen dat de gegevens van u zijn.\n\n<b>Vul in:</b> Leg eenvoudig uit welke gegevens, testen en afnames verplicht zijn voor dit onderzoek.\n\n<b>Vul in, of verwijder als niet van toepassing:</b>\n[Naam optionele test, afname of DNA-onderzoek] is niet verplicht. Als u duidelijk niet wilt dat dit gebeurt, wordt deze optionele handeling niet gedaan.\n\nSommige mensen mogen de gegevens controleren, bijvoorbeeld een controleur en de overheid. Zij moeten de gegevens geheimhouden.\n\n<b>Vul in:</b> We bewaren uw gegevens [xx] jaar <indien van toepassing> en uw lichaamsmateriaal [xx] jaar in [ziekenhuis/ instelling/ opdrachtgever].\n\n<b>Vul in, of verwijder als niet van toepassing:</b>\nWe kunnen iets vinden dat belangrijk is voor uw gezondheid. Met toestemming van uw vertegenwoordiger vertelt de onderzoeker dit aan uw [huisarts/ dokter].\n\n<b>Vul in, of verwijder als niet van toepassing:</b>\nWe sturen gecodeerde gegevens [en lichaamsmateriaal] naar landen buiten de Europese Unie. Daar gelden niet dezelfde privacyregels. Er zijn afspraken gemaakt om uw gegevens te beschermen.\n\nAls uw vertegenwoordiger de toestemming voor het gebruik van gegevens intrekt, verzamelen we voor het onderzoek geen nieuwe gegevens of nieuw lichaamsmateriaal meer. Als u duidelijk laat merken dat u niet wilt dat nieuwe onderzoeksgegevens of nieuw lichaamsmateriaal worden verzameld, respecteert de onderzoeker dit. De onderzoekers mogen gegevens gebruiken die al zijn verzameld.\n\nUw vertegenwoordiger krijgt meer informatie over de bescherming en bewaartermijn van uw gegevens [en lichaamsmateriaal]. U kunt deze informatie ook aan de onderzoeker vragen.\n\n<b>□</b> Ik wil meer uitleg over mijn gegevens en lichaamsmateriaal\n\n<b>Welke vragen heeft u?</b>",
+   "section_style": "Section break, H3 module title, Rich body text, Info/warning/note box, Checkbox group"
+  },
+  {
+   "section_number": 7,
+   "section_content": "\f\n<b>6. Bent u verzekerd en krijgt u een vergoeding?</b>\n\n<b>Kies en vul in:</b>\n\n• Voor iedereen die meedoet aan dit onderzoek is een verzekering afgesloten. Als u schade krijgt door het onderzoek, kan de verzekering deze schade vergoeden.\n• De opdrachtgever vergoedt eventuele schade door het onderzoek.\n• U bent niet verzekerd voor dit onderzoek, omdat [dezelfde risico’s als bij gewone behandeling/ geen extra risico’s en ontheffing van de verzekeringsplicht].\n\nUw vertegenwoordiger krijgt de volledige informatie over de verzekering.\n\n<b>Kies en vul in:</b>\n\n• U krijgt geen vergoeding voor meedoen.\n• We vergoeden [reis- en parkeerkosten/ andere noodzakelijke deelnamekosten].\n\n<b>□</b> Ik wil meer uitleg over verzekering of vergoeding\n\n<b>Welke vragen heeft u?</b>",
+   "section_style": "Section break, H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 8,
+   "section_content": "\f\n<b>7. Wat zijn de voordelen en nadelen?</b>\n\n<b>Kies en vul in:</b>\n\n• U heeft zelf geen direct voordeel van meedoen. Uw deelname kan onderzoekers helpen om [aandoening/ behandeling] beter te begrijpen.\n• [Middel/ behandeling] kan mogelijk [concreet voordeel]. We weten niet zeker of dit bij u gebeurt.\n\nMeedoen kan ook nadelen hebben:\n\n• U kunt bijwerkingen of klachten krijgen.\n• Onderzoeken of afspraken kunnen vervelend zijn en tijd kosten.\n• [Ander belangrijk nadeel].\n\n<b>Wilt u niet meedoen?</b>\nDan krijgt u de gewone behandeling voor [aandoening]. Uw arts vertelt welke andere behandelingen mogelijk zijn.\n\n<b>Resultaten van het onderzoek</b>\nAls de resultaten bekend zijn, legt de onderzoeker de belangrijkste uitkomsten op een passende manier aan u uit <indien van toepassing> en aan uw vertegenwoordiger.\n\n<b>□</b> Ik wil meer uitleg over voordelen, nadelen of andere behandelingen\n\n<b>Welke vragen heeft u?</b>",
+   "section_style": "Section break, H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 9,
+   "section_content": "\f\n<b>8. Wie kunt u bellen of iets vragen?</b>\n\n<b>Vul in:</b>\n\nOnderzoeker of onderzoeksverpleegkundige: [naam, telefoonnummer en bereikbaarheid]\n\n<b>Vul in, of verwijder als niet van toepassing:</b>\nOnafhankelijk arts of deskundige: [naam, telefoonnummer en bereikbaarheid]\n\nAlarmnummer buiten gewone tijden: [nummer, indien nodig]\n\nKlachten: [dienst of persoon met contactgegevens]\n\n<b>Bijlagen</b>\nA) Contactgegevens\nB) Eenvoudig overzicht van afspraken en handelingen <i><indien van toepassing></i>\nC) Instemmingsformulier onderzoeksdeelnemer\n\nUw vertegenwoordiger krijgt daarnaast de volledige informatiebrief en het toestemmingsformulier voor de wettelijk vertegenwoordiger.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "\f\n<b>Bijlage C: Instemmingsformulier onderzoeksdeelnemer</b>\n\n<b>Vul in: Begrijpelijke titel van het onderzoek</b>\n\nDe onderzoeker heeft het onderzoek aan mij uitgelegd met [eenvoudige woorden/ afbeeldingen/ gebaren/ communicatiehulpmiddel].\n\nIk kon vragen stellen. De onderzoeker heeft mijn vragen beantwoord.\n\nIk weet dat mijn vertegenwoordiger de officiële toestemming geeft.\n\nIk weet dat ik nee mag zeggen en dat ik later mag stoppen.\n\n<b>Mijn mening over meedoen:</b>\n\n□ Ik wil meedoen aan dit onderzoek.\n\n□ Ik wil niet meedoen aan dit onderzoek.\n\n□ Ik weet het nog niet.\n\n□ Ik kan mijn mening nu niet duidelijk zeggen of laten merken.\n\n<b>Vul in, of verwijder als niet van toepassing:</b>\nMijn mening over de optionele [test/ afname/ DNA-onderzoek]:\n\n□ Ik wil dat dit gebeurt.\n\n□ Ik wil niet dat dit gebeurt.\n\n□ Ik kan mijn mening hierover niet duidelijk zeggen of laten merken.\n\nNaam onderzoeksdeelnemer: ………………………………………\n\n<b>Alleen als dit voor de deelnemer mogelijk en betekenisvol is:</b>\nHandtekening/ teken: ………………………………………  Datum: __ /__ /__\n\n----------------------------------------------------------------------------------------------------------\n\n<b>Dit deel is voor de onderzoeker of andere persoon die de informatie gaf</b>\n\nIk heb de informatie aangepast aan wat de deelnemer kan begrijpen.\n\nGebruikte woorden, afbeeldingen of communicatiehulpmiddelen: [beschrijf].\n\nDe deelnemer liet de volgende mening, wens of reactie zien: [beschrijf woorden, gebaren of gedrag].\n\nEr was wel/geen duidelijke weigering of verzet tegen deelname of een onderzoekshandeling.\n\nNaam en functie: ………………………………………\n\nHandtekening: ………………………………………  Datum: __ /__ /__\n\n----------------------------------------------------------------------------------------------------------\n\nDe toestemming van de wettelijk vertegenwoordiger wordt vastgelegd op een apart formulier. De onderzoeksdeelnemer en de vertegenwoordiger krijgen een kopie van de informatie en de getekende formulieren.",
+   "section_style": "Section break, H2 document subline, Rich body text, Checkbox group, Signature section, Info/warning/note box"
+  }
+ ]
+}

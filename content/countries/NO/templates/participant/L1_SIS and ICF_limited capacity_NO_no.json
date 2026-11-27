@@ -1,0 +1,79 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Tilpasset informasjon og uttrykk for vilje – voksen uten beslutningskompetanse",
+  "target_country": "Norway",
+  "country_code": "NO",
+  "target_language": "Norwegian",
+  "language_code": "no",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": "2",
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versjon 1.0 - [date]",
+   "Protokollnummer: [fyll inn] | EU CT-nummer: [fyll inn]"
+  ],
+  "info_table": [
+   "Studietittel",
+   "Forkortet studietittel",
+   "Protokollnummer [legg til versjon og dato]",
+   "EU CT-nummer",
+   "Sponsor [med fullstendig adresse]",
+   "Hovedutprøver",
+   "Navn på studiesenter",
+   "Adresse til studiesenter"
+  ],
+  "content_instructions": "Bruk denne korte, tilpassede malen for en voksen som ikke kan avgi gyldig informert samtykke, men som kan forstå noe informasjon og uttrykke vilje, usikkerhet eller motstand. Den nærmeste pårørende gir tillatelse til deltakelse i en separat mal. Bruk korte setninger, konkrete ord og kommunikasjonsstøtte som bilder, symboler, video, tolk eller hjelpemidler når det er nyttig. Forklar bare det som deltakeren trenger for å forstå hva som skal skje, hovedrisikoer, mulig nytte og retten til å si nei eller stoppe. Deltakerens uttrykte eller observerte motstand skal respekteres. Signatur eller merke brukes bare når det er meningsfullt og mulig; personen som ga informasjon dokumenterer hvordan viljen ble uttrykt. Dette dokumentet er ikke et juridisk samtykke.",
+  "styling_instructions": "Bruk stor, lettlest skrift uten seriffer, korte avsnitt, god luft og gjerne bilder eller symboler. Behold tydelige felt for deltakernes uttrykte vilje, kommunikasjonsmåte og forskerens dokumentasjon."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "DU BLIR SPURT OM Å VÆRE MED I EN STUDIE\n\nVi gjør en studie for å lære mer om [sykdom/tilstand] og [legemiddel/behandling].\n\nDu får denne informasjonen fordi vi ønsker å høre hva du mener.\n\n[Navn på nærmeste pårørende] blir også spurt og gir tillatelse i et separat dokument. Vi skal høre hva du mener. Hvis du sier nei eller viser motstand, skal vi respektere det.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "HVA SKAL SKJE?\n\nHvis du er med, vil dette skje:\n\n• Du får [legemiddel/placebo/annen behandling].\n• Du kommer til [antall] besøk på [sted].\n• Vi gjør [undersøkelser].\n• Vi tar [prøver] [antall ganger].\n• Studien varer i [tid].\n\n[Forklar med korte ord tilfeldig fordeling, placebo eller blinding dersom det gjelder.]\n\nDu kan ha med en person du kjenner. Vi kan bruke [bilder/symboler/tolk/hjelpemiddel] for å forklare.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "KAN STUDIEN HJELPE DEG?\n\n[Velg: Studien kan kanskje hjelpe deg med [konkret mulig nytte], men vi vet ikke sikkert. / Studien forventes ikke å hjelpe deg direkte.]\n\nStudien kan hjelpe forskere med å lære mer og kanskje hjelpe andre senere.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "KAN NOE VÆRE VONDT ELLER UBEHAGELIG?\n\nDu kan få [de viktigste bivirkningene eller ubehagene i enkle ord].\n\n[Prøve/undersøkelse] kan gjøre [kort beskrivelse].\n\nDet kan også finnes risikoer vi ennå ikke kjenner.\n\nSi fra hvis du har vondt, blir redd, føler deg dårlig eller ikke vil fortsette.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "DU KAN SI NEI ELLER STOPPE\n\nDin nærmeste pårørende gir tillatelse til deltakelse i et separat dokument. Vi skal også høre hva du mener.\n\nDu kan vise at du ønsker å være med, er usikker, ikke ønsker å være med eller vil stoppe. Du trenger ikke forklare hvorfor.\n\nDu kan si det med ord, tegn, bevegelser, et hjelpemiddel eller på en annen måte. Vi skal følge med på hvordan du har det.\n\nHvis du sier nei eller viser motstand, skal vi respektere det. Å si nei eller stoppe påvirker ikke den vanlige behandlingen og hjelpen du får.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "HVA SKJER MED OPPLYSNINGER OG PRØVER?\n\nVi samler bare inn opplysninger og prøver som trengs for studien.\n\nDe får en kode. Personer som kontrollerer studien kan se nødvendige opplysninger, men har taushetsplikt.\n\nOpplysninger og prøver brukes som forklart i den fullstendige informasjonen til din nærmeste pårørende. [Forklar svært kort hvis deltakeren trenger mer konkret informasjon.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "PRAKTISK INFORMASJON\n\nDet koster deg ikke noe ekstra å være med. [Hvis relevant: Nødvendige reiseutgifter dekkes.]\n\nHvis du blir skadet på grunn av studien, kan du ha rett til hjelp og erstatning. Din nærmeste pårørende får mer informasjon om dette.\n\nNår studien er ferdig, kan du få en enkel forklaring på resultatene hvis du ønsker det.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "HVEM KAN DU SNAKKE MED?\n\nDu kan stille spørsmål når som helst.\n\nKontaktperson: [navn]\nTelefon: [nummer]\nE-post: [adresse]\n\nDu kan også snakke med [nærmeste pårørende/annen trygg person].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "DELTAKERENS UTTRYKK FOR VILJE\n\nDette er ikke et juridisk samtykke. Feltet brukes for å dokumentere deltakerens uttrykte eller observerte vilje, usikkerhet eller motstand etter tilpasset informasjon.\n\nVelg og dokumenter ett av følgende:\nDeltakeren uttrykker at hen ønsker å være med / uttrykker at hen ikke ønsker å være med / er usikker / kan ikke uttrykke et tydelig standpunkt.\n\nStandpunktet ble uttrykt gjennom: [ord / tegn / bevegelser / kommunikasjonshjelpemiddel / atferd / annet]\n\nBeskriv deltakerens egne ord, tegn eller observerte reaksjon: [fyll inn]\n\nDeltakerens navn: ______________________________\n\nSted og dato\tDeltakerens signatur/merke, dersom meningsfullt og mulig\n\n\n[SIDESKIFT]\n\nFYLLES UT AV STUDIEPERSONELL\n\nBEKREFTELSE FRA PERSONEN SOM GA INFORMASJON\n\nJeg har tilpasset informasjonen til deltakerens forståelse, brukt følgende støtte: [beskriv], kontrollert forståelsen så langt som mulig og dokumentert deltakerens uttrykte eller observerte vilje. Jeg bekrefter at eventuell motstand vil bli respektert.\n\nSted og dato\tSignatur\n\n\nNavn og rolle",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

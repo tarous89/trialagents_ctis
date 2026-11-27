@@ -1,0 +1,89 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Partners",
+  "doc_name_local": "Information och samtycke till graviditetsuppföljning – gravid partner",
+  "target_country": "Sweden",
+  "country_code": "SE",
+  "target_language": "Swedish",
+  "language_code": "sv",
+  "doc_type": "pregnant_partners",
+  "file_name": "L1_SIS and ICF_pregnant partner",
+  "sort_order": "7",
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protokollnummer: [FYLL I: protokollnummer] | EU-prövningsnummer: [FYLL I: EU-prövningsnummer]"
+  ],
+  "info_table": [
+   "Prövningens titel",
+   "Kort titel för prövningen",
+   "Protokollnummer [FYLL I: version och datum]",
+   "EU-prövningsnummer",
+   "Sponsor [FYLL I: fullständig adress]",
+   "Ansvarig prövare",
+   "Prövningsställets namn",
+   "Prövningsställets adress"
+  ],
+  "content_instructions": "Utgå från Kliniska Studier Sveriges svenska mall för klinisk läkemedelsprövning enligt CTR och ICH-GCP E6 (R3), version 7 daterad 2025-11-12. Använd ett klart, enkelt, neutralt och sakligt språk, rikta texten direkt till mottagaren, skriv ut förkortningar första gången och undvik vädjande eller förskönande formuleringar. Anpassa alla exempel och platshållare till protokollet och ta bort instruktioner och alternativ som inte gäller. Beskriv tydligt vad som är forskning och vad som är ordinarie vård. Ange sponsor, prövningsställe, ansvarig prövare, EU-prövningsnummer, prövningens titel, version och kontaktuppgifter. Beskriv endast faktiska data, prov, procedurer, mottagare och överföringar. Ange personuppgiftsansvarig, ändamål, rättslig grund, pseudonymisering, lagring, rättigheter, dataskyddsombud och klagomål till Integritetsskyddsmyndigheten. När Biobankslag (2023:38) är tillämplig ska ansvarig svensk biobank, provtyper, kodning, ändamål, lagringstid, mottagare, hantering efter analys och återkallelse beskrivas. Obligatoriska prov och analyser inom huvudprövningen omfattas av huvudsamtycket när de är fullt beskrivna. Fristående framtida eller sekundär användning ska hanteras i mallen för sekundär och framtida användning. Använd endast för den gravida partnern till en manlig försöksperson när graviditets-, mödra- eller utfallsuppgifter ska samlas in för säkerhetsuppföljning. Den gravida partnern är inte försöksperson i huvudprövningen och får inte prövningsläkemedlet. I samtyckesblock A samtycker hon endast till graviditetsuppföljningen och behandlingen av sina egna uppgifter. Om barnuppföljning ingår beskrivs barnets egna uppgifter separat i informationsavsnittet och samtyckesblock B. Ta bort huvudprövningens behandlings-, randomiserings-, besöks-, alternativ- och försäkringstext som inte direkt berör graviditetsuppföljningen. Mannen kan inte samtycka för den gravida partnern. Samma dokument ska innehålla två tydligt separerade samtyckesblock: (A) graviditetsuppföljning och (B) behandling av barnets egna uppgifter efter födseln. Block B och det tillhörande informationsavsnittet ska behållas endast om barnuppföljning faktiskt ingår. Ange i informationen vilka barnuppgifter som samlas in, från vilka källor, för vilket konkret säkerhetsändamål och hur länge uppföljningen och lagringen pågår. Om barnet har två vårdnadshavare ska båda samtycka och underteckna samtyckesblock B. Om endast en vårdnadshavare finns eller ensam är behörig ska grunden kontrolleras och dokumenteras. Beskriv hur vårdnadshavaren eller vårdnadshavarna återkallar samtycket till fortsatt insamling av barnets uppgifter, vad som då stoppas, hur redan insamlade uppgifter hanteras och hur en senare oenighet mellan vårdnadshavarna hanteras enligt den godkända proceduren. En signerad kopia av samtyckesblock B ska lämnas till vårdnadshavaren eller vårdnadshavarna.",
+  "styling_instructions": "Behåll den svenska källmallens tydliga avsnittsstruktur. Sidhuvudet ska ange EU-prövningsnummer, prövningens titel på svenska och dokumentversion. Använd endast följande tydligt typade markeringar i template_content och metadata: [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] som en fristående rad eller ett fristående stycke för text som endast är riktad till författaren och alltid ska tas bort; [FYLL I: ...] inline för uppgifter eller ord som ska ersättas med prövningsspecifik deltagartext; och [VALFRI TEXT – BEHÅLL ELLER TA BORT] som en fristående rad direkt före ett fullständigt valfritt stycke, en fullständig punkt, ett fullständigt samtyckesval, ett helt valfritt avsnitt eller ett helt valfritt signaturblock. [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] och [VALFRI TEXT – BEHÅLL ELLER TA BORT] får aldrig placeras inne i en deltagarmening eller punkt. Markeringar får inte nästlas. Alla markeringar, ej valda alternativ och irrelevanta avsnitt ska vara borttagna innan dokumentet lämnas till läsaren. Behåll systemvariablerna [document name], [population label] och [date] oförändrade. Använd korta stycken, tydliga rubriker och separata fält för namn, datum och underskrift."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Information till dig som är gravid partner till en försöksperson\n\nDin partner deltar i en klinisk prövning och har exponerats för [FYLL I: prövningsläkemedel]. Du får inte själv prövningsläkemedlet och du ombeds inte att delta i huvudprövningen. Vi frågar om du frivilligt vill låta oss följa graviditeten och behandla uppgifter om din hälsa och graviditet för säkerhetsuppföljning.\n\nDitt beslut påverkar inte din eller barnets vård och påverkar inte din partners deltagande i huvudprövningen.",
+   "section_style": "H2 document subline, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Varför samlar vi in information?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv den manliga försökspersonens relevanta exponering, vad som är känt eller okänt om påverkan via faderns exponering och varför graviditets- och utfallsuppgifter behövs.]\n\nUppgifterna kopplas till din partners kodade prövningsuppgifter utan att ditt namn lämnas till obehöriga.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Vilka uppgifter samlar vi in om dig och graviditeten?\n\n• grundläggande uppgifter om dig och graviditeten;\n• beräknat förlossningsdatum och graviditetsvecka;\n• relevanta sjukdomar, läkemedel och exponeringar;\n• graviditetens förlopp och eventuella komplikationer;\n• graviditetsutfall och uppgifter om förlossningen;\n• [FYLL I: andra strikt nödvändiga kategorier].\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Samla inte in fler uppgifter än vad säkerhetsuppföljningen kräver. Barnets egna uppgifter efter födseln ska beskrivas i det särskilda barnavsnittet och omfattas av samtyckesblock B.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Hur samlas uppgifterna in och hur länge pågår uppföljningen?\n\nInformationen samlas in genom [FYLL I: samtal, frågeformulär, journaluppgifter, kontakt med barnmorska, obstetriker eller förlossningsklinik] vid [FYLL I: tidpunkter]. Uppföljningen pågår till [FYLL I: graviditetsutfall/slutpunkt].\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om vårdpersonal ska kontaktas ska namn, verksamhet, vilka uppgifter som får lämnas ut och den nödvändiga sekretesslättnaden beskrivas.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Risker, olägenheter och möjlig nytta\n\nUppföljningen medför normalt inga medicinska ingrepp. Olägenheter kan vara tidsåtgång och att känsliga uppgifter om graviditet och hälsa behandlas.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv eventuella ytterligare procedurer separat. De får inte döljas i denna uppföljning.]\n\nDu förväntas inte få direkt medicinsk nytta. Informationen kan bidra till bättre kunskap om säkerheten efter faderns exponering.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Vad händer med dina uppgifter?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Ange personuppgiftsansvarig, ändamål, rättslig grund, uppgiftskategorier, pseudonymisering, koppling till den manliga försökspersonens kod, mottagare, journalåtkomst, tredjelandsöverföring, lagringstid, rättigheter, dataskyddsombud och klagomål till Integritetsskyddsmyndigheten.]\n\nDina uppgifter ska hållas åtskilda från din partners identifierande uppgifter så långt det är möjligt.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Behåll detta avsnitt och samtyckesblock B endast om protokollet omfattar behandling av barnets egna uppgifter efter födseln. Ta annars bort båda delarna.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nUppgifter om barnet efter födseln\n\nOm uppföljningen omfattar barnet efter födseln samlar vi in följande uppgifter om barnet: [FYLL I: exakta uppgiftskategorier, till exempel födelsedatum eller ålder, graviditetslängd, födelsevikt, längd, Apgar, medfödda avvikelser, neonatal vård, relevanta diagnoser, läkemedel och undersökningsresultat].\n\nUppgifterna hämtas från [FYLL I: vårdnadshavare, barnets patientjournal, neonatal- eller barnklinik och andra exakt angivna källor]. De samlas in för [FYLL I: konkret säkerhetsändamål kopplat till faderns exponering].\n\nBarnet följs från [FYLL I: starttidpunkt] till [FYLL I: sluttidpunkt eller barnets ålder]. Barnets uppgifter bevaras i [FYLL I: X år eller objektivt slutkriterium]. Personuppgiftsansvarig för barnets uppgifter är [FYLL I: prövningsspecifik uppgift]. Uppgifterna kodas, lämnas till [FYLL I: mottagare], överförs till [FYLL I: länder om tillämpligt] och omfattas av de rättigheter och kontaktvägar som beskrivs här: [FYLL I: prövningsspecifik uppgift].",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Frivillighet och återkallelse\n\nDu kan säga nej eller återkalla samtycket utan att ange anledning. Det påverkar inte din, barnets eller din partners vård och påverkar inte din partners prövningsdeltagande. När du återkallar stoppas ny frivillig insamling. Uppgifter som redan har rapporterats kan behöva bevaras för säkerhetsrapportering eller enligt lag.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Behåll följande text endast om barnuppföljning och samtyckesblock B ingår. Anpassa hanteringen av redan insamlade uppgifter och eventuell senare oenighet mellan vårdnadshavarna till den godkända proceduren.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nVårdnadshavaren eller vårdnadshavarna kan återkalla samtycket till fortsatt insamling av barnets uppgifter genom att kontakta [FYLL I: kontakt]. Då stoppas ny frivillig insamling av barnets uppgifter. Uppgifter som redan har samlats in eller rapporterats hanteras enligt [FYLL I: konkret rutin och eventuella rättsliga begränsningar].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Kostnader, ersättning, resultat och kontakt\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Ange eventuella kostnader, reseersättning eller annan rimlig ersättning. Beskriv om och hur relevanta individuella fynd och samlade säkerhetsresultat meddelas.]\n\nKontaktperson: [FYLL I: namn, telefon, e-post]\nDataskyddskontakt: [FYLL I: prövningsspecifik uppgift]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>A. Samtycke till graviditetsuppföljning – gravid partner</b>\n\nJag har fått och förstått informationen, kunnat ställa frågor och haft tillräcklig tid att besluta.\n\nJag samtycker frivilligt till graviditetsuppföljningen och till att de uppgifter som beskrivs samlas in och inhämtas. Jag har tagit del av informationen om hur uppgifterna kopplas till min partners kodade prövningsuppgifter, används, skyddas, lämnas ut och bevaras.\n\n| Den gravida partnerns underskrift | Namnförtydligande | Datum |\n|  |  |  |\n\nJag intygar att information har lämnats, frågor besvarats och samtycket lämnats frivilligt. En signerad kopia lämnas till den gravida partnern.\n\n| Underskrift av den som informerade | Namn och funktion | Datum |\n|  |  |  |",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section, Standard table"
+  },
+  {
+   "section_number": 11,
+   "section_content": "[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Behåll detta block endast om barnets egna uppgifter efter födseln ska behandlas och avsnittet ”Uppgifter om barnet efter födseln” har färdigställts. Ta annars bort blocket. Om barnet har två vårdnadshavare ska båda underteckna. Om endast en vårdnadshavare finns eller ensam är behörig ska grunden kontrolleras och dokumenteras.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n<b>B. Samtycke till uppföljning av barnets uppgifter efter födseln</b>\n\nBarnets namn eller kod: [FYLL I: prövningsspecifik uppgift]\n\nJag/vi har fått information om vilka uppgifter om barnet som samlas in, från vilka källor, varför uppgifterna behövs, hur länge uppföljningen och lagringen pågår och hur barnets uppgifter behandlas.\n\nJag/vi samtycker frivilligt till den uppföljning och insamling av barnets uppgifter som beskrivs i detta dokument.\n\nOm barnet har två vårdnadshavare ska båda samtycka.\n\n| Vårdnadshavare 1 – underskrift | Namnförtydligande | Datum |\n|  |  |  |\n\n| Vårdnadshavare 2 – underskrift | Namnförtydligande | Datum |\n|  |  |  |\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om endast en vårdnadshavare finns eller ensam är behörig ska grunden kontrolleras och dokumenteras i forskningsdokumentationen.]\n\nEn signerad kopia lämnas till vårdnadshavaren eller vårdnadshavarna.\n\n| Underskrift av den som informerade | Namn och funktion | Datum |\n|  |  |  |",
+   "section_style": "H2 document subline, Rich body text, Signature section, Standard table"
+  }
+ ]
+}

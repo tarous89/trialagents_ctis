@@ -1,0 +1,102 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Secondary and Future Use of Data or Biosamples",
+  "doc_name_local": "Document d’information et formulaire de consentement à l’utilisation secondaire des données et/ou échantillons biologiques",
+  "target_country": "France",
+  "country_code": "FR",
+  "target_language": "French",
+  "language_code": "fr",
+  "doc_type": "secondary_use",
+  "file_name": "L1_SIS and ICF_secondary",
+  "sort_order": 8,
+  "description": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Numéro de protocole : [à compléter] | Numéro d’essai UE : [à compléter]"
+  ],
+  "info_table": [
+   "Titre de la recherche",
+   "Titre abrégé de la recherche",
+   "Numéro de protocole [ajouter la version et la date]",
+   "Numéro d’essai UE [ou, le cas échéant, numéro EudraCT / ID-RCB applicable]",
+   "Promoteur [avec adresse complète]",
+   "Investigateur principal / coordonnateur",
+   "Nom du lieu de recherche",
+   "Adresse du lieu de recherche",
+   "Version et date du document",
+   "Nom de l’activité optionnelle / champ de recherche",
+   "Responsable de la conservation / collection d’échantillons biologiques / entrepôt de données [selon le cas]"
+  ],
+  "content_instructions": "Prepare a concise standalone French SIS/ICF for optional storage or secondary scientific use outside the mandatory purposes of the main trial. Use the adult-patient template only as the French structural and wording anchor. Keep trial identifiers, voluntariness, the exact data/sample lifecycle, governance, risks, withdrawal, contacts, written consent and applicable French GDPR information. Delete main-trial treatment, randomisation, visits, alternatives, general risks, insurance and results unless directly relevant to an additional optional procedure. Specify actual data categories, sample types and quantities, sources, research field, storage location and duration, coding, access, transfers, genetic analyses, return of findings, recontact and destruction. Do not call coded material anonymous. Refusal or withdrawal must not affect the main trial or care. Apply the CNRIPH biological-sample guidance and French data-protection requirements; use the appropriate parent, representative, adapted-adherence or witnessed-consent pathway where personal adult consent is not suitable.",
+  "styling_instructions": "Keep the document materially shorter than the main SIS/ICF. Use short lifecycle headings, one clear data/sample table, separate YES/NO choices for genuinely independent optional activities and distinct signature blocks."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMATION SUR L’UTILISATION OPTIONNELLE DE VOS DONNÉES ET/OU ÉCHANTILLONS</b>\nMadame / Monsieur,\n\nCe document concerne une utilisation scientifique facultative de données et/ou d’échantillons provenant de la recherche principale [<i>titre</i>] ou recueillis en lien avec elle. Cette activité est distincte des objectifs obligatoires de la recherche principale.\n\nVous pouvez accepter ou refuser. Votre choix n’aura aucune conséquence sur votre participation à la recherche principale, vos soins, vos droits ou les avantages auxquels vous avez droit.",
+   "section_style": "H2 document subline, Rich body text, Standard table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b><u>Pourquoi vos données ou échantillons pourraient-ils être utilisés ?</u></b>\nIls seraient utilisés pour [<i>finalité scientifique précise, domaine thérapeutique ou champ de recherche</i>]. Préciser si les questions futures sont déjà définies ou peuvent évoluer dans ce champ. Utiliser le champ le plus étroit possible et ne pas conserver une formule générale non justifiée.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b><u>Quelles données et quels échantillons sont concernés ?</u></b>\nDécrire uniquement ce qui s’applique :\n• catégories de données et période de collecte ;\n• type, quantité et source des échantillons ;\n• échantillons restants ou prélèvement supplémentaire ;\n• images, lames, tissus, données génétiques ou génomiques ;\n• rapprochement avec d’autres bases de données.\nDistinguer les échantillons provenant des soins, de la recherche principale et d’un prélèvement supplémentaire.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b><u>Comment seront-ils conservés et qui en sera responsable ?</u></b>\nLieu : [<i>à préciser</i>]\nResponsable / gestionnaire : [<i>nom et coordonnées</i>]\nDurée ou critères de durée : [<i>à préciser</i>]\nCodage : [<i>décrire le code et qui peut relier le code à l’identité</i>]\nSort final : [<i>destruction, épuisement, autre</i>]\nConditions d’accès futur, de cession, d’importation/exportation et de contrôle : [<i>à préciser</i>].\nEmployer le terme « collection d’échantillons biologiques » uniquement si la définition réglementaire est effectivement remplie.",
+   "section_style": "H3 module title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b><u>Quels chercheurs pourront y accéder et pour quels projets ?</u></b>\nDécrire les destinataires, le comité ou processus d’accès, les critères d’autorisation, les engagements de confidentialité, les pays concernés et la publication des résultats sous une forme ne permettant pas une identification directe.\nIndiquer le portail de transparence ou le moyen d’information sur les projets : [<i>adresse exacte en français</i>].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b><u>[Le cas échéant] Des analyses génétiques seront-elles réalisées ?</u></b>\nDécrire la nature et la finalité des analyses, y compris tout séquençage. Expliquer les résultats incidents possibles, le choix d’être informé(e) ou non, les conséquences familiales, le conseil génétique et les possibilités de prévention ou de prise en charge. Recueillir le consentement exprès, écrit et préalable applicable.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b><u>Quels sont les risques ou contraintes ?</u></b>\nLe principal risque est une atteinte à la confidentialité ou une réidentification malgré les mesures de protection. Expliquer ce risque sans promettre une anonymisation lorsque les données ou échantillons restent codés.\n[Le cas échéant] Décrire les risques physiques d’un prélèvement ou examen supplémentaire. Ne pas inclure de risques du traitement principal sans lien avec cette activité.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b><u>Y a-t-il un bénéfice personnel ou un avantage financier ?</u></b>\nVous ne devez attendre aucun bénéfice direct pour votre santé. Les résultats pourront contribuer à la recherche scientifique. [Le cas échéant, décrire uniquement les dispositions spécifiques relatives à une éventuelle valorisation ou à des avantages prévus par le projet.] [<i>Adapter les frais d’un prélèvement supplémentaire.</i>]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b><u>Recevrez-vous des résultats individuels et pourrez-vous être recontacté(e) ?</u></b>\n[Choisir et adapter]\n• Aucun résultat individuel ne sera retourné.\n• Certains résultats médicalement pertinents pourront être communiqués selon [<i>procédure</i>].\n• Vous pourrez choisir d’être recontacté(e) pour un nouveau projet ou pour compléter des informations.\nPrévoir des choix séparés lorsque ces décisions sont indépendantes.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b><u>Comment vos données seront-elles protégées ?</u></b>\nIdentifier le ou les responsables de traitement, les finalités et bases juridiques, les catégories, destinataires, sous-traitants, mesures de sécurité, transferts hors UE, durée, DPO et droits. Les données et échantillons codés ne sont pas anonymes tant qu’un lien avec l’identité peut être rétabli.\nUne réclamation peut être déposée auprès de la CNIL.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b><u>Pouvez-vous retirer votre consentement ?</u></b>\nOui. Vous pouvez retirer votre consentement à tout moment sans donner de raison et sans conséquence sur la recherche principale ou vos soins. Indiquer qui contacter et ce qui arrivera aux données identifiables et aux échantillons encore conservés.\nLe retrait ne peut pas annuler les analyses déjà réalisées, les données déjà anonymisées de manière irréversible, les publications ou résultats agrégés, ni certaines obligations légales.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b><u>Qui contacter ?</u></b>\nInvestigateur : [<i>coordonnées</i>]\nResponsable de la conservation / collection d’échantillons biologiques / entrepôt de données [selon le cas] : [<i>coordonnées</i>]\n<i>[Note de rédaction : utiliser le terme « biobanque » uniquement si cette désignation est effectivement applicable au projet.]</i>\nPromoteur / responsable du traitement : [<i>coordonnées</i>]\nDPO : [<i>coordonnées</i>]\nVous pouvez introduire une réclamation auprès de la Commission nationale de l’informatique et des libertés (CNIL) : [<i>lien ou coordonnées actualisées</i>]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>FORMULAIRE DE CONSENTEMENT À L’UTILISATION SECONDAIRE</b>\nJe soussigné(e) [<i>nom, prénom, date de naissance</i>] confirme avoir reçu et compris l’information, avoir pu poser mes questions, disposer d’un délai suffisant et savoir que mon choix est indépendant de ma participation à la recherche principale.\n\nJe consens aux activités suivantes :\n□ Utilisation des données décrites pour [<i>champ</i>] : Oui □ Non □\n□ Conservation et utilisation des échantillons décrits : Oui □ Non □\n□ Analyses génétiques / génomiques afin de [<i>finalité précise</i>], selon les modalités décrites dans le document d’information : Oui □ Non □\n□ Transfert vers les pays décrits : Oui □ Non □ [<i>uniquement si un choix distinct est juridiquement et opérationnellement réel</i>]\n□ Recontact pour de nouveaux projets : Oui □ Non □\n□ Information sur certains résultats individuels : Oui □ Non □\n\nJe sais que je peux retirer mon consentement pour l’avenir dans les limites expliquées et qu’un exemplaire signé m’est remis.\n\nSignature du participant : __________ Date : __________\nNom en majuscules : __________________________________\n\nSignature de l’investigateur / professionnel ayant délivré l’information : __________ Date : __________\nNom et fonction : __________________________________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

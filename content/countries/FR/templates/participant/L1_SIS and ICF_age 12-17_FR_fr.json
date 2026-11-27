@@ -1,0 +1,101 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Document d’information adaptée et formulaire d’adhésion pour l’adolescent",
+  "target_country": "France",
+  "country_code": "FR",
+  "target_language": "French",
+  "language_code": "fr",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 12-17",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Numéro de protocole : [à compléter] | Numéro d’essai UE : [à compléter]"
+  ],
+  "info_table": [
+   "Titre de la recherche",
+   "Titre abrégé de la recherche",
+   "Numéro de protocole [ajouter la version et la date]",
+   "Numéro d’essai UE [ou, le cas échéant, numéro EudraCT / ID-RCB applicable]",
+   "Promoteur [avec adresse complète]",
+   "Investigateur principal / coordonnateur",
+   "Nom du lieu de recherche",
+   "Adresse du lieu de recherche",
+   "Version et date du document",
+   "Nom, prénom et date de naissance de l’adolescent"
+  ],
+  "content_instructions": "Adapt the French adult-patient template for adolescents aged 12-17. This is a separate age-adapted information and personal-adherence form that supplements, and does not replace, the legally required parental or representative consent. Use direct, concise French appropriate to age and maturity. Explain all decision-critical information, including random allocation, placebo, blinding, main risks, alternatives, data and samples. The adolescent’s affirmative adherence must be sought; silence is not adherence, and any explicit refusal or later wish to stop must be respected. Obtain the participant’s own adult informed consent if legal adulthood is reached during the trial. Apply the French rules in Articles L.1121-7 and L.1122-2 and keep detailed parental-authority and GDPR legal text in the parental form while providing the adolescent with a clear practical explanation.",
+  "styling_instructions": "Use a readable, airy and non-patronising layout with short question headings, 12-point or larger font, a simple visit calendar and visual aids where useful. Keep the document materially shorter than the adult form."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMATIONS POUR TOI SUR LA RECHERCHE</b>\nBonjour,\n\nLe Dr/Pr [<i>nom</i>] te propose de participer à une recherche qui étudie [<i>produit, procédure ou stratégie</i>] pour [<i>affection</i>]. Ce document t’explique ce que l’on te propose. Tes parents ou ton représentant légal recevront un autre document et donneront l’autorisation juridique nécessaire.\n\nTon avis compte. Tu peux poser toutes tes questions, demander du temps, dire non ou demander à arrêter. Ton refus doit être respecté et ne changera pas la qualité de tes soins.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b><u>Pourquoi cette recherche est-elle faite ?</u></b>\n<i>Expliquer simplement la maladie ou le problème de santé, pourquoi ce produit ou cette stratégie est étudié(e) et pourquoi des adolescents doivent être inclus.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b><u>En quoi consiste la recherche ?</u></b>\n<i>Indiquer les objectifs, le nombre de participants, les lieux, la durée et la source de financement.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b><u>Quel traitement ou produit pourrais-tu recevoir ?</u></b>\n<i>Expliquer directement les groupes, le tirage au sort, le placebo et le fait que le participant ou le médecin peut ne pas connaître le groupe. Distinguer les soins habituels de ce qui est fait pour la recherche.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b><u>Que va-t-il se passer si tu participes ?</u></b>\nUn examen permettra de vérifier si tu peux participer. <i>Décrire les visites, traitements, prises de sang, examens, questionnaires, hospitalisations, suivi et contraintes. Préciser l’effet sur l’école, les activités, l’alimentation, les médicaments et les déplacements.</i>\nTu dois prévenir l’équipe si tu te sens mal, si tu consultes un autre médecin ou si tes médicaments changent.\n\n[Le cas échéant] Tu ne pourras pas participer à une autre recherche pendant [<i>durée</i>].\n[Le cas échéant] Tu ne pourras pas participer en même temps à une autre recherche.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b><u>Quels autres choix as-tu ?</u></b>\n<i>Expliquer les traitements ou stratégies possibles si tu ne participes pas, ainsi que leurs limites.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b><u>Quels bénéfices, risques et contraintes sont possibles ?</u></b>\n<i>Expliquer le bénéfice possible sans le garantir, la possibilité de ne pas avoir de bénéfice, les risques fréquents, graves, inconnus et ceux des examens.</i>\n[Le cas échéant] Expliquer simplement les tests de grossesse, la contraception, les risques pour un embryon, un fœtus ou un enfant allaité et la nécessité de prévenir immédiatement l’investigateur si une grossesse survient.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b><u>[Le cas échéant] Que deviennent tes prélèvements et les examens génétiques ?</u></b>\n<i>Expliquer quels échantillons seront prélevés, pourquoi, en quelle quantité, combien de temps ils seront conservés et qui y aura accès.</i>\n<i>Si un examen génétique est prévu, expliquer sa finalité, les résultats inattendus possibles et les choix d’information. Ton avis doit être recherché en plus de l’autorisation juridique applicable.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b><u>Peux-tu arrêter ? Que se passe-t-il ensuite ?</u></b>\nOui. Tu peux dire que tu ne veux plus participer, à tout moment et sans donner de raison. Tu peux aussi refuser une procédure particulière. Ton choix doit être respecté. L’équipe expliquera les soins et le suivi de sécurité nécessaires après l’arrêt. L’investigateur peut également arrêter ta participation pour ta sécurité.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b><u>Que se passe-t-il si de nouvelles informations apparaissent ?</u></b>\nL’investigateur t’expliquera toute nouvelle information importante pour ton choix. Tu pourras poser de nouvelles questions et confirmer ou retirer ton adhésion. Si tu atteins l’âge de 18 ans pendant la recherche, ton propre consentement libre et éclairé sera demandé avant la poursuite.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b><u>Que devient l’information sur toi ?</u></b>\nDes informations sur ta santé et la recherche seront enregistrées et codées. Cela signifie qu’un numéro remplace ton nom dans les données utilisées par le promoteur. Seules les personnes autorisées peuvent y accéder pour réaliser ou contrôler la recherche.\nTes parents ou ton représentant pourront exercer les droits prévus par la loi et tu pourras les exercer toi-même lorsque cela est possible ou lorsque tu deviendras majeur(e). Tu peux demander à l’investigateur de t’expliquer comment exercer ces droits.\n\nUne réutilisation facultative en dehors de la recherche principale nécessite une information et un choix séparés.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b><u>Qui peut répondre à tes questions ?</u></b>\nInvestigateur / personne de contact : [<i>nom, téléphone, e-mail</i>]\nTu peux poser des questions maintenant ou plus tard. Si tu le souhaites, les résultats globaux de la recherche pourront t’être expliqués lorsqu’ils seront disponibles.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>MON ADHÉSION À LA RECHERCHE</b>\nJe m’appelle [<i>nom, prénom</i>], né(e) le [<i>date</i>].\n\nOn m’a expliqué la recherche avec des mots que je peux comprendre. J’ai pu poser mes questions et prendre le temps de réfléchir. Je sais que mes parents ou mon représentant donnent l’autorisation juridique. Je sais que je peux dire non ou arrêter plus tard sans être puni(e) et sans perdre mes soins.\n\nMon choix :\n□ Je souhaite participer.\n□ Je ne souhaite pas participer.\n□ Je ne suis pas encore sûr(e) et je souhaite en reparler.\n\nSignature ou autre moyen d’expression de l’adolescent, si possible : __________ Date : __________\n\nL’information a été adaptée à l’âge et à la compréhension de l’adolescent. Ses questions ont reçu une réponse et son choix a été recueilli sans pression.\nSignature de l’investigateur / professionnel : __________ Date : __________\nNom et fonction : __________________________________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

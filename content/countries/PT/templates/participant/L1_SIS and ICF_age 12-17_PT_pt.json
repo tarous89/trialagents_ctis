@@ -1,0 +1,104 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Informação e Formulário de Assentimento para Adolescentes (12–17 anos)",
+  "target_country": "Portugal",
+  "country_code": "PT",
+  "target_language": "Portuguese",
+  "language_code": "pt",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 12-17",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versão 1.0 - [date]",
+   "Número do protocolo: [preencher] | Número do ensaio UE: [preencher]"
+  ],
+  "info_table": [
+   "Título do ensaio",
+   "Título curto do ensaio",
+   "Número do protocolo [adicionar versão e data]",
+   "Número do ensaio UE",
+   "Promotor [com endereço completo]",
+   "Investigador principal",
+   "Nome do centro de ensaio",
+   "Endereço do centro de ensaio",
+   "Contacto do centro",
+   "Contacto de emergência",
+   "Representante local",
+   "Entidade financiadora do ensaio",
+   "Versão do FCI"
+  ],
+  "content_instructions": "Versão simplificada dirigida diretamente a adolescentes dos 12 aos 17 anos, baseada no FCI CEIC 2026 para adultos. Complementa e não substitui o consentimento dos pais/representante(s) legalmente autorizado(s), documentado separadamente. Em Portugal, abaixo dos 16 anos deve ser obtido assentimento sempre que o menor seja capaz de formar uma opinião e avaliar a informação, independentemente da forma. Aos 16 e 17 anos, o assentimento é obrigatório. A vontade expressa de recusar ou retirar-se deve ser respeitada. Se o participante atingir 16 anos durante o ensaio, o assentimento para continuar deve obrigatoriamente revestir a forma escrita. Ao atingir a maioridade, deve ser obtido o seu próprio consentimento esclarecido escrito para continuar. Dirigir o texto ao adolescente, preferencialmente na segunda pessoa, com linguagem clara e respeitosa, mantendo toda a informação necessária à sua decisão: natureza de investigação, motivo do convite, objetivo, tratamento e alternativas, sorteio/placebo/ocultação quando aplicável, duração, visitas e procedimentos, deveres, benefícios, riscos e incómodos, gravidez/contraceção quando aplicável, seguro/custos em termos práticos, dados e amostras do ensaio principal, retirada, seguimento, nova informação, resultados e contactos. Preservar a terminologia e substância do modelo português, mas retirar a densidade legal e operacional que pertence ao documento parental. Não incluir consentimento para utilização secundária/futura de dados ou amostras; utilizar o modelo dedicado. Análises genéticas ou subestudos que integrem o protocolo atual podem ser explicados; se forem opcionais e independentes, prever uma escolha de assentimento separada além da autorização parental aplicável.",
+  "styling_instructions": "Manter o documento claramente mais curto e direto do que a informação para adultos/pais; como orientação de simplificação, procurar cerca de 3–6 páginas. Usar títulos curtos em forma de pergunta, parágrafos pequenos, espaçamento generoso e uma tabela de atividades simplificada quando útil. Evitar linguagem legal extensa, listas protocolarias e abreviaturas não explicadas. Preservar a lógica CEIC de negrito para conteúdo recomendado e remover notas editoriais/não aplicáveis antes da versão final. A secção de assentimento deve ser separada e simples, com espaço adequado para assinatura e data. Se o participante atingir 16 anos durante o ensaio, o assentimento para continuar deve obrigatoriamente revestir a forma escrita."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Porque estás a receber esta informação?</b>\n\nEstás a ser convidado(a) para participar num ensaio clínico. Um ensaio clínico é uma investigação realizada para aprender mais sobre um medicamento ou tratamento e avaliar a sua segurança e eficácia.\n\n<b>Este ensaio clínico foi autorizado pelo INFARMED, I.P. e obteve parecer favorável da Comissão de Ética para a Investigação Clínica (CEIC).</b> O médico investigador vai explicar-te o ensaio, responder às tuas perguntas e dar-te tempo para pensar. Podes falar também com os teus pais/representante(s), familiares ou outro médico.\n\nOs teus pais/representante(s) receberão informação mais detalhada e darão a autorização legal num documento separado. Este documento é para te permitir compreender o ensaio e dizer claramente o que queres.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Quem decide se participas?</b>\n\n<b>A participação é voluntária.</b> Podes dizer que não ou mudar de opinião e pedir para parar em qualquer momento, sem teres de justificar a decisão e sem perderes os melhores cuidados de saúde disponíveis.\n\nA tua opinião é importante e uma vontade expressa de não participar ou de deixar de participar será respeitada. O teu silêncio não significa que concordas.\n\nOs teus pais/representante(s) dão o consentimento legal para a tua participação. A tua opinião também é importante e, quando o teu assentimento é necessário, ser-te-á pedido de forma adequada à tua idade e capacidade. Se disseres que não ou quiseres parar, essa vontade será respeitada.\n\n[Nota para o autor: Em Portugal, abaixo dos 16 anos deve ser obtido assentimento sempre que o menor seja capaz de formar uma opinião e avaliar a informação, independentemente da forma. Aos 16 e 17 anos, o assentimento é obrigatório. Se o participante atingir 16 anos durante o ensaio, o assentimento para continuar deve obrigatoriamente revestir a forma escrita. Ao atingir a maioridade, deve ser obtido o seu próprio consentimento esclarecido escrito para continuar.]",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>Porque está a ser realizado este ensaio e porque foste convidado(a)?</b>\n\nEste ensaio clínico está a ser realizado para verificar se o medicamento [experimental, se aplicável] [identificar medicamento] é eficaz e/ou seguro [adaptar] no tratamento de [doença/condição em linguagem simples].\n\nFoste convidado(a) porque te foi diagnosticado [indicar doença/condição e característica principal relevante]. O médico terá de confirmar se cumpres as condições clínicas necessárias para participar.\n\nO ensaio irá envolver [número] participantes em [centros/países, se relevante].\n\n[Quando relevante para compreender o objetivo do ensaio, explicar brevemente e em linguagem adequada porque é necessário realizar esta investigação em adolescentes e porque a informação necessária não pode ser obtida apenas em adultos.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>O que acontece se participares?</b>\n\nSe participares, [poderá] ser-te administrado [nome do ME]. Este [não] foi aprovado por [autoridade/indicação, adaptar]. O ensaio poderá comparar [nome do ME] com [placebo/comparador ativo]. Um placebo tem aspeto semelhante ao medicamento do ensaio, mas não contém substância ativa.\n\nQuando aplicável, o tratamento será atribuído ao acaso, como num sorteio. A probabilidade de receber cada opção será [indicar]. Se o ensaio for oculto, explicar de forma simples quem não saberá qual tratamento foi atribuído e que o médico poderá descobrir quando for necessário para proteger a tua saúde.\n\nA participação deverá durar [período]. Terás de ir a [local] aproximadamente [frequência] e realizar [exames/procedimentos principais]. Explicar claramente quais são cuidados habituais e quais são feitos apenas por causa do ensaio, incluindo número e quantidade aproximada de colheitas de sangue e duração das visitas.\n\n[Inserir, se útil, tabela simples: visita/momento | procedimento principal | duração aproximada.]",
+   "section_style": "H3 module title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>Quais os possíveis benefícios?</b>\n\nO ensaio está a avaliar a segurança e a eficácia do [nome do ME]. <b>Não existe certeza de que a tua saúde beneficie por participares.</b> A tua condição pode melhorar, ficar na mesma ou piorar. Mesmo que não tenhas benefício direto, os dados obtidos poderão ajudar no futuro outras pessoas com a mesma doença.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>Quais os riscos, desconfortos e incómodos?</b>\n\nSe receberes o Medicamento Experimental, poderão ocorrer os seguintes efeitos adversos/indesejados: [descrever os mais relevantes, frequentes e/ou graves em linguagem simples]. Se houver Comparador Ativo, indicar os riscos principais correspondentes. <b>Também podem existir riscos ainda desconhecidos.</b>\n\nOs procedimentos do ensaio também podem causar desconforto ou riscos, por exemplo [descrever]. A equipa fará vigilância regular e poderá parar o tratamento ou a tua participação se isso for necessário para a tua segurança.\n\nInforma rapidamente o médico investigador sobre qualquer sintoma novo, reação, lesão ou situação que te preocupe.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>Que regras terás de cumprir?</b>\n\nDurante o ensaio deverás: tomar a medicação/tratamento como indicado; informar o médico sobre outros medicamentos, vitaminas ou produtos naturais; comparecer às visitas e exames; manter os registos pedidos; e comunicar sintomas novos ou idas a outros serviços de saúde.\n\nExplicar apenas outras restrições aplicáveis, como alimentos, exercício, viagens, atividades, doação de sangue ou participação noutros estudos.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Gravidez e contraceção — apenas se aplicável</b>\n\nNão se sabe se o medicamento do ensaio, ou outros medicamentos utilizados, podem provocar lesões no feto [adaptar se o risco for conhecido]. Se houver possibilidade de gravidez, explicar de forma clara e adequada os testes de gravidez e os métodos de contraceção exigidos, incluindo durante quanto tempo devem ser usados.\n\nSe ocorrer uma gravidez tua ou da tua parceira durante o período relevante, informa imediatamente o médico investigador. Qualquer recolha de dados de acompanhamento da gravidez e/ou do bebé será explicada num documento de consentimento específico.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>O que acontece aos teus dados e amostras?</b>\n\nA tua privacidade e a confidencialidade dos teus dados pessoais e de saúde serão protegidas. A maior parte dos dados utilizados no ensaio será <b>pseudonimizada</b>: o teu nome é substituído por um código. Apenas pessoas autorizadas poderão consultar os dados necessários para realizar e verificar o ensaio. Os teus pais/representante(s) recebem a explicação completa sobre quem pode aceder aos dados.\n\nOs dados necessários ao ensaio serão conservados durante o período legal aplicável, conforme explicado no documento dos teus pais/representante(s).\n\n[Incluir apenas se forem recolhidas ou utilizadas amostras biológicas no ensaio principal.] Serão recolhidas/utilizadas [sangue/urina/tecido/outra amostra], [quantidade/frequência], para [objetivos/testes deste ensaio]. As amostras serão identificadas por um código, analisadas em [local], guardadas durante [período] e depois [destruídas/outro destino aplicável].\n\n[Incluir apenas se forem realizadas análises genéticas no ensaio principal. Para menores, confirmar previamente que o teste é realizado em benefício do menor e nunca em seu prejuízo, com o consentimento dos pais/representante(s) e o assentimento do adolescente aplicável à sua idade e capacidade. Se for invocada uma exceção ou fundamento diferente, justificar o fundamento legal, científico e ético e confirmar a aceitação pela CEIC.] Serão realizadas análises genéticas em [amostra] para [objetivo explicado de forma compreensível]. Estas análises podem fornecer informação sobre [resposta ao medicamento/doença/outro objetivo]. [Se aplicável, explicar se podem surgir achados inesperados relevantes e como serão tratados.]\n\n<b>Qualquer armazenamento ou utilização futura/secundária fora dos objetivos deste ensaio terá informação e consentimento separados.</b>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Quais são as alternativas, os custos e o seguro?</b>\n\nSe não participares, continuarás a ter acesso ao acompanhamento médico e aos tratamentos atualmente indicados/aprovados para a tua condição. O médico explicará as alternativas disponíveis.\n\nA participação neste ensaio clínico não implica quaisquer custos para ti relacionados com o ensaio. As despesas inerentes à tua participação serão reembolsadas conforme explicado aos teus pais/representante(s). O Promotor tem um seguro que cobre eventuais danos relacionados com o ensaio, de acordo com a legislação nacional. Os detalhes completos são fornecidos aos teus pais/representante(s).",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>O que acontece se quiseres parar ou quando o ensaio terminar?</b>\n\nPodes pedir para deixar de participar a qualquer momento. Se parares o medicamento, o médico pode recomendar exames ou seguimento para verificar a tua segurança. Se tu decidires retirar o teu assentimento, ou se o consentimento do teu representante for retirado, a tua participação termina e não serão recolhidos novos dados para o ensaio. Os dados já recolhidos podem continuar a ser utilizados para garantir a integridade científica do ensaio e cumprir obrigações legais.\n\nO médico investigador, o Promotor ou as autoridades também podem interromper a tua participação por razões de segurança, impossibilidade de cumprir procedimentos ou suspensão/cancelamento do ensaio.\n\nQuando o ensaio terminar, o médico explicará a ti e aos teus pais/representante(s) qual será o tratamento ou acompanhamento a seguir e se será necessário continuar o medicamento do ensaio. As condições completas são explicadas no documento dos teus pais/representante(s).",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>Informação nova, resultados e contactos</b>\n\nSe surgirem novas informações que possam influenciar a tua decisão de continuar, o médico investigador irá explicá-las atempadamente.\n\nOs resultados individuais do ensaio não serão normalmente comunicados como resultados do estudo. Se estiver prevista a comunicação de algum resultado específico ou de um achado incidental relevante, isso será explicado separadamente. O resumo dos resultados gerais ficará disponível no Sistema de Informação de Ensaios Clínicos (CTIS): https://euclinicaltrials.eu .\n\nPara dúvidas sobre o ensaio, fala primeiro com o médico investigador ou com a equipa do centro.\nContacto do centro: [identificar]\nContacto de emergência: [identificar]\nCEIC: Parque da Saúde de Lisboa, Av. do Brasil, 53 - Pav. 17-A, 1749-004 Lisboa | Tel.: +351 21 798 53 40 | E-mail: ceic@ceic.pt",
+   "section_style": "H3 module title, Rich body text, Info table"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>DECLARAÇÃO DE ASSENTIMENTO DO ADOLESCENTE</b>\n\n<b>Nome do participante:</b> _______________________________________________\n\nDeclaro que:\n□ Recebi e compreendi a informação sobre este ensaio de uma forma adequada à minha idade e capacidade.\n□ Tive tempo para pensar e oportunidade para fazer perguntas.\n□ Compreendo que a participação é voluntária e que posso dizer não ou pedir para parar sem prejuízo dos meus cuidados de saúde.\n□ Compreendo os principais procedimentos, benefícios possíveis, riscos e incómodos que me foram explicados.\n\n<b>A minha decisão:</b>\n□ Dou o meu assentimento e quero participar/continuar a participar neste ensaio.\n□ Não dou o meu assentimento e não quero participar/continuar.\n□ Ainda não tenho a certeza e quero mais tempo ou explicações.\n\n[Incluir apenas se existir uma atividade opcional dentro do ensaio principal que exija decisão separada; adaptar ao procedimento aplicável.]\n\n[Se se tratar de uma análise genética opcional:] Foi-me explicado que esta análise genética é opcional e pretende [objetivo].\n□ Dou o meu assentimento para participar nesta análise genética opcional.\n□ Não dou o meu assentimento para participar nesta análise genética opcional.\n\nReceberei uma cópia deste documento depois de assinado.\n\nAssinatura do participante: ____________________________________  Data: ___/___/_____\n[Se o assentimento não for documentado por assinatura, registar a forma pela qual foi expresso: _______________________________________________.]\n\n[Nota para o autor: Para participantes com menos de 16 anos capazes de formar uma opinião e avaliar a informação, o assentimento pode ser expresso por forma adequada à sua capacidade. Se o participante atingir 16 anos durante o ensaio, o assentimento para continuar deve obrigatoriamente revestir a forma escrita.]\n\n<b>Confirmação do médico investigador ou membro da equipa de investigação com formação ou experiência no trabalho com menores</b>\nConfirmo que expliquei o ensaio de forma adequada à idade e maturidade do participante, respondi às perguntas, disponibilizei tempo suficiente e documentei a sua vontade sem pressão.\n\nNome: ____________________________________  Assinatura: ____________________  Data: ___/___/_____\n\n<i>O assentimento do adolescente não substitui o consentimento informado dos pais/representante(s) legalmente autorizado(s), documentado separadamente.</i>\n\n[Se o participante atingir a maioridade durante o ensaio, deve ser obtido o seu próprio consentimento esclarecido escrito para continuar.]",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

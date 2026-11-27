@@ -1,0 +1,84 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Angepasste Teilnehmerinformation und Zustimmungserklärung",
+  "target_country": "Austria",
+  "country_code": "AT",
+  "target_language": "German",
+  "language_code": "de",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": "2",
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[Beschreibung der Population laut Prüfplan]",
+  "target_population_label": "[Kurzbezeichnung der Population]",
+  "footer": [
+   "[Dokumentname] - [Kurzbezeichnung der Population] - Version 1.0 - [Datum]",
+   "Prüfplannummer: [ausfüllen] | EU-CT-Nummer: [ausfüllen]"
+  ],
+  "info_table": [
+   "Titel der klinischen Prüfung",
+   "Kurztitel der klinischen Prüfung",
+   "Prüfplannummer [Version und Datum ergänzen]",
+   "EU-CT-Nummer",
+   "Sponsor [mit vollständiger Anschrift und Länderangabe]",
+   "Verantwortliche Prüfärztin/verantwortlicher Prüfarzt",
+   "Name des Prüfzentrums",
+   "Anschrift des Prüfzentrums"
+  ],
+  "content_instructions": "LÄNGENLIMIT: Zielumfang 3 bis höchstens 5 Seiten; nur Informationen aufnehmen, die der betroffenen Person helfen, den Kern der Prüfung und ihr Recht auf Ablehnung zu verstehen. Bei mehr als 10 Seiten wäre zusätzlich eine 1- bis höchstens 2-seitige Kurzzusammenfassung erforderlich, ein derartiger Umfang ist jedoch zu vermeiden. Nur für eine erwachsene nicht einwilligungsfähige Person verwenden, die noch Informationen verstehen oder einen Willen äußern kann. Die rechtswirksame Einwilligung der Erwachsenenvertretung bleibt in einem getrennten Dokument. Verwenden Sie kurze Sätze, konkrete Beispiele, Bilder, Symbole oder unterstützte Kommunikation. Erklären Sie Forschung, Behandlung/Placebo, wichtigste Maßnahmen, Dauer, möglichen Nutzen, Hauptgefahren, einfache Vertraulichkeit und Kontakte. Das Recht auf Nein, Ablehnung einzelner Maßnahmen und späteres Aufhören muss zentral stehen. Dokumentieren Sie Kommunikationshilfe und den geäußerten oder beobachteten Willen. Kein langer Datenschutz-, Versicherungs- oder Vertretungsrechtstext in diese angepasste Fassung aufnehmen. Neu ergänzte oder angepasste Texte sind in kurzen, leicht verständlichen Sätzen zu formulieren; Fachbegriffe aus der österreichischen Musterinformation bleiben unverändert, neu eingeführte Fachbegriffe sind kurz zu erklären.",
+  "styling_instructions": "LÄNGEN- UND LAYOUTVORGABE: Das Dokument deutlich kürzer als die Erwachseneninformation halten. Kurze Sätze, große gut lesbare Schrift, viel Weißraum und höchstens eine wesentliche Aussage pro Absatz verwenden. Für Kinder nach Möglichkeit Bilder, Symbole, Ablaufgrafiken oder einfache Tabellen einsetzen. Die Information soll regelmäßig höchstens 3 bis 5 Seiten umfassen; falls ausnahmsweise mehr als 10 Seiten entstehen, ist zusätzlich eine 1- bis höchstens 2-seitige Kurzzusammenfassung erforderlich. Bearbeitungshinweise und nicht anwendbare Alternativen vor Ausgabe entfernen. Die Zustimmung/Assent-Seite muss übersichtlich sein und einfache Ja/Nein-Felder sowie ausreichend Platz für Name, Datum, Unterschrift oder ein anderes sinnvolles Zeichen enthalten."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Sehr geehrte Patientin, sehr geehrter Patient!\n\nWir möchten Ihnen in einfacher Form erklären, dass eine klinische Prüfung geplant ist. Sie können im Moment nicht allein rechtswirksam einwilligen. Eine Erwachsenenvertreterin/ein Erwachsenenvertreter erhält eine eigene ausführliche Information und entscheidet rechtlich.\n\n<b>Ihre Meinung ist trotzdem wichtig.</b> Sie dürfen Nein sagen, zeigen, dass Sie etwas nicht möchten, eine Pause verlangen oder später aufhören. Ein klares Nein wird respektiert. Die Information darf mit Bildern, Gesten, Kommunikationshilfen oder Unterstützung einer vertrauten Person erklärt werden.",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Worum geht es?</b>\n\nSie haben ...... . Ärztinnen und Ärzte möchten herausfinden, ob ...... . <i>(Nur die wichtigsten Punkte in kurzen Sätzen erklären.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Was wird gemacht?</b>\n\nDie Prüfung dauert ungefähr ...... . Sie kommen/bleiben ...... . Es wird ...... gemacht.\n\n<i>(Medikament, Auslosen, Placebo, Blutabnahme, Untersuchung und Nachbeobachtung konkret und einfach erklären. Bilder oder Symbole anbieten.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Kann es Ihnen helfen?</b>\n\nVielleicht ...... . Das ist nicht sicher. / Es wird wahrscheinlich keinen direkten Nutzen geben. Was gelernt wird, kann anderen Menschen helfen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Was kann unangenehm oder gefährlich sein?</b>\n\nDie wichtigsten Beschwerden und Risiken sind: ...... . Manche Risiken sind noch nicht bekannt. Sagen oder zeigen Sie sofort, wenn Sie Schmerzen, Angst oder Unwohlsein haben.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Was müssen Sie beachten?</b>\n\n...... <i>(Nur einfache, unmittelbar relevante Regeln nennen.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Was passiert mit Ihren Daten?</b>\n\nInformationen über Ihre Gesundheit erhalten einen Code und werden geschützt. Nur berechtigte Personen dürfen sie für die Prüfung und Kontrolle sehen. Die Erwachsenenvertretung erhält die vollständigen Datenschutzinformationen.\n\n<i>(Falls genetische Untersuchungen stattfinden, sind Zweck und praktische Bedeutung alters- beziehungsweise verständnisgerecht zu erklären; genetische Untersuchungen außerhalb des beschriebenen Studienumfangs sind nicht umfasst.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Sie dürfen Nein sagen</b>\n\nSie dürfen jetzt oder später Nein sagen. Sie dürfen auch eine einzelne Untersuchung ablehnen. Sie müssen keinen Grund nennen. Ihre normale Behandlung geht weiter. Sagen oder zeigen Sie es der Ärztin/dem Arzt, der Erwachsenenvertretung oder einer Vertrauensperson.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Wie wurde die Information erklärt?</b>\n\nVerwendete Unterstützung: □ einfache Sprache □ Bilder/Symbole □ Gebärden □ Kommunikationsgerät □ Vertrauensperson □ anderes: ......\n\nDie Person zeigte: □ Zustimmung/Bereitschaft □ Ablehnung □ Unsicherheit □ keine klare Äußerung möglich\nBeobachtete Worte, Gesten oder Verhalten: ......",
+   "section_style": "H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>9. Zustimmung/Assent und Dokumentation</b>\n\nName und Geburtsdatum: ......\n\n□ Ich möchte mitmachen.\n□ Ich möchte nicht mitmachen.\n□ Ich bin nicht sicher.\n\n<i>(Nur aufnehmen, wenn die genetische Untersuchung freiwillig und optional ist.)</i>\n\n<b>Meine Entscheidung zur optionalen genetischen Untersuchung</b>\n\n□ Ich möchte bei der beschriebenen genetischen Untersuchung mitmachen.\n□ Ich möchte bei der beschriebenen genetischen Untersuchung nicht mitmachen.\n\n......................................................................................................\nDatum und Unterschrift/Zeichen der teilnehmenden Person, wenn sinnvoll und möglich\n\nIch bestätige, dass die Information an die Verständnis- und Kommunikationsfähigkeit angepasst wurde, Fragen beantwortet und der geäußerte oder beobachtete Wille dokumentiert wurde.\n\n......................................................................................................\nDatum, Name und Unterschrift der erklärenden Prüfärztin/des erklärenden Prüfarztes\n\n<i>Die rechtswirksame Einwilligung wird in der getrennten Information für die Erwachsenenvertretung dokumentiert. Bei Wiedererlangung der Einwilligungsfähigkeit ist die eigene Erwachsenen-Einwilligung einzuholen.</i>",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

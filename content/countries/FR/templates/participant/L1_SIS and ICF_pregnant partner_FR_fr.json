@@ -1,0 +1,93 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Partners",
+  "doc_name_local": "Document d’information et formulaire de consentement au suivi de grossesse - partenaire enceinte",
+  "target_country": "France",
+  "country_code": "FR",
+  "target_language": "French",
+  "language_code": "fr",
+  "doc_type": "pregnant_partners",
+  "file_name": "L1_SIS and ICF_pregnant partner",
+  "sort_order": 7,
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Numéro de protocole : [à compléter] | Numéro d’essai UE : [à compléter]"
+  ],
+  "info_table": [
+   "Titre de la recherche",
+   "Titre abrégé de la recherche",
+   "Numéro de protocole [ajouter la version et la date]",
+   "Numéro d’essai UE [ou, le cas échéant, numéro EudraCT / ID-RCB applicable]",
+   "Promoteur [avec adresse complète]",
+   "Investigateur principal / coordonnateur",
+   "Nom du lieu de recherche",
+   "Adresse du lieu de recherche",
+   "Version et date du document",
+   "Code du participant masculin",
+   "Code du suivi de grossesse",
+   "Nom et date de naissance de la partenaire enceinte"
+  ],
+  "content_instructions": "Prepare a separate, narrowly focused French information and consent form for the pregnant partner of a male trial participant. State that she is not a trial participant, receives no investigational product and is deciding only about pregnancy-safety follow-up and the described data collection. Explain paternal exposure and known, suspected or unknown reproductive risks. Collect only protocol-required data and identify sources, contact methods, timepoints and end of follow-up. Refusal or withdrawal must not affect her care, the child’s care or the male participant’s trial participation. The male participant cannot consent for her. Post-birth identifiable child follow-up requires a separate or post-birth confirmed consent by the person or persons with parental authority under French law. Integrate the applicable French GDPR/MR-001 information and do not add main-trial treatment, alternatives, insurance, genetics or secondary-use modules unless directly relevant.",
+  "styling_instructions": "Keep the form substantially shorter than the main SIS/ICF. Use short headings, simple tables, clear checkboxes and distinct signature blocks for the pregnant partner and, only after birth where applicable, the child-data consent."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMATION SUR LE SUIVI DE GROSSESSE</b>\nMadame,\n\nVous êtes contactée parce que vous êtes enceinte et que votre partenaire participe ou a participé à la recherche [<i>titre</i>], dans laquelle il a reçu ou a pu recevoir [<i>produit / exposition</i>].\n\nVous ne participez pas à l’essai clinique et vous ne recevez pas le produit étudié. On vous demande seulement si vous acceptez que des informations sur votre santé, la grossesse et son issue soient recueillies pour évaluer la sécurité. Votre partenaire ne peut pas consentir à votre place.",
+   "section_style": "H2 document subline, Rich body text, Standard table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b><u>Pourquoi ces informations sont-elles recueillies ?</u></b>\nIl peut ne pas être suffisamment connu si l’exposition du père au produit étudié peut avoir un effet sur la conception, la grossesse, l’accouchement ou la santé du nouveau-né. <i>Expliquer le but scientifique et de sécurité et le lien avec la recherche principale.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b><u>Quels risques sont connus ou possibles ?</u></b>\n<i>Décrire uniquement les risques reproductifs connus ou raisonnablement prévisibles liés à l’exposition paternelle, ainsi que l’incertitude résiduelle. Ne pas présenter l’absence de signal connu comme une garantie d’absence de risque.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b><u>Quelles informations seront recueillies ?</u></b>\nUniquement les informations nécessaires à l’évaluation de sécurité :\n• coordonnées et données générales nécessaires au suivi ;\n• antécédents pertinents et médicaments liés à la grossesse ;\n• dates et évolution de la grossesse ;\n• issue de la grossesse et informations médicales nécessaires sur la mère ;\n• [<i>après la naissance, uniquement avec le consentement parental applicable</i>] informations limitées sur l’état de santé de l’enfant.\n<i>Supprimer toute catégorie non prévue par le protocole.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b><u>Comment et quand les informations seront-elles obtenues ?</u></b>\nSources : vous-même, votre dossier médical, votre médecin, sage-femme, obstétricien, maternité ou autre professionnel nommé [<i>à préciser</i>].\nMoments de contact : [<i>déclaration de grossesse, trimestres, issue, autre</i>].\nFin du suivi : [<i>date ou événement précis</i>].\nAucun examen, prélèvement ou traitement supplémentaire ne sera ajouté sauf s’il est réellement prévu et expliqué séparément.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b><u>Y a-t-il un bénéfice, des frais ou une indemnité ?</u></b>\nAucun bénéfice personnel pour votre santé ou celle de l’enfant n’est attendu de la simple collecte d’informations. Aucun frais supplémentaire ne doit rester à votre charge. [<i>Préciser les remboursements éventuels.</i>]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b><u>Comment vos données seront-elles protégées ?</u></b>\nLe promoteur [<i>nom</i>] est responsable du traitement pour [<i>finalités</i>]. Vos données seront codées et reliées au code de votre partenaire uniquement dans la mesure nécessaire. Décrire les catégories, destinataires, accès aux dossiers sources, transferts internationaux, durée de conservation, base juridique, DPO et mesures de confidentialité.\nVous disposez des droits d’accès, rectification, limitation, opposition et, selon les conditions applicables, effacement. Vous pouvez contacter l’investigateur ou le DPO et déposer une réclamation auprès de la CNIL.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b><u>Votre décision est-elle libre et pouvez-vous retirer votre accord ?</u></b>\nOui. Votre décision est volontaire. Vous pouvez refuser ou retirer votre consentement à tout moment, oralement ou par écrit, sans conséquence pour vos soins, ceux de l’enfant ou la participation de votre partenaire à l’essai. Après le retrait, aucune nouvelle information facultative ne sera recueillie. Certaines informations déjà obtenues pourront rester utilisées lorsqu’elles sont nécessaires à la sécurité ou à une obligation légale.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b><u>Qui contacter ?</u></b>\nInvestigateur / personne de contact : [<i>nom, adresse, téléphone, e-mail</i>]\nDélégué à la protection des données : [<i>coordonnées</i>]\nVous pouvez introduire une réclamation auprès de la Commission nationale de l’informatique et des libertés (CNIL) : [<i>lien ou coordonnées actualisées</i>]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>FORMULAIRE DE CONSENTEMENT DE LA PARTENAIRE ENCEINTE</b>\nJe soussignée [<i>nom, prénom, date de naissance</i>] confirme avoir reçu et compris l’information sur le suivi de grossesse, avoir pu poser mes questions et disposer d’un délai suffisant.\n\nJ’accepte :\n□ le suivi de la grossesse et la collecte des informations décrites ;\n□ l’accès aux informations strictement nécessaires auprès de [<i>professionnels/établissements nommés</i>] ;\n□ le codage, le lien avec les données de la recherche du participant masculin et les transferts décrits.\n\nJe sais que je peux retirer mon accord sans conséquence et qu’un consentement distinct sera nécessaire après la naissance pour toute nouvelle collecte identifiable concernant l’enfant.\n\nSignature de la partenaire enceinte : __________ Date : __________\n\nSignature de l’investigateur / professionnel ayant délivré l’information : __________ Date : __________\nNom et fonction : __________________________________\n\nUn exemplaire signé m’a été remis.",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>[LE CAS ÉCHÉANT, APRÈS LA NAISSANCE] CONSENTEMENT À LA COLLECTE DES DONNÉES DE L’ENFANT</b>\nÀ utiliser uniquement après la naissance si de nouvelles données identifiables concernant l’enfant sont prévues. Décrire brièvement les données, les sources, la durée et les finalités.\n\nAprès la naissance, les données de l’enfant ne seront recueillies qu’après l’accord du ou des titulaires de l’autorité parentale requis selon la situation applicable.\n\nJ’accepte / Nous acceptons la collecte des données de l’enfant décrite ci-dessus : Oui □ Non □\nNom(s), qualité(s), signature(s) et date(s) : __________________________________\nSignature du professionnel : __________________ Date : __________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

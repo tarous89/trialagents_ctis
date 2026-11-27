@@ -1,0 +1,134 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Consent Form - Healthy Adults",
+  "doc_name_local": "Informații pentru voluntarul sănătos și formular de consimțământ informat pentru participarea la studiul clinic",
+  "target_country": "Romania",
+  "country_code": "RO",
+  "target_language": "Romanian",
+  "language_code": "ro",
+  "doc_type": "healthy_adults",
+  "file_name": "L1_SIS and ICF_healthy",
+  "sort_order": 1,
+  "description": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versiunea 1.0 - [date]",
+   "Numărul protocolului: [completați] | Numărul studiului UE: [completați]"
+  ],
+  "info_table": [
+   "Titlul complet al studiului clinic",
+   "Titlul scurt al studiului clinic",
+   "Numărul protocolului [adăugați versiunea și data]",
+   "Numărul studiului UE",
+   "Sponsor [cu adresa completă]",
+   "Investigator principal",
+   "Denumirea centrului",
+   "Adresa centrului"
+  ],
+  "content_instructions": "Utilizați acest șablon numai pentru voluntari sănătoși adulți cu vârsta de cel puțin 18 ani, capabili să își exprime singuri consimțământul informat. Porniți de la logica și nivelul de protecție al șablonului românesc pentru pacienți adulți, dar eliminați diagnosticul, nevoia terapeutică, tratamentul standard și alternativele terapeutice care nu se aplică. Explicați de ce sunt necesari voluntari sănătoși, obiectivele reale ale studiului (de exemplu siguranță, tolerabilitate, farmacocinetică sau farmacodinamică), screeningul stării de sănătate, dozele, placebo/randomizarea/orbirea dacă sunt aplicabile, internările, toate procedurile, cantitatea totală de sânge, restricțiile, riscurile cunoscute și necunoscute și măsurile reproductive. Precizați clar că nu se așteaptă un beneficiu medical direct. Pentru rambursări și plăți utilizați numai categoriile, sumele și condițiile aprobate și aliniați textul cu Anexa nr. 7 la Ordinul nr. 3390/2022. Pentru probe biologice, material de arhivă, testare moleculară/genetică și activități opționale aplicați aceeași logică din șablonul principal: activitățile obligatorii ale studiului principal se descriu și se includ în consimțământul principal; fiecare test/procedură/recoltare/analiză cu adevărat opțională trebuie să aibă o alegere separată DA/NU, semnătură și dată; utilizarea secundară sau viitoare se mută în documentul separat. Respectați Regulamentul (UE) 2016/679 și Legea nr. 190/2018. Interviul pentru obținerea consimțământului trebuie realizat de un medic membru al echipei de investigație, instruit corespunzător privind protocolul și buna practică în studiul clinic, conform Ordinului nr. 3390/2022.",
+  "styling_instructions": "Folosiți capitole scurte, titluri clare și paragrafe ușor de parcurs. Explicați termenii medicali într-un limbaj simplu și păstrați un ton neutru, necoercitiv. Eliminați toate instrucțiunile pentru autor, exemplele, alternativele nealese și secțiunile neaplicabile înainte de finalizare. Păstrați formatarea, terminologia și logica generală consecvente cu șablonul românesc pentru pacienți adulți."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMAȚII PENTRU VOLUNTARUL SĂNĂTOS ȘI FORMULAR DE CONSIMȚĂMÂNT INFORMAT PENTRU PARTICIPAREA LA STUDIUL CLINIC</b>\n\n<b>Instrucțiune pentru autor:</b> Păstrați titlul complet al studiului, numărul protocolului și numărul studiului UE. Eliminați toate instrucțiunile, exemplele și opțiunile neaplicabile.",
+   "section_style": "H1 document headline, Rich body text, Info table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Stimată doamnă / Stimate domn,\n\nSunteți invitat/ă să participați la studiul clinic [titlul studiului] ca voluntar sănătos. Studiul este cercetare și participarea nu reprezintă tratament medical.\n\nParticiparea este voluntară. Citiți aceste informații, discutați-le cu persoane în care aveți încredere și adresați orice întrebări medicului investigator. Veți avea suficient timp pentru decizie. Refuzul sau retragerea nu vă afectează îngrijirea medicală obișnuită sau drepturile.\n\nSponsorul studiului este [denumirea sponsorului].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. De ce sunt necesari voluntari sănătoși și ce se studiază?</b>\n\nVoluntarii sănătoși sunt incluși pentru a evalua [siguranța / tolerabilitatea / modul în care organismul absoarbe, distribuie și elimină medicamentul / efectele asupra organismului / alt obiectiv].\n\nSe investighează [denumirea medicamentului/procedurii]. [Descrieți simplu ce este și stadiul dezvoltării: prima administrare la om / experiență anterioară / utilizare autorizată într-un alt context].\n\n<b>Instrucțiune pentru autor:</b> Nu creați impresia că screeningul sau participarea reprezintă un control medical cu beneficiu personal.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Care este scopul studiului?</b>\n\nScopul este să se afle [siguranța / tolerabilitatea / doza / farmacocinetica / farmacodinamica / alt obiectiv] pentru [denumirea].\n\n[Explicați pe scurt obiectivele și comparațiile relevante, inclusiv placebo, fără criterii tehnice de includere/excludere.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Cum va fi administrat medicamentul de studiu?</b>\n\nVeți primi [medicamentul de studiu / placebo] sub formă de [formă], în doza [completați], [o singură dată / repetat] timp de [durată].\n\n<b>Grupe:</b>\n• Grupa [A]: [tratament/doză/durată]\n• Grupa [B]: [tratament/doză/durată]\n\n<b>Text condițional - escaladarea dozei:</b> Doza poate crește între grupe numai după evaluarea datelor de siguranță disponibile.\n\n<b>Text condițional - randomizare/placebo/orbire:</b> [Explicați probabilitățile, placebo și cine cunoaște tratamentul. În urgență, orbirea poate fi deschisă dacă este necesar pentru siguranță.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Ce vizite, investigații și proceduri veți avea?</b>\n\nParticiparea va dura aproximativ [durată]. Veți avea aproximativ [număr] vizite.\n\n<b>Internare - păstrați numai dacă se aplică:</b>\nVeți avea [număr] internări de aproximativ [durată]. Screeningul va include [investigații necesare pentru a confirma starea de sănătate și eligibilitatea].\n\n<b>Calendar</b>\nVizită/perioadă\tCând\tDurată\tAdministrare și investigații\tInternare/restricții [dacă se aplică]\n[Screening]\t[completați]\t[completați]\t[completați]\t[completați]\n[Dozare]\t[completați]\t[completați]\t[completați]\t[completați]\n[Urmărire]\t[completați]\t[completați]\t[completați]\t[completați]\n\n<b>Recoltare de sânge - păstrați numai dacă se aplică:</b>\nCantitatea totală de sânge recoltată va fi aproximativ [X] ml.\n\n<b>Module condiționale:</b>\n• <b>Probe biologice necesare studiului principal:</b> se vor recolta [tip] în [număr] recoltări, aproximativ [cantitate], pentru [scop]. [Adăugați numai informațiile relevante despre păstrare/transfer.]\n• <b>Material biologic existent:</b> [tip/sursă/scop și dacă este necesar consimțământ nou].\n• <b>Testare moleculară/genetică necesară:</b> [ce se testează, scopul și implicațiile relevante].\n• <b>Test/procedură/recoltare/analiză opțională:</b> [descriere, scop, riscuri]. Refuzul nu împiedică participarea la partea principală; alegerea se documentează separat în formularul de consimțământ.\n• [Investigații invazive, radiații, dispozitive, jurnale sau monitorizare electronică: descrieți riscurile și sarcina.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Ce se așteaptă de la dumneavoastră?</b>\n\nUrmați instrucțiunile echipei și prezentați-vă la vizite. [Selectați restricțiile aplicabile privind medicamentele, suplimentele, vaccinurile, alcoolul, tutunul, cofeina, alimentele, activitatea fizică, expunerea la soare, conducerea vehiculelor și participarea la alte studii.] Raportați imediat orice simptom nou, consultație medicală, internare sau sarcină.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Cum diferă participarea de viața și îngrijirea medicală obișnuită?</b>\n\nParticiparea nu este tratament. Veți primi [medicamentul de cercetare / placebo / altă intervenție - adaptați] și veți avea proceduri și restricții pentru scopurile studiului. [Dacă se aplică: Veți avea și una sau mai multe internări pentru scopurile studiului.] [Descrieți concret timpul, vizitele, recoltările și restricțiile suplimentare.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Care sunt riscurile, reacțiile adverse și neplăcerile?</b>\n\n[Medicamentul] poate provoca reacții adverse și este posibil ca nu toate să fie cunoscute, mai ales dacă este administrat pentru prima dată la om sau la doze noi.\n\n<b>Riscuri importante:</b>\n• [risc, frecvență, gravitate]\n\n<b>Riscuri ale procedurilor și internării:</b>\n• [recoltări, biopsie, radiații, contrast, repaus, post alimentar etc.]\n\nDacă apare o problemă nouă sau se agravează o problemă existentă, contactați imediat medicul investigator la [contact].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Sarcina, alăptarea și contracepția</b>\n\n<b>Instrucțiune pentru autor:</b> Eliminați întreaga secțiune dacă nu se aplică populației sau medicamentului/procedurilor din studiu. Cerințele trebuie să corespundă exact protocolului și evaluării riscului reproductiv.\n\nEfectele [medicamentului de studiu] asupra unei sarcini, fătului sau copilului alăptat [nu sunt cunoscute / pot include: completați]. Din acest motiv, [femeile care pot rămâne însărcinate / bărbații cu partenere care pot rămâne însărcinate] trebuie să utilizeze [metoda/metodele acceptate] pe durata [perioada exactă].\n\n<b>Selectați și adaptați:</b>\n• Dacă puteți rămâne însărcinată, se vor efectua teste de sarcină la [momentele prevăzute].\n• Dacă alăptați, [nu puteți participa / trebuie discutată oprirea alăptării, conform protocolului și recomandării medicale].\n• Dacă rămâneți însărcinată în timpul studiului sau dacă partenera dumneavoastră rămâne însărcinată, informați imediat medicul investigator. Tratamentul de studiu și pașii medicali următori vor fi stabiliți conform protocolului și situației dumneavoastră medicale.\n• Dacă este planificată colectarea de informații despre evoluția sau rezultatul sarcinii, vi se va prezenta separat procesul de informare și consimțământ aplicabil.\n• Nu donați [spermă / ovocite] pentru o perioadă de [completați], dacă acest lucru este cerut de protocol.\n\nMedicul investigator vă va explica măsurile aplicabile și vă va răspunde la întrebări.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Există vreun beneficiu pentru dumneavoastră?</b>\n\nNu se așteaptă un beneficiu medical direct din participare. Screeningul, controalele, rambursările sau plățile nu reprezintă beneficii medicale. Informațiile obținute pot ajuta dezvoltarea viitoare a medicamentelor sau tratamentelor.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>10. Ce se întâmplă dacă nu participați?</b>\n\nDacă nu participați, nu veți primi medicamentul de studiu/placebo și nu veți efectua procedurile de cercetare. Refuzul nu afectează îngrijirea medicală obișnuită sau drepturile dumneavoastră.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>11. Asigurare, vătămare legată de studiu și despăgubire</b>\n\nPentru acest studiu există [asigurare / mecanism de despăgubire] conform cerințelor aplicabile studiului clinic. Detaliile relevante sunt:\n• sponsor: [denumire]\n• asigurător / entitate responsabilă: [denumire, dacă este cazul]\n• numărul poliței / referință: [completați, dacă este cazul]\n• date de contact pentru o cerere: [completați]\n\nDacă suferiți o vătămare sau o problemă de sănătate care ar putea avea legătură cu participarea la studiu, contactați imediat medicul investigator la [date de contact]. Vi se va asigura evaluarea și îngrijirea medicală necesară, iar dreptul la despăgubire se va stabili în conformitate cu legea aplicabilă și cu mecanismul de asigurare/despăgubire al studiului.\n\nPrin semnarea acestui formular nu renunțați la niciun drept legal pe care îl aveți.\n\n<b>Instrucțiune pentru autor:</b> Descrieți numai mecanismul real aprobat pentru studiu și evitați clauzele care limitează nejustificat drepturile participantului.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>12. Veți avea costuri, veți primi rambursări sau plăți?</b>\n\nParticiparea nu ar trebui să vă oblige să suportați costurile procedurilor efectuate exclusiv pentru studiu.\n\n<b>Rambursări/compensații - păstrați numai dacă sunt prevăzute și aprobate pentru acest studiu conform Anexei nr. 7:</b>\n• călătorie: [sumă/reguli]\n• cazare: [sumă/reguli]\n• hrană: [sumă/reguli]\n• pierderi de venit: [calcul]\n• plată în bani: [sumă/justificare/condiții]\n• plată nemonetară: [tip/valoare/condiții]\n• altele: [completați]\n\n[Dacă se aplică: Dacă participarea se încheie anticipat, plata/rambursarea va fi calculată astfel: [reguli aprobate].]\n\n[Dacă nu sunt prevăzute rambursări sau plăți: Nu veți primi rambursări, compensații sau alte plăți pentru participare.]\n\n<b>Participantă însărcinată sau care alăptează - păstrați numai dacă se aplică și utilizați în locul celorlalte categorii de plăți:</b>\nRambursările oferite sunt:\n• călătorie: [sumă/reguli]\n• cazare: [sumă/reguli]\n• hrană: [sumă/reguli]\n• pierderi de venit: [calcul]\n• alte cheltuieli direct legate de participare: [sumă/reguli]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>13. Participarea este voluntară și o puteți opri?</b>\n\nParticiparea este voluntară. Puteți refuza să participați sau puteți opri participarea în orice moment, fără să dați un motiv și fără consecințe negative asupra îngrijirii medicale obișnuite sau asupra drepturilor dumneavoastră.\n\nDacă doriți să opriți participarea sau administrarea medicamentului de studiu, contactați medicul investigator pentru recomandările de siguranță aplicabile.\n\nDupă oprirea tratamentului sau retragerea din studiu, medicul investigator vă poate recomanda o evaluare de siguranță [descrieți ce este necesar și pentru cât timp], dacă aceasta este importantă pentru protejarea sănătății dumneavoastră.\n\nMedicul investigator poate opri participarea dumneavoastră dacă [motive relevante prevăzute de protocol, de exemplu siguranță, schimbarea stării de sănătate, nerespectarea unor cerințe esențiale] sau dacă studiul este oprit de sponsor, autoritatea competentă ori din motive etice.\n\nDacă vă retrageți, [explicați ce se întâmplă cu tratamentul, vizitele, datele și probele deja colectate și cu orice date/probe care mai trebuie păstrate sau prelucrate pentru obligații legale, siguranță și integritatea studiului]. Retragerea participării nu înseamnă în mod automat ștergerea tuturor datelor deja obținute legal.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>14. Cum vor fi protejate datele dumneavoastră și cum vor fi gestionate probele?</b>\n\nDatele dumneavoastră cu caracter personal vor fi prelucrate în conformitate cu Regulamentul (UE) 2016/679 (GDPR), Legea nr. 190/2018 și celelalte cerințe aplicabile studiilor clinice.\n\n<b>Operatorul/operatorii de date:</b> [denumire și date de contact]\n<b>Responsabilul cu protecția datelor:</b> [date de contact]\n\nDatele prelucrate în cadrul studiului pot include [date de identificare și contact, date medicale, rezultate de laborator, date despre tratament, imagini, date genetice dacă sunt aplicabile și alte categorii specifice protocolului]. Acestea sunt utilizate pentru [desfășurarea studiului, evaluarea siguranței și eficacității, verificarea calității datelor, obligații de raportare și arhivare și alte scopuri aplicabile].\n\n<b>Instrucțiune pentru autor:</b> Indicați temeiurile juridice GDPR reale aplicabile fiecărui operator și scop. Nu afirmați automat că toate prelucrările din studiul clinic se bazează exclusiv pe consimțământul GDPR.\n\n<b>Instrucțiune condițională - decizii automatizate/profilare:</b> Dacă date genetice, biometrice sau privind sănătatea sunt utilizate pentru un proces decizional automatizat sau pentru crearea de profiluri, verificați art. 3 alin. (1) din Legea nr. 190/2018. Dacă prelucrarea se bazează pe consimțământul explicit al participantului, includeți o declarație separată de consimțământ explicit în formularul de consimțământ. Dacă există un temei legal expres, descrieți pe scurt temeiul și garanțiile aplicabile.\n\nDatele trimise sponsorului și altor entități implicate în analiză vor fi, de regulă, codificate/pseudonimizate. Cheia care leagă codul de identitatea dumneavoastră va fi păstrată separat și accesul la aceasta va fi limitat. Nu afirmați că datele de identificare nu părăsesc niciodată centrul dacă protocolul prevede excepții; descrieți toate excepțiile în mod transparent.\n\nPentru verificarea studiului, accesul la documentele sursă și la dosarul medical poate fi acordat, în limitele necesare, medicului investigator și echipei de studiu, reprezentanților autorizați ai sponsorului, auditorilor, ANMDMR, altor autorități competente și organismelor de evaluare etică, după caz. Aceste persoane trebuie să respecte obligațiile de confidențialitate aplicabile.\n\n<b>Destinatari și transferuri:</b> [descrieți destinatarii reali și eventualele transferuri în afara UE/SEE, țările sau categoriile de țări și garanțiile aplicabile].\n\n<b>Perioada de păstrare:</b> [precizați durata sau criteriile utilizate pentru stabilirea duratei, în acord cu protocolul și cerințele legale].\n\nAveți drepturile prevăzute de legislația privind protecția datelor. [Dacă este aplicabil: descrieți numai restricțiile concrete ale drepturilor prevăzute la art. 15, 16, 18 și 21 GDPR care sunt necesare pentru scopurile cercetării științifice, în condițiile art. 8 din Legea nr. 190/2018 și cu garanțiile prevăzute de art. 89 alin. (1) GDPR; eliminați această propoziție dacă nu se aplică.] Pentru întrebări sau pentru exercitarea drepturilor puteți contacta [operatorul/DPO]. Aveți dreptul să depuneți o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP).\n\n<b>Probe biologice pentru studiul principal - păstrați numai dacă se aplică:</b>\nProbele descrise în secțiunea privind vizitele și procedurile vor fi gestionate conform planului aprobat pentru studiu. [Precizați locul de depozitare, durata, codificarea/pseudonimizarea, cine poate avea acces la probe și la cheia codurilor și ce se întâmplă cu probele după finalizarea analizelor.]\n\n<b>Instrucțiune pentru autor:</b> Nu includeți în această secțiune utilizarea viitoare sau secundară opțională a probelor ori datelor în afara scopurilor studiului principal. Aceasta necesită documentul separat și o decizie voluntară separată.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>15. Veți fi informat/ă despre informații noi și despre rezultatele studiului?</b>\n\nDacă apare o informație nouă care poate influența siguranța dumneavoastră sau decizia de a continua participarea, medicul investigator vă va informa cât mai curând. Veți putea reevalua decizia de participare și, dacă este necesar, vi se va solicita un nou consimțământ sau confirmarea consimțământului pentru continuare.\n\n<b>Rezultatele studiului:</b>\nUn rezumat al rezultatelor studiului și rezumatul destinat persoanelor fără pregătire de specialitate vor fi făcute publice în sistemul/baza de date a Uniunii Europene pentru studii clinice, conform cerințelor aplicabile. Informațiile publicate nu vă vor identifica.\n\n<b>Texte condiționale - selectați după protocol:</b>\n• La finalul studiului, medicul investigator vă poate comunica [principalele rezultate / grupa de tratament], dacă doriți și dacă acest lucru este posibil.\n• Rezultatele individuale ale investigațiilor vor fi comunicate astfel: [completați].\n• O constatare neașteptată cu posibilă importanță pentru sănătatea dumneavoastră va fi gestionată astfel: [completați].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>16. Câți voluntari vor lua parte?</b>\n\nSe estimează că aproximativ [număr] voluntari sănătoși vor participa în România și aproximativ [număr] la nivel global.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>17. Pe cine puteți contacta?</b>\n\n<b>Pentru probleme medicale, întrebări despre studiu sau situații urgente:</b>\nMedic investigator / investigator principal: [nume]\nTelefon: [număr]\nE-mail: [e-mail]\nDisponibilitate / contact în afara programului: [completați]\n\n<b>Pentru întrebări despre drepturile dumneavoastră ca participant sau aspecte etice:</b>\n[contact independent / contact CNBMDM sau alt contact aprobat pentru studiu, dacă este prevăzut]\n\n<b>Pentru întrebări privind protecția datelor:</b>\nOperator / responsabil cu protecția datelor: [date de contact]\n\n<b>Instrucțiune pentru autor:</b> Introduceți numai contacte reale, actuale și aprobate pentru studiu. Nu hard-codați date de contact ale autorităților în șablon dacă acestea nu sunt cerute pentru documentul participantului.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b>FORMULAR DE CONSIMȚĂMÂNT INFORMAT AL VOLUNTARULUI SĂNĂTOS</b>\n\nConfirm că:\n• am primit informațiile și am avut timp suficient pentru decizie și întrebări;\n• mi-au fost explicate scopul, administrarea, procedurile, [internările - păstrați numai dacă se aplică], restricțiile, riscurile, lipsa beneficiului medical direct, costurile/rambursările/plățile, asigurarea și utilizarea datelor și, dacă se aplică, a probelor;\n• participarea este voluntară și o pot opri oricând fără efect negativ asupra îngrijirii mele;\n• sunt de acord cu participarea și cu procedurile obligatorii descrise;\n• permit accesul autorizat la documentele sursă pentru monitorizare, audit, inspecție și evaluare, cu respectarea confidențialității;\n• am fost informat/ă despre prelucrarea datelor și voi primi un exemplar datat și semnat.\n\n<b>Text condițional - măsuri reproductive:</b>\n• Am primit și am discutat cerințele aplicabile privind [testele de sarcină / contracepția / interdicția donării de spermă sau ovocite].\n\n<b>Text condițional - probe biologice necesare studiului principal:</b>\n• Sunt de acord cu recoltarea și utilizarea probelor biologice necesare pentru acest studiu, astfel cum sunt descrise.\n\n<b>Text condițional - testare moleculară/genetică necesară:</b>\n• Sunt de acord cu testarea moleculară/genetică necesară pentru acest studiu, astfel cum este descrisă.\n\n<b>Instrucțiune pentru autor:</b> Repetați următorul bloc pentru fiecare activitate opțională independentă.\n<b>[Test/procedură/recoltare/analiză opțională]:</b>\nSunt de acord cu [denumire și scop], care nu este o condiție pentru partea principală.\nDA □   NU □\nNume: __________________  Semnătură: __________________  Data: __________\n\n<b>Text condițional - decizii automatizate/profilare:</b>\nDacă art. 3 alin. (1) din Legea nr. 190/2018 este aplicabil și temeiul este consimțământul explicit:\nSunt de acord în mod explicit ca datele mele [genetice/biometrice/de sănătate] să fie utilizate pentru [scop].\nDA □   NU □\nNume: __________________  Semnătură: __________________  Data: __________\n\n<b>Consimțământul voluntarului:</b>\nNumele și prenumele: ______________________________\nSemnătura: ______________________________  Data: ____ / ____ / ______\n\n<b>Declarația medicului care a obținut consimțământul:</b>\nDeclar că sunt medic și membru al echipei de investigație, instruit corespunzător privind protocolul și buna practică în studiul clinic. Am oferit informațiile într-un mod clar, am răspuns întrebărilor și am acordat suficient timp pentru o decizie liberă.\nNumele medicului: ______________________________\nRolul: __________________  Semnătura: __________________  Data: __________\n\nUn exemplar datat și semnat este oferit voluntarului și unul este păstrat la centrul de studiu.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

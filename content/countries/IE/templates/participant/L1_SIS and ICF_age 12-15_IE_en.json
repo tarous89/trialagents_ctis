@@ -1,0 +1,103 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Study Information and Assent Form – Adolescents aged 12–15",
+  "target_country": "Ireland",
+  "country_code": "IE",
+  "target_language": "English",
+  "language_code": "en",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 12-15",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protocol number: [fill in] | EU trial number: [fill in]"
+  ],
+  "info_table": [
+   "Trial title",
+   "Short trial title",
+   "Protocol number [add version and date]",
+   "EU trial number",
+   "Sponsor [with full address]",
+   "Principal investigator",
+   "Site name",
+   "Site address",
+   "Study identification number",
+   "Co-investigator(s) [names, titles and contact details]",
+   "Data controller(s)",
+   "Data Protection Officer [name and contact details]"
+  ],
+  "content_instructions": "Use for adolescents aged 12–15. Address the adolescent directly in clear, age-appropriate language and preserve decision-critical information: purpose, treatment/randomisation where applicable, procedures and duration, main risks/burdens, possible benefit and alternatives, applicable biological samples/genetic testing, basic data confidentiality, contacts and voluntariness. This document records assent; parent/guardian consent is separate and an explicit refusal must be respected. Distinguish required from genuinely optional main-trial activities. Exclude secondary/future use.",
+  "styling_instructions": "Use clear participant-facing question headings and short sections. Use a clean readable font such as Calibri, Arial, Verdana or Tahoma at about 12 point. Avoid block capitals and unnecessary legalistic text. Use tables or simple flow charts when they improve understanding. Keep the adolescent’s assent record visually distinct from genuinely optional choices. Use Yes/No boxes only for optional activities. Use separate fields for printed name, date and signature."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Information for you about a clinical trial</b>\n<b>Drafting note:</b> Use for ages 12–15. This is assent, not legally effective informed consent.\nWe would like to ask if you want to take part in a clinical trial. Your parent or guardian will also receive information and will be asked for permission because you are under 16. Your own view matters too.\n\nRead this information, ask questions and take the time you need. You can say no or change your mind later. A clear refusal or wish to stop must be respected.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Why is the trial being done and why are you being asked?</b>\nExplain the condition, purpose, why adolescents are included and why this person may be eligible. State how many people are expected to take part.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>What will happen if you take part?</b>\nDescribe the study medicine/intervention, placebo/comparator, randomisation/blinding, screening, visits, tests, duration, responsibilities and what is different from usual care. Explain technical ideas rather than just naming them.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>What are the possible benefits?</b>\nExplain possible personal benefit honestly or state that no direct benefit is expected. Explain that benefit is not guaranteed.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>What are the risks and inconveniences?</b>\nExplain important side effects, unknown risks, pain/discomfort, time burden, reproductive precautions where relevant, privacy risks and what staff will do if there is a problem.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>What other treatments are available?</b>\nExplain the main alternatives and what happens if the adolescent does not take part.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>What happens to your samples and genetic information?</b>\nExplain biological samples used for the main trial: what, how much, why, coding, storage, laboratories/recipients and whether required or optional.\n\n<b>[Conditional – genetic/genomic testing]</b> Explain what DNA/genes are, why testing is done, whether required or optional, that DNA is unique, relevant privacy/family risks and whether individual/incidental findings may be returned. Do not include future/secondary research.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>What happens to information about you?</b>\nExplain in understandable language what health/personal information is used, relevant medical-record access, coding, who may see it, security, retention, transfers outside the EEA, rights and who to contact. The parent/guardian form contains the full consent/data-protection details.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>What if something goes wrong, will it cost anything, and how will you hear results?</b>\nExplain briefly the study-injury/insurance arrangements, any costs or reimbursement that matter to the adolescent, and how overall or relevant individual results will be communicated. The parent/guardian form contains the full details.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Can you say no or stop?</b>\nYes. You may say no before the trial starts or ask to stop later without giving a reason. Your usual care will not be taken away. You may also refuse an optional procedure. If a procedure is required for safety or the main trial, the study team will explain whether you can continue without it.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>[Conditional – include only if your participation may continue after you turn 16]</b>\n<b>What happens when you turn 16?</b>\nIf you turn 16 while the regulated study is still continuing, the study team will give you appropriate information and ask you to provide your own informed consent for continued participation and use of your study data.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>Who can you ask?</b>\nProvide study doctor/nurse contact details and explain that questions can be asked at any time.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>Your assent</b>\n<b>Drafting note:</b> Required main-trial samples/genetic testing are part of the overall assent decision. Only genuinely optional activities receive separate Yes/No choices below.\nI have received information about the trial in a way I understand. I have had the chance to ask questions.\n\n☐ I agree to take part in the trial.\n☐ I do not agree to take part.\n☐ I am not sure and want more information.\n\n<b>[Conditional – optional sample/test]</b>\nI agree to the optional [sample/test].  Yes ☐  No ☐\n\n<b>[Conditional – optional genetic/genomic testing]</b>\nI agree to the optional genetic/genomic testing explained to me.  Yes ☐  No ☐\n\nAdolescent name: ____________________  Date: __________  Signature: ____________________\n\nPerson explaining the study: ____________________  Role/qualification: ____________________\nDate: __________  Signature: ____________________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

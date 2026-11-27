@@ -1,0 +1,137 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Informacja dla uczestnika i formularz wyrażenia woli udziału w badaniu klinicznym",
+  "target_country": "Poland",
+  "country_code": "PL",
+  "target_language": "Polish",
+  "language_code": "pl",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": 2,
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - wersja 1.0 - [date]",
+   "Numer protokołu: [uzupełnić] | Numer badania UE: [uzupełnić]"
+  ],
+  "info_table": [
+   "Tytuł badania klinicznego",
+   "Skrócony tytuł badania klinicznego",
+   "Numer protokołu [dodać wersję i datę]",
+   "Numer badania UE",
+   "Sponsor [z pełnym adresem]",
+   "Główny badacz",
+   "Nazwa ośrodka",
+   "Adres ośrodka",
+   "Numer telefonu lekarza prowadzącego badanie",
+   "Imię i nazwisko uczestnika badania klinicznego",
+   "Imię i nazwisko przedstawiciela prawnego uczestnika"
+  ],
+  "content_instructions": "Use this template only for an adult who cannot provide legally valid informed consent but can understand some adapted information or express a view, willingness or objection. It must accompany, and must not replace, the separate Representative Information and Consent Form. Address the adult participant directly and respectfully using short sentences, familiar words and concrete explanations adapted to the participant’s actual understanding. Use pictures, symbols, demonstrations, videos, supported communication or other aids where useful. Include only decision-relevant information: that this is research, why the study is being done, the study treatment, placebo or randomisation when applicable, what will happen, duration, participant responsibilities, main risks and discomforts, possible benefit or absence of benefit, relevant treatment alternatives, basic costs and injury arrangements, essential privacy information, contacts and availability of results. Explain once that the legal representative provides the legally effective consent. Make clear that the participant may say no or ask to stop at any time without disadvantage. The participant may also express objection to a procedure; explain that if the procedure is required by the protocol, participation may not be possible. A clear objection must be respected even if the representative has consented. Do not treat silence, passivity or inability to communicate as assent. Part II must document willingness, refusal or uncertainty. If a clear view cannot be established, the investigator must document this separately together with the communication method used. Include a participant signature, mark or date only when meaningful and possible; it is not legally effective informed consent. The investigator must document how information was adapted, communication support used, questions and apparent understanding, and the participant’s words, gestures, behaviour or other expressed wishes. If the participant later regains consent capacity, refer to a separate adult-patient SIS/ICF for their own informed consent; do not include a re-consent module. Keep detailed Polish GDPR legal bases, representative declarations, authority evidence, full insurance terms and the representative’s signatures in the separate representative form. Include only a simple explanation of their practical effect here. Include pregnancy, contraception, study-specific samples or genetic testing only when applicable and explain them simply. Exclude biobanking and secondary or future use beyond the main trial; these require a separate document. Remove all unused instructions, alternatives and examples before finalisation.",
+  "styling_instructions": "Use a spacious, uncluttered layout with short paragraphs, one idea per sentence and clear patient-question headings. Use large readable text and simple tables or visual schedules where helpful. Pictures, symbols, diagrams, demonstrations or communication aids may be added to explain visits, procedures, pain, sample volumes, placebo or randomisation. Avoid dense legal text, long tables and unexplained abbreviations. During drafting, italic and underlined text contains instructions or conditional drafting notes and must be adapted or removed before finalisation. The template does not prescribe a fixed font, font size, margins or paragraph spacing."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Ten dokument ma dwie części:</b>\n· Część I zawiera proste informacje o badaniu.\n· Część II służy do zapisania, czy chce Pan/Pani uczestniczyć, nie chce uczestniczyć albo nie jest Pan/Pani pewny/a.\n\nPana/Pani przedstawiciel prawny otrzyma osobny dokument z pełnymi informacjami i osobnym formularzem zgody. Zgodę na udział w badaniu podpisuje Pana/Pani przedstawiciel prawny. Chcemy jednak także poznać i uszanować Pana/Pani zdanie. Jeżeli wyraźnie powie lub pokaże Pan/Pani, że nie chce uczestniczyć albo chce zakończyć udział, uszanujemy to.\n\nOtrzyma Pan/Pani egzemplarz tego dokumentu w formie odpowiedniej do swoich potrzeb.",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>CZĘŚĆ I: Informacja o badaniu dla uczestnika</b>\n\n<b>Co to jest za dokument?</b>\n\n<i>Przedstaw się i wyjaśnij w bardzo prosty sposób, że jest to badanie kliniczne, a nie zwykłe leczenie. Dopasuj słowa, długość rozmowy i sposób przekazania informacji do możliwości uczestnika. W razie potrzeby użyj obrazków, symboli, prostych demonstracji lub odpowiedniej pomocy w komunikowaniu się. Nie używaj dziecięcego tonu.</i>\n\n<i><u>Przykład:</u></i> Nazywam się [imię]. Jestem [lekarzem/pielęgniarką/członkiem zespołu badawczego]. Chcę opowiedzieć Panu/Pani o badaniu klinicznym. W badaniu lekarze sprawdzają [nowy lek / nowe zastosowanie leku / inną metodę].\n\nMoże Pan/Pani zadawać pytania. Mogę wyjaśnić wszystko jeszcze raz albo w inny sposób. Może Pan/Pani rozmawiać ze swoim przedstawicielem prawnym i z wybraną zaufaną osobą.\n\nPana/Pani przedstawiciel prawny otrzyma pełne informacje i podejmie decyzję prawną. My także chcemy poznać Pana/Pani zdanie.\n\nBadanie zostało sprawdzone przez Komisję Bioetyczną i właściwy urząd, które oceniają jego zasady i bezpieczeństwo.",
+   "section_style": "H2 document subline, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>Dlaczego prowadzone jest to badanie?</b>\n\n<i>Wyjaśnij jeden główny cel badania prostymi słowami. Unikaj terminów naukowych i informacji, które nie pomagają uczestnikowi zrozumieć celu.</i>\n\n<i><u>Przykład:</u></i> Prowadzimy to badanie, ponieważ chcemy sprawdzić, czy [lek/interwencja] może [krótki cel badania]. Nie wiemy jeszcze wszystkiego o tym leku. Dlatego porównujemy wyniki osób uczestniczących w badaniu.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>Dlaczego zaproszono właśnie mnie?</b>\n\n<i>Wyjaśnij prostym językiem najważniejszy powód zaproszenia, przybliżoną liczbę uczestników i podstawowe warunki udziału. Nie zamieszczaj pełnej listy kryteriów włączenia i wyłączenia.</i>\n\n<i><u>Przykład:</u></i> Zaprosiliśmy Pana/Panią, ponieważ ma Pan/Pani [chorobę lub stan] i może Pan/Pani spełniać warunki udziału w tym badaniu. W badaniu weźmie udział około [liczba] osób.\n\nLekarz może zdecydować o zakończeniu Pana/Pani udziału, jeżeli dalszy udział nie będzie bezpieczny albo badanie zostanie zakończone.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>Czy muszę brać udział?</b>\n\n<i>Umieść tę informację na początku dokumentu i omów ją spokojnie. Wyjaśnij, że zgoda przedstawiciela prawnego nie odbiera uczestnikowi prawa do sprzeciwu. Brak reakcji nie oznacza zgody.</i>\n\n<i><u>Przykład:</u></i> Nie musi Pan/Pani brać udziału w tym badaniu.\n\nMoże Pan/Pani powiedzieć lub pokazać:\n· „tak, chcę uczestniczyć”,\n· „nie, nie chcę uczestniczyć”,\n· „nie wiem” albo „potrzebuję więcej czasu”.\n\nMoże Pan/Pani powiedzieć lub pokazać, że nie chce konkretnego badania lub zabiegu. Zespół wyjaśni, czy bez niego udział w badaniu jest możliwy. Może Pan/Pani później zmienić zdanie i poprosić o zakończenie udziału.\n\nNie musi Pan/Pani podawać powodu. Odmowa nie pogorszy zwykłego leczenia ani opieki. Jeżeli wyraźnie powie lub pokaże Pan/Pani, że nie chce uczestniczyć lub chce przestać, badacz musi to uszanować, także wtedy, gdy przedstawiciel prawny wcześniej wyraził zgodę.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>Jaki lek lub inną interwencję będę otrzymywać?</b>\n\n<i>Opisz tylko najważniejsze informacje o badanym produkcie, sposobie podania, dawce lub schemacie oraz dotychczasowej wiedzy. Wyjaśnij, że produkt może być badany i nie musi działać. <u>[Pozostawić wyłącznie elementy dotyczące danego badania.]</u> Jeżeli dotyczy, wyjaśnij prostymi słowami lek standardowy, placebo, losowanie, zaślepienie lub różne grupy.</i>\n\n<i><u>Przykład:</u></i> Lek badany nazywa się [nazwa]. Otrzyma go Pan/Pani [jak i jak często]. Jest to [nowy lek / lek stosowany już w inny sposób]. Nie wiemy jeszcze, czy pomoże Panu/Pani.\n\n<i><u>[Jeżeli dotyczy placebo:]</u></i> Placebo wygląda jak lek, ale nie zawiera badanego leku.\n\n<i><u>[Jeżeli dotyczy losowania:]</u></i> Komputer losowo zdecyduje, do której grupy Pan/Pani trafi. To podobne do losowania. [Pan/Pani i/lub lekarz] może nie wiedzieć, który produkt Pan/Pani otrzymuje.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>Co będzie się ze mną działo?</b>\n\n<i>Przedstaw badanie krok po kroku. Oddziel zwykłe leczenie od procedur wykonywanych tylko z powodu badania. <u>[Opisać wyłącznie procedury wynikające z protokołu.]</u> Podaj liczbę wizyt, pobrań, pobytów i najważniejsze procedury, jeśli dotyczą badania. Użyj prostego harmonogramu lub obrazków, jeżeli pomoże to uczestnikowi.</i>\n\n<i><u>Przykład:</u></i> Jeżeli weźmie Pan/Pani udział:\n1. Przyjdzie Pan/Pani do ośrodka [liczba] razy.\n2. Lekarz zapyta o samopoczucie i zbada Pana/Panią.\n3. Otrzyma Pan/Pani [lek/interwencję] [sposób i częstość].\n4. Pobierzemy krew [liczba] razy. Łącznie pobierzemy około [objętość].\n5. Wykonamy [inne ważne procedury].\n\n<i><u>[Dostosować:]</u></i> Zwykłe leczenie obejmuje: [wymienić]. Dodatkowo z powodu badania wykonamy: [wymienić].\n\nProszę powiedzieć lub pokazać, jeśli czegoś Pan/Pani nie chce, czegoś nie rozumie albo odczuwa ból.",
+   "section_style": "H3 module title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Co będę musiał/a robić?</b>\n\n<i>Podaj tylko obowiązki, które uczestnik może zrozumieć i wykonać sam albo przy wsparciu przedstawiciela prawnego lub opiekuna. Nie przenoś odpowiedzialności za decyzje prawne na uczestnika.</i>\n\n<i><u>Przykład:</u></i> W czasie badania prosimy, aby:\n· przychodził/a Pan/Pani na umówione wizyty razem z osobą, która Panu/Pani pomaga;\n· przyjmował/a Pan/Pani lek zgodnie z instrukcją;\n· mówił/a lub pokazywał/a Pan/Pani, gdy coś boli, czuje się Pan/Pani źle albo czegoś Pan/Pani nie chce;\n· informował/a Pan/Pani zespół o innych lekach i wizytach u lekarza;\n· <u>[Jeżeli dotyczy:]</u> przestrzegał/a Pan/Pani następujących ograniczeń: [wymienić wyłącznie ograniczenia wymagane protokołem].\n\nPana/Pani przedstawiciel prawny lub opiekun otrzyma dokładne instrukcje i może pomagać Panu/Pani w ich przestrzeganiu.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>Jak długo potrwa mój udział?</b>\n\n<i>Podaj czas udziału, liczbę wizyt, długość wizyt, pobyty w szpitalu oraz okres obserwacji. Użyj konkretnych i łatwych porównań tylko wtedy, gdy są odpowiednie dla dorosłego uczestnika.</i>\n\n<i><u>Przykład:</u></i> Pana/Pani udział potrwa około [czas]. W tym czasie odbędzie się [liczba] wizyt. Każda wizyta potrwa około [czas]. [Jeżeli dotyczy: pozostanie Pan/Pani w ośrodku przez ___ dni/nocy]. Po ostatniej dawce odbędą się jeszcze [liczba] wizyty kontrolne.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Co może być nieprzyjemne lub niebezpieczne?</b>\n\n<i>Opisz najważniejsze, prawdopodobne i poważne ryzyka prostymi słowami. Połącz działania niepożądane i ryzyka procedur, aby nie powtarzać informacji. Nie minimalizuj bólu ani nieznanych zagrożeń. Wyjaśnij, co uczestnik powinien zrobić i jak zespół zareaguje.</i>\n\n<i><u>[Wymienić wyłącznie najważniejsze znane lub oczekiwane ryzyka badanego leku i procedur wymaganych w tym badaniu. Usunąć niewłaściwe przykłady.]</u></i>\n\n<i><u>Przykład:</u></i> Lek lub procedury mogą spowodować działania niepożądane. Najważniejsze z nich to:\n· [częste działanie i prosty opis],\n· [poważne działanie i prosty opis],\n· [ryzyko procedury, np. ból lub siniak po pobraniu krwi].\n\nMogą też wystąpić problemy, których jeszcze nie znamy.\n\nProszę od razu powiedzieć lub pokazać, jeśli:\n· coś Pana/Panią boli;\n· czuje się Pan/Pani gorzej lub inaczej niż zwykle;\n· boi się Pan/Pani albo chce przerwać procedurę.\n\nZespół badawczy sprawdzi Pana/Pani stan i zapewni potrzebną pomoc. Badacz może przerwać lek lub zakończyć udział, jeżeli dalsze uczestnictwo nie będzie bezpieczne.",
+   "section_style": "H3 module title, Rich body text, Standard table, Info/warning/note box"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>Czy badanie może mi pomóc?</b>\n\n<i>Opisz możliwą korzyść ostrożnie. Jeżeli nie oczekuje się bezpośredniej korzyści, powiedz to jasno. Nie przedstawiaj dodatkowych badań, częstszych wizyt ani zwrotu kosztów jako korzyści zdrowotnej.</i>\n\n<i><u>[Pozostawić wyłącznie właściwą wersję. Nie przedstawiać dodatkowych wizyt ani badań jako korzyści zdrowotnej.]</u></i>\n\n<i><u>Przykład:</u></i> [Wybrać i dostosować właściwą wersję:]\n· Możliwe, że badany lek pomoże Panu/Pani, ale nie możemy tego obiecać.\nLUB\n· Nie oczekujemy, że udział przyniesie Panu/Pani bezpośrednią korzyść zdrowotną.\n\nInformacje z badania mogą w przyszłości pomóc innym osobom z podobną chorobą.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>Jakie mam inne możliwości leczenia?</b>\n\n<i>Wyjaśnij najważniejsze dostępne możliwości poza badaniem. Jeżeli udział nie zastępuje leczenia, powiedz to jasno.</i>\n\n<i><u>[Zamieścić, jeżeli istnieją odpowiednie możliwości leczenia poza badaniem.]</u></i>\n\n<i><u>Przykład:</u></i> Jeżeli nie weźmie Pan/Pani udziału, nadal otrzyma Pan/Pani zwykłe leczenie i opiekę. [Krótko opisać najważniejsze możliwości, jeśli dotyczy.] Lekarz i przedstawiciel prawny mogą omówić z Panem/Panią, co będzie najlepsze.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>Ciąża i ochrona przed ciążą</b>\n\n<i><u>[Zamieścić tylko, jeśli dotyczy uczestnika i badania.]</u> Wyjaśnij prostymi słowami testy ciążowe, konieczność zapobiegania ciąży, wymagany okres, ryzyko dla ciąży oraz co zrobić w przypadku podejrzenia ciąży. Nie zamieszczaj tutaj zgody na obserwację ciąży ani dziecka.</i>\n\n<i><u>Przykład:</u></i> Badany lek może zaszkodzić ciąży lub dziecku. Dlatego podczas badania trzeba [stosować wskazaną metodę zapobiegania ciąży / wykonywać testy ciążowe]. Pana/Pani przedstawiciel prawny otrzyma pełne informacje.\n\nJeśli podejrzewa Pani ciążę, proszę natychmiast powiedzieć zespołowi badawczemu. Zespół wyjaśni, co będzie dalej. Może Pani oraz Pani przedstawiciel prawny otrzymać osobny dokument dotyczący dobrowolnego zbierania informacji o ciąży i dziecku.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>Próbki krwi, inne próbki i badania genetyczne</b>\n\n<i><u>[Zamieścić tylko, jeśli dotyczy.]</u> Krótko wyjaśnij, jaka próbka zostanie pobrana, ile razy, po co i czy pobranie może być nieprzyjemne. Powiedz, że przedstawiciel prawny otrzyma pełne informacje i podpisze odpowiedni formularz. Nie opisuj przyszłego wykorzystania ani biobankowania.</i>\n\n<i><u>Przykład:</u></i> Pobierzemy od Pana/Pani [rodzaj próbki] [liczba] razy, aby [prosty cel]. Pobranie może przez chwilę boleć lub pozostawić siniak.\n\nJeżeli nie chce Pan/Pani pobrania próbki, proszę powiedzieć lub pokazać to zespołowi. Zespół wyjaśni, czy pobranie jest konieczne do udziału w badaniu.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>Czy udział będzie coś kosztował i co się stanie, jeśli doznam szkody?</b>\n\n<i>Podaj uczestnikowi tylko praktyczne informacje. Pełne zasady zwrotu kosztów, ubezpieczenia i Funduszu Kompensacyjnego należy opisać przedstawicielowi prawnemu w jego formularzu.</i>\n\n<i><u>Przykład:</u></i> Nie zapłaci Pan/Pani za badany lek ani procedury wykonywane tylko z powodu badania. <u>[Jeżeli dotyczy:]</u> Zostaną zwrócone uzasadnione koszty związane z udziałem, zgodnie z zasadami przekazanymi przedstawicielowi prawnemu.\n\nNie otrzyma Pan/Pani wynagrodzenia za wyrażenie chęci udziału.\n\nJeśli badanie spowoduje szkodę, otrzyma Pan/Pani potrzebną pomoc medyczną. Badanie jest objęte ubezpieczeniem, a w Polsce działa także Fundusz Kompensacyjny Badań Klinicznych. Pana/Pani przedstawiciel prawny otrzyma szczegółowe informacje o tych możliwościach.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>Co stanie się z informacjami o mnie?</b>\n\n<i>Wyjaśnij praktyczny skutek ochrony danych bez pełnych podstaw prawnych RODO. Szczegółową klauzulę informacyjną i wykonywanie praw należy pozostawić w formularzu przedstawiciela prawnego.</i>\n\n<i><u>Przykład:</u></i> W badaniu zbierzemy informacje o Pana/Pani zdrowiu i leczeniu. Zamiast nazwiska w większości dokumentów użyjemy numeru lub kodu.\n\nDostęp do informacji będą miały tylko upoważnione osoby, na przykład zespół badawczy, sponsor i osoby kontrolujące badanie. Wyniki mogą zostać opisane w raportach lub publikacjach, ale nie podamy Pana/Pani nazwiska.\n\nPana/Pani przedstawiciel prawny otrzyma pełną informację o przetwarzaniu danych. Może Pan/Pani także zadawać pytania o swoje informacje.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>Czy poznam wyniki badania?</b>\n\n<i>Wyjaśnij prosto, czy i jak uczestnik otrzyma informacje o wynikach dotyczących jego zdrowia oraz podsumowanie całego badania.</i>\n\n<i><u>Przykład:</u></i> Zespół poinformuje Pana/Panią i Pana/Pani przedstawiciela prawnego o ważnych wynikach dotyczących Pana/Pani zdrowia, jeżeli przewiduje to badanie.\n\nPo zakończeniu badania podsumowanie wyników zostanie umieszczone w europejskiej bazie badań klinicznych. Możemy pomóc Panu/Pani je znaleźć i wyjaśnić.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>Z kim mogę porozmawiać i jak mogę zakończyć udział?</b>\n\n<i>Podaj łatwo dostępny kontakt do zespołu. Powtórz prawo do odmowy i wycofania. Dodaj jedynie odwołanie do odrębnej zgody, jeżeli uczestnik odzyska zdolność do samodzielnego wyrażenia świadomej zgody.</i>\n\n<i><u>Przykład:</u></i> Może Pan/Pani zadawać pytania teraz albo później. Może Pan/Pani porozmawiać z:\n· [imię, rola, telefon],\n· [imię, rola, telefon],\n· swoim przedstawicielem prawnym lub inną zaufaną osobą.\n\nJeśli nie chce Pan/Pani uczestniczyć, chce zakończyć udział albo nie chce konkretnej procedury, proszę powiedzieć lub pokazać to zespołowi. Zespół wyjaśni, co to oznacza dla dalszego udziału. Nie musi Pan/Pani podawać powodu.\n\nJeżeli w przyszłości będzie Pan/Pani w stanie samodzielnie wyrazić świadomą zgodę, otrzyma Pan/Pani osobny pełny formularz dla dorosłego uczestnika. Dalszy udział będzie wymagał Pana/Pani własnej zgody w tym odrębnym formularzu.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>CZĘŚĆ II: Zapis woli uczestnika dotyczącej udziału w badaniu</b>\n\n<i>Ta część nie jest prawną zgodą na udział. Służy do zapisania aktualnej chęci udziału, odmowy albo niepewności uczestnika. Należy dopuścić odpowiedź w sposób dostosowany do możliwości uczestnika. Nie wolno zaznaczyć „chce uczestniczyć” wyłącznie dlatego, że uczestnik nie zaprotestował. Jeżeli nie można ustalić jednoznacznej opinii uczestnika, badacz opisuje to w swoim oświadczeniu. Podpis lub znak uczestnika stosuje się tylko wtedy, gdy jest to dla niego zrozumiałe i możliwe.</i>\n\n<b>Moja decyzja teraz</b>\n\nPo przekazaniu mi informacji w sposób dostosowany do moich możliwości:\n\n☐ Chcę uczestniczyć w badaniu.\n\n☐ Nie chcę uczestniczyć w badaniu.\n\n☐ Nie jestem pewny/a lub potrzebuję więcej wyjaśnień.\n\nSposób wyrażenia woli lub sprzeciwu: ____________________________________________\n\nKrótki opis, jeśli potrzebny: ___________________________________________________\n________________________________________________________________________________\n\nZgłoszony sprzeciw lub niechęć dotycząca procedury: ______________________________\n________________________________________________________________________________\n\nImię i nazwisko uczestnika (drukowanymi literami) ______________________________\n\nPodpis / znak uczestnika <i>[tylko jeśli możliwy i znaczący]</i> ______________________________\n\nData ______________________________\n\n<i>Jeżeli uczestnik odmówił udziału lub wyraził jednoznaczny sprzeciw, nie należy kontynuować wbrew jego woli. Jeżeli sprzeciw dotyczy konkretnej procedury, zespół wyjaśnia, czy bez niej udział jest możliwy.</i>",
+   "section_style": "H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section, Info/warning/note box"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b>Oświadczenie badacza / osoby prowadzącej rozmowę z uczestnikiem</b>\n\n<i>Nie potwierdzaj, że uczestnik udzielił prawnie skutecznej świadomej zgody. Jeżeli nie można ustalić jednoznacznej opinii uczestnika, opisz to poniżej. Oddzielna zgoda przedstawiciela prawnego musi zostać uzyskana w odpowiednim formularzu.</i>\n\nPrzekazałem/am uczestnikowi informacje w sposób dostosowany do jego możliwości. Uczestnik miał możliwość zadawania pytań. Jego aktualna wola lub sprzeciw zostały zapisane powyżej. Zgoda przedstawiciela prawnego została uzyskana w odrębnym formularzu.\n\nZastosowany sposób komunikacji lub pomoc, jeśli dotyczy: __________________________\n________________________________________________________________________________\n\n<i>[Jeżeli nie można było ustalić jednoznacznej opinii uczestnika, opisać obserwacje:]</i>\n________________________________________________________________________________\n________________________________________________________________________________\n\nUczestnikowi przekazano egzemplarz tego dokumentu w odpowiedniej formie.\n\nImię i nazwisko badacza / osoby prowadzącej rozmowę (drukowanymi literami) ______________________________\n\nPodpis ______________________________\n\nData ______________________________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

@@ -15,7 +15,8 @@
       "en"
     ],
     "rule": "Documents intended for the participant or legal representative must be in German (AMG). The application dossier itself may be German or English.",
-    "non_german_speakers": "If enrolment of people who do not understand German is planned, add a commitment to qualified translation and to communication in a language each participant and representative understands throughout the trial (AKEK, 15 June 2024). An interpreter does not replace translated documents for a planned language group."
+    "non_german_speakers": "If enrolment of people who do not understand German is planned, add a commitment to qualified translation and to communication in a language each participant and representative understands throughout the trial (AKEK, 15 June 2024). An interpreter does not replace translated documents for a planned language group.",
+    "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in German; English is also accepted for administrative documents."
   },
   "study_facts_used": [
     "population.adult_patients",
@@ -57,10 +58,11 @@
         "en"
       ],
       "template": {
-        "file": "templates/part-ii/K1_Recruitment arrangements_DE_de.docx",
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
         "basis": "EudraLex Volume 10 recruitment and informed-consent procedure template, version 2.0 (applies to new Part II submissions from 1 September 2026, including initial applications, additional Member States and Article 11 completions)",
         "recommended": true,
-        "fields": "templates/part-ii/K1_Recruitment arrangements_DE_de.fields.json"
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
       },
       "signature_at_submission": false,
       "content": "How potential participants are identified, approached, informed, given time to decide and consented; who conducts the consent interview; capacity, vulnerable populations, remote elements, interpreters and re-consent where relevant. Every population pathway in the plan (minors, adults without capacity, impartial witness, emergency) needs its section completed.",
@@ -197,10 +199,11 @@
         "en"
       ],
       "template": {
-        "file": "templates/part-ii/M1_CV Principal investigator_DE_de.docx",
+        "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
         "basis": "EU CV template",
         "recommended": true,
-        "fields": "templates/part-ii/M1_CV Principal investigator_DE_de.fields.json"
+        "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+        "shared": true
       },
       "signature_at_submission": false,
       "content": "Professional qualification, relevant clinical experience, trial experience and GCP knowledge. The German site template asks for a CV no more than one year old. Personal details come from the investigator; the assistant fills only trial fields.",
@@ -252,10 +255,11 @@
         "en"
       ],
       "template": {
-        "file": "templates/part-ii/M2_DoI Principal investigator_DE_de.docx",
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
         "basis": "EU declaration-of-interest template",
         "recommended": true,
-        "fields": "templates/part-ii/M2_DoI Principal investigator_DE_de.fields.json"
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true
       },
       "signature_at_submission": false,
       "sources": [
@@ -282,10 +286,11 @@
         "en"
       ],
       "template": {
-        "file": "templates/part-ii/N1_Site suitability_DE_de.docx",
+        "file": "eu/templates/part-ii/N1_Site suitability.docx",
         "basis": "EU site-suitability template (CTAG); the current AKEK Germany site-suitability template is the recommended alternative; either must cover Annex I point 67",
         "recommended": true,
-        "fields": "templates/part-ii/N1_Site suitability_DE_de.fields.json"
+        "fields": "eu/templates/part-ii/N1_Site suitability.fields.json",
+        "shared": true
       },
       "signature_at_submission": false,
       "note": "Head of institution or delegate approves internally; AKEK instructs not to include the signature in the CTIS upload.",
@@ -408,10 +413,11 @@
         "en"
       ],
       "template": {
-        "file": "templates/part-ii/P1_Participant compensation_DE_de.docx",
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
         "basis": "EU compensation template (CTAG), version 5, June 2023",
         "recommended": true,
-        "fields": "templates/part-ii/P1_Participant compensation_DE_de.fields.json"
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true
       },
       "signature_at_submission": false,
       "content": "Travel and expense reimbursement, inconvenience payments, prorating and any other payment. State clearly when no payment is offered.",
@@ -464,10 +470,11 @@
         "en"
       ],
       "template": {
-        "file": "templates/part-ii/R1_Data protection_DE_de.docx",
+        "file": "eu/templates/part-ii/R1_Data protection.docx",
         "basis": "EudraLex GDPR statement, with a German national data-protection sentence added",
         "recommended": true,
-        "fields": "templates/part-ii/R1_Data protection_DE_de.fields.json"
+        "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+        "shared": true
       },
       "signature_at_submission": false,
       "content": "Confirm compliance with GDPR and, for Germany, that national data-protection rules are respected where GDPR opening clauses apply. If the national point is not in the common statement, submit a separate Part II document.",
@@ -481,7 +488,10 @@
         "Draft",
         "Check"
       ],
-      "drafting_notes_de": "CTIS Teil II, Abschnitt R. Pflichtdokument. Deutsch oder Englisch zulässig; keine Unterschrift nach der CTR erforderlich. Für Deutschland zusätzlich bestätigen, dass nationale Datenschutzvorschriften beachtet werden, soweit die DSGVO Öffnungsklauseln enthält (siehe Einfügung unten)."
+      "drafting_notes_de": "CTIS Teil II, Abschnitt R. Pflichtdokument. Deutsch oder Englisch zulässig; keine Unterschrift nach der CTR erforderlich. Für Deutschland zusätzlich bestätigen, dass nationale Datenschutzvorschriften beachtet werden, soweit die DSGVO Öffnungsklauseln enthält (siehe Einfügung unten).",
+      "national_fields": {
+        "r1_the_sponsor_declares": "Required in Germany: state in German that national data-protection rules are respected where GDPR opening clauses apply (BDSG; express consent to processing of health data under section 40b(6) AMG)."
+      }
     },
     {
       "id": "DE-S1",
@@ -497,10 +507,11 @@
         "en"
       ],
       "template": {
-        "file": "templates/part-ii/S1_Biological samples_DE_de.docx",
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
         "basis": "EudraLex biological-samples form",
         "recommended": true,
-        "fields": "templates/part-ii/S1_Biological samples_DE_de.fields.json"
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
       },
       "signature_at_submission": false,
       "sources": [
@@ -880,5 +891,8 @@
     "playbook/naming.md",
     "playbook/steps.md",
     "conventions/template-instructions.md"
+  ],
+  "answer_languages": [
+    "de"
   ]
 }

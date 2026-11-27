@@ -1,0 +1,91 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Partners",
+  "doc_name_local": "Raskauden seurannan tiedote ja suostumus – tutkittavan kumppani",
+  "target_country": "Finland",
+  "country_code": "FI",
+  "target_language": "Finnish",
+  "language_code": "fi",
+  "doc_type": "pregnant_partners",
+  "file_name": "L1_SIS and ICF_pregnant partner",
+  "sort_order": "7",
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versio 1.0 - [date]",
+   "Tutkimussuunnitelman numero: [täytä] | EU-tutkimusnumero: [täytä]"
+  ],
+  "info_table": [
+   "Tutkimuksen nimi",
+   "Tutkimuksen lyhyt nimi",
+   "Tutkimuksen koodi [jos soveltuu]",
+   "Tutkimussuunnitelman numero [lisää versio ja päivämäärä]",
+   "EU-tutkimusnumero",
+   "Toimeksiantaja [täydellinen osoite]",
+   "Johtava tutkija",
+   "Tutkimuskeskuksen nimi",
+   "Tutkimuskeskuksen osoite",
+   "Miespuolisen tutkittavan tutkimustunnus [koodattu]"
+  ],
+  "content_instructions": "Perusta asiakirja Tukijan T/447/2026-malliin ja Suomen kliinistä lääketutkimusta koskevaan sääntelyyn. Kirjoita vain päätöksenteon kannalta olennaiset tiedot tiiviillä, ymmärrettävällä suomen kielellä. Vältä toistoa, tarpeetonta ammattisanastoa, käskevää tai houkuttelevaa ilmaisua sekä sanamuotoja, jotka olettavat osallistumisen. Selitä vierasperäiset ja tekniset termit ensimmäisellä käyttökerralla. Käytä valittua puhuttelumuotoa johdonmukaisesti. Suullinen tieto, mahdollisuus kysymyksiin ja riittävä harkinta-aika kuuluvat suostumusprosessiin. Kuvaa vain tutkimussuunnitelman mukaiset toimenpiteet, tiedot, näytteet, vastaanottajat, siirrot, säilytysajat, korvaukset ja riskit. Pidä yksityiskohtaiset toimintaohjeet erillisessä ohjeessa, mutta kerro tiedotteessa kaikki osallistumispäätökseen vaikuttavat rasitteet ja rajoitukset. Jos tutkimuksessa käytetään ionisoivaa säteilyä, noudata Tukijan T/447/2026-säteilyohjetta: kerro joko ettei lisäaltistusta synny tavanomaiseen hoitoon verrattuna tai kuvaa tutkimuskohtaisesti kuvantaminen, hyöty, annos, riskin ymmärrettävä merkitys, toistojen määrä ja kokonaisaltistus. Jos tutkimuksessa on hajautettuja elementtejä, kuten etävastaanottoja tai sähköinen suostumus, kuvaa ne siltä osin kuin ne vaikuttavat osallistumiseen. Tietosuojassa yksilöi rekisterinpitäjä(t), todelliset käsittelyperusteet sanallisesti ja GDPR:n artikla-/alakohtatasolla, tietolähteet, vastaanottajat, mahdollinen suora etäpääsy potilastietoihin, säilytys, EU/ETA:n ulkopuoliset maat ja siirtomekanismi sekä tosiasiassa soveltuvat rekisteröidyn oikeudet. Älä käytä tutkittaville suunnatussa materiaalissa sanaa rotu; käytä tarvittaessa käsitettä etninen tausta. Tuleva tai muu tutkimussuunnitelman ulkopuolinen käyttö ei kuulu näihin malleihin; sitä varten käytetään erillistä tulevan/toissijaisen käytön tiedotetta ja suostumusta. Poista kaikki laatimisohjeet, vaihtoehdot ja soveltumattomat moduulit ennen osallistujalle annettavaa lopullista asiakirjaa. Käytä tätä erillistä asiakirjaa miespuolisen kliinisen lääketutkimuksen osallistujan raskaana olevalle kumppanille, kun hänen raskaus-, terveys- tai raskauden lopputulostietojaan kerätään turvallisuusseurantaan. Tukijan T/447/2026 edellyttää erillistä tiedotetta ja suostumusasiakirjaa, jos tutkittavan kumppanin raskaudenaikaisia tietoja aiotaan kerätä. Raskaana oleva kumppani ei ole pääasiallisen kliinisen lääketutkimuksen tutkittava eikä saa tutkimuslääkettä tämän asiakirjan perusteella. Miespuolinen tutkittava ei voi antaa suostumusta kumppanin omien terveystietojen keruuseen. Pidä asiakirja lyhyenä. Säilytä vain tutkimuksen tunnistetiedot, syy raskauden seurantaan, isän altistuksen kannalta merkitykselliset tunnetut/epävarmat riskit, kerättävät äidin/raskauden tiedot, lähteet, aikapisteet, seurannan päättymisajankohta, mahdollinen yhteys hoitaviin terveydenhuollon ammattilaisiin, tietosuoja, vapaaehtoisuus, peruuttaminen, kulut ja yhteystiedot. Älä lisää tutkimuslääkkeen annostelua, satunnaistamista, pääasiallisen tutkimuksen käyntejä tai hoitovaihtoehtoja, jotka koskevat vain miespuolista tutkittavaa. Älä oleta, että kliinisen lääketutkimuksen osallistujan GDPR-käsittelyperuste soveltuu automaattisesti kumppaniin; rekisterinpitäjä määrittää ja ilmoittaa kumppanin tietojen todellisen käsittelyperusteen. Suostumus tähän seurantaan ei välttämättä ole GDPR:n ainoa käsittelyperuste. Jos lapsesta kerätään syntymän jälkeen henkilötietoja, käytä erillistä syntymän jälkeistä lapsen tietojen suostumusosiota ja varmista allekirjoittavan vanhemman/huoltajan toimivalta. Älä käsittele ennen syntymää annettua äidin suostumusta automaattisesti lapsen syntymän jälkeisten henkilötietojen suostumuksena. Jos kumppanille suunnitellaan ylimääräisiä tutkimustoimenpiteitä tai näytteitä eikä pelkkää tietojen keruuta, ne kuvataan erikseen ja tarvittaessa käytetään erillistä tutkimussuunnitelman mukaista suostumusta. Renderöi ennen info_tablea selkeä asiakirjaotsikko ”TIEDOTE RASKAUDEN SEURANNASTA KLIINISESSÄ LÄÄKETUTKIMUKSESSA” ja kyseisen vastaanottajan tarkenne.",
+  "styling_instructions": "A4 pystysuunnassa; tiivis, helposti luettava asiakirja. Käytä selkeitä H3-otsikoita, lyhyitä kappaleita ja selkeää allekirjoitusosiota. Älä kopioi pääasiallisen tutkimuksen koko SIS/ICF:ää; säilytä vain raskauden turvallisuusseurannan päätöksenteon kannalta olennaiset tiedot."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Pyyntö osallistua raskauden seurantaan\n\nKumppaninne osallistuu kliiniseen lääketutkimukseen [tutkimuksen nimi / EU-tutkimusnumero] ja on saanut tutkimuslääkettä [nimi] tai altistunut sille tutkimuksen mukaisesti. Te olette hänen raskaana oleva kumppaninsa.\n\nTeitä pyydetään antamaan tietoja raskaudestanne ja sen lopputuloksesta tutkimuksen turvallisuusseurantaa varten. Te ette ole tämän vuoksi kliinisen lääketutkimuksen tutkittava ettekä saa tutkimuslääkettä tämän asiakirjan perusteella.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Raskauden seurannan tarkoitus\n\nSeurannan tarkoitus on saada tietoa siitä, liittyykö isän tutkimuslääkealtistukseen mahdollisia vaikutuksia raskauteen, sikiöön tai lapseen. Tällä hetkellä tiedetään <i>(lyhyt tutkimuskohtainen tieto)</i> ja ei vielä tiedetä <i>(olennaiset epävarmuudet)</i>.\n\nRaskauden seurantatiedot yhdistetään miespuolisen tutkittavan koodattuihin altistustietoihin turvallisuuden arvioimiseksi.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Mitä tietoja kerätään?\n\nKeräämme vain raskauden turvallisuusseurannan kannalta tarpeellisia tietoja, kuten <i>(raskauden alkaminen/arvioitu laskettu aika, olennaiset äidin sairaudet ja lääkkeet, raskauden kulku, tutkimukset vain jos ne ovat osa tavanomaista hoitoa, raskauden lopputulos ja tarvittaessa vastasyntyneen perustiedot)</i>.\n\nTietoja saadaan Teiltä ja <i>(jos annatte luvan ja se on suunniteltu: neuvolasta, synnytyssairaalasta, hoitavalta lääkäriltä tai muusta yksilöidystä lähteestä)</i>. Emme tee ylimääräisiä tutkimuksia tai ota näytteitä, ellei niitä ole erikseen kuvattu ja niihin ole pyydetty asianmukaista suostumusta.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Miten ja kuinka kauan tietoja kerätään?\n\nTeihin ollaan yhteydessä [puhelimitse/käynnillä/sähköisesti] noin [ajankohdat]. Seuranta alkaa [ajankohta] ja päättyy [raskauden lopputulos / x viikkoa synnytyksen jälkeen / muu selkeä loppupiste].\n\n[Jos terveydenhuollon ammattilaiseen otetaan yhteyttä: Suostumuksellanne tutkimusryhmä voi pyytää [täsmälliset tiedot] henkilöltä/yksiköltä [nimi/rooli] ajalta [aikaväli].]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Mahdolliset riskit ja epävarmuudet\n\nTeille kerrotaan vain ne tunnetut tai perustellusti mahdolliset riskit ja epävarmuudet, jotka liittyvät kumppaninne tutkimuslääkealtistukseen, hedelmöittymiseen, raskauteen, sikiöön tai lapseen: [kuvaa tutkimuskohtaisesti].\n\nTietojen antamisesta ei yleensä aiheudu fyysistä riskiä. Mahdollinen haitta liittyy lähinnä yksityisyyteen ja siihen, että terveystietojen käsittely voi tuntua henkilökohtaiselta. [Jos ylimääräisiä toimenpiteitä tehdään, kuvaa niiden riskit erikseen.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Tietojen luottamuksellisuus ja tietosuoja\n\nTeidän tietonne käsitellään luottamuksellisesti ja merkitään mahdollisuuksien mukaan koodilla. Ne yhdistetään miespuolisen tutkittavan koodattuihin tutkimustietoihin vain seurannan tarkoitusta varten.\n\nRekisterinpitäjä(t): [nimi, osoite]. Henkilötietojen käsittelyn tarkoitus: [raskausturvallisuuden arviointi ja soveltuvat lakisääteiset turvallisuusvelvoitteet]. Käsittelyperuste: [rekisterinpitäjä ilmoittaa todellisen GDPR 6 artiklan ja 9 artiklan perusteen sekä mahdollisen kansallisen perusteen].\n\nTietojen vastaanottajat: [sponsor, CRO, turvallisuustoiminnot, viranomaiset, muut todelliset vastaanottajat]. EU/ETA:n ulkopuoliset maat ja siirtomekanismi: [täytä, jos soveltuu]. Säilytysaika: [peruste ja aika].\n\nJos peruutatte osallistumisen seurantaan, uuden tiedon keruu lopetetaan, mutta jo kerättyjä tietoja voidaan edelleen käsitellä siltä osin kuin se on välttämätöntä soveltuvien turvallisuus- ja muiden lakisääteisten velvoitteiden täyttämiseksi.\n\nTietosuojavastaavan yhteystiedot: ______________________________. <i>(Kuvaa vain tosiasiassa soveltuvat rekisteröidyn oikeudet ja valitusmahdollisuus tietosuojavaltuutetulle.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Lapsen tiedot syntymän jälkeen\n\n<b>[Ehdollinen – käytä vain, jos tutkimuksessa kerätään lapsen henkilötietoja syntymän jälkeen]</b>\nJos lapsesta kerätään syntymän jälkeen tietoja, kerättävät tiedot ovat [täsmälliset tiedot], seuranta kestää [aika] ja tiedot saadaan [vanhemmalta/huoltajalta, lastenlääkäriltä, sairaalasta].\n\nLapsen syntymän jälkeisten henkilötietojen keruuta varten pyydetään syntymän jälkeen erillinen suostumus henkilöltä/henkilöiltä, joilla on siihen oikeus. Raskauden aikana antamanne suostumus omien tietojenne seurantaan ei automaattisesti kata lapsen syntymän jälkeisiä henkilötietoja.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Vapaaehtoisuus ja peruuttaminen\n\nRaskauden seurantaan osallistuminen on vapaaehtoista. Voitte kieltäytyä tai lopettaa seurannan milloin tahansa syytä ilmoittamatta. Päätös ei vaikuta Teidän, lapsenne tai kumppaninne hoitoon eikä kumppaninne osallistumiseen pääasialliseen kliiniseen lääketutkimukseen.\n\nJos haluatte lopettaa, ottakaa yhteyttä [yhteyshenkilö]. Uusien tietojen keruu lopetetaan, ja Teille kerrotaan, mitä jo kerätyille tiedoille tapahtuu sovellettavan tietosuojan ja turvallisuusvelvoitteiden mukaisesti.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Kustannukset, tutkimustulokset ja yhteystiedot\n\nRaskauden seurantaan osallistumisesta ei aiheudu Teille tutkimuskohtaisia kustannuksia. [Jos relevantti: välittömät matkakulut ja ansionmenetys korvataan seuraavasti: ...]\n\nTeille ei odoteta koituvan suoraa terveydellistä hyötyä tietojen antamisesta. Seuranta voi kuitenkin parantaa tietoa tutkimuslääkkeen lisääntymisturvallisuudesta.\n\nYhteyshenkilö: [nimi, puhelin, sähköposti].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "SUOSTUMUS – RASKAANA OLEVA KUMPPANI\n\nOlen saanut kirjallista ja suullista tietoa raskauden seurannasta, siitä mitä tietoja minusta kerätään, mistä ne saadaan, mihin niitä käytetään ja kuinka kauan seurantaa jatketaan. Olen saanut vastaukset kysymyksiini ja riittävästi aikaa harkita osallistumista.\n\nYmmärrän, että osallistuminen on vapaaehtoista ja että voin lopettaa ilman, että se vaikuttaa omaan, lapseni tai kumppanini hoitoon tai kumppanini osallistumiseen kliiniseen lääketutkimukseen.\n\n<b>Allekirjoituksellani suostun tässä asiakirjassa kuvattuun raskauden seurantaan ja siihen liittyvään tietojen keruuseen.</b>\n\n<b>[Ehdollinen – jos terveydenhuollon ammattilaiselta pyydetään tietoja]</b>\nSuostun siihen, että tutkimusryhmä voi pyytää [täsmälliset tiedot] [neuvolasta/lääkäriltä/sairaalasta] tässä tiedotteessa kuvattua raskauden turvallisuusseurantaa varten.\n\nRaskaana olevan kumppanin nimi: ____________________________________\n____________________________________    _________________\nAllekirjoitus                            Päiväys\n\n<b>Suostumus vastaanotettu</b>\n____________________________________    _________________\nSuostumuksen vastaanottajan allekirjoitus  Päiväys\n____________________________________\nNimenselvennys\n\nAllekirjoitettu kopio annetaan raskaana olevalle kumppanille.",
+   "section_style": "Section break, H2 document subline, Rich body text, Signature section"
+  },
+  {
+   "section_number": 11,
+   "section_content": "ERILLINEN SUOSTUMUS SYNTYMÄN JÄLKEEN – LAPSEN TIEDOT\n\n<b>[Ehdollinen – käytä vain, jos lapsen henkilötietoja kerätään syntymän jälkeen]</b>\n\nOlen saanut tiedon siitä, mitä lapseni terveystietoja kerätään, mistä tiedot saadaan, mihin niitä käytetään ja kuinka kauan seurantaa jatketaan.\n\n<b>Suostun siihen, että lapseni [täsmälliset tiedot] kerätään ja käytetään tässä asiakirjassa kuvattuun lapsen turvallisuusseurantaan.</b>\n\n[Jos relevantti: Suostun siihen, että tutkimusryhmä voi pyytää kuvatut tiedot lapseni [lastenlääkäriltä/sairaalasta/muulta yksilöidyltä terveydenhuollon yksiköltä].]\n\nLapsen nimi/syntymätunniste: ____________________________________\nVanhemman/huoltajan nimi: ____________________________________\nOikeus toimia lapsen puolesta / suhde: ____________________________________\n____________________________________    _________________\nAllekirjoitus                            Päiväys\n\n<i>(Varmista ennen allekirjoitusta, kuka/ketkä ovat oikeutettuja antamaan lapsen tietoja koskevan suostumuksen kyseisessä tilanteessa.)</i>",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

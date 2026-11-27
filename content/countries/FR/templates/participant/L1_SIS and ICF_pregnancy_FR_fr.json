@@ -1,0 +1,93 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Participants",
+  "doc_name_local": "Document d’information et formulaire de consentement au suivi de grossesse - participante enceinte",
+  "target_country": "France",
+  "country_code": "FR",
+  "target_language": "French",
+  "language_code": "fr",
+  "doc_type": "pregnant_participants",
+  "file_name": "L1_SIS and ICF_pregnancy",
+  "sort_order": 7,
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Numéro de protocole : [à compléter] | Numéro d’essai UE : [à compléter]"
+  ],
+  "info_table": [
+   "Titre de la recherche",
+   "Titre abrégé de la recherche",
+   "Numéro de protocole [ajouter la version et la date]",
+   "Numéro d’essai UE [ou, le cas échéant, numéro EudraCT / ID-RCB applicable]",
+   "Promoteur [avec adresse complète]",
+   "Investigateur principal / coordonnateur",
+   "Nom du lieu de recherche",
+   "Adresse du lieu de recherche",
+   "Version et date du document",
+   "Code de la participante",
+   "Code du suivi de grossesse",
+   "Date de déclaration / confirmation de la grossesse"
+  ],
+  "content_instructions": "Prepare a separate French pregnancy-follow-up information and consent form for a trial participant who becomes pregnant. Focus on pregnancy safety follow-up, relevant exposure, treatment consequences and the specific data collected. This consent does not authorise continued investigational exposure; any continuation during pregnancy must independently satisfy the protocol and the French protections for pregnant women, including Article L.1121-5. Explain required interruption, unblinding, medication changes or safety monitoring. Collect only necessary maternal, pregnancy-outcome and, where separately authorised, infant data. Integrate the applicable French data-protection information. Post-birth identifiable child follow-up requires separate or post-birth confirmed consent by the person or persons with parental authority.",
+  "styling_instructions": "Keep the form substantially shorter than the main SIS/ICF. Use a clear chronology, short headings, simple tables and separate signature blocks for maternal follow-up and post-birth child data."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMATION SUR LE SUIVI DE VOTRE GROSSESSE</b>\nMadame,\n\nVous participez ou avez participé à la recherche [<i>titre</i>] et une grossesse est survenue pendant ou après l’exposition à [<i>produit / procédure</i>]. Ce document concerne uniquement le suivi de la grossesse et la collecte des informations décrites.\n\nVotre choix concernant ce suivi est volontaire. Il ne décide pas à lui seul si le produit étudié doit être arrêté ou si une autre activité de l’essai peut continuer.",
+   "section_style": "H2 document subline, Rich body text, Standard table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b><u>Pourquoi ces informations sont-elles recueillies ?</u></b>\nLe promoteur doit mieux connaître les effets possibles du produit ou des procédures de la recherche sur votre santé, la grossesse, le fœtus et l’issue de la grossesse. <i>Expliquer les objectifs de sécurité et les obligations réglementaires applicables.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b><u>Quels risques et quelles mesures médicales sont importants ?</u></b>\n<i>Décrire les risques connus, suspectés ou inconnus pour la mère, l’embryon, le fœtus ou l’enfant allaité.</i>\nPréciser les mesures prévues après la détection de la grossesse : [<i>arrêt ou interruption du produit, modification des médicaments, levée de l’insu si médicalement nécessaire, consultations ou surveillance</i>].\nUne poursuite d’exposition expérimentale pendant la grossesse ne peut être décidée sur la seule base de ce formulaire ; elle doit être autorisée par le protocole et satisfaire aux protections applicables aux femmes enceintes.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b><u>Quelles informations seront recueillies ?</u></b>\n• exposition au produit étudié et médicaments concomitants pertinents ;\n• données maternelles utiles et évolution de la grossesse ;\n• examens réalisés dans le cadre des soins habituels ;\n• issue de la grossesse ;\n• [<i>après la naissance, seulement avec consentement parental applicable</i>] données limitées sur l’enfant.\n<i>Supprimer toute catégorie non nécessaire.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b><u>Comment et jusqu’à quand les informations seront-elles obtenues ?</u></b>\nSources : données déjà recueillies dans l’essai, vous-même, dossier médical, médecin traitant, obstétricien, sage-femme, maternité ou autre professionnel nommé.\nMoments : [<i>confirmation, suivi pendant la grossesse, issue, autre</i>].\nFin du suivi : [<i>date ou événement précis</i>].\nAucun examen ou prélèvement supplémentaire ne sera ajouté sauf s’il est réellement prévu et expliqué.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b><u>Que se passe-t-il pour votre participation à l’essai ?</u></b>\nPréciser séparément :\n• ce qui arrive au produit ou à l’intervention étudiée ;\n• les procédures de sécurité qui restent médicalement nécessaires ;\n• les actes de la recherche qui cessent ;\n• les conditions exceptionnelles d’une éventuelle poursuite pendant la grossesse.\nLe refus du suivi facultatif de grossesse n’empêche pas les soins nécessaires ni les traitements de données imposés par les obligations de sécurité.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b><u>Y a-t-il un bénéfice, des frais ou une indemnité ?</u></b>\nAucun bénéfice personnel n’est garanti par la collecte d’informations. Aucun frais supplémentaire ne doit rester à votre charge. [<i>Préciser les remboursements éventuels.</i>]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b><u>Comment les données seront-elles protégées ?</u></b>\nDécrire le responsable de traitement, les finalités, bases juridiques, catégories, lien avec les données codées de l’essai, destinataires, accès aux dossiers, transferts, durée de conservation, DPO, droits et réclamation CNIL. Le retrait de l’accord arrête la collecte facultative future, mais peut ne pas empêcher le traitement déjà nécessaire à la sécurité ou aux obligations légales.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b><u>Qui contacter ?</u></b>\nInvestigateur / personne de contact : [<i>nom, adresse, téléphone, e-mail</i>]\nContact médical urgent : [<i>à préciser</i>]\nDPO : [<i>coordonnées</i>]\nVous pouvez introduire une réclamation auprès de la Commission nationale de l’informatique et des libertés (CNIL) : [<i>lien ou coordonnées actualisées</i>]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>FORMULAIRE DE CONSENTEMENT DE LA PARTICIPANTE AU SUIVI DE GROSSESSE</b>\nJe soussignée [<i>nom, prénom, date de naissance</i>] confirme avoir reçu et compris l’information, avoir pu poser mes questions et disposer d’un délai suffisant.\n\nJ’accepte :\n□ le suivi de ma grossesse et la collecte des informations décrites ;\n□ l’accès aux informations strictement nécessaires auprès des professionnels ou établissements nommés ;\n□ le lien avec mes données codées de l’essai et les transferts décrits.\n\nJe sais que ce consentement n’autorise pas à lui seul la poursuite du produit étudié pendant la grossesse et que je peux retirer mon accord pour la collecte facultative future.\n\nSignature de la participante : __________ Date : __________\nSignature de l’investigateur / professionnel : __________ Date : __________\nNom et fonction : __________________________________\nUn exemplaire signé m’a été remis.",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>[LE CAS ÉCHÉANT, APRÈS LA NAISSANCE] CONSENTEMENT À LA COLLECTE DES DONNÉES DE L’ENFANT</b>\nÀ utiliser uniquement après la naissance si de nouvelles données identifiables concernant l’enfant sont prévues. Décrire brièvement les données, les sources, la durée et les finalités.\n\nAprès la naissance, les données de l’enfant ne seront recueillies qu’après l’accord du ou des titulaires de l’autorité parentale requis selon la situation applicable.\n\nJ’accepte / Nous acceptons la collecte des données de l’enfant décrite ci-dessus : Oui □ Non □\nNom(s), qualité(s), signature(s) et date(s) : __________________________________\nSignature du professionnel : __________________ Date : __________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}
