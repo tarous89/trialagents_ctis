@@ -41,8 +41,6 @@ Statuses are derived, never stored, so they cannot go stale.
 ```
 deliverable status(d, step):
   if step paused for the plan or not applicable for this document -> NOT_APPLICABLE
-  if step is the first content step (Draft), the document is based_on
-     a reference document and that document has no approved final  -> WAITING (for reference)
   if an earlier applicable step is ACTION_REQUIRED and has not been
      "continued" for its current version                           -> WAITING
   if no completed current version                                  -> WAITING
@@ -55,12 +53,12 @@ deliverable status(d, step):
 - A newer version of the last step does not remove the previous approval. The final column keeps showing the last approved version until the new one is approved.
 - Project "needs action" = number of documents with any ACTION_REQUIRED step.
 
-- Part I is never a gate. If Part I is in the plan it simply runs first; if it was completed outside TrialAgents or left for later, Part II runs without it.
-- The user can remove a `based_on` link in the plan; the document then drafts from the sources and no longer waits.
+- **No planning gates.** Part I, the reference package and unapproved input documents never block a step. Order and approvals are recommendations the assistant raises (section 3), not rules the server enforces.
+- **Unapproved inputs** (a `based_on` reference or a project-document source without an approved version) are shown on the not-yet-started deliverable as a note, for example "Uses D06 v2, not approved yet". They do not change the status.
 
 Findings types (shown in the review panel): missing data, conflicting information, decision needed, open comment, source changed, reference changed. In the table they all collapse into "Action required".
 
-- **Reference changed** is raised by the server on every document whose current version was adapted from an earlier approved version of its reference document, when that reference gets a newer approval. Existing approvals stay; the finding asks whether to revise.
+- **Reference changed** is raised by the server on every document whose current version was adapted from an earlier or unapproved version of its reference document, when that reference gets a newer approval. Existing approvals stay; the finding asks whether to revise. **Source changed** works the same way for project-document sources.
 
 ## 3. Workflow and the assistant loop
 
@@ -76,10 +74,16 @@ Findings types (shown in the review panel): missing data, conflicting informatio
 3. **Order.** Part I if in the plan, then the reference package, then the other packages, each top to bottom. A document runs through all its steps before the next document starts. Draft is always the first content step, whether written from scratch, from a starting document or adapted from a reference document; the step instructions differ, the column does not.
 4. **Modifications and RFIs.** Also a planning case. `save_project` with `create_successor` creates a project linked to the previous one. The guide returns the modification rules; the assistant reads the previous project's approved documents, agrees with the user what changes, and saves a plan containing only the affected documents and the change documents. Each affected document is `based_on` its previously approved version.
 5. **One step per turn.** Each step is a fresh assistant turn. The assistant gets everything it needs from `get_step_context`, not from chat history, so long runs do not exhaust the context.
-6. **Continue.** When a step is saved, the widget posts the next message into the chat (`Continue with D04-CL`). Both hosts let an embedded app post a follow-up message, but only while the chat is open; check the current host behaviour before building on it. If the chat is closed, the run pauses and a **Continue** button resumes it.
+6. **Continue.** When a step is saved, the widget posts the next message into the chat (`Continue with D04-CL`), unless the next deliverable uses an unapproved input (step 7). Both hosts let an embedded app post a follow-up message, but only while the chat is open; check the current host behaviour before building on it. If the chat is closed, the run pauses and a **Continue** button resumes it.
 7. **Stops.** The loop stops at ACTION_REQUIRED. Findings the assistant can fix from sources it already has are fixed in the same step and recorded. Missing user data, decisions, conflicting sources and comments stop the loop.
+
+   **Pause before unapproved inputs.** When the next deliverable would start from a project document that has no approved version (its `based_on` reference or a project-document source), there is no automatic continue. `read_project` and `get_step_context` return the unapproved inputs, and the assistant asks the user, for example: *"D04 will be built from D01 Study protocol v2, which is not approved yet. Approve D01 first, or go ahead with v2?"* It can bring up the approval with `request_approval`. Both answers are fine:
+   - **Approve first:** the owner clicks Approve; the run continues.
+   - **Go ahead:** the assistant continues; the version snapshot marks the input as not approved, and a later approval raises *reference changed* or *source changed* where the approved version differs. This suits teams that draft everything first and sign off together later.
+
+   The user can tell the assistant to go ahead for the rest of the run, so it does not ask at every document.
 8. **Revise.** One action. It always sends: the version being revised, all open comments with replies and the text they anchor to, the document's current sources and templates marked where they differ from that version, and the step instructions and applicable rules, and for an adapted document the reference version it was adapted from and the current approved one. The assistant revises with comments, reruns if only inputs changed, or asks what to change if neither.
-9. **Approve.** Only the project owner, by a click. The assistant can ask for approval with `update_review` (`request_approval`): the deliverable opens in the chat widget with an **Approve final document** confirmation showing the exact version, and the approval is recorded only when the owner clicks it there or in the web app. Where the host shows no widget, the assistant gives the web link. An assistant call alone never approves. Approval binds to the project, document, last step and version number.
+9. **Approve.** Only the project owner, by a click. Approval is the only thing that needs a person, and it is needed only for a document to count as approved (final column, Download all); nothing else waits for it. The assistant can ask for approval with `update_review` (`request_approval`): the deliverable opens in the chat widget with an **Approve final document** confirmation showing the exact version, and the approval is recorded only when the owner clicks it there or in the web app. Where the host shows no widget, the assistant gives the web link. An assistant call alone never approves. Approval binds to the project, document, last step and version number.
 
 Unattended runs (no chat open) would require TrialAgents to call a model itself. Not in scope for the first release.
 
@@ -106,10 +110,10 @@ A document of a plan, or of an earlier project the caller can read, can be a sou
 
 - Stored as `document_sources(project_id, document_id, source_project_id, source_document_id)`, edited with the per-document sources (`save_resources` → `set_document`) or proposed with the plan (`save_project`).
 - **Version used:** the latest approved final version if there is one; otherwise the latest version of the document's last completed step, marked *not approved*. The step context says which, so the assistant can tell the user it is working from an unapproved draft.
-- **No gate.** Unlike `based_on`, a project-document source never makes a step wait. The planning guide recommends ordering the plan so sources are approved first.
+- **No gate.** A project-document source, like a `based_on` reference, never makes a step wait. Before a step uses an unapproved one, the run pauses and the assistant asks (section 3, step 7).
 - **Changes:** when the source document gets a newer approved version, or a first approval after an unapproved version was used, every document whose current version used the older one gets a *source changed* finding.
 - **Default:** documents produced in Part I of the same plan are suggested as sources for Part II documents; the user confirms them with the plan.
-- `based_on` is the stronger link: it means "adapt this document" and gates Draft; a project-document source only means "use as evidence".
+- `based_on` means "adapt this document"; a project-document source means "use as evidence". Both are handled the same way for approval.
 
 ### Snapshot per version
 
@@ -233,7 +237,7 @@ It is built from `prototype/source`:
 | `vendor/pipeline/` | Pipeline's `shell.html` (its CSS is reused, scoped under `.pl` and `.plh`), assistant marks and logo. |
 | `build.py` | Scopes the CSS, assembles the page and writes `../TrialAgents-CTIS.html`. |
 
-The prototype shows the planning choices in Project details (Part I, reference package as country and language, format), marks the reference package in the plan, and shows an adapted document's Draft as "Waiting for reference" until its reference document is approved (example: EX-101 D08 adapted from D06). A document's Sources and templates drawer lists "Documents from this project" (example: the protocol D01 is a source of every Part II document), and the version snapshot records which version of it was used and whether it was approved. It does not raise "Reference changed" findings or run the assistant-side approval request.
+The prototype shows the planning choices in Project details (Part I, reference package as country and language, format), marks the reference package in the plan, and shows "Adapted from" on adapted documents (example: EX-101 D08 adapted from D06). A deliverable that has not started lists its unapproved inputs, for example "Uses D06 v1, not approved yet", and can still be run. A document's Sources and templates drawer lists "Documents from this project" (example: the protocol D01 is a source of every Part II document), and the version snapshot records which version of it was used and whether it was approved. It does not raise "Reference changed" findings or run the assistant-side approval request.
 
 Rebuild with `python3 prototype/source/build.py`. The prototype is a design reference, not production code: the production app should be written fresh against the data model above, reusing Pipeline's components.
 

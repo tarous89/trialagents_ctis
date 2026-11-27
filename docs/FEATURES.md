@@ -14,7 +14,7 @@ You ask Claude or ChatGPT to prepare a submission. The assistant uses the TrialA
 2. **One full country-language package first**, for example Germany · German, or any language you are comfortable with. It goes through every step and you approve it.
 3. **The other countries**, adapted from the approved package: translated, extended with what that country needs, and checked against its checklist. A country may need more or fewer documents, extra details or several languages; documents with no counterpart are written from the sources.
 
-The assistant recommends this order, but you can choose another, for example every country written from the sources in parallel. If an approved document of the first package changes later, the documents adapted from it show "Reference changed" so you can decide whether to revise them.
+The assistant recommends this order, but you can choose another, for example every country written from the sources in parallel. Nothing is blocked: before the assistant builds on a document that is not approved yet, it stops and asks whether you want to approve it first or go ahead. Going ahead is fine, for example if your team will review everything together at the end. If an approved document of the first package changes later, the documents adapted from it show "Reference changed" so you can decide whether to revise them.
 
 **Amendments and replies to requests for information** are planned the same way: the assistant reads the previous project's approved documents and the TrialAgents modification rules, agrees with you what changes, and creates a new linked project with only the affected documents.
 
@@ -61,7 +61,7 @@ Each cell shows the status of one deliverable, with its version (for example "Do
 |---|---|
 | **Done** | The step finished and nothing is open. |
 | **Action required** | Something needs a person: missing data, conflicting information, a decision, or an open comment. |
-| **Waiting** | The step has not run yet, an earlier step needs action first, or the document it is adapted from is not approved yet. |
+| **Waiting** | The step has not run yet, or an earlier step needs action first. |
 | **Not applicable** | The step is not part of the plan for this document, for example drafting the protocol, which comes from the team. This is set in the plan, not in a document. |
 
 The final document column shows **Approved v1**, **Awaiting approval** or **Waiting**. When a newer version of the last step exists, the approved version stays in the final column until the new one is approved.
@@ -84,9 +84,9 @@ A deliverable is one document at one step, for example the German consent form a
 
 - **Ignore and continue** (only when action is required): lets the next step run. The issues stay open and the status stays "Action required". It applies to this version only, and **Undo** reverses it.
 - **Revise:** asks the assistant for a new version. It always sends your open comments, any changes to the document's sources and templates, and the version being revised. Without comments or changes, the assistant asks what you want changed.
-- **Approve final document** (only on the last step, only for the owner). The assistant can bring this up for you in the chat, but the approval only counts when you click it.
+- **Approve final document** (only on the last step, only for the owner). The assistant can bring this up for you in the chat, but approval is always your click, in the chat or the web app, never something the assistant does from a message. Only approved documents count as final and go into Download all.
 
-A step that has not run yet shows no content, only what it is waiting for and a link to the step that blocks it.
+A step that has not run yet shows no content, only what it is waiting for and a link to the step that blocks it. If it will use documents that are not approved yet, they are listed there.
 
 ### Comments
 

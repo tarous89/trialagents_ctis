@@ -225,11 +225,11 @@ const refOptions=(pid,countries)=>countries.flatMap(c=>{const ls=pid===data.ui.p
 const docIdOf=d=>Object.entries(P().docs||{}).find(([,v])=>v===d)?.[0];
 const refOf=did=>did?planning().basedOn?.[did]||'':'';
 const refApproved=rid=>{const r=doc(rid);return !!r&&(released(P(),r)||!!r.lastApproved)};
+/* inputs from this project without an approved version: a note, never a gate */
+function unapprovedInputs(did){return [...new Set([refOf(did),...projDocSources(did)].filter(Boolean))].filter(x=>!refApproved(x)).map(x=>{const v=projDocVersion(x);return x+(v?' v'+v.rev:'')+(v?'':' (not started)')})}
 const refNote=did=>{const r=refOf(did);return r?'<small class="refnote" title="Drafted by adapting the approved '+E(r)+'">Adapted from '+E(r)+'</small>':''};
 function liveState(d,s){
  if(s.skip||d.rowSkip?.[s.id])return ['na','Not applicable'];
- {const first=P().steps.find(k=>!k.skip&&!d.rowSkip?.[k.id]),rid=refOf(docIdOf(d));
-  if(rid&&first?.id===s.id&&s.type==='draft'&&!refApproved(rid)&&!work(d,s).current)return ['waiting','Waiting for reference']}
  const steps=P().steps.filter(k=>!k.skip&&!d.rowSkip?.[k.id]),idx=steps.findIndex(k=>k.id===s.id);
  const passed=k=>d.ignored?.[k.id]!=null&&d.ignored[k.id]===work(d,k).current?.rev;
  if(idx>0&&steps.slice(0,idx).some(k=>issuesOpen(d,k)&&!passed(k)))return ['waiting','Waiting'];
