@@ -1,0 +1,240 @@
+{
+ "id": "NO-CHECK",
+ "name": "Norway: check of forms and supplied documents",
+ "applies_to_kinds": [
+  "form",
+  "third_party_template",
+  "third_party_document",
+  "ctis_data"
+ ],
+ "reviewed": "2026-11-27",
+ "source": "https://trialagents.com/ctis/norway/en/part-ii-document-checklist (reviewed 23 September 2026)",
+ "result_values": [
+  "met",
+  "unmet",
+  "needs_decision",
+  "not_applicable"
+ ],
+ "common": [
+  {
+   "id": "X.01",
+   "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+  },
+  {
+   "id": "X.02",
+   "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, issuer or insurer are left empty, not invented."
+  },
+  {
+   "id": "X.03",
+   "check": "No drafting instruction remains (yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels)."
+  },
+  {
+   "id": "X.04",
+   "check": "Language is English (REK KULMU: Part II attachments other than consent forms and recruitment materials); no signature added at submission unless the document is an issued third-party record."
+  },
+  {
+   "id": "X.05",
+   "check": "CTIS title follows the naming guide and requirements.json; version and date match the CTIS structured fields; searchable, copyable PDF."
+  }
+ ],
+ "by_document": {
+  "NO-K1": [
+   {
+    "id": "K1.01",
+    "check": "Uses the European Commission Recruitment and Informed Consent Procedure template v2.0 (or another format with all requested information), submitted in English."
+   },
+   {
+    "id": "K1.02",
+    "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed, each 'no' section gives the not-applicable answer."
+   },
+   {
+    "id": "K1.03",
+    "check": "Names who identifies candidates, who gives information (a qualified member of the research group) and who obtains consent (not the treating physician where the dependency could compromise voluntariness)."
+   },
+   {
+    "id": "K1.04",
+    "check": "Electronic consent is stated and its secure identity solution (BankID or another two-factor authentication) described.",
+    "applies_when": "consent.electronic"
+   },
+   {
+    "id": "K1.05",
+    "check": "Health-record screening: legal access of the staff and any requested exemption from confidentiality described.",
+    "applies_when": "recruitment.health_record_screening"
+   },
+   {
+    "id": "K1.06",
+    "check": "Incapacitated adults: legally designated representative identified and verified, adapted participant information, dissent respected, capacity assessment and re-consent when capacity returns.",
+    "applies_when": "population.adults_without_capacity"
+   },
+   {
+    "id": "K1.07",
+    "check": "Minors: guardian consent as applicable, under-12, 12-15 and 16-17 pathways, own consent at 16, dissent respected, no incentives.",
+    "applies_when": "population.minors"
+   },
+   {
+    "id": "K1.08",
+    "check": "Impartial witness: trigger (cannot read or cannot write), independence, presence for the whole discussion, recorded name, role and relationship, remote verification.",
+    "applies_when": "consent.impartial_witness_possible"
+   },
+   {
+    "id": "K1.09",
+    "check": "Emergency: Article 35 conditions confirmed at first intervention, who decides, representative location, consent without undue delay, Article 35(3) right-to-object letter on refusal.",
+    "applies_when": "consent.emergency_enrolment"
+   },
+   {
+    "id": "K1.10",
+    "check": "Every recruitment route matches the K2 items in the package.",
+    "applies_when": "recruitment.material_used"
+   }
+  ],
+  "NO-M1": [
+   {
+    "id": "M1.01",
+    "check": "One CV per principal investigator and Norwegian site; English accepted."
+   },
+   {
+    "id": "M1.02",
+    "check": "Shows clinical competence, previous clinical-trial experience, patient-care experience and GCP training."
+   },
+   {
+    "id": "M1.03",
+    "check": "Current ICH GCP E6(R3) competence documented, or confirmation that training will be completed before participant recruitment."
+   },
+   {
+    "id": "M1.04",
+    "check": "Only trial fields were filled by the assistant; personal details come from the investigator; no signature required."
+   }
+  ],
+  "NO-M2-DOI": [
+   {
+    "id": "M2.01",
+    "check": "One declaration per Norwegian principal investigator on the EU template or another separate document, in English."
+   },
+   {
+    "id": "M2.02",
+    "check": "Describes financial interests, institutional affiliations and other circumstances that could affect impartiality; completed by the investigator."
+   },
+   {
+    "id": "M2.03",
+    "check": "Interests that are relevant for participants are also disclosed in the Norwegian participant information."
+   }
+  ],
+  "NO-N1": [
+   {
+    "id": "N1.01",
+    "check": "One site-specific form per Norwegian site, in English."
+   },
+   {
+    "id": "N1.02",
+    "check": "Issued by the head of department, head of clinic or an equivalent institutional representative who is not the principal investigator; issuer and authority clear; no signature needed."
+   },
+   {
+    "id": "N1.03",
+    "check": "Project organisation and planned enrolment by site are presented here or in an attached enrolment plan or another submitted document."
+   },
+   {
+    "id": "N1.04",
+    "check": "Site fields completed by the site, not invented."
+   }
+  ],
+  "NO-O1": [
+   {
+    "id": "O1.01",
+    "check": "Valid certificate issued by the Norwegian Medicines Liability Association covering the trial."
+   },
+   {
+    "id": "O1.02",
+    "check": "Whether the sponsor has additional trial-specific insurance is stated, with its documentation where it exists."
+   },
+   {
+    "id": "O1.03",
+    "check": "Injury-coverage wording in every participant document matches the certificate and any additional insurance."
+   },
+   {
+    "id": "O1.04",
+    "check": "Submitted as issued; no added sponsor or investigator signature."
+   }
+  ],
+  "NO-P1": [
+   {
+    "id": "P1.01",
+    "check": "Describes all participant payments and reimbursement of expenses in English; states clearly when no payment is offered."
+   },
+   {
+    "id": "P1.02",
+    "check": "Reimbursement and compensation for lost earnings are distinguished from any incentive."
+   },
+   {
+    "id": "P1.03",
+    "check": "No incentives beyond expenses and lost earnings for minors, guardians, incapacitated adults or representatives.",
+    "applies_when": "population.minors or population.adults_without_capacity"
+   },
+   {
+    "id": "P1.04",
+    "check": "Healthy volunteers: amount, schedule and pro rata payment after withdrawal; payment does not exert undue influence.",
+    "applies_when": "population.healthy_volunteers"
+   },
+   {
+    "id": "P1.05",
+    "check": "Amounts and conditions are identical to the participant documents."
+   }
+  ],
+  "NO-P2": [
+   {
+    "id": "P2.01",
+    "check": "Short English description of funding sources and what the funding covers."
+   },
+   {
+    "id": "P2.02",
+    "check": "Confirms that the intervention period is financially secured."
+   },
+   {
+    "id": "P2.03",
+    "check": "Overview of agreements between the sponsor and sites and of payment arrangements for sites or investigators; the underlying agreements are not uploaded."
+   },
+   {
+    "id": "P2.04",
+    "check": "Proof of fee payment is not placed here (Part I in Norway)."
+   }
+  ],
+  "NO-R1": [
+   {
+    "id": "R1.01",
+    "check": "English statement on the EU template confirming GDPR compliance of data collection and handling."
+   },
+   {
+    "id": "R1.02",
+    "check": "States who issues the declaration and on whose behalf (sponsor or sponsor's representative)."
+   },
+   {
+    "id": "R1.03",
+    "check": "Consistent with the privacy information in the participant documents (controllers, recipients, transfers, retention)."
+   }
+  ],
+  "NO-S1": [
+   {
+    "id": "S1.01",
+    "check": "English document on the EU template; material, analyses, relationship to protocol endpoints, storage locations and periods, biobank details, cross-border movement and destruction or return plan."
+   },
+   {
+    "id": "S1.02",
+    "check": "Study-specific biobank linked to the trial identified when samples remain in Norway more than two months after collection.",
+    "applies_when": "samples.stored_in_norway_over_two_months"
+   },
+   {
+    "id": "S1.03",
+    "check": "Export and import: countries, purpose, storage period, residual material and destruction or return plan.",
+    "applies_when": "samples.export or samples.import"
+   },
+   {
+    "id": "S1.04",
+    "check": "Future use declared as a separate purpose with separate broad consent; storage abroad beyond the trial states destination, purpose and safeguards; general biobank use with REK approval and its REK-approved consent.",
+    "applies_when": "samples.future_use_outside_protocol or samples.general_biobank_norway or samples.future_storage_abroad"
+   },
+   {
+    "id": "S1.05",
+    "check": "Consistent with the protocol, the sample plan and every participant document."
+   }
+  ]
+ }
+}

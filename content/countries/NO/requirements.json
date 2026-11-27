@@ -1,0 +1,1049 @@
+{
+ "country": "NO",
+ "name": "Norway",
+ "reviewed": "2026-11-27",
+ "source_review_date": "2026-09-23",
+ "authorities": {
+  "competent_authority": "Norwegian Medical Products Agency (Direktoratet for medisinske produkter, DMP)",
+  "ethics": "REK KULMU (Etisk komité for klinisk utprøving av legemidler og medisinsk utstyr) assesses Part II on behalf of Norway and is responsible for the Norwegian Part II dossier.",
+  "fee": "Proof of payment belongs in Part I in Norway, including for substantial modifications; it is not a Part II document."
+ },
+ "language_rules": {
+  "participant_documents": "no",
+  "administrative_documents": [
+   "en"
+  ],
+  "rule": "Part II attachments are in English, except informed consent forms (participant information and consent) and recruitment materials, which must be in Norwegian. Part I is generally English, but the protocol synopsis must be in Norwegian.",
+  "written_standard": "The guides say 'Norwegian' only. They set no Nynorsk or Sami requirement. The supplied templates are Bokmål with language code 'no' (DECISIONS.md D1).",
+  "non_norwegian_speakers": "Potential participants receive material in a language they understand. REK KULMU does not ask to receive or assess foreign-language translations; the sponsor ensures that a translation is accurate and corresponds to the approved Norwegian text; REK KULMU recommends a certified translator (DECISIONS.md D16).",
+  "exception": "Other Part II documents stay English unless a justified participant-language document is needed (QC section 8).",
+  "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in English. The CTIS_NO variable sheet targets Norwegian; the guide wins (templates/README.md).",
+  "by_language": {
+   "en": [
+    "NO-K1",
+    "NO-M1",
+    "NO-M2-DOI",
+    "NO-N1",
+    "NO-O1",
+    "NO-P1",
+    "NO-P2",
+    "NO-R1",
+    "NO-S1"
+   ],
+   "no": [
+    "NO-K2",
+    "NO-L1"
+   ]
+  },
+  "drafting_notes_language": "drafting_notes_en for the English administrative documents, drafting_notes_no for the Norwegian participant-facing documents."
+ },
+ "study_facts_used": [
+  "population.adult_patients",
+  "population.healthy_volunteers",
+  "population.minors",
+  "population.minors_age_bands",
+  "population.minors_turn_16_during_trial",
+  "population.minors_turn_18_during_trial",
+  "population.adults_without_capacity",
+  "population.group_benefit_research_without_capacity",
+  "population.capacity_may_return",
+  "consent.emergency_enrolment",
+  "consent.impartial_witness_possible",
+  "consent.representative_cannot_read_or_write",
+  "consent.electronic",
+  "consent.remote_witness",
+  "population.non_norwegian_speakers",
+  "recruitment.material_used",
+  "recruitment.health_record_screening",
+  "endpoint_documents.participant_facing",
+  "samples.collected",
+  "samples.archive_used",
+  "samples.import",
+  "samples.export",
+  "samples.stored_in_norway_over_two_months",
+  "samples.future_use_outside_protocol",
+  "samples.general_biobank_norway",
+  "samples.future_storage_abroad",
+  "data.future_use_outside_protocol",
+  "data.transfer_outside_eea",
+  "genetics.analysis",
+  "pregnancy.participant_follow_up_beyond_main_consent",
+  "pregnancy.partner_follow_up",
+  "pregnancy.infant_follow_up",
+  "trial.optional_substudy",
+  "insurance.additional_trial_specific",
+  "ctis.publication_applies",
+  "application.rfi_response",
+  "sites.count"
+ ],
+ "study_facts_note": "Country-specific keys added for Norway: population.minors_turn_16_during_trial, population.minors_turn_18_during_trial, population.capacity_may_return, consent.representative_cannot_read_or_write, consent.remote_witness, population.non_norwegian_speakers, recruitment.health_record_screening, samples.import, samples.export, samples.stored_in_norway_over_two_months, samples.general_biobank_norway, samples.future_storage_abroad, data.transfer_outside_eea, genetics.analysis, trial.optional_substudy, insurance.additional_trial_specific, ctis.publication_applies, application.rfi_response. recruitment.other_information_material and recruitment.call_centre are not used: the Norway checklist has no L2 item and names no call-centre rule.",
+ "documents": [
+  {
+   "id": "NO-K1",
+   "ctis_section": "K",
+   "ctis_title": "K1_Recruitment arrangements",
+   "name_en": "Recruitment and informed consent procedure",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "trial",
+   "language": [
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+    "basis": "European Commission Recruitment and Informed Consent Procedure template v2.0; applies to new Part II submissions from 1 September 2026. Its procedure content is required; use of the exact template form is highly recommended; REK KULMU accepts another format that includes all requested information and meets CTR requirements.",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "content": "How participants are identified, approached, informed and consented; who gives the information and who obtains consent; every population pathway in the plan (incapacitated adults, minors, impartial witness, emergency); electronic consent and its secure identity solution where used; capacity assessment, representative verification, dissent and re-consent.",
+   "national_fields": {
+    "v100": "Norway: where health records are searched to identify candidates, state that the staff searching them have legal access to the records and describe any exemption from the duty of confidentiality that is requested (NO-QC section 7). Do not invent the legal basis; the sponsor or site provides it.",
+    "v104": "Norway: name who identifies candidates, who gives the trial information and who obtains consent. The information-giver is a qualified member of the research group.",
+    "v105": "Norway: recruitment advertisements, invitation texts, videos and other identification or recruitment material used in Norway are final Norwegian versions submitted in Part II (K2). Patient cards, thank-you cards and staff interview guides that do not identify or recruit participants are not submitted to REK KULMU.",
+    "v107": "Norway: written and oral information before participation; enough time to consider and ask questions. REK KULMU treats the treating physician as having a dependent relationship with the patient, also where that physician is expected to treat the patient later, so another person obtains consent. The participant or legally designated representative and the person conducting the consent interview sign and date the approved form at consent; a copy is given.",
+    "v108": "Norway: if electronic consent is used, state this and describe the secure identity solution (BankID or another two-factor authentication). Participant documents are in Norwegian; participants who need another language receive a translation that the sponsor ensures is accurate and corresponds to the approved Norwegian text (REK KULMU recommends a certified translator and does not assess translations).",
+    "v110": "Norway: identify the legally designated representative under the law applicable in Norway and describe how the site confirms that authority; do not assume that the nearest relative or an accompanying person automatically has authority. The participant receives information adapted to their ability and takes part in the decision as far as possible; an explicit refusal or wish to withdraw is respected. Describe capacity assessment, how fluctuating capacity is documented, and that the participant's own consent is obtained as soon as capacity returns. No incentives beyond participation-related expenses and loss of earnings.",
+    "v111": "Norway: under 12 an age-appropriate Norwegian information leaflet (the child may sign as an expression of willingness, which is assent, not consent); 12 to 15 a Norwegian information form suited to ages 12 to 15 with assent sought and documented according to maturity; 16 and 17 the same information as an adult and the adolescent's own consent in addition to the guardian or guardians.",
+    "v113": "Norway: a participant enrolled before age 16 gives their own informed consent when they turn 16, before continued participation (16-17 document). Whether a further consent is needed at 18 is not stated in the guides (DECISIONS.md D9).",
+    "v114": "Norway: consent from the guardian or guardians as applicable; confirm the authorised guardian for the individual case. An explicit wish to refuse or withdraw from a child who can form an opinion is respected and a guardian signature does not override it. No incentives or financial inducements beyond expenses and loss of earnings directly related to participation. Broad consent for future research is separate; from 16 a minor may consent to future research without guardian consent where it involves no bodily intervention; REK KULMU assesses inclusion of minors in future research case by case.",
+    "v117": "Norway: the witness route applies when the participant or legally designated representative cannot read or cannot write; never for a language barrier (information in a language the person understands, qualified interpreter where needed) or lack of capacity (legally designated representative). The witness is independent of the trial, attends the whole discussion, and the witness's name, role and relationship to the participant are recorded; for a remote discussion, describe how attendance, identity and signatures are verified. Interpreter role kept separate from the witness role.",
+    "v121": "Norway: document how the investigator confirms the Article 35 conditions at the first intervention. Seek consent without undue delay from the participant or representative, whichever is available first; for minors and incapacitated participants from the legally designated representative, with information to both as soon as possible; the participant's own consent as soon as capable. If consent is refused, further trial participation that depends on consent stops and the REK KULMU Norwegian information form on the right to object to use of data already obtained (Article 35(3)) is given. Name who makes the emergency-enrolment decision, what is recorded and how the representative is located."
+   },
+   "sources": [
+    "NO-PII-CHECKLIST#1",
+    "NO-ICF",
+    "NO-QC#7",
+    "NO-MINORS",
+    "NO-CAPACITY",
+    "NO-WITNESS",
+    "NO-EMERGENCY"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_en": "CTIS Part II section K. Mandatory. Answer in English (REK KULMU: Part II attachments other than consent forms and recruitment materials are English; the CTIS_NO variable sheet asked for Norwegian answers, the guide wins). No signature at submission. Use EU template v2.0. Complete the section for every population pathway in the plan and answer each 'no' pathway with the template's not-applicable answer. Put the Norwegian rules in the Member State fields (national_fields): consent not obtained by the treating physician, qualified information-giver from the research group, BankID or two-factor electronic consent, legally designated representative verified (not assumed to be the nearest relative), the under-12 / 12-15 / 16-17 pathways and own consent at 16, the witness rule, the Article 35(3) right-to-object form. Health-record screening: legal access and any requested exemption from confidentiality. Every K2 item must match the routes described here."
+  },
+  {
+   "id": "NO-K2",
+   "ctis_section": "K",
+   "ctis_title": "K2_Recruitment material_<type>_NO_no",
+   "name_en": "Recruitment materials",
+   "requirement": "conditional",
+   "trigger": "recruitment.material_used",
+   "trigger_text": "Advertisements, invitation texts, videos and other material used to identify or recruit participants in Norway.",
+   "per": "item",
+   "language": [
+    "no"
+   ],
+   "template": null,
+   "signature_at_submission": false,
+   "content": "Final Norwegian versions as they will be used. Payment must not be presented as the main reason to participate and risk must not be understated. Not submitted: patient cards, thank-you cards and staff interview guides that do not identify or recruit participants.",
+   "sources": [
+    "NO-PII-CHECKLIST#2",
+    "NO-HV",
+    "NO-QC#7"
+   ],
+   "kind": "participant_document",
+   "reader": "participant",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Source QC",
+    "Checklist",
+    "Style"
+   ],
+   "drafting_notes_no": "CTIS del II, seksjon K. Betinget: bare når annonser, invitasjonstekster, videoer eller annet materiale brukes til å identifisere eller rekruttere deltakere; ett dokument per materiale. Endelig norsk versjon; ingen signatur ved innsending. Ingen mal: utarbeides fra protokollen og K1, og innholdet skal stemme med K1 og informasjonsskrivet. Betaling skal ikke fremstå som hovedgrunnen til å delta, og risiko skal ikke tones ned. Pasientkort, takkekort og intervjuguider for personalet som ikke identifiserer eller rekrutterer deltakere, sendes ikke inn."
+  },
+  {
+   "id": "NO-L1",
+   "ctis_section": "L",
+   "ctis_title": "L1_SIS and ICF_<population>_NO_no",
+   "name_en": "Patient Information Sheet and Informed Consent Form, one set per population, plus the adapted documents for each consent pathway",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "population",
+   "language": [
+    "no"
+   ],
+   "template": null,
+   "template_note": "Participant templates are bound per population through population_sets. REK KULMU recommends its national CTR consent template (dated 3 June 2026); the supplied CTIS_NO templates follow its structure (the original REK KULMU templates were not supplied; DECISIONS.md, Missing).",
+   "signature_at_submission": false,
+   "content": "Blank Norwegian information and consent for each population that can enter the trial and, conditionally, adapted Norwegian documents for guardians and minors, legally designated representatives and adults without capacity, emergency enrolment (including the Article 35(3) right-to-object form), impartial witness, pregnancy follow-up and optional future research (broad consent). Realistic dates for the end of the trial, the end of all research activity and data deletion at least 25 years after the end of the trial.",
+   "sources": [
+    "NO-PII-CHECKLIST#3",
+    "NO-ICF"
+   ],
+   "kind": "participant_document",
+   "reader": "participant",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Source QC",
+    "Checklist",
+    "Style"
+   ],
+   "drafting_notes_no": "CTIS del II, seksjon L (informasjonsskriv og samtykkeerklæring). Obligatorisk: ett blankt norsk sett per populasjon og per samtykkevei (se population_sets). Ingen signatur ved innsending; deltakeren eller representanten og personen som gjennomfører samtalen signerer og daterer ved samtykket, og deltakeren får en kopi. Skriv for lekfolk og tilpass teksten til den som skal samtykke; et skriv til representanten skal ikke henvende seg til representanten som om hen var deltakeren. Oppgi tre realistiske tidspunkter: End of Trial, avslutning av all forskningsaktivitet inkludert publisering, og et konkret slettings-/lagringsår minst 25 år etter End of Trial. Biologisk materiale: hva som samles inn, analyser, lagringstid, studiespesifikk forskningsbiobank (navn, sted, ansvarlig) og overføring til utlandet med land, lagringstid og destruksjon eller retur; materiale som lagres i Norge mer enn to måneder skal i en studiespesifikk biobank. Opplys om relevante interessekonflikter, kompensasjon og refusjon uten utilbørlig påvirkning, og erstatningsordningen (LAF-sertifikat; eventuell tilleggsforsikring). Ikke skriv at samtykket etter CTR er behandlingsgrunnlag etter GDPR; personverninformasjon etter DECISIONS.md D3. EU CT-nummer, tittel, versjon og dato synlige og identiske med CTIS. Valgfrie valg med egne daterte signaturfelt. Bredt samtykke til fremtidig forskning i eget skriv. Søkbar PDF, ikke skannet."
+  },
+  {
+   "id": "NO-M1",
+   "ctis_section": "M",
+   "ctis_title": "M1_CV_<investigator>_<site>",
+   "name_en": "Principal investigator curriculum vitae",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "site",
+   "language": [
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+    "basis": "European Commission CV template (recommended by REK KULMU)",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "content": "One CV per principal investigator at each Norwegian site. Shows clinical competence, previous clinical-trial experience, patient-care experience and GCP training. For new CTR applications, current ICH GCP E6(R3) competence is documented, or the CV confirms that training will be completed before participant recruitment. Personal details come from the investigator.",
+   "sources": [
+    "NO-PII-CHECKLIST#4",
+    "NO-HUB"
+   ],
+   "kind": "third_party_template",
+   "reader": "regulatory",
+   "filled_by": "investigator",
+   "default_steps": [
+    "Prepare (trial fields only)",
+    "Check"
+   ],
+   "drafting_notes_en": "CTIS Part II section M (investigator suitability). Mandatory, one per principal investigator and Norwegian site. English accepted. EU CV template recommended. Fill only the EU trial number; every personal field stays empty for the investigator. Check on receipt: clinical competence, previous trial experience, patient-care experience, GCP training, and current ICH GCP E6(R3) competence or confirmation that training will be completed before recruitment. No signature required at submission."
+  },
+  {
+   "id": "NO-M2-DOI",
+   "ctis_section": "M",
+   "ctis_title": "M2_DoI_<investigator>_<site>",
+   "name_en": "Declaration of interests",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "site",
+   "language": [
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+    "basis": "European Commission Declaration of Interest template, or another separate document (REK KULMU)",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "content": "Financial interests, institutional affiliations and other circumstances that could affect impartiality, for each Norwegian principal investigator. Interests are declared by the investigator.",
+   "sources": [
+    "NO-PII-CHECKLIST#5",
+    "NO-HUB"
+   ],
+   "kind": "third_party_template",
+   "reader": "regulatory",
+   "filled_by": "investigator",
+   "default_steps": [
+    "Prepare (trial fields only)",
+    "Check"
+   ],
+   "drafting_notes_en": "CTIS Part II section M (investigator suitability). Mandatory, one per Norwegian principal investigator. English. EU template or another separate document. Fill only trial title and EU trial number; the investigator answers every interest question. REK KULMU lists no submission signature. Relevant interests must also be disclosed in the Norwegian participant information (NO-L1)."
+  },
+  {
+   "id": "NO-N1",
+   "ctis_section": "N",
+   "ctis_title": "N1_Site suitability form_<site>",
+   "name_en": "Site suitability form",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "site",
+   "language": [
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/N1_Site suitability.docx",
+    "basis": "European Commission Site Suitability Form (recommended by REK KULMU)",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/N1_Site suitability.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "signature_note": "A handwritten or electronic signature is not required at submission, but the issuer and their authority must be clear.",
+   "content": "Site-specific description in English. Issued by the head of department, head of clinic or an equivalent institutional representative who is not the principal investigator. The form or another submitted document presents the project organisation and planned enrolment by site; an enrolment plan may be attached if site-level participant numbers are not stated elsewhere.",
+   "national_fields": {
+    "n1_issued_by": "Norway: issued by the head of department, head of clinic or an equivalent institutional representative who is not the principal investigator; give name, position and organisation so that issuer and authority are clear. No signature needed at submission. Left for the site to complete; never invented.",
+    "v125": "Norway: include, or refer to the document that gives, the project organisation and the planned enrolment at this site (DECISIONS.md D13)."
+   },
+   "sources": [
+    "NO-PII-CHECKLIST#6",
+    "NO-HUB"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant; site and issuer fields left empty for the site",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_en": "CTIS Part II section N (site suitability). Mandatory, one per Norwegian site. Answer in English. EU form recommended. Issuer: head of department, head of clinic or equivalent institutional representative, not the PI; issuer and authority must be clear; no signature at submission. Site details (name, PI, participant numbers, issuer) stay empty for the site. State the project organisation and planned enrolment by site here or in an attached enrolment plan."
+  },
+  {
+   "id": "NO-O1",
+   "ctis_section": "O",
+   "ctis_title": "O1_Trial participant insurance certificate_NO",
+   "name_en": "Insurance certificate from the Norwegian Medicines Liability Association (Legemiddelansvarsforeningen, LAF)",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "trial",
+   "language": [
+    "en",
+    "no"
+   ],
+   "language_note": "Issued record; submitted as issued.",
+   "template": null,
+   "signature_at_submission": null,
+   "signature_note": "Issued third-party record; no added sponsor or investigator signature is needed.",
+   "content": "A valid certificate issued by the Norwegian Medicines Liability Association under proof of insurance or indemnification. State whether the sponsor has additional trial-specific insurance (DECISIONS.md D11). The participant documents describe the injury coverage accurately and consistently.",
+   "sources": [
+    "NO-PII-CHECKLIST#7",
+    "NO-ICF",
+    "NO-HUB"
+   ],
+   "kind": "third_party_document",
+   "reader": "regulatory",
+   "filled_by": "Norwegian Medicines Liability Association (LAF); sponsor for the additional-insurance statement",
+   "default_steps": [
+    "Check"
+   ],
+   "drafting_notes_en": "CTIS Part II section O (proof of insurance cover or indemnification). Mandatory. Certificate issued by the Norwegian Medicines Liability Association; only checked: valid, identifies the trial, covers the Norwegian part of the trial. Record whether the sponsor has additional trial-specific insurance and, if so, its documentation (DECISIONS.md D11). No added signature."
+  },
+  {
+   "id": "NO-P1",
+   "ctis_section": "P",
+   "ctis_title": "P1_Compensation participants and financial arrangements_NO",
+   "name_en": "Compensation and expense reimbursement for trial participants",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "trial",
+   "language": [
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+    "basis": "European Commission compensation template (recommended by REK KULMU)",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "content": "Any participant payment and reimbursement of expenses. Distinguish reimbursement and compensation for lost earnings from any incentive, especially for vulnerable participants. Minors, guardians, incapacitated adults and their representatives: nothing beyond expenses and loss of earnings directly related to participation. Healthy volunteers: amount, schedule and any pro rata payment after withdrawal; payment already earned is not lost by stopping. State clearly when no payment is offered.",
+   "national_fields": {
+    "f04": "Norway: if a monetary payment is offered, give amount, schedule and any pro rata payment after withdrawal, and show that it does not exert undue influence; keep it separate from reimbursement of expenses and lost earnings."
+   },
+   "sources": [
+    "NO-PII-CHECKLIST#8",
+    "NO-HV",
+    "NO-MINORS",
+    "NO-CAPACITY"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_en": "CTIS Part II section P (compensation for trial participants). Mandatory. Answer in English; no signature. EU template recommended. Distinguish reimbursement and lost-earnings compensation from incentives; no incentives for minors, guardians, incapacitated adults or representatives. Amounts and conditions must match every Norwegian participant document. Funding and site payments go in NO-P2, not here."
+  },
+  {
+   "id": "NO-P2",
+   "ctis_section": "P",
+   "ctis_title": "P2_Financial arrangements_NO",
+   "ctis_title_note": "The naming guide gives no P2 example; title proposed in DECISIONS.md D12.",
+   "name_en": "Financing and site arrangements (short description)",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "trial",
+   "language": [
+    "en"
+   ],
+   "template": null,
+   "signature_at_submission": false,
+   "content": "A short English description of the funding sources, what the funding covers and confirmation that the intervention period is financially secured, plus an overview of the agreements between the sponsor and the sites and any payment arrangements for sites or investigators. Do not upload the underlying agreements. Proof of fee payment belongs in Part I in Norway, including for substantial modifications.",
+   "sources": [
+    "NO-PII-CHECKLIST#9"
+   ],
+   "kind": "third_party_document",
+   "reader": "regulatory",
+   "filled_by": "sponsor (finance)",
+   "default_steps": [
+    "Check"
+   ],
+   "drafting_notes_en": "CTIS Part II section P (financial and other arrangements). Mandatory. English, no signature. Supplied by the sponsor (no template; DECISIONS.md D12): funding sources, what they cover, confirmation that the intervention period is financially secured, overview of sponsor-site agreements and site or investigator payments. Check that no underlying contract is uploaded and that proof of payment is not placed here (Part I in Norway)."
+  },
+  {
+   "id": "NO-R1",
+   "ctis_section": "R",
+   "ctis_title": "R1_Compliance collection and use personal data_NO",
+   "name_en": "GDPR compliance statement",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "trial",
+   "language": [
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/R1_Data protection.docx",
+    "basis": "European Commission statement of compliance with Regulation (EU) 2016/679 (GDPR)",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "content": "English statement from the sponsor or the sponsor's representative confirming that data collection and handling comply with the GDPR. State who issues the declaration and on whose behalf. The guides require no additional national data-protection sentence (DECISIONS.md D17).",
+   "national_fields": {
+    "r1_role_in_the_sponsor": "Norway: state who issues the declaration and on whose behalf (the sponsor, or the sponsor's representative acting for the named sponsor). Name and role come from the sponsor; never invented.",
+    "r1_the_sponsor_declares": "Norway: no national data-protection statement is required by the guides; give the template's not-applicable answer unless the user decides otherwise (DECISIONS.md D17)."
+   },
+   "sources": [
+    "NO-PII-CHECKLIST#10",
+    "NO-ICF",
+    "NO-QC#5"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_en": "CTIS Part II section R (data protection). Mandatory. English; REK KULMU lists no submission signature. EU statement template. Name the issuer and the party represented. Keep it consistent with the privacy information in the participant documents: CTR consent is not presented as the GDPR legal basis."
+  },
+  {
+   "id": "NO-S1",
+   "ctis_section": "S",
+   "ctis_title": "S1_Compliance collection use storage biological samples_NO",
+   "name_en": "Compliance with rules for biological samples",
+   "requirement": "conditional",
+   "trigger": "samples.collected or samples.archive_used or samples.import or samples.export",
+   "trigger_text": "Human biological material is collected, stored, analysed, imported or exported.",
+   "per": "trial",
+   "language": [
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/S1_Biological samples.docx",
+    "basis": "European Commission biological-samples template (recommended by REK KULMU)",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "content": "Material, analyses, relationship to protocol endpoints, storage locations and periods, biobank details, cross-border movement and destruction or return plan. Samples kept in Norway more than two months after collection are stored in a study-specific biobank linked to the trial. Samples for optional future research are declared as a separate purpose; storage abroad beyond the trial states destination, purpose and safeguards; material for a Norwegian general biobank uses that biobank's REK-approved consent.",
+   "national_fields": {
+    "f03": "Norway: state the study-specific biobank (name, institution, location, responsible person) when samples remain in Norway more than two months after collection; for export the country, purpose, storage period and destruction or return plan; for import the origin country and the plan for residual material; storage of endpoint samples ends when analyses and the active research period are complete; any retention for future use is a separate declared purpose with separate broad consent; storage abroad beyond the trial states destination, future-use purpose and safeguards (section 14 of the Norwegian Health Research Act and GDPR-equivalent privacy requirements, as REK KULMU links them); material placed in a Norwegian general biobank requires REK approval for all use and that biobank's REK-approved consent."
+   },
+   "sources": [
+    "NO-PII-CHECKLIST#11",
+    "NO-ICF",
+    "NO-SECONDARY",
+    "NO-QC#6"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_en": "CTIS Part II section S. Conditional: only when human biological material is collected, stored, analysed, imported or exported. English; no signature. EU template recommended. Section 5 (f03) carries the Norwegian points. Every sample statement must match the protocol, the sample plan and every Norwegian participant document."
+  }
+ ],
+ "document_map_to_checklist": {
+  "1 Recruitment and informed consent procedure": "NO-K1",
+  "2 Recruitment materials": "NO-K2",
+  "3 Patient Information Sheet and Informed Consent Form (and the conditional adapted documents)": "NO-L1 (population_sets)",
+  "4 Principal investigator curriculum vitae": "NO-M1",
+  "5 Declaration of interests": "NO-M2-DOI",
+  "6 Site suitability form": "NO-N1",
+  "7 Insurance certificate": "NO-O1",
+  "8 Compensation and expense reimbursement": "NO-P1",
+  "9 Financing and site arrangements": "NO-P2",
+  "10 GDPR compliance statement": "NO-R1",
+  "11 Compliance with rules for biological samples": "NO-S1"
+ },
+ "document_map_note": "One document id per numbered item of the Norway Part II checklist page (11 items). The page's 'Language, document control and CTIS checks' list is in checklists/part-ii-package.json.",
+ "national_fields": {
+  "NO-K1": [
+   "v100",
+   "v104",
+   "v105",
+   "v107",
+   "v108",
+   "v110",
+   "v111",
+   "v113",
+   "v114",
+   "v117",
+   "v121"
+  ],
+  "NO-N1": [
+   "n1_issued_by",
+   "v125"
+  ],
+  "NO-P1": [
+   "f04"
+  ],
+  "NO-R1": [
+   "r1_role_in_the_sponsor",
+   "r1_the_sponsor_declares"
+  ],
+  "NO-S1": [
+   "f03"
+  ]
+ },
+ "national_fields_note": "Index only; the text for each field is in that document's national_fields.",
+ "outside_part_ii": [
+  {
+   "id": "NO-SYNOPSIS-NO",
+   "what": "Norwegian protocol synopsis",
+   "requirement": "mandatory for the application",
+   "where": "Part I (D1_Protocol synopsis_NO_<EU CT number>_no per the naming guide pattern)",
+   "sources": [
+    "NO-HUB"
+   ]
+  },
+  {
+   "id": "NO-FEE",
+   "what": "Proof of payment of the fee",
+   "requirement": "mandatory",
+   "where": "Part I in Norway, including for substantial modifications; not in Part II",
+   "sources": [
+    "NO-PII-CHECKLIST#9"
+   ]
+  },
+  {
+   "id": "NO-NOT-SUBMITTED",
+   "what": "Patient cards, thank-you cards and staff interview guides that do not identify or recruit participants",
+   "where": "Not submitted to REK KULMU",
+   "sources": [
+    "NO-PII-CHECKLIST#2",
+    "NO-QC#7"
+   ]
+  },
+  {
+   "id": "NO-TRANSLATIONS",
+   "what": "Translations of the participant documents for people who do not understand Norwegian",
+   "where": "Not submitted or assessed by REK KULMU; sponsor responsibility (certified translator recommended); recorded as sources when used",
+   "sources": [
+    "NO-ICF"
+   ]
+  }
+ ],
+ "population_sets": [
+  {
+   "id": "adult_patients",
+   "trigger": "population.adult_patients",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_main_NO_no.json"
+    }
+   ],
+   "note": "Capable adult patients. The person who obtains consent is not the treating physician where the dependency could compromise voluntariness.",
+   "basis": "REK KULMU national CTR consent template (3 June 2026), as followed by the supplied main template",
+   "sources": [
+    "NO-ICF",
+    "NO-PII-CHECKLIST#3"
+   ]
+  },
+  {
+   "id": "healthy_volunteers",
+   "trigger": "population.healthy_volunteers",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_healthy volunteers_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_healthy_NO_no.json"
+    }
+   ],
+   "note": "Dedicated form or clearly separated population version where procedures, risks, payments or benefit statements differ from patients. No expected therapeutic benefit; screening is not care; payment for time or burden separate from expenses; pro rata payment; payment must not exert undue influence.",
+   "sources": [
+    "NO-HV"
+   ]
+  },
+  {
+   "id": "minors",
+   "trigger": "population.minors",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_parents_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_parents_NO_no.json"
+    },
+    {
+     "title": "L1_SIS and ICF_children under 12_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_age 6-11_NO_no.json",
+     "when": "population.minors_age_bands includes ages under 12"
+    },
+    {
+     "title": "L1_SIS and ICF_children 12-15_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_age 12-15_NO_no.json",
+     "when": "population.minors_age_bands includes ages 12-15"
+    },
+    {
+     "title": "L1_SIS and ICF_adolescents 16-17_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_age 16-17_NO_no.json",
+     "when": "population.minors_age_bands includes ages 16-17, or participants enrolled before 16 can turn 16 during the trial"
+    },
+    {
+     "title": "L1_SIS and ICF_adult re-consent_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_main_NO_no.json",
+     "when": "participants can turn 18 during the trial and the user chooses re-consent at 18 (DECISIONS.md D9)"
+    }
+   ],
+   "note": "REK KULMU bands: under 12, 12 to 15, 16 and 17. Guardians consent as applicable; the child is informed and involved according to age and maturity; an explicit refusal is respected. 16-17: adult-level information and own consent in addition to the guardians; own consent on turning 16 for those enrolled earlier. More than one child version when the under-12 range is broad (DECISIONS.md D10). No incentives beyond expenses and lost earnings.",
+   "sources": [
+    "NO-MINORS"
+   ]
+  },
+  {
+   "id": "adults_without_capacity",
+   "trigger": "population.adults_without_capacity",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_legal representative_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_legal rep_NO_no.json"
+    },
+    {
+     "title": "L1_SIS and ICF_adapted participant information_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_limited capacity_NO_no.json"
+    },
+    {
+     "title": "L1_SIS and ICF_regained capacity_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_main_NO_no.json",
+     "when": "participants can regain capacity during the trial"
+    }
+   ],
+   "note": "Article 31 conditions only; not because communication is difficult or a relative is present. Legally designated representative verified under the law applicable in Norway; participant and representative documents with distinct titles, versions and dates; participant's own consent as soon as capacity returns.",
+   "sources": [
+    "NO-CAPACITY"
+   ]
+  },
+  {
+   "id": "emergency",
+   "trigger": "consent.emergency_enrolment",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_emergency continued participation_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_emergency_NO_no.json"
+    },
+    {
+     "title": "L1_SIS and ICF_right to object emergency_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_withdrawal notice_NO_no.json",
+     "note": "One separately addressed letter per recipient (participant; representative) when both can object; title suffix _participant / _representative (DECISIONS.md D4)."
+    },
+    {
+     "title": "L1_SIS and ICF_legal representative emergency_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_legal rep_NO_no.json",
+     "when": "an incapacitated adult may stay unable to consent after the emergency"
+    },
+    {
+     "title": "L1_SIS and ICF_parents emergency_<population>_NO_no",
+     "template": "missing",
+     "when": "minors can be enrolled in the emergency",
+     "note": "No template; adapt the parents and age-band templates (DECISIONS.md D7)."
+    }
+   ],
+   "note": "All Article 35 conditions; pre-approved documents; consent without undue delay from participant or representative, whichever is available first; the participant's own consent as soon as capable. If consent is refused, the REK KULMU Article 35(3) right-to-object form is given; no promise of automatic destruction of all collected information.",
+   "sources": [
+    "NO-EMERGENCY"
+   ]
+  },
+  {
+   "id": "impartial_witness",
+   "trigger": "consent.impartial_witness_possible",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_impartial witness_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_witness_NO_no.json"
+    },
+    {
+     "title": "L1_SIS and ICF_legal representative impartial witness_<population>_NO_no",
+     "template": "missing",
+     "when": "a legally designated representative may be unable to read or write",
+     "note": "No template; add the witness blocks to the representative document (DECISIONS.md D8)."
+    }
+   ],
+   "note": "When the participant or representative cannot read or cannot write. Not for language barriers or lack of capacity. Witness independent of the trial, present for the whole discussion; name, role and relationship recorded; witness personal data protected in the public CTIS version.",
+   "sources": [
+    "NO-WITNESS"
+   ]
+  },
+  {
+   "id": "pregnancy_participant",
+   "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_pregnancy follow-up_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_pregnancy_NO_no.json"
+    }
+   ],
+   "note": "When the main consent does not clearly cover pregnancy reporting, follow-up contacts, record access, outcome and infant information. Infant information after birth: separate consent from the persons with parental responsibility; defined follow-up period, never open-ended.",
+   "sources": [
+    "NO-PREGNANCY"
+   ]
+  },
+  {
+   "id": "pregnancy_partner",
+   "trigger": "pregnancy.partner_follow_up",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_pregnant partner_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_pregnant partner_NO_no.json"
+    }
+   ],
+   "note": "Separate Norwegian document addressed to the partner before collecting identifiable health information; the enrolled participant cannot consent for the partner; refusal does not affect the participant.",
+   "sources": [
+    "NO-PREGNANCY"
+   ]
+  },
+  {
+   "id": "secondary_use",
+   "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_future research_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_secondary_NO_no.json"
+    },
+    {
+     "title": "L1_SIS and ICF_general biobank_<biobank>_NO_no",
+     "template": "missing",
+     "when": "samples.general_biobank_norway",
+     "note": "The consent already approved by REK for that general biobank; supplied by the biobank."
+    }
+   ],
+   "note": "Separate Norwegian broad-consent form; never a condition of trial participation; refusal or withdrawal does not affect the trial or ordinary care. Minors generally not included (case by case); from 16 own broad consent without guardian consent where no bodily intervention. Representative consent for the main trial does not authorise future research.",
+   "basis": "REK KULMU future-research (broad-consent) template, 24 March 2026, as followed by the supplied template",
+   "sources": [
+    "NO-SECONDARY"
+   ]
+  },
+  {
+   "id": "optional_substudy",
+   "trigger": "trial.optional_substudy",
+   "documents": [
+    {
+     "title": "L1_SIS and ICF_optional substudy_<substudy>_<population>_NO_no",
+     "template": "templates/participant/L1_SIS and ICF_main_NO_no.json"
+    }
+   ],
+   "note": "The main template requires optional substudies to be described and consented in a separate document; a single optional procedure or analysis inside the main trial uses the template's separate signature module instead.",
+   "sources": [
+    "NO-ICF",
+    "NO-QC#2"
+   ]
+  }
+ ],
+ "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents. A template value 'missing' means the guides require the document but no template was supplied (DECISIONS.md, Missing).",
+ "participant_templates": [
+  {
+   "id": "NO-PT-main",
+   "file": "templates/participant/L1_SIS and ICF_main_NO_no.json",
+   "name_en": "Subject Information and Consent Form - Adult Patients",
+   "name_no": "Forespørsel om deltakelse i en legemiddelstudie",
+   "role": "main information and consent (capable adult patients); also regained capacity, optional substudies, re-consent",
+   "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms.",
+   "authority_note": "Follows the REK KULMU national CTR consent template structure (dated 3 June 2026 per the guides). Privacy information: see DECISIONS.md D3."
+  },
+  {
+   "id": "NO-PT-healthy",
+   "file": "templates/participant/L1_SIS and ICF_healthy_NO_no.json",
+   "name_en": "Subject Information and Consent Form - Healthy Adults",
+   "name_no": "Forespørsel om deltakelse i en legemiddelstudie for friske voksne",
+   "role": "main information and consent (healthy volunteers)",
+   "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+   "authority_note": "Norway publishes no national healthy-volunteer template; this is a variation of the REK KULMU CTR template. The guides define healthy volunteers as participants with no condition that could provide a therapeutic benefit from the investigational treatment; that definition is used over the template description (templates/README.md conflict 4)."
+  },
+  {
+   "id": "NO-PT-parents",
+   "file": "templates/participant/L1_SIS and ICF_parents_NO_no.json",
+   "name_en": "Trial Information and Consent Form - Parents",
+   "name_no": "Forespørsel til den eller de med foreldreansvar om barnets deltakelse i en legemiddelstudie",
+   "role": "information and consent for the guardian or guardians (persons with parental responsibility) of a minor",
+   "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years)."
+  },
+  {
+   "id": "NO-PT-age-6-11",
+   "file": "templates/participant/L1_SIS and ICF_age 6-11_NO_no.json",
+   "name_en": "Subject Information and Assent Form - Children",
+   "name_no": "Informasjonsskriv til barn under 12 år",
+   "role": "age-appropriate information and optional assent signature for children under 12",
+   "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+   "authority_note": "File name and description say 6-11; REK KULMU's template and band are 'under 12' and the template text says 'barn under 12 år'. Authority wins: band under 12; file name kept as supplied (templates/README.md conflict 1; DECISIONS.md D10)."
+  },
+  {
+   "id": "NO-PT-age-12-15",
+   "file": "templates/participant/L1_SIS and ICF_age 12-15_NO_no.json",
+   "name_en": "Subject Information and Assent Form - Adolescents",
+   "name_no": "Informasjonsskriv til barn og ungdom 12–15 år",
+   "role": "age-appropriate information and assent for children and adolescents 12-15",
+   "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+   "authority_note": "Description says 12-17; REK KULMU's band is 12 to 15 (authority wins; file name and template text already say 12-15)."
+  },
+  {
+   "id": "NO-PT-age-16-17",
+   "file": "templates/participant/L1_SIS and ICF_age 16-17_NO_no.json",
+   "name_en": "Subject Information and Consent Form - Adolescents",
+   "name_no": "Forespørsel om deltakelse i en legemiddelstudie – ungdom 16–17 år",
+   "role": "full information and own consent of adolescents 16-17 (in addition to the guardians' consent); also own consent on turning 16",
+   "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+   "authority_note": "Description says 12-17; REK KULMU: 16 and 17 receive the adult level of information and consent themselves in addition to the guardians (authority wins; file name and text already say 16-17)."
+  },
+  {
+   "id": "NO-PT-legal-rep",
+   "file": "templates/participant/L1_SIS and ICF_legal rep_NO_no.json",
+   "name_en": "Trial Information and Consent Form - Legal Representative",
+   "name_no": "Informasjon og stedfortredende samtykke fra nærmeste pårørende",
+   "role": "information and consent for the legally designated representative of an adult without capacity",
+   "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative.",
+   "authority_note": "The template addresses the nearest relative (nærmeste pårørende). The guide: identify the legally designated representative under the law applicable in Norway and do not assume that the nearest relative automatically has authority (templates/README.md conflict 2; DECISIONS.md D2)."
+  },
+  {
+   "id": "NO-PT-limited-capacity",
+   "file": "templates/participant/L1_SIS and ICF_limited capacity_NO_no.json",
+   "name_en": "Subject Information and Assent Form - Limited Capacity",
+   "name_no": "Tilpasset informasjon og uttrykk for vilje – voksen uten beslutningskompetanse",
+   "role": "adapted information and record of the expressed will of an adult without capacity (not legal consent)",
+   "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+   "authority_note": "REK KULMU publishes no separate limited-capacity template; this adapts the CTR template as the guide asks."
+  },
+  {
+   "id": "NO-PT-emergency",
+   "file": "templates/participant/L1_SIS and ICF_emergency_NO_no.json",
+   "name_en": "Emergency Enrolment and Deferred Consent Form",
+   "name_no": "Informasjon og samtykke til videre deltakelse etter inklusjon i en klinisk nødsituasjon",
+   "role": "information and consent to continued participation after emergency enrolment (adult participant, or representative signature path)",
+   "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+   "authority_note": "Written for an adult participant with an optional nearest-relative signature path. Documents for minors after emergency enrolment are not covered (DECISIONS.md D7)."
+  },
+  {
+   "id": "NO-PT-withdrawal-notice",
+   "file": "templates/participant/L1_SIS and ICF_withdrawal notice_NO_no.json",
+   "name_en": "Emergency Enrolment Withdrawal Notice",
+   "name_no": "Informasjon om reservasjonsrett mot bruk av helseopplysninger etter inklusjon i en klinisk nødsituasjon",
+   "role": "Article 35(3) information on the right to object (reservasjonsrett) to use of health data already collected, for a person who has received full information after emergency enrolment and decided not to continue; reply slip",
+   "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+   "authority_note": "Corresponds to the REK KULMU Norwegian Article 35(3) reservation-right form (24 March 2026), which REK KULMU restricts to Article 35(3) situations. It is a notice of the right to object, not a withdrawal-of-consent form; one separately addressed letter per recipient (participant, representative). Checked against the guides in templates/README.md (DECISIONS.md D4-D6)."
+  },
+  {
+   "id": "NO-PT-witness",
+   "file": "templates/participant/L1_SIS and ICF_witness_NO_no.json",
+   "name_en": "Subject Information and Consent Form - Impartial Witness",
+   "name_no": "Forespørsel om deltakelse i en legemiddelstudie med upartisk vitne",
+   "role": "consent with an impartial witness for a capable adult who cannot read and/or write",
+   "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process.",
+   "authority_note": "Norway publishes no witness template. The guide also covers a legally designated representative who cannot read or write and asks to record the witness's role and relationship to the participant; the template covers capable adults and records the name only (templates/README.md conflict 5; DECISIONS.md D8)."
+  },
+  {
+   "id": "NO-PT-pregnancy",
+   "file": "templates/participant/L1_SIS and ICF_pregnancy_NO_no.json",
+   "name_en": "Pregnancy Follow-up and Consent - Participants",
+   "name_no": "Informasjon og samtykke til graviditetsoppfølging – studiedeltaker",
+   "role": "pregnancy follow-up of a pregnant trial participant, with a separate post-birth consent for infant information",
+   "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+   "authority_note": "Norway publishes no pregnancy template; the guide asks for a focused document built on the REK KULMU CTR form, which this is."
+  },
+  {
+   "id": "NO-PT-pregnant-partner",
+   "file": "templates/participant/L1_SIS and ICF_pregnant partner_NO_no.json",
+   "name_en": "Pregnancy Follow-up and Consent - Partners",
+   "name_no": "Informasjon og samtykke til graviditetsoppfølging – gravid partner",
+   "role": "information and consent for the pregnant partner of a participant, with a separate post-birth consent for infant information",
+   "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant."
+  },
+  {
+   "id": "NO-PT-secondary",
+   "file": "templates/participant/L1_SIS and ICF_secondary_NO_no.json",
+   "name_en": "Secondary and Future Use of Data or Biosamples",
+   "name_no": "Forespørsel om deltakelse i fremtidig forskning",
+   "role": "separate broad consent to optional future research with data and/or biological material",
+   "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+   "authority_note": "Follows the REK KULMU future-research (broad-consent) template (24 March 2026 per the guides). The other templates call it 'Template 14'. Not for a Norwegian general biobank, which has its own REK-approved consent."
+  }
+ ],
+ "population_rules": {
+  "authority": "REK KULMU (Norwegian Ethics Committees for Clinical Trials on Medicinal Products and Medical Devices): Information to study participants and consent form; Inclusion of minors in research; Broad-consent forms; Recruitment (current guidance reviewed 29 August 2026); Templates: Norwegian CTR consent template 3 June 2026, under-12 and 12-to-15 templates 24 March 2026, Article 35(3) reservation-right form 24 March 2026, future-research templates 24 March 2026; Regulation (EU) No 536/2014 Articles 28 to 35. As recorded in the TrialAgents Norway guides reviewed 23 September 2026.",
+  "consent_taker": "The information-giver is a qualified member of the research group. REK KULMU regards the treating physician (including a physician expected to treat the patient later) as having a dependent relationship with the patient, so another person obtains consent. The templates have separate confirmation blocks for 'information given' and 'consent given'.",
+  "minors": {
+   "age_bands": [
+    {
+     "band": "under 12",
+     "template": "NO-PT-age-6-11",
+     "reader": "child",
+     "legal_role": "age-appropriate information; the child may sign as an expression of willingness (assent, not legal consent)"
+    },
+    {
+     "band": "12-15",
+     "template": "NO-PT-age-12-15",
+     "reader": "adolescent",
+     "legal_role": "information and documented assent according to maturity; the guardians give the legal consent"
+    },
+    {
+     "band": "16-17",
+     "template": "NO-PT-age-16-17",
+     "reader": "adolescent",
+     "legal_role": "same information as an adult; own consent in addition to the guardian or guardians"
+    }
+   ],
+   "always": [
+    "NO-PT-parents"
+   ],
+   "turning_16": "A participant enrolled before 16 gives their own informed consent on turning 16, before continued participation (NO-PT-age-16-17).",
+   "reconsent_at_18": "Not stated in the Norway guides (DECISIONS.md D9). If chosen: NO-PT-main or NO-PT-healthy.",
+   "guardians": "Consent from the guardian or guardians as applicable; confirm the authorised guardian for the individual case. The parents template keeps two signature blocks when two persons hold parental responsibility and one when one person holds it alone.",
+   "dissent": "An explicit wish to refuse or withdraw from a child who can form an opinion is respected; a guardian signature does not override it.",
+   "broad_consent": "Minors should not generally be included in future research (REK KULMU, case by case). From 16, own broad consent without guardian consent where there is no bodily intervention.",
+   "band_conflicts": [
+    "Children: file name and description 'age 6-11' vs REK KULMU band 'under 12' (template text already says under 12). Authority wins; file name kept as supplied.",
+    "12-15 and 16-17 templates: description 'aged 12 - 17 years' vs REK KULMU bands 12-15 and 16-17. Authority wins; file names and text already follow it."
+   ]
+  },
+  "adults_without_capacity": {
+   "always": [
+    "NO-PT-legal-rep",
+    "NO-PT-limited-capacity"
+   ],
+   "regained_capacity": "NO-PT-main",
+   "note": "Only under Article 31. The legally designated representative is identified under the law applicable in Norway and verified per case; not assumed to be the nearest relative. Dissent is respected. Own consent as soon as capacity returns; fluctuating capacity assessed and documented."
+  },
+  "emergency": {
+   "always": [
+    "NO-PT-emergency",
+    "NO-PT-withdrawal-notice"
+   ],
+   "note": "NO-PT-withdrawal-notice is given only when consent to continue is not obtained (Article 35(3)); it is still submitted in Part II with the emergency set. Representative path in NO-PT-emergency, or NO-PT-legal-rep when the participant stays unable to consent. Minors: DECISIONS.md D7."
+  },
+  "impartial_witness": {
+   "always": [
+    "NO-PT-witness"
+   ],
+   "note": "Participant or representative cannot read or cannot write. Representative case: DECISIONS.md D8."
+  },
+  "pregnancy": {
+   "participant": [
+    "NO-PT-pregnancy"
+   ],
+   "partner": [
+    "NO-PT-pregnant-partner"
+   ],
+   "note": "Keep participant and partner forms separate. Infant information needs the separate post-birth consent section."
+  },
+  "secondary_use": {
+   "always": [
+    "NO-PT-secondary"
+   ],
+   "note": "Separate broad consent; general biobank in Norway uses that biobank's REK-approved consent (not a template here)."
+  },
+  "shareable_templates": [
+   "NO-PT-pregnant-partner",
+   "NO-PT-secondary"
+  ],
+  "separate_document_rules": [
+   "Optional future research (data or material beyond the trial objectives) always needs a separate Norwegian broad-consent form; it can never be a condition of participation (REK KULMU).",
+   "Optional substudies are described and consented in a separate document; a single optional procedure or analysis within the main trial uses a separate dated signature module (templates).",
+   "Participant and representative documents have distinct titles, versions and dates (limited-capacity guide).",
+   "A pregnant partner receives a separate document addressed to them; the participant cannot consent for the partner.",
+   "The Article 35(3) right-to-object letter is separate from the continued-participation consent; one separately addressed letter per recipient.",
+   "Guardian and minor versions are separate documents; the minor's versions carry no guardian signature fields."
+  ]
+ },
+ "drafting_rules": [
+  "Participant documents: the REK KULMU national CTR template structure, as followed by the supplied templates, is the baseline. Add all study-specific information; record every deviation from the template text as a finding for the reviewer.",
+  "Plain Norwegian (Bokmål, as the templates) for a lay reader, adapted to the person who consents; a representative or guardian document addresses that person and refers to the participant as the participant or the child.",
+  "State three realistic dates: the expected end of the clinical trial (protocol definition), the expected date or year when all research activity including publication ends, and a concrete year for data deletion not earlier than 25 years after the end of the trial; consistent with the protocol and other documents.",
+  "Biological samples: what is collected, analyses, storage period; any study-specific research biobank with location and responsible person or institution; export with destination country and storage period; destruction or return with date or year; storage in Norway beyond two months in a study-specific biobank.",
+  "Do not present CTR consent as the GDPR legal basis for processing; keep consent to participation separate from data-protection information. Include the privacy points the guide lists (controllers, recipients, access, transfers, participant rights, privacy contact) as decided in DECISIONS.md D3.",
+  "Explain what happens to data and samples after withdrawal without promising deletion where continued retention is required; after a refused emergency consent, give the Article 35(3) right-to-object letter and do not promise automatic destruction of all collected information.",
+  "Disclose relevant conflicts of interest or connections; describe compensation and reimbursement without undue influence; describe the injury coverage accurately (LAF certificate; any additional trial-specific insurance).",
+  "Contacts: whom to contact about the trial, injury, participant rights and privacy; the EU trial number and how results become available.",
+  "Optional choices (optional procedures or analyses, GP contact, infant follow-up) each get their own dated signature module, never a pre-ticked box; future research and optional substudies get separate documents.",
+  "Consent is obtained by a person without a dependent relationship (not the treating physician); the information-giver is a qualified member of the research group. Electronic consent only with secure identity verification (BankID or another two-factor method) described in K1.",
+  "Version and date in the document identical to the CTIS structured data; EU trial number, title, version and date visible; searchable, copyable PDF rather than a scan.",
+  "Participant templates (JSON): highlighted text, [square-bracket] notes, [Redaksjonsnote: ...] notes and alternatives are drafting instructions; follow and remove them. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE: ...] labels. Nothing of either may remain in a final document."
+ ],
+ "sources": {
+  "NO-HUB": "https://trialagents.com/ctis/norway/en",
+  "NO-PII-CHECKLIST": "https://trialagents.com/ctis/norway/en/part-ii-document-checklist",
+  "NO-ICF": "https://trialagents.com/ctis/norway/en/patient-information-consent-requirements",
+  "NO-QC": "https://trialagents.com/ctis/norway/en/patient-facing-document-qc-checklist",
+  "NO-HV": "https://trialagents.com/ctis/norway/en/healthy-volunteer-consent-requirements",
+  "NO-MINORS": "https://trialagents.com/ctis/norway/en/minor-consent-assent-requirements",
+  "NO-CAPACITY": "https://trialagents.com/ctis/norway/en/limited-capacity-legal-representative-consent-requirements",
+  "NO-EMERGENCY": "https://trialagents.com/ctis/norway/en/emergency-enrollment-consent-requirements",
+  "NO-WITNESS": "https://trialagents.com/ctis/norway/en/impartial-witness-consent-requirements",
+  "NO-PREGNANCY": "https://trialagents.com/ctis/norway/en/pregnancy-follow-up-requirements",
+  "NO-SECONDARY": "https://trialagents.com/ctis/norway/en/secondary-use-consent-requirements",
+  "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention"
+ },
+ "sources_note": "All Norway guides reviewed 23 September 2026; they record REK KULMU guidance (reviewed 29 August 2026), REK KULMU templates (March and June 2026), the Norwegian Medical Products Agency documentation requirements (13 May 2026), EudraLex Volume 10 and the CTR. Anchors #1-#11 refer to the numbered items of the Part II checklist page; NO-QC#n to the numbered sections of the QC checklist. The Norwegian-language guides (/ctis/norway/no) were not read; they are outside the /ctis/norway/en/ scope. Templates: the CTIS_NO folder (Part II DOCX forms, Variable Templates_NO_de.xlsx, NO_14 participant-facing templates_07082026.txt).",
+ "naming": {
+  "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+  "norway_note": "The Norway guides name CTIS categories only and give no national naming instruction. Use the CTCG pattern: _NO_no on Norwegian participant-facing documents (K2, L1), _NO on the English O1, P1, P2, R1 and S1, no country on K1, M1, M2 and N1 (site and investigator distinguish them). The language code follows the templates ('no'; DECISIONS.md D1). Population label as subtype for L1. P2 and the right-to-object letter have no CTCG example (DECISIONS.md D4, D12)."
+ },
+ "document_kinds": {
+  "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+  "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+  "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+  "third_party_document": "Document issued or supplied by someone else (insurer, sponsor finance, biobank). Recorded as a source when received; only checked.",
+  "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+ },
+ "default_steps_by_kind": {
+  "participant_document": [
+   "Draft",
+   "Source QC",
+   "Checklist",
+   "Style"
+  ],
+  "form": [
+   "Draft",
+   "Check"
+  ],
+  "third_party_template": [
+   "Prepare (trial fields only)",
+   "Check"
+  ],
+  "third_party_document": [
+   "Check"
+  ],
+  "ctis_data": [
+   "Check"
+  ]
+ },
+ "styling": {
+  "base": "styles/base.md",
+  "country": "countries/NO/styling.md"
+ },
+ "checklists": {
+  "participant_document": "countries/NO/checklists/participant-documents.json",
+  "check": "countries/NO/checklists/forms-and-supplied.json",
+  "package": "countries/NO/checklists/part-ii-package.json"
+ },
+ "playbook": [
+  "playbook/planning.md",
+  "playbook/naming.md",
+  "playbook/steps.md",
+  "conventions/template-instructions.md"
+ ],
+ "decisions": "countries/NO/DECISIONS.md",
+ "answer_languages": [
+  "en",
+  "no"
+ ],
+ "answer_languages_note": "en: answer language of the Part II forms (K1, N1, P1, R1, S1) and the trial fields of M1/M2, as REK KULMU requires English for Part II attachments. no: language of every participant-facing document (K2, L1). Per-document languages are in documents[].language and language_rules.by_language."
+}
