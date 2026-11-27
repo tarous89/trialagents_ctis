@@ -1,0 +1,91 @@
+{
+  "id": "AT-PACKAGE",
+  "name": "Austria: Part II package and CTIS upload check",
+  "applies_to": "the Austria package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/austria/en/part-ii-document-checklist (including 'Final Austria submission check')",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {"id": "P1.01", "check": "K1 recruitment and informed-consent procedure present, on the current EU v2.0 template, with a section for every population pathway in the plan."},
+        {"id": "P1.02", "check": "K2 recruitment material present for every recruitment tool used before the participation decision.", "applies_when": "recruitment.material_used"},
+        {"id": "P1.03", "check": "Standard adult German PIS and ICF present, and one L1 set per population in population_sets whose trigger is true; every special population has the separate participant document required for its pathway (legal representative, post-hoc, parents and age-appropriate documents from 8, genetics, future use, pregnancy)."},
+        {"id": "P1.04", "check": "L2 other subject information material present.", "applies_when": "recruitment.other_information_material"},
+        {"id": "P1.05", "check": "For every Austrian site: M1 CV (dated, not older than one year), M2 declaration of interest, GCP training evidence, and N1 on the national Austrian Trial Site Suitability Form signed by the correct local signatory."},
+        {"id": "P1.06", "check": "Complete insurance evidence: O1 insurance confirmation and O2 policy and terms and conditions, covering participant insurance, extended investigator liability and criminal legal-protection insurance; insured participant number reconciled with the higher Austrian total in the site forms or CTIS; cover over the full planned duration."},
+        {"id": "P1.07", "check": "P1 compensation and financial-arrangements statement present."},
+        {"id": "P1.08", "check": "R1 GDPR statement including the Austrian national data-protection confirmation."},
+        {"id": "P1.09", "check": "S1 biological-samples form, consistent with the protocol, participant information and any secondary-use document.", "applies_when": "samples.collected or samples.archive_used"},
+        {"id": "P1.10", "check": "Outside Part II: German protocol synopsis planned with Part I; national contact and billing address uploaded in the CTIS 'Proof of Payment of Fee' area."}
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {"id": "P2.01", "check": "All participant-facing K and L materials are German."},
+        {"id": "P2.02", "check": "German full and public titles entered in CTIS match the title on the ICF and the insurance materials."},
+        {"id": "P2.03", "check": "Certified translations present for any planned non-German-speaking participant population.", "applies_when": "population.non_german_speakers"},
+        {"id": "P2.04", "check": "Administrative documents in the language set in requirements.json (English for a multinational dossier)."},
+        {"id": "P2.05", "check": "No participant signatures in uploaded K and L documents; no signature required on M1/M2 at submission; N1 signed before upload with wet-ink, advanced or qualified electronic signature, never a pasted scan."}
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {"id": "P3.01", "check": "Compensation amounts, methods and conditions identical in P1 and every participant document."},
+        {"id": "P3.02", "check": "Insurer, policy number, contact and obligations identical in O1/O2 and every participant document; national insurance contact point present."},
+        {"id": "P3.03", "check": "Sample types, storage, transfers and retention identical in S1, the protocol and the participant documents."},
+        {"id": "P3.04", "check": "Data flows, recipients, third-country transfers and retention identical in R1, the participant documents and the protocol."},
+        {"id": "P3.05", "check": "Consent pathways in K1 match the L1 sets in the package."},
+        {"id": "P3.06", "check": "Planned participant numbers in the N1 forms, CTIS Member State Concerned data and the insurance cover agree."},
+        {"id": "P3.07", "check": "Documents adapted from the reference package contain all Austrian national additions (verbatim insurance and data-protection passages, contacts, population documents) and no leftovers from the reference country.", "applies_when": "Austria is not the reference package"}
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {"id": "P4.01", "check": "Correct B-S section prefix and CTIS placeholder for each document."},
+        {"id": "P4.02", "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document."},
+        {"id": "P4.03", "check": "Version and date entered in CTIS metadata, not in the title."},
+        {"id": "P4.04", "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."},
+        {"id": "P4.05", "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."},
+        {"id": "P4.06", "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."},
+        {"id": "P4.07", "check": "Site contact list, where used, marked 'not for publication' in CTIS.", "applies_when": "sites.contact_placeholders"},
+        {"id": "P4.08", "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.", "applies_when": "Austria receives Part I only under Article 11"}
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {"id": "P5.01", "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules; ACT EU guidance v2.2, 30 April 2026)."},
+        {"id": "P5.02", "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material; signatures never disclosed."},
+        {"id": "P5.03", "check": "Insurance documents for assessment are unredacted except information irrelevant to the insurance assessment, such as a clearly identified premium."},
+        {"id": "P5.04", "check": "No personal data or CCI in public structured fields."}
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {"id": "P6.01", "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."},
+        {"id": "P6.02", "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."}
+      ]
+    }
+  ]
+}
