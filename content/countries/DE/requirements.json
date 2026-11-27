@@ -865,5 +865,20 @@
       "Re-consent of already enrolled participants after a material change: a short version-dated document on the change (AKEK)."
     ]
   },
-  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents."
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents.",
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/DE/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/DE/checklists/participant-documents.json",
+    "check": "countries/DE/checklists/forms-and-supplied.json",
+    "package": "countries/DE/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ]
 }
