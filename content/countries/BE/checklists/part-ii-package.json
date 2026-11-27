@@ -1,0 +1,224 @@
+{
+  "id": "BE-PACKAGE",
+  "name": "Belgium: Part II package and CTIS upload check",
+  "applies_to": "each Belgium package (fr, nl, de) and the shared Belgian administrative documents, as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/belgium/en/part-ii-document-checklist (reviewed 23 September 2026)",
+    "https://trialagents.com/ctis/belgium/en/patient-facing-document-qc-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "BE-K1 recruitment and informed consent procedure on the EU template, with a section for every pathway in the plan, uploaded under K.59 and L.62."
+        },
+        {
+          "id": "P1.02",
+          "check": "BE-K2 recruitment material present for every advertisement or recruitment item used.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.03",
+          "check": "BE-L1 main ICF per adult population on the current CT-College template, in every required regional language, with the sponsor statement if required."
+        },
+        {
+          "id": "P1.04",
+          "check": "Every population that cannot use the standard adult-patient form has its own BE-L1-POPULATION set (population_sets)."
+        },
+        {
+          "id": "P1.05",
+          "check": "BE-L2 other patient-facing documents needing ethics review present; endpoint instruments placed in Part I.",
+          "applies_when": "recruitment.other_information_material"
+        },
+        {
+          "id": "P1.06",
+          "check": "For every principal investigator at each Belgian site: BE-M1 CV (with GCP evidence) and BE-M2 declaration of interest."
+        },
+        {
+          "id": "P1.07",
+          "check": "BE-N1 site suitability statement for every site, signed by the head of the institution or a delegate."
+        },
+        {
+          "id": "P1.08",
+          "check": "BE-O1 insurance certificate with the insured amount and reference to national legislation."
+        },
+        {
+          "id": "P1.09",
+          "check": "BE-P-FINANCING Belgian Statement on financing (national form) under P.69."
+        },
+        {
+          "id": "P1.10",
+          "check": "BE-P1 participant compensation on the EU template.",
+          "applies_when": "compensation.participants"
+        },
+        {
+          "id": "P1.11",
+          "check": "BE-P3 site financial arrangements and agreements (draft contract or financing statement) for each site.",
+          "applies_when": "contract.site_payments_or_agreements"
+        },
+        {
+          "id": "P1.12",
+          "check": "BE-R1 GDPR statement present because the ICF lacks the GDPR confirmation.",
+          "applies_when": "not privacy.gdpr_confirmation_in_icf"
+        },
+        {
+          "id": "P1.13",
+          "check": "BE-S1 biological-sample form with Belgian section 5.1 text and scope declaration.",
+          "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol"
+        },
+        {
+          "id": "P1.14",
+          "check": "No separate planned-site list and no proof of fee payment uploaded; patient cards and purely operational instructions not uploaded unless they could affect the decision to participate."
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every Belgian site has the correct regional participant-language set (nl Flanders, fr Wallonia, de German-speaking region, fr and nl in Brussels as the population requires), and every language version is submitted."
+        },
+        {
+          "id": "P2.02",
+          "check": "Every language version of a participant document matches the others document for document and version for version, with CT-College standard text in each official language."
+        },
+        {
+          "id": "P2.03",
+          "check": "German documents: the implementation of the mandatory template agreed with FAMHP or the CT-College and the translation approach documented.",
+          "applies_when": "participants recruited in the German-speaking region"
+        },
+        {
+          "id": "P2.04",
+          "check": "Administrative documents are in Dutch, French, German or English."
+        },
+        {
+          "id": "P2.05",
+          "check": "Blank ICFs are unsigned; site suitability statements are signed by the correct institutional signatory; no other document signed merely for submission."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Participant numbers, payments, procedures and sample plans match across CTIS, the protocol, site statements and ICFs."
+        },
+        {
+          "id": "P3.02",
+          "check": "Compensation amounts and conditions identical in P1, the financing statement, the site agreements and every participant document."
+        },
+        {
+          "id": "P3.03",
+          "check": "Insurance wording in every participant document matches the O1 certificate."
+        },
+        {
+          "id": "P3.04",
+          "check": "Sample types, storage, scope (same disease, treatment or drug, or biobank) and anonymisation choices identical in S1, the protocol and the participant documents."
+        },
+        {
+          "id": "P3.05",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.06",
+          "check": "Title, EU trial number, treatment arms, visits, sample volumes, risks and contraception match the protocol in every ICF."
+        },
+        {
+          "id": "P3.07",
+          "check": "Documents adapted from the reference package contain all Belgian national content and no leftovers from the reference country or language.",
+          "applies_when": "Belgium or this language is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B–S section prefix and CTIS placeholder for each document (K.59, K.60, L.61 to L.63, M.65, M.66, N, O, P.69 to P.71, R, S)."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document; _BE_fr, _BE_nl or _BE_de where the language distinguishes it."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version numbers and dates entered in CTIS structured data, not in the title or filename."
+        },
+        {
+          "id": "P4.04",
+          "check": "Annex I letter and document language in the filename where practical (FAMHP); filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+        },
+        {
+          "id": "P4.06",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished; tracked-change versions provided with RFI responses and substantial modifications."
+        },
+        {
+          "id": "P4.07",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Belgium receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables."
+        },
+        {
+          "id": "P5.02",
+          "check": "Signatures, personal addresses and other unnecessary personal data removed from documents intended for CTIS publication."
+        },
+        {
+          "id": "P5.03",
+          "check": "CCI redaction only after both tests: not in the public domain, and disclosure would undermine a legitimate economic interest."
+        },
+        {
+          "id": "P5.04",
+          "check": "Public and assessment versions differ only by the intended redactions; each in the correct CTIS slot."
+        },
+        {
+          "id": "P5.05",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

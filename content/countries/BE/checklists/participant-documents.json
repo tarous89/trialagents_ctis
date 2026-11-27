@@ -1,0 +1,386 @@
+{
+  "id": "BE-QC-PARTICIPANT",
+  "name": "Belgium: participant-facing document QC",
+  "applies_to": [
+    "BE-L1",
+    "BE-L1-POPULATION",
+    "BE-K2",
+    "BE-L2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/belgium/en/patient-facing-document-qc-checklist (reviewed 23 September 2026), with the main consent, healthy-volunteer, minors, limited-capacity, emergency, witness, pregnancy and secondary-use guides",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "scope_note": "Check the patient-facing documents as one connected set: main ICF, special-population forms, recruitment material, privacy text, sample choices and any electronic presentation must agree with the protocol and with each other. Applies to every language version (fr, nl, de) of the package.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "The same official trial title, short title, EU trial number, sponsor and investigational product are used throughout."
+        },
+        {
+          "id": "C1.02",
+          "check": "The objective and treatment groups are described in participant language without changing their scientific meaning."
+        },
+        {
+          "id": "C1.03",
+          "check": "Randomisation, placebo, blinding and the chance of receiving each treatment are explained.",
+          "applies_when": "randomised, placebo-controlled or blinded design"
+        },
+        {
+          "id": "C1.04",
+          "check": "Visit numbers, visit duration, treatment period, follow-up and total participation time match the schedule of activities."
+        },
+        {
+          "id": "C1.05",
+          "check": "All invasive procedures, imaging, questionnaires, home activities and optional substudies match the protocol."
+        },
+        {
+          "id": "C1.06",
+          "check": "Foreseeable risks and burdens are stated accurately, including unknown risks; no promised benefit; the experimental product is not described as safe or effective."
+        },
+        {
+          "id": "C1.07",
+          "check": "Pregnancy testing, contraception, breastfeeding and exposure precautions match the protocol and product information.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C1.08",
+          "check": "The information lets an adult decide without consulting the protocol and covers: why the trial is done and why the person is invited; expected benefit, absence of guaranteed benefit and alternatives; samples and data collected, recipients and retention; reimbursement, compensation, trial-related injury and Belgian no-fault insurance; voluntariness, withdrawal and its consequences; contacts for trial questions, urgent medical issues, participant rights and data protection."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency",
+      "instruction": "Compare the ICF line by line with the current protocol, not an earlier synopsis.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Doses, routes, washouts, rescue treatment and hospital stays match the current protocol."
+        },
+        {
+          "id": "C2.02",
+          "check": "Blood volume, tissue collection and long-term follow-up match the current protocol."
+        },
+        {
+          "id": "C2.03",
+          "check": "Participant-facing instruments linked to endpoints are in Part I (multinational trials: English version only; mono-national: a Member State language version when no English version exists), not in Part II.",
+          "applies_when": "endpoint_documents.participant_facing"
+        },
+        {
+          "id": "C2.04",
+          "check": "Other documents that may influence the decision to participate are in Part II for ethics review; items on the BAREC list (patient cards, simple device instructions, dosing diaries, welcome letters, travel policies, payment-portal instructions) are reclassified if they contain trial claims, risk information, payment incentives or content that could affect participation.",
+          "applies_when": "recruitment.other_information_material"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The main trial decision is explicit and separate from optional choices."
+        },
+        {
+          "id": "C3.02",
+          "check": "Declining optional samples, genetic analysis, future use or extra follow-up does not appear to withdraw the main-study consent or exclude the person, unless the protocol gives a justified reason."
+        },
+        {
+          "id": "C3.03",
+          "check": "The person who conducts the consent interview (a physician; a dentist for a dental trial) and when consent must occur (after authorisation, before any trial-specific procedure) are identified."
+        },
+        {
+          "id": "C3.04",
+          "check": "The consent interview is in person or by video conference, not by telephone alone, and the ICF states which format is used."
+        },
+        {
+          "id": "C3.05",
+          "check": "Participant and interviewer signature fields are blank at CTIS submission."
+        },
+        {
+          "id": "C3.06",
+          "check": "Signature and date fields are included for every person whose consent, assent, attestation or authorisation is required."
+        },
+        {
+          "id": "C3.07",
+          "check": "How a participant withdraws and what happens to data and samples already collected are stated."
+        },
+        {
+          "id": "C3.08",
+          "check": "Safety follow-up that continues under a legal obligation after withdrawal is explained."
+        },
+        {
+          "id": "C3.09",
+          "check": "Electronic consent: a paper route remains available, the interview is in person or by video, the investigator signs last, the participant receives a locked copy, and the electronic flow and visual materials are submitted as seen plus a printable PDF.",
+          "applies_when": "consent.electronic"
+        },
+        {
+          "id": "C3.10",
+          "check": "Study-specific prescreening data are collected only with a signed consent form.",
+          "applies_when": "recruitment.prescreening_data"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "instruction": "Map every population in the protocol to an information and signature pathway.",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol has a document set in every required regional language."
+        },
+        {
+          "id": "C4.02",
+          "check": "Adult healthy participants have the healthy-volunteer variation (CT-College template); vaccine trials use the vaccine template, noting its recommended status.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.03",
+          "check": "Children, adolescents and parents or guardians have the minor consent and assent variation.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.04",
+          "check": "Age-adapted information reflects the actual population (no invented national age bands), and the investigator can document the minor's understanding, assent or dissent.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.05",
+          "check": "The paediatric ICF has two parent signature lines, unless a justified exception applies under the current national advice, and a documented single-parent exception process.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.06",
+          "check": "Re-consent at 18 and renewed assent are built into the documents.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.07",
+          "check": "Adults who cannot consent personally have the legal representative variation (representative ICF identifying the Belgian hierarchy) and adapted participant information, with objection, reassessment and personal re-consent.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.08",
+          "check": "Emergency enrolment is used only if every Article 35 condition is built into the protocol and procedure; participant and representative subsequent-consent forms exist, and no form reads as if consent preceded enrolment.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.09",
+          "check": "The impartial-witness variation is used when a participant can consent but cannot write (not for a language barrier or lack of capacity), with participant, witness and interviewer signature and date fields and the alternative method described.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.10",
+          "check": "The pregnancy follow-up variation distinguishes the pregnant participant, the pregnant partner and the born child.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or pregnancy.infant_follow_up"
+        },
+        {
+          "id": "C4.11",
+          "check": "Pregnant partner: written consent (unless purely legal safety registration), privacy information and the insurance clause required by the 2026 Belgian Q&A.",
+          "applies_when": "pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.12",
+          "check": "Infant follow-up: specific authorisation with two parental signatures planned.",
+          "applies_when": "pregnancy.infant_follow_up"
+        },
+        {
+          "id": "C4.13",
+          "check": "Optional use outside the protocol has the secondary-use variation.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "The sponsor and relevant data controllers or roles are identified in terms the participant can understand."
+        },
+        {
+          "id": "C5.02",
+          "check": "The personal and health data collected and the reasons are described."
+        },
+        {
+          "id": "C5.03",
+          "check": "Recipients and access groups are identified, including monitors, auditors, authorities and ethics reviewers."
+        },
+        {
+          "id": "C5.04",
+          "check": "Coding or pseudonymisation is explained without describing coded data as anonymous."
+        },
+        {
+          "id": "C5.05",
+          "check": "Relevant retention periods and international transfer safeguards are stated."
+        },
+        {
+          "id": "C5.06",
+          "check": "Data-subject rights and lawful limitations caused by research integrity or legal obligations are explained."
+        },
+        {
+          "id": "C5.07",
+          "check": "Data protection and participant-rights contacts are provided."
+        },
+        {
+          "id": "C5.08",
+          "check": "The signature consenting to participation is not treated as the legal basis for every processing activity."
+        },
+        {
+          "id": "C5.09",
+          "check": "The GDPR compliance confirmation is inside the ICF; if absent, the separate Part II statement (BE-R1) is in the plan."
+        },
+        {
+          "id": "C5.10",
+          "check": "Pharmacovigilance follow-up of a pregnant participant does not claim consent as the GDPR basis.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological-sample and future-use checks",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Sample wording matches the protocol and the mandatory EU biological-sample form, including the section 5.1 scope (same disease, treatment or drug, or beyond).",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.02",
+          "check": "If any use falls outside the same disease, treatment or drug, the Belgian biobank is identified and the ICF does not state that clinical-trial status keeps the material outside biobank law.",
+          "applies_when": "samples.use_beyond_same_disease_treatment_drug"
+        },
+        {
+          "id": "C6.03",
+          "check": "Main-protocol use is separated from optional future use, with research fields, sample types, data categories, storage, recipients, locations and governance described for a meaningful choice.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.04",
+          "check": "Anonymisation by lifting traceability: explicit consent, the rights that will be lost explained, a system that prevents anonymisation when consent was refused, and no promise of later withdrawal or return of results after anonymisation.",
+          "applies_when": "samples.anonymisation_proposed"
+        },
+        {
+          "id": "C6.05",
+          "check": "Withdrawal of optional future-use consent is explained (who to contact, what stops, what remains usable).",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Belgium-specific template checks",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "The latest CT-College adult-patient or healthy-volunteer template was used where mandatory, current on the day of submission.",
+          "applies_when": "population.adult_patients or population.healthy_volunteers"
+        },
+        {
+          "id": "C7.02",
+          "check": "Fixed national text is preserved; only the study-specific sections are translated or adapted, from the CT-College source text of each official language."
+        },
+        {
+          "id": "C7.03",
+          "check": "The current sponsor statement is included if the template was not used or mandatory wording changed."
+        },
+        {
+          "id": "C7.04",
+          "check": "The vaccine healthy-volunteer template is used as a recommendation while the revised version is pending.",
+          "applies_when": "trial.vaccine"
+        },
+        {
+          "id": "C7.05",
+          "check": "The mandatory EU recruitment and informed-consent procedure template (BE-K1) describes every pathway used in the documents."
+        },
+        {
+          "id": "C7.06",
+          "check": "Compensation and insurance wording agrees with the Belgian financing statement, the P1 compensation form and the insurance certificate."
+        },
+        {
+          "id": "C7.07",
+          "check": "Healthy volunteers: reimbursement is distinguished from compensation for time, inconvenience or burden; amounts, schedule, deductions after withdrawal and non-cash benefits are stated; compensation is not linked to completion or tolerance of risk.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C7.08",
+          "check": "German version: the implementation of the mandatory template agreed with FAMHP or the CT-College and the translation approach documented.",
+          "applies_when": "participants recruited in the German-speaking region"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administrative checks",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Every item has a clear document title, population, language, version and date."
+        },
+        {
+          "id": "C8.02",
+          "check": "Version and date are entered in CTIS structured data and omitted from the filename."
+        },
+        {
+          "id": "C8.03",
+          "check": "The Annex I letter and language are in the filename where practical (for example L Main ICF_NL)."
+        },
+        {
+          "id": "C8.04",
+          "check": "All submission ICFs are blank and unsigned."
+        },
+        {
+          "id": "C8.05",
+          "check": "Tracked-change documents accompany responses to requests for information and substantial modifications."
+        },
+        {
+          "id": "C8.06",
+          "check": "Signatures, personal addresses and other unnecessary personal data are removed from documents intended for CTIS publication."
+        },
+        {
+          "id": "C8.07",
+          "check": "Recruitment material and other patient-facing items show the final wording and presentation, are not promotional and exert no undue influence; incentives are disclosed."
+        },
+        {
+          "id": "C8.08",
+          "check": "No drafting instruction, template note or placeholder remains (content/conventions/template-instructions.md)."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and language checks",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Each local version reads correctly on its own: medical terminology, consistent defined terms, short sentences, clear headings and usable contact details."
+        },
+        {
+          "id": "C9.02",
+          "check": "Risk frequencies and time periods keep the same meaning across the Dutch, French, German and English versions."
+        },
+        {
+          "id": "C9.03",
+          "check": "The language set matches each site's region and the intended participant population (Brussels: not assumed to need only one language) and the recruitment material."
+        },
+        {
+          "id": "C9.04",
+          "check": "Medical terms are defined and probabilities explained in a form the population can understand; risks are specific to the intervention."
+        }
+      ]
+    }
+  ]
+}
