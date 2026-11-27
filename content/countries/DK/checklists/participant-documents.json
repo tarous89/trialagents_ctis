@@ -1,0 +1,545 @@
+{
+ "id": "DK-QC-PARTICIPANT",
+ "name": "Denmark: participant-facing document QC",
+ "applies_to": [
+  "DK-L1-SIS",
+  "DK-L1-ICF",
+  "DK-K2"
+ ],
+ "reviewed": "2026-11-27",
+ "source": "https://trialagents.com/ctis/denmark/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); items also from the Denmark consent and population guides named in each item's source",
+ "result_values": [
+  "met",
+  "unmet",
+  "needs_decision",
+  "not_applicable"
+ ],
+ "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+ "sections": [
+  {
+   "id": "C1",
+   "title": "Trial content",
+   "items": [
+    {
+     "id": "C1.01",
+     "check": "Trial purpose and treatment groups are described accurately.",
+     "source": "DK-QC#1"
+    },
+    {
+     "id": "C1.02",
+     "check": "Investigational and comparator treatments are described in terms a participant can understand.",
+     "source": "DK-QC#1"
+    },
+    {
+     "id": "C1.03",
+     "check": "Visit schedule and participant duration are described accurately.",
+     "source": "DK-QC#1"
+    },
+    {
+     "id": "C1.04",
+     "check": "Randomisation and blinding are explained where relevant.",
+     "source": "DK-QC#1"
+    },
+    {
+     "id": "C1.05",
+     "check": "Invasive procedures, imaging, biopsies, blood draws and other burdens are described.",
+     "source": "DK-QC#1"
+    },
+    {
+     "id": "C1.06",
+     "check": "Optional procedures and substudies are presented as optional, not as part of the mandatory main trial.",
+     "source": "DK-QC#1"
+    },
+    {
+     "id": "C1.07",
+     "check": "Expected risks, common important adverse effects and material uncertainties are described.",
+     "source": "DK-QC#1"
+    },
+    {
+     "id": "C1.08",
+     "check": "Expected benefit is stated without implying benefit the protocol does not support; a clear statement when direct benefit is not expected.",
+     "source": "DK-QC#1, DK-ICF"
+    },
+    {
+     "id": "C1.09",
+     "check": "Alternatives to participation or standard treatment are described where relevant.",
+     "source": "DK-QC#1"
+    },
+    {
+     "id": "C1.10",
+     "check": "Pregnancy prevention and follow-up procedures are described where relevant.",
+     "applies_when": "protocol has reproductive requirements",
+     "source": "DK-QC#1"
+    },
+    {
+     "id": "C1.11",
+     "check": "Compensation, reimbursement and the insurance arrangement (Patienterstatningen or independent insurance) are described.",
+     "source": "DK-QC#1, DK-PII-CHECKLIST#8"
+    },
+    {
+     "id": "C1.12",
+     "check": "Contacts for the trial and participant rights, and how trial results will be available as required by the CTR, are given.",
+     "source": "DK-ICF"
+    },
+    {
+     "id": "C1.13",
+     "check": "The information explains what the protocol means for a Danish participant and does not merely copy protocol language.",
+     "source": "DK-ICF"
+    }
+   ]
+  },
+  {
+   "id": "C2",
+   "title": "Protocol-to-patient-document consistency",
+   "instruction": "Check every participant-facing statement against the approved protocol and Part I package; resolve any change of a scientific or operational fact before submission rather than relying on an RFI.",
+   "items": [
+    {
+     "id": "C2.01",
+     "check": "Visit number and timing match the protocol.",
+     "source": "DK-QC#2"
+    },
+    {
+     "id": "C2.02",
+     "check": "Treatment duration and follow-up period match the protocol.",
+     "source": "DK-QC#2"
+    },
+    {
+     "id": "C2.03",
+     "check": "Sample volumes and sample frequency match the protocol.",
+     "applies_when": "samples.collected",
+     "source": "DK-QC#2"
+    },
+    {
+     "id": "C2.04",
+     "check": "Optional versus mandatory biopsies or samples match the protocol.",
+     "applies_when": "samples.collected",
+     "source": "DK-QC#2"
+    },
+    {
+     "id": "C2.05",
+     "check": "Contraception periods match the protocol.",
+     "applies_when": "protocol has reproductive requirements",
+     "source": "DK-QC#2"
+    },
+    {
+     "id": "C2.06",
+     "check": "Record-based follow-up after treatment or withdrawal matches the protocol.",
+     "applies_when": "data.record_follow_up_after_withdrawal",
+     "source": "DK-QC#2, DK-QC#6"
+    },
+    {
+     "id": "C2.07",
+     "check": "Countries and laboratories receiving data or material match the protocol.",
+     "source": "DK-QC#2"
+    },
+    {
+     "id": "C2.08",
+     "check": "Retention periods match the protocol and are consistent across documents.",
+     "source": "DK-QC#2"
+    },
+    {
+     "id": "C2.09",
+     "check": "Endpoints or analyses that can generate potentially significant findings are identified consistently with the protocol.",
+     "applies_when": "samples.significant_health_findings_likely",
+     "source": "DK-QC#2"
+    },
+    {
+     "id": "C2.10",
+     "check": "No participant-facing statement changes a scientific or operational fact rather than explaining it.",
+     "source": "DK-QC#2"
+    },
+    {
+     "id": "C2.11",
+     "check": "After a protocol change, every affected participant document has been reopened, not only the main adult form.",
+     "applies_when": "modification or revised protocol",
+     "source": "playbook/planning.md section 7"
+    }
+   ]
+  },
+  {
+   "id": "C3",
+   "title": "Danish consent logic",
+   "items": [
+    {
+     "id": "C3.01",
+     "check": "The consent procedure states that oral information is provided by a duly qualified physician with Danish authorisation who has appropriate clinical-trial experience, GCP knowledge and knowledge of the specific trial.",
+     "source": "DK-QC#3, DK-ICF"
+    },
+    {
+     "id": "C3.02",
+     "check": "The procedure normally names the interviewing physician as the person receiving consent; where consent follows a reflection period, another qualified, delegated physician may receive it, answer questions and attest separately, with a separate attestation block in the ICF.",
+     "applies_when": "consent.delegated_consent_physician",
+     "source": "DK-QC#3"
+    },
+    {
+     "id": "C3.03",
+     "check": "Where a physician other than the principal investigator performs the process, a written delegation agreement with the principal investigator is confirmed.",
+     "applies_when": "consent.delegated_consent_physician",
+     "source": "DK-QC#3, DK-PII-CHECKLIST#1"
+    },
+    {
+     "id": "C3.04",
+     "check": "The blank ICF submitted in CTIS is not pre-signed.",
+     "source": "DK-QC#3"
+    },
+    {
+     "id": "C3.05",
+     "check": "At consent the participant or legally designated representative and the interviewing physician sign and date; the witness pathway applies where the person cannot write.",
+     "source": "DK-QC#3, DK-ICF"
+    },
+    {
+     "id": "C3.06",
+     "check": "The participant or representative receives a copy of the document by which consent was given; adequate time to decide; understanding verified during the interview.",
+     "source": "DK-ICF"
+    },
+    {
+     "id": "C3.07",
+     "check": "The person signing has legal authority for the decision (participant, holder or holders of parental authority, nearest relative plus trial guardian, or a guardian whose guardianship covers research consent).",
+     "source": "DK-MINORS, DK-CAPACITY"
+    },
+    {
+     "id": "C3.08",
+     "check": "The consent form matches the participant category; the competent-adult form is not used for a legal-representative pathway.",
+     "source": "DK-ICF"
+    },
+    {
+     "id": "C3.09",
+     "check": "The ethics consent to participation is not presented as GDPR consent; the main ICF does not regulate ordinary data-law matters; any distinct GDPR consent is clearly separated.",
+     "source": "DK-ICF, DK-QC#7"
+    },
+    {
+     "id": "C3.10",
+     "check": "Re-consent triggers are defined: reaching 18, turning 15, regained capacity, subsequent consent after emergency inclusion, new information.",
+     "source": "DK-MINORS, DK-CAPACITY, DK-EMERGENCY"
+    },
+    {
+     "id": "C3.11",
+     "check": "The consent form does not introduce information absent from the information sheet.",
+     "source": "DK-ICF"
+    }
+   ]
+  },
+  {
+   "id": "C4",
+   "title": "Population and document coverage",
+   "instruction": "Match every protocol population to a specific information and consent pathway (requirements.json population_sets). Do not create a separate form simply because a global master package contains one.",
+   "items": [
+    {
+     "id": "C4.01",
+     "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its full Danish document set (SIS and ICF, representative, age-adapted, re-consent and other templates that apply).",
+     "applies_when": "always",
+     "source": "DK-QC#4"
+    },
+    {
+     "id": "C4.02",
+     "check": "Healthy volunteers: absence of therapeutic benefit, burdens (fasting, confinement, repeated sampling and other restrictions), first-in-human or dose-escalation uncertainty and compensation are clear.",
+     "applies_when": "population.healthy_volunteers",
+     "source": "DK-QC#4, DK-HV"
+    },
+    {
+     "id": "C4.03",
+     "check": "Minors: age-adapted information, consent from the holder or holders of parental authority (both when joint), the dedicated pathway for 15-17-year-olds with own consent together with parental consent, dissent handling and re-consent at 18.",
+     "applies_when": "population.minors",
+     "source": "DK-QC#4, DK-MINORS"
+    },
+    {
+     "id": "C4.04",
+     "check": "Minors 12-14 and 15-17 are separate documents (route A and route B of the adolescent template); no combined 12-17 document.",
+     "applies_when": "population.minors_age_bands includes ages 12-17",
+     "source": "DK-MINORS"
+    },
+    {
+     "id": "C4.05",
+     "check": "Adults without capacity: consent from the nearest relative plus the trial guardian (both written), or from a legal guardian whose mandate includes research; the two roles distinct; trial guardian independence; adapted participant information; objection respected; own consent when capacity returns.",
+     "applies_when": "population.adults_without_capacity",
+     "source": "DK-QC#4, DK-CAPACITY"
+    },
+    {
+     "id": "C4.06",
+     "check": "Emergency inclusion: Article 35 conditions and the subsequent consent process, representatives per participant category, what happens if consent is refused or cannot be obtained, and the right to object to use of already collected data.",
+     "applies_when": "consent.emergency_enrolment",
+     "source": "DK-QC#4, DK-EMERGENCY"
+    },
+    {
+     "id": "C4.07",
+     "check": "Unable to write: alternative documentation method and impartial-witness procedure; not confused with incapacity or emergency inclusion.",
+     "applies_when": "consent.impartial_witness_possible",
+     "source": "DK-QC#4, DK-WITNESS"
+    },
+    {
+     "id": "C4.08",
+     "check": "Pregnancy follow-up: a pregnant participant is distinguished from a pregnant partner whose data are collected; data-only partner material is not uploaded as if VMK-approved, or carries the three VMK statements.",
+     "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up",
+     "source": "DK-QC#4, DK-PREGNANCY"
+    },
+    {
+     "id": "C4.09",
+     "check": "Secondary or future use: optional substudy consent, Article 28(2) secondary data use and unspecified future sample use are separated correctly.",
+     "applies_when": "samples.optional_substudy or data.future_use_outside_protocol or samples.surplus_stored_for_future_research or samples.extra_collected_for_future_research",
+     "source": "DK-QC#4, DK-SECONDARY"
+    }
+   ]
+  },
+  {
+   "id": "C5",
+   "title": "Data privacy",
+   "items": [
+    {
+     "id": "C5.01",
+     "check": "The sponsor declaration (R1) states compliance with the GDPR and the Danish Data Protection Act.",
+     "source": "DK-QC#7"
+    },
+    {
+     "id": "C5.02",
+     "check": "Privacy text is understandable, presents data-subject rights, and does not present trial consent under the CTR as the legal basis for all personal-data processing.",
+     "source": "DK-QC#7, DK-ICF"
+    },
+    {
+     "id": "C5.03",
+     "check": "Processing or transfers outside Denmark: the purpose is explained.",
+     "applies_when": "data.transfer_outside_denmark",
+     "source": "DK-QC#7"
+    },
+    {
+     "id": "C5.04",
+     "check": "Transfers outside the EU/EEA: the countries are identified and the Chapter V GDPR safeguards explained at the level required by the current Danish guidance; no yes/no choice only for the transfer.",
+     "applies_when": "data.transfer_outside_eea",
+     "source": "DK-QC#7, template content_instructions"
+    },
+    {
+     "id": "C5.05",
+     "check": "A separate consent for secondary use of data outside the protocol states that it can be withdrawn and is kept separate from the main trial ICF.",
+     "applies_when": "data.future_use_outside_protocol",
+     "source": "DK-QC#7, DK-SECONDARY"
+    },
+    {
+     "id": "C5.06",
+     "check": "Controller and data-protection contact identified; complaint route to Datatilsynet.",
+     "source": "template content (main section 4 and 10)"
+    },
+    {
+     "id": "C5.07",
+     "check": "No promise of anonymity where coded data are used, and no promise of deletion that conflicts with safety, reliability or legal retention duties.",
+     "source": "DK-SECONDARY, template content"
+    }
+   ]
+  },
+  {
+   "id": "C6",
+   "title": "Biological samples and secondary use",
+   "applies_when": "samples.collected or samples.archive_used",
+   "items": [
+    {
+     "id": "C6.01",
+     "check": "For each sample type: type, number or volume, purpose, analysis site, storage site, storage period and destruction or other disposition.",
+     "source": "DK-QC#8, DK-ICF"
+    },
+    {
+     "id": "C6.02",
+     "check": "If a sample leaves Denmark, the participant information identifies where it goes; for a third country, the data-protection implications are addressed.",
+     "source": "DK-QC#8"
+    },
+    {
+     "id": "C6.03",
+     "check": "Significant health findings reasonably likely: the PIS explains the possible findings and feedback process, and a participant who chooses not to receive qualifying findings uses the separate right-not-to-know form.",
+     "applies_when": "samples.significant_health_findings_likely",
+     "source": "DK-QC#8"
+    },
+    {
+     "id": "C6.04",
+     "check": "Optional substudy integrated in the trial: mentioned in the main PIS and has its own PIS and ICF in Part II.",
+     "applies_when": "samples.optional_substudy",
+     "source": "DK-QC#8, DK-SECONDARY"
+    },
+    {
+     "id": "C6.05",
+     "check": "Surplus trial material for unspecified future research: the main PIS explains storage, whether it is optional, duration and the Danish rules (ethics review and new consent as default in Denmark; foreign rules if abroad); only the VMK opt-out checkbox appears on the main ICF.",
+     "applies_when": "samples.surplus_stored_for_future_research",
+     "source": "DK-QC#8, DK-SECONDARY"
+    },
+    {
+     "id": "C6.06",
+     "check": "Extra material collected specifically for unspecified future research: its information and consent are omitted from Part II, or if submitted state that they are not approved by VMK.",
+     "applies_when": "samples.extra_collected_for_future_research",
+     "source": "DK-QC#8, DK-SECONDARY"
+    },
+    {
+     "id": "C6.07",
+     "check": "Archived material used as part of the trial: the participant is informed that it is used.",
+     "applies_when": "samples.archive_used",
+     "source": "DK-ICF"
+    },
+    {
+     "id": "C6.08",
+     "check": "Withdrawal effects on material are stated without promising destruction that conflicts with material already used, legal retention or a later lawful project.",
+     "source": "DK-SECONDARY"
+    },
+    {
+     "id": "C6.09",
+     "check": "Consistent with the S1 biological-samples form and R1.",
+     "source": "DK-PII-CHECKLIST#12"
+    }
+   ]
+  },
+  {
+   "id": "C7",
+   "title": "Denmark-specific regulatory checks",
+   "items": [
+    {
+     "id": "C7.01",
+     "check": "The normal participant package is in Danish and written for a lay reader.",
+     "source": "DK-QC#5"
+    },
+    {
+     "id": "C7.02",
+     "check": "Participants or representatives who do not understand Danish: both the PIS and the ICF have a validated written translation, and the consent procedure explains how the oral conversation is supported in that language.",
+     "applies_when": "population.non_danish_speakers",
+     "source": "DK-QC#5, DK-ICF"
+    },
+    {
+     "id": "C7.03",
+     "check": "Patient-record screening before consent: the recruitment procedure identifies the concrete information, purpose, approximate number of records, time period, Danish legal basis, and the contact-permission rule (treating healthcare professional, fallback site management).",
+     "applies_when": "recruitment.patient_records_screening",
+     "source": "DK-QC#6"
+    },
+    {
+     "id": "C7.04",
+     "check": "Post-consent record access: the PIS explains access by sponsor, sponsor representatives and investigator for trial conduct, quality control and monitoring, and Danish Medicines Agency inspection access (and foreign medicines authorities where relevant).",
+     "source": "DK-QC#6, DK-ICF"
+    },
+    {
+     "id": "C7.05",
+     "check": "Record-based follow-up after withdrawal: the PIS and protocol explain scope, purpose and conditions consistently.",
+     "applies_when": "data.record_follow_up_after_withdrawal",
+     "source": "DK-QC#6, DK-ICF"
+    },
+    {
+     "id": "C7.06",
+     "check": "Insurance wording describes Patienterstatningen or the independent arrangement correctly and in participant-friendly terms, matching O1.",
+     "source": "DK-PII-CHECKLIST#8, DK-HV"
+    },
+    {
+     "id": "C7.07",
+     "check": "Recruitment material is the version actually used, submitted as presented in CTIS; audio or video as a scene-by-scene storyboard.",
+     "applies_when": "recruitment.material_used",
+     "source": "DK-PII-CHECKLIST#2"
+    },
+    {
+     "id": "C7.08",
+     "check": "The current Danish information 'Dine rettigheder som forsøgsperson i forsøg med medicin' is enclosed or referred to as the templates instruct.",
+     "source": "template content (main section 10)"
+    }
+   ]
+  },
+  {
+   "id": "C8",
+   "title": "Signature, version and administration",
+   "items": [
+    {
+     "id": "C8.01",
+     "check": "Document title matches the actual population and use case.",
+     "source": "DK-QC#9"
+    },
+    {
+     "id": "C8.02",
+     "check": "Version number and date are consistent across the PIS and the ICF.",
+     "source": "DK-QC#9"
+    },
+    {
+     "id": "C8.03",
+     "check": "No participant or representative signature appears on blank submission documents.",
+     "source": "DK-QC#9"
+    },
+    {
+     "id": "C8.04",
+     "check": "The correct VMK CTR standard form is used where the sponsor has chosen to follow the national standard, with its standard text fields unchanged.",
+     "source": "DK-QC#9, DK-PII-CHECKLIST#4"
+    },
+    {
+     "id": "C8.05",
+     "check": "No legacy non-CTR consent form has been substituted for the CTR form.",
+     "source": "DK-QC#9"
+    },
+    {
+     "id": "C8.06",
+     "check": "Optional checkboxes do not create consent logic that VMK does not accept (only the surplus-material opt-out on the main ICF; separate forms for substudies and secondary data use).",
+     "source": "DK-QC#9, DK-SECONDARY"
+    },
+    {
+     "id": "C8.07",
+     "check": "All internal references to protocol sections, appendices and contact details are correct.",
+     "source": "DK-QC#9"
+    },
+    {
+     "id": "C8.08",
+     "check": "The CTIS filename is clear and does not rely on date or version information that conflicts with the CTIS structured fields; correct CTIS section and naming convention.",
+     "source": "DK-QC#9, NAMING"
+    },
+    {
+     "id": "C8.09",
+     "check": "Separate signature blocks for each signer; two parental-authority blocks where authority is joint; nearest relative and trial guardian blocks distinct; witness fields only where the witness route can apply.",
+     "source": "DK-MINORS, DK-CAPACITY, DK-WITNESS"
+    },
+    {
+     "id": "C8.10",
+     "check": "Running footer with document name, population, version, date, protocol number and EU trial number.",
+     "source": "template footer and styling_instructions"
+    },
+    {
+     "id": "C8.11",
+     "check": "No drafting instruction remains in the final version (<i>[Redaktionsnote: …]</i>, other [bracket] alternatives and gaps such as [indsæt], legacy FORMTEXT prompts, non-selected routes, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank.",
+     "source": "conventions/template-instructions.md, template styling_instructions"
+    }
+   ]
+  },
+  {
+   "id": "C9",
+   "title": "Readability, language and design",
+   "items": [
+    {
+     "id": "C9.01",
+     "check": "Headings, sentence length, terminology and risk descriptions are understandable without medical training.",
+     "source": "DK-QC#5"
+    },
+    {
+     "id": "C9.02",
+     "check": "Unavoidable clinical terms are defined when first used.",
+     "source": "DK-QC#5"
+    },
+    {
+     "id": "C9.03",
+     "check": "Optional choices look optional and stand alone.",
+     "source": "DK-SECONDARY"
+    },
+    {
+     "id": "C9.04",
+     "check": "Child, adolescent and limited-capacity documents are age- or capacity-adapted and clearly shorter than the parents' or representative's information.",
+     "applies_when": "population.minors or population.adults_without_capacity",
+     "source": "template styling_instructions"
+    },
+    {
+     "id": "C9.05",
+     "check": "Translations reviewed by a qualified person and matching the approved source.",
+     "applies_when": "document is adapted from a reference document in another language",
+     "source": "DK-ICF"
+    }
+   ]
+  },
+  {
+   "id": "C10",
+   "title": "Final Denmark release check",
+   "items": [
+    {
+     "id": "C10.01",
+     "check": "A Danish reader can understand what will happen; the consent pathway matches Danish law; every protocol burden is represented; translations are controlled; record and privacy wording is complete; every optional or population-specific pathway has the correct document set.",
+     "source": "DK-QC#10"
+    },
+    {
+     "id": "C10.02",
+     "check": "The participant document list matches the protocol's populations and the Denmark Part II package checklist.",
+     "source": "DK-QC#10, DK-PII-CHECKLIST#presubmission"
+    }
+   ]
+  }
+ ]
+}
