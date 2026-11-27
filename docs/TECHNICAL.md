@@ -16,7 +16,7 @@ This is the reference for building TrialAgents CTIS: the hosted app, its databas
 | **Deliverable** | One document at one step. Has a code such as `D04-QC`. Has versions. |
 | **Version** | One saved result of a deliverable. Immutable. Carries who, when, through which assistant, and the sources and templates used. |
 | **Final document** | The approved version of the document's last applicable step. |
-| **Source** | A study document used as evidence (protocol, IB, manuals). |
+| **Source** | A study document used as evidence (protocol, IB, manuals). Can be a recorded file or a document of a project (see section 4). |
 | **Template** | A writing template, checklist, Word layout or SOP. TrialAgents' catalog templates and country rules are not listed to users; only user-recorded templates are. |
 | **Share** | Access given to one email for one deliverable, document or project, with a role. |
 
@@ -100,9 +100,20 @@ A record has: id, category (`source` | `template`), name, type, version, documen
 - **Effective list for a document** = project-wide ∪ adds − removes. Project changes flow into documents that did not override them.
 - A record cannot be detached from a project on the Sources or Templates pages. Those pages list where it is used and link to the project.
 
+### Project documents as sources
+
+A document of a plan, or of an earlier project the caller can read, can be a source of another document. Example: the assistant writes the protocol in Part I; the protocol is a source of the reference package; the reference package is the reference of the other packages.
+
+- Stored as `document_sources(project_id, document_id, source_project_id, source_document_id)`, edited with the per-document sources (`save_resources` → `set_document`) or proposed with the plan (`save_project`).
+- **Version used:** the latest approved final version if there is one; otherwise the latest version of the document's last completed step, marked *not approved*. The step context says which, so the assistant can tell the user it is working from an unapproved draft.
+- **No gate.** Unlike `based_on`, a project-document source never makes a step wait. The planning guide recommends ordering the plan so sources are approved first.
+- **Changes:** when the source document gets a newer approved version, or a first approval after an unapproved version was used, every document whose current version used the older one gets a *source changed* finding.
+- **Default:** documents produced in Part I of the same plan are suggested as sources for Part II documents; the user confirms them with the plan.
+- `based_on` is the stronger link: it means "adapt this document" and gates Draft; a project-document source only means "use as evidence".
+
 ### Snapshot per version
 
-When a version is saved, store the effective list as an immutable snapshot on the version: `{resource_id, name, version, type}`. The deliverable view shows this snapshot as "Used in this version". Removing a source from a project later never changes existing snapshots.
+When a version is saved, store the effective list as an immutable snapshot on the version: `{resource_id, name, version, type}`, and for project documents `{project_id, document_id, version, approved}`. The deliverable view shows this snapshot as "Used in this version". Removing a source from a project later never changes existing snapshots.
 
 ## 5. Sharing and permissions
 
@@ -162,7 +173,7 @@ share_grants(
 | `list_projects` | Projects the caller owns or has been shared, with summary counts. |
 | `read_project` | Details, study facts, the plan with statuses and planning choices, the **next deliverable or what blocks it**, open action items, recent events, version lists and approval links. Optional `include` sections keep it small. Displays the widget. |
 | `get_planning_guide` | For an application type (initial, additional country, modification, RFI response), countries and study facts: required Part I and Part II documents per country and language, conditional triggers, naming pattern, the recommended strategy, the **questions to settle with the user** (Part I scope, starting material, format, reference package) and, for modifications, the modification rules. Catalog content stays server-side. |
-| `get_step_context` | One deliverable by code, or `next`; mode `run` or `revise`. Step instructions for this document's case (from scratch, from a starting document, adapted from a reference document), the manifest of effective sources and templates with handles, the reference document's approved version, the current version, threads and findings, checklist items, what changed since the last version, the output schema and the expected version. |
+| `get_step_context` | One deliverable by code, or `next`; mode `run` or `revise`. Step instructions for this document's case (from scratch, from a starting document, adapted from a reference document), the manifest of effective sources and templates with handles (including project documents, with the version used and whether it is approved), the reference document's approved version, the current version, threads and findings, checklist items, what changed since the last version, the output schema and the expected version. |
 | `read_resource` | Opens a handle by section or page: catalog templates and checklists, stored source files, an approved reference document, a previous project's approved document. |
 | `find_resources` | Searches recorded sources and templates by name, type and version, so the assistant reuses a record instead of creating a duplicate. |
 | `get_download` | Short-lived link for one deliverable file, or the ZIP of the latest approved version of each final document plus a manifest. |
@@ -172,7 +183,7 @@ share_grants(
 | Tool | Actions |
 |---|---|
 | `save_project` | `create`, `update`, `duplicate`, `create_successor` (modification or RFI response, linked to the previous project). Covers details, study facts, planning choices (Part I scope, reference package, format choice) and the plan, given whole or as patch ops: documents and packages, `based_on` links, starting documents, steps, paused steps, not-applicable cells, order, codes and filenames. Validated; returns what changed. Every change is logged. Owner only. |
-| `save_resources` | `record`, `update` (metadata), `upload` (returns a short-lived upload URL), `set_project` (project-wide list), `set_document` (per-document overrides). |
+| `save_resources` | `record`, `update` (metadata), `upload` (returns a short-lived upload URL), `set_project` (project-wide list), `set_document` (per-document overrides, including documents of this or an earlier project used as sources). |
 | `save_version` | Structured content, findings (including those fixed in the same step), claim-to-source links, checklist results and the reference version used, for one deliverable. Validated server-side; stores the resource snapshot; renders the Word file where the step needs it and returns render issues. |
 | `update_review` | `comment`, `reply`, `resolve`, `reopen`, `continue_past_issues`, `undo_continue`, `request_approval` (shows the owner's Approve confirmation; does not approve). Bound to a version number where relevant. |
 
@@ -222,7 +233,7 @@ It is built from `prototype/source`:
 | `vendor/pipeline/` | Pipeline's `shell.html` (its CSS is reused, scoped under `.pl` and `.plh`), assistant marks and logo. |
 | `build.py` | Scopes the CSS, assembles the page and writes `../TrialAgents-CTIS.html`. |
 
-The prototype shows the planning choices in Project details (Part I, reference package as country and language, format), marks the reference package in the plan, and shows an adapted document's Draft as "Waiting for reference" until its reference document is approved (example: EX-101 D08 adapted from D06). It does not raise "Reference changed" findings or run the assistant-side approval request.
+The prototype shows the planning choices in Project details (Part I, reference package as country and language, format), marks the reference package in the plan, and shows an adapted document's Draft as "Waiting for reference" until its reference document is approved (example: EX-101 D08 adapted from D06). A document's Sources and templates drawer lists "Documents from this project" (example: the protocol D01 is a source of every Part II document), and the version snapshot records which version of it was used and whether it was approved. It does not raise "Reference changed" findings or run the assistant-side approval request.
 
 Rebuild with `python3 prototype/source/build.py`. The prototype is a design reference, not production code: the production app should be written fresh against the data model above, reusing Pipeline's components.
 

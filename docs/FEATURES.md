@@ -105,6 +105,7 @@ The link at the top opens two lists:
 
 - **Used in this version:** a fixed record of exactly what was used when this version was made. It never changes.
 - **For the next run:** starts from the project's sources and templates. You can add or remove items for this document only. The project is not changed.
+- **Documents from this project:** other documents of the plan can be sources too. For example, a protocol the assistant wrote in Part I can be a source of the consent forms. Their approved version is used; until it is approved, the latest version is used and marked as not approved. When it is approved or changes later, the documents that used it show "Source changed".
 
 ## Sources and Templates pages
 

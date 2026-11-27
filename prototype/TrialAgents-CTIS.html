@@ -1824,7 +1824,7 @@ function cellDlg(id,sid){
  if(showContent)snapshotUse(id,k);
  const res=docRes(id),versions=allVersions(w);
  const meta=[k.name,langs[m.lang],variantLabel(m.variant),showContent?'v'+a.rev:''].filter(Boolean);
- const refs=sh&&sh.scope!=='project'?'':'<span class="sepdot">·</span><button type="button" class="reflink" data-doc-sources="'+id+'" title="Sources and templates for this document">'+res.sources.length+' source'+(res.sources.length===1?'':'s')+' · '+res.templates.length+' template'+(res.templates.length===1?'':'s')+'</button>';
+ const refs=sh&&sh.scope!=='project'?'':'<span class="sepdot">·</span><button type="button" class="reflink" data-doc-sources="'+id+'" title="Sources and templates for this document">'+(res.sources.length+projDocSources(id).length)+' source'+(res.sources.length+projDocSources(id).length===1?'':'s')+' · '+res.templates.length+' template'+(res.templates.length===1?'':'s')+'</button>';
  const toolbar='<div class="readerToolbar"><div class="readertitle">'+liveBadge(d,k)+' <span>'+safe(meta.join(' · '))+'</span>'+refs+(showContent&&continuedPast(d,k)?'<span class="contnote" title="You let the next step run while these issues stay open">Next step allowed</span>':'')+'</div><div class="actions">'+
   (showContent?button('save-file',icon('download')+' '+'Download','btn sm','title="Download this version"'):'')+
   (showContent&&versions.length>1?'<button type="button" class="btn sm" data-versions title="See earlier versions and restore one">'+icon('redo')+' Versions ('+versions.length+')</button>':'')+
@@ -2134,7 +2134,7 @@ let route='projects',settingTab='Personal',srcFilter={q:'',project:'',kind:'',fi
 
 function upgrade(d){
  d.ui??={};
- d.planning??={'EX-101':{part1:'in_plan',ref:'DE:de',format:'country',basedOn:{D08:'D06'}}};
+ d.planning??={'EX-101':{part1:'in_plan',ref:'DE:de',format:'country',basedOn:{D08:'D06'},docSources:{D03:['D01'],D04:['D01'],D05:['D01'],D06:['D01'],D07:['D01'],D08:['D01']}}};
  d.projects??=[
   {id:'EX-101',name:'CTIS initial application EX-101',code:'EX-101',phase:'Phase II',sponsor:'Example Bio GmbH',countries:['DE','ES'],owner:'Alex Morgan',updated:'2026-11-25',created:'2026-11-03',planId:'P01'},
   {id:'NX-220',name:'NX-220 first-in-human study',code:'NX-220',phase:'Phase I',sponsor:'Example Bio GmbH',countries:['NL','BE'],owner:'Alex Morgan',updated:'2026-11-18',created:'2026-11-17',planId:''},
@@ -2206,7 +2206,12 @@ function docRes(did,p=proj()){
  const list=ids.map(id=>data.resources.find(r=>r.id===id)).filter(Boolean);
  return {sources:list.filter(r=>r.cat==='source'),templates:list.filter(r=>r.cat==='template')};
 }
-function snapshotUse(did,k){const a=work(doc(did),k).current;if(a&&!a.used){const r=docRes(did);a.used=[...r.sources,...r.templates].map(x=>({id:x.id,cat:x.cat,name:x.name,version:x.version,kind:kindLabel(x.kind)}));persist()}}
+/* project documents used as sources: the approved version if there is one, else the latest version, marked as not approved */
+function projDocVersion(did){const d=doc(did);if(!d)return null;const a=approvedVersion(d);if(a)return {rev:a.rev,approved:true};
+ const steps=P().steps.filter(k=>!k.skip&&!d.rowSkip?.[k.id]).filter(k=>work(d,k).current);const k=steps.at(-1);return k?{rev:work(d,k).current.rev,approved:false,step:k.name}:null}
+const projDocSources=did=>(planning().docSources?.[did]||[]).filter(x=>x!==did&&doc(x));
+function projDocRecord(x){const m=def(x),v=projDocVersion(x);return {id:'doc:'+x,cat:'source',name:x+' · '+m.name+' · '+(langs[m.lang]||m.lang),version:v?String(v.rev):'',kind:v?(v.approved?'Project document · approved':'Project document · not approved yet'):'Project document · not started'}}
+function snapshotUse(did,k){const a=work(doc(did),k).current;if(a&&!a.used){const r=docRes(did);a.used=[...r.sources,...projDocSources(did).map(projDocRecord),...r.templates].map(x=>({id:x.id,cat:x.cat,name:x.name,version:x.version,kind:kindLabel(x.kind)}));persist()}}
 function allVersions(w){const m=new Map();for(const v of [...(w.history||[]),w.previous,w.current].filter(Boolean))m.set(v.rev,v);return [...m.values()].sort((a,b)=>b.rev-a.rev)}
 function usedProjects(r){return mine().filter(p=>wide(r,p.id)||Object.values(planOf(p)?.docs||{}).some(d=>(d.resAdd||[]).includes(r.id)||Object.values(d.work||{}).some(w=>allVersions(w).some(v=>v.used?.some(u=>u.id===r.id))))).map(p=>p.id)}
 function usedDeliverables(r){const out=[];for(const p of mine()){const pl=planOf(p);if(!pl)continue;for(const [did,d] of Object.entries(pl.docs))for(const k of pl.steps){const w=d.work?.[k.id];if(!w)continue;for(const v of allVersions(w))if(v.used?.some(u=>u.id===r.id))out.push([p,did,k,v.rev])}}
@@ -2399,10 +2404,12 @@ function docDrawer(did){
  const cur=docRes(did),ids=[...cur.sources,...cur.templates].map(r=>String(r.id));
  const k=panel?.name==='cell'&&panel.id===did?lookupStep(panel.sid):null,a=k?work(doc(did),k).current:null;
  const usedNow=a?.used||null;
- const used=usedNow?'<section class="usedin first"><h3>Used in '+E(dcode(did,k))+' v'+a.rev+'</h3><p class="fieldnote">Recorded when this version was made. It does not change.</p><ul>'+usedNow.map(u=>'<li><span>'+E(u.name)+(u.version?' v'+E(u.version):'')+'</span><small>'+E(u.kind)+(ids.includes(String(u.id))?'':' · no longer used')+'</small></li>').join('')+'</ul></section>':'';
+ const used=usedNow?'<section class="usedin first"><h3>Used in '+E(dcode(did,k))+' v'+a.rev+'</h3><p class="fieldnote">Recorded when this version was made. It does not change.</p><ul>'+usedNow.map(u=>'<li><span>'+E(u.name)+(u.version?' v'+E(u.version):'')+'</span><small>'+E(u.kind)+((ids.includes(String(u.id))||projDocSources(did).some(x=>'doc:'+x===u.id))?'':' · no longer used')+'</small></li>').join('')+'</ul></section>':'';
  openDrawer('<form id="docform"><div class="line"><h2>Sources and templates</h2><button type="button" data-close aria-label="Close" title="Close">✕</button></div>'+used+
  '<section class="nextrun"><h3>'+(usedNow?'For the next run':'Used for this document')+'</h3><p class="fieldnote">Starts from the project’s sources and templates. Changes here apply to this document only.</p>'+
  '<div class="field"><span class="fieldlabel">Sources</span>'+picker('docSources',data.resources.filter(r=>r.cat==='source').map(resOption),ids,'Add a recorded source')+'</div>'+
+ '<div class="field"><span class="fieldlabel">Documents from this project</span><p class="fieldnote">Other documents of this plan used as sources, such as the protocol. Their approved version is used; until then the latest version, marked as not approved.'+(refOf(did)?' Adapted from '+E(refOf(did))+' (set in the plan).':'')+'</p>'+
+ picker('docProject',defs.filter(x=>x.id!==did&&doc(x.id)).map(x=>{const v=projDocVersion(x.id);return [x.id,x.id+' · '+x.name+' · '+(langs[x.lang]||x.lang),v?(v.approved?'Approved v'+v.rev:'v'+v.rev+' · not approved yet'):'Not started']}),projDocSources(did),'Add a document from this project')+'</div>'+
  '<div class="field"><span class="fieldlabel">Templates</span>'+picker('docTemplates',data.resources.filter(r=>r.cat==='template').map(resOption),ids,'Add a recorded template')+'</div></section>'+
  '<div class="save"><button type="button" class="cancel" data-close>Cancel</button><button class="primary">Save</button></div></form>');
 }
@@ -2557,6 +2564,7 @@ document.addEventListener('submit',e=>{
  if(f.id==='docform'){e.preventDefault();const p=proj(),did=drawerState.id,d=planOf(p).docs[did],sel=[...fd.getAll('docSources'),...fd.getAll('docTemplates')].map(Number);
   const wideIds=data.resources.filter(r=>wide(r,p.id)).map(r=>r.id);
   d.resAdd=sel.filter(id=>!wideIds.includes(id));d.resRemove=wideIds.filter(id=>!sel.includes(id));
+  (planning().docSources??={})[did]=fd.getAll('docProject');
   log('Browser','Changed document sources and templates',p.code+' · '+def(did).name);closeDrawer();refresh();if(panel?.name==='cell')cellDlg(panel.id,panel.sid);toast('Saved for this document');return}
  if(f.id==='profileform'){e.preventDefault();if(actor!==owner){done('Profile saved');return}Object.assign(data.profile,{name:get('name'),title:get('title'),org:get('org'),tz:get('tz'),lang:get('lang')});done('Profile saved');return}
  if(f.id==='securityform'){e.preventDefault();return}
