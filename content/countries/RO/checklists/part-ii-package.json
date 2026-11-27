@@ -1,0 +1,87 @@
+{
+  "id": "RO-PACKAGE",
+  "name": "Romania: Part II package and CTIS upload check",
+  "applies_to": "the Romania package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/romania/en/part-ii-document-checklist",
+    "https://trialagents.com/ctis/romania/en/patient-facing-document-qc-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": ["met", "unmet", "needs_decision", "not_applicable"],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {"id": "P1.01", "check": "K1 recruitment and informed-consent procedure present, on EudraLex template v2.0 for new submissions since 1 September 2026 (current ANMDMR form checked), with a section for every population pathway in the plan."},
+        {"id": "P1.02", "check": "K2 recruitment material in Romanian for every recruitment tool; prior CNBMDM approval planned for electronic resources.", "applies_when": "recruitment.material_used"},
+        {"id": "P1.03", "check": "One L1 information and consent set per population in population_sets whose trigger is true, plus translated sets for planned non-Romanian-speaking populations."},
+        {"id": "P1.04", "check": "For every Romanian site: M1 CV and M2 declaration of interests on the current national forms, signed where required; N1 site suitability on the national form signed by the principal investigator, head of department and institution manager."},
+        {"id": "P1.05", "check": "ANMDMR authorisation of each Phase I or bioequivalence unit.", "applies_when": "trial.phase_1_or_bioequivalence"},
+        {"id": "P1.06", "check": "O1 insurance or indemnity evidence covering trial-related injury or death."},
+        {"id": "P1.07", "check": "P1 national compensation form present, stating explicitly when no payment is offered."},
+        {"id": "P1.08", "check": "P2 description of trial financing and the unsigned sponsor-site or sponsor-investigator contract with the general payment clauses."},
+        {"id": "P1.09", "check": "R1 data-protection declaration under Annex I section R."},
+        {"id": "P1.10", "check": "S1 biological-samples information (EU form or the non-mandatory Order 3390/2022 template), consistent with the protocol, participant information and any secondary-use document.", "applies_when": "samples.collected or samples.archive_used"},
+        {"id": "P1.11", "check": "Romanian payment commitment form for ANMDMR invoices in the CTIS Forms section, checked against the current ANMDMR pages.", "applies_when": "fee.payment_commitment_requested"},
+        {"id": "P1.12", "check": "Sites and principal investigators in CTIS match the M and N documents; a paediatrician is on the investigator team where minors are included."}
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {"id": "P2.01", "check": "Every participant- or representative-facing document, including recruitment material, is in Romanian."},
+        {"id": "P2.02", "check": "Non-participant documents are in Romanian or English."},
+        {"id": "P2.03", "check": "Participant ICFs submitted blank; consent signatures are not confused with submission signatures."},
+        {"id": "P2.04", "check": "Investigator and site forms with signature fields signed before submission where the current national form requires it; the P2 contract unsigned."},
+        {"id": "P2.05", "check": "Non-Romanian-speaking enrolment: translated documents and the K1 explanation of valid consent included.", "applies_when": "population.non_romanian_speakers"}
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {"id": "P3.01", "check": "Compensation amounts, conditions and recipients identical in P1 and every participant document; any cross-reference exact."},
+        {"id": "P3.02", "check": "Insurance and injury pathway identical in O1 and every participant document."},
+        {"id": "P3.03", "check": "Sample types, coding, storage, access, transfers and retention identical in S1, the protocol and the participant documents."},
+        {"id": "P3.04", "check": "Data flows, recipients, transfers and retention identical in R1, the participant documents and the protocol."},
+        {"id": "P3.05", "check": "Consent pathways and signature rules in K1 match the L1 sets in the package."},
+        {"id": "P3.06", "check": "Documents adapted from the reference package contain all Romanian national additions and no leftovers from the reference country.", "applies_when": "Romania is not the reference package"}
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {"id": "P4.01", "check": "Correct B–S section prefix and CTIS placeholder for each document; proof of payment in the CTIS Forms section."},
+        {"id": "P4.02", "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document."},
+        {"id": "P4.03", "check": "Version and date entered in CTIS metadata, not in the title."},
+        {"id": "P4.04", "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."},
+        {"id": "P4.05", "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."},
+        {"id": "P4.06", "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."},
+        {"id": "P4.07", "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.", "applies_when": "Romania receives Part I only under Article 11"}
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {"id": "P5.01", "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules from 18 June 2024; ACT EU guidance v2.2, 30 April 2026)."},
+        {"id": "P5.02", "check": "Publishable documents: personal data and qualifying CCI redacted in a public version; the complete version kept for assessment where required."},
+        {"id": "P5.03", "check": "No personal data or CCI in public structured fields."}
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {"id": "P6.01", "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."},
+        {"id": "P6.02", "check": "No tracked changes, hidden comments or placeholder text in any document."},
+        {"id": "P6.03", "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."}
+      ]
+    }
+  ]
+}

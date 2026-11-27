@@ -1,0 +1,80 @@
+{
+  "id": "RO-CHECK",
+  "name": "Romania: check of forms and supplied documents",
+  "applies_to_kinds": ["form", "third_party_template", "third_party_document", "ctis_data"],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/romania/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": ["met", "unmet", "needs_decision", "not_applicable"],
+  "common": [
+    {"id": "X.01", "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."},
+    {"id": "X.02", "check": "Every field the assistant answers is answered; fields that belong to the site, investigator or sponsor finance are left empty, not invented."},
+    {"id": "X.03", "check": "No drafting instruction remains."},
+    {"id": "X.04", "check": "Language is Romanian or English (non-participant document, Government Emergency Ordinance 29/2022)."},
+    {"id": "X.05", "check": "Signatures follow requirements.json: signed before submission where the current national form requires it (M1, M2, N1); unsigned where Order 3390/2022 says so (P2 contract)."},
+    {"id": "X.06", "check": "The current national form is used where the Romania guide requires one (M1, M2, N1, P1, FEE), checked against the ANMDMR publication immediately before filing; an interim EU form is never uploaded as the Romanian document."},
+    {"id": "X.07", "check": "CTIS title follows the naming guide and requirements.json."}
+  ],
+  "by_document": {
+    "RO-K1": [
+      {"id": "K1.01", "check": "Uses the EudraLex template version 2.0 (new Part II submissions since 1 September 2026); the current ANMDMR form was checked immediately before filing."},
+      {"id": "K1.02", "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed, each 'no' section says not applicable."},
+      {"id": "K1.03", "check": "States who identifies and approaches potential participants, who obtains consent, when and where, how privacy is protected, how much decision time is given, how understanding is checked and how withdrawal is handled, for the real Romanian site process."},
+      {"id": "K1.04", "check": "The consent interview is conducted by a physician who is a member of the investigation team and appropriately trained on the protocol and GCP (Order 3390/2022)."},
+      {"id": "K1.05", "check": "Explains how valid informed consent is obtained from non-Romanian speakers, with translated documents planned.", "applies_when": "population.non_romanian_speakers"},
+      {"id": "K1.06", "check": "Describes how responses to recruitment material are managed and what happens when a potential participant does not qualify; recruitment routes match K2 and the protocol.", "applies_when": "recruitment.material_used"},
+      {"id": "K1.07", "check": "Electronic recruitment resources are identified as needing prior CNBMDM approval.", "applies_when": "recruitment.electronic_resources"},
+      {"id": "K1.08", "check": "Where potential participants are identified from medical records or other sources, access to identifying data is explained and complies with applicable rules."},
+      {"id": "K1.09", "check": "Adults lacking capacity: justification and nature of the condition, who assesses capacity, how the representative is identified and their authority verified, how information is adapted, both signatures where the participant can form an opinion and assess the information, re-consent when capacity returns.", "applies_when": "population.adults_without_capacity"},
+      {"id": "K1.10", "check": "Minors: representative consent, the capable minor's mandatory agreement, verification of who holds parental authority, re-consent at 18, paediatrician in the investigator team.", "applies_when": "population.minors"},
+      {"id": "K1.11", "check": "Impartial witness: why a witness may be needed, how the witness is identified, how the site knows the participant consented, witness signs and dates the consent document.", "applies_when": "consent.impartial_witness_possible"},
+      {"id": "K1.12", "check": "Emergency: why prior consent cannot be obtained, how consent is sought as soon as possible from the participant or representative, how a known prior objection is respected.", "applies_when": "consent.emergency_enrolment"}
+    ],
+    "RO-M1": [
+      {"id": "M1.01", "check": "One CV per principal investigator and site, on the current Romanian national CV form (Order 3390/2022)."},
+      {"id": "M1.02", "check": "Shows relevant clinical-trial experience and training; dated and signed where the national form requires it."},
+      {"id": "M1.03", "check": "The investigator team includes a paediatrician.", "applies_when": "population.minors"}
+    ],
+    "RO-M2-DOI": [
+      {"id": "M2D.01", "check": "One declaration per principal investigator and site, on the applicable Romanian national form, completed and signed by the investigator."},
+      {"id": "M2D.02", "check": "Economic, institutional and personal interests that could affect impartiality are answered by the investigator; nothing filled in by the assistant."}
+    ],
+    "RO-N1": [
+      {"id": "N1.01", "check": "One separate document per Romanian site, on the national site-suitability form, covering facilities, staff, participant numbers and operational capability."},
+      {"id": "N1.02", "check": "Statements are specific to this protocol (IMP handling, procedures, population, safety management) and site capabilities are left for the site to confirm."},
+      {"id": "N1.03", "check": "Signed before submission by the principal investigator, the head of the department, clinic or section, and the hospital or institution manager; the draft leaves the block empty."},
+      {"id": "N1.04", "check": "Phase I or bioequivalence: the unit's ANMDMR authorisation is planned (RO-N-PHASE1).", "applies_when": "trial.phase_1_or_bioequivalence"},
+      {"id": "N1.05", "check": "Paediatric staffing is described where the trial involves the paediatric population.", "applies_when": "population.minors"}
+    ],
+    "RO-N-PHASE1": [
+      {"id": "PH1.01", "check": "The unit holds the relevant ANMDMR authorisation for Phase I or bioequivalence studies; site readiness is not treated as complete without it."},
+      {"id": "PH1.02", "check": "Site name and unit match N1 and the CTIS site list."}
+    ],
+    "RO-O1": [
+      {"id": "O1.01", "check": "Evidence of insurance or indemnity covering trial-related injury or death, as required under the CTR and the applicable Romanian arrangements; identifies the trial."},
+      {"id": "O1.02", "check": "The injury and insurance pathway in every participant document matches this evidence."}
+    ],
+    "RO-P1": [
+      {"id": "P1.01", "check": "Uses the Romanian national compensation form (Order 3390/2022); the EU form was only an interim content basis."},
+      {"id": "P1.02", "check": "States for participants, parents, carers and legal representatives whether travel, accommodation, meals, loss of earnings, cash or non-cash payments are reimbursed or paid; says so explicitly when nothing is offered."},
+      {"id": "P1.03", "check": "Any cross-reference to the participant information is exact (document, version, section) and the amounts or calculation logic agree."},
+      {"id": "P1.04", "check": "Minors, adults lacking capacity, their representatives and pregnant or breastfeeding participants receive only compensation for expenses and loss of earnings directly related to participation.", "applies_when": "population.minors or population.adults_without_capacity"}
+    ],
+    "RO-P2": [
+      {"id": "P2.01", "check": "Description of trial financing and the general financial arrangements with sites and investigators present."},
+      {"id": "P2.02", "check": "Sponsor-site or sponsor-investigator contract in unsigned form with the general clauses on payments; no signatures added."},
+      {"id": "P2.03", "check": "Payments consistent with P1 and the participant documents."}
+    ],
+    "RO-R1": [
+      {"id": "R1.01", "check": "Declaration under Annex I section R confirming processing in accordance with Union data-protection law; the national-statement field is not applicable."},
+      {"id": "R1.02", "check": "Sponsor details match the CTIS application; data flows consistent with the participant documents."}
+    ],
+    "RO-S1": [
+      {"id": "S1.01", "check": "New and archive sample sections match the protocol and sample plan; at least one is completed."},
+      {"id": "S1.02", "check": "Direct identification, pseudonymised coding or anonymisation stated; access to samples and code lists, storage place and duration and transfers match the participant documents and R1."},
+      {"id": "S1.03", "check": "Future use: purpose, storage, access, recontact for new consent and the need for further ethics review answered consistently with the separate secondary-use document.", "applies_when": "samples.future_use_outside_protocol"}
+    ],
+    "RO-FEE": [
+      {"id": "FEE.01", "check": "The current Romanian payment commitment form for ANMDMR invoices is provided in the CTIS Forms section where the national process requests it; ANMDMR pages checked before submission."}
+    ]
+  }
+}
