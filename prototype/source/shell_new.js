@@ -28,6 +28,7 @@ let route='projects',settingTab='Personal',srcFilter={q:'',project:'',kind:'',fi
 
 function upgrade(d){
  d.ui??={};
+ d.planning??={'EX-101':{part1:'in_plan',ref:'DE:de',format:'country',basedOn:{D08:'D06'},docSources:{D03:['D01'],D04:['D01'],D05:['D01'],D06:['D01'],D07:['D01'],D08:['D01']}}};
  d.projects??=[
   {id:'EX-101',name:'CTIS initial application EX-101',code:'EX-101',phase:'Phase II',sponsor:'Example Bio GmbH',countries:['DE','ES'],owner:'Alex Morgan',updated:'2026-11-25',created:'2026-11-03',planId:'P01'},
   {id:'NX-220',name:'NX-220 first-in-human study',code:'NX-220',phase:'Phase I',sponsor:'Example Bio GmbH',countries:['NL','BE'],owner:'Alex Morgan',updated:'2026-11-18',created:'2026-11-17',planId:''},
@@ -99,7 +100,12 @@ function docRes(did,p=proj()){
  const list=ids.map(id=>data.resources.find(r=>r.id===id)).filter(Boolean);
  return {sources:list.filter(r=>r.cat==='source'),templates:list.filter(r=>r.cat==='template')};
 }
-function snapshotUse(did,k){const a=work(doc(did),k).current;if(a&&!a.used){const r=docRes(did);a.used=[...r.sources,...r.templates].map(x=>({id:x.id,cat:x.cat,name:x.name,version:x.version,kind:kindLabel(x.kind)}));persist()}}
+/* project documents used as sources: the approved version if there is one, else the latest version, marked as not approved */
+function projDocVersion(did){const d=doc(did);if(!d)return null;const a=approvedVersion(d);if(a)return {rev:a.rev,approved:true};
+ const steps=P().steps.filter(k=>!k.skip&&!d.rowSkip?.[k.id]).filter(k=>work(d,k).current);const k=steps.at(-1);return k?{rev:work(d,k).current.rev,approved:false,step:k.name}:null}
+const projDocSources=did=>(planning().docSources?.[did]||[]).filter(x=>x!==did&&doc(x));
+function projDocRecord(x){const m=def(x),v=projDocVersion(x);return {id:'doc:'+x,cat:'source',name:x+' · '+m.name+' · '+(langs[m.lang]||m.lang),version:v?String(v.rev):'',kind:v?(v.approved?'Project document · approved':'Project document · not approved yet'):'Project document · not started'}}
+function snapshotUse(did,k){const a=work(doc(did),k).current;if(a&&!a.used){const r=docRes(did);a.used=[...r.sources,...projDocSources(did).map(projDocRecord),...r.templates].map(x=>({id:x.id,cat:x.cat,name:x.name,version:x.version,kind:kindLabel(x.kind)}));persist()}}
 function allVersions(w){const m=new Map();for(const v of [...(w.history||[]),w.previous,w.current].filter(Boolean))m.set(v.rev,v);return [...m.values()].sort((a,b)=>b.rev-a.rev)}
 function usedProjects(r){return mine().filter(p=>wide(r,p.id)||Object.values(planOf(p)?.docs||{}).some(d=>(d.resAdd||[]).includes(r.id)||Object.values(d.work||{}).some(w=>allVersions(w).some(v=>v.used?.some(u=>u.id===r.id))))).map(p=>p.id)}
 function usedDeliverables(r){const out=[];for(const p of mine()){const pl=planOf(p);if(!pl)continue;for(const [did,d] of Object.entries(pl.docs))for(const k of pl.steps){const w=d.work?.[k.id];if(!w)continue;for(const v of allVersions(w))if(v.used?.some(u=>u.id===r.id))out.push([p,did,k,v.rev])}}
@@ -208,6 +214,20 @@ function fileSlot(r){
  return '<p class="fieldnote muted">The assistant and reviewers see the name and version. To check the passage, they ask the owner for the file.</p>';
 }
 function issuesOpen(d,k){const w=work(d,k);if(!w.current||w.status!=='Complete')return false;return reviewThreads(d,k).some(t=>!t.closed&&flagActive(t,d,k))}
+/* ---- planning choices (stored on the project) ---- */
+const part1Labels={in_plan:'In this plan',outside:'Completed outside TrialAgents',later:'Left for later'};
+const formatLabels={country:'TrialAgents country format',sponsor:'Keep the sponsor’s format'};
+const planning=()=>{const id=data.ui.project;return (data.planning??={})[id]??={part1:'in_plan',ref:'',format:'country',basedOn:{}}};
+const refPkg=c=>c!=='EU'&&planning().ref.split(':')[0]===c;
+const langName={en:'English',de:'German',es:'Spanish',fr:'French',it:'Italian',nl:'Dutch',pl:'Polish'};
+const refLabel=()=>{const l=planning().ref.split(':')[1];return l?' ('+(langName[l]||l)+')':''};
+const refOptions=(pid,countries)=>countries.flatMap(c=>{const ls=pid===data.ui.project&&typeof defs!=='undefined'?[...new Set(defs.filter(m=>m.c===c&&doc(m.id)).map(m=>m.lang))]:[];return ls.length?ls.map(l=>[c+':'+l,memberStates[c]+' · '+(langName[l]||l)]):[[c,memberStates[c]]]});
+const docIdOf=d=>Object.entries(P().docs||{}).find(([,v])=>v===d)?.[0];
+const refOf=did=>did?planning().basedOn?.[did]||'':'';
+const refApproved=rid=>{const r=doc(rid);return !!r&&(released(P(),r)||!!r.lastApproved)};
+/* inputs from this project without an approved version: a note, never a gate */
+function unapprovedInputs(did){return [...new Set([refOf(did),...projDocSources(did)].filter(Boolean))].filter(x=>!refApproved(x)).map(x=>{const v=projDocVersion(x);return x+(v?' v'+v.rev:'')+(v?'':' (not started)')})}
+const refNote=did=>{const r=refOf(did);return r?'<small class="refnote" title="Drafted by adapting the approved '+E(r)+'">Adapted from '+E(r)+'</small>':''};
 function liveState(d,s){
  if(s.skip||d.rowSkip?.[s.id])return ['na','Not applicable'];
  const steps=P().steps.filter(k=>!k.skip&&!d.rowSkip?.[k.id]),idx=steps.findIndex(k=>k.id===s.id);
@@ -250,6 +270,11 @@ function projectDrawer(id,dup){
  '<div class="field"><span class="fieldlabel">Member states</span>'+picker('countries',Object.entries(memberStates).sort((a,b)=>a[1].localeCompare(b[1])).map(([c,n])=>[c,n,c]),p.countries,'Search member states')+'</div>'+
  '<div class="field"><span class="fieldlabel">Sources for the whole project</span><p class="fieldnote">Used for every document, such as the protocol. Sources for a single document are chosen in that document.</p>'+picker('wideSources',data.resources.filter(r=>r.cat==='source').map(resOption),wideOf('source'),'Search recorded sources')+'</div>'+
  '<div class="field"><span class="fieldlabel">Templates for the whole project</span><p class="fieldnote">Optional. Leave empty to choose templates per document. TrialAgents defaults apply where none is chosen.</p>'+picker('wideTemplates',data.resources.filter(r=>r.cat==='template').map(resOption),wideOf('template'),'Search recorded templates')+'</div>'+
+ (()=>{const pl=(data.planning??={})[pid]||{part1:'in_plan',ref:'',format:'country'};
+  return '<fieldset class="field"><legend>Planning choices</legend><p class="fieldnote">Agreed with the assistant when planning. Change them here or ask the assistant.</p>'+
+  '<div class="grid">'+pfield('Part I','<select name="part1">'+popts(Object.entries(part1Labels),pl.part1)+'</select>','Never blocks Part II.')+
+  pfield('Reference package','<select name="ref">'+popts([['','None: each country from the sources'],...refOptions(pid,p.countries)],pl.ref)+'</select>','Completed and approved first; the other countries are adapted from it.')+'</div>'+
+  pfield('Format','<select name="format">'+popts(Object.entries(formatLabels),pl.format)+'</select>','For documents the sponsor already has.')+'</fieldset>'})()+
  (!id?'<p class="fieldnote">The document plan is proposed in Claude or ChatGPT and saved to this project.</p>':'')+
  '<div class="save"><button type="button" class="cancel" data-close>Cancel</button><button class="primary">'+(dup?'Create copy':id?'Save changes':'Create project')+'</button></div></form>');
 }
@@ -273,10 +298,12 @@ function docDrawer(did){
  const cur=docRes(did),ids=[...cur.sources,...cur.templates].map(r=>String(r.id));
  const k=panel?.name==='cell'&&panel.id===did?lookupStep(panel.sid):null,a=k?work(doc(did),k).current:null;
  const usedNow=a?.used||null;
- const used=usedNow?'<section class="usedin first"><h3>Used in '+E(dcode(did,k))+' v'+a.rev+'</h3><p class="fieldnote">Recorded when this version was made. It does not change.</p><ul>'+usedNow.map(u=>'<li><span>'+E(u.name)+(u.version?' v'+E(u.version):'')+'</span><small>'+E(u.kind)+(ids.includes(String(u.id))?'':' · no longer used')+'</small></li>').join('')+'</ul></section>':'';
+ const used=usedNow?'<section class="usedin first"><h3>Used in '+E(dcode(did,k))+' v'+a.rev+'</h3><p class="fieldnote">Recorded when this version was made. It does not change.</p><ul>'+usedNow.map(u=>'<li><span>'+E(u.name)+(u.version?' v'+E(u.version):'')+'</span><small>'+E(u.kind)+((ids.includes(String(u.id))||projDocSources(did).some(x=>'doc:'+x===u.id))?'':' · no longer used')+'</small></li>').join('')+'</ul></section>':'';
  openDrawer('<form id="docform"><div class="line"><h2>Sources and templates</h2><button type="button" data-close aria-label="Close" title="Close">✕</button></div>'+used+
  '<section class="nextrun"><h3>'+(usedNow?'For the next run':'Used for this document')+'</h3><p class="fieldnote">Starts from the project’s sources and templates. Changes here apply to this document only.</p>'+
  '<div class="field"><span class="fieldlabel">Sources</span>'+picker('docSources',data.resources.filter(r=>r.cat==='source').map(resOption),ids,'Add a recorded source')+'</div>'+
+ '<div class="field"><span class="fieldlabel">Documents from this project</span><p class="fieldnote">Other documents of this plan used as sources, such as the protocol. Their approved version is used; until then the latest version, marked as not approved.'+(refOf(did)?' Adapted from '+E(refOf(did))+' (set in the plan).':'')+'</p>'+
+ picker('docProject',defs.filter(x=>x.id!==did&&doc(x.id)).map(x=>{const v=projDocVersion(x.id);return [x.id,x.id+' · '+x.name+' · '+(langs[x.lang]||x.lang),v?(v.approved?'Approved v'+v.rev:'v'+v.rev+' · not approved yet'):'Not started']}),projDocSources(did),'Add a document from this project')+'</div>'+
  '<div class="field"><span class="fieldlabel">Templates</span>'+picker('docTemplates',data.resources.filter(r=>r.cat==='template').map(resOption),ids,'Add a recorded template')+'</div></section>'+
  '<div class="save"><button type="button" class="cancel" data-close>Cancel</button><button class="primary">Save</button></div></form>');
 }
@@ -421,15 +448,17 @@ document.addEventListener('submit',e=>{
   closeDrawer();render();toast(isNew?'Recorded':'Saved');return}
  if(f.id==='projectform'){e.preventDefault();const countries=fd.getAll('countries'),ws=fd.getAll('wideSources'),wt=fd.getAll('wideTemplates');
   const vals={name:get('name'),code:get('code').toUpperCase(),euct:get('euct'),sponsor:get('sponsor'),countries,updated:now()};
-  if(drawerState.id){const p=data.projects.find(x=>x.id===drawerState.id);Object.assign(p,vals);if(p.planId&&data.ui.project===p.id)data.project=p.name;applyWide(p.id,'source',ws);applyWide(p.id,'template',wt);log('Browser','Updated project',p.name);closeDrawer();refresh();toast('Project saved');return}
+  const plv={part1:get('part1'),ref:countries.includes(get('ref').split(':')[0])?get('ref'):'',format:get('format')};
+  if(drawerState.id){const p=data.projects.find(x=>x.id===drawerState.id);Object.assign(p,vals);{const pl=(data.planning??={})[p.id]??={basedOn:{}};const ch=Object.keys(plv).filter(k=>pl[k]!==plv[k]);Object.assign(pl,plv);if(ch.length)log('Browser','Changed planning choices',p.code+' · '+ch.join(', '))}if(p.planId&&data.ui.project===p.id)data.project=p.name;applyWide(p.id,'source',ws);applyWide(p.id,'template',wt);log('Browser','Updated project',p.name);closeDrawer();refresh();toast('Project saved');return}
   const id='PRJ'+Date.now().toString(36).toUpperCase(),from=drawerState.from?data.projects.find(x=>x.id===drawerState.from):null;
-  const np={id,...vals,owner:actor,created:now(),planId:''};
+  const np={id,...vals,owner:actor,created:now(),planId:''};(data.planning??={})[id]={...plv,basedOn:{...(from&&data.planning?.[from.id]?.basedOn||{})}};
   if(from){const base=planOf(from);if(base)np.planId=clonePlanFor(base,vals.name);}
   data.projects.push(np);applyWide(id,'source',ws);applyWide(id,'template',wt);
   log('Browser',from?'Duplicated project':'Created project',vals.name+(from?' from '+from.name:''));closeDrawer();openProject(id);toast(from?'Copy created':'Project created');return}
  if(f.id==='docform'){e.preventDefault();const p=proj(),did=drawerState.id,d=planOf(p).docs[did],sel=[...fd.getAll('docSources'),...fd.getAll('docTemplates')].map(Number);
   const wideIds=data.resources.filter(r=>wide(r,p.id)).map(r=>r.id);
   d.resAdd=sel.filter(id=>!wideIds.includes(id));d.resRemove=wideIds.filter(id=>!sel.includes(id));
+  (planning().docSources??={})[did]=fd.getAll('docProject');
   log('Browser','Changed document sources and templates',p.code+' · '+def(did).name);closeDrawer();refresh();if(panel?.name==='cell')cellDlg(panel.id,panel.sid);toast('Saved for this document');return}
  if(f.id==='profileform'){e.preventDefault();if(actor!==owner){done('Profile saved');return}Object.assign(data.profile,{name:get('name'),title:get('title'),org:get('org'),tz:get('tz'),lang:get('lang')});done('Profile saved');return}
  if(f.id==='securityform'){e.preventDefault();return}

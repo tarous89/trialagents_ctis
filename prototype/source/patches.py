@@ -117,3 +117,11 @@ app = must_replace(app, "'EX101_'+P().id+'_example_outputs.zip'", "(proj()?.code
 app = must_replace(app, """button('cell','<span class="state '+st+'">'+l+'</span>','cellbutton',""", """button('cell','<span class="state '+st+'">'+l+(work(d,s).current&&st!=='waiting'?' <span class="vtag">v'+work(d,s).current.rev+'</span>':'')+'</span>','cellbutton',""")
 
 app = must_replace(app, "ready=released(p,d),name=finalName(m,d);", "ready=released(p,d),name=approvedVersion(d)?approvedName(m,d):finalName(m,d);")
+
+# ---- Round 6: reference package ----
+app = must_replace(app, "const scopeName=c=>c==='EU'?'Part I':'Part II · '+cc[c];", "const scopeName=c=>c==='EU'?'Part I · '+part1Labels[planning().part1]:'Part II · '+cc[c]+(refPkg(c)?' · Reference package'+refLabel():'');")
+app = must_replace(app, """'<span class="docname plain">'+safe(m.name)+'</span>'""", """'<span class="docname plain">'+safe(m.name)+'</span>'+refNote(m.id)""")
+app = must_replace(app, """blocker?['Waiting for '+dcode(id,blocker),""", """blocker?['Waiting for '+dcode(id,blocker),""")
+app = must_replace(app, """res.sources.length+' source'+(res.sources.length===1?'':'s')""", """(res.sources.length+projDocSources(id).length)+' source'+(res.sources.length+projDocSources(id).length===1?'':'s')""")
+app = must_replace(app, """body='<div class="emptyReader">'+icon(st==='na'?'minus':'clock')+'<h3>'+safe(msg[0])+'</h3><p>'+safe(msg[1])+'</p>'""", """const unap=st==='na'?[]:unapprovedInputs(id);
+  body='<div class="emptyReader">'+icon(st==='na'?'minus':'clock')+'<h3>'+safe(msg[0])+'</h3><p>'+safe(msg[1])+'</p>'+(unap.length?'<p class="unapproved" title="You can run it anyway. Approving them first avoids a Reference changed or Source changed finding later.">Uses '+safe(unap.join(', '))+', not approved yet. The assistant asks whether to approve '+(unap.length>1?'them':'it')+' first or go ahead.</p>':'')""")
