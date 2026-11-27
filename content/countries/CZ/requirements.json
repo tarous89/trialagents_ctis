@@ -1,0 +1,1229 @@
+{
+  "country": "CZ",
+  "name": "Czechia",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "SÚKL (Státní ústav pro kontrolu léčiv, State Institute for Drug Control); national competent authority. SÚKL states that proposed studies are assessed by SÚKL and at least one Ethics Committee independently.",
+    "ethics": "SÚKL designates the Ethics Committee during validation (the SÚKL Ethics Committee or a multicentre Ethics Committee). The ethics assessment focuses in particular on ethical aspects, investigator qualifications and site facilities. Some participant documents (for example pregnant-partner documents) are documents on which the ethics committee gives the opinion rather than documents SÚKL approves (KLH-22).",
+    "fee": "Do not pay the Part II assessment fee at the initial CTIS submission. SÚKL names the Ethics Committee in the validation request and gives the payment pathway; evidence of payment follows within the assessment (SÚKL Ethics Committee: UST-29 and K-023 to K-028 codes; multicentre Ethics Committee: billing information and that committee's instructions).",
+    "national_guidance": "KLH-CTIS-01 Version 3, 28 January 2026: machine-readable document list, mandatory national templates No. 1 to 7 (28 January 2026), Czech-language, signature, insurance, data-protection, biological-sample and fee rules. KLH-22 Version 5 (1 June 2022): recommended participant-information drafting guidance."
+  },
+  "language_rules": {
+    "participant_documents": "cs",
+    "administrative_documents": [
+      "cs"
+    ],
+    "rule": "Participant documents are Czech only: the original English PIS/ICF is not submitted (not reviewed or approved) and standard bilingual versions are not permitted. Diaries, participant cards and other participant materials are Czech; an English questionnaire only when the investigator completes it with the participant. Investigator CV (Template No. 2), declaration of interest (Template No. 3) and the list of sites and principal investigators are Czech. Template No. 1 may be completed in Czech or English. Insurance documentation is Czech or bilingual. The guides state no language for Templates No. 4, 5, 6 (beyond 'Czech' compensation information) and 7, the funding description, the document list or the post-trial compensation statement (DECISIONS.md D2).",
+    "foreign_nationals": "A foreign national who demonstrably understands another language (preferably the native language) receives a certified translation of the approved Czech PIS/ICF, submitted through CTIS as a non-substantial amendment; a bilingual version is permitted in this situation only. Do not translate an unapproved English master for use in Czechia.",
+    "form_answers": "Shared EU forms (content/eu/templates/part-ii) are answered in Czech, matching the Czech variable sheet. They are bound only as the K1 basis and as interim content for R1, S1 and P1; the mandatory SÚKL templates replace them for upload.",
+    "by_language": {
+      "cs": [
+        "CZ-DOC-LIST",
+        "CZ-L1",
+        "CZ-L1-POPULATION",
+        "CZ-L2",
+        "CZ-K1",
+        "CZ-K2",
+        "CZ-M1",
+        "CZ-M-GCP",
+        "CZ-M2-DOI",
+        "CZ-SITE-LIST",
+        "CZ-N1",
+        "CZ-N-FACILITY",
+        "CZ-N-GCP-CERT",
+        "CZ-O1",
+        "CZ-O2",
+        "CZ-O-POSTTRIAL",
+        "CZ-R1",
+        "CZ-S1",
+        "CZ-P1",
+        "CZ-P-FUNDING",
+        "CZ-FEE",
+        "CZ-DEVICE"
+      ],
+      "cs_or_en": [
+        "CZ-K1",
+        "CZ-M-GCP"
+      ],
+      "cs_or_bilingual": [
+        "CZ-O1",
+        "CZ-O2"
+      ]
+    },
+    "drafting_notes_language": "drafting_notes_cs for every document."
+  },
+  "answer_languages": [
+    "cs"
+  ],
+  "answer_languages_note": "Czech for participant documents and form answers. K1 may also be completed in English (SÚKL Template No. 1 is bilingual); English answers only if the user decides so (DECISIONS.md D2).",
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.adults_without_capacity",
+    "population.group_benefit_research_without_capacity",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "consent.electronic",
+    "population.foreign_nationals_other_language",
+    "recruitment.material_used",
+    "recruitment.call_centre",
+    "recruitment.other_information_material",
+    "participant_materials.used",
+    "questionnaires.electronic",
+    "imp.self_administered",
+    "endpoint_documents.participant_facing",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.future_use_outside_protocol",
+    "data.future_use_outside_protocol",
+    "substudy.optional_independent",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "compensation.remuneration_offered",
+    "compensation.payment_cards",
+    "trial.low_intervention",
+    "sponsor.third_country",
+    "investigator.separate_gcp_certificate",
+    "sites.count",
+    "sites.non_state_or_non_ministry_facility",
+    "sites.sub_site_used",
+    "sites.sukl_gcp_certificate_required",
+    "devices.used_in_trial"
+  ],
+  "study_facts_note": "Country-specific keys added for Czechia: population.foreign_nationals_other_language, participant_materials.used, questionnaires.electronic, imp.self_administered, substudy.optional_independent, compensation.remuneration_offered, compensation.payment_cards, sponsor.third_country, investigator.separate_gcp_certificate, sites.non_state_or_non_ministry_facility, sites.sub_site_used, sites.sukl_gcp_certificate_required, devices.used_in_trial.",
+  "documents": [
+    {
+      "id": "CZ-DOC-LIST",
+      "ctis_section": "B (cover letter, CTIS Forms section) or a separate upload",
+      "ctis_title": "B1_Cover letter_<EU CT number>",
+      "ctis_title_note": "SÚKL allows the list of documents inside the cover letter, so a separate file is not required. If a separate list is uploaded, the naming guide gives no example; its title and slot are a decision (DECISIONS.md D4).",
+      "name_en": "Machine-readable list of the documentation under review, with version and date of each document",
+      "checklist_item": 1,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "application",
+      "language": [
+        "cs"
+      ],
+      "language_note": "The guides state no language for the list; Czech recommended (DECISIONS.md D2).",
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "SÚKL does not specify a national signature requirement for this list.",
+      "content": "Machine-readable list of every document under review with its version and date. Versions and dates must match the uploaded documents and each participant document's footer.",
+      "sources": [
+        "CZ-PII-CHECKLIST#1",
+        "CZ-QC#8"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor (in the cover letter, or as a separate machine-readable list)",
+      "kind_note": "No template; the cover letter is a sponsor document outside the Part II placeholders. Checked against the plan's versions and dates.",
+      "drafting_notes_cs": "Formulářová část CTIS (průvodní dopis) nebo samostatný soubor. Povinné. Strojově čitelný seznam veškeré předkládané dokumentace s verzí a datem každého dokumentu. SÚKL umožňuje uvést seznam přímo v průvodním dopise, samostatný soubor proto není nutný. Národní požadavek na podpis seznamu SÚKL nestanoví. Verze a data musí odpovídat nahrávaným dokumentům a zápatím dokumentů pro účastníky.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_CZ_cs",
+      "name_en": "Czech participant information sheet and informed consent form (PIS/ICF), one set per population",
+      "checklist_item": 2,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "population",
+      "language": [
+        "cs"
+      ],
+      "template": null,
+      "template_note": "Participant templates are bound per population through population_sets (adult_patients, healthy_volunteers, pregnancy_participant, pregnancy_partner, secondary_use; the age- and capacity-specific sets are CZ-L1-POPULATION).",
+      "signature_at_submission": false,
+      "content": "Blank Czech PIS/ICF submitted in CTIS; signed only at consent. Not the original English version, and no standard bilingual version. Every Czech version contains the EU CT Number, the full trial title, the ethics committee e-mail (no telephone number), consent to access to source medical records by monitors, auditors, regulators or medicines agencies, ethics committee members and study-team members as applicable, the statement that results will be available on the EMA clinical trials website, and the statement that one dated and signed copy is given to the participant and one remains at the site.",
+      "note": "The Part II checklist page says the PIS/ICF is submitted under the SÚKL category 'All Documents'. Foreign-language versions are certified translations of the approved Czech version, submitted later as a non-substantial amendment (bilingual allowed only then).",
+      "sources": [
+        "CZ-PII-CHECKLIST#2",
+        "CZ-ICF",
+        "CZ-HUB"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "drafting_notes_cs": "CTIS část II, oddíl L. Povinné, jeden soubor pro každou populaci. Předkládá se pouze česká verze; původní anglická verze se nepředkládá (SÚKL ji neposuzuje ani neschvaluje) a standardní dvojjazyčné verze nejsou přípustné. V CTIS se nahrává prázdný formulář; účastník ani zkoušející jej při podání nepodepisují. Každá česká verze musí obsahovat EU CT číslo, celý název klinického hodnocení, e-mail etické komise (eticka.komise@sukl.gov.cz nebo e-mail příslušné etické komise; telefonní číslo etické komise neuvádět), souhlas s přístupem do zdrojové zdravotnické dokumentace (monitoři, auditoři, regulační orgány nebo lékové agentury, členové etické komise a studijního týmu podle situace), sdělení, že výsledky budou dostupné na webu EMA pro klinická hodnocení (euclinicaltrials.eu), a sdělení, že jeden datovaný a podepsaný stejnopis obdrží účastník a jeden zůstává na pracovišti. Doporučení KLH-22 verze 5: srozumitelný jazyk bez zbytečných odborných výrazů a zkratek, jazyková kontrola před podáním, pro dospělé a rodiče zpravidla nejvýše přibližně 8 stran (ve specifických případech 10), číslované strany s verzí, datem a identifikací hodnocení; výzkumné postupy odlišit od běžné péče a volitelné činnosti od povinných. Informovaný souhlas získává zkoušející. Elektronický PIS/ICF je přípustný; elektronický podpis jen kvalifikovaný, uznávaný nebo zaručený, případně dynamický biometrický podpis podle KLH-CTIS-01. Odměnu za účast lze podle KLH-22 uvádět jen u fáze I, bioekvivalence a farmakokinetiky a ne u zranitelných účastníků; náhrada výdajů je samostatný pojem.",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ]
+    },
+    {
+      "id": "CZ-L1-POPULATION",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<template subtype>_<population>_CZ_cs",
+      "name_en": "Age-specific and capacity-specific consent documents (minors, adults with limited capacity, emergency enrolment, impartial witness)",
+      "checklist_item": 3,
+      "requirement": "conditional",
+      "trigger": "population.minors or population.adults_without_capacity or consent.emergency_enrolment or consent.impartial_witness_possible",
+      "trigger_text": "The study includes minors, adults with limited capacity, emergency enrolment or a consent pathway requiring an impartial witness.",
+      "per": "population x template",
+      "language": [
+        "cs"
+      ],
+      "template": null,
+      "template_note": "Templates per population_sets: minors, adults_without_capacity, emergency, impartial_witness.",
+      "signature_at_submission": false,
+      "content": "Separate or adapted Czech participant-facing documents for each special consent pathway, submitted blank and signed during the applicable consent procedure. Written information for minors aged 12 to 14 and 15 to 17 is mandatory (SÚKL). Each version keeps the Czech national PIS/ICF items.",
+      "sources": [
+        "CZ-PII-CHECKLIST#3",
+        "CZ-MINORS",
+        "CZ-CAPACITY",
+        "CZ-EMERGENCY",
+        "CZ-WITNESS"
+      ],
+      "kind": "participant_document",
+      "reader": "participant or representative",
+      "filled_by": "assistant",
+      "drafting_notes_cs": "CTIS část II, oddíl L. Podmíněné: pro nezletilé, dospělé se sníženou schopností rozhodovat, zařazení v naléhavé situaci a postup s nezávislým svědkem. Prázdné formuláře, podepisují se až při získávání souhlasu. U nezletilých jsou povinné samostatné písemné informace pro věk 12–14 a 15–17 let; pro děti mladší 12 let připravte věku přiměřené informace, pokud to vyspělost dítěte a populace protokolu umožňují (podpis dítěte mladšího 11 let není povinný). Pro klinická hodnocení podaná přes CTIS postačuje podpis jednoho rodiče (KLH-22). Při přechodu do vyšší věkové skupiny a při dosažení 18 let se získává nový souhlas. U zákonně ustanoveného zástupce vycházejte z rozsahu soudního rozhodnutí; nevytvářejte hierarchii zástupců. Nezávislý svědek musí být nezávislý na studijním týmu; postup platí pro účastníka, který nemůže psát, i pro účastníka, který nemůže číst (KLH-22). Ve všech verzích zachovejte české národní náležitosti (EU CT číslo, celý název, e-mail etické komise, přístup ke zdravotnické dokumentaci, výsledky na webu EMA, stejnopis).",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ]
+    },
+    {
+      "id": "CZ-L2",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_<type>_CZ_cs",
+      "ctis_title_note": "The Czechia guide names no CTIS category for these materials; L2 follows the naming guide. Whether endpoint questionnaires go under L2 or R2 is a decision (DECISIONS.md D8).",
+      "name_en": "Other participant materials: diaries, participation cards, questionnaires, instructions for use, screenshots of electronic questionnaires",
+      "checklist_item": 4,
+      "requirement": "conditional",
+      "trigger": "participant_materials.used or endpoint_documents.participant_facing or imp.self_administered or devices.used_in_trial",
+      "trigger_text": "Diaries, participation cards, questionnaires or other participant materials apply to the trial; instructions for use are mandatory when applicable for self-administered medicinal products and for relevant medical devices.",
+      "per": "item",
+      "language": [
+        "cs"
+      ],
+      "language_note": "Czech. A questionnaire may be submitted in English only when the investigator completes it together with the participant; it is then not listed among the approved documents in the Decision.",
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Czech participant materials as used. Screenshots for electronic questionnaires. Instructions for use for self-administered medicinal products and relevant medical devices.",
+      "sources": [
+        "CZ-PII-CHECKLIST#4",
+        "CZ-ICF",
+        "CZ-QC#8",
+        "CZ-HV"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant (manufacturer instructions for use are supplied documents)",
+      "drafting_notes_cs": "CTIS část II (kategorii průvodce neuvádí; navrženo L2). Podmíněné: deníky, karty účastníka, dotazníky a další materiály pro účastníky, které se na hodnocení vztahují; jeden dokument na každý materiál. Česky. Dotazník smí být anglicky jen tehdy, pokud jej vyplňuje zkoušející společně s účastníkem; pak nebude uveden mezi schválenými dokumenty v rozhodnutí. U elektronických dotazníků předložte snímky obrazovky. Návod k použití je povinný, je-li relevantní, u léčivých přípravků, které si účastník podává sám, a u příslušných zdravotnických prostředků. Obsah musí odpovídat protokolu a aktuální verzi PIS/ICF.",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ]
+    },
+    {
+      "id": "CZ-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment and informed consent procedure (SÚKL Template No. 1 / EU template v2.0)",
+      "checklist_item": 5,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "cs",
+        "en"
+      ],
+      "language_note": "SÚKL Template No. 1 is bilingual and may be completed in Czech or English. Answers in this package: Czech (answer_languages), pending DECISIONS.md D2.",
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "European Commission harmonised recruitment and informed consent procedure template v2.0, applicable to new Part II submissions from 1 September 2026. SÚKL KLH-CTIS-01 Version 3 (28 January 2026) still lists its mandatory national Template No. 1 (Trial subject recruitment and obtaining of informed consent, 28 January 2026), which was not supplied; the guide says to check both forms together and include all Czech national fields (DECISIONS.md D1).",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true,
+        "template_required": "SÚKL Template No. 1, Trial subject recruitment and obtaining of informed consent, 28 January 2026 (Annex to KLH-CTIS-01 Version 3): needed to confirm the Czech national fields."
+      },
+      "signature_at_submission": false,
+      "signature_rule": "The current national Template No. 1 has no participant or investigator signature block for application submission.",
+      "content": "How potential participants are identified, approached, informed and consented, with a completed section for every population pathway in the plan. Annex I requires, where the pathways apply, the emergency procedure (how urgency is identified and documented, information given later, consent to continue) and the reason for, selection of and procedure with an impartial witness. Healthy-volunteer recruitment and consent process included where applicable.",
+      "national_fields": {
+        "v105": "Czechia: all recruitment advertisements, leaflets and other materials are submitted (K2); audio, video or other non-print formats are submitted in that format in CTIS where possible. Participant-facing material is Czech.",
+        "v108": "Czechia: the consent process is conducted by the investigator; the participant has enough time to consider and ask questions (KLH-22). Czech PIS/ICF only; a foreign national who demonstrably understands another language receives a certified translation of the approved Czech version, submitted through CTIS as a non-substantial amendment. The participant or legally designated representative and the person conducting the interview sign and date; one dated and signed copy for the participant and one kept at the site. Electronic consent only with a qualified, recognised or guaranteed electronic signature or a dynamic biometric signature; a sponsor-created signature not meeting SÚKL's criteria is not accepted.",
+        "v110": "Czechia: who gives legally valid consent follows the participant's legal status and the scope of any court ruling on healthcare decisions; if the ruling does not remove the ability to make the relevant healthcare decision, the participant may consent personally. A caregiver is not thereby the legally designated representative. Information adapted to the participant's capacity; explicit refusal respected. For acute or severely deteriorated participants KLH-22 recommends a short basic information stage and fuller information after stabilisation. The participant's own consent is obtained once capacity is regained.",
+        "v114": "Czechia: written information for minors aged 12 to 14 and 15 to 17 is mandatory (SÚKL); children under 12 receive age-appropriate information where meaningful and may express willingness on the form with their parents (a signature under age 11 is not mandatory). One parent's signature is acceptable for trials submitted through CTIS (KLH-22). The minor signs the age-specific document to confirm willingness; this does not replace the parent's or representative's consent. Re-consent when the minor moves into the next age band and at 18 with the adult PIS/ICF.",
+        "v117": "Czechia: the impartial-witness procedure applies when the participant cannot write (Article 29 CTR) and, per KLH-22, when the participant cannot read; the witness is independent of the study team, is not a study-team member merely present at the discussion, and signs and dates; state how the witness is selected.",
+        "v121": "Czechia: all Article 35 conditions; describe how urgency is identified and documented, the information given later and how consent to continue is sought without undue delay; where an abbreviated information stage is used, fuller information and continued consent after stabilisation (KLH-22); the right to object to use of data already obtained."
+      },
+      "sources": [
+        "CZ-PII-CHECKLIST#5",
+        "CZ-EMERGENCY",
+        "CZ-WITNESS",
+        "CZ-MINORS",
+        "CZ-CAPACITY",
+        "CZ-HV",
+        "CZ-ICF"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "drafting_notes_cs": "CTIS část II, oddíl K (Recruitment Arrangements). Povinné. SÚKL vyžaduje svou šablonu č. 1 „Nábor subjektů hodnocení a získání informovaného souhlasu“ (28. ledna 2026; dvojjazyčná, lze vyplnit česky nebo anglicky); od 1. září 2026 se pro nová podání části II uplatňuje harmonizovaná šablona Evropské komise verze 2.0. Tato sdílená šablona v2.0 je vyplňována česky; před podáním ověřte s aktuálním zněním šablony SÚKL č. 1, že jsou zahrnuta všechna česká národní pole (DECISIONS.md D1). Bez podpisu při podání. Vyplňte oddíl pro každou populaci s vlastním postupem souhlasu (dospělí bez způsobilosti, nezletilí, nezávislý svědek, naléhavá situace) a u ostatních uveďte odpověď „nevztahuje se“. Do polí členského státu (national_fields) doplňte české požadavky. Náborové cesty musí odpovídat všem materiálům K2.",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_CZ_cs",
+      "name_en": "Recruitment advertisements, leaflets and other recruitment materials",
+      "checklist_item": 5,
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Advertisements, leaflets or other materials (including audio, video or other non-print formats) are used for recruitment.",
+      "per": "item",
+      "language": [
+        "cs"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "All recruitment advertisements, leaflets and other materials as they will be used; non-print formats submitted in that format in CTIS where possible. Content consistent with K1, the PIS/ICF and P1.",
+      "sources": [
+        "CZ-PII-CHECKLIST#5",
+        "CZ-HV",
+        "CZ-QC#8"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "drafting_notes_cs": "CTIS část II, oddíl K. Podmíněné: předkládají se všechny náborové inzeráty, letáky a další materiály; jeden dokument na každý materiál. Pokud nábor využívá zvukový, obrazový nebo jiný netištěný formát, předložte jej podle možností v tomto formátu přímo v CTIS. Česky. Bez podpisu. Obsah musí odpovídat K1, PIS/ICF a údajům o náhradách (P1) a musí jít o aktuální verzi obsahu.",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ]
+    },
+    {
+      "id": "CZ-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "name_en": "Principal investigator CV (SÚKL Template No. 2)",
+      "checklist_item": 6,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "cs"
+      ],
+      "template": null,
+      "template_required": "SÚKL Template No. 2, Investigator Curriculum Vitae, 28 January 2026 (Annex to KLH-CTIS-01 Version 3). Not in the CTIS_CZ folder: its M1 DOCX is the shared EU CV form, which SÚKL does not accept in place of its mandatory template. Once supplied, convert it into countries/CZ/templates/part-ii and change kind to third_party_template.",
+      "signature_at_submission": true,
+      "signature_rule": "Dated and signed by the physician at application submission. Handwritten signature, or a recognised, qualified or guaranteed electronic signature, or a dynamic biometric signature. DocuSign or a sponsor-created signature that does not meet SÚKL's criteria is not accepted.",
+      "content": "Current CV of the principal investigator on SÚKL Template No. 2, completed in Czech. If GCP training is documented only in the CV, it gives the month, year and training provider.",
+      "sources": [
+        "CZ-PII-CHECKLIST#6",
+        "CZ-HUB"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "drafting_notes_cs": "CTIS část II, oddíl M (Suitability of the Investigator). Povinné pro každého hlavního zkoušejícího a pracoviště. Použijte šablonu SÚKL č. 2 „Životopis zkoušejícího“ (28. ledna 2026), nikoli evropskou šablonu; vyplňuje se česky. Při podání musí být datován a podepsán lékařem: vlastnoruční podpis, uznávaný, kvalifikovaný nebo zaručený elektronický podpis, nebo dynamický biometrický podpis; DocuSign ani podpis vytvořený zadavatelem, který nesplňuje kritéria SÚKL, nejsou přijatelné. Pokud je školení SVP uvedeno jen v životopise, uveďte měsíc, rok a poskytovatele školení. Osobní údaje dodává zkoušející; asistent žádné osobní údaje nevymýšlí.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-M-GCP",
+      "ctis_section": "M",
+      "ctis_title": "M2_GCP training_<investigator>_<site>",
+      "ctis_title_note": "The Czechia guide names no CTIS title for a separate GCP certificate; the Germany and Austria pattern is used (DECISIONS.md D5).",
+      "name_en": "Separate Good Clinical Practice certificate of the principal investigator",
+      "checklist_item": 6,
+      "requirement": "conditional",
+      "trigger": "investigator.separate_gcp_certificate",
+      "trigger_text": "A separate GCP certificate is submitted instead of documenting GCP training only in the CV.",
+      "per": "site",
+      "language": [
+        "cs",
+        "en"
+      ],
+      "language_note": "The guides state no language for the certificate.",
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Not older than three years and identifies the version of ICH E6 covered by the training (SÚKL).",
+      "sources": [
+        "CZ-PII-CHECKLIST#6"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "training provider",
+      "drafting_notes_cs": "CTIS část II, oddíl M. Podmíněné: pouze pokud se předkládá samostatný certifikát SVP (jinak stačí údaje v životopise). Certifikát nesmí být starší tří let a musí uvádět verzi ICH E6, kterou školení pokrývalo. Záznamy a doklady o SVP dalších členů týmu se v části II nepředkládají a zůstávají na pracovišti.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-M2-DOI",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Declaration of investigator's interest (SÚKL Template No. 3)",
+      "checklist_item": 7,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "cs"
+      ],
+      "template": null,
+      "template_required": "SÚKL Template No. 3, Declaration of Investigator's Interest, 28 January 2026. Not in the CTIS_CZ folder: its M2 DOCX is the shared EU form. Once supplied, convert it into countries/CZ/templates/part-ii and change kind to third_party_template.",
+      "signature_at_submission": true,
+      "signature_rule": "Dated and signed by the physician at submission; the same national signature rules as the CV apply. Handwritten signature, or a recognised, qualified or guaranteed electronic signature, or a dynamic biometric signature. DocuSign or a sponsor-created signature that does not meet SÚKL's criteria is not accepted.",
+      "sources": [
+        "CZ-PII-CHECKLIST#7"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "drafting_notes_cs": "CTIS část II, oddíl M. Povinné pro každého hlavního zkoušejícího a pracoviště. Šablona SÚKL č. 3 „Prohlášení o zájmech zkoušejícího“ (28. ledna 2026), česky. Při podání datuje a podepisuje lékař; platí stejná pravidla pro podpis jako u životopisu (DocuSign ani podpis vytvořený zadavatelem nesplňující kritéria SÚKL nejsou přijatelné). Údaje o zájmech vyplňuje zkoušející sám; asistent nic nevymýšlí.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-SITE-LIST",
+      "ctis_section": "not stated in the guide (proposed N)",
+      "ctis_title": "N2_List of trial sites and principal investigators_CZ",
+      "ctis_title_note": "The Czechia guide gives no CTIS category or title; the naming guide has no example. Proposed title and slot to confirm (DECISIONS.md D6).",
+      "name_en": "Machine-readable list of trial sites and principal investigators",
+      "checklist_item": 8,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "cs"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Machine-readable list in Czech with all Czech trial sites and principal investigators, preserving Czech diacritics and all academic titles. No lists of sub-investigators or other team members in Part II; their records and GCP evidence stay at the site.",
+      "sources": [
+        "CZ-PII-CHECKLIST#8"
+      ],
+      "kind": "ctis_data",
+      "reader": "regulatory",
+      "filled_by": "sponsor (machine-readable list from the CTIS site data)",
+      "drafting_notes_cs": "CTIS část II. Povinné. Strojově čitelný seznam míst hodnocení a hlavních zkoušejících v češtině; zachovejte českou diakritiku a všechny akademické tituly. Seznamy dalších zkoušejících a členů týmu SÚKL v části II nepožaduje; jejich záznamy a doklady o SVP zůstávají na pracovišti. Údaje musí odpovídat CTIS, formulářům vhodnosti pracoviště (N1), životopisům a prohlášením o zájmech.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Site suitability (SÚKL Template No. 4)",
+      "checklist_item": 9,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "cs"
+      ],
+      "language_note": "The guides state no language for Template No. 4; Czech recommended (DECISIONS.md D2).",
+      "template": null,
+      "template_required": "SÚKL Template No. 4, Site Suitability, 28 January 2026. Not in the CTIS_CZ folder: its N1 DOCX is the shared EU form, which does not replace the mandatory national template. Once supplied, convert it into countries/CZ/templates/part-ii; the assistant can then prepare the trial fields and leave the site fields to the site.",
+      "signature_at_submission": true,
+      "signature_rule": "Signed at submission by the department head, clinic director or principal investigator. Handwritten signature, or a recognised, qualified or guaranteed electronic signature, or a dynamic biometric signature. DocuSign or a sponsor-created signature that does not meet SÚKL's criteria is not accepted.",
+      "content": "One form per Czech site identifying the site name and address. Where protocol procedures are performed outside the main site, identify who provides them in the site documentation.",
+      "sources": [
+        "CZ-PII-CHECKLIST#9",
+        "CZ-PII-CHECKLIST#10"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "site (department head, clinic director or principal investigator signs)",
+      "drafting_notes_cs": "CTIS část II, oddíl N (Suitability of the Facilities). Povinné, jeden formulář pro každé české pracoviště. Šablona SÚKL č. 4 „Vhodnost pracoviště“ (28. ledna 2026), nikoli evropská šablona. Musí uvádět název a adresu pracoviště. Při podání podepisuje přednosta oddělení, ředitel kliniky nebo hlavní zkoušející; přípustné jsou stejné metody podpisu jako u životopisu (DocuSign ani podpis vytvořený zadavatelem nesplňující kritéria SÚKL nejsou přijatelné). Pokud se postupy protokolu provádějí mimo hlavní pracoviště, uveďte v dokumentaci pracoviště, kdo je zajišťuje. Údaje pracoviště vyplňuje pracoviště; asistent je nevymýšlí.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-N-FACILITY",
+      "ctis_section": "N",
+      "ctis_title": "N<next number>_Healthcare facility evidence_<site>",
+      "ctis_title_note": "The naming guide gives no fixed code; use the next free N number under suitability of facilities (DECISIONS.md D6).",
+      "name_en": "Regional Authority evidence of healthcare-facility status and permitted scope of activities",
+      "checklist_item": 10,
+      "requirement": "conditional",
+      "trigger": "sites.non_state_or_non_ministry_facility or sites.sub_site_used",
+      "trigger_text": "A non-state healthcare facility, or a facility established by an entity other than the Czech Ministry of Health, is a trial site; or part of the trial is performed at a sub-site.",
+      "per": "site or sub-site",
+      "language": [
+        "cs"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Evidence from the Regional Authority confirming healthcare-facility status and the permitted scope of activities, for the site and for any sub-site where part of the trial is performed.",
+      "sources": [
+        "CZ-PII-CHECKLIST#10"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "site (Regional Authority document)",
+      "drafting_notes_cs": "CTIS část II, oddíl N. Podmíněné: u nestátních zdravotnických zařízení a zařízení, jejichž zřizovatelem není Ministerstvo zdravotnictví ČR, předložte doklad krajského úřadu o statusu zdravotnického zařízení a povoleném rozsahu činnosti. Totéž platí pro dílčí pracoviště, kde se provádí část hodnocení.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-N-GCP-CERT",
+      "ctis_section": "N",
+      "ctis_title": "N<next number>_SÚKL GCP certificate_<site>",
+      "ctis_title_note": "The naming guide gives no fixed code; use the next free N number (DECISIONS.md D6).",
+      "name_en": "Scan of the SÚKL GCP certificate of a bioequivalence, pharmacokinetic or First-in-Human site",
+      "checklist_item": 10,
+      "requirement": "conditional",
+      "trigger": "sites.sukl_gcp_certificate_required",
+      "trigger_text": "Bioequivalence, pharmacokinetic or First-in-Human site that is required to hold a SÚKL GCP certificate.",
+      "per": "site",
+      "language": [
+        "cs"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "sources": [
+        "CZ-PII-CHECKLIST#10"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "site (SÚKL-issued certificate)",
+      "drafting_notes_cs": "CTIS část II, oddíl N. Podmíněné: pro pracoviště bioekvivalenčních, farmakokinetických a First-in-Human studií, která musí mít certifikát SVP vydaný SÚKL, předložte jeho sken.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_CZ",
+      "name_en": "Insurance certificate",
+      "checklist_item": 11,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "cs"
+      ],
+      "language_note": "Czech or a bilingual version (with Czech).",
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "Issued by the insurer; the guides set no further signature rule.",
+      "content": "Insurance certificate under Proof of Insurance Cover or Indemnification. It need not state the number of enrolled participants; if it does and the planned number later increases, an updated certificate is submitted as a non-substantial modification.",
+      "sources": [
+        "CZ-PII-CHECKLIST#11",
+        "CZ-HUB"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "drafting_notes_cs": "CTIS část II, oddíl O (Proof of Insurance Cover or Indemnification). Povinné. Pojistný certifikát česky nebo ve dvojjazyčné verzi. Nemusí uvádět počet zařazených účastníků; pokud jej uvádí a plánovaný počet se později zvýší, předložte aktualizovaný certifikát jako nepodstatnou změnu. Pojistitel a údaje musí odpovídat PIS/ICF.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-O2",
+      "ctis_section": "O",
+      "ctis_title": "O2_Proof of coverage_<sponsor or site>",
+      "name_en": "Complete insurance policy including the terms and conditions",
+      "checklist_item": 11,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "cs"
+      ],
+      "language_note": "Czech or a bilingual version (with Czech).",
+      "template": null,
+      "signature_at_submission": false,
+      "content": "The complete insurance policy including the terms and conditions; SÚKL explicitly states that submission of the terms and conditions is mandatory.",
+      "sources": [
+        "CZ-PII-CHECKLIST#11",
+        "CZ-HUB"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "drafting_notes_cs": "CTIS část II, oddíl O. Povinné. Úplná pojistná smlouva včetně pojistných podmínek; předložení pojistných podmínek je podle SÚKL výslovně povinné. Celá pojistná dokumentace česky nebo dvojjazyčně. Pojistné krytí a povinnosti účastníka musí odpovídat PIS/ICF.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-O-POSTTRIAL",
+      "ctis_section": "O",
+      "ctis_title": "O3_Sponsor statement post-trial damage compensation_CZ",
+      "ctis_title_note": "The naming guide has only O1 and O2; O3 is the next free O number (DECISIONS.md D7).",
+      "name_en": "Sponsor statement on compensation for health damage that becomes apparent after the trial and after the policy expires",
+      "checklist_item": 11,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "cs"
+      ],
+      "language_note": "Not stated; Czech recommended, consistent with the insurance documentation (DECISIONS.md D2).",
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "The guides set no signature rule for this statement.",
+      "content": "Sponsor statement explaining how compensation will be ensured for health damage caused by trial participation that becomes apparent only after the trial and after the insurance policy expires.",
+      "sources": [
+        "CZ-PII-CHECKLIST#11"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor",
+      "kind_note": "No template supplied; the sponsor's own statement. If TrialAgents should draft it, it needs a template (DECISIONS.md D7).",
+      "drafting_notes_cs": "CTIS část II, oddíl O. Povinné. Prohlášení zadavatele, jak bude zajištěno odškodnění újmy na zdraví způsobené účastí v hodnocení, která se projeví až po skončení hodnocení a po skončení platnosti pojistné smlouvy. Musí odpovídat pojistné dokumentaci (O1, O2) a PIS/ICF.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-R1",
+      "ctis_section": "R",
+      "ctis_title": "R1_Compliance collection and use personal data_CZ",
+      "name_en": "Sponsor declaration on personal data processing (SÚKL Template No. 5)",
+      "checklist_item": 12,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "cs"
+      ],
+      "language_note": "The guides state no language for Template No. 5; Czech recommended (DECISIONS.md D2).",
+      "template": {
+        "file": "eu/templates/part-ii/R1_Data protection.docx",
+        "basis": "Interim only: EudraLex GDPR compliance statement. Czechia requires the sponsor-signed SÚKL Template No. 5, Sponsor declaration on personal data processing (28 January 2026), which is not in the CTIS_CZ folder.",
+        "recommended": false,
+        "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+        "shared": true,
+        "interim": true,
+        "national_model_required": "SÚKL Template No. 5, Sponsor declaration on personal data processing, 28 January 2026",
+        "use_for_upload": false
+      },
+      "signature_at_submission": true,
+      "signature_rule": "Signed by the sponsor. A third-country sponsor signs the declaration itself; an EU representative or CRO may not sign it instead.",
+      "content": "Sponsor-signed SÚKL Template No. 5 under Compliance with National Requirements on Data Protection. The sponsor may use the same declaration submitted in Part I under Forms, but it must also be submitted in the Part II data-protection category. Sponsor and controller descriptions consistent with the PIS/ICF.",
+      "note": "Until Template No. 5 is supplied and converted into countries/CZ/templates/part-ii, the EU form only collects the content; it is not the Czech upload.",
+      "sources": [
+        "CZ-PII-CHECKLIST#12",
+        "CZ-QC#5",
+        "CZ-HUB"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant; signed by the sponsor",
+      "drafting_notes_cs": "CTIS část II, oddíl R (Compliance with National Requirements on Data Protection). Povinné. Šablona SÚKL č. 5 „Prohlášení zadavatele o zpracování osobních údajů“ (28. ledna 2026) podepsaná zadavatelem; evropská šablona je jen prozatímním podkladem a nenahrává se jako český dokument. Zadavatel ze třetí země podepisuje prohlášení sám; zástupce v EU ani CRO je za něj podepsat nesmí. Lze použít totéž prohlášení jako v části I (Forms), musí však být nahráno i do kategorie ochrany osobních údajů v části II. Popis zadavatele a správce musí odpovídat PIS/ICF; souhlas účastníka nenahrazuje regulatorní dokumentaci zadavatele.",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-S1",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_CZ",
+      "name_en": "Human biological samples compliance form (SÚKL Template No. 7)",
+      "checklist_item": 13,
+      "requirement": "conditional",
+      "trigger": "samples.collected or samples.archive_used",
+      "trigger_text": "Human biological samples are collected or stored.",
+      "per": "trial",
+      "language": [
+        "cs"
+      ],
+      "language_note": "The guides state no language for Template No. 7; Czech recommended (DECISIONS.md D2).",
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "Interim only: EudraLex biological-samples form. Czechia requires SÚKL Template No. 7, Compliance with effective rules of the Member State for sampling, storage and future use of human biological samples (28 January 2026), completed in full; not in the CTIS_CZ folder.",
+        "recommended": false,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true,
+        "interim": true,
+        "national_model_required": "SÚKL Template No. 7, Human biological samples, 28 January 2026",
+        "use_for_upload": false
+      },
+      "signature_at_submission": false,
+      "signature_rule": "The guides set no signature rule for Template No. 7; check the template once supplied (DECISIONS.md D3).",
+      "content": "Template No. 7 completed in full, covering samples collected during the trial as well as storage and future use; the same storage, coding and future-use model as the participant documents.",
+      "national_fields": {
+        "f03": "Czechia: the form covers samples collected during the trial and future use. For optional future research use state the storage duration, whether samples remain pseudonymised or become fully anonymised and the main future research purpose (disease, treatment, genetic testing or broader research, as applicable); consent to future use is either in the main PIS/ICF with its own separate signature or a separate signed document (the CZ template set uses the separate document)."
+      },
+      "sources": [
+        "CZ-PII-CHECKLIST#13",
+        "CZ-SECONDARY",
+        "CZ-QC#6"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "note": "Until Template No. 7 is supplied and converted, the EU form only collects the content; it is not the Czech upload.",
+      "drafting_notes_cs": "CTIS část II, oddíl S (Compliance with Use of Biological Samples). Podmíněné: pokud se odebírají nebo uchovávají lidské biologické vzorky. Šablona SÚKL č. 7 „Soulad s platnými pravidly členského státu pro odběr, uchovávání a budoucí použití lidských biologických vzorků“ (28. ledna 2026), vyplněná v plném rozsahu; evropská šablona je jen prozatímním podkladem. Uveďte vzorky odebírané během hodnocení i jejich budoucí použití. U budoucího použití uveďte dobu uchování, zda vzorky zůstanou pseudonymizované nebo budou plně anonymizované, a hlavní účel budoucího výzkumu. Údaje musí odpovídat protokolu, PIS/ICF a samostatnému dokumentu o budoucím použití; vzorky s kódem, který lze propojit s účastníkem, neoznačujte jako plně anonymizované.",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_CZ",
+      "name_en": "Participant compensation and reimbursement information (SÚKL Template No. 6)",
+      "checklist_item": 14,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "cs"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "Interim only: EU compensation template (CTAG). SÚKL provides Template No. 6, Compensation for study participants (28 January 2026), not in the CTIS_CZ folder; a sponsor not using it must give references showing where every Template No. 6 item is addressed.",
+        "recommended": false,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true,
+        "interim": true,
+        "national_model_required": "SÚKL Template No. 6, Compensation for study participants, 28 January 2026",
+        "use_for_upload": false
+      },
+      "signature_at_submission": false,
+      "signature_rule": "The guides set no signature rule for this information.",
+      "content": "Czech information on expense reimbursement, compensation, any remuneration and the payment method under Financial and Other Arrangements. SÚKL recommends standardising compensation payments as a lump sum. Payment cards: no participant fees, Czech-language support and an alternative reimbursement method. Amounts and conditions identical in every participant document.",
+      "national_fields": {
+        "f02": "Czechia: describe expense reimbursement, compensation, any remuneration and the payment method; SÚKL recommends standardising compensation as a lump sum; if payment cards are used, no participant fees, Czech-language support and an alternative reimbursement method. Remuneration only in Phase I, bioequivalence and pharmacokinetic studies and not to vulnerable participants (KLH-22 recommendation).",
+        "f06": "Czechia: state the payment conditions and schedule consistently with the PIS/ICF (prorating on early termination where it applies)."
+      },
+      "note": "Until Template No. 6 is supplied and converted, the EU form only collects the content; it may be uploaded only with references to every Template No. 6 item, which cannot be built without the template.",
+      "sources": [
+        "CZ-PII-CHECKLIST#14",
+        "CZ-HV",
+        "CZ-ICF"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "drafting_notes_cs": "CTIS část II, oddíl P (Financial and Other Arrangements). Povinná informace. SÚKL poskytuje šablonu č. 6 „Náhrady pro účastníky studie“ (28. ledna 2026); pokud ji zadavatel nepoužije, musí odkazy doložit, kde je řešena každá položka šablony. Evropská šablona je jen prozatímním podkladem. Česky. Popište náhradu výdajů, kompenzaci, případnou odměnu a způsob platby. SÚKL doporučuje kompenzační platby standardizovat jako paušální částku. Při použití platebních karet: žádné poplatky pro účastníka, podpora v češtině a alternativní způsob úhrady. Odměnu podle KLH-22 jen u fáze I, bioekvivalence a farmakokinetiky a ne zranitelným účastníkům. Částky a podmínky musí být shodné ve všech dokumentech pro účastníky.",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-P-FUNDING",
+      "ctis_section": "P",
+      "ctis_title": "P2_Funding of the trial_CZ",
+      "ctis_title_note": "The naming guide has no title for a separate funding description; P2 is the next free P number (DECISIONS.md D7).",
+      "name_en": "Description of how the clinical trial will be funded (financial coverage)",
+      "checklist_item": 15,
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "cs"
+      ],
+      "language_note": "Not stated; Czech recommended (DECISIONS.md D2).",
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "SÚKL requires the description but prescribes no separate national signature form.",
+      "content": "Description of how the clinical trial will be funded, under Financial and Other Arrangements.",
+      "sources": [
+        "CZ-PII-CHECKLIST#15"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor",
+      "drafting_notes_cs": "CTIS část II, oddíl P (Financial and Other Arrangements). Povinné. Popis financování klinického hodnocení. SÚKL popis vyžaduje, ale nepředepisuje pro něj samostatný národní formulář s podpisem.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-FEE",
+      "ctis_section": "Proof of payment (provided during validation, not at initial submission)",
+      "ctis_title": "Proof of payment_Part II fee_CZ",
+      "ctis_title_note": "Proof of fee payment uses another CTIS upload location (naming guide); no CTCG title is given. Plain descriptive title, to confirm (DECISIONS.md D7).",
+      "name_en": "Proof of Part II (ethics) fee payment",
+      "checklist_item": 16,
+      "requirement": "mandatory",
+      "timing": "later in validation, after the Ethics Committee is designated; not at initial submission",
+      "trigger": "always",
+      "per": "application",
+      "language": [
+        "cs"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Do not pay the Part II assessment fee at the initial CTIS submission. SÚKL designates the Ethics Committee in the validation request and provides the payment pathway. SÚKL Ethics Committee: follow UST-29 and the applicable K-023 to K-028 code. Multicentre Ethics Committee: provide billing information and use that committee's payment instructions.",
+      "sources": [
+        "CZ-PII-CHECKLIST#16",
+        "CZ-HUB"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor (payment confirmation)",
+      "drafting_notes_cs": "Doklad o zaplacení poplatku za část II. Povinné až v průběhu validace, nikoli při prvním podání. Poplatek neplaťte, dokud není známa určená etická komise; SÚKL ji uvede v žádosti o doplnění při validaci a sdělí platební postup. Je-li určena Etická komise SÚKL, postupujte podle UST-29 a příslušného kódu K-023 až K-028; je-li určena multicentrická etická komise, uveďte fakturační údaje a použijte platební pokyny této komise. Doklad o platbě se předkládá v rámci posuzování.",
+      "default_steps": [
+        "Check"
+      ]
+    },
+    {
+      "id": "CZ-DEVICE",
+      "ctis_section": "not stated in the guide (check KLH-CTIS-01)",
+      "ctis_title": "Medical device documentation_<device>_CZ",
+      "ctis_title_note": "The Czechia guide gives no CTIS slot or title; to confirm against the current KLH-CTIS-01 text (DECISIONS.md D9). Czech instructions for use for participants are CZ-L2 items.",
+      "name_en": "Medical-device and IVD documents: conformity documents and national declarations",
+      "checklist_item": 17,
+      "requirement": "conditional",
+      "trigger": "devices.used_in_trial",
+      "trigger_text": "A medical device or in vitro diagnostic device is used within the clinical trial of a medicinal product. Non-CE-marked devices and devices used outside their intended purpose trigger additional national declarations and, where required, a separate clinical investigation or performance-study authorisation.",
+      "per": "device",
+      "language": [
+        "cs"
+      ],
+      "language_note": "Instructions for use must be Czech; the guides state no language for conformity documents.",
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Applicable conformity documents, Czech instructions for use, identification of device use in the application; additional national declarations for non-CE-marked devices or use outside the intended purpose; separate clinical investigation or performance-study authorisation pathway where required. Exact scenario per the current KLH-CTIS-01 text.",
+      "sources": [
+        "CZ-PII-CHECKLIST#17"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor or manufacturer",
+      "drafting_notes_cs": "Podmíněné: pokud se v klinickém hodnocení léčivého přípravku používá zdravotnický prostředek nebo diagnostický zdravotnický prostředek in vitro. Předložte příslušné doklady o shodě a český návod k použití a v žádosti uveďte použití prostředku. Prostředky bez označení CE a prostředky použité mimo určený účel vyžadují další národní prohlášení a případně samostatné povolení klinické zkoušky nebo studie funkční způsobilosti. Přesný scénář ověřte v aktuálním znění KLH-CTIS-01.",
+      "default_steps": [
+        "Check"
+      ]
+    }
+  ],
+  "checklist_mapping_note": "22 document entries for the 17 items of the Czechia Part II checklist page (checklist_item on each entry). Items with uploads from different authors or triggers are split: 5 into K1 and K2; 6 into M1 and the optional separate GCP certificate; 10 into Regional Authority evidence and the SÚKL GCP certificate; 11 into O1 certificate, O2 policy and terms, and the sponsor post-trial statement.",
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_adult patients_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_main_CZ_cs.json"
+        }
+      ],
+      "basis": "Czech PIS/ICF with the SÚKL national items (KLH-CTIS-01 Version 3) and KLH-22 Version 5 drafting recommendations",
+      "sources": [
+        "CZ-ICF",
+        "CZ-PII-CHECKLIST#2"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_healthy_CZ_cs.json"
+        }
+      ],
+      "note": "Use when participants are recruited because they meet a healthy-volunteer definition (for example First-in-Human, Phase I, bioequivalence, pharmacokinetic). SÚKL has no separate healthy-volunteer template: an adapted Czech PIS/ICF with all national items. No implied therapeutic benefit; do not soften limited human experience in First-in-Human trials; dose escalation explained without implying earlier cohorts establish safety; remuneration only as KLH-22 recommends, distinguished from expense reimbursement and consistent with P1; healthy-volunteer recruitment and consent process in K1.",
+      "sources": [
+        "CZ-HV"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_parents_CZ_cs.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 6-11_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_age 6-11_CZ_cs.json",
+          "when": "population.minors_age_bands includes ages under 12 and age-appropriate information is meaningful for the child's maturity and the protocol population"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 12-14_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_age 12-14_CZ_cs.json",
+          "when": "population.minors_age_bands includes ages 12-14 (mandatory)"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 15-17_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_age 15-17_CZ_cs.json",
+          "when": "population.minors_age_bands includes ages 15-17 (mandatory)"
+        }
+      ],
+      "note": "SÚKL requires written information for ages 12-14 and 15-17; information for children under 12 is conditional and a signature under 11 is not mandatory. One parent's signature is acceptable for CTIS trials (KLH-22). The minor's signature documents willingness; the parent or representative gives the legally relevant consent. Re-consent when the minor reaches the next band and at 18 (adult PIS/ICF). The 12-14 document gives no contraception instructions (a teratogenic risk may be explained as an adverse-effect risk); the 15-17 document includes contraception for sexually active adolescents when relevant.",
+      "sources": [
+        "CZ-MINORS",
+        "CZ-PII-CHECKLIST#3"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_CZ_cs.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_CZ_cs.json",
+          "when": "the participant can understand adapted information or express a wish"
+        }
+      ],
+      "note": "Article 31 conditions. Who consents follows the court ruling: if it does not remove the ability to make the relevant healthcare decision, the participant may consent personally (main template). Do not equate a diagnosis with legal incapacity or invent a representative hierarchy; a caregiver is not thereby the representative. Explicit refusal respected. KLH-22 recommends, for acute or severely deteriorated participants, a short basic information stage and fuller information after stabilisation (no separate template; DECISIONS.md D11). Re-consent with the adult document when capacity is regained.",
+      "sources": [
+        "CZ-CAPACITY"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_emergency_CZ_cs.json"
+        }
+      ],
+      "note": "Only when all Article 35 conditions are met; not a label for operationally difficult prospective consent. Consent to continue without undue delay; right to object to use of data already obtained. For minors or incapacitated adults add the parents or legal-representative documents. K1 describes how urgency is identified and documented. Article 35 controls where older national emergency wording conflicts.",
+      "sources": [
+        "CZ-EMERGENCY"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_witness_CZ_cs.json"
+        }
+      ],
+      "note": "Participant who cannot write (Article 29) or cannot read (KLH-22). The witness is independent of the study team and does not consent for the participant. Only where the protocol population makes the pathway relevant; not added to every form.",
+      "sources": [
+        "CZ-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_CZ_cs.json"
+        }
+      ],
+      "note": "The main PIS/ICF covers pregnancy risks, contraception and what to do if pregnancy occurs; a separate document only for optional data or record access beyond the main consent. No dedicated SÚKL template; protocol-specific documents.",
+      "sources": [
+        "CZ-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_CZ_cs.json"
+        }
+      ],
+      "note": "The partner is not enrolled; the male participant cannot consent for her. KLH-22 lists pregnant-partner contact permission, information and consent among documents on which the ethics committee gives the opinion rather than documents SÚKL approves. Infant data after birth need the approved representative-consent pathway.",
+      "sources": [
+        "CZ-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_CZ_cs",
+          "template": "templates/participant/L1_SIS and ICF_secondary_CZ_cs.json"
+        }
+      ],
+      "note": "SÚKL: future sample use either inside the main PIS/ICF with its own separate signature or in a separate signed document; the CZ template set uses the separate document (the main templates exclude future use). State storage duration, pseudonymised or fully anonymised status and the main research purpose. Refusal does not affect main participation. One signature path per document version (adult, parent or legal representative).",
+      "sources": [
+        "CZ-SECONDARY",
+        "CZ-PII-CHECKLIST#13"
+      ]
+    }
+  ],
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents.",
+  "drafting_rules": [
+    "Participant documents: Czech only; follow the template's model text, content_instructions and the SÚKL national items; KLH-22 Version 5 is recommended guidance, not a mandatory template.",
+    "Every Czech PIS/ICF version (including age-, capacity-, witness-, emergency- and pregnancy-specific versions) contains: EU CT Number; full clinical trial title; ethics committee e-mail (eticka.komise@sukl.gov.cz or the specific Ethics Committee's e-mail) and no ethics committee telephone number; consent to access to source medical records by monitors, auditors, regulators or medicines agencies, Ethics Committee members and study-team members as applicable; the statement that results will be available on the EMA clinical trials website (not an obsolete national register); the statement that one dated and signed copy is given to the participant and one remains at the site.",
+    "Clear, understandable language without unnecessary specialist terms or abbreviations; language review before submission recommended (KLH-22). Adults and parents: normally at most about eight pages, ten in specific cases; shorter, larger type for populations with reduced reading ability.",
+    "Pages numbered with document version, date and trial identification; versions and dates match the machine-readable document list.",
+    "Distinguish research procedures from routine care and optional activities from mandatory participation; state risks cautiously and never promise benefit; describe alternatives where relevant.",
+    "Optional future use of samples: separate signature or separate signed document, with storage duration, pseudonymised or fully anonymised status and main research purpose; never describe coded material as fully anonymised; withdrawal wording distinguishes identifiable or pseudonymised samples from anonymised material or completed research.",
+    "Remuneration only in Phase I, bioequivalence and pharmacokinetic studies and not to vulnerable participants (KLH-22 recommendation); expense reimbursement is separate; amounts identical to P1.",
+    "The consent interview is conducted by the investigator; enough time to consider. Electronic consent only with a qualified, recognised or guaranteed electronic signature or a dynamic biometric signature; sponsor-created signatures not meeting SÚKL's criteria are not accepted.",
+    "Data withdrawal language does not promise deletion that the trial's legal and scientific record cannot support; privacy information matches the actual data flow and the sponsor's Template No. 5 declaration.",
+    "Participant templates (JSON): [square-bracket] notes, 'Pokyn pro zpracovatele', 'Podmíněný text', 'Vyberte a upravte' and '...........' gaps are drafting instructions or gaps; follow them and remove them. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels. Nothing of either may remain in a final document."
+  ],
+  "participant_templates": [
+    {
+      "id": "CZ-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_CZ_cs.json",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_cs": "Informace pro pacienta / Informovaný souhlas s účastí v klinickém hodnocení",
+      "role": "main information and consent (capable adult patients); also re-consent at 18 and after regained capacity",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms."
+    },
+    {
+      "id": "CZ-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_CZ_cs.json",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_cs": "Informace pro zdravého dobrovolníka / Informovaný souhlas s účastí v klinickém hodnocení",
+      "role": "main information and consent (healthy volunteers)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies."
+    },
+    {
+      "id": "CZ-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_CZ_cs.json",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_cs": "Informace pro rodiče nebo zákonné zástupce / Informovaný souhlas s účastí dítěte",
+      "role": "information and consent for parents or legal representatives of a minor",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years)."
+    },
+    {
+      "id": "CZ-PT-age-6-11",
+      "file": "templates/participant/L1_SIS and ICF_age 6-11_CZ_cs.json",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_cs": "Informace pro dítě / Vyjádření vůle účastnit se klinického hodnocení",
+      "role": "age-appropriate information and record of willingness for children 6-11 (the SÚKL 'under 12' group)",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+      "authority_note": "SÚKL makes information for children under 12 conditional (where the child's maturity and the protocol population make it meaningful); a signature under age 11 is not mandatory. The template's 6-11 band falls within that group."
+    },
+    {
+      "id": "CZ-PT-age-12-14",
+      "file": "templates/participant/L1_SIS and ICF_age 12-14_CZ_cs.json",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_cs": "Informace pro dospívající ve věku 12–14 let / Vyjádření vůle účastnit se klinického hodnocení",
+      "role": "mandatory written information and record of willingness for minors 12-14",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+      "authority_note": "The description says 'aged 12 - 17 years'; the SÚKL band for this template is 12-14 (authority wins; file name and content already say 12-14)."
+    },
+    {
+      "id": "CZ-PT-age-15-17",
+      "file": "templates/participant/L1_SIS and ICF_age 15-17_CZ_cs.json",
+      "name_en": "Subject Information and Consent Form - Adolescents",
+      "name_cs": "Informace pro dospívající ve věku 15–17 let / Informovaný souhlas s účastí v klinickém hodnocení",
+      "role": "mandatory written information and consent for minors 15-17",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+      "authority_note": "The description says 'aged 12 - 17 years'; the SÚKL band for this template is 15-17 (authority wins; file name and content already say 15-17)."
+    },
+    {
+      "id": "CZ-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_CZ_cs.json",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_cs": "Informace pro zákonně ustanoveného zástupce / Informovaný souhlas s účastí zastupované osoby",
+      "role": "information and consent for the legally designated representative of an adult without capacity",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "CZ-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_CZ_cs.json",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_cs": "Přizpůsobené informace pro dospělého účastníka / Vyjádření vůle, souhlasu nebo nesouhlasu",
+      "role": "information adapted to the capacity of an adult who cannot give legally valid consent",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent."
+    },
+    {
+      "id": "CZ-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_CZ_cs.json",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_cs": "Informace o zařazení v naléhavé situaci / Dodatečný informovaný souhlas s pokračováním",
+      "role": "information and consent to continue after emergency enrolment (Article 35)",
+      "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window."
+    },
+    {
+      "id": "CZ-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_CZ_cs.json",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_cs": "Informace pro účastníka / Informovaný souhlas za přítomnosti nezávislého svědka",
+      "role": "consent with an independent witness for a capable participant who cannot write or cannot read",
+      "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process."
+    },
+    {
+      "id": "CZ-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_CZ_cs.json",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_cs": "Informace a souhlas se sledováním těhotenství – těhotná účastnice",
+      "role": "pregnancy follow-up of a participant beyond the main consent",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant."
+    },
+    {
+      "id": "CZ-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_CZ_cs.json",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_cs": "Informace a souhlas se sledováním těhotenství – těhotná partnerka účastníka",
+      "role": "information and consent for the pregnant partner of a participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant."
+    },
+    {
+      "id": "CZ-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_CZ_cs.json",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_cs": "Informace a souhlas s budoucím nebo sekundárním použitím údajů a biologických vzorků",
+      "role": "separate signed information and consent for optional future or secondary use of data or samples",
+      "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial."
+    }
+  ],
+  "population_rules": {
+    "authority": "SÚKL (State Institute for Drug Control): KLH-CTIS-01 Version 3 of 28 January 2026 (mandatory national Part II requirements and templates) and KLH-22 Version 5, effective 1 June 2022 (recommended drafting guidance); Regulation (EU) No 536/2014 Articles 28 to 35",
+    "minors": {
+      "age_bands": [
+        {
+          "band": "6-11",
+          "template": "CZ-PT-age-6-11",
+          "reader": "child",
+          "requirement": "conditional (SÚKL group 'under 12': where maturity and protocol population make it meaningful)"
+        },
+        {
+          "band": "12-14",
+          "template": "CZ-PT-age-12-14",
+          "reader": "adolescent",
+          "requirement": "mandatory written information (SÚKL)"
+        },
+        {
+          "band": "15-17",
+          "template": "CZ-PT-age-15-17",
+          "reader": "adolescent",
+          "requirement": "mandatory written information (SÚKL)"
+        }
+      ],
+      "always": [
+        "CZ-PT-parents"
+      ],
+      "reconsent": "When the minor reaches the next age band, discuss the study again and obtain the higher-age document (KLH-22); at 18 obtain the adult PIS/ICF (CZ-PT-main or CZ-PT-healthy). Plan transitions before the first participant enters.",
+      "under_12_signature": "Younger minors may sign together with their parents to express willingness; a signature for minors under age 11 is not mandatory (KLH-CTIS-01). Article 32 involvement still applies.",
+      "under_6": "No age-band template. Inform the child according to age and maturity where meaningful (DECISIONS.md D10).",
+      "parent_signature": "One parent's signature is acceptable for trials submitted through CTIS (KLH-22); this differs from older Czech wording that referred to both parents.",
+      "page_limits": "KLH-22: 12-14 document about four pages at most; 15-17 may approach adult length.",
+      "conflicts": [
+        "The 12-14 and 15-17 template descriptions say 'aged 12 - 17 years'; the SÚKL bands 12-14 and 15-17 win. File names and content already follow the authority."
+      ]
+    },
+    "adults_without_capacity": {
+      "always": [
+        "CZ-PT-legal-rep"
+      ],
+      "as_applicable": [
+        "CZ-PT-limited-capacity"
+      ],
+      "note": "Representative consent when the court ruling removes the ability to make the relevant healthcare decision; otherwise the participant may consent personally (CZ-PT-main). Two-stage information for acute participants recommended by KLH-22 (no template)."
+    },
+    "emergency": {
+      "always": [
+        "CZ-PT-emergency"
+      ],
+      "note": "Add CZ-PT-legal-rep or CZ-PT-parents with CZ-PT-age-* when the emergency population includes incapacitated adults or minors; CZ-PT-witness rules apply when the person cannot write or read."
+    },
+    "impartial_witness": {
+      "always": [
+        "CZ-PT-witness"
+      ]
+    },
+    "healthy_volunteers": {
+      "always": [
+        "CZ-PT-healthy"
+      ]
+    },
+    "shareable_templates": [
+      "CZ-PT-pregnant-partner",
+      "CZ-PT-secondary"
+    ],
+    "separate_document_rules": [
+      "Optional future storage and research use of samples: separate signature inside the main PIS/ICF or a separate signed document (SÚKL); the CZ templates use the separate document CZ-PT-secondary.",
+      "An optional substudy independent of the main trial needs its own information and consent document; refusal does not affect main participation (KLH-22).",
+      "A pregnant partner receives a document addressed to her own data; the enrolled participant cannot consent for her.",
+      "Each truly independent optional choice within the main protocol has its own yes/no choice with signature and date (templates; SÚKL separate-signature rule).",
+      "Foreign nationals: a certified translation of the approved Czech version, submitted later as a non-substantial amendment; no standard bilingual versions."
+    ]
+  },
+  "sources": {
+    "CZ-HUB": "https://trialagents.com/ctis/czechia/en",
+    "CZ-PII-CHECKLIST": "https://trialagents.com/ctis/czechia/en/part-ii-document-checklist",
+    "CZ-ICF": "https://trialagents.com/ctis/czechia/en/patient-information-consent-requirements",
+    "CZ-QC": "https://trialagents.com/ctis/czechia/en/patient-facing-document-qc-checklist",
+    "CZ-HV": "https://trialagents.com/ctis/czechia/en/healthy-volunteer-consent-requirements",
+    "CZ-MINORS": "https://trialagents.com/ctis/czechia/en/minor-consent-assent-requirements",
+    "CZ-CAPACITY": "https://trialagents.com/ctis/czechia/en/limited-capacity-legal-representative-consent-requirements",
+    "CZ-EMERGENCY": "https://trialagents.com/ctis/czechia/en/emergency-enrollment-consent-requirements",
+    "CZ-WITNESS": "https://trialagents.com/ctis/czechia/en/impartial-witness-consent-requirements",
+    "CZ-PREGNANCY": "https://trialagents.com/ctis/czechia/en/pregnancy-follow-up-requirements",
+    "CZ-SECONDARY": "https://trialagents.com/ctis/czechia/en/secondary-use-consent-requirements",
+    "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention"
+  },
+  "sources_note": "All Czechia guides reviewed 23 September 2026; they record SÚKL KLH-CTIS-01 Version 3 (28 January 2026), SÚKL Templates No. 1 to 7 (28 January 2026), KLH-22 Version 5 (1 June 2022), the SÚKL fee guidance (19 December 2022) and Regulation (EU) No 536/2014. Anchors #1-#17 refer to the numbered items of the Part II checklist page; CZ-QC anchors to its numbered sections. The SÚKL source pages and templates themselves were not supplied or read.",
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "czechia_note": "Use the CTCG pattern. The Czechia guides give no national naming instructions and use descriptive names only. Country and language only where they distinguish the document: _CZ_cs on participant-facing documents, _CZ on O1, O3, P1, P2, R1, S1. Documents the naming guide does not cover (document list, site list, facility evidence, SÚKL GCP certificate, post-trial statement, funding description, fee proof, device documents) carry proposed titles to confirm (DECISIONS.md D4-D9)."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued or completed by someone else (investigator, site, insurer, sponsor, training provider, Regional Authority). Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS or a list built from it; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/CZ/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/CZ/checklists/participant-documents.json",
+    "check": "countries/CZ/checklists/forms-and-supplied.json",
+    "package": "countries/CZ/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/CZ/DECISIONS.md"
+}
