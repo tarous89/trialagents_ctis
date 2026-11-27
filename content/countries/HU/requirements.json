@@ -1,0 +1,1163 @@
+{
+  "country": "HU",
+  "name": "Hungary",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "NNGYK (National Center for Public Health and Pharmacy, Nemzeti Népegészségügyi és Gyógyszerészeti Központ); competent authority for clinical trial authorisation in Hungary",
+    "ethics": "ETT-KFEB (Clinical Pharmacology Ethics Committee of the Medical Research Council, Egészségügyi Tudományos Tanács Klinikai Farmakológiai Etikai Bizottsága) assesses the Part II ethical content and publishes Hungary-specific Part II requirements, Q&A and templates (CV, site suitability)",
+    "fee": "The Hungary guides do not describe the fee route or proof of payment (DECISIONS.md, Missing)."
+  },
+  "language_rules": {
+    "participant_documents": "hu",
+    "administrative_documents": [
+      "hu"
+    ],
+    "rule": "Final SIS/ICF and every other participant-facing document for Hungarian participants, and recruitment material, are in final Hungarian form. The cover letter and the list of Part II documents are in Hungarian (ETT-KFEB). ETT-KFEB checks linguistic quality and warns against literal translations, inconsistent forms of address and references to foreign laws that do not apply in Hungary.",
+    "administrative_note": "The guides state no language rule for the other administrative documents (K1, M1, M2, N1, P1, P2). They are set to Hungarian, matching the supplied CTIS_HU template set and variable sheet, pending DECISIONS.md D1. Third-party documents (insurance, GCP certificate, protocol signature pages) are checked as issued.",
+    "translation": "A translation must be clinically accurate and locally natural; replace foreign legislation with the Hungarian and EU rules that apply; keep terminology consistent across ICF, recruitment material, emergency card, pregnancy, genetic and substudy documents. A literal translation of an adult global ICF is not acceptable for a child-facing document.",
+    "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in Hungarian (DECISIONS.md D1).",
+    "drafting_notes_language": "drafting_notes_hu for every document."
+  },
+  "answer_languages": [
+    "hu"
+  ],
+  "answer_languages_note": "Hungarian for every form and participant document. English for administrative forms only if confirmed with NNGYK/ETT-KFEB (DECISIONS.md D1).",
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.adults_without_capacity",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "recruitment.material_used",
+    "samples.collected",
+    "samples.future_use_outside_protocol",
+    "data.future_use_outside_protocol",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "sites.count",
+    "genetics.testing_planned",
+    "trial.phase_iv_or_bioequivalence",
+    "consent.separate_substudy_decision",
+    "data.privacy_appendix_separate",
+    "reimbursement.external_service_provider",
+    "participants.small_gifts",
+    "investigators.co_investigators",
+    "data.transfer_outside_eea",
+    "trial.placebo"
+  ],
+  "study_facts_country_specific": {
+    "genetics.testing_planned": "Is genetic sampling, human genetic testing or genetic research planned in the protocol (mandatory or optional)?",
+    "trial.phase_iv_or_bioequivalence": "Is the trial a Phase IV or bioequivalence trial (no patient emergency card needed)?",
+    "consent.separate_substudy_decision": "Does a substudy require its own consent decision?",
+    "data.privacy_appendix_separate": "Will the privacy information be given as a separate appendix instead of inside each ICF?",
+    "reimbursement.external_service_provider": "Will a third-party reimbursement service interact with participants?",
+    "participants.small_gifts": "Will small-value gifts or retention items be given to participants?",
+    "investigators.co_investigators": "Which co-investigators per Hungarian site (CV and protocol signature pages)?",
+    "data.transfer_outside_eea": "Are personal data transferred to third countries?",
+    "trial.placebo": "Can participants be assigned placebo?"
+  },
+  "documents": [
+    {
+      "id": "HU-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment and informed consent procedure",
+      "checklist_item": "1 (first item)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "hu"
+      ],
+      "language_note": "The guides state no language for K1; Hungarian per the supplied CTIS_HU template set and variable sheet (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "EudraLex Volume 10 recruitment and informed-consent procedure template v2.0 (applies to new Part II submissions since 1 September 2026). NNGYK's published Hungary guidance also accepts the required information in another format; the national content is required either way.",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "How potential participants are identified, approached, informed and consented, with the Hungarian national content: final Hungarian recruitment material, one combined information and consent document with one signature set, the Section 16 Health Act authorised person, the two-witness oral-consent route, the Section 160 emergency conditions, separate genetic consent and renewed consent for non-anonymous secondary use. Every population pathway in the plan needs its section completed.",
+      "national_fields": {
+        "v105": "Magyarországon kötelező: a toborzási anyagok minden, a résztvevőkhöz szóló változata végleges magyar nyelvű formában kerül benyújtásra (hirdetés, meghívó, plakát, weboldal-szöveg és hasonló anyagok); Magyarországon kizárólag angol nyelvű résztvevői hirdetés nem használható. A toborzási anyagok benyújtáskor végleges, üres anyagok, amelyeket a résztvevők nem írnak alá.",
+        "v108": "Magyarországon kötelező: a tájékoztatás és a beleegyezés egyetlen dokumentumban („Tájékoztatáson alapuló beleegyező nyilatkozat”), dokumentumonként egyetlen aláírássorozattal; a vizsgálati alany (vagy az Eütv. 16. § szerinti nyilatkozattételre jogosult személy) a tájékoztatás után aláírja és keltezi, a vizsgálatvezető vagy a tájékoztatást végző személy is aláírja, a beleegyezés dátumát rögzíteni kell. A beleegyező nyilatkozat tartalmazza a vizsgálati alany nevét, születési helyét és idejét, képviselet esetén a nyilatkozattételre jogosult személy azonosító adatait; a vizsgálati kódszám nem szerepelhet benne. Írás- vagy olvasásképtelenség esetén szóbeli beleegyezés két, a kutatásban nem érdekelt és abban részt nem vevő tanú együttes jelenlétében (Eütv. 159. § (1a)), a tanúk aláírásával és lakcímével/elérhetőségével. Humángenetikai mintavételhez és vizsgálathoz külön genetikai tájékoztató és beleegyező dokumentum szükséges (2008. évi XXI. törvény). Nem anonim adatok utólagos, az eredeti tájékoztatásban nem ismertetett célú felhasználásához megújított beleegyezés szükséges (ETT-KFEB).",
+        "v110": "Magyarországon kötelező, ha cselekvőképtelen vagy egészségügyi döntési jogaiban korlátozott felnőtt vesz részt: a beleegyezést az Eütv. 16. § szerinti sorrendben nyilatkozattételre jogosult személy adja; a vizsgálóhely a bevonás előtt ellenőrzi a jogosultság alapját; a jogosult személy azonosító adatai szerepelnek az ICF-ben (ETT-KFEB). A résztvevőt megértési képességéhez igazítva tájékoztatják, véleményét a szakmailag lehetséges mértékben figyelembe veszik, kifejezett elutasítását vagy visszalépési szándékát tiszteletben tartják (CTR 31. cikk). Ha a résztvevő visszanyeri döntési képességét, haladéktalanul tájékoztatják, és a folytatáshoz saját beleegyezését kérik; a protokoll leírja a képesség újraértékelését. A részvételért anyagi ellenszolgáltatás nem adható, csak igazolt költségek téríthetők (ETT Bioetikai Kódex). Humángenetikai beleegyezésre a 2008. évi XXI. törvény külön szabályai vonatkoznak.",
+        "v114": "Magyarországon kötelező, ha kiskorú vesz részt: a beleegyezést az Eütv. 16. § szerint nyilatkozattételre jogosult személy adja, akinek azonosító adatai szerepelnek a beleegyező nyilatkozatban; bizonytalan jogosultságot a beleegyezés előtt kell tisztázni, jogalap nélküli többletaláírás-sorok nélkül. A kiskorú életkorához és érettségéhez igazított tájékoztatást kap; véleményét a szakmailag lehetséges mértékben figyelembe kell venni, és a véleményalkotásra képes kiskorú kifejezett elutasítását vagy visszalépési szándékát tiszteletben kell tartani (CTR 32. cikk). A 16. életévét betöltött kiskorú egészségügyi nyilatkozattételi jogai nem jelentenek automatikusan önálló klinikai vizsgálati beleegyezést. Nagykorúvá váláskor (vagy a jogállás korábbi változásakor) a folytatáshoz saját beleegyezést kell kérni. A részvételért anyagi ellenszolgáltatás nem adható (ETT Bioetikai Kódex). Humángenetikai beleegyezésre a 2008. évi XXI. törvény 8. §-a szerinti külön szabályok vonatkoznak.",
+        "v117": "Magyarországon kötelező: ha a résztvevő írásképtelenség vagy írástudatlanság miatt nem tud írásban beleegyezni, a tájékoztatást szóban kapja, és szóbeli beleegyezését két, a kutatásban nem érdekelt és abban részt nem vevő tanú együttes jelenlétében adja (Eütv. 159. § (1a)); a szóbeli nyilatkozatot írásban rögzítik, mindkét tanú aláírja és megadja lakcímét vagy elérhetőségét (ETT-KFEB Q&A). A tanús eljárás nem helyettesíti a törvényes képviseletet és nem alkalmazható a résztvevő átmeneti elérhetetlensége esetén. Ha a résztvevő írásképessége helyreáll, a beleegyezést a kutatás folytatása előtt írásban meg kell erősíteni; ennek hiányában a beleegyezés visszavontnak tekintendő, és a kutatás vele nem folytatható.",
+        "v121": "Magyarországon kötelező: sürgős szükség esetén előzetes beleegyezés nélküli kutatás csak az Eütv. 160. § valamennyi feltétele mellett (előzetesen engedélyezett kutatási terv; a sürgősségi helyzetben nyújtott ellátáshoz kapcsolódik; várhatóan közvetlenül a vizsgálati alany egészségét szolgálja; hasonló hatékonysággal sürgősségi bevonás nélkül nem végezhető) és a CTR 35. cikk feltételeivel együtt. A vizsgáló dokumentálja a sürgősségi feltételek fennállását és az előzetes beleegyezés beszerezhetetlenségét. A résztvevőt vagy a nyilatkozattételre jogosult személyt – amelyiket előbb lehet bevonni – haladéktalanul tájékoztatni kell, és a folytatáshoz beleegyezését kérni; ha a résztvevő visszanyeri képességét, saját beleegyezését is meg kell szerezni. Az elutasítás következményeit és a már gyűjtött adatok és minták kezelését a jóváhagyott jogi keretek szerint kell ismertetni; jogszabály által megkövetelt megőrzés esetén törlés nem ígérhető."
+      },
+      "sources": [
+        "HU-PII-CHECKLIST#1",
+        "HU-ICF",
+        "HU-MINORS",
+        "HU-CAPACITY",
+        "HU-WITNESS",
+        "HU-EMERGENCY",
+        "HU-SECONDARY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, K szakasz. Kötelező. A válaszok nyelve magyar (DECISIONS.md D1). Benyújtáskor nincs aláírás. Az EU v2.0 sablont használja (2026. szeptember 1-jétől új II. részes benyújtásokra); az NNGYK más formátumot is elfogad, de a magyar nemzeti tartalom mindkét esetben kötelező. A tagállami mezőkbe (national_fields: v105, v108, v110, v114, v117, v121) írja be a magyar szabályokat: végleges magyar toborzási anyagok; egyetlen, tájékoztatást és beleegyezést egyesítő dokumentum egy aláírássorozattal; az Eütv. 16. § szerinti nyilatkozattételre jogosult személy és azonosító adatai; vizsgálati kódszám nem szerepelhet az ICF-ben; két tanús szóbeli beleegyezés (Eütv. 159. § (1a)); sürgősségi bevonás az Eütv. 160. § és a CTR 35. cikk szerint; külön humángenetikai beleegyezés (2008. évi XXI. törvény). Minden, a tervben nem szereplő útvonalnál a sablon „N/A” válaszát adja. A toborzási utak egyezzenek a K2 anyagokkal."
+    },
+    {
+      "id": "HU-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_HU_hu",
+      "name_en": "Recruitment material (final Hungarian versions)",
+      "checklist_item": "1 (second item)",
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Advertisements, invitations, posters, website text or similar material is used to approach potential participants in Hungary.",
+      "per": "item",
+      "language": [
+        "hu"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Every final participant-facing version in Hungarian; final blank material, not signed by participants. No English-only participant advertisement for use in Hungary. Terminology consistent with the ICF.",
+      "sources": [
+        "HU-PII-CHECKLIST#1",
+        "HU-HUB",
+        "HU-QC#10"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, K szakasz. Feltételes: minden toborzási anyaghoz (hirdetés, meghívó, plakát, weboldal-szöveg és hasonló) külön dokumentum. Kizárólag végleges magyar nyelvű változat; Magyarországon csak angol nyelvű résztvevői hirdetés nem tölthető fel. Benyújtáskor végleges, üres anyag, aláírás nélkül. Természetes magyar nyelv, szó szerinti fordítás és külföldi jogszabályokra való hivatkozás nélkül; a terminológia egyezzen az ICF-fel."
+    },
+    {
+      "id": "HU-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_HU_hu",
+      "name_en": "Subject information and informed consent (one combined document per population)",
+      "checklist_item": "2 (first item)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "population",
+      "language": [
+        "hu"
+      ],
+      "template": null,
+      "template_note": "Participant templates are bound per population through population_sets (adult_patients, healthy_volunteers and the population-specific sets of HU-L1-POPULATION).",
+      "signature_at_submission": false,
+      "content": "Final blank Hungarian 'Tájékoztatáson alapuló beleegyező nyilatkozat' for each population, information and consent combined in one document with one signature set. Must contain: EU CT number, protocol number, title; Hungarian healthcare provider (site); name and role of the PI or person providing the information; participant's name, place and date of birth (authorised person's identity details where a representative consents); no study code number. Research nature, purpose, duration, participant numbers, procedures and frequency; accepted alternatives and consequences of interrupting existing treatment; risks, burdens and the possibility of unforeseen adverse events; benefits or the plain statement that none is expected; placebo probability where used; the IMP and, where useful, its mechanism; voluntariness and withdrawal without reason or disadvantage, and what happens after withdrawal. Insurer name, Hungarian contact, contact person and telephone number, and how to seek treatment and compensation (Act XCV of 2005, Section 21); exact documented reimbursable cost types; third-party reimbursement service details where used. Integrated privacy information (data categories, coding or anonymisation, recipients and access, storage period and location, third-country transfers and safeguards, purposes, legal basis, rights, NAIH contact). Biological samples (what, why, how long, where, who receives them, analyses, coding, withdrawal). Pregnancy risks, contraception and testing. Patient emergency card announcement where HU-L-CARD applies. Genetic testing only announced briefly; its information and consent are in HU-L1-GENETIC.",
+      "sources": [
+        "HU-PII-CHECKLIST#2",
+        "HU-PII-CHECKLIST#6",
+        "HU-PII-CHECKLIST#7",
+        "HU-PII-CHECKLIST#8",
+        "HU-PII-CHECKLIST#9",
+        "HU-ICF"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, L szakasz. Kötelező minden bevont populációhoz. Magyar nyelvű, egyetlen dokumentumba foglalt „Tájékoztatáson alapuló beleegyező nyilatkozat”, egyetlen aláírássorozattal; ne duplázza az aláírási oldalt. Benyújtáskor végleges, üres változat; a vizsgálati alany (vagy a nyilatkozattételre jogosult személy) és a vizsgálatvezető vagy tájékoztatást végző személy a tényleges beleegyezéskor ír alá és keltez. Kötelező adatok: EUCT szám, protokollszám, cím, a magyar egészségügyi szolgáltató, a tájékoztatást végző személy neve és munkaköre, a vizsgálati alany neve, születési helye és ideje; vizsgálati kódszám nem szerepelhet. Biztosítás: a biztosító neve, magyarországi elérhetősége, kapcsolattartó neve és telefonszáma, valamint a kezelés és kártérítés igénylésének módja (2005. évi XCV. törvény 21. §); nem elég általános utalás a szponzor biztosítására. Költségtérítés: az igazolt költségtípusok pontos felsorolása, „térítheti” típusú megfogalmazás nélkül; külső költségtérítési szolgáltatónál a lényeges feltételek, továbbított adatok és díjak. Adatvédelem a dokumentumba építve (ETT-KFEB GDPR-ajánlás, 2023. március 14.): adatkategóriák, kódolás/anonimizálás, címzettek és hozzáférés (azonosítható adatokba csak a vizsgálóhelyen), tárolás helye és ideje, harmadik országba továbbítás garanciái, célok, jogalap (az ETT-KFEB a beleegyezést várja jogalapként; a szponzor aktuális GDPR-elemzésével egyeztetni), jogok és a NAIH elérhetősége; „kódolt”, „álnevesített” és „anonim” következetes használata. Biológiai minták részletesen. Humángenetikai vizsgálatot csak röviden jelezze; a részletes tájékoztatás és beleegyezés a külön HU-L1-GENETIC dokumentumban van. Betegkártya (HU-L-CARD) esetén tájékoztasson a kártyáról, a rajta szereplő adatokról, és arról, hogy a vizsgálat alatt mindig tartsa magánál; ha név és vizsgálati kód együtt szerepel rajta, indokolja betegbiztonsági okkal és kérje hozzájárulását. Természetes magyar nyelv, következetes megszólítás, szó szerinti fordítás és Magyarországon nem alkalmazandó külföldi jogszabály nélkül."
+    },
+    {
+      "id": "HU-L1-GENETIC",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_genetic testing_<population>_HU_hu",
+      "name_en": "Separate genetic information and genetic consent",
+      "checklist_item": "2 (second item); also 9 (second item)",
+      "requirement": "conditional",
+      "trigger": "genetics.testing_planned",
+      "trigger_text": "Genetic sampling, human genetic testing or genetic research is planned in the protocol, mandatory or optional (ETT-KFEB; Act XXI of 2008).",
+      "per": "population",
+      "language": [
+        "hu"
+      ],
+      "template": null,
+      "template_note": "Bound through population_sets 'genetic_testing' to templates/participant/L1_SIS and ICF_genetic testing_HU_hu.json (HU-PT-genetic-testing), one document per population with planned genetic testing.",
+      "signature_at_submission": false,
+      "content": "Separate document(s), never merged into the main ICF. Detailed written informed consent before genetic sample collection; the participant may define permitted uses (primary purpose only, other purposes allowed by the Act, or research) and storage forms (identifiable, coded, pseudonymised, anonymous). Optional genetic activity is a clearly separate decision; refusal does not block main-trial participation and healthcare cannot be made conditional on it. Withdrawal and destruction rights under the Genetics Act. Minors and limited-capacity adults: the minor or partly limited adult makes the declaration with the legal representative's consent or later approval and sampling cannot occur before it; for an incapable person the legal representative acts within the statutory protections. Inability to write: two-witness mechanisms. One coherent signature set per document. Future genetic research outside the protocol belongs in the secondary-use document.",
+      "sources": [
+        "HU-PII-CHECKLIST#2",
+        "HU-PII-CHECKLIST#9",
+        "HU-ICF",
+        "HU-SECONDARY",
+        "HU-MINORS",
+        "HU-CAPACITY",
+        "HU-WITNESS"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, L szakasz. Feltételes: minden olyan populációhoz, amelynél a protokoll humángenetikai mintavételt vagy vizsgálatot tervez, akár kötelező, akár opcionális. Az ETT-KFEB külön genetikai tájékoztató és beleegyező dokumentumot ír elő (2008. évi XXI. törvény); a fő ICF-be nem építhető be. Részletes írásbeli beleegyezés a mintavétel előtt; a vizsgálati alany megjelölheti, hogy a minta vagy adat csak az elsődleges célra, a törvény által megengedett más célra vagy kifejezetten kutatásra használható-e, és milyen formában (azonosítható, kódolt, álnevesített, anonim) tárolható. Opcionális genetikai vizsgálat külön döntés; visszautasítása nem akadályozhatja a fő vizsgálatban való részvételt. Kiskorúnál és részlegesen korlátozott felnőttnél a törvényes képviselő beleegyezésével vagy utólagos jóváhagyásával tett nyilatkozat, a jóváhagyás előtt nincs mintavétel; cselekvőképtelen személynél a törvényes képviselő a törvényi garanciák szerint jár el. Írásképtelenségnél a két tanús eljárás. Dokumentumonként egyetlen aláírássorozat. Benyújtáskor üres, aláírás nélküli változat. A sablon (HU-PT-genetic-testing) utasításait kövesse, és véglegesítés előtt távolítsa el őket."
+    },
+    {
+      "id": "HU-L1-POPULATION",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<template subtype>_<population>_HU_hu",
+      "name_en": "Population-specific information and consent documents (minors, representatives, healthy volunteers, pregnancy, substudies, secondary use, emergency, two-witness route)",
+      "checklist_item": "2 (third item)",
+      "requirement": "conditional",
+      "trigger": "population.minors or population.adults_without_capacity or population.healthy_volunteers or consent.emergency_enrolment or consent.impartial_witness_possible or pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or consent.separate_substudy_decision or samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "trigger_text": "The protocol creates a separate consent decision or a distinct data subject: minors, legal representatives, healthy volunteers, pregnant partners, substudies or other distinct data subjects.",
+      "per": "population x template",
+      "language": [
+        "hu"
+      ],
+      "template": null,
+      "template_note": "Templates are bound through population_sets; population_rules says which ones each population needs.",
+      "signature_at_submission": false,
+      "content": "Each separate document contains the privacy information relevant to that person, or clearly refers back to the applicable main document where ETT-KFEB allows it. One signature set per document; correct representative identity and signature fields.",
+      "sources": [
+        "HU-PII-CHECKLIST#2",
+        "HU-HV",
+        "HU-MINORS",
+        "HU-CAPACITY",
+        "HU-EMERGENCY",
+        "HU-WITNESS",
+        "HU-PREGNANCY",
+        "HU-SECONDARY"
+      ],
+      "kind": "participant_document",
+      "reader": "participant or representative",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, L szakasz. Feltételes: külön tájékoztató és beleegyező dokumentum minden olyan esetben, amikor a protokoll külön beleegyezési döntést vagy külön érintett személyt hoz létre (kiskorú és szülő/törvényes képviselő, nyilatkozattételre jogosult személy, egészséges önkéntes, várandós partner, alvizsgálat, másodlagos felhasználás, sürgősségi bevonás utáni folytatás, két tanús eljárás). Minden külön dokumentum tartalmazza az adott személyre vonatkozó adatvédelmi tájékoztatást, vagy – ahol az ETT-KFEB megengedi – egyértelműen visszautal a fő dokumentumra (ETT-KFEB GDPR-ajánlás). Dokumentumonként egyetlen aláírássorozat, a nyilatkozattételre jogosult személy azonosító adataival, ha ő ad beleegyezést. Magyar nyelv, az olvasóhoz igazítva; a felnőtt ICF szó szerinti fordítása nem fogadható el gyermeknek szóló dokumentumként."
+    },
+    {
+      "id": "HU-L-PRIVACY-APPENDIX",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_data protection appendix_<population>_HU_hu",
+      "name_en": "Separate privacy appendix (only if privacy information is not integrated into the ICF)",
+      "checklist_item": "8",
+      "requirement": "conditional",
+      "trigger": "data.privacy_appendix_separate",
+      "trigger_text": "The sponsor provides the Hungarian privacy information as a separate appendix instead of integrating it into each information and consent document. ETT-KFEB expects integration where possible; checklist item 8 itself is mandatory as content of every L1 document.",
+      "per": "population",
+      "language": [
+        "hu"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Checklist item 8 (mandatory): Hungarian data-protection requirements are addressed in the participant information and consent package. The MedEthicsEU overview identifies no separate Hungary Part II data-protection document; ETT-KFEB expects the details in the ICF. If a separate appendix is nevertheless used, it carries its own participant or healthy-volunteer signature field and the main ICF still refers to it. Content: data categories, coding or anonymisation, recipients and access, storage period and location, international transfer safeguards, purposes, legal basis, rights and NAIH contact.",
+      "note": "No R1 data-protection form is planned for Hungary: the guides identify no separate Hungary Part II data-protection document (DECISIONS.md D9).",
+      "sources": [
+        "HU-PII-CHECKLIST#8",
+        "HU-ICF",
+        "HU-HV",
+        "HU-QC#5"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, L szakasz. A 8. ellenőrzőlista-pont tartalmilag kötelező: a magyar adatvédelmi követelményeket a résztvevői tájékoztató és beleegyező dokumentumokban kell teljesíteni (ETT-KFEB GDPR-ajánlás, 2023. március 14.); az R szakaszban nem szükséges külön magyar adatvédelmi dokumentum. Külön adatvédelmi melléklet csak akkor, ha a szponzor nem építi be a tájékoztatást az ICF-be (DECISIONS.md D18): ekkor a mellékletnek saját vizsgálati alanyi vagy egészséges önkéntesi aláírási mezője van, és a fő ICF hivatkozik rá. Tartalom: adatkategóriák, kódolás/anonimizálás, címzettek és hozzáférés, tárolás helye és ideje, harmadik országba továbbítás garanciái, célok, jogalap, jogok, NAIH elérhetősége."
+    },
+    {
+      "id": "HU-L-CARD",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_patient emergency card_HU_hu",
+      "ctis_title_note": "ETT-KFEB suggests the CTIS subject-information area (section L) and treats the card as an addendum to the main ICF; the naming guide has no card example. L2 as a separate file is provisional (DECISIONS.md D4).",
+      "name_en": "Patient emergency card (betegkártya), addendum to the main ICF",
+      "checklist_item": "3",
+      "requirement": "conditional",
+      "trigger": "not trial.phase_iv_or_bioequivalence",
+      "trigger_text": "Mandatory when applicable: required for applicable trials; ETT-KFEB's patient-card guidance (15 December 2015) states that a card is not necessary for Phase IV or bioequivalence trials. Apply the exception only where the trial genuinely falls within those categories.",
+      "per": "trial",
+      "language": [
+        "hu"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Final Hungarian card: participant's name and date of birth; protocol identification; investigational medicinal product, and the relevant mechanism when the name is not informative; indication; contraindications; dangerous interactions; site address; investigator or designated physician and a 24-hour telephone number; other emergency information required for safe care. Not signed at CTIS submission. If the participant's name and study code appear together, the main ICF explains the patient-safety reason and obtains agreement.",
+      "sources": [
+        "HU-PII-CHECKLIST#3",
+        "HU-ICF",
+        "HU-QC#8",
+        "ETT-KFEB-CARD"
+      ],
+      "kind": "participant_document",
+      "reader": "participant and treating healthcare professionals",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, L szakasz (az ETT-KFEB a vizsgálati alanyi tájékoztatás területére javasolja feltölteni; cím és hely: DECISIONS.md D4). Alkalmazandó vizsgálatoknál kötelező; az ETT-KFEB betegkártya-követelményei (2015. december 15.) szerint IV. fázisú és bioegyenértékűségi vizsgálatban nem szükséges – a kivételt csak valóban ilyen vizsgálatnál alkalmazza. A fő ICF melléklete; végleges magyar változat. Tartalom: a résztvevő neve és születési ideje, protokollazonosító, vizsgálati gyógyszer és – ha a név nem informatív – a releváns hatásmechanizmus, indikáció, ellenjavallatok, veszélyes kölcsönhatások, a vizsgálóhely címe, a vizsgáló vagy kijelölt orvos és 24 órás telefonszám, valamint a biztonságos ellátáshoz szükséges egyéb sürgősségi információ. Benyújtáskor nincs aláírás. Ha a név és a vizsgálati kód együtt szerepel, a fő ICF indokolja betegbiztonsági okkal és kéri a hozzájárulást. Nincs sablon (DECISIONS.md D5)."
+    },
+    {
+      "id": "HU-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "ctis_title_note": "PI: M1_CV_<principal investigator>_<site>. Co-investigators: the naming guide allows personal names only for the principal investigator, so provisionally M1_CV_co-investigator <n>_<site> (DECISIONS.md D8).",
+      "name_en": "Curriculum Vitae of the principal investigator and of each co-investigator (Hungary-adapted CTEG template)",
+      "checklist_item": "4 (first item)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "investigator (PI and each co-investigator, per site)",
+      "language": [
+        "hu"
+      ],
+      "language_note": "The guides state no language for the CV; Hungarian assumed pending DECISIONS.md D1.",
+      "template": null,
+      "national_template": "CTEG CV template as modified for Hungary and published by ETT-KFEB. Not supplied: the CTIS_HU file 'M1_CV Principal investigator_HU_hu.docx' is the unmodified EU CTEG form (same as eu/templates/part-ii/M1_CV Principal investigator.docx), so the shared form is not used for Hungary (DECISIONS.md D2).",
+      "signature_at_submission": true,
+      "signature_rule": "Complete every signature or declaration field contained in the current Hungary template; do not remove national fields (Part II checklist, section 11).",
+      "content": "Hungary-adapted CV for the principal investigator and, per the current ETT-KFEB page, for each co-investigator. May document GCP qualification in full (see HU-M-GCP). Personal details come from the investigator.",
+      "sources": [
+        "HU-PII-CHECKLIST#4",
+        "HU-PII-CHECKLIST#11",
+        "HU-HUB"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'third_party_template' (Prepare trial fields, then Check) once the ETT-KFEB Hungary CV template is supplied and converted into countries/HU/templates/part-ii (DECISIONS.md D2).",
+      "reader": "regulatory",
+      "filled_by": "investigator (national Hungary CV template)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, M szakasz. Kötelező a vizsgálatvezetőnek és – az ETT-KFEB jelenlegi oldala szerint – minden társvizsgálónak, vizsgálóhelyenként. Az ETT-KFEB által közzétett, Magyarországra módosított CTEG önéletrajz-sablont kell használni; a CTIS_HU csomagban lévő önéletrajz a módosítatlan EU-sablon, ezért nem használható (DECISIONS.md D2). A sablon minden aláírási és nyilatkozati mezőjét ki kell tölteni, a nemzeti mezőket nem szabad törölni. A személyes adatokat a vizsgáló adja meg; a GCP-képzés teljes hivatkozása az önéletrajzban elfogadható (HU-M-GCP). Társvizsgálók nevét a CTIS-címbe ne írja (DECISIONS.md D8)."
+    },
+    {
+      "id": "HU-M2-DOI",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Declaration of interest of the principal investigator",
+      "checklist_item": "4 (second item)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hu"
+      ],
+      "language_note": "The guides state no language; Hungarian per the supplied template set (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+        "basis": "EudraLex Volume 10 declaration-of-interest structure (EU CTEG template), as required by the Hungary checklist",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": true,
+      "signature_rule": "Complete every signature or declaration field of the template (the EU form's declaration with investigator name, institution and date) before upload; done by the investigator (Part II checklist, section 11).",
+      "sources": [
+        "HU-PII-CHECKLIST#4",
+        "HU-PII-CHECKLIST#11"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, M szakasz. Kötelező vizsgálatvezetőnként és vizsgálóhelyenként. Az EudraLex 10. kötet szerinti EU-sablon. A sablon nyilatkozati mezőit (név, intézmény, dátum) a vizsgálatvezető tölti ki benyújtás előtt; a nemzeti mezőket nem szabad törölni. Az asszisztens csak a vizsgálat címét és az EU vizsgálati számot tölti ki; az érdekeltségi adatokat a vizsgáló adja meg."
+    },
+    {
+      "id": "HU-M-GCP",
+      "ctis_section": "M",
+      "ctis_title": "M2_GCP training_<investigator>_<site>",
+      "ctis_title_note": "The Hungary guide names no CTIS title; the Austria precedent is used pending DECISIONS.md D7. No separate upload when the CV documents GCP in full.",
+      "name_en": "Evidence of Good Clinical Practice qualification",
+      "checklist_item": "4 (third item)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hu",
+        "en"
+      ],
+      "language_note": "A certificate is uploaded as issued by the training provider; the guides state no language rule.",
+      "template": null,
+      "signature_at_submission": null,
+      "signature_rule": "Certificate as issued; the guides set no further rule.",
+      "content": "Demonstrate GCP qualification. The MedEthicsEU Hungary overview accepts a full reference in the CV, so a separate certificate is not always needed when the CV adequately documents it.",
+      "sources": [
+        "HU-PII-CHECKLIST#4"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "investigator / training provider",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, M szakasz. Kötelező a GCP-képesítés igazolása. A MedEthicsEU magyarországi összefoglalója szerint az önéletrajzban szereplő teljes hivatkozás elfogadható, ezért külön tanúsítvány nem mindig szükséges. Ha az önéletrajz nem igazolja teljesen, a tanúsítványt külön kell feltölteni (cím: DECISIONS.md D7). A vizsgáló vagy képzésszolgáltató dokumentuma; csak ellenőrzés."
+    },
+    {
+      "id": "HU-M-PROTOCOL-SIGNATURE",
+      "ctis_section": "M",
+      "ctis_title": "M3_Protocol signature pages_<site>",
+      "ctis_title_note": "No CTIS title or slot in the guides or the naming guide; provisional M3 under investigator suitability (DECISIONS.md D6). Signatures are personal data: plan a redacted public version if the document is publishable.",
+      "name_en": "Protocol signature or acceptance pages signed by the principal investigator and co-investigators",
+      "checklist_item": "4 (fourth item)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hu",
+        "en"
+      ],
+      "language_note": "Signature page of the protocol version submitted; the guides state no language rule (DECISIONS.md D1).",
+      "template": null,
+      "signature_at_submission": true,
+      "signature_rule": "Signed by the principal investigator and each co-investigator before upload. Unlike the participant consent form, this is a submission-time signature requirement (ETT-KFEB).",
+      "content": "Signature or acceptance pages for the protocol version in the application, one set per Hungarian site covering the PI and co-investigators.",
+      "sources": [
+        "HU-PII-CHECKLIST#4",
+        "HU-PII-CHECKLIST#11",
+        "HU-HUB"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "principal investigator and co-investigators",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, M szakasz (cím és hely: DECISIONS.md D6). Kötelező. A benyújtott protokollverzió aláírási vagy elfogadó oldalait a vizsgálatvezető és a társvizsgálók aláírják; a résztvevői beleegyező nyilatkozattal ellentétben ez benyújtáskori aláírási követelmény (ETT-KFEB). Ellenőrizze, hogy a protokoll verziószáma és dátuma egyezik a Part I protokollal és a magyar dokumentumlistával."
+    },
+    {
+      "id": "HU-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Hungary-modified site suitability form (ETT-KFEB, November 2025 version)",
+      "checklist_item": "5",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hu"
+      ],
+      "language_note": "The guides state no language; Hungarian assumed pending DECISIONS.md D1.",
+      "template": null,
+      "national_template": "Hungary-modified Site Suitability Form published by ETT-KFEB (current version: November 2025); a national mandatory template. Not supplied: the CTIS_HU file 'N1_Site suitability_HU_hu.docx' is the generic EU form, which must not be substituted while the Hungary template is available (DECISIONS.md D3).",
+      "signature_at_submission": true,
+      "signature_rule": "Complete every signature or declaration field contained in the current Hungary template; do not remove national fields (Part II checklist, section 11).",
+      "content": "One form per Hungarian clinical trial site with the site-specific information needed to demonstrate appropriate facilities and resources.",
+      "sources": [
+        "HU-PII-CHECKLIST#5",
+        "HU-PII-CHECKLIST#11",
+        "HU-HUB"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'form' (Draft trial and study-specific fields, site fields left for the site, then Check) once the ETT-KFEB form is supplied and converted into countries/HU/templates/part-ii (DECISIONS.md D3).",
+      "reader": "regulatory",
+      "filled_by": "site (national Hungary form)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, N szakasz. Kötelező, minden magyar vizsgálóhelyre egy dokumentum. Az ETT-KFEB által közzétett, Magyarországra módosított vizsgálóhely-alkalmassági sablont (jelenleg a 2025. novemberi változat) kell használni; nemzeti kötelező sablon, az általános EU-formanyomtatvány nem helyettesítheti. A CTIS_HU csomagban lévő N1 az EU-sablon, ezért nem használható (DECISIONS.md D3). A sablon minden aláírási és nyilatkozati mezőjét ki kell tölteni, a nemzeti mezőket nem szabad törölni. A vizsgálóhelyi adatokat a vizsgálóhely adja meg."
+    },
+    {
+      "id": "HU-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_HU",
+      "name_en": "Insurance confirmation or certificate",
+      "checklist_item": "6 (insurance confirmation or certificate)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "hu",
+        "en"
+      ],
+      "language_note": "Issued by the insurer; the guides state no language rule.",
+      "template": null,
+      "signature_at_submission": null,
+      "signature_rule": "Use the signature or authentication required by the issuing document itself; ETT-KFEB does not require the participant to sign it.",
+      "content": "Proof of insurance cover or indemnification for the trial; the MedEthicsEU Hungary overview lists the insurance policy and the insurance confirmation or certificate as the normal evidence. Insurer name and Hungarian contact must match the main ICF.",
+      "sources": [
+        "HU-PII-CHECKLIST#6"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, O szakasz. Kötelező a biztosítási fedezet vagy kártalanítás igazolása; a MedEthicsEU szerint a biztosítási igazolás vagy tanúsítvány és a biztosítási kötvény a szokásos bizonyíték (a kötvény: HU-O2). A kiállító dokumentum által megkövetelt aláírás vagy hitelesítés; a résztvevőnek nem kell aláírnia. A biztosító neve, magyarországi elérhetősége és kapcsolattartója egyezzen az ICF-fel."
+    },
+    {
+      "id": "HU-O2",
+      "ctis_section": "O",
+      "ctis_title": "O2_Proof of coverage_<sponsor or site>",
+      "name_en": "Insurance policy",
+      "checklist_item": "6 (insurance policy)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "hu",
+        "en"
+      ],
+      "language_note": "Issued by the insurer; the guides state no language rule.",
+      "template": null,
+      "signature_at_submission": null,
+      "signature_rule": "As issued by the insurer.",
+      "content": "Insurance policy covering the trial, listed with the certificate as the normal Hungarian evidence (MedEthicsEU). Splitting policy and certificate into O1 and O2 is provisional (DECISIONS.md D20).",
+      "sources": [
+        "HU-PII-CHECKLIST#6"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, O szakasz. Kötelező: a biztosítási kötvény (MedEthicsEU). A biztosító dokumentuma; csak ellenőrzés. A fedezet, a kizárások és a résztvevő kötelezettségei egyezzenek a résztvevői dokumentumokkal. Az O1/O2 szétválasztás ideiglenes (DECISIONS.md D20)."
+    },
+    {
+      "id": "HU-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_HU",
+      "name_en": "Compensation and reimbursement offered to participants",
+      "checklist_item": "7 (first item; third and fourth items as national fields)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "requirement_note": "The guide says 'mandatory when applicable' (when compensation or reimbursement is offered). The EU form has a 'No' answer with explanation, so it is planned for every trial and states explicitly when nothing is offered.",
+      "per": "trial",
+      "language": [
+        "hu"
+      ],
+      "language_note": "The guides state no language; Hungarian per the supplied template set (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "EU compensation template (CTAG)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": null,
+      "signature_note": "The Hungary guides set no signature rule for P1 (DECISIONS.md D17).",
+      "content": "Compensation or reimbursement offered to participants, identical to the participant documents: exact documented cost types (vague 'may reimburse' wording is rejected), participation payments only within the Bioethics Code limits, a list and commercial value of small gifts or retention items, and the third-party reimbursement service where used.",
+      "national_fields": {
+        "f02": "Magyarországon kötelező: a résztvevői dokumentumban pontosan fel kell sorolni a szponzor által megtérített igazolt költségtípusokat; csak igazolt költség téríthető, és a „térítheti” típusú feltételes vagy példálózó megfogalmazást az ETT-KFEB nem fogadja el. Külső költségtérítési szolgáltató esetén a résztvevői anyag ismerteti a lényeges feltételeket, a továbbított adatokat és az esetleges díjakat.",
+        "f04": "Magyarországon: pénzbeli ellenszolgáltatás az ETT Bioetikai Kódex szerint I. fázisú vizsgálatban egészséges vagy beteg résztvevőknek, valamint nem terápiás farmakokinetikai vagy farmakodinámiás vizsgálatban adható egységesen meghatározott összegben, a kellemetlenség, az időveszteség és a jövedelemkiesés ellentételezésére; az összeg nem gyakorolhat indokolatlan befolyást. Kiskorúak és cselekvőképtelen személyek részére részvételi díj nem adható, csak igazolt költségtérítés. A részvételi díjat a költségtérítéstől elkülönítve kell megadni, ugyanazokkal az összegekkel, mint a résztvevői dokumentumokban.",
+        "f05": "Magyarországon kötelező, ha a vizsgálat alatt kis értékű ajándékot vagy megtartást segítő tárgyat adnak a résztvevőknek: sorolja fel a tárgyakat és mindegyik kereskedelmi értékét."
+      },
+      "sources": [
+        "HU-PII-CHECKLIST#7",
+        "HU-HV",
+        "HU-MINORS",
+        "HU-CAPACITY",
+        "HU-ICF"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, P szakasz. Alkalmazandó esetben kötelező; a formanyomtatvány „Nem” válasza indoklással, ha nincs térítés vagy díjazás. Válaszok magyarul (DECISIONS.md D1). Aláírási szabályt az útmutató nem ad (DECISIONS.md D17). Nemzeti kiegészítések (national_fields: f02, f04, f05): igazolt költségtípusok pontos felsorolása; részvételi díj csak az ETT Bioetikai Kódex szerint (I. fázis, nem terápiás farmakokinetikai/farmakodinámiás vizsgálat), kiskorúaknak és cselekvőképtelen személyeknek nem; kis értékű ajándékok listája kereskedelmi értékkel. Az összegek és feltételek egyezzenek az ICF-fel. A vizsgálóhely és a vizsgálói csoport díjazását a HU-P2 tartalmazza."
+    },
+    {
+      "id": "HU-P2",
+      "ctis_section": "P",
+      "ctis_title": "P2_Financial arrangements_<site>",
+      "name_en": "Financial information on compensation per participant to the site and to the principal investigator and team",
+      "checklist_item": "7 (second item)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hu",
+        "en"
+      ],
+      "language_note": "The guides state no language (DECISIONS.md D1).",
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "The Hungary guides set no signature rule (DECISIONS.md D17).",
+      "content": "Full amount of compensation per participant to the site and to the principal investigator and team, and its distribution (MedEthicsEU Hungary overview).",
+      "sources": [
+        "HU-PII-CHECKLIST#7"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor (finance / site contract)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hu": "CTIS II. rész, P szakasz. Kötelező: a vizsgálóhelynek, valamint a vizsgálatvezetőnek és csoportjának résztvevőnként járó díjazás teljes összege és megoszlása (MedEthicsEU). A szponzor pénzügyi adatai; az asszisztens nem talál ki összegeket. Sablon nincs."
+    },
+    {
+      "id": "HU-COVER",
+      "ctis_section": "B (cover letter; national Hungarian letter)",
+      "ctis_title": "B1_Cover letter_<EU CT number>_HU_hu",
+      "ctis_title_note": "The guides do not say whether the Hungarian cover letter replaces or accompanies the application cover letter, nor its CTIS slot; provisional (DECISIONS.md D10).",
+      "name_en": "Hungarian-language cover letter listing the documents submitted for approval",
+      "checklist_item": "10 (first item)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "application",
+      "language": [
+        "hu"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "The Hungary guides set no signature rule (DECISIONS.md D17).",
+      "content": "Lists every document submitted for approval with its name, version number and issue date. For substantial modifications: identifies modified and newly created documents with version and date; new or revised documents are provided clean and tracked where applicable.",
+      "sources": [
+        "HU-PII-CHECKLIST#10"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "No template supplied; the sponsor issues the letter. The assistant can draft its document list from the plan once a template or format is agreed (DECISIONS.md D10).",
+      "reader": "regulatory",
+      "filled_by": "sponsor",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hu": "Kötelező (ETT-KFEB): magyar nyelvű kísérőlevél, amely felsorolja a jóváhagyásra benyújtott dokumentumokat nevükkel, verziószámukkal és kiadási dátumukkal. Lényeges módosításnál a módosított és újonnan készült dokumentumokat verzióval és dátummal azonosítja; az új vagy módosított dokumentumokat tiszta és korrektúrás változatban is be kell nyújtani, ahol alkalmazandó. A verziók egyezzenek a feltöltött dokumentumokkal és a HU-DOC-LIST listával. CTIS-hely és cím: DECISIONS.md D10."
+    },
+    {
+      "id": "HU-DOC-LIST",
+      "ctis_section": "B (with the Hungarian cover letter) or a separate upload",
+      "ctis_title": "B1_Part II document list_<EU CT number>_HU_hu",
+      "ctis_title_note": "No CTIS title or slot in the guides or the naming guide; provisional (DECISIONS.md D11).",
+      "name_en": "Hungarian-language list of the Part II documents (for the ETT-KFEB lay members)",
+      "checklist_item": "10 (second item)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "application",
+      "language": [
+        "hu"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "The Hungary guides set no signature rule (DECISIONS.md D17).",
+      "content": "Hungarian list of the Part II documents to support review by the lay members of ETT-KFEB; versions and dates identical to the cover letter, the uploaded documents and each participant document's footer.",
+      "sources": [
+        "HU-PII-CHECKLIST#10",
+        "HU-HUB",
+        "HU-QC#9"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "No template supplied; built from the plan's document list by the sponsor and checked here (DECISIONS.md D11).",
+      "reader": "regulatory (ETT-KFEB lay members)",
+      "filled_by": "sponsor",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hu": "Kötelező (ETT-KFEB): a II. részes dokumentumok magyar nyelvű listája az ETT-KFEB laikus tagjainak. A verziók és dátumok egyezzenek a kísérőlevéllel, a feltöltött dokumentumokkal és a résztvevői dokumentumok láblécével. CTIS-hely és cím: DECISIONS.md D11."
+    }
+  ],
+  "national_fields": {
+    "HU-K1": {
+      "form": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+      "fields": {
+        "v105": "Magyarországon kötelező: a toborzási anyagok minden, a résztvevőkhöz szóló változata végleges magyar nyelvű formában kerül benyújtásra (hirdetés, meghívó, plakát, weboldal-szöveg és hasonló anyagok); Magyarországon kizárólag angol nyelvű résztvevői hirdetés nem használható. A toborzási anyagok benyújtáskor végleges, üres anyagok, amelyeket a résztvevők nem írnak alá.",
+        "v108": "Magyarországon kötelező: a tájékoztatás és a beleegyezés egyetlen dokumentumban („Tájékoztatáson alapuló beleegyező nyilatkozat”), dokumentumonként egyetlen aláírássorozattal; a vizsgálati alany (vagy az Eütv. 16. § szerinti nyilatkozattételre jogosult személy) a tájékoztatás után aláírja és keltezi, a vizsgálatvezető vagy a tájékoztatást végző személy is aláírja, a beleegyezés dátumát rögzíteni kell. A beleegyező nyilatkozat tartalmazza a vizsgálati alany nevét, születési helyét és idejét, képviselet esetén a nyilatkozattételre jogosult személy azonosító adatait; a vizsgálati kódszám nem szerepelhet benne. Írás- vagy olvasásképtelenség esetén szóbeli beleegyezés két, a kutatásban nem érdekelt és abban részt nem vevő tanú együttes jelenlétében (Eütv. 159. § (1a)), a tanúk aláírásával és lakcímével/elérhetőségével. Humángenetikai mintavételhez és vizsgálathoz külön genetikai tájékoztató és beleegyező dokumentum szükséges (2008. évi XXI. törvény). Nem anonim adatok utólagos, az eredeti tájékoztatásban nem ismertetett célú felhasználásához megújított beleegyezés szükséges (ETT-KFEB).",
+        "v110": "Magyarországon kötelező, ha cselekvőképtelen vagy egészségügyi döntési jogaiban korlátozott felnőtt vesz részt: a beleegyezést az Eütv. 16. § szerinti sorrendben nyilatkozattételre jogosult személy adja; a vizsgálóhely a bevonás előtt ellenőrzi a jogosultság alapját; a jogosult személy azonosító adatai szerepelnek az ICF-ben (ETT-KFEB). A résztvevőt megértési képességéhez igazítva tájékoztatják, véleményét a szakmailag lehetséges mértékben figyelembe veszik, kifejezett elutasítását vagy visszalépési szándékát tiszteletben tartják (CTR 31. cikk). Ha a résztvevő visszanyeri döntési képességét, haladéktalanul tájékoztatják, és a folytatáshoz saját beleegyezését kérik; a protokoll leírja a képesség újraértékelését. A részvételért anyagi ellenszolgáltatás nem adható, csak igazolt költségek téríthetők (ETT Bioetikai Kódex). Humángenetikai beleegyezésre a 2008. évi XXI. törvény külön szabályai vonatkoznak.",
+        "v114": "Magyarországon kötelező, ha kiskorú vesz részt: a beleegyezést az Eütv. 16. § szerint nyilatkozattételre jogosult személy adja, akinek azonosító adatai szerepelnek a beleegyező nyilatkozatban; bizonytalan jogosultságot a beleegyezés előtt kell tisztázni, jogalap nélküli többletaláírás-sorok nélkül. A kiskorú életkorához és érettségéhez igazított tájékoztatást kap; véleményét a szakmailag lehetséges mértékben figyelembe kell venni, és a véleményalkotásra képes kiskorú kifejezett elutasítását vagy visszalépési szándékát tiszteletben kell tartani (CTR 32. cikk). A 16. életévét betöltött kiskorú egészségügyi nyilatkozattételi jogai nem jelentenek automatikusan önálló klinikai vizsgálati beleegyezést. Nagykorúvá váláskor (vagy a jogállás korábbi változásakor) a folytatáshoz saját beleegyezést kell kérni. A részvételért anyagi ellenszolgáltatás nem adható (ETT Bioetikai Kódex). Humángenetikai beleegyezésre a 2008. évi XXI. törvény 8. §-a szerinti külön szabályok vonatkoznak.",
+        "v117": "Magyarországon kötelező: ha a résztvevő írásképtelenség vagy írástudatlanság miatt nem tud írásban beleegyezni, a tájékoztatást szóban kapja, és szóbeli beleegyezését két, a kutatásban nem érdekelt és abban részt nem vevő tanú együttes jelenlétében adja (Eütv. 159. § (1a)); a szóbeli nyilatkozatot írásban rögzítik, mindkét tanú aláírja és megadja lakcímét vagy elérhetőségét (ETT-KFEB Q&A). A tanús eljárás nem helyettesíti a törvényes képviseletet és nem alkalmazható a résztvevő átmeneti elérhetetlensége esetén. Ha a résztvevő írásképessége helyreáll, a beleegyezést a kutatás folytatása előtt írásban meg kell erősíteni; ennek hiányában a beleegyezés visszavontnak tekintendő, és a kutatás vele nem folytatható.",
+        "v121": "Magyarországon kötelező: sürgős szükség esetén előzetes beleegyezés nélküli kutatás csak az Eütv. 160. § valamennyi feltétele mellett (előzetesen engedélyezett kutatási terv; a sürgősségi helyzetben nyújtott ellátáshoz kapcsolódik; várhatóan közvetlenül a vizsgálati alany egészségét szolgálja; hasonló hatékonysággal sürgősségi bevonás nélkül nem végezhető) és a CTR 35. cikk feltételeivel együtt. A vizsgáló dokumentálja a sürgősségi feltételek fennállását és az előzetes beleegyezés beszerezhetetlenségét. A résztvevőt vagy a nyilatkozattételre jogosult személyt – amelyiket előbb lehet bevonni – haladéktalanul tájékoztatni kell, és a folytatáshoz beleegyezését kérni; ha a résztvevő visszanyeri képességét, saját beleegyezését is meg kell szerezni. Az elutasítás következményeit és a már gyűjtött adatok és minták kezelését a jóváhagyott jogi keretek szerint kell ismertetni; jogszabály által megkövetelt megőrzés esetén törlés nem ígérhető."
+      }
+    },
+    "HU-P1": {
+      "form": "eu/templates/part-ii/P1_Participant compensation.docx",
+      "fields": {
+        "f02": "Magyarországon kötelező: a résztvevői dokumentumban pontosan fel kell sorolni a szponzor által megtérített igazolt költségtípusokat; csak igazolt költség téríthető, és a „térítheti” típusú feltételes vagy példálózó megfogalmazást az ETT-KFEB nem fogadja el. Külső költségtérítési szolgáltató esetén a résztvevői anyag ismerteti a lényeges feltételeket, a továbbított adatokat és az esetleges díjakat.",
+        "f04": "Magyarországon: pénzbeli ellenszolgáltatás az ETT Bioetikai Kódex szerint I. fázisú vizsgálatban egészséges vagy beteg résztvevőknek, valamint nem terápiás farmakokinetikai vagy farmakodinámiás vizsgálatban adható egységesen meghatározott összegben, a kellemetlenség, az időveszteség és a jövedelemkiesés ellentételezésére; az összeg nem gyakorolhat indokolatlan befolyást. Kiskorúak és cselekvőképtelen személyek részére részvételi díj nem adható, csak igazolt költségtérítés. A részvételi díjat a költségtérítéstől elkülönítve kell megadni, ugyanazokkal az összegekkel, mint a résztvevői dokumentumokban.",
+        "f05": "Magyarországon kötelező, ha a vizsgálat alatt kis értékű ajándékot vagy megtartást segítő tárgyat adnak a résztvevőknek: sorolja fel a tárgyakat és mindegyik kereskedelmi értékét."
+      }
+    }
+  },
+  "national_fields_note": "Index of the national additions to shared forms; the same text is on each document (documents[].national_fields). Field ids are those of the shared <form>.fields.json. No national R1 or S1 additions: the guides identify no separate Hungary data-protection or sample form.",
+  "not_planned_shared_forms": {
+    "R1": "eu/templates/part-ii/R1_Data protection.docx is not planned: the MedEthicsEU overview identifies no separate Hungary Part II data-protection document; ETT-KFEB expects the privacy details in the participant information and consent (checklist item 8; DECISIONS.md D9).",
+    "S1": "eu/templates/part-ii/S1_Biological samples.docx is not planned: the MedEthicsEU overview identifies no separate national Part II sample form; samples are described in the participant information and consent (checklist item 9; DECISIONS.md D9).",
+    "M1": "The shared EU CV form is replaced by the ETT-KFEB Hungary-adapted CV template (HU-M1).",
+    "N1": "The shared EU site-suitability form is replaced by the ETT-KFEB Hungary-modified form (HU-N1)."
+  },
+  "content_only_checklist_items": {
+    "7 (third item)": "Third-party reimbursement service: described in the consent material (HU-L1, P1 field f02); no separate document.",
+    "8": "Data protection: content of every L1 document; separate document only as HU-L-PRIVACY-APPENDIX.",
+    "9 (first item)": "Biological samples: described in the participant information and consent (HU-L1); no separate national S1 form.",
+    "11": "Submission-time signature summary: applied as signature_at_submission and signature_rule on each document."
+  },
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_adult patients_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_main_HU_hu.json"
+        }
+      ],
+      "basis": "Supplied HU main template, following ETT-KFEB Part II Q&A and GDPR recommendation (14 March 2023) as recorded in the Hungary ICF guide",
+      "sources": [
+        "HU-ICF",
+        "HU-PII-CHECKLIST#2"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_healthy_HU_hu.json"
+        }
+      ],
+      "note": "For people who do not have the condition studied (Phase I pharmacology, PK or other non-therapeutic studies). If patients and healthy volunteers are both enrolled, do not assume one document fits both. State no therapeutic intent and that direct benefit may not be expected; describe confinement, fasting, sampling, restrictions; compensation separate from documented expenses and within the Bioethics Code; list and value of small retention items.",
+      "sources": [
+        "HU-HV"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_parents_HU_hu.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 6-11_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_age 6-11_HU_hu.json",
+          "when": "population.minors_age_bands includes ages 6-11 and the children can understand"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 12-17_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_age 12-17_HU_hu.json",
+          "when": "population.minors_age_bands includes ages 12-17"
+        }
+      ],
+      "note": "Representative consent by the person authorised under Section 16 Health Act, with identity details in the consent document. Information appropriate to age and maturity when the minor can understand; the minor's opinion is considered and a capable minor's refusal is respected. No fixed national assent age bands: the template bands are drafting aids and the set must be defensible to ETT-KFEB for the children actually enrolled. Re-consent with the adult document at adulthood. No payment for participation. Separate privacy information in each document.",
+      "sources": [
+        "HU-MINORS"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_HU_hu.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_HU_hu.json",
+          "when": "the participant can understand adapted information or express an opinion"
+        }
+      ],
+      "note": "Adult who lacks capacity, or has court-limited capacity covering healthcare decisions. The authorised person follows the Section 16 Health Act order; the site verifies the authority; identity details in the ICF. Participant informed according to ability; opinion considered; refusal respected (Article 31 CTR). Own consent as soon as capacity is regained. No payment for participation.",
+      "sources": [
+        "HU-CAPACITY"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency continuation_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_emergency_HU_hu.json"
+        }
+      ],
+      "note": "Only when Section 160 Health Act and Article 35 CTR conditions are all met. Later information and consent for continued participation and for data and samples collected in the emergency period. If a legal representative consents first, add the representative set (adults_without_capacity) where required; the participant's own consent once capable. K1 section on emergency enrolment describes the procedure.",
+      "sources": [
+        "HU-EMERGENCY"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_two witnesses_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_witness_HU_hu.json"
+        }
+      ],
+      "note": "Capable participant unable to write or illiterate. Oral consent in the simultaneous presence of two witnesses who are not interested in or participating in the research; both sign and give an address or contact. Written confirmation before research continues if writing ability returns. Not for lack of capacity or temporary unavailability.",
+      "sources": [
+        "HU-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_HU_hu.json"
+        }
+      ],
+      "note": "Only when the protocol or safety plan collects pregnancy, maternal, outcome or infant information not sufficiently covered by the main ICF. Infant data need their own lawful consent pathway. Section 161 Health Act applies when research procedures are performed on the pregnant participant. No fixed Hungarian follow-up duration: state the protocol's duration.",
+      "sources": [
+        "HU-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_HU_hu.json"
+        }
+      ],
+      "note": "Separate data subject: the partner signs her own consent and receives her own privacy information (ETT-KFEB GDPR recommendation). The participant cannot consent for her.",
+      "sources": [
+        "HU-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_secondary_HU_hu.json"
+        }
+      ],
+      "note": "Separate optional choice; refusal does not block the main trial. Renewed consent is required for non-anonymous secondary use whose purpose was not explained at first use (ETT-KFEB). Genetic future use additionally follows the Genetics Act. Representative logic for minors and adults without capacity.",
+      "sources": [
+        "HU-SECONDARY"
+      ]
+    },
+    {
+      "id": "genetic_testing",
+      "trigger": "genetics.testing_planned",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_genetic testing_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_genetic testing_HU_hu.json"
+        }
+      ],
+      "note": "One document per population with planned genetic testing (HU-L1-GENETIC). Signature route per population: own consent; Section 16 authorised person; minor or partly limited adult with the legal representative's consent or later approval; two-witness route for a capable person unable to write.",
+      "sources": [
+        "HU-PII-CHECKLIST#2",
+        "HU-SECONDARY",
+        "HU-MINORS",
+        "HU-CAPACITY",
+        "HU-WITNESS"
+      ]
+    },
+    {
+      "id": "substudy",
+      "trigger": "consent.separate_substudy_decision",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_substudy <name>_<population>_HU_hu",
+          "template": "templates/participant/L1_SIS and ICF_main_HU_hu.json"
+        }
+      ],
+      "note": "A substudy with its own consent decision gets its own document, with its privacy information included or appropriately cross-referenced (QC 5). The main template's description covers optional substudies; use the population's own template where the substudy population is minors or represented adults.",
+      "sources": [
+        "HU-PII-CHECKLIST#2",
+        "HU-QC#5"
+      ]
+    }
+  ],
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents.",
+  "drafting_rules": [
+    "Participant documents follow the supplied HU templates and the ETT-KFEB rules recorded in the Hungary guides; templates are used as supplied, and every study-specific addition is made in final, natural Hungarian.",
+    "Main information and consent: one combined 'Tájékoztatáson alapuló beleegyező nyilatkozat' per population with one signature set; do not duplicate signature pages.",
+    "Consent record: participant's name, place and date of birth; identity details of the Section 16 authorised person where applicable; the participant's study code number never appears in the ICF.",
+    "Identify the trial (EU CT number, protocol number, title), the Hungarian healthcare provider and the PI or person providing the information by name and role.",
+    "Insurance: insurer's name, Hungarian contact, contact person and telephone number, and how to seek treatment and compensation for trial-related injury (Act XCV of 2005, Section 21); never a generic statement that the sponsor is insured.",
+    "Reimbursement: list exact documented cost types; no 'may reimburse' wording; separate participation payments (only within the Bioethics Code) from expense reimbursement; describe any third-party reimbursement service, its fees and data flows.",
+    "Privacy integrated into each participant document: data categories, coded/pseudonymised/anonymous used consistently, access to identifiable records at the site only, recipients, storage period and location, third-country transfers and safeguards, purposes, legal basis (consent as expected by ETT-KFEB, checked against the sponsor's GDPR analysis), rights and NAIH contact.",
+    "Genetic testing: separate genetic information and consent documents; the main ICF only announces it.",
+    "Optional decisions (genetics, future use, substudies) are separate from the main participation decision; refusal never blocks main participation.",
+    "Two-witness oral-consent route with both witnesses' signature and address or contact where a capable participant cannot read or write.",
+    "Patient emergency card for applicable trials, announced in the ICF, carried by the participant; identity plus study code on the card only with a stated patient-safety reason and agreement.",
+    "Use Hungarian and EU rules only; remove references to foreign laws; consistent form of address (Ön in adult documents, tegező in child and adolescent documents as the templates set).",
+    "Participant templates (JSON): italic text, [square-bracket] notes and \"...........\" gaps are drafting instructions or gaps; follow them and remove them. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE: …] labels. Nothing of either may remain in a final document."
+  ],
+  "sources": {
+    "HU-HUB": "https://trialagents.com/ctis/hungary/en",
+    "HU-PII-CHECKLIST": "https://trialagents.com/ctis/hungary/en/part-ii-document-checklist",
+    "HU-ICF": "https://trialagents.com/ctis/hungary/en/patient-information-consent-requirements",
+    "HU-QC": "https://trialagents.com/ctis/hungary/en/patient-facing-document-qc-checklist",
+    "HU-HV": "https://trialagents.com/ctis/hungary/en/healthy-volunteer-consent-requirements",
+    "HU-MINORS": "https://trialagents.com/ctis/hungary/en/minor-consent-assent-requirements",
+    "HU-CAPACITY": "https://trialagents.com/ctis/hungary/en/limited-capacity-legal-representative-consent-requirements",
+    "HU-EMERGENCY": "https://trialagents.com/ctis/hungary/en/emergency-enrollment-consent-requirements",
+    "HU-WITNESS": "https://trialagents.com/ctis/hungary/en/impartial-witness-consent-requirements",
+    "HU-PREGNANCY": "https://trialagents.com/ctis/hungary/en/pregnancy-follow-up-requirements",
+    "HU-SECONDARY": "https://trialagents.com/ctis/hungary/en/secondary-use-consent-requirements",
+    "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention",
+    "ETT-KFEB": "https://ett.okfo.gov.hu/kfeb/",
+    "ETT-KFEB-GDPR": "https://ett.aeek.hu/wp-content/uploads/2023/03/kfeb_gdpr_ajanlas_2023.pdf",
+    "ETT-KFEB-CARD": "https://ett.aeek.hu/wp-content/uploads/2018/05/kfeb_betegkartya_kovetelmenyek_20151215.pdf",
+    "NNGYK": "https://ogyei.gov.hu/az_engedelyezesi_eljaras_menete",
+    "MEDETHICSEU": "https://health.ec.europa.eu/document/download/7ae68dce-da1a-40e5-81ed-25d6211cda0b_en?filename=mp_ct_medethicseu_deliverables_cta-per-ms_en.pdf",
+    "EUDRALEX-10": "https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-10_en",
+    "BIOETHICS-CODE": "https://ett.okfo.gov.hu/bioetikai-kodex/",
+    "EUTV": "https://njt.hu/jogszabaly/1997-154-00-00",
+    "GENETICS-ACT": "https://njt.hu/jogszabaly/2008-21-00-00",
+    "MEDICINES-ACT": "https://njt.hu/jogszabaly/2005-95-00-00",
+    "DECREE-35-2005": "https://njt.hu/jogszabaly/2005-35-20-0B"
+  },
+  "sources_note": "All eleven Hungary guide pages reviewed 23 September 2026 (read 27 November 2026). Anchors #1-#11 refer to the numbered sections of the Part II checklist page; HU-QC#n to the numbered sections of the QC checklist page. Official sources (ETT-KFEB, NNGYK, MedEthicsEU v4.0 of 26 June 2026, Hungarian acts) are cited as recorded in the guides; they were not read directly.",
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "hungary_note": "The Hungary guides give no national naming instruction and no CTIS titles. CTCG titles are used; _HU_hu on participant-facing documents, _HU on O1 and P1. Personal names only for the principal investigator in M1 and M2; co-investigator CVs and signature pages carry no names in the title (DECISIONS.md D8). Titles for the patient emergency card, protocol signature pages, the Hungarian cover letter and the document list are provisional (DECISIONS.md D4, D6, D10, D11)."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued by someone else (insurer, training provider, site, sponsor, investigators) or a national form not yet supplied. Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "participant_templates": [
+    {
+      "id": "HU-PT-age-12-17",
+      "file": "templates/participant/L1_SIS and ICF_age 12-17_HU_hu.json",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_hu": "Serdülőknek szóló tájékoztató és véleménynyilatkozat (12–17 év)",
+      "role": "age-adapted information and opinion (assent) of adolescents 12-17",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+      "authority_note": "The Hungary guides publish no national age-band table; 12-17 is the template's drafting band. The template's instruction to record the legally required own consent of a minor aged 14 or older in the parents document is not stated in the guides (DECISIONS.md D12)."
+    },
+    {
+      "id": "HU-PT-age-6-11",
+      "file": "templates/participant/L1_SIS and ICF_age 6-11_HU_hu.json",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_hu": "Gyermekeknek szóló tájékoztató és véleménynyilatkozat (6–11 év)",
+      "role": "age-adapted information and opinion (assent) of children 6-11",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+      "authority_note": "The Hungary guides publish no national age-band table; 6-11 is the template's drafting band (population_rules.minors)."
+    },
+    {
+      "id": "HU-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_HU_hu.json",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_hu": "Tájékoztatáson alapuló beleegyező nyilatkozat – sürgősségi bevonást követő folytatás",
+      "role": "later information and consent for continued participation after emergency enrolment (Section 160 Health Act, Article 35 CTR)",
+      "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window."
+    },
+    {
+      "id": "HU-PT-genetic-testing",
+      "file": "templates/participant/L1_SIS and ICF_genetic testing_HU_hu.json",
+      "name_en": "Genetic Testing Information and Consent",
+      "name_hu": "Humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező nyilatkozat",
+      "role": "separate human genetic testing information and consent (Act XXI of 2008), mandatory or optional genetic testing in the protocol",
+      "when_to_use": "Must be completed for all participant populations with a planned genetic testing in the context of study protocol, both mandatory and optional.",
+      "authority_note": "Hungary-only template. Its instructions on genetic counselling before sampling and on Section 13(3) of Act XXI of 2008 are not stated in the guides; kept as supplied (DECISIONS.md D15)."
+    },
+    {
+      "id": "HU-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_HU_hu.json",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_hu": "Tájékoztatáson alapuló beleegyező nyilatkozat – egészséges felnőtt önkéntes",
+      "role": "main information and consent (healthy adult volunteers)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+      "authority_note": "The template allows payment beyond expenses also in interaction and bioequivalence studies; the guide (Bioethics Code) names Phase I and non-therapeutic PK or PD research. The guide's scope applies (templates/README.md conflict 3; DECISIONS.md D16)."
+    },
+    {
+      "id": "HU-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_HU_hu.json",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_hu": "Tájékoztatáson alapuló beleegyező nyilatkozat – nyilatkozattételre jogosult személy",
+      "role": "information and consent for the person authorised under Section 16 Health Act for an adult without capacity",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "HU-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_HU_hu.json",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_hu": "Egyszerűsített tájékoztató és véleménynyilatkozat – korlátozott beleegyezési képességű felnőtt",
+      "role": "adapted information and opinion of an adult without capacity who can understand",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent."
+    },
+    {
+      "id": "HU-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_HU_hu.json",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_hu": "Tájékoztatáson alapuló beleegyező nyilatkozat",
+      "role": "main information and consent (capable adult patients); also re-consent at 18, regained capacity and optional substudies",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms.",
+      "authority_note": "Its description also allows optional substudies; used for the substudy population set."
+    },
+    {
+      "id": "HU-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_HU_hu.json",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_hu": "Tájékoztatáson alapuló beleegyező nyilatkozat – nyilatkozattételre jogosult személy részére, kiskorú részvételéhez",
+      "role": "information and consent for the person authorised to consent for a minor (parent, legal representative or other person under Section 16 Health Act)",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years)."
+    },
+    {
+      "id": "HU-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_HU_hu.json",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_hu": "Tájékoztatáson alapuló beleegyező nyilatkozat – várandós vizsgálati alany terhesség-utánkövetése",
+      "role": "pregnancy follow-up of a pregnant participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant."
+    },
+    {
+      "id": "HU-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_HU_hu.json",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_hu": "Tájékoztatáson alapuló beleegyező nyilatkozat – várandós partner terhesség-utánkövetése",
+      "role": "information and consent of the pregnant partner of a male participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant."
+    },
+    {
+      "id": "HU-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_HU_hu.json",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_hu": "Tájékoztatáson alapuló beleegyező nyilatkozat – másodlagos/jövőbeni adat- és mintafelhasználás",
+      "role": "optional secondary or future use of data or samples",
+      "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial."
+    },
+    {
+      "id": "HU-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_HU_hu.json",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_hu": "Tájékoztatáson alapuló beleegyező nyilatkozat – két tanú jelenlétében",
+      "role": "information and oral consent of a capable adult unable to write, before two witnesses (Section 159(1a) Health Act)",
+      "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process.",
+      "authority_note": "The description names 'an impartial witness'; Hungary requires two witnesses who are not interested in or participating in the research (Section 159(1a) Health Act, ETT-KFEB). The template content already uses two witnesses with address or contact."
+    }
+  ],
+  "population_rules": {
+    "authority": "ETT-KFEB (Clinical Pharmacology Ethics Committee of the Medical Research Council): current Part II requirements and Q&A, GDPR recommendation of 14 March 2023, patient emergency card requirements of 15 December 2015; Act CLIV of 1997 on Health (Eütv.) Sections 16, 159, 160, 161; Act XXI of 2008 on human genetic data (Section 8); Decree 35/2005 (VIII. 26.) EüM; Medical Research Council Bioethics Code 2022; as recorded in the Hungary guides reviewed 23 September 2026.",
+    "minors": {
+      "age_bands": [
+        {
+          "band": "6-11",
+          "template": "HU-PT-age-6-11",
+          "reader": "child"
+        },
+        {
+          "band": "12-17",
+          "template": "HU-PT-age-12-17",
+          "reader": "adolescent"
+        }
+      ],
+      "always": [
+        "HU-PT-parents"
+      ],
+      "band_rule": "The official Hungary Part II sources publish no fixed national assent age-band table ('do not invent one'). The template bands 6-11 and 12-17 are drafting bands; per study, create child and adolescent versions from the protocol population, developmental ability and the CTR requirement for age- and maturity-appropriate information, defensible to ETT-KFEB. A short child sheet may suit younger children; adolescents may need a document closer to the adult information.",
+      "band_conflict": "None: the authority sets no bands, so the template bands are kept as drafting bands (recorded in templates/README.md).",
+      "age_16": "Minors aged 16 or older may designate who exercises healthcare consent or refusal rights; this is not automatic independent clinical-trial consent.",
+      "age_14_template_rule": "The 12-17 and genetic templates record the own consent of a minor aged 14 or older together with the representative's consent; the guides state this only for genetic consent of minors with limited capacity (DECISIONS.md D12).",
+      "reconsent_at_18": "HU-PT-main or HU-PT-healthy, as soon as required by law and the approved process when participants reach adulthood during the trial; also reassess when legal status or capacity changes earlier.",
+      "under_6": "No template. Inform the child in a form appropriate to age and maturity where the child can understand, and document the child's involvement (DECISIONS.md D13).",
+      "payment": "No financial compensation for participation (Bioethics Code); only documented expenses.",
+      "genetics": "Genetic consent of a minor with limited capacity is made with the legal representative's consent or later approval; no sampling before approval."
+    },
+    "adults_without_capacity": {
+      "always": [
+        "HU-PT-legal-rep"
+      ],
+      "as_applicable": [
+        "HU-PT-limited-capacity"
+      ],
+      "note": "Representative per the Section 16 Health Act order, authority verified by the site, identity details in the ICF. Participant information adapted to ability; opinion considered to the professionally possible extent; refusal respected. Own consent when capacity is regained. Genetic consent per Act XXI of 2008. No payment for participation."
+    },
+    "emergency": {
+      "always": [
+        "HU-PT-emergency"
+      ],
+      "note": "Section 160 Health Act and Article 35 CTR. Representative documents (HU-PT-legal-rep) where a representative consents after enrolment; participant's own consent once capable."
+    },
+    "impartial_witness": {
+      "always": [
+        "HU-PT-witness"
+      ],
+      "note": "Two witnesses, not interested in or participating in the research, with address or contact; only for a capable person unable to write or illiterate."
+    },
+    "pregnancy": {
+      "participant": "HU-PT-pregnancy when the protocol or safety plan collects pregnancy, maternal, outcome or infant information beyond what the main ICF explains; otherwise the main ICF explains follow-up.",
+      "partner": "HU-PT-pregnant-partner when identifiable pregnancy or medical information is collected from a participant's partner; she signs her own consent."
+    },
+    "genetic_testing": {
+      "always": [
+        "HU-PT-genetic-testing"
+      ],
+      "note": "Separate genetic information and consent for every population with planned genetic testing, mandatory or optional; never merged into the main ICF."
+    },
+    "shareable_templates": [
+      "HU-PT-pregnant-partner",
+      "HU-PT-secondary"
+    ],
+    "shareable_note": "One shared document for several populations only when nothing in it would differ; future-use consent from minors or represented adults needs the representative logic.",
+    "separate_document_rules": [
+      "Main information and consent: one combined document per population with one signature set (ETT-KFEB).",
+      "Genetic information and genetic consent: separate document(s), mandatory or optional genetic testing (ETT-KFEB; Act XXI of 2008).",
+      "Each distinct data subject or separate consent decision (minor and parent, representative, healthy volunteer, pregnant partner, substudy) gets its own document with the privacy information relevant to that person, or a clear reference to the main document where ETT-KFEB allows it (ETT-KFEB GDPR recommendation).",
+      "Optional future use: a separate or clearly separable choice; renewed consent for non-anonymous secondary use not explained at first use (ETT-KFEB).",
+      "Patient emergency card: final Hungarian card as an addendum to the main ICF for applicable trials (not Phase IV or bioequivalence).",
+      "A separate privacy appendix, if used, has its own signature field and is referenced by the main ICF."
+    ]
+  },
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/HU/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/HU/checklists/participant-documents.json",
+    "check": "countries/HU/checklists/forms-and-supplied.json",
+    "package": "countries/HU/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/HU/DECISIONS.md"
+}

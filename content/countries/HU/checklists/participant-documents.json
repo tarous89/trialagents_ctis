@@ -1,0 +1,495 @@
+{
+  "id": "HU-QC-PARTICIPANT",
+  "name": "Hungary: participant-facing document QC",
+  "applies_to": [
+    "HU-K2",
+    "HU-L1",
+    "HU-L1-GENETIC",
+    "HU-L1-POPULATION",
+    "HU-L-PRIVACY-APPENDIX",
+    "HU-L-CARD"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/hungary/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); C5.14, C8.08, C9.08 and C9.09 also from the Hungary ICF and minors guides",
+  "section_map": "C1-C6 = QC sections 1-6; C7 = QC sections 7 (insurance, injury, reimbursement) and 8 (patient emergency card); C8 = QC section 9; C9 = QC section 10; C4.01, C8.09-C8.11 and C10 are the common TrialAgents items.",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content checks",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "EU clinical trial number, protocol number and trial title are correct and identical across all participant documents."
+        },
+        {
+          "id": "C1.02",
+          "check": "The Hungarian site and healthcare-provider details match the submitted site package (N1)."
+        },
+        {
+          "id": "C1.03",
+          "check": "Investigator or information-provider names and roles are current."
+        },
+        {
+          "id": "C1.04",
+          "check": "Study purpose, duration, planned participant numbers, procedures, intervention frequency and visit burden match the protocol."
+        },
+        {
+          "id": "C1.05",
+          "check": "Accepted alternatives to trial participation are described accurately, including whether joining means interrupting an existing treatment and what that could mean."
+        },
+        {
+          "id": "C1.06",
+          "check": "Known and reasonably foreseeable risks, burdens and discomforts are consistent with the protocol and current safety information, including the possibility of unforeseen adverse events."
+        },
+        {
+          "id": "C1.07",
+          "check": "The document says explicitly when no direct participant benefit is expected."
+        },
+        {
+          "id": "C1.08",
+          "check": "The probability and practical meaning of placebo assignment are explained.",
+          "applies_when": "trial.placebo"
+        },
+        {
+          "id": "C1.09",
+          "check": "The investigational medicinal product and any necessary plain-language mechanism description are correct."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency checks",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Contraception, pregnancy testing and pregnancy-reporting wording matches the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.02",
+          "check": "Sample types, volumes, collection times and analyses match the protocol.",
+          "applies_when": "samples.collected"
+        },
+        {
+          "id": "C2.03",
+          "check": "Data and sample retention periods match the approved plan."
+        },
+        {
+          "id": "C2.04",
+          "check": "Reimbursement and travel arrangements match the financial documents (HU-P1)."
+        },
+        {
+          "id": "C2.05",
+          "check": "Emergency contact arrangements match the site information and the patient emergency card.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "C2.06",
+          "check": "Every optional substudy in the protocol has a corresponding optional consent pathway where needed."
+        },
+        {
+          "id": "C2.07",
+          "check": "The protocol contains no participant-facing procedure that is absent from the Hungarian information."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic checks",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The participant receives the information before signing."
+        },
+        {
+          "id": "C3.02",
+          "check": "The participant or authorised person has the correct signature and date fields; where a Section 16 Health Act authorised person consents, their identity details are in the consent document."
+        },
+        {
+          "id": "C3.03",
+          "check": "The principal investigator or person providing the information has the required signature field."
+        },
+        {
+          "id": "C3.04",
+          "check": "Each separate consent document has one coherent signature set; signature pages are not duplicated."
+        },
+        {
+          "id": "C3.05",
+          "check": "Optional decisions are separated from mandatory participation decisions."
+        },
+        {
+          "id": "C3.06",
+          "check": "Withdrawal is described as possible without reason and without disadvantage."
+        },
+        {
+          "id": "C3.07",
+          "check": "The document explains any lawful consequences of withdrawal, such as handling of data already collected."
+        },
+        {
+          "id": "C3.08",
+          "check": "Genetic consent is not merged into the main ICF: separate genetic information and consent documents are present.",
+          "applies_when": "genetics.testing_planned"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage checks",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and each population has its full Hungarian document set (playbook section 2a).",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Adults with capacity have the standard Hungarian ICF.",
+          "applies_when": "population.adult_patients"
+        },
+        {
+          "id": "C4.03",
+          "check": "Healthy volunteers have wording suitable for a person with no therapeutic indication and, where relevant, transparent compensation information (healthy-volunteer guide).",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.04",
+          "check": "Minors have age- and maturity-appropriate information plus the correct parent or legal-representative pathway (minor consent and assent guide); the minor's opinion and dissent handling are explained.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.05",
+          "check": "Adults with restricted capacity have participant and representative material appropriate to the legal situation (limited-capacity guide).",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.06",
+          "check": "Emergency-enrolment trials have a prospectively described later-information and consent pathway (emergency enrolment guide).",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.07",
+          "check": "If a participant cannot read or write, the form supports Hungary's two-witness oral-consent process (impartial witness guide).",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.08",
+          "check": "Pregnancy follow-up has separate documents for the participant or pregnant partner where the data subject and consent decision differ (pregnancy follow-up guide).",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.09",
+          "check": "Optional future use is covered by a separate or clearly separable choice (secondary-use guide).",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy checks",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "The sponsor and other controllers or processors are identified as required by the approved privacy model."
+        },
+        {
+          "id": "C5.02",
+          "check": "The categories of personal and special-category data actually collected are listed, with consistent terminology."
+        },
+        {
+          "id": "C5.03",
+          "check": "'Coded', 'pseudonymised' and 'anonymous' are used consistently; the same transfer is not described as anonymous in one section and coded in another."
+        },
+        {
+          "id": "C5.04",
+          "check": "The document explains which parties may access source records and under what conditions (at the site, as described by ETT-KFEB)."
+        },
+        {
+          "id": "C5.05",
+          "check": "The document explains how data leave the site and whether the code key stays at the site."
+        },
+        {
+          "id": "C5.06",
+          "check": "Recipients or recipient categories are named specifically enough for the participant to understand."
+        },
+        {
+          "id": "C5.07",
+          "check": "Purpose of processing and the legal basis described in the Hungary-approved wording are stated (ETT-KFEB expects consent; checked against the sponsor's GDPR analysis)."
+        },
+        {
+          "id": "C5.08",
+          "check": "Storage duration and location are stated."
+        },
+        {
+          "id": "C5.09",
+          "check": "Third-country transfers and their safeguards are explained.",
+          "applies_when": "data.transfer_outside_eea"
+        },
+        {
+          "id": "C5.10",
+          "check": "The participant's rights and NAIH contact information are included."
+        },
+        {
+          "id": "C5.11",
+          "check": "The third-party reimbursement service: exactly which data it receives and why.",
+          "applies_when": "reimbursement.external_service_provider"
+        },
+        {
+          "id": "C5.12",
+          "check": "A separate pregnant-partner information sheet contains privacy information for the partner.",
+          "applies_when": "pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C5.13",
+          "check": "A substudy with a separate information sheet includes or appropriately cross-references the privacy information for that substudy.",
+          "applies_when": "consent.separate_substudy_decision"
+        },
+        {
+          "id": "C5.14",
+          "check": "Privacy information is integrated into the participant document; a separate privacy appendix, if used, has its own participant or healthy-volunteer signature field and the main ICF refers to it.",
+          "source": "https://trialagents.com/ctis/hungary/en/patient-information-consent-requirements"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biosample and secondary-use checks",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "The biological samples taken and the primary study purpose are stated.",
+          "applies_when": "samples.collected"
+        },
+        {
+          "id": "C6.02",
+          "check": "Storage duration, location, coding and transfer are stated.",
+          "applies_when": "samples.collected"
+        },
+        {
+          "id": "C6.03",
+          "check": "What happens to samples after the primary research purpose ends is stated.",
+          "applies_when": "samples.collected"
+        },
+        {
+          "id": "C6.04",
+          "check": "Future use is optional when it is not required for the main study.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.05",
+          "check": "For non-anonymous secondary use, the future purpose was explained at the original consent; otherwise renewed consent is planned (ETT-KFEB).",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.06",
+          "check": "Genetic sampling uses the separate Hungarian genetic information and consent structure with the choices required under the Genetics Act (permitted uses and storage forms).",
+          "applies_when": "genetics.testing_planned"
+        },
+        {
+          "id": "C6.07",
+          "check": "Withdrawal instructions distinguish identifiable or coded material from material already irreversibly anonymised.",
+          "applies_when": "samples.collected"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Hungary-specific checks: insurance, injury, reimbursement and patient emergency card",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "The insurer is named."
+        },
+        {
+          "id": "C7.02",
+          "check": "The insurer's Hungarian contact details are included."
+        },
+        {
+          "id": "C7.03",
+          "check": "The contact person's name and telephone number are included."
+        },
+        {
+          "id": "C7.04",
+          "check": "The document explains whom the participant contacts after trial-related injury."
+        },
+        {
+          "id": "C7.05",
+          "check": "Treatment and compensation rights are explained in language consistent with Hungarian law (Act XCV of 2005, Section 21)."
+        },
+        {
+          "id": "C7.06",
+          "check": "If reimbursement is offered, the exact documented cost types are listed.",
+          "applies_when": "reimbursement offered"
+        },
+        {
+          "id": "C7.07",
+          "check": "Vague wording such as 'may reimburse' is removed where the sponsor has defined reimbursable costs.",
+          "applies_when": "reimbursement offered"
+        },
+        {
+          "id": "C7.08",
+          "check": "An external reimbursement provider's relationship with the participant and the data flows are explained.",
+          "applies_when": "reimbursement.external_service_provider"
+        },
+        {
+          "id": "C7.09",
+          "check": "A final Hungarian patient emergency card is included for the trial.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "C7.10",
+          "check": "The card has participant name and date-of-birth fields.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "C7.11",
+          "check": "The card identifies the protocol and the investigational medicinal product.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "C7.12",
+          "check": "The mechanism is added when the product name alone does not explain the relevant safety context.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "C7.13",
+          "check": "The card gives indication, contraindications and dangerous interactions.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "C7.14",
+          "check": "The card gives the site address and a 24-hour medical contact (investigator or designated physician).",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "C7.15",
+          "check": "The ICF tells the participant that the card will be issued, what personal data it shows, and to carry it during the trial.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "C7.16",
+          "check": "If participant identity and study code appear together on the card, the patient-safety reason is explained and consented in the ICF.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "C7.17",
+          "check": "The ETT-KFEB exception for Phase IV and bioequivalence trials was checked before creating or omitting a card; the exception is applied only where the trial genuinely falls within those categories."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administrative checks",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Every document has a version number and date consistent with the Hungarian Part II document list (HU-DOC-LIST)."
+        },
+        {
+          "id": "C8.02",
+          "check": "No participant-facing form is pre-signed for CTIS submission."
+        },
+        {
+          "id": "C8.03",
+          "check": "The main ICF contains participant or authorised-person and investigator or information-provider signature and date fields."
+        },
+        {
+          "id": "C8.04",
+          "check": "Two witness signature fields plus witness address or contact fields are present where the oral-consent pathway can apply.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C8.05",
+          "check": "Genetic documents each have their own coherent signature set.",
+          "applies_when": "genetics.testing_planned"
+        },
+        {
+          "id": "C8.06",
+          "check": "Pregnancy-partner documents are signed by the pregnant partner when her data or records are collected.",
+          "applies_when": "pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C8.07",
+          "check": "The Hungarian cover letter and document list identify the same versions."
+        },
+        {
+          "id": "C8.08",
+          "check": "The consent record contains the participant's name, place of birth and date of birth, and no participant study code number."
+        },
+        {
+          "id": "C8.09",
+          "check": "Correct CTIS section and naming convention (requirements.json ctis_title, _HU_hu)."
+        },
+        {
+          "id": "C8.10",
+          "check": "No personal data that should not appear in the CTIS upload."
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version (italic notes, [bracket] notes, ........... gaps, yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels); fields completed at the consent visit stay blank."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Hungarian language and design checks",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Final Hungarian text is used for participant-facing and recruitment material."
+        },
+        {
+          "id": "C9.02",
+          "check": "The text has been reviewed by a competent Hungarian-language reviewer with clinical-trial knowledge."
+        },
+        {
+          "id": "C9.03",
+          "check": "Formal address and verb forms are consistent (Ön in adult documents; tegező in child and adolescent documents as the templates set)."
+        },
+        {
+          "id": "C9.04",
+          "check": "Literal English constructions that sound unnatural or change meaning are removed."
+        },
+        {
+          "id": "C9.05",
+          "check": "Foreign-law references that do not apply in Hungary are removed and replaced by the Hungarian and EU rules that apply."
+        },
+        {
+          "id": "C9.06",
+          "check": "Medical and regulatory terms are explained understandably."
+        },
+        {
+          "id": "C9.07",
+          "check": "Headings and consent choices are visually clear."
+        },
+        {
+          "id": "C9.08",
+          "check": "Terminology is consistent across the main ICF, recruitment materials, emergency card, pregnancy documents, genetic consent and substudy information.",
+          "source": "https://trialagents.com/ctis/hungary/en/patient-information-consent-requirements"
+        },
+        {
+          "id": "C9.09",
+          "check": "A child-facing document is written for the child, not a literal translation of the adult ICF.",
+          "applies_when": "population.minors",
+          "source": "https://trialagents.com/ctis/hungary/en/minor-consent-assent-requirements"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final release",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "No protocol fact, consent giver, optional choice, data transfer, sample purpose, payment or signature block is unresolved; each resolution is recorded and the affected checks rerun."
+        }
+      ]
+    }
+  ]
+}

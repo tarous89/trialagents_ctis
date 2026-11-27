@@ -1,0 +1,214 @@
+{
+  "id": "HU-PACKAGE",
+  "name": "Hungary: Part II package and CTIS upload check",
+  "applies_to": "the Hungary package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/hungary/en/part-ii-document-checklist (including section 11, submission-time signature summary)",
+    "https://trialagents.com/ctis/hungary/en/patient-facing-document-qc-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "K1 recruitment and informed-consent procedure present with the Hungarian national content and a section for every population pathway in the plan."
+        },
+        {
+          "id": "P1.02",
+          "check": "K2: every final participant-facing recruitment item in Hungarian; no English-only advertisement.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.03",
+          "check": "One combined L1 information and consent document per population, and every population-specific document whose population set trigger is true."
+        },
+        {
+          "id": "P1.04",
+          "check": "Separate genetic information and consent document for every population with planned genetic testing.",
+          "applies_when": "genetics.testing_planned"
+        },
+        {
+          "id": "P1.05",
+          "check": "Final Hungarian patient emergency card as an addendum to the main ICF.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "P1.06",
+          "check": "For every Hungarian site: Hungary-template CVs of the PI and co-investigators, PI declaration of interest, GCP evidence (in the CV or separate), signed protocol signature pages, and the ETT-KFEB Hungary-modified site suitability form."
+        },
+        {
+          "id": "P1.07",
+          "check": "Insurance policy and insurance confirmation or certificate (O1, O2)."
+        },
+        {
+          "id": "P1.08",
+          "check": "P1 compensation statement and P2 financial information per site (full amount and distribution to site, PI and team)."
+        },
+        {
+          "id": "P1.09",
+          "check": "Hungarian-language cover letter and Hungarian list of the Part II documents."
+        },
+        {
+          "id": "P1.10",
+          "check": "No R1 or S1 form planned unless decided otherwise (DECISIONS.md D9); privacy and sample information present in each participant document instead."
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every participant-facing and recruitment document is in final, natural Hungarian."
+        },
+        {
+          "id": "P2.02",
+          "check": "Cover letter and Part II document list in Hungarian; other administrative documents in the language decided (DECISIONS.md D1)."
+        },
+        {
+          "id": "P2.03",
+          "check": "Participant information and consent forms submitted as final blank forms; no participant, representative, investigator or witness signature in the CTIS copies."
+        },
+        {
+          "id": "P2.04",
+          "check": "Protocol signature or acceptance pages signed by the relevant investigators."
+        },
+        {
+          "id": "P2.05",
+          "check": "Every signature or declaration field of the CV, DoI and site-suitability templates completed; no national field removed."
+        },
+        {
+          "id": "P2.06",
+          "check": "Insurance evidence signed or authenticated as the issuing document requires."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Compensation amounts, cost types and conditions identical in P1 and every participant document."
+        },
+        {
+          "id": "P3.02",
+          "check": "Insurer, Hungarian contact, contact person and telephone number identical in O1/O2 and every participant document."
+        },
+        {
+          "id": "P3.03",
+          "check": "Sample types, storage, transfers and retention identical in the protocol and every participant document, including genetic and secondary-use documents."
+        },
+        {
+          "id": "P3.04",
+          "check": "Data categories, coding terminology, recipients, transfers and retention identical across all participant documents and the protocol."
+        },
+        {
+          "id": "P3.05",
+          "check": "Consent pathways in K1 match the L1 documents in the package."
+        },
+        {
+          "id": "P3.06",
+          "check": "Emergency contacts identical on the card, in the ICF and in the site information.",
+          "applies_when": "not trial.phase_iv_or_bioequivalence"
+        },
+        {
+          "id": "P3.07",
+          "check": "Document names, versions and dates identical in the cover letter, the Hungarian document list, the uploads and the document footers."
+        },
+        {
+          "id": "P3.08",
+          "check": "Documents adapted from the reference package contain all Hungarian national additions and no leftovers from the reference country (foreign laws, other insurers, other signature logic).",
+          "applies_when": "Hungary is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B-S section prefix and CTIS placeholder for each document."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, only the fields that distinguish the document; _HU_hu on participant-facing documents."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version and date entered in CTIS metadata, not in the title."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2); none for co-investigators."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished; for substantial modifications new or revised documents in clean and tracked form where applicable."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.07",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Hungary receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (revised rules applicable from 18 June 2024; ACT EU guidance v2.2, 30 April 2026)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material, irreversibly; signatures (protocol signature pages, CV, DoI, site form) never disclosed."
+        },
+        {
+          "id": "P5.03",
+          "check": "Public and assessment versions differ only by the intended redactions; each in the correct CTIS slot."
+        },
+        {
+          "id": "P5.04",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        },
+        {
+          "id": "P6.03",
+          "check": "Every open decision in countries/HU/DECISIONS.md that affects this package is answered."
+        }
+      ]
+    }
+  ]
+}

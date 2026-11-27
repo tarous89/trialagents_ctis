@@ -1,0 +1,371 @@
+{
+  "id": "SK-QC-PARTICIPANT",
+  "name": "Slovakia: participant-facing document QC",
+  "applies_to": [
+    "SK-L1",
+    "SK-L2",
+    "SK-K2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/slovakia/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Full and short trial title are the same as in the protocol and in every other document."
+        },
+        {
+          "id": "C1.02",
+          "check": "Protocol number and current version match the protocol."
+        },
+        {
+          "id": "C1.03",
+          "check": "Sponsor name matches the protocol and CTIS."
+        },
+        {
+          "id": "C1.04",
+          "check": "EU trial number is given where available."
+        },
+        {
+          "id": "C1.05",
+          "check": "Investigational treatment and comparator are described as in the protocol and IB/SmPC."
+        },
+        {
+          "id": "C1.06",
+          "check": "Visit duration and overall participation period match the protocol."
+        },
+        {
+          "id": "C1.07",
+          "check": "Contact details and site information are current and complete."
+        },
+        {
+          "id": "C1.08",
+          "check": "No internal drafting notes, tracked changes, unresolved placeholders or references to another country remain."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-participant consistency",
+      "instruction": "Check the Slovak text against the protocol schedule and safety sections.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Screening tests, randomisation, blinding, treatment periods and washouts are described at the correct level."
+        },
+        {
+          "id": "C2.02",
+          "check": "Invasive procedures, imaging, sampling and genetic testing are described at the correct level."
+        },
+        {
+          "id": "C2.03",
+          "check": "Questionnaires and long-term follow-up are described at the correct level."
+        },
+        {
+          "id": "C2.04",
+          "check": "Contraception, pregnancy testing and prohibited medicines match the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.05",
+          "check": "Standard care and research-only procedures are distinguished."
+        },
+        {
+          "id": "C2.06",
+          "check": "No promise of results, treatment access or medical benefit that the protocol does not provide."
+        },
+        {
+          "id": "C2.07",
+          "check": "Planned remote contacts, electronic consent or other decentralised elements are explained.",
+          "applies_when": "any decentralised element or consent.electronic"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "Main-trial consent is not bundled with optional future research, recordings, genetic analysis or other substudies."
+        },
+        {
+          "id": "C3.02",
+          "check": "Each optional choice allows a clear yes or no without affecting main-trial eligibility, unless the activity is scientifically required by the protocol (then explained and not labelled optional)."
+        },
+        {
+          "id": "C3.03",
+          "check": "The form states that participation is voluntary, questions are allowed, refusal does not affect care, and consent may be withdrawn."
+        },
+        {
+          "id": "C3.04",
+          "check": "Withdrawal is explained separately for treatment, safety follow-up, data already collected and remaining samples."
+        },
+        {
+          "id": "C3.05",
+          "check": "The standard signature block lets the participant and the person conducting the consent discussion sign and personally date the form."
+        },
+        {
+          "id": "C3.06",
+          "check": "Legal-representative, witness or parent blocks appear only in the document pathway where they apply."
+        },
+        {
+          "id": "C3.07",
+          "check": "The consent section confirms in separate statements: information received and understood; enough time and opportunity to ask questions; voluntariness; agreement to the main trial procedures; permitted source-record access; information on privacy, injury, reimbursement and withdrawal; separate optional choices."
+        },
+        {
+          "id": "C3.08",
+          "check": "The person signing has legal authority for the decision (parent or legal representative recognised under Slovak law, verified)."
+        },
+        {
+          "id": "C3.09",
+          "check": "Re-consent is planned for new safety information that could affect willingness to continue, reaching 18 and regained capacity."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every protocol population maps to an approved information and consent route (population × document table; every inclusion pathway has a document set).",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Healthy volunteers: explicit no-direct-benefit and payment explanation; separate documents if patients are also enrolled.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.03",
+          "check": "Minors: parent or legal-representative permission and age-appropriate information for each planned band; assent and dissent handling; re-consent at 18.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.04",
+          "check": "Adults unable to consent: legal-representative route and participant involvement (adapted information or assent, objection respected).",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.05",
+          "check": "Emergency enrolment: Article 35 pathway and subsequent consent documents for participant and legal representative.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.06",
+          "check": "Participants or representatives unable to read: impartial-witness procedure; oral-consent record with witness signature when the person cannot write.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.07",
+          "check": "Pregnancy follow-up: correct form for the pregnant participant or the pregnant partner.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.08",
+          "check": "Optional future data or sample use has a separate choice.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C4.09",
+          "check": "No consent pathway for people in custody, serving a prison sentence or held in detention (prohibited by Slovak law).",
+          "applies_when": "always",
+          "source": "https://trialagents.com/ctis/slovakia/en/part-ii-document-checklist"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Slovak language and readability",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "All participant text is in natural Slovak understandable by the intended population."
+        },
+        {
+          "id": "C5.02",
+          "check": "Abbreviations are expanded at first use."
+        },
+        {
+          "id": "C5.03",
+          "check": "Literal translations that do not match Slovak clinical or regulatory usage are replaced."
+        },
+        {
+          "id": "C5.04",
+          "check": "Defined trial terms are consistent across all documents."
+        },
+        {
+          "id": "C5.05",
+          "check": "The Slovak text was compared sentence by sentence with the English source.",
+          "applies_when": "an English source or master exists"
+        },
+        {
+          "id": "C5.06",
+          "check": "Numbers, units, dates, probabilities, treatment names, visit frequencies, sample volumes, contraception periods and contact details are verified."
+        },
+        {
+          "id": "C5.07",
+          "check": "Formatting does not hide qualifications or make optional text look mandatory."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Privacy",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "The privacy section identifies controllers, processing purposes, data categories, recipients, source-record access, international transfers, retention, participant rights and the complaint route."
+        },
+        {
+          "id": "C6.02",
+          "check": "Consistent with the GDPR statement submitted in CTIS (SK-R1) and with sponsor and site privacy responsibilities."
+        },
+        {
+          "id": "C6.03",
+          "check": "Does not say that all data can be deleted after withdrawal; explains which records may need to be retained for trial integrity and legal obligations."
+        },
+        {
+          "id": "C6.04",
+          "check": "Consent to the clinical trial is not used as a blanket GDPR consent for every processing activity."
+        },
+        {
+          "id": "C6.05",
+          "check": "Access by monitors, auditors and authorities is explained without suggesting that confidentiality is absolute."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Biological sample and secondary-use checks",
+      "applies_when": "samples.collected or samples.archive_used or data.future_use_outside_protocol",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "The main-trial sample description matches the protocol and laboratory manual."
+        },
+        {
+          "id": "C7.02",
+          "check": "Collection, purpose, coding, analysis location, transfers, storage period, destruction and withdrawal handling are stated."
+        },
+        {
+          "id": "C7.03",
+          "check": "Optional future use is distinguishable from required trial testing.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C7.04",
+          "check": "The scope of future use is defined without unlimited phrases such as 'any research forever'.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C7.05",
+          "check": "Genetic analysis is stated directly, with whether individual results will be returned.",
+          "applies_when": "genetic analysis planned"
+        },
+        {
+          "id": "C7.06",
+          "check": "Consistent with the S1 biological-samples form (SK-S1)."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Slovakia-specific regulatory checks",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "The Slovak version is the participant-use version."
+        },
+        {
+          "id": "C8.02",
+          "check": "English and Slovak versions align where both are submitted.",
+          "applies_when": "an English version is submitted"
+        },
+        {
+          "id": "C8.03",
+          "check": "The current national Ethics Committee contact route, including the required telephone details, appears in the Participant Information Sheet (recurring ŠÚKL 2025 deficiency)."
+        },
+        {
+          "id": "C8.04",
+          "check": "Travel and other expense reimbursement is explained, including conditions and what happens after withdrawal (recurring ŠÚKL 2025 deficiency)."
+        },
+        {
+          "id": "C8.05",
+          "check": "Injury and insurance wording matches the valid Slovakia certificate (SK-O1)."
+        },
+        {
+          "id": "C8.06",
+          "check": "The version 2.0 recruitment and consent procedure template is used for submissions from 1 September 2026 and K1 matches the document pathways."
+        },
+        {
+          "id": "C8.07",
+          "check": "Only documents permitted by the Clinical Trials Regulation and the current Commission Q&A are uploaded."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Signature, version and administration",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "The CTIS documents are blank and contain no participant personal data."
+        },
+        {
+          "id": "C9.02",
+          "check": "Version number, date, language, population and country are in the filename and footer."
+        },
+        {
+          "id": "C9.03",
+          "check": "The participant-use form is signed only when consent is obtained; the approved signature blocks match the planned process."
+        },
+        {
+          "id": "C9.04",
+          "check": "The participant receives a signed copy."
+        },
+        {
+          "id": "C9.05",
+          "check": "Evidence of translation review and approval is retained in the trial file."
+        },
+        {
+          "id": "C9.06",
+          "check": "No drafting instruction remains in the final version ([bracket] notes, italic notes, '...........' gaps, yellow form labels)."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final upload review",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "Every final PDF opened after conversion: page order, bookmarks if used, line breaks and special Slovak characters correct."
+        },
+        {
+          "id": "C10.02",
+          "check": "Signature fields present; text selectable; no comments or hidden content."
+        },
+        {
+          "id": "C10.03",
+          "check": "Each file goes to the correct CTIS placeholder with the required publication or personal-data handling."
+        },
+        {
+          "id": "C10.04",
+          "check": "The document inventory is reconciled with the Slovakia Part II document checklist."
+        }
+      ]
+    }
+  ]
+}

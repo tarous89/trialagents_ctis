@@ -1,0 +1,239 @@
+{
+  "id": "SK-CHECK",
+  "name": "Slovakia: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/slovakia/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language is Slovak (bilingual Slovak and English where the guide allows it: K1, M1)."
+    },
+    {
+      "id": "X.05",
+      "check": "No signature in the CTIS copy unless the current form expressly requires one."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json; correct CTIS location."
+    }
+  ],
+  "by_document": {
+    "SK-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the EudraLex recruitment and informed-consent procedure template version 2.0 (submissions from 1 September 2026), uploaded under Recruitment arrangements."
+      },
+      {
+        "id": "K1.02",
+        "check": "Describes how candidates are identified, approached, informed, given time to decide and consented, including any use of treating physicians, databases, referrals, advertisements, remote steps or legal representatives."
+      },
+      {
+        "id": "K1.03",
+        "check": "Member State fields for Slovakia completed (national_fields v105, v108 and, where the pathway applies, v110, v114, v117, v121)."
+      },
+      {
+        "id": "K1.04",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations; each 'yes' section is completed, each 'no' section says not applicable."
+      },
+      {
+        "id": "K1.05",
+        "check": "Minors: age bands explained and justified; parental authority verification and signature plan stated.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.06",
+        "check": "Healthy volunteers: identification and screening described, including databases or recruitment vendors.",
+        "applies_when": "population.healthy_volunteers"
+      },
+      {
+        "id": "K1.07",
+        "check": "Emergency: each Article 35 condition explained for the exact condition and therapeutic window.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.08",
+        "check": "Witness route and oral-consent record described.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.09",
+        "check": "States that people in custody, serving a prison sentence or held in detention are not enrolled."
+      },
+      {
+        "id": "K1.10",
+        "check": "Recruitment routes match the recruitment material (SK-K2).",
+        "applies_when": "recruitment.material_used"
+      }
+    ],
+    "SK-M1": [
+      {
+        "id": "M1.01",
+        "check": "One current CV per principal investigator and site, uploaded under Suitability of the investigator."
+      },
+      {
+        "id": "M1.02",
+        "check": "Shows education, relevant clinical and research experience, current position and GCP training."
+      },
+      {
+        "id": "M1.03",
+        "check": "Slovak or bilingual; no separate CTIS signature; signed and dated source retained in TMF or ISF."
+      }
+    ],
+    "SK-M2": [
+      {
+        "id": "M2.01",
+        "check": "One declaration per principal investigator and site; financial and other interests answered by the investigator."
+      },
+      {
+        "id": "M2.02",
+        "check": "No separate signature in the CTIS copy; signed and dated source kept in the controlled trial file; live national instruction checked for a republished Ethics Committee form."
+      }
+    ],
+    "SK-M3-SITES": [
+      {
+        "id": "M3.01",
+        "check": "Lists every planned Slovak site with the principal investigator's name and position and the planned participants per site or for Slovakia."
+      },
+      {
+        "id": "M3.02",
+        "check": "Names, addresses and participant numbers match the CTIS structured data, M1/M2 and each site's N1 form."
+      },
+      {
+        "id": "M3.03",
+        "check": "Not signed."
+      }
+    ],
+    "SK-N1": [
+      {
+        "id": "N1.01",
+        "check": "One current Slovakia national site suitability form (2025 update) per site, uploaded under Suitability of the facilities; current form instructions verified."
+      },
+      {
+        "id": "N1.02",
+        "check": "Describes facility, staff, equipment, pharmacy arrangements, emergency capability and outsourced trial procedures needed by the protocol."
+      },
+      {
+        "id": "N1.03",
+        "check": "Phase I or bioequivalence unit: facilities, staffing and emergency capability appropriate to the protocol.",
+        "applies_when": "population.healthy_volunteers"
+      },
+      {
+        "id": "N1.04",
+        "check": "Emergency pathway: staff and facilities able to apply it without delaying emergency care.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "N1.05",
+        "check": "CTIS copy unsigned only if the underlying suitability confirmation is properly documented; signed source retained where required."
+      }
+    ],
+    "SK-O1": [
+      {
+        "id": "O1.01",
+        "check": "Valid insurer-executed certificate covering trial-related injury in Slovakia for the relevant sponsor, trial and period."
+      },
+      {
+        "id": "O1.02",
+        "check": "Policy scope, territory, dates and identifiers match the application and the expected conduct period."
+      },
+      {
+        "id": "O1.03",
+        "check": "Insurance wording in every participant document matches the certificate."
+      }
+    ],
+    "SK-P1": [
+      {
+        "id": "P1.01",
+        "check": "Distinguishes reimbursement of reasonable expenses from payment for time or inconvenience."
+      },
+      {
+        "id": "P1.02",
+        "check": "States what will and will not be reimbursed (travel costs), how claims work and whether payment changes after withdrawal."
+      },
+      {
+        "id": "P1.03",
+        "check": "Amounts, conditions and recipients identical to every participant document."
+      },
+      {
+        "id": "P1.04",
+        "check": "No financial inducement to parents or legal representatives beyond compensation for expenses and loss connected with participation.",
+        "applies_when": "population.minors or population.adults_without_capacity"
+      }
+    ],
+    "SK-R1": [
+      {
+        "id": "R1.01",
+        "check": "EudraLex GDPR compliance statement completed in the CTIS Form section; no duplicate Part II narrative."
+      },
+      {
+        "id": "R1.02",
+        "check": "No national sentence added (r1_the_sponsor_declares removed); sponsor details match the CTIS application."
+      },
+      {
+        "id": "R1.03",
+        "check": "Consistent with the privacy sections of the participant documents."
+      }
+    ],
+    "SK-S1": [
+      {
+        "id": "S1.01",
+        "check": "Uses the EudraLex biological-samples template in its dedicated placeholder."
+      },
+      {
+        "id": "S1.02",
+        "check": "Main-trial use, storage period, location, coding, transfers and destruction match the protocol, laboratory manual and participant documents."
+      },
+      {
+        "id": "S1.03",
+        "check": "Optional future use is described and kept separate from main-trial consent.",
+        "applies_when": "samples.future_use_outside_protocol"
+      },
+      {
+        "id": "S1.04",
+        "check": "Not signed unless the current template expressly requires an attestation."
+      }
+    ],
+    "SK-GMO": [
+      {
+        "id": "GMO.01",
+        "check": "Official GMO authorisation obtained before the activity starts and included in the required application route."
+      }
+    ],
+    "SK-RADIOACTIVE": [
+      {
+        "id": "RAD.01",
+        "check": "Official authorisation for planned exposure involving investigational radioactive medicinal products or precursors obtained before the activity starts and included in the required application route."
+      }
+    ],
+    "SK-TRANSPLANT": [
+      {
+        "id": "TX.01",
+        "check": "Each site removing or transplanting human organs, tissues or cells holds the applicable transplant-centre authorisation before the activity starts."
+      }
+    ]
+  }
+}
