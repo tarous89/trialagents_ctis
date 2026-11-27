@@ -1,0 +1,256 @@
+{
+  "id": "NL-CHECK",
+  "name": "Netherlands: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/netherlands/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, institution or insurer are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains (yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels); template boilerplate marked as a note is deleted."
+    },
+    {
+      "id": "X.04",
+      "check": "Language matches requirements.json language_rules; signature only where the Dutch rule for that document requires it (VGO front sheet signed; K, L and M not signed at submission; GDPR statement may be unsigned)."
+    },
+    {
+      "id": "X.05",
+      "check": "CTIS title and upload location follow the naming guide and requirements.json."
+    },
+    {
+      "id": "X.06",
+      "check": "The current mandatory national template is used where the Netherlands requires one (VGO, P1, R1), not a sponsor or generic EU substitute."
+    }
+  ],
+  "by_document": {
+    "NL-B1-COVER": [
+      {
+        "id": "B1.01",
+        "check": "Current European cover-letter template, in the CTIS Form section, unsigned."
+      },
+      {
+        "id": "B1.02",
+        "check": "States the MREC proposed to assess the trial in the Netherlands."
+      },
+      {
+        "id": "B1.03",
+        "check": "Combined study with a medical device or IVD identified, with the relevant EU CT and NL numbers, shared documents and the coordinated Dutch process.",
+        "applies_when": "trial.combined_device_or_ivd"
+      },
+      {
+        "id": "B1.04",
+        "check": "Gives the reason why the complete IVO exceeds 4,000 words.",
+        "applies_when": "ivo.exceeds_4000_words"
+      },
+      {
+        "id": "B1.05",
+        "check": "Version dates of the documents listed match the document list and the documents."
+      }
+    ],
+    "NL-FEE-INVOICE": [
+      {
+        "id": "FEE.01",
+        "check": "Dutch invoice-details template uploaded under Proof of payment of fee; no advance proof of payment."
+      },
+      {
+        "id": "FEE.02",
+        "check": "Invoice details complete and supplied by the sponsor (CCMO invoice payable within 30 days)."
+      }
+    ],
+    "NL-GDPR-STATEMENT": [
+      {
+        "id": "GDPR.01",
+        "check": "EU GDPR compliance statement uploaded in the CTIS Form section, not in Part II R."
+      },
+      {
+        "id": "GDPR.02",
+        "check": "Sponsor details match the CTIS application; name and role of the responsible person come from the sponsor."
+      },
+      {
+        "id": "GDPR.03",
+        "check": "The Dutch Part II R1 form (NL-R1) is also present; the two are not confused."
+      }
+    ],
+    "NL-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the harmonised European Recruitment and Informed Consent Procedure template v2.0, not the superseded version."
+      },
+      {
+        "id": "K1.02",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed, each 'no' section gives the not-applicable answer."
+      },
+      {
+        "id": "K1.03",
+        "check": "Covers the first act of recruitment, identification and approach, access to identifiable records, consent setting and reflection time."
+      },
+      {
+        "id": "K1.04",
+        "check": "Member State fields carry the Dutch rules: only Dutch documents assessed; IVO for 16 or older; signatures of participant and researcher or authorised interviewer; explicit consent for medical-record access; translation and translation-certificate procedure where non-Dutch speakers are planned."
+      },
+      {
+        "id": "K1.05",
+        "check": "Adults lacking capacity: 'no, unless' conditions, capacity assessment, Dutch representative order, adapted participant information, objection respected, own re-consent on regaining capacity.",
+        "applies_when": "population.adults_without_capacity"
+      },
+      {
+        "id": "K1.06",
+        "check": "Minors: under-12 and 12-15 rules, both parents with parental authority or the guardian, resistance statement and handling, re-consent at 12, no new consent solely at 16.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.07",
+        "check": "Impartial witness (section 5): only for inability to write, sign or read; selection and independence; alternative recording method.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.08",
+        "check": "Emergency (section 6): every Article 35 condition, CCMO deferred-consent memorandum, earliest approach of representative and participant, refusal, data retention, death before consent, mixed-population justification.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.09",
+        "check": "Recruitment routes and first act of recruitment match the recruitment material (K2) and the protocol, which describes every consent pathway."
+      }
+    ],
+    "NL-M1": [
+      {
+        "id": "M1.01",
+        "check": "One dated CV per principal investigator and Dutch site, no more than two years old."
+      },
+      {
+        "id": "M1.02",
+        "check": "Prefer unsigned (CCMO treats signatures as personal data); official CV template used or an equivalent CV."
+      },
+      {
+        "id": "M1.03",
+        "check": "Only trial fields prepared by the assistant; personal content from the investigator; site registered in CTIS only once CV, DoI and signed VGO are complete."
+      }
+    ],
+    "NL-M2-DOI": [
+      {
+        "id": "M2D.01",
+        "check": "One separate dated declaration per principal investigator and Dutch site on the official European declaration-of-interest template."
+      },
+      {
+        "id": "M2D.02",
+        "check": "No handwritten signature required; interests answered by the investigator."
+      }
+    ],
+    "NL-N1": [
+      {
+        "id": "N1.01",
+        "check": "Official Dutch Site Suitability Declaration (VGO) used for every Dutch site, including a single-centre trial; not the generic EU site-suitability form."
+      },
+      {
+        "id": "N1.02",
+        "check": "Signed front sheet uploaded; signed by the executive board or management of the institution (validated digital signature accepted)."
+      },
+      {
+        "id": "N1.03",
+        "check": "Dutch or English version as chosen by the institution; site details consistent with the CTIS site record, M1 and M2."
+      },
+      {
+        "id": "N1.04",
+        "check": "Clinical Trial Agreement not uploaded in CTIS."
+      }
+    ],
+    "NL-O1": [
+      {
+        "id": "O1.01",
+        "check": "WMO participant-insurance certificate compliant with the Medical Research (Human Subjects) Compulsory Insurance Decree 2015, covering the whole trial."
+      },
+      {
+        "id": "O1.02",
+        "check": "For a qualifying low-intervention trial: a reasoned exemption request instead of presenting the exemption as automatic.",
+        "applies_when": "insurance.exemption_requested"
+      },
+      {
+        "id": "O1.03",
+        "check": "Insurer, policy details, claims contact and coverage match the information sheet and its insurance appendix (or the exemption wording)."
+      }
+    ],
+    "NL-O2": [
+      {
+        "id": "O2.01",
+        "check": "Liability cover or another adequate financial guarantee is in place for the sponsor or executing party, also where participant insurance is exempt (except the statutory government exception)."
+      },
+      {
+        "id": "O2.02",
+        "check": "Separate proof uploaded under Proof of insurance cover or indemnification.",
+        "applies_when": "insurance.liability_not_evidenced_elsewhere"
+      }
+    ],
+    "NL-P1": [
+      {
+        "id": "P1.01",
+        "check": "National Dutch P1 template used (not the generic EU compensation template)."
+      },
+      {
+        "id": "P1.02",
+        "check": "Covers funding, payments to the investigator or site, participant compensation, reimbursements, other arrangements, and the Dutch review points on publication and early termination."
+      },
+      {
+        "id": "P1.03",
+        "check": "Healthy-volunteer compensation described transparently and proportionate to time and burden.",
+        "applies_when": "population.healthy_volunteers"
+      },
+      {
+        "id": "P1.04",
+        "check": "Amounts, methods and conditions identical in P1, the IVO and every participant document."
+      }
+    ],
+    "NL-R1": [
+      {
+        "id": "R1.01",
+        "check": "Official Dutch R1 national data-protection form (16 January 2026) uploaded under Compliance with national requirements on data protection."
+      },
+      {
+        "id": "R1.02",
+        "check": "Separate from the GDPR statement in the CTIS Form section; both present."
+      },
+      {
+        "id": "R1.03",
+        "check": "Data flows, controllers, coding, retention, transfers and contacts match the participant documents and S1."
+      }
+    ],
+    "NL-S1": [
+      {
+        "id": "S1.01",
+        "check": "Official biological-samples template (EudraLex-aligned Dutch form) completed; new and archive sample sections match the protocol and sample plan."
+      },
+      {
+        "id": "S1.02",
+        "check": "Collection, storage, transfer, analysis, destruction and future use described and consistent with the protocol, participant information and R1."
+      },
+      {
+        "id": "S1.03",
+        "check": "Future use: separate optional choice, data and bodily material distinguished, fixed storage period and location, coded samples not called anonymous, withdrawal and destruction rules.",
+        "applies_when": "samples.future_use_outside_protocol"
+      },
+      {
+        "id": "S1.04",
+        "check": "Section 5 (f03) carries the Dutch national points."
+      }
+    ]
+  }
+}

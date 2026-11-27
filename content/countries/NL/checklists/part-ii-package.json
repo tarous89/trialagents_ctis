@@ -1,0 +1,206 @@
+{
+  "id": "NL-PACKAGE",
+  "name": "Netherlands: Part II package and CTIS upload check",
+  "applies_to": "the Netherlands package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/netherlands/en/part-ii-document-checklist (reviewed 23 September 2026) (including 'Final submission checks')",
+    "https://trialagents.com/ctis/netherlands/en/patient-facing-document-qc-checklist (reviewed 23 September 2026) (section 10)",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "Form section: cover letter (proposed MREC stated), Dutch invoice-details document under Proof of payment of fee, and the EU GDPR compliance statement."
+        },
+        {
+          "id": "P1.02",
+          "check": "K1 recruitment and informed-consent procedure on the EU v2.0 template, with a section for every population pathway in the plan."
+        },
+        {
+          "id": "P1.03",
+          "check": "K2 recruitment material for every trial-specific item addressed to potential participants.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.04",
+          "check": "Dutch L1 main information and consent, and one L1 set per population in population_sets whose trigger is true."
+        },
+        {
+          "id": "P1.05",
+          "check": "L2 other material integral to consent.",
+          "applies_when": "recruitment.other_information_material"
+        },
+        {
+          "id": "P1.06",
+          "check": "Every Dutch site has a CV, a declaration of interest and a signed VGO."
+        },
+        {
+          "id": "P1.07",
+          "check": "O1 WMO participant-insurance certificate (or a reasoned exemption request) and liability cover evidenced (O2 where not evidenced elsewhere)."
+        },
+        {
+          "id": "P1.08",
+          "check": "P1 on the national Dutch template."
+        },
+        {
+          "id": "P1.09",
+          "check": "Both the application-level GDPR statement and the Dutch Part II R1 form are complete."
+        },
+        {
+          "id": "P1.10",
+          "check": "S1 biological-samples form.",
+          "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol"
+        },
+        {
+          "id": "P1.11",
+          "check": "Current mandatory national templates used rather than sponsor substitutes."
+        },
+        {
+          "id": "P1.12",
+          "check": "The protocol describes every consent pathway used in the trial."
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Only the Dutch participant information, consent and recruitment materials are submitted for Dutch ethical assessment."
+        },
+        {
+          "id": "P2.02",
+          "check": "Translation and certification plan for planned non-Dutch-speaking participants (certificate with the first Part II substantial modification).",
+          "applies_when": "population.non_dutch_speakers"
+        },
+        {
+          "id": "P2.03",
+          "check": "Administrative documents in the language set in requirements.json."
+        },
+        {
+          "id": "P2.04",
+          "check": "Blank consent documents at application; no participant-signed forms uploaded; VGO front sheet signed by the institution's board or management; CV preferably unsigned; DoI and GDPR statement without handwritten signature."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Insurance, P1 form, IVO and protocol state the same compensation and coverage arrangements."
+        },
+        {
+          "id": "P3.02",
+          "check": "EU Clinical Trial number, document version and date consistent across documents."
+        },
+        {
+          "id": "P3.03",
+          "check": "Sample types, storage, transfers and retention identical in S1, the protocol and the participant documents."
+        },
+        {
+          "id": "P3.04",
+          "check": "Data flows, controllers, recipients, transfers and retention identical in R1, the GDPR statement, the participant documents and the protocol."
+        },
+        {
+          "id": "P3.05",
+          "check": "Consent pathways in K1 match the L1 sets in the package and the protocol."
+        },
+        {
+          "id": "P3.06",
+          "check": "Version dates match the cover letter and the document list."
+        },
+        {
+          "id": "P3.07",
+          "check": "Documents adapted from the reference package contain all Dutch national additions (IVO structure, insurance appendix, resistance statement, contacts, population documents) and no leftovers from the reference country.",
+          "applies_when": "the Netherlands is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B-S section prefix and CTIS placeholder for each Part II document; Form-section documents in the Form section or Proof of payment of fee."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document; participant documents identify the population and Dutch language."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version and date entered in CTIS metadata, not in the title."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished; superseded drafts removed."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.07",
+          "check": "Uploaded documents are searchable where possible."
+        },
+        {
+          "id": "P4.08",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "the Netherlands receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules; ACT EU guidance v2.2, 30 April 2026)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material; signatures never disclosed (CCMO treats signatures as personal data)."
+        },
+        {
+          "id": "P5.03",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

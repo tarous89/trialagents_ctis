@@ -1,0 +1,1184 @@
+{
+  "country": "PT",
+  "name": "Portugal",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "INFARMED (Autoridade Nacional do Medicamento e Produtos de Saúde, I.P.); national competent authority, issues the authorisation",
+    "ethics": "CEIC (Comissão de Ética para a Investigação Clínica) assesses Part II and the ethical elements of Part I. CEIC may designate another eligible Portuguese health ethics committee to carry out the ethics assessment.",
+    "fee": "Portugal charges the applicable national clinical-trial fee unless an exemption applies. Since 2 December 2025 payment or exemption is handled through an electronic process after CTIS submission; the CTIS contact receives the links by email. Follow the current CEIC and INFARMED instructions; do not upload an unsupported payment document before the process is issued (PT-Q-FEE)."
+  },
+  "language_rules": {
+    "participant_documents": "pt",
+    "administrative_documents": [
+      "pt",
+      "en"
+    ],
+    "rule": "Documents for participants, the protocol synopsis and the lay summary of results must be in Portuguese unless CEIC accepts an exceptional, justified alternative. This covers the PIS and ICF, assent forms, legal-representative information, recruitment materials, patient cards, visit information, instructions, diaries, questionnaires and every other material a participant reads or uses. Most other application documents may be in Portuguese or English.",
+    "non_portuguese_speakers": "CEIC may approve another language for participant documents only in an exceptional and justified case. The guides set no further rule for planned non-Portuguese-speaking groups; request the CEIC waiver with the justification before using another language.",
+    "quality": "Use natural European Portuguese regulatory and clinical terms. A technically accurate translation is not enough if the Portuguese reads like a literal translation of the protocol. Independent proofreading by a qualified Portuguese reviewer (PT-QC section 9).",
+    "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in Portuguese: the CTIS_PT variable sheet targets Portuguese answers and the guides accept Portuguese or English for dossier documents. English answers only if the user decides so (DECISIONS.md D1).",
+    "by_language": {
+      "pt_only": [
+        "PT-K2",
+        "PT-L1",
+        "PT-L2"
+      ],
+      "pt_or_en": [
+        "PT-K1",
+        "PT-M1",
+        "PT-M2-DOI",
+        "PT-M-GCP",
+        "PT-N1",
+        "PT-N-SERVICE",
+        "PT-N-PHARMACY",
+        "PT-N-COORDINATOR",
+        "PT-N-EXTERNAL",
+        "PT-O1",
+        "PT-O2",
+        "PT-P1",
+        "PT-P2",
+        "PT-R1",
+        "PT-S1"
+      ]
+    },
+    "drafting_notes_language": "drafting_notes_pt for every document.",
+    "by_language_note": "pt_only: participant-facing, Portuguese unless CEIC grants an exceptional justified waiver. pt_or_en: dossier documents in Portuguese or English; forms the assistant answers (K1, N1, P1, R1, S1) are answered in Portuguese (answer_languages)."
+  },
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.minors_may_reach_16",
+    "population.minors_may_reach_18",
+    "population.adults_without_capacity",
+    "population.group_benefit_research_without_capacity",
+    "population.institutional_placement",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "consent.electronic",
+    "population.non_portuguese_speakers",
+    "recruitment.material_used",
+    "recruitment.call_centre",
+    "recruitment.other_information_material",
+    "endpoint_documents.participant_facing",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.future_use_outside_protocol",
+    "samples.biobank_or_repository",
+    "data.future_use_outside_protocol",
+    "data.transfer_outside_eea",
+    "genetics.optional_testing",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "trial.low_intervention",
+    "insurance.low_intervention_dispensation_sought",
+    "payment.participant_reimbursement_or_compensation",
+    "sites.external_study_coordinator",
+    "sites.external_facilities",
+    "sites.count"
+  ],
+  "study_facts_note": "Country-specific keys added for Portugal: population.minors_may_reach_16 (a minor may turn 16 during participation: written assent to continue), population.minors_may_reach_18 (adult re-consent), population.institutional_placement (a minor or an adult unable to consent in institutional or protective placement: narrow statutory exception), population.non_portuguese_speakers (CEIC language waiver), samples.biobank_or_repository (Law No 12/2005 biobank consent elements), data.transfer_outside_eea, genetics.optional_testing, insurance.low_intervention_dispensation_sought (CEIC may dispense with a trial-specific policy), payment.participant_reimbursement_or_compensation (P1 is conditional in Portugal), sites.external_study_coordinator and sites.external_facilities (CEIC checklist conditional N items).",
+  "documents": [
+    {
+      "id": "PT-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment and informed consent procedure",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "requirement_note": "The guide asks for it when the procedure is not already described adequately in the protocol; it is planned for every trial because every population pathway (emergency, witness, minors, adults unable to consent) must be described in this template.",
+      "per": "trial",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "Current EudraLex recruitment and informed-consent procedure template (Portugal recommends the EU template)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Explains who identifies potential participants, who makes the first contact, whether medical records are reviewed before contact, what pre-screening data are collected and how undue influence is avoided; the consent procedure for every population pathway in the plan (emergency, impartial witness, minors, adults unable to consent).",
+      "national_fields": {
+        "v105": "Portugal: participant-facing recruitment material is in Portuguese (another language only with an exceptional, justified CEIC waiver); each item identified by title, version and date. State who identifies potential participants, who makes the first contact, whether medical records are reviewed before contact, what pre-screening data are collected and how undue influence is avoided. If pre-screening collects health data beyond normal recruitment, explain the data use and obtain the appropriate permission before collection.",
+        "v108": "Portugal: Portuguese PIS and ICF for every group and consent pathway, each written for the person who signs it; consent before any trial-specific screening procedure; the participant or legally authorised representative and the person conducting the consent interview sign and date at the time of consent and a signed copy is given; re-consent with the approved update when new information may affect continued participation; trial medicines, auxiliary medicines, administration devices and protocol-only consultations or tests without cost to the participant and the post-trial continuation pathway (Law No 9/2026); optional choices (future use, genetic testing, biobanking, extra samples, recontact) separate from the main decision; privacy wording aligned with the sponsor's GDPR statement and Law No 58/2019.",
+        "v110": "Portugal (Law No 9/2026, Articles 8 and 10; Article 31 CTR): the legally authorised representative is the person, entity or body empowered under applicable law to consent for the incapacitated person; authority is verified and documented before consent and a relative does not automatically have it. Representative consent only when the person did not give or refuse consent before the incapacity began, and after the investigator has assessed capacity for the actual decision. The participant receives information adapted to capacity, affirmative willingness is recorded when it can be expressed and an explicit refusal or sustained objection is respected. Adults in institutional placement are excluded unless nonparticipation would cause a potential prejudice or disadvantage; then representative consent in coordination with the treating physician, with the investigator taking part, justified in the protocol and approved by CEIC. If capacity returns, direct written informed consent promptly.",
+        "v114": "Portugal (Law No 9/2026, Articles 8 and 9; Article 32 CTR): consent of the legally authorised representative, whose authority is verified for the individual minor (no universal two-parent signature rule); assent is required at ages 16 and 17 and, under 16, whenever the minor can form an opinion and evaluate the information, regardless of form; a participant who turns 16 during the trial gives written assent to continue (existing representative consent remains valid); a participant who turns 18 gives their own written informed consent to continue, planned before the birthday. Refusal or later dissent is respected. A minor in institutional or protective placement is excluded unless nonparticipation would create a potential prejudice or disadvantage, attested by the treating physician (investigator coordinates with that physician if different).",
+        "v117": "Portugal (Article 29 CTR): the witness pathway applies when the participant or legally authorised representative can consent but cannot write (including physical inability to sign); never in place of a capacity assessment or the emergency exception. Portugal sets no national profession, nationality or relationship requirement for the witness. The witness is impartial, independent of the decision and present for the whole information and consent process; study-team members who recruit, treat or assess the participant are poor choices. An interpreter is identified separately; if one person is proposed for both roles, justify impartiality. Describe how a remote process would be observed and verified. The witness and the person conducting the interview sign and date the ICF.",
+        "v121": "Portugal (Law No 9/2026, Article 8(3); Article 35 CTR): enrolment without prior consent only when all conditions are met: grave or immediate risk to life or physical integrity; consent of the participant and of the legally authorised representative not obtainable in time; research directly related to the emergency condition and not possible outside it; protocol and emergency pathway approved in advance by the competent ethics committee; minimal additional risk and burden; well-founded expectation of direct benefit. State who confirms the conditions, what is recorded at enrolment (condition, time, efforts to contact a representative, assessment of each criterion), how quickly the participant or representative is approached and who conducts subsequent consent. Consent as soon as possible from the participant, otherwise the representative; own written consent when capacity returns; refusal or withdrawal stops prospective research subject to safety needs. Minors: apply the minor pathway as soon as the emergency permits."
+      },
+      "sources": [
+        "PT-PII-CHECKLIST#1",
+        "PT-EMERGENCY",
+        "PT-WITNESS",
+        "PT-MINORS",
+        "PT-CAPACITY",
+        "PT-ICF"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção K. Obrigatório. Responder em português (inglês também aceite). Sem assinatura na submissão. Utilizar o modelo EudraLex atual do procedimento de recrutamento e consentimento informado (recomendado em Portugal). Explicar quem identifica os potenciais participantes, quem faz o primeiro contacto, se os registos clínicos são consultados antes do contacto, que dados de pré-seleção são recolhidos e como se evita influência indevida. Preencher a secção de cada via de consentimento do plano (adultos incapazes, menores, testemunha imparcial, emergência) e responder às vias não aplicáveis com a resposta \"não aplicável\" do modelo. Incluir nos campos nacionais (national_fields) as regras da Lei n.º 9/2026: assentimento aos 16 e 17 anos e abaixo dos 16 quando o menor for capaz de formar opinião, assentimento escrito ao completar 16 anos, consentimento próprio aos 18 anos, representante legalmente autorizado com poderes verificados, exceção restrita para pessoas em acolhimento institucional, condições da inclusão em emergência (artigo 8.º, n.º 3). As vias de recrutamento têm de corresponder a cada item K2."
+    },
+    {
+      "id": "PT-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_PT_pt",
+      "name_en": "Recruitment material",
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Every recruitment item that will be used: advertisements, letters, scripts, social-media text, referral material and pre-screening information (healthy-volunteer trials: also telephone scripts and online text).",
+      "per": "item",
+      "language": [
+        "pt"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Blank approved material in Portuguese, each item identified by title, version and date. No recruitment claim may overstate likely benefit or understate burden; neutral, non-promotional language.",
+      "sources": [
+        "PT-PII-CHECKLIST#1",
+        "PT-HV",
+        "PT-QC"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção K. Condicional: um documento por cada material de recrutamento utilizado (anúncios, cartas, guiões, textos para redes sociais, material de referenciação, informação de pré-seleção). Em português. Identificar cada item por título, versão e data. Material em branco aprovado; sem assinaturas na submissão. Sem afirmações que exagerem o benefício provável ou minimizem os incómodos; linguagem neutra, não promocional."
+    },
+    {
+      "id": "PT-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_PT_pt",
+      "name_en": "Participant information sheet and informed consent form, one set per participant group and consent pathway",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "population",
+      "language": [
+        "pt"
+      ],
+      "template": null,
+      "template_note": "Participant documents use the participant templates bound per population (population_sets); the CEIC adult ICF model of January 2026 is optional and the supplied templates are based on it.",
+      "signature_at_submission": false,
+      "content": "Blank, version-controlled Portuguese PIS and ICF for every participant group and consent pathway (competent adults, healthy volunteers, parents or guardians, adolescents, younger children, adults with limited capacity, pregnant partners and the other population sets that apply). Signed later when consent or assent is obtained, never at submission.",
+      "sources": [
+        "PT-PII-CHECKLIST#2",
+        "PT-ICF"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção L. Obrigatório: um conjunto de informação e consentimento em português por cada grupo e via de consentimento (ver population_sets). Documentos em branco, com controlo de versão; não assinar nem pré-datar. O modelo CEIC de FCI para adultos (janeiro de 2026) é opcional e serve de base aos modelos fornecidos; adaptar ao protocolo. Não pedir a um adulto, pai/mãe, adolescente, representante ou parceira grávida que assine um formulário escrito para outra função."
+    },
+    {
+      "id": "PT-L2",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_<type>_PT_pt",
+      "name_en": "Other participant-facing material (patient cards, instructions, visit schedules, diaries, questionnaires, guides, brochures, appointment information)",
+      "requirement": "mandatory",
+      "trigger": "recruitment.other_information_material or endpoint_documents.participant_facing",
+      "trigger_text": "Every other participant-facing item required by the trial: patient cards, dosing or device instructions, visit schedules, diaries, questionnaires, guides, brochures and appointment information. Mandatory for each such item the trial uses.",
+      "per": "item",
+      "language": [
+        "pt"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "note": "The Portugal checklist places these items in CTIS folder L. The naming guide's R2 pattern (R2_Patient-facing document_<type>_PT_pt) is the alternative for endpoint-related questionnaires and diaries; see DECISIONS.md D3.",
+      "sources": [
+        "PT-PII-CHECKLIST#2",
+        "PT-QC#7"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant (drafting or translation)",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção L. Obrigatório para cada material destinado ao participante que o ensaio utilize (cartões do doente, instruções de administração ou do dispositivo, calendários de visitas, diários, questionários, guias, folhetos, informação de marcações). Em português, salvo dispensa excecional e justificada da CEIC. Conferir com o calendário de atividades do protocolo. Questionários e diários de parâmetros de avaliação: confirmar o local de submissão (DECISIONS.md D3)."
+    },
+    {
+      "id": "PT-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "name_en": "Principal investigator CV",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+        "basis": "EudraLex CV template (recommended in Portugal)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": true,
+      "signature_rule": "The national checklist expects the CV to be current, signed and dated by the investigator.",
+      "content": "Current CV of the principal investigator at each Portuguese site: relevant education, clinical-trial experience and ability to conduct the protocol. GCP information may be given in the CV (MedEthicsEU Portugal overview).",
+      "sources": [
+        "PT-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção M. Obrigatório por investigador principal e centro. Português ou inglês. Modelo EudraLex de CV recomendado. O CV deve estar atualizado, assinado e datado pelo investigador antes da submissão. O assistente preenche apenas o número UE do ensaio; todos os dados pessoais, formação, experiência e GCP são fornecidos pelo investigador e não são inventados. Nome do centro, identidade do investigador e número estimado de participantes coerentes com o CTIS, a declaração do centro e os documentos financeiros."
+    },
+    {
+      "id": "PT-M2-DOI",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Declaration of interests",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+        "basis": "EudraLex declaration-of-interest template (to be used in Portugal)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": true,
+      "signature_rule": "The investigator signs and dates the declaration before submission.",
+      "sources": [
+        "PT-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção M. Obrigatório por investigador principal e centro. Português ou inglês. Utilizar o modelo EudraLex. O investigador assina e data a declaração antes da submissão. O assistente preenche apenas o título do ensaio e o número UE do ensaio; as declarações de interesses são do próprio investigador."
+    },
+    {
+      "id": "PT-M-GCP",
+      "ctis_section": "M",
+      "ctis_title": "M2_GCP training_<investigator>_<site>",
+      "name_en": "Good Clinical Practice certificate",
+      "requirement": "conditional",
+      "trigger": "GCP competence not sufficiently documented in the CV, or requested by the Portuguese checklist",
+      "trigger_text": "Provide a GCP certificate when competence is not sufficiently documented in the CV or when requested by the Portuguese checklist. The MedEthicsEU Portugal overview accepts GCP information in the CV.",
+      "per": "site",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "note": "The guide names no CTIS title; the title follows the Austria and Germany pattern (DECISIONS.md D6).",
+      "sources": [
+        "PT-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "investigator / training provider",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção M. Condicional: certificado de Boas Práticas Clínicas quando a competência não estiver suficientemente documentada no CV ou quando a checklist portuguesa o pedir. Fornecido pelo investigador ou entidade formadora; apenas verificado. Título CTIS a confirmar (DECISIONS.md D6)."
+    },
+    {
+      "id": "PT-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Site-suitability form with Portuguese national site detail",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/N1_Site suitability.docx",
+        "basis": "EudraLex site-suitability form (accepted in Portugal), with the national site detail the CEIC checklist requires",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/N1_Site suitability.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": true,
+      "signature_rule": "Submit the signed and dated site declaration at Part II submission; the Portugal checklist expects the declaration to be authored and signed by the Director of Service (DECISIONS.md D5). The assistant leaves the signature block empty for that person.",
+      "content": "Site infrastructure, equipment, human resources, expected recruitment and ability to perform the protocol, plus pharmacy and investigational-product circuit information and any external facility. Site name, investigator identity and estimated participant number consistent with CTIS, the CV and the financial documents.",
+      "national_fields": {
+        "v125": "Portugal: the declaration covers the site's infrastructure, equipment, human resources, expected recruitment and ability to perform this protocol. Site name, principal investigator and estimated participant number in Section 1 are completed by the site and must match CTIS, the CV and the financial documents.",
+        "v126": "Portugal: include the pharmaceutical services and the investigational-medicinal-product circuit: how receipt, storage, preparation, dispensing, return and destruction are controlled (with the pharmaceutical-services declaration, PT-N-PHARMACY).",
+        "v128": "Portugal: identify any external facility that performs protocol tests or assessments, why it is needed, and that licensing evidence, extended insurance cover and the financial agreement are provided (PT-N-EXTERNAL).",
+        "v129": "Portugal: describe the research team and its functions consistently with the authorisation for the composition of the research team (PT-N-SERVICE) and the financial arrangements (PT-P2); identify an external study coordinator or one outside the site hierarchy (PT-N-COORDINATOR).",
+        "n1_issued_by": "Portugal: a signed and dated declaration is required at submission (CEIC checklist: authored and signed by the Director of Service). Leave the signature block empty for the signatory; do not invent names."
+      },
+      "sources": [
+        "PT-PII-CHECKLIST#4",
+        "PT-HUB"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant; site fields and signature left empty for the site",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção N. Obrigatório, um documento por centro. Português ou inglês. Portugal aceita o formulário EudraLex, mas exige detalhe nacional adicional: infraestruturas, equipamento, recursos humanos, recrutamento previsto e capacidade para cumprir o protocolo; serviços farmacêuticos e circuito do medicamento experimental (receção, armazenamento, preparação, dispensa, devolução e destruição); entidades externas que realizem testes ou avaliações do protocolo. Os dados do centro (nome, investigador principal, número previsto de participantes, identificação) ficam em branco para o centro. Declaração assinada e datada na submissão; a checklist CEIC prevê autoria e assinatura pelo Diretor do Serviço (DECISIONS.md D5); deixar o bloco de assinatura em branco."
+    },
+    {
+      "id": "PT-N-SERVICE",
+      "ctis_section": "N",
+      "ctis_title": "N2_Service and research team authorisation_<site>",
+      "name_en": "Authorisation to conduct the trial in the service and for the composition of the research team",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": true,
+      "signature_rule": "Authored and signed by the Director of Service; signed and dated declaration submitted at Part II submission.",
+      "note": "The guides name no CTIS title or separate slot; it may instead form part of the N1 site declaration (DECISIONS.md D4).",
+      "sources": [
+        "PT-PII-CHECKLIST#4"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "site (Director of Service)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção N. Obrigatório por centro: autorização para a realização do ensaio no serviço e para a composição da equipa de investigação, da autoria do Diretor do Serviço, assinada e datada na submissão. Documento do centro; apenas verificado (coerência com N1, CV e contrato). Título e local de submissão a confirmar (DECISIONS.md D4)."
+    },
+    {
+      "id": "PT-N-PHARMACY",
+      "ctis_section": "N",
+      "ctis_title": "N3_Pharmaceutical services declaration and IMP circuit_<site>",
+      "name_en": "Pharmaceutical-services declaration and investigational-medicinal-product circuit",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "The guides call it a declaration from the pharmaceutical services but state no signatory or signature rule (DECISIONS.md D11).",
+      "content": "Declaration from the pharmaceutical services and a description or declaration of the IMP circuit: how receipt, storage, preparation, dispensing, return and destruction will be controlled.",
+      "note": "The guides name no CTIS title or separate slot; it may instead form part of the N1 site declaration (DECISIONS.md D4).",
+      "sources": [
+        "PT-PII-CHECKLIST#4"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "site pharmaceutical services",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção N. Obrigatório por centro: declaração dos serviços farmacêuticos e descrição ou declaração do circuito do medicamento experimental (receção, armazenamento, preparação, dispensa, devolução e destruição). Documento do centro; apenas verificado contra o protocolo, o manual da farmácia e o N1. Regra de assinatura não indicada nos guias (DECISIONS.md D11)."
+    },
+    {
+      "id": "PT-N-COORDINATOR",
+      "ctis_section": "N",
+      "ctis_title": "N<next number>_Study coordinator evidence_<site>",
+      "name_en": "Evidence for an external study coordinator",
+      "requirement": "conditional",
+      "trigger": "sites.external_study_coordinator",
+      "trigger_text": "A study coordinator is provided by an external entity or does not sit clearly within the site's hierarchy.",
+      "per": "site",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "content": "The supporting employment, authority, confidentiality and institutional-agreement evidence requested in the CEIC checklist.",
+      "note": "The naming guide gives no fixed code; use the next free N number. The detailed CEIC list is not reproduced in the guides (DECISIONS.md, Missing).",
+      "sources": [
+        "PT-PII-CHECKLIST#4"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "site / external entity",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção N. Condicional: quando o coordenador do estudo for disponibilizado por entidade externa ou não estiver claramente integrado na hierarquia do centro, incluir a evidência de vínculo laboral, autoridade, confidencialidade e acordo institucional pedida na checklist CEIC. Fornecido pelo centro ou entidade externa; apenas verificado."
+    },
+    {
+      "id": "PT-N-EXTERNAL",
+      "ctis_section": "N",
+      "ctis_title": "N<next number>_External facility documentation_<facility>_<site>",
+      "name_en": "External facility documentation",
+      "requirement": "conditional",
+      "trigger": "sites.external_facilities",
+      "trigger_text": "An external facility will perform protocol tests or assessments.",
+      "per": "facility",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "content": "Identify the facility and why it is needed, describe it in the site declaration, provide licensing evidence where applicable, extend the insurance cover to it and provide the relevant financial agreement. A later material change to the external provider may require a substantial modification.",
+      "note": "The naming guide gives no fixed code; use the next free N number.",
+      "sources": [
+        "PT-PII-CHECKLIST#4"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "site / external facility",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção N. Condicional: quando uma entidade externa realizar testes ou avaliações do protocolo, identificá-la e justificar a necessidade, descrevê-la na declaração do centro (N1), apresentar evidência de licenciamento quando aplicável, estender o seguro a essa entidade (O1) e apresentar o acordo financeiro (P2). Uma alteração material posterior do prestador externo pode exigir modificação substancial."
+    },
+    {
+      "id": "PT-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_PT",
+      "name_en": "Insurance certificate",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "unless": "trial.low_intervention and CEIC has accepted evidence that existing civil-liability insurance covers the statutory damage (PT-O2)",
+      "per": "trial",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": true,
+      "signature_rule": "Dated and signed by the insurer and valid at submission (Portugal checklist).",
+      "content": "Valid certificate identifying the trial, insurer, insured party, policy number, type of insurance, coverage and validity. Civil-liability cover appropriate to the nature and extent of the risk, valid during the trial and for 12 months after the last participant completes the study in Portugal (CEIC may set a longer period). Portuguese law presumes that health damage arising during participation or in the following year was caused by the trial unless the presumption is rebutted. Covers every Portuguese site and applicable external facility.",
+      "sources": [
+        "PT-PII-CHECKLIST#5"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção O. Obrigatório. Certificado válido, datado e assinado pela seguradora, que identifique o ensaio, a seguradora, o tomador/segurado, o número da apólice, o tipo de seguro, as coberturas e a validade. Seguro de responsabilidade civil adequado à natureza e extensão do risco, válido durante o ensaio e 12 meses após o último participante concluir o estudo em Portugal (a CEIC pode fixar prazo superior). Deve cobrir todos os centros portugueses e entidades externas aplicáveis. A redação do seguro na informação ao participante tem de coincidir com este certificado."
+    },
+    {
+      "id": "PT-O2",
+      "ctis_section": "O",
+      "ctis_title": "O2_Proof of coverage_<sponsor or site>",
+      "name_en": "Evidence that existing civil-liability insurance covers a low-intervention trial",
+      "requirement": "conditional",
+      "trigger": "trial.low_intervention and insurance.low_intervention_dispensation_sought",
+      "trigger_text": "For a low-intervention trial, CEIC may dispense with a separate trial-specific policy if the sponsor presents evidence that existing civil-liability insurance covers the statutory damage. Low intervention does not by itself remove the insurance requirement; CEIC acceptance is needed.",
+      "per": "trial",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "sources": [
+        "PT-PII-CHECKLIST#5"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor / insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção O. Condicional: só em ensaio de baixa intervenção quando o promotor pede à CEIC a dispensa de apólice específica. Apresentar evidência de que o seguro de responsabilidade civil existente cobre os danos legalmente previstos; a dispensa depende de aceitação da CEIC. Não presumir que a baixa intervenção elimina a exigência de seguro (DECISIONS.md D13)."
+    },
+    {
+      "id": "PT-P2",
+      "ctis_section": "P",
+      "ctis_title": "P2_Financial arrangements_<site>",
+      "name_en": "Financial arrangements per site (contract, agreed contract model or minimum-information document)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "For initial validation Portugal accepts a final contract, the agreed contract model or a document with the mandatory minimum information. A definitive contract identifies the sponsor, site, principal investigator and any other party and is signed by all parties before it takes effect.",
+      "content": "Remuneration and functions of the research team consistent with the site declaration; site costs, investigator payments, participant expenses or compensation, external providers; free supply of the IMP, auxiliary medicines, administration devices and protocol-only consultations or tests; the post-trial continuation pathway when the investigator considers the medicine indispensable and there is no comparably effective and safe alternative.",
+      "sources": [
+        "PT-PII-CHECKLIST#6",
+        "CEIC-FINANCIAL"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor legal / site",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção P. Obrigatório por centro. Português ou inglês. Para a validação inicial é aceite o contrato final, o modelo de contrato acordado ou um documento com a informação mínima obrigatória (orientação CEIC de 24 de agosto de 2022). O contrato definitivo identifica promotor, centro, investigador principal e outras partes e é assinado por todas antes de produzir efeitos. Verificar: remuneração e funções da equipa coerentes com a declaração do centro; custos do centro; pagamentos ao investigador; despesas ou compensação dos participantes; prestadores externos; fornecimento gratuito do medicamento experimental, medicamentos auxiliares, dispositivos de administração e consultas ou exames exclusivos do protocolo; via de continuação pós-ensaio prevista na Lei n.º 9/2026."
+    },
+    {
+      "id": "PT-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_PT",
+      "name_en": "Participant reimbursement and compensation",
+      "requirement": "conditional",
+      "trigger": "payment.participant_reimbursement_or_compensation",
+      "trigger_text": "Participants receive reimbursement or compensation.",
+      "per": "trial",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "EudraLex participant-compensation template; optional in Portugal (use if useful)",
+        "recommended": false,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": null,
+      "signature_note": "The Portugal guides state no signature rule for this description (DECISIONS.md D11).",
+      "content": "Amounts, calculation, payment schedule and any conditions. No completion bonuses or payment structures that could pressure a participant to remain in the trial. Consistent with the PIS and ICF and the site financial arrangements.",
+      "national_fields": {
+        "f04": "Portugal: state the amount, calculation and payment schedule. In healthy-volunteer trials CEIC guidance recognises that payment may be made; it compensates time and burden without becoming pressure to accept risk or remain in the trial, and is described separately from expense reimbursement.",
+        "f06": "Portugal: no completion bonus or payment structure that could pressure the participant to remain; payment is prorated if the participant stops early, and the investigator has no discretion to withhold earned payment because the participant withdraws."
+      },
+      "sources": [
+        "PT-PII-CHECKLIST#6",
+        "PT-HV"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_pt": "Parte II do CTIS, secção P. Condicional: quando os participantes recebam reembolso ou compensação. O modelo EudraLex é opcional em Portugal; usar se útil. Português ou inglês. Descrever montantes, cálculo, calendário de pagamento e condições; pagamento proporcional em caso de saída antecipada; sem bónus de conclusão nem estruturas que pressionem a permanência. Montantes e condições idênticos aos da informação ao participante e aos acordos financeiros por centro (P2). Regra de assinatura não indicada (DECISIONS.md D11)."
+    },
+    {
+      "id": "PT-Q-FEE",
+      "ctis_section": "Q",
+      "ctis_title": "none (no CTIS upload: fee payment or exemption through the electronic process after submission)",
+      "name_en": "Fee evidence",
+      "requirement": "conditional",
+      "trigger": "always (payment, or exemption where one applies)",
+      "trigger_text": "Portugal charges the applicable national clinical-trial fee unless an exemption applies. Since 2 December 2025 payment or exemption is handled through an electronic process after CTIS submission; the CTIS contact receives the links by email.",
+      "per": "trial",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "note": "The naming guide does not use section Q; do not upload an unsupported payment document before the process is issued.",
+      "sources": [
+        "PT-PII-CHECKLIST#7"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor (electronic fee process)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_pt": "Pasta Q do CTIS. Condicional: taxa nacional aplicável salvo isenção. Desde 2 de dezembro de 2025 o pagamento ou a isenção são tratados por processo eletrónico após a submissão no CTIS; o contacto CTIS recebe as ligações por correio eletrónico. Seguir as instruções atuais da CEIC e do INFARMED; não carregar comprovativo de pagamento antes de o processo ser emitido. Apenas verificar que o contacto CTIS está correto e que o processo foi concluído."
+    },
+    {
+      "id": "PT-R1",
+      "ctis_section": "R",
+      "ctis_title": "R1_Compliance collection and use personal data_PT",
+      "name_en": "GDPR compliance statement (sponsor declaration)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/R1_Data protection.docx",
+        "basis": "EudraLex GDPR-compliance statement; the statement submitted in the CTIS Form section is acceptable for Portugal",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+        "shared": true
+      },
+      "upload_location": "CTIS Form section (GDPR statement). It does not need to be duplicated under Part II when it covers the Portuguese trial activities; the R1 title applies only if a separate Part II statement is uploaded (DECISIONS.md D2).",
+      "signature_at_submission": null,
+      "signature_note": "A sponsor declaration, not participant-signed; the guides state no signature rule. The form's own date, name and role fields are completed for the sponsor from the sources (DECISIONS.md D11).",
+      "content": "Sponsor statement that personal data will be handled in accordance with the GDPR and applicable Portuguese law. The PIS and ICF still need a clear privacy section (controllers, purposes, data categories, legal basis, recipients, coded data, transfers, retention, rights, contacts) aligned with this statement.",
+      "national_fields": {
+        "r1_the_sponsor_declares": "Portugal: state in Portuguese that personal data will also be handled in accordance with applicable Portuguese law, naming Law No 58/2019 implementing the GDPR, so that the statement matches the participant information (which states that the sponsor declared compliance with the GDPR and Law No 58/2019). The guides accept the plain EudraLex statement; this sentence is recommended, not required (DECISIONS.md D2)."
+      },
+      "sources": [
+        "PT-PII-CHECKLIST#8",
+        "PT-ICF"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_pt": "Pasta R do CTIS. Obrigatório. Declaração do promotor de que os dados pessoais serão tratados de acordo com o RGPD e a legislação portuguesa aplicável. A declaração EudraLex submetida na secção Formulário do CTIS é aceite em Portugal e não precisa de ser duplicada na Parte II quando abrange as atividades do ensaio em Portugal (DECISIONS.md D2). Recomenda-se acrescentar a referência à Lei n.º 58/2019 no campo r1_the_sponsor_declares, para coincidir com a informação ao participante. Não é assinada pelos participantes. Data, nome e função do responsável do promotor apenas a partir das fontes; não inventar."
+    },
+    {
+      "id": "PT-S1",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_PT",
+      "name_en": "Compliance with Member State rules for the collection, storage and future use of human biological samples",
+      "requirement": "conditional",
+      "trigger": "samples.collected or samples.archive_used",
+      "trigger_text": "Biological samples are collected, stored or used. Then the current EudraLex template is mandatory (MedEthicsEU Portugal overview), with the Portugal-specific information completed.",
+      "per": "trial",
+      "language": [
+        "pt",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "Current EudraLex template on compliance with Member State rules for the collection, storage and future use of human biological samples (mandatory in Portugal when samples are involved)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": null,
+      "signature_note": "The Portugal guides state no signature rule for S1 (DECISIONS.md D11).",
+      "content": "What is collected, why, where it is stored, whether coded or anonymised, how long it is kept, who may receive it and whether future use is optional. Must match the PIS and ICF and any future-use document.",
+      "national_fields": {
+        "f03": "Portugal: Law No 12/2005 requires separate informed consent for biological material used for research and that the purpose and storage duration are stated; a sample collected for one purpose cannot normally be used for another without new authorisation unless irreversibly anonymised under the legal conditions; identifiable samples only when the research cannot be done with anonymous material (describe coding, access controls and where the key is held). For a biological-sample bank, written consent identifies the bank's purposes and responsible body, the kinds of research, risks and benefits, storage conditions and duration, privacy and confidentiality measures and whether results may be communicated. Transfer of a large number of samples or a collection to another national or foreign entity respects the bank's consented purpose and needs approval of the responsible ethics committees. Withdrawal and destruction of identifiable material within the scope of the law. Genetic research follows the additional protections of Portuguese health and genetic-information law (Law No 12/2005; Decree-Law No 131/2014). Data reuse: Law No 58/2019, Article 31 allows consent covering defined research areas."
+      },
+      "sources": [
+        "PT-PII-CHECKLIST#9",
+        "PT-SECONDARY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_pt": "Pasta S do CTIS. Obrigatório quando sejam colhidas, armazenadas ou utilizadas amostras biológicas; modelo EudraLex atual obrigatório. Português ou inglês. Indicar o que é colhido, porquê, onde é armazenado, se é codificado ou anonimizado, durante quanto tempo, quem o pode receber e se a utilização futura é opcional. Completar a informação específica portuguesa na secção 5 (campo f03): Lei n.º 12/2005 (consentimento separado, finalidade e duração, biobanco, transferências de coleções), Decreto-Lei n.º 131/2014 (informação genética) e Lei n.º 58/2019, artigo 31.º. Coerente com o protocolo, o plano de amostras, a informação ao participante e o documento de utilização secundária/futura."
+    }
+  ],
+  "outside_part_ii": [
+    {
+      "id": "PT-SYNOPSIS-PT",
+      "what": "Portuguese protocol synopsis",
+      "requirement": "mandatory for the application",
+      "where": "Part I protocol package (not Part II); title per naming guide D1_Protocol synopsis_PT_<EU CT number>_pt",
+      "sources": [
+        "PT-HUB",
+        "PT-PII-CHECKLIST#final"
+      ]
+    },
+    {
+      "id": "PT-LAY-SUMMARY-PT",
+      "what": "Lay summary of results in Portuguese",
+      "requirement": "mandatory at results stage",
+      "where": "CTIS results, not the initial Part II package",
+      "sources": [
+        "PT-HUB"
+      ]
+    },
+    {
+      "id": "PT-GDPR-FORM",
+      "what": "EudraLex GDPR-compliance statement",
+      "requirement": "mandatory",
+      "where": "CTIS Form section; satisfies the Part II data-protection requirement for Portugal (PT-R1)",
+      "sources": [
+        "PT-PII-CHECKLIST#8"
+      ]
+    }
+  ],
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_adult patients_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_main_PT_pt.json"
+        }
+      ],
+      "basis": "CEIC model for adult clinical-trial consent, January 2026 (optional drafting aid; the template is based on it)",
+      "sources": [
+        "PT-ICF"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_healthy_PT_pt.json"
+        }
+      ],
+      "note": "Do not reuse a patient form that describes treatment benefit or clinical alternatives. State no expected therapeutic benefit; explain first-exposure uncertainty, restrictions, total blood volume, confinement, screening and incidental findings; payment separate from expense reimbursement and prorated after withdrawal. Portugal has no separate mandatory national healthy-volunteer template.",
+      "sources": [
+        "PT-HV"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_parents_PT_pt.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 6-11_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_age 6-11_PT_pt.json",
+          "when": "children who can form an opinion and evaluate the information"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 12-17_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_age 12-17_PT_pt.json",
+          "when": "always for ages 16 and 17; for ages 12 to 15 when the minor can form an opinion and evaluate the information"
+        },
+        {
+          "title": "L1_SIS and ICF_written assent age 16_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_age 12-17_PT_pt.json",
+          "when": "population.minors_may_reach_16",
+          "template_status": "provisional basis: no dedicated template supplied; built from the assent section of the 12-17 template (DECISIONS.md D7)"
+        },
+        {
+          "title": "L1_SIS and ICF_adult re-consent_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_main_PT_pt.json",
+          "when": "population.minors_may_reach_18 (use the healthy-volunteer template for healthy minors)"
+        }
+      ],
+      "note": "CEIC publishes no mandatory national paediatric template. The statute sets no younger-child age bands; the template bands are drafting bands, built around comprehension and study burden. Legal thresholds (Law No 9/2026, Articles 8 and 9): assent required at 16 and 17; under 16 whenever the child can form an opinion and evaluate the information, regardless of form; written assent when turning 16; own written informed consent when turning 18. Refusal or dissent is respected. Optional future use stays separate.",
+      "sources": [
+        "PT-MINORS"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_PT_pt.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_PT_pt.json"
+        },
+        {
+          "title": "L1_SIS and ICF_regained capacity_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_main_PT_pt.json",
+          "when": "participants may regain capacity during the trial"
+        }
+      ],
+      "note": "Both the representative PIS and ICF and the participant information adapted to capacity are mandatory (Law No 9/2026, Articles 8 and 10; Article 31 CTR). Only when the person did not give or refuse consent before the incapacity. CEIC has no dedicated mandatory limited-capacity template. Communication aids, easy-read material or a witness section when needed (no template). Institutional placement: narrow exception only.",
+      "sources": [
+        "PT-CAPACITY"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency subsequent consent_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_emergency_PT_pt.json"
+        },
+        {
+          "title": "L1_SIS and ICF_legal representative_emergency_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_PT_pt.json",
+          "when": "the participant may remain unable to consent"
+        },
+        {
+          "title": "L1_SIS and ICF_regained capacity_emergency_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_main_PT_pt.json",
+          "when": "participants who recover capacity"
+        }
+      ],
+      "note": "Full Portuguese PIS and ICF for prompt subsequent consent: enrolment already occurred, why prior consent was not possible, what was done, current choices, ongoing procedures, data, samples, withdrawal and safety follow-up. Add the minors' set when minors are eligible. Recommended: a short approved emergency information sheet for when full discussion is temporarily impossible (no template; DECISIONS.md D9). Portugal has no separate mandatory national emergency template.",
+      "sources": [
+        "PT-EMERGENCY"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_witness_PT_pt.json"
+        }
+      ],
+      "note": "Only when the participant or representative can consent but cannot write. Not for incapacity (legal-representative pathway) or emergencies. The form records the reason the person could not write, the alternative means of recording consent and separate fields for the participant or representative, witness and interviewer. The supplied template covers a capable adult participant only; a representative unable to write, or a healthy volunteer, needs an adapted witness section (DECISIONS.md D10). Portugal has no dedicated mandatory national witness form.",
+      "sources": [
+        "PT-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_PT_pt.json"
+        }
+      ],
+      "note": "Addendum or separate PIS and ICF when follow-up extends beyond the main consent, includes new record access, collects additional samples, continues after withdrawal from treatment or introduces a new purpose. If follow-up stays within the approved main consent, a separate form may not be necessary.",
+      "sources": [
+        "PT-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_PT_pt.json"
+        }
+      ],
+      "note": "Mandatory when her data or records are collected. Her own Portuguese PIS and ICF; the enrolled participant cannot consent for her. She is a separate data subject and may also be a research participant for the follow-up activity (DECISIONS.md D12). Infant data: explain who authorises and how parental authority is verified.",
+      "sources": [
+        "PT-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_PT_pt",
+          "template": "templates/participant/L1_SIS and ICF_secondary_PT_pt.json"
+        }
+      ],
+      "note": "Separate Portuguese future-use PIS and ICF, or a clearly separated optional section in the main form (both accepted by the guide; the supplied template is a separate document). Independent yes and no choices for materially different activities (genetic testing, extra samples, commercial collaboration, recontact). Law No 12/2005 separate consent for biological material; biobank consent elements; Law No 58/2019 Article 31 defined research areas. Representative or parent versions when minors or adults unable to consent are included, with re-consent planned at adulthood or regained capacity. Portugal has no separate mandatory national future-use template.",
+      "sources": [
+        "PT-SECONDARY"
+      ]
+    }
+  ],
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents.",
+  "drafting_rules": [
+    "Participant documents in natural European Portuguese, written for a person who has not read the protocol; not a literal translation of protocol language. Short sentences, familiar words, descriptive headings, white space; unavoidable medical terms explained immediately. Keep the consent declaration short and put the explanation in the information section.",
+    "The CEIC adult ICF model (January 2026) is optional guidance; the supplied templates are based on it. Adapt to the protocol; keep the model text where it fits.",
+    "A separate document or clearly identified version for every group whose information or decision pathway differs; never ask an adult participant, parent, adolescent, legal representative or pregnant partner to sign a form written for another role.",
+    "Use the same study title, EU trial number, sponsor, investigator and site details as CTIS; page numbering and a footer with document title, version and date.",
+    "Distinguish routine care from procedures done only for the study. Present foreseeable risks (medicine, procedural, reproductive, privacy) and burdens in plain Portuguese, by likelihood and seriousness where reliable information supports it. Do not imply personal benefit when none is expected; describe alternatives without steering.",
+    "State that trial medicines, auxiliary medicines, administration devices and protocol-only tests or consultations are free to the participant; explain reimbursement or compensation, how it is calculated and whether it is prorated after withdrawal.",
+    "Describe the insurance and injury-compensation route in understandable terms; never ask the participant to waive legal rights. Insurance wording matches the valid policy.",
+    "Explain the Portuguese post-trial continuation pathway (Law No 9/2026) where post-trial treatment may be clinically indispensable, without promising access the protocol and law do not support; consistent with the financial agreement.",
+    "Privacy section: controllers, purposes, data categories, legal basis, recipients, coded-data process, authorised direct access to source records, international transfers and safeguards, retention, rights with trial-law limits and privacy contacts; aligned with the sponsor's GDPR statement and Law No 58/2019. Never promise deletion where clinical-trial law requires retention.",
+    "The main decision to participate is clear and separate from optional future research, optional genetic testing, biobanking, extra samples or unrelated contact; each optional choice has its own yes and no response and declining it does not affect main participation.",
+    "Withdrawal is explained separately for treatment, follow-up, data, stored samples and optional future use.",
+    "Portuguese site contacts for study questions, medical emergencies, participant rights and privacy; explain how new information is given and how the lay summary of results will be available.",
+    "Submitted PIS, ICF and assent forms are blank: no participant, representative, witness or interviewer signatures; signatures and dates are recorded at the time of consent, never pre-dated. Investigator declarations, declaration of interests, site declaration and insurance certificate are separate Part II documents, never merged into the consent form.",
+    "Re-consent triggers: approved new information affecting willingness to continue, amended documents, turning 16 (written assent), turning 18 (own written consent), regained capacity (own written consent).",
+    "Participant templates (JSON): bold marks recommended text (CEIC logic), text boxes and [square-bracket] notes are drafting guidance, underlined italic text marks comprehension-check questions for the investigator, and \"...........\" gaps are to fill; follow them and remove them. Part II templates (DOCX): yellow [INSERT/IF/CHOOSE/NOTE: …] labels. Nothing of either may remain in a final document."
+  ],
+  "sources": {
+    "PT-HUB": "https://trialagents.com/ctis/portugal/en",
+    "PT-PII-CHECKLIST": "https://trialagents.com/ctis/portugal/en/part-ii-document-checklist",
+    "PT-ICF": "https://trialagents.com/ctis/portugal/en/patient-information-consent-requirements",
+    "PT-QC": "https://trialagents.com/ctis/portugal/en/patient-facing-document-qc-checklist",
+    "PT-HV": "https://trialagents.com/ctis/portugal/en/healthy-volunteer-consent-requirements",
+    "PT-MINORS": "https://trialagents.com/ctis/portugal/en/minor-consent-assent-requirements",
+    "PT-CAPACITY": "https://trialagents.com/ctis/portugal/en/limited-capacity-legal-representative-consent-requirements",
+    "PT-EMERGENCY": "https://trialagents.com/ctis/portugal/en/emergency-enrollment-consent-requirements",
+    "PT-WITNESS": "https://trialagents.com/ctis/portugal/en/impartial-witness-consent-requirements",
+    "PT-PREGNANCY": "https://trialagents.com/ctis/portugal/en/pregnancy-follow-up-requirements",
+    "PT-SECONDARY": "https://trialagents.com/ctis/portugal/en/secondary-use-consent-requirements",
+    "PT-LAW-9-2026": "https://diariodarepublica.pt/dr/detalhe/lei/9-2026-1068062486",
+    "PT-LAW-58-2019": "https://diariodarepublica.pt/dr/detalhe/lei/58-2019-123815982",
+    "PT-LAW-12-2005": "https://diariodarepublica.pt/dr/detalhe/lei/12-2005-624463",
+    "PT-DL-131-2014": "https://diariodarepublica.pt/dr/detalhe/decreto-lei/131-2014-56384883",
+    "CEIC-SUBMISSION": "https://www.ceic.pt/documentos-submissao",
+    "CEIC-FORMS": "https://www.ceic.pt/formularios",
+    "CEIC-CTR": "https://www.ceic.pt/regulamento-ec",
+    "CEIC-FINANCIAL": "https://www.ceic.pt/documents/20727/57520/Esclarecimentos%2BCEIC%2Bsobre%2Bprocedimentos%2Brelativos%2Ba%2BDisposi%C3%A7%C3%B5es%2BFinanceiras%2B-%2BContrato%2Bcom%2Bos%2BCentros%2Bde%2BEnsaio%2B%C2%BF%2BPasta%2BP.%2BRegulamento%2Bde%2BEnsaios%2BCl%C3%ADnicos%2B%C2%BF%2BSubmiss%C3%A3o%2BCTIS/8cd44084-0a8b-48cb-b351-e9ac2099d565",
+    "CEIC-CONSENT-CHECKLIST-2020": "https://www.ceic.pt/documents/20727/57535/Nota%2BCIF/1a5c0f0b-68cf-427f-a11c-01182a45ed0f",
+    "INFARMED-CT": "https://www.infarmed.pt/web/infarmed/entidades/medicamentos-uso-humano/ensaios-clinicos",
+    "INFARMED-CTIS": "https://www.infarmed.pt/web/infarmed/entidades/medicamentos-uso-humano/ensaios-clinicos/submissao-ensaios-clinicos",
+    "EUDRALEX-10": "https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-10_en",
+    "MEDETHICSEU-OVERVIEW": "https://health.ec.europa.eu/document/download/7ae68dce-da1a-40e5-81ed-25d6211cda0b_en?filename=mp_ct_medethicseu_deliverables_cta-per-ms_en.pdf",
+    "CTR": "https://eur-lex.europa.eu/eli/reg/2014/536/oj/eng"
+  },
+  "sources_note": "All eleven Portugal guide pages reviewed 23 September 2026 (read 27 November 2026). They record CEIC Part II submission requirements and Portugal checklist version 2.0 (1 August 2022), CEIC financial-arrangements and site-contract guidance (24 August 2022), CEIC optional informed-consent model and forms (January 2026), CEIC consent-content checklist (23 December 2020), Law No 9/2026 of 6 March, Law No 58/2019, Law No 12/2005, Decree-Law No 131/2014 and the MedEthicsEU overview v4.0 (26 June 2026). Anchors #1-#9 refer to the numbered items of the Part II checklist page, #final to its final submission checks; PT-QC#n to the numbered QC sections.",
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026; naming guide reviewed 23 September 2026, unchanged)",
+    "portugal_note": "Use the CTCG pattern. The Portugal guides use descriptive section names (Recruitment arrangements, Subject information and informed consent form, Suitability of the investigator, Suitability of the facilities, Proof of insurance cover or indemnification, Financial and other arrangements, Fee evidence) and give no national naming instructions. Country and language only where they distinguish the document: _PT_pt on participant-facing documents, _PT on O1, P1, R1, S1. The guides name no titles for the N service authorisation, pharmacy declaration, coordinator and external-facility documents or the GCP certificate; the titles used here follow the next-free-number pattern (DECISIONS.md D4, D6)."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued by someone else (insurer, site, pharmacy, training provider, legal). Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "participant_templates": [
+    {
+      "id": "PT-PT-age-12-17",
+      "file": "templates/participant/L1_SIS and ICF_age 12-17_PT_pt.json",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_pt": "Informação e Formulário de Assentimento para Adolescentes (12–17 anos)",
+      "role": "age-adapted information and written assent for adolescents 12-17 (mandatory assent at 16 and 17)",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+      "authority_note": "Law No 9/2026: assent is mandatory at 16 and 17; for 12 to 15 it is required when the minor can form an opinion and evaluate the information. The 12-17 band is a drafting band; the statute sets none."
+    },
+    {
+      "id": "PT-PT-age-6-11",
+      "file": "templates/participant/L1_SIS and ICF_age 6-11_PT_pt.json",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_pt": "Informação e Formulário de Assentimento para Crianças (6–11 anos)",
+      "role": "age-adapted information and assent record for children 6-11",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+      "authority_note": "Law No 9/2026: assent of a child under 16 whenever the child can form an opinion and evaluate the information, regardless of form. The 6-11 band is a drafting band; the statute sets none."
+    },
+    {
+      "id": "PT-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_PT_pt.json",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_pt": "Formulário de Inclusão em Emergência e Consentimento Diferido",
+      "role": "subsequent information and consent after emergency enrolment",
+      "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window."
+    },
+    {
+      "id": "PT-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_PT_pt.json",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_pt": "Formulário de Consentimento Informado para Adultos Saudáveis",
+      "role": "main information and consent (healthy volunteers)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies."
+    },
+    {
+      "id": "PT-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_PT_pt.json",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_pt": "Informação e Consentimento para Representante Legalmente Autorizado",
+      "role": "information and consent for the legally authorised representative of an adult unable to consent",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "PT-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_PT_pt.json",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_pt": "Informação Adaptada e Registo da Vontade do Participante Adulto sem Capacidade para Prestar Consentimento Esclarecido",
+      "role": "information adapted to capacity and record of the participant's willingness or objection",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+      "authority_note": "The Portugal guide makes participant information adapted to capacity mandatory for every adult unable to consent; the document is always planned with PT-PT-legal-rep."
+    },
+    {
+      "id": "PT-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_PT_pt.json",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_pt": "Formulário de Consentimento Informado para Adultos (maiores e capazes)",
+      "role": "main information and consent (capable adult patients); also adult re-consent at 18 and after regained capacity",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms."
+    },
+    {
+      "id": "PT-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_PT_pt.json",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_pt": "Informação e Consentimento para Pais/Representantes Legais de Menores",
+      "role": "information and consent for parents or legally authorised representatives of a minor",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years)."
+    },
+    {
+      "id": "PT-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_PT_pt.json",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_pt": "Informação e Declaração de Consentimento Esclarecido para Seguimento da Gravidez da Participante e Dados do Bebé",
+      "role": "pregnancy follow-up of a participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+      "authority_note": "Portugal: only when follow-up goes beyond the main consent (new record access, additional samples, after withdrawal from treatment, new purpose)."
+    },
+    {
+      "id": "PT-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_PT_pt.json",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_pt": "Informação e Declaração de Consentimento Esclarecido para Seguimento da Gravidez da Parceira de Participante Masculino e Dados do Bebé",
+      "role": "information and consent for the pregnant partner of a participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant.",
+      "authority_note": "The template states the partner is not a trial participant; the guide says she is a separate data subject and may also be a research participant for the follow-up activity (DECISIONS.md D12)."
+    },
+    {
+      "id": "PT-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_PT_pt.json",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_pt": "Informação e Declaração de Consentimento Esclarecido para Utilização Secundária/Futura de Dados e/ou Amostras Biológicas",
+      "role": "optional secondary or future use of data or samples",
+      "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial."
+    },
+    {
+      "id": "PT-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_PT_pt.json",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_pt": "Formulário de Consentimento Informado com Testemunha Imparcial",
+      "role": "consent with impartial witness for a capable participant unable to write",
+      "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process.",
+      "authority_note": "Article 29 CTR as recorded in the Portugal guide triggers the witness only when the person cannot write (including physical inability to sign); it also applies to a representative who cannot write, which the template does not cover (DECISIONS.md D10)."
+    }
+  ],
+  "population_rules": {
+    "authority": "CEIC (Comissão de Ética para a Investigação Clínica): Part II submission requirements and Portugal checklist v2.0 (1 August 2022) and optional informed-consent model and forms (January 2026); Portuguese Law No 9/2026 of 6 March, Articles 8 to 19; Regulation (EU) No 536/2014, Articles 28 to 35",
+    "minors": {
+      "age_bands": [
+        {
+          "band": "6-11",
+          "template": "PT-PT-age-6-11",
+          "reader": "child"
+        },
+        {
+          "band": "12-17",
+          "template": "PT-PT-age-12-17",
+          "reader": "adolescent"
+        }
+      ],
+      "always": [
+        "PT-PT-parents"
+      ],
+      "legal_thresholds": {
+        "under_16_unable_to_form_opinion": "Representative consent; no assent decision can be obtained, but provide information suited to understanding (suitable child information when meaningful).",
+        "under_16_able_to_form_opinion": "Representative consent; assent required, regardless of form; age-appropriate child information and an assent record.",
+        "16_17": "Representative consent; assent required; adolescent information and assent form (PT-PT-age-12-17).",
+        "turns_16_during_trial": "Existing representative consent remains valid; written assent required to continue on an approved written age-16 assent form (provisionally built from PT-PT-age-12-17; DECISIONS.md D7).",
+        "turns_18_during_trial": "Representative consent no longer substitutes; the participant's own written informed consent on the approved adult PIS and ICF (PT-PT-main or PT-PT-healthy), planned before the birthday."
+      },
+      "reconsent_at_18": "PT-PT-main or PT-PT-healthy, when participants can reach 18 during participation",
+      "under_6": "No age-band template. Under 16 the child is asked for assent whenever able to form an opinion and evaluate the information; otherwise provide information suited to understanding when meaningful (no template; DECISIONS.md D8).",
+      "representatives": "Verify who is legally authorised to act for the particular minor; do not assume any accompanying adult has authority. Law No 9/2026 creates no universal two-parent signature rule; confirm the representative evidence for the individual case and any CEIC condition. Record name, relationship or authority, signature and date.",
+      "institutional_placement": "A minor subject to a placement or institutional measure is generally excluded; enrolment only when nonparticipation would create a potential prejudice or disadvantage for the child, attested by the treating physician (the investigator coordinates with that physician if different). Narrow exception, justified in the protocol and consent procedure before submission.",
+      "note": "The statute sets no younger-child age bands; the template bands (6-11, 12-17) are drafting bands built around comprehension and study burden. Avoid one dense adolescent document for every child. No conflict with the authority, which sets legal thresholds at 16 and 18 only.",
+      "conflicts": []
+    },
+    "adults_without_capacity": {
+      "always": [
+        "PT-PT-legal-rep",
+        "PT-PT-limited-capacity"
+      ],
+      "regained_capacity": "PT-PT-main (direct written informed consent promptly, before further non-urgent trial procedures where possible)",
+      "note": "Only when the adult is unable to give informed consent and did not give or refuse consent before the incapacity began; capacity assessed for the actual decision. Article 31 CTR conditions. Participant objection is respected and never overridden by the representative.",
+      "institutional_placement": "An adult unable to consent in institutional placement is generally excluded; enrolment only when nonparticipation would cause a potential prejudice or disadvantage; representative consent in coordination with the treating physician, the responsible investigator taking part, justified in the protocol and approved by CEIC.",
+      "conflicts": [
+        "The legal-representative template uses the limited-capacity template only 'when the participant can understand adapted information'; the Portugal guide makes participant information adapted to capacity mandatory. The guide wins: PT-PT-limited-capacity is always planned."
+      ]
+    },
+    "emergency": {
+      "always": [
+        "PT-PT-emergency"
+      ],
+      "as_applicable": [
+        "PT-PT-legal-rep",
+        "PT-PT-main"
+      ],
+      "note": "Representative version if the participant may remain unable to consent; direct adult form for participants who recover capacity; minors' set if minors are eligible. Recommended short emergency information sheet has no template (DECISIONS.md D9)."
+    },
+    "impartial_witness": {
+      "always": [
+        "PT-PT-witness"
+      ],
+      "note": "Only when the participant or representative can consent but cannot write. A witness never replaces a representative, a capacity assessment or the emergency exception.",
+      "conflicts": [
+        "The witness template's description covers a person who 'cannot read, write or sign'; Article 29 CTR as recorded in the Portugal guide triggers the witness only when the person can consent but cannot write (including a physical inability to sign). The guide wins: the template is planned only in that case."
+      ]
+    },
+    "pregnancy": {
+      "participant": "PT-PT-pregnancy only when follow-up goes beyond the main consent (new record access, additional samples, after withdrawal from treatment, new purpose); otherwise the main PIS and ICF covers it.",
+      "partner": "PT-PT-pregnant-partner whenever the pregnant partner's data or records are collected (mandatory).",
+      "infant": "Infant data or records after birth: explain who authorises the collection and how parental authority is verified; maternal consent does not automatically cover every infant follow-up activity.",
+      "conflicts": [
+        "The pregnant-partner template says the partner is not a participant of the clinical trial; the guide says she is a separate data subject and may also be a research participant for the follow-up activity. The guide wins in drafting: describe her as taking part in the follow-up activity only (she does not receive the investigational medicine); the template text stays as supplied (DECISIONS.md D12)."
+      ]
+    },
+    "shareable_templates": [
+      "PT-PT-pregnant-partner",
+      "PT-PT-secondary"
+    ],
+    "shareable_note": "One shared document for several populations only when nothing in it would differ; with minors or represented adults the future-use declaration is adapted to the representative.",
+    "separate_document_rules": [
+      "A separate document or clearly identified version for every group whose information or decision pathway differs; no one signs a form written for another role (PT-ICF).",
+      "Adults unable to consent: separate participant information adapted to capacity and separate representative PIS and ICF (PT-CAPACITY).",
+      "Minors: representative PIS and ICF plus age-appropriate information and assent; do not rely on the parent document as the only explanation (PT-MINORS).",
+      "A pregnant partner whose data are collected receives her own PIS and ICF; the enrolled participant cannot consent for her (PT-PREGNANCY).",
+      "Optional future use: a separate future-use PIS and ICF or a clearly separated optional section with its own yes and no choices; Law No 12/2005 requires separate informed consent for biological material used for research (PT-SECONDARY).",
+      "Emergency enrolment: a full subsequent-consent PIS and ICF; the recommended short emergency information sheet does not replace it (PT-EMERGENCY)."
+    ]
+  },
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/PT/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/PT/checklists/participant-documents.json",
+    "check": "countries/PT/checklists/forms-and-supplied.json",
+    "package": "countries/PT/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/PT/DECISIONS.md",
+  "answer_languages": [
+    "pt"
+  ],
+  "answer_languages_note": "Portuguese for the Part II forms (the CTIS_PT variable sheet targets Portuguese; the guides accept Portuguese or English for dossier documents). Participant documents are Portuguese only (language_rules.by_language). English form answers only if the user decides so (DECISIONS.md D1)."
+}

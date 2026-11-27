@@ -1,0 +1,1083 @@
+{
+  "country": "NL",
+  "name": "Netherlands",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "CCMO's National Clinical Trial Office validates the Dutch application, considers the sponsor's proposed MREC and assigns the reviewing committee (it may assign another for competence, timing or expertise). The guides describe no separate competent-authority assessment.",
+    "ethics": "One accredited Medical Research Ethics Committee (MREC), or CCMO for specified trial types (including medicinal-product research involving pregnant or breastfeeding participants), assesses Part I and Part II in one integrated review.",
+    "fee": "Invoiced after submission: upload the Dutch invoice-details template under Proof of payment of fee; no advance proof of payment; CCMO sends an online invoice payable within 30 days."
+  },
+  "language_rules": {
+    "participant_documents": "nl",
+    "administrative_documents": [
+      "nl",
+      "en"
+    ],
+    "rule": "Participant information and consent forms, their appendices, other material forming part of consent and recruitment material are submitted in Dutch; only the Dutch versions are assessed. The guides require Dutch only for participant-facing material: the official Dutch R1 form is available in English, and the VGO is available in Dutch and English at the institution's choice. They state no language for the other administrative documents.",
+    "non_dutch_speakers": "A potential participant who does not understand Dutch well enough receives written and oral information in a language they understand; the sponsor is responsible for the translation and for keeping its content and tone aligned with the authorised Dutch document. When inclusion of non-Dutch-speaking participants is planned, a translation certificate is submitted with the first Part II substantial modification (not needed for an unexpected individual case, an English version when the Dutch document is a direct translation of it, later changes, recruitment material or other documents shown to participants). Document the language of the oral discussion in the medical record.",
+    "endpoint_documents": "Questionnaires or diaries recording trial endpoints are described in the protocol and may be submitted under Part I D4; they are not automatically Part II documents.",
+    "form_answers": "Shared EU forms (content/eu/templates/part-ii) are answered in Dutch, as the CTIS_NL template set and variable sheet target Dutch answers. English answers only if the user decides so (DECISIONS.md D1).",
+    "by_language": {
+      "nl": [
+        "NL-B1-COVER",
+        "NL-GDPR-STATEMENT",
+        "NL-K1",
+        "NL-K2",
+        "NL-L1",
+        "NL-L1-POPULATION",
+        "NL-L2",
+        "NL-S1"
+      ],
+      "nl_or_en": [
+        "NL-FEE-INVOICE",
+        "NL-M1",
+        "NL-M2-DOI",
+        "NL-N1",
+        "NL-O1",
+        "NL-O2",
+        "NL-P1"
+      ],
+      "en": [
+        "NL-R1"
+      ]
+    },
+    "drafting_notes_language": "drafting_notes_nl for every document."
+  },
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.participants_16_17",
+    "population.adults_without_capacity",
+    "population.pregnant_or_breastfeeding",
+    "consent.emergency_enrolment",
+    "consent.mixed_emergency_population",
+    "consent.impartial_witness_possible",
+    "consent.electronic",
+    "population.non_dutch_speakers",
+    "recruitment.material_used",
+    "recruitment.call_centre",
+    "recruitment.other_information_material",
+    "endpoint_documents.participant_facing",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.future_use_outside_protocol",
+    "data.future_use_outside_protocol",
+    "data.transfer_outside_eu",
+    "data.external_travel_provider",
+    "genetics.optional_dna_research",
+    "data.optional_ai_analysis",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "trial.low_intervention",
+    "insurance.exemption_requested",
+    "insurance.liability_not_evidenced_elsewhere",
+    "trial.combined_device_or_ivd",
+    "ivo.exceeds_4000_words",
+    "sites.count"
+  ],
+  "study_facts_note": "Country-specific keys added for the Netherlands: population.participants_16_17, population.pregnant_or_breastfeeding (CCMO review), consent.mixed_emergency_population, population.non_dutch_speakers (replaces the generic non-local-language key), data.transfer_outside_eu, data.external_travel_provider, genetics.optional_dna_research, data.optional_ai_analysis, insurance.exemption_requested, insurance.liability_not_evidenced_elsewhere, trial.combined_device_or_ivd, ivo.exceeds_4000_words.",
+  "documents": [
+    {
+      "id": "NL-B1-COVER",
+      "ctis_section": "Form (CTIS Form section, outside the Part II placeholders)",
+      "ctis_title": "B1_Cover letter_<EU CT number>",
+      "name_en": "Cover letter",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial (application)",
+      "language": [
+        "nl"
+      ],
+      "language_note": "The guides state no language for the cover letter; Dutch pending DECISIONS.md D1.",
+      "template": null,
+      "template_note": "The current European cover-letter template is required but was not supplied in CTIS_NL (DECISIONS.md D7).",
+      "signature_at_submission": false,
+      "content": "Current European cover-letter template in the CTIS Form section. State the MREC proposed to assess the trial in the Netherlands (CCMO considers the proposal but can assign another qualified committee). For a trial combining the medicinal product with a medical device or IVD: identify it as a combined study, give the relevant EU CT and NL numbers, describe shared documents and address the coordinated Dutch process. Give the reason when the complete IVO exceeds 4,000 words, for the MREC to assess.",
+      "sources": [
+        "NL-PII-CHECKLIST#1",
+        "NL-ICF#readability",
+        "NAMING"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'form' once the European cover-letter template is supplied and converted into countries/NL/templates/part-ii (DECISIONS.md D7).",
+      "reader": "regulatory",
+      "filled_by": "sponsor (European cover-letter template; not supplied)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS-formulierensectie (buiten de documentplaatsen van deel II). Verplicht. Gebruik het actuele Europese model voor de begeleidende brief; dat model zit niet in de aangeleverde set (DECISIONS.md D7). Vermeld de METC die de verrichter voorstelt voor de beoordeling in Nederland; de CCMO weegt het voorstel mee maar kan een andere erkende commissie toewijzen. Bij een combinatiestudie met een medisch hulpmiddel of IVD: benoem dit, vermeld de relevante EU- en NL-nummers, beschrijf de gedeelde documenten en de gecoördineerde Nederlandse procedure. Als de volledige IVO meer dan 4.000 woorden telt, geef hier de reden voor de METC. Geen handtekening nodig bij indiening."
+    },
+    {
+      "id": "NL-FEE-INVOICE",
+      "ctis_section": "Form (CTIS 'Proof of payment of fee')",
+      "ctis_title": "Invoice details_NL",
+      "ctis_title_note": "The naming guide gives no CTCG title for documents in the fee area ('use other CTIS upload locations'); a plain descriptive title is proposed (DECISIONS.md D16).",
+      "name_en": "Dutch invoice-details document",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial (application)",
+      "language": [
+        "nl",
+        "en"
+      ],
+      "language_note": "The guides state no language for this administrative form (DECISIONS.md D1).",
+      "template": null,
+      "template_note": "Dutch invoice-details template (CCMO); not supplied in CTIS_NL.",
+      "signature_at_submission": false,
+      "signature_note": "No signature rule stated in the guides.",
+      "content": "Dutch invoice-details template under Proof of payment of fee. The Netherlands invoices after submission, so no advance proof of payment; CCMO sends an online invoice payable within 30 days. Not a Part II content document, but omitting it can make the Dutch application incomplete.",
+      "sources": [
+        "NL-PII-CHECKLIST#2",
+        "NL-HUB"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor (finance) on the Dutch invoice-details template",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS-onderdeel 'Proof of payment of fee'. Verplicht: het Nederlandse factuurgegevensformulier. Nederland factureert na indiening; een vooraf betaalbewijs is niet nodig. De CCMO stuurt een online factuur met een betaaltermijn van 30 dagen. Geen inhoudelijk deel-II-document, maar zonder dit formulier kan de Nederlandse aanvraag onvolledig zijn. Factuurgegevens komen van de verrichter; niets verzinnen."
+    },
+    {
+      "id": "NL-GDPR-STATEMENT",
+      "ctis_section": "Form (CTIS Form section, outside the Part II placeholders)",
+      "ctis_title": "GDPR compliance statement",
+      "ctis_title_note": "The naming guide gives no CTCG title for the GDPR statement in the Form section; a plain descriptive title is used (DECISIONS.md D16).",
+      "name_en": "EU statement of compliance with Regulation (EU) 2016/679",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "nl"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/R1_Data protection.docx",
+        "basis": "EudraLex statement of compliance with Regulation (EU) 2016/679 (GDPR). In the Netherlands this is the application-level statement in the CTIS Form section, not the Dutch Part II R1 form; no national sentence is added because the Dutch national data-protection content goes in the separate national R1 form (NL-R1).",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Sponsor or representative confirms that trial data will be collected and processed in accordance with Regulation (EU) 2016/679. Upload in the CTIS Form section; it may be submitted without a signature. Do not confuse it with the Dutch R1 national data-protection form (NL-R1).",
+      "sources": [
+        "NL-PII-CHECKLIST#3",
+        "NL-PII-CHECKLIST#15"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant; name and role of the responsible person at the sponsor from the sponsor",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS-formulierensectie (buiten de documentplaatsen van deel II). Verplicht. Europese verklaring dat de onderzoeksgegevens worden verzameld en verwerkt volgens Verordening (EU) 2016/679. Mag zonder handtekening worden ingediend. Niet verwarren met het afzonderlijke Nederlandse R1-formulier in deel II (NL-R1): beide zijn nodig. Het voorwaardelijke veld r1_the_sponsor_declares (nationale verklaring) is hier niet van toepassing en wordt verwijderd, omdat de Nederlandse nationale gegevensbeschermingseisen in het R1-formulier staan. Naam en functie van de verantwoordelijke persoon bij de verrichter alleen uit de bronnen van de verrichter; niets verzinnen."
+    },
+    {
+      "id": "NL-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment and informed consent procedure",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "nl"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "Harmonised European Recruitment and Informed Consent Procedure template, version 2.0 (applies to new Part II submissions from 1 September 2026)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "First act of recruitment, identification and approach of potential participants, access to identifiable records, consent setting, reflection time and the special procedures for minors, adults lacking capacity, witnesses (section 5) and emergencies (section 6). The protocol must describe every consent pathway used.",
+      "national_fields": {
+        "v105": "Required in the Netherlands: in Dutch, state that every trial-specific advertisement or recruitment item addressed directly to potential participants is submitted under K2 and that only the Dutch version is assessed; general institutional information that is not study-specific is not recruitment material. Recruitment items are blank at submission and not signed. Where the trial combines the medicinal product with a medical device or IVD, refer to the coordinated Dutch process described in the cover letter.",
+        "v108": "Required in the Netherlands: in Dutch, state that only the Dutch information sheet and consent form are assessed (IVO model v1.1, 14 August 2026, for capable participants aged 16 or older; mandatory from 1 January 2027, the previous PIF model permitted until then); that capable participants aged 16 or older consent themselves; that the participant (or representative) and the researcher or authorised interviewer sign and date the form at the consent visit and the participant receives the complete information sheet, cover page and a signed copy; that reflection time fits the trial (CCMO presents at least 48 hours as a benchmark, not a fixed rule); that explicit consent is asked for access to medical records or information from a general practitioner, specialist or pharmacist; that optional items have separate Yes/No choices; and, where non-Dutch-speaking participants are planned, that written and oral information is given in a language they understand, the sponsor is responsible for an accurate translation aligned with the authorised Dutch version, a translation certificate follows with the first Part II substantial modification, and the language of the oral discussion is documented in the medical record.",
+        "v110": "Required in the Netherlands when adults lacking capacity are included: in Dutch, describe the protective 'no, unless' conditions (direct benefit possible, or non-therapeutic research that can only be done with this group at minimal risk and burden compared with standard treatment or the nature and severity of the condition); how capacity is assessed for this decision, by whom, and reassessed if it fluctuates; the Dutch representative order (court-appointed curator or mentor; person authorised in writing by the participant; spouse, registered partner or other life partner; parent; adult child; adult sibling) and how identity, role and authority are confirmed and recorded; that the participant receives information adapted to their capacity and that a verbal or behavioural objection is respected and stops study procedures (apart from an immediate safety step); that the participant's own consent is obtained without undue delay when capacity is gained or regained; and that temporary incapacity alone does not permit enrolment without prior consent outside an authorised Article 35 trial.",
+        "v114": "Required in the Netherlands when minors are included: in Dutch, state that persons under 16 are minors for trial consent under the protective 'no, unless' approach; for a child under 12 both parents with parental authority, or the guardian, consent and the child receives age-appropriate information (CCMO discussion sheet); for a child aged 12 through 15 the child also gives written consent on their own form in addition to both parents or the guardian; how the adults with parental authority are identified (separated parents, remote signatures, sole guardian); that the parent consent declaration states that consent for continued participation no longer applies if the minor resists, in words or behaviour, and how investigators recognise, document and respond to resistance; that a child enrolled before 12 gives explicit own consent before continuing after turning 12; that no new consent action is needed solely because the participant turns 16 (CCMO); and that participants aged 16 or older follow the adult pathway.",
+        "v117": "Required in the Netherlands when the witness route is planned: in Dutch, state that the route applies only to a capable participant or representative who understands and decides but cannot write, sign or read the written material (Article 29 CTR), never for lack of capacity (legal representative) or a missing translation; how the witness is selected (independent of the trial, not the investigator, delegated study staff, sponsor staff or anyone with a financial or professional interest; family members only where independence is assured), that the witness is present throughout, signs and dates an attestation and does not decide for the person; which approved alternative method records consent; and that an interpreter and a witness have different roles.",
+        "v121": "Required in the Netherlands when emergency enrolment is used: in Dutch, address every Article 35 condition and the CCMO memorandum on deferred consent (7 April 2020); the medically justified therapeutic window; the prior-objection check; that consent is sought from the participant or, while the participant remains unable, from the legally designated representative in the Dutch order without undue delay (CCMO does not endorse a routine fixed delay such as 72 hours); the participant's own consent when capacity returns; that refusal stops new trial procedures and data collection but not ordinary care; that data lawfully gathered under Article 35 remain in the trial (EU CTR Q&A, March 2026); how a death before consent is handled (data may be used if the person had not objected while alive; the representative or next of kin is informed); and, for a mixed population, the compelling justification for enrolling some participants without prior consent."
+      },
+      "sources": [
+        "NL-PII-CHECKLIST#4",
+        "NL-EMERGENCY",
+        "NL-WITNESS",
+        "NL-MINORS",
+        "NL-CAPACITY",
+        "NL-ICF"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie K (Recruitment arrangements). Verplicht. Gebruik het geharmoniseerde Europese model versie 2.0 (geldt voor nieuwe deel-II-indieningen vanaf 1 september 2026). Antwoorden in het Nederlands (zie DECISIONS.md D1). Geen handtekeningvereiste bij indiening. Vul de sectie in voor elke toestemmingsroute in het plan (wilsonbekwame volwassenen, minderjarigen, onpartijdige getuige in sectie 5, noodsituatie in sectie 6) en geef bij elke 'nee' het niet-van-toepassing-antwoord. Zet de Nederlandse regels in de lidstaatvelden (national_fields): alleen Nederlandstalige documenten worden beoordeeld; IVO v1.1 voor 16 jaar en ouder; leeftijdsgrenzen onder 12 en 12 t/m 15; verzet van minderjarigen; volgorde van wettelijk vertegenwoordigers; CCMO-memorandum uitgesteld toestemming; vertaling en vertaalverklaring. Vraag over het bereiken van de wilsbekwame leeftijd (v113): beschrijf de eigen toestemming bij het bereiken van 12 jaar en dat bij 16 jaar alleen daardoor geen nieuwe toestemming nodig is. Wervingsroutes moeten overeenkomen met elk K2-item en met het protocol."
+    },
+    {
+      "id": "NL-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_NL_nl",
+      "name_en": "Recruitment material",
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Every trial-specific advertisement or recruitment item addressed directly to potential participants. General institutional information that is not study-specific does not belong here.",
+      "per": "item",
+      "language": [
+        "nl"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Dutch version only is assessed. Blank material at submission, not signed. A translation certificate is not required for recruitment material.",
+      "sources": [
+        "NL-PII-CHECKLIST#5",
+        "NL-ICF#translations"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie K, documentcode K2. Voorwaardelijk: elk studiespecifiek wervingsmateriaal dat zich rechtstreeks tot mogelijke deelnemers richt (advertentie, poster, website, sociale media, script). Algemene instellingsinformatie die niet studiespecifiek is hoort hier niet. Alleen de Nederlandse versie wordt beoordeeld. Blanco materiaal, niet ondertekend. Wervingsroute moet overeenkomen met K1. Geen vertaalverklaring nodig voor wervingsmateriaal. B1-niveau; betaling niet als voordeel presenteren."
+    },
+    {
+      "id": "NL-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_NL_nl",
+      "name_en": "Dutch Information Sheet for Research Participants (IVO) and consent form, main population",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "population",
+      "language": [
+        "nl"
+      ],
+      "template": null,
+      "template_note": "Bound per population from population_sets (NL-PT-main for capable adult patients, NL-PT-healthy for healthy volunteers).",
+      "signature_at_submission": false,
+      "content": "Blank Dutch information sheet and consent form with version and date. For participants aged 16 or older, the CCMO IVO model version 1.1 (14 August 2026) is strongly recommended now and mandatory from 1 January 2027; the older PIF model may be used until then, and a PIF already authorised for an ongoing trial need not be converted. The English IRP is a drafting aid and cannot be submitted. Signed at the consent visit by the participant (or representative) and the researcher or authorised interviewer.",
+      "sources": [
+        "NL-PII-CHECKLIST#6",
+        "NL-ICF",
+        "NL-HUB"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie L, documentcode L1 (Subject information and informed consent form). Verplicht. Blanco Nederlandse informatiebrief en toestemmingsformulier met versie en datum; geen door deelnemers ondertekende formulieren uploaden. Voor wilsbekwame deelnemers van 16 jaar en ouder het IVO-model versie 1.1 (14 augustus 2026): sterk aanbevolen, verplicht vanaf 1 januari 2027; het oude PIF-model mag tot die datum. De Engelse IRP is alleen een schrijfhulp en kan niet worden ingediend. Modelregels: B1-niveau, voorpagina maximaal twee pagina's, volledige IVO inclusief toestemmingsformulier en bijlagen maximaal 4.000 woorden (meer alleen met reden in de begeleidende brief), standaardtekst behouden tenzij het model aanpassen of verwijderen toestaat, instructies en ongebruikte opties verwijderen. Gelaagde risico-informatie: belangrijkste risico's op de voorpagina, klachten waarvoor direct contact nodig is in de hoofdtekst, volledige lijst in de bijlage. Verzekeringsbijlage opnemen tenzij ontheffing. Vergoedingen gelijk aan het P1-formulier. Onafhankelijk deskundige alleen opnemen als die echt deel uitmaakt van het goedgekeurde proces."
+    },
+    {
+      "id": "NL-L1-POPULATION",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<type>_<population>_NL_nl",
+      "name_en": "Population-specific Dutch information and consent documents",
+      "requirement": "conditional",
+      "trigger": "any population set other than adult_patients is triggered (see population_sets)",
+      "trigger_text": "Separate or adapted Dutch documents for every population and consent pathway in the protocol: healthy volunteers, children, parents or guardians, adults lacking capacity, legal representatives, emergency enrolment, impartial witness, pregnancy follow-up and optional secondary use.",
+      "per": "population x template",
+      "language": [
+        "nl"
+      ],
+      "template": null,
+      "template_note": "Bound per population from population_sets and population_rules.",
+      "signature_at_submission": false,
+      "content": "Children under 12 need the age-appropriate discussion sheet and parent or guardian consent. Children aged 12 through 15 need an age-specific information and consent document plus the parent or guardian document. Blank at submission; signed during conduct.",
+      "sources": [
+        "NL-PII-CHECKLIST#7",
+        "NL-MINORS",
+        "NL-CAPACITY",
+        "NL-EMERGENCY",
+        "NL-WITNESS",
+        "NL-PREGNANCY",
+        "NL-SECONDARY",
+        "NL-HV"
+      ],
+      "kind": "participant_document",
+      "reader": "participant or representative",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie L, documentcode L1. Voorwaardelijk: een apart of aangepast Nederlands document voor elke populatie en toestemmingsroute in het protocol. Kinderen onder 12: leeftijdsgeschikt gespreksblad plus toestemming van beide ouders met gezag of de voogd. Kinderen van 12 t/m 15: eigen informatie- en toestemmingsformulier plus het ouder-/voogddocument. Wilsonbekwame volwassenen: aangepaste informatie voor de deelnemer en een volledig document voor de wettelijk vertegenwoordiger. Noodinsluiting: documenten voor de deelnemer na herstel en voor de vertegenwoordiger. Getuige: aangepaste informatie met getuigenverklaring. Zwangere partner: eigen document. Optioneel toekomstig gebruik: aparte ja/nee-keuzes voor gegevens en lichaamsmateriaal. Blanco indienen; ondertekening tijdens de uitvoering. Zie population_sets en population_rules."
+    },
+    {
+      "id": "NL-L2",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_<type>_NL_nl",
+      "name_en": "Other material integral to consent",
+      "requirement": "conditional",
+      "trigger": "recruitment.other_information_material",
+      "trigger_text": "A document that is an integral part of the informed-consent process but is not itself the information and consent form, for example a separate consent aid or an approved information appendix.",
+      "per": "item",
+      "language": [
+        "nl"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "note": "Questionnaires or diaries used to record trial endpoints are handled with the protocol (Part I, D4) rather than automatically placed in Part II.",
+      "sources": [
+        "NL-PII-CHECKLIST#8",
+        "NL-ICF#submission"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie L, documentcode L2. Voorwaardelijk: alleen een document dat integraal deel uitmaakt van het toestemmingsproces maar zelf niet de informatiebrief of het toestemmingsformulier is (bijvoorbeeld een aparte keuzehulp of een goedgekeurde informatiebijlage). Nederlandse versie zoals gebruikt bij deelnemers; normaal blanco bij indiening. Vragenlijsten of dagboeken voor eindpunten horen bij het protocol (deel I, D4) en niet automatisch in deel II."
+    },
+    {
+      "id": "NL-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "name_en": "Principal investigator CV",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "nl",
+        "en"
+      ],
+      "language_note": "The guides require Dutch only for participant-facing material and state no language for the CV (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+        "basis": "EU CV template, used as the official CV template, which the Netherlands strongly recommends but does not make mandatory (DECISIONS.md D6)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Dated CV of the principal investigator for every Dutch site, no more than two years old. Prefer an unsigned CV: CCMO does not require a signature and treats signatures as personal data. Personal details come from the investigator.",
+      "sources": [
+        "NL-PII-CHECKLIST#9",
+        "NL-HUB"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie M (Suitability of the investigator). Verplicht voor elke Nederlandse onderzoekslocatie: gedateerd cv van de hoofdonderzoeker, niet ouder dan twee jaar. Het officiële cv-model wordt sterk aanbevolen maar is niet verplicht. Bij voorkeur zonder handtekening: de CCMO vraagt geen handtekening en beschouwt handtekeningen als persoonsgegevens. De assistent vult alleen de onderzoeksgegevens in (titel, EU-onderzoeksnummer); alle persoonlijke gegevens komen van de onderzoeker. Een locatie pas in CTIS registreren als cv, belangenverklaring en ondertekende VGO klaar zijn. Tijdelijke wisseling van hoofdonderzoeker: substantiële wijziging deel II met cv en belangenverklaring van de tijdelijke onderzoeker."
+    },
+    {
+      "id": "NL-M2-DOI",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Principal investigator declaration of interest",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "nl",
+        "en"
+      ],
+      "language_note": "The guides require Dutch only for participant-facing material and state no language for the declaration (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+        "basis": "Current European declaration-of-interest form, the official template that the Netherlands makes mandatory",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Separate dated declaration for the principal investigator at each Dutch site on the official template. The European form requires no handwritten signature and the Netherlands adds none.",
+      "sources": [
+        "NL-PII-CHECKLIST#10",
+        "NL-HUB"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie M. Verplicht voor elke Nederlandse onderzoekslocatie: een aparte, gedateerde belangenverklaring van de hoofdonderzoeker op het officiële (Europese) model; dit model is in Nederland verplicht. Geen handschriftelijke handtekening nodig en Nederland voegt geen handtekeningvereiste toe. De assistent vult alleen titel en EU-onderzoeksnummer in; de belangen vult de onderzoeker zelf in. Tijdelijke wisseling van hoofdonderzoeker: als substantiële wijziging deel II indienen met cv en belangenverklaring van de tijdelijke onderzoeker."
+    },
+    {
+      "id": "NL-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Site Suitability Declaration (Verklaring Geschiktheid Onderzoeksinstelling, VGO)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "nl",
+        "en"
+      ],
+      "language_note": "The VGO is available in Dutch and English; the institution may choose either.",
+      "template": null,
+      "national_template": "Official Dutch Site Suitability Declaration (VGO). Not in CTIS_NL: its N1 DOCX is the generic EU (CTAG) site-suitability form, which is not the mandatory national template; the guide says to use the current mandatory national templates rather than substitutes.",
+      "signature_at_submission": true,
+      "signature_rule": "The signed front sheet of the VGO is uploaded. The executive board or management of the institution signs; a validated digital signature is accepted.",
+      "content": "One VGO per Dutch site, also for a single-centre trial. A new VGO is not needed solely because the site's principal investigator changes. The related Clinical Trial Agreement supports local feasibility but is not uploaded in CTIS; local permission and contracting continue outside the CTIS authorisation process.",
+      "sources": [
+        "NL-PII-CHECKLIST#11",
+        "NL-HUB"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'form' (Draft trial fields, then Check) once the official VGO DOCX is supplied and converted into countries/NL/templates/part-ii (DECISIONS.md D2).",
+      "reader": "regulatory",
+      "filled_by": "site (official VGO, front sheet signed by the executive board or management of the institution)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie N (Suitability of the facilities). Verplicht voor elke Nederlandse onderzoekslocatie, ook bij een monocenteronderzoek: het ondertekende voorblad van de officiële Verklaring Geschiktheid Onderzoeksinstelling (VGO). Niet het algemene EU-formulier voor geschiktheid van de locatie gebruiken. Ondertekening door de raad van bestuur of directie van de instelling; een gevalideerde digitale handtekening is toegestaan. De VGO bestaat in het Nederlands en Engels; de instelling kiest. Geen nieuwe VGO alleen omdat de hoofdonderzoeker wisselt. De onderzoeksovereenkomst (CTA) wordt niet in CTIS geüpload. Het VGO-model zit niet in de aangeleverde set (DECISIONS.md D2); niets van de instelling invullen of verzinnen."
+    },
+    {
+      "id": "NL-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_NL",
+      "name_en": "WMO participant-insurance certificate",
+      "requirement": "mandatory",
+      "unless": "a statutory exception applies (government-appointed institutions) or an exemption is granted for a qualifying low-intervention trial on a reasoned request",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "nl",
+        "en"
+      ],
+      "language_note": "The guides state no language for the insurance certificate (DECISIONS.md D1).",
+      "template": null,
+      "signature_at_submission": false,
+      "signature_note": "Issued by the insurer; the guides state no signature rule.",
+      "content": "Proof that participants are insured against damage caused by participation, compliant with the Dutch Medical Research (Human Subjects) Compulsory Insurance Decree 2015 and covering the whole trial. For a qualifying low-intervention trial, include a reasoned request for exemption instead of presenting the exemption as automatic (title DECISIONS.md D14). The information sheet must state accurately whether insurance applies.",
+      "sources": [
+        "NL-PII-CHECKLIST#12",
+        "NL-ICF#insurance",
+        "NL-HV#insurance"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer (certificate); sponsor (reasoned exemption request)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie O (Proof of insurance cover or indemnification). Verplicht tenzij een uitzondering geldt: bewijs van de WMO-proefpersonenverzekering volgens het Besluit verplichte verzekering bij medisch-wetenschappelijk onderzoek met mensen 2015, voor de hele duur van het onderzoek. Voor een laag-interventieonderzoek dat in aanmerking komt: een gemotiveerd verzoek om ontheffing indienen; de ontheffing is niet automatisch. Door de overheid aangewezen instellingen kunnen onder wettelijke uitzonderingen vallen. Verzekeraar, polisgegevens, schadeloket en dekking moeten overeenkomen met de informatiebrief en de verzekeringsbijlage. Wordt door de verzekeraar afgegeven; niets verzinnen."
+    },
+    {
+      "id": "NL-O2",
+      "ctis_section": "O",
+      "ctis_title": "O2_Proof of coverage_<sponsor or site>",
+      "name_en": "Sponsor or investigator liability cover",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "requirement_note": "Liability cover or another adequate financial guarantee for the sponsor or executing party is always required, also where participant insurance is exempt (apart from the specific statutory government exception). A separate upload is needed only when this is not already evidenced in the submitted documentation.",
+      "upload_when": "insurance.liability_not_evidenced_elsewhere",
+      "per": "trial (per sponsor or executing party)",
+      "language": [
+        "nl",
+        "en"
+      ],
+      "language_note": "The guides state no language for liability evidence (DECISIONS.md D1).",
+      "template": null,
+      "signature_at_submission": false,
+      "signature_note": "Issued by the insurer or guarantor; the guides state no signature rule.",
+      "content": "Proof of liability cover or other adequate financial guarantee for the sponsor or executing party, under Proof of insurance cover or indemnification.",
+      "sources": [
+        "NL-PII-CHECKLIST#13"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer or guarantor",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie O. Verplicht: aansprakelijkheidsdekking of een andere passende financiële zekerheid voor de verrichter of uitvoerende partij. Alleen apart uploaden als dit nog niet blijkt uit de ingediende documenten. Ook nodig als de proefpersonenverzekering is vrijgesteld, behalve bij de specifieke wettelijke uitzondering voor de overheid. Wordt door de verzekeraar of garantsteller afgegeven; niets verzinnen."
+    },
+    {
+      "id": "NL-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_NL",
+      "name_en": "Dutch compensation, funding and arrangements form",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "nl",
+        "en"
+      ],
+      "language_note": "The guides state no language for the P1 form (DECISIONS.md D1).",
+      "template": null,
+      "national_template": "National Dutch P1 template (CCMO). Not in CTIS_NL: its P1 DOCX is the EU (CTAG) compensation template, which does not cover the Dutch review points on publication and early termination; the guide requires the national template rather than substitutes.",
+      "signature_at_submission": false,
+      "signature_note": "The guides state no signature rule for P1.",
+      "content": "Funding, payments to the investigator or site, participant compensation, reimbursements and other arrangements, plus the Dutch review points on publication and early termination previously considered through the clinical trial agreement. Healthy volunteers: compensation described transparently, reflecting time and burden (commonly based on the minimum wage); the reviewing committee assesses the amount. Amounts must match the IVO and insurance.",
+      "sources": [
+        "NL-PII-CHECKLIST#14",
+        "NL-HV#compensation",
+        "NL-HUB"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'form' (Draft, then Check) once the national P1 template is supplied and converted into countries/NL/templates/part-ii (DECISIONS.md D3).",
+      "reader": "regulatory",
+      "filled_by": "sponsor (national P1 template; not supplied)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie P (Financial and other arrangements). Verplicht: het nationale Nederlandse P1-model, niet het algemene EU-model. Beschrijf financiering, betalingen aan onderzoeker of locatie, vergoeding voor deelnemers, onkostenvergoedingen en andere afspraken, en de Nederlandse beoordelingspunten over publicatie en voortijdige beëindiging (voorheen via de onderzoeksovereenkomst). Gezonde vrijwilligers: vergoeding transparant, in verhouding tot tijd en belasting (vaak gebaseerd op het minimumloon); de METC beoordeelt het bedrag. Bedragen, voorwaarden en gedeeltelijke betaling moeten overeenkomen met de IVO en de verzekering. Het nationale model zit niet in de aangeleverde set (DECISIONS.md D3)."
+    },
+    {
+      "id": "NL-R1",
+      "ctis_section": "R",
+      "ctis_title": "R1_Compliance collection and use personal data_NL",
+      "name_en": "Dutch R1 national data-protection form",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "language_note": "The current official form (16 January 2026) is available in English; the guides name no Dutch version.",
+      "template": null,
+      "national_template": "Official Dutch R1 national data-protection form, dated 16 January 2026 (CCMO). Not in CTIS_NL: its R1 DOCX is the EU GDPR statement, which in the Netherlands belongs in the CTIS Form section (NL-GDPR-STATEMENT), not in Part II R.",
+      "signature_at_submission": false,
+      "signature_note": "The guides state no signature rule for the Dutch R1 form.",
+      "content": "National R1 template under Compliance with national requirements on data protection. Separate from, and in addition to, the GDPR statement in the CTIS Form section. Participant-facing privacy text stays in the Dutch information and consent document and must match this form.",
+      "sources": [
+        "NL-PII-CHECKLIST#15",
+        "NL-QC#5"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'form' (Draft, then Check) once the official Dutch R1 form is supplied and converted into countries/NL/templates/part-ii (DECISIONS.md D4).",
+      "reader": "regulatory",
+      "filled_by": "sponsor (official Dutch R1 form; not supplied)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie R (Compliance with national requirements on data protection). Verplicht: het officiële Nederlandse R1-formulier van 16 januari 2026 (beschikbaar in het Engels). Dit is iets anders dan de Europese AVG-verklaring in de CTIS-formulierensectie (NL-GDPR-STATEMENT); beide zijn nodig. Privacytekst voor deelnemers blijft in de informatiebrief en moet met dit formulier overeenkomen: gebruikte gegevens, verwerkingsverantwoordelijke(n), toegang, codering, bewaartermijn, doorgifte, rechten, contactpersonen en eventueel optioneel ander gebruik. Gepseudonimiseerde gegevens blijven persoonsgegevens. Het formulier zit niet in de aangeleverde set (DECISIONS.md D4)."
+    },
+    {
+      "id": "NL-S1",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_NL",
+      "name_en": "Compliance with biological-sample rules form",
+      "requirement": "conditional",
+      "trigger": "samples.collected or samples.archive_used or samples.future_use_outside_protocol",
+      "trigger_text": "The trial collects, stores or plans future use of biological samples.",
+      "per": "trial",
+      "language": [
+        "nl"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "EudraLex Volume 10 biological-samples template; the official Dutch form is aligned with it (DECISIONS.md D5)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "The guides state no signature rule for S1.",
+      "content": "Collection, storage, transfer, analysis, destruction and any future use. Optional future use is a separate choice from trial participation, with data and bodily material distinguished. A statement in the form does not replace participant consent; the form, protocol and participant information must agree.",
+      "national_fields": {
+        "f03": "Required in the Netherlands: in Dutch, state a fixed storage period for retained samples (not only 'at least' a number of years) and where they are stored and what happens at the end; that coded (pseudonymised) samples are not anonymous and remain traceable, so further use of traceable human tissue requires information and consent (CCMO); that optional future use of bodily material and of data are separate Yes/No choices from trial participation; that on withdrawal of the optional permission remaining bodily material is destroyed while data already collected and results of analyses already performed may continue to be used; and that optional future-use storage is distinct from the 25-year archiving of trial documentation under the CTR."
+      },
+      "sources": [
+        "NL-PII-CHECKLIST#16",
+        "NL-SECONDARY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_nl": "CTIS deel II, sectie S (Compliance with use of biological samples). Voorwaardelijk: alleen bij afname, opslag of toekomstig gebruik van lichaamsmateriaal. Het officiële Nederlandse formulier is afgestemd op het EudraLex-model (dit gedeelde formulier; DECISIONS.md D5). Antwoorden in het Nederlands. Beschrijf afname, verwerking, opslag, locatie, bewaartermijn, doorgifte, toegang, toekomstig gebruik en vernietiging. Vaste bewaartermijn (niet alleen 'ten minste'); gecodeerd materiaal is niet anoniem; verder gebruik van herleidbaar lichaamsmateriaal vraagt informatie en toestemming. Optioneel toekomstig gebruik als aparte keuze, gescheiden voor gegevens en lichaamsmateriaal. Moet overeenkomen met protocol, informatiebrief, R1 en een eventueel apart document voor ander gebruik."
+    }
+  ],
+  "national_fields": {
+    "NL-K1": {
+      "form": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+      "fields": {
+        "v105": "Required in the Netherlands: in Dutch, state that every trial-specific advertisement or recruitment item addressed directly to potential participants is submitted under K2 and that only the Dutch version is assessed; general institutional information that is not study-specific is not recruitment material. Recruitment items are blank at submission and not signed. Where the trial combines the medicinal product with a medical device or IVD, refer to the coordinated Dutch process described in the cover letter.",
+        "v108": "Required in the Netherlands: in Dutch, state that only the Dutch information sheet and consent form are assessed (IVO model v1.1, 14 August 2026, for capable participants aged 16 or older; mandatory from 1 January 2027, the previous PIF model permitted until then); that capable participants aged 16 or older consent themselves; that the participant (or representative) and the researcher or authorised interviewer sign and date the form at the consent visit and the participant receives the complete information sheet, cover page and a signed copy; that reflection time fits the trial (CCMO presents at least 48 hours as a benchmark, not a fixed rule); that explicit consent is asked for access to medical records or information from a general practitioner, specialist or pharmacist; that optional items have separate Yes/No choices; and, where non-Dutch-speaking participants are planned, that written and oral information is given in a language they understand, the sponsor is responsible for an accurate translation aligned with the authorised Dutch version, a translation certificate follows with the first Part II substantial modification, and the language of the oral discussion is documented in the medical record.",
+        "v110": "Required in the Netherlands when adults lacking capacity are included: in Dutch, describe the protective 'no, unless' conditions (direct benefit possible, or non-therapeutic research that can only be done with this group at minimal risk and burden compared with standard treatment or the nature and severity of the condition); how capacity is assessed for this decision, by whom, and reassessed if it fluctuates; the Dutch representative order (court-appointed curator or mentor; person authorised in writing by the participant; spouse, registered partner or other life partner; parent; adult child; adult sibling) and how identity, role and authority are confirmed and recorded; that the participant receives information adapted to their capacity and that a verbal or behavioural objection is respected and stops study procedures (apart from an immediate safety step); that the participant's own consent is obtained without undue delay when capacity is gained or regained; and that temporary incapacity alone does not permit enrolment without prior consent outside an authorised Article 35 trial.",
+        "v114": "Required in the Netherlands when minors are included: in Dutch, state that persons under 16 are minors for trial consent under the protective 'no, unless' approach; for a child under 12 both parents with parental authority, or the guardian, consent and the child receives age-appropriate information (CCMO discussion sheet); for a child aged 12 through 15 the child also gives written consent on their own form in addition to both parents or the guardian; how the adults with parental authority are identified (separated parents, remote signatures, sole guardian); that the parent consent declaration states that consent for continued participation no longer applies if the minor resists, in words or behaviour, and how investigators recognise, document and respond to resistance; that a child enrolled before 12 gives explicit own consent before continuing after turning 12; that no new consent action is needed solely because the participant turns 16 (CCMO); and that participants aged 16 or older follow the adult pathway.",
+        "v117": "Required in the Netherlands when the witness route is planned: in Dutch, state that the route applies only to a capable participant or representative who understands and decides but cannot write, sign or read the written material (Article 29 CTR), never for lack of capacity (legal representative) or a missing translation; how the witness is selected (independent of the trial, not the investigator, delegated study staff, sponsor staff or anyone with a financial or professional interest; family members only where independence is assured), that the witness is present throughout, signs and dates an attestation and does not decide for the person; which approved alternative method records consent; and that an interpreter and a witness have different roles.",
+        "v121": "Required in the Netherlands when emergency enrolment is used: in Dutch, address every Article 35 condition and the CCMO memorandum on deferred consent (7 April 2020); the medically justified therapeutic window; the prior-objection check; that consent is sought from the participant or, while the participant remains unable, from the legally designated representative in the Dutch order without undue delay (CCMO does not endorse a routine fixed delay such as 72 hours); the participant's own consent when capacity returns; that refusal stops new trial procedures and data collection but not ordinary care; that data lawfully gathered under Article 35 remain in the trial (EU CTR Q&A, March 2026); how a death before consent is handled (data may be used if the person had not objected while alive; the representative or next of kin is informed); and, for a mixed population, the compelling justification for enrolling some participants without prior consent."
+      }
+    },
+    "NL-S1": {
+      "form": "eu/templates/part-ii/S1_Biological samples.docx",
+      "fields": {
+        "f03": "Required in the Netherlands: in Dutch, state a fixed storage period for retained samples (not only 'at least' a number of years) and where they are stored and what happens at the end; that coded (pseudonymised) samples are not anonymous and remain traceable, so further use of traceable human tissue requires information and consent (CCMO); that optional future use of bodily material and of data are separate Yes/No choices from trial participation; that on withdrawal of the optional permission remaining bodily material is destroyed while data already collected and results of analyses already performed may continue to be used; and that optional future-use storage is distinct from the 25-year archiving of trial documentation under the CTR."
+      }
+    }
+  },
+  "national_fields_note": "Index of the national additions to shared forms; the same text is on each document (documents[].national_fields). Field ids are those of the shared <form>.fields.json. The GDPR statement (NL-GDPR-STATEMENT) needs no national field: the Dutch national data-protection content is the separate national R1 form (NL-R1).",
+  "outside_part_ii": [
+    {
+      "id": "NL-TRANSLATION-CERTIFICATE",
+      "what": "Translation certificate",
+      "requirement": "conditional (planned inclusion of non-Dutch-speaking participants)",
+      "where": "Submitted with the first Part II substantial modification, not with the initial application",
+      "sources": [
+        "NL-ICF#translations"
+      ]
+    },
+    {
+      "id": "NL-D4-ENDPOINT",
+      "what": "Endpoint questionnaires and diaries",
+      "requirement": "as described in the protocol",
+      "where": "Part I, protocol document code D4 (D4_Patient-facing document_<type>_ENG per the naming guide)",
+      "sources": [
+        "NL-PII-CHECKLIST#8"
+      ]
+    },
+    {
+      "id": "NL-CTA",
+      "what": "Clinical Trial Agreement and local permission",
+      "requirement": "outside CTIS",
+      "where": "Not uploaded in CTIS; local feasibility, permission and contracting continue outside the CTIS authorisation process",
+      "sources": [
+        "NL-PII-CHECKLIST#11"
+      ]
+    }
+  ],
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_adult patients_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_main_NL_nl.json"
+        }
+      ],
+      "note": "Capable participants aged 16 or older with the condition (CCMO). The template's own scope (18 or older) is overridden by the authority's age of 16; see population_rules.conflicts.",
+      "basis": "CCMO IVO model version 1.1, 14 August 2026 (strongly recommended; mandatory from 1 January 2027; PIF model permitted until then)",
+      "sources": [
+        "NL-ICF",
+        "NL-PII-CHECKLIST#6"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_healthy_NL_nl.json"
+        }
+      ],
+      "note": "Use when eligibility does not depend on the condition the product is intended to treat (Phase I, bioavailability, food-effect, interaction, mass-balance, clinical pharmacology). Same IVO structure for volunteers aged 16 or older; no separate national healthy-volunteer template. Separate documents from patients where risks, benefit, procedures, restrictions, compensation or alternatives differ.",
+      "basis": "CCMO IVO model version 1.1 (includes trial-specific wording for healthy participants and early-phase dose studies)",
+      "sources": [
+        "NL-HV"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_parents_NL_nl.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children under 12_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_age 6-11_NL_nl.json"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 12-15_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_age 12-17_NL_nl.json"
+        }
+      ],
+      "note": "Minors are persons under 16. Parents' document always; children's discussion sheet for enrolled children under 12; own information and consent for 12 through 15. Participants aged 16 or 17 follow the adult pathway (adult_patients or healthy_volunteers), not this set. Re-consent at 12 uses the 12-15 document. 'No, unless' conditions belong in the protocol.",
+      "basis": "CCMO simplified template for children under 12 and information-sheet template for children aged 12 to 16 (Dutch, model updated 14 August 2025); IVO parent or guardian consent model",
+      "sources": [
+        "NL-MINORS"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_NL_nl.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_NL_nl.json"
+        }
+      ],
+      "note": "Adults aged 16 or older who cannot make a reasonable judgment about their interests for this trial. Both documents are mandatory: full information and consent for the legally designated representative, and information adapted to the participant's capacity. The participant's own consent when capacity is gained or regained (adult template).",
+      "basis": "IVO v1.1 model consent form for a legal representative",
+      "sources": [
+        "NL-CAPACITY"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_emergency_NL_nl.json"
+        },
+        {
+          "title": "L1_SIS and ICF_emergency legal representative_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_NL_nl.json"
+        }
+      ],
+      "note": "Dutch information and consent for the participant after capacity returns and for the legally designated representative while the participant remains unable to consent. No separate CCMO emergency ICF model; the IVO can be adapted. The representative document is the legal-representative template adapted to the deferred-consent context (DECISIONS.md D12).",
+      "sources": [
+        "NL-EMERGENCY"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_witness_NL_nl.json"
+        }
+      ],
+      "note": "Only for a capable participant or representative who understands and decides but cannot write, sign or read the written material. No separate national witness template; adapt the Dutch package with the approved alternative method and a witness attestation (DECISIONS.md D13 for healthy volunteers and representatives).",
+      "sources": [
+        "NL-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_NL_nl.json"
+        }
+      ],
+      "note": "Separate Dutch form when the authorised IVO did not clearly cover the planned follow-up, extra medical-record access, infant information or follow-up duration. Trials directly enrolling pregnant or breastfeeding participants address pregnancy in the main documents from the start and are reviewed by CCMO.",
+      "sources": [
+        "NL-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_NL_nl.json"
+        }
+      ],
+      "note": "Mandatory before direct data or medical-record collection from the pregnant partner, who is a separate person; the trial participant cannot consent for them. Refusal must not affect the participant. Infant data need the approved parental-authority pathway.",
+      "sources": [
+        "NL-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_<population>_NL_nl",
+          "template": "templates/participant/L1_SIS and ICF_secondary_NL_nl.json"
+        }
+      ],
+      "note": "Optional future use of data or remaining bodily material: separate Yes/No choices for data and for bodily material, defined scope, fixed storage period. The guide places it normally in L1; a separate secondary-use ICF is allowed when it improves clarity and stays linked to the authorised consent process (DECISIONS.md D11). Decision route (participant, parents or representative) per population.",
+      "sources": [
+        "NL-SECONDARY"
+      ]
+    }
+  ],
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents.",
+  "drafting_rules": [
+    "Participant documents are Dutch; only the Dutch versions are assessed. The English IRP is a drafting aid only and cannot be submitted; follow the Dutch IVO model text and instructions even when an English master is used upstream.",
+    "Adults aged 16 or older: CCMO IVO model version 1.1 (14 August 2026), strongly recommended now and mandatory from 1 January 2027; the PIF model may be used until then only as an intentional choice. An already authorised PIF need not be converted.",
+    "IVO model rules: B1 language level; cover page with the main decision points at most two pages; complete IVO including consent form and appendices at most 4,000 words (more only with a reason in the cover letter); accessible sans-serif font listed in the model at no less than 12 pt or 16 px; retain standard text unless the model permits editing or deletion; delete instructions, unused options and irrelevant sections; keep the questions, tick boxes and completion fields that belong to the consent discussion; preserve the general CCMO information references.",
+    "Layered risk information: the main decision-changing risks on the cover page (for healthy volunteers the three main risks), symptoms that require contacting the study team in the main text, the fuller side-effect and procedure-risk list in an appendix. Do not copy technical risk language or eligibility criteria from the protocol.",
+    "Separate research procedures from usual care; a short schedule may clarify repeated visits. Make the worst realistic time commitment visible before consent (healthy volunteers).",
+    "State whether direct benefit is possible, uncertain or absent; never imply therapeutic benefit for a healthy volunteer; payment is not a benefit and is kept in its own section.",
+    "Privacy: name the data and special categories used and why, coding, who sees identifiable data (by role), storage location and fixed retention period, controller(s), data-protection officer and complaint contact (Autoriteit Persoonsgegevens), transfers outside the EU and safeguards, the Health and Youth Care Inspectorate access statement; never call coded data anonymous. Ask explicitly for access to medical records or information from a GP, specialist or pharmacist. Match the Dutch R1 form and the GDPR statement.",
+    "Insurance: state whether Dutch WMO participant insurance applies or an exemption was granted; include the insurance appendix unless exempt; match insurer, policy, claims contact and coverage to O1. A disclosed expected risk is not automatically compensated.",
+    "Compensation, travel reimbursement and possible tax treatment match the Dutch P1 form; not presented as a benefit; for healthy volunteers give the gross amount or calculation, schedule and partial-payment conditions.",
+    "Optional items each get a separate Yes/No choice (future use of data, future use of remaining bodily material, future contact, disclosure of allocation, DNA research outside the core question, AI analysis outside the core question, data to an external travel provider); refusal never blocks participation or care; no blanket consent.",
+    "Include an independent-expert contact only when it is part of the authorised process (no longer automatically required under the CTR).",
+    "Minors: the parent consent declaration must contain the statement that if the minor resists, consent for continued participation no longer applies; add it where the template's wording is weaker and record the addition as a finding. Child documents use their own reading level, not a shrunken adult text.",
+    "Re-consent triggers are operational: new safety information, a child reaching 12, recovery of capacity; give the participant the complete information sheet and a signed copy.",
+    "Translations: where non-Dutch speakers are planned, written and oral information in a language they understand; sponsor responsible for accuracy and tone matching the authorised Dutch version; translation certificate with the first Part II substantial modification (not for an unexpected individual case, a direct translation of the English master, later changes, recruitment material or other documents shown to participants). An interpreter or witness does not replace understandable written information.",
+    "Have trial-specific wording checked by a lay reader from the intended population where possible.",
+    "Participant templates (JSON): italic text, <angle-bracket> and [square-bracket] notes, 'Vul in'/'Kies' labels and '......' gaps are drafting instructions or gaps; follow them and remove them. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels. Nothing of either may remain in a final document."
+  ],
+  "sources": {
+    "NL-HUB": "https://trialagents.com/ctis/netherlands/en",
+    "NL-PII-CHECKLIST": "https://trialagents.com/ctis/netherlands/en/part-ii-document-checklist",
+    "NL-ICF": "https://trialagents.com/ctis/netherlands/en/patient-information-consent-requirements",
+    "NL-QC": "https://trialagents.com/ctis/netherlands/en/patient-facing-document-qc-checklist",
+    "NL-HV": "https://trialagents.com/ctis/netherlands/en/healthy-volunteer-consent-requirements",
+    "NL-MINORS": "https://trialagents.com/ctis/netherlands/en/minor-consent-assent-requirements",
+    "NL-CAPACITY": "https://trialagents.com/ctis/netherlands/en/limited-capacity-legal-representative-consent-requirements",
+    "NL-EMERGENCY": "https://trialagents.com/ctis/netherlands/en/emergency-enrollment-consent-requirements",
+    "NL-WITNESS": "https://trialagents.com/ctis/netherlands/en/impartial-witness-consent-requirements",
+    "NL-PREGNANCY": "https://trialagents.com/ctis/netherlands/en/pregnancy-follow-up-requirements",
+    "NL-SECONDARY": "https://trialagents.com/ctis/netherlands/en/secondary-use-consent-requirements",
+    "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention"
+  },
+  "sources_note": "All Netherlands guides reviewed 23 September 2026 (official sources accessed 21 August 2026); they record CCMO guidance, the IVO model v1.1 (14 August 2026), the CCMO minor templates (14 August 2025), the CCMO deferred-consent memorandum (7 April 2020), the EU CTR Q&A (March 2026) and MedEthicsEU Part II overview v4.0 (26 June 2026). Anchors #1-#16 refer to the numbered items of the Part II checklist page; NL-QC#n to the numbered sections of the QC checklist.",
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "netherlands_note": "Use the CTCG pattern. The Netherlands checklist page uses descriptive names ('Site Suitability Declaration, VGO', 'Dutch compensation, funding and arrangements form', 'Dutch R1 data-protection form', 'WMO participant-insurance certificate'); the CTCG examples supersede them. _NL_nl on participant-facing documents, _NL on O1, P1, R1, S1. The QC checklist asks that the CTIS filename identify the population and Dutch language. Form-section documents (cover letter, GDPR statement, invoice details) have no CTCG Part II code (DECISIONS.md D16). The guides give no further national naming instructions."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued or completed by someone else (sponsor on a national template not supplied, institution, insurer). Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "participant_templates": [
+    {
+      "id": "NL-PT-age-12-17",
+      "file": "templates/participant/L1_SIS and ICF_age 12-17_NL_nl.json",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_nl": "Informatie Formulier 12-16 jaar",
+      "role": "own information and consent for adolescents aged 12 through 15",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+      "authority_note": "The file name and description say 12-17; CCMO's band is 12 through 15 (the CCMO model is 'for children aged 12 to 16'; from 16 the adult pathway applies). The authority's band is used; the file keeps its supplied name."
+    },
+    {
+      "id": "NL-PT-age-6-11",
+      "file": "templates/participant/L1_SIS and ICF_age 6-11_NL_nl.json",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_nl": "Informatie over onderzoek voor kinderen tot 12 jaar",
+      "role": "age-appropriate discussion sheet for children under 12 (no legal consent by the child)",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+      "authority_note": "The file name and description say 6-11; CCMO's band is 'under 12' with no lower age (the template's Dutch title already says 'tot 12 jaar'). Used for all enrolled children under 12, adapted to age and understanding; it supports the conversation and does not replace parent or guardian consent."
+    },
+    {
+      "id": "NL-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_NL_nl.json",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_nl": "Informatie na noodinsluiting en formulier voor uitgestelde toestemming",
+      "role": "participant information and consent for continued participation after emergency enrolment",
+      "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window."
+    },
+    {
+      "id": "NL-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_NL_nl.json",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_nl": "Informatiebrief voor gezonde onderzoeksdeelnemers en toestemmingsformulier",
+      "role": "main information and consent (healthy volunteers aged 16 or older)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+      "authority_note": "The template says 18 or older; CCMO: capable participants aged 16 or older consent themselves on the adult IVO. Used from 16."
+    },
+    {
+      "id": "NL-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_NL_nl.json",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_nl": "Informatiebrief en toestemmingsformulier voor de wettelijk vertegenwoordiger",
+      "role": "information and consent for the legally designated representative of an adult lacking capacity (also, adapted, after emergency enrolment)",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "NL-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_NL_nl.json",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_nl": "Informatiebrief en instemmingsformulier voor volwassen patiënten die niet zelf kunnen beslissen",
+      "role": "information adapted to the capacity of the adult participant who cannot consent",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent."
+    },
+    {
+      "id": "NL-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_NL_nl.json",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_nl": "Informatiebrief voor onderzoeksdeelnemers en toestemmingsformulier",
+      "role": "main information and consent (capable patients aged 16 or older)",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms.",
+      "authority_note": "The template limits itself to 18 or older to avoid overlap with its adolescent template, while noting that the CCMO model applies from 16. CCMO wins: capable participants aged 16 or older use this adult IVO pathway; 'reaching adulthood' re-consent does not arise at 16 or 18 (CCMO: no new consent solely because the participant turns 16)."
+    },
+    {
+      "id": "NL-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_NL_nl.json",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_nl": "Informatiebrief en toestemmingsformulier voor ouders of voogd",
+      "role": "information and consent for both parents with parental authority or the guardian of a minor under 16",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years).",
+      "authority_note": "The description says younger than 18; CCMO and the template's own content instructions: younger than 16. The mandatory resistance statement must be added to the consent declaration (drafting_rules; DECISIONS.md D10)."
+    },
+    {
+      "id": "NL-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_NL_nl.json",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_nl": "Informatiebrief en toestemmingsformulier voor follow-up van zwangerschap en kind – onderzoeksdeelneemster",
+      "role": "pregnancy and infant follow-up of a trial participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant."
+    },
+    {
+      "id": "NL-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_NL_nl.json",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_nl": "Informatiebrief en toestemmingsformulier voor follow-up van zwangerschap en kind – zwangere partner",
+      "role": "information and consent for the pregnant partner of a trial participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant."
+    },
+    {
+      "id": "NL-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_NL_nl.json",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_nl": "Informatie en toestemming voor ander of toekomstig gebruik van gegevens en lichaamsmateriaal",
+      "role": "optional future use of data or remaining bodily material",
+      "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial."
+    },
+    {
+      "id": "NL-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_NL_nl.json",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_nl": "Informatiebrief en toestemmingsformulier met onpartijdige getuige",
+      "role": "consent with impartial witness for a capable participant who cannot write, sign or read",
+      "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process."
+    }
+  ],
+  "population_rules": {
+    "authority": "CCMO (Central Committee on Research Involving Human Subjects) guidance on participant information, consent, research with minors and incapacitated participants, deferred consent in emergency research (memorandum 7 April 2020) and future research; IVO model version 1.1 (14 August 2026); CCMO minor templates (14 August 2025); Regulation (EU) No 536/2014 Articles 28 to 35; EU CTR Q&A (March 2026). As recorded in the Netherlands guides reviewed 23 September 2026.",
+    "adults": {
+      "age_of_own_consent": 16,
+      "note": "Capable participants aged 16 or older consent for themselves on the adult IVO pathway (NL-PT-main or NL-PT-healthy). Parent signatures are no longer required solely because the person is under 18."
+    },
+    "minors": {
+      "definition": "under 16",
+      "age_bands": [
+        {
+          "band": "under 12",
+          "template": "NL-PT-age-6-11",
+          "reader": "child",
+          "note": "Discussion sheet only; the child gives no legal consent. Both parents with parental authority, or the guardian, sign NL-PT-parents."
+        },
+        {
+          "band": "12-15",
+          "template": "NL-PT-age-12-17",
+          "reader": "adolescent",
+          "note": "The child signs their own Dutch information and consent form, and both parents with parental authority, or the guardian, also sign NL-PT-parents."
+        }
+      ],
+      "always": [
+        "NL-PT-parents"
+      ],
+      "reconsent_at_12": "Mandatory: a child enrolled before 12 gives explicit own consent (NL-PT-age-12-17) before further trial procedures after turning 12; the parents' consent stands.",
+      "reconsent_at_16": "No new consent action solely because the participant turns 16 (CCMO); new consent may be needed for another reason such as important new information.",
+      "participants_16_17": "Adult pathway (NL-PT-main or NL-PT-healthy); if lacking capacity, the legal-representative pathway, not the minor pathway.",
+      "resistance": "Mandatory: the parent consent declaration states that if the minor resists participation, consent for continued participation no longer applies. Resistance can be in words or behaviour; silence is not assent (CCMO code of conduct on objection by minors, 2002).",
+      "representatives": "Identify which adults have parental authority before consent; a parent attending the visit cannot sign for the other parent; address separated parents, remote signatures and a sole guardian before recruitment.",
+      "conflicts": [
+        "Template bands 6-11 and 12-17 (file names and descriptions) versus CCMO bands under 12 and 12-15: the authority's bands are used; the supplied file names are kept.",
+        "Parents template description 'younger than 18' versus CCMO under 16: under 16 is used (the template's content instructions already say under 16)."
+      ]
+    },
+    "adults_without_capacity": {
+      "always": [
+        "NL-PT-legal-rep",
+        "NL-PT-limited-capacity"
+      ],
+      "representative_order": [
+        "court-appointed curator or mentor",
+        "person authorised in writing by the participant",
+        "spouse, registered partner or other life partner",
+        "parent",
+        "adult child who can reasonably be contacted",
+        "adult sibling who can reasonably be contacted"
+      ],
+      "note": "'No, unless' conditions; capacity is decision-specific and assessed, not inferred from diagnosis. Information adapted to capacity is mandatory (NL-PT-limited-capacity, as short and supported as needed). Objection, verbal or behavioural, is respected. Own consent (NL-PT-main) without undue delay when capacity is gained or regained. Temporary incapacity alone does not permit enrolment without prior consent outside an authorised Article 35 trial."
+    },
+    "emergency": {
+      "always": [
+        "NL-PT-emergency",
+        "NL-PT-legal-rep"
+      ],
+      "note": "NL-PT-legal-rep adapted to the deferred-consent context for the representative while the participant remains unable to consent (DECISIONS.md D12); NL-PT-emergency for the participant once capacity returns; the minors' set when the participant is a minor. Mixed populations only with compelling justification in the protocol (EU CTR Q&A March 2026, which is newer than the CCMO memorandum of 2020, allows it when the reasons are clear)."
+    },
+    "impartial_witness": {
+      "always": [
+        "NL-PT-witness"
+      ],
+      "note": "Only when a capable participant or representative cannot write, sign or read the written material; never for lack of capacity or a missing translation."
+    },
+    "pregnancy": {
+      "participant": "Separate NL-PT-pregnancy document only when the authorised IVO does not clearly cover the planned follow-up, extra record access, infant information or duration. Trials enrolling pregnant or breastfeeding participants are reviewed by CCMO and address pregnancy in the main documents.",
+      "partner": "NL-PT-pregnant-partner before any direct follow-up of a pregnant partner; the partner signs their own form.",
+      "infant": "Infant data only under the approved pathway with consent of the holders of parental authority."
+    },
+    "shareable_templates": [
+      "NL-PT-pregnant-partner",
+      "NL-PT-secondary"
+    ],
+    "separate_document_rules": [
+      "Optional future use of data or remaining bodily material: separate Yes/No choices for data and for bodily material, never one blanket consent; a separate secondary-use ICF (NL-PT-secondary) is allowed when it improves clarity and stays linked to the main L1 (DECISIONS.md D11).",
+      "A pregnant partner receives a separate document addressed to them; the enrolled participant cannot consent for the partner.",
+      "Adults lacking capacity: the participant's adapted information does not replace the representative document; both are submitted.",
+      "Children under 12: the discussion sheet supports the conversation and does not replace the parents' or guardian's consent form.",
+      "Healthy volunteers and patients in one trial: separate information where risks, benefit, procedures, restrictions, compensation or alternatives differ."
+    ]
+  },
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/NL/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/NL/checklists/participant-documents.json",
+    "check": "countries/NL/checklists/forms-and-supplied.json",
+    "package": "countries/NL/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/NL/DECISIONS.md",
+  "answer_languages": [
+    "nl"
+  ],
+  "answer_languages_note": "Dutch for all package documents the assistant drafts (participant documents and the shared forms K1, S1 and the GDPR statement). Dutch is mandatory for participant-facing material; English for forms only if the user decides so (DECISIONS.md D1)."
+}
