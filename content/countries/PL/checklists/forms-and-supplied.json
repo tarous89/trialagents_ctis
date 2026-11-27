@@ -1,0 +1,192 @@
+{
+  "id": "PL-CHECK",
+  "name": "Poland: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/poland/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor finance are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language is Polish or English; any participant-facing content embedded in the document, or a Poland-specific field that needs it, is in Polish. No signature unless a Polish rule, CTIS or the assessor requires one."
+    },
+    {
+      "id": "X.05",
+      "check": "CTIS title (or Form-section upload) follows the naming guide and requirements.json."
+    },
+    {
+      "id": "X.06",
+      "check": "Controlled version and date consistent with the rest of the Poland package and CTIS."
+    }
+  ],
+  "by_document": {
+    "PL-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the European Commission template v2.0 (new Part II submissions from 1 September 2026), or another format that contains the complete required information under the CTR and the Polish Act."
+      },
+      {
+        "id": "K1.02",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed, each 'no' section says not applicable."
+      },
+      {
+        "id": "K1.03",
+        "check": "Identification, first act of recruitment, who approaches participants and how consent is provided and obtained reflect the actual Polish workflow and match K2 and the protocol."
+      },
+      {
+        "id": "K1.04",
+        "check": "Poland-specific fields completed (national_fields): Polish documents and Article 29 signature and copy; Fund and insurance information before consent; legal-representative authority verification; NKB 13-year threshold, document per age group, joint parental decision route and adult re-consent; one impartial witness; Article 35 sequence."
+      },
+      {
+        "id": "K1.05",
+        "check": "Versions and dates of the PIS/ICF referenced match the uploaded L1 documents."
+      }
+    ],
+    "PL-M1": [
+      {
+        "id": "M1.01",
+        "check": "One CV per investigator and site, current, demonstrating suitability; date fields completed; no signature added unless required."
+      },
+      {
+        "id": "M1.02",
+        "check": "Only the trial fields were filled by the assistant; personal details come from the investigator."
+      }
+    ],
+    "PL-M2": [
+      {
+        "id": "M2.01",
+        "check": "One declaration per principal or lead investigator and site; economic, institutional and personal interests answered by the investigator; investigator and institution identified; dated."
+      },
+      {
+        "id": "M2.02",
+        "check": "Any case-specific instruction from CTIS or the Polish assessor (for example a signature) has been followed."
+      }
+    ],
+    "PL-N1": [
+      {
+        "id": "N1.01",
+        "check": "One form per Polish site, submitted before site initiation; covers facilities, equipment, staffing and organisational arrangements (Annex I point 67)."
+      },
+      {
+        "id": "N1.02",
+        "check": "Statements are specific to this protocol and its expected participant population; site capabilities are left for the site to confirm."
+      },
+      {
+        "id": "N1.03",
+        "check": "Signature handling follows DECISIONS.md D11 (no Polish signature requirement in the guides)."
+      }
+    ],
+    "PL-O1": [
+      {
+        "id": "O1.01",
+        "check": "Proof of civil liability insurance of the sponsor and of the investigator for damage connected with the conduct of the trial, specific to this trial, effective no later than the application submission date."
+      },
+      {
+        "id": "O1.02",
+        "check": "Guaranteed sums meet the Polish statutory minimum for the planned number of participants (current statutory text and insurer documentation)."
+      },
+      {
+        "id": "O1.03",
+        "check": "Low-intervention trial: the sponsor exception is applied only to the sponsor's insurance; investigator cover still evidenced.",
+        "applies_when": "trial.low_intervention"
+      },
+      {
+        "id": "O1.04",
+        "check": "Insurer and policy details match the participant documents' insurance information."
+      }
+    ],
+    "PL-FUND": [
+      {
+        "id": "FUND.01",
+        "check": "Proof of the sponsor's payment to the Clinical Trials Compensation Fund for this application is attached (applications from 14 April 2023, including low-intervention trials)."
+      },
+      {
+        "id": "FUND.02",
+        "check": "Uploaded in the CTIS location confirmed under DECISIONS.md D5."
+      }
+    ],
+    "PL-P1": [
+      {
+        "id": "P1.01",
+        "check": "States explicitly when no compensation is offered; otherwise travel, expense and other payments are listed."
+      },
+      {
+        "id": "P1.02",
+        "check": "Amounts, conditions and recipients identical to every participant document."
+      },
+      {
+        "id": "P1.03",
+        "check": "Minors, incapacitated participants and pregnant or breastfeeding participants receive only compensation for expenses and loss of earnings directly related to participation.",
+        "applies_when": "population.minors or population.adults_without_capacity or population.pregnant_or_breastfeeding"
+      },
+      {
+        "id": "P1.04",
+        "check": "Healthy volunteers: payment for time or inconvenience separate from reimbursement, with its justification; effect of withdrawal on payment stated; no reliance on the revoked NKB remuneration guidance.",
+        "applies_when": "population.healthy_volunteers"
+      }
+    ],
+    "PL-P2": [
+      {
+        "id": "P2.01",
+        "check": "Investigator and site financial arrangements and other relevant financial arrangements are described, in the format and granularity agreed under DECISIONS.md D9, consistent with P1."
+      }
+    ],
+    "PL-R1": [
+      {
+        "id": "R1.01",
+        "check": "Standard EC GDPR statement completed in the CTIS Form section (or as decided under D7); sponsor details match the CTIS application; name and role from the sponsor."
+      },
+      {
+        "id": "R1.02",
+        "check": "Consistent with the participant privacy wording, the data flows, recipients, retention and international transfers described for the trial."
+      }
+    ],
+    "PL-S1": [
+      {
+        "id": "S1.01",
+        "check": "New and archive sample sections match the protocol and sample plan; at least one is completed."
+      },
+      {
+        "id": "S1.02",
+        "check": "Analysis, storage, duration, access, coding and transfers match the participant documents and the GDPR statement."
+      },
+      {
+        "id": "S1.03",
+        "check": "Optional future research outside the protocol is answered consistently with the separate optional consent (PL-PT-secondary).",
+        "applies_when": "samples.future_use_outside_protocol"
+      }
+    ],
+    "PL-FEE": [
+      {
+        "id": "FEE.01",
+        "check": "Proof of payment of the national application fee to the Medical Research Agency account is uploaded in CTIS, following the current URPL and NKB payment instructions."
+      },
+      {
+        "id": "FEE.02",
+        "check": "No fee amount copied from old material; current fee page used."
+      }
+    ]
+  }
+}

@@ -1,0 +1,951 @@
+{
+  "country": "IE",
+  "name": "Ireland",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "Health Products Regulatory Authority (HPRA): leads the scientific assessment and issues Ireland's single national decision through CTIS.",
+    "ethics": "National Research Ethics Committee for Clinical Trials (NREC-CT), with the National Office for Research Ethics Committees, assesses Part II (participant information, consent, recruitment, investigator and site suitability, insurance, financial arrangements, data protection, biological samples).",
+    "communication": "Documents and RFI responses for an application under assessment go through CTIS, not directly to HPRA or the National Office unless an authority asks.",
+    "fee": "Commercial sponsors pay the Irish clinical-trial fee to HPRA and submit the completed HPRA fee application form and proof of payment in CTIS (Forms section, not Part II). Non-commercial and academic trials are not charged.",
+    "data_protection_bodies": "Health Research Consent Declaration Committee (HRCDC) decides consent declarations under the Health Research Regulations where explicit consent cannot be obtained."
+  },
+  "language_rules": {
+    "participant_documents": "en",
+    "administrative_documents": [
+      "en"
+    ],
+    "rule": "Ireland requires the application and all documents and communications before, during and after the trial to be in English (HPRA, NREC). Participant-facing documents need an English version suitable for the intended Irish population.",
+    "other_languages": "Other language versions can be offered to individual participants where needed (approved translation or accessible process), but they do not replace the English Irish submission set.",
+    "irish_language_ga": "Irish-language (ga) versions are not required by any Ireland guide. The guides require English only and the QC checklist warns against implying that an unpublished Irish-language CTIS guide is available. An Irish-language document is planned only as an individual approved translation if a participant needs it (DECISIONS.md D18).",
+    "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in English."
+  },
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.age_16_17",
+    "population.adults_without_capacity",
+    "population.group_benefit_research_without_capacity",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "consent.electronic",
+    "population.non_english_speakers",
+    "recruitment.material_used",
+    "recruitment.other_information_material",
+    "endpoint_documents.participant_facing",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.future_use_outside_protocol",
+    "data.future_use_outside_protocol",
+    "genetics.optional_testing",
+    "substudy.optional_consent",
+    "screening.separate_consent",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "radiation.requires_authorisation_or_notification",
+    "contract.financial_arrangements_in_site_contract",
+    "financial.other_arrangements",
+    "insurance.state_indemnity",
+    "data.hrcdc_declaration_needed",
+    "sponsor.commercial",
+    "sites.count"
+  ],
+  "study_facts_country_specific": {
+    "population.minors": "Ireland: participants under 16 (the Irish definition of a minor in regulated trials).",
+    "population.age_16_17": "Are participants aged 16 or 17 enrolled (they consent themselves in Ireland)?",
+    "population.non_english_speakers": "Do individual participants need another language or communication format (approved translation or accessible process; the English set stays the submission set)?",
+    "genetics.optional_testing": "Is optional genetic or genomic testing offered within the main trial?",
+    "substudy.optional_consent": "Is there an optional substudy with its own consent?",
+    "screening.separate_consent": "Healthy-volunteer trials: is screening consented separately from the main trial?",
+    "financial.other_arrangements": "Are there financing, payments to investigators or sites, or other agreements that could affect impartiality (IE-P2)?",
+    "insurance.state_indemnity": "Do delegated State authority healthcare enterprises or academic institutions rely on State Claims Agency indemnity?",
+    "data.hrcdc_declaration_needed": "Does any processing need a Health Research Consent Declaration (for example adults lacking capacity or emergency enrolment outside the deferred-consent exemption)?",
+    "sponsor.commercial": "Is the sponsor commercial (HPRA fee payable)?",
+    "radiation.requires_authorisation_or_notification": "Ireland: research exposure to ionising radiation is described as a site-specific issue in the NREC-CT site suitability form."
+  },
+  "documents": [
+    {
+      "id": "IE-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment and informed consent procedure",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "European Commission Recruitment and Informed Consent Procedure template, version 2.0, January 2026 (EudraLex Volume 10). Use version 2.0 for new Part II submissions from 1 September 2026, including initial applications, additional Member States and Part II completion under Article 11; already authorised trials and applications under review do not need retrospective replacement.",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "How people are identified, the first act of recruitment, who makes the initial approach, whether medical records or patient lists are accessed, how privacy is protected, and who provides information and takes consent. Covers ordinary consent, incapacitated adults, minors, impartial witnesses and emergency enrolment; must explain how each recruitment item is used and how responses from people who are not eligible are handled.",
+      "national_fields": {
+        "v105": "Ireland: all recruitment material shown to potential participants is in English (final versions uploaded under K2); explain how each item is used and how responses from people who are not eligible are handled.",
+        "v108": "Ireland: the pre-consent interview and consent may be handled by the investigator or an appropriate registered medical practitioner, registered dentist or registered nurse designated by the investigator; state their role, training, setting, timing and the steps used to check understanding. Consent documents are in English; another language or communication format for an individual participant needs an approved translation or accessible process. The participant (or legally designated representative) and the authorised person taking consent sign and date the approved ICF; the participant receives a copy and the original is kept in the investigator site file. Trial-participation consent is kept distinct from the data-protection information and the explicit-consent safeguard of the Health Research Regulations (S.I. No. 314/2018).",
+        "v110": "Ireland: legally designated representative under S.I. No. 99/2022: first a person who, because of a family or other personal relationship, is suitable and available and acts on their best interpretation of the participant's will and preferences; if none is available, the medical practitioner primarily responsible for the participant's treatment who is not involved in conducting the trial. Describe the supported capacity assessment and reassessment, how the participant is involved and their refusal respected, the lawful data-processing route (the representative cannot ordinarily give the participant's explicit data-processing consent; a Health Research Consent Declaration may be needed unless an exemption applies), and the participant's own consent when capacity returns.",
+        "v114": "Ireland: a minor is a person under 16 (S.I. No. 99/2022). A parent or guardian legally entitled to act for the child consents, with that authority verified and documented; the child's assent is sought where the child can form an opinion and assess the information, using age-appropriate information whose bands are justified for the protocol population; an explicit refusal or wish to withdraw by a capable minor is respected. Participants aged 16 or over consent themselves to participation and associated data processing. Re-consent: the participant's own consent without undue delay on reaching 16 while trial activities, follow-up or identifiable data processing continue.",
+        "v117": "Ireland: the witness route applies when the participant or legally designated representative can make the decision but cannot independently read the written information or complete the normal written signature; not for extra explanation or to avoid an approved translation or interpreter. The witness is independent of the trial, attends the full discussion and signs and dates to attest; the reason for witness involvement is recorded and a witness signature field is present (NREC expectation). A witness cannot consent for the participant or replace the legally designated representative.",
+        "v121": "Ireland: all Article 35 conditions met at the first trial intervention, with the emergency, therapeutic window, eligibility decision, attempts to locate a representative, first trial intervention and consent follow-up defined; NREC approval of the specific pathway. Consent is then sought without undue delay from the participant or legally designated representative, whichever can validly decide first, and from the participant once capacity returns. Deferred consent to participation does not automatically authorise health-data processing: describe the Health Research Regulations deferred-consent route or the Health Research Consent Declaration Committee decision relied on, when processing begins and what happens if consent is refused."
+      },
+      "sources": [
+        "IE-PII-CHECKLIST#1",
+        "IE-ICF",
+        "IE-CAPACITY",
+        "IE-MINORS",
+        "IE-WITNESS",
+        "IE-EMERGENCY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section K (recruitment arrangements). Mandatory for every trial. English. Not signed at submission. Use the EU template version 2.0. Answer the incapacitated-adult, minor, impartial-witness and emergency sections for every pathway in the plan and give the template's not-applicable answer for each 'no'. Put the Irish rules in the Member State fields (national_fields): consent taker roles (investigator, or registered medical practitioner, dentist or nurse designated by the investigator), minor = under 16 with re-consent at 16, the legally designated representative hierarchy, witness reason and signature field, the separate Irish data-processing route (Health Research Regulations, HRCDC). The recruitment routes must match every K2 item."
+    },
+    {
+      "id": "IE-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_IE_en",
+      "name_en": "Recruitment materials",
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Any advertisement, letter, brochure, social-media item, video script, website text or other material shown to potential participants.",
+      "per": "item",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Final English version of every item. K1 must explain how each item is used and how responses from people who are not eligible are handled.",
+      "sources": [
+        "IE-PII-CHECKLIST#2"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_en": "CTIS Part II section K. Conditional: one upload per recruitment item. Final English versions, not signed. No national template. Keep consistent with K1 and with the participant documents; payment wording must not suggest that payment is a benefit."
+    },
+    {
+      "id": "IE-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_IE_en",
+      "name_en": "Subject Information Sheet and Informed Consent Form, one set per population and per optional procedure that changes the information or consent logic",
+      "requirement": "mandatory",
+      "trigger": "participants are enrolled",
+      "per": "population",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "template_note": "Participant templates are bound per population through population_sets; there is no single L1 template. Ireland has no mandatory national SIS/ICF template for any population; the supplied templates follow an accepted EU or NREC-aligned structure.",
+      "signature_at_submission": false,
+      "signature_rule": "Blank and unsigned at CTIS submission. At enrolment the participant or legally designated representative and the authorised person taking consent sign and date the approved form; the participant gets a copy and the original stays in the investigator site file.",
+      "content": "Blank English SIS and ICF for each population that can enter the trial, with separate or clearly distinct versions for each population and optional procedure that changes the information or consent logic (minors, parents or guardians, incapacitated adults, healthy volunteers, emergency enrolment, pregnant participants, pregnant partners, optional genetics, future research and other substudy consent). See population_sets.",
+      "sources": [
+        "IE-PII-CHECKLIST#3",
+        "IE-ICF"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_en": "CTIS Part II section L (subject information and informed consent). Mandatory when participants are enrolled. English only; submit accessible, searchable Word files or original PDFs, never image-only scans. Blank and unsigned. One set per population in population_sets; follow the bound template and drafting_rules. Signature blocks only for the signers of that pathway."
+    },
+    {
+      "id": "IE-L2",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_<type>_IE_en",
+      "ctis_title_endpoint_related": "R2_Patient-facing document_<type>_IE_en",
+      "name_en": "Other participant-facing materials",
+      "requirement": "conditional",
+      "trigger": "recruitment.other_information_material or endpoint_documents.participant_facing",
+      "trigger_text": "Diaries, questionnaires, participant cards, electronic-interface text, videos, instructions, letters and other material shown to participants when it affects their understanding, decisions or trial burden.",
+      "per": "item",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "signature_note": "Normally unsigned unless the document itself records a participant choice.",
+      "content": "Final English versions. The Ireland checklist gives no CTIS slot for these items; the naming guide places endpoint-related patient-facing documents under R2 and other information material under L2 (DECISIONS.md D5).",
+      "sources": [
+        "IE-PII-CHECKLIST#4",
+        "IE-QC"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_en": "CTIS Part II section L (or R2 for endpoint-related questionnaires and diaries; DECISIONS.md D5). Conditional: one upload per item. Final English versions, normally unsigned. No national template. Keep consistent with the SIS/ICF and the protocol."
+    },
+    {
+      "id": "IE-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "name_en": "Principal investigator curriculum vitae",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+        "basis": "EU (EMA) CV template; an equivalent NREC-aligned format is also accepted",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "The CTR does not itself require a signature on each application document, and Ireland has not published a separate wet-ink signature rule for the CV.",
+      "content": "Current CV showing the principal investigator's education, training and relevant experience. Irish legislation requires an investigator to be a registered medical practitioner or registered dentist: professional registration and clinical-trial experience must be clear. Name, site and date fields completed.",
+      "sources": [
+        "IE-PII-CHECKLIST#5"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section M (suitability of the investigator). Mandatory, one per Irish site. English. EU CV template or an equivalent NREC-aligned format. The assistant fills only the trial fields (EU trial number); education, training, experience, registration, name, site and date come from the investigator. No signature rule published for Ireland."
+    },
+    {
+      "id": "IE-M2-DOI",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Principal investigator declaration of interest",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+        "basis": "EU declaration-of-interest template; an equivalent accepted format may be used",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "The EU template states that the CTR does not require the individual document to be signed.",
+      "content": "Trial-specific declaration identifying any economic, institutional or personal interest that could affect impartiality. Investigator, institution and date fields completed by the investigator.",
+      "sources": [
+        "IE-PII-CHECKLIST#6"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section M. Mandatory, one per Irish site. English. EU template or equivalent. The assistant fills only trial title and EU trial number; the interests, investigator, institution and date are completed by the investigator."
+    },
+    {
+      "id": "IE-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Irish Site Suitability Form (NREC-CT)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "national_template": "Current NREC-CT Site Suitability Template (version 2 at the guide's review date). Not supplied in CTIS_IE. The CTIS_IE file N1_Site suitability_IE_en.docx is the generic EU form (identical to the shared form), which Ireland does not accept on its own.",
+      "signature_at_submission": null,
+      "signature_rule": "Complete the issuer, position, organisation and date fields and follow the authorisation field in the current national form.",
+      "content": "One completed national form per Irish site describing the site, facilities, equipment, procedures, staffing, expertise, pharmacy arrangements and site-specific issues such as ionising radiation. Planned participant number consistent with CTIS and the Irish site list.",
+      "sources": [
+        "IE-PII-CHECKLIST#7",
+        "IE-HUB#two-irish-templates-need-special-attention"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'form' (Draft trial fields, then Check) once the official NREC-CT DOCX is supplied and converted into countries/IE/templates/part-ii with tools/content/curate.py and fields.py (DECISIONS.md D1).",
+      "reader": "regulatory",
+      "filled_by": "site (national NREC-CT form)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section N (suitability of the facilities). Mandatory, one per Irish site, on the current NREC-CT Site Suitability Form, not only the generic EU form. English. Complete the issuer, position, organisation and date fields and follow the national form's authorisation field. Do not draft it on the EU form. Planned participant numbers must agree with CTIS and the Irish site list; site forms are a frequent source of avoidable inconsistencies."
+    },
+    {
+      "id": "IE-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_IE",
+      "ctis_title_indemnity": "O2_Proof of coverage_<sponsor or site>",
+      "name_en": "Proof of insurance or indemnity",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "Issued by the insurer or indemnity provider; not signed by the participant. The guide sets no other signature rule.",
+      "content": "Valid insurance certificate or evidence of an appropriate indemnity arrangement, appropriate to the nature and extent of trial risk and providing compensation for damage resulting from participation, valid for the planned trial period (explain renewal where cover expires earlier). For trials involving delegated State authority healthcare enterprises and academic institutions, check the current State Claims Agency guidance and Clinical Trial Indemnity Form; commercial arrangements may use the standard Irish documents developed with the State Claims Agency, HSE and the Irish Pharmaceutical Healthcare Association.",
+      "sources": [
+        "IE-PII-CHECKLIST#8"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer or indemnity provider",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section O (proof of insurance cover or indemnification). Mandatory. English. Issued by the insurer or indemnity provider. Insurance certificate as O1; an indemnity arrangement (State Claims Agency) may be filed as O2 proof of coverage (DECISIONS.md D4). Injury and insurance wording in every participant document must match it; do not promise automatic compensation where the policy has conditions or exclusions."
+    },
+    {
+      "id": "IE-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_IE",
+      "name_en": "Compensation and reimbursement for participants",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "EU Compensation for Trial Participants template, version 5, June 2023 (or the accepted equivalent)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Mandatory disclosure even when no payment is offered. Whether participants, parents, carers or legal representatives receive travel, meals, accommodation, loss-of-earnings reimbursement, money or non-monetary items. For minors, incapacitated adults and breastfeeding women, incentives are prohibited apart from reimbursement of expenses or loss of earnings directly related to participation; any small token of appreciation needs ethics review.",
+      "sources": [
+        "IE-PII-CHECKLIST#9",
+        "IE-HV",
+        "IE-MINORS",
+        "IE-CAPACITY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section P (financial and other arrangements). Mandatory as a disclosure, also when nothing is paid (then say so). English; not signed. EU compensation template. Amounts, schedule, conditions and third-party reimbursement must match the SIS/ICF exactly. Minors, incapacitated adults and breastfeeding women: no incentives, only expenses and loss of earnings directly related to participation; any token of appreciation is flagged for ethics review. Healthy volunteers: separate reimbursement of expenses from payment for time and inconvenience; payment must not be contingent on completing every procedure. Other financial arrangements go in IE-P2."
+    },
+    {
+      "id": "IE-P2",
+      "ctis_section": "P",
+      "ctis_title": "P2_Financial arrangements_IE",
+      "name_en": "Other financial arrangements",
+      "requirement": "conditional",
+      "trigger": "financial.other_arrangements",
+      "trigger_text": "Guide: 'Mandatory where applicable': financing, payments to investigators and sites, and other agreements that could affect impartiality.",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "The guide sets no signature rule.",
+      "content": "Description of financing, payments to investigators and sites, and other agreements that could affect impartiality. A contract does not need to be uploaded unless the requested information is not otherwise provided or NREC-CT asks for it (study fact contract.financial_arrangements_in_site_contract). Financial statements, participant documents and the reimbursement process must agree.",
+      "sources": [
+        "IE-PII-CHECKLIST#10"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "No template; prepared by the sponsor (finance or legal). Whether the assistant drafts a free-form statement instead is DECISIONS.md D6.",
+      "reader": "regulatory",
+      "filled_by": "sponsor (finance or legal)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section P. Mandatory where applicable. English. No template. Describe financing, payments to investigators and sites and other agreements that could affect impartiality; upload a contract only if the information is not otherwise provided or NREC-CT asks for it."
+    },
+    {
+      "id": "IE-R1",
+      "ctis_section": "R",
+      "ctis_title": "R1_Compliance collection and use personal data_IE",
+      "ctis_title_dpia": "R1_Compliance collection and use personal data_DPIA_IE",
+      "name_en": "NREC Statement of Compliance regarding Data Protection, or a Data Protection Impact Assessment",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "national_template": "Current NREC Statement of Compliance regarding Data Protection (version 2 at the guide's review date) and the National Office's Guidance on the Statement of Compliance. Not supplied in CTIS_IE. The CTIS_IE file R1_Data protection_IE_en.docx is the generic EU GDPR statement (identical to the shared form), which does not replace the Irish requirement.",
+      "alternative": "A Data Protection Impact Assessment provided instead of the Statement of Compliance.",
+      "signature_at_submission": null,
+      "signature_rule": "Follow the current national template's completion and authorisation fields.",
+      "content": "Identify controllers, processors, recipients, lawful bases, the Article 9 condition, Irish Health Research Regulations safeguards, retention, transfers, security, participant rights and Data Protection Officer input. Must describe the same data-processing route as the participant documents, protocol and any HRCDC application or decision.",
+      "sources": [
+        "IE-PII-CHECKLIST#11",
+        "IE-HUB#two-irish-templates-need-special-attention",
+        "IE-QC"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'form' (Draft, then Check) once the NREC Statement of Compliance DOCX is supplied and converted into countries/IE/templates/part-ii; a DPIA stays a sponsor-supplied third_party_document (DECISIONS.md D2).",
+      "reader": "regulatory",
+      "filled_by": "sponsor with Data Protection Officer input (national NREC template) or sponsor DPIA",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section R (compliance with national requirements on data protection). Mandatory. English. Use the current NREC Statement of Compliance (version 2) or provide a DPIA instead; the generic EU GDPR statement (eu/templates/part-ii/R1_Data protection.docx) does not replace it and is not used for Ireland. Follow the national template's completion and authorisation fields. Retention, recipients, transfers and the lawful route must match the SIS/ICF, protocol and S1."
+    },
+    {
+      "id": "IE-S1",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_IE",
+      "name_en": "Compliance with rules for biological samples",
+      "requirement": "conditional",
+      "trigger": "samples.collected or samples.archive_used or samples.future_use_outside_protocol",
+      "trigger_text": "The trial collects, accesses, stores, transfers or plans future use of human biological samples.",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "EU biological-samples template (EudraLex Volume 10); an accepted NREC equivalent may be used instead",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "Not signed at submission unless the selected current form includes an authorisation field; the EU form has none.",
+      "content": "Sample type and volume, collection, legal responsibility, analysis, storage location and duration, coding, access, transfers, destruction and any future use. Optional future use must also be explained to participants and supported by valid consent.",
+      "national_fields": {
+        "f03": "Ireland: optional future use is limited to broad consent that is specific, explicit and informed within a described disease, health or research area (no blanket consent); future projects receive the ethics, scientific, data-protection and institutional review required at the time; recontact for new consent where the purpose cannot be described within a meaningful area; a legally designated representative cannot ordinarily give an incapacitated adult's explicit data consent and a Health Research Consent Declaration cannot authorise unknown future research; participants enrolled under 16 are asked for their own consent at 16 if identifiable material remains in use or storage. Wording consistent with the NREC data-protection statement or DPIA."
+      },
+      "sources": [
+        "IE-PII-CHECKLIST#12",
+        "IE-SECONDARY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section S. Conditional: only when human biological samples are collected, accessed, stored, transferred or planned for future use. English; not signed. Storage, retention, recipients, transfers and withdrawal wording must agree with the protocol, SIS/ICF, secondary-use consent and R1. Put the Irish future-use limits in Section 5 (national_fields f03)."
+    },
+    {
+      "id": "IE-FEE",
+      "ctis_section": "Forms (not Part II)",
+      "ctis_title": "(CTIS Forms section, proof of payment of fee; no CTCG Part II title)",
+      "name_en": "Ireland fee evidence: HPRA fee application form and proof of payment",
+      "requirement": "conditional",
+      "trigger": "sponsor.commercial",
+      "trigger_text": "Commercial sponsors pay the Irish clinical-trial fee to HPRA; non-commercial and academic trials are not charged.",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "content": "Completed HPRA fee application form and proof of payment, submitted in CTIS in the correct administrative area; not a Part II ethics document.",
+      "note": "Listed as item 13 on the Ireland Part II checklist page but placed outside Part II. Keep it out of the Part II sections K to S.",
+      "sources": [
+        "IE-PII-CHECKLIST#13"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor (HPRA fee form)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_en": "Not a Part II document: CTIS Forms section (proof of fee payment). Only for fee-paying (commercial) applications. HPRA fee application form completed by the sponsor plus proof of payment. Do not upload it in K to S."
+    }
+  ],
+  "outside_part_ii": [
+    {
+      "id": "IE-HRCDC",
+      "what": "Health Research Consent Declaration (HRCDC application or decision)",
+      "requirement": "conditional (data.hrcdc_declaration_needed)",
+      "where": "Not a CTIS upload named by the guides; must be obtained or clearly planned before the processing that needs it, and described consistently in R1, the protocol and the participant documents.",
+      "sources": [
+        "IE-CAPACITY",
+        "IE-EMERGENCY",
+        "IE-QC"
+      ]
+    }
+  ],
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_main_IE_en.json"
+        }
+      ],
+      "note": "Capable adult patients aged 18 or older. Participants aged 16-17 use the participants_16_17 set.",
+      "basis": "Supplied IE main template (NREC-aligned structure: Part 1 research project, Part 2 data protection, Part 3 costs, funding and approval, Part 4 further information, consent form)",
+      "sources": [
+        "IE-ICF"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_healthy_IE_en.json"
+        }
+      ],
+      "note": "Only when people are enrolled because they are healthy rather than because they have the condition under study (early-phase, first-in-human, bioavailability, bioequivalence, vaccine studies). No therapeutic benefit claimed; unknown risk prominent for first-in-human or novel-mechanism studies; payment itemised and separate from expense reimbursement. A separate screening information and consent is needed where screening is separate (study fact screening.separate_consent; no template, DECISIONS.md D13).",
+      "sources": [
+        "IE-HV"
+      ]
+    },
+    {
+      "id": "participants_16_17",
+      "trigger": "population.age_16_17",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_participants 16-17_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_age 16-17_IE_en.json"
+        }
+      ],
+      "note": "In Irish regulated trials a person aged 16 or over consents to participation and to processing of their data for the trial; parent or guardian consent is not required solely because of age. Healthy volunteers aged 16-17: DECISIONS.md D7.",
+      "sources": [
+        "IE-MINORS",
+        "IE-HUB#legal-competence-for-regulated-trials-begins-at-16"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors (participants under 16)",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_parents_IE_en.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 6-11_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_age 6-11_IE_en.json"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 12-15_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_age 12-15_IE_en.json"
+        }
+      ],
+      "note": "Minor = under 16 (S.I. No. 99/2022). Parent or guardian legally entitled to act consents, with authority verified and documented; the child's assent is sought where the child can form an opinion; an explicit refusal by a capable minor is respected. The law sets no assent bands: plan only the bands the protocol population needs and justify them. Re-consent at 16 (participants_16_17 template, or main/healthy if 18 or older). No incentives beyond expenses and loss of earnings.",
+      "sources": [
+        "IE-MINORS"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_IE_en.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_IE_en.json"
+        }
+      ],
+      "note": "Article 31 conditions and the Irish legally designated representative hierarchy. Participation consent and the data-processing route are separate: the representative cannot ordinarily give the participant's explicit data consent; an HRCDC declaration may be needed (outside_part_ii IE-HRCDC). Re-consent when capacity returns uses the main or healthy template.",
+      "sources": [
+        "IE-CAPACITY"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_emergency_IE_en.json"
+        },
+        {
+          "title": "L1_SIS and ICF_legal representative emergency_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_IE_en.json"
+        }
+      ],
+      "note": "All Article 35 conditions at the first intervention. Full post-enrolment participant SIS/ICF (emergency template), representative information and consent (legal-rep template adapted to the deferred-consent context, DECISIONS.md D10), participant re-consent for regained capacity. A short immediate information sheet where useful and feasible has no template (DECISIONS.md D11). The Irish data-processing route (Health Research Regulations deferred-consent route or HRCDC) is resolved before site opening.",
+      "sources": [
+        "IE-EMERGENCY",
+        "IE-CAPACITY"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_witness_IE_en.json"
+        }
+      ],
+      "note": "For a participant who can decide but cannot read the information or complete the normal signature; not for language barriers or extra explanation, never as a substitute for a representative. Fields for the reason for witness use and the witness signature are required. Witness for a legally designated representative who cannot read or write: DECISIONS.md D9.",
+      "sources": [
+        "IE-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_IE_en.json"
+        }
+      ],
+      "note": "Dedicated pregnancy follow-up information leaflet and consent form (published NREC decisions commonly request it); separate from the partner document.",
+      "sources": [
+        "IE-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_IE_en.json"
+        }
+      ],
+      "note": "The pregnant partner is a separate data subject, consents for herself before identifiable health information is collected, clinicians are contacted or records are accessed; the participant must not sign for her. Infant samples, genetic testing or follow-up beyond routine safety outcomes need a specific legal, ethical and consent analysis.",
+      "sources": [
+        "IE-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_IE_en",
+          "template": "templates/participant/L1_SIS and ICF_secondary_IE_en.json"
+        }
+      ],
+      "note": "Separate from main-trial consent; broad consent only within a described disease, health or research area; later ethics review of each project; signer pathway (participant, parent or guardian, legally designated representative) per population; re-consent at 16. For adults lacking capacity, project-specific legal advice and consent or declaration route before any secondary use.",
+      "sources": [
+        "IE-SECONDARY"
+      ]
+    }
+  ],
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents.",
+  "drafting_rules": [
+    "English for every Irish document and communication; write in plain Irish English for the intended participants (templates: National Adult Literacy Agency principles, about a 12-year-old reading level where feasible). Explain technical terms, abbreviations, study arms, randomisation, placebo, genetic analyses and uncommon procedures.",
+    "Accessible, searchable Word files or original PDFs only; no image-only scans. Check navigation, selectable text, headings, lists and reading order.",
+    "Put the information needed for consent in the participant document itself; never refer participants to the protocol, IB or SmPC to discover material risks.",
+    "Cover the SIS core content from the Ireland consent guide: purpose and phase, why invited, treatment, comparator, placebo and chance of each arm, procedures and visits, research-specific versus standard care, risks and burdens, expected benefit (clear statement where none is expected), alternatives, pregnancy and contraception, samples, optional elements, data protection, reimbursement, insurance, injury and complaints, voluntariness and withdrawal, what happens to data and samples collected before withdrawal, contacts including the Data Protection Officer, public trial information and results.",
+    "Separate agreement to the main trial from optional elements; describe each optional activity before its consent statement; one clear choice per activity; declining must not block participation unless the activity is genuinely necessary (then explain why and do not present it as optional). No pre-ticked boxes or bundled future-use permission.",
+    "Distinguish ethical consent to take part from the data-protection information and safeguards: explicit consent under the Health Research Regulations is a safeguard even where consent is not the GDPR legal basis. Explicit consent is the default for capable participants; a legally designated representative is not asked for explicit data-processing consent.",
+    "Data protection: name controllers and Irish and international recipients, coding, transfers and safeguards; pseudonymised or coded data are personal data, never 'anonymous'; realistic retention periods with their reason, consistent with R1, the protocol and S1; explain rights accurately without promising complete deletion where legal retention duties apply.",
+    "Samples: type, amount, collection, purpose, storage location, retention, coding, recipients and destruction; return of results and incidental findings; commercial use. Broad consent only within a described disease, health or research area.",
+    "Consent taker: the investigator or a registered medical practitioner, registered dentist or registered nurse designated by the investigator. Signature blocks for the participant or representative and the person taking consent, with date (and time where needed); submitted documents are blank and unsigned.",
+    "Risks expressed consistently, with words and numbers where useful. The Ireland guides set no fixed frequency categories (DECISIONS.md D17).",
+    "Payment wording never suggests payment is a benefit of treatment; instructions never pressure the participant or imply loss of ordinary care on refusal; respectful, person-centred language.",
+    "Healthy volunteers: no therapeutic benefit claimed; unknown risk not minimised and prominent for first-in-human or novel-mechanism studies; screening failures, restrictions, reproductive precautions and repeat-volunteer checks covered.",
+    "Participant templates (JSON): italic text, [square-bracket] notes, 'Drafting note' paragraphs, SAMPLE TEXT labels and '...........' gaps are drafting instructions or gaps; follow them and remove them. Part II forms (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels. Nothing of either may remain in a final document."
+  ],
+  "sources": {
+    "IE-HUB": "https://trialagents.com/ctis/ireland/en",
+    "IE-PII-CHECKLIST": "https://trialagents.com/ctis/ireland/en/part-ii-document-checklist",
+    "IE-ICF": "https://trialagents.com/ctis/ireland/en/patient-information-consent-requirements",
+    "IE-QC": "https://trialagents.com/ctis/ireland/en/patient-facing-document-qc-checklist",
+    "IE-HV": "https://trialagents.com/ctis/ireland/en/healthy-volunteer-consent-requirements",
+    "IE-MINORS": "https://trialagents.com/ctis/ireland/en/minor-consent-assent-requirements",
+    "IE-CAPACITY": "https://trialagents.com/ctis/ireland/en/limited-capacity-legal-representative-consent-requirements",
+    "IE-EMERGENCY": "https://trialagents.com/ctis/ireland/en/emergency-enrollment-consent-requirements",
+    "IE-WITNESS": "https://trialagents.com/ctis/ireland/en/impartial-witness-consent-requirements",
+    "IE-PREGNANCY": "https://trialagents.com/ctis/ireland/en/pregnancy-follow-up-requirements",
+    "IE-SECONDARY": "https://trialagents.com/ctis/ireland/en/secondary-use-consent-requirements"
+  },
+  "sources_note": "All eleven Ireland guide pages reviewed 23 September 2026 (read in full on 27 November 2026). Anchors #1-#13 refer to the numbered items of the Part II checklist page. The guides link two external official sources (HPRA guide AUT-G0170-5 PDF; NREC Guidance on Age of Consent) that are outside /ctis/ireland/en/ and were not read; their content is used only as summarised in the guides. Templates: CTIS_IE folder (Part II DOCX *_IE_en.docx, Variable Templates_IE_de.xlsx, IE_13 participant_facing_templates_10082026.txt).",
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "ireland_note": "Use the CTCG pattern. The Ireland guide uses descriptive names ('Irish Site Suitability Form', 'NREC Statement of Compliance or Data Protection Impact Assessment', 'Proof of insurance or indemnity'); the CTCG titles in documents[].ctis_title are used instead. Keep the language code (en) on participant-facing documents; English is the only package language."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued or prepared by someone else (insurer, site, sponsor finance, legal or data protection, HPRA fee form), or a national form not yet supplied as a template. Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "participant_templates": [
+    {
+      "id": "IE-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_IE_en.json",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_local": "Study Participant Information Leaflet and Consent Form – Adult Patients",
+      "doc_type": "adult_patients",
+      "role": "main information and consent (capable adult patients aged 18 or older); also re-consent after regained capacity, prescreening, optional substudies or extension arms; re-consent of participants who are 18 or older",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms."
+    },
+    {
+      "id": "IE-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_IE_en.json",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_local": "Study Participant Information Leaflet and Consent Form – Healthy Adults",
+      "doc_type": "healthy_adults",
+      "role": "main information and consent (capable healthy adults aged 18 or older)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies."
+    },
+    {
+      "id": "IE-PT-age-16-17",
+      "file": "templates/participant/L1_SIS and ICF_age 16-17_IE_en.json",
+      "name_en": "Subject Information and Consent Form - Adolescents",
+      "name_local": "Study Participant Information and Consent Form – Adolescents aged 16–17",
+      "doc_type": "adolescents",
+      "role": "own information and consent for capable participants aged 16-17 (not minors in Irish regulated trials); also re-consent at 16",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years)."
+    },
+    {
+      "id": "IE-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_IE_en.json",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_local": "Trial Information and Consent Form – Parent / Guardian",
+      "doc_type": "parents",
+      "role": "information and consent for the parent or guardian of a participant under 16",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years)."
+    },
+    {
+      "id": "IE-PT-age-6-11",
+      "file": "templates/participant/L1_SIS and ICF_age 6-11_IE_en.json",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_local": "Study Information and Assent Form – Children aged 6–11",
+      "doc_type": "children",
+      "role": "age-adapted information and assent for children 6-11",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years)."
+    },
+    {
+      "id": "IE-PT-age-12-15",
+      "file": "templates/participant/L1_SIS and ICF_age 12-15_IE_en.json",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_local": "Study Information and Assent Form – Adolescents aged 12–15",
+      "doc_type": "adolescents",
+      "role": "age-adapted information and assent for adolescents 12-15",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years)."
+    },
+    {
+      "id": "IE-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_IE_en.json",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_local": "Trial Information and Consent Form – Legally Designated Representative",
+      "doc_type": "legal_rep",
+      "role": "information and consent for the Irish legally designated representative of an adult lacking capacity",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "IE-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_IE_en.json",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_local": "Study Participant Information and Assent Form – Limited Capacity",
+      "doc_type": "limited_capacity",
+      "role": "adapted information and assent or willingness record for the adult lacking capacity",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent."
+    },
+    {
+      "id": "IE-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_IE_en.json",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_local": "Emergency Enrolment Information and Deferred Consent Form",
+      "doc_type": "emergency_enrollment",
+      "role": "information and deferred consent after emergency enrolment",
+      "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window."
+    },
+    {
+      "id": "IE-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_IE_en.json",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_local": "Study Participant Information and Consent Form – Impartial Witness",
+      "doc_type": "impartial_witness",
+      "role": "consent with impartial witness for a capable participant who cannot read, write or sign",
+      "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process."
+    },
+    {
+      "id": "IE-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_IE_en.json",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_local": "Pregnancy Follow-up Information and Consent Form – Pregnant Participant",
+      "doc_type": "pregnant_participants",
+      "role": "pregnancy follow-up of a pregnant participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant."
+    },
+    {
+      "id": "IE-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_IE_en.json",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_local": "Pregnancy Follow-up Information and Consent Form – Pregnant Partner",
+      "doc_type": "pregnant_partners",
+      "role": "information and consent for the pregnant partner of a participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant."
+    },
+    {
+      "id": "IE-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_IE_en.json",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_local": "Secondary and Future Use of Data or Biosamples – Information and Consent Form",
+      "doc_type": "secondary_use",
+      "role": "optional secondary or future use of data or samples",
+      "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial."
+    }
+  ],
+  "population_rules": {
+    "authority": "Irish rules as recorded in the TrialAgents Ireland guides (reviewed 23 September 2026): European Union (Clinical Trials on Medicinal Products for Human Use) Regulations 2022, S.I. No. 99/2022; Data Protection Act 2018 (Section 36(2)) (Health Research) Regulations 2018, S.I. No. 314/2018 as amended by S.I. No. 18/2021; National Office for Research Ethics Committees guidance (Part II National Requirements; Age of Consent for Regulated Research; Legally Designated Representatives; Use of Biological Samples and Associated Data; all reviewed 31 August 2026); HSE National Policy for Consent in Health and Social Care Research v1.1 (2023); Regulation (EU) No 536/2014 Articles 28 to 35.",
+    "participants_16_17": {
+      "always": [
+        "IE-PT-age-16-17"
+      ],
+      "note": "Not minors in Irish regulated trials: own consent to participation and associated data processing; family or support persons may be involved if the young person wishes."
+    },
+    "minors": {
+      "definition": "A minor is a person under 16 in Irish regulated clinical trials.",
+      "age_bands": [
+        {
+          "band": "6-11",
+          "template": "IE-PT-age-6-11",
+          "reader": "child"
+        },
+        {
+          "band": "12-15",
+          "template": "IE-PT-age-12-15",
+          "reader": "adolescent"
+        }
+      ],
+      "bands_note": "The legal rules do not prescribe fixed assent bands. 6-11 and 12-15 are the supplied templates' drafting bands; choose the bands the protocol population and developmental needs require and justify them (DECISIONS.md D8).",
+      "always": [
+        "IE-PT-parents"
+      ],
+      "reconsent_at_16": "IE-PT-age-16-17 when the participant reaches 16 while trial activities, follow-up or identifiable data processing continue (IE-PT-main or IE-PT-healthy if the participant is 18 or older at that time); obtain the participant's own consent without undue delay; if they do not consent, stop optional future activities and follow the approved withdrawal and safety process.",
+      "under_6": "No template. Inform the child according to age and maturity and seek assent where the child can form an opinion; an explicit refusal is respected (DECISIONS.md D8).",
+      "representatives": "Consent from the person legally entitled to act for the child, with authority verified and documented (not assumed from attendance or an informal caregiving role). The parents template has an optional second parent/guardian block, used only if the specific guardianship or site situation requires it.",
+      "conflicts": [
+        "IE-PT-parents description says 'younger than 18 years'; in Ireland a minor is under 16: the parents template is used only for participants under 16.",
+        "IE-PT-age-12-15 and IE-PT-age-16-17 descriptions say 'aged 12 - 17 years'; their content instructions and the Irish rule give 12-15 (assent) and 16-17 (own consent). The authority and the content instructions are followed."
+      ]
+    },
+    "adults_without_capacity": {
+      "always": [
+        "IE-PT-legal-rep",
+        "IE-PT-limited-capacity"
+      ],
+      "regained_capacity": "IE-PT-main or IE-PT-healthy: the participant's own consent without undue delay, explaining activities completed and data collected.",
+      "representative_hierarchy": "First a person who, because of a family or other personal relationship, is suitable and available and acts on their best interpretation of the participant's will and preferences; if none is available, the medical practitioner primarily responsible for the participant's treatment who is not involved in conducting the trial.",
+      "data_protection": "The representative cannot ordinarily give the participant's explicit consent to health-data processing; determine and document the lawful route before submission (HRCDC declaration unless a specific exemption applies). Do not ask the representative for explicit data-processing consent.",
+      "note": "Capacity is supported, assessed and reassessed (process in K1, not a participant document). Compensation includes no incentive."
+    },
+    "emergency": {
+      "always": [
+        "IE-PT-emergency"
+      ],
+      "representative_first": [
+        "IE-PT-legal-rep"
+      ],
+      "note": "IE-PT-legal-rep adapted to the deferred-consent context when a legally designated representative can decide before the participant (DECISIONS.md D10); the participant's own consent when capacity returns (IE-PT-emergency participant section or IE-PT-main)."
+    },
+    "impartial_witness": {
+      "always": [
+        "IE-PT-witness"
+      ],
+      "note": "Template covers a capable participant who cannot read, write or sign. The Irish guide also allows a witness where the legally designated representative cannot read or write (DECISIONS.md D9)."
+    },
+    "pregnancy": {
+      "participant": [
+        "IE-PT-pregnancy"
+      ],
+      "partner": [
+        "IE-PT-pregnant-partner"
+      ],
+      "note": "Distinct documents for the two pathways."
+    },
+    "secondary_use": {
+      "always": [
+        "IE-PT-secondary"
+      ]
+    },
+    "shareable_templates": [
+      "IE-PT-pregnant-partner",
+      "IE-PT-secondary"
+    ],
+    "shareable_note": "One shared document for several populations only when nothing in it differs; the secondary-use document needs a separate version for each signer pathway (participant, parent or guardian, legally designated representative).",
+    "separate_document_rules": [
+      "Separate or clearly distinct versions for each population and optional procedure that changes the information or consent logic: minors, parents or guardians, incapacitated adults, healthy volunteers, emergency enrolment, pregnant participants, pregnant partners, optional genetics, future research and other substudy consent (Part II checklist item 3).",
+      "Optional future use of samples or data: a distinct optional information and consent pathway (IE-PT-secondary), never bundled with trial participation under one signature.",
+      "Pregnancy follow-up: separate documents for a pregnant participant and for a pregnant partner; the partner consents for herself.",
+      "Witness, guardian, legally designated representative and interpreter blocks appear only in the versions that use them."
+    ]
+  },
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/IE/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/IE/checklists/participant-documents.json",
+    "check": "countries/IE/checklists/forms-and-supplied.json",
+    "package": "countries/IE/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/IE/DECISIONS.md",
+  "answer_languages": [
+    "en"
+  ],
+  "answer_languages_note": "English is the only package language: forms, administrative documents and participant documents. No Irish (ga) package."
+}

@@ -1,0 +1,203 @@
+{
+  "id": "IE-PACKAGE",
+  "name": "Ireland: Part II package and CTIS upload check",
+  "applies_to": "the Ireland package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/ireland/en/part-ii-document-checklist (items 1-13 and 'Submission checks that prevent avoidable RFIs')",
+    "https://trialagents.com/ctis/ireland/en/patient-facing-document-qc-checklist (section 9, final cross-document review)",
+    "content/playbook/naming.md and content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "K1 recruitment and informed consent procedure present, on EU template version 2.0, with a section for every population pathway in the plan."
+        },
+        {
+          "id": "P1.02",
+          "check": "K2: final English version of every recruitment item.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.03",
+          "check": "L1: one blank English SIS/ICF set per population in population_sets whose trigger is true, and a separate or clearly distinct version for each optional procedure that changes the information or consent logic; every population or optional procedure has the correct information and consent document."
+        },
+        {
+          "id": "P1.04",
+          "check": "L2/R2: other participant-facing materials (diaries, questionnaires, cards, interface text, videos, instructions, letters) present as final English versions.",
+          "applies_when": "recruitment.other_information_material or endpoint_documents.participant_facing"
+        },
+        {
+          "id": "P1.05",
+          "check": "For every Irish site: M1 CV, M2 declaration of interest and N1 on the current NREC-CT Site Suitability Form."
+        },
+        {
+          "id": "P1.06",
+          "check": "O1 proof of insurance or indemnity present and valid for the planned trial period."
+        },
+        {
+          "id": "P1.07",
+          "check": "P1 compensation disclosure present (also when nothing is paid)."
+        },
+        {
+          "id": "P1.08",
+          "check": "P2 other financial arrangements present.",
+          "applies_when": "financial.other_arrangements"
+        },
+        {
+          "id": "P1.09",
+          "check": "R1: current NREC Statement of Compliance regarding Data Protection or a DPIA (not the generic EU GDPR statement)."
+        },
+        {
+          "id": "P1.10",
+          "check": "S1 biological-samples form present.",
+          "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol"
+        },
+        {
+          "id": "P1.11",
+          "check": "Fee evidence (HPRA fee application form and proof of payment) in the CTIS Forms section, not in Part II.",
+          "applies_when": "sponsor.commercial"
+        },
+        {
+          "id": "P1.12",
+          "check": "HRCDC declaration obtained or clearly planned before the processing that needs it.",
+          "applies_when": "data.hrcdc_declaration_needed"
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every Irish document and communication is in English."
+        },
+        {
+          "id": "P2.02",
+          "check": "No participant signatures in uploaded K and L documents; K1, M1, M2, P1 and S1 not signed at submission; N1 and R1 follow the authorisation fields of the current national forms."
+        },
+        {
+          "id": "P2.03",
+          "check": "Accessible, searchable Word files or original PDFs; no scanned image-only documents."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Irish site names, investigator names and participant numbers match across CTIS and every form (N1, M1, M2, K1)."
+        },
+        {
+          "id": "P3.02",
+          "check": "Insurance dates are valid for the planned trial period, with renewal explained where cover expires earlier; injury wording in participant documents matches O1."
+        },
+        {
+          "id": "P3.03",
+          "check": "Compensation, travel and third-party reimbursement details match across P1, P2 and the participant documents."
+        },
+        {
+          "id": "P3.04",
+          "check": "Sample storage, data retention, recipients, transfers and withdrawal wording are consistent across the protocol, SIS and ICF, R1 data statement and S1."
+        },
+        {
+          "id": "P3.05",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.06",
+          "check": "Each discrepancy found in the final cross-document review is recorded with its owner and resolution, and the uploaded CTIS files are reviewed rather than only the local folder."
+        },
+        {
+          "id": "P3.07",
+          "check": "Documents adapted from the reference package contain all Irish national additions (minor under 16 and re-consent at 16, legally designated representative hierarchy, Health Research Regulations safeguards, NREC national forms).",
+          "applies_when": "Ireland is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B-S section prefix and CTIS placeholder for each document; fee evidence in the Forms section."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version and date entered in CTIS metadata, not in the title."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.07",
+          "check": "Submitted through CTIS; documents and RFI responses not sent directly to HPRA or the National Office unless an authority asks."
+        },
+        {
+          "id": "P4.08",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Ireland receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules; ACT EU guidance v2.2, 30 April 2026)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material; signatures never disclosed."
+        },
+        {
+          "id": "P5.03",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

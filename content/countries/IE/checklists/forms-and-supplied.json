@@ -1,0 +1,239 @@
+{
+  "id": "IE-CHECK",
+  "name": "Ireland: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/ireland/en/part-ii-document-checklist (reviewed 23 September 2026), items 1 and 5-13 and 'Submission checks that prevent avoidable RFIs'",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains (yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels)."
+    },
+    {
+      "id": "X.04",
+      "check": "In English; signature only where the Irish rule for that document requires it (none at submission for K1, M1, M2, P1, S1; N1 and R1 follow the national form's authorisation fields)."
+    },
+    {
+      "id": "X.05",
+      "check": "CTIS title follows the naming guide and requirements.json; accessible, searchable Word file or original PDF, not an image-only scan."
+    }
+  ],
+  "by_document": {
+    "IE-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the EU Recruitment and Informed Consent Procedure template version 2.0 for a new Part II submission from 1 September 2026 (initial, additional Member State, Article 11 completion)."
+      },
+      {
+        "id": "K1.02",
+        "check": "Identification of potential participants, first act of recruitment, initial approach, access to medical records or patient lists, privacy protection and who informs and takes consent are described."
+      },
+      {
+        "id": "K1.03",
+        "check": "Consent takers are the investigator or a registered medical practitioner, dentist or nurse designated by the investigator, with role, training, setting, timing and understanding checks."
+      },
+      {
+        "id": "K1.04",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed and each 'no' section gives the not-applicable answer."
+      },
+      {
+        "id": "K1.05",
+        "check": "Incapacitated adults: Irish legally designated representative hierarchy, participant involvement and refusal, capacity assessment and reassessment, separate data-processing route (HRCDC where needed), re-consent when capacity returns.",
+        "applies_when": "population.adults_without_capacity"
+      },
+      {
+        "id": "K1.06",
+        "check": "Minors: under 16, verified guardian authority, assent, refusal respected, re-consent at 16.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.07",
+        "check": "Impartial witness: reason, selection, independence, attendance for the full discussion, attestation and witness signature field.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.08",
+        "check": "Emergency: every Article 35 condition, therapeutic window, attempts to locate a representative, consent follow-up, Irish data-processing route.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.09",
+        "check": "Each recruitment item (K2) is described with how it is used and how responses from people who are not eligible are handled.",
+        "applies_when": "recruitment.material_used"
+      }
+    ],
+    "IE-M1": [
+      {
+        "id": "M1.01",
+        "check": "One current CV per principal investigator and Irish site, in the EU or an equivalent NREC-aligned format."
+      },
+      {
+        "id": "M1.02",
+        "check": "Shows education, training and relevant experience, professional registration as a registered medical practitioner or registered dentist, and clinical-trial experience."
+      },
+      {
+        "id": "M1.03",
+        "check": "Name, site and date fields completed by the investigator; investigator name and site match CTIS and every form."
+      }
+    ],
+    "IE-M2-DOI": [
+      {
+        "id": "M2D.01",
+        "check": "One trial-specific declaration per principal investigator and Irish site identifying any economic, institutional or personal interest that could affect impartiality."
+      },
+      {
+        "id": "M2D.02",
+        "check": "Investigator, institution and date fields completed by the investigator; not signed (not required)."
+      }
+    ],
+    "IE-N1": [
+      {
+        "id": "N1.01",
+        "check": "The current NREC-CT Site Suitability Form is used for every Irish site, not only the generic EU form."
+      },
+      {
+        "id": "N1.02",
+        "check": "Describes the site, facilities, equipment, procedures, staffing, expertise, pharmacy arrangements and site-specific issues."
+      },
+      {
+        "id": "N1.03",
+        "check": "Research exposure to ionising radiation is addressed in the site form.",
+        "applies_when": "radiation.requires_authorisation_or_notification"
+      },
+      {
+        "id": "N1.04",
+        "check": "Issuer, position, organisation and date fields completed and the national form's authorisation field followed."
+      },
+      {
+        "id": "N1.05",
+        "check": "Planned participant number matches CTIS and the Irish site list; site and investigator names match CTIS and every form."
+      }
+    ],
+    "IE-O1": [
+      {
+        "id": "O1.01",
+        "check": "Valid insurance certificate or evidence of an appropriate indemnity arrangement, appropriate to the nature and extent of trial risk and providing compensation for damage resulting from participation."
+      },
+      {
+        "id": "O1.02",
+        "check": "Cover dates valid for the planned trial period; renewal explained where cover expires earlier."
+      },
+      {
+        "id": "O1.03",
+        "check": "State Claims Agency guidance and the Clinical Trial Indemnity Form checked for delegated State authority healthcare enterprises and academic institutions.",
+        "applies_when": "insurance.state_indemnity"
+      },
+      {
+        "id": "O1.04",
+        "check": "Injury and insurance wording in the participant documents matches the evidence."
+      }
+    ],
+    "IE-P1": [
+      {
+        "id": "P1.01",
+        "check": "Present as a disclosure even when no payment is offered (states so)."
+      },
+      {
+        "id": "P1.02",
+        "check": "States whether participants, parents, carers or legal representatives receive travel, meals, accommodation, loss-of-earnings reimbursement, money or non-monetary items."
+      },
+      {
+        "id": "P1.03",
+        "check": "No incentives for minors, incapacitated adults or breastfeeding women beyond expenses or loss of earnings directly related to participation; any token of appreciation flagged for ethics review.",
+        "applies_when": "population.minors or population.adults_without_capacity"
+      },
+      {
+        "id": "P1.04",
+        "check": "Healthy volunteers: reimbursement of expenses separated from payment for time and inconvenience; amount, schedule, tax position if known and payment after early withdrawal stated; not contingent on completing every procedure.",
+        "applies_when": "population.healthy_volunteers"
+      },
+      {
+        "id": "P1.05",
+        "check": "Compensation, travel and third-party reimbursement details match every participant document."
+      }
+    ],
+    "IE-P2": [
+      {
+        "id": "P2.01",
+        "check": "Describes financing, payments to investigators and sites, and other agreements that could affect impartiality."
+      },
+      {
+        "id": "P2.02",
+        "check": "A contract is uploaded only if the requested information is not otherwise provided or NREC-CT asks for it.",
+        "applies_when": "contract.financial_arrangements_in_site_contract"
+      },
+      {
+        "id": "P2.03",
+        "check": "Financial statements, participant documents and the reimbursement process agree."
+      }
+    ],
+    "IE-R1": [
+      {
+        "id": "R1.01",
+        "check": "The current NREC Statement of Compliance regarding Data Protection (version 2 at the review date) is used, or a DPIA is provided instead; the generic EU GDPR statement is not used as a substitute."
+      },
+      {
+        "id": "R1.02",
+        "check": "Identifies controllers, processors, recipients, lawful bases, the Article 9 condition, Irish Health Research Regulations safeguards, retention, transfers, security, participant rights and Data Protection Officer input."
+      },
+      {
+        "id": "R1.03",
+        "check": "The national template's completion and authorisation fields are followed."
+      },
+      {
+        "id": "R1.04",
+        "check": "Retention, recipients, transfers, withdrawal and the data-processing route agree with the SIS/ICF, protocol, S1 and any HRCDC application or decision."
+      }
+    ],
+    "IE-S1": [
+      {
+        "id": "S1.01",
+        "check": "EU biological-samples template or accepted NREC equivalent, present when samples are collected, accessed, stored, transferred or planned for future use."
+      },
+      {
+        "id": "S1.02",
+        "check": "Sample type and volume, collection, legal responsibility, analysis, storage location and duration, coding, access, transfers, destruction and future use are described."
+      },
+      {
+        "id": "S1.03",
+        "check": "Future use: limited to a described disease, health or research area, later ethics review, recontact where the purpose cannot be described; consistent with the separate secondary-use consent (Section 5, f03).",
+        "applies_when": "samples.future_use_outside_protocol"
+      },
+      {
+        "id": "S1.04",
+        "check": "Storage, retention, recipients, transfers and withdrawal wording agree with the protocol, SIS/ICF and R1."
+      }
+    ],
+    "IE-FEE": [
+      {
+        "id": "FEE.01",
+        "check": "Commercial sponsor: completed HPRA fee application form and proof of payment are in the CTIS Forms section (proof of fee payment), not in Part II K to S.",
+        "applies_when": "sponsor.commercial"
+      },
+      {
+        "id": "FEE.02",
+        "check": "Non-commercial or academic trial: no fee evidence is planned (not charged).",
+        "applies_when": "not sponsor.commercial"
+      }
+    ]
+  }
+}
