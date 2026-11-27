@@ -1,0 +1,219 @@
+{
+  "id": "EE-PACKAGE",
+  "name": "Estonia: Part II package and CTIS upload check",
+  "applies_to": "the Estonia package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/estonia/en/part-ii-document-checklist",
+    "https://trialagents.com/ctis/estonia/en/patient-facing-document-qc-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "K1 recruitment and informed-consent procedure present, on the EC template v2.0, with the Estonian Member State fields and a section for every population pathway in the plan."
+        },
+        {
+          "id": "P1.02",
+          "check": "K2 recruitment material present for every advertisement, letter, poster or digital item used in Estonia, in every language used.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.03",
+          "check": "One L1 information and consent set per population in population_sets whose trigger is true; every enrolled age group and decision-maker has a document pathway."
+        },
+        {
+          "id": "P1.04",
+          "check": "Estonian patient-facing materials placed in Part II section R (R2) for a multinational trial, or on the EU Q&A route for a mononational trial.",
+          "applies_when": "endpoint_documents.participant_facing"
+        },
+        {
+          "id": "P1.05",
+          "check": "For every Estonian site: M1 English CV, M2 declaration of interests and N1 site suitability form."
+        },
+        {
+          "id": "P1.06",
+          "check": "O1 insurance certificate present.",
+          "applies_when": "not insurance.academic_exemption_confirmed"
+        },
+        {
+          "id": "P1.07",
+          "check": "P1 compensation form and P2 budget information with the Health Insurance Fund statement present."
+        },
+        {
+          "id": "P1.08",
+          "check": "Fee and invoice information provided (invoice recipient and decision recipient)."
+        },
+        {
+          "id": "P1.09",
+          "check": "GDPR statement completed in the CTIS Form section."
+        },
+        {
+          "id": "P1.10",
+          "check": "S1 biological-samples form present.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "P1.11",
+          "check": "The document inventory is reconciled with the Estonia Part II document checklist."
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every participant- or representative-facing document is in Estonian and complete."
+        },
+        {
+          "id": "P2.02",
+          "check": "Every other participant language intended for use has a complete, matching version with the same version and date.",
+          "applies_when": "population.non_estonian_speakers"
+        },
+        {
+          "id": "P2.03",
+          "check": "M1 in English; other administrative documents in the language chosen under DECISIONS.md D1."
+        },
+        {
+          "id": "P2.04",
+          "check": "Blank consent forms and recruitment materials contain no participant signatures."
+        },
+        {
+          "id": "P2.05",
+          "check": "M1 dated and signed by the Principal Investigator and no more than six months old; N1 signed by a person legally authorised by the study centre (PDF uploaded, .asice original retained where used)."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Each Estonian site appears in CTIS, its M1/M2 and its N1 under the same legal name."
+        },
+        {
+          "id": "P3.02",
+          "check": "Protocol number, EU CT number, sponsor and document versions are consistent across all documents."
+        },
+        {
+          "id": "P3.03",
+          "check": "Reimbursement and compensation identical in P1 and the participant documents; none in recruitment material."
+        },
+        {
+          "id": "P3.04",
+          "check": "Insurance wording in the participant documents matches O1."
+        },
+        {
+          "id": "P3.05",
+          "check": "Data flows, recipients, transfers and retention identical in the GDPR statement, participant documents and protocol."
+        },
+        {
+          "id": "P3.06",
+          "check": "Sample types, coding, transport, storage, retention in years and destruction identical in S1, the protocol and the participant documents; optional use separated from main-trial consent."
+        },
+        {
+          "id": "P3.07",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.08",
+          "check": "Documents adapted from the reference package contain the Estonian national additions and no leftovers from the reference country.",
+          "applies_when": "Estonia is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B–S section prefix and CTIS placeholder for each document; GDPR statement in the Form section; Estonian patient-facing materials per the Ravimiamet placement rule."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>."
+        },
+        {
+          "id": "P4.03",
+          "check": "Participant-document names carry a clear population and language label so assessors can match language versions."
+        },
+        {
+          "id": "P4.04",
+          "check": "Version and date entered in CTIS metadata, not in the title."
+        },
+        {
+          "id": "P4.05",
+          "check": "Personal names only where disclosure permits (Principal Investigator in M1/M2)."
+        },
+        {
+          "id": "P4.06",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."
+        },
+        {
+          "id": "P4.07",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.08",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Estonia receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules applicable from 18 June 2024)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material."
+        },
+        {
+          "id": "P5.03",
+          "check": "Public and assessment versions differ only by the intended redactions; each in the correct CTIS slot."
+        },
+        {
+          "id": "P5.04",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "No tracked changes or drafting comments in the clean submission versions; every final PDF opened and checked."
+        },
+        {
+          "id": "P6.03",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

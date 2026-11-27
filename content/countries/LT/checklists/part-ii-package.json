@@ -1,0 +1,211 @@
+{
+  "id": "LT-PACKAGE",
+  "name": "Lithuania: Part II package and CTIS upload check",
+  "applies_to": "the Lithuania package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/lithuania/en/part-ii-document-checklist",
+    "https://trialagents.com/ctis/lithuania/en/patient-facing-document-qc-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json (Lithuanian national Part II list)",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "K1 recruitment and informed consent procedure present, on EU template v2.0 or an equivalent format, with a section for every population pathway in the plan."
+        },
+        {
+          "id": "P1.02",
+          "check": "K2 recruitment material present for every recruitment item, with the supporting explanation in K1.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.03",
+          "check": "One L1 information and consent set per population and decision-maker in population_sets whose trigger is true."
+        },
+        {
+          "id": "P1.04",
+          "check": "L2 other information material present only where it is part of the pre-participation information required by Annex I.",
+          "applies_when": "recruitment.other_information_material"
+        },
+        {
+          "id": "P1.05",
+          "check": "List of Lithuanian sites with principal investigator, position and expected number of participants."
+        },
+        {
+          "id": "P1.06",
+          "check": "Investigator qualification description with the sponsor compliance statement and the E6(R3)/GCP training evidence."
+        },
+        {
+          "id": "P1.07",
+          "check": "For every Lithuanian site: M1 current CV, M2 signed declaration of interest, N1 signed site suitability statement."
+        },
+        {
+          "id": "P1.08",
+          "check": "O1 civil liability insurance certificate or policy, or other proof of indemnification, matching the Lithuanian trial."
+        },
+        {
+          "id": "P1.09",
+          "check": "P1 participant reimbursement description.",
+          "applies_when": "compensation.reimbursement_or_payment_applies"
+        },
+        {
+          "id": "P1.10",
+          "check": "P2 trial financing and financial arrangements."
+        },
+        {
+          "id": "P1.11",
+          "check": "Proof of payment of the Lithuanian state fee."
+        },
+        {
+          "id": "P1.12",
+          "check": "GDPR compliance statement."
+        },
+        {
+          "id": "P1.13",
+          "check": "S1 biological-sample compliance information.",
+          "applies_when": "samples.collected or samples.archive_used"
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every document of the national list is in Lithuanian."
+        },
+        {
+          "id": "P2.02",
+          "check": "Signed at submission: each principal investigator's declaration of interest and each site suitability statement (head of institution or delegate)."
+        },
+        {
+          "id": "P2.03",
+          "check": "Other institution or sponsor forms signed only where the applicable form or legal requirement calls for it."
+        },
+        {
+          "id": "P2.04",
+          "check": "No participant-signed consent form in the dossier; participant documents are blank versions with signature blocks."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Reimbursement and compensation identical in P1, P2 and every participant document."
+        },
+        {
+          "id": "P3.02",
+          "check": "Insurance or indemnification described in every participant document matches O1."
+        },
+        {
+          "id": "P3.03",
+          "check": "Sample types, storage, transfers, retention and future use identical in S1, the protocol, the participant information and any future-use consent.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "P3.04",
+          "check": "Data flows, recipients, transfers and retention identical in the GDPR statement, the participant documents and the protocol."
+        },
+        {
+          "id": "P3.05",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.06",
+          "check": "Sites and principal investigators identical in the site list, CTIS, M1, M2, N1 and the qualification description."
+        },
+        {
+          "id": "P3.07",
+          "check": "Documents adapted from the reference package contain all Lithuanian national additions and no leftovers from the reference country.",
+          "applies_when": "Lithuania is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B–S section prefix and CTIS placeholder for each document; proof of payment in the CTIS proof-of-payment location."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version and date entered in CTIS metadata, not in the title."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.07",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Lithuania receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (revised rules applicable from 18 June 2024; ACT EU guidance v2.2, 30 April 2026)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material, irreversibly; author metadata removed; signatures (M2, N1) never disclosed."
+        },
+        {
+          "id": "P5.03",
+          "check": "Public and assessment versions differ only by the intended redactions; each in the correct CTIS slot."
+        },
+        {
+          "id": "P5.04",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

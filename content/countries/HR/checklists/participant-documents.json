@@ -1,0 +1,422 @@
+{
+  "id": "HR-QC-PARTICIPANT",
+  "name": "Croatia: participant-facing document QC",
+  "applies_to": [
+    "HR-K2",
+    "HR-L1",
+    "HR-L1-POPULATION",
+    "HR-L2",
+    "HR-L1-SECONDARY",
+    "HR-L1-MINORS",
+    "HR-L1-CAPACITY",
+    "HR-L1-EMERGENCY",
+    "HR-L1-PREGNANCY"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/croatia/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Trial title, EU trial number where available, sponsor, investigational medicines, comparator, indication, phase and participant group match the final application."
+        },
+        {
+          "id": "C1.02",
+          "check": "Purpose and reason for invitation are understandable and do not promise benefit."
+        },
+        {
+          "id": "C1.03",
+          "check": "Global and Croatian target enrolment figures are stated and match the approved planning data."
+        },
+        {
+          "id": "C1.04",
+          "check": "Randomisation, blinding, placebo, rescue treatment and treatment assignment are explained as in the protocol.",
+          "applies_when": "protocol uses randomisation, blinding, placebo or rescue treatment"
+        },
+        {
+          "id": "C1.05",
+          "check": "Trial duration, treatment duration, follow-up, visit frequency, inpatient stays, remote contacts and end-of-trial arrangements match the protocol."
+        },
+        {
+          "id": "C1.06",
+          "check": "Foreseeable risks, unknown risks, expected benefits, lack of expected direct benefit and alternative treatments match the latest investigator's brochure and protocol."
+        },
+        {
+          "id": "C1.07",
+          "check": "Emergency contacts and medical advice are appropriate for Croatia and the participating site."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-participant-document consistency",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Every procedure matches the schedule of activities: screening, washout, dosing, blood draws, imaging, biopsies, questionnaires, devices, diaries, recordings, home visits and long-term follow-up."
+        },
+        {
+          "id": "C2.02",
+          "check": "Blood and tissue volumes, sample frequency, fasting, contraception, pregnancy testing and prohibited medicines match the protocol."
+        },
+        {
+          "id": "C2.03",
+          "check": "Optional activities are identified as optional; optional sample donation, genetics, future research or recordings do not appear required for main-trial participation."
+        },
+        {
+          "id": "C2.04",
+          "check": "Foreseeable burdens (travel, waiting time, overnight stays, device use, dietary limits, return of unused medicine) are explained."
+        },
+        {
+          "id": "C2.05",
+          "check": "Withdrawal language distinguishes stopping trial treatment, withdrawing from follow-up, withdrawing an optional consent and requesting action on stored samples where applicable."
+        },
+        {
+          "id": "C2.06",
+          "check": "Planned home delivery, home nursing, transport, payment provider, recording, wearable or digital platform appears in both the participant document and the application.",
+          "applies_when": "logistics.imp_home_delivery or data.other_third_party or any digital or vendor element"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The main decision to join the trial has clear signature and date fields."
+        },
+        {
+          "id": "C3.02",
+          "check": "Every optional choice offers both DA and NE, and neither answer affects main-trial participation unless scientifically necessary and stated in the protocol."
+        },
+        {
+          "id": "C3.03",
+          "check": "The participant (or representative) and the physician or dentist conducting the consent interview sign and date the document when consent is obtained."
+        },
+        {
+          "id": "C3.04",
+          "check": "No participant signature is requested at CTIS submission; the submitted version is blank."
+        },
+        {
+          "id": "C3.05",
+          "check": "Consent occurs before any trial-specific procedure and the participant receives a signed copy."
+        },
+        {
+          "id": "C3.06",
+          "check": "Routine electronic consent is not proposed; only narrow exceptional electronic consent followed by in-person paper consent."
+        },
+        {
+          "id": "C3.07",
+          "check": "Inability to write uses an impartial witness and is not confused with inability to understand or decide.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C3.08",
+          "check": "Refusal, dissent and later withdrawal are respected without adverse consequences."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "instruction": "Map every inclusion pathway in the protocol to an informed consent set (see requirements.json population_sets).",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population, and every population has its full document set from population_sets (main, representative, assent bands, re-consent and other documents that apply).",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "The main competent-adult informed consent is one unified information and signature document."
+        },
+        {
+          "id": "C4.03",
+          "check": "Healthy volunteers: absence of therapeutic intent, practical restrictions, confinement where applicable, payment and reproductive precautions explained.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.04",
+          "check": "Minors: every recruited age band has the correct assent statement, and parent or guardian consent is provided.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.05",
+          "check": "Adults lacking capacity: understandable participant information and a legal-representative document.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.06",
+          "check": "Article 35 emergency enrolment: approved initial process and later participant or representative consent provided.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.07",
+          "check": "Participant who cannot write: impartial-witness pathway and attestation added.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.08",
+          "check": "Pregnancy follow-up: separate documents for a pregnant participant and a participant's pregnant partner, with minor and representative versions where relevant.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.09",
+          "check": "Optional genetics, biobanking or future use: a separate consent where Croatian guidance requires it.",
+          "applies_when": "research.optional_substudy or samples.future_use_outside_protocol or data.future_use_outside_protocol or samples.genetic_analysis_optional"
+        },
+        {
+          "id": "C4.10",
+          "check": "Separate consent for a required caregiver or study partner, a named contact person whose personal details are collected, and home delivery of investigational medicine.",
+          "applies_when": "consent.caregiver_required or consent.emergency_contact_collected or logistics.imp_home_delivery"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "The data controller and relevant representatives are identified with usable contact details."
+        },
+        {
+          "id": "C5.02",
+          "check": "Processing purposes, categories of personal and health data, recipients, coded identifiers, access, retention, transfers, safeguards and participant rights are stated."
+        },
+        {
+          "id": "C5.03",
+          "check": "Informed consent to trial participation is not equated with consent as the legal basis for every personal-data processing operation."
+        },
+        {
+          "id": "C5.04",
+          "check": "Which data may continue to be used after withdrawal, and why, is explained without suggesting that the participant has no data-protection rights."
+        },
+        {
+          "id": "C5.05",
+          "check": "The sponsor or controller privacy contact and the Croatian Personal Data Protection Agency (AZOP) complaint route are included."
+        },
+        {
+          "id": "C5.06",
+          "check": "No blanket clause allows the sponsor or investigator to contact outside healthcare professionals for health information; health information is obtained from the participant or legal representative."
+        },
+        {
+          "id": "C5.07",
+          "check": "If the participant is encouraged to inform a family physician, the participant chooses and performs that communication, and a physician letter is offered."
+        },
+        {
+          "id": "C5.08",
+          "check": "Each home-delivery, home-nursing, transport, reimbursement, technology or other vendor receiving identifiable participant data is identified with its role.",
+          "applies_when": "logistics.imp_home_delivery or data.other_third_party"
+        },
+        {
+          "id": "C5.09",
+          "check": "An emergency contact, caregiver, partner or other third party who provides personal data has a separate notice and consent process where required.",
+          "applies_when": "consent.emergency_contact_collected or consent.caregiver_required or pregnancy.partner_follow_up or data.other_third_party"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological samples and secondary use",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "What samples are collected, why, by whom, where processed, where stored, for how long and what happens at the end of the trial is stated.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.02",
+          "check": "Protocol-required analysis is distinguished from optional substudies, repository donation, future research, genetic testing and whole-genome or whole-exome sequencing.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.03",
+          "check": "Coded versus anonymised is explained accurately; anonymisation is not claimed if a re-identification key remains.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.04",
+          "check": "How to withdraw permission for optional sample use, and what can still be done with results or samples already used, is stated.",
+          "applies_when": "samples.future_use_outside_protocol or research.optional_substudy or samples.genetic_analysis_optional"
+        },
+        {
+          "id": "C6.05",
+          "check": "Genetic analysis: who can see results, how they may be used, whether important findings may be returned, and the option not to receive such information.",
+          "applies_when": "samples.genetic_analysis_optional or genetic analysis in the protocol"
+        },
+        {
+          "id": "C6.06",
+          "check": "Research outside the approved protocol will not begin without prior Central Ethics Committee review.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.07",
+          "check": "Re-consent is planned when a participant who donated samples as a minor becomes an adult and gains full legal capacity.",
+          "applies_when": "population.minors and (samples.collected or samples.archive_used)"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Croatia-specific regulatory checks",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "The participant-related document is in Croatian (the cover letter too)."
+        },
+        {
+          "id": "C7.02",
+          "check": "The Croatian text is professionally translated and proofread, not a literal global-template translation."
+        },
+        {
+          "id": "C7.03",
+          "check": "Croatia-specific authorities, costs, insurance, contacts, privacy rights and legal wording replace country-neutral text; no 'in your country' or 'in some countries'."
+        },
+        {
+          "id": "C7.04",
+          "check": "The title and text use the Croatian term Informirani pristanak consistently."
+        },
+        {
+          "id": "C7.05",
+          "check": "The main consent is one unified document, with all information before the signature section."
+        },
+        {
+          "id": "C7.06",
+          "check": "The first page identifies the trial and sponsor; headers and footers are in Croatian."
+        },
+        {
+          "id": "C7.07",
+          "check": "The planned number of participants globally and in Croatia is stated."
+        },
+        {
+          "id": "C7.08",
+          "check": "The sponsor bears all protocol-related costs, including treatment of trial-related injury."
+        },
+        {
+          "id": "C7.09",
+          "check": "Reimbursement is described accurately, with the maximum net amount in euros where applicable, consistent with P1."
+        },
+        {
+          "id": "C7.10",
+          "check": "Contraception and pregnancy follow-up wording matches the Croatian national specifics (both partners use reliable contraception where reproductive effects are unknown or potentially harmful) and the protocol risk.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C7.11",
+          "check": "Participant-rights questions are directed first to the investigator and the trial lead, with the Central Ethics Committee address for written rights questions after those routes."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administrative checks",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Each document has a unique descriptive name, version and date matching CTIS."
+        },
+        {
+          "id": "C8.02",
+          "check": "Population, site, country, language and age band are clear in the file name and document header where useful."
+        },
+        {
+          "id": "C8.03",
+          "check": "Only the current version is in the submission package."
+        },
+        {
+          "id": "C8.04",
+          "check": "Signature labels identify the participant, legal representative, parent or guardian, physician or dentist interviewer and impartial witness correctly."
+        },
+        {
+          "id": "C8.05",
+          "check": "Date and time fields are included where the protocol or emergency process requires exact sequence evidence.",
+          "applies_when": "consent.emergency_enrolment or protocol requires exact sequence evidence"
+        },
+        {
+          "id": "C8.06",
+          "check": "The investigator delegation log will authorise the physician or dentist who conducts consent."
+        },
+        {
+          "id": "C8.07",
+          "check": "Recruitment materials, scripts, diaries, cards, questionnaires and instructions are versioned and dated.",
+          "applies_when": "recruitment.material_used or recruitment.other_information_material or endpoint_documents.participant_facing"
+        },
+        {
+          "id": "C8.08",
+          "check": "No tracked changes, comments, placeholders, foreign contacts or inconsistent page numbers."
+        },
+        {
+          "id": "C8.09",
+          "check": "No drafting instruction remains in the final version ([bracket] notes, italic notes, '...........' gaps, yellow form labels)."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and document design",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Medical and regulatory terms are explained in plain Croatian."
+        },
+        {
+          "id": "C9.02",
+          "check": "Sentences and paragraphs are short enough for the intended population."
+        },
+        {
+          "id": "C9.03",
+          "check": "Risks are grouped and prioritised without hiding serious or likely effects in dense text."
+        },
+        {
+          "id": "C9.04",
+          "check": "Font, contrast, spacing, headings, tables and page breaks support reading and printing."
+        },
+        {
+          "id": "C9.05",
+          "check": "Signature pages remain visibly connected to the information and include the document identity."
+        },
+        {
+          "id": "C9.06",
+          "check": "Ages 4 to 7: assent uses simple illustrations, simple explanations and font no smaller than 20.",
+          "applies_when": "minors aged 4 to 7 are recruited"
+        },
+        {
+          "id": "C9.07",
+          "check": "Ages 8 to 11: assent uses simple illustrations, simple explanations and font no smaller than 16.",
+          "applies_when": "minors aged 8 to 11 are recruited"
+        },
+        {
+          "id": "C9.08",
+          "check": "Ages 12 to 14 and 15 to 17 have separate versions in an ordinary format with simpler language.",
+          "applies_when": "minors aged 12 to 17 are recruited"
+        },
+        {
+          "id": "C9.09",
+          "check": "Croatian diacritics, capitalization, grammar and formal address (Vi, capitalised) are consistent."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final package",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "After the content QC, the Croatia Part II document checklist (checklists/part-ii-package.json) is run: recruitment procedure, participant documents, investigator evidence, site evidence, insurance, financial arrangements, GDPR statement and biological-sample statement present when applicable."
+        }
+      ]
+    }
+  ]
+}

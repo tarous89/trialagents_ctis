@@ -1,0 +1,135 @@
+{
+  "id": "RO-QC-PARTICIPANT",
+  "name": "Romania: participant-facing document QC",
+  "applies_to": ["RO-L1", "RO-K2"],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/romania/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); population items also from the Romania consent, minors, limited-capacity, emergency, witness, pregnancy and secondary-use guides",
+  "result_values": ["met", "unmet", "needs_decision", "not_applicable"],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "instruction": "Check the Romanian patient-facing set as one connected system: main information sheet and consent form, recruitment procedure, advertisements, population-specific forms, pregnancy documents and optional future-use choices must match the protocol and each other.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {"id": "C1.01", "check": "Trial title, protocol number, investigational treatment names and study duration are the same as in the current protocol."},
+        {"id": "C1.02", "check": "Randomisation, placebo or comparator use, treatment assignment and the possibility of receiving no direct benefit are described accurately."},
+        {"id": "C1.03", "check": "Visit frequency, procedures, hospital stays, remote activities, sample collection, imaging and participant burden match the protocol."},
+        {"id": "C1.04", "check": "Purpose, procedures, foreseeable risks and burdens, expected benefits where applicable, alternatives, voluntariness and the right to withdraw are explained."},
+        {"id": "C1.05", "check": "Trial-related injury arrangements, reimbursement or compensation, privacy and data handling, access to medical records where relevant, biological samples, pregnancy precautions and follow-up where applicable, and contacts for the trial and participant rights are explained."}
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency",
+      "instruction": "Compare with the current protocol and Investigator's Brochure.",
+      "items": [
+        {"id": "C2.01", "check": "Important risks and safety procedures match the current protocol and Investigator's Brochure."},
+        {"id": "C2.02", "check": "Pregnancy prevention, contraception, pregnancy testing and follow-up language match the protocol.", "applies_when": "protocol has reproductive requirements"},
+        {"id": "C2.03", "check": "Withdrawal language does not promise deletion of data or samples where legal or scientific obligations require retention."},
+        {"id": "C2.04", "check": "Every optional procedure in the ICF is genuinely optional in the protocol."}
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Romanian language and readability",
+      "items": [
+        {"id": "C3.01", "check": "The participant-facing document is in Romanian and the translation is complete, not only the signature page."},
+        {"id": "C3.02", "check": "Plain Romanian suitable for the intended population; no unexplained scientific abbreviations."},
+        {"id": "C3.03", "check": "Information adapted to age and ability to understand.", "applies_when": "population.minors or population.adults_without_capacity"},
+        {"id": "C3.04", "check": "Non-Romanian speakers: translated information and consent documents are planned and the recruitment and consent procedure explains how valid consent will be obtained.", "applies_when": "population.non_romanian_speakers"}
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Consent logic",
+      "items": [
+        {"id": "C4.01", "check": "The consent interview at each Romanian site is conducted by a physician who is a member of the investigation team and appropriately trained on the protocol and GCP (Order 3390/2022); the physician's declaration and signature block say so."},
+        {"id": "C4.02", "check": "The blank ICF has the correct signature blocks for every planned pathway."},
+        {"id": "C4.03", "check": "Impartial-witness pathway added where the participant can consent but cannot write; the witness signs and dates the consent document.", "applies_when": "consent.impartial_witness_possible"},
+        {"id": "C4.04", "check": "Consent to participate in the trial is distinguished from the legal framework for processing personal data."},
+        {"id": "C4.05", "check": "Optional choices are clearly optional with a separate choice or clearly separated signature or initials section; refusing them does not affect main participation."}
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Population and document coverage",
+      "instruction": "Map every inclusion pathway in the protocol to an information and consent set (requirements.json population_sets).",
+      "items": [
+        {"id": "C5.01", "check": "Every inclusion pathway in the protocol maps to a population with the correct document set, and populations are mutually exclusive within a consent stage.", "applies_when": "always"},
+        {"id": "C5.02", "check": "Minors: representative consent, age-appropriate participant information, the capable minor's agreement, respect for refusal, re-consent at 18.", "applies_when": "population.minors"},
+        {"id": "C5.03", "check": "Adults lacking capacity: how capacity is assessed, who acts as legal representative, how the participant is involved; both participant and representative signatures where the participant can form an opinion and assess the information; re-consent if capacity returns.", "applies_when": "population.adults_without_capacity"},
+        {"id": "C5.04", "check": "Emergency enrolment: the protocol and national recruitment form describe why prior consent cannot be obtained and how consent is sought without undue delay; known prior objection respected; data already collected not promised to be deleted.", "applies_when": "consent.emergency_enrolment"},
+        {"id": "C5.05", "check": "Pregnancy follow-up: the intended person (participant or pregnant partner) and the exact maternal, pregnancy-outcome or infant data, follow-up period, record access and recipients are clear.", "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"},
+        {"id": "C5.06", "check": "Future research: the intended person and the exact data or samples are clear, and the optional choice does not look like a condition of joining.", "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"},
+        {"id": "C5.07", "check": "Healthy volunteers: absence of therapeutic benefit, investigational status, dose escalation and uncertainty where applicable, admissions, fasting, restrictions, blood volume and confinement are explained.", "applies_when": "population.healthy_volunteers"}
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Data privacy",
+      "items": [
+        {"id": "C6.01", "check": "Privacy language matches the actual data flow, including sponsor access, monitoring, transfers, retention and rights."},
+        {"id": "C6.02", "check": "Participation consent is separate from the explanation of personal-data processing; trial consent is not presented as the only legal basis for all processing."},
+        {"id": "C6.03", "check": "No wording suggests that withdrawal automatically erases data already lawfully collected."},
+        {"id": "C6.04", "check": "Privacy contact details are correct for the sponsor and Romanian sites where applicable."}
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Biosamples and secondary use",
+      "items": [
+        {"id": "C7.01", "check": "Lists the samples collected, why, where they are analysed or stored and how they are linked to the participant.", "applies_when": "samples.collected or samples.archive_used"},
+        {"id": "C7.02", "check": "Future use outside the main protocol: purpose, storage period, access and withdrawal logic stated clearly.", "applies_when": "samples.future_use_outside_protocol"},
+        {"id": "C7.03", "check": "Withdrawal of future-use permission distinguishes material still linkable from irreversibly anonymised material; no promise of destruction where impossible or where retention applies.", "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"},
+        {"id": "C7.04", "check": "Consistent with the S1 biological-sample information and the data-protection declaration.", "applies_when": "samples.collected or samples.archive_used"}
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Compensation and insurance",
+      "items": [
+        {"id": "C8.01", "check": "The participant information matches the compensation form (P1) and the insurance evidence (O1) submitted for Romania."},
+        {"id": "C8.02", "check": "Where the national compensation form refers to the participant information instead of repeating payment details, the cross-reference is exact."},
+        {"id": "C8.03", "check": "Minors, adults lacking capacity and pregnant or breastfeeding participants: compensation limited to expenses and loss of earnings directly related to participation, not presented as a financial inducement."},
+        {"id": "C8.04", "check": "Payments are not presented as a guarantee of benefit from the investigational product.", "applies_when": "population.healthy_volunteers"}
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Signature, version and administration",
+      "items": [
+        {"id": "C9.01", "check": "Correct protocol number, country, language, version and date."},
+        {"id": "C9.02", "check": "Signature blocks correspond to the intended consent pathway."},
+        {"id": "C9.03", "check": "No participant, representative, witness or physician signature in the blank CTIS submission copy."},
+        {"id": "C9.04", "check": "The site suitability and investigator forms of the package use the current national forms and required signatures."},
+        {"id": "C9.05", "check": "No tracked changes, hidden comments or placeholder text."},
+        {"id": "C9.06", "check": "No drafting instruction remains in the final version (italic notes, [bracket] notes, 'Instrucțiune pentru autor' passages, gaps), except consent-visit fields left blank."},
+        {"id": "C9.07", "check": "Correct CTIS section and naming convention."}
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Recruitment material",
+      "items": [
+        {"id": "C10.01", "check": "Recruitment materials are in Romanian and consistent with the recruitment procedure (K1).", "applies_when": "recruitment.material_used"},
+        {"id": "C10.02", "check": "Electronic recruitment resources: the plan reflects the requirement for prior CNBMDM approval.", "applies_when": "recruitment.electronic_resources"},
+        {"id": "C10.03", "check": "No claims about efficacy, safety or guaranteed benefit beyond the protocol and approved participant information.", "applies_when": "recruitment.material_used"}
+      ]
+    },
+    {
+      "id": "C11",
+      "title": "Current template version",
+      "items": [
+        {"id": "C11.01", "check": "For a new Part II submission since 1 September 2026, the recruitment and consent procedure uses the EU v2.0 template and the current ANMDMR form was verified before upload."}
+      ]
+    },
+    {
+      "id": "C12",
+      "title": "Final package",
+      "items": [
+        {"id": "C12.01", "check": "The participant-facing set matches the Romania Part II document checklist and the Romania patient information and consent guide; names, visits, study duration, allocation, risks, pregnancy rules, reimbursement, sample handling, privacy contacts, withdrawal and version dates tell the same story across all documents."}
+      ]
+    }
+  ]
+}

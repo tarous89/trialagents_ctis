@@ -1,0 +1,201 @@
+{
+  "id": "BG-PACKAGE",
+  "name": "Bulgaria: Part II package and CTIS upload check",
+  "applies_to": "the Bulgaria package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/bulgaria/en/part-ii-document-checklist",
+    "https://trialagents.com/ctis/bulgaria/en/patient-facing-document-qc-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "K1 recruitment arrangements and informed-consent procedure present on template v2.0, with the first recruitment action and a section for every consent pathway in the plan (BDA: mandatory when recruitment is not fully described in the protocol; planned by default, DECISIONS.md D2)."
+        },
+        {
+          "id": "P1.02",
+          "check": "K2 copies of every recruitment advertisement or item (printed, audio, visual), each with version and date.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.03",
+          "check": "One L1 PIS and ICF set per population in population_sets whose trigger is true, each in Bulgarian and as the Bulgaria English version."
+        },
+        {
+          "id": "P1.04",
+          "check": "L2 other written information given before the decision.",
+          "applies_when": "recruitment.other_information_material"
+        },
+        {
+          "id": "P1.05",
+          "check": "For every site: M1 PI CV and M2 PI declaration of interests on the EudraLex templates."
+        },
+        {
+          "id": "P1.06",
+          "check": "Planned trial-site list (BG-N2) in Bulgarian with English site name, address and PI name."
+        },
+        {
+          "id": "P1.07",
+          "check": "For every site: N1 Bulgaria site-suitability declaration on the national BDA template."
+        },
+        {
+          "id": "P1.08",
+          "check": "O1 insurance documentation covering all sites, departments or clinics and PIs, and at least the CTIS participant number for Bulgaria."
+        },
+        {
+          "id": "P1.09",
+          "check": "P1 compensation template and P2 financing and financial-arrangements information (or draft contracts)."
+        },
+        {
+          "id": "P1.10",
+          "check": "R1 GDPR compliance declaration."
+        },
+        {
+          "id": "P1.11",
+          "check": "S1 biological-samples compliance declaration.",
+          "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol"
+        },
+        {
+          "id": "P1.12",
+          "check": "Recommended: national cover letter in Bulgarian naming a Bulgaria contact person with telephone and email."
+        },
+        {
+          "id": "P1.13",
+          "check": "Every site, investigator and population in CTIS has its corresponding document."
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every participant-facing and recruitment document is in Bulgarian; every L1 document also has its Bulgaria English version with the same content version and date."
+        },
+        {
+          "id": "P2.02",
+          "check": "N1 and the site list are in Bulgarian; M1, M2, O1, P1, P2, R1 and S1 are in Bulgarian and/or English."
+        },
+        {
+          "id": "P2.03",
+          "check": "Signed at submission: M2 by the principal investigator and N1 by the head of the institution; insurance valid and, if signed with a qualified electronic signature, verifiable. No other document carries an invented signature block; participant documents are unsigned review copies."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Compensation amounts and conditions identical in P1, P2 and every participant document."
+        },
+        {
+          "id": "P3.02",
+          "check": "Insurance wording in participant documents matches O1."
+        },
+        {
+          "id": "P3.03",
+          "check": "Site names, PIs and participant numbers identical in CTIS, BG-N2, every N1 and O1."
+        },
+        {
+          "id": "P3.04",
+          "check": "Sample types, storage, transfers and future use identical in S1, the protocol and the participant documents."
+        },
+        {
+          "id": "P3.05",
+          "check": "Data flows, recipients and transfers consistent between R1, the participant documents and the protocol."
+        },
+        {
+          "id": "P3.06",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.07",
+          "check": "Documents adapted from the reference package contain all Bulgarian national additions (Article 97 signature structure, English Bulgaria versions, national site-suitability template) and no leftovers from the reference country.",
+          "applies_when": "Bulgaria is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B–S section prefix and CTIS placeholder for each document."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document (_BG_bg and _BG_en for the two participant-document versions)."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version and date entered in CTIS metadata, not in the title; the documents themselves carry version and date (BDA)."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished; for substantial modifications in line with the BDA's national instructions."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.07",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Bulgaria receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules applicable from 18 June 2024; ACT EU guidance v2.2, 30 April 2026)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material, irreversibly and unsearchably; author metadata removed; signatures (M2, N1) never disclosed."
+        },
+        {
+          "id": "P5.03",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

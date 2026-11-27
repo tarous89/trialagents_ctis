@@ -1,0 +1,462 @@
+{
+  "id": "FI-QC-PARTICIPANT",
+  "name": "Finland: participant-facing document QC",
+  "applies_to": [
+    "FI-L1",
+    "FI-L1-POPULATION",
+    "FI-L-GDPR",
+    "FI-K2",
+    "FI-PATIENT-FORMS"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/finland/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "scope_note": "Review the complete document family (every population, recruitment item, privacy notice and optional consent document), not the main adult form alone, against the current protocol, schedule of activities, investigator brochure, CTIS data and country plan. Applies to the Finnish and the Swedish package alike.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Identifies a clinical trial on medicinal products, not only a study."
+        },
+        {
+          "id": "C1.02",
+          "check": "Correct trial title, code and EU trial number."
+        },
+        {
+          "id": "C1.03",
+          "check": "Sponsor, Finnish site, principal investigator and controller identified correctly."
+        },
+        {
+          "id": "C1.04",
+          "check": "Primary and principal secondary objectives described in neutral lay language."
+        },
+        {
+          "id": "C1.05",
+          "check": "Investigational medicinal product, comparator, placebo, randomisation and blinding explained accurately."
+        },
+        {
+          "id": "C1.06",
+          "check": "Correct participant duration, visit count, remote contacts and follow-up period."
+        },
+        {
+          "id": "C1.07",
+          "check": "Standard care separated from trial-specific procedures and costs."
+        },
+        {
+          "id": "C1.08",
+          "check": "Planned global and Finnish participant numbers stated consistently."
+        },
+        {
+          "id": "C1.09",
+          "check": "Current site and research-team contact details included."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency",
+      "instruction": "Compare against the protocol and supporting materials. Do not resolve inconsistencies by adding every protocol detail: correct the facts, then keep the explanation concise.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Dose, route and treatment duration match the protocol."
+        },
+        {
+          "id": "C2.02",
+          "check": "Invasive procedures, blood volumes, biopsies and radiation exposure match the protocol."
+        },
+        {
+          "id": "C2.03",
+          "check": "Contraception methods and duration match the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.04",
+          "check": "Pregnancy testing, reporting and follow-up match the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.05",
+          "check": "Prohibited medicines, washout and rescue treatment match the protocol."
+        },
+        {
+          "id": "C2.06",
+          "check": "Questionnaires, diaries, devices and home procedures match the protocol."
+        },
+        {
+          "id": "C2.07",
+          "check": "Genetic testing, sample types, storage and destruction match the protocol and sample plan.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C2.08",
+          "check": "Severe and common risks given for every investigational and comparator product."
+        },
+        {
+          "id": "C2.09",
+          "check": "Stopping rules, post-trial treatment and unblinding match the protocol."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "instruction": "The information and signature pathway matches the participant's legal position; the participant or legal representative receives the information before signing, has enough time, can ask questions and demonstrates understanding.",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The person giving consent is correctly identified."
+        },
+        {
+          "id": "C3.02",
+          "check": "The qualified person conducting the prior interview is identified."
+        },
+        {
+          "id": "C3.03",
+          "check": "The participant or legal representative and the consent recipient sign and date at consent."
+        },
+        {
+          "id": "C3.04",
+          "check": "No signature or date is required on the blank CTIS submission copy."
+        },
+        {
+          "id": "C3.05",
+          "check": "No exculpatory wording waives legal rights or releases the sponsor or site from liability."
+        },
+        {
+          "id": "C3.06",
+          "check": "Withdrawal is possible without reason or detriment."
+        },
+        {
+          "id": "C3.07",
+          "check": "The document distinguishes stopping trial treatment, leaving trial procedures and withdrawing optional future-use consent."
+        },
+        {
+          "id": "C3.08",
+          "check": "The original signed record is archived and a copy is given to the participant or representative."
+        },
+        {
+          "id": "C3.09",
+          "check": "The procedure explains electronic or remote elements.",
+          "applies_when": "consent.electronic or any decentralised element"
+        },
+        {
+          "id": "C3.10",
+          "check": "Individual informed consent is used; Article 30 simplified cluster consent (non-objection) is not used in Finland.",
+          "applies_when": "trial.cluster"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "instruction": "Create a document matrix by participant group (see requirements.json population_sets) for the Finnish and, where needed, the Swedish package.",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its full document set (main, representative, age-adapted, re-consent and other applicable templates).",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Standard adult participants have the main information and consent set.",
+          "applies_when": "population.adult_patients"
+        },
+        {
+          "id": "C4.03",
+          "check": "Healthy volunteers have a tailored set: no therapeutic expectation, exposure and procedures, reproductive precautions, alternative of not participating, payment without undue influence.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.04",
+          "check": "Children, adolescents and guardians: guardian document, age-appropriate documents per justified developmental group, the capable minor's written consent, the age-15 independent pathway only where Article 32(1)(g)(i) applies (guardian informed), dissent respected, re-consent at 18.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.05",
+          "check": "Adults with reduced capacity and their representatives: separate representative documents, adapted participant information, representative per section 13 Act 983/2021, dissent respected, own consent when capacity returns.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.06",
+          "check": "Emergency participants and later consent: every Article 35 condition, no retrospective consent statement, later consent without undue delay, right to object to use of data already obtained.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.07",
+          "check": "Participants or representatives who cannot write: impartial-witness and alternative-record fields; inability to write not confused with language, literacy or incapacity.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.08",
+          "check": "Pregnant participants and pregnant partners: participant follow-up within or beyond the main consent; separate partner document before partner data are collected; infant data pathway stated.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or pregnancy.infant_follow_up"
+        },
+        {
+          "id": "C4.09",
+          "check": "Optional secondary or future use has its own separate optional information and consent.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C4.10",
+          "check": "Information is understandable for each reader's age and capacity; separate documents exist for representatives and for distinct groups recruited because of age or cognitive ability."
+        },
+        {
+          "id": "C4.11",
+          "check": "Swedish documents exist for Swedish-speaking participants and correspond to the same approved Finnish version.",
+          "applies_when": "population.swedish_speakers"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "instruction": "The Participant Information Sheet or attached privacy notice provides the GDPR Articles 12 to 14 information: controller, contact details, purpose, legal basis, data categories, sources, recipients, storage period, rights, complaint route and international transfers.",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Controller and contact details, purposes, data categories, sources, recipients, storage period and rights are all given."
+        },
+        {
+          "id": "C5.02",
+          "check": "Each legal basis is cited by article, paragraph and point."
+        },
+        {
+          "id": "C5.03",
+          "check": "A legitimate-interest basis includes a brief balancing-test explanation.",
+          "applies_when": "legitimate interest used"
+        },
+        {
+          "id": "C5.04",
+          "check": "Pseudonymised data are not described as anonymous."
+        },
+        {
+          "id": "C5.05",
+          "check": "Access to health records, registries and remote source-data verification is disclosed."
+        },
+        {
+          "id": "C5.06",
+          "check": "Known non-EU or non-EEA transfer countries and safeguards are stated.",
+          "applies_when": "data.transfer_outside_eea"
+        },
+        {
+          "id": "C5.07",
+          "check": "The Data Protection Ombudsman complaint route is correct."
+        },
+        {
+          "id": "C5.08",
+          "check": "The language for privacy questions matches the consent process."
+        },
+        {
+          "id": "C5.09",
+          "check": "The Finnish participant text uses the equivalent of 'ethnic background' rather than 'race'."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biosample and secondary-use checks",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "For samples within the protocol: type, quantity, purpose, storage, location, analysis, transfer, genetic testing, return of findings and destruction are stated.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.02",
+          "check": "The CTIS biological-sample compliance statement (S1) agrees with these facts.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.03",
+          "check": "A separate optional information sheet and consent form are used for use outside the protocol.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.04",
+          "check": "Refusal has no effect on trial participation or treatment.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.05",
+          "check": "The future sponsor or controller, purpose, retention and storage location are described.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.06",
+          "check": "Additional sample collection is distinguished from leftover-sample use.",
+          "applies_when": "samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.07",
+          "check": "Sharing, transfers and possible genetic analysis are explained.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.08",
+          "check": "Participants can withdraw future-use consent.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.09",
+          "check": "The limits of withdrawal for studies already begun are explained.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Finland-specific regulatory checks",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "Recruitment advertisements, consent procedures, information sheets and consent forms are in Finnish and/or Swedish."
+        },
+        {
+          "id": "C7.02",
+          "check": "All materials are available in a language each participant understands."
+        },
+        {
+          "id": "C7.03",
+          "check": "An appropriate interpreter is available throughout the trial when the team does not speak the participant's language.",
+          "applies_when": "population.non_finnish_swedish_speakers"
+        },
+        {
+          "id": "C7.04",
+          "check": "The revised EU Recruitment and Informed Consent Procedure template v2.0 is used for a new submission."
+        },
+        {
+          "id": "C7.05",
+          "check": "Tukija's Participant Information Sheet and Consent Form template dated 25 June 2026 is the drafting baseline."
+        },
+        {
+          "id": "C7.06",
+          "check": "Participant information includes the Finnish insurance and patient-insurance pathway, adapted only where actual cover differs."
+        },
+        {
+          "id": "C7.07",
+          "check": "The trial code and a concise Finnish trial title identify the Finnish document."
+        },
+        {
+          "id": "C7.08",
+          "check": "Article 30 simplified cluster consent is not used.",
+          "applies_when": "trial.cluster"
+        },
+        {
+          "id": "C7.09",
+          "check": "The sample-compliance form (S1) is completed even when no samples are collected."
+        },
+        {
+          "id": "C7.10",
+          "check": "Other participant forms are placed according to Tukija's Finland-specific Part I instruction.",
+          "applies_when": "endpoint_documents.participant_facing"
+        },
+        {
+          "id": "C7.11",
+          "check": "Additional ionising-radiation exposure is explained per examination (purpose, dose, risk, frequency, total dose), or the absence of extra exposure is stated.",
+          "applies_when": "radiation.additional_exposure"
+        },
+        {
+          "id": "C7.12",
+          "check": "Recruitment material does not minimise risk or present payment as the main reason to join; no audio or video files, only transcripts or storyboards.",
+          "applies_when": "recruitment.material_used"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administrative checks",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Every file has a clear document type, population, language, version and date."
+        },
+        {
+          "id": "C8.02",
+          "check": "These identifiers match in the footer, filename, change log and CTIS metadata."
+        },
+        {
+          "id": "C8.03",
+          "check": "Blank submission documents contain signature fields but no completed signatures."
+        },
+        {
+          "id": "C8.04",
+          "check": "All translated versions correspond to the same approved source version."
+        },
+        {
+          "id": "C8.05",
+          "check": "Optional consent choices are not preselected."
+        },
+        {
+          "id": "C8.06",
+          "check": "The participant and consent-recipient signature fields are distinct."
+        },
+        {
+          "id": "C8.07",
+          "check": "Witness and representative fields appear only in documents that use those pathways."
+        },
+        {
+          "id": "C8.08",
+          "check": "Superseded site details and phone numbers have been removed."
+        },
+        {
+          "id": "C8.09",
+          "check": "Public and not-for-publication versions follow current CTIS transparency rules."
+        },
+        {
+          "id": "C8.10",
+          "check": "Correct CTIS section and title per the naming guide and requirements.json (ctis_titles, _FI_fi or _FI_sv)."
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version (tracked changes, comments, instructions and template prompts removed: italic notes, [bracket] notes, ........... gaps, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and document design",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "The main information sheet is about 5 to 8 pages and normally no more than 10; a longer document has a real complexity justification."
+        },
+        {
+          "id": "C9.02",
+          "check": "Headings, short paragraphs, lists only where useful, and enough white space."
+        },
+        {
+          "id": "C9.03",
+          "check": "No commands, promotional language, unexplained abbreviations, excessive legal text or detailed operating instructions that belong in a separate participant guide."
+        },
+        {
+          "id": "C9.04",
+          "check": "Formality and direct address are consistent in Finnish or Swedish."
+        },
+        {
+          "id": "C9.05",
+          "check": "Lay readers and site staff have tested the final draft (recommended), or the user has decided not to."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final package",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "The participant document list matches the protocol's population, site, procedure, data and sample matrices and the Finland Part II package checklist."
+        }
+      ]
+    }
+  ]
+}

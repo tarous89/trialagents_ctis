@@ -1,0 +1,214 @@
+{
+ "id": "LV-PACKAGE",
+ "name": "Latvia: Part II package and CTIS upload check",
+ "applies_to": "the Latvia package as a whole (plan-level checklist step)",
+ "reviewed": "2026-11-27",
+ "sources": [
+  "https://trialagents.com/ctis/latvia/en/part-ii-document-checklist (final Latvia submission check)",
+  "https://trialagents.com/ctis/latvia/en/patient-facing-document-qc-checklist",
+  "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+  "content/playbook/planning.md section 8 (transparency)"
+ ],
+ "result_values": [
+  "met",
+  "unmet",
+  "needs_decision",
+  "not_applicable"
+ ],
+ "sections": [
+  {
+   "id": "P1",
+   "title": "Completeness against requirements.json",
+   "items": [
+    {
+     "id": "P1.01",
+     "check": "K1 present on the Recruitment and Informed Consent Procedure template version 2.0, with the Latvian Member State fields and a section for every population pathway in the plan."
+    },
+    {
+     "id": "P1.02",
+     "check": "K2 Latvian recruitment material for every item used for participants or doctors.",
+     "applies_when": "recruitment.material_used or recruitment.doctor_facing_material"
+    },
+    {
+     "id": "P1.03",
+     "check": "Every population named in the protocol matches a Latvian information and consent document (L1 and the population-specific sets whose trigger is true)."
+    },
+    {
+     "id": "P1.04",
+     "check": "L2 other participant-facing material; endpoint-related instruments in Part I with their Latvian translation in Part II on the CTIS translation route.",
+     "applies_when": "recruitment.other_information_material or endpoint_documents.participant_facing"
+    },
+    {
+     "id": "P1.05",
+     "check": "For every Latvian site: M1 dated CV, M2 declaration of interest, N1 signed and dated site suitability statement, P2 draft contract and budget."
+    },
+    {
+     "id": "P1.06",
+     "check": "O1 insurance certificate (and policy terms where needed) meeting Cabinet Regulation No. 192."
+    },
+    {
+     "id": "P1.07",
+     "check": "P1 compensation template present, also when no payment is offered."
+    },
+    {
+     "id": "P1.08",
+     "check": "R1 data-protection statement confirming GDPR and Latvian law."
+    },
+    {
+     "id": "P1.09",
+     "check": "S1 biological-samples statement.",
+     "applies_when": "samples.collected or samples.archive_used"
+    },
+    {
+     "id": "P1.10",
+     "check": "Fee and proof of payment handled according to ZVA's current instructions (not stated in the guides)."
+    }
+   ]
+  },
+  {
+   "id": "P2",
+   "title": "Language and signatures",
+   "items": [
+    {
+     "id": "P2.01",
+     "check": "Latvian used for participant-facing documents and for recruitment material intended for participants or doctors."
+    },
+    {
+     "id": "P2.02",
+     "check": "Administrative documents in Latvian or English as chosen (DECISIONS.md D1); M2 on the English template."
+    },
+    {
+     "id": "P2.03",
+     "check": "Any additional language version (for example Russian) matches the Latvian version in meaning, version and date, and is approved before use.",
+     "applies_when": "population.non_latvian_speakers"
+    },
+    {
+     "id": "P2.04",
+     "check": "Site-suitability form signed and dated by the correct institutional representative before submission."
+    },
+    {
+     "id": "P2.05",
+     "check": "No signatures on K1, K2, L, M2, P1, P2, R1 and S1 uploads; blank consent forms unsigned; M1 dated."
+    }
+   ]
+  },
+  {
+   "id": "P3",
+   "title": "Cross-document consistency",
+   "items": [
+    {
+     "id": "P3.01",
+     "check": "Insurance limits and covered risks meet Cabinet Regulation No. 192 and match the participant documents."
+    },
+    {
+     "id": "P3.02",
+     "check": "Reimbursement wording aligned across the consent forms, compensation template (P1), contract and budget (P2)."
+    },
+    {
+     "id": "P3.03",
+     "check": "Protocol number, EU CT number, sponsor, study centre and version consistent across all documents."
+    },
+    {
+     "id": "P3.04",
+     "check": "Data flows, recipients, transfers and retention identical in R1, the participant documents and the protocol."
+    },
+    {
+     "id": "P3.05",
+     "check": "Sample types, storage, transfers and retention identical in S1, the protocol and the participant documents."
+    },
+    {
+     "id": "P3.06",
+     "check": "Consent pathways in K1 match the L1 sets in the package."
+    },
+    {
+     "id": "P3.07",
+     "check": "Each Latvian site consistent across CTIS, M1, M2, N1 and P2."
+    },
+    {
+     "id": "P3.08",
+     "check": "Documents adapted from the reference package contain the Latvian national additions and no leftovers from the reference country.",
+     "applies_when": "Latvia is not the reference package"
+    }
+   ]
+  },
+  {
+   "id": "P4",
+   "title": "CTIS naming and upload",
+   "items": [
+    {
+     "id": "P4.01",
+     "check": "Correct B-S section prefix and CTIS placeholder for each document."
+    },
+    {
+     "id": "P4.02",
+     "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>."
+    },
+    {
+     "id": "P4.03",
+     "check": "Participant-document filenames identify the document type (adult, legal representative, 0 to 13 years, 14 to 17 years) and language."
+    },
+    {
+     "id": "P4.04",
+     "check": "Version and date in CTIS metadata, not in the title."
+    },
+    {
+     "id": "P4.05",
+     "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+    },
+    {
+     "id": "P4.06",
+     "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."
+    },
+    {
+     "id": "P4.07",
+     "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+    },
+    {
+     "id": "P4.08",
+     "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+     "applies_when": "Latvia receives Part I only under Article 11"
+    }
+   ]
+  },
+  {
+   "id": "P5",
+   "title": "Transparency and redaction",
+   "items": [
+    {
+     "id": "P5.01",
+     "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules applicable from 18 June 2024; ACT EU guidance v2.2, 30 April 2026)."
+    },
+    {
+     "id": "P5.02",
+     "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material."
+    },
+    {
+     "id": "P5.03",
+     "check": "Public and assessment versions differ only by the intended redactions; each in the correct CTIS slot."
+    },
+    {
+     "id": "P5.04",
+     "check": "No personal data or CCI in public structured fields."
+    }
+   ]
+  },
+  {
+   "id": "P6",
+   "title": "Final form",
+   "items": [
+    {
+     "id": "P6.01",
+     "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+    },
+    {
+     "id": "P6.02",
+     "check": "The Latvia patient-facing document QC checklist was run as the final content review of every participant document."
+    },
+    {
+     "id": "P6.03",
+     "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1561 @@
+{
+  "country": "HR",
+  "name": "Croatia",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "Ministry of Health (Ministarstvo zdravstva): receives the application in CTIS and issues the decision after obtaining the Central Ethics Committee's opinion.",
+    "ethics": "Central Ethics Committee (Središnje etičko povjerenstvo, SEP): performs the ethical review and gives its opinion to the Ministry of Health.",
+    "fee": "Not stated in the Croatia guides (DECISIONS.md, Missing).",
+    "site_start": "A Croatian site may start only after the site agreement has been signed, the Central Ethics Committee has issued a positive opinion and the Ministry of Health has authorised the trial. Liability insurance for trial-related injury, death or treatment is in place before the trial starts.",
+    "national_guidance": "Croatian Act implementing Regulation (EU) No 536/2014, Official Gazette 14/2019 (7 February 2019), Articles 6 to 16; Central Ethics Committee national specifics related to CTIS, Version 1, February 2022; Central Ethics Committee detailed instructions to applicants, Version 3; Central Ethics Committee application forms (accessed 31 August 2026); Croatian Ordinance on clinical trials of medicinal products and good clinical practice, Official Gazette 25/2015 with the 2021 amendment, Official Gazette 32/2021; Croatian Family Act, Official Gazette 103/2015, Article 26; EudraLex Volume 10 including the July 2026 CTR Q&A; CTIS Sponsor Handbook (17 July 2026); Croatian Personal Data Protection Agency (AZOP)."
+  },
+  "answer_languages": [
+    "hr"
+  ],
+  "answer_languages_note": "One package language. The cover letter and all participant-related documents must be in Croatian. Other application documents may be in Croatian or English; the shared Part II forms are answered in Croatian by default, matching the supplied Croatian variable sheet (DECISIONS.md D1).",
+  "language_rules": {
+    "participant_documents": "hr",
+    "cover_letter": "hr",
+    "administrative_documents": [
+      "hr",
+      "en"
+    ],
+    "rule": "The cover letter and participant-related documentation must be in Croatian; other documentation may be in Croatian or English. Participant documents are professionally translated, proofread and locally adapted, with Croatian headers and footers.",
+    "form_answers": "Shared EU forms (content/eu/templates/part-ii) are answered in Croatian (DECISIONS.md D1).",
+    "by_document": {
+      "hr": [
+        "HR-K1",
+        "HR-K2",
+        "HR-L1",
+        "HR-L1-POPULATION",
+        "HR-L2",
+        "HR-M1",
+        "HR-N1",
+        "HR-P1",
+        "HR-R1",
+        "HR-S1",
+        "HR-L1-SECONDARY",
+        "HR-L1-MINORS",
+        "HR-L1-CAPACITY",
+        "HR-L1-EMERGENCY",
+        "HR-L1-PREGNANCY"
+      ],
+      "hr_or_en": [
+        "HR-M-GCP",
+        "HR-M2",
+        "HR-M-MENTOR",
+        "HR-N-HOSPITAL",
+        "HR-O1",
+        "HR-P-FUNDING",
+        "HR-P-SITE-AGREEMENT"
+      ],
+      "hr_and_en_original": [
+        "HR-L2 (non-validated instruments: English original plus Croatian translation)"
+      ]
+    },
+    "drafting_notes_language": "drafting_notes_hr for every document."
+  },
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.adults_without_capacity",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "consent.electronic",
+    "recruitment.material_used",
+    "recruitment.other_information_material",
+    "endpoint_documents.participant_facing",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.future_use_outside_protocol",
+    "data.future_use_outside_protocol",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "sites.count",
+    "research.optional_substudy",
+    "samples.genetic_analysis_optional",
+    "consent.caregiver_required",
+    "consent.emergency_contact_collected",
+    "logistics.imp_home_delivery",
+    "data.other_third_party",
+    "investigator.mentor_needed",
+    "sites.non_hospital_site_hospitalisation_possible",
+    "population.mental_disorder_trial_without_capacity",
+    "data.health_info_from_other_professionals",
+    "instruments.non_validated",
+    "insurance.final_executed_available"
+  ],
+  "study_facts_country_specific": {
+    "research.optional_substudy": "Is an optional pharmacogenetic, biomarker, imaging, digital or other substudy planned that a participant can refuse while joining the main trial? (separate consent, HR-L1-SECONDARY)",
+    "samples.genetic_analysis_optional": "Is optional genetic testing of known biomarkers or complete DNA, whole-genome or whole-exome analysis planned? (separate consent, HR-L1-SECONDARY)",
+    "consent.caregiver_required": "Must a caregiver or study partner help the participant and provide information to the trial team? (separate consent)",
+    "consent.emergency_contact_collected": "Does the main consent ask the participant to name an emergency contact whose details are processed? (separate consent)",
+    "logistics.imp_home_delivery": "Are investigational medicines delivered to the participant's home? (separate consent)",
+    "data.other_third_party": "Will data be collected from any other third party, or will home-nursing, transport, reimbursement or technology vendors receive identifiable participant data?",
+    "investigator.mentor_needed": "Does a proposed principal investigator lack the experience expected by the Central Ethics Committee? (mentor documentation)",
+    "sites.non_hospital_site_hospitalisation_possible": "Is there a non-hospital site that may need to hospitalise a participant because of a serious adverse reaction or complication? (hospital agreement)",
+    "population.mental_disorder_trial_without_capacity": "Does a psychiatric or psychopharmaceutical trial propose to include adults lacking capacity? (Croatian restriction; written advice from the Ministry of Health and Central Ethics Committee needed; raise a finding)",
+    "data.health_info_from_other_professionals": "Does the protocol or a global template obtain participant, pregnancy or infant health information by contacting the family physician or other healthcare professionals? (not acceptable in Croatia: must be false; raise a finding and remove the clause)",
+    "instruments.non_validated": "Is any participant questionnaire, scale or survey not scientifically validated? (English original and Croatian translation submitted)",
+    "insurance.final_executed_available": "Is the final executed insurance cover available at initial submission? (if not, acceptable interim evidence confirmed in writing)",
+    "pregnancy.participant_follow_up_beyond_main_consent": "In Croatia any planned pregnancy follow-up of a participant needs a separate consent; answer true whenever such follow-up is planned."
+  },
+  "documents": [
+    {
+      "id": "HR-K1",
+      "checklist_item": "1 (mandatory)",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment and informed-consent procedure",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "hr"
+      ],
+      "language_rule": "Croatian answers (supplied Croatian variable sheet). The guides allow Croatian or English for documents that are not participant-related (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "EudraLex Volume 10 informed-consent and patient-recruitment procedure template; version 2.0 applies to new Part II submissions from 1 September 2026",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_rule": "Not signed unless the selected template includes a declaration requiring signature.",
+      "content": "How potential participants are identified, approached, informed and consented, with the Croatia-specific parts completed and a description of who conducts the interview (a physician or dentist who is the principal investigator or a delegated investigator). Every population pathway in the plan (minors, adults unable to consent, impartial witness, emergency) has its section completed; the detailed emergency enrolment procedure and its Croatian decision sequence are described here.",
+      "national_fields": {
+        "v105": "Required in Croatia: in Croatian, state that every advertisement, invitation, social-media item, poster, telephone script, letter or other recruitment material that potential participants will see or hear is submitted in its final proposed Croatian version under Recruitment arrangements, carries a version and date, and is evaluated by the Central Ethics Committee case by case; for healthy volunteers, describe prescreening, databases and repeat-participation checks.",
+        "v108": "Required in Croatia: in Croatian, state that the informed-consent interview is conducted by a physician or dentist who is the principal investigator or an investigator to whom the principal investigator has delegated the activity, with the delegation documented before the person performs it; that consent is obtained in person on paper from the participant (or parent, guardian or legal representative) before any trial-specific procedure, using one unified Croatian informed consent document (Informirani pristanak), submitted blank in CTIS; that the participant and the interviewer sign and date it and the participant receives a signed copy; that routine electronic consent is not used (electronic consent only in exceptional situations, followed by in-person paper consent as soon as possible); and that trial health information is obtained from the participant or legal representative, not by asking for the family physician's contact details or contacting other healthcare professionals. Where they apply, state that a required caregiver or study partner and a named emergency contact give their own consent, and that home delivery of investigational medicine has a separate consent.",
+        "v110": "Required in Croatia when adults unable to consent are included: in Croatian, state that consent is given by the guardian or legal representative appointed by a court, whose appointment and scope are verified before enrolment with the evidence retained at the site (a spouse, adult child, caregiver, study partner or family member is not automatically the legal representative); that the participant receives Croatian information suited to their ability and assent is recorded where appropriate; that the explicit wish of a participant capable of forming an opinion to refuse or withdraw is respected; when capacity is reassessed and by whom if it fluctuates; that the participant's own consent is obtained when capacity is gained or regained; and, for trials in people with mental disorders, how the Central Ethics Committee restriction is addressed (people under guardianship who cannot decide independently may not take part in trials of psychopharmaceuticals; trials in people with mental disorders should plan to include adults with legal capacity; written advice from the Ministry of Health and the Central Ethics Committee sought beforehand).",
+        "v114": "Required in Croatia when minors are included: in Croatian, state the assent age bands used (4 to 7, 8 to 11, 12 to 14 and 15 to 17 years, with a separate Izjava o pristanku za sudjelovanje u kliničkom ispitivanju for each band recruited); that one parent signs (Central Ethics Committee guidance provides for one parent signature field) or, if the child has no parent, the guardian or legally appointed representative appointed by a court, whose authority is verified before enrolment; that the child receives information suited to age and mental maturity from an investigator or trial-team member trained or experienced in working with children, while the informed-consent interview is conducted by a physician or dentist who is the principal investigator or a delegated investigator; that a minor who can form an opinion and evaluate the information signs alongside the legal representative, that a minor takes part only with a signature or oral assent, and how understanding is assessed and oral assent documented (silence or failure to resist is not assent); that the child's refusal or later wish to stop is decisive; and that the participant's own adult consent is obtained after turning 18, including consent for continued storage and use of samples.",
+        "v117": "Required in Croatia when an impartial witness may be needed: in Croatian, state that a witness is used only when the participant or legal representative can understand and decide but cannot write (not because the person cannot read Croatian, has low literacy, lacks capacity, is unconscious or is in an emergency); how decision-making ability and the reason a conventional signature cannot be used are confirmed and documented; how the witness's independence from the sponsor, investigator and trial team is checked (no subordinates of the investigator, recruiters or persons paid for trial performance; family members are not automatically impartial); that the witness is present for the whole consent process and signs and dates the witness attestation; that the physician or dentist interviewer signs and dates; which approved alternative means records the decision; that a translator is not automatically the impartial witness; and that no remote witness or electronic signature is used unless a specific exceptional process has prior approval and later paper consent is planned.",
+        "v121": "Required in Croatia when emergency enrolment is used: in Croatian, explain every Article 35 condition for the specific qualifying condition and therapeutic window; the Central Ethics Committee decision sequence, read together with Article 35 (consent is first sought from a parent, guardian or legally appointed representative if the person has one who can be contacted; otherwise a family member who is present may act in the described pathway; otherwise the investigator decides when the investigator is also the treating physician), with each decision-maker's role, authority and order; the prior-objection check (available records, advance directives where relevant, information from people present) without delaying care; that the emergency enrolment decision is not informed consent and is followed as soon as possible by information and in-person paper consent of the participant, or of the legally designated representative if the participant remains unable to decide; how exact dates, times, contact attempts, decision-maker, capacity changes and signatures are documented; and that later refusal stops future trial interventions under the approved withdrawal and safety process."
+      },
+      "sources": [
+        "HR-PII-CHECKLIST#1",
+        "HR-HUB#consent-must-be-obtained-by-a-physician-or-dentist",
+        "HR-HV",
+        "HR-MINORS",
+        "HR-CAPACITY",
+        "HR-EMERGENCY",
+        "HR-WITNESS"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak K (Recruitment arrangements). Obvezan dokument. Predložak EudraLex Volume 10 za postupak novačenja ispitanika i informiranog pristanka, verzija 2.0 (primjenjuje se na nove podneske dijela II od 1. rujna 2026.). Odgovori na hrvatskom jeziku (DECISIONS.md D1). Ispunite dijelove za Hrvatsku (national_fields) i opišite tko provodi razgovor o informiranom pristanku: liječnik ili doktor dentalne medicine koji je glavni ispitivač ili ispitivač kojemu je glavni ispitivač delegirao tu aktivnost. Pristanak se dobiva osobno, u papirnatom obliku, prije bilo kojeg postupka specifičnog za ispitivanje; rutinski elektronički pristanak nije dopušten. Za svaku populaciju s vlastitim postupkom (maloljetnici, odrasli bez sposobnosti davanja pristanka, nepristrani svjedok, hitno uključivanje) ispunite odgovarajući odjeljak; inače navedite da se ne primjenjuje. Bez potpisa, osim ako odabrani predložak sadrži izjavu koja zahtijeva potpis."
+    },
+    {
+      "id": "HR-K2",
+      "checklist_item": "1 (conditional)",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_HR_hr",
+      "name_en": "Recruitment materials",
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Each advertisement, invitation, social-media item, poster, telephone script, letter or other recruitment material that will be seen or heard by potential participants.",
+      "per": "item",
+      "language": [
+        "hr"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Final proposed Croatian material with a version and date; non-text formats (audio, video, telephone script) submitted as their final wording. The Central Ethics Committee evaluates advertising case by case. No promise of benefit.",
+      "sources": [
+        "HR-PII-CHECKLIST#1",
+        "HR-HV",
+        "HR-QC#8"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak K (Recruitment arrangements). Uvjetan: svaki oglas, poziv, objava na društvenim mrežama, plakat, telefonska skripta, pismo ili drugi materijal za novačenje koji potencijalni ispitanici vide ili čuju; jedan dokument po materijalu. Na hrvatskom jeziku, s oznakom verzije i datuma. Podnosi se konačna predložena verzija. Središnje etičko povjerenstvo procjenjuje oglašavanje od slučaja do slučaja. Bez obećanja koristi. Bez potpisa. Bez predloška: izrada iz protokola i postupka novačenja (K1)."
+    },
+    {
+      "id": "HR-L1",
+      "checklist_item": "2 (mandatory)",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_HR_hr",
+      "ctis_title_population_sets": "L1_SIS and ICF_<template subtype>_<population>_HR_hr",
+      "name_en": "Main participant information and informed consent (one unified Informirani pristanak per population)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "population",
+      "language": [
+        "hr"
+      ],
+      "language_rule": "Croatian; professionally translated, proofread and locally adapted, not a literal translation of a global English template.",
+      "template": null,
+      "template_status": "missing: no Croatian participant templates supplied; see population_sets (every template \"missing\") and DECISIONS.md D18.",
+      "signature_at_submission": false,
+      "signature_rule": "Submitted blank. When consent is obtained, the participant and the physician or dentist conducting the interview sign and date it, in person on paper, before any trial-specific procedure; the participant receives a signed copy.",
+      "content": "One unified informed consent document containing all participant information before the signature section (not an information sheet plus a signature-only form), titled with the Croatian term Informirani pristanak, versioned and dated, with trial and sponsor details in a first-page header and Croatian header and footer. Content per drafting_rules. The witness attestation is built into this document when the impartial-witness pathway applies (population_sets impartial_witness).",
+      "sources": [
+        "HR-PII-CHECKLIST#2",
+        "HR-ICF",
+        "HR-HUB#croatian-participant-documents",
+        "HR-WITNESS"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak L (Subject information and informed consent form). Obvezan dokument za svaku populaciju ispitanika. Jedan jedinstveni dokument „Informirani pristanak” koji sadrži sve informacije prije dijela za potpis; ne dijeliti ga na obavijest i zaseban obrazac samo za potpis. Naslov sadrži izraz „Informirani pristanak”; ne koristiti nejasne nazive poput „informacija”, „obrazac” ili „dokument”. Profesionalni prijevod i lektura, lokalna prilagodba umjesto doslovnog prijevoda, osnovni podaci o ispitivanju i naručitelju u zaglavlju prve stranice, zaglavlje i podnožje na hrvatskom, verzija i datum. Podnosi se prazan i nepotpisan; pri dobivanju pristanka potpisuju i datiraju ispitanik i liječnik ili doktor dentalne medicine koji provodi razgovor. Kada se primjenjuje put nepristranog svjedoka, izjava svjedoka ugrađuje se u ovaj dokument. Hrvatski predložak nije dostavljen: izrada prema drafting_rules ili prilagodba referentnog dokumenta (DECISIONS.md D18)."
+    },
+    {
+      "id": "HR-L1-POPULATION",
+      "checklist_item": "2 (conditional, populations and use cases)",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<template subtype>_<population>_HR_hr",
+      "name_en": "Separate informed consent documents for other materially different populations and use cases",
+      "requirement": "conditional",
+      "trigger": "population.healthy_volunteers or consent.caregiver_required or consent.emergency_contact_collected or logistics.imp_home_delivery or data.other_third_party",
+      "trigger_text": "Healthy volunteers, a required caregiver or study partner, an emergency contact who provides personal information, home delivery of investigational medicines, and any other third party whose data will be collected. Minors, adults lacking capacity, emergency enrolment, pregnancy follow-up and optional genetic research or sample donation, also listed on the page, are their own documents (HR-L1-MINORS, HR-L1-CAPACITY, HR-L1-EMERGENCY, HR-L1-PREGNANCY, HR-L1-SECONDARY).",
+      "per": "population",
+      "language": [
+        "hr"
+      ],
+      "template": null,
+      "template_note": "Templates per population_sets (healthy_volunteers, caregiver, contact_person, home_delivery, other_third_party); all missing.",
+      "signature_at_submission": false,
+      "content": "Separate Croatian documents with the same language, paper-consent, interviewer, signature, privacy, version and dating rules as the main consent.",
+      "sources": [
+        "HR-PII-CHECKLIST#2",
+        "HR-ICF#consent-choices-and-optional-activities-2",
+        "HR-HV",
+        "HR-QC#4"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak L. Uvjetan: zaseban hrvatski informirani pristanak za svaku bitno različitu populaciju ili situaciju: zdravi dobrovoljci, obvezni njegovatelj ili partner u ispitivanju, kontaktna osoba za hitne slučajeve čiji se osobni podaci prikupljaju, dostava ispitivanog lijeka na kućnu adresu i svaka druga treća osoba čiji se podaci prikupljaju. Maloljetnici, odrasli bez sposobnosti davanja pristanka, hitno uključivanje, praćenje trudnoće i neobvezna genetička istraživanja ili darivanje uzoraka imaju vlastite dokumente. Ista pravila kao za glavni dokument: hrvatski jezik, papirnati pristanak, razgovor vodi liječnik ili doktor dentalne medicine, potpisi i datumi pri dobivanju pristanka, verzija i datum. Prazan pri podnošenju. Za praćenje ispitanika ne koristi se agencija za traženje osoba niti se podaci otkrivaju vanjskoj strani radi traženja."
+    },
+    {
+      "id": "HR-L2",
+      "checklist_item": "2 (conditional, questionnaires and other materials)",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_<type>_HR_hr",
+      "ctis_title_endpoint_documents": "R2_Patient-facing document_<type>_HR_hr",
+      "ctis_title_note": "The guide says to upload according to the closest participant-facing CTIS category (DECISIONS.md D10). For a scale, questionnaire or survey that is not scientifically validated, the English original is uploaded with the Croatian translation (subtype or language _HR_en).",
+      "name_en": "Participant questionnaires, rating scales, diaries, instructions, cards and other materials",
+      "requirement": "conditional",
+      "trigger": "recruitment.other_information_material or endpoint_documents.participant_facing",
+      "trigger_text": "Participant questionnaires, rating scales, diaries, instructions, cards or other materials are used.",
+      "per": "item",
+      "language": [
+        "hr",
+        "en"
+      ],
+      "language_rule": "Croatian versions. Participant-completed rating scales are validated and translated into Croatian; for an instrument that is not scientifically validated, the English original and the Croatian translation are both submitted.",
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Croatian versions, each with a version and date unless it is a scientifically validated instrument with a reference. The Central Ethics Committee recommends that the sponsor provide a study device for electronic questionnaires and diaries, returned at the end of participation.",
+      "sources": [
+        "HR-PII-CHECKLIST#2",
+        "HR-ICF#croatian-language-readability-and-presentation-2",
+        "HR-PII-CHECKLIST#submission-language-and-version-control-2",
+        "HR-HV"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hr": "CTIS dio II, najbliža kategorija dokumenata namijenjenih ispitanicima (L2 ili R2, DECISIONS.md D10). Uvjetan: upitnici, ljestvice procjene, dnevnici, upute, kartice i drugi materijali za ispitanike, na hrvatskom jeziku. Ljestvice koje ispunjavaju ispitanici moraju biti validirane i prevedene na hrvatski; za ljestvicu, upitnik ili anketu koja nije znanstveno validirana prilažu se engleski izvornik i hrvatski prijevod. Verzija i datum na svakom dokumentu koji nije znanstveno validirani instrument s referencom. Za elektroničke upitnike i dnevnike Središnje etičko povjerenstvo preporučuje da naručitelj osigura uređaj koji se vraća na kraju sudjelovanja. Bez potpisa."
+    },
+    {
+      "id": "HR-M1",
+      "checklist_item": "3 (mandatory, CV)",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "name_en": "Principal investigator curriculum vitae (HALMED CV format)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hr"
+      ],
+      "language_rule": "Croatian (Central Ethics Committee guidance).",
+      "template": null,
+      "national_template": "Croatian HALMED CV format requested by Central Ethics Committee guidance. Not supplied: the M1 DOCX in CTIS_HR is the shared EU CV form (eu/templates/part-ii/M1_CV Principal investigator.docx), which the guide does not name as the Croatian format. Once the HALMED format is supplied, convert it into countries/HR/templates/part-ii (DECISIONS.md D2).",
+      "signature_at_submission": true,
+      "signature_rule": "Signed and dated by the investigator; no more than six months old for the application.",
+      "content": "Current CV for each principal investigator in the HALMED format, in Croatian, identifying relevant trial experience and active recruiting studies. The signed GCP training certificate required with it is HR-M-GCP.",
+      "sources": [
+        "HR-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'third_party_template' (Prepare trial fields only, then Check) once the HALMED CV format is supplied and converted (DECISIONS.md D2).",
+      "reader": "regulatory",
+      "filled_by": "investigator (HALMED CV format)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak M (Suitability of the investigator). Obvezan dokument za svakog glavnog ispitivača. Središnje etičko povjerenstvo traži HALMED-ov obrazac životopisa, na hrvatskom jeziku, potpisan i datiran, ne stariji od šest mjeseci u trenutku podnošenja; navesti relevantno iskustvo u kliničkim ispitivanjima i ispitivanja u tijeku s aktivnim uključivanjem ispitanika. HALMED-ov obrazac nije dostavljen, a dostavljeni EU obrazac životopisa ga ne zamjenjuje (DECISIONS.md D2). Osobne podatke, potpis i datum daje ispitivač; ne izmišljati. Potpisana potvrda o edukaciji iz dobre kliničke prakse prilaže se zasebno (HR-M-GCP)."
+    },
+    {
+      "id": "HR-M-GCP",
+      "checklist_item": "3 (mandatory, with the CV)",
+      "ctis_section": "M",
+      "ctis_title": "M2_GCP training_<investigator>_<site>",
+      "ctis_title_note": "The naming guide has no example; title follows the Austria and Germany precedent (DECISIONS.md D3).",
+      "name_en": "Good clinical practice training certificate",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hr",
+        "en"
+      ],
+      "language_rule": "Croatian or English (documents that are not participant-related).",
+      "template": null,
+      "signature_at_submission": true,
+      "signature_rule": "Signed certificate from the authorised provider.",
+      "content": "Signed good clinical practice training certificate from the authorised provider for each principal investigator, included with the CV.",
+      "sources": [
+        "HR-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "investigator / authorised training provider",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak M. Obvezno uz životopis: potpisana potvrda ovlaštenog pružatelja o edukaciji iz dobre kliničke prakse za svakog glavnog ispitivača. Dostavlja ispitivač ili pružatelj edukacije; samo se provjerava. Naslov u CTIS-u potvrditi (DECISIONS.md D3)."
+    },
+    {
+      "id": "HR-M2",
+      "checklist_item": "3 (mandatory, declaration of interest)",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Investigator declaration of interest",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hr",
+        "en"
+      ],
+      "language_rule": "Croatian or English (documents that are not participant-related); Croatian by default (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+        "basis": "Applicable EudraLex Volume 10 declaration-of-interest template",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": true,
+      "signature_rule": "Signed and dated by the investigator at submission.",
+      "content": "Investigator declaration of interest on the EudraLex template, uploaded under Suitability of the investigator.",
+      "sources": [
+        "HR-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak M (Suitability of the investigator). Obvezan dokument za svakog glavnog ispitivača. Predložak izjave o interesima EudraLex Volume 10. Ispitivač ga potpisuje i datira pri podnošenju. Asistent ispunjava samo naslov ispitivanja i EU broj ispitivanja; podatke o interesima, potpis i datum unosi ispitivač."
+    },
+    {
+      "id": "HR-M-MENTOR",
+      "checklist_item": "3 (conditional, mentor)",
+      "ctis_section": "M",
+      "ctis_title": "M3_Mentor documentation_<investigator>_<site>",
+      "ctis_title_note": "The naming guide has no example; proposed title under Suitability of the investigator (DECISIONS.md D4).",
+      "name_en": "Mentor documentation for an investigator without the expected experience",
+      "requirement": "conditional",
+      "trigger": "investigator.mentor_needed",
+      "trigger_text": "The proposed investigator lacks the experience expected by the Central Ethics Committee; assessed case by case.",
+      "per": "site",
+      "language": [
+        "hr",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": true,
+      "signature_rule": "The mentor acceptance statement is signed.",
+      "content": "Signed mentor acceptance statement, the mentor's CV and evidence of the mentor's good clinical practice training.",
+      "sources": [
+        "HR-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "mentor and investigator",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak M. Uvjetan: ako predloženi ispitivač nema iskustvo koje očekuje Središnje etičko povjerenstvo, prilaže se dokumentacija mentora: potpisana izjava mentora o prihvaćanju, životopis mentora i dokaz o edukaciji iz dobre kliničke prakse. Procjenjuje se od slučaja do slučaja. Dostavljaju mentor i ispitivač; ne izmišljati. Naslov potvrditi (DECISIONS.md D4)."
+    },
+    {
+      "id": "HR-N1",
+      "checklist_item": "4 (mandatory)",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Site suitability form",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hr"
+      ],
+      "language_rule": "Croatian answers by default; Croatian or English allowed (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/N1_Site suitability.docx",
+        "basis": "Current EudraLex Volume 10 site suitability template",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/N1_Site suitability.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": true,
+      "signature_rule": "The authorised site representative signs and dates it at submission.",
+      "content": "One form per Croatian site, completed with the site's facilities, staff, equipment, emergency arrangements and ability to conduct the protocol.",
+      "national_fields": {
+        "v126": "Required in Croatia: describe the site's emergency arrangements. For a non-hospital site that may need to hospitalise a participant because of a serious adverse reaction or complication, refer to the signed agreement with the receiving hospital that identifies who pays the hospitalisation costs (HR-N-HOSPITAL).",
+        "n1_issued_by": "Required in Croatia: the authorised site representative signs and dates the form at submission. Keep the signature block (name, function, signature, date) in the CTIS copy and leave it empty for the site's authorised representative; do not invent names."
+      },
+      "sources": [
+        "HR-PII-CHECKLIST#4"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant; site fields left empty for the site; signed by the authorised site representative",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak N (Suitability of the facilities). Obvezan dokument za svako hrvatsko mjesto ispitivanja. Predložak EudraLex Volume 10 za prikladnost mjesta ispitivanja: prostor, osoblje, oprema, postupanje u hitnim slučajevima i sposobnost provedbe protokola. Ovlašteni predstavnik mjesta ispitivanja potpisuje i datira obrazac pri podnošenju; blok za potpis ostaje u obrascu prazan za njega (national_fields). Podatke o mjestu daje mjesto ispitivanja; ne izmišljati. Za mjesto koje nije bolnica, a moglo bi trebati hospitalizirati ispitanika, uputiti na ugovor s bolnicom (HR-N-HOSPITAL)."
+    },
+    {
+      "id": "HR-N-HOSPITAL",
+      "checklist_item": "4 (conditional)",
+      "ctis_section": "N",
+      "ctis_title": "N<next number>_Hospitalisation agreement_<site>",
+      "ctis_title_note": "The guide says to include it with the site-suitability evidence; the naming guide has no example. Proposed title (DECISIONS.md D5).",
+      "name_en": "Agreement with the receiving hospital for a non-hospital site",
+      "requirement": "conditional",
+      "trigger": "sites.non_hospital_site_hospitalisation_possible",
+      "trigger_text": "A non-hospital site may need to hospitalise a participant because of a serious adverse reaction or complication.",
+      "per": "site",
+      "language": [
+        "hr",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": true,
+      "signature_rule": "Signed agreement between the site and the receiving hospital.",
+      "content": "Signed agreement with the receiving hospital, identifying who pays the hospitalisation costs.",
+      "sources": [
+        "HR-PII-CHECKLIST#4"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "site and receiving hospital",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak N, uz dokaze o prikladnosti mjesta ispitivanja. Uvjetan: mjesto ispitivanja koje nije bolnica, a moglo bi trebati hospitalizirati ispitanika zbog ozbiljne nuspojave ili komplikacije, prilaže potpisani ugovor s bolnicom koja prima ispitanika. Ugovor navodi tko snosi troškove hospitalizacije. Dostavljaju mjesto ispitivanja i bolnica; samo se provjerava. Naslov potvrditi (DECISIONS.md D5)."
+    },
+    {
+      "id": "HR-O1",
+      "checklist_item": "5 (mandatory)",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_HR",
+      "ctis_title_note": "Policy, certificate and policy terms may be uploaded as split files of this title.",
+      "name_en": "Insurance policy, certificate of insurance and policy terms",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "hr",
+        "en"
+      ],
+      "language_rule": "Croatian or English (documents that are not participant-related).",
+      "template": null,
+      "signature_at_submission": true,
+      "signature_rule": "The policy is signed by the insurer and the policyholder.",
+      "content": "Local insurance policy, certificate of insurance and relevant policy terms and clauses. The policy identifies the trial, institutions, principal investigators and planned number of participants. Valid policies from insurers established in the European Union are accepted. Insurance is in place before the trial starts and covers liability connected with trial-related injury, death or treatment. If final executed coverage is not available at initial submission, the acceptable interim evidence is confirmed in writing with the Ministry of Health and the Central Ethics Committee; a draft alone is never stated to be sufficient without that confirmation (DECISIONS.md D6). The guides state no minimum cover.",
+      "sources": [
+        "HR-PII-CHECKLIST#5",
+        "HR-HUB#site-start-conditions"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer and policyholder",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak O (Proof of insurance cover or indemnification). Obvezno: lokalna polica osiguranja, potvrda o osiguranju i relevantni uvjeti i klauzule police. Polica navodi ispitivanje, ustanove, glavne ispitivače i planirani broj ispitanika te je potpisuju osiguravatelj i ugovaratelj osiguranja. Prihvaćaju se valjane police osiguravatelja s poslovnim nastanom u Europskoj uniji. Osiguranje mora biti na snazi prije početka ispitivanja i pokrivati odgovornost za ozljedu, smrt ili liječenje povezano s ispitivanjem. Ako konačno pokriće nije dostupno pri prvom podnošenju, s Ministarstvom zdravstva i Središnjim etičkim povjerenstvom potvrditi koji je privremeni dokaz prihvatljiv; ne tvrditi da je nacrt dovoljan bez pisane potvrde (DECISIONS.md D6). Tekst o osiguranju u dokumentima za ispitanike mora odgovarati polici."
+    },
+    {
+      "id": "HR-P1",
+      "checklist_item": "6 (mandatory, financial and other arrangements)",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_HR",
+      "name_en": "Participant compensation and reimbursement",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "hr"
+      ],
+      "language_rule": "Croatian answers by default; Croatian or English allowed (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "EU compensation template, used where appropriate for the participant part of the financial description",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Participant reimbursement and any other payment to participants, with the maximum net amount in euros for travel and other participant expenses. The remaining parts of the required financial description (trial financing, payments to investigators and sites, sponsor bearing all protocol-related costs) are in HR-P-FUNDING. No incentive or financial inducement for minors, adults unable to consent or their representatives beyond the template's rules.",
+      "national_fields": {
+        "f02": "Required in Croatia: in Croatian, state the maximum net amount, in euros, for participant travel and other expenses, consistent with the informed consent documents."
+      },
+      "sources": [
+        "HR-PII-CHECKLIST#6",
+        "HR-HV",
+        "HR-ICF#core-information-to-include-2"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant; amounts and conditions only from the sponsor's sources",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak P (Financial and other arrangements). Obvezno. EU predložak za naknade ispitanicima koristi se gdje je prikladno; odgovori na hrvatskom. Navesti naknadu putnih i drugih troškova ispitanika s najvećim neto iznosom u eurima (national_fields) te sva druga plaćanja ispitanicima; razlikovati naknadu za vrijeme i neugodnosti od naknade stvarnih troškova. Iznosi i uvjeti moraju biti jednaki onima u informiranom pristanku. Opis financiranja ispitivanja i plaćanja ispitivačima i mjestima ispitivanja prilaže se zasebno (HR-P-FUNDING). Iznose daje naručitelj; ne izmišljati. Vodič ne traži potpis."
+    },
+    {
+      "id": "HR-P-FUNDING",
+      "checklist_item": "6 (mandatory, financial description beyond the compensation template)",
+      "ctis_section": "P",
+      "ctis_title": "P3_Funding of the trial_HR",
+      "ctis_title_note": "The naming guide has no example; proposed title (DECISIONS.md D7).",
+      "name_en": "Description of trial financing and payments to investigators and sites",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "hr",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Clear description of trial financing, payments to investigators and sites and any other financial arrangement, stating that the sponsor bears all protocol-related trial costs.",
+      "sources": [
+        "HR-PII-CHECKLIST#6"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak P. Obvezno, kao dio opisa financijskih i drugih aranžmana koji EU predložak za naknade ispitanicima ne pokriva: jasan opis financiranja ispitivanja, plaćanja ispitivačima i mjestima ispitivanja i svih drugih financijskih aranžmana, s izjavom da naručitelj snosi sve troškove ispitivanja povezane s protokolom. Podatke daje naručitelj; ne izmišljati. Naslov i oblik potvrditi (DECISIONS.md D7)."
+    },
+    {
+      "id": "HR-P-SITE-AGREEMENT",
+      "checklist_item": "6 (mandatory before site initiation)",
+      "ctis_section": "P",
+      "ctis_title": "P2_Financial arrangements_<site>",
+      "name_en": "Signed sponsor–site agreement",
+      "requirement": "mandatory",
+      "timing": "Before each site starts. An application document only where the specific CTIS procedure requires it; otherwise evidence is retained that it will be executed before activation and it is provided if requested (DECISIONS.md D8).",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "hr",
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "Signed by the sponsor and the site before the site starts; a signed copy is not required at submission unless the procedure asks for it.",
+      "content": "Agreement between the sponsor and each trial site stating the total cost of the trial and the costs borne by the sponsor, including medical services and payments to investigators and participants. A Croatian site may start only after the site agreement has been signed, the Central Ethics Committee has issued a positive opinion and the Ministry of Health has authorised the trial.",
+      "sources": [
+        "HR-PII-CHECKLIST#6",
+        "HR-HUB#site-start-conditions"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor legal and site",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak P. Obvezno prije početka rada svakog mjesta ispitivanja: potpisani ugovor između naručitelja i mjesta ispitivanja koji navodi ukupni trošak ispitivanja i troškove koje snosi naručitelj, uključujući zdravstvene usluge i plaćanja ispitivačima i ispitanicima. Ako u određenom postupku u CTIS-u nije dokument zahtjeva, čuvati dokaz da će biti potpisan prije aktivacije mjesta i dostaviti ga na zahtjev (DECISIONS.md D8). Mjesto ispitivanja smije započeti tek nakon potpisa ugovora, pozitivnog mišljenja Središnjeg etičkog povjerenstva i odobrenja Ministarstva zdravstva."
+    },
+    {
+      "id": "HR-R1",
+      "checklist_item": "7 (mandatory)",
+      "ctis_section": "Form (CTIS Form section, outside the Part II placeholders)",
+      "ctis_title": "GDPR compliance statement",
+      "ctis_title_note": "The Croatia checklist places the EudraLex statement in the CTIS Form section; the naming guide gives no CTCG title for it (\"use other CTIS upload locations\"). R1_Compliance collection and use personal data_HR applies only if a separate Part II document is needed because the national information is not fully covered there or the authority requests one (DECISIONS.md D9).",
+      "conditional_part_ii_upload": {
+        "ctis_title": "R1_Compliance collection and use personal data_HR",
+        "trigger_text": "Only if the national information is not fully covered in the Form-section statement or the authority requests a separate Part II document."
+      },
+      "name_en": "Data-protection compliance statement (Regulation (EU) 2016/679 and applicable Croatian data-protection rules)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "hr"
+      ],
+      "language_rule": "Croatian answers by default; Croatian or English allowed (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/R1_Data protection.docx",
+        "basis": "EudraLex Volume 10 statement of compliance with Regulation (EU) 2016/679, completed in the CTIS Form section",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_rule": "The guides state no signature requirement; the template's date, name and role of the responsible person at the sponsor are completed from the sponsor's information.",
+      "content": "CTIS statement confirming compliance with Regulation (EU) 2016/679 and applicable Croatian data-protection rules. Participant documents explain controller, purposes, data categories, recipients, transfers, retention, safeguards, rights and contacts, and include a route to the Croatian Personal Data Protection Agency (AZOP), consistent with this statement.",
+      "national_fields": {
+        "r1_the_sponsor_declares": "Required in Croatia: state in Croatian that the processing of personal data in the trial also complies with the applicable Croatian data-protection rules."
+      },
+      "sources": [
+        "HR-PII-CHECKLIST#7",
+        "HR-QC#5",
+        "NAMING"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant; name and role of the responsible person at the sponsor from the sponsor",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_hr": "Obrazac CTIS-a (odjeljak Form), ne zaseban dokument dijela II. Obvezna izjava EudraLex Volume 10 o usklađenosti s Uredbom (EU) 2016/679 i primjenjivim hrvatskim propisima o zaštiti osobnih podataka (national_fields). Zaseban dokument dijela II (R1_Compliance collection and use personal data_HR) samo ako nacionalne informacije nisu u potpunosti obuhvaćene ili ga nadležno tijelo zatraži (DECISIONS.md D9). Ime i funkciju odgovorne osobe naručitelja daje naručitelj; ne izmišljati. Informirani pristanak mora biti usklađen s izjavom i navesti put do Agencije za zaštitu osobnih podataka (AZOP)."
+    },
+    {
+      "id": "HR-S1",
+      "checklist_item": "8 (conditional, compliance template)",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_HR",
+      "name_en": "Biological samples compliance statement",
+      "requirement": "conditional",
+      "trigger": "samples.collected or samples.archive_used",
+      "trigger_text": "Samples are collected (or archived samples are used).",
+      "per": "trial",
+      "language": [
+        "hr"
+      ],
+      "language_rule": "Croatian answers by default; Croatian or English allowed (DECISIONS.md D1).",
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "EudraLex Volume 10 biological-samples compliance template",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Collection, responsible parties, processing, storage location, storage period, permitted use, transfers, end-of-trial handling, withdrawal and disposal. Consistent with the protocol, informed consent, privacy information, material-transfer arrangements and laboratory plan.",
+      "national_fields": {
+        "v149": "Required in Croatia when samples or data may be used outside the approved protocol: in Croatian, state that a Central Ethics Committee opinion and approval are obtained before any research not described in the approved protocol, and that the committee decides whether additional participant consent is required.",
+        "f03": "Required in Croatia: in Croatian, state that participants are informed about future use of samples, the person responsible for collection, the storage location and what happens to samples after the trial; that the protocol states how, where and for how long every sample is stored and where it is processed; that optional substudies, donation to a repository or biobank, optional future use and genetic testing (known biomarkers, complete DNA, whole-genome or whole-exome analysis) have a separate Croatian informed consent; that repository samples are stored and processed so that they cannot be linked to the participant, described as the actual method; and that participants who consented as minors give their own consent for continued storage and use when they become adults and gain legal capacity."
+      },
+      "sources": [
+        "HR-PII-CHECKLIST#8",
+        "HR-SECONDARY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak S (Compliance with applicable rules for biological samples). Uvjetan: kada se prikupljaju uzorci. Predložak EudraLex Volume 10. Opisati prikupljanje, odgovorne osobe, obradu, mjesto i razdoblje pohrane, dopuštenu uporabu, prijenose, postupanje na kraju ispitivanja, povlačenje i uništavanje. Istraživanje izvan odobrenog protokola zahtijeva prethodno mišljenje i odobrenje Središnjeg etičkog povjerenstva (national_fields). Usklađeno s protokolom, informiranim pristankom, informacijama o privatnosti, ugovorima o prijenosu materijala i laboratorijskim planom. Vodič ne traži potpis."
+    },
+    {
+      "id": "HR-L1-SECONDARY",
+      "checklist_item": "8 (conditional, separate consent)",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<secondary use or genetics>_<population>_HR_hr",
+      "name_en": "Separate informed consent for optional substudies, repository or biobank donation, future use and genetic analysis",
+      "requirement": "conditional",
+      "trigger": "research.optional_substudy or samples.future_use_outside_protocol or data.future_use_outside_protocol or samples.genetic_analysis_optional",
+      "trigger_text": "Optional substudies, donation to a repository or biobank, optional future use, and genetic, genome or exome analysis where required by the Croatian guidance.",
+      "per": "population",
+      "language": [
+        "hr"
+      ],
+      "template": null,
+      "template_note": "Templates per population_sets (secondary_use, genetic_research); all missing.",
+      "signature_at_submission": false,
+      "content": "Separate Croatian informed consent with its own DA and NE choices; refusal does not affect main-trial participation. Protocol-required, integral analysis stays in the unified main consent. Research outside the approved protocol needs prior Central Ethics Committee review.",
+      "sources": [
+        "HR-PII-CHECKLIST#8",
+        "HR-SECONDARY",
+        "HR-ICF#consent-choices-and-optional-activities-2"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak L. Uvjetan: zaseban hrvatski informirani pristanak za neobvezna podispitivanja (npr. farmakogenetička), darivanje uzoraka repozitoriju ili biobanci, neobveznu buduću uporabu te genetičko testiranje poznatih biomarkera i analizu cijele DNK, genoma ili egzoma. Analiza koja je obvezni i sastavni dio ispitivanja opisuje se u glavnom informiranom pristanku. Zasebni izbori DA i NE; odbijanje ne utječe na sudjelovanje u glavnom ispitivanju. Istraživanje izvan odobrenog protokola zahtijeva prethodnu ocjenu Središnjeg etičkog povjerenstva. Ne nazivati uzorke anonimnima ako postoji ključ za ponovnu identifikaciju. Ispitanici koji su dali uzorke kao maloljetnici daju vlastiti pristanak za nastavak pohrane i uporabe kada postanu punoljetni i steknu poslovnu sposobnost."
+    },
+    {
+      "id": "HR-L1-MINORS",
+      "checklist_item": "9 (conditional, minors)",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<parents or assent band>_<population>_HR_hr",
+      "name_en": "Parent, guardian or legal-representative consent and age-band assent statements",
+      "requirement": "conditional",
+      "trigger": "population.minors",
+      "trigger_text": "Minors are enrolled.",
+      "per": "population",
+      "language": [
+        "hr"
+      ],
+      "template": null,
+      "template_note": "Templates per population_sets minors and population_rules.minors; all missing.",
+      "signature_at_submission": false,
+      "content": "Unified Croatian informed consent for the parent, guardian or legal representative, plus a separate Izjava o pristanku za sudjelovanje u kliničkom ispitivanju for each Croatian age band included in recruitment (4 to 7, 8 to 11, 12 to 14, 15 to 17 years). Font, illustration, assent, signature and re-consent rules in population_rules.minors and styling.md.",
+      "sources": [
+        "HR-PII-CHECKLIST#9",
+        "HR-MINORS",
+        "HR-HUB#age-specific-assent-for-minors"
+      ],
+      "kind": "participant_document",
+      "reader": "parent or legal representative; minor",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak L. Uvjetan: pedijatrijsko ispitivanje. Jedinstveni hrvatski informirani pristanak za roditelja, skrbnika ili zakonskog zastupnika (jedno polje za potpis roditelja; ako dijete nema roditelja, potpisuje skrbnik ili zakonski zastupnik kojeg je imenovao sud) te zasebna „Izjava o pristanku za sudjelovanje u kliničkom ispitivanju” za svaku dobnu skupinu koja se uključuje: 4–7 godina (jednostavne ilustracije, font najmanje 20), 8–11 godina (jednostavne ilustracije, font najmanje 16), 12–14 i 15–17 godina (uobičajeni format, jednostavniji jezik). Ne koristiti jedan dokument za svu djecu. Maloljetnik koji može oblikovati mišljenje i ocijeniti informacije potpisuje uz zakonskog zastupnika; odbijanje djeteta je odlučujuće. Prazni, s verzijom i datumom, nepotpisani pri podnošenju. Vlastiti pristanak punoljetne osobe nakon navršenih 18 godina, uključujući pristanak za daljnju pohranu i uporabu uzoraka."
+    },
+    {
+      "id": "HR-L1-CAPACITY",
+      "checklist_item": "9 (conditional, adults lacking capacity)",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<legal representative or participant information>_<population>_HR_hr",
+      "name_en": "Legal-representative informed consent and adapted participant information",
+      "requirement": "conditional",
+      "trigger": "population.adults_without_capacity",
+      "trigger_text": "An adult who cannot provide valid consent is enrolled (Article 31 conditions met).",
+      "per": "population",
+      "language": [
+        "hr"
+      ],
+      "template": null,
+      "template_note": "Templates per population_sets adults_without_capacity; all missing.",
+      "signature_at_submission": false,
+      "content": "Full Croatian informed consent for the legally appointed (court-appointed) representative and Croatian information for the participant at the level they can understand, with a signature or assent field where the participant can make or record a meaningful choice. Restrictive Croatian guidance for trials in people with mental disorders applies (population_rules.adults_without_capacity; DECISIONS.md D14).",
+      "sources": [
+        "HR-PII-CHECKLIST#9",
+        "HR-CAPACITY"
+      ],
+      "kind": "participant_document",
+      "reader": "legal representative; participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak L. Uvjetan: odrasla osoba koja ne može dati valjani informirani pristanak. Puni hrvatski informirani pristanak za zakonskog zastupnika kojeg je imenovao sud i informacije za ispitanika u obliku koji može razumjeti, s poljem za potpis ili izjavu o pristanku kada ispitanik može donijeti ili zabilježiti smislen izbor. Neobvezna uporaba uzoraka, genetika, praćenje trudnoće, njegovatelj i druge treće osobe u zasebnim dokumentima. Izričita želja ispitanika da odbije ili odustane se poštuje. Ograničenje za ispitivanja kod osoba s duševnim smetnjama i ispitivanja psihofarmaka provjeriti pisanim putem s Ministarstvom zdravstva i Središnjim etičkim povjerenstvom prije podnošenja (DECISIONS.md D14). Ponovni vlastiti pristanak kada ispitanik stekne ili ponovno stekne sposobnost."
+    },
+    {
+      "id": "HR-L1-EMERGENCY",
+      "checklist_item": "9 (conditional, emergency enrollment)",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<emergency participant or representative or initial information>_<population>_HR_hr",
+      "name_en": "Later consent documents for Article 35 emergency enrollment",
+      "requirement": "conditional",
+      "trigger": "consent.emergency_enrolment",
+      "trigger_text": "The protocol relies on enrollment before consent in a sudden life-threatening or similarly serious condition (every Article 35 condition met). The detailed emergency enrollment procedure itself is described in K1 (v118 to v121).",
+      "per": "population",
+      "language": [
+        "hr"
+      ],
+      "template": null,
+      "template_note": "Templates per population_sets emergency; all missing.",
+      "signature_at_submission": false,
+      "content": "Croatian participant informed consent for use when the participant can receive information and decide, a separate Croatian representative document for cases in which the participant remains unable to consent, and (recommended) a short initial information script or sheet that does not delay treatment and does not imply that full consent was obtained (DECISIONS.md D15).",
+      "sources": [
+        "HR-PII-CHECKLIST#9",
+        "HR-EMERGENCY"
+      ],
+      "kind": "participant_document",
+      "reader": "participant; legal representative",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak L. Uvjetan: hitno uključivanje prema članku 35. Uredbe (EU) br. 536/2014, samo ako su ispunjeni svi uvjeti; detaljni postupak hitnog uključivanja opisuje se u K1. Hrvatski informirani pristanak za ispitanika kada može primiti informacije i odlučiti te zaseban dokument za zakonskog zastupnika ako ispitanik ostane nesposoban za davanje pristanka. Preporučuje se kratka početna obavijest ili skripta koja ne odgađa liječenje i ne daje dojam da je dan puni pristanak (DECISIONS.md D15). Odluka o hitnom uključivanju nije informirani pristanak. Prazni, s verzijom i datumom. Dodati dokumente za maloljetnike, trudnoću, uzorke, genetiku ili treće osobe ako se primjenjuju."
+    },
+    {
+      "id": "HR-L1-PREGNANCY",
+      "checklist_item": "9 (conditional, pregnancy follow-up)",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<pregnancy follow-up or pregnant partner>_<population>_HR_hr",
+      "name_en": "Pregnancy follow-up consent for a pregnant participant and, separately, for a participant's pregnant partner",
+      "requirement": "conditional",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up",
+      "trigger_text": "The protocol or pharmacovigilance plan collects information about a pregnancy arising during or after trial exposure, of a participant or of a participant's partner (in Croatia, any planned pregnancy follow-up has its own consent).",
+      "per": "population",
+      "language": [
+        "hr"
+      ],
+      "template": null,
+      "template_note": "Templates per population_sets pregnancy_participant and pregnancy_partner; all missing.",
+      "signature_at_submission": false,
+      "content": "Separate Croatian pregnancy follow-up consent for a pregnant participant and a different consent for a participant's pregnant partner; infant follow-up, if planned, is included in the relevant document with a defined duration. Representative consent and age- or capacity-appropriate assent where the pregnant participant or partner is a minor or lacks capacity. Health information is obtained from the woman herself.",
+      "sources": [
+        "HR-PII-CHECKLIST#9",
+        "HR-PREGNANCY",
+        "HR-HUB#separate-consent-for-pregnancy-follow-up-and-optional-research"
+      ],
+      "kind": "participant_document",
+      "reader": "pregnant participant or pregnant partner",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_hr": "CTIS dio II, odjeljak L. Uvjetan: zaseban hrvatski informirani pristanak za praćenje trudnoće trudne ispitanice i drugi, različit dokument za trudnu partnericu ispitanika; praćenje djeteta nakon rođenja uključiti u odgovarajući dokument, s određenim trajanjem. Za maloljetnu ili poslovno nesposobnu trudnicu ili partnericu: zaseban pristanak zastupnika i izjava o pristanku primjerena dobi ili sposobnosti. Zdravstvene informacije o trudnici, trudnoći i djetetu dobivaju se od same žene; ne kontaktirati njezina ginekologa, opstetričara, pedijatra djeteta ni druge zdravstvene radnike i ne tražiti njihove kontakte. Pristanak nije automatski ni obvezan; odbijanje ne utječe na zdravstvenu skrb niti kažnjava ispitanika."
+    }
+  ],
+  "checklist_mapping_note": "One document per entry of the Croatia Part II document checklist page (items 1 to 9; each 'Mandatory' or 'Conditional' paragraph is an entry). Two entries hold two uploads: the CV entry (HR-M1 plus the GCP certificate HR-M-GCP) and the financial-arrangements entry (HR-P1 on the EU compensation template plus HR-P-FUNDING for the parts that template does not cover). The impartial-witness pathway has no checklist entry; it is a section of the relevant consent (population_sets impartial_witness).",
+  "national_fields": {
+    "HR-K1": {
+      "form": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+      "fields": {
+        "v105": "Required in Croatia: in Croatian, state that every advertisement, invitation, social-media item, poster, telephone script, letter or other recruitment material that potential participants will see or hear is submitted in its final proposed Croatian version under Recruitment arrangements, carries a version and date, and is evaluated by the Central Ethics Committee case by case; for healthy volunteers, describe prescreening, databases and repeat-participation checks.",
+        "v108": "Required in Croatia: in Croatian, state that the informed-consent interview is conducted by a physician or dentist who is the principal investigator or an investigator to whom the principal investigator has delegated the activity, with the delegation documented before the person performs it; that consent is obtained in person on paper from the participant (or parent, guardian or legal representative) before any trial-specific procedure, using one unified Croatian informed consent document (Informirani pristanak), submitted blank in CTIS; that the participant and the interviewer sign and date it and the participant receives a signed copy; that routine electronic consent is not used (electronic consent only in exceptional situations, followed by in-person paper consent as soon as possible); and that trial health information is obtained from the participant or legal representative, not by asking for the family physician's contact details or contacting other healthcare professionals. Where they apply, state that a required caregiver or study partner and a named emergency contact give their own consent, and that home delivery of investigational medicine has a separate consent.",
+        "v110": "Required in Croatia when adults unable to consent are included: in Croatian, state that consent is given by the guardian or legal representative appointed by a court, whose appointment and scope are verified before enrolment with the evidence retained at the site (a spouse, adult child, caregiver, study partner or family member is not automatically the legal representative); that the participant receives Croatian information suited to their ability and assent is recorded where appropriate; that the explicit wish of a participant capable of forming an opinion to refuse or withdraw is respected; when capacity is reassessed and by whom if it fluctuates; that the participant's own consent is obtained when capacity is gained or regained; and, for trials in people with mental disorders, how the Central Ethics Committee restriction is addressed (people under guardianship who cannot decide independently may not take part in trials of psychopharmaceuticals; trials in people with mental disorders should plan to include adults with legal capacity; written advice from the Ministry of Health and the Central Ethics Committee sought beforehand).",
+        "v114": "Required in Croatia when minors are included: in Croatian, state the assent age bands used (4 to 7, 8 to 11, 12 to 14 and 15 to 17 years, with a separate Izjava o pristanku za sudjelovanje u kliničkom ispitivanju for each band recruited); that one parent signs (Central Ethics Committee guidance provides for one parent signature field) or, if the child has no parent, the guardian or legally appointed representative appointed by a court, whose authority is verified before enrolment; that the child receives information suited to age and mental maturity from an investigator or trial-team member trained or experienced in working with children, while the informed-consent interview is conducted by a physician or dentist who is the principal investigator or a delegated investigator; that a minor who can form an opinion and evaluate the information signs alongside the legal representative, that a minor takes part only with a signature or oral assent, and how understanding is assessed and oral assent documented (silence or failure to resist is not assent); that the child's refusal or later wish to stop is decisive; and that the participant's own adult consent is obtained after turning 18, including consent for continued storage and use of samples.",
+        "v117": "Required in Croatia when an impartial witness may be needed: in Croatian, state that a witness is used only when the participant or legal representative can understand and decide but cannot write (not because the person cannot read Croatian, has low literacy, lacks capacity, is unconscious or is in an emergency); how decision-making ability and the reason a conventional signature cannot be used are confirmed and documented; how the witness's independence from the sponsor, investigator and trial team is checked (no subordinates of the investigator, recruiters or persons paid for trial performance; family members are not automatically impartial); that the witness is present for the whole consent process and signs and dates the witness attestation; that the physician or dentist interviewer signs and dates; which approved alternative means records the decision; that a translator is not automatically the impartial witness; and that no remote witness or electronic signature is used unless a specific exceptional process has prior approval and later paper consent is planned.",
+        "v121": "Required in Croatia when emergency enrolment is used: in Croatian, explain every Article 35 condition for the specific qualifying condition and therapeutic window; the Central Ethics Committee decision sequence, read together with Article 35 (consent is first sought from a parent, guardian or legally appointed representative if the person has one who can be contacted; otherwise a family member who is present may act in the described pathway; otherwise the investigator decides when the investigator is also the treating physician), with each decision-maker's role, authority and order; the prior-objection check (available records, advance directives where relevant, information from people present) without delaying care; that the emergency enrolment decision is not informed consent and is followed as soon as possible by information and in-person paper consent of the participant, or of the legally designated representative if the participant remains unable to decide; how exact dates, times, contact attempts, decision-maker, capacity changes and signatures are documented; and that later refusal stops future trial interventions under the approved withdrawal and safety process."
+      }
+    },
+    "HR-N1": {
+      "form": "eu/templates/part-ii/N1_Site suitability.docx",
+      "fields": {
+        "v126": "Required in Croatia: describe the site's emergency arrangements. For a non-hospital site that may need to hospitalise a participant because of a serious adverse reaction or complication, refer to the signed agreement with the receiving hospital that identifies who pays the hospitalisation costs (HR-N-HOSPITAL).",
+        "n1_issued_by": "Required in Croatia: the authorised site representative signs and dates the form at submission. Keep the signature block (name, function, signature, date) in the CTIS copy and leave it empty for the site's authorised representative; do not invent names."
+      }
+    },
+    "HR-P1": {
+      "form": "eu/templates/part-ii/P1_Participant compensation.docx",
+      "fields": {
+        "f02": "Required in Croatia: in Croatian, state the maximum net amount, in euros, for participant travel and other expenses, consistent with the informed consent documents."
+      }
+    },
+    "HR-R1": {
+      "form": "eu/templates/part-ii/R1_Data protection.docx",
+      "fields": {
+        "r1_the_sponsor_declares": "Required in Croatia: state in Croatian that the processing of personal data in the trial also complies with the applicable Croatian data-protection rules."
+      }
+    },
+    "HR-S1": {
+      "form": "eu/templates/part-ii/S1_Biological samples.docx",
+      "fields": {
+        "v149": "Required in Croatia when samples or data may be used outside the approved protocol: in Croatian, state that a Central Ethics Committee opinion and approval are obtained before any research not described in the approved protocol, and that the committee decides whether additional participant consent is required.",
+        "f03": "Required in Croatia: in Croatian, state that participants are informed about future use of samples, the person responsible for collection, the storage location and what happens to samples after the trial; that the protocol states how, where and for how long every sample is stored and where it is processed; that optional substudies, donation to a repository or biobank, optional future use and genetic testing (known biomarkers, complete DNA, whole-genome or whole-exome analysis) have a separate Croatian informed consent; that repository samples are stored and processed so that they cannot be linked to the participant, described as the actual method; and that participants who consented as minors give their own consent for continued storage and use when they become adults and gain legal capacity."
+      }
+    }
+  },
+  "national_fields_note": "Index of the national additions to shared forms; the same text is on each document (documents[].national_fields). Field ids are those of the shared <form>.fields.json. M1 has none because the HALMED CV format replaces the EU CV form (HR-M1).",
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued by someone else (investigator, insurer, site, hospital, sponsor). Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "participant_templates": [],
+  "participant_templates_missing": [
+    {
+      "id": "HR-PT-main",
+      "name": "Informirani pristanak, adult patients (unified information and consent)",
+      "role": "participant"
+    },
+    {
+      "id": "HR-PT-healthy",
+      "name": "Informirani pristanak, healthy volunteers",
+      "role": "participant"
+    },
+    {
+      "id": "HR-PT-parents",
+      "name": "Informirani pristanak for the parent, guardian or legal representative of a minor",
+      "role": "parent or legal representative"
+    },
+    {
+      "id": "HR-PT-assent-4-7",
+      "name": "Izjava o pristanku, ages 4 to 7 (simple illustrations, font at least 20)",
+      "role": "minor"
+    },
+    {
+      "id": "HR-PT-assent-8-11",
+      "name": "Izjava o pristanku, ages 8 to 11 (simple illustrations, font at least 16)",
+      "role": "minor"
+    },
+    {
+      "id": "HR-PT-assent-12-14",
+      "name": "Izjava o pristanku, ages 12 to 14 (ordinary format, simpler language)",
+      "role": "minor"
+    },
+    {
+      "id": "HR-PT-assent-15-17",
+      "name": "Izjava o pristanku, ages 15 to 17 (ordinary format, simpler language)",
+      "role": "minor"
+    },
+    {
+      "id": "HR-PT-legal-rep",
+      "name": "Informirani pristanak for the legally appointed representative of an adult lacking capacity",
+      "role": "legal representative"
+    },
+    {
+      "id": "HR-PT-limited-capacity",
+      "name": "Participant information (and assent field) for an adult lacking capacity, adapted to their ability",
+      "role": "participant"
+    },
+    {
+      "id": "HR-PT-emergency",
+      "name": "Informirani pristanak for a participant enrolled in an emergency, once able to decide",
+      "role": "participant"
+    },
+    {
+      "id": "HR-PT-emergency-representative",
+      "name": "Informirani pristanak for the legally designated representative after emergency enrollment",
+      "role": "legal representative"
+    },
+    {
+      "id": "HR-PT-emergency-initial",
+      "name": "Short initial information script or sheet during the emergency (recommended)",
+      "role": "participant or person present"
+    },
+    {
+      "id": "HR-PT-witness",
+      "name": "Impartial-witness section and attestation built into the relevant informed consent",
+      "role": "impartial witness"
+    },
+    {
+      "id": "HR-PT-witness-info",
+      "name": "Witness information or confidentiality form (optional)",
+      "role": "impartial witness"
+    },
+    {
+      "id": "HR-PT-pregnancy",
+      "name": "Pregnancy follow-up informed consent, pregnant participant",
+      "role": "pregnant participant"
+    },
+    {
+      "id": "HR-PT-pregnant-partner",
+      "name": "Pregnancy follow-up informed consent, pregnant partner of a participant",
+      "role": "pregnant partner"
+    },
+    {
+      "id": "HR-PT-pregnancy-representative",
+      "name": "Pregnancy follow-up consent of the representative of a minor or incapacitated pregnant participant or partner",
+      "role": "parent or legal representative"
+    },
+    {
+      "id": "HR-PT-pregnancy-assent",
+      "name": "Age- or capacity-appropriate pregnancy follow-up assent statement",
+      "role": "minor or participant lacking capacity"
+    },
+    {
+      "id": "HR-PT-secondary",
+      "name": "Separate informed consent for optional substudies, repository or biobank donation and future use",
+      "role": "participant"
+    },
+    {
+      "id": "HR-PT-genetics",
+      "name": "Separate informed consent for optional genetic testing and complete DNA, whole-genome or whole-exome analysis",
+      "role": "participant"
+    },
+    {
+      "id": "HR-PT-caregiver",
+      "name": "Informirani pristanak for a required caregiver or study partner",
+      "role": "caregiver or study partner"
+    },
+    {
+      "id": "HR-PT-contact-person",
+      "name": "Consent of a named emergency contact person to the processing of their details",
+      "role": "contact person"
+    },
+    {
+      "id": "HR-PT-home-delivery",
+      "name": "Separate consent for home delivery of investigational medicines",
+      "role": "participant"
+    },
+    {
+      "id": "HR-PT-third-party",
+      "name": "Notice and consent for any other third party whose data will be collected",
+      "role": "third party"
+    }
+  ],
+  "participant_templates_missing_note": "No Croatian participant templates were supplied (the CTIS_HR folder holds only the seven Part II DOCX files and the variable sheet). Draft each participant document from the Croatia guides (drafting_rules, population_sets, population_rules, checklists/participant-documents.json) with styles/base.md and styling.md, or adapt it from its reference-package counterpart (based_on), until a Croatian set is supplied and split into templates/participant (DECISIONS.md D18).",
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "document": "HR-L1",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-main",
+          "template": "missing"
+        }
+      ],
+      "basis": "Croatia patient information and consent guide; no Croatian template supplied.",
+      "note": "One unified Informirani pristanak in Croatian for competent adult patients. Also the approved adult document for re-consent at 18 and when capacity is gained or regained.",
+      "sources": [
+        "HR-ICF",
+        "HR-PII-CHECKLIST#2"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "document": "HR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-healthy",
+          "template": "missing"
+        }
+      ],
+      "note": "Whenever people without the condition under study are recruited (common in Phase I, bioavailability, food-effect, interaction, pharmacokinetic, pharmacodynamic and some vaccine trials). Do not reuse a patient document. State that the volunteer is not being treated and should not expect medical benefit; placebo explained as a substance without the active trial medicine, not a false medicine; exact restriction periods; payment, maximum net amount in euros and effect of early withdrawal. No separate Croatian national healthy-volunteer template exists.",
+      "sources": [
+        "HR-HV"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "document": "HR-L1-MINORS",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-parents",
+          "template": "missing"
+        },
+        {
+          "title": "L1_SIS and ICF_assent 4-7_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-assent-4-7",
+          "template": "missing",
+          "condition": "children aged 4 to 7 are recruited"
+        },
+        {
+          "title": "L1_SIS and ICF_assent 8-11_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-assent-8-11",
+          "template": "missing",
+          "condition": "children aged 8 to 11 are recruited"
+        },
+        {
+          "title": "L1_SIS and ICF_assent 12-14_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-assent-12-14",
+          "template": "missing",
+          "condition": "adolescents aged 12 to 14 are recruited"
+        },
+        {
+          "title": "L1_SIS and ICF_assent 15-17_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-assent-15-17",
+          "template": "missing",
+          "condition": "adolescents aged 15 to 17 are recruited"
+        }
+      ],
+      "note": "Parent, guardian or legal-representative consent always; a separate Izjava o pristanku za sudjelovanje u kliničkom ispitivanju for each Croatian age band included in recruitment (never one document for all children). Re-consent with the adult document (HR-PT-main or HR-PT-healthy) after turning 18. Children under 4: no assent band in the guides (DECISIONS.md D11).",
+      "sources": [
+        "HR-MINORS",
+        "HR-PII-CHECKLIST#9"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "document": "HR-L1-CAPACITY",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-legal-rep",
+          "template": "missing"
+        },
+        {
+          "title": "L1_SIS and ICF_participant information_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-limited-capacity",
+          "template": "missing"
+        }
+      ],
+      "note": "Article 31 conditions; court-appointed guardian or legal representative with verified appointment and scope. Participant information adapted to the person's actual ability, with a signature or assent field when a meaningful choice can be made or recorded. Mental-disorder and psychopharmaceutical restriction (population_rules). Adult document (HR-PT-main) for later consent when capacity returns.",
+      "sources": [
+        "HR-CAPACITY",
+        "HR-PII-CHECKLIST#9"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "document": "HR-L1-EMERGENCY",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency participant_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-emergency",
+          "template": "missing"
+        },
+        {
+          "title": "L1_SIS and ICF_emergency legal representative_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-emergency-representative",
+          "template": "missing"
+        },
+        {
+          "title": "L1_SIS and ICF_emergency initial information_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-emergency-initial",
+          "template": "missing",
+          "condition": "recommended; only if it can be given without delaying necessary treatment (DECISIONS.md D15)"
+        }
+      ],
+      "note": "Article 35 pathway only when every condition is met; the procedure and the Croatian decision sequence go in K1. The emergency decision is not informed consent; full information and in-person paper consent follow as soon as possible. Add minor, pregnancy, sample, genetics, caregiver or third-party documents when those activities are part of the protocol.",
+      "sources": [
+        "HR-EMERGENCY",
+        "HR-PII-CHECKLIST#9"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "document": "HR-L1",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-witness",
+          "template": "missing"
+        },
+        {
+          "title": "L1_SIS and ICF_witness information_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-witness-info",
+          "template": "missing",
+          "condition": "only if the witness will receive personal or health information beyond what is necessary to observe consent (DECISIONS.md D16)"
+        }
+      ],
+      "note": "Build the witness process and attestation into the Croatian informed consent of the population concerned (no separate Croatian national witness template). For a participant or legal representative who can understand and decide but cannot write. Not for inability to read Croatian, low literacy, lack of capacity, unconsciousness or emergency.",
+      "sources": [
+        "HR-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "document": "HR-L1-PREGNANCY",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-pregnancy",
+          "template": "missing"
+        },
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up representative_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-pregnancy-representative",
+          "template": "missing",
+          "condition": "the pregnant participant is a minor or lacks legal capacity"
+        },
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up assent_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-pregnancy-assent",
+          "template": "missing",
+          "condition": "the pregnant participant is a minor or lacks legal capacity"
+        }
+      ],
+      "note": "Separate consent whenever pregnancy follow-up of a participant is planned (the main consent only announces it). Infant follow-up included only when planned, with a defined duration. Information comes from the woman herself; no contact with her gynaecologist, obstetrician, the child's paediatrician or other healthcare professionals.",
+      "sources": [
+        "HR-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "document": "HR-L1-PREGNANCY",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-pregnant-partner",
+          "template": "missing"
+        },
+        {
+          "title": "L1_SIS and ICF_pregnant partner representative_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-pregnancy-representative",
+          "template": "missing",
+          "condition": "the pregnant partner is under 18"
+        },
+        {
+          "title": "L1_SIS and ICF_pregnant partner assent_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-pregnancy-assent",
+          "template": "missing",
+          "condition": "the pregnant partner is under 18"
+        }
+      ],
+      "note": "A different Croatian informed consent addressed to the pregnant partner; her information is not collected through the enrolled participant alone. The participant may pass on an invitation or approved information; the partner decides whether to contact or be contacted.",
+      "sources": [
+        "HR-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "research.optional_substudy or samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "document": "HR-L1-SECONDARY",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-secondary",
+          "template": "missing"
+        }
+      ],
+      "note": "Separate Croatian informed consent for optional substudies, repository or biobank donation and future use, with DA and NE choices. Parent or representative versions with age-appropriate assent where minors or adults lacking capacity are included; the participant's own consent for continued storage and use at adulthood.",
+      "sources": [
+        "HR-SECONDARY",
+        "HR-PII-CHECKLIST#8"
+      ]
+    },
+    {
+      "id": "genetic_research",
+      "trigger": "samples.genetic_analysis_optional",
+      "document": "HR-L1-SECONDARY",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_genetic testing_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-genetics",
+          "template": "missing"
+        }
+      ],
+      "note": "Separate Croatian informed consent for optional genetic testing of known biomarkers and complete DNA, whole-genome or whole-exome analysis: access to genetic information, use, family implications, return of clinically important findings and the option not to receive them. Mandatory, integral genetic analysis belongs in the main consent (DECISIONS.md D17).",
+      "sources": [
+        "HR-SECONDARY"
+      ]
+    },
+    {
+      "id": "caregiver",
+      "trigger": "consent.caregiver_required",
+      "document": "HR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_caregiver_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-caregiver",
+          "template": "missing"
+        }
+      ],
+      "note": "The participant names the caregiver or study partner, who completes their own consent process; a replacement caregiver also consents. A caregiver is not automatically the legal representative.",
+      "sources": [
+        "HR-ICF#consent-choices-and-optional-activities-2",
+        "HR-CAPACITY"
+      ]
+    },
+    {
+      "id": "contact_person",
+      "trigger": "consent.emergency_contact_collected",
+      "document": "HR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_contact person_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-contact-person",
+          "template": "missing"
+        }
+      ],
+      "note": "If the main consent asks the participant to name an emergency contact, that person gives separate consent to the processing of their details. No tracing agency and no disclosure of participant data to an outside party for tracing.",
+      "sources": [
+        "HR-ICF#consent-choices-and-optional-activities-2"
+      ]
+    },
+    {
+      "id": "home_delivery",
+      "trigger": "logistics.imp_home_delivery",
+      "document": "HR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_home delivery_<population>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-home-delivery",
+          "template": "missing"
+        }
+      ],
+      "note": "Separate consent identifying the delivery company, delivery controls, replacement procedure, return of packaging or unused medicine and personal-data handling.",
+      "sources": [
+        "HR-ICF#consent-choices-and-optional-activities-2"
+      ]
+    },
+    {
+      "id": "other_third_party",
+      "trigger": "data.other_third_party",
+      "document": "HR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_third party_<type>_HR_hr",
+          "language": "hr",
+          "template_id": "HR-PT-third-party",
+          "template": "missing"
+        }
+      ],
+      "note": "Any other third party whose data will be collected gets a separate notice and consent process where required. Home nursing, participant transport and third-party reimbursement providers are identified with their privacy arrangements in the participant documents.",
+      "sources": [
+        "HR-PII-CHECKLIST#2",
+        "HR-QC#5"
+      ]
+    }
+  ],
+  "population_sets_note": "population_sets list which documents a kind of population or use case triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents. Every template is \"missing\": none was supplied.",
+  "population_rules": {
+    "authority": "Croatian Ministry of Health and Central Ethics Committee (Središnje etičko povjerenstvo); Croatian Act implementing Regulation (EU) No 536/2014 (Official Gazette 14/2019), Articles 12 and 14; Central Ethics Committee detailed instructions to applicants, Version 3; Central Ethics Committee national specifics related to CTIS, Version 1, February 2022; Croatian Family Act (Official Gazette 103/2015), Article 26; Regulation (EU) No 536/2014 Articles 28 to 35; as recorded in the Croatia guides reviewed 23 September 2026.",
+    "template_status": "missing: no Croatian participant templates were supplied. Every template id below is a planned id listed in participant_templates_missing, with no file (\"template\": \"missing\" in population_sets).",
+    "minors": {
+      "adulthood": "18 years (Croatian Family Act, Article 26).",
+      "always": [
+        "HR-PT-parents"
+      ],
+      "age_bands": [
+        {
+          "band": "4-7",
+          "template": "HR-PT-assent-4-7",
+          "template_status": "missing",
+          "reader": "child",
+          "format": "Short Croatian assent statement with simple illustrations, simple explanations and font no smaller than 20: who the child will meet, what will happen, what may hurt or feel uncomfortable, that the child can say no or ask to stop."
+        },
+        {
+          "band": "8-11",
+          "template": "HR-PT-assent-8-11",
+          "template_status": "missing",
+          "reader": "child",
+          "format": "Separate Croatian assent statement with simple illustrations, simple explanations and font no smaller than 16: main procedures, burdens, choices, privacy and the right to ask questions."
+        },
+        {
+          "band": "12-14",
+          "template": "HR-PT-assent-12-14",
+          "template_status": "missing",
+          "reader": "adolescent",
+          "format": "Separate assent statement in an ordinary document format with simpler language: purpose, procedures, risks, benefits, alternatives, privacy, samples, pregnancy precautions where relevant, voluntary choice."
+        },
+        {
+          "band": "15-17",
+          "template": "HR-PT-assent-15-17",
+          "template_status": "missing",
+          "reader": "adolescent",
+          "format": "Separate assent statement in an ordinary format with simpler language, detail approaching the adult document; contraception, pregnancy testing, data, samples, long-term follow-up and optional activities addressed directly where relevant."
+        }
+      ],
+      "band_rule": "One assent statement per band included in recruitment; do not use one document for all children. Band source: Central Ethics Committee guidance (detailed instructions to applicants, Version 3).",
+      "under_4": "The guides set no assent band below 4 years. Parent or representative consent applies; record oral assent in the approved manner when a child can express a view (DECISIONS.md D11).",
+      "representatives": "Central Ethics Committee guidance provides for a signature field for one parent. If the child has no parent, the guardian or legally appointed representative signs; a guardian or legal representative is a person appointed by a court and need not be a relative or live in the same household. A caregiver, study partner, family member or accompanying adult is not automatically the legal representative; verify authority before enrolment and retain the evidence at the site (DECISIONS.md D12).",
+      "assent_dissent": "A minor who can form an opinion and evaluate the information joins the consent process and signs alongside the legal representative. A minor takes part only with a signature or oral assent; silence or failure to resist is not assent; oral assent is recorded in the approved manner. The child's refusal or later wish to stop is decisive and the parent cannot force participation; this rule is stated in the parent document and the child-facing material.",
+      "information": "Information suited to age and mental maturity from an investigator or trial-team member trained or experienced in working with children; the informed-consent interview itself is conducted by a physician or dentist (principal investigator or delegated investigator).",
+      "reconsent_at_18": "HR-PT-main or HR-PT-healthy at the first appropriate opportunity after adulthood and full legal capacity; also the participant's own consent for continued storage and use of samples (HR-PT-secondary).",
+      "pregnancy": "If pregnancy follow-up could involve a minor participant or a minor partner: separate representative consent (HR-PT-pregnancy-representative) and separate age-appropriate pregnancy follow-up assent (HR-PT-pregnancy-assent)."
+    },
+    "adults_without_capacity": {
+      "always": [
+        "HR-PT-legal-rep",
+        "HR-PT-limited-capacity"
+      ],
+      "note": "Capacity is decision specific; diagnosis, disability, low literacy or difficulty writing alone do not trigger this pathway (a capable person who cannot write uses the witness pathway). The guardian or legal representative is court-appointed; verify appointment and scope before enrolment. The participant's explicit wish to refuse or withdraw is respected (Article 31). Own consent with HR-PT-main when capacity is gained or regained; capacity assessment and re-consent date recorded.",
+      "restriction": "Central Ethics Committee guidance: people under guardianship who cannot independently decide may not participate in clinical trials of psychopharmaceuticals; trials in people with mental disorders should plan to include adults with legal capacity. For a psychiatric or psychopharmaceutical trial including adults lacking capacity, seek written advice from the Ministry of Health and the Central Ethics Committee before relying on an Article 31 analysis. Older Croatian rules refer to a positive opinion of the committee responsible for protecting people with mental disorders; confirm the current route with the authorities (DECISIONS.md D14)."
+    },
+    "emergency": {
+      "always": [
+        "HR-PT-emergency",
+        "HR-PT-emergency-representative"
+      ],
+      "optional": [
+        "HR-PT-emergency-initial"
+      ],
+      "decision_sequence": "Central Ethics Committee sequence for a person who cannot consent at that moment: first a parent, guardian or legally appointed representative if the person has one who can be contacted; otherwise a family member who is present, in the described pathway; otherwise the investigator, when the investigator is also the treating physician. Read together with Article 35; a family member present is not automatically the legal representative for ongoing consent.",
+      "note": "Every Article 35 condition met, else no emergency enrolment. A known prior objection prevents enrolment. Later refusal stops future trial interventions. A capable participant who cannot write gives later consent through the witness pathway, which does not authorise the original enrolment."
+    },
+    "impartial_witness": {
+      "always": [
+        "HR-PT-witness"
+      ],
+      "optional": [
+        "HR-PT-witness-info"
+      ],
+      "note": "Witness for a participant or legal representative who can understand and decide but cannot write; independent of sponsor, investigator and trial team; present for the whole process; signs and dates the attestation. A translator is not automatically the witness. No remote witness or electronic signature without a specifically approved exceptional process followed by paper consent."
+    },
+    "pregnancy": {
+      "participant": "HR-PT-pregnancy whenever pregnancy follow-up of a participant is planned; HR-PT-pregnancy-representative and HR-PT-pregnancy-assent if she is a minor or lacks capacity.",
+      "partner": "HR-PT-pregnant-partner whenever partner follow-up is planned; HR-PT-pregnancy-representative and HR-PT-pregnancy-assent if the partner is under 18.",
+      "contraception": "Where effects on reproductive cells, embryo, fetus or unborn child are unknown or potentially harmful, both partners use reliable contraception (for example hormonal contraception plus condoms); every acceptable method and the required period before, during and after exposure defined.",
+      "health_information": "Obtained from the woman herself; no contact with healthcare professionals and no request for their contact details. If the safety objective cannot be met without direct source access, seek written clarification from the Central Ethics Committee before submission (DECISIONS.md D13)."
+    },
+    "secondary_use": {
+      "always": [
+        "HR-PT-secondary"
+      ],
+      "genetics": [
+        "HR-PT-genetics"
+      ],
+      "note": "Protocol-required, fully described analysis stays in the main consent; optional substudies, repository or biobank donation, future use and optional genetic, genome or exome analysis get separate Croatian consent. Research outside the approved protocol needs prior Central Ethics Committee opinion and approval. Taking blood or DNA without a defined use and timeframe is not accepted."
+    },
+    "third_parties": {
+      "caregiver": "HR-PT-caregiver",
+      "contact_person": "HR-PT-contact-person",
+      "home_delivery": "HR-PT-home-delivery",
+      "other": "HR-PT-third-party"
+    },
+    "electronic_consent": "Routine electronic consent is not permitted under current Central Ethics Committee guidance; consent is obtained in person on paper. Exceptional electronic consent does not replace in-person paper consent as soon as possible (DECISIONS.md D19).",
+    "shareable_templates": [
+      "HR-PT-pregnant-partner",
+      "HR-PT-contact-person",
+      "HR-PT-home-delivery",
+      "HR-PT-witness-info"
+    ],
+    "separate_document_rules": [
+      "Separate documents where the information, decision-maker or signature process changes (Croatia patient information and consent guide).",
+      "Healthy volunteers get their own version; a patient document is not reused.",
+      "Each recruited minor age band has its own assent statement, separate from the parent document.",
+      "Pregnant participant and pregnant partner get different documents; minor or limited-capacity variants add representative consent and assent.",
+      "Optional substudies, repository or biobank donation, future use and optional genetic analysis are separate consents.",
+      "A required caregiver or study partner, a named emergency contact and home delivery of investigational medicine each have their own consent.",
+      "Re-consent: at 18 (trial and continued sample storage and use), when capacity is gained or regained, when new information could affect willingness to continue, when the approved document is materially revised, or when the decision-maker changes."
+    ]
+  },
+  "drafting_rules": [
+    "Participant documents are in Croatian, professionally translated and proofread, locally adapted rather than a literal translation of a global English template; Croatia-specific authority, cost, insurance, privacy and contact information replaces country-neutral wording; no phrases such as 'in your country' or 'in some countries'.",
+    "The document title includes the Croatian term Informirani pristanak; the title and text do not use vague labels such as information, form or document instead of that term.",
+    "The main consent is one unified document with all participant information before the signature section; never an information sheet plus a signature-only form. Basic trial and sponsor details in a first-page header; header and footer in Croatian.",
+    "Address the participant directly with the formal pronoun Vi and its forms capitalised (Vi, Vas, Vam, Vaš), avoiding excessive repetition. State visits and weeks with Croatian ordinal numbers. Explain medical terms in language the intended participant understands; complete but not unnecessarily long.",
+    "Cover, in an order a participant can follow: title, sponsor, purpose, phase where useful and why the person is invited; planned number of participants globally and in Croatia; voluntariness and the right to refuse or withdraw without loss of ordinary care; design, groups, randomisation, blinding, investigational medicine, comparator and placebo (a substance without the active trial medicine, not a 'false medicine'); every procedure; duration, visits, restrictions, hospital stays and what happens after treatment stops; foreseeable risks, burdens, reproductive risks and unknowns; expected benefit or clear statement that none is expected; alternatives; new information, suspension, early termination and withdrawal.",
+    "Contraception: where reproductive effects are unknown or potentially harmful, both partners use reliable contraception (for example hormonal contraception plus condoms), with every acceptable method and period defined; state what happens if the participant or a partner becomes pregnant and that a separate follow-up consent will be offered.",
+    "State that the sponsor bears all protocol-related trial costs, including treatment, procedures, tests, visits and treatment of trial-related injury; describe travel and other expense reimbursement with the maximum net amount in euros where required by the arrangement; payment is not a medical benefit or a penalty for withdrawal; amounts match the financial documents.",
+    "Insurance and the process for reporting and seeking help for a trial-related injury match the insurance policy.",
+    "Contacts: medical questions and emergencies, participant rights, data protection and complaints. Trial questions go first to the investigator, then the trial lead. The only Central Ethics Committee information normally needed is its role, that it approved the trial once approval has been obtained, and its address for written questions about participant rights. Include a route to the Croatian Personal Data Protection Agency (AZOP).",
+    "Privacy: controller and representatives with usable contacts, purposes, data and health-data categories, recipients and vendors, coding, access, international transfers, retention, safeguards, rights and complaint routes; consent to trial participation is not presented as the legal basis for every processing operation; explain which data may continue to be used after withdrawal and why.",
+    "Health information is obtained from the participant or legal representative. Do not ask for the family physician's contact details or contact other healthcare professionals for health information; remove global clauses authorising unrestricted direct access to outside physicians. Encourage the participant to inform the family physician and offer a physician letter; the decision and communication stay with the participant.",
+    "Optional choices are distinct from the main decision; each offers both DA and NE; refusing an optional activity does not prevent main-trial participation unless the protocol genuinely requires it. An optional pharmacogenetic or other substudy has a separate Croatian informed consent; a required, integral analysis is explained in the main consent.",
+    "Biological samples: type, quantity, schedule and purpose; required or optional; who collects, controls, processes and receives; storage location and duration; coding or anonymisation (never 'anonymous' if a re-identification key remains); permitted uses and users; transfers outside Croatia or the EEA; commercial use; return of results; withdrawal and what cannot be reversed; final handling.",
+    "Caregiver or study partner, named emergency contact, home delivery of investigational medicine and other third parties: separate consent for each; no tracing agency or disclosure to an outside party for tracing; home-delivery, home-nursing, transport, reimbursement and technology vendors receiving identifiable data are identified with their role and privacy arrangements.",
+    "Signature section: participant (or parent, guardian or legal representative) and the physician or dentist conducting the interview (principal investigator or delegated investigator) sign and date, in person on paper, before any trial-specific procedure; the participant receives a signed copy; witness, representative and assent fields only in the pathway where they apply, correctly labelled; date and time fields where the protocol or emergency process needs exact sequence evidence.",
+    "Routine electronic consent is not proposed; electronic consent only in exceptional situations, followed by in-person paper consent as soon as possible.",
+    "Participant-completed questionnaires and rating scales are validated and translated into Croatian; for an instrument that is not scientifically validated, submit the English original and the Croatian translation.",
+    "Every document that is not a scientifically validated instrument with a reference carries a version and date; only the current version is submitted; names, versions, dates, populations and sites are consistent across the dossier; blank, unsigned documents in CTIS.",
+    "Participant templates were not supplied; where a reference document or a later template is used, its instructions ([square-bracket] notes, italic notes, '...........' gaps) and Part II form instructions (yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE: …] labels) are drafting instructions; none may remain in a final document."
+  ],
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "croatia_note": "Use the CTCG pattern. The Croatia guides use descriptive names and give no national naming instruction beyond unique descriptive names, version and date matching CTIS, and population, site, country, language and age band clear in the file name. _HR_hr on participant-facing documents (_HR_en for the English original of a non-validated instrument), _HR on O1, P1, the funding description and the conditional Part II R1. The GCP certificate, mentor documentation, hospitalisation agreement and funding description carry proposed titles to confirm (DECISIONS.md D3, D4, D5, D7); the GDPR statement is in the CTIS Form section (D9). The participant document's own Croatian title uses Informirani pristanak; the CTIS title stays in the CTCG form."
+  },
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/HR/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/HR/checklists/participant-documents.json",
+    "check": "countries/HR/checklists/forms-and-supplied.json",
+    "package": "countries/HR/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/HR/DECISIONS.md",
+  "sources": {
+    "HR-HUB": "https://trialagents.com/ctis/croatia/en",
+    "HR-PII-CHECKLIST": "https://trialagents.com/ctis/croatia/en/part-ii-document-checklist",
+    "HR-ICF": "https://trialagents.com/ctis/croatia/en/patient-information-consent-requirements",
+    "HR-QC": "https://trialagents.com/ctis/croatia/en/patient-facing-document-qc-checklist",
+    "HR-HV": "https://trialagents.com/ctis/croatia/en/healthy-volunteer-consent-requirements",
+    "HR-MINORS": "https://trialagents.com/ctis/croatia/en/minor-consent-assent-requirements",
+    "HR-CAPACITY": "https://trialagents.com/ctis/croatia/en/limited-capacity-legal-representative-consent-requirements",
+    "HR-EMERGENCY": "https://trialagents.com/ctis/croatia/en/emergency-enrollment-consent-requirements",
+    "HR-WITNESS": "https://trialagents.com/ctis/croatia/en/impartial-witness-consent-requirements",
+    "HR-PREGNANCY": "https://trialagents.com/ctis/croatia/en/pregnancy-follow-up-requirements",
+    "HR-SECONDARY": "https://trialagents.com/ctis/croatia/en/secondary-use-consent-requirements",
+    "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention"
+  },
+  "sources_note": "All Croatia guides reviewed 23 September 2026, read 27 November 2026. '#n' after HR-PII-CHECKLIST is the item number on that page and after HR-QC the section number; other '#' values are page anchors. Supplied: CTIS_HR Part II DOCX set and the Croatian variable sheet (compared with the shared forms); no Croatian participant templates."
+}

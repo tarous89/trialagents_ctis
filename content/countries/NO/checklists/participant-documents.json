@@ -1,0 +1,461 @@
+{
+ "id": "NO-QC-PARTICIPANT",
+ "name": "Norway: participant-facing document QC",
+ "applies_to": [
+  "NO-L1",
+  "NO-K2"
+ ],
+ "reviewed": "2026-11-27",
+ "source": "https://trialagents.com/ctis/norway/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); sections C1-C8 follow its eight sections; C9 and C10 add the content and population rules of the Norway patient information and population guides named in each item's source",
+ "result_values": [
+  "met",
+  "unmet",
+  "needs_decision",
+  "not_applicable"
+ ],
+ "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+ "sections": [
+  {
+   "id": "C1",
+   "title": "Trial content",
+   "items": [
+    {
+     "id": "C1.01",
+     "check": "Trial title, acronym, sponsor, EU trial number and participant group are correct and match the protocol and CTIS."
+    },
+    {
+     "id": "C1.02",
+     "check": "States clearly that the project is research, why the person is invited, and identifies the investigational treatment."
+    },
+    {
+     "id": "C1.03",
+     "check": "Randomisation, blinding, placebo, treatment duration, visit schedule and invasive procedures are correct."
+    },
+    {
+     "id": "C1.04",
+     "check": "Foreseeable risks and burdens are described without minimising uncertainty."
+    },
+    {
+     "id": "C1.05",
+     "check": "Expected benefit is stated accurately, including when no direct benefit is expected."
+    },
+    {
+     "id": "C1.06",
+     "check": "Alternatives to participation are explained where relevant."
+    },
+    {
+     "id": "C1.07",
+     "check": "Pregnancy testing, contraception, breastfeeding and partner precautions match the protocol.",
+     "applies_when": "protocol has reproductive requirements"
+    },
+    {
+     "id": "C1.08",
+     "check": "Payments, expense reimbursement and injury-insurance wording match the Part II documents (NO-P1, NO-O1)."
+    },
+    {
+     "id": "C1.09",
+     "check": "Relevant conflicts of interest or institutional connections of those responsible for the study are disclosed."
+    },
+    {
+     "id": "C1.10",
+     "check": "Contacts are given for questions about the trial, injury, participant rights and privacy; the EU trial number and how results will become available are stated.",
+     "source": "NO-ICF"
+    }
+   ]
+  },
+  {
+   "id": "C2",
+   "title": "Protocol-to-document consistency",
+   "items": [
+    {
+     "id": "C2.01",
+     "check": "Population, age range, disease and inclusion pathway match the protocol."
+    },
+    {
+     "id": "C2.02",
+     "check": "Visit numbers, visit duration, home procedures, hospitalisation and follow-up match the protocol."
+    },
+    {
+     "id": "C2.03",
+     "check": "Sample types, volumes, timing, analyses and optional components match the protocol."
+    },
+    {
+     "id": "C2.04",
+     "check": "The protocol definition and expected date of the end of the clinical trial are stated and match."
+    },
+    {
+     "id": "C2.05",
+     "check": "Realistic dates are given for the end of all research activity (including publication) and for data deletion."
+    },
+    {
+     "id": "C2.06",
+     "check": "The data deletion date is at least 25 years after the end of the clinical trial."
+    },
+    {
+     "id": "C2.07",
+     "check": "Safety contacts, emergency arrangements and withdrawal procedures match the protocol."
+    },
+    {
+     "id": "C2.08",
+     "check": "Every optional substudy is presented as optional (and in its own document where the template requires it)."
+    }
+   ]
+  },
+  {
+   "id": "C3",
+   "title": "Consent logic",
+   "items": [
+    {
+     "id": "C3.01",
+     "check": "The correct consent-giver is identified for the population."
+    },
+    {
+     "id": "C3.02",
+     "check": "Participation is voluntary and the text has no waiver or liability-release language; it does not read as a contract."
+    },
+    {
+     "id": "C3.03",
+     "check": "The right to refuse and withdraw without disadvantage or a need to justify the decision is explained."
+    },
+    {
+     "id": "C3.04",
+     "check": "Main-study consent is separate from optional future use, extra samples and optional substudies."
+    },
+    {
+     "id": "C3.05",
+     "check": "Consent choices that can be accepted or refused independently are shown as such (separate dated signature modules)."
+    },
+    {
+     "id": "C3.06",
+     "check": "The CTIS submission copy is unsigned."
+    },
+    {
+     "id": "C3.07",
+     "check": "At the consent visit, signatures and dates are required from the participant or legal representative and the person conducting the interview."
+    },
+    {
+     "id": "C3.08",
+     "check": "The participant or representative receives a copy of the signed consent record."
+    },
+    {
+     "id": "C3.09",
+     "check": "If consent is electronic, the recruitment procedure (K1) describes secure identity verification (BankID or another two-factor method).",
+     "applies_when": "consent.electronic"
+    },
+    {
+     "id": "C3.10",
+     "check": "If an impartial witness is needed, the witness signature and attestation logic are included.",
+     "applies_when": "consent.impartial_witness_possible"
+    }
+   ]
+  },
+  {
+   "id": "C4",
+   "title": "Population and document coverage",
+   "items": [
+    {
+     "id": "C4.01",
+     "check": "Every inclusion pathway in the protocol has a document set in the package (population x template table confirmed)."
+    },
+    {
+     "id": "C4.02",
+     "check": "The standard Norwegian adult Patient Information Sheet and Informed Consent Form is present.",
+     "applies_when": "population.adult_patients"
+    },
+    {
+     "id": "C4.03",
+     "check": "A healthy-volunteer variation is present where healthy adults are enrolled.",
+     "applies_when": "population.healthy_volunteers"
+    },
+    {
+     "id": "C4.04",
+     "check": "Age-appropriate forms follow the Norway pathway: guardian form, under-12 leaflet, 12-15 form, 16-17 form with own consent.",
+     "applies_when": "population.minors"
+    },
+    {
+     "id": "C4.05",
+     "check": "Participant and representative versions are present under the limited-capacity pathway, with distinct titles, versions and dates.",
+     "applies_when": "population.adults_without_capacity"
+    },
+    {
+     "id": "C4.06",
+     "check": "Pre-approved documents for emergency enrolment are present, including the Article 35(3) right-to-object letter.",
+     "applies_when": "consent.emergency_enrolment"
+    },
+    {
+     "id": "C4.07",
+     "check": "An impartial-witness process is present where a person cannot read or write.",
+     "applies_when": "consent.impartial_witness_possible"
+    },
+    {
+     "id": "C4.08",
+     "check": "Separate information and consent for pregnancy follow-up are present where identifiable partner, pregnancy or infant data are collected.",
+     "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or pregnancy.infant_follow_up"
+    },
+    {
+     "id": "C4.09",
+     "check": "A separate broad-consent form is present where optional future research is proposed.",
+     "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+    }
+   ]
+  },
+  {
+   "id": "C5",
+   "title": "Data privacy",
+   "items": [
+    {
+     "id": "C5.01",
+     "check": "The controller or controllers and relevant contact details are identified."
+    },
+    {
+     "id": "C5.02",
+     "check": "The categories and sources of personal data are explained."
+    },
+    {
+     "id": "C5.03",
+     "check": "Recipients, access and coding or pseudonymisation are described."
+    },
+    {
+     "id": "C5.04",
+     "check": "Transfers outside Norway and the European Economic Area are explained.",
+     "applies_when": "data.transfer_outside_eea"
+    },
+    {
+     "id": "C5.05",
+     "check": "Retention and deletion periods are stated consistently across the package."
+    },
+    {
+     "id": "C5.06",
+     "check": "Data handling after withdrawal is explained without promising deletion where applicable law requires continued retention."
+    },
+    {
+     "id": "C5.07",
+     "check": "Informed consent to trial participation is distinguished from the legal basis for processing under the GDPR; CTR consent is not presented as the GDPR legal basis."
+    },
+    {
+     "id": "C5.08",
+     "check": "The separate Part II GDPR statement (NO-R1) identifies its issuer and the party represented."
+    }
+   ]
+  },
+  {
+   "id": "C6",
+   "title": "Biosamples and secondary use",
+   "items": [
+    {
+     "id": "C6.01",
+     "check": "Every material collected and each planned analysis is identified.",
+     "applies_when": "samples.collected or samples.archive_used"
+    },
+    {
+     "id": "C6.02",
+     "check": "Trial samples are linked to the protocol endpoints.",
+     "applies_when": "samples.collected or samples.archive_used"
+    },
+    {
+     "id": "C6.03",
+     "check": "Storage location, storage period and responsible biobank are stated.",
+     "applies_when": "samples.collected or samples.archive_used"
+    },
+    {
+     "id": "C6.04",
+     "check": "If samples remain in Norway for more than two months, the study-specific biobank is identified.",
+     "applies_when": "samples.stored_in_norway_over_two_months"
+    },
+    {
+     "id": "C6.05",
+     "check": "For export: country, purpose, storage period and destruction or return plan are stated.",
+     "applies_when": "samples.export"
+    },
+    {
+     "id": "C6.06",
+     "check": "For import: origin country and plan for residual material are stated.",
+     "applies_when": "samples.import"
+    },
+    {
+     "id": "C6.07",
+     "check": "Future research outside the main trial objective is in a separate, optional broad-consent form.",
+     "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+    },
+    {
+     "id": "C6.08",
+     "check": "If a Norwegian general biobank will receive material, its REK-approved consent is used.",
+     "applies_when": "samples.general_biobank_norway"
+    }
+   ]
+  },
+  {
+   "id": "C7",
+   "title": "Norway-specific recruitment and national checks",
+   "items": [
+    {
+     "id": "C7.01",
+     "check": "Recruitment advertisements and identification materials are in Norwegian.",
+     "applies_when": "recruitment.material_used"
+    },
+    {
+     "id": "C7.02",
+     "check": "The documents and K1 state who identifies candidates, who gives information and who obtains consent."
+    },
+    {
+     "id": "C7.03",
+     "check": "Consent-taking is not assigned to the treating physician where the dependent relationship could affect voluntariness."
+    },
+    {
+     "id": "C7.04",
+     "check": "Where health records are searched to identify candidates, staff have legal access and any requested exemption from confidentiality is described.",
+     "applies_when": "recruitment.health_record_screening"
+    },
+    {
+     "id": "C7.05",
+     "check": "Patient cards, thank-you cards and staff interview guides that do not identify or recruit participants are excluded from the submission."
+    },
+    {
+     "id": "C7.06",
+     "check": "Current Norwegian names are used (REK KULMU, DMP, NPE, LAF) and the injury coverage is described accurately, including any additional trial-specific insurance.",
+     "source": "NO-ICF; templates"
+    }
+   ]
+  },
+  {
+   "id": "C8",
+   "title": "Signature, version and administration",
+   "items": [
+    {
+     "id": "C8.01",
+     "check": "Consent forms and recruitment materials submitted for Norway are in Norwegian."
+    },
+    {
+     "id": "C8.02",
+     "check": "Other Part II documents are in English unless a justified participant-language document is needed."
+    },
+    {
+     "id": "C8.03",
+     "check": "Title, version and date are identical in the file and the CTIS structured fields; the EU trial number, title, version and date are visible."
+    },
+    {
+     "id": "C8.04",
+     "check": "The file is a searchable, copyable PDF rather than an image-only scan."
+    },
+    {
+     "id": "C8.05",
+     "check": "Complete and redacted versions are prepared where CTIS publication rules require both.",
+     "applies_when": "ctis.publication_applies"
+    },
+    {
+     "id": "C8.06",
+     "check": "Names, signatures and other personal data are removed from public versions (including a witness's personal data).",
+     "applies_when": "ctis.publication_applies"
+    },
+    {
+     "id": "C8.07",
+     "check": "For an RFI revision, clean and tracked-change versions are uploaded to the dossier itself.",
+     "applies_when": "application.rfi_response"
+    },
+    {
+     "id": "C8.08",
+     "check": "Site and privacy contacts are current before first use."
+    },
+    {
+     "id": "C8.09",
+     "check": "Correct CTIS section and naming convention (requirements.json ctis_title)."
+    },
+    {
+     "id": "C8.10",
+     "check": "Signature and date fields for every signer are complete and blank; the representative's relationship or basis for acting is captured where relevant."
+    },
+    {
+     "id": "C8.11",
+     "check": "No drafting instruction remains in the final version (highlighted text, [bracket] notes, [Redaksjonsnote: ...], unused alternatives and signature paths); fields completed at consent stay blank."
+    }
+   ]
+  },
+  {
+   "id": "C9",
+   "title": "Readability, language and design",
+   "items": [
+    {
+     "id": "C9.01",
+     "check": "Plain Norwegian for a lay reader, adapted to the person who will consent.",
+     "source": "NO-ICF"
+    },
+    {
+     "id": "C9.02",
+     "check": "A representative or guardian document addresses that person and does not address them as though they were the participant.",
+     "applies_when": "population.minors or population.adults_without_capacity",
+     "source": "NO-ICF"
+    },
+    {
+     "id": "C9.03",
+     "check": "Headings, short paragraphs, readable sans-serif type and clear consent choices are used (country styling).",
+     "source": "NO-ICF; styling.md"
+    },
+    {
+     "id": "C9.04",
+     "check": "Visit schedules with many visits or procedures are shown in a short table (Tidspunkt, Hva skjer, Omtrentlig tidsbruk, Hva er ekstra på grunn av studien).",
+     "source": "templates"
+    },
+    {
+     "id": "C9.05",
+     "check": "Children's and limited-capacity documents use concrete language about procedures, discomfort, pain, time and the right to stop, with pictures or symbols where helpful.",
+     "applies_when": "population.minors or population.adults_without_capacity",
+     "source": "NO-MINORS; NO-CAPACITY"
+    }
+   ]
+  },
+  {
+   "id": "C10",
+   "title": "Population-specific checks",
+   "items": [
+    {
+     "id": "C10.01",
+     "check": "Healthy volunteers: why a healthy population is needed, no expected therapeutic benefit, screening not presented as care, restrictions, burdens, washout, follow-up after adverse events, and the difference between payment for time or burden and reimbursement; payment already earned is not lost by stopping.",
+     "applies_when": "population.healthy_volunteers",
+     "source": "NO-HV"
+    },
+    {
+     "id": "C10.02",
+     "check": "Minors: guardian consent as applicable with the authorised guardian confirmed; the child's explicit refusal respected; no incentives beyond expenses and lost earnings; own consent on turning 16 before continued participation.",
+     "applies_when": "population.minors",
+     "source": "NO-MINORS"
+    },
+    {
+     "id": "C10.03",
+     "check": "Minors: under-12 and 12-15 documents carry no guardian signature fields; the 16-17 document carries only the adolescent's signature; guardian version carries the full legal and data-protection detail.",
+     "applies_when": "population.minors",
+     "source": "NO-MINORS; templates"
+    },
+    {
+     "id": "C10.04",
+     "check": "Adults without capacity: the legally designated representative is identified under the law applicable in Norway (not assumed to be the nearest relative), the basis for acting is recorded, dissent is respected, own consent is obtained as soon as capacity returns.",
+     "applies_when": "population.adults_without_capacity",
+     "source": "NO-CAPACITY"
+    },
+    {
+     "id": "C10.05",
+     "check": "Emergency: the continued-participation document separates what has already happened from what happens if consent is given; the Article 35(3) right-to-object letter has the four-week reservation deadline, a reply slip and a lasting contact, and does not promise automatic destruction of all collected information.",
+     "applies_when": "consent.emergency_enrolment",
+     "source": "NO-EMERGENCY; templates"
+    },
+    {
+     "id": "C10.06",
+     "check": "Impartial witness: witness independent of the trial and present for the whole discussion; witness name, role and relationship recorded; the witness does not consent for the participant; any interpreter role is separate; remote attendance and identity verification described where remote.",
+     "applies_when": "consent.impartial_witness_possible",
+     "source": "NO-WITNESS"
+    },
+    {
+     "id": "C10.07",
+     "check": "Pregnancy: participant and partner forms separate where their information, rights or signature roles differ; infant information has a defined period and the right authorising person; partner refusal does not affect the enrolled participant.",
+     "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up",
+     "source": "NO-PREGNANCY"
+    },
+    {
+     "id": "C10.08",
+     "check": "Future research: scope understandable but not unlimited; data and/or material, genetic analysis, responsible organisation and biobank, storage location and duration, sharing (including commercial), transfers, coding and re-identification controls, individual findings, withdrawal and its limits after anonymisation or use.",
+     "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+     "source": "NO-SECONDARY"
+    }
+   ]
+  }
+ ]
+}

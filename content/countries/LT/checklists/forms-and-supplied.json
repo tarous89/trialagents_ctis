@@ -1,0 +1,244 @@
+{
+  "id": "LT-CHECK",
+  "name": "Lithuania: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/lithuania/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language is Lithuanian."
+    },
+    {
+      "id": "X.05",
+      "check": "Signature as required: signed before upload only where Lithuania requires it (M2 declaration of interest, N1 site suitability statement) or the selected form or law calls for it; otherwise unsigned."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json; correct CTIS location."
+    }
+  ],
+  "by_document": {
+    "LT-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the EU template version 2.0 (new Part II submissions from 1 September 2026) or an equivalent format covering all required information, with Lithuania-specific information in Lithuanian."
+      },
+      {
+        "id": "K1.02",
+        "check": "Explains how, when and where potential participants are approached, how privacy is protected, how much time they receive to decide, how understanding is checked and how withdrawal is handled."
+      },
+      {
+        "id": "K1.03",
+        "check": "Yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations; each 'yes' section is completed with the Lithuanian national fields, each 'no' section says not applicable."
+      },
+      {
+        "id": "K1.04",
+        "check": "Minors: under-12 oral information (whether written information is also given; information and the child's opinion documented), 12-plus oral and written information and assent, both-parent consent and exceptions, dissent, re-consent at adulthood.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.05",
+        "check": "Limited-capacity adults: categories of legally entitled representative and how authority is verified; capacity assessment; adapted information; dissent; re-consent when capacity is regained.",
+        "applies_when": "population.adults_without_capacity"
+      },
+      {
+        "id": "K1.06",
+        "check": "Impartial witness: reason, eligible participants, witness selection, communication of information, alternative consent method, who signs and dates, copy to the participant.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.07",
+        "check": "Emergency: why prior consent is impossible, recognition and documentation of the emergency, prior-objection check, why a representative cannot be reached, information after the intervention, who seeks consent to continue, later refusal.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.08",
+        "check": "Advertising explanation (need, placement, ineligible respondents, reimbursement, respondents' personal data) and healthy-volunteer identification and screening.",
+        "applies_when": "recruitment.material_used or population.healthy_volunteers"
+      },
+      {
+        "id": "K1.09",
+        "check": "Handling of people who do not understand Lithuanian is defined in advance.",
+        "applies_when": "population.non_lithuanian_speakers"
+      },
+      {
+        "id": "K1.10",
+        "check": "Electronic consent: legal validity of the signature method established.",
+        "applies_when": "consent.electronic"
+      },
+      {
+        "id": "K1.11",
+        "check": "Recruitment routes match the recruitment material (K2) and the protocol; consent pathways match the L1 sets."
+      }
+    ],
+    "LT-SITE-LIST": [
+      {
+        "id": "SL.01",
+        "check": "Every planned Lithuanian site listed with the principal investigator, the investigator's position and the expected number of participants."
+      },
+      {
+        "id": "SL.02",
+        "check": "Matches the CTIS site data, M1, M2 and N1; no participant signatures."
+      }
+    ],
+    "LT-M-QUALIFICATION": [
+      {
+        "id": "MQ.01",
+        "check": "Describes the investigators' qualifications and contains the sponsor statement that they comply with the Clinical Trials Regulation and Lithuanian requirements."
+      },
+      {
+        "id": "MQ.02",
+        "check": "ICH E6(R3) training documented for all investigators; GCP training certificate for investigators without medicinal-product clinical trial investigator experience in the previous five years."
+      },
+      {
+        "id": "MQ.03",
+        "check": "Consistent with the CVs (M1) and the site list."
+      }
+    ],
+    "LT-M1": [
+      {
+        "id": "M1.01",
+        "check": "One current CV per principal investigator and site."
+      },
+      {
+        "id": "M1.02",
+        "check": "Shows qualification and relevant clinical and trial experience; personal details supplied by the investigator, nothing invented."
+      }
+    ],
+    "LT-M2": [
+      {
+        "id": "M2.01",
+        "check": "One declaration per principal investigator and site; interests answered by the investigator."
+      },
+      {
+        "id": "M2.02",
+        "check": "Signed and dated by the principal investigator before upload (Lithuanian national Part II list)."
+      }
+    ],
+    "LT-N1": [
+      {
+        "id": "N1.01",
+        "check": "One statement per Lithuanian site; covers facilities, equipment, procedures and human resources (Annex I point 67) and is specific to this protocol."
+      },
+      {
+        "id": "N1.02",
+        "check": "Issued by the head of the clinic or institution at the trial site, or that person's delegate."
+      },
+      {
+        "id": "N1.03",
+        "check": "Signed and dated before CTIS submission; the assistant did not fill the signature block."
+      },
+      {
+        "id": "N1.04",
+        "check": "Site capabilities marked for the site to confirm; site facts not invented."
+      }
+    ],
+    "LT-O1": [
+      {
+        "id": "O1.01",
+        "check": "Civil liability insurance certificate or policy, or other proof of indemnification, demonstrating the applicable cover."
+      },
+      {
+        "id": "O1.02",
+        "check": "Corresponds to the Lithuanian trial, the sponsor, the investigators and the covered activities."
+      },
+      {
+        "id": "O1.03",
+        "check": "Insurance wording in every participant document matches it."
+      }
+    ],
+    "LT-P1": [
+      {
+        "id": "P1.01",
+        "check": "Describes reimbursement of participant costs and any compensation for time; amounts, conditions and recipients identical to every participant document."
+      },
+      {
+        "id": "P1.02",
+        "check": "When time is compensated, the ICF states an approximate hourly amount."
+      },
+      {
+        "id": "P1.03",
+        "check": "Contraception costs compensated where contraception is required specifically because of the trial.",
+        "applies_when": "contraception.required_by_trial"
+      },
+      {
+        "id": "P1.04",
+        "check": "Minors and incapacitated adults receive only compensation for expenses and loss of earnings directly related to participation.",
+        "applies_when": "population.minors or population.adults_without_capacity"
+      }
+    ],
+    "LT-P2": [
+      {
+        "id": "P2.01",
+        "check": "Covers trial financing, financial transactions, compensation to participants and to the investigator or site, and other relevant financial agreements with the site."
+      },
+      {
+        "id": "P2.02",
+        "check": "Participant reimbursement matches P1 and the ICF."
+      }
+    ],
+    "LT-FEE": [
+      {
+        "id": "FEE.01",
+        "check": "Proof that the applicable Lithuanian state fee has been paid, for this application (initial authorisation or substantial modification)."
+      },
+      {
+        "id": "FEE.02",
+        "check": "Uploaded in the CTIS proof-of-payment location."
+      }
+    ],
+    "LT-R1": [
+      {
+        "id": "R1.01",
+        "check": "Sponsor statement that trial data will be collected and processed in accordance with the GDPR; sponsor details match the CTIS application."
+      },
+      {
+        "id": "R1.02",
+        "check": "No national data-protection sentence added (none required); consistent with the privacy information in the participant documents."
+      }
+    ],
+    "LT-S1": [
+      {
+        "id": "S1.01",
+        "check": "New and archive sample sections match the protocol and sample plan; at least one is completed."
+      },
+      {
+        "id": "S1.02",
+        "check": "Shows compliance with Lithuanian rules for collection, storage and future use of biological samples."
+      },
+      {
+        "id": "S1.03",
+        "check": "Sample types, storage locations, retention, future-use purpose, transfers and destruction or withdrawal agree with the participant information and any future-use consent."
+      },
+      {
+        "id": "S1.04",
+        "check": "Future use outside the protocol is answered consistently with the separate future-use ICF or opt-in choice.",
+        "applies_when": "samples.future_use_outside_protocol"
+      }
+    ]
+  }
+}

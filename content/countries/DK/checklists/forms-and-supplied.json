@@ -1,0 +1,207 @@
+{
+ "id": "DK-CHECK",
+ "name": "Denmark: check of forms and supplied documents",
+ "applies_to_kinds": [
+  "form",
+  "third_party_template",
+  "third_party_document",
+  "ctis_data"
+ ],
+ "reviewed": "2026-11-27",
+ "source": "https://trialagents.com/ctis/denmark/en/part-ii-document-checklist (reviewed 23 September 2026)",
+ "result_values": [
+  "met",
+  "unmet",
+  "needs_decision",
+  "not_applicable"
+ ],
+ "common": [
+  {
+   "id": "X.01",
+   "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+  },
+  {
+   "id": "X.02",
+   "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or issuing person are left empty, not invented."
+  },
+  {
+   "id": "X.03",
+   "check": "No drafting instruction remains."
+  },
+  {
+   "id": "X.04",
+   "check": "Language is Danish or English for administrative documents; the same document is not uploaded in both languages or in two CTIS sections without a clear reason."
+  },
+  {
+   "id": "X.05",
+   "check": "No signature unless the current template or document requires one; documents are not signed merely because they are uploaded to CTIS."
+  },
+  {
+   "id": "X.06",
+   "check": "CTIS title follows the naming guide and requirements.json."
+  }
+ ],
+ "by_document": {
+  "DK-K1": [
+   {
+    "id": "K1.01",
+    "check": "Uses the European Commission recruitment and informed consent procedure template version 2.0 (new Part II submissions from 1 September 2026), or gives the same required information in an accepted location."
+   },
+   {
+    "id": "K1.02",
+    "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed, each 'no' section says not applicable."
+   },
+   {
+    "id": "K1.03",
+    "check": "Identifies a duly qualified physician with Danish authorisation as the person giving oral information and receiving consent; normally the same physician; the delegated later-consent route and the written agreement with the principal investigator where used."
+   },
+   {
+    "id": "K1.04",
+    "check": "Patient-record screening: specific record data, purpose, approximate number of records, time period and Danish legal basis; contact only with permission from the treating healthcare professional, fallback site management.",
+    "applies_when": "recruitment.patient_records_screening"
+   },
+   {
+    "id": "K1.05",
+    "check": "Validated translations and oral language support for participants or representatives who do not understand Danish.",
+    "applies_when": "population.non_danish_speakers"
+   },
+   {
+    "id": "K1.06",
+    "check": "Adults without capacity: nearest relative plus trial guardian or legal guardian with research mandate; trial guardian selection and independence; objection handling; regained capacity.",
+    "applies_when": "population.adults_without_capacity"
+   },
+   {
+    "id": "K1.07",
+    "check": "Minors: parental-authority consent (both if joint), 15-17 own consent together with parents, child involvement and dissent, re-consent at 18 before further trial-specific actions.",
+    "applies_when": "population.minors"
+   },
+   {
+    "id": "K1.08",
+    "check": "Emergency: every Article 35 element, how prior objections are checked, representatives per category, estimated timing of subsequent consent, documentation of attempts, consequences of refusal and the right to object to use of collected data.",
+    "applies_when": "consent.emergency_enrolment"
+   },
+   {
+    "id": "K1.09",
+    "check": "Impartial witness: reason, alternative method, witness selection and independence, presence, source documentation and retention.",
+    "applies_when": "consent.impartial_witness_possible"
+   },
+   {
+    "id": "K1.10",
+    "check": "Recruitment routes and first act of recruitment match the recruitment material (K2) and the protocol."
+   }
+  ],
+  "DK-M1": [
+   {
+    "id": "M1.01",
+    "check": "One CV for the principal investigator at each Danish site; no sub-investigator CVs unless specifically requested."
+   },
+   {
+    "id": "M1.02",
+    "check": "Shows relevant qualification, clinical-trial experience, GCP knowledge and patient-care experience as applicable."
+   },
+   {
+    "id": "M1.03",
+    "check": "Danish or English; no signature requirement added beyond the current EU template."
+   }
+  ],
+  "DK-M2-DOI": [
+   {
+    "id": "M2D.01",
+    "check": "One declaration per principal investigator and site; economic interests and institutional affiliations that could influence impartiality are answered by the investigator; current template requirements followed."
+   }
+  ],
+  "DK-N1": [
+   {
+    "id": "N1.01",
+    "check": "One justified statement per Danish site covering facilities, equipment, human resources and expertise for this trial (Annex I point 67)."
+   },
+   {
+    "id": "N1.02",
+    "check": "Issued by the head of the clinic or institution or another responsible person under the national system, who completes the current EC form's issuer fields and any signature it requires."
+   }
+  ],
+  "DK-O1": [
+   {
+    "id": "O1.01",
+    "check": "Coverage route documented for every Danish site: Patienterstatningen (statement that the Danish sites are covered; no stand-alone policy) or independent insurance meeting the CTR compensation requirement for sites outside that scheme."
+   },
+   {
+    "id": "O1.02",
+    "check": "The participant information describes the same arrangement in participant-friendly terms."
+   }
+  ],
+  "DK-P1": [
+   {
+    "id": "P1.01",
+    "check": "States explicitly when no compensation is offered."
+   },
+   {
+    "id": "P1.02",
+    "check": "Amounts, conditions, prorating and recipients identical to every participant document; inconvenience compensation, loss of earnings, transport costs and other benefits distinguished."
+   },
+   {
+    "id": "P1.03",
+    "check": "Healthy-volunteer inconvenience compensation is proportionate to the actual burden and not structured to improperly drive the decision.",
+    "applies_when": "population.healthy_volunteers"
+   }
+  ],
+  "DK-P2": [
+   {
+    "id": "P2.01",
+    "check": "Trial budget (draft or final) describes trial financing and payments to investigators or sites; with a draft, the condition that the final budget must not differ substantially is noted."
+   },
+   {
+    "id": "P2.02",
+    "check": "Draft CTA, where submitted, unsigned and consistent with P1 and the budget.",
+    "applies_when": "contract.draft_cta_submitted"
+   },
+   {
+    "id": "P2.03",
+    "check": "Funding sources, amounts and the investigator's economic ties match the participant information's section on financial matters."
+   }
+  ],
+  "DK-FEE": [
+   {
+    "id": "FEE.01",
+    "check": "Proof of fee uploaded only where the authority's current invoice process for the application asks for it; the combined fee is paid to the Danish Medicines Agency within one month of the invoice.",
+    "applies_when": "fee.proof_requested"
+   }
+  ],
+  "DK-R1": [
+   {
+    "id": "R1.01",
+    "check": "States that trial data will be collected and processed in accordance with the GDPR and the Danish Data Protection Act, using the VMK standard sentence (DECISIONS.md D11)."
+   },
+   {
+    "id": "R1.02",
+    "check": "Sponsor details match the CTIS application; no participant signature."
+   }
+  ],
+  "DK-S1": [
+   {
+    "id": "S1.01",
+    "check": "New and archive sample sections match the protocol and sample plan; at least one is completed.",
+    "applies_when": "samples.collected or samples.archive_used"
+   },
+   {
+    "id": "S1.02",
+    "check": "Type and amount per participant, purpose, analysis location, storage location and duration, and destruction for every sample type; identical to the participant documents and R1."
+   },
+   {
+    "id": "S1.03",
+    "check": "Transfers or storage outside the EU/EEA name the countries and address GDPR where the material is linked to personal data.",
+    "applies_when": "data.transfer_outside_eea"
+   },
+   {
+    "id": "S1.04",
+    "check": "Future use answered along the Danish pathways: surplus material with the opt-out, optional substudy within Part II, extra material for unspecified future research outside VMK approval.",
+    "applies_when": "samples.surplus_stored_for_future_research or samples.optional_substudy or samples.extra_collected_for_future_research"
+   },
+   {
+    "id": "S1.05",
+    "check": "Significant health findings: Danish feedback process and right-not-to-know form described.",
+    "applies_when": "samples.significant_health_findings_likely"
+   }
+  ]
+ }
+}

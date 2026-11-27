@@ -1,0 +1,219 @@
+{
+  "id": "HU-CHECK",
+  "name": "Hungary: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/hungary/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains (yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels)."
+    },
+    {
+      "id": "X.04",
+      "check": "Language matches requirements.json language_rules (Hungarian; cover letter and document list always Hungarian)."
+    },
+    {
+      "id": "X.05",
+      "check": "Signatures as the Hungary rules require at submission: protocol signature pages signed by the PI and co-investigators; every signature or declaration field of the CV, DoI and site-suitability templates completed and no national field removed; insurance evidence authenticated as the issuing document requires."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json; personal names only for the principal investigator in M1 and M2."
+    },
+    {
+      "id": "X.07",
+      "check": "Version and date match the Hungarian cover letter and Part II document list."
+    }
+  ],
+  "by_document": {
+    "HU-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the EU recruitment and informed-consent procedure template v2.0 (or another NNGYK-accepted format) and contains the Hungarian national content either way."
+      },
+      {
+        "id": "K1.02",
+        "check": "Yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section completed, each 'no' section gives the not-applicable answer."
+      },
+      {
+        "id": "K1.03",
+        "check": "Member State fields carry the Hungarian rules: final Hungarian recruitment material; one combined information and consent document with one signature set; participant name, place and date of birth and no study code; separate genetic consent; renewed consent for non-anonymous secondary use."
+      },
+      {
+        "id": "K1.04",
+        "check": "Incapacitated adults: Section 16 Health Act authorised person and identity details, participant's opinion considered, refusal respected, re-consent when capacity is regained.",
+        "applies_when": "population.adults_without_capacity"
+      },
+      {
+        "id": "K1.05",
+        "check": "Minors: Section 16 authorised person, age- and maturity-appropriate information, minor's opinion and dissent, age-16 rule not treated as independent trial consent, re-consent at adulthood.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.06",
+        "check": "Two witnesses not interested in or participating in the research, with address or contact; oral consent in their simultaneous presence; written confirmation if writing ability returns.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.07",
+        "check": "Emergency: all Section 160 Health Act conditions and Article 35 CTR, documentation of the emergency criteria, later information and consent of the participant or authorised person.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.08",
+        "check": "Recruitment routes match the recruitment material (HU-K2) and the protocol."
+      }
+    ],
+    "HU-M1": [
+      {
+        "id": "M1.01",
+        "check": "One CV per principal investigator and per co-investigator at each Hungarian site, on the ETT-KFEB Hungary-adapted CTEG template (not the generic EU form)."
+      },
+      {
+        "id": "M1.02",
+        "check": "Every signature or declaration field of the template completed; no national field removed."
+      },
+      {
+        "id": "M1.03",
+        "check": "GCP qualification fully documented in the CV, or a separate certificate present (HU-M-GCP)."
+      },
+      {
+        "id": "M1.04",
+        "check": "Co-investigator CVs carry no personal name in the CTIS title.",
+        "applies_when": "investigators.co_investigators"
+      }
+    ],
+    "HU-M2-DOI": [
+      {
+        "id": "M2D.01",
+        "check": "One declaration per principal investigator and site on the EudraLex structure; the assistant filled only trial title and EU trial number."
+      },
+      {
+        "id": "M2D.02",
+        "check": "Declaration fields (investigator name, institution, date) completed by the investigator; no field removed."
+      }
+    ],
+    "HU-M-GCP": [
+      {
+        "id": "GCP.01",
+        "check": "GCP qualification evidenced for each investigator concerned, either by a full reference in the CV (accepted per MedEthicsEU) or by a current certificate."
+      }
+    ],
+    "HU-M-PROTOCOL-SIGNATURE": [
+      {
+        "id": "PS.01",
+        "check": "Signature or acceptance pages for the protocol version in the application, signed by the principal investigator and every co-investigator of the site."
+      },
+      {
+        "id": "PS.02",
+        "check": "Protocol version and date on the pages match Part I and the Hungarian document list."
+      },
+      {
+        "id": "PS.03",
+        "check": "A redacted public version is planned if the document is publishable (signatures and personal data)."
+      }
+    ],
+    "HU-N1": [
+      {
+        "id": "N1.01",
+        "check": "One form per Hungarian site on the current ETT-KFEB Hungary-modified Site Suitability Form (November 2025 version), not the generic EU form."
+      },
+      {
+        "id": "N1.02",
+        "check": "Site-specific information demonstrates appropriate facilities and resources and is consistent with the protocol procedures, IMP handling and planned participant numbers."
+      },
+      {
+        "id": "N1.03",
+        "check": "Every signature or declaration field completed; no national field removed."
+      }
+    ],
+    "HU-O1": [
+      {
+        "id": "O1.01",
+        "check": "Insurance confirmation or certificate covers the trial (identifies it) and Hungary."
+      },
+      {
+        "id": "O1.02",
+        "check": "Signature or authentication as the issuing document requires."
+      },
+      {
+        "id": "O1.03",
+        "check": "Insurer name, Hungarian contact, contact person and telephone number match every participant document."
+      }
+    ],
+    "HU-O2": [
+      {
+        "id": "O2.01",
+        "check": "Insurance policy present and consistent with the certificate; cover, exclusions and participant obligations match the participant documents."
+      }
+    ],
+    "HU-P1": [
+      {
+        "id": "P1.01",
+        "check": "States explicitly whether compensation or reimbursement is offered; amounts, cost types and conditions identical to the participant documents."
+      },
+      {
+        "id": "P1.02",
+        "check": "Only documented expenses reimbursed, listed by exact cost type; no 'may reimburse' wording."
+      },
+      {
+        "id": "P1.03",
+        "check": "Participation payment only within the Bioethics Code (Phase I, non-therapeutic PK or PD); none for minors or incapacitated persons.",
+        "applies_when": "population.healthy_volunteers or population.minors or population.adults_without_capacity"
+      },
+      {
+        "id": "P1.04",
+        "check": "List of small-value gifts or retention items with the commercial value of each item.",
+        "applies_when": "participants.small_gifts"
+      },
+      {
+        "id": "P1.05",
+        "check": "Third-party reimbursement service arrangement, data transferred and fees described consistently with the consent material.",
+        "applies_when": "reimbursement.external_service_provider"
+      }
+    ],
+    "HU-P2": [
+      {
+        "id": "P2.01",
+        "check": "Full amount of compensation per participant to the site and to the principal investigator and team, and its distribution, for each Hungarian site."
+      }
+    ],
+    "HU-COVER": [
+      {
+        "id": "CL.01",
+        "check": "Hungarian-language cover letter lists every document submitted for approval with name, version number and issue date."
+      },
+      {
+        "id": "CL.02",
+        "check": "For a substantial modification: modified and newly created documents identified with version and date; clean and tracked-change versions provided where applicable.",
+        "applies_when": "application type is substantial modification"
+      }
+    ],
+    "HU-DOC-LIST": [
+      {
+        "id": "DL.01",
+        "check": "Hungarian list of the Part II documents present, with versions and dates identical to the cover letter, the uploads and the participant document footers."
+      }
+    ]
+  }
+}

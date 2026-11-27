@@ -1,0 +1,253 @@
+{
+ "id": "LV-CHECK",
+ "name": "Latvia: check of forms and supplied documents",
+ "applies_to_kinds": [
+  "form",
+  "third_party_template",
+  "third_party_document",
+  "ctis_data"
+ ],
+ "reviewed": "2026-11-27",
+ "source": "https://trialagents.com/ctis/latvia/en/part-ii-document-checklist (reviewed 23 September 2026)",
+ "result_values": [
+  "met",
+  "unmet",
+  "needs_decision",
+  "not_applicable"
+ ],
+ "common": [
+  {
+   "id": "X.01",
+   "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+  },
+  {
+   "id": "X.02",
+   "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor are left empty, not invented."
+  },
+  {
+   "id": "X.03",
+   "check": "No drafting instruction remains."
+  },
+  {
+   "id": "X.04",
+   "check": "Language is the one chosen for the document (Latvian by default; English where the Latvia overview accepts it; M2 on the English template)."
+  },
+  {
+   "id": "X.05",
+   "check": "Signature handling matches the Latvia rule for the document (only N1 is signed and dated before submission; M1 is dated)."
+  },
+  {
+   "id": "X.06",
+   "check": "CTIS title follows the naming guide and requirements.json; correct CTIS location."
+  },
+  {
+   "id": "X.07",
+   "check": "Clear title, trial identifier, version and date where applicable."
+  }
+ ],
+ "by_document": {
+  "LV-K1": [
+   {
+    "id": "K1.01",
+    "check": "Uses the EudraLex Recruitment and Informed Consent Procedure template version 2.0 (mandatory in Latvia; submissions from 1 September 2026), uploaded under Recruitment arrangements, unsigned."
+   },
+   {
+    "id": "K1.02",
+    "check": "Describes identification, first contact, recruiters, pre-screening, consent discussions, time to decide and national variations."
+   },
+   {
+    "id": "K1.03",
+    "check": "Latvian Member State fields completed (national_fields v105, v108 and, where the pathway applies, v110, v114, v117, v121)."
+   },
+   {
+    "id": "K1.04",
+    "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations; each 'yes' section is completed, each 'no' section says not applicable."
+   },
+   {
+    "id": "K1.05",
+    "check": "Minors: the 0-13 and 14-17 pathways, legal-representative authority and the minor's own written consent from 14 described; no universal two-parent rule without a legal basis.",
+    "applies_when": "population.minors"
+   },
+   {
+    "id": "K1.06",
+    "check": "Adults unable to consent: capacity assessment and the decision-maker order of the Law on the Rights of Patients described.",
+    "applies_when": "population.adults_without_capacity"
+   },
+   {
+    "id": "K1.07",
+    "check": "Healthy volunteers: identification, first contact, record access, pre-screening and who approaches volunteers described.",
+    "applies_when": "population.healthy_volunteers"
+   },
+   {
+    "id": "K1.08",
+    "check": "Emergency: each Article 35 condition, eligibility confirmation, objection and representative checks, documentation and subsequent-consent timing described.",
+    "applies_when": "consent.emergency_enrolment"
+   },
+   {
+    "id": "K1.09",
+    "check": "Witness: alternative consent method, witness impartiality and signatures described.",
+    "applies_when": "consent.impartial_witness_possible"
+   },
+   {
+    "id": "K1.10",
+    "check": "Channel and purpose of every recruitment item (LV-K2) explained.",
+    "applies_when": "recruitment.material_used or recruitment.doctor_facing_material"
+   }
+  ],
+  "LV-M1": [
+   {
+    "id": "M1.01",
+    "check": "One dated CV for the principal investigator at each Latvian site, uploaded under Suitability of the investigator."
+   },
+   {
+    "id": "M1.02",
+    "check": "States specialty, workplace and position, professional certificate number and validity, and date, version and edition of GCP training."
+   },
+   {
+    "id": "M1.03",
+    "check": "GCP certificate not uploaded unless requested; only the principal investigator's CV submitted for this item."
+   },
+   {
+    "id": "M1.04",
+    "check": "Assistant filled only the trial fields; personal details come from the investigator."
+   }
+  ],
+  "LV-M2": [
+   {
+    "id": "M2.01",
+    "check": "English EudraLex Declaration of Interest template used (mandatory in Latvia), one per principal investigator, under Suitability of the investigator."
+   },
+   {
+    "id": "M2.02",
+    "check": "Identifies the trial, investigator, institution, relevant interests and date; interests answered by the investigator."
+   },
+   {
+    "id": "M2.03",
+    "check": "No separate signature unless ZVA or the assigned ethics committee requested one."
+   }
+  ],
+  "LV-N1": [
+   {
+    "id": "N1.01",
+    "check": "EudraLex Site Suitability Template (mandatory in Latvia), a separate one per Latvian site, under Suitability of the facilities."
+   },
+   {
+    "id": "N1.02",
+    "check": "Identifies the protocol title and the sponsor protocol number."
+   },
+   {
+    "id": "N1.03",
+    "check": "Describes facilities, equipment, procedures, staff and expertise for the protocol."
+   },
+   {
+    "id": "N1.04",
+    "check": "Lists off-site institutions performing trial procedures other than laboratories and centrally provided services (or states none)."
+   },
+   {
+    "id": "N1.05",
+    "check": "Signed and dated before CTIS submission by an authorised representative of the healthcare institution or another appropriately authorised person in charge; signer identity correct."
+   },
+   {
+    "id": "N1.06",
+    "check": "Site name, principal investigator and planned participant number match CTIS, M1 and M2."
+   }
+  ],
+  "LV-O1": [
+   {
+    "id": "O1.01",
+    "check": "Insurer-issued certificate under Proof of insurance cover or indemnification, identifying the specific study."
+   },
+   {
+    "id": "O1.02",
+    "check": "Policy terms added when the certificate does not contain the conditions needed for assessment."
+   },
+   {
+    "id": "O1.03",
+    "check": "Civil-liability cover for harm to life or health caused by an act or omission of the sponsor, investigator or healthcare institution."
+   },
+   {
+    "id": "O1.04",
+    "check": "Limit per participant per event at least 48 Latvian minimum monthly wages (12 for a low-intervention trial), checked against the minimum wage in force when the insurance contract was concluded."
+   },
+   {
+    "id": "O1.05",
+    "check": "Where the format allows: insured participant number and the Latvian site names and addresses."
+   },
+   {
+    "id": "O1.06",
+    "check": "Understandable to the assessor; insurance wording in the participant documents matches."
+   }
+  ],
+  "LV-P1": [
+   {
+    "id": "P1.01",
+    "check": "EudraLex Compensation for Trial Participants template used (mandatory in Latvia), under Financial and other arrangements, even if no payment is offered."
+   },
+   {
+    "id": "P1.02",
+    "check": "Reimbursements, loss of earnings, payments or non-monetary benefits, recipients, amounts, justification and conditions stated."
+   },
+   {
+    "id": "P1.03",
+    "check": "Amounts and conditions identical to the participant documents, the draft contract and the site budget (LV-P2)."
+   },
+   {
+    "id": "P1.04",
+    "check": "Payment schedule does not discourage withdrawal; screen failure, early withdrawal, investigator discontinuation and trial suspension covered.",
+    "applies_when": "population.healthy_volunteers"
+   },
+   {
+    "id": "P1.05",
+    "check": "Minors, incapacitated participants and breastfeeding women: only reimbursement of expenses and loss of earnings, no financial inducement.",
+    "applies_when": "population.minors or population.adults_without_capacity"
+   }
+  ],
+  "LV-P2": [
+   {
+    "id": "P2.01",
+    "check": "A draft contract with each investigator and/or site and a draft budget showing the allocation for each investigator or site, under Financial and other arrangements."
+   },
+   {
+    "id": "P2.02",
+    "check": "Complete enough for ethical review; any removed commercial detail leaves the assessment possible."
+   },
+   {
+    "id": "P2.03",
+    "check": "No executed contract or signature required; reimbursement wording aligned with P1 and the participant documents."
+   }
+  ],
+  "LV-R1": [
+   {
+    "id": "R1.01",
+    "check": "Sponsor statement under Compliance with national requirements on data protection, confirming GDPR and Latvian law (national field r1_the_sponsor_declares)."
+   },
+   {
+    "id": "R1.02",
+    "check": "Sponsor details match the CTIS application; responsible person and role supplied by the sponsor, not invented."
+   },
+   {
+    "id": "R1.03",
+    "check": "Consistent with the privacy sections of the participant documents."
+   }
+  ],
+  "LV-S1": [
+   {
+    "id": "S1.01",
+    "check": "EudraLex Biological Samples Compliance template (recommended) under Compliance with use of biological samples."
+   },
+   {
+    "id": "S1.02",
+    "check": "Sample types and amounts, responsible entity, locations, storage period, transfers, coding, future use, withdrawal handling and destruction or anonymisation covered and matching the protocol and participant documents."
+   },
+   {
+    "id": "S1.03",
+    "check": "Optional future use described and linked to the separate choices in the participant documents.",
+    "applies_when": "samples.future_use_outside_protocol"
+   },
+   {
+    "id": "S1.04",
+    "check": "Not signed."
+   }
+  ]
+ }
+}

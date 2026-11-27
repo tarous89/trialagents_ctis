@@ -1,0 +1,229 @@
+{
+  "id": "CZ-PACKAGE",
+  "name": "Czechia: Part II package and CTIS upload check",
+  "applies_to": "the Czechia package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/czechia/en/part-ii-document-checklist (including 'Czechia submission resources')",
+    "https://trialagents.com/ctis/czechia/en/patient-facing-document-qc-checklist (section 10, final release check)",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "Machine-readable list of documents with versions and dates present (cover letter or separate file)."
+        },
+        {
+          "id": "P1.02",
+          "check": "Czech PIS/ICF for the main population, and one L1 set per population in population_sets whose trigger is true; every special pathway has its document (parents and 12-14 and 15-17 information, legal representative and adapted information, emergency, witness, pregnancy, future use)."
+        },
+        {
+          "id": "P1.03",
+          "check": "Other participant materials (diaries, cards, questionnaires, instructions for use, e-questionnaire screenshots) present in Czech.",
+          "applies_when": "participant_materials.used or endpoint_documents.participant_facing or imp.self_administered or devices.used_in_trial"
+        },
+        {
+          "id": "P1.04",
+          "check": "K1 recruitment and informed-consent procedure present with every Czech national field of Template No. 1 and a section for every population pathway."
+        },
+        {
+          "id": "P1.05",
+          "check": "K2: every recruitment advertisement, leaflet and other material, non-print formats in their own format where possible.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.06",
+          "check": "For every Czech site: M1 CV on SÚKL Template No. 2 and M2 declaration of interest on Template No. 3, both in Czech and signed; N1 on Template No. 4 signed."
+        },
+        {
+          "id": "P1.07",
+          "check": "Machine-readable Czech list of trial sites and principal investigators present."
+        },
+        {
+          "id": "P1.08",
+          "check": "Regional Authority evidence for non-state or non-Ministry sites and sub-sites.",
+          "applies_when": "sites.non_state_or_non_ministry_facility or sites.sub_site_used"
+        },
+        {
+          "id": "P1.09",
+          "check": "SÚKL GCP certificate scans for bioequivalence, pharmacokinetic or First-in-Human sites.",
+          "applies_when": "sites.sukl_gcp_certificate_required"
+        },
+        {
+          "id": "P1.10",
+          "check": "Insurance certificate, complete policy with terms and conditions (Czech or bilingual) and the sponsor statement on post-trial damage compensation present."
+        },
+        {
+          "id": "P1.11",
+          "check": "Sponsor-signed SÚKL Template No. 5 in the Part II data-protection category."
+        },
+        {
+          "id": "P1.12",
+          "check": "SÚKL Template No. 7 completed in full.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "P1.13",
+          "check": "Compensation and reimbursement information on Template No. 6 (or with references to every Template No. 6 item) and the funding description present."
+        },
+        {
+          "id": "P1.14",
+          "check": "Part II fee: not paid at initial submission; payment evidence planned for the validation stage according to the designated Ethics Committee."
+        },
+        {
+          "id": "P1.15",
+          "check": "Medical-device documents per the current KLH-CTIS-01 scenario.",
+          "applies_when": "devices.used_in_trial"
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every participant- or representative-facing document is Czech; no English original and no standard bilingual PIS/ICF."
+        },
+        {
+          "id": "P2.02",
+          "check": "CV, declaration of interest and site list are Czech; insurance documentation Czech or bilingual; other administrative documents in the language set in requirements.json."
+        },
+        {
+          "id": "P2.03",
+          "check": "No signatures in uploaded K and L documents; M1, M2 DoI and N1 signed at submission and R1 signed by the sponsor, each with a SÚKL-accepted signature method (not DocuSign or a non-compliant sponsor-created signature)."
+        },
+        {
+          "id": "P2.04",
+          "check": "Certified translations for foreign nationals are planned as non-substantial amendments based on the approved Czech version.",
+          "applies_when": "population.foreign_nationals_other_language"
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Compensation amounts, payment method and conditions identical in P1 and every participant document."
+        },
+        {
+          "id": "P3.02",
+          "check": "Insurer, cover and participant obligations identical in O1, O2 and every participant document."
+        },
+        {
+          "id": "P3.03",
+          "check": "Sample types, storage, coding, future use and retention identical in S1, the protocol and the participant documents."
+        },
+        {
+          "id": "P3.04",
+          "check": "Sponsor, controller, data flows and recipients identical in R1, the participant documents and the protocol."
+        },
+        {
+          "id": "P3.05",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.06",
+          "check": "Sites and principal investigators identical in CTIS, the site list, M1, M2 DoI and N1."
+        },
+        {
+          "id": "P3.07",
+          "check": "Versions and dates in the document list match every uploaded document."
+        },
+        {
+          "id": "P3.08",
+          "check": "Documents adapted from the reference package contain all Czech national additions and no leftovers from the reference country.",
+          "applies_when": "Czechia is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B-S section prefix and CTIS placeholder for each document; the PIS/ICF under the SÚKL category stated in the guide."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version and date entered in CTIS metadata, not in the title."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.07",
+          "check": "Titles marked as proposals in requirements.json (document list, site list, N facility documents, O3, P2, fee proof, device documents) confirmed (DECISIONS.md)."
+        },
+        {
+          "id": "P4.08",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Czechia receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules; ACT EU guidance v2.2, 30 April 2026)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; the public version redacts only qualifying material."
+        },
+        {
+          "id": "P5.03",
+          "check": "Public and assessment versions differ only by the intended redactions; each in the correct CTIS slot."
+        },
+        {
+          "id": "P5.04",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

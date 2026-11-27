@@ -1,0 +1,278 @@
+{
+  "id": "CZ-CHECK",
+  "name": "Czechia: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/czechia/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor signatory are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains (yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels)."
+    },
+    {
+      "id": "X.04",
+      "check": "Language matches requirements.json language_rules (Czech; K1 Czech or English; insurance Czech or bilingual)."
+    },
+    {
+      "id": "X.05",
+      "check": "Signature as the Czech rule for that document requires: M1, M2 DoI and N1 signed at submission with a SÚKL-accepted method (handwritten, recognised, qualified or guaranteed electronic, or dynamic biometric; not DocuSign or a non-compliant sponsor-created signature); R1 signed by the sponsor; no signature on K1, K2, L documents."
+    },
+    {
+      "id": "X.06",
+      "check": "The mandatory SÚKL national template is used where one exists (Templates No. 1 to 7); an EU form bound as interim content is not uploaded as the Czech document."
+    },
+    {
+      "id": "X.07",
+      "check": "CTIS title follows the naming guide and requirements.json."
+    }
+  ],
+  "by_document": {
+    "CZ-DOC-LIST": [
+      {
+        "id": "DL.01",
+        "check": "A machine-readable list of all documentation under review is present (in the cover letter or as a separate file)."
+      },
+      {
+        "id": "DL.02",
+        "check": "Every document's version and date in the list match the uploaded document and its footer."
+      }
+    ],
+    "CZ-K1": [
+      {
+        "id": "K1.01",
+        "check": "The current procedure form is used and every Czech national field of SÚKL Template No. 1 is included (EU v2.0 template checked together with Template No. 1)."
+      },
+      {
+        "id": "K1.02",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed, each 'no' section gives the not-applicable answer."
+      },
+      {
+        "id": "K1.03",
+        "check": "Member State fields carry the Czech rules: Czech PIS/ICF only, certified translation route for foreign nationals, consent by the investigator, signed copy retained and given, SÚKL-accepted electronic signatures."
+      },
+      {
+        "id": "K1.04",
+        "check": "Minors: SÚKL age bands 12-14 and 15-17 with written information, under-12 information where meaningful, one-parent signature, re-consent at band change and at 18.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.05",
+        "check": "Incapacitated adults: consent-giver determined from legal status and court ruling, adapted information, objection respected, two-stage information for acute participants where used, re-consent on regained capacity.",
+        "applies_when": "population.adults_without_capacity"
+      },
+      {
+        "id": "K1.06",
+        "check": "Impartial witness: reason, independent selection outside the study team and procedure described, for participants who cannot write or cannot read.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.07",
+        "check": "Emergency: Article 35 conditions, identification and documentation of urgency, later information and consent to continue without undue delay.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.08",
+        "check": "Healthy-volunteer recruitment and informed-consent process is described.",
+        "applies_when": "population.healthy_volunteers"
+      },
+      {
+        "id": "K1.09",
+        "check": "Recruitment routes and first act of recruitment match every K2 item and the protocol."
+      }
+    ],
+    "CZ-M1": [
+      {
+        "id": "M1.01",
+        "check": "SÚKL Template No. 2 is used (not the EU CV form), completed in Czech, current, one per principal investigator and site."
+      },
+      {
+        "id": "M1.02",
+        "check": "Dated and signed by the physician with a SÚKL-accepted method."
+      },
+      {
+        "id": "M1.03",
+        "check": "If GCP training is documented only in the CV: month, year and training provider are stated."
+      },
+      {
+        "id": "M1.04",
+        "check": "Investigator and site match CTIS, the site list and N1."
+      }
+    ],
+    "CZ-M-GCP": [
+      {
+        "id": "MG.01",
+        "check": "The separate GCP certificate is not older than three years and identifies the ICH E6 version covered."
+      }
+    ],
+    "CZ-M2-DOI": [
+      {
+        "id": "M2D.01",
+        "check": "SÚKL Template No. 3 is used, in Czech, dated and signed by the physician with a SÚKL-accepted method; consistent with the CV and site."
+      }
+    ],
+    "CZ-SITE-LIST": [
+      {
+        "id": "SL.01",
+        "check": "Machine-readable list in Czech of all Czech trial sites and principal investigators, matching CTIS."
+      },
+      {
+        "id": "SL.02",
+        "check": "Czech diacritics and all academic titles preserved."
+      },
+      {
+        "id": "SL.03",
+        "check": "No lists of sub-investigators or other team members included."
+      }
+    ],
+    "CZ-N1": [
+      {
+        "id": "N1.01",
+        "check": "SÚKL Template No. 4 is used (not the EU site-suitability form), one per Czech site, identifying the site name and address."
+      },
+      {
+        "id": "N1.02",
+        "check": "Signed at submission by the department head, clinic director or principal investigator with a SÚKL-accepted method."
+      },
+      {
+        "id": "N1.03",
+        "check": "Procedures performed outside the main site are identified with who provides them."
+      }
+    ],
+    "CZ-N-FACILITY": [
+      {
+        "id": "NF.01",
+        "check": "Regional Authority evidence confirms healthcare-facility status and the permitted scope of activities for each non-state or non-Ministry site and each sub-site performing part of the trial."
+      }
+    ],
+    "CZ-N-GCP-CERT": [
+      {
+        "id": "NG.01",
+        "check": "A scan of the SÚKL GCP certificate is present for each bioequivalence, pharmacokinetic or First-in-Human site that must hold one."
+      }
+    ],
+    "CZ-O1": [
+      {
+        "id": "O1.01",
+        "check": "Insurance certificate present, in Czech or bilingual, identifying the trial."
+      },
+      {
+        "id": "O1.02",
+        "check": "If it states a participant number, the number covers the planned Czech enrolment; an increase is handled by an updated certificate as a non-substantial modification."
+      },
+      {
+        "id": "O1.03",
+        "check": "Insurer and cover match the participant documents."
+      }
+    ],
+    "CZ-O2": [
+      {
+        "id": "O2.01",
+        "check": "Complete insurance policy including the terms and conditions is present (mandatory), in Czech or bilingual."
+      },
+      {
+        "id": "O2.02",
+        "check": "Cover, exclusions and participant obligations are consistent with the PIS/ICF."
+      }
+    ],
+    "CZ-O-POSTTRIAL": [
+      {
+        "id": "O3.01",
+        "check": "Sponsor statement explains how compensation is ensured for health damage that becomes apparent only after the trial and after the policy expires."
+      }
+    ],
+    "CZ-R1": [
+      {
+        "id": "R1.01",
+        "check": "SÚKL Template No. 5 is used and signed by the sponsor; a third-country sponsor signs it itself (not an EU representative or CRO)."
+      },
+      {
+        "id": "R1.02",
+        "check": "Uploaded in the Part II data-protection category, even when the same declaration is in Part I under Forms."
+      },
+      {
+        "id": "R1.03",
+        "check": "Sponsor and controller descriptions match the PIS/ICF."
+      }
+    ],
+    "CZ-S1": [
+      {
+        "id": "S1.01",
+        "check": "SÚKL Template No. 7 is used and completed in full."
+      },
+      {
+        "id": "S1.02",
+        "check": "Covers samples collected during the trial as well as storage and future use, consistent with the protocol, the PIS/ICF and the future-use document."
+      },
+      {
+        "id": "S1.03",
+        "check": "Future use: storage duration, pseudonymised or fully anonymised status and main research purpose stated; consent structure (separate signature or separate signed document) matches the participant documents.",
+        "applies_when": "samples.future_use_outside_protocol"
+      }
+    ],
+    "CZ-P1": [
+      {
+        "id": "P1.01",
+        "check": "SÚKL Template No. 6 is used, or the sponsor's document gives references to where every Template No. 6 item is addressed."
+      },
+      {
+        "id": "P1.02",
+        "check": "Czech information covers expense reimbursement, compensation, any remuneration and the payment method; amounts identical to the participant documents."
+      },
+      {
+        "id": "P1.03",
+        "check": "Payment cards: no participant fees, Czech-language support and an alternative reimbursement method.",
+        "applies_when": "compensation.payment_cards"
+      },
+      {
+        "id": "P1.04",
+        "check": "Remuneration limited to Phase I, bioequivalence or pharmacokinetic studies and not for vulnerable participants (KLH-22 recommendation).",
+        "applies_when": "compensation.remuneration_offered"
+      }
+    ],
+    "CZ-P-FUNDING": [
+      {
+        "id": "PF.01",
+        "check": "A description of how the trial will be funded is present under Financial and Other Arrangements."
+      }
+    ],
+    "CZ-FEE": [
+      {
+        "id": "FEE.01",
+        "check": "No Part II fee paid at the initial submission; payment made only after SÚKL designates the Ethics Committee."
+      },
+      {
+        "id": "FEE.02",
+        "check": "The payment route matches the designated committee (SÚKL Ethics Committee: UST-29 and the applicable K-023 to K-028 code; multicentre Ethics Committee: billing information and that committee's instructions), and evidence is provided within the assessment."
+      }
+    ],
+    "CZ-DEVICE": [
+      {
+        "id": "DEV.01",
+        "check": "Device or IVD use is identified in the application; applicable conformity documents and Czech instructions for use are present."
+      },
+      {
+        "id": "DEV.02",
+        "check": "Non-CE-marked devices or use outside the intended purpose: additional national declarations and any separate clinical investigation or performance-study authorisation are addressed per the current KLH-CTIS-01 text."
+      }
+    ]
+  }
+}

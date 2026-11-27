@@ -1,0 +1,217 @@
+{
+  "id": "GR-PACKAGE",
+  "name": "Greece: Part II package and CTIS upload check",
+  "applies_to": "the Greece package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/greece/en/part-ii-document-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "CTIS Part II Trial Sites structured data complete for every Greek site (each a public hospital or private clinic with suitable infrastructure)."
+        },
+        {
+          "id": "P1.02",
+          "check": "K1 on the EU template v2.0, with a section for every population pathway in the plan."
+        },
+        {
+          "id": "P1.03",
+          "check": "K2 final Greek recruitment material for every recruitment tool used.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.04",
+          "check": "One L1 Greek information and consent set per population in population_sets whose trigger is true, including the separate optional-use, pregnancy, infant and emergency-representative forms where they apply."
+        },
+        {
+          "id": "P1.05",
+          "check": "L2 other Greek participant or caregiver information given before or at consent.",
+          "applies_when": "recruitment.other_information_material"
+        },
+        {
+          "id": "P1.06",
+          "check": "Valid or certified translations for planned participants who do not understand Greek.",
+          "applies_when": "population.non_greek_speakers"
+        },
+        {
+          "id": "P1.07",
+          "check": "Endpoint questionnaires and PRO instruments in Part I with the protocol, not duplicated in Part II.",
+          "applies_when": "endpoint_documents.participant_facing"
+        },
+        {
+          "id": "P1.08",
+          "check": "For every Greek site: M1 CV, M2 declaration of interest, N1 site-suitability form signed by the principal investigator."
+        },
+        {
+          "id": "P1.09",
+          "check": "Phase I: principal-investigator Article 7 declaration and ALS certificates under M; declaration and equipment and emergency-capability evidence under N.",
+          "applies_when": "trial.phase_1"
+        },
+        {
+          "id": "P1.10",
+          "check": "O1 insurer-executed certificate identifying the trial and coverage, with the pregnancy clause."
+        },
+        {
+          "id": "P1.11",
+          "check": "P1 EU compensation form.",
+          "applies_when": "compensation.offered"
+        },
+        {
+          "id": "P1.12",
+          "check": "P2 unsigned Government Gazette B 230/2026 annexes per site; no signed financial agreement.",
+          "applies_when": "finance.details_provided_for_ethics_review"
+        },
+        {
+          "id": "P1.13",
+          "check": "R1 GDPR compliance statement, including any third-country transfer."
+        },
+        {
+          "id": "P1.14",
+          "check": "S1 biological-samples form in English.",
+          "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every participant- or caregiver-facing document is in Greek."
+        },
+        {
+          "id": "P2.02",
+          "check": "Administrative documents in English (recommended) or Greek; an official Greek translation available if EOF requests one."
+        },
+        {
+          "id": "P2.03",
+          "check": "No signatures in uploaded K, L, M1/M2, P and S documents unless a template instruction or the National Ethics Committee requires one; N1 and the Phase I declaration signed by the principal investigator; O1 executed by the insurer."
+        },
+        {
+          "id": "P2.04",
+          "check": "Blank Greek consent forms carry every applicable future signature and full-date field (participant, both parents, representative, investigator or authorised team member, witnesses)."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Same trial title, protocol code, site, department and principal-investigator details throughout CTIS and every document."
+        },
+        {
+          "id": "P3.02",
+          "check": "Compensation amounts and conditions identical in P1 and every participant document."
+        },
+        {
+          "id": "P3.03",
+          "check": "Insurance and injury-compensation wording, including the pregnancy clause, identical in O1 and every participant document."
+        },
+        {
+          "id": "P3.04",
+          "check": "Sample types, storage, transfers and retention identical in S1, the protocol and the participant documents."
+        },
+        {
+          "id": "P3.05",
+          "check": "Data flows, recipients, transfers and retention identical in R1, the participant documents and the protocol."
+        },
+        {
+          "id": "P3.06",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.07",
+          "check": "Documents adapted from the reference package contain all Greek national additions and no leftovers from the reference country.",
+          "applies_when": "Greece is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming, versions and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct section prefix and CTIS placeholder for each document."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, only the fields that distinguish the document, country code EL (DECISIONS.md D1)."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version and date in CTIS metadata, not in the title; every participant-facing page shows document type, protocol code or acronym, version and date, with continuous pagination and total pages."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean and tracked-change Greek consent forms uploaded for a modification; redacted or public and split-file variants clearly distinguished."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.07",
+          "check": "No obsolete national forms used under the former Clinical Trials Directive unless current CTR guidance expressly retains the content or annex."
+        },
+        {
+          "id": "P4.08",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Greece receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "Personal data and confidential information removed from every document version intended for publication under the current CTIS transparency rules."
+        },
+        {
+          "id": "P5.02",
+          "check": "Public and assessment versions differ only by the intended redactions; each in the correct CTIS slot."
+        },
+        {
+          "id": "P5.03",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

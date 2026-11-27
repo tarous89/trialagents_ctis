@@ -1,0 +1,205 @@
+{
+ "id": "NO-PACKAGE",
+ "name": "Norway: Part II package and CTIS upload check",
+ "applies_to": "the Norway package as a whole (plan-level checklist step)",
+ "reviewed": "2026-11-27",
+ "sources": [
+  "https://trialagents.com/ctis/norway/en/part-ii-document-checklist (including 'Language, document control and CTIS checks')",
+  "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+  "content/playbook/planning.md section 8 (transparency)"
+ ],
+ "result_values": [
+  "met",
+  "unmet",
+  "needs_decision",
+  "not_applicable"
+ ],
+ "sections": [
+  {
+   "id": "P1",
+   "title": "Completeness against requirements.json",
+   "items": [
+    {
+     "id": "P1.01",
+     "check": "K1 recruitment and informed consent procedure present (EU v2.0 or equivalent content), with a section for every population pathway in the plan."
+    },
+    {
+     "id": "P1.02",
+     "check": "K2 recruitment material present in final Norwegian versions for every identification or recruitment tool.",
+     "applies_when": "recruitment.material_used"
+    },
+    {
+     "id": "P1.03",
+     "check": "Standard Norwegian PIS and ICF present, and one L1 set per population and population set whose trigger is true (guardian and age-band documents, representative and adapted participant documents, emergency set with the right-to-object letter, witness, pregnancy, broad consent)."
+    },
+    {
+     "id": "P1.04",
+     "check": "For every Norwegian site: M1 CV and M2 declaration of interests for the principal investigator, and N1 site suitability form issued by a non-PI institutional representative."
+    },
+    {
+     "id": "P1.05",
+     "check": "O1 certificate from the Norwegian Medicines Liability Association present, with the statement on additional trial-specific insurance."
+    },
+    {
+     "id": "P1.06",
+     "check": "P1 compensation and reimbursement description and P2 financing and site-arrangements description present."
+    },
+    {
+     "id": "P1.07",
+     "check": "R1 GDPR compliance statement present."
+    },
+    {
+     "id": "P1.08",
+     "check": "S1 biological-samples compliance document present.",
+     "applies_when": "samples.collected or samples.archive_used or samples.import or samples.export"
+    },
+    {
+     "id": "P1.09",
+     "check": "General biobank's REK-approved consent present.",
+     "applies_when": "samples.general_biobank_norway"
+    },
+    {
+     "id": "P1.10",
+     "check": "Items outside Part II are routed correctly: proof of fee payment and the Norwegian protocol synopsis in Part I; patient cards, thank-you cards and staff interview guides not submitted."
+    }
+   ]
+  },
+  {
+   "id": "P2",
+   "title": "Language and signatures",
+   "items": [
+    {
+     "id": "P2.01",
+     "check": "Consent forms and recruitment materials are in Norwegian."
+    },
+    {
+     "id": "P2.02",
+     "check": "All other Part II attachments are in English."
+    },
+    {
+     "id": "P2.03",
+     "check": "No participant, representative or investigator signature on any blank K or L document; no signature added to M1, M2, N1, P1, P2, R1 or S1; O1 as issued."
+    },
+    {
+     "id": "P2.04",
+     "check": "Foreign-language translations are not uploaded; where used, the sponsor's accuracy evidence is recorded as a source.",
+     "applies_when": "population.non_norwegian_speakers"
+    }
+   ]
+  },
+  {
+   "id": "P3",
+   "title": "Cross-document consistency",
+   "items": [
+    {
+     "id": "P3.01",
+     "check": "Compensation amounts and conditions identical in P1 and every participant document."
+    },
+    {
+     "id": "P3.02",
+     "check": "Injury coverage (LAF certificate, any additional insurance) identical in O1 and every participant document."
+    },
+    {
+     "id": "P3.03",
+     "check": "Sample types, biobank, storage, transfers, destruction or return identical in S1, the protocol and the participant documents.",
+     "applies_when": "samples.collected or samples.archive_used"
+    },
+    {
+     "id": "P3.04",
+     "check": "End of trial, end of research activity and data deletion year identical across all participant documents and consistent with the protocol; deletion at least 25 years after the end of the trial."
+    },
+    {
+     "id": "P3.05",
+     "check": "Consent pathways and consent-taker rules in K1 match the L1 sets in the package."
+    },
+    {
+     "id": "P3.06",
+     "check": "Planned enrolment by site in N1 (or the enrolment plan) matches CTIS."
+    },
+    {
+     "id": "P3.07",
+     "check": "Documents adapted from the reference package contain all Norwegian additions (dates, biobank, LAF/NPE, consent-taker rule) and no leftovers from the reference country.",
+     "applies_when": "Norway is not the reference package"
+    }
+   ]
+  },
+  {
+   "id": "P4",
+   "title": "CTIS naming and upload",
+   "items": [
+    {
+     "id": "P4.01",
+     "check": "Correct B-S section prefix and CTIS category for each document."
+    },
+    {
+     "id": "P4.02",
+     "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document."
+    },
+    {
+     "id": "P4.03",
+     "check": "Version numbers and dates in CTIS structured fields match the uploaded documents; not in the title."
+    },
+    {
+     "id": "P4.04",
+     "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+    },
+    {
+     "id": "P4.05",
+     "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."
+    },
+    {
+     "id": "P4.06",
+     "check": "Searchable, copyable files, preferably PDF rather than scanned images; filename base contains none of ( ) / , . ; | [ ]."
+    },
+    {
+     "id": "P4.07",
+     "check": "RFI response: revised documents uploaded to the dossier as clean and tracked-change versions, not only attached to the response.",
+     "applies_when": "application.rfi_response"
+    },
+    {
+     "id": "P4.08",
+     "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+     "applies_when": "Norway receives Part I only under Article 11"
+    }
+   ]
+  },
+  {
+   "id": "P5",
+   "title": "Transparency and redaction",
+   "items": [
+    {
+     "id": "P5.01",
+     "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules; ACT EU guidance v2.2, 30 April 2026)."
+    },
+    {
+     "id": "P5.02",
+     "check": "Where publication rules apply: a complete version marked not for publication and a properly redacted version marked for publication.",
+     "applies_when": "ctis.publication_applies"
+    },
+    {
+     "id": "P5.03",
+     "check": "Names, signatures and other personal data (including witness data) removed from public versions.",
+     "applies_when": "ctis.publication_applies"
+    },
+    {
+     "id": "P5.04",
+     "check": "No personal data or CCI in public structured fields."
+    }
+   ]
+  },
+  {
+   "id": "P6",
+   "title": "Final form",
+   "items": [
+    {
+     "id": "P6.01",
+     "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+    },
+    {
+     "id": "P6.02",
+     "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+    }
+   ]
+  }
+ ]
+}

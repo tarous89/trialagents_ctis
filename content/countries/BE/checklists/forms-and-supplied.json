@@ -1,0 +1,240 @@
+{
+  "id": "BE-CHECK",
+  "name": "Belgium: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/belgium/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer, institutional signatory or sponsor finance are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language is Dutch, French, German or English, one version for Belgium, as decided in DECISIONS.md D1."
+    },
+    {
+      "id": "X.05",
+      "check": "Signature as required in requirements.json: N1 signed by the head of the institution or a delegate; other documents not signed merely for submission (CVs preferably unsigned)."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json; Annex I letter and language in the filename where practical; version and date in CTIS structured data."
+    }
+  ],
+  "by_document": {
+    "BE-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the European Commission combined informed-consent and patient-recruitment procedure template (mandatory for new initial applications and additions of Belgium after 1 January 2025)."
+      },
+      {
+        "id": "K1.02",
+        "check": "Describes how potential participants are identified, approached, informed, given time to decide and consented."
+      },
+      {
+        "id": "K1.03",
+        "check": "The Yes/No answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each Yes section is completed, each No section says not applicable; electronic consent is covered when used."
+      },
+      {
+        "id": "K1.04",
+        "check": "Belgian national additions are completed (national_fields v105, v108 and, where applicable, v110, v114, v117, v121): physician-led interview in person or by video, regional languages, CT-College templates, Belgian representative hierarchy, two-parent rule, witness and emergency procedures."
+      },
+      {
+        "id": "K1.05",
+        "check": "The external platform or call centre's role, privacy policy, staff qualifications, consent and data handling are documented, with site involvement, clear benefit, staff speaking the participant's language and referral to the treating site.",
+        "applies_when": "recruitment.external_platform or recruitment.call_centre"
+      },
+      {
+        "id": "K1.06",
+        "check": "Study-specific prescreening data are collected only with a signed consent form.",
+        "applies_when": "recruitment.prescreening_data"
+      },
+      {
+        "id": "K1.07",
+        "check": "Pre-recruitment follows the CT-College recommendation and does not become trial-specific consent or trial conduct before authorisation; repeat-volunteer and safety-database checks are described.",
+        "applies_when": "recruitment.pre_recruitment"
+      },
+      {
+        "id": "K1.08",
+        "check": "The same file is uploaded under K.59 and L.62 with the titles in requirements.json (DECISIONS.md D6)."
+      }
+    ],
+    "BE-M1": [
+      {
+        "id": "M1.01",
+        "check": "One current CV per principal investigator at each Belgian site."
+      },
+      {
+        "id": "M1.02",
+        "check": "Belgian CV template used (strongly recommended) or another format with the same information, plus the Belgian addendum when required information is missing."
+      },
+      {
+        "id": "M1.03",
+        "check": "GCP training documented in the CV or a certificate, naming the training organisation, no more than three years old at the initial submission or appointment of a new principal investigator."
+      },
+      {
+        "id": "M1.04",
+        "check": "Unsigned, as FAMHP prefers; personal data limited to what is needed."
+      },
+      {
+        "id": "M1.05",
+        "check": "Only trial title and EU trial number prepared by the assistant; the rest completed by the investigator."
+      }
+    ],
+    "BE-M2": [
+      {
+        "id": "M2.01",
+        "check": "Declaration of interest of the principal investigator at each Belgian site on the European Commission template."
+      },
+      {
+        "id": "M2.02",
+        "check": "Only trial title and EU trial number prepared by the assistant; the rest completed by the investigator."
+      },
+      {
+        "id": "M2.03",
+        "check": "Interests declared are consistent with the financing statement and site agreements."
+      }
+    ],
+    "BE-N1": [
+      {
+        "id": "N1.01",
+        "check": "One statement for each site, on the Belgian template or the EU template."
+      },
+      {
+        "id": "N1.02",
+        "check": "Facilities, equipment, staff and planned recruitment described; the planned number of participants at the site is given (no separate site list uploaded)."
+      },
+      {
+        "id": "N1.03",
+        "check": "For a hospital, the three-digit Belgian hospital recognition number is used, not the CTIS organisation ID."
+      },
+      {
+        "id": "N1.04",
+        "check": "The other facility where procedures occur and the planned agreement are identified.",
+        "applies_when": "sites.procedures_at_other_facility"
+      },
+      {
+        "id": "N1.05",
+        "check": "Signed at submission by the head of the institution or a person with delegated authority covered by the institution's internal procedures."
+      },
+      {
+        "id": "N1.06",
+        "check": "Planned participant numbers match CTIS, the protocol and the ICFs."
+      }
+    ],
+    "BE-O1": [
+      {
+        "id": "O1.01",
+        "check": "Insurance certificate present under O."
+      },
+      {
+        "id": "O1.02",
+        "check": "States the insured amount."
+      },
+      {
+        "id": "O1.03",
+        "check": "Refers to applicable national legislation (an express citation of Article 12 of the Law of 7 May 2017 is not required) and the coverage is suitable for the Belgian trial (no-fault sponsor liability, insurance before the trial begins)."
+      },
+      {
+        "id": "O1.04",
+        "check": "Insurance description in every ICF matches the certificate."
+      }
+    ],
+    "BE-P-FINANCING": [
+      {
+        "id": "PF.01",
+        "check": "The current Belgian national Statement on financing of a clinical trial is used, not a narrative replacement."
+      },
+      {
+        "id": "PF.02",
+        "check": "Uploaded under P.69; required for new initial applications, additions of Belgium and substantial modifications adding new sites submitted after 1 January 2025."
+      },
+      {
+        "id": "PF.03",
+        "check": "Amounts and payments are consistent with P1, the site agreements and the ICFs."
+      }
+    ],
+    "BE-P1": [
+      {
+        "id": "P1.01",
+        "check": "EU compensation template used for participant reimbursement or compensation."
+      },
+      {
+        "id": "P1.02",
+        "check": "Reimbursement of expenses is distinguished from compensation for time, inconvenience or burden; amounts, schedule, deductions after withdrawal and non-cash benefits are stated, from sponsor-supplied figures."
+      },
+      {
+        "id": "P1.03",
+        "check": "Amounts and payment conditions match the ICF and the financing statement."
+      },
+      {
+        "id": "P1.04",
+        "check": "Compensation is linked to time and burden, not completion or tolerance of risk, and withdrawal causes no disproportionate financial loss.",
+        "applies_when": "population.healthy_volunteers"
+      }
+    ],
+    "BE-P3": [
+      {
+        "id": "P3.01",
+        "check": "Payments to sites, investigator compensation and other agreements are provided for each site (a draft site-sponsor contract with draft amounts is accepted, or the financing statement where it supplies the information)."
+      },
+      {
+        "id": "P3.02",
+        "check": "Amounts and payment conditions match the ICF and the financing statement."
+      }
+    ],
+    "BE-R1": [
+      {
+        "id": "R1.01",
+        "check": "Filed only when the ICF lacks the GDPR compliance confirmation (otherwise not required)."
+      },
+      {
+        "id": "R1.02",
+        "check": "States compliance with the GDPR and the Belgian national implementing law (national_fields r1_the_sponsor_declares), without naming an act the sources do not give."
+      },
+      {
+        "id": "R1.03",
+        "check": "Participant-facing privacy information is available in the same regional languages as the ICF."
+      }
+    ],
+    "BE-S1": [
+      {
+        "id": "S1.01",
+        "check": "Current EU biological-sample template used (mandatory for new initial applications and additions of Belgium after 1 January 2025)."
+      },
+      {
+        "id": "S1.02",
+        "check": "Section 5.1 contains the prescribed Belgian text and one scope position: all use limited to the same disease, treatment or drug, or use beyond that scope with registration in a named Belgian biobank; the classification is justified."
+      },
+      {
+        "id": "S1.03",
+        "check": "Anonymisation by lifting traceability: explicit consent and a system that prevents anonymisation when consent was refused are described.",
+        "applies_when": "samples.anonymisation_proposed"
+      },
+      {
+        "id": "S1.04",
+        "check": "Collection, storage, access, coding, transfers, retention and future use match the protocol, laboratory manual and ICFs."
+      }
+    ]
+  }
+}
