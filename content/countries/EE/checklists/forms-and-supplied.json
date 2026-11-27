@@ -1,0 +1,253 @@
+{
+  "id": "EE-CHECK",
+  "name": "Estonia: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/estonia/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language as set in requirements.json: Estonian by default for K1, N1, P1, R1 and S1 (English where chosen under DECISIONS.md D1); English for M1 and M2."
+    },
+    {
+      "id": "X.05",
+      "check": "Signatures as set in requirements.json: M1 signed and dated by the Principal Investigator; N1 signed by a person legally authorised by the study centre; no signature on the other forms unless the current form expressly requires one."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json; correct CTIS location."
+    },
+    {
+      "id": "X.07",
+      "check": "Sponsor name, protocol number and version consistent with the rest of the package."
+    }
+  ],
+  "by_document": {
+    "EE-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the European Commission Informed Consent and Patient Recruitment Procedure template version 2.0, uploaded under Recruitment arrangements."
+      },
+      {
+        "id": "K1.02",
+        "check": "Describes how participants are identified and recruited and, where recruitment materials are used, the materials and the process."
+      },
+      {
+        "id": "K1.03",
+        "check": "Member State fields for Estonia completed: EU CT number on all recruitment materials; compensation information in the ICF, not in advertising; Estonian (and any other intended) participant language; consent discussion with a doctor, nurse or pharmacist of the trial team; signature and dating rules with digital signature allowed; separate consents for participation and for pseudonymised data or sample use."
+      },
+      {
+        "id": "K1.04",
+        "check": "Remote consent described: video call, electronic identification, legally accepted signature, justified and approved by the Ethics Committee before implementation.",
+        "applies_when": "consent.remote"
+      },
+      {
+        "id": "K1.05",
+        "check": "Minors section: co-consent of the minor and the legal representative at 7 to 17; representative authority verified; refusal respected; re-consent at adulthood.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.06",
+        "check": "Incapacitated adults section: presumed intent; representative decision not relied on where it clearly harms the participant; information adapted to capacity; regained-capacity consent.",
+        "applies_when": "population.adults_without_capacity"
+      },
+      {
+        "id": "K1.07",
+        "check": "Impartial witness section: trigger, independence, selection, documentation and signatures.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.08",
+        "check": "Emergency section: every Article 35 condition, representative search, consent to continue without undue delay, refusal handling and documentation.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.09",
+        "check": "Consent pathways match the L1 sets in the package."
+      }
+    ],
+    "EE-M1": [
+      {
+        "id": "M1.01",
+        "check": "One English CV per Principal Investigator and Estonian site, uploaded under Suitability of the investigator."
+      },
+      {
+        "id": "M1.02",
+        "check": "Dated and signed by the Principal Investigator and no more than six months old at submission."
+      },
+      {
+        "id": "M1.03",
+        "check": "States the most recent GCP training and the year the certificate was issued (no certificate needed when this is in the CV)."
+      },
+      {
+        "id": "M1.04",
+        "check": "Personal details supplied by the investigator, not invented."
+      }
+    ],
+    "EE-M2": [
+      {
+        "id": "M2.01",
+        "check": "One declaration of interests per Principal Investigator and site, on the EC template or with equivalent content; interests stated by the investigator."
+      },
+      {
+        "id": "M2.02",
+        "check": "Signature and date handled as decided in DECISIONS.md D13."
+      }
+    ],
+    "EE-N1": [
+      {
+        "id": "N1.01",
+        "check": "One EC Site Suitability Form per Estonian site, uploaded under Suitability of the facilities."
+      },
+      {
+        "id": "N1.02",
+        "check": "Uses the study centre's legal name (a commonly used English name may follow in parentheses)."
+      },
+      {
+        "id": "N1.03",
+        "check": "Signed by a person legally authorised by the study centre (manual or digital signature)."
+      },
+      {
+        "id": "N1.04",
+        "check": "Uploaded as PDF with the original .asice container retained at the study centre.",
+        "applies_when": "N1 signed in an Estonian .asice container"
+      },
+      {
+        "id": "N1.05",
+        "check": "Site facts (facilities, equipment, procedures, human resources) come from the site and are consistent with the protocol."
+      }
+    ],
+    "EE-O1": [
+      {
+        "id": "O1.01",
+        "check": "Insurance certificate states the trial identifier (EU CT number, or protocol number together with the trial title), Estonia as the country, the insurance period and the insured amount."
+      },
+      {
+        "id": "O1.02",
+        "check": "Academic exemption applied only after eligibility was confirmed under the Medicinal Products Act and the Health Insurance Act; the confirmation is documented.",
+        "applies_when": "insurance.academic_exemption_confirmed"
+      },
+      {
+        "id": "O1.03",
+        "check": "Insurance and injury wording in the participant documents matches the certificate."
+      }
+    ],
+    "EE-P1": [
+      {
+        "id": "P1.01",
+        "check": "Uses the EC Compensation for Trial Participants template."
+      },
+      {
+        "id": "P1.02",
+        "check": "Reimbursement of unavoidable direct trial-related expenses is stated and justified."
+      },
+      {
+        "id": "P1.03",
+        "check": "Compensation for inconvenience or burdensome procedures only for competent participants, justified, reflecting time and contribution, not dependent on risk.",
+        "applies_when": "compensation.time_or_burden_offered"
+      },
+      {
+        "id": "P1.04",
+        "check": "No completion bonus, no payment conditional on completion, no large share held back."
+      },
+      {
+        "id": "P1.05",
+        "check": "Minors, incapacitated participants, their representatives, pregnant women and breastfeeding women receive only reimbursement of direct costs.",
+        "applies_when": "population.minors or population.adults_without_capacity or pregnancy.participant_follow_up_beyond_main_consent"
+      },
+      {
+        "id": "P1.06",
+        "check": "Amounts, conditions and recipients identical to every participant document."
+      }
+    ],
+    "EE-P2-BUDGET": [
+      {
+        "id": "P2.01",
+        "check": "Transparent trial-budget information is provided; if the per-participant fee is used as the basis, its breakdown is explained."
+      },
+      {
+        "id": "P2.02",
+        "check": "Confirms that trial-specific services will not be billed to the Estonian Health Insurance Fund."
+      },
+      {
+        "id": "P2.03",
+        "check": "Consistent with P1 and the site arrangements."
+      }
+    ],
+    "EE-FEE": [
+      {
+        "id": "FEE.01",
+        "check": "Invoice recipient's details provided, including postal address and one organisation email address based on the CTIS LOC code."
+      },
+      {
+        "id": "FEE.02",
+        "check": "Email address for the decision recipient provided."
+      },
+      {
+        "id": "FEE.03",
+        "check": "Fee exemption claimed only after confirming the current Medicinal Products Act conditions; for the academic exemption, the sponsor type qualifies and the application confirming no financial or other compensation from a medicine manufacturer or its representative (apart from trial medicines) is included.",
+        "applies_when": "fee.exemption_claimed"
+      }
+    ],
+    "EE-R1": [
+      {
+        "id": "R1.01",
+        "check": "EU statement of compliance with Regulation (EU) 2016/679 completed in the CTIS Form section."
+      },
+      {
+        "id": "R1.02",
+        "check": "No national sentence added (r1_the_sponsor_declares removed); sponsor details and responsible person from the sponsor."
+      },
+      {
+        "id": "R1.03",
+        "check": "Consistent with the detailed data-protection explanation in the participant documents."
+      }
+    ],
+    "EE-S1": [
+      {
+        "id": "S1.01",
+        "check": "Uses the EC Compliance with Applicable Rules for Biological Samples form."
+      },
+      {
+        "id": "S1.02",
+        "check": "For each sample type: what is collected, pseudonymised or anonymised, transport, storage location, storage duration in years and time of destruction."
+      },
+      {
+        "id": "S1.03",
+        "check": "Transfers outside Estonia or the EEA and genetic analysis stated where applicable."
+      },
+      {
+        "id": "S1.04",
+        "check": "Optional future use described and kept separate from the main-trial consent.",
+        "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+      },
+      {
+        "id": "S1.05",
+        "check": "Consistent with the protocol, laboratory manual and participant documents."
+      }
+    ]
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "id": "LT-QC-PARTICIPANT",
+  "name": "Lithuania: participant-facing document QC",
+  "applies_to": [
+    "LT-L1",
+    "LT-L2",
+    "LT-K2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/lithuania/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Trial purpose and research nature are stated; the investigational treatment is not presented as proven to help."
+        },
+        {
+          "id": "C1.02",
+          "check": "Investigational treatment and comparator named and described as in the protocol and IB/SmPC."
+        },
+        {
+          "id": "C1.03",
+          "check": "Randomisation and blinding explained correctly in plain language.",
+          "applies_when": "protocol uses randomisation or blinding"
+        },
+        {
+          "id": "C1.04",
+          "check": "Number and timing of visits match the schedule of activities."
+        },
+        {
+          "id": "C1.05",
+          "check": "Invasive and burdensome procedures are described."
+        },
+        {
+          "id": "C1.06",
+          "check": "Treatment duration and follow-up match the protocol."
+        },
+        {
+          "id": "C1.07",
+          "check": "Prohibited and required concomitant treatments are stated."
+        },
+        {
+          "id": "C1.08",
+          "check": "Reproductive precautions match the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C1.09",
+          "check": "Safety monitoring is described."
+        },
+        {
+          "id": "C1.10",
+          "check": "Withdrawal and early discontinuation procedures match the protocol."
+        },
+        {
+          "id": "C1.11",
+          "check": "No visit schedule, dose, comparator or follow-up period different from the protocol; no statements carried over from another protocol, country, cohort or phase."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-participant-document consistency",
+      "instruction": "Check every participant-facing statement that can be traced to the protocol.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Eligibility-related participant obligations match the protocol."
+        },
+        {
+          "id": "C2.02",
+          "check": "Procedures and assessments match the protocol; research-only procedures are visible."
+        },
+        {
+          "id": "C2.03",
+          "check": "Sample collection volumes and frequency match the protocol and sample plan.",
+          "applies_when": "samples.collected"
+        },
+        {
+          "id": "C2.04",
+          "check": "Imaging and radiation match the protocol.",
+          "applies_when": "protocol includes imaging or radiation"
+        },
+        {
+          "id": "C2.05",
+          "check": "Questionnaires, diaries and digital tools match the protocol.",
+          "applies_when": "endpoint_documents.participant_facing"
+        },
+        {
+          "id": "C2.06",
+          "check": "Home visits or decentralised elements are described; home visits are treated as exceptional and described in the protocol and consent documentation, especially where optional.",
+          "applies_when": "visits.home_visits or any decentralised element"
+        },
+        {
+          "id": "C2.07",
+          "check": "Pregnancy testing and contraception periods match the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.08",
+          "check": "Optional substudies are described as optional and match the protocol.",
+          "applies_when": "protocol has optional substudies"
+        },
+        {
+          "id": "C2.09",
+          "check": "Data and sample retention periods match the protocol and are consistent across documents."
+        },
+        {
+          "id": "C2.10",
+          "check": "Follow-up after treatment discontinuation matches the protocol."
+        },
+        {
+          "id": "C2.11",
+          "check": "After a protocol change, every affected participant document has been reopened.",
+          "applies_when": "modification or revised protocol"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The consent needed to join and remain in the main trial is clearly separate from optional choices (for example future research use of samples or coded data)."
+        },
+        {
+          "id": "C3.02",
+          "check": "Refusing an optional activity does not read as disqualifying the person from the main trial, unless the protocol genuinely makes it essential."
+        },
+        {
+          "id": "C3.03",
+          "check": "Consent is described as voluntary, informed, documented and obtained before trial-specific participation, unless a lawful special pathway applies."
+        },
+        {
+          "id": "C3.04",
+          "check": "The right to refuse or withdraw and what happens to data already collected after withdrawal are explained."
+        },
+        {
+          "id": "C3.05",
+          "check": "The person signing has legal authority for the decision; the basis of representation is recorded when someone else consents."
+        },
+        {
+          "id": "C3.06",
+          "check": "Electronic consent uses a signature method whose legal validity is established; a simple electronic signature is not treated as equivalent to a handwritten one.",
+          "applies_when": "consent.electronic"
+        },
+        {
+          "id": "C3.07",
+          "check": "The consent form does not introduce information absent from the information sheet."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "instruction": "Map each protocol population to the correct information and consent documents (requirements.json population_sets).",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population with its full document set; populations are mutually exclusive within each consent stage.",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Healthy volunteers: no implied therapeutic benefit; payment, reimbursement, risks and free trial procedures clearly explained; screen-failure data handling covered.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.03",
+          "check": "Minors: age group (under 12 or 12 and above), both-parent signature logic with documented exceptions, assent from 12 when capable, dissent, and re-consent at adulthood.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.04",
+          "check": "Limited-capacity adults: the legally entitled consent-giver is defined under Lithuanian law, the participant receives adapted information and dissent is addressed; re-consent when capacity is regained.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.05",
+          "check": "Emergency enrolment: Article 35 is met and the documents explain how consent to continue is obtained without undue delay, later refusal and the right to object to use of data.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.06",
+          "check": "Impartial witness: witness pathway for inability to write (not lack of capacity), reason for its use and signature block present.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.07",
+          "check": "Pregnancy follow-up: the person providing pregnancy data is correctly identified as the trial participant or the participant's partner; consent and privacy logic match that person.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.08",
+          "check": "Future use of samples or coded data: separate future-use ICF or a distinct opt-in choice; refusal does not affect main-trial participation.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "instruction": "Participant-facing privacy information is consistent with the sponsor's GDPR statement (LT-R1) and the actual data flows.",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Controller identity and contact route where required."
+        },
+        {
+          "id": "C5.02",
+          "check": "Categories of personal and health data."
+        },
+        {
+          "id": "C5.03",
+          "check": "Source of the data."
+        },
+        {
+          "id": "C5.04",
+          "check": "Access by sponsor, monitors, auditors and authorities."
+        },
+        {
+          "id": "C5.05",
+          "check": "Coding or pseudonymisation."
+        },
+        {
+          "id": "C5.06",
+          "check": "Recipients and international transfers.",
+          "applies_when": "data transferred to recipients outside the site or outside the EEA"
+        },
+        {
+          "id": "C5.07",
+          "check": "Storage period."
+        },
+        {
+          "id": "C5.08",
+          "check": "Use after withdrawal."
+        },
+        {
+          "id": "C5.09",
+          "check": "Rights and complaint routes."
+        },
+        {
+          "id": "C5.10",
+          "check": "Special categories such as genetics, race or ethnicity are named when collected; race or ethnicity collection is scientifically justified and transparently explained.",
+          "applies_when": "special-category data collected"
+        },
+        {
+          "id": "C5.11",
+          "check": "Trial consent is not used as a catch-all permission for every future data use."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biosamples and secondary use",
+      "applies_when": "samples.collected or samples.archive_used or data.future_use_outside_protocol",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Purpose in the main trial for each sample."
+        },
+        {
+          "id": "C6.02",
+          "check": "Collection timing."
+        },
+        {
+          "id": "C6.03",
+          "check": "Where analysis occurs."
+        },
+        {
+          "id": "C6.04",
+          "check": "Storage and destruction plan."
+        },
+        {
+          "id": "C6.05",
+          "check": "Whether future use is planned."
+        },
+        {
+          "id": "C6.06",
+          "check": "Whether future use is optional.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.07",
+          "check": "Whether withdrawal from future use is explained, and what still happens to completed analyses, datasets, distributed samples and anonymised information.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.08",
+          "check": "Future-use information covers purposes, storage duration and location and personal data issues, and as relevant coding, access, recipients, transfers, commercial research, genetic analysis and return of results.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+          "source": "https://trialagents.com/ctis/lithuania/en/secondary-use-consent-requirements"
+        },
+        {
+          "id": "C6.09",
+          "check": "Sample types, storage locations, retention, future-use purpose, transfers and destruction agree with the S1 biological-sample compliance form."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Lithuania-specific regulatory checks",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "The participant documents are in Lithuanian."
+        },
+        {
+          "id": "C7.02",
+          "check": "The recruitment and consent procedure (K1) covers the actual consent pathway of this document."
+        },
+        {
+          "id": "C7.03",
+          "check": "Advertisements are submitted with the supporting explanation the Lithuanian Bioethics Committee expects (need, placement, ineligible respondents, reimbursement, respondents' personal data).",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "C7.04",
+          "check": "Reimbursement and compensation wording agrees with the financial submission (P1, P2); an approximate hourly amount is stated when time is compensated."
+        },
+        {
+          "id": "C7.05",
+          "check": "The participant information states that the investigational medicinal product and trial health checks are free of charge, where applicable."
+        },
+        {
+          "id": "C7.06",
+          "check": "Contraception costs are handled consistently (compensated) where contraception is required specifically because of the trial.",
+          "applies_when": "contraception.required_by_trial"
+        },
+        {
+          "id": "C7.07",
+          "check": "Biological-sample compliance information (S1) is included when applicable.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C7.08",
+          "check": "Insurance or indemnification arrangements and how to seek compensation for trial-related harm match the submitted certificate or policy (LT-O1)."
+        },
+        {
+          "id": "C7.09",
+          "check": "A person who does not understand Lithuanian is consented only through the pathway defined in advance in K1.",
+          "applies_when": "population.non_lithuanian_speakers"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administration",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "The ICF version number and date match the document register."
+        },
+        {
+          "id": "C8.02",
+          "check": "The Lithuanian version corresponds to the intended master version."
+        },
+        {
+          "id": "C8.03",
+          "check": "All signature blocks are appropriate for the population."
+        },
+        {
+          "id": "C8.04",
+          "check": "The representative basis is captured when someone else gives consent."
+        },
+        {
+          "id": "C8.05",
+          "check": "Witness fields exist only where the pathway may be used."
+        },
+        {
+          "id": "C8.06",
+          "check": "The participant and interviewer have not pre-signed the initial submission ICF."
+        },
+        {
+          "id": "C8.07",
+          "check": "Signature fields include names, signatures, date and time; the participant's copy is also signed by the investigator or authorised research person."
+        },
+        {
+          "id": "C8.08",
+          "check": "Filenames and document titles distinguish population and use case clearly; CTIS title follows the naming guide."
+        },
+        {
+          "id": "C8.09",
+          "check": "No drafting instruction remains (content/conventions/template-instructions.md)."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and translation",
+      "instruction": "Read the Lithuanian text as a participant would, not as a translator would.",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Sentences are short enough to follow."
+        },
+        {
+          "id": "C9.02",
+          "check": "Technical terms are explained."
+        },
+        {
+          "id": "C9.03",
+          "check": "Risks use consistent plain-language wording."
+        },
+        {
+          "id": "C9.04",
+          "check": "Optional choices are visibly separate."
+        },
+        {
+          "id": "C9.05",
+          "check": "Headings make the document easy to scan."
+        },
+        {
+          "id": "C9.06",
+          "check": "The document does not contradict itself about withdrawal, data or samples."
+        },
+        {
+          "id": "C9.07",
+          "check": "The translation preserves the regulatory meaning of the source without sounding literal."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final release",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "Protocol, consent pathway, Lithuanian wording, privacy statements, optional choices, signatures and version control all agree."
+        },
+        {
+          "id": "C10.02",
+          "check": "The participant document list matches the protocol's populations and the Lithuania Part II package checklist."
+        }
+      ]
+    }
+  ]
+}

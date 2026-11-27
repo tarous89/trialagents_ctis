@@ -1,0 +1,438 @@
+{
+  "id": "EE-QC-PARTICIPANT",
+  "name": "Estonia: participant-facing document QC",
+  "applies_to": [
+    "EE-L1",
+    "EE-K2",
+    "EE-R2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/estonia/en/patient-facing-document-qc-checklist (reviewed 23 September 2026), with the QC sections of the Estonia population guides in C4",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "instruction": "Every participant-facing statement matches the current protocol and other approved trial documents.",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Trial title and EU CT number are correct and match the protocol and CTIS."
+        },
+        {
+          "id": "C1.02",
+          "check": "Investigational product, comparator and randomisation are described as in the protocol and IB/SmPC."
+        },
+        {
+          "id": "C1.03",
+          "check": "Visit schedule and study duration match the protocol."
+        },
+        {
+          "id": "C1.04",
+          "check": "Invasive procedures and sample collections match the protocol."
+        },
+        {
+          "id": "C1.05",
+          "check": "Optional procedures are identified as optional and match the protocol."
+        },
+        {
+          "id": "C1.06",
+          "check": "Contraception and pregnancy precautions match the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C1.07",
+          "check": "Foreseeable risks and burdens match the protocol, IB and current safety information; risk wording is not softened."
+        },
+        {
+          "id": "C1.08",
+          "check": "Expected benefits and alternatives are stated, including when no direct benefit is expected."
+        },
+        {
+          "id": "C1.09",
+          "check": "Withdrawal procedures are described."
+        },
+        {
+          "id": "C1.10",
+          "check": "Injury, insurance and medical-care wording matches the insurance certificate (EE-O1)."
+        },
+        {
+          "id": "C1.11",
+          "check": "Participant contacts for study questions, safety concerns and participant rights are given."
+        },
+        {
+          "id": "C1.12",
+          "check": "No procedure, benefit or risk statement is added that the protocol or other source documents do not support."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency",
+      "instruction": "Compare the PIS/ICF directly with the protocol rather than reviewing it in isolation.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Visit counts, time commitments, treatment periods and follow-up use the same logic as the protocol."
+        },
+        {
+          "id": "C2.02",
+          "check": "Blood volumes, imaging, biopsies and washouts use the same logic as the protocol."
+        },
+        {
+          "id": "C2.03",
+          "check": "Prohibited medicines and pregnancy testing use the same logic as the protocol."
+        },
+        {
+          "id": "C2.04",
+          "check": "Participants receive only information relevant to the pathway they may enter (cohorts, dose levels, optional substudies).",
+          "applies_when": "protocol has several cohorts, dose levels or optional substudies"
+        },
+        {
+          "id": "C2.05",
+          "check": "The default adult form follows the Estonia patient information and consent guide as baseline."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "Each consent choice is understandable and linked to a real activity."
+        },
+        {
+          "id": "C3.02",
+          "check": "The main trial consent is not conditioned on optional future research, optional genetics, optional sample storage or optional data use unless the protocol and law genuinely require that activity."
+        },
+        {
+          "id": "C3.03",
+          "check": "Separate consent choices are offered for trial participation and for use of pseudonymised health data or biological samples (Estonian ethics guidance)."
+        },
+        {
+          "id": "C3.04",
+          "check": "The consent record is signed and dated by the participant or legal representative and by the person conducting the consent interview (Article 29); a digital signature valid under Estonian law is supported."
+        },
+        {
+          "id": "C3.05",
+          "check": "The document states that before consent the participant or representative speaks with a trial-team member who is a doctor, nurse or pharmacist with thorough knowledge of the trial and IMP, has adequate time to decide and receives a copy."
+        },
+        {
+          "id": "C3.06",
+          "check": "The approved remote-consent process includes video interaction, electronic identification, full opportunity for questions and a valid signature, and has prior Ethics Committee approval.",
+          "applies_when": "consent.remote"
+        },
+        {
+          "id": "C3.07",
+          "check": "Voluntary participation and withdrawal are explained, including what happens after withdrawal."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "instruction": "Map the protocol population against the actual document set.",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every protocol population and inclusion pathway maps to a document set (population × document table).",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Healthy volunteers: explains why healthy volunteers are needed, no direct medical benefit, screening and exclusion, confinement, restrictions, blood-draw burden, safety monitoring, incidental findings and follow-up after withdrawal; a dedicated document when patients are also enrolled or procedures, risk-benefit, payment or screening differ materially.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.03",
+          "check": "Minors: every age band in the protocol has a matching information document; ages 7 to 17 have a consent pathway for both the minor and the legal representative, with each decision and signature clear (not a mere acknowledgement by the minor).",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.04",
+          "check": "Minors: child language is developmentally appropriate; dissent and withdrawal are explained; signatures match the legal pathway (no assumed two-parent rule); re-consent at adulthood planned.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.05",
+          "check": "Incapacitated adults: the protocol permits inclusion; representative authority handled at site level; participant information adapted to capacity; presumed intent addressed; dissent and withdrawal respected; re-consent planned if capacity changes.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.06",
+          "check": "Emergency enrolment: every Article 35 condition is satisfied; emergency identification is operational; the representative search fits the therapeutic window; later consent is sought without undue delay; refusal and withdrawal are meaningful; child or incapacity rules layered on when relevant; data and samples collected before later consent are handled consistently.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.07",
+          "check": "Impartial witness: the trigger is defined; witness independence protected; selection and role explained; signature blocks cover participant or representative, interviewer and witness; the witness is not described as the legal decision-maker; the participant receives a copy.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.08",
+          "check": "Pregnancy follow-up: participant and partner scenarios use different document logic; only necessary pregnancy and infant data requested; follow-up duration defined; medical-record access wording matches the real Estonian pathway.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.09",
+          "check": "Secondary use: future use clearly separate from required protocol use; optional choices not bundled with the main participation decision; refusing future use does not prevent main-trial participation.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "instruction": "The PIS/ICF explains the actual data flow rather than generic privacy language.",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Categories of personal and health data are stated."
+        },
+        {
+          "id": "C5.02",
+          "check": "Who collects and controls the data, and who may access coded source data, are stated."
+        },
+        {
+          "id": "C5.03",
+          "check": "Pseudonymisation is explained."
+        },
+        {
+          "id": "C5.04",
+          "check": "Transfers outside Estonia or the EEA are described.",
+          "applies_when": "data transferred outside Estonia or the EEA"
+        },
+        {
+          "id": "C5.05",
+          "check": "Retention, monitoring and audit access are explained."
+        },
+        {
+          "id": "C5.06",
+          "check": "Withdrawal consequences for data are stated realistically."
+        },
+        {
+          "id": "C5.07",
+          "check": "Optional future research with data is described as a separate choice.",
+          "applies_when": "data.future_use_outside_protocol"
+        },
+        {
+          "id": "C5.08",
+          "check": "Participant rights and contacts are given."
+        },
+        {
+          "id": "C5.09",
+          "check": "The document does not state that trial-participation consent is automatically the legal basis for all GDPR processing."
+        },
+        {
+          "id": "C5.10",
+          "check": "Source-data access wording is realistic: sponsor representatives do not automatically gain direct access to Estonia's national Health Information System."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological samples",
+      "instruction": "For every sample type.",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "What is collected and for what purpose.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.02",
+          "check": "Coding status (pseudonymised or anonymised).",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.03",
+          "check": "Transport and storage location.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.04",
+          "check": "Retention duration in years and destruction plan.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.05",
+          "check": "Whether genetic analysis is involved.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.06",
+          "check": "Whether future use is optional.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.07",
+          "check": "Whether samples may leave Estonia or the EEA.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.08",
+          "check": "Consistent with the EU biological-sample compliance form (EE-S1).",
+          "applies_when": "samples.collected or samples.archive_used"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Compensation",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "Compensation and reimbursement information is in the ICF, not in recruitment advertising."
+        },
+        {
+          "id": "C7.02",
+          "check": "Unavoidable direct trial expenses are reimbursed according to the approved plan, and the reimbursement principles are explained."
+        },
+        {
+          "id": "C7.03",
+          "check": "Compensation for time or burden is offered only to competent adults, with basis and amount justified in the application and approved by the Ethics Committee (healthy volunteers: time based on the Estonian minimum wage in the year the trial was initiated); not dependent on risk.",
+          "applies_when": "compensation.time_or_burden_offered"
+        },
+        {
+          "id": "C7.04",
+          "check": "No completion bonus and no large share of payment deferred to the end as an incentive to stay enrolled."
+        },
+        {
+          "id": "C7.05",
+          "check": "Incapacitated participants and their representatives, minors and their representatives, pregnant women and breastfeeding women receive only reimbursement of direct costs, not participation compensation.",
+          "applies_when": "population.minors or population.adults_without_capacity or pregnancy.participant_follow_up_beyond_main_consent"
+        },
+        {
+          "id": "C7.06",
+          "check": "Amounts and conditions match P1 (EE-P1)."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Estonia-specific regulatory checks",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "The Estonian participant-facing version is present."
+        },
+        {
+          "id": "C8.02",
+          "check": "A complete version is present in every other language in which the material will be used with participants.",
+          "applies_when": "population.non_estonian_speakers"
+        },
+        {
+          "id": "C8.03",
+          "check": "Every participant-facing item includes the EU CT number."
+        },
+        {
+          "id": "C8.04",
+          "check": "'Participant' is used instead of 'patient' as the national guidance requests."
+        },
+        {
+          "id": "C8.05",
+          "check": "The national ICF template has been considered."
+        },
+        {
+          "id": "C8.06",
+          "check": "The current CTIS placement rule for Estonian-language patient-facing materials has been followed (multinational: Part II section R; mononational: EU Q&A route).",
+          "applies_when": "endpoint_documents.participant_facing"
+        },
+        {
+          "id": "C8.07",
+          "check": "Reimbursement and compensation wording follows Estonia guidance."
+        },
+        {
+          "id": "C8.08",
+          "check": "Data protection is explained in detail."
+        },
+        {
+          "id": "C8.09",
+          "check": "Sample handling is described.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C8.10",
+          "check": "No drafting instruction remains ([bracket] notes, italic notes, '...........' gaps, yellow form labels)."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Signature, version and administration",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Clear version number and date."
+        },
+        {
+          "id": "C9.02",
+          "check": "Consistent trial identifier and sponsor name."
+        },
+        {
+          "id": "C9.03",
+          "check": "Consistent site name.",
+          "applies_when": "document is site-specific"
+        },
+        {
+          "id": "C9.04",
+          "check": "Signature blocks match the actual consent pathway."
+        },
+        {
+          "id": "C9.05",
+          "check": "No pre-signed participant signature on a blank submission template."
+        },
+        {
+          "id": "C9.06",
+          "check": "Correct language label."
+        },
+        {
+          "id": "C9.07",
+          "check": "No tracked changes or drafting comments in the clean submission version."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Readability and language",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "Plain Estonian suitable for the target participant population."
+        },
+        {
+          "id": "C10.02",
+          "check": "The English master is not used as the participant document unless English will genuinely be used with a specific participant group."
+        },
+        {
+          "id": "C10.03",
+          "check": "Headings explain the decision being made."
+        },
+        {
+          "id": "C10.04",
+          "check": "Abbreviations are defined."
+        },
+        {
+          "id": "C10.05",
+          "check": "Risks are not hidden in dense paragraphs."
+        },
+        {
+          "id": "C10.06",
+          "check": "Optional choices are visually separate from mandatory trial participation."
+        },
+        {
+          "id": "C10.07",
+          "check": "Child documents are adapted to age and maturity rather than a mechanically shortened adult form.",
+          "applies_when": "population.minors"
+        }
+      ]
+    }
+  ]
+}
