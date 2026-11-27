@@ -32,7 +32,7 @@ The workflow and rules used to build Germany (`countries/DE`). Follow them for e
 5. Write `countries/<CC>/styling.md`: national rules for all participant documents plus each template's `styling_instructions` verbatim; fill a missing one with the national rules.
 6. Write the three checklists in `countries/<CC>/checklists/`: `participant-documents.json` (from the country QC checklist), `forms-and-supplied.json` (common items plus items per document id), `part-ii-package.json` (completeness, language and signatures, cross-document consistency, CTIS naming, transparency, final form). Every item: id, check, optional `applies_when` using study-fact keys.
 7. Write `countries/<CC>/templates/README.md`: what was used as supplied, what was converted, conflicts resolved under rule 2, open points.
-8. Run the audit (the script in the Germany commit history, or the same checks): all JSON valid; every referenced file exists; every template id in `population_rules` is in the catalogue; every non-participant document has Check items; no `{{` left in templates; the document list matches the country guide's Part II checklist one to one.
+8. Run the audit, `python3 tools/content/audit.py <CC>`, and also check by hand that the document list matches the country guide's Part II checklist one to one.
 9. Commit, open a pull request and merge.
 
 ## 4. General content (shared by all countries)
