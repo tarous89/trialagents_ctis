@@ -358,7 +358,7 @@
       "template": null,
       "signature_at_submission": null,
       "signature_note": "As issued by the insurer. If signed with a qualified electronic signature, submitted in a format that permits verification of the signature.",
-      "content": "Valid insurance covering sponsor and principal investigator liability as required by Bulgarian law (Article 91 of the Medicinal Products in Human Medicine Act: trial-related material and non-material harm). Includes all proposed sites with the relevant departments or clinics and principal investigators; insured participant number equal to or greater than the number planned for Bulgaria in CTIS; valid for the relevant trial period and national scope.",
+      "content": "Valid insurance covering sponsor and principal investigator liability as required by Bulgarian law (Article 91 of the Medicinal Products in Human Medicine Act: trial-related material and non-material harm). Includes all proposed sites with the relevant departments or clinics and principal investigators; insured participant number equal to or greater than the number planned for Bulgaria in CTIS; valid for the relevant trial period and national scope. Whether separate policy terms go under O2: DECISIONS.md D12.",
       "sources": [
         "BG-PII-CHECKLIST#6",
         "BG-HV",
@@ -689,7 +689,7 @@
           "template": "templates/participant/L1_SIS and ICF_pregnant partner_BG_bg.json"
         }
       ],
-      "note": "Separate partner-facing information and consent before collecting identifiable data or accessing records; the enrolled participant cannot sign for the partner. Bulgarian document; the English Bulgaria version is a recommendation (no partner-specific BDA rule).",
+      "note": "Separate partner-facing information and consent before collecting identifiable data or accessing records; the enrolled participant cannot sign for the partner. Bulgarian document; the English Bulgaria version is a recommendation (no partner-specific BDA rule; DECISIONS.md D13).",
       "sources": [
         "BG-PREGNANCY"
       ]
