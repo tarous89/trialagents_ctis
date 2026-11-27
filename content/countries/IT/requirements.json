@@ -1,0 +1,919 @@
+{
+  "country": "IT",
+  "name": "Italy",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "AIFA (Agenzia Italiana del Farmaco) acts for Italy in the authorisation and supervision of medicinal-product trials",
+    "ethics": "The competent Territorial Ethics Committee (CET) performs the ethical review; AIFA-based National Ethics Committees review paediatric trials and advanced therapy medicinal products. The committee is assigned within the national system; its Part II opinion applies nationally. Requests for information are exchanged in CTIS.",
+    "coordination": "CCNCE (Centro di coordinamento nazionale dei comitati etici territoriali) publishes the national models and guidance: informed-consent guidance and models (27 May 2026), FAQ (10 June 2026), privacy information and consent model (13 August 2026), principal-investigator declaration-of-interests model (v4, 21 April 2024), reimbursement and allowance model, biological-samples model, national clinical-trial agreement v3.",
+    "fee": "Not covered by the Italy guides (reviewed 23 September 2026). Proof of fee payment uses the CTIS Forms section, not Part II (naming guide). Amount and payment route: see DECISIONS.md, Missing."
+  },
+  "language_rules": {
+    "participant_documents": "it",
+    "administrative_documents": [
+      "en",
+      "it"
+    ],
+    "rule": "Documents intended for participants must be in Italian for trial conduct and ethics review. Non-participant Part II documents can generally be submitted in English. The insurance certificate must be in Italian. The declaration of interests can be used in the Italian or English version provided by AIFA.",
+    "emergency_exception": "During an officially recognised public-health emergency a narrow arrangement may permit initial English patient documents, but Italian information and consent are still required before enrolment begins. Not a routine submission route.",
+    "non_italian_speakers": "Where a potential participant does not understand Italian, arrange qualified language support and translated material appropriate to that person; a cultural mediator is an appropriate safeguard (CCNCE). Document the process. A relative's informal summary is not a substitute.",
+    "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in Italian, matching the Italian variable sheet supplied with CTIS_IT; English is also accepted for non-participant documents (see DECISIONS.md)."
+  },
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.adults_without_capacity",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "consent.electronic",
+    "population.non_italian_speakers",
+    "recruitment.material_used",
+    "endpoint_documents.participant_facing",
+    "participant_tools.operational",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.future_use_outside_protocol",
+    "data.future_use_outside_protocol",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "trial.commercial",
+    "trial.atmp",
+    "sites.count",
+    "sites.external_facilities"
+  ],
+  "study_facts_note": "Country-specific keys: population.non_italian_speakers (people who do not understand Italian), participant_tools.operational (diaries, cards, device instructions not tied to endpoints), trial.commercial (selects the commercial or non-commercial national clinical-trial agreement), trial.atmp (national ethics committee; extended insurance post-trial period for certain advanced treatments), sites.external_facilities (external facility performing part of the investigational treatment).",
+  "documents": [
+    {
+      "id": "IT-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment and informed-consent procedure",
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "it",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "EudraLex Volume 10 recruitment and informed-consent procedure template, version 2.0 (applies to new Part II submissions from 1 September 2026, including initial applications, additional Member States and Part II completion under Article 11; already authorised trials and applications under review need no retrospective replacement)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "How potential participants are identified, approached, informed, given time to decide and enrolled; the role of each person involved; safeguards for vulnerable populations. Every consent pathway in the plan (minors, adults without capacity, impartial witness, emergency) needs its section completed. If recruitment procedures are fully described in the protocol, avoid contradictory duplication.",
+      "note": "The Italy checklist files recruitment information under Recruitment arrangements and consent-process information under Subject information, informed-consent form and informed-consent procedure, as applicable. The v2.0 template covers both; where the upload goes is recorded in DECISIONS.md. Sponsor signature is not required: submission through CTIS authenticates the filing.",
+      "national_fields": {
+        "v105": "Italy: state only rules relevant to the study. Recruitment material is reviewed by the ethics committee (CCNCE FAQ, 10 June 2026); participant-facing recruitment material is in Italian, clear, non-coercive, promises no benefit and does not overemphasise payment; paediatric material is age-appropriate.",
+        "v108": "Italy: consent is an ongoing communication process (CCNCE informed-consent guidance v4, 27 May 2026); information and consent in Italian; for people who do not understand Italian, qualified language support, translated material and a cultural mediator, with the process documented; a separate Italian privacy information notice and data-processing consent distinct from the clinical consent form (CCNCE FAQ, 10 June 2026; model of 13 August 2026); electronic consent only case by case with ethics-committee approval and compliance with the CTR, GDPR and GCP; the authorised consent forms are nationally valid and are not changed by individual sites; participant and the doctor or investigator who informed sign and date, with time where the model requires it, and the participant receives a copy.",
+        "v110": "Italy: the legally designated representative is a court-appointed guardian (tutore), a curator for a person under inabilitation, or a support administrator (amministratore di sostegno), within the scope of the court order; authority is not inferred from family relationship; a healthcare proxy named in an advance directive (fiduciario) is not automatically the legal representative for trial consent; describe capacity assessment and its documentation, the CCNCE double-consent approach (representative authorisation plus the participant's supported agreement where possible), respect of objection, reassessment and personal consent when capacity returns.",
+        "v114": "Italy: the legally operative consent comes from the person or persons entitled under Italian law; the CCNCE parent model provides signature routes for the mother and father or a legal guardian; identity, relationship and any court order or custody limitation are verified before enrolment; adolescents 12–17 receive the CCNCE mature-minor information and assent form and children 6–11 the child information sheet; an explicit refusal or withdrawal by a minor able to form an opinion is respected; own informed consent is obtained without undue delay at 18.",
+        "v117": "Italy: when the participant cannot write and an alternative recording method is used, at least one impartial witness is required (CCNCE guidance); the witness is independent of the trial team, present for the entire discussion, and attests the information was read or explained accurately; an interpreter or cultural mediator does not automatically act as witness; only an ethics-approved alternative recording method is used.",
+        "v121": "Italy: all Article 35 conditions apply; describe the check for a known prior objection, the search for a legal representative, the record of why prior consent was impossible, the maximum time and escalation for seeking later consent, the right to object to use of data already collected (aligned with the separate privacy notice) and the handling of data if the participant dies before consent can be sought."
+      },
+      "sources": [
+        "IT-PII-CHECKLIST#1",
+        "IT-ICF",
+        "IT-MINORS",
+        "IT-CAPACITY",
+        "IT-WITNESS",
+        "IT-EMERGENCY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione K. Documento obbligatorio. Documento non destinato al partecipante: inglese generalmente accettato; risposte in questo modello in italiano (lingua del pacchetto, vedere DECISIONS.md). Nessuna firma al momento della presentazione: la sottomissione tramite CTIS autentica il deposito dello sponsor. Base: modello EudraLex “Recruitment and informed consent procedure” versione 2.0 (obbligatorio per le nuove sottomissioni di Parte II dal 1° settembre 2026). Compilare la sezione di ogni percorso di consenso previsto (minori, adulti incapaci, testimone imparziale, emergenza) e rispondere “N/A” per quelli non applicabili. Nei campi sulle norme nazionali inserire le aggiunte italiane riportate in national_fields (linee di indirizzo CCNCE 27 maggio 2026, FAQ CCNCE 10 giugno 2026). Non duplicare in modo contraddittorio quanto già descritto nel protocollo."
+    },
+    {
+      "id": "IT-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_IT_it",
+      "name_en": "Recruitment material",
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Advertisements, posters, social-media copy, letters, scripts, brochures and other material used to recruit participants. A statement that no recruitment material will be used is appropriate when true.",
+      "per": "item",
+      "language": [
+        "it"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Clean, versioned, blank Italian template of each item. Clear and non-coercive; no promise of benefit; no overemphasis on payment; age-appropriate design and language for paediatric material. Requires ethics review (CCNCE FAQ, 10 June 2026).",
+      "sources": [
+        "IT-PII-CHECKLIST#2",
+        "IT-QC"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione K (Recruitment arrangements). Condizionale: solo se si utilizza materiale di reclutamento; se non se ne usa, è appropriata una dichiarazione in tal senso. In italiano, chiaro e non coercitivo; non promettere benefici né enfatizzare pagamenti o rimborsi; materiale pediatrico con grafica e linguaggio adatti all’età. Nessuna firma alla presentazione; caricare un modello pulito e con versione. Il materiale è soggetto alla valutazione del Comitato etico (FAQ CCNCE 10 giugno 2026)."
+    },
+    {
+      "id": "IT-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_IT_it",
+      "name_en": "Main participant information and informed-consent form, one per population and consent pathway",
+      "requirement": "mandatory",
+      "per": "population",
+      "language": [
+        "it"
+      ],
+      "template": null,
+      "template_note": "Participant template bound per population from population_sets (adult_patients, healthy_volunteers; the main template also serves re-consent at 18 and after regained capacity).",
+      "signature_at_submission": false,
+      "content": "Blank Italian information and consent form for every participant population and consent pathway, developed against the CCNCE guidance and models of 27 May 2026 (structured guidance and facsimiles: adapt to the trial without deleting required information). Title, date and version match the footer. Optional choices have distinct signature or initial fields so that refusing an optional activity does not prevent main-trial participation.",
+      "sources": [
+        "IT-PII-CHECKLIST#3",
+        "IT-ICF"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione L (Subject information, informed-consent form and informed-consent procedure). Obbligatorio: un modulo per ogni popolazione e percorso di consenso. In italiano. Riferimento nazionale: linee di indirizzo e modelli CCNCE del 27 maggio 2026 (versione 4). Documento in bianco: nessuna firma alla presentazione; al momento dell’arruolamento firmano e datano il partecipante e il medico/sperimentatore che ha fornito le informazioni, con l’ora dove il modello la richiede; consegnare una copia firmata. Un unico set nazionale: solo le variabili di centro reali (sperimentatore principale, struttura, recapiti, logistica dei rimborsi, contatti di emergenza); il consenso autorizzato ha validità nazionale e non può essere modificato localmente (FAQ CCNCE 10 giugno 2026). Informativa privacy e consenso al trattamento dei dati in un documento separato (IT-PRIVACY)."
+    },
+    {
+      "id": "IT-PRIVACY",
+      "ctis_section": "R",
+      "ctis_title": "R2_Patient-facing document_privacy notice and consent_<population>_IT_it",
+      "name_en": "Separate privacy information notice and data-processing consent",
+      "requirement": "mandatory",
+      "per": "population",
+      "per_note": "One per signer route (participant, parent or guardian, legal representative); populations with the same route and identical content may share one document (see DECISIONS.md). The pregnant-partner and secondary-use templates carry their own privacy sections.",
+      "language": [
+        "it"
+      ],
+      "template": null,
+      "template_required": "CCNCE privacy information and data-processing consent model, announced 13 August 2026 (not in the CTIS_IT folder; see DECISIONS.md, Missing).",
+      "signature_at_submission": false,
+      "content": "Italian, study-specific privacy document distinct from the clinical-trial consent form (CCNCE FAQ, 10 June 2026). Controllers, legal bases and purposes, data categories, recipients and transfers, retention, safeguards, rights, contacts, and limits on withdrawal where lawfully collected research data must be retained. Signature and choice fields match the current model. Privacy language is not copied into the clinical-consent signature block as a substitute.",
+      "sources": [
+        "IT-PII-CHECKLIST#4",
+        "IT-ICF",
+        "IT-QC"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_it": "CTIS Parte II, categoria Compliance with applicable rules for personal data protection (sezione R). Obbligatorio. Informativa sul trattamento dei dati personali e consenso, in italiano, specifica per lo studio e distinta dal modulo di consenso informato alla sperimentazione (FAQ CCNCE 10 giugno 2026); base: modello CCNCE annunciato il 13 agosto 2026 (non fornito). Indicare titolari, basi giuridiche e finalità, categorie di dati, destinatari e trasferimenti, conservazione, misure di sicurezza, diritti, contatti e limiti alla revoca. Non definire anonimi i dati codificati o pseudonimizzati. Modello in bianco alla presentazione; i campi di consenso si compilano durante il processo approvato. Non sostituisce la dichiarazione di conformità dello sponsor (IT-R1)."
+    },
+    {
+      "id": "IT-L1-POPULATION",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<template subtype>_<population>_IT_it",
+      "name_en": "Population-specific information and consent documents",
+      "requirement": "conditional",
+      "trigger": "population.healthy_volunteers or population.minors or population.adults_without_capacity or consent.emergency_enrolment or consent.impartial_witness_possible or pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up",
+      "trigger_text": "Required when the population or situation applies: healthy volunteers, minors, limited capacity, emergency enrolment, impartial witness, pregnancy follow-up.",
+      "per": "population",
+      "language": [
+        "it"
+      ],
+      "template": null,
+      "template_note": "Templates per population_sets (healthy_volunteers, minors, adults_without_capacity, emergency, impartial_witness, pregnancy_participant, pregnancy_partner).",
+      "signature_at_submission": false,
+      "content": "Healthy volunteers: non-therapeutic purpose and realistic lack of direct benefit. Minors: parent or legal-guardian form, 12–17 mature-minor information and assent form, 6–11 child information sheet as applicable. Limited capacity: legal-representative route and adapted participant information. Emergency: deferred-consent process only when every Article 35 condition is met. Impartial witness: witness attestation where a capable participant cannot write. Pregnancy: participant or partner follow-up information required by the protocol.",
+      "note": "Filed with the subject information and consent material, or in the currently designated patient-document category when CTIS implementation requires it.",
+      "sources": [
+        "IT-PII-CHECKLIST#5",
+        "IT-HV",
+        "IT-MINORS",
+        "IT-CAPACITY",
+        "IT-EMERGENCY",
+        "IT-WITNESS",
+        "IT-PREGNANCY"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione L (o la categoria per documenti destinati ai pazienti attualmente designata, se richiesto dall’implementazione CTIS). Condizionale: per ogni popolazione o situazione presente. In italiano, in bianco alla presentazione; firmano durante l’uso il partecipante, il genitore, il rappresentante, lo sperimentatore o il testimone, secondo il percorso. Volontari sani: finalità non terapeutica e assenza di beneficio diretto. Minori: modulo per genitori o tutore, informativa e assenso 12–17 anni, scheda informativa 6–11 anni. Capacità limitata: percorso del rappresentante legale e informativa adattata. Emergenza: solo se ricorrono tutte le condizioni dell’art. 35. Testimone imparziale: attestazione del testimone. Gravidanza: informativa di follow-up per la partecipante o per la partner."
+    },
+    {
+      "id": "IT-S1",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_IT",
+      "name_en": "Compliance with the rules for collection, storage and future use of human biological samples",
+      "requirement": "conditional",
+      "trigger": "samples.collected or samples.archive_used",
+      "trigger_text": "The trial collects, stores, transfers or uses human biological samples.",
+      "per": "trial",
+      "language": [
+        "it",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "EudraLex biological-samples form. The Italy checklist accepts the latest applicable EU or Italian model; the CCNCE model on collection, storage and future use of biological samples (23 June 2022) is not in the CTIS_IT folder (see DECISIONS.md).",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Part II compliance information: national-law compliance, custodianship, coding, storage location, access, transfer, retention and destruction. The participant-facing Italian sample consent is a separate document (population set secondary_use, filed under L); this form does not replace it.",
+      "national_fields": {
+        "f03": "Italy: describe compliance with Italian national law and the custodianship of the samples (custodian or biobank responsible), with coding, storage location, access, transfer, retention and destruction consistent with sections 1–4, the participant sample consent and the separate privacy notice."
+      },
+      "sources": [
+        "IT-PII-CHECKLIST#6",
+        "IT-SECONDARY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione S (Compliance with applicable rules for collection, storage and future use of human biological samples). Condizionale: solo se la sperimentazione raccoglie, conserva, trasferisce o utilizza campioni biologici umani. Inglese o italiano; nessuna firma separata dello sponsor (la sottomissione CTIS la sostituisce). Descrivere conformità alla normativa nazionale, custodia, codifica, luogo di conservazione, accesso, trasferimento, conservazione e distruzione (sezione 5, vedere national_fields). Distinguere le analisi previste dal protocollo dalla ricerca futura facoltativa; il consenso del partecipante ai campioni è un documento italiano separato (modello per l’uso secondario), depositato con i documenti informativi e di consenso."
+    },
+    {
+      "id": "IT-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "name_en": "Principal-investigator curriculum vitae",
+      "requirement": "mandatory",
+      "per": "site",
+      "language": [
+        "en",
+        "it"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+        "basis": "EU principal-investigator CV template; designated as mandatory in Italy (Italy hub)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+        "shared": true,
+        "mandatory_template": true
+      },
+      "signature_at_submission": false,
+      "content": "Concise, current record of education, clinical-trial experience, relevant therapeutic expertise and GCP training of the site principal investigator (not the whole site team). Personal details come from the investigator; the assistant fills only the trial fields.",
+      "note": "The sponsor's upload attests that the copy conforms to the PI-prepared original; no additional sponsor signature. File name identifies the investigator and site without exposing unnecessary personal data.",
+      "sources": [
+        "IT-PII-CHECKLIST#7",
+        "IT-HUB"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione M (Suitability of the investigator). Obbligatorio per ogni centro. Modello UE di CV dello sperimentatore principale, obbligatorio in Italia. Inglese accettato. Solo il CV dello sperimentatore principale, non dell’intera équipe. Non aggiungere firme non previste dal modello UE: il caricamento dello sponsor attesta la conformità all’originale preparato dallo sperimentatore. I dati personali sono forniti dallo sperimentatore: l’assistente inserisce solo il numero UE della sperimentazione e non inventa dati personali."
+    },
+    {
+      "id": "IT-M2-DOI",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Principal-investigator declaration of interests (CCNCE national model)",
+      "requirement": "mandatory",
+      "per": "site",
+      "language": [
+        "it",
+        "en"
+      ],
+      "template": null,
+      "template_required": "CCNCE national declaration-of-interests model, version 4, 21 April 2024 (Italian and English versions as provided by AIFA). Not in the CTIS_IT folder: its M2 DOCX is the shared EU form, which the Italy guide does not designate (see DECISIONS.md). Once supplied, convert it into countries/IT/templates/part-ii and change kind to third_party_template.",
+      "signature_at_submission": false,
+      "content": "Financial, institutional and other interests that could affect impartial conduct of the trial, completed and dated by the site principal investigator; consistent with the CV, site name and CTIS site record. Do not invent a coordinating centre to satisfy a legacy label (a formal coordinating centre is not required for CTIS trials, CCNCE FAQ June 2026).",
+      "note": "Version 4 has a date field and no separate signature line; the PI completes and dates the original and the sponsor's CTIS upload attests conformity.",
+      "sources": [
+        "IT-PII-CHECKLIST#8",
+        "IT-HUB"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione M (Suitability of the investigator). Obbligatorio per ogni centro. Usare il modello nazionale CCNCE di dichiarazione sul conflitto di interessi, versione 4 del 21 aprile 2024 (versioni italiana e inglese come fornite da AIFA), non il modello UE. Compilato e datato dallo sperimentatore principale; il modello non prevede una riga di firma separata e il caricamento dello sponsor in CTIS attesta la conformità all’originale. Coerente con CV, nome del centro e scheda del centro in CTIS. Non indicare un “centro coordinatore” solo per soddisfare un’etichetta superata: non è richiesto per le sperimentazioni CTIS (FAQ CCNCE giugno 2026)."
+    },
+    {
+      "id": "IT-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Site-suitability form",
+      "requirement": "mandatory",
+      "per": "site",
+      "language": [
+        "it",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/N1_Site suitability.docx",
+        "basis": "EU site-suitability template; designated as mandatory in Italy (Italy hub)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/N1_Site suitability.fields.json",
+        "shared": true,
+        "mandatory_template": true
+      },
+      "signature_at_submission": true,
+      "signature_rule": "Signed before upload by the institution's legal representative or an authorised delegate using PAdES or an equivalent digital-signature method accepted in Italy. The delegation exists before signature and is retained, not uploaded.",
+      "content": "Facilities, equipment, staffing, patient population, pharmacy, laboratories and other resources needed to conduct the protocol safely. A separate Italy-specific site number is not mandatory. A principal-investigator change normally needs updated investigator documents, not a new site-suitability form.",
+      "note": "An external facility performing part of the investigational treatment may need to be a trial site with its own form and local principal investigator; an external facility performing only specific examinations the site cannot perform is not listed as a trial site (AIFA Q&A v9.0, question 8.11). A private facility must meet the Ministerial Decree of 19 March 1998; site and external facility need a contract and the insurance must cover the external activities.",
+      "national_fields": {
+        "n1_issued_by": "Italy requires a signature at submission: leave the block empty in the draft; the institution's legal representative or authorised delegate signs the final form with PAdES or an equivalent accepted digital signature before upload."
+      },
+      "sources": [
+        "IT-PII-CHECKLIST#9",
+        "IT-HUB"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant; site fields left empty for the site; signed by the institution's legal representative or delegate",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione N (Suitability of the facilities). Obbligatorio, un modulo per ogni centro. Modello UE di idoneità del centro, obbligatorio in Italia. Inglese o italiano. Firmato prima del caricamento dal rappresentante legale della struttura o da un delegato autorizzato con firma PAdES o equivalente accettata in Italia; la delega deve esistere prima della firma ed è conservata, non caricata. Descrivere strutture, attrezzature, personale, popolazione di pazienti, farmacia, laboratori e altre risorse necessarie per il protocollo. I dati del centro (nome, sperimentatore principale, numero di partecipanti) restano vuoti per il centro. Un codice di centro italiano separato non è obbligatorio. Una struttura esterna che esegue parte del trattamento sperimentale può dover essere un centro con proprio modulo e sperimentatore; una struttura che esegue solo esami specifici non è elencata come centro (AIFA Q&A v9.0, domanda 8.11); struttura privata conforme al DM 19 marzo 1998, con contratto e copertura assicurativa delle attività esterne."
+    },
+    {
+      "id": "IT-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_IT",
+      "name_en": "Proof of insurance or indemnification",
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "it"
+      ],
+      "template": null,
+      "signature_at_submission": true,
+      "signature_rule": "Signed by the insurer before submission; no participant, investigator or sponsor signature substitutes for it.",
+      "content": "Study-specific certificate satisfying the Ministerial Decree of 14 July 2009 (updated 16 December 2014): covers the sponsor's and investigators' civil liability for trial-related injury for the whole trial. Check insured parties, protocol identifier, sites or territorial scope, policy dates, limits, exclusions and post-trial claim period. For minors and certain advanced treatments the decree requires an extended post-trial period. Include policy terms when needed to demonstrate the required cover (title O2_Proof of coverage_<sponsor or site>). Cover must include activities at external facilities.",
+      "sources": [
+        "IT-PII-CHECKLIST#10",
+        "IT-PII-CHECKLIST#9"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione O (Proof of insurance cover or indemnification). Obbligatorio. Certificato specifico per lo studio conforme al DM 14 luglio 2009 (aggiornato 16 dicembre 2014), in italiano e firmato dall’assicuratore prima della presentazione. Copre la responsabilità civile dello sponsor e degli sperimentatori per danni correlati alla sperimentazione per l’intera durata. Verificare assicurati, identificativo del protocollo, centri o ambito territoriale, date di polizza, massimali, esclusioni e periodo di denuncia successivo; periodo esteso per minori e alcune terapie avanzate. Allegare le condizioni di polizza quando necessarie a dimostrare la copertura. L’assistente non redige il certificato: lo verifica."
+    },
+    {
+      "id": "IT-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_IT",
+      "name_en": "Participant reimbursements and allowances (CCNCE national model)",
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "it",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "EU compensation template (CTAG). Interim only: Italy requires the CCNCE national model for participant allowances and reimbursement of expenses (version 3, 10 November 2022), which is not in the CTIS_IT folder.",
+        "recommended": false,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true,
+        "interim": true,
+        "national_model_required": "CCNCE Model for participant allowances and reimbursement of expenses, version 3, 10 November 2022 (check AIFA for the current version before filing)",
+        "use_for_upload": false
+      },
+      "signature_at_submission": false,
+      "content": "All participant payments, reimbursements and documented loss-of-income arrangements: amounts, eligible costs, payment method, timing and the party administering payment, so the ethics committee can assess undue influence. Reimbursement of actual, documented trial-related costs; no promotional language; current Italian rules for vulnerable participants and healthy volunteers; no payment category assumed acceptable because it appears in another country's materials.",
+      "note": "Until the national model is supplied and converted into countries/IT/templates/part-ii, the EU form only collects the content; it is not the Italy upload (see DECISIONS.md).",
+      "national_fields": {
+        "f02": "Italy: for each recipient and format, state the eligible costs, the amount, the payment method, the timing and the party administering payment (CCNCE reimbursement and allowance model).",
+        "f06": "Italy: state the conditions, including prorating for partial participation and what happens to accrued amounts on early withdrawal; reimbursement reflects actual, documented trial-related expenses."
+      },
+      "sources": [
+        "IT-PII-CHECKLIST#11",
+        "IT-HV",
+        "IT-MINORS",
+        "IT-HUB"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione P (Financial and other arrangements). Obbligatorio. Usare il modello nazionale CCNCE per indennità ai partecipanti e rimborso spese (versione 3, 10 novembre 2022; verificare su AIFA la versione corrente): il modello UE è solo provvisorio e non va caricato come documento italiano. Indicare tutti i pagamenti, rimborsi e indennità per mancato guadagno documentato: importi, spese ammissibili, modalità e tempi di pagamento e soggetto che li eroga. Rimborso delle spese effettive e documentate; nessun linguaggio promozionale; regole italiane per partecipanti vulnerabili e volontari sani. Importi e condizioni identici in tutti i documenti per i partecipanti. Nessuna firma separata dello sponsor: la sottomissione CTIS la sostituisce."
+    },
+    {
+      "id": "IT-P2",
+      "ctis_section": "P",
+      "ctis_title": "P2_Financial arrangements_<site>",
+      "name_en": "Clinical-trial agreement material (national clinical-trial agreement model)",
+      "requirement": "mandatory",
+      "per": "site",
+      "language": [
+        "it",
+        "en"
+      ],
+      "template": null,
+      "template_required": "National clinical-trial agreement, version 3: commercial 28 January 2026 (minimum model for commercial trials); non-commercial 22 July 2026. Not in the CTIS_IT folder (see DECISIONS.md, Missing).",
+      "signature_at_submission": false,
+      "signature_rule": "The final agreement is signed by the contracting parties when executed, before site activation in accordance with the national process; CTIS submission does not replace those signatures.",
+      "content": "The applicable contractual information for each site, on the national clinical-trial agreement model, consistent with the participant reimbursement document.",
+      "note": "Split from checklist item 11 because the agreement material is a separate upload with a different kind and author from the reimbursement model (IT-P1).",
+      "sources": [
+        "IT-PII-CHECKLIST#11",
+        "IT-PREGNANCY"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor legal and site",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione P (Financial and other arrangements). Obbligatorio: presentare le informazioni contrattuali applicabili sul modello nazionale di contratto per la sperimentazione clinica, versione 3 (profit 28 gennaio 2026, modello minimo per gli studi commerciali; no profit 22 luglio 2026). Il contratto definitivo è firmato dalle parti al momento della stipula, prima dell’attivazione del centro; la sottomissione CTIS non sostituisce tali firme. L’assistente verifica soltanto la coerenza con IT-P1 e con i documenti per i partecipanti."
+    },
+    {
+      "id": "IT-R1",
+      "ctis_section": "R",
+      "ctis_title": "R1_Compliance collection and use personal data_IT",
+      "name_en": "Data-protection compliance statement",
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "it",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/R1_Data protection.docx",
+        "basis": "EudraLex GDPR statement (Annex I, section R); AIFA states there is no separate national template for this statement",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Lawful processing, security, confidentiality, data-subject information, rights, transfers, retention and handling of coded data. Not the participant privacy notice (IT-PRIVACY): submit both and align them with the protocol, data-management plan, contracts, vendor flows and the separate Italian privacy document.",
+      "national_note": "No national data-protection statement is required in R1 for Italy: answer r1_the_sponsor_declares with the template's not-applicable answer.",
+      "sources": [
+        "IT-PII-CHECKLIST#12",
+        "IT-PII-CHECKLIST#4"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_it": "CTIS Parte II, sezione R (Compliance with applicable rules for personal data protection). Obbligatorio. Dichiarazione dell’Allegato I, sezione R, del Regolamento (UE) n. 536/2014; l’Italia non prevede un modulo nazionale separato. Inglese o italiano; nessuna firma separata dello sponsor alla presentazione. Trattare liceità, sicurezza, riservatezza, informazione degli interessati, diritti, trasferimenti, conservazione e dati codificati. Non è l’informativa privacy per il partecipante: presentare entrambe e allinearle a protocollo, piano di gestione dei dati, contratti e flussi dei fornitori. Il campo sulla dichiarazione nazionale (r1_the_sponsor_declares) non si applica."
+    },
+    {
+      "id": "IT-R2",
+      "ctis_section": "R",
+      "ctis_title": "R2_Patient-facing document_<type>_IT_it",
+      "name_en": "Other patient-facing operational materials",
+      "requirement": "conditional",
+      "trigger": "endpoint_documents.participant_facing or participant_tools.operational",
+      "trigger_text": "Diaries, questionnaires, cards, device instructions and other participant tools. Their CTIS location depends on purpose: material that defines endpoint collection may belong with Part I protocol material (English source D4_Patient-facing document_<type>_ENG).",
+      "per": "item",
+      "language": [
+        "it"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "note": "Current EU guidance does not create a blanket Part II upload requirement for every operational patient document; plan each item only where its purpose requires a Part II upload (see DECISIONS.md).",
+      "sources": [
+        "IT-PII-CHECKLIST#13"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant (translation)",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_it": "Collocazione CTIS secondo la finalità: i materiali che definiscono la raccolta degli endpoint possono appartenere alla Parte I con il protocollo. Condizionale. Diari, questionari, schede, istruzioni per dispositivi e altri strumenti per il partecipante devono essere disponibili in una lingua appropriata per la conduzione (italiano per i partecipanti). Non caricare per impostazione predefinita ogni documento operativo: le norme UE attuali non lo richiedono. Coerenti con protocollo e moduli di consenso (restrizioni, precauzioni riproduttive, farmaci vietati)."
+    }
+  ],
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_main_IT_it.json"
+        }
+      ],
+      "basis": "CCNCE adult information and consent model, 27 May 2026 (informed-consent guidance v4)",
+      "sources": [
+        "IT-ICF",
+        "IT-PII-CHECKLIST#3"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_healthy_IT_it.json"
+        }
+      ],
+      "note": "Invited because they meet the protocol's healthy-volunteer definition, not because they need treatment. Direct medical benefit not expected; examinations are not a treatment benefit or a comprehensive health assessment. First-in-human, dose-escalation and early Phase I facts (limited human experience, unknown risks, sentinel dosing, cohort progression, stopping rules) go in the key-information section. Reimbursement reflects actual documented expenses and the arrangement approved in Part II; no money presented as compensation for accepting risk.",
+      "sources": [
+        "IT-HV",
+        "IT-PII-CHECKLIST#5"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_parents_IT_it.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 6-11_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_age 6-11_IT_it.json"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 12-17_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_age 12-17_IT_it.json"
+        }
+      ],
+      "note": "Parent or legal-guardian form always; 12–17 mature-minor information and assent form and 6–11 child information sheet for the age bands enrolled. Legally operative consent from the person(s) entitled under Italian law (parent model: mother and father, or legal guardian). Respect an explicit refusal or withdrawal. Own adult consent without undue delay at 18. Article 32 CTR protections.",
+      "basis": "CCNCE parent or legal-guardian consent, mature-minor assent and child information models, 27 May 2026",
+      "sources": [
+        "IT-MINORS",
+        "IT-PII-CHECKLIST#5"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_IT_it.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_IT_it.json"
+        }
+      ],
+      "note": "Legal-representative route plus adapted participant information (CCNCE double-consent approach where possible). Representative: tutore, curatore or amministratore di sostegno within the court order; a fiduciario is not automatically the legal representative. Respect objection; reassess fluctuating capacity; personal consent when capacity returns (main template). Article 31 CTR.",
+      "basis": "CCNCE adult and legal-representation consent models, 27 May 2026",
+      "sources": [
+        "IT-CAPACITY",
+        "IT-PII-CHECKLIST#5"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_emergency_IT_it.json"
+        }
+      ],
+      "note": "Only when every Article 35 condition is met. Deferred consent sought without undue delay from the legal representative while the participant cannot decide, then from the participant when capable. Right to object to use of data already collected, aligned with the privacy notice. No broad permission for optional biobanking or future research. K1 section 6 must describe the process.",
+      "sources": [
+        "IT-EMERGENCY",
+        "IT-PII-CHECKLIST#5"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_witness_IT_it.json"
+        }
+      ],
+      "note": "Only for a capable participant who cannot write. Not for language barriers or limited capacity. At least one impartial witness when an alternative recording method is used (CCNCE). Witness block repeated in every separate form that requires a decision.",
+      "sources": [
+        "IT-WITNESS",
+        "IT-PII-CHECKLIST#5"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_IT_it.json"
+        }
+      ],
+      "note": "Needed when follow-up adds procedures, longer infant observation, new record access or another material use not covered by the approved main consent and privacy documents. Infant data after birth: separate section or document through the parent or guardian route.",
+      "sources": [
+        "IT-PREGNANCY",
+        "IT-PII-CHECKLIST#5"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_IT_it.json"
+        }
+      ],
+      "note": "The pregnant partner is a separate data subject, not a trial participant; she receives separate Italian information and an appropriate privacy and consent process before direct data collection or record access. The participant does not sign for her.",
+      "sources": [
+        "IT-PREGNANCY",
+        "IT-PII-CHECKLIST#5"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_IT_it",
+          "template": "templates/participant/L1_SIS and ICF_secondary_IT_it.json"
+        }
+      ],
+      "note": "Separate Italian information and consent for collection, storage and future use of samples and data beyond the protocol (Italy checklist item 6); filed with the subject information and consent materials. Distinct choices for genetics, biobanking and future research; refusal does not prevent main-trial participation. Parent or representative versions when minors or adults without capacity are included; own choice at 18 or when capacity returns.",
+      "basis": "CCNCE guidance v4 (27 May 2026); CCNCE model on collection, storage and future use of biological samples (23 June 2022, not supplied)",
+      "sources": [
+        "IT-SECONDARY",
+        "IT-PII-CHECKLIST#6"
+      ]
+    }
+  ],
+  "drafting_rules": [
+    "Participant documents: the CCNCE informed-consent guidance v4 and model forms of 27 May 2026 are the national benchmark. They are structured guidance and facsimiles: adapt them to the trial without deleting required information. Check the CCNCE page immediately before filing (the May 2024 Article 7 evaluation guide is marked under revision).",
+    "Layered structure: one or two pages of key information in plain language, then detailed information, then the consent declarations and signatures.",
+    "Key information states voluntariness, that refusal or withdrawal does not affect ordinary care or legal rights, why the person is invited, the purpose, the investigational nature and main differences from normal care, duration, visits, randomisation, placebo or blinding, main procedures, additional samples, burdens, foreseeable risks, potential benefits (or that none is expected), alternatives, and the most important pregnancy, contraception, privacy, reimbursement, injury and contact information.",
+    "Plain Italian: no medical jargon, unexplained acronyms or English terms in an Italian form; no statements waiving legal rights; no overstated benefit, minimised risk or reimbursement presented as an inducement; avoid the word for payment where it suggests a reward for accepting risk.",
+    "Title block: study title in Italian, lay title where helpful, protocol or EU trial identifier, sponsor or funder, trial site, principal investigator and competent ethics committee.",
+    "Separate standard-care procedures from research-only procedures; give blood volume and frequency, imaging, questionnaires, device use, home activities, travel, confinement and follow-up; explain competitive enrolment where it can close recruitment early.",
+    "Risks: known and reasonably foreseeable, product-class, procedure and reproductive risks and material uncertainties; Phase I and first-in-human trials need particularly direct wording about limited human experience and unknown risks.",
+    "The clinical-consent form explains in plain language that authorised persons may review coded trial data and medical records; detailed GDPR information and data-processing consent go in the separate Italian privacy document. Do not call coded or pseudonymised data anonymous; do not promise deletion of lawfully collected trial data.",
+    "State whether treatment, tests and visits are free; reimbursement of actual trial-related expenses and any permitted documented loss-of-income arrangement, identical to the Part II reimbursement document and the ethics approval.",
+    "Explain trial insurance and the route for reporting suspected injury; never require a waiver of claims; give accessible contacts for study questions, urgent medical concerns, participant rights and data protection, operational at every site.",
+    "Signatures at the consent visit only: participant and the doctor or investigator who informed sign and date, with place and time where the national model includes them; the submission copy is blank and never pre-signed or backdated; a signed copy goes to the participant.",
+    "People who do not understand Italian: qualified language support, translated material and a cultural mediator, with the process documented; a relative's informal summary is not a substitute.",
+    "Electronic consent only case by case with ethics-committee approval, preserving direct interaction, identity verification, access to the information, an auditable signature and delivery of a copy.",
+    "One national core set; only genuine site variables (principal investigator, hospital, contact details, local reimbursement logistics, emergency contacts). Site letterhead is not required; if used, it belongs to the institution conducting or hosting the trial.",
+    "Participant templates (JSON): italic text (red italic in the child template), blue examples, [square-bracket] notes, ALL-CAPITALS instructions (for example INDICARE…, SPECIFICARE…) and ........... gaps are drafting instructions or gaps; follow them and remove them. Underscore lines for the consent visit stay blank. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels. Nothing of either may remain in a final document."
+  ],
+  "sources": {
+    "IT-HUB": "https://trialagents.com/ctis/italy/en",
+    "IT-PII-CHECKLIST": "https://trialagents.com/ctis/italy/en/part-ii-document-checklist",
+    "IT-ICF": "https://trialagents.com/ctis/italy/en/patient-information-consent-requirements",
+    "IT-QC": "https://trialagents.com/ctis/italy/en/patient-facing-document-qc-checklist",
+    "IT-HV": "https://trialagents.com/ctis/italy/en/healthy-volunteer-consent-requirements",
+    "IT-MINORS": "https://trialagents.com/ctis/italy/en/minor-consent-assent-requirements",
+    "IT-CAPACITY": "https://trialagents.com/ctis/italy/en/limited-capacity-legal-representative-consent-requirements",
+    "IT-EMERGENCY": "https://trialagents.com/ctis/italy/en/emergency-enrollment-consent-requirements",
+    "IT-WITNESS": "https://trialagents.com/ctis/italy/en/impartial-witness-consent-requirements",
+    "IT-PREGNANCY": "https://trialagents.com/ctis/italy/en/pregnancy-follow-up-requirements",
+    "IT-SECONDARY": "https://trialagents.com/ctis/italy/en/secondary-use-consent-requirements",
+    "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention",
+    "EU-HUB": "https://trialagents.com/ctis/eu"
+  },
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "italy_note": "Use the CTCG pattern with _IT for country-level forms and _IT_it for participant-facing documents. The Italy guide asks for file names with document type, country or language, version and date and a visible version identical to the file name; under CTCG v3.0 (newer) version and date go in the CTIS metadata, not the CTIS title. The uploaded filename may follow the sponsor's system and carry version and date (without ( ) / , . ; | [ ]), matching the document footer. Personal names only for the principal investigator in M1/M2."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued by someone else (insurer, investigator on a national model, sponsor legal, site). Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "participant_templates": [
+    {
+      "id": "IT-PT-age-12-17",
+      "file": "templates/participant/L1_SIS and ICF_age 12-17_IT_it.json",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_it": "Informativa e assenso per adolescenti",
+      "role": "age-adapted information and assent for adolescents 12–17 (CCNCE mature-minor form)",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years)."
+    },
+    {
+      "id": "IT-PT-age-6-11",
+      "file": "templates/participant/L1_SIS and ICF_age 6-11_IT_it.json",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_it": "Scheda informativa e assenso per bambini",
+      "role": "age-adapted child information sheet and assent for children 6–11",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years)."
+    },
+    {
+      "id": "IT-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_IT_it.json",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_it": "Informativa e consenso differito per la prosecuzione dopo arruolamento in emergenza",
+      "role": "information and deferred consent to continue after emergency enrolment",
+      "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legally designated representative can provide consent within the required treatment window."
+    },
+    {
+      "id": "IT-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_IT_it.json",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_it": "Informativa e consenso informato per volontari adulti sani",
+      "role": "main information and consent (healthy volunteers)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies."
+    },
+    {
+      "id": "IT-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_IT_it.json",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_it": "Informativa e consenso del rappresentante legalmente designato",
+      "role": "information and consent for the legally designated representative of an adult without capacity",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "IT-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_IT_it.json",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_it": "Informativa adattata ed espressione della volontà per adulti con capacità di consenso assente o limitata",
+      "role": "adapted information and expression of will for the adult without or with limited capacity",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent."
+    },
+    {
+      "id": "IT-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_IT_it.json",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_it": "Informativa e consenso informato per partecipanti adulti",
+      "role": "main information and consent (capable adult patients)",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms."
+    },
+    {
+      "id": "IT-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_IT_it.json",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_it": "Informativa e consenso per genitori o tutori legali",
+      "role": "information and consent for parents or legal guardians of a minor",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years)."
+    },
+    {
+      "id": "IT-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_IT_it.json",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_it": "Informativa e consenso per il follow-up della gravidanza della partecipante",
+      "role": "pregnancy follow-up of a participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant."
+    },
+    {
+      "id": "IT-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_IT_it.json",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_it": "Informativa e consenso per il follow-up della gravidanza della partner",
+      "role": "information, privacy and consent for the pregnant partner of a participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant."
+    },
+    {
+      "id": "IT-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_IT_it.json",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_it": "Informativa e consenso per l’uso secondario di dati e campioni biologici",
+      "role": "optional secondary or future use of data or samples (participant sample consent)",
+      "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial."
+    },
+    {
+      "id": "IT-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_IT_it.json",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_it": "Informativa e consenso con testimone imparziale",
+      "role": "consent with impartial witness for a capable participant unable to write",
+      "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process."
+    }
+  ],
+  "population_rules": {
+    "authority": "AIFA and CCNCE (Centro di coordinamento nazionale dei comitati etici territoriali): Guidelines for obtaining informed consent in clinical trials, version 4, and model forms, 27 May 2026; CCNCE FAQ, 10 June 2026; Regulation (EU) No 536/2014, Articles 28–35",
+    "minors": {
+      "age_bands": [
+        {
+          "band": "6-11",
+          "template": "IT-PT-age-6-11",
+          "reader": "child"
+        },
+        {
+          "band": "12-17",
+          "template": "IT-PT-age-12-17",
+          "reader": "adolescent"
+        }
+      ],
+      "always": [
+        "IT-PT-parents"
+      ],
+      "reconsent_at_18": "IT-PT-main or IT-PT-healthy, when participants can reach 18 during trial activities or follow-up",
+      "under_6": "No age-band template; give an explanation suited to the child's ability even if a separate written assent form is not meaningful, and record how it was given and how the child responded.",
+      "band_change": "A child who moves into the 12–17 group during the trial receives the adolescent information and assent process.",
+      "note": "The CCNCE appendix heading and current model identify the younger group as 6 to 11; check the current source form when a child is close to an age boundary. The template bands (6-11, 12-17) match the authority. The legally operative consent comes from the person(s) entitled under Italian law; the parent model provides signature routes for mother and father or a legal guardian."
+    },
+    "adults_without_capacity": {
+      "always": [
+        "IT-PT-legal-rep",
+        "IT-PT-limited-capacity"
+      ],
+      "note": "CCNCE double-consent approach where possible. Representative authority (tutore, curatore, amministratore di sostegno) verified against the court order; a fiduciario is not automatically the legal representative; do not enrol until the valid route is resolved, unless Article 35 applies. Personal consent with IT-PT-main when capacity returns."
+    },
+    "emergency": {
+      "always": [
+        "IT-PT-emergency"
+      ],
+      "note": "Later representative consent uses IT-PT-legal-rep while the participant cannot decide; when the participant becomes capable, their own consent (IT-PT-main or the emergency template's re-consent block)."
+    },
+    "impartial_witness": {
+      "always": [
+        "IT-PT-witness"
+      ],
+      "note": "Capable participant unable to write only; at least one impartial witness when an alternative recording method is used."
+    },
+    "pregnancy": {
+      "participant": "IT-PT-pregnancy when follow-up goes beyond the approved main consent and privacy documents",
+      "partner": "IT-PT-pregnant-partner whenever the partner's data are collected directly or her records accessed"
+    },
+    "shareable_templates": [
+      "IT-PT-pregnant-partner",
+      "IT-PT-secondary"
+    ],
+    "separate_document_rules": [
+      "Privacy information and data-processing consent are a separate Italian document, distinct from the clinical-trial consent form (CCNCE FAQ, 10 June 2026; model announced 13 August 2026): document IT-PRIVACY.",
+      "Collection, storage and future use of samples or data outside the protocol need separate information and consent (IT-PT-secondary); refusal must not prevent main-trial participation unless the activity is scientifically essential and described as such in the protocol.",
+      "Optional genetic testing, biobanking, future research and optional sub-studies get distinct choices with their own signature or initial fields.",
+      "A pregnant partner receives a separate document with her own information, privacy and consent; the enrolled participant cannot consent for her.",
+      "Infant data collected after birth: a separate section or document, with consent of the persons exercising parental responsibility.",
+      "One national core set: authorised consent documents are nationally valid and are not changed by individual sites (CCNCE FAQ, 10 June 2026); only genuine site variables differ.",
+      "Re-consent after new safety information, a protocol change, a new optional activity or another material fact: the approved new version, with time for questions and the decision documented."
+    ]
+  },
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents. IT-L1 covers adult_patients (and re-consent with the main or healthy template); IT-L1-POPULATION covers the other sets except secondary_use, which belongs to checklist item 6 (IT-S1).",
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/IT/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/IT/checklists/participant-documents.json",
+    "check": "countries/IT/checklists/forms-and-supplied.json",
+    "package": "countries/IT/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "answer_languages": [
+    "it"
+  ]
+}

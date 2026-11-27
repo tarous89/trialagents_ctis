@@ -1,0 +1,264 @@
+{
+  "id": "FR-CHECK",
+  "name": "France: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/france/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator or another party are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language is French (CV and declaration of interest: French or English)."
+    },
+    {
+      "id": "X.05",
+      "check": "Signature as required at CTIS submission: Additional France application document signed by the CTIS applicant; N1 signed by the person responsible for the site; ARS decision and CNIL receipt are the official signed documents; no signature on the other documents."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json."
+    },
+    {
+      "id": "X.07",
+      "check": "Searchable-text PDF or editable format accepted by CTIS; no image-only PDF."
+    }
+  ],
+  "by_document": {
+    "FR-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the harmonised EU Recruitment and Informed Consent Procedure Template version 2.0 (new Part II submissions from 1 September 2026), or the version required on the intended submission date."
+      },
+      {
+        "id": "K1.02",
+        "check": "Prepared in French; the yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section completed, each 'no' section says not applicable."
+      },
+      {
+        "id": "K1.03",
+        "check": "Covers identification, approach, information, decision time, how understanding is checked, how questions are answered, which version is signed and who presents the information, for every population pathway in the plan."
+      },
+      {
+        "id": "K1.04",
+        "check": "French national additions present in v105, v108, v110, v114, v117 and v121 as listed in requirements.json national_fields."
+      },
+      {
+        "id": "K1.05",
+        "check": "Minors: verification of parental authority, information per age group, personal adherence, recording of refusal and re-consent at 18.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.06",
+        "check": "Limited capacity: capacity assessment, verification of legal status and authority (curatorship, representation, no formal measure), participant involvement, dissent monitoring, later consent.",
+        "applies_when": "population.adults_without_capacity or population.adults_under_curatorship"
+      },
+      {
+        "id": "K1.07",
+        "check": "Impartial witness: when the route applies, distinction between capacity and inability to write, witness selection, alternative means, signatories.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.08",
+        "check": "Emergency: the operational Article 35 pathway, including checks of prior objection and representative availability before enrolment; not only a protocol sentence on deferred consent.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.09",
+        "check": "Healthy volunteers: identification, screening, decision time, compensation, any exclusion period and the consent process.",
+        "applies_when": "population.healthy_volunteers"
+      },
+      {
+        "id": "K1.10",
+        "check": "Electronic or remote consent described with the same information, identity, signature, copy and record requirements.",
+        "applies_when": "consent.electronic"
+      },
+      {
+        "id": "K1.11",
+        "check": "Recruitment routes and first act of recruitment match the recruitment material (FR-K2) and the protocol; where no separate advertising is planned, this is stated clearly."
+      }
+    ],
+    "FR-K-ADDITIONAL": [
+      {
+        "id": "KA.01",
+        "check": "The current CNRIPH Additional France application document is used, in French."
+      },
+      {
+        "id": "KA.02",
+        "check": "Records any exclusion period, the sponsor-investigator financial arrangements and the sponsor's MR-001 compliance position."
+      },
+      {
+        "id": "KA.03",
+        "check": "Dated and signed by the CTIS applicant (sponsor or the organisation submitting on the sponsor's behalf) at submission."
+      },
+      {
+        "id": "KA.04",
+        "check": "Exclusion period matches the protocol and the healthy-volunteer information.",
+        "applies_when": "healthy_volunteers.exclusion_period"
+      },
+      {
+        "id": "KA.05",
+        "check": "Financial figures consistent with FR-P1 and the participant documents; no duplicated inconsistent figures."
+      },
+      {
+        "id": "KA.06",
+        "check": "MR-001 position matches FR-R1 (receipt, or CNIL authorisation to be obtained after the CPP opinion) and the participant privacy notices."
+      }
+    ],
+    "FR-M-SITE-LIST": [
+      {
+        "id": "SL.01",
+        "check": "Complete France site and principal-investigator list, in French, in the current EU or CTIS list format or as CTIS structured data; no signature."
+      },
+      {
+        "id": "SL.02",
+        "check": "Every France site and investigator matches across CTIS, the protocol, insurance and suitability documents (FR-M1, FR-M2, FR-N1, FR-O1)."
+      },
+      {
+        "id": "SL.03",
+        "check": "Kept current through the relevant CTIS procedure after a change.",
+        "applies_when": "modification or site change"
+      }
+    ],
+    "FR-M1": [
+      {
+        "id": "M1.01",
+        "check": "One CV for every investigator listed for France, on the EU CV template, in French or English; only trial title and EU trial number filled by the assistant."
+      },
+      {
+        "id": "M1.02",
+        "check": "Dated less than one year before submission and demonstrates relevant experience."
+      },
+      {
+        "id": "M1.03",
+        "check": "Shows recent GCP training (normally within three years) and the investigator's RPPS identifier, as completed by the investigator."
+      }
+    ],
+    "FR-M2": [
+      {
+        "id": "M2.01",
+        "check": "One declaration for every investigator, on the EU template, in French or English; interests answered by the investigator; no signature at submission."
+      },
+      {
+        "id": "M2.02",
+        "check": "Dated within one year before submission; updated if a relevant interest changed."
+      }
+    ],
+    "FR-N1": [
+      {
+        "id": "N1.01",
+        "check": "One statement per France site, in French, on the EU site-suitability template, confirming facilities, equipment, staff and organisation for this protocol."
+      },
+      {
+        "id": "N1.02",
+        "check": "Statements are specific to this protocol (IMP handling, procedures, population, safety management); site-specific facts are left for the site to confirm, not invented."
+      },
+      {
+        "id": "N1.03",
+        "check": "Dated and signed at submission by the person responsible for the site; a delegated department head only with visibility over the full trial activities at the site."
+      },
+      {
+        "id": "N1.04",
+        "check": "ARS authorisation planned under N where the site does not usually perform required acts (Article L1121-13 CSP).",
+        "applies_when": "sites.non_routine_acts_requiring_ars_authorisation"
+      }
+    ],
+    "FR-N-ARS": [
+      {
+        "id": "ARS.01",
+        "check": "Official signed ARS decision for the specific site, in French, covering the non-routine acts; submitted before those acts are performed."
+      }
+    ],
+    "FR-O1": [
+      {
+        "id": "O1.01",
+        "check": "Issued and dated insurer document in French, from an insurer established in the European Union."
+      },
+      {
+        "id": "O1.02",
+        "check": "Covers the France trial period from the first participant included in France to the last participant's last visit; an annual certificate states the trial end date and is continuously renewed."
+      },
+      {
+        "id": "O1.03",
+        "check": "Identifies the trial and gives sponsor or legal-representative contact details; consistent with the insurance wording in every participant document."
+      }
+    ],
+    "FR-P1": [
+      {
+        "id": "P1.01",
+        "check": "Submitted on the EU compensation template in French, stating explicitly when no payment is offered."
+      },
+      {
+        "id": "P1.02",
+        "check": "Reimbursement, any constraint indemnity and any other payment stated; no financial advantage beyond reimbursement and the permitted indemnity."
+      },
+      {
+        "id": "P1.03",
+        "check": "Total constraint indemnity per person does not exceed EUR 6,000 over twelve consecutive months.",
+        "applies_when": "payment.constraint_indemnity"
+      },
+      {
+        "id": "P1.04",
+        "check": "No constraint indemnity for minors or protected persons for whom French law prohibits it.",
+        "applies_when": "population.minors or population.adults_without_capacity or population.adults_under_curatorship"
+      },
+      {
+        "id": "P1.05",
+        "check": "Amounts, conditions and recipients identical to every participant document; sponsor-investigator arrangements are in the Additional France application document, without inconsistent figures."
+      }
+    ],
+    "FR-R1": [
+      {
+        "id": "R1.01",
+        "check": "The applicable route is evidenced: CNIL MR-001 receipt (dated, issued and signed by CNIL; one per controller), or the CNIL authorisation once issued with the non-compliance declared in the Additional France application document."
+      },
+      {
+        "id": "R1.02",
+        "check": "Filed in the dedicated data-protection subsection, not the biological-sample subsection."
+      },
+      {
+        "id": "R1.03",
+        "check": "Controller on the receipt matches the sponsor or controller named in the participant documents."
+      }
+    ],
+    "FR-S1": [
+      {
+        "id": "S1.01",
+        "check": "Submitted on the EU biological-sample compliance template in French; no signature."
+      },
+      {
+        "id": "S1.02",
+        "check": "New and archive sample sections match the protocol and laboratory manual; analysis, storage, duration, access, coding and transfers match the participant documents."
+      },
+      {
+        "id": "S1.03",
+        "check": "Future use outside the protocol answered consistently with the separate secondary-use document and consent choices.",
+        "applies_when": "samples.future_use_outside_protocol"
+      },
+      {
+        "id": "S1.04",
+        "check": "Section 5 (f03) contains the French national statement (Articles L1243-3 and L1243-4 CSP; new consent before a changed purpose; separate genetic consent)."
+      }
+    ]
+  }
+}

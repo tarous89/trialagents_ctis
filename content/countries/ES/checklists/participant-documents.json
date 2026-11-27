@@ -1,0 +1,461 @@
+{
+  "id": "ES-QC-PARTICIPANT",
+  "name": "Spain: participant-facing document QC",
+  "applies_to": [
+    "ES-L1",
+    "ES-DATA-PROTECTION-APPENDIX",
+    "ES-K2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/spain/en/patient-facing-document-qc-checklist (reviewed 23 September 2026), with the rules of the linked Spain population guides",
+  "note": "Run on the final Spanish versions that will be uploaded to CTIS, not only on the English master. Section ids follow the Germany structure so C8.11 is the no-instruction check named in conventions/template-instructions.md; source_section gives the Spain QC page section.",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial identity and content",
+      "source_section": "QC 1, QC 2; ES-ICF",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Study title, protocol code, sponsor and EU trial number are the same as in the application."
+        },
+        {
+          "id": "C1.02",
+          "check": "The document title clearly identifies the population or use case."
+        },
+        {
+          "id": "C1.03",
+          "check": "Site and investigator fields are correctly completed or intentionally left as controlled placeholders for site completion."
+        },
+        {
+          "id": "C1.04",
+          "check": "The introduction states that participation is offered in a research study that has received the required CEIm and AEMPS review, and invites the person to read, ask questions and consult others."
+        },
+        {
+          "id": "C1.05",
+          "check": "Study purpose, intended population, total planned participant number, treatments, treatment groups and the chance of receiving each option match the protocol; no full inclusion and exclusion list."
+        },
+        {
+          "id": "C1.06",
+          "check": "States whether the study medicine is authorised and whether its use is within the authorised indication."
+        },
+        {
+          "id": "C1.07",
+          "check": "Benefits described only when supported; states that the participant may receive no health benefit; free medicine, tests, results and closer follow-up are not presented as benefits."
+        },
+        {
+          "id": "C1.08",
+          "check": "Main effective treatment alternatives listed, including not joining; says so if the same medicine may be available in normal care."
+        },
+        {
+          "id": "C1.09",
+          "check": "Treatment after the trial: whether and under what conditions the study treatment may remain available."
+        },
+        {
+          "id": "C1.10",
+          "check": "Contacts: study doctor name, service, telephone and availability; urgent issues directed to usual or emergency care; participants told to disclose participation elsewhere and carry any trial card."
+        },
+        {
+          "id": "C1.11",
+          "check": "New information affecting willingness to continue will be communicated promptly; circumstances in which the sponsor or investigator may stop participation and follow-up that continues are explained."
+        },
+        {
+          "id": "C1.12",
+          "check": "No statements carried over from another protocol, country, cohort or study phase."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency",
+      "source_section": "QC 2",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Treatment groups, allocation ratio, blinding, placebo, dose, route, schedule and treatment duration match the current protocol."
+        },
+        {
+          "id": "C2.02",
+          "check": "Number and timing of visits, remote contacts, hospital stays and follow-up match the protocol; total participation period with treatment and follow-up separated."
+        },
+        {
+          "id": "C2.03",
+          "check": "All trial-specific procedures (optional procedures, biopsies, imaging, genetic tests, digital tools, home nursing, medical-record review) are described and each marked as routine care or research-specific where relevant."
+        },
+        {
+          "id": "C2.04",
+          "check": "Contraception, pregnancy testing, breastfeeding and pregnancy follow-up match the protocol, without requirements absent from it.",
+          "applies_when": "participants or their partners could become pregnant"
+        },
+        {
+          "id": "C2.05",
+          "check": "Risk section reconciled with the IB or SmPC and the protocol: most frequent and most serious risks without an exhaustive technical list; unknown risks acknowledged; procedure-related risks not omitted."
+        },
+        {
+          "id": "C2.06",
+          "check": "Participant responsibilities: attending activities, reporting adverse events and medication changes, consulting the study doctor before changing medicines or herbal products except in an emergency."
+        },
+        {
+          "id": "C2.07",
+          "check": "Home activities, digital tools, travel to another site or access to medical records are explained.",
+          "applies_when": "any decentralised element or record access"
+        },
+        {
+          "id": "C2.08",
+          "check": "After a protocol change, every affected participant document has been reopened, not only the main adult form.",
+          "applies_when": "modification or revised protocol"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "source_section": "QC 3",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "Every mandatory trial activity is distinguished from optional research; a participant cannot decline a protocol-essential procedure while apparently consenting to the main trial."
+        },
+        {
+          "id": "C3.02",
+          "check": "Optional substudies, future data use, future sample use and recontact each have a separate yes or no decision."
+        },
+        {
+          "id": "C3.03",
+          "check": "Refusing an optional activity does not imply withdrawal from the main study."
+        },
+        {
+          "id": "C3.04",
+          "check": "Optional boxes are not preselected and each choice has the correct signature logic."
+        },
+        {
+          "id": "C3.05",
+          "check": "Withdrawal wording does not require a signed revocation form; if the protocol has one, the PIS and the form say withdrawal remains valid without signing it."
+        },
+        {
+          "id": "C3.06",
+          "check": "Withdrawal distinguishes leaving trial visits, withdrawing trial consent and withdrawing optional future-use consent, and explains what happens to data and samples (no use in later analyses after withdrawal unless another lawful route or new consent applies)."
+        },
+        {
+          "id": "C3.07",
+          "check": "Participation is voluntary; refusal does not affect care; consent can be withdrawn at any time without penalty or loss of the normal relationship with the treating team."
+        },
+        {
+          "id": "C3.08",
+          "check": "The consent form confirms that the participant read the PIS and the data-protection appendix, could ask questions, received enough information, understood voluntariness and agrees, without repeating the information sheet."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "source_section": "QC 4; population guides",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "A population matrix from the protocol and recruitment plan exists; every group that may be enrolled or followed has a distinct, appropriate document pathway (see requirements.json population_sets); populations are mutually exclusive within each consent stage.",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Transition points covered: adult consent at legal adulthood; consent before continuing when an adult regains capacity; information as soon as possible and consent or ratification after emergency enrolment.",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.03",
+          "check": "Healthy volunteers: no expected therapeutic benefit stated; reason for healthy volunteers; full burden (confinement, fasting, blood volume, restrictions with periods); first-in-human uncertainty and safeguards; handling of screening findings.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.04",
+          "check": "Adults unable to consent: accessible participant information with support to consent personally where possible; representative or person connected by family or factual relationship identified with basis; prior instructions checked; objection and non-verbal resistance respected; re-consent when capacity returns.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.05",
+          "check": "Emergency enrolment: used only when the protocol and CEIm-approved documents contain the pathway; Article 35 and Royal Decree 1090/2015 article 7 conditions; family consultation; what already happened versus what continues; consent or ratification; right to object to use of data.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.06",
+          "check": "Impartial witness: only for a capable participant unable to read or write; witness impartial and unrelated to the study; AEMPS witnessed-consent form; witness records the participant's own choices.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.07",
+          "check": "Pregnancy: the main PIS has the pregnancy section; the pregnant partner of a male participant has her own specific consent document; infant data have the parent or guardian route; follow-up has a defined endpoint.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or pregnancy.infant_follow_up"
+        },
+        {
+          "id": "C4.08",
+          "check": "Optional future data and sample use has its own choice or document (see C6).",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C4.09",
+          "check": "An optional substudy for a defined subpopulation has a separate information and consent document; a substudy open to all is a separate section of the main PIS with a yes or no choice.",
+          "applies_when": "substudy.optional_subpopulation"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "source_section": "QC 6; ES-ICF data protection",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "The AEMPS Annex VIIIA personal-data appendix is present inside the document and is at most two pages."
+        },
+        {
+          "id": "C5.02",
+          "check": "Sponsor and site roles identified accurately: the site controls identifiable medical-record data; the sponsor receives coded trial data."
+        },
+        {
+          "id": "C5.03",
+          "check": "Legal basis and purposes explained; legally required trial processing is not presented as depending on an optional GDPR consent."
+        },
+        {
+          "id": "C5.04",
+          "check": "Confidentiality and authorised access to identifiable information explained."
+        },
+        {
+          "id": "C5.05",
+          "check": "Retention: 25-year sponsor and investigator retention and site record retention."
+        },
+        {
+          "id": "C5.06",
+          "check": "Participant rights and limitations, and data-protection contacts."
+        },
+        {
+          "id": "C5.07",
+          "check": "Result publication, data sharing and international transfers outside the EEA.",
+          "applies_when": "data shared or transferred outside the EEA"
+        },
+        {
+          "id": "C5.08",
+          "check": "Direct-data service activities (travel, reimbursement, home services) described by purpose; names of service companies not required."
+        },
+        {
+          "id": "C5.09",
+          "check": "No promise of deletion where retention is required; withdrawing from visits is not said to remove data already collected."
+        },
+        {
+          "id": "C5.10",
+          "check": "Optional future data use beyond the drug development programme or for unrelated diseases has its own choice, separate from processing needed for the authorised trial."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological samples and secondary use",
+      "source_section": "QC 7; ES-SECONDARY",
+      "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "PIS/ICF, protocol, laboratory manual and S1 (AEMPS Annex XIII information) reconciled."
+        },
+        {
+          "id": "C6.02",
+          "check": "Sample type, quantity, collection schedule, mandatory or optional status and risks for every sample."
+        },
+        {
+          "id": "C6.03",
+          "check": "Analysis locations, responsible entity, coding, storage, retention, access and transfers."
+        },
+        {
+          "id": "C6.04",
+          "check": "What happens to remaining samples after the trial: destroyed unless the participant agrees to storage and future research."
+        },
+        {
+          "id": "C6.05",
+          "check": "If stored, the applicable Spanish biobank, registered collection or foreign repository model is identified with its location where available.",
+          "applies_when": "samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.06",
+          "check": "Future use, recontact and return of findings follow the participant's choices; withdrawal of sample consent is operationally possible (destruction or anonymisation) and its limits are explained.",
+          "applies_when": "samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.07",
+          "check": "Genetic testing checked separately: trial objective, exploratory or optional; the participant's choice about receiving validated, health-relevant findings where applicable.",
+          "applies_when": "genetic testing planned"
+        },
+        {
+          "id": "C6.08",
+          "check": "Trial-purpose sample text follows AEMPS Annex VIIIB and sits preferably in the general PIS/ICF."
+        },
+        {
+          "id": "C6.09",
+          "check": "Data and samples have separate future-use choices; no bundled consent to any future research.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Spain-specific checks: minors, costs, compensation and insurance",
+      "source_section": "QC 5, QC 8; ES-MINORS; ES-HV",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "Parents who retain parental authority or the legal representative give prior consent.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C7.02",
+          "check": "If one parent signs, the other parent's express or tacit agreement is documented with the AEMPS wording: both parents signed, the other parent does not object, or the signer is the sole legal guardian.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C7.03",
+          "check": "Child under 12: whether the child has sufficient judgment to be heard is addressed and information is adapted to the child's understanding.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C7.04",
+          "check": "Every participant aged 12 or older has a separate age-appropriate information and consent path with their own signature, in addition to parent or representative consent.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C7.05",
+          "check": "Trial medicines and trial-specific procedures are free; no added cost beyond normal care."
+        },
+        {
+          "id": "C7.06",
+          "check": "Reimbursement and compensation match the financial budget: amount or method, payment route and proportional payment when participation ends early."
+        },
+        {
+          "id": "C7.07",
+          "check": "If compensation is offered: the AEMPS tax warning (compensation is income for Spanish tax purposes) is included and the amount does not create undue influence.",
+          "applies_when": "compensation.offered"
+        },
+        {
+          "id": "C7.08",
+          "check": "Insurance wording matches the actual Spanish insurance route (Annex VA, VI or VII) and Royal Decree 1090/2015, promises no broader coverage, and gives a usable contact for insurance questions."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administration",
+      "source_section": "QC 1, QC 9",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Version and date in the document and the CTIS entry agree."
+        },
+        {
+          "id": "C8.02",
+          "check": "Version references inside the consent form match the information sheet."
+        },
+        {
+          "id": "C8.03",
+          "check": "CTIS receives blank participant forms: no participant names, signatures, personal email addresses or other unnecessary personal data."
+        },
+        {
+          "id": "C8.04",
+          "check": "The use copy has signature and date fields for the correct people: participant and investigator for standard adult consent; different fields for parent, representative, witness and emergency pathways."
+        },
+        {
+          "id": "C8.05",
+          "check": "Every signer receives the relevant information before signing; the participant or representative receives the PIS and a signed and dated copy."
+        },
+        {
+          "id": "C8.06",
+          "check": "Optional choices are tied to the person entitled to make them."
+        },
+        {
+          "id": "C8.07",
+          "check": "Handwritten name, signature and date fields as in the AEMPS model."
+        },
+        {
+          "id": "C8.08",
+          "check": "Representative basis or relationship field present where relevant.",
+          "applies_when": "population.minors or population.adults_without_capacity or consent.emergency_enrolment"
+        },
+        {
+          "id": "C8.09",
+          "check": "Correct CTIS section (L, K) and naming convention; no version or date in the CTIS title."
+        },
+        {
+          "id": "C8.10",
+          "check": "Page numbering present."
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version (italic notes, [bracket] and <<double-angle>> notes, ........... gaps, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and document design",
+      "source_section": "QC 10; ES-ICF",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Spanish text is natural and uses terminology a participant can understand."
+        },
+        {
+          "id": "C9.02",
+          "check": "No unexplained abbreviations, technical protocol language, repeated risks or long legal passages; random allocation, blinding and placebo explained."
+        },
+        {
+          "id": "C9.03",
+          "check": "AEMPS limits: at most 15 pages including the ICF; Arial or Times New Roman at 11 pt or larger; line spacing at least 1.5; margins not reduced."
+        },
+        {
+          "id": "C9.04",
+          "check": "A simple visit table instead of the protocol schedule where a table helps."
+        },
+        {
+          "id": "C9.05",
+          "check": "Contact details, emergency instructions and alternative treatments are easy to find."
+        },
+        {
+          "id": "C9.06",
+          "check": "Tested with a person who was not involved in drafting."
+        },
+        {
+          "id": "C9.07",
+          "check": "Translations reviewed by a qualified person and matching the approved source.",
+          "applies_when": "document is adapted from a reference document in another language"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final Spain submission check",
+      "source_section": "QC 11",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "Every participant-facing document is in Spanish and appears under the correct CTIS country and category."
+        },
+        {
+          "id": "C10.02",
+          "check": "Recruitment materials intended for potential participants are included.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "C10.03",
+          "check": "The final set contains no conflicting versions."
+        },
+        {
+          "id": "C10.04",
+          "check": "The participant document list matches the protocol's population matrix and the Spain Part II package checklist."
+        }
+      ]
+    }
+  ]
+}
