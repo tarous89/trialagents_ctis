@@ -1,0 +1,326 @@
+{
+  "id": "HR-CHECK",
+  "name": "Croatia: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/croatia/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer, hospital or sponsor are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language is Croatian for forms answered by TrialAgents; supplied documents that are not participant-related are in Croatian or English."
+    },
+    {
+      "id": "X.05",
+      "check": "Signature as required for this document in requirements.json: signed and dated where Croatia requires it (M1 CV, M2 DoI, N1, GCP certificate, mentor statement, hospital agreement, insurance policy); no signature otherwise unless the current form expressly requires one."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json; correct CTIS location."
+    },
+    {
+      "id": "X.07",
+      "check": "Only the current version is submitted; version and date consistent with the rest of the package."
+    }
+  ],
+  "by_document": {
+    "HR-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the EudraLex Volume 10 informed-consent and patient-recruitment procedure template, version 2.0 (new Part II submissions from 1 September 2026), uploaded under Recruitment arrangements."
+      },
+      {
+        "id": "K1.02",
+        "check": "Describes how potential participants are identified, approached, informed and consented."
+      },
+      {
+        "id": "K1.03",
+        "check": "Croatia-specific parts completed (national_fields v105, v108 and, where the pathway applies, v110, v114, v117, v121)."
+      },
+      {
+        "id": "K1.04",
+        "check": "States that the interviewer is a physician or dentist who is the principal investigator or a delegated investigator, with delegation documented before the activity."
+      },
+      {
+        "id": "K1.05",
+        "check": "States in-person paper consent before any trial-specific procedure; no routine electronic consent."
+      },
+      {
+        "id": "K1.06",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations; each 'yes' section completed, each 'no' section says not applicable."
+      },
+      {
+        "id": "K1.07",
+        "check": "Minors: the four Croatian assent bands, one parent signature field or court-appointed representative, capable minor's signature, oral assent recording, refusal decisive, re-consent at 18.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.08",
+        "check": "Adults lacking capacity: court-appointed representative verified; mental-disorder and psychopharmaceutical restriction addressed.",
+        "applies_when": "population.adults_without_capacity"
+      },
+      {
+        "id": "K1.09",
+        "check": "Impartial witness: only for a person who can decide but cannot write; independence check; whole-process presence; attestation.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.10",
+        "check": "Emergency: every Article 35 condition, the Croatian decision sequence (representative, family member present, treating investigator), prior-objection check, later consent and sequence documentation.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.11",
+        "check": "Healthy volunteers: recruitment, prescreening, databases and repeat-participation checks described.",
+        "applies_when": "population.healthy_volunteers"
+      },
+      {
+        "id": "K1.12",
+        "check": "Recruitment routes match the recruitment material (HR-K2).",
+        "applies_when": "recruitment.material_used"
+      },
+      {
+        "id": "K1.13",
+        "check": "No signature unless the selected template includes a declaration requiring one."
+      }
+    ],
+    "HR-M1": [
+      {
+        "id": "M1.01",
+        "check": "One current CV per principal investigator, uploaded under Suitability of the investigator."
+      },
+      {
+        "id": "M1.02",
+        "check": "In the Croatian HALMED CV format, in Croatian (not the EU CV form unless the user decided otherwise, DECISIONS.md D2)."
+      },
+      {
+        "id": "M1.03",
+        "check": "Signed and dated by the investigator and no more than six months old at the application."
+      },
+      {
+        "id": "M1.04",
+        "check": "Identifies relevant trial experience and active recruiting studies."
+      },
+      {
+        "id": "M1.05",
+        "check": "Accompanied by the signed GCP training certificate (HR-M-GCP)."
+      }
+    ],
+    "HR-M-GCP": [
+      {
+        "id": "MG.01",
+        "check": "Signed good clinical practice training certificate from the authorised provider for each principal investigator."
+      },
+      {
+        "id": "MG.02",
+        "check": "Name matches the CV and the site's records."
+      }
+    ],
+    "HR-M2": [
+      {
+        "id": "M2.01",
+        "check": "Declaration of interest on the applicable EudraLex Volume 10 template for each principal investigator, under Suitability of the investigator."
+      },
+      {
+        "id": "M2.02",
+        "check": "Only trial title and EU trial number filled by TrialAgents; the interests are declared by the investigator."
+      },
+      {
+        "id": "M2.03",
+        "check": "Signed and dated by the investigator at submission."
+      }
+    ],
+    "HR-M-MENTOR": [
+      {
+        "id": "MM.01",
+        "check": "Signed mentor acceptance statement present."
+      },
+      {
+        "id": "MM.02",
+        "check": "Mentor's CV and evidence of the mentor's GCP training present."
+      },
+      {
+        "id": "MM.03",
+        "check": "Linked to the investigator and site concerned; consistent with the investigator's CV."
+      }
+    ],
+    "HR-N1": [
+      {
+        "id": "N1.01",
+        "check": "One EudraLex Volume 10 site suitability form per Croatian site, uploaded under Suitability of the facilities."
+      },
+      {
+        "id": "N1.02",
+        "check": "Facilities, staff, equipment, emergency arrangements and ability to conduct the protocol are described from site-supplied information."
+      },
+      {
+        "id": "N1.03",
+        "check": "Signature block kept for the authorised site representative, who signs and dates it at submission."
+      },
+      {
+        "id": "N1.04",
+        "check": "Non-hospital site: reference to the signed hospitalisation agreement (HR-N-HOSPITAL).",
+        "applies_when": "sites.non_hospital_site_hospitalisation_possible"
+      },
+      {
+        "id": "N1.05",
+        "check": "Site name, principal investigator and planned participant numbers consistent with CTIS, M1, M2 and the insurance policy."
+      }
+    ],
+    "HR-N-HOSPITAL": [
+      {
+        "id": "NH.01",
+        "check": "Signed agreement between the non-hospital site and the receiving hospital."
+      },
+      {
+        "id": "NH.02",
+        "check": "Covers hospitalisation because of a serious adverse reaction or complication and identifies who pays the hospitalisation costs."
+      },
+      {
+        "id": "NH.03",
+        "check": "Included with the site-suitability evidence for that site."
+      }
+    ],
+    "HR-O1": [
+      {
+        "id": "O1.01",
+        "check": "Local insurance policy, certificate of insurance and relevant policy terms and clauses provided."
+      },
+      {
+        "id": "O1.02",
+        "check": "The policy identifies the trial, institutions, principal investigators and planned number of participants."
+      },
+      {
+        "id": "O1.03",
+        "check": "Signed by the insurer and the policyholder; insurer established in the European Union."
+      },
+      {
+        "id": "O1.04",
+        "check": "Covers liability connected with trial-related injury, death or treatment, in place before the trial starts."
+      },
+      {
+        "id": "O1.05",
+        "check": "If final executed coverage is not available, the acceptable interim evidence was confirmed in writing with the Ministry of Health and the Central Ethics Committee; a draft alone is not presented as sufficient.",
+        "applies_when": "not insurance.final_executed_available"
+      },
+      {
+        "id": "O1.06",
+        "check": "Insurance wording in every participant document matches the policy."
+      }
+    ],
+    "HR-P1": [
+      {
+        "id": "P1.01",
+        "check": "EU compensation template completed for participant reimbursement and payments, uploaded under Financial and other arrangements."
+      },
+      {
+        "id": "P1.02",
+        "check": "Maximum net amount in euros for travel and other participant expenses stated (national field f02)."
+      },
+      {
+        "id": "P1.03",
+        "check": "Compensation for time and inconvenience distinguished from reimbursement of actual expenses; effect of early withdrawal stated."
+      },
+      {
+        "id": "P1.04",
+        "check": "No incentive or financial inducement for minors, adults unable to consent or their representatives.",
+        "applies_when": "population.minors or population.adults_without_capacity"
+      },
+      {
+        "id": "P1.05",
+        "check": "Amounts and conditions identical in every participant document."
+      }
+    ],
+    "HR-P-FUNDING": [
+      {
+        "id": "PF.01",
+        "check": "Clear description of trial financing, payments to investigators and sites and any other financial arrangement."
+      },
+      {
+        "id": "PF.02",
+        "check": "States that the sponsor bears all protocol-related trial costs."
+      },
+      {
+        "id": "PF.03",
+        "check": "Consistent with P1, the site agreements and the participant documents."
+      }
+    ],
+    "HR-P-SITE-AGREEMENT": [
+      {
+        "id": "PS.01",
+        "check": "A signed agreement between the sponsor and each Croatian site exists before that site starts."
+      },
+      {
+        "id": "PS.02",
+        "check": "States the total cost of the trial and the costs borne by the sponsor, including medical services and payments to investigators and participants."
+      },
+      {
+        "id": "PS.03",
+        "check": "Uploaded where the CTIS procedure requires it; otherwise evidence that it will be executed before activation is retained and provided if requested (DECISIONS.md D8)."
+      }
+    ],
+    "HR-R1": [
+      {
+        "id": "R1.01",
+        "check": "EudraLex Volume 10 GDPR statement completed in the CTIS Form section."
+      },
+      {
+        "id": "R1.02",
+        "check": "Confirms compliance with Regulation (EU) 2016/679 and applicable Croatian data-protection rules (national field r1_the_sponsor_declares)."
+      },
+      {
+        "id": "R1.03",
+        "check": "Name and role of the responsible person at the sponsor come from the sponsor."
+      },
+      {
+        "id": "R1.04",
+        "check": "Separate Part II document R1_Compliance collection and use personal data_HR provided because the national information is not fully covered or the authority requested it.",
+        "applies_when": "the national information is not fully covered in the Form-section statement or the authority requests a separate document"
+      },
+      {
+        "id": "R1.05",
+        "check": "Participant documents explain controller, purposes, data categories, recipients, transfers, retention, safeguards, rights and contacts, including the AZOP route, consistently with the statement."
+      }
+    ],
+    "HR-S1": [
+      {
+        "id": "S1.01",
+        "check": "EudraLex Volume 10 biological-samples compliance template, uploaded under Compliance with applicable rules for biological samples."
+      },
+      {
+        "id": "S1.02",
+        "check": "Describes collection, responsible parties, processing, storage location, storage period, permitted use, transfers, end-of-trial handling, withdrawal and disposal."
+      },
+      {
+        "id": "S1.03",
+        "check": "National fields v149 and f03 completed: prior Central Ethics Committee review for research outside the protocol; separate consent for optional substudies, repository donation, future use and genetics; repository samples not linkable to the participant; adult re-consent of participants enrolled as minors."
+      },
+      {
+        "id": "S1.04",
+        "check": "Uses and safeguards identical in S1, the protocol, the informed consent documents, privacy information, material-transfer arrangements and the laboratory plan."
+      }
+    ]
+  }
+}
