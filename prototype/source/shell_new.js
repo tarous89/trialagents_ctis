@@ -28,6 +28,7 @@ let route='projects',settingTab='Personal',srcFilter={q:'',project:'',kind:'',fi
 
 function upgrade(d){
  d.ui??={};
+ d.planning??={'EX-101':{part1:'in_plan',ref:'DE:de',format:'country',basedOn:{D08:'D06'}}};
  d.projects??=[
   {id:'EX-101',name:'CTIS initial application EX-101',code:'EX-101',phase:'Phase II',sponsor:'Example Bio GmbH',countries:['DE','ES'],owner:'Alex Morgan',updated:'2026-11-25',created:'2026-11-03',planId:'P01'},
   {id:'NX-220',name:'NX-220 first-in-human study',code:'NX-220',phase:'Phase I',sponsor:'Example Bio GmbH',countries:['NL','BE'],owner:'Alex Morgan',updated:'2026-11-18',created:'2026-11-17',planId:''},
@@ -208,8 +209,22 @@ function fileSlot(r){
  return '<p class="fieldnote muted">The assistant and reviewers see the name and version. To check the passage, they ask the owner for the file.</p>';
 }
 function issuesOpen(d,k){const w=work(d,k);if(!w.current||w.status!=='Complete')return false;return reviewThreads(d,k).some(t=>!t.closed&&flagActive(t,d,k))}
+/* ---- planning choices (stored on the project) ---- */
+const part1Labels={in_plan:'In this plan',outside:'Completed outside TrialAgents',later:'Left for later'};
+const formatLabels={country:'TrialAgents country format',sponsor:'Keep the sponsor’s format'};
+const planning=()=>{const id=data.ui.project;return (data.planning??={})[id]??={part1:'in_plan',ref:'',format:'country',basedOn:{}}};
+const refPkg=c=>c!=='EU'&&planning().ref.split(':')[0]===c;
+const langName={en:'English',de:'German',es:'Spanish',fr:'French',it:'Italian',nl:'Dutch',pl:'Polish'};
+const refLabel=()=>{const l=planning().ref.split(':')[1];return l?' ('+(langName[l]||l)+')':''};
+const refOptions=(pid,countries)=>countries.flatMap(c=>{const ls=pid===data.ui.project&&typeof defs!=='undefined'?[...new Set(defs.filter(m=>m.c===c&&doc(m.id)).map(m=>m.lang))]:[];return ls.length?ls.map(l=>[c+':'+l,memberStates[c]+' · '+(langName[l]||l)]):[[c,memberStates[c]]]});
+const docIdOf=d=>Object.entries(P().docs||{}).find(([,v])=>v===d)?.[0];
+const refOf=did=>did?planning().basedOn?.[did]||'':'';
+const refApproved=rid=>{const r=doc(rid);return !!r&&(released(P(),r)||!!r.lastApproved)};
+const refNote=did=>{const r=refOf(did);return r?'<small class="refnote" title="Drafted by adapting the approved '+E(r)+'">Adapted from '+E(r)+'</small>':''};
 function liveState(d,s){
  if(s.skip||d.rowSkip?.[s.id])return ['na','Not applicable'];
+ {const first=P().steps.find(k=>!k.skip&&!d.rowSkip?.[k.id]),rid=refOf(docIdOf(d));
+  if(rid&&first?.id===s.id&&s.type==='draft'&&!refApproved(rid)&&!work(d,s).current)return ['waiting','Waiting for reference']}
  const steps=P().steps.filter(k=>!k.skip&&!d.rowSkip?.[k.id]),idx=steps.findIndex(k=>k.id===s.id);
  const passed=k=>d.ignored?.[k.id]!=null&&d.ignored[k.id]===work(d,k).current?.rev;
  if(idx>0&&steps.slice(0,idx).some(k=>issuesOpen(d,k)&&!passed(k)))return ['waiting','Waiting'];
@@ -250,6 +265,11 @@ function projectDrawer(id,dup){
  '<div class="field"><span class="fieldlabel">Member states</span>'+picker('countries',Object.entries(memberStates).sort((a,b)=>a[1].localeCompare(b[1])).map(([c,n])=>[c,n,c]),p.countries,'Search member states')+'</div>'+
  '<div class="field"><span class="fieldlabel">Sources for the whole project</span><p class="fieldnote">Used for every document, such as the protocol. Sources for a single document are chosen in that document.</p>'+picker('wideSources',data.resources.filter(r=>r.cat==='source').map(resOption),wideOf('source'),'Search recorded sources')+'</div>'+
  '<div class="field"><span class="fieldlabel">Templates for the whole project</span><p class="fieldnote">Optional. Leave empty to choose templates per document. TrialAgents defaults apply where none is chosen.</p>'+picker('wideTemplates',data.resources.filter(r=>r.cat==='template').map(resOption),wideOf('template'),'Search recorded templates')+'</div>'+
+ (()=>{const pl=(data.planning??={})[pid]||{part1:'in_plan',ref:'',format:'country'};
+  return '<fieldset class="field"><legend>Planning choices</legend><p class="fieldnote">Agreed with the assistant when planning. Change them here or ask the assistant.</p>'+
+  '<div class="grid">'+pfield('Part I','<select name="part1">'+popts(Object.entries(part1Labels),pl.part1)+'</select>','Never blocks Part II.')+
+  pfield('Reference package','<select name="ref">'+popts([['','None: each country from the sources'],...refOptions(pid,p.countries)],pl.ref)+'</select>','Completed and approved first; the other countries are adapted from it.')+'</div>'+
+  pfield('Format','<select name="format">'+popts(Object.entries(formatLabels),pl.format)+'</select>','For documents the sponsor already has.')+'</fieldset>'})()+
  (!id?'<p class="fieldnote">The document plan is proposed in Claude or ChatGPT and saved to this project.</p>':'')+
  '<div class="save"><button type="button" class="cancel" data-close>Cancel</button><button class="primary">'+(dup?'Create copy':id?'Save changes':'Create project')+'</button></div></form>');
 }
@@ -421,9 +441,10 @@ document.addEventListener('submit',e=>{
   closeDrawer();render();toast(isNew?'Recorded':'Saved');return}
  if(f.id==='projectform'){e.preventDefault();const countries=fd.getAll('countries'),ws=fd.getAll('wideSources'),wt=fd.getAll('wideTemplates');
   const vals={name:get('name'),code:get('code').toUpperCase(),euct:get('euct'),sponsor:get('sponsor'),countries,updated:now()};
-  if(drawerState.id){const p=data.projects.find(x=>x.id===drawerState.id);Object.assign(p,vals);if(p.planId&&data.ui.project===p.id)data.project=p.name;applyWide(p.id,'source',ws);applyWide(p.id,'template',wt);log('Browser','Updated project',p.name);closeDrawer();refresh();toast('Project saved');return}
+  const plv={part1:get('part1'),ref:countries.includes(get('ref').split(':')[0])?get('ref'):'',format:get('format')};
+  if(drawerState.id){const p=data.projects.find(x=>x.id===drawerState.id);Object.assign(p,vals);{const pl=(data.planning??={})[p.id]??={basedOn:{}};const ch=Object.keys(plv).filter(k=>pl[k]!==plv[k]);Object.assign(pl,plv);if(ch.length)log('Browser','Changed planning choices',p.code+' · '+ch.join(', '))}if(p.planId&&data.ui.project===p.id)data.project=p.name;applyWide(p.id,'source',ws);applyWide(p.id,'template',wt);log('Browser','Updated project',p.name);closeDrawer();refresh();toast('Project saved');return}
   const id='PRJ'+Date.now().toString(36).toUpperCase(),from=drawerState.from?data.projects.find(x=>x.id===drawerState.from):null;
-  const np={id,...vals,owner:actor,created:now(),planId:''};
+  const np={id,...vals,owner:actor,created:now(),planId:''};(data.planning??={})[id]={...plv,basedOn:{...(from&&data.planning?.[from.id]?.basedOn||{})}};
   if(from){const base=planOf(from);if(base)np.planId=clonePlanFor(base,vals.name);}
   data.projects.push(np);applyWide(id,'source',ws);applyWide(id,'template',wt);
   log('Browser',from?'Duplicated project':'Created project',vals.name+(from?' from '+from.name:''));closeDrawer();openProject(id);toast(from?'Copy created':'Project created');return}

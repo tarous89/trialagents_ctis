@@ -84,7 +84,7 @@ A deliverable is one document at one step, for example the German consent form a
 
 - **Ignore and continue** (only when action is required): lets the next step run. The issues stay open and the status stays "Action required". It applies to this version only, and **Undo** reverses it.
 - **Revise:** asks the assistant for a new version. It always sends your open comments, any changes to the document's sources and templates, and the version being revised. Without comments or changes, the assistant asks what you want changed.
-- **Approve final document** (only on the last step, only for the owner).
+- **Approve final document** (only on the last step, only for the owner). The assistant can bring this up for you in the chat, but the approval only counts when you click it.
 
 A step that has not run yet shows no content, only what it is waiting for and a link to the step that blocks it.
 
@@ -126,7 +126,7 @@ Using the app for your own projects is free. Sharing with other people is part o
 - You can share **one deliverable**, **one document** (all its deliverables) or a **whole project**.
 - For each item you choose **Can comment** or **Can edit**. Can edit also lets them ask their own assistant for revisions.
 - Access starts immediately. There is nothing to accept, so you can mention them right away.
-- You invite from a deliverable, from Settings → Team, or while mentioning someone in a comment. Sharing and approving are done in the TrialAgents web app, not through the assistant.
+- You invite from a deliverable, from Settings → Team, or while mentioning someone in a comment. Sharing is done in the TrialAgents web app.
 - Settings → Team lists everyone you share with, what they can see, their access, and whether they have opened it. You can change access per item, share more, stop sharing an item or remove them.
 
 ### What someone you share with sees

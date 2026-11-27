@@ -6,8 +6,8 @@ This is the reference for building TrialAgents CTIS: the hosted app, its databas
 
 | Term | Meaning |
 |---|---|
-| **Project** | One CTIS submission. One project has exactly one plan. A new submission or amendment is a new project, usually created by duplicating one. |
-| **Plan** | The documents of the project (rows) × the steps (columns), plus the pinned final document. Also holds the planning choices: Part I scope, the reference package and the format choice. |
+| **Project** | One CTIS submission and its plan. Project and plan are one object, saved by one tool: creating a project may include the plan, and planning later is an update of the project. A new submission or amendment is a new project, usually created by duplicating one or as a linked successor. |
+| **Plan** | The part of the project that lists the documents (rows) × the steps (columns), plus the pinned final document. Also holds the planning choices: Part I scope, the reference package and the format choice. Not a separate record. |
 | **Package** | All Part II documents for one country and language, for example "Germany · German". A country that needs several languages has several packages. Countries may need more or fewer documents than others. |
 | **Reference package** | The first country-language package the plan completes. It is not a special kind of document: it is an ordinary package that is done and approved first, so its content can be adapted for the other packages. |
 | **Reference document** | The approved document another document is adapted from (`based_on`), normally the same document type in the reference package. Optional: a document with no counterpart in the reference package is drafted from the sources. |
@@ -20,7 +20,7 @@ This is the reference for building TrialAgents CTIS: the hosted app, its databas
 | **Template** | A writing template, checklist, Word layout or SOP. TrialAgents' catalog templates and country rules are not listed to users; only user-recorded templates are. |
 | **Share** | Access given to one email for one deliverable, document or project, with a role. |
 
-### Planning choices stored on the plan
+### Planning choices stored on the project
 
 - `part1_scope`: `in_plan` | `completed_outside` | `later`.
 - `reference_package`: `{country, language}`, or empty when the user chose to draft every package from the sources.
@@ -69,9 +69,9 @@ Findings types (shown in the review panel): missing data, conflicting informatio
    - **Starting material:** what already exists (protocol only, or sponsor documents such as an existing participant information). Existing documents are recorded as sources and used as the starting document of a Draft.
    - **Format:** where the sponsor brings its own documents, keep the sponsor's structure and format across countries as far as possible, or use the content with the TrialAgents country format. Stored on the plan, per document type if the user wants.
    - **Reference package:** which country and language to complete first. Any language the user is comfortable with.
-   - Answers that are study facts (for example minors included) are saved with `save_project`; planning choices are saved with the plan.
+   - Study facts (for example minors included) and planning choices are both saved on the project with `save_project`.
 
-   The assistant then proposes documents, packages, `based_on` links, steps, languages and filenames, and saves with `save_plan` after the user confirms.
+   The assistant then proposes documents, packages, `based_on` links, steps, languages and filenames, and saves them with `save_project` after the user confirms.
 2. **Recommended strategy, and alternatives.** The guide tells the assistant to recommend: Part I (if in the plan), then the reference package in full, approved by the owner, then the other packages, each document adapted from its reference document (translation, national requirements, country checklist). Other countries may need more or fewer documents, additional details, or several languages; documents without a counterpart are drafted from the sources. If the user prefers another order, for example every country drafted from the sources in parallel, the assistant plans that instead: the same data model supports it by leaving `based_on` empty.
 3. **Order.** Part I if in the plan, then the reference package, then the other packages, each top to bottom. A document runs through all its steps before the next document starts. Draft is always the first content step, whether written from scratch, from a starting document or adapted from a reference document; the step instructions differ, the column does not.
 4. **Modifications and RFIs.** Also a planning case. `save_project` with `create_successor` creates a project linked to the previous one. The guide returns the modification rules; the assistant reads the previous project's approved documents, agrees with the user what changes, and saves a plan containing only the affected documents and the change documents. Each affected document is `based_on` its previously approved version.
@@ -79,7 +79,7 @@ Findings types (shown in the review panel): missing data, conflicting informatio
 6. **Continue.** When a step is saved, the widget posts the next message into the chat (`Continue with D04-CL`). Both hosts let an embedded app post a follow-up message, but only while the chat is open; check the current host behaviour before building on it. If the chat is closed, the run pauses and a **Continue** button resumes it.
 7. **Stops.** The loop stops at ACTION_REQUIRED. Findings the assistant can fix from sources it already has are fixed in the same step and recorded. Missing user data, decisions, conflicting sources and comments stop the loop.
 8. **Revise.** One action. It always sends: the version being revised, all open comments with replies and the text they anchor to, the document's current sources and templates marked where they differ from that version, and the step instructions and applicable rules, and for an adapted document the reference version it was adapted from and the current approved one. The assistant revises with comments, reruns if only inputs changed, or asks what to change if neither.
-9. **Approve.** Only the project owner, in the web app. The assistant gives the approval link from `read_project` or `get_step_context`. Approval binds to the plan, document, last step and version number.
+9. **Approve.** Only the project owner, by a click. The assistant can ask for approval with `update_review` (`request_approval`): the deliverable opens in the chat widget with an **Approve final document** confirmation showing the exact version, and the approval is recorded only when the owner clicks it there or in the web app. Where the host shows no widget, the assistant gives the web link. An assistant call alone never approves. Approval binds to the project, document, last step and version number.
 
 Unattended runs (no chat open) would require TrialAgents to call a model itself. Not in scope for the first release.
 
@@ -122,7 +122,7 @@ share_grants(
 
 - Access is immediate on creation; there is no acceptance step. `grantee_user_id` is filled when the email signs in.
 - The grantee can be mentioned as soon as the grant exists.
-- Only the owner creates, changes or revokes grants and approves final documents, in the web app. There is no sharing tool in the MCP server for the first release.
+- Only the owner creates, changes or revokes grants (web app only; no sharing tool in the MCP server for the first release) and approves final documents (owner click in the chat widget or web app).
 - A grantee sees sources and templates only with a project-scope grant.
 - Commenter: read and comment. Editor: also Revise and Ignore and continue (through their own assistant or the web app).
 
@@ -149,7 +149,8 @@ share_grants(
 ### Design rules
 
 - **Few write tools.** Hosts usually ask the user to approve tools that change data, and read-only tools (annotated `readOnlyHint`) tend to prompt less. Check current host behaviour before relying on it. Each write tool covers one kind of object and takes an `action` or `ops` field, so one approval covers related operations.
-- **Owner-only actions stay in the web app:** approving final documents and sharing. Tools return links to them instead.
+- **Approval is an owner click, not a tool result.** The assistant can bring the approval up in the chat widget (`update_review` → `request_approval`); the owner confirms it there or in the web app. Reason: approval is the owner's attestation of a regulatory document. A tool call can be pre-allowed in the host or triggered by text inside a source document, so it cannot prove a person approved.
+- **Sharing stays in the web app** for the first release.
 - All tools take the project id where one applies; the server derives everything else from the caller's grants.
 - Every write takes an idempotency key and the expected current version. A stale write returns the current state instead of overwriting.
 - Rendering is a server side effect of saving, not a tool.
@@ -170,13 +171,12 @@ share_grants(
 
 | Tool | Actions |
 |---|---|
-| `save_project` | `create`, `update` (details and study facts), `duplicate`, `create_successor` (modification or RFI response, linked to the previous project). Owner only. |
-| `save_plan` | Whole plan or patch ops: documents and packages, `based_on` links, Part I scope, reference package, format choice, steps, paused steps, not-applicable cells, order, codes and filenames. Validated; returns what changed. Every change is logged. |
+| `save_project` | `create`, `update`, `duplicate`, `create_successor` (modification or RFI response, linked to the previous project). Covers details, study facts, planning choices (Part I scope, reference package, format choice) and the plan, given whole or as patch ops: documents and packages, `based_on` links, starting documents, steps, paused steps, not-applicable cells, order, codes and filenames. Validated; returns what changed. Every change is logged. Owner only. |
 | `save_resources` | `record`, `update` (metadata), `upload` (returns a short-lived upload URL), `set_project` (project-wide list), `set_document` (per-document overrides). |
 | `save_version` | Structured content, findings (including those fixed in the same step), claim-to-source links, checklist results and the reference version used, for one deliverable. Validated server-side; stores the resource snapshot; renders the Word file where the step needs it and returns render issues. |
-| `update_review` | `comment`, `reply`, `resolve`, `reopen`, `continue_past_issues`, `undo_continue`. Bound to a version number where relevant. |
+| `update_review` | `comment`, `reply`, `resolve`, `reopen`, `continue_past_issues`, `undo_continue`, `request_approval` (shows the owner's Approve confirmation; does not approve). Bound to a version number where relevant. |
 
-Twelve tools in total. Sharing (`share`, change, revoke) is web-only for the first release.
+Eleven tools in total. Sharing is web-only for the first release; approval needs the owner's click.
 
 ## 8. Hosting
 
@@ -221,6 +221,8 @@ It is built from `prototype/source`:
 | `extra.css` | Glue styles mapping the plan UI onto Pipeline's look. |
 | `vendor/pipeline/` | Pipeline's `shell.html` (its CSS is reused, scoped under `.pl` and `.plh`), assistant marks and logo. |
 | `build.py` | Scopes the CSS, assembles the page and writes `../TrialAgents-CTIS.html`. |
+
+The prototype shows the planning choices in Project details (Part I, reference package as country and language, format), marks the reference package in the plan, and shows an adapted document's Draft as "Waiting for reference" until its reference document is approved (example: EX-101 D08 adapted from D06). It does not raise "Reference changed" findings or run the assistant-side approval request.
 
 Rebuild with `python3 prototype/source/build.py`. The prototype is a design reference, not production code: the production app should be written fresh against the data model above, reusing Pipeline's components.
 

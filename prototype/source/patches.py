@@ -117,3 +117,8 @@ app = must_replace(app, "'EX101_'+P().id+'_example_outputs.zip'", "(proj()?.code
 app = must_replace(app, """button('cell','<span class="state '+st+'">'+l+'</span>','cellbutton',""", """button('cell','<span class="state '+st+'">'+l+(work(d,s).current&&st!=='waiting'?' <span class="vtag">v'+work(d,s).current.rev+'</span>':'')+'</span>','cellbutton',""")
 
 app = must_replace(app, "ready=released(p,d),name=finalName(m,d);", "ready=released(p,d),name=approvedVersion(d)?approvedName(m,d):finalName(m,d);")
+
+# ---- Round 6: reference package ----
+app = must_replace(app, "const scopeName=c=>c==='EU'?'Part I':'Part II · '+cc[c];", "const scopeName=c=>c==='EU'?'Part I · '+part1Labels[planning().part1]:'Part II · '+cc[c]+(refPkg(c)?' · Reference package'+refLabel():'');")
+app = must_replace(app, """'<span class="docname plain">'+safe(m.name)+'</span>'""", """'<span class="docname plain">'+safe(m.name)+'</span>'+refNote(m.id)""")
+app = must_replace(app, """blocker?['Waiting for '+dcode(id,blocker),""", """st==='waiting'&&refOf(id)&&k.type==='draft'&&!refApproved(refOf(id))?['Waiting for '+refOf(id),'This document is adapted from '+refOf(id)+'. Its draft starts once '+refOf(id)+' is approved.']:blocker?['Waiting for '+dcode(id,blocker),""")
