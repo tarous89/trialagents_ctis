@@ -23,7 +23,7 @@ One file per template in `participant/`, split from `DE_Participant-facing templ
 
 ## Part II templates (DOCX)
 
-The 48 variables of the variable sheet are written into the templates as yellow `[EINFÜGEN: …]` instructions with the variable's description; conditional blocks became `[AUSWAHL: …]` / `[FALLS …]`. Each file starts with a note giving its CTIS title (naming guide), whether it is mandatory, the language, the signature rule and the template basis. R1 has an added instruction for the German national data-protection sentence the Germany guide requires. Rebuild with `tools/content/curate.py <source.docx> <output.docx> <variables.json>`.
+The 48 variables of the variable sheet are written into the templates as yellow `[EINFÜGEN: …]` instructions with the variable's description; conditional blocks became `[AUSWAHL: …]` / `[FALLS …]`. The per-document guidance (CTIS section, mandatory or not, language, signature rule, template basis) is in `requirements.json` as `drafting_notes_de`, so the documents themselves stay clean. Fields the site or investigator completes stay empty: the CV and declaration of interest are the original EU templates with only the trial title and EU trial number to fill, and N1's site name, principal investigator, planned participants and site ID are left blank. R1 has an added instruction for the German national data-protection sentence the Germany guide requires. Rebuild with `tools/content/curate.py <source.docx> <output.docx> <variables.json>`.
 
 | File | CTIS | Variables written in |
 |---|---|---|

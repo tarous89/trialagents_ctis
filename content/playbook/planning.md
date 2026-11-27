@@ -65,14 +65,24 @@ Alternatives to offer when they fit: draft every country from the sources in par
 
 1. Take every `mandatory` document of the country, then every `conditional` document whose trigger is true, then the population sets whose trigger is true.
 2. Expand `per`: one document per site, per population, per recruitment item, as stated.
-3. Mark documents others provide (`provided_by`): no Draft step; record them as sources when received; keep QC and Checklist steps where useful.
+3. Set each document's kind from the country file; documents others complete or issue get no Draft (see section 5).
 4. Add the Part I documents if Part I is in the plan, and the English sources of endpoint-related patient-facing documents.
 5. Name each document with its CTIS title (section 6).
 6. Show the list to the user grouped by Part I, reference package, then other packages, and explain any document that is conditional and why it was included or left out.
 
-## 5. Default steps
+## 5. Templates and default steps
 
-Draft, Source QC, Checklist, Style for documents TrialAgents writes. Draft is always the first content step: written from scratch, from a starting document, or adapted from a reference document. Add Team review, Compare versions or Compare across documents when the user wants them. Mark Draft not applicable for provided documents.
+Each document in the plan records its **kind** and, where there is one, its **template** (from the country file). The template is bound in the plan, so `get_step_context` returns only that template when the document is drafted.
+
+| Kind | Examples | Default steps |
+|---|---|---|
+| `participant_document` | L1 information and consent sets, recruitment material | Draft → Source QC → Checklist → Style |
+| `form` | K1, N1, S1, P1, R1 | Draft → Check → Style |
+| `third_party_template` | PI CV, declaration of interest | Prepare (trial title and EU trial number only; every other field stays empty for the investigator) → Check |
+| `third_party_document` | insurance certificate and terms, training certificates, contracts, radiation documents | Check (recorded as a source when received) |
+| `ctis_data` | list of sites | Check |
+
+Draft is always the first content step: written from the template, from a starting document, or adapted from a reference document. The Draft step receives the checklist items as requirements to meet; the Checklist step then verifies them in a separate turn and records one result per item. Check is a single short review for forms and supplied documents (identity of the trial, consistency with the rest of the package, completeness). Add Team review, Compare versions or Compare across documents when the user wants them.
 
 ## 6. CTIS naming
 

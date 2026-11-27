@@ -4,8 +4,7 @@ text '[KEYWORD: text]'. Keywords (DE): EINFÜGEN, FALLS, SONST, AUSWAHL, HINWEIS
 import sys,zipfile,re,json,copy,shutil,os
 from lxml import etree
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; w='{%s}'%W
-src,dst,varsf=sys.argv[1:4]
-V=json.load(open(varsf))
+V={}
 KV={'kv101':'Vollständiger Titel der klinischen Prüfung, wie im Prüfplan','kv102':'EU-Prüfungsnummer (EU CT number); bei Erstantrag vor Vergabe leer lassen und in CTIS ergänzen','kv103':'Sponsor mit vollständiger Anschrift','date':'Datum dieser Dokumentversion'}
 COND={'kv104':'in der Prüfung neue Proben von den Teilnehmenden entnommen werden','kv105':'vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden','kv106':'Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden','kv107':'in Deutschland Minderjährige eingeschlossen werden','kv108':'in Deutschland nicht einwilligungsfähige Erwachsene eingeschlossen werden','kv109':'Teilnehmende vorkommen können, deren Einwilligung von einem unparteiischen Zeugen bezeugt werden muss','kv110':'Teilnehmende in einer Notfallsituation eingeschlossen werden'}
 def desc(code):
@@ -67,6 +66,7 @@ def make_p(text,ref_p):
     ppr=ref_p.find(w+'pPr')
     if ppr is not None: p.append(copy.deepcopy(ppr))
     p.append(instr_run(text,first_rpr(ref_p))); return p
+KEEP_WORD_PLACEHOLDERS=False
 stats={'vars':0,'cond_blocks':0,'inline':0,'cyan':0,'sdt_placeholders':0,'empty_cells':0}
 def convert(root):
     body=root.find(w+'body')
@@ -113,8 +113,8 @@ def convert(root):
             r.addprevious(new); r.getparent().remove(r); stats['cyan']+=1
         else:
             rp.remove(h)  # checkbox options etc stay as form text
-    # 4. Word placeholder text in content controls
-    for t in list(body.iter(w+'t')):
+    # 4. Word placeholder text in content controls (skipped for templates others fill)
+    for t in ([] if KEEP_WORD_PLACEHOLDERS else list(body.iter(w+'t'))):
         if t.text and 'Click or tap here to enter text' in t.text:
             r=t.getparent(); label=context_label(r)
             new=instr_run('[EINFÜGEN'+(': '+label if label else '')+']',r.find(w+'rPr'))
@@ -161,4 +161,5 @@ def run(src,dst,extra=None):
         zout.writestr(it,data)
     zout.close()
 if __name__=='__main__':
+    src,dst,varsf=sys.argv[1:4]; V.update(json.load(open(varsf)))
     run(src,dst); print(os.path.basename(dst),stats)

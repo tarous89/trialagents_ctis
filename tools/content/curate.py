@@ -22,8 +22,10 @@ CFG={
 'M2':dict(top='[HINWEIS: CTIS Teil II, Abschnitt M. CTIS-Titel: „M2_DoI_<Prüfer/in>_<Prüfstelle>“. Pflichtdokument je Hauptprüfer/in und Prüfstelle. Deutsch oder Englisch zulässig. EU-Vorlage empfohlen. Keine zusätzliche Unterschrift, sofern nicht von der Ethikkommission verlangt. Die Angaben zu Interessen liefert die Prüferin bzw. der Prüfer selbst; der Assistent trägt nur Studientitel und EU-Prüfungsnummer ein. '+COMMON+']',
   intro=['This template may be used','This template has been developed']),
 }
+THIRD_PARTY=('M1','M2')
 def curate(root,key):
     cfg=CFG[key]; body=root.find(w+'body')
+    if key in THIRD_PARTY: return
     ps=list(body.iter(w+'p'))
     # intro paragraphs -> HINWEIS (remove before final)
     for p in ps:
@@ -41,20 +43,19 @@ def curate(root,key):
                 break
     first=next(x for x in body if x.tag in (w+'p',w+'tbl'))
     ref=first if first.tag==w+'p' else next(body.iter(w+'p'))
-    top=etree.Element(w+'p'); top.append(C.instr_run(cfg['top'])); first.addprevious(top)
+    pass
     for tr in body.iter(w+'tr'):
         cells=tr.findall(w+'tc')
         if len(cells)==2:
             label=C.ptext(cells[0]).strip()
             for t in cells[1].iter(w+'t'):
-                if t.text and t.text.strip()=='[EINFÜGEN: Enter text]': t.text='[EINFÜGEN: '+label+' – vom Prüfzentrum bestätigen lassen]'
-            if label.startswith('If applicable, unique identification') and not C.ptext(cells[1]).strip():
-                p=cells[1].find(w+'p'); p.append(C.instr_run('[EINFÜGEN, falls vorhanden: Kennnummer der Prüfstelle; sonst Zeile leer lassen]'))
+                if t.text and t.text.strip()=='[EINFÜGEN: Enter text]': t.getparent().getparent().remove(t.getparent())
+            pass
     # generic labels left: make them explicit
     for r in body.iter(w+'r'):
         for t in r.iter(w+'t'):
             if t.text=='[EINFÜGEN]': t.text='[EINFÜGEN: vom Prüfzentrum bzw. Sponsor bereitzustellende Angabe; nicht erfinden]'
 if __name__=='__main__':
     src,dst,varsf=sys.argv[1:4]; key=os.path.basename(src)[:2]
-    C.V=json.load(open(varsf))
+    C.V.update(json.load(open(varsf))); C.KEEP_WORD_PLACEHOLDERS = key in THIRD_PARTY
     C.run(src,dst,extra=lambda root:curate(root,key)); print(os.path.basename(dst),C.stats)

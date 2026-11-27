@@ -27,6 +27,12 @@ This is the reference for building TrialAgents CTIS: the hosted app, its databas
 - `format_choice`: `sponsor_format` (keep the structure of the sponsor's documents across countries) | `country_format` (use their content with the TrialAgents country format). Plan-wide, with optional per-document-type overrides.
 - Per document: `package {country, language}` for Part II, `based_on` (reference document id, or a previous project's document for modifications), and an optional starting document (a recorded source, for example the sponsor's existing participant information).
 
+### Document kind and template
+
+- Each document records `kind` (`participant_document`, `form`, `third_party_template`, `third_party_document`, `ctis_data`), its `template_id` where one applies, and for participant documents the `population` it is written for (see the planning playbook).
+- The kind sets the document's default steps (not-applicable cells). Steps stay plan-wide columns.
+- `get_planning_guide` returns the country's template catalogue without content; `get_step_context` returns only the template bound to the deliverable.
+
 ### Codes
 
 - Document code: `D` + two digits, assigned by the plan (`D01` …). Stable within a project and copied by duplication.
