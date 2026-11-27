@@ -1,0 +1,409 @@
+{
+  "id": "SI-QC-PARTICIPANT",
+  "name": "Slovenia: participant-facing document QC",
+  "applies_to": [
+    "SI-L1",
+    "SI-L1-POPULATION",
+    "SI-L2",
+    "SI-K2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/slovenia/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial identity and content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Protocol number, EU trial number, sponsor, full title, short title, investigational product, comparator and study population are consistent across every document."
+        },
+        {
+          "id": "C1.02",
+          "check": "The document is in Slovenian and uses correct clinical terminology rather than an unreviewed literal translation."
+        },
+        {
+          "id": "C1.03",
+          "check": "The document has a clear title, population, version number and date."
+        },
+        {
+          "id": "C1.04",
+          "check": "Randomisation, blinding, placebo or comparator use, treatment assignment and rescue treatment are explained accurately."
+        },
+        {
+          "id": "C1.05",
+          "check": "Visit counts, treatment duration, follow-up, sample volumes, imaging, questionnaires, device use, contraception and participant responsibilities match the protocol and schedule of activities."
+        },
+        {
+          "id": "C1.06",
+          "check": "Procedures deleted from the protocol are removed and procedures participants will experience are added."
+        },
+        {
+          "id": "C1.07",
+          "check": "Research-only procedures are distinguished from standard care."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-patient consistency",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Inclusion and exclusion points that participants must understand (contraception, prohibited medicines, washout, donation restrictions, driving, fasting, lifestyle requirements) match the protocol."
+        },
+        {
+          "id": "C2.02",
+          "check": "Foreseeable risks match the current Investigator's Brochure, protocol, product information and approved risk controls."
+        },
+        {
+          "id": "C2.03",
+          "check": "Stopping rules and reasons the investigator or sponsor may end participation are stated."
+        },
+        {
+          "id": "C2.04",
+          "check": "Withdrawal text is aligned with protocol safety follow-up and data-handling plans."
+        },
+        {
+          "id": "C2.05",
+          "check": "Compensation, expense reimbursement and treatment for injury match the financial (SI-P1) and insurance (SI-O1) documents."
+        },
+        {
+          "id": "C2.06",
+          "check": "Site contact names, roles, addresses and telephone numbers are verified against the current site file."
+        },
+        {
+          "id": "C2.07",
+          "check": "The Slovenian protocol synopsis covers the nationally required content and does not contradict the PIS (SI-D1-SYNOPSIS).",
+          "applies_when": "document is an L1 information sheet"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "Main participation consent is distinct from optional future research, optional genetic testing, optional contact and pregnancy-partner follow-up."
+        },
+        {
+          "id": "C3.02",
+          "check": "Refusing an optional activity does not appear to prevent main-trial participation when the activity is not required."
+        },
+        {
+          "id": "C3.03",
+          "check": "The document states who signs it and when."
+        },
+        {
+          "id": "C3.04",
+          "check": "The application-stage blank form is free of participant, legal-representative, witness and interviewer signatures."
+        },
+        {
+          "id": "C3.05",
+          "check": "Space is provided for the participant's or representative's name, signature and date and for the person conducting the consent interview."
+        },
+        {
+          "id": "C3.06",
+          "check": "Where an impartial witness may be used, the approved form includes the witness statement, name, signature and date.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C3.07",
+          "check": "The person receives adequate time, an opportunity to ask questions and a signed and dated copy."
+        },
+        {
+          "id": "C3.08",
+          "check": "Re-consent triggers are stated for material new information, adulthood, regained capacity and newly proposed optional use."
+        },
+        {
+          "id": "C3.09",
+          "check": "The consent statements cover: written and oral information received and understood; questions asked and answered satisfactorily; enough time to decide; voluntariness; right to withdraw without giving a reason and without harm to ordinary care; agreement to the defined trial procedures; injury and insurance information understood; signed and dated copy received.",
+          "source": "https://trialagents.com/ctis/slovenia/en/patient-information-consent-requirements"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "The package covers every population in the protocol and CTIS application (population × document table; every inclusion pathway has a document set).",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Healthy volunteers: absence or uncertainty of therapeutic benefit, payment, burden, confinement, restrictions and reproductive risk are explained.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.03",
+          "check": "Minors: parent or legal-representative information and consent plus age-appropriate information and assent; the Slovenian 15-year threshold (own agreement from 15) and re-consent at adulthood are accounted for.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.04",
+          "check": "Adults unable to consent: legal-representative documents and information suited to the participant's capacity.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.05",
+          "check": "Emergency enrolment: the protocol and Part II documents address every Article 35 condition and the subsequent consent process.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.06",
+          "check": "Participant able to consent but unable to write: interpreter support is distinguished from the impartial-witness procedure.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.07",
+          "check": "Pregnancy follow-up: the pregnant participant is separated from a pregnant partner who is not a trial participant.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.08",
+          "check": "Optional future use: main-trial data and samples are separated from secondary purposes.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "The controller or joint-controller arrangement is identified accurately."
+        },
+        {
+          "id": "C5.02",
+          "check": "Informed consent to participate is not equated with the GDPR legal basis for every processing operation."
+        },
+        {
+          "id": "C5.03",
+          "check": "Data categories, purposes, recipients, access to source records, coding, transfers, safeguards, retention and participant rights are explained."
+        },
+        {
+          "id": "C5.04",
+          "check": "The authorities, monitors, auditors and ethics bodies that may inspect records, and why, are stated."
+        },
+        {
+          "id": "C5.05",
+          "check": "International transfer wording matches actual destinations and safeguards."
+        },
+        {
+          "id": "C5.06",
+          "check": "No promise of complete anonymity when data remain coded or pseudonymised."
+        },
+        {
+          "id": "C5.07",
+          "check": "No promise of deletion when legally required safety and trial-integrity records must remain."
+        },
+        {
+          "id": "C5.08",
+          "check": "Withdrawal wording is aligned with the data-protection statement (SI-R1) and the protocol."
+        },
+        {
+          "id": "C5.09",
+          "check": "Optional future processing has its own clear legal and consent analysis.",
+          "applies_when": "data.future_use_outside_protocol or samples.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological sample and secondary-use checks",
+      "applies_when": "samples.collected or samples.archive_used or data.future_use_outside_protocol",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Required and optional sample collections are listed separately."
+        },
+        {
+          "id": "C6.02",
+          "check": "Sample type, volume, frequency, analysis, genetic testing, storage, location, transfers, retention and destruction match the protocol and laboratory plan."
+        },
+        {
+          "id": "C6.03",
+          "check": "States whether samples are identified, coded, pseudonymised or irreversibly anonymised."
+        },
+        {
+          "id": "C6.04",
+          "check": "Explains whether individual or incidental findings may be returned."
+        },
+        {
+          "id": "C6.05",
+          "check": "Future research has a defined scope that a person can understand.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.06",
+          "check": "A separate refusal and withdrawal route is provided for optional future use.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.07",
+          "check": "No promise to destroy material already used, anonymised or included in completed analyses when that cannot be achieved."
+        },
+        {
+          "id": "C6.08",
+          "check": "The participant text is aligned with the CTIS biological-sample compliance document (SI-S1)."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Slovenia national requirements",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "The cover letter is in Slovenian (SI-B1-COVER).",
+          "applies_when": "package-level review"
+        },
+        {
+          "id": "C7.02",
+          "check": "The protocol synopsis is in Slovenian and contains the items listed in Article 10 of the national implementing regulation (SI-D1-SYNOPSIS).",
+          "applies_when": "package-level review"
+        },
+        {
+          "id": "C7.03",
+          "check": "Every participant-facing item is in Slovenian."
+        },
+        {
+          "id": "C7.04",
+          "check": "The PIS is short, clear, respectful, empathetic and understandable to a lay reader (KME RS guidance)."
+        },
+        {
+          "id": "C7.05",
+          "check": "Includes procedures, duration, benefits, risks, privacy, data access and retention, results availability, voluntariness, withdrawal, alternatives, safety and local contacts."
+        },
+        {
+          "id": "C7.06",
+          "check": "Insurance for trial-related injury is described consistently with the proof of sponsor and investigator liability cover (SI-O1)."
+        },
+        {
+          "id": "C7.07",
+          "check": "The relevant investigator and national participant-rights contact routes are included with current official details."
+        },
+        {
+          "id": "C7.08",
+          "check": "Where teratogenic risk exists: written pregnancy and fetal-risk information, contraception instructions and the applicable signed acknowledgment are included.",
+          "applies_when": "reproductive.teratogenic_risk"
+        },
+        {
+          "id": "C7.09",
+          "check": "For minors aged 15 or older: their own agreement is included in addition to legal-representative consent.",
+          "applies_when": "population.minors"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administration",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "The PIS, ICF, assent, partner consent and optional-use forms submitted in CTIS are blank."
+        },
+        {
+          "id": "C8.02",
+          "check": "Signature blocks match the approved consent pathway and do not add an inappropriate signer."
+        },
+        {
+          "id": "C8.03",
+          "check": "Printed names, roles, signatures and dates are provided for where required during conduct."
+        },
+        {
+          "id": "C8.04",
+          "check": "Two signed copies of the consent form are provided for during conduct, one for the participant and one for the trial archive (KME RS)."
+        },
+        {
+          "id": "C8.05",
+          "check": "Version and date match in the filename, footer, CTIS record, document list and translated file."
+        },
+        {
+          "id": "C8.06",
+          "check": "Tracked changes, comments, hidden text, unresolved fields and drafting notes are removed from clean files ([bracket] notes, italic notes, '...........' gaps, yellow form labels)."
+        },
+        {
+          "id": "C8.07",
+          "check": "A traceable translation and review record is preserved."
+        },
+        {
+          "id": "C8.08",
+          "check": "Every cross-reference points to the correct document and section."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and design",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Headings answer participant questions."
+        },
+        {
+          "id": "C9.02",
+          "check": "Paragraphs and sentences are short."
+        },
+        {
+          "id": "C9.03",
+          "check": "Lists are used only where they make procedures or risks easier to understand."
+        },
+        {
+          "id": "C9.04",
+          "check": "Clinical, genetic and data-protection terms are defined."
+        },
+        {
+          "id": "C9.05",
+          "check": "Font size, spacing, contrast, page breaks, tables and signature-page legibility are checked."
+        },
+        {
+          "id": "C9.06",
+          "check": "Probabilities are explained in plain language with consistent denominators."
+        },
+        {
+          "id": "C9.07",
+          "check": "No coercive, reassuring, promotional or liability-waiving language."
+        },
+        {
+          "id": "C9.08",
+          "check": "The Slovenian text has been reviewed by a competent native-language clinical reviewer."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final upload check",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "Only the versions intended for assessment are uploaded, in the correct CTIS categories."
+        },
+        {
+          "id": "C10.02",
+          "check": "The English scientific version of endpoint-related patient-facing documents is aligned with the Slovenian translation according to the current EU Q&A.",
+          "applies_when": "endpoint_documents.participant_facing"
+        },
+        {
+          "id": "C10.03",
+          "check": "The version 2.0 recruitment and informed consent procedure template is used for new Part II submissions from 1 September 2026, and K1 matches the document pathways."
+        },
+        {
+          "id": "C10.04",
+          "check": "The document inventory is reconciled with the Slovenia Part II document checklist."
+        }
+      ]
+    }
+  ]
+}

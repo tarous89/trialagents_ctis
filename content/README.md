@@ -16,4 +16,4 @@ These files are TrialAgents catalog content. They are returned to the assistant 
 
 To add a country, follow `COUNTRY_ONBOARDING.md`.
 
-Countries available: Germany (`DE`). Germany sources: the TrialAgents public CTIS guides (reviewed 23 September 2026) and the CTIS_DE template set (27 November 2026).
+Countries available (25): Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden. Not built: Cyprus (no guide). Open questions and missing items across countries: `DECISIONS.md`. Germany sources: the TrialAgents public CTIS guides (reviewed 23 September 2026) and the CTIS_DE template set (27 November 2026).

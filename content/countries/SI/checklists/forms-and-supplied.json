@@ -1,0 +1,255 @@
+{
+  "id": "SI-CHECK",
+  "name": "Slovenia: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/slovenia/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language as required: Slovenian or English for administrative Part II documents (form answers in Slovenian unless the user chose English); Slovenian for the cover letter and synopsis."
+    },
+    {
+      "id": "X.05",
+      "check": "Signature only where the Slovenia guide requires it (N1 site suitability statement); no unsupported signature requirement added."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json; correct CTIS location."
+    }
+  ],
+  "by_document": {
+    "SI-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the current European Commission recruitment and informed consent procedure template version 2.0 (new Part II submissions from 1 September 2026), uploaded under Recruitment arrangements."
+      },
+      {
+        "id": "K1.02",
+        "check": "Describes how candidates are identified, approached, informed, given time to decide and consented."
+      },
+      {
+        "id": "K1.03",
+        "check": "Member State fields for Slovenia completed (national_fields v105, v108 and, where the pathway applies, v110, v114, v117, v121)."
+      },
+      {
+        "id": "K1.04",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations; each 'yes' section is completed, each 'no' section says not applicable."
+      },
+      {
+        "id": "K1.05",
+        "check": "Minors: representative consent for every minor, the minor's own agreement from 15, and the age and maturity groupings below 15 explained and justified.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.06",
+        "check": "Adults unable to consent: capacity assessment and legally designated representative verification described (Patients' Rights Act, Article 37).",
+        "applies_when": "population.adults_without_capacity"
+      },
+      {
+        "id": "K1.07",
+        "check": "Emergency: each Article 35 condition explained for the exact condition and therapeutic window; subsequent consent described.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.08",
+        "check": "Witness route described for a person who can consent but cannot write; witness independence and interpreter role stated.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.09",
+        "check": "Recruitment routes match the recruitment material (SI-K2).",
+        "applies_when": "recruitment.material_used or recruitment.call_centre"
+      },
+      {
+        "id": "K1.10",
+        "check": "Consent signed in the investigator's presence in two copies (participant and trial archive) is described."
+      }
+    ],
+    "SI-M1": [
+      {
+        "id": "M1.01",
+        "check": "One current CV per principal investigator and Slovenian site, uploaded under Suitability of the investigator; one principal investigator per site."
+      },
+      {
+        "id": "M1.02",
+        "check": "Shows education, professional registration, relevant experience and clinical-trial competence; the principal investigator is a licensed physician or licensed doctor of dental medicine trained in GCP."
+      },
+      {
+        "id": "M1.03",
+        "check": "Slovenian or English; no signature presented as a CTIS requirement."
+      }
+    ],
+    "SI-M2": [
+      {
+        "id": "M2.01",
+        "check": "One declaration per principal investigator and site; financial interests and institutional affiliations answered by the investigator (EudraLex template or equivalent content)."
+      },
+      {
+        "id": "M2.02",
+        "check": "Current and attributable to the investigator; no signature presented as mandatory."
+      }
+    ],
+    "SI-N1": [
+      {
+        "id": "N1.01",
+        "check": "One current EudraLex site suitability form per Slovenian site, uploaded under Suitability of the facilities."
+      },
+      {
+        "id": "N1.02",
+        "check": "Identifies the site, principal investigator, facilities, equipment, staffing, pharmacy and sample pathways, emergency support, participant population and ability to perform the protocol safely."
+      },
+      {
+        "id": "N1.03",
+        "check": "Contains the KME RS institutional-management confirmation: research permitted after ethics approval, qualified staff and safety arrangements available, research-only costs not charged to compulsory health insurance, ordinary patient access not reduced."
+      },
+      {
+        "id": "N1.04",
+        "check": "Dated and signed by the person authorised to confirm the institution's suitability (signature supplied by the site, not invented)."
+      },
+      {
+        "id": "N1.05",
+        "check": "Site and principal investigator match CTIS and the site's M1 and M2."
+      }
+    ],
+    "SI-O1": [
+      {
+        "id": "O1.01",
+        "check": "Insurance or another guarantee covers both sponsor liability and investigator liability for damage from participation in the trial conducted in Slovenia."
+      },
+      {
+        "id": "O1.02",
+        "check": "The evidence connects the cover to the sponsor, protocol, Slovenian conduct, covered liabilities, period and material exclusions; cover in place before conduct starts."
+      },
+      {
+        "id": "O1.03",
+        "check": "Policy wording or an explanatory guarantee is added where the certificate omits essential terms."
+      },
+      {
+        "id": "O1.04",
+        "check": "Damage cover and claim route in every Slovenian participant document match the proof."
+      }
+    ],
+    "SI-P1": [
+      {
+        "id": "P1.01",
+        "check": "Participant expense reimbursement, compensation or payment and other benefits stated with amount, basis, schedule, conditions and treatment after screen failure or early withdrawal."
+      },
+      {
+        "id": "P1.02",
+        "check": "Amounts and conditions identical to every Slovenian participant document."
+      },
+      {
+        "id": "P1.03",
+        "check": "The amount does not induce participation; the institution conducting the research contracts with participants for compensation (KME RS guidance)."
+      },
+      {
+        "id": "P1.04",
+        "check": "No incentive or financial inducement beyond compensation for expenses and loss of earnings directly related to participation.",
+        "applies_when": "population.minors or population.adults_without_capacity"
+      },
+      {
+        "id": "P1.05",
+        "check": "Healthy volunteers: expense reimbursement separated from compensation for time, inconvenience and burden; no large completion bonus.",
+        "applies_when": "population.healthy_volunteers"
+      }
+    ],
+    "SI-P2-FINANCING": [
+      {
+        "id": "P2.01",
+        "check": "Describes trial financing, payments to investigators or sites and arrangements that could influence recruitment or conduct."
+      },
+      {
+        "id": "P2.02",
+        "check": "Consistent with P1 and with the site contracts the sponsor supplied; nothing invented."
+      }
+    ],
+    "SI-R1": [
+      {
+        "id": "R1.01",
+        "check": "Statement in the CTIS data-protection category identifies controller arrangements, legal basis, purposes, recipients, transfers, safeguards, retention, participant rights and compliance with the GDPR and Slovenian law (national field r1_the_sponsor_declares)."
+      },
+      {
+        "id": "R1.02",
+        "check": "Trial-participation consent is not presented as the legal basis for personal-data processing; a legal basis is given for each purpose from the sponsor's sources."
+      },
+      {
+        "id": "R1.03",
+        "check": "Consistent with the privacy sections of the Slovenian participant documents; sponsor details match the CTIS application."
+      }
+    ],
+    "SI-S1": [
+      {
+        "id": "S1.01",
+        "check": "Completed biological-sample compliance document in the CTIS category Compliance with Use of Biological Samples."
+      },
+      {
+        "id": "S1.02",
+        "check": "Purpose, tests, coding, storage location and duration, transfers, destruction or anonymisation, return of findings and withdrawal limits match the protocol, laboratory plan and participant documents."
+      },
+      {
+        "id": "S1.03",
+        "check": "Samples required for the trial are separated from optional future use.",
+        "applies_when": "samples.future_use_outside_protocol"
+      }
+    ],
+    "SI-B1-COVER": [
+      {
+        "id": "B1.01",
+        "check": "Cover letter in Slovenian."
+      },
+      {
+        "id": "B1.02",
+        "check": "Consistent with the application and the document list."
+      }
+    ],
+    "SI-D1-SYNOPSIS": [
+      {
+        "id": "D1.01",
+        "check": "Slovenian synopsis present; English version too in a multinational application.",
+        "applies_when": "always (English version when application.multinational)"
+      },
+      {
+        "id": "D1.02",
+        "check": "Covers purpose and scientific importance (with essential literature, including relevant Slovenian literature), methods including statistics, duration, participant number and ages, recruitment, inclusion and exclusion criteria, withdrawal criteria, randomisation, and ethical issues including benefits, risks and burdens (Article 10 of the national implementing regulation)."
+      },
+      {
+        "id": "D1.03",
+        "check": "Does not contradict the PIS or the protocol."
+      }
+    ],
+    "SI-FEE": [
+      {
+        "id": "FEE.01",
+        "check": "Combined national fee paid to JAZMP under the current tariff and payment instructions for the application type; proof of payment retained."
+      },
+      {
+        "id": "FEE.02",
+        "check": "No second standalone KME RS payment unless an authority instruction for the specific procedure requires it."
+      }
+    ]
+  }
+}
