@@ -1,0 +1,502 @@
+{
+  "id": "NL-QC-PARTICIPANT",
+  "name": "Netherlands: participant-facing document QC",
+  "applies_to": [
+    "NL-L1",
+    "NL-L1-POPULATION",
+    "NL-L2",
+    "NL-K2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/netherlands/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); section C11 from the final checks of the Netherlands population guides named in each item",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content checks",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "The public title, protocol number, EU Clinical Trial number, sponsor and version date are correct."
+        },
+        {
+          "id": "C1.02",
+          "check": "The purpose is stated in plain language and does not imply proven benefit."
+        },
+        {
+          "id": "C1.03",
+          "check": "Trial arms, randomisation, placebo and comparator are described accurately."
+        },
+        {
+          "id": "C1.04",
+          "check": "Screening, treatment, visits, calls, procedures, questionnaires and follow-up are complete."
+        },
+        {
+          "id": "C1.05",
+          "check": "Research procedures are distinguished from normal care."
+        },
+        {
+          "id": "C1.06",
+          "check": "The duration and number of visits match the protocol schedule."
+        },
+        {
+          "id": "C1.07",
+          "check": "Main risks appear early (cover page), with fuller detail in the correct appendix."
+        },
+        {
+          "id": "C1.08",
+          "check": "Unknown risks and burdens are not hidden in technical language."
+        },
+        {
+          "id": "C1.09",
+          "check": "Expected direct benefit is described accurately; healthy volunteers are told that direct benefit is absent."
+        },
+        {
+          "id": "C1.10",
+          "check": "Alternatives to participation are explained when relevant."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency checks",
+      "instruction": "Compare with the protocol, investigator brochure, harmonised recruitment and consent procedure (K1), insurance evidence (O1/O2), P1, R1 and S1.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Inclusion populations match every information and consent document."
+        },
+        {
+          "id": "C2.02",
+          "check": "Contraception, pregnancy testing, reporting and post-treatment periods match the protocol and investigator brochure.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.03",
+          "check": "Stopping rules and follow-up after withdrawal match the protocol."
+        },
+        {
+          "id": "C2.04",
+          "check": "Data and sample retention periods match the protocol, the R1 form and the biological-samples form."
+        },
+        {
+          "id": "C2.05",
+          "check": "Optional future use is not described as a core trial procedure.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C2.06",
+          "check": "The insurer, policy, coverage status and claims contact match the Part II evidence (O1/O2 or the exemption)."
+        },
+        {
+          "id": "C2.07",
+          "check": "Participant compensation and reimbursement match the Dutch P1 form."
+        },
+        {
+          "id": "C2.08",
+          "check": "The informed-consent process described in the protocol matches the harmonised recruitment and consent procedure template (K1)."
+        },
+        {
+          "id": "C2.09",
+          "check": "Any use of medical records, a general practitioner, specialist or pharmacist is supported by an explicit consent statement."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic checks",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The core consent to join the trial is clearly identifiable."
+        },
+        {
+          "id": "C3.02",
+          "check": "Optional choices use separate Yes or No responses; no blanket consent for all optional items."
+        },
+        {
+          "id": "C3.03",
+          "check": "Refusal of future data use, remaining sample storage, future contact, DNA analysis or external travel support does not block trial participation."
+        },
+        {
+          "id": "C3.04",
+          "check": "Trial-required data and samples are not presented as optional."
+        },
+        {
+          "id": "C3.05",
+          "check": "The person who must consent is correct for age and decision-making capacity (16 or older capable: the participant; under 12: both parents with parental authority or the guardian; 12-15: the child and both parents or the guardian; lacking capacity: the legally designated representative)."
+        },
+        {
+          "id": "C3.06",
+          "check": "The participant or representative receives enough time, can ask questions and receives a signed copy."
+        },
+        {
+          "id": "C3.07",
+          "check": "The blank form is submitted in CTIS; participant-signed forms are retained at site and are not uploaded."
+        },
+        {
+          "id": "C3.08",
+          "check": "Re-consent triggers are operational, including new safety information, a child reaching age 12 and recovery of capacity."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage checks",
+      "instruction": "Map every inclusion pathway in the protocol to a population and its document set (requirements.json population_sets) and apply the matching Netherlands population guide.",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every population named in the protocol has an appropriate Dutch document; populations are mutually exclusive within each consent stage and every inclusion pathway has its full document set.",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Participants aged 16 or older use the adult IVO pathway unless capacity or another special circumstance changes it."
+        },
+        {
+          "id": "C4.03",
+          "check": "Children under 12 receive an age-appropriate discussion sheet and their parents or guardian receive the consent information.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.04",
+          "check": "Children aged 12 through 15 receive their own information and consent document, in addition to parent or guardian consent.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.05",
+          "check": "Adults lacking capacity receive information adapted to what they can understand, with a separate legal-representative form.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.06",
+          "check": "Emergency enrolment has an authorised deferred-consent process and documents for the participant or representative at the earliest possible time.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.07",
+          "check": "A witness pathway is available only where the participant understands but cannot complete ordinary written consent.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.08",
+          "check": "Pregnancy follow-up distinguishes the trial participant from a pregnant partner who is a separate person.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.09",
+          "check": "Healthy-volunteer documents cover absence of direct benefit, compensation, restrictions and relevant washout.",
+          "applies_when": "population.healthy_volunteers"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy checks",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "The document identifies the data collected and the purpose of each use."
+        },
+        {
+          "id": "C5.02",
+          "check": "Coded or pseudonymised data is not called anonymous."
+        },
+        {
+          "id": "C5.03",
+          "check": "The controller or joint controllers and data-protection contacts are correct."
+        },
+        {
+          "id": "C5.04",
+          "check": "People who may see identifiable data are named by role."
+        },
+        {
+          "id": "C5.05",
+          "check": "The Health and Youth Care Inspectorate access statement is accurate."
+        },
+        {
+          "id": "C5.06",
+          "check": "Storage locations and fixed retention periods are clear."
+        },
+        {
+          "id": "C5.07",
+          "check": "Transfers outside the European Union are described with safeguards.",
+          "applies_when": "data.transfer_outside_eu"
+        },
+        {
+          "id": "C5.08",
+          "check": "Withdrawal language distinguishes future collection from data already lawfully collected."
+        },
+        {
+          "id": "C5.09",
+          "check": "External travel or reimbursement providers receive data only through a separate optional choice.",
+          "applies_when": "data.external_travel_provider"
+        },
+        {
+          "id": "C5.10",
+          "check": "Privacy wording matches the mandatory Dutch R1 form and the application-level GDPR statement."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological-sample and secondary-use checks",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Each sample, volume or procedure and its purpose is understandable.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.02",
+          "check": "Trial testing is separated from remaining-sample storage and future research.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.03",
+          "check": "Data and bodily material have separate optional consent choices.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.04",
+          "check": "The future-research scope is defined by condition, treatment or another understandable field.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.05",
+          "check": "The storage period is a fixed duration and does not say only 'at least' a number of years.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.06",
+          "check": "Sharing with other researchers and transfers outside the EU are explained.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.07",
+          "check": "Withdrawal explains destruction of remaining samples and treatment of results already generated.",
+          "applies_when": "samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.08",
+          "check": "Genetic analysis, artificial-intelligence analysis and commercial collaboration are described when applicable.",
+          "applies_when": "genetics.optional_dna_research or data.optional_ai_analysis or samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.09",
+          "check": "The consent text matches the Part II biological-samples form (S1).",
+          "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Netherlands-specific regulatory checks",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "The participant information and consent form submitted for review is Dutch."
+        },
+        {
+          "id": "C7.02",
+          "check": "IVO version 1.1, dated 14 August 2026, is used for a new adult (16 or older) document unless the permitted PIF transition (until 31 December 2026) is intentionally used."
+        },
+        {
+          "id": "C7.03",
+          "check": "The IVO standard text is unchanged except where the instructions allow adaptation or deletion."
+        },
+        {
+          "id": "C7.04",
+          "check": "The cover page is no more than two pages."
+        },
+        {
+          "id": "C7.05",
+          "check": "The complete IVO is no more than 4,000 words including consent form and appendices, or the excess is justified in the cover letter."
+        },
+        {
+          "id": "C7.06",
+          "check": "The text is written at B1 level and uses an accessible sans-serif font listed in the model at no less than 12 pt or 16 px."
+        },
+        {
+          "id": "C7.07",
+          "check": "The general CCMO information references required by the IVO are preserved."
+        },
+        {
+          "id": "C7.08",
+          "check": "The participant's insurance appendix is included unless an exemption was granted."
+        },
+        {
+          "id": "C7.09",
+          "check": "Planned non-Dutch enrolment has an operational translation and certification plan.",
+          "applies_when": "population.non_dutch_speakers"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administrative checks",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Every document has a unique title, version and date."
+        },
+        {
+          "id": "C8.02",
+          "check": "The CTIS filename clearly identifies the population and Dutch language."
+        },
+        {
+          "id": "C8.03",
+          "check": "The submitted consent forms contain blank participant, representative and researcher signature fields."
+        },
+        {
+          "id": "C8.04",
+          "check": "Adult consent contains participant and researcher or authorised interviewer signatures and dates."
+        },
+        {
+          "id": "C8.05",
+          "check": "Minor documents contain the correct child and parent or guardian signature blocks (both parents with parental authority, or the guardian; the 12-15 child's own signature).",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C8.06",
+          "check": "Legal-representative documents identify the representative and relationship.",
+          "applies_when": "population.adults_without_capacity or consent.emergency_enrolment"
+        },
+        {
+          "id": "C8.07",
+          "check": "Witness documents contain the required witness attestation and signature.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C8.08",
+          "check": "Version dates match the cover letter and document list."
+        },
+        {
+          "id": "C8.09",
+          "check": "Superseded or tracked-change drafts are removed from the final upload set unless a comparison is requested."
+        },
+        {
+          "id": "C8.10",
+          "check": "Correct CTIS section and title per the naming guide and requirements.json."
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version (italic notes, <angle-bracket> and [square-bracket] notes, 'Vul in'/'Kies' labels, '......' gaps, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and document-design checks",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "The first two pages answer what participation involves, why the study is being done, main risks, time, payment, insurance and withdrawal."
+        },
+        {
+          "id": "C9.02",
+          "check": "Headings are questions or statements a participant can understand."
+        },
+        {
+          "id": "C9.03",
+          "check": "Sentences are short and medical terms are explained."
+        },
+        {
+          "id": "C9.04",
+          "check": "Risk frequencies use consistent, understandable wording."
+        },
+        {
+          "id": "C9.05",
+          "check": "Long protocol lists are replaced by participant-relevant summaries."
+        },
+        {
+          "id": "C9.06",
+          "check": "Tables are used only when they simplify schedules or choices."
+        },
+        {
+          "id": "C9.07",
+          "check": "Consent choices are visually distinct and cannot be skipped by mistake."
+        },
+        {
+          "id": "C9.08",
+          "check": "Contact details are easy to find."
+        },
+        {
+          "id": "C9.09",
+          "check": "Page numbers, appendix references and cross-references are correct."
+        },
+        {
+          "id": "C9.10",
+          "check": "A Dutch lay reader from the intended population has reviewed the trial-specific wording where possible."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final package review",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "The package has been read once from the participant's perspective (comprehension and voluntariness)."
+        },
+        {
+          "id": "C10.02",
+          "check": "The package has been read once from the assessor's perspective (traceability to the protocol, national forms and CTIS categories)."
+        },
+        {
+          "id": "C10.03",
+          "check": "The document list has been compared against the Netherlands Part II document checklist."
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "title": "Population guide final checks",
+      "instruction": "Final checks of the Netherlands population guides; apply the items whose population is in the plan.",
+      "items": [
+        {
+          "id": "C11.01",
+          "check": "Healthy volunteers (NL-HV): IVO used (or the PIF transition intentionally); no direct medical benefit implied; risks and uncertainty match the dose and available human exposure (first-in-human or first dose, formulation or combination stated); screening and confinement burden, total blood volume and worst realistic time commitment complete; restrictions have clear start and end points; washout and any research-participation register check explained; pregnancy-prevention wording matches the protocol; compensation (gross amount or calculation, schedule, partial payment, tax) matches P1 and is not coercive or tied to optional choices; insurance wording matches the certificate or exemption; contacts cover urgent symptoms during and after confinement.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C11.02",
+          "check": "Minors (NL-MINORS): every minor population has a Dutch age-appropriate document; the under-12 discussion sheet and 12-15 information sheet use the official CCMO models where applicable; both parents with parental authority, or the guardian, are correctly identified; the 12-15 child signature is not omitted; resistance language (consent lapses if the minor resists) appears in the parent consent declaration; the protocol explains how resistance is recognised and handled; re-consent at 12 is scheduled; turning 16 is handled per CCMO (no new consent solely for age); optional future use does not affect participation and an older child's own decision is not bypassed; risks, procedures and pregnancy language fit the child's age.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C11.03",
+          "check": "Adults lacking capacity (NL-CAPACITY): inclusion justified under the protective Dutch and EU conditions; capacity assessed for this decision, not inferred from diagnosis; the participant receives understandable Dutch information; the representative receives the full Dutch information and consent form; the Dutch representative order and authority are documented; objection and withdrawal are respected; optional choices separate from participation and no broader than the participant could have given; signatures identify the representative, relationship and researcher; reassessment and own re-consent planned if capacity changes; emergency enrolment not used outside an authorised Article 35 pathway.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C11.04",
+          "check": "Emergency (NL-EMERGENCY): every Article 35 condition answered; emergency directly related to the trial question; therapeutic window medically justified; prior objection checked and respected; K1 section 6 complete; participant and representative Dutch documents explain prior enrolment, what already happened and what remains; new collection stops after refusal; data-retention wording matches current EU and Dutch guidance (data lawfully gathered under Article 35 remain); death before consent addressed in the protocol; the pathway is not used when ordinary prior consent is possible.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C11.05",
+          "check": "Impartial witness (NL-WITNESS): the participant or representative has capacity; the need is inability to complete ordinary written consent (write, sign or read); accessible Dutch information available; translation or interpreter need handled separately; K1 section 5 complete; witness independent and present throughout; alternative recording method authorised and privacy-protective; the participant's own decision stays visible; witness attestation, witness signature and researcher signature included; an accessible copy given.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C11.06",
+          "check": "Pregnancy (NL-PREGNANCY): participant and partner pathways separate; original consent scope reviewed before adding a form; the pregnant partner consents before direct follow-up; maternal, outcome and infant data limited to the stated purpose; medical-record access and professional contact explicit; follow-up duration, end point and contact frequency defined; privacy covers everyone whose data is collected; optional samples and future use have separate choices; insurance language matches the authorised coverage (harm to an unborn child may not be covered in an unrelated trial); CCMO is the reviewing committee where pregnant or breastfeeding participants are enrolled.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or population.pregnant_or_breastfeeding"
+        },
+        {
+          "id": "C11.07",
+          "check": "Secondary use (NL-SECONDARY): core and optional future use separated; data and bodily material have different Yes/No choices; refusal does not affect participation, payment or care; research field and allowed users understandable; genetic, AI and commercial use explicit where applicable; storage period fixed and location named; coded material not called anonymous; EU and non-EU sharing described; IVO, protocol, R1 and S1 agree; withdrawal explains destruction of remaining samples and limits for prior data and results; age, capacity and re-consent changes planned; a separate secondary-use ICF stays linked to the main L1.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    }
+  ]
+}

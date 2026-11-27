@@ -1,0 +1,314 @@
+{
+  "id": "PT-CHECK",
+  "name": "Portugal: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/portugal/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or another party are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language is Portuguese or English; signed and dated where the Portugal checklist requires it (M1, M2, N1 site declaration, service authorisation, O1), unsigned otherwise unless CEIC asks."
+    },
+    {
+      "id": "X.05",
+      "check": "CTIS title follows the naming guide and requirements.json."
+    },
+    {
+      "id": "X.06",
+      "check": "Site names, investigators, team functions and participant estimates consistent across CTIS, CV, site declaration and financial documents."
+    }
+  ],
+  "by_document": {
+    "PT-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the current EudraLex recruitment and informed-consent procedure template."
+      },
+      {
+        "id": "K1.02",
+        "check": "Explains who identifies potential participants, who makes the first contact, whether medical records are reviewed before contact, what pre-screening data are collected and how undue influence is avoided."
+      },
+      {
+        "id": "K1.03",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed with the Portuguese rules (national_fields), each 'no' section gives the not-applicable answer."
+      },
+      {
+        "id": "K1.04",
+        "check": "Minors section: Law No 9/2026 assent at 16 and 17 and for capable children under 16, written assent at 16, own consent at 18, representative authority verified, no universal two-parent rule.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.05",
+        "check": "Incapacitated adults section: representative definition and verification, no prior consent or refusal before incapacity, adapted information, objection respected, re-consent on regained capacity.",
+        "applies_when": "population.adults_without_capacity"
+      },
+      {
+        "id": "K1.06",
+        "check": "Institutional-placement exception described and justified.",
+        "applies_when": "population.institutional_placement"
+      },
+      {
+        "id": "K1.07",
+        "check": "Emergency section: every condition of Law No 9/2026 Article 8(3) and Article 35 CTR, who confirms them, what is recorded, timing and who conducts subsequent consent.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.08",
+        "check": "Witness section: trigger limited to inability to write; impartiality and selection; interpreter role separate.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.09",
+        "check": "Recruitment routes and first act of recruitment match the recruitment material (K2) and the protocol."
+      }
+    ],
+    "PT-M1": [
+      {
+        "id": "M1.01",
+        "check": "One current CV per principal investigator at each Portuguese site, on the EudraLex template or equivalent."
+      },
+      {
+        "id": "M1.02",
+        "check": "Shows relevant education, clinical-trial experience and ability to conduct the protocol; GCP information present or a separate GCP certificate planned (PT-M-GCP)."
+      },
+      {
+        "id": "M1.03",
+        "check": "Signed and dated by the investigator before submission."
+      },
+      {
+        "id": "M1.04",
+        "check": "Only trial fields were prepared by the assistant; personal details come from the investigator."
+      },
+      {
+        "id": "M1.05",
+        "check": "Site name and investigator identity match CTIS, the site declaration and the financial documents."
+      }
+    ],
+    "PT-M2-DOI": [
+      {
+        "id": "M2.01",
+        "check": "One declaration per principal investigator and site, on the EudraLex template."
+      },
+      {
+        "id": "M2.02",
+        "check": "Signed and dated by the investigator before submission."
+      },
+      {
+        "id": "M2.03",
+        "check": "Only trial title and EU trial number were prepared by the assistant."
+      }
+    ],
+    "PT-M-GCP": [
+      {
+        "id": "GCP.01",
+        "check": "A GCP certificate is present when the CV does not sufficiently document GCP competence or the Portuguese checklist requests it."
+      },
+      {
+        "id": "GCP.02",
+        "check": "Certificate names the investigator and is current for the role."
+      }
+    ],
+    "PT-N1": [
+      {
+        "id": "N1.01",
+        "check": "One declaration per Portuguese site on the EudraLex form, with the national site detail: infrastructure, equipment, human resources, expected recruitment and ability to perform this protocol."
+      },
+      {
+        "id": "N1.02",
+        "check": "Pharmaceutical services and the IMP circuit (receipt, storage, preparation, dispensing, return, destruction) are covered or referenced to PT-N-PHARMACY."
+      },
+      {
+        "id": "N1.03",
+        "check": "Any external facility is identified with the reason it is needed.",
+        "applies_when": "sites.external_facilities"
+      },
+      {
+        "id": "N1.04",
+        "check": "Site name, principal investigator and planned participant number match CTIS, the CV and the financial documents; site fields were left for the site, not invented."
+      },
+      {
+        "id": "N1.05",
+        "check": "Signed and dated at submission by the correct signatory (CEIC checklist: Director of Service)."
+      }
+    ],
+    "PT-N-SERVICE": [
+      {
+        "id": "NS.01",
+        "check": "Authorisation to conduct the trial in the service and for the composition of the research team is present for each site."
+      },
+      {
+        "id": "NS.02",
+        "check": "Authored, signed and dated by the Director of Service."
+      },
+      {
+        "id": "NS.03",
+        "check": "Team composition and functions match N1 and the financial arrangements (P2)."
+      }
+    ],
+    "PT-N-PHARMACY": [
+      {
+        "id": "NP.01",
+        "check": "Declaration from the pharmaceutical services present for each site."
+      },
+      {
+        "id": "NP.02",
+        "check": "IMP circuit describes control of receipt, storage, preparation, dispensing, return and destruction, consistent with the protocol and pharmacy manual."
+      }
+    ],
+    "PT-N-COORDINATOR": [
+      {
+        "id": "NC.01",
+        "check": "Employment, authority, confidentiality and institutional-agreement evidence for the external study coordinator, as requested in the CEIC checklist."
+      }
+    ],
+    "PT-N-EXTERNAL": [
+      {
+        "id": "NE.01",
+        "check": "External facility identified, need explained and described in the site declaration."
+      },
+      {
+        "id": "NE.02",
+        "check": "Licensing evidence provided where applicable."
+      },
+      {
+        "id": "NE.03",
+        "check": "Insurance cover extended to the facility (O1)."
+      },
+      {
+        "id": "NE.04",
+        "check": "Relevant financial agreement provided (P2)."
+      }
+    ],
+    "PT-O1": [
+      {
+        "id": "O1.01",
+        "check": "Certificate identifies the trial, insurer, insured party, policy number, type of insurance, coverage and validity."
+      },
+      {
+        "id": "O1.02",
+        "check": "Dated and signed by the insurer and valid at submission."
+      },
+      {
+        "id": "O1.03",
+        "check": "Cover valid during the trial and for 12 months after the last participant completes the study in Portugal (or any longer period set by CEIC)."
+      },
+      {
+        "id": "O1.04",
+        "check": "Covers every Portuguese site and applicable external facility."
+      },
+      {
+        "id": "O1.05",
+        "check": "Insurance wording in the PIS and ICF matches the certificate."
+      }
+    ],
+    "PT-O2": [
+      {
+        "id": "O2.01",
+        "check": "Low-intervention trial with evidence that existing civil-liability insurance covers the statutory damage; CEIC acceptance obtained or requested."
+      }
+    ],
+    "PT-P2": [
+      {
+        "id": "P2.01",
+        "check": "One financial-arrangements document per site: final contract, agreed contract model or a document with the mandatory minimum information (CEIC guidance, 24 August 2022)."
+      },
+      {
+        "id": "P2.02",
+        "check": "A definitive contract identifies sponsor, site, principal investigator and any other party and is signed by all parties before it takes effect."
+      },
+      {
+        "id": "P2.03",
+        "check": "Remuneration and functions of the research team consistent with the site declaration; site costs, investigator payments, participant expenses or compensation and external providers addressed."
+      },
+      {
+        "id": "P2.04",
+        "check": "Free supply of IMP, auxiliary medicines, administration devices and protocol-only consultations or tests, and the post-trial continuation pathway, consistent with the participant information."
+      }
+    ],
+    "PT-P1": [
+      {
+        "id": "P1.01",
+        "check": "Amounts, calculation, payment schedule and conditions described."
+      },
+      {
+        "id": "P1.02",
+        "check": "No completion bonus or payment structure that could pressure a participant to remain; prorating after withdrawal stated."
+      },
+      {
+        "id": "P1.03",
+        "check": "Amounts and conditions identical in P1, P2 and every participant document."
+      }
+    ],
+    "PT-Q-FEE": [
+      {
+        "id": "Q.01",
+        "check": "No unsupported payment document uploaded; the CTIS contact who receives the electronic fee links is correct."
+      },
+      {
+        "id": "Q.02",
+        "check": "Fee paid or exemption processed through the electronic process after submission, following current CEIC and INFARMED instructions."
+      }
+    ],
+    "PT-R1": [
+      {
+        "id": "R1.01",
+        "check": "GDPR-compliance statement submitted in the CTIS Form section and covering the Portuguese trial activities; no Part II duplicate unless decided (DECISIONS.md D2)."
+      },
+      {
+        "id": "R1.02",
+        "check": "Portuguese-law sentence (Law No 58/2019) present if chosen, and consistent with the participant privacy wording."
+      },
+      {
+        "id": "R1.03",
+        "check": "Sponsor name, role and date fields completed from the sources, not invented."
+      }
+    ],
+    "PT-S1": [
+      {
+        "id": "S1.01",
+        "check": "Current EudraLex biological-samples template used; new and archive sample sections match the protocol and sample plan; at least one is completed."
+      },
+      {
+        "id": "S1.02",
+        "check": "Collection, purpose, storage location, coding or anonymisation, duration, recipients and optional future use match the participant documents and R1."
+      },
+      {
+        "id": "S1.03",
+        "check": "Section 5 contains the Portugal-specific information (Law No 12/2005, Decree-Law No 131/2014, Law No 58/2019 Article 31) rather than a generic statement."
+      },
+      {
+        "id": "S1.04",
+        "check": "Future use answered consistently with the separate future-use document or section.",
+        "applies_when": "samples.future_use_outside_protocol"
+      },
+      {
+        "id": "S1.05",
+        "check": "Biobank or collection transfers: consented purpose and approval of the responsible ethics committees addressed.",
+        "applies_when": "samples.biobank_or_repository"
+      }
+    ]
+  }
+}

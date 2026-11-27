@@ -1,0 +1,447 @@
+{
+  "id": "PT-QC-PARTICIPANT",
+  "name": "Portugal: participant-facing document QC",
+  "applies_to": [
+    "PT-L1",
+    "PT-L2",
+    "PT-K2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/portugal/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); C3.09-C3.10 from the patient information and healthy-volunteer guides; C8.10-C8.11 from the naming guide and conventions/template-instructions.md",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Study title, short title, EU trial number, sponsor, site and principal investigator are correct and match CTIS."
+        },
+        {
+          "id": "C1.02",
+          "check": "Medicine name, formulation, dose, route and schedule are described consistently and at an appropriate level for participants."
+        },
+        {
+          "id": "C1.03",
+          "check": "Purpose, phase and experimental status are accurate."
+        },
+        {
+          "id": "C1.04",
+          "check": "Randomisation, blinding, placebo and comparator information is correct.",
+          "applies_when": "randomised, blinded, placebo or comparator design"
+        },
+        {
+          "id": "C1.05",
+          "check": "Visit frequency, treatment duration, follow-up and total participation time are correct."
+        },
+        {
+          "id": "C1.06",
+          "check": "All participant procedures, samples, questionnaires, digital tools and record reviews are described."
+        },
+        {
+          "id": "C1.07",
+          "check": "Standard-care procedures are distinguished from procedures that occur only because of the trial."
+        },
+        {
+          "id": "C1.08",
+          "check": "Alternatives to participation are described without steering the decision."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency",
+      "instruction": "Compare with the protocol, IB or SmPC, schedule of activities, sample plan, data flow, insurance and financial documents.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Every protocol procedure and risk maps to the relevant participant document."
+        },
+        {
+          "id": "C2.02",
+          "check": "The schedule of activities is reconciled with the visit table, diaries and appointment information."
+        },
+        {
+          "id": "C2.03",
+          "check": "Pregnancy testing, contraception, breastfeeding and donation restrictions are reconciled with the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.04",
+          "check": "Sample type, volume, frequency, storage, testing and future use are reconciled with the protocol and sample plan.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C2.05",
+          "check": "Remote visits, home nursing, direct-to-participant shipment and electronic consent are reconciled where used.",
+          "applies_when": "any decentralised element or consent.electronic"
+        },
+        {
+          "id": "C2.06",
+          "check": "Stopping rules, rescue treatment, safety follow-up and post-trial access are reconciled."
+        },
+        {
+          "id": "C2.07",
+          "check": "No recruitment claim overstates likely benefit or understates burden.",
+          "applies_when": "recruitment.material_used"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "Main-trial consent is separate from optional future research, extra sampling, genetic testing and biobanking."
+        },
+        {
+          "id": "C3.02",
+          "check": "Each optional activity has its own yes and no choice."
+        },
+        {
+          "id": "C3.03",
+          "check": "The document states that refusing an optional activity does not affect main-trial participation."
+        },
+        {
+          "id": "C3.04",
+          "check": "The person signing has legal authority for that decision."
+        },
+        {
+          "id": "C3.05",
+          "check": "A pregnant partner whose data or records will be collected has a separate consent.",
+          "applies_when": "pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C3.06",
+          "check": "An impartial witness is not treated as a legally authorised representative.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C3.07",
+          "check": "Withdrawal is explained separately for treatment, follow-up, data and stored samples."
+        },
+        {
+          "id": "C3.08",
+          "check": "No promise of deletion of records that must be retained for trial integrity or legal compliance."
+        },
+        {
+          "id": "C3.09",
+          "check": "The main decision to participate is clear and unambiguous and the consent declaration is short, with the explanation in the information section (PT-ICF)."
+        },
+        {
+          "id": "C3.10",
+          "check": "Consent is obtained before any trial-specific screening procedure; pre-screening that collects health data beyond normal recruitment is explained and permission obtained first (PT-HV)."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "instruction": "Confirm whether the trial needs each Portugal-specific variation (requirements.json population_sets).",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its full Portuguese document set (main, representative, age-adapted, re-consent and other templates that apply).",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Healthy volunteers: no expected therapeutic benefit; first-exposure uncertainty; total blood volume and confinement; restrictions and washout; payment separate from expense reimbursement and prorated after withdrawal; screening-data and sample handling.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.03",
+          "check": "Minors: representative information and consent, plus age-appropriate information and an assent pathway; a capable child under 16 is asked for assent; ages 16 and 17 assent in addition to representative consent; written assent when a participant reaches 16; own written informed consent when a participant reaches 18; refusal and dissent respected; representative authority verified.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.04",
+          "check": "Adults unable to consent: legal-representative pathway and the EU protective conditions apply; information adapted to capacity; participant objection respected; direct written re-consent planned if capacity returns.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.05",
+          "check": "Institutional or protective placement is addressed only under the Portuguese statutory exception (minors: treating-physician attestation; adults: coordination with the treating physician, investigator participation, CEIC approval).",
+          "applies_when": "population.institutional_placement"
+        },
+        {
+          "id": "C4.06",
+          "check": "Emergency enrolment: every Portuguese and EU condition stated; subsequent-consent forms for all likely pathways (participant, representative, regained capacity, minors); consent sought as soon as possible; later refusal stops prospective research.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.07",
+          "check": "Impartial witness: the person has capacity and cannot write; reason documented without stigmatising language; alternative consent method recorded; separate witness, interviewer and participant or representative fields; interpreter identified separately.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.08",
+          "check": "Pregnancy follow-up: pregnant participant and pregnant partner pathways separate; maternal and infant permissions distinguished; record access specific; contact does not reveal unnecessary participant information.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.09",
+          "check": "Secondary and future use: optional, separate decision with distinct choices; Portuguese information on defined research areas and recipients.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Controller or joint controllers identified correctly."
+        },
+        {
+          "id": "C5.02",
+          "check": "Purposes, data categories, coded identifiers and recipients described accurately."
+        },
+        {
+          "id": "C5.03",
+          "check": "Who may review source medical records, and why, is explained."
+        },
+        {
+          "id": "C5.04",
+          "check": "International transfers and safeguards identified.",
+          "applies_when": "data.transfer_outside_eea"
+        },
+        {
+          "id": "C5.05",
+          "check": "Retention periods or clear retention criteria stated."
+        },
+        {
+          "id": "C5.06",
+          "check": "Usable privacy and data-protection contacts provided."
+        },
+        {
+          "id": "C5.07",
+          "check": "Participant rights described with any trial-law limits."
+        },
+        {
+          "id": "C5.08",
+          "check": "Wording aligned with the sponsor's GDPR statement submitted in CTIS and Law No 58/2019."
+        },
+        {
+          "id": "C5.09",
+          "check": "Electronic tools, vendors and remote monitoring described when they change the participant experience or data flow.",
+          "applies_when": "electronic tools, vendors or remote monitoring used"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological samples and secondary use",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Every sample and collection time point identified.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.02",
+          "check": "Primary-trial purpose stated separately from optional future use.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.03",
+          "check": "Storage institution and location identified.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.04",
+          "check": "States whether samples are coded, identifiable or irreversibly anonymised.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.05",
+          "check": "Storage duration or a justified criterion stated.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.06",
+          "check": "Genetic testing and possible incidental findings explained.",
+          "applies_when": "genetic testing planned"
+        },
+        {
+          "id": "C6.07",
+          "check": "Transfers to other institutions or countries explained.",
+          "applies_when": "samples transferred to other institutions or countries"
+        },
+        {
+          "id": "C6.08",
+          "check": "Withdrawal and destruction rights explained without overpromising.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.09",
+          "check": "The Part II biological-sample template (S1) matches the participant wording.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.10",
+          "check": "A repository or biobank consent includes the additional information required by Portuguese law (bank purposes and responsible body, kinds of research, risks and benefits, storage conditions and duration, privacy measures, communication of results).",
+          "applies_when": "samples.biobank_or_repository"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Portugal-specific regulatory checks",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "Participant documents and recruitment materials are in Portuguese (or a CEIC exceptional language waiver is documented)."
+        },
+        {
+          "id": "C7.02",
+          "check": "The protocol synopsis is in Portuguese (Part I)."
+        },
+        {
+          "id": "C7.03",
+          "check": "The CEIC adult ICF model is treated as optional guidance, not a fixed mandatory form."
+        },
+        {
+          "id": "C7.04",
+          "check": "Every patient card, leaflet, guide, brochure, instruction, questionnaire and appointment document has been included."
+        },
+        {
+          "id": "C7.05",
+          "check": "Insurance wording matches the valid policy and the Portuguese damage-compensation route (presumption period during participation and the following year, or longer if set by CEIC)."
+        },
+        {
+          "id": "C7.06",
+          "check": "Trial medicines, auxiliary medicines, administration devices and protocol-only procedures are described as free to participants."
+        },
+        {
+          "id": "C7.07",
+          "check": "Post-trial medicine wording matches the Portuguese continuation rule and the financial agreement, without promising unsupported access."
+        },
+        {
+          "id": "C7.08",
+          "check": "Reimbursement and compensation match the Part II financial arrangements (P1, P2)."
+        },
+        {
+          "id": "C7.09",
+          "check": "Site and contact details match the site-suitability documentation."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administrative checks",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "The submitted PIS, ICF and assent forms are blank."
+        },
+        {
+          "id": "C8.02",
+          "check": "Every document has a unique title, version and date."
+        },
+        {
+          "id": "C8.03",
+          "check": "Headers, footers and page numbers are consistent."
+        },
+        {
+          "id": "C8.04",
+          "check": "Signature blocks identify the participant, representative, interviewer and witness only when applicable."
+        },
+        {
+          "id": "C8.05",
+          "check": "Separate signature and date fields for each required signatory."
+        },
+        {
+          "id": "C8.06",
+          "check": "The participant receives a copy of the signed consent form."
+        },
+        {
+          "id": "C8.07",
+          "check": "Re-consent triggers are defined for new information, amended documents and changes in age or capacity."
+        },
+        {
+          "id": "C8.08",
+          "check": "CTIS metadata and filenames match the visible document version."
+        },
+        {
+          "id": "C8.09",
+          "check": "Superseded versions are not included as current documents."
+        },
+        {
+          "id": "C8.10",
+          "check": "Correct CTIS section and naming convention (playbook/naming.md)."
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version (template text boxes, editorial notes, comprehension-check questions, italic notes, [bracket] notes, ........... gaps, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and Portuguese language checks",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Natural European Portuguese regulatory and clinical terms."
+        },
+        {
+          "id": "C9.02",
+          "check": "No literal translation of protocol language."
+        },
+        {
+          "id": "C9.03",
+          "check": "Technical terms defined at first use."
+        },
+        {
+          "id": "C9.04",
+          "check": "Short paragraphs, active sentences and descriptive headings."
+        },
+        {
+          "id": "C9.05",
+          "check": "Risks presented by likelihood and seriousness when reliable information supports it."
+        },
+        {
+          "id": "C9.06",
+          "check": "Neutral language; no promotional claims."
+        },
+        {
+          "id": "C9.07",
+          "check": "Age-specific assent documents suitable for the intended child or adolescent.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C9.08",
+          "check": "Fonts, spacing, contrast, tables and form fields checked for accessibility."
+        },
+        {
+          "id": "C9.09",
+          "check": "Translated text, numbers, units, dates and contact details were not altered."
+        },
+        {
+          "id": "C9.10",
+          "check": "Independent proofreading by a qualified Portuguese reviewer completed."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final approval check",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "Side-by-side review of the protocol, CTIS data, PIS and ICF, recruitment procedure (K1), insurance (O1), financial arrangements (P1, P2), GDPR statement (R1) and biological-sample template (S1) completed; each discrepancy and its resolution recorded."
+        }
+      ]
+    }
+  ]
+}

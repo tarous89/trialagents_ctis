@@ -1,0 +1,239 @@
+{
+  "id": "PT-PACKAGE",
+  "name": "Portugal: Part II package and CTIS upload check",
+  "applies_to": "the Portugal package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/portugal/en/part-ii-document-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "https://trialagents.com/ctis/eu/ctis-transparency-redaction-guide"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "K1 recruitment and informed-consent procedure on the current EudraLex template, with a section for every population pathway in the plan."
+        },
+        {
+          "id": "P1.02",
+          "check": "K2 recruitment material present for every recruitment item, each identified by title, version and date.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.03",
+          "check": "One Portuguese L1 information and consent set per population in population_sets whose trigger is true, including assent, written age-16 assent and adult re-consent documents where applicable."
+        },
+        {
+          "id": "P1.04",
+          "check": "Every other participant-facing item (patient cards, instructions, visit schedules, diaries, questionnaires, guides, brochures, appointment information) present in Portuguese.",
+          "applies_when": "recruitment.other_information_material or endpoint_documents.participant_facing"
+        },
+        {
+          "id": "P1.05",
+          "check": "For every Portuguese site: M1 CV (current, signed, dated), M2 declaration of interests (signed, dated), GCP certificate where needed, N1 site declaration with national detail, service and research-team authorisation, pharmaceutical-services declaration and IMP circuit."
+        },
+        {
+          "id": "P1.06",
+          "check": "External study coordinator evidence.",
+          "applies_when": "sites.external_study_coordinator"
+        },
+        {
+          "id": "P1.07",
+          "check": "External facility documentation, including licensing, insurance extension and financial agreement.",
+          "applies_when": "sites.external_facilities"
+        },
+        {
+          "id": "P1.08",
+          "check": "O1 insurer-signed certificate valid at submission, covering every site and external facility, valid during the trial and 12 months after the last participant in Portugal.",
+          "applies_when": "not (trial.low_intervention and CEIC dispensation accepted)"
+        },
+        {
+          "id": "P1.09",
+          "check": "O2 evidence of existing civil-liability cover and CEIC acceptance of the dispensation.",
+          "applies_when": "trial.low_intervention and insurance.low_intervention_dispensation_sought"
+        },
+        {
+          "id": "P1.10",
+          "check": "P2 financial arrangements for each site (final contract, agreed model or minimum-information document)."
+        },
+        {
+          "id": "P1.11",
+          "check": "P1 reimbursement and compensation description.",
+          "applies_when": "payment.participant_reimbursement_or_compensation"
+        },
+        {
+          "id": "P1.12",
+          "check": "Fee handled through the electronic process after submission; no unsupported payment document uploaded."
+        },
+        {
+          "id": "P1.13",
+          "check": "GDPR-compliance statement in the CTIS Form section covering the Portuguese trial activities (or R1 under Part II if decided)."
+        },
+        {
+          "id": "P1.14",
+          "check": "S1 biological-samples template with Portugal-specific information, consistent with the protocol, participant information and any future-use document.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "P1.15",
+          "check": "Portuguese protocol synopsis planned with Part I."
+        },
+        {
+          "id": "P1.16",
+          "check": "Documents not required by the Clinical Trials Regulation or Portuguese guidance removed."
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "All participant-facing material and the protocol synopsis are in Portuguese (or a CEIC exceptional waiver is documented)."
+        },
+        {
+          "id": "P2.02",
+          "check": "Other dossier documents are in Portuguese or English."
+        },
+        {
+          "id": "P2.03",
+          "check": "Investigator CV and declaration of interests, site declaration, service authorisation and insurer certificate are signed and dated where required."
+        },
+        {
+          "id": "P2.04",
+          "check": "No participant, representative, witness or interviewer signatures in the submitted K and L documents; blank consent forms are not pre-signed."
+        },
+        {
+          "id": "P2.05",
+          "check": "Language waiver justification submitted to CEIC.",
+          "applies_when": "population.non_portuguese_speakers"
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Site names, investigators, team functions and participant estimates identical in CTIS, M1, N1, the service authorisation and P2."
+        },
+        {
+          "id": "P3.02",
+          "check": "The site declaration includes pharmacy and investigational-product circuit information."
+        },
+        {
+          "id": "P3.03",
+          "check": "Insurer, policy, cover and damage-compensation wording identical in O1 and every participant document; cover includes every Portuguese site and applicable external facility."
+        },
+        {
+          "id": "P3.04",
+          "check": "Reimbursement and compensation identical in P1, P2 and every participant document."
+        },
+        {
+          "id": "P3.05",
+          "check": "Free supply of trial medicines and procedures and the post-trial continuation pathway consistent in P2 and the participant documents."
+        },
+        {
+          "id": "P3.06",
+          "check": "Data flows, recipients, transfers and retention identical in the GDPR statement, the participant documents and the protocol."
+        },
+        {
+          "id": "P3.07",
+          "check": "Sample types, storage, transfers and retention identical in S1, the protocol and the participant documents.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "P3.08",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.09",
+          "check": "Documents adapted from the reference package contain all Portuguese national additions and no leftovers from the reference country.",
+          "applies_when": "Portugal is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B-S section prefix and CTIS placeholder for each document."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document."
+        },
+        {
+          "id": "P4.03",
+          "check": "Every document title, version and date confirmed against CTIS; version and date in CTIS metadata, not in the title."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.07",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Portugal receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (revised CTIS transparency rules; ACT EU guidance v2.2, 30 April 2026)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material; signatures never disclosed."
+        },
+        {
+          "id": "P5.03",
+          "check": "CCI redaction only after both tests: not in the public domain, and disclosure would undermine a legitimate economic interest."
+        },
+        {
+          "id": "P5.04",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

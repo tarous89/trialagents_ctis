@@ -1,0 +1,1058 @@
+{
+  "country": "SE",
+  "name": "Sweden",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "Läkemedelsverket (Swedish Medical Products Agency): competent authority",
+    "ethics": "Etikprövningsmyndigheten (Swedish Ethical Review Authority) performs the ethical review. The sponsor does not submit a separate clinical trial ethics application outside CTIS.",
+    "biobank": "When biological samples fall within the Biobank Act (2023:38), a Regional Biobank Centre may contribute to the review and a separate biobank process may be needed in parallel (Biobank Sweden).",
+    "fee": "Follow the current Läkemedelsverket instructions for the fee-related document and invoicing information placed in CTIS (SE-FEE); prepared in Swedish unless the authority form specifies otherwise.",
+    "consent_professional_role": "HSLF-FS 2021:109: a licensed physician or licensed dentist conducts the Article 29 interview and obtains consent; Läkemedelsverket can permit another healthcare professional for special reasons justified in the protocol."
+  },
+  "language_rules": {
+    "participant_documents": "sv",
+    "administrative_documents": [
+      "sv"
+    ],
+    "rule": "Swedish law (Medical Products Ordinance 2015:458) requires the information corresponding to Annex I points 59 to 73 to be in Swedish, and the protocol synopsis under point 24 (Part I) too. Participant-facing information, recruitment material and participant-directed questionnaires are Swedish. Do not rely on an English multinational Part II set.",
+    "insurance": "The description of the Swedish insurance arrangement is in Swedish; an insurer-issued certificate in English may be attached where accepted by the authority guidance (SE-O1, SE-O2).",
+    "fee": "Swedish unless the authority form itself specifies otherwise (SE-FEE).",
+    "gdpr_forms_section": "An English GDPR statement in the CTIS Form section does not replace the Swedish Part II R1 item.",
+    "multinational": "Maintain master content centrally and create a controlled Swedish country version for every affected document. Do not submit both Swedish and English versions of the same document simply because both exist internally when only one is requested.",
+    "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in Swedish. Their fixed text is English; whether the Läkemedelsverket Swedish templates must be used for a fully Swedish document is DECISIONS.md D1.",
+    "by_language": {
+      "sv": [
+        "SE-K1",
+        "SE-K2",
+        "SE-L1",
+        "SE-L2",
+        "SE-M1",
+        "SE-M2-DOI",
+        "SE-N1",
+        "SE-O1",
+        "SE-O2",
+        "SE-P1",
+        "SE-FEE",
+        "SE-R1",
+        "SE-S1"
+      ],
+      "en": [
+        "SE-O1",
+        "SE-O2"
+      ]
+    },
+    "by_language_note": "en only for an insurer-issued certificate or coverage document where accepted; every other document Swedish only.",
+    "drafting_notes_language": "drafting_notes_sv for every document."
+  },
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.minors_15_17_own_consent",
+    "population.minors_under_6",
+    "population.adults_without_capacity",
+    "population.compulsory_psychiatric_care",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "consent.non_physician_consent_taker",
+    "recruitment.procedure_fully_in_protocol",
+    "recruitment.material_used",
+    "recruitment.other_information_material",
+    "endpoint_documents.participant_facing",
+    "decentralised.elements",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.biobank_act_applies",
+    "samples.future_use_outside_protocol",
+    "data.future_use_outside_protocol",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "pregnancy.pregnant_or_breastfeeding_enrolled",
+    "trial.non_therapeutic",
+    "trial.multinational",
+    "insurance.other_coverage",
+    "fee.national_process",
+    "sites.count"
+  ],
+  "study_facts_note": "Keys not in playbook/planning.md section 2 (Sweden-specific): population.minors_15_17_own_consent (minors 15-17 who understand what participation means), population.minors_under_6, population.compulsory_psychiatric_care (persons under compulsory or forensic psychiatric care; excluded from non-therapeutic trials), consent.non_physician_consent_taker (Läkemedelsverket exception), recruitment.procedure_fully_in_protocol (K1 exemption), decentralised.elements, samples.biobank_act_applies, pregnancy.pregnant_or_breastfeeding_enrolled (Article 33), trial.non_therapeutic, trial.multinational, insurance.other_coverage (O2), fee.national_process (SE-FEE).",
+  "documents": [
+    {
+      "id": "SE-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements_SE_sv",
+      "name_en": "Recruitment and informed consent procedure",
+      "requirement": "mandatory",
+      "unless": "recruitment.procedure_fully_in_protocol (the required information is already in the protocol; DECISIONS.md D2)",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "sv"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "European Commission Recruitment and Informed Consent Procedure template v2.0 (adopted January 2026); applies to new Part II submissions from 1 September 2026. Läkemedelsverket also lists a Swedish recruitment and consent procedure template; use of the exact EU or Swedish template format is recommended (Commission Sweden overview).",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "national_template": "Läkemedelsverket Swedish recruitment and consent procedure template (not supplied; DECISIONS.md D1).",
+      "signature_at_submission": false,
+      "content": "Describe how potential participants are identified and what constitutes the first act of recruitment in Sweden, and the consent procedure, covering the current v2.0 fields and the Sweden-specific requirements in Swedish. Reference to protocol sections (with protocol version) is allowed. Annex I point 62 expects the emergency consent procedure and the impartial-witness procedure to be described where those pathways apply.",
+      "national_fields": {
+        "v105": "Sweden: recruitment advertisements and all participant-facing material are in Swedish (Läkemedelsverket); describe the first act of recruitment in Sweden.",
+        "v108": "Sweden: written consent, dated and signed by the participant (or the legally designated representative) and by the person who gives the information. Under HSLF-FS 2021:109 the person responsible for obtaining informed consent also conducts the Article 29 interview; the normal rule is a licensed physician or licensed dentist. Another healthcare professional only where Läkemedelsverket permits it for special reasons, justified in the protocol. The signed consent and written information are retained at the site; a copy goes to the participant or representative.",
+        "v110": "Sweden: the legally designated representative is a god man or förvaltare appointed under the Parental Code (föräldrabalken) whose authority covers the person's personal matters. Separate Swedish information and consent for the representative and information adapted to the participant's ability to understand; the participant is involved as far as possible and an explicit wish to refuse or withdraw is respected; no incentives beyond compensation for expenses and loss of earnings; describe how capacity is reassessed and how the participant moves to own consent when able.",
+        "v113": "Sweden: a participant who turns 15 during the trial and understands what participation means gives explicit own informed consent before continued participation. A participant who has given valid own consent after age 15 does not need new consent solely because they turn 18 during the same trial (Läkemedelsverket); a protocol amendment or new risk information may still require re-consent.",
+        "v114": "Sweden: the guardians (vårdnadshavare) are the legally designated representatives of a minor; where there are two guardians both sign and date before any study-related procedure, not necessarily at the same time; in an urgent situation the absent guardian's consent may be transmitted digitally (for example by email) with subsequent confirmation of the original consent, which is not Article 35 emergency enrolment. A minor who has turned 15 and understands what participation means also gives own informed consent (Medicinal Products Act 2015:315 as amended by SFS 2026:497). Minors under 15 receive information adapted to age and mental maturity from an investigator or trial-team member trained or experienced in working with children; an explicit refusal by a minor able to form an opinion is respected.",
+        "v117": "Sweden: the impartial-witness route applies only when a participant able to decide cannot write or cannot sign; not for interpreter needs, limited health literacy or a site's wish for a second signature. At least one witness independent of the trial is present; describe how the witness is selected, what the witness observes, which document the witness dates and signs, how the investigator documents the reason and how the participant receives a copy.",
+        "v121": "Sweden: all Article 35 conditions. Consent for continued participation is sought as soon as possible. For minors and adults without capacity, inform the participant and the legally designated representative as soon as possible and obtain the representative's consent; for others, inform the participant or representative, whichever is reached first, and if the representative consents first obtain the participant's own consent as soon as the participant is able. If consent is not given, inform the person of the right to object to use of data already collected. The licensed physician or dentist rule applies; a different healthcare professional (for example during ambulance transport) only with a Läkemedelsverket exception justified in the protocol."
+      },
+      "sources": [
+        "SE-PII-CHECKLIST#1",
+        "SE-ICF",
+        "SE-MINORS",
+        "SE-CAPACITY",
+        "SE-EMERGENCY",
+        "SE-WITNESS"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt K. Obligatoriskt, utom när de uppgifter som krävs redan finns i protokollet (DECISIONS.md D2). Svenska (bilaga I punkterna 59–73 ska vara på svenska). Ingen underskrift vid inlämning. Använd EU-mallen v2.0, som gäller nya del II-inlämningar från den 1 september 2026; Läkemedelsverkets svenska mall för rekryterings- och samtyckesförfarandet är ett likvärdigt alternativ (D1). Hänvisning till protokollavsnitt med protokollversion är tillåten. Beskriv hur potentiella försökspersoner identifieras och vad som utgör den första rekryteringsåtgärden i Sverige. Fyll i avsnittet för varje inkluderingsväg i planen (beslutsoförmögna vuxna, minderåriga, opartiskt vittne, nödsituation) och besvara övriga med mallens svar för ej tillämpligt. Ange de svenska kraven i medlemsstatsfälten (national_fields): legitimerad läkare eller legitimerad tandläkare genomför informationssamtalet och inhämtar samtycket (HSLF-FS 2021:109), eget samtycke från 15 år, båda vårdnadshavarnas underskrift, god man eller förvaltare som lagligen utsedd ställföreträdare och vittnesvägen endast när försökspersonen inte kan skriva eller underteckna. Rekryteringsvägarna ska stämma med varje K2-material."
+    },
+    {
+      "id": "SE-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_SE_sv",
+      "name_en": "Recruitment material",
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Recruitment material such as advertisements will be used; it must then be attached.",
+      "per": "item",
+      "language": [
+        "sv"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Final Swedish material as it will be used. Consistent with K1, the participant information and P1.",
+      "sources": [
+        "SE-PII-CHECKLIST#1",
+        "SE-QC#8"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt K. Villkorat: endast när rekryteringsmaterial, till exempel annonser, används; ett dokument per material. Svenska. Inget krav på underskrift. Ingen mall: utforma materialet utifrån protokollet och K1. Innehållet ska stämma med K1, deltagarinformationen och P1, och ersättning får inte framställas som en nytta som påverkar frivilligheten."
+    },
+    {
+      "id": "SE-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_SE_sv",
+      "name_en": "Participant information sheet and informed consent form, one set per population",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "population",
+      "language": [
+        "sv"
+      ],
+      "template": null,
+      "template_note": "Participant templates are bound per population through population_sets. Sweden imposes no universal national participant information form; the Swedish Ethical Review Authority points sponsors to the Clinical Studies Sweden (Kliniska Studier Sverige) support template, on which the supplied templates are based.",
+      "signature_at_submission": false,
+      "content": "Swedish participant information and blank consent form for each population that will be recruited, with separate age-specific or situation-specific documents when the consent process differs (see population_sets). Must explain purpose; expected benefits, consequences, risks and inconveniences; rights and protections; right to refuse; right to withdraw at any time without negative consequences and without giving a reason; conduct and duration; treatment alternatives where relevant; follow-up if participation stops; right to compensation for trial-related injury; the EU trial number and how results can be found in the EU database; contacts for trial questions, medical issues and rights or complaints.",
+      "sources": [
+        "SE-PII-CHECKLIST#2",
+        "SE-ICF"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt L. Obligatoriskt: ett set per population som rekryteras, med svensk deltagarinformation och blankt samtyckesformulär, och separata ålders- eller situationsspecifika dokument när samtyckesförfarandet skiljer sig (se population_sets). Svenska. Ingen underskrift vid inlämning; underskrifter och datum läggs till när samtycket inhämtas före prövningsspecifika åtgärder, utom vid inkludering i nödsituation enligt artikel 35. Det finns ingen allmän nationell mall; Etikprövningsmyndigheten hänvisar till Kliniska Studier Sveriges mall, som de levererade mallarna bygger på. Samtyckesdelen har fält för underskrift och datum för försökspersonen eller den lagligen utsedda ställföreträdaren och för den som lämnat informationen (legitimerad läkare eller legitimerad tandläkare, eller annan hälso- och sjukvårdspersonal enligt undantag från Läkemedelsverket). Ange EU-prövningsnummer och hur resultaten senare kan hittas i EU-databasen. Kontrollerade versionsnummer och datum som stämmer med hänvisningarna i protokollet och K1."
+    },
+    {
+      "id": "SE-L2",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_<type>_SE_sv",
+      "name_en": "Other participant-facing information",
+      "requirement": "conditional",
+      "trigger": "recruitment.other_information_material or endpoint_documents.participant_facing",
+      "trigger_text": "Diaries, information leaflets, cards, instructions, questionnaires or other materials that provide information to participants or legal representatives and form part of the participant-facing trial process.",
+      "per": "item",
+      "language": [
+        "sv"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "signature_note": "Normally no signature. If a document contains a consent or acknowledgement section, the blank form is submitted and signatures are obtained during trial conduct.",
+      "content": "Swedish when directed to Swedish participants; Läkemedelsverket expects participant-directed questionnaires and other subject-directed material to be Swedish.",
+      "sources": [
+        "SE-PII-CHECKLIST#3",
+        "SE-PII-CHECKLIST#language"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt L. Villkorat: dagböcker, informationsblad, kort, instruktioner, frågeformulär eller annat material som ger information till försökspersoner eller ställföreträdare och ingår i prövningsförfarandet; ett dokument per material. Svenska när materialet riktar sig till svenska försökspersoner. Normalt ingen underskrift; innehåller materialet ett samtyckes- eller bekräftelseavsnitt lämnas det in blankt och underskrifterna inhämtas under prövningen. Ingen mall. Innehållet får inte motsäga deltagarinformationen eller protokollet."
+    },
+    {
+      "id": "SE-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>_SE_sv",
+      "name_en": "Investigator CV (investigator suitability)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "sv"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+        "basis": "EU CV template (EU Clinical Trials Expert Group). Läkemedelsverket lists a Swedish national template for this area (Prövarens CV); it was not supplied, so the shared EU form is bound until the user supplies it (DECISIONS.md D1).",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+        "shared": true
+      },
+      "national_template": "Läkemedelsverket `Prövarens CV` (not supplied; DECISIONS.md D1).",
+      "signature_at_submission": null,
+      "signature_note": "The CTR and the Swedish guidance reviewed state no general wet-ink signature requirement for the uploaded CV; follow the fields and execution instructions in the current template (DECISIONS.md D8).",
+      "content": "Current information showing that each responsible investigator is qualified by education, Good Clinical Practice training, clinical trial experience and patient-care experience appropriate to the trial. Personal details come from the investigator; the assistant fills only trial fields.",
+      "sources": [
+        "SE-PII-CHECKLIST#4"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt M. Obligatoriskt, ett per ansvarig prövare och svenskt prövningsställe. Svenska enligt språkregeln för bilaga I punkterna 59–73. Läkemedelsverket anger mallen ”Prövarens CV”, som inte har levererats (D1); EU:s CV-mall används tills vidare. Assistenten fyller endast i prövningsuppgifterna (EU-prövningsnummer); alla personliga fält lämnas tomma för prövaren. CV:t ska visa utbildning, GCP-utbildning samt erfarenhet av kliniska prövningar och patientvård som är relevant för prövningen. Inget allmänt krav på våtbläcksunderskrift; följ mallens fält och anvisningar."
+    },
+    {
+      "id": "SE-M2-DOI",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>_SE_sv",
+      "name_en": "Declaration of interests",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "sv"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+        "basis": "EU declaration-of-interest template (EU Clinical Trials Expert Group). Läkemedelsverket lists a Swedish national template for this area (Deklaration av intressekonflikter); it was not supplied, so the shared EU form is bound until the user supplies it (DECISIONS.md D1).",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true
+      },
+      "national_template": "Läkemedelsverket `Deklaration av intressekonflikter` (not supplied; DECISIONS.md D1).",
+      "signature_at_submission": null,
+      "signature_note": "Follow the current Swedish declaration template; the official application guidance creates no separate universal wet-ink rule beyond the template's execution requirements (DECISIONS.md D8).",
+      "content": "Financial interests and institutional affiliations that could affect the investigator's impartiality, declared by the investigator.",
+      "sources": [
+        "SE-PII-CHECKLIST#5"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt M. Obligatoriskt, ett per ansvarig prövare och prövningsställe. Svenska. Läkemedelsverket anger mallen ”Deklaration av intressekonflikter”, som inte har levererats (D1); EU-mallen används tills vidare. Assistenten fyller endast i prövningens titel och EU-prövningsnummer; prövaren besvarar själv frågorna om ekonomiska intressen och institutionell anknytning. Underskrift och datum enligt mallens aktuella anvisningar."
+    },
+    {
+      "id": "SE-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>_SE_sv",
+      "name_en": "Site suitability",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "sv"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/N1_Site suitability.docx",
+        "basis": "EU site-suitability template (CTAG); covers Annex I point 67. Läkemedelsverket lists a Swedish national template for this area (Prövningsställets lämplighet); it was not supplied, so the shared EU form is bound until the user supplies it (DECISIONS.md D1).",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/N1_Site suitability.fields.json",
+        "shared": true
+      },
+      "national_template": "Läkemedelsverket `Prövningsställets lämplighet` (not supplied; DECISIONS.md D1).",
+      "signature_at_submission": true,
+      "signature_rule": "The statement is issued by the head of the clinic or institution, or another responsible person according to the applicable arrangement. Use the current template's signature or approval fields (shared form: section 3 'Issued by', name, position, organisation, date) rather than adding a separate signature convention; these fields are completed by the issuing person, never by the assistant (DECISIONS.md D8).",
+      "content": "Written justification covering facilities, equipment, staffing and expertise, specific to this protocol. One per Swedish trial site.",
+      "national_fields": {
+        "n1_issued_by": "Sweden: the statement is obtained from the head of the clinic or institution (verksamhetschef) or another responsible person according to the applicable arrangement; the template's signature or approval fields are completed by that person before upload. Leave them empty in the draft."
+      },
+      "sources": [
+        "SE-PII-CHECKLIST#6"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant; site fields and the issuer's approval fields left empty for the site",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt N. Obligatoriskt, ett per svenskt prövningsställe. Svenska. Läkemedelsverket anger mallen ”Prövningsställets lämplighet”, som inte har levererats (D1); EU-mallen används tills vidare. Skriftlig motivering som täcker lokaler, utrustning, personal och kompetens, anpassad till protokollet. Utlåtandet utfärdas av verksamhetschefen för kliniken eller institutionen, eller av annan ansvarig person enligt gällande ordning; använd mallens fält för underskrift eller godkännande (avsnitt 3), som fylls i av den personen och inte av assistenten. Prövningsställets uppgifter (namn, ansvarig prövare, planerat antal försökspersoner, ID-nummer) lämnas tomma för prövningsstället."
+    },
+    {
+      "id": "SE-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_SE_sv",
+      "ctis_title_note": "Use _SE_en instead of _SE_sv when the insurer-issued certificate is in English.",
+      "name_en": "Insurance or indemnification: documentation of the applicable participant protection",
+      "requirement": "mandatory",
+      "requirement_note": "Mandatory in substance.",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "sv",
+        "en"
+      ],
+      "language_note": "The description of the Swedish insurance arrangement is in Swedish; an insurer-issued certificate in English may be attached where accepted by the authority guidance.",
+      "template": null,
+      "signature_at_submission": false,
+      "signature_note": "No separate participant or investigator signature; use the issued insurer or coverage documentation.",
+      "content": "Swedish law (Medicinal Products Act 2015:315) requires the sponsor to ensure, through insurance or another arrangement, that a participant can receive compensation where the sponsor or investigator becomes liable; the protection must match the nature and extent of the risk. Läkemedelsverket asks for documentation of the applicable participant protection. The participant information must explain the right to compensation for injury consistently.",
+      "sources": [
+        "SE-PII-CHECKLIST#7"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer / sponsor",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt O. Obligatoriskt i sak: sponsorn ska genom försäkring eller annan ordning säkerställa att en försöksperson kan få ersättning när sponsorn eller prövaren blir skadeståndsskyldig, och skyddet ska motsvara riskens art och omfattning (läkemedelslagen 2015:315). Lämna dokumentation av det skydd som gäller för försökspersonerna. Beskrivningen av den svenska försäkringsordningen ska vara på svenska; ett försäkringsbevis på engelska från försäkringsgivaren kan bifogas där myndighetens vägledning godtar det (D5). Ingen underskrift av försöksperson eller prövare. Utfärdas av försäkringsgivaren eller sponsorn och kontrolleras endast. Deltagarinformationen ska beskriva rätten till ersättning vid skada på samma sätt."
+    },
+    {
+      "id": "SE-O2",
+      "ctis_section": "O",
+      "ctis_title": "O2_Proof of coverage_<sponsor or site>_SE_sv",
+      "ctis_title_note": "Use _SE_en instead of _SE_sv when the document is an English insurer-issued document.",
+      "name_en": "Proof of other coverage (for example sponsor-specific clinical trial insurance)",
+      "requirement": "conditional",
+      "trigger": "insurance.other_coverage",
+      "trigger_text": "Other coverage is relevant, for example a sponsor-specific clinical trial insurance in addition to the documentation in O1 (DECISIONS.md D6).",
+      "per": "trial",
+      "language": [
+        "sv",
+        "en"
+      ],
+      "language_note": "As O1: Swedish description; an English insurer-issued document may be attached where accepted.",
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Issued insurer or coverage documentation; insurer, cover and contacts must match every participant document.",
+      "sources": [
+        "SE-PII-CHECKLIST#7"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt O. Villkorat: bevis på annan täckning där det är relevant, till exempel en sponsorspecifik försäkring för klinisk prövning (D6). Språk och underskrift som för O1. Utfärdas av försäkringsgivaren och kontrolleras endast; försäkringsgivare, skydd och kontaktvägar ska stämma med varje deltagardokument."
+    },
+    {
+      "id": "SE-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_SE_sv",
+      "name_en": "Financial and other arrangements: compensation of participants, investigators and sites, funding",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "sv"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "EU compensation template (CTAG), for participant compensation. Läkemedelsverket lists a Swedish national template for this area (Ersättning för deltagande i klinisk prövning); it was not supplied, so the shared EU form is bound until the user supplies it (DECISIONS.md D1).",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true
+      },
+      "national_template": "Läkemedelsverket `Ersättning för deltagande i klinisk prövning` (participant compensation; not supplied; DECISIONS.md D1).",
+      "template_scope_note": "The EU form covers participant compensation only. Trial financing, payments to investigators and sites and other sponsor-site financial arrangements must also be described for Sweden (DECISIONS.md D3).",
+      "signature_at_submission": false,
+      "signature_note": "A separate signature is not stated as a general requirement; use current national forms as intended.",
+      "content": "Trial financing and payments or compensation to participants, investigators and sites; other relevant sponsor-site financial arrangements. State explicitly when no participant compensation is offered.",
+      "sources": [
+        "SE-PII-CHECKLIST#8",
+        "SE-HV",
+        "SE-CAPACITY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt P. Obligatoriskt. Svenska. Inget allmänt krav på underskrift. Beskriv prövningens finansiering, betalningar eller ersättning till försökspersoner, prövare och prövningsställen samt andra relevanta ekonomiska arrangemang mellan sponsor och prövningsställe. Läkemedelsverket anger mallen ”Ersättning för deltagande i klinisk prövning” för ersättning till försökspersoner (inte levererad, D1); EU:s ersättningsmall används tills vidare. Finansiering och ersättning till prövare och prövningsställen ryms inte i EU-mallen (D3). Ange uttryckligen om ingen ersättning ges. Belopp och villkor ska vara identiska med deltagarinformationen. Till beslutsoförmögna försökspersoner och deras ställföreträdare (och till minderåriga) ges inga incitament utöver ersättning för utgifter och inkomstbortfall som är direkt kopplade till deltagandet. Ersättning får inte framställas som en nytta som påverkar frivilligheten."
+    },
+    {
+      "id": "SE-FEE",
+      "ctis_section": "Forms",
+      "ctis_title": "Proof of payment of fee_SE_sv",
+      "ctis_title_note": "The Sweden guide names 'Q Proof of payment of fee or the corresponding CTIS area instructed by Läkemedelsverket'; the CTCG naming guide does not use Q and places proof of fee in another CTIS upload location (Forms section). No CTCG title exists; this title is provisional (DECISIONS.md D4).",
+      "name_en": "Proof of fee or Swedish invoicing information",
+      "requirement": "conditional",
+      "trigger": "fee.national_process",
+      "trigger_text": "According to the national fee process: follow the current Läkemedelsverket instructions for the fee-related document and invoicing information placed in CTIS.",
+      "per": "trial",
+      "language": [
+        "sv"
+      ],
+      "language_note": "Annex I point 72 is within Sweden's Swedish-language range: prepare the national fee information in Swedish unless the authority form itself specifies otherwise.",
+      "template": null,
+      "signature_at_submission": false,
+      "signature_note": "No participant or investigator signature; follow the current authority form.",
+      "content": "Fee-related document and invoicing information as instructed by Läkemedelsverket.",
+      "sources": [
+        "SE-PII-CHECKLIST#9"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor (Läkemedelsverket fee and invoicing instructions)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_sv": "Villkorat enligt den nationella avgiftsprocessen. Följ Läkemedelsverkets aktuella anvisningar för avgiftsdokumentet och faktureringsuppgifterna i CTIS. Svenska, eftersom bilaga I punkt 72 omfattas av den svenska språkregeln, om inte myndighetens formulär anger annat. Ingen underskrift av försöksperson eller prövare. CTCG:s namnguide använder inte avsnitt Q; avgiftsbeviset laddas upp i CTIS formuläravsnitt eller där Läkemedelsverket anvisar (D4). Sponsorn tillhandahåller dokumentet; det kontrolleras endast."
+    },
+    {
+      "id": "SE-R1",
+      "ctis_section": "R",
+      "ctis_title": "R1_Compliance collection and use personal data_SE_sv",
+      "name_en": "Statement on compliance with national requirements for the collection and use of personal data",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "sv"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/R1_Data protection.docx",
+        "basis": "European Commission GDPR compliance statement, answered in Swedish, with the Swedish national compliance statement added.",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "No participant signature applies; the form's own date, name and role fields are completed for the sponsor.",
+      "content": "Part II statement (Annex I point 73) on compliance with national requirements for the collection and use of personal data, in Swedish. Läkemedelsverket also references the EU GDPR compliance template for the CTIS Form section; an English Form-section statement is not a substitute for this Swedish Part II item.",
+      "national_fields": {
+        "r1_the_sponsor_declares": "Required in Sweden: state in Swedish that the national Swedish requirements for the collection and use of personal data are complied with (Annex I point 73). The Sweden guides name no specific national provision; do not add one from memory (DECISIONS.md D11)."
+      },
+      "sources": [
+        "SE-PII-CHECKLIST#10"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt R. Obligatoriskt. Svenska: del II-uttalandet om efterlevnad av nationella krav för insamling och användning av personuppgifter (bilaga I punkt 73) omfattas av den svenska språkregeln. Ett engelskt GDPR-uttalande i CTIS formuläravsnitt ersätter inte den svenska del II-handlingen. Ingen underskrift av försöksperson; formulärets fält för datum, namn och roll fylls i för sponsorn. Lägg till den nationella bekräftelsen (national_fields) utan att ange lagrum som inte finns i källorna (D11)."
+    },
+    {
+      "id": "SE-S1",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_SE_sv",
+      "name_en": "Biological-sample compliance",
+      "requirement": "conditional",
+      "trigger": "samples.collected or samples.archive_used",
+      "trigger_text": "Biological samples are collected, stored or used in a way that requires the CTIS biological-sample compliance document.",
+      "per": "trial",
+      "language": [
+        "sv"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "European Commission biological-samples form. Läkemedelsverket lists a Swedish national template for this area (Följsamhet med regler för hantering av biologiska prov); it was not supplied, so the shared EU form is bound until the user supplies it (DECISIONS.md D1).",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
+      },
+      "national_template": "Läkemedelsverket `Följsamhet med regler för hantering av biologiska prov` (not supplied; DECISIONS.md D1).",
+      "signature_at_submission": false,
+      "signature_note": "The CTIS compliance document has no participant signature; participant consent to sample use is handled in the participant documents.",
+      "content": "If the Swedish Biobank Act applies, the CTIS document is not the whole national process: a parallel biobank application may also be needed and should be prepared early (outside_part_ii SE-BIOBANK).",
+      "national_fields": {
+        "f03": "Sweden: state whether the Biobank Act (2023:38) applies and, if so, the responsible Swedish biobank and the parallel biobank process (early contact with the Regional Biobank Centre; for regional biobanks an unsigned biobank application can be sent in parallel when the application is registered in CTIS; the final biobank agreement takes effect only after the required sponsor and biobank approvals and signatures). Samples may be used in accordance with the authorised CTR application only when it describes their collection, storage and use; a new purpose outside the earlier information and consent needs information and consent for that purpose; consent to retention or use can be withdrawn or restricted, with destruction or de-identification as the Act provides."
+      },
+      "sources": [
+        "SE-PII-CHECKLIST#11",
+        "SE-SECONDARY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_sv": "CTIS del II, avsnitt S. Villkorat: när biologiska prov samlas in, lagras eller används. Svenska. Läkemedelsverket anger mallen ”Följsamhet med regler för hantering av biologiska prov”, som inte har levererats (D1); EU-mallen används tills vidare. Ingen underskrift av försöksperson; samtycke till provanvändning hanteras i deltagarinformationen. Om biobankslagen (2023:38) är tillämplig är CTIS-dokumentet inte hela den nationella processen: ta tidigt kontakt med Regionalt biobankscentrum och förbered en parallell biobanksansökan. Ansökan ska beskriva insamling, lagring och användning av proven, eftersom användningen enligt biobankslagen knyts till den godkända CTR-ansökan. Uppgifterna ska stämma med protokollet, deltagarinformationen, R1 och biobanksansökan."
+    }
+  ],
+  "document_map_to_checklist": {
+    "SE-PII-CHECKLIST#1": [
+      "SE-K1",
+      "SE-K2"
+    ],
+    "SE-PII-CHECKLIST#2": [
+      "SE-L1"
+    ],
+    "SE-PII-CHECKLIST#3": [
+      "SE-L2"
+    ],
+    "SE-PII-CHECKLIST#4": [
+      "SE-M1"
+    ],
+    "SE-PII-CHECKLIST#5": [
+      "SE-M2-DOI"
+    ],
+    "SE-PII-CHECKLIST#6": [
+      "SE-N1"
+    ],
+    "SE-PII-CHECKLIST#7": [
+      "SE-O1",
+      "SE-O2"
+    ],
+    "SE-PII-CHECKLIST#8": [
+      "SE-P1"
+    ],
+    "SE-PII-CHECKLIST#9": [
+      "SE-FEE"
+    ],
+    "SE-PII-CHECKLIST#10": [
+      "SE-R1"
+    ],
+    "SE-PII-CHECKLIST#11": [
+      "SE-S1"
+    ]
+  },
+  "document_map_note": "The Sweden Part II checklist page has 11 numbered items. Items 1 and 7 each name two CTIS slots (K1/K2, O1/O2), so they are two documents each; every other item is one document.",
+  "national_fields": {
+    "SE-K1": [
+      "v105",
+      "v108",
+      "v110",
+      "v113",
+      "v114",
+      "v117",
+      "v121"
+    ],
+    "SE-N1": [
+      "n1_issued_by"
+    ],
+    "SE-R1": [
+      "r1_the_sponsor_declares"
+    ],
+    "SE-S1": [
+      "f03"
+    ]
+  },
+  "national_fields_note": "Index only; the text for each field is in that document's national_fields.",
+  "outside_part_ii": [
+    {
+      "id": "SE-SYNOPSIS-SV",
+      "what": "Swedish protocol synopsis (Annex I point 24)",
+      "requirement": "mandatory for the application",
+      "where": "Part I protocol package; title per naming guide D1_Protocol synopsis_SE_<EU CT number>_sv",
+      "sources": [
+        "SE-PII-CHECKLIST#language",
+        "SE-HUB"
+      ]
+    },
+    {
+      "id": "SE-BIOBANK",
+      "what": "Parallel biobank application and forms (Regional Biobank Centre)",
+      "requirement": "conditional: samples.biobank_act_applies",
+      "where": "Outside CTIS, with the Regional Biobank Centre; for regional biobanks an unsigned application can be sent when the application is registered in CTIS; the final biobank agreement after sponsor and biobank approvals and signatures",
+      "note": "Must tell the same story as S1 and the participant documents.",
+      "sources": [
+        "SE-SECONDARY",
+        "SE-PII-CHECKLIST#11"
+      ]
+    },
+    {
+      "id": "SE-GDPR-FORMS",
+      "what": "EU GDPR compliance statement in the CTIS Form section",
+      "requirement": "as instructed by Läkemedelsverket",
+      "where": "CTIS Form section (not Part II)",
+      "note": "Not a substitute for the Swedish R1 Part II item.",
+      "sources": [
+        "SE-PII-CHECKLIST#10"
+      ]
+    }
+  ],
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_main_SE_sv.json"
+        }
+      ],
+      "basis": "Kliniska Studier Sverige Swedish template for clinical drug trials under CTR and ICH-GCP E6 (R3), version 7, 2025-11-12 (template content_instructions); the Swedish Ethical Review Authority points sponsors to this support template.",
+      "sources": [
+        "SE-ICF",
+        "SE-PII-CHECKLIST#2"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_healthy_SE_sv.json"
+        }
+      ],
+      "note": "Use when the trial recruits people without the disease or condition studied and the patient document would mislead on benefit, alternatives, procedures or compensation. State clearly when no direct therapeutic benefit is expected; compensation matches P1 and is not presented as a benefit. A person under compulsory psychiatric care or forensic psychiatric care cannot take part in a trial not connected with treatment of disease. Minors or adults without capacity use their own pathway, not the healthy-volunteer form alone. No dedicated Swedish authority template exists.",
+      "sources": [
+        "SE-HV"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_guardians_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_parents_SE_sv.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 6-11_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_age 6-11_SE_sv.json",
+          "when": "population.minors_age_bands includes ages 6-11"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 12-14_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_age 12-14_SE_sv.json",
+          "when": "population.minors_age_bands includes ages 12-14"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 15-17_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_age 15-17_SE_sv.json",
+          "when": "population.minors_age_bands includes ages 15-17, for minors who understand what participation means (population.minors_15_17_own_consent), and for every participant who turns 15 during the trial and understands it"
+        }
+      ],
+      "note": "Guardian consent always (both guardians sign where there are two). Under 15: guardian consent plus information adapted to age and maturity; an explicit refusal is respected. From 15 and understanding: the minor's own informed consent in addition (SFS 2026:497). Below 15 Swedish law sets no fixed age bands: 6-11 and 12-14 are drafting bands for age-appropriate versions. Under 6 and 15-17 who do not understand: see DECISIONS.md D9 and D10. Re-consent with the adult document at 18 only when the participant has not given valid own consent after 15. Optional future-use documents apply when relevant.",
+      "sources": [
+        "SE-MINORS"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_SE_sv.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_SE_sv.json"
+        }
+      ],
+      "note": "Article 31 conditions. The representative is a god man or förvaltare under the Parental Code whose authority covers personal matters. Swedish information and consent for the representative and information adapted to the participant's ability to understand are both prepared. Explicit refusal by a participant able to form an opinion is respected; no incentives beyond expenses and loss of earnings. If capacity returns, own consent with the adult document; no separate national re-consent form exists and none may be invented.",
+      "sources": [
+        "SE-CAPACITY"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_emergency_SE_sv.json"
+        }
+      ],
+      "note": "All Article 35 conditions; Swedish documents for every realistic post-emergency pathway: participant information and consent once the participant can decide (this template, adults only), representative information and consent where applicable (legal-rep template), minor and guardian documents if minors are enrolled, limited-capacity documents if that population is included (DECISIONS.md D12). Right to object to use of data already collected if consent is not given.",
+      "sources": [
+        "SE-EMERGENCY"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_witness_SE_sv.json"
+        }
+      ],
+      "note": "Only when a participant able to decide cannot write or cannot sign; never for interpreter needs, limited health literacy or a wish for a second signature. No mandatory Swedish witness form exists: the witness statement and signature fields go into the appropriate Swedish ICF (DECISIONS.md D7).",
+      "sources": [
+        "SE-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_SE_sv.json"
+        }
+      ],
+      "note": "Only when follow-up goes beyond what the original participant information reasonably described; otherwise the main ICF covers pregnancy risks, contraception, testing and what happens if pregnancy occurs. Scope limited to the information the protocol needs; protocol-defined duration. Intentional enrolment of pregnant or breastfeeding women: Article 33 in design and documents.",
+      "sources": [
+        "SE-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_SE_sv.json"
+        }
+      ],
+      "note": "Only when the protocol requires direct collection of identifiable health information from the pregnant partner; separate Swedish document addressed to the partner. The enrolled participant cannot consent for the partner, and the participant's ICF is no authority for access to the partner's medical records. No universal Swedish partner template exists; the need is study-specific.",
+      "sources": [
+        "SE-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_SE_sv",
+          "template": "templates/participant/L1_SIS and ICF_secondary_SE_sv.json"
+        }
+      ],
+      "note": "Only for optional use genuinely separate from main-study participation; decide first whether a use is part of the authorised trial, a defined optional substudy or a future project. Refusal must not be drafted as refusal of the main trial. A broad future-use checkbox does not remove later ethical or biobank review; a new purpose under the Biobank Act needs the information and consent decided for it.",
+      "sources": [
+        "SE-SECONDARY"
+      ]
+    }
+  ],
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents.",
+  "participant_templates": [
+    {
+      "id": "SE-PT-age-12-14",
+      "file": "templates/participant/L1_SIS and ICF_age 12-14_SE_sv.json",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_sv": "Information till ungdomar 12–14 år och dokumentation av inställning",
+      "role": "age-adapted information for adolescents 12-14 and documentation of their own position (supplements guardian consent; not legal consent)",
+      "when_to_use": "Must be completed for studies involving adolescent participants aged 12-14 years. It supplements consent from the legal guardians and records the adolescent’s informed willingness or objection.",
+      "authority_note": "Swedish law sets no fixed child-information age bands below 15; 12-14 is a drafting band. A participant who turns 15 and understands the trial moves to SE-PT-age-15-17 own consent."
+    },
+    {
+      "id": "SE-PT-age-15-17",
+      "file": "templates/participant/L1_SIS and ICF_age 15-17_SE_sv.json",
+      "name_en": "Subject Information and Consent Form - Adolescents",
+      "name_sv": "Information till ungdomar 15–17 år och samtycke till klinisk prövning",
+      "role": "information and own informed consent for adolescents 15-17 who understand what participation means (in addition to guardian consent)",
+      "when_to_use": "Must be completed for studies involving adolescent participants aged 15-17 years who understand what the trial entails and therefore must also provide their own informed consent under Swedish law, in addition to consent from the legal guardians.",
+      "authority_note": "Matches the Swedish legal threshold of 15 (Medicinal Products Act as amended by SFS 2026:497). Not used by default for 15-17-year-olds who do not understand the trial (DECISIONS.md D10)."
+    },
+    {
+      "id": "SE-PT-age-6-11",
+      "file": "templates/participant/L1_SIS and ICF_age 6-11_SE_sv.json",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_sv": "Information till barn 6–11 år och dokumentation av barnets inställning",
+      "role": "age-adapted information for children 6-11 and documentation of the child's position (not legal consent)",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+      "authority_note": "Drafting band; Swedish law sets no fixed bands below 15. No template for children under 6 (DECISIONS.md D9)."
+    },
+    {
+      "id": "SE-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_SE_sv.json",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_sv": "Information om inkludering i nödsituation och samtycke till fortsatt deltagande",
+      "role": "information and consent for continued participation after emergency enrolment (adults)",
+      "when_to_use": "Must be used for adult participants enrolled in an emergency before prior informed consent because neither the adult participant nor a legally designated representative could provide consent within the required treatment window.",
+      "authority_note": "Adults only; post-emergency pathways for minors and other representatives use the minors and legal-representative sets (DECISIONS.md D12)."
+    },
+    {
+      "id": "SE-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_SE_sv.json",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_sv": "Information till frisk försöksperson och samtycke till klinisk prövning",
+      "role": "main information and consent (healthy volunteers)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+      "authority_note": "The Sweden guide triggers this version when the trial recruits people without the studied condition and the patient document would mislead; a non-therapeutic design alone does not make a person a healthy volunteer."
+    },
+    {
+      "id": "SE-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_SE_sv.json",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_sv": "Information till lagligen utsedd ställföreträdare och samtycke till klinisk prövning",
+      "role": "information and consent for the legally designated representative (god man or förvaltare) of an adult without capacity",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "SE-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_SE_sv.json",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_sv": "Information till försöksperson med begränsad beslutsförmåga och dokumentation av inställning",
+      "role": "adapted information for the adult without capacity, with documentation of their position",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+      "authority_note": "The template description limits it to adults who retain sufficient understanding; the Sweden guide requires information adapted to the person's ability to understand in every case, so it is always planned with SE-PT-legal-rep and adapted to the person's level."
+    },
+    {
+      "id": "SE-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_SE_sv.json",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_sv": "Information till försöksperson och samtycke till klinisk prövning",
+      "role": "main information and consent (capable adult patients); also own consent after regained capacity and adult re-consent where needed",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms.",
+      "authority_note": "The description lists re-consent after reaching adulthood; Läkemedelsverket requires no new consent solely because a participant turns 18 when valid own consent was given after age 15."
+    },
+    {
+      "id": "SE-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_SE_sv.json",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_sv": "Information till vårdnadshavare och samtycke till barns deltagande",
+      "role": "information and consent for the guardians (vårdnadshavare) of a minor",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years)."
+    },
+    {
+      "id": "SE-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_SE_sv.json",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_sv": "Information och samtycke till graviditetsuppföljning – gravid försöksperson",
+      "role": "pregnancy follow-up of a pregnant trial participant (block A) and the child's own data (block B)",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+      "authority_note": "Planned only when follow-up goes beyond what the original participant information reasonably described."
+    },
+    {
+      "id": "SE-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_SE_sv.json",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_sv": "Information och samtycke till graviditetsuppföljning – gravid partner",
+      "role": "information and consent for the pregnant partner of a participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant.",
+      "authority_note": "The description says 'must be used'; the Sweden guide makes the need study-specific: only when the protocol requires direct collection of identifiable information from the partner."
+    },
+    {
+      "id": "SE-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_SE_sv.json",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_sv": "Information och samtycke till sekundär eller framtida användning av uppgifter eller biologiska prov",
+      "role": "optional secondary or future use of data or samples",
+      "when_to_use": "Must be used as a short, separate and optional participant-facing form when data or biological samples are collected, stored, tested or used for future or secondary research outside the mandatory purposes of the main clinical trial. Refusal or withdrawal must not affect the main trial or ordinary care. An optional legal-representative or impartial-witness signature route may be retained only when permitted by the approved procedure.",
+      "authority_note": "The Sweden guide does not require a separate optional consent for every later use of trial data; use only for genuinely separate optional uses. Witness route only when the person cannot write or sign."
+    },
+    {
+      "id": "SE-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_SE_sv.json",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_sv": "Information till försöksperson och samtycke med opartiskt vittne",
+      "role": "consent with impartial witness for a capable adult who cannot write or sign",
+      "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process.",
+      "authority_note": "The description and instructions also name a person who cannot read; the Sweden guide triggers the witness route only when the participant cannot write or cannot sign, never for limited health literacy or interpreter needs (authority wins)."
+    }
+  ],
+  "population_rules": {
+    "authority": "Läkemedelsverket guidance 'Trial subjects and informed consent' (accessed 26 August 2026); Läkemedelsverket HSLF-FS 2021:109 (in force since 30 January 2022); Swedish Medicinal Products Act (2015:315), section 7 chapter 3 as amended by SFS 2026:497; Swedish Biobank Act (2023:38); Regulation (EU) No 536/2014 Articles 28 to 35. As recorded in the TrialAgents Sweden guides reviewed 23 September 2026.",
+    "consent_taker": "A licensed physician or licensed dentist conducts the Article 29 interview and obtains consent (same person; HSLF-FS 2021:109). Another healthcare professional only with a Läkemedelsverket exception for special reasons, justified in the protocol (study fact consent.non_physician_consent_taker).",
+    "minors": {
+      "age_bands": [
+        {
+          "band": "6-11",
+          "template": "SE-PT-age-6-11",
+          "reader": "child",
+          "legal_role": "information and documentation of the child's position; not legal consent"
+        },
+        {
+          "band": "12-14",
+          "template": "SE-PT-age-12-14",
+          "reader": "adolescent",
+          "legal_role": "information and documentation of the adolescent's position; not legal consent"
+        },
+        {
+          "band": "15-17",
+          "template": "SE-PT-age-15-17",
+          "reader": "adolescent",
+          "legal_role": "own informed consent in addition to guardian consent, when the minor understands what participation means"
+        }
+      ],
+      "always": [
+        "SE-PT-parents"
+      ],
+      "band_basis": "15 is the statutory threshold (SFS 2026:497). Below 15 Swedish law creates no fixed national set of age bands: build age-appropriate versions from the protocol population and the child's expected ability to understand. The template bands 6-11 and 12-14 are drafting bands; no conflict with the authority.",
+      "guardians": "The guardians are the legally designated representatives. Where there are two guardians, both sign and date before any study-related procedure, not necessarily at the same time. In an urgent situation the absent guardian's consent may be transmitted digitally (for example email) with subsequent confirmation of the original consent; this is not Article 35 emergency enrolment.",
+      "turning_15": "A participant who turns 15 during the trial and understands what participation means gives explicit own informed consent (SE-PT-age-15-17) before continued participation.",
+      "reconsent_at_18": "Not required solely because the participant turns 18 when valid own consent was given after age 15 (Läkemedelsverket). Use SE-PT-main or SE-PT-healthy at 18 only for participants without valid own consent after 15, or when an amendment or new risk information requires re-consent.",
+      "minors_15_17_not_understanding": "Guardian consent remains the legal basis; the minor is informed and involved according to ability and an explicit refusal is respected. SE-PT-age-15-17 is not used by default (DECISIONS.md D10).",
+      "under_6": "No template. Information adapted to age and maturity is still given by an investigator or team member trained or experienced with children (DECISIONS.md D9).",
+      "information_giver": "Information to the child is adapted to age and mental maturity and given by an investigator or trial-team member trained or experienced in working with children; the formal consent interview with a 15-17-year-old is held by the licensed physician or dentist.",
+      "dissent": "A child who can form an opinion and assess the information has the right to refuse or withdraw; that explicit wish is respected. The child's document must not contradict the guardian document.",
+      "compensation": "No incentives beyond compensation for expenses and loss of earnings directly related to participation (Article 32 CTR).",
+      "conflicts": [
+        "SE-PT-main lists re-consent after reaching adulthood; Läkemedelsverket requires none when valid own consent was given after 15 (authority wins, see reconsent_at_18)."
+      ]
+    },
+    "adults_without_capacity": {
+      "always": [
+        "SE-PT-legal-rep",
+        "SE-PT-limited-capacity"
+      ],
+      "representative": "god man or förvaltare appointed under the Parental Code (föräldrabalken) whose authority covers the individual's personal matters.",
+      "note": "Article 31 conditions. The participant is involved as far as possible; the representative cannot override an explicit refusal. No incentives beyond expenses and loss of earnings. Capacity reassessment and the move to own consent (SE-PT-main) are defined in the protocol and K1.",
+      "conflicts": [
+        "SE-PT-limited-capacity description implies use only when the adult retains understanding; the Sweden guide requires adapted participant information in every case (authority wins; always planned, adapted to the person's level)."
+      ]
+    },
+    "emergency": {
+      "always": [
+        "SE-PT-emergency"
+      ],
+      "as_applicable": [
+        "SE-PT-legal-rep",
+        "SE-PT-limited-capacity",
+        "SE-PT-parents"
+      ],
+      "note": "SE-PT-emergency is for adults. Where the representative is reached first, SE-PT-legal-rep; minors enrolled in an emergency use the guardian and age-band documents adapted to subsequent consent (DECISIONS.md D12)."
+    },
+    "impartial_witness": {
+      "always": [
+        "SE-PT-witness"
+      ],
+      "note": "Only when the participant cannot write or cannot sign; at least one independent witness; the witness dates and signs; not for interpreter needs or limited literacy.",
+      "conflicts": [
+        "SE-PT-witness also names a person who cannot read; the Sweden guide limits the route to inability to write or sign (authority wins)."
+      ]
+    },
+    "pregnancy": {
+      "participant": "Main ICF covers pregnancy risks, contraception, testing and what happens if pregnancy is identified; SE-PT-pregnancy only for follow-up beyond what the original information reasonably described.",
+      "partner": "SE-PT-pregnant-partner only when the protocol requires direct pregnancy follow-up of the partner; separate document; the participant cannot consent for the partner.",
+      "infant": "Newborn or infant information only when scientifically justified; block B of the pregnancy templates; where the child has two guardians both consent (template rule)."
+    },
+    "excluded_groups": "A clinical trial not connected with treatment of disease must not be performed on a person receiving care under the Swedish compulsory psychiatric care or forensic psychiatric care legislation (Medicinal Products Act, as recorded in SE-HV).",
+    "shareable_templates": [
+      "SE-PT-pregnant-partner",
+      "SE-PT-secondary"
+    ],
+    "shareable_note": "One shared document for several populations only when nothing in it would differ; agree with the user.",
+    "separate_document_rules": [
+      "Each population with a different legal or practical consent logic gets its own Swedish document set; the main adult form is not enough (SE-ICF).",
+      "Minors: Swedish guardian document, age-appropriate child information for younger participants and adolescent information with own consent for 15-17 who understand (SE-MINORS).",
+      "Adults without capacity: separate representative information and consent plus adapted participant information (SE-CAPACITY).",
+      "Optional future use genuinely separate from main participation: separate optional choice; refusal does not affect main participation (SE-SECONDARY).",
+      "Pregnant partner: separate Swedish document addressed to the partner when the protocol collects identifiable information directly from her (SE-PREGNANCY).",
+      "Material change to the approved information or consent logic: assess whether a substantial modification and participant re-consent are required before implementing it (SE-ICF)."
+    ]
+  },
+  "drafting_rules": [
+    "Participant documents: the supplied templates follow the Kliniska Studier Sverige template v7 (2025-11-12) to which Etikprövningsmyndigheten points sponsors; keep their structure and model text, add all study-specific information, and record every deviation as a finding.",
+    "Information exhaustive enough for an informed decision but concise, clear, relevant and understandable to a lay person; Swedish understandable to the intended population, not only grammatically correct; define clinical terms, shorten dense sentences, keep decision-relevant information visible.",
+    "State the EU trial number and how trial results can later be found in the EU database.",
+    "State the right to refuse and the right to withdraw at any time without negative consequences and without giving a reason.",
+    "Where no direct therapeutic benefit is expected, say so; never imply one.",
+    "Compensation, reimbursement and injury-protection wording must match P1, O1 and O2; payment is not presented as a benefit.",
+    "Data protection: match the actual data flow (controllers, categories, transfers, access, retention, rights); no promise such as permanent deletion on request that the protocol, safety obligations or record-retention rules do not support; a research consent checkbox is no substitute for the sponsor's data-protection obligations.",
+    "Samples: match the protocol, S1 and any Swedish biobank application; distinguish use within the authorised trial from a new purpose; withdrawal effects stated accurately; no broad future-use language in place of the later information and consent process.",
+    "Consent form: signature and date fields for the participant or legally designated representative and for the person who gives the information (licensed physician or dentist, or another healthcare professional under a Läkemedelsverket exception); both guardians for minors where there are two; the signed consent and information stay at the site and a copy goes to the participant or representative.",
+    "Blank, unsigned documents are uploaded with controlled version numbers and dates matching references in the protocol and K1; remove any site or participant signatures and completed personal data from the submission copy.",
+    "Risk frequency categories are not set in the Sweden guides; use the IB or SmPC categories until the user decides (DECISIONS.md D13).",
+    "Participant templates (JSON): [INSTRUKTION – TA BORT FÖRE SLUTVERSION: …] notes, [FYLL I: …] gaps and [VALFRI TEXT – BEHÅLL ELLER TA BORT] markers are drafting instructions; follow and remove them, keep the system variables [document name], [population label] and [date] until rendering. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE: …] labels. Nothing of either may remain in a final document."
+  ],
+  "sources": {
+    "SE-HUB": "https://trialagents.com/ctis/sweden/en",
+    "SE-PII-CHECKLIST": "https://trialagents.com/ctis/sweden/en/part-ii-document-checklist",
+    "SE-ICF": "https://trialagents.com/ctis/sweden/en/patient-information-consent-requirements",
+    "SE-QC": "https://trialagents.com/ctis/sweden/en/patient-facing-document-qc-checklist",
+    "SE-HV": "https://trialagents.com/ctis/sweden/en/healthy-volunteer-consent-requirements",
+    "SE-MINORS": "https://trialagents.com/ctis/sweden/en/minor-consent-assent-requirements",
+    "SE-CAPACITY": "https://trialagents.com/ctis/sweden/en/limited-capacity-legal-representative-consent-requirements",
+    "SE-EMERGENCY": "https://trialagents.com/ctis/sweden/en/emergency-enrollment-consent-requirements",
+    "SE-WITNESS": "https://trialagents.com/ctis/sweden/en/impartial-witness-consent-requirements",
+    "SE-PREGNANCY": "https://trialagents.com/ctis/sweden/en/pregnancy-follow-up-requirements",
+    "SE-SECONDARY": "https://trialagents.com/ctis/sweden/en/secondary-use-consent-requirements",
+    "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention"
+  },
+  "sources_note": "All eleven Sweden guide pages reviewed 23 September 2026. Anchors #1-#11 refer to the numbered items of the Part II checklist page, #language to its 'Sweden-specific language check'; SE-QC#1-#10 to the numbered sections of the QC checklist page. The Swedish-language guides (/ctis/sweden/sv) were not read (outside the /ctis/sweden/en/ scope).",
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "sweden_note": "Use the CTCG pattern; the Sweden checklist page names ('M1 CV Investigator', 'M2 Declaration of interest', 'N1 Site suitability form', 'P1 Compensation, investigator, funding and other arrangements', 'R1 Compliance on the collection and use of personal data', 'S1 Compliance on the collection, use and storage of biological samples', 'K2 Recruitment material description', 'L1 SIS and ICF description') are superseded by the CTCG examples. Every document carries _SE_sv as the controlled Swedish country version (_SE_en only for an English insurer document). The fee item has no CTCG title (DECISIONS.md D4). The Sweden guides give no further national naming instructions."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued by someone else (insurer, sponsor finance, authority form). Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/SE/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/SE/checklists/participant-documents.json",
+    "check": "countries/SE/checklists/forms-and-supplied.json",
+    "package": "countries/SE/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/SE/DECISIONS.md",
+  "answer_languages": [
+    "sv"
+  ],
+  "answer_languages_note": "Swedish for every Part II document (Annex I points 59 to 73); English only for an insurer-issued certificate where accepted."
+}
