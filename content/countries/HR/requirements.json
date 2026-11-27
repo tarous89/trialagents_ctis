@@ -803,7 +803,7 @@
       "id": "HR-L1-EMERGENCY",
       "checklist_item": "9 (conditional, emergency enrollment)",
       "ctis_section": "L",
-      "ctis_title": "L1_SIS and ICF_<emergency participant, representative or initial information>_<population>_HR_hr",
+      "ctis_title": "L1_SIS and ICF_<emergency participant or representative or initial information>_<population>_HR_hr",
       "name_en": "Later consent documents for Article 35 emergency enrollment",
       "requirement": "conditional",
       "trigger": "consent.emergency_enrolment",
