@@ -1,0 +1,319 @@
+{
+ "id": "LV-QC-PARTICIPANT",
+ "name": "Latvia: participant-facing document QC",
+ "applies_to": [
+  "LV-L1",
+  "LV-L1-POPULATION",
+  "LV-L2",
+  "LV-K2"
+ ],
+ "reviewed": "2026-11-27",
+ "source": "https://trialagents.com/ctis/latvia/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+ "when": "After medical, legal, privacy and Latvian-language review, before upload to CTIS.",
+ "result_values": [
+  "met",
+  "unmet",
+  "needs_decision",
+  "not_applicable"
+ ],
+ "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+ "sections": [
+  {
+   "id": "C1",
+   "title": "Trial content and protocol consistency",
+   "items": [
+    {
+     "id": "C1.01",
+     "check": "Trial title, sponsor protocol number, EU CT number, sponsor, study centre, treatment names, groups, dose schedule, randomisation ratio, placebo use, blinding and participation period match the current protocol."
+    },
+    {
+     "id": "C1.02",
+     "check": "Visit schedule, procedures, sample volumes, imaging, questionnaires, optional procedures, follow-up and burden reconcile with the schedule of activities."
+    },
+    {
+     "id": "C1.03",
+     "check": "Risks match the current protocol, Investigator's Brochure, product information and risk assessment; no applicable reproductive, genetic, radiation, procedural, privacy or withdrawal risk is omitted."
+    },
+    {
+     "id": "C1.04",
+     "check": "Expected benefit is stated accurately; no personal benefit is implied where none is expected."
+    },
+    {
+     "id": "C1.05",
+     "check": "Alternatives to participation and usual-care options match the protocol and the Latvian site pathway."
+    },
+    {
+     "id": "C1.06",
+     "check": "Trial medicines, administration devices and protocol-required medicines, devices and examinations are described as free to the participant where applicable under Latvian rules."
+    }
+   ]
+  },
+  {
+   "id": "C2",
+   "title": "Consent logic",
+   "items": [
+    {
+     "id": "C2.01",
+     "check": "No trial-specific procedure occurs before valid consent, except within an authorised emergency pathway."
+    },
+    {
+     "id": "C2.02",
+     "check": "Required participation statements are separate from optional choices."
+    },
+    {
+     "id": "C2.03",
+     "check": "Every optional box can be answered independently and refusal does not create an unintended exclusion."
+    },
+    {
+     "id": "C2.04",
+     "check": "Signatures and dates match the actual consent pathway: participant or authorised decision-maker, person conducting the interview, and an impartial witness only when applicable."
+    },
+    {
+     "id": "C2.05",
+     "check": "States that adequate time is given, questions can be asked and a copy of the signed consent record is provided."
+    },
+    {
+     "id": "C2.06",
+     "check": "Withdrawal from participation is explained separately from withdrawal of optional future-use permission."
+    },
+    {
+     "id": "C2.07",
+     "check": "Explains what happens to data and samples already collected when consent is withdrawn, without promising deletion where lawfully retained trial records must remain."
+    }
+   ]
+  },
+  {
+   "id": "C3",
+   "title": "Population and document coverage",
+   "instruction": "Map every inclusion pathway in the protocol to a Latvian information and consent document (requirements.json population_sets).",
+   "items": [
+    {
+     "id": "C3.01",
+     "check": "Every protocol population maps to a Latvian information and consent document (population x document table; populations mutually exclusive within each consent stage).",
+     "applies_when": "always"
+    },
+    {
+     "id": "C3.02",
+     "check": "Healthy volunteers: screening, washout, confinement, restrictions, payments, incidental findings and medical-care wording checked against the Latvia healthy volunteer guide.",
+     "applies_when": "population.healthy_volunteers"
+    },
+    {
+     "id": "C3.03",
+     "check": "Ages 0 to 13: legal-representative consent and age-appropriate child information where the child can understand it.",
+     "applies_when": "population.minors"
+    },
+    {
+     "id": "C3.04",
+     "check": "Ages 14 to 17: both the legal representative's written consent and the minor's own written consent.",
+     "applies_when": "population.minors"
+    },
+    {
+     "id": "C3.05",
+     "check": "Adults unable to consent: lawful decision-maker and participant-information pathway verified against the Latvia legal representative guide.",
+     "applies_when": "population.adults_without_capacity"
+    },
+    {
+     "id": "C3.06",
+     "check": "Emergency enrolment: every Article 35 condition and the subsequent-consent process verified against the Latvia emergency enrollment guide.",
+     "applies_when": "consent.emergency_enrolment"
+    },
+    {
+     "id": "C3.07",
+     "check": "Participants unable to write: alternative method and witness signatures verified against the Latvia impartial witness guide.",
+     "applies_when": "consent.impartial_witness_possible"
+    },
+    {
+     "id": "C3.08",
+     "check": "Pregnancy follow-up: participant and partner pathways kept separate, checked against the Latvia pregnancy follow-up guide.",
+     "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+    }
+   ]
+  },
+  {
+   "id": "C4",
+   "title": "Privacy and medical-record access",
+   "items": [
+    {
+     "id": "C4.01",
+     "check": "Controller and relevant processors identified without confusing sponsor, site and investigator roles."
+    },
+    {
+     "id": "C4.02",
+     "check": "Data categories, purposes, recipients, retention, international transfers, safeguards and applicable rights described consistently with the data-protection statement (LV-R1)."
+    },
+    {
+     "id": "C4.03",
+     "check": "Data State Inspectorate contact details included, as requested by the Latvia national overview."
+    },
+    {
+     "id": "C4.04",
+     "check": "Direct access to medical records explained for authorised sponsor representatives, investigators, monitors, auditors, inspectors and authorities, only to the extent applicable."
+    },
+    {
+     "id": "C4.05",
+     "check": "Privacy wording does not present consent to participate as the sole legal basis for every research-processing activity."
+    },
+    {
+     "id": "C4.06",
+     "check": "Contact details for privacy questions are separate from medical-emergency contacts."
+    }
+   ]
+  },
+  {
+   "id": "C5",
+   "title": "Biological samples and secondary use",
+   "items": [
+    {
+     "id": "C5.01",
+     "check": "Each sample type, volume, timing, storage location, responsible entity, transfer, retention period, analysis and disposal plan matches the protocol and laboratory manual.",
+     "applies_when": "samples.collected or samples.archive_used"
+    },
+    {
+     "id": "C5.02",
+     "check": "Protocol-required sample use is separate from optional future or secondary research."
+    },
+    {
+     "id": "C5.03",
+     "check": "Coding or pseudonymisation explained accurately; coded samples are not called anonymous."
+    },
+    {
+     "id": "C5.04",
+     "check": "States whether genetic analysis is included and whether individual or incidental findings may be returned."
+    },
+    {
+     "id": "C5.05",
+     "check": "Withdrawal wording aligned across the consent form, biological-samples statement (LV-S1), protocol and sample-management plan."
+    },
+    {
+     "id": "C5.06",
+     "check": "Optional future use reviewed against the Latvia secondary-use consent guide.",
+     "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+    }
+   ]
+  },
+  {
+   "id": "C6",
+   "title": "Latvia-specific administrative checks",
+   "items": [
+    {
+     "id": "C6.01",
+     "check": "Participant-facing documents are in Latvian and understandable to the intended age and population."
+    },
+    {
+     "id": "C6.02",
+     "check": "Participant- and doctor-facing recruitment materials are in Latvian.",
+     "applies_when": "recruitment.material_used or recruitment.doctor_facing_material"
+    },
+    {
+     "id": "C6.03",
+     "check": "Study-centre name and address, data-controller identity, ZVA contact, assigned ethics-committee contact and Data State Inspectorate contact included."
+    },
+    {
+     "id": "C6.04",
+     "check": "Document title, version, date, sponsor protocol number and EU CT number included."
+    },
+    {
+     "id": "C6.05",
+     "check": "Reimbursement and payment wording reconciles with the participant-compensation template (LV-P1) and the draft site budget (LV-P2)."
+    },
+    {
+     "id": "C6.06",
+     "check": "Injury and insurance wording reconciles with the submitted Latvia-compliant insurance evidence (LV-O1)."
+    },
+    {
+     "id": "C6.07",
+     "check": "The blank CTIS forms contain no participant signatures, completed personal data, tracked changes, comments or drafting notes."
+    },
+    {
+     "id": "C6.08",
+     "check": "Where a participant group cannot understand Latvian, an additional approved language version and consent process are planned; no ad hoc translation.",
+     "applies_when": "population.non_latvian_speakers"
+    }
+   ]
+  },
+  {
+   "id": "C7",
+   "title": "Readability and final production",
+   "items": [
+    {
+     "id": "C7.01",
+     "check": "Short sentences, familiar Latvian terms, clear headings and sufficient space around consent choices and signatures."
+    },
+    {
+     "id": "C7.02",
+     "check": "Risk wording is understandable without reducing medical accuracy."
+    },
+    {
+     "id": "C7.03",
+     "check": "Abbreviations defined at first use; technical detail that does not help the decision removed."
+    },
+    {
+     "id": "C7.04",
+     "check": "Names, telephone numbers, email addresses, after-hours contacts and site fields reviewed."
+    },
+    {
+     "id": "C7.05",
+     "check": "Page numbers, headers, footers, version control and filenames consistent."
+    },
+    {
+     "id": "C7.06",
+     "check": "Final native-language proofread done after all content changes; not only back-translation or automated checks."
+    }
+   ]
+  },
+  {
+   "id": "C8",
+   "title": "Signature, version and administration",
+   "source": "Latvia Part II checklist item 3 and the TrialAgents final-form rules (conventions/template-instructions.md)",
+   "items": [
+    {
+     "id": "C8.01",
+     "check": "Correct document title, population, language code, version and date."
+    },
+    {
+     "id": "C8.02",
+     "check": "Version references inside the consent form match the information sheet."
+    },
+    {
+     "id": "C8.03",
+     "check": "No participant, representative, witness or interviewer signature in the blank CTIS submission copy."
+    },
+    {
+     "id": "C8.04",
+     "check": "Complete signature and date fields for use at consent for every signer of the pathway."
+    },
+    {
+     "id": "C8.05",
+     "check": "Witness and interpreter fields only where the witness pathway can apply.",
+     "applies_when": "consent.impartial_witness_possible"
+    },
+    {
+     "id": "C8.06",
+     "check": "Representative identity, authority or relationship field where a representative signs.",
+     "applies_when": "population.minors or population.adults_without_capacity or consent.emergency_enrolment"
+    },
+    {
+     "id": "C8.07",
+     "check": "From age 14 the minor's own signature and date block is separate from the legal representative's; a younger child's assent block does not look like legal consent.",
+     "applies_when": "population.minors"
+    },
+    {
+     "id": "C8.08",
+     "check": "Statement that the participant or representative receives a copy of the signed consent documentation."
+    },
+    {
+     "id": "C8.09",
+     "check": "Correct CTIS section and naming convention; the filename identifies the document type (adult, legal representative, 0 to 13 years, 14 to 17 years)."
+    },
+    {
+     "id": "C8.10",
+     "check": "No personal data that should not appear in the CTIS upload."
+    },
+    {
+     "id": "C8.11",
+     "check": "No drafting instruction remains in the final version (italic notes, [bracket] notes, ........... gaps, yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels)."
+    }
+   ]
+  }
+ ]
+}
