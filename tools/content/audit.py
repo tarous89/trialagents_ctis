@@ -19,8 +19,10 @@ for doc in d['documents']:
     t=doc.get('template')
     if t: exists(t['file']); exists(t['fields'])
     elif doc['kind'] in ('form','third_party_template'): errs.append(doc['id']+' has no template')
+MISSING=(None,'','missing')
 for ps in d['population_sets']:
-    for x in ps['documents']: exists(x['template'])
+    for x in ps['documents']:
+        if x.get('template') not in MISSING: exists(x['template'])
 tids={c['id'] for c in d['participant_templates']}
 for c in d['participant_templates']: exists(c['file'])
 pr=d['population_rules']
