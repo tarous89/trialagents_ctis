@@ -566,7 +566,7 @@
       "national_fields": {
         "f02": "Magyarországon kötelező: a résztvevői dokumentumban pontosan fel kell sorolni a szponzor által megtérített igazolt költségtípusokat; csak igazolt költség téríthető, és a „térítheti” típusú feltételes vagy példálózó megfogalmazást az ETT-KFEB nem fogadja el. Külső költségtérítési szolgáltató esetén a résztvevői anyag ismerteti a lényeges feltételeket, a továbbított adatokat és az esetleges díjakat.",
         "f04": "Magyarországon: pénzbeli ellenszolgáltatás az ETT Bioetikai Kódex szerint I. fázisú vizsgálatban egészséges vagy beteg résztvevőknek, valamint nem terápiás farmakokinetikai vagy farmakodinámiás vizsgálatban adható egységesen meghatározott összegben, a kellemetlenség, az időveszteség és a jövedelemkiesés ellentételezésére; az összeg nem gyakorolhat indokolatlan befolyást. Kiskorúak és cselekvőképtelen személyek részére részvételi díj nem adható, csak igazolt költségtérítés. A részvételi díjat a költségtérítéstől elkülönítve kell megadni, ugyanazokkal az összegekkel, mint a résztvevői dokumentumokban.",
-        "f05": "Magyarországon kötelező, ha a vizsgálat alatt kis értékű ajándékot vagy megtartást segítő tárgyat adnak a résztvevőknek: sorolja fel a tárgyakat és mindegyik kereskedelmi értékét."
+        "f05": "Magyarországon kötelező, ha a vizsgálat alatt kis értékű ajándékot vagy megtartást segítő tárgyat adnak a résztvevőknek: sorolja fel a tárgyakat és mindegyik kereskedelmi értékét (DECISIONS.md D19)."
       },
       "sources": [
         "HU-PII-CHECKLIST#7",
@@ -691,7 +691,7 @@
       "fields": {
         "f02": "Magyarországon kötelező: a résztvevői dokumentumban pontosan fel kell sorolni a szponzor által megtérített igazolt költségtípusokat; csak igazolt költség téríthető, és a „térítheti” típusú feltételes vagy példálózó megfogalmazást az ETT-KFEB nem fogadja el. Külső költségtérítési szolgáltató esetén a résztvevői anyag ismerteti a lényeges feltételeket, a továbbított adatokat és az esetleges díjakat.",
         "f04": "Magyarországon: pénzbeli ellenszolgáltatás az ETT Bioetikai Kódex szerint I. fázisú vizsgálatban egészséges vagy beteg résztvevőknek, valamint nem terápiás farmakokinetikai vagy farmakodinámiás vizsgálatban adható egységesen meghatározott összegben, a kellemetlenség, az időveszteség és a jövedelemkiesés ellentételezésére; az összeg nem gyakorolhat indokolatlan befolyást. Kiskorúak és cselekvőképtelen személyek részére részvételi díj nem adható, csak igazolt költségtérítés. A részvételi díjat a költségtérítéstől elkülönítve kell megadni, ugyanazokkal az összegekkel, mint a résztvevői dokumentumokban.",
-        "f05": "Magyarországon kötelező, ha a vizsgálat alatt kis értékű ajándékot vagy megtartást segítő tárgyat adnak a résztvevőknek: sorolja fel a tárgyakat és mindegyik kereskedelmi értékét."
+        "f05": "Magyarországon kötelező, ha a vizsgálat alatt kis értékű ajándékot vagy megtartást segítő tárgyat adnak a résztvevőknek: sorolja fel a tárgyakat és mindegyik kereskedelmi értékét (DECISIONS.md D19)."
       }
     }
   },
@@ -1090,7 +1090,7 @@
       "always": [
         "HU-PT-parents"
       ],
-      "band_rule": "The official Hungary Part II sources publish no fixed national assent age-band table ('do not invent one'). The template bands 6-11 and 12-17 are drafting bands; per study, create child and adolescent versions from the protocol population, developmental ability and the CTR requirement for age- and maturity-appropriate information, defensible to ETT-KFEB. A short child sheet may suit younger children; adolescents may need a document closer to the adult information.",
+      "band_rule": "The official Hungary Part II sources publish no fixed national assent age-band table ('do not invent one'). The template bands 6-11 and 12-17 are drafting bands; per study, create child and adolescent versions from the protocol population, developmental ability and the CTR requirement for age- and maturity-appropriate information, defensible to ETT-KFEB. A short child sheet may suit younger children; adolescents may need a document closer to the adult information. (DECISIONS.md D14).",
       "band_conflict": "None: the authority sets no bands, so the template bands are kept as drafting bands (recorded in templates/README.md).",
       "age_16": "Minors aged 16 or older may designate who exercises healthcare consent or refusal rights; this is not automatic independent clinical-trial consent.",
       "age_14_template_rule": "The 12-17 and genetic templates record the own consent of a minor aged 14 or older together with the representative's consent; the guides state this only for genetic consent of minors with limited capacity (DECISIONS.md D12).",
