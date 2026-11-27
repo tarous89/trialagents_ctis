@@ -1,0 +1,223 @@
+{
+  "id": "FI-CHECK",
+  "name": "Finland: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/finland/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor finance are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language matches requirements.json: K1 and the consent procedure in Finnish and/or Swedish; other administrative documents in Finnish, Swedish or English."
+    },
+    {
+      "id": "X.05",
+      "check": "No signature for submission (Tukija: signatures not required on dossier documents at CTIS submission); file is PDF or PDF/A."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json."
+    }
+  ],
+  "by_document": {
+    "FI-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the EU Recruitment and Informed Consent Procedure template v2.0 (new Part II submissions from 1 September 2026)."
+      },
+      {
+        "id": "K1.02",
+        "check": "The inclusion procedure is described and the first act of recruitment is clearly identified."
+      },
+      {
+        "id": "K1.03",
+        "check": "The Yes/No answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each Yes section is completed, each No section says not applicable."
+      },
+      {
+        "id": "K1.04",
+        "check": "Finland-specific parts (national_fields v105, v108, v110, v114, v117, v121) are completed in Finnish and/or Swedish."
+      },
+      {
+        "id": "K1.05",
+        "check": "Recruitment routes, response handling and informing people found unsuitable match the recruitment material (K2) and the protocol.",
+        "applies_when": "recruitment.material_used"
+      },
+      {
+        "id": "K1.06",
+        "check": "The age-15 independent pathway, the assessment of understanding and the guardian notification are described.",
+        "applies_when": "population.minors_independent_consent_15_17"
+      },
+      {
+        "id": "K1.07",
+        "check": "Interpreter arrangements throughout the trial are described.",
+        "applies_when": "population.non_finnish_swedish_speakers"
+      }
+    ],
+    "FI-L1-PROCEDURE": [
+      {
+        "id": "LP.01",
+        "check": "Identical to the final FI-K1 file (same version and language)."
+      },
+      {
+        "id": "LP.02",
+        "check": "Covers how information is provided, who conducts the prior interview, how understanding is confirmed, decision time and how consent is documented, for every relevant pathway."
+      },
+      {
+        "id": "LP.03",
+        "check": "Uploaded under Subject information and informed consent procedure with its own CTIS title."
+      }
+    ],
+    "FI-N-SITES": [
+      {
+        "id": "NS.01",
+        "check": "CTIS lists every planned Finnish site with the principal investigator's name and position and the planned participant number, matching the M and N documents."
+      },
+      {
+        "id": "NS.02",
+        "check": "Any supporting document is in English, Finnish or Swedish and has no participant-facing content in English."
+      }
+    ],
+    "FI-M1": [
+      {
+        "id": "M1.01",
+        "check": "One current CV per principal investigator and site, on the EU template."
+      },
+      {
+        "id": "M1.02",
+        "check": "Shows professional and scientific qualifications, relevant patient-care and clinical-trial experience, and GCP training."
+      },
+      {
+        "id": "M1.03",
+        "check": "Only trial fields were filled by the assistant."
+      }
+    ],
+    "FI-M2-DOI": [
+      {
+        "id": "M2D.01",
+        "check": "One declaration per principal investigator and site, on the EU template; economic interests, institutional affiliations and other conditions are answered by the investigator."
+      }
+    ],
+    "FI-N1": [
+      {
+        "id": "N1.01",
+        "check": "Covers facilities, equipment, staff and expertise specific to this protocol and IMP for each site."
+      },
+      {
+        "id": "N1.02",
+        "check": "If one document covers all sites, the sites are clearly separated."
+      },
+      {
+        "id": "N1.03",
+        "check": "Made by the site or a sponsor contact person or other sponsor representative; no signature in the CTIS copy."
+      }
+    ],
+    "FI-O1": [
+      {
+        "id": "O1.01",
+        "check": "Describes insurance or another appropriate guarantee covering sponsor and investigator liability for participant injury, filed under Proof of insurance cover or indemnification."
+      },
+      {
+        "id": "O1.02",
+        "check": "The participant documents describe the same arrangement (Pharmaceutical Injuries Insurance vs site patient insurance, or the amended alternative)."
+      }
+    ],
+    "FI-P2": [
+      {
+        "id": "P2.01",
+        "check": "States the sponsor, conflicts or commitments linked to the sponsor, total site costs and their basis, investigator fees in euros, other trial-personnel remuneration in euros and recruitment resources."
+      },
+      {
+        "id": "P2.02",
+        "check": "Figures come from the sponsor; consistent with the funding statement in the participant documents."
+      }
+    ],
+    "FI-P1": [
+      {
+        "id": "P1.01",
+        "check": "Uses the EU Compensation for Trial Participants template and states explicitly when no compensation is offered."
+      },
+      {
+        "id": "P1.02",
+        "check": "Expenses, loss of earnings, inconvenience payments and costs that could fall to the participant are stated; any exception to free protocol medicines, devices and procedures is explained and justified."
+      },
+      {
+        "id": "P1.03",
+        "check": "Amounts, conditions and recipients identical in every participant document; partial participation and early withdrawal are not financially punitive."
+      },
+      {
+        "id": "P1.04",
+        "check": "Minors receive no financial benefit or incentive; only direct costs and loss of earnings.",
+        "applies_when": "population.minors"
+      }
+    ],
+    "FI-P3": [
+      {
+        "id": "P3.01",
+        "check": "Describes every other relevant sponsor-site agreement; consistent with P1 and P2."
+      }
+    ],
+    "FI-FEE": [
+      {
+        "id": "FEE.01",
+        "check": "Invoicing details in the CTIS Proof of payment section match Fimea's customer-data reporting form, including any purchase-order or project number required on the invoice."
+      },
+      {
+        "id": "FEE.02",
+        "check": "No pre-submission payment evidence is presented as required."
+      }
+    ],
+    "FI-R1": [
+      {
+        "id": "R1.01",
+        "check": "EU statement on compliance with Union data-protection law completed in the CTIS Form section; no separate signature."
+      },
+      {
+        "id": "R1.02",
+        "check": "Sponsor details match the CTIS application; no national sentence added that the guides do not require."
+      }
+    ],
+    "FI-S1": [
+      {
+        "id": "S1.01",
+        "check": "Completed for every application; if no samples are collected or used, No is selected and the detailed sections are marked not applicable."
+      },
+      {
+        "id": "S1.02",
+        "check": "New and archive sample sections match the protocol and sample plan.",
+        "applies_when": "samples.collected or samples.archive_used"
+      },
+      {
+        "id": "S1.03",
+        "check": "Analysis, storage, duration, access, coding and transfers match the participant documents.",
+        "applies_when": "samples.collected or samples.archive_used"
+      },
+      {
+        "id": "S1.04",
+        "check": "Future-use section completed and consistent with the separate future-use information and consent (Tukija T/171/2025).",
+        "applies_when": "samples.future_use_outside_protocol"
+      }
+    ]
+  }
+}

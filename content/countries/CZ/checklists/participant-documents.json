@@ -1,0 +1,379 @@
+{
+  "id": "CZ-QC-PARTICIPANT",
+  "name": "Czechia: participant-facing document QC",
+  "applies_to": [
+    "CZ-L1",
+    "CZ-L1-POPULATION",
+    "CZ-L2",
+    "CZ-K2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/czechia/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); population items also from the Czechia population guides named in each item",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "The full clinical trial title and EU CT Number are correct in every PIS/ICF version."
+        },
+        {
+          "id": "C1.02",
+          "check": "Sponsor identity and study purpose are correct."
+        },
+        {
+          "id": "C1.03",
+          "check": "Treatment arms, randomisation, placebo or comparator information and assignment probabilities match the protocol."
+        },
+        {
+          "id": "C1.04",
+          "check": "Visit schedules, procedures, sample collection, imaging, questionnaires and participant responsibilities match the protocol."
+        },
+        {
+          "id": "C1.05",
+          "check": "Treatment duration, follow-up period and any long-term follow-up match the protocol."
+        },
+        {
+          "id": "C1.06",
+          "check": "Investigational medicinal product route, frequency and relevant handling instructions match the protocol."
+        },
+        {
+          "id": "C1.07",
+          "check": "Participant-facing device instructions are included when self-use or device use requires them.",
+          "applies_when": "imp.self_administered or devices.used_in_trial"
+        },
+        {
+          "id": "C1.08",
+          "check": "No procedures or claims carried over from an older protocol version."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-participant consistency",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Foreseeable treatment and procedure risks are represented in understandable language; the document translates the protocol rather than reproducing it."
+        },
+        {
+          "id": "C2.02",
+          "check": "Pregnancy, contraception and breastfeeding restrictions match the protocol."
+        },
+        {
+          "id": "C2.03",
+          "check": "Prohibited concomitant treatments or lifestyle restrictions that materially affect participants are explained."
+        },
+        {
+          "id": "C2.04",
+          "check": "Expected benefits are stated cautiously and no benefit is promised."
+        },
+        {
+          "id": "C2.05",
+          "check": "Alternatives to participation are described where relevant."
+        },
+        {
+          "id": "C2.06",
+          "check": "Withdrawal procedures and post-withdrawal follow-up match the protocol."
+        },
+        {
+          "id": "C2.07",
+          "check": "Injury, insurance and reimbursement statements agree with the Part II insurance documents (CZ-O1, CZ-O2, CZ-O-POSTTRIAL) and the compensation information (CZ-P1)."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The main trial participation decision is distinct from optional activities."
+        },
+        {
+          "id": "C3.02",
+          "check": "Optional future research, optional substudies or optional sample retention can be refused without making the main trial consent internally contradictory."
+        },
+        {
+          "id": "C3.03",
+          "check": "Each optional future-sample choice has the separate signature required by SÚKL or is in a separate signed document.",
+          "applies_when": "samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C3.04",
+          "check": "An optional substudy independent of the main trial has its own information and consent document (KLH-22).",
+          "applies_when": "substudy.optional_independent"
+        },
+        {
+          "id": "C3.05",
+          "check": "The participant or legally designated representative signs only at the time of consent, not in the blank CTIS submission file."
+        },
+        {
+          "id": "C3.06",
+          "check": "The person conducting the consent interview signs and dates the executed consent record under the CTR process."
+        },
+        {
+          "id": "C3.07",
+          "check": "The form states that one dated and signed copy is provided to the participant and one remains at the site."
+        },
+        {
+          "id": "C3.08",
+          "check": "Re-consent triggers are defined when a child reaches a new age band, reaches adulthood, or an adult participant's capacity changes.",
+          "applies_when": "population.minors or population.adults_without_capacity"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "instruction": "Do not rely on one adult PIS/ICF when the population needs different information or consent-givers. Map every inclusion pathway to an information and consent set (requirements.json population_sets) and apply the matching Czechia population guide.",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its full document set; the standard Czech PIS/ICF is present for the main population.",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Minors (CZ-MINORS): parent or representative document present; separate written Czech information for each enrolled band 12-14 and 15-17; age-appropriate information for children under 12 where meaningful (signature under 11 not mandatory); one-parent signature route; the minor's signature documents willingness and does not replace parental consent; dissent respected and not described as symbolic; re-consent at the next band and at 18.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.03",
+          "check": "Limited capacity (CZ-CAPACITY): who gives legally valid consent follows the participant's legal status and the scope of any court ruling; legally designated representative document where required; information adapted to the participant's ability; participant involvement and right to object preserved; no invented representative hierarchy.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.04",
+          "check": "Emergency enrolment (CZ-EMERGENCY): the package describes the Article 35 inclusion conditions, how urgency is identified and documented, and how consent to continue is obtained without undue delay; the right to object to use of data already obtained is stated.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.05",
+          "check": "Impartial witness (CZ-WITNESS): for a participant who cannot write or cannot read, the witness procedure, the witness's independence from the study team and the witness signature statement are described; witness wording is not confused with representative consent or emergency enrolment.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.06",
+          "check": "Healthy volunteers (CZ-HV): absence of therapeutic intent, study procedures, restrictions, risks (not softened for First-in-Human) and the compensation structure are explained accurately.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.07",
+          "check": "Pregnancy follow-up (CZ-PREGNANCY): follow-up of a pregnant participant is separated from collection of information about a pregnant partner; the partner's own consent, data scope, record access and follow-up duration match the protocol.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or pregnancy.infant_follow_up"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Participant-facing privacy information matches the actual data flow, recipients and transfers."
+        },
+        {
+          "id": "C5.02",
+          "check": "The PIS/ICF contains SÚKL's required access-to-source-record wording covering monitors, auditors, regulators or medicines agencies, Ethics Committee members and study-team members as applicable."
+        },
+        {
+          "id": "C5.03",
+          "check": "Sponsor and controller descriptions are consistent across the PIS/ICF and the Part II data-protection documents (CZ-R1)."
+        },
+        {
+          "id": "C5.04",
+          "check": "Data withdrawal language does not promise deletion that the trial's legal and scientific record cannot support."
+        },
+        {
+          "id": "C5.05",
+          "check": "The separate sponsor-signed SÚKL Template No. 5 is included in the Part II data-protection category (CZ-R1)."
+        },
+        {
+          "id": "C5.06",
+          "check": "For a third-country sponsor, the sponsor itself signs Template No. 5, not an EU representative or CRO.",
+          "applies_when": "sponsor.third_country"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological samples and secondary use",
+      "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Protocol-required samples are described with purpose, collection and handling at the right level for participants."
+        },
+        {
+          "id": "C6.02",
+          "check": "Optional future research is clearly optional.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.03",
+          "check": "Future-use wording states storage duration, pseudonymised or anonymised status and the main intended research purpose.",
+          "applies_when": "samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.04",
+          "check": "Future-use consent has a separate signature if embedded in the main PIS/ICF, or a separate signed document is used.",
+          "applies_when": "samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.05",
+          "check": "SÚKL Template No. 7 is completed for the biological-sample pathway and covers samples collected during the trial as well as future use (CZ-S1).",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.06",
+          "check": "Withdrawal wording distinguishes identifiable or pseudonymised stored samples from material already fully anonymised or used in completed research.",
+          "applies_when": "samples.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Czech national content",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "Every PIS/ICF version contains the EU CT Number."
+        },
+        {
+          "id": "C7.02",
+          "check": "Every PIS/ICF version contains the full clinical trial title."
+        },
+        {
+          "id": "C7.03",
+          "check": "Every PIS/ICF version contains the required ethics committee e-mail (eticka.komise@sukl.gov.cz or the specific Ethics Committee's e-mail)."
+        },
+        {
+          "id": "C7.04",
+          "check": "No ethics committee telephone number is given."
+        },
+        {
+          "id": "C7.05",
+          "check": "Every PIS/ICF version states that results will be available on the EMA clinical trials website (no obsolete national register)."
+        },
+        {
+          "id": "C7.06",
+          "check": "Every PIS/ICF version contains consent for the specified access to source medical records."
+        },
+        {
+          "id": "C7.07",
+          "check": "Every PIS/ICF version states that the participant receives a dated and signed copy and one copy remains at the site."
+        },
+        {
+          "id": "C7.08",
+          "check": "The standard Czech submission does not include the English original or a bilingual PIS/ICF."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administration",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Each PIS/ICF page carries the correct version, date and trial identification."
+        },
+        {
+          "id": "C8.02",
+          "check": "Version and date match the machine-readable Part II document list (CZ-DOC-LIST)."
+        },
+        {
+          "id": "C8.03",
+          "check": "Electronic consent uses an electronic signature method accepted by SÚKL (qualified, recognised or guaranteed electronic signature, or dynamic biometric signature).",
+          "applies_when": "consent.electronic"
+        },
+        {
+          "id": "C8.04",
+          "check": "A sponsor platform's standard e-signature is not assumed acceptable; sponsor-created signatures not meeting SÚKL's criteria are excluded.",
+          "applies_when": "consent.electronic"
+        },
+        {
+          "id": "C8.05",
+          "check": "Age-specific and capacity-specific forms use consistent versioning and are linked to the correct consent-giver."
+        },
+        {
+          "id": "C8.06",
+          "check": "Participant materials and recruitment materials use the current content version."
+        },
+        {
+          "id": "C8.07",
+          "check": "Screenshots are supplied for electronic questionnaires.",
+          "applies_when": "questionnaires.electronic"
+        },
+        {
+          "id": "C8.08",
+          "check": "The CTIS submission contains blank forms, with no participant, representative, witness or investigator signature."
+        },
+        {
+          "id": "C8.09",
+          "check": "Witness signature and date fields only where the impartial-witness pathway can apply.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C8.10",
+          "check": "Correct CTIS section and CTIS title per the naming guide and requirements.json."
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version ([bracket] notes, 'Pokyn pro zpracovatele', 'Podmíněný text', 'Vyberte a upravte', '...........' gaps, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed at the consent visit stay blank."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability, language and design",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "The document is in Czech (mandatory)."
+        },
+        {
+          "id": "C9.02",
+          "check": "KLH-22 readability guidance applied: clear wording, no unnecessary specialist terms or abbreviations; language review recommended."
+        },
+        {
+          "id": "C9.03",
+          "check": "Document length and font size suit the population (adults and parents normally at most about 8 pages, 10 in specific cases; larger type where reading ability is reduced)."
+        },
+        {
+          "id": "C9.04",
+          "check": "Minors: 12-14 document simpler and shorter (about four pages at most, no contraception instructions); 15-17 document may approach adult length with contraception information where relevant for sexually active adolescents.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C9.05",
+          "check": "Foreign nationals: no direct translation of an unapproved English master; a certified translation of the approved Czech version is planned as a non-substantial amendment.",
+          "applies_when": "population.foreign_nationals_other_language"
+        },
+        {
+          "id": "C9.06",
+          "check": "Remuneration appears only in Phase I, bioequivalence or pharmacokinetic studies and not for vulnerable participants (KLH-22 recommendation); expense reimbursement is described separately.",
+          "applies_when": "compensation.remuneration_offered"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final release",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "The participant-facing package is compared with the Czechia Part II document checklist: correct Czech forms, correct population variants, correct optional-consent logic and a complete national Part II set."
+        }
+      ]
+    }
+  ]
+}

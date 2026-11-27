@@ -1,0 +1,1420 @@
+{
+ "country": "DK",
+ "name": "Denmark",
+ "reviewed": "2026-11-27",
+ "source_review_date": "2026-09-23",
+ "authorities": {
+  "competent_authority": "Lægemiddelstyrelsen (Danish Medicines Agency). Coordinates the national assessment with VMK and issues a joint Danish decision through CTIS; its inspectors may access medical records for inspection of clinical trials.",
+  "ethics": "De Videnskabsetiske Medicinske Komitéer (VMK, the Medical Research Ethics Committees) assess Part II using Annex I and VMK's national Part II guidance (updated September 2026). Denmark has not created a separate national CTR checklist replacing Annex I.",
+  "communication": "Communication with the authorities may be in Danish or English; VMK treats Danish as the national language for participant-facing information.",
+  "insurance": "The sponsor is responsible for coverage at all Danish sites: Patienterstatningen (Danish Patient Compensation) or independent insurance.",
+  "data_protection": "GDPR and the Danish Data Protection Act (databeskyttelsesloven); complaints to Datatilsynet (supplied templates).",
+  "fee": "One combined fee for the Danish Medicines Agency and VMK, paid to the Danish Medicines Agency no later than one month after receipt of the invoice; not a pre-submission requirement unless the current invoice process for the application says otherwise (DK-FEE).",
+  "consent_professional_role": "Oral information and receipt of consent by a duly qualified physician with Danish authorisation (population_rules.consent_taker)."
+ },
+ "language_rules": {
+  "participant_documents": "da",
+  "administrative_documents": [
+   "da",
+   "en"
+  ],
+  "rule": "Participant-facing information is prepared in Danish for the Danish population (VMK treats Danish as the national language). Application documents may be in Danish or English; the CV may be in Danish or English unless VMK requests otherwise.",
+  "non_danish_speakers": "If a participant or legal representative does not understand Danish: a validated written translation of both the PIS and the ICF into the person's native language or another language understood to the same degree (validation: confirmation that it is understood as intended; the sponsor is responsible), and linguistically effective oral information supported by a certified interpreter or another fluent person where appropriate. The investigator remains responsible for understanding.",
+  "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in Danish; their fixed text is the English EU text. M1 and M2 are completed by the investigator in Danish or English. The R1 national statement uses the VMK standard English sentence once supplied (DECISIONS.md D11).",
+  "by_language": {
+   "da": [
+    "DK-K1",
+    "DK-K2",
+    "DK-L1-SIS",
+    "DK-L1-ICF",
+    "DK-M1",
+    "DK-M2-DOI",
+    "DK-N1",
+    "DK-O1",
+    "DK-P1",
+    "DK-P2",
+    "DK-FEE",
+    "DK-R1",
+    "DK-S1"
+   ],
+   "en": [
+    "DK-K1",
+    "DK-M1",
+    "DK-M2-DOI",
+    "DK-N1",
+    "DK-O1",
+    "DK-P1",
+    "DK-P2",
+    "DK-FEE",
+    "DK-R1",
+    "DK-S1"
+   ]
+  },
+  "by_language_note": "Participant-facing documents (K2, L1) Danish only, plus validated translations for participants who do not understand Danish. Administrative documents Danish or English; the package default is Danish. Do not upload both language versions of the same administrative document without a clear reason (no duplication across CTIS sections, DK-PII-CHECKLIST pre-submission check).",
+  "drafting_notes_language": "drafting_notes_da for every document."
+ },
+ "study_facts_used": [
+  "population.adult_patients",
+  "population.healthy_volunteers",
+  "population.minors",
+  "population.minors_age_bands",
+  "population.minors_under_5",
+  "population.adults_without_capacity",
+  "population.adults_under_guardianship",
+  "population.non_danish_speakers",
+  "consent.emergency_enrolment",
+  "consent.impartial_witness_possible",
+  "consent.electronic",
+  "consent.delegated_consent_physician",
+  "consent.parental_power_of_attorney",
+  "recruitment.procedure_fully_in_protocol",
+  "recruitment.material_used",
+  "recruitment.patient_records_screening",
+  "recruitment.audio_video_material",
+  "recruitment.other_information_material",
+  "endpoint_documents.participant_facing",
+  "decentralised.elements",
+  "data.record_follow_up_after_withdrawal",
+  "data.transfer_outside_denmark",
+  "data.transfer_outside_eea",
+  "data.future_use_outside_protocol",
+  "samples.collected",
+  "samples.archive_used",
+  "samples.optional_substudy",
+  "samples.surplus_stored_for_future_research",
+  "samples.extra_collected_for_future_research",
+  "samples.future_use_outside_protocol",
+  "samples.significant_health_findings_likely",
+  "pregnancy.participant_follow_up_beyond_main_consent",
+  "pregnancy.partner_follow_up",
+  "pregnancy.partner_is_trial_participant",
+  "pregnancy.infant_follow_up",
+  "insurance.patienterstatningen_all_sites",
+  "budget.draft",
+  "contract.draft_cta_submitted",
+  "fee.proof_requested",
+  "trial.multinational",
+  "sites.count"
+ ],
+ "study_facts_note": "Keys not in playbook/planning.md section 2 (Denmark-specific): population.minors_under_5, population.adults_under_guardianship, population.non_danish_speakers (replaces the German-specific non_german_speakers), consent.delegated_consent_physician (another delegated physician receives consent after reflection, or the consent physician is not the PI), consent.parental_power_of_attorney, recruitment.procedure_fully_in_protocol (K1 exemption), recruitment.patient_records_screening, recruitment.audio_video_material (storyboard), decentralised.elements, data.record_follow_up_after_withdrawal, data.transfer_outside_denmark, data.transfer_outside_eea, samples.optional_substudy, samples.surplus_stored_for_future_research, samples.extra_collected_for_future_research, samples.significant_health_findings_likely, pregnancy.partner_is_trial_participant, insurance.patienterstatningen_all_sites, budget.draft, contract.draft_cta_submitted, fee.proof_requested, trial.multinational.",
+ "documents": [
+  {
+   "id": "DK-K1",
+   "ctis_section": "K",
+   "ctis_title": "K1_Recruitment arrangements_DK_da",
+   "ctis_title_note": "Use _DK_en instead of _DK_da when the procedure is filed in English (allowed for the application description).",
+   "name_en": "Recruitment arrangements and informed consent procedure",
+   "requirement": "mandatory",
+   "unless": "recruitment.procedure_fully_in_protocol (the information is fully contained in the protocol; DECISIONS.md D3)",
+   "trigger": "always",
+   "per": "trial",
+   "language": [
+    "da",
+    "en"
+   ],
+   "language_note": "Danish or English may be used for the application description; the package answers in Danish.",
+   "template": {
+    "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+    "basis": "European Commission Part II recruitment and informed consent procedure template, version 2.0, for new Part II submissions from 1 September 2026 (initial applications, additional Member States and Part II completion under Article 11). Already authorised trials and applications under review need no retrospective replacement. The same required information may be given in another accepted location.",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "signature_note": "An application document, not a participant-signed form; no participant signature at submission.",
+   "content": "Detailed description of subject inclusion and recruitment (Annex I) plus the Danish additions from VMK's Part II guidance (September 2026): patient-record screening and contact rules, who gives oral information and receives consent (a duly qualified physician with Danish authorisation), delegation, validated translations and oral language support, and every population pathway in the plan (minors, adults without capacity, impartial witness, emergency).",
+   "national_fields": {
+    "v100": "Denmark: if patient records are used to identify potential participants, state the specific record data, the purpose, the approximate number of records and the time period covered, and the Danish legal basis used for the disclosure (the guides do not name it; take it from the sponsor, never from memory). Contact with a potential participant based on record information only with permission from the treating healthcare professional; if that person cannot be contacted, site management may give the permission described in the national guidance.",
+    "v101": "Denmark: if recruitment begins from patient records rather than public advertising, the Danish patient-record rules (v100) apply to the first act of recruitment as well.",
+    "v102": "Denmark: advertisements and other recruitment communications are submitted when used, with a description of how responses are handled. Decentralised-trial materials are submitted in CTIS as presented, including images; audio and video cannot be uploaded as files, so a scene-by-scene storyboard with the text or speech is submitted in CTIS. VMK does not accept these materials outside CTIS.",
+    "v105": "Denmark: patient-record screening needs the detail in v100 (data, purpose, approximate number of records, period, Danish legal basis) and the contact-permission rule (treating healthcare professional, fallback site management). The version actually used with Danish participants must be understandable to them; a non-Danish version for a participant who does not understand Danish follows the same translation-quality principle.",
+    "v106": "Denmark: the oral information interview is performed by a duly qualified medical doctor with Danish authorisation who has appropriate clinical-trial and GCP experience and knowledge of the specific trial. If a potential participant or legally designated representative does not understand Danish, a validated written translation of both the participant information and the consent form into the person's native language or another language understood to the same degree (validation: confirmation that the translation is understood as intended; the sponsor is responsible for the translation); the oral conversation is supported by a certified interpreter or another person fluent in the language where appropriate (for example the informing physician, other trial staff or a relative, depending on the case). The investigator remains responsible for understanding. Adequate time to decide.",
+    "v107": "Denmark: normally the same Danish-authorised physician gives the oral information and receives consent. If the participant takes time to decide, another qualified, delegated physician may receive consent later and attest separately, provided that physician can answer any remaining questions. If the physician is not the principal investigator, a written agreement with the principal investigator is in place. Consent is written, dated and signed by the participant or legally designated representative and by the physician who performed the interview; the participant or representative receives a copy of the document by which consent was given. Understanding is verified during the interview.",
+    "v108": "Denmark: the ethics consent to trial participation is not GDPR consent; the main trial consent form is not used to regulate ordinary data-law matters, and any distinct GDPR consent is clearly separated from the CTR trial consent. VMK's CTR standard consent forms are used where the sponsor follows the national standard (DECISIONS.md D2); if their standard text fields are unchanged and the sponsor confirms that, VMK accepts the form without comments on those fields. If records are used for follow-up after withdrawal, state and justify the purpose, extent and conditions. Where significant health findings are reasonably likely, describe the Danish feedback process and the separate right-not-to-know form.",
+    "v110": "Denmark: adult without capacity not under guardianship: surrogate consent from both the nearest relative and a trial guardian (forsøgsværge); valid only when both have consented in writing. The nearest relative is determined by the participant's actual relationship and circumstances (for example spouse or cohabiting partner, direct-line relatives and siblings, in some situations another family member or a friend with regular close contact), not by a sponsor-defined hierarchy. The trial guardian is a physician with relevant knowledge of the research area who safeguards the participant's interests and is independent of the investigator's interests and of the trial; describe how the trial guardian is selected and how independence is kept. Adult under guardianship: the legal guardian consents only if the guardianship covers consent to research participation; the site confirms the mandate before relying on the signature. The participant is informed as far as possible; a genuine current refusal (verbal or by behaviour, body language or resistance) is respected and not overridden by the surrogate; describe how objection is assessed throughout the trial. When capacity returns, the participant's own consent as soon as they can receive the information, and how this transition is recognised and documented. The Danish-authorised physician rule applies to the representative consent process.",
+    "v111": "Denmark: the child is informed and involved as far as age and maturity allow, with age-appropriate written information where the child can understand it and an adapted oral explanation; the child's wishes are given weight and parental consent does not permit research against the child's will (opposition may be verbal or shown by behaviour or resistance). The child's agreement is not a substitute for parental consent. Describe how the team responds if a child or adolescent refuses a procedure or wishes to stop, especially with repeated invasive procedures.",
+    "v112": "Denmark: the person conducting the participant information process in a CTR medicinal trial meets the Danish medical-doctor requirement (duly qualified physician with Danish authorisation); for 15-17-year-olds the same physician gives the oral information and receives the young person's consent, subject to the delegated-physician rule in v107.",
+    "v113": "Denmark: when the participant reaches legal adulthood (18) during the trial, new written informed consent for continued participation is obtained after the age of legal competence is reached and before further trial-specific actions, without harmful interruption of treatment or care (CTR Q&A 7.3); plan the timing rather than waiting for close-out. A participant who turns 15 during the trial gives own written consent under the Danish rule.",
+    "v114": "Denmark: under 15, consent from the holder or holders of parental authority (forældremyndighedsindehaver); with joint parental authority both consent (a parental-authority power of attorney where the approved Danish route uses it). 15 to 17 and able to consent: the young person's own written consent together with consent from the parent or parents holding parental authority (VMK dedicated CTR form for 15-17-year-olds and parents). If a 15-17-year-old is temporarily unable to consent, the parental surrogate pathway, then the young person's own consent when able. Exceptions in general Danish research guidance for low-burden non-drug projects are not relied on unless VMK has expressly confirmed that they apply to this CTR trial.",
+    "v115": "Denmark: the CTR Article 29 witness pathway is used only when the participant or legally designated representative can make the informed decision but cannot write; not for incapacity (legal-representative pathway) or emergency inclusion (Article 35). State why the normal written-signature process cannot be used.",
+    "v116": "Denmark: describe the alternative method to give and record consent, how the impartial witness is selected (independent of the decision, able to attest that the alternative process was carried out as described, no role conflicting with the participant's interests; state the independence rationale), how the witness is present, what is recorded in the source documentation and how the final ICF or consent record is retained. There is no Danish national witness form in the VMK CTR library.",
+    "v117": "Denmark: the witness signs and dates the consent document; the Danish-authorised physician who performed the interview also signs and dates; the same physician gives the oral information and receives the consent, with a written agreement with the principal investigator if that physician is not the PI. The participant or representative receives a copy. Validated translations and oral language support where Danish is not understood. If the need arises unexpectedly after authorisation, check whether the approved documents already permit the alternative means; otherwise assess the CTIS modification route first.",
+    "v118": "Denmark (VMK emergency-trial guidance 2026): show every Article 35 element: genuine urgency with a sudden life-threatening or other sudden serious condition and the therapeutic window; scientific grounds for a direct clinically relevant benefit; prior consent impossible within the window; no known prior objection and how prior objections are checked (for example the medical record); the trial directly concerns the emergency condition and can only be done in that setting; minimal additional risk and burden compared with standard treatment, with a realistic risk assessment. Lack of time alone is not enough.",
+    "v119": "Denmark: describe how the emergency situation is identified and documented, which participant categories may be included and which legally designated representatives apply to each: adult without capacity not under guardianship, both the nearest relative and the trial guardian (valid only when both have consented in writing; the trial guardian is an independent physician with relevant knowledge, not part of the trial team and without conflicting interests); minor, the holder or holders of parental authority (both if joint), plus the 15-17-year-old's own consent if able; adult under guardianship, the guardian if the guardianship covers research consent. Subsequent consent is sought as soon as possible and without undue delay, with an estimate of when consent-seeking starts for each participant group; written and oral information, time to ask questions and consider; every attempt is documented.",
+    "v120": "Denmark: when the participant regains capacity (or a 15-17-year-old becomes able), their own consent to continued participation is obtained then, by the Danish-authorised physician (delegated-physician rule as in v107).",
+    "v121": "Denmark: if subsequent consent is refused or cannot be obtained, the participant cannot continue: trial treatment, trial-specific activities, new data collection and new access to the medical record for trial data stop. Data collected up to that point may continue to be used under the CTR and data-protection framework; the participant or representative is told about the possibility of objecting to use of already collected data. Describe this pathway before the trial starts."
+   },
+   "sources": [
+    "DK-PII-CHECKLIST#1",
+    "DK-ICF",
+    "DK-MINORS",
+    "DK-CAPACITY",
+    "DK-EMERGENCY",
+    "DK-WITNESS",
+    "DK-QC#3",
+    "DK-QC#6"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit K. Obligatorisk, når oplysningerne ikke fuldt ud fremgår af protokollen (DECISIONS.md D3). Ansøgningsbeskrivelsen må være på dansk eller engelsk; svarene i denne skabelon gives på dansk. Ingen underskrift ved indsendelse. Grundlag: Europa-Kommissionens skabelon for rekrutterings- og samtykkeprocedure, version 2.0 (gælder nye del II-indsendelser fra 1. september 2026). Udfyld afsnittet for hver inklusionsvej i planen (voksne uden handleevne, mindreårige, upartisk vidne, akut inklusion) og besvar de øvrige med skabelonens svar for ikke relevant. Angiv de danske krav i medlemsstatsfelterne (national_fields): journaloplysninger ved screening (konkrete oplysninger, formål, omtrentligt antal journaler, tidsperiode og dansk retsgrundlag; kontakt kun med tilladelse fra den behandlende sundhedsperson, ellers ledelsen på forsøgsstedet), mundtlig information og modtagelse af samtykke ved en behørigt kvalificeret læge med dansk autorisation (normalt samme læge; efter betænkningstid kan en anden kvalificeret, delegeret læge modtage samtykket og attestere særskilt), skriftlig aftale med den forsøgsansvarlige, hvis lægen ikke er investigator, validerede oversættelser og mundtlig sprogstøtte, nærmeste pårørende og forsøgsværge, forældremyndighedsindehavere og den 15-17-åriges eget samtykke samt artikel 35-forløbet. Det danske retsgrundlag for videregivelse af journaloplysninger angives af sponsor; det må ikke opfindes. Rekrutteringsvejene skal stemme overens med hvert K2-materiale."
+  },
+  {
+   "id": "DK-K2",
+   "ctis_section": "K",
+   "ctis_title": "K2_Recruitment material_<type>_DK_da",
+   "name_en": "Recruitment advertisements and invitation materials",
+   "requirement": "conditional",
+   "trigger": "recruitment.material_used",
+   "trigger_text": "Advertisements and other recruitment communications are used (Annex I: copies of advertising material and a description of how responses are handled).",
+   "per": "item",
+   "language": [
+    "da"
+   ],
+   "language_note": "The version actually used with Danish participants, understandable to that population; a non-Danish version for a participant who does not understand Danish follows the same translation-quality principle (title with that language code).",
+   "template": null,
+   "signature_at_submission": false,
+   "content": "Final material as it will be used. Decentralised-trial material is submitted in CTIS as presented, including images; audio and video are submitted as a scene-by-scene storyboard with the text or speech (no audio or video files; VMK does not accept these materials outside CTIS). Danish patient-record rules still apply if recruitment begins from records. Consistent with K1, the participant information and P1.",
+   "sources": [
+    "DK-PII-CHECKLIST#2",
+    "DK-QC#1"
+   ],
+   "kind": "participant_document",
+   "reader": "participant",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Source QC",
+    "Checklist",
+    "Style"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit K (Recruitment arrangements). Betinget: kun når annoncer eller andet rekrutteringsmateriale anvendes; ét dokument pr. materiale. Dansk, forståeligt for den danske målgruppe. Ingen underskrift. Ingen skabelon: udformes ud fra protokollen og K1. Materiale til decentrale forsøg indsendes i CTIS, som det præsenteres, inklusive billeder; lyd og video kan ikke uploades som filer, så der indsendes en storyboard scene for scene med tekst eller tale. VMK accepterer ikke materialet uden for CTIS. Indholdet skal stemme overens med K1, deltagerinformationen og P1."
+  },
+  {
+   "id": "DK-L1-SIS",
+   "ctis_section": "L",
+   "ctis_title": "L1_SIS_<population>_DK_da",
+   "ctis_title_note": "One participant information sheet per population and template (see population_sets for the subtype). If the user chooses one combined upload (DECISIONS.md D1), the title is L1_SIS and ICF_<population>_DK_da and DK-L1-ICF is part of it. Validated translations: same title with the language code of the translation.",
+   "name_en": "Participant information sheet (deltagerinformation), one per population",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "population",
+   "language": [
+    "da"
+   ],
+   "language_note": "Danish for Danish-speaking participants. For a participant or legal representative who does not understand Danish: a validated written translation into the person's native language or another language understood to the same degree (population.non_danish_speakers).",
+   "template": null,
+   "template_note": "Bound per population through population_sets: the information sections (sis_sections) of the participant template in participant_templates. VMK publishes no separate national information form; the supplied templates are the basis.",
+   "signature_at_submission": false,
+   "content": "All information given to participants or legally designated representatives before the decision: the trial, procedures and additional procedures compared with ordinary care, risks and burdens, benefits (or a clear statement that no direct benefit is expected), alternatives where relevant, voluntary participation and withdrawal without detriment, what happens if participation stops, pregnancy and contraception where relevant, compensation and the damage-compensation or insurance arrangement, contacts, data processing, record access (sponsor, sponsor representatives and investigator; Danish Medicines Agency inspectors; foreign medicines authorities where relevant), international transfers, biological material, significant health findings and the right not to know where reasonably likely, and availability of results. Explains what the protocol means for a Danish participant rather than copying protocol language. Reviewed as a blank, version-controlled document.",
+   "sources": [
+    "DK-PII-CHECKLIST#3",
+    "DK-ICF"
+   ],
+   "kind": "participant_document",
+   "reader": "participant",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Source QC",
+    "Checklist",
+    "Style"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit L (Subject information, informed consent form and informed consent procedure). Obligatorisk for hver samtykkevej: én deltagerinformation pr. population og skabelon (se population_sets). Dansk; validerede oversættelser til personer, der ikke forstår dansk. Ingen underskrift; indsendes blank og versionsstyret. Skriv ud fra informationsafsnittene i den bundne skabelon (sis_sections). Medtag de danske formuleringer om journaladgang (sponsor, sponsors repræsentanter og investigator; Lægemiddelstyrelsens inspektører; udenlandske lægemiddelmyndigheder, hvis relevant), databeskyttelse (GDPR og databeskyttelsesloven; formål med behandling eller overførsel uden for Danmark; tredjelande og GDPR kapitel V), biologisk materiale (type, mængde, formål, analysested, opbevaringssted og -periode, destruktion) og væsentlige helbredsoplysninger med retten til ikke-viden, når de med rimelighed kan forventes. Forklar, hvad protokollen betyder for en dansk deltager; kopiér ikke protokoltekst. Version og dato skal være de samme som i den tilhørende samtykkeerklæring (DK-L1-ICF)."
+  },
+  {
+   "id": "DK-L1-ICF",
+   "ctis_section": "L",
+   "ctis_title": "L1_ICF_<population>_DK_da",
+   "ctis_title_note": "One blank consent form per population and template, with the same version and date as its DK-L1-SIS. Conditional separate forms from the same templates: L1_ICF_right not to know_<population>_DK_da and L1_ICF_power of attorney parental authority_<population>_DK_da (population_sets). Combined upload: DECISIONS.md D1.",
+   "name_en": "Informed consent form (samtykkeerklæring), one per population",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "population",
+   "language": [
+    "da"
+   ],
+   "language_note": "Danish for the normal Danish pathway; validated translations where required for non-Danish-speaking participants or representatives.",
+   "template": null,
+   "template_note": "Bound per population through population_sets: the declaration sections (icf_sections) of the participant template. VMK publishes CTR standard consent forms for competent persons, holders of parental authority, minors aged 15 to 17 together with parents, and nearest relatives together with a trial guardian, and encourages their use; a form not following the standard may be harder to approve. They were not supplied (DECISIONS.md D2).",
+   "signature_at_submission": false,
+   "signature_note": "Blank at submission. At consent the form is written, dated and signed by the participant or legally designated representative and by the physician who performed the information interview; a separate attestation by a later qualified, delegated consent-receiving physician is possible (VMK form); the special alternative-signature rule applies to a person unable to write (impartial witness).",
+   "content": "Blank consent form submitted together with the participant information. Use the form matching the participant category; the competent-adult form is never used for a legal-representative pathway. May be edited for trial-specific information, date and version; if the VMK standard text fields are unchanged and the sponsor confirms that, VMK accepts the form without comments on those fields. VMK accepts only the specific opt-out checkbox for storage of surplus trial material on the main consent form, no other future-research consent boxes.",
+   "sources": [
+    "DK-PII-CHECKLIST#4",
+    "DK-ICF",
+    "DK-QC#3",
+    "DK-QC#9",
+    "DK-SECONDARY"
+   ],
+   "kind": "participant_document",
+   "reader": "participant",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Source QC",
+    "Checklist",
+    "Style"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit L (Subject information and informed consent form). Obligatorisk for den relevante population; indsendes blank sammen med deltagerinformationen med samme version og dato. Dansk; validerede oversættelser efter behov. Ingen underskrift ved indsendelse. Skriv ud fra erklæringsafsnittene i den bundne skabelon (icf_sections). Brug den erklæring, der passer til deltagerkategorien; brug aldrig den kompetente voksnes erklæring til en stedfortræderrute. VMK's CTR-standardsamtykkeerklæringer anbefales (D2): hvis standardtekstfelterne ikke ændres, og sponsor bekræfter det, accepteres de uden bemærkninger til disse felter. Underskriftsfelter: deltager eller stedfortræder og den læge, der gav den mundtlige information; særskilt attestation fra en senere kvalificeret, delegeret læge, når samtykket modtages efter betænkningstid (D4); vidnefelter kun i vidneruten. På hovedsamtykkeerklæringen må kun den særlige fravalgsrubrik om opbevaring af overskydende biologisk materiale stå; andre afkrydsningsfelter om fremtidig forskning godkendes ikke. Retten til ikke-viden og fuldmagt fra forældremyndighedsindehaver er særskilte blanketter (population_sets)."
+  },
+  {
+   "id": "DK-M1",
+   "ctis_section": "M",
+   "ctis_title": "M1_CV_<investigator>_<site>_DK_da",
+   "ctis_title_note": "Use _DK_en when the CV is in English.",
+   "name_en": "Principal investigator curriculum vitae",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "site",
+   "per_note": "One CV for the principal investigator at each Danish trial site. VMK does not require CVs for sub-investigators for Part II; include others only if specifically requested.",
+   "language": [
+    "da",
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+    "basis": "European Commission Investigator Curriculum Vitae template (EudraLex Volume 10).",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": null,
+   "signature_note": "Follow the current EU template and CTIS requirements; do not add a signature requirement that is not in the current template.",
+   "content": "Relevant qualification, clinical-trial experience, Good Clinical Practice knowledge and patient-care experience as applicable. Personal details come from the investigator; the assistant fills only trial fields.",
+   "sources": [
+    "DK-PII-CHECKLIST#5"
+   ],
+   "kind": "third_party_template",
+   "reader": "regulatory",
+   "filled_by": "investigator",
+   "default_steps": [
+    "Prepare (trial fields only)",
+    "Check"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit M (Suitability of the investigator). Obligatorisk: ét CV for den forsøgsansvarlige (principal investigator) på hvert dansk forsøgssted; VMK kræver ikke CV'er for sub-investigatorer til del II. Dansk eller engelsk, medmindre VMK beder om andet i en konkret sag. EU-skabelonen for investigator-CV (EudraLex bind 10). Assistenten udfylder kun forsøgsoplysningerne (EU-forsøgsnummer); alle personlige felter står tomme til investigator. CV'et skal vise relevante kvalifikationer, erfaring med kliniske forsøg, GCP-kendskab og erfaring med patientbehandling. Tilføj ikke et underskriftskrav, som ikke står i den gældende skabelon."
+  },
+  {
+   "id": "DK-M2-DOI",
+   "ctis_section": "M",
+   "ctis_title": "M2_DoI_<investigator>_<site>_DK_da",
+   "ctis_title_note": "Use _DK_en when the declaration is in English.",
+   "name_en": "Investigator declaration of interests",
+   "requirement": "mandatory",
+   "requirement_note": "Mandatory where needed to satisfy the Annex I investigator-suitability information; planned per principal investigator and site.",
+   "trigger": "always",
+   "per": "site",
+   "language": [
+    "da",
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+    "basis": "European Commission declaration of interest template for Part II.",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": null,
+   "signature_note": "Follow the current template requirements.",
+   "content": "Any economic interests or institutional affiliations that could influence impartiality, declared by the investigator.",
+   "sources": [
+    "DK-PII-CHECKLIST#6"
+   ],
+   "kind": "third_party_template",
+   "reader": "regulatory",
+   "filled_by": "investigator",
+   "default_steps": [
+    "Prepare (trial fields only)",
+    "Check"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit M (Suitability of the investigator). Obligatorisk, hvor det er nødvendigt for at opfylde bilag I's oplysninger om investigators egnethed; én erklæring pr. forsøgsansvarlig og forsøgssted. Dansk eller engelsk. Europa-Kommissionens skabelon for interesseerklæring. Assistenten udfylder kun forsøgets titel og EU-forsøgsnummer; investigator besvarer selv spørgsmålene om økonomiske interesser og institutionelle tilknytninger. Underskrift efter skabelonens gældende krav."
+  },
+  {
+   "id": "DK-N1",
+   "ctis_section": "N",
+   "ctis_title": "N1_Site suitability form_<site>_DK_da",
+   "ctis_title_note": "Use _DK_en when the statement is in English.",
+   "name_en": "Site suitability statement",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "site",
+   "language": [
+    "da",
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/N1_Site suitability.docx",
+    "basis": "European Commission Site Suitability Form (CTAG); covers Annex I point 67.",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/N1_Site suitability.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "signature_rule": "An institutional application document. Use the current European Commission site suitability form and its signature requirements: the shared form's section 3 'Issued by' (name, position, on behalf of the site or organisation, date) is completed by the issuing head of clinic or institution or other responsible person, never by the assistant; the form itself states that the CTR does not require signing individual documents (DECISIONS.md D17).",
+   "content": "Justified written statement that the site has suitable facilities, equipment, human resources and expertise for this trial, issued by the head of the clinic or institution or another responsible person under the national system. One per Danish trial site.",
+   "national_fields": {
+    "n1_issued_by": "Denmark: the statement is issued by the head of the clinic or institution, or another responsible person under the national system, who completes the 'Issued by' fields of the current EC form (name, position, organisation, date) and any signature the form requires before upload. Leave them empty in the draft."
+   },
+   "sources": [
+    "DK-PII-CHECKLIST#7"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant; site fields and the issuer's fields left empty for the site",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit N (Suitability of the facilities). Obligatorisk, én erklæring pr. dansk forsøgssted. Dansk eller engelsk. Europa-Kommissionens skabelon for forsøgsstedets egnethed (dækker bilag I, punkt 67). Begrundet skriftlig erklæring om faciliteter, udstyr, personale og ekspertise, tilpasset denne protokol. Erklæringen udstedes af ledelsen af klinikken eller institutionen eller en anden ansvarlig person efter den nationale ordning; denne person udfylder afsnit 3 (navn, stilling, organisation, dato) og eventuel underskrift efter formularens krav, aldrig assistenten. Forsøgsstedets oplysninger (navn, forsøgsansvarlig, antal deltagere, id-nummer) står tomme til forsøgsstedet."
+  },
+  {
+   "id": "DK-O1",
+   "ctis_section": "O",
+   "ctis_title": "O1_Trial participant insurance certificate_DK_da",
+   "ctis_title_note": "Independent insurance: O1_Trial participant insurance certificate_DK_da (_DK_en for an English insurer certificate). Patienterstatningen route: provisional title O1_Patienterstatningen coverage statement_DK_da (DECISIONS.md D8).",
+   "name_en": "Insurance or indemnification information",
+   "requirement": "mandatory",
+   "requirement_note": "Mandatory as a coverage arrangement; the supporting document depends on the Danish coverage route.",
+   "trigger": "always",
+   "per": "trial",
+   "language": [
+    "da",
+    "en"
+   ],
+   "template": null,
+   "signature_at_submission": null,
+   "signature_note": "Depends on the insurance or guarantee document used.",
+   "content": "The sponsor is responsible for insurance coverage at all Danish trial sites. Sites may be covered by Patienterstatningen (the Danish Patient Compensation system) or by independent insurance. If Patienterstatningen covers the Danish sites, no stand-alone insurance policy is uploaded, but the application material must state that the Danish sites are covered by Patienterstatningen. A site not covered by that system needs documentation of the independent arrangement that meets the CTR compensation requirement. The participant information describes the arrangement in participant-friendly terms.",
+   "routes": {
+    "patienterstatningen": "insurance.patienterstatningen_all_sites: a statement that the Danish sites are covered by Patienterstatningen; no policy upload.",
+    "independent_insurance": "not insurance.patienterstatningen_all_sites: documentation of the independent insurance or arrangement for each site outside Patienterstatningen."
+   },
+   "sources": [
+    "DK-PII-CHECKLIST#8",
+    "DK-HV"
+   ],
+   "kind": "third_party_document",
+   "reader": "regulatory",
+   "filled_by": "sponsor (Patienterstatningen coverage statement) or insurer (independent insurance)",
+   "default_steps": [
+    "Check"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit O (Proof of insurance cover or indemnification). Obligatorisk som dækningsordning; dokumentet afhænger af den danske dækningsvej. Sponsor er ansvarlig for forsikringsdækning på alle danske forsøgssteder. Er forsøgsstederne dækket af Patienterstatningen, uploades ingen selvstændig forsikringspolice, men ansøgningsmaterialet skal angive, at de danske forsøgssteder er dækket af Patienterstatningen (D8). Et forsøgssted uden for ordningen kræver dokumentation for en uafhængig ordning, der opfylder CTR's erstatningskrav. Underskrift afhænger af det anvendte forsikrings- eller garantidokument. Leveres af sponsor eller forsikringsgiver og kontrolleres kun. Deltagerinformationen skal beskrive ordningen i et letforståeligt sprog og stemme overens med dette dokument."
+  },
+  {
+   "id": "DK-P1",
+   "ctis_section": "P",
+   "ctis_title": "P1_Compensation participants and financial arrangements_DK_da",
+   "name_en": "Participant compensation and financial arrangements (description)",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "trial",
+   "language": [
+    "da",
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+    "basis": "EU compensation template (CTAG), for payments or compensation to participants.",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+    "shared": true
+   },
+   "template_scope_note": "The EU form covers participant compensation. Trial financing, payments to investigators or sites and other sponsor-site agreements are documented in DK-P2 (trial budget, draft or final, and a draft CTA where used).",
+   "signature_at_submission": false,
+   "signature_note": "Follow the relevant agreement or form; a participant does not sign the compensation description because it is submitted in Part II.",
+   "content": "Brief description of payments or compensation to participants (Annex I). Healthy volunteers may receive inconvenience compensation assessed against the actual invasive nature, duration, pain, inconvenience and burden of the study; compensation must not be structured so that it improperly drives the decision to participate. Distinguish inconvenience compensation, documented loss of earnings, documented transport costs and other benefits; state whether payment is prorated if the participant leaves early. State explicitly when no payment is offered.",
+   "sources": [
+    "DK-PII-CHECKLIST#9",
+    "DK-HV"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit P (Financial and other arrangements). Obligatorisk. Dansk eller engelsk; ingen underskrift fra deltageren. EU-skabelonen dækker vederlag og godtgørelse til deltagere; forsøgets finansiering, betalinger til investigator eller forsøgssted og andre aftaler mellem sponsor og forsøgssted dokumenteres i DK-P2. Skeln mellem ulempegodtgørelse, dokumenteret tabt arbejdsfortjeneste, dokumenterede transportudgifter og andre goder, og angiv om betalingen gives forholdsmæssigt ved tidlig udtræden. Raske forsøgspersoner kan få ulempegodtgørelse vurderet efter forsøgets faktiske indgreb, varighed, smerte, ulempe og belastning; godtgørelsen må ikke utilbørligt påvirke beslutningen om at deltage. Angiv udtrykkeligt, hvis der ikke gives betaling. Beløb og vilkår skal være identiske med deltagerinformationen (afsnittet om økonomiske forhold)."
+  },
+  {
+   "id": "DK-P2",
+   "ctis_section": "P",
+   "ctis_title": "P2_Financial arrangements_<trial budget or site>_DK_da",
+   "ctis_title_note": "No naming-guide example for P2; provisional title (DECISIONS.md D9). _DK_en when the document is in English.",
+   "name_en": "Trial budget (draft or final) and draft clinical trial agreement",
+   "requirement": "mandatory",
+   "requirement_note": "Annex I requires a brief description of trial financing, payments to investigators or sites and other sponsor-site agreements; VMK accepts a draft or a final trial budget for this. A draft CTA is optional under the Danish Q&A approach.",
+   "trigger": "always",
+   "per": "trial",
+   "per_note": "One trial budget; a draft CTA per site where that route is used.",
+   "language": [
+    "da",
+    "en"
+   ],
+   "template": null,
+   "signature_at_submission": false,
+   "signature_note": "Follow the relevant agreement; a draft is submitted unsigned.",
+   "content": "VMK accepts either a draft or a final trial budget in Part II; with a draft, approval is conditional on the final budget not differing substantially from the submitted version. A draft Clinical Trial Agreement can likewise be submitted under the Danish Q&A approach, subject to the final agreement not differing substantially where VMK has accepted that route.",
+   "sources": [
+    "DK-PII-CHECKLIST#9"
+   ],
+   "kind": "third_party_document",
+   "reader": "regulatory",
+   "filled_by": "sponsor (finance and legal)",
+   "default_steps": [
+    "Check"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit P (Financial and other arrangements). Obligatorisk beskrivelse af forsøgets finansiering, betalinger til investigator eller forsøgssted og andre aftaler mellem sponsor og forsøgssted. VMK accepterer et udkast til eller et endeligt forsøgsbudget; ved udkast er godkendelsen betinget af, at det endelige budget ikke afviger væsentligt. Et udkast til forsøgsaftale (Clinical Trial Agreement) kan også indsendes efter VMK's spørgsmål og svar, på samme betingelse. Leveres af sponsor og kontrolleres kun. Finansieringskilder, beløb og investigators økonomiske tilknytning skal stemme overens med deltagerinformationens afsnit om økonomiske forhold."
+  },
+  {
+   "id": "DK-FEE",
+   "ctis_section": "Forms",
+   "ctis_title": "Proof of payment of fee_DK_da",
+   "ctis_title_note": "CTIS category 'Proof of payment of fee, if applicable'. The CTCG naming guide gives no title and places proof of fee in another CTIS upload location; provisional title (DECISIONS.md D10). _DK_en for an English document.",
+   "name_en": "Proof of fee payment",
+   "requirement": "conditional",
+   "trigger": "fee.proof_requested",
+   "trigger_text": "Conditional under Annex I, but normally not an initial Denmark upload before invoicing: one combined fee for the Danish Medicines Agency and VMK is paid to the Danish Medicines Agency no later than one month after receipt of the invoice. Upload only if the authority's current invoice process for the application asks for proof.",
+   "per": "trial",
+   "language": [
+    "da",
+    "en"
+   ],
+   "template": null,
+   "signature_at_submission": false,
+   "content": "Proof of payment of the combined Danish fee, only where the current invoice process asks for it.",
+   "sources": [
+    "DK-PII-CHECKLIST#10"
+   ],
+   "kind": "third_party_document",
+   "reader": "regulatory",
+   "filled_by": "sponsor",
+   "default_steps": [
+    "Check"
+   ],
+   "drafting_notes_da": "Betinget efter bilag I, men normalt ikke en del af den første danske upload før fakturering. Danmark opkræver ét samlet gebyr for Lægemiddelstyrelsen og VMK; det betales til Lægemiddelstyrelsen senest én måned efter modtagelse af fakturaen. Upload kun dokumentation, hvis myndighedens aktuelle faktureringsproces for den konkrete ansøgning kræver det. Leveres af sponsor og kontrolleres kun."
+  },
+  {
+   "id": "DK-R1",
+   "ctis_section": "R",
+   "ctis_title": "R1_Compliance collection and use personal data_DK_da",
+   "ctis_title_note": "_DK_en when the VMK standard English sentence is used as the statement (DECISIONS.md D11).",
+   "name_en": "Data-protection compliance statement (GDPR and the Danish Data Protection Act)",
+   "requirement": "mandatory",
+   "trigger": "always",
+   "per": "trial",
+   "language": [
+    "da",
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/R1_Data protection.docx",
+    "basis": "European Commission GDPR compliance statement, with the Danish statement on the Danish Data Protection Act added (VMK publishes a standard English sentence for this purpose; not supplied).",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "signature_note": "A sponsor declaration in the dossier; use the current Commission or VMK format; no participant signature.",
+   "content": "Sponsor statement that trial data will be collected and processed in accordance with the GDPR and the Danish Data Protection Act. The participant information separately gives understandable privacy information, the purpose of processing or transfers outside Denmark and, for transfers outside the EU/EEA, the countries and Chapter V compliance.",
+   "national_fields": {
+    "r1_the_sponsor_declares": "Required in Denmark: state that trial data will be collected and processed in accordance with the General Data Protection Regulation and the Danish Data Protection Act (databeskyttelsesloven). VMK publishes a standard English sentence for this; use it verbatim once supplied (DECISIONS.md D11) and never paraphrase it from memory."
+   },
+   "sources": [
+    "DK-PII-CHECKLIST#11",
+    "DK-ICF",
+    "DK-QC#7"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit R (Proof that data will be processed in compliance with Union law on data protection). Obligatorisk. Danmark kræver en erklæring fra sponsor om, at forsøgsdata indsamles og behandles i overensstemmelse med databeskyttelsesforordningen (GDPR) og databeskyttelsesloven. VMK har en standardsætning på engelsk til formålet; den bruges ordret, når den foreligger (D11), og må ikke genskabes efter hukommelsen. Ingen underskrift fra deltageren; formularens felter for dato, navn og rolle udfyldes for sponsor. Oplysninger om overførsler uden for Danmark og til tredjelande hører hjemme i deltagerinformationen og skal stemme overens med protokollen."
+  },
+  {
+   "id": "DK-S1",
+   "ctis_section": "S",
+   "ctis_title": "S1_Compliance collection use storage biological samples_DK_da",
+   "name_en": "Biological-sample compliance information",
+   "requirement": "conditional",
+   "trigger": "samples.collected or samples.archive_used",
+   "trigger_text": "The trial collects, stores, transfers or uses biological material.",
+   "per": "trial",
+   "language": [
+    "da",
+    "en"
+   ],
+   "template": {
+    "file": "eu/templates/part-ii/S1_Biological samples.docx",
+    "basis": "European Commission Part II template for compliance with applicable rules for biological samples; Denmark's national Part II guidance adds the country-specific content.",
+    "recommended": true,
+    "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+    "shared": true
+   },
+   "signature_at_submission": false,
+   "signature_note": "No participant signature on the compliance description; optional substudy or separate secondary-use consent is handled through its own consent pathway.",
+   "content": "Type and amount of each sample per participant, purpose, analysis location, storage location and duration, and whether material is destroyed after analysis or at trial end. Transfers or storage outside the EU/EEA: the participant information identifies the countries and addresses GDPR where the material generates or is linked to personal data. Significant health findings reasonably likely: Danish feedback process and right-not-to-know documentation. Related participant-facing documents go in the consent section.",
+   "national_fields": {
+    "f03": "Denmark: for each sample type, the type and amount per participant, purpose, analysis location, storage location and duration, and destruction after analysis or at trial end (or other disposition); transfers or storage outside the EU/EEA with the countries and GDPR where the material generates or is linked to personal data; where significant health findings are reasonably likely, the Danish feedback process and the separate right-not-to-know form. Archived material used as part of the approved trial: the participant is informed; no separate consent solely for that use. Surplus trial material stored after trial end for unspecified future research: stated in the main participant information with the VMK opt-out checkbox on the main consent form, storage duration, and (if stored in Denmark) that a later project must normally be submitted to an ethics committee with new consent as the default; if stored or used abroad, the rules for later research, new consent, ethics or IRB review and GDPR. VMK's Part II approval does not cover unspecified future research, nor extra material collected specifically for it. A defined, integrated optional substudy is within Part II with its own PIS and ICF."
+   },
+   "sources": [
+    "DK-PII-CHECKLIST#12",
+    "DK-SECONDARY",
+    "DK-ICF",
+    "DK-QC#8"
+   ],
+   "kind": "form",
+   "reader": "regulatory",
+   "filled_by": "assistant",
+   "default_steps": [
+    "Draft",
+    "Check"
+   ],
+   "drafting_notes_da": "CTIS del II, afsnit S. Betinget: når forsøget indsamler, opbevarer, overfører eller anvender biologisk materiale. Dansk eller engelsk; ingen underskrift fra deltageren. Angiv for hver prøvetype type og mængde pr. deltager, formål, analysested, opbevaringssted og -periode samt destruktion efter analyse eller ved forsøgets afslutning. Materiale, der overføres til eller opbevares uden for EU/EØS: lande og GDPR, når materialet genererer eller er knyttet til personoplysninger. Ved sandsynlige væsentlige helbredsoplysninger: den danske tilbagemeldingsproces og den særskilte blanket om retten til ikke-viden. Overskydende materiale til uspecificeret fremtidig forskning, valgfrie delforsøg og ekstra materiale til fremtidig forskning behandles efter de danske spor (se national_fields og population_rules). Oplysningerne skal stemme overens med protokollen, deltagerinformationen, R1 og eventuelle separate dokumenter."
+  }
+ ],
+ "document_map_to_checklist": {
+  "DK-PII-CHECKLIST#1": [
+   "DK-K1"
+  ],
+  "DK-PII-CHECKLIST#2": [
+   "DK-K2"
+  ],
+  "DK-PII-CHECKLIST#3": [
+   "DK-L1-SIS"
+  ],
+  "DK-PII-CHECKLIST#4": [
+   "DK-L1-ICF"
+  ],
+  "DK-PII-CHECKLIST#5": [
+   "DK-M1"
+  ],
+  "DK-PII-CHECKLIST#6": [
+   "DK-M2-DOI"
+  ],
+  "DK-PII-CHECKLIST#7": [
+   "DK-N1"
+  ],
+  "DK-PII-CHECKLIST#8": [
+   "DK-O1"
+  ],
+  "DK-PII-CHECKLIST#9": [
+   "DK-P1",
+   "DK-P2"
+  ],
+  "DK-PII-CHECKLIST#10": [
+   "DK-FEE"
+  ],
+  "DK-PII-CHECKLIST#11": [
+   "DK-R1"
+  ],
+  "DK-PII-CHECKLIST#12": [
+   "DK-S1"
+  ]
+ },
+ "document_map_note": "The Denmark Part II checklist page has 12 numbered core items. Item 9 names two different documents (the participant-compensation description on the EU P1 form, and the trial budget with an optional draft CTA), so it maps to DK-P1 and DK-P2; every other item is one document. Population-specific L1 documents expand DK-L1-SIS and DK-L1-ICF through population_sets.",
+ "national_fields": {
+  "DK-K1": [
+   "v100",
+   "v101",
+   "v102",
+   "v105",
+   "v106",
+   "v107",
+   "v108",
+   "v110",
+   "v111",
+   "v112",
+   "v113",
+   "v114",
+   "v115",
+   "v116",
+   "v117",
+   "v118",
+   "v119",
+   "v120",
+   "v121"
+  ],
+  "DK-N1": [
+   "n1_issued_by"
+  ],
+  "DK-R1": [
+   "r1_the_sponsor_declares"
+  ],
+  "DK-S1": [
+   "f03"
+  ]
+ },
+ "national_fields_note": "Index only; the text for each field is in that document's national_fields.",
+ "outside_part_ii": [
+  {
+   "id": "DK-PREGNANT-PARTNER-DATA",
+   "what": "Information and consent for data-only follow-up of a pregnant partner who is not a trial participant (DK-PT-pregnant-partner route A)",
+   "requirement": "conditional: pregnancy.partner_follow_up and not pregnancy.partner_is_trial_participant",
+   "where": "Usually outside VMK Part II approval; VMK recommends omitting it from Part II so that it does not appear ethically approved in CTIS (DECISIONS.md D12). Legal basis and consent or other mechanism designed under the data-protection framework.",
+   "note": "If submitted nevertheless, it must make clear that participation is voluntary, that the data are collected and processed under the GDPR and the Danish Data Protection Act, and that the material is not approved by VMK because it falls outside the committee's statutory competence (template route A carries this Danish transparency note).",
+   "template": "templates/participant/L1_SIS and ICF_pregnant partner_DK_da.json",
+   "sources": [
+    "DK-PREGNANCY"
+   ]
+  },
+  {
+   "id": "DK-FUTURE-RESEARCH-EXTRA",
+   "what": "Information and consent for extra biological material collected specifically for unspecified future research outside the defined trial (DK-PT-secondary, extra-collection route)",
+   "requirement": "conditional: samples.extra_collected_for_future_research",
+   "where": "Outside VMK Part II approval; VMK recommends omitting it from Part II (DECISIONS.md D13).",
+   "note": "Collection must be voluntary. If submitted to CTIS, the material states that it is not approved by VMK (template transparency sentence); VMK also recommends explaining later research and ethics review, GDPR and third-country transfers, and planned genetic analyses and possible findings.",
+   "template": "templates/participant/L1_SIS and ICF_secondary_DK_da.json",
+   "sources": [
+    "DK-SECONDARY",
+    "DK-QC#8"
+   ]
+  },
+  {
+   "id": "DK-FUTURE-RESEARCH-SHEET",
+   "what": "Optional separate future-research sheet for surplus trial material",
+   "requirement": "optional (sponsor choice)",
+   "where": "Outside VMK approval; the main PIS must still say that surplus material will be stored, whether storage is optional, and refer to the separate sheet.",
+   "sources": [
+    "DK-SECONDARY"
+   ]
+  },
+  {
+   "id": "DK-DELEGATION-AGREEMENT",
+   "what": "Written agreement between the principal investigator and a delegated consent physician",
+   "requirement": "conditional: consent.delegated_consent_physician",
+   "where": "Site file; the guides require it to be in place and K1 to say so, not to upload it.",
+   "sources": [
+    "DK-PII-CHECKLIST#1",
+    "DK-ICF"
+   ]
+  }
+ ],
+ "population_sets": [
+  {
+   "id": "adult_patients",
+   "trigger": "population.adult_patients",
+   "documents": [
+    {
+     "title": "L1_SIS_<population>_DK_da",
+     "icf_title": "L1_ICF_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_main_DK_da.json"
+    }
+   ],
+   "basis": "Supplied CTIS_DK main template; consent part follows the VMK CTR standard consent form for competent persons (DECISIONS.md D2).",
+   "sources": [
+    "DK-ICF",
+    "DK-PII-CHECKLIST#3",
+    "DK-PII-CHECKLIST#4"
+   ]
+  },
+  {
+   "id": "healthy_volunteers",
+   "trigger": "population.healthy_volunteers",
+   "documents": [
+    {
+     "title": "L1_SIS_healthy volunteers_<population>_DK_da",
+     "icf_title": "L1_ICF_healthy volunteers_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_healthy_DK_da.json"
+    }
+   ],
+   "note": "Variation of the main package; no separate VMK form for healthy volunteers: the competent-person consent pathway. Use when the participant is healthy in relation to the trial (an unrelated condition without relevance to the research counts as healthy). State plainly that no therapeutic benefit is expected where that is so; describe practical burden as carefully as pharmacological risk (fasting, confinement, repeated sampling, cannulation, PK sampling, biopsies, imaging, exercise testing, sleep disruption, dietary and other restrictions); explain first-in-human or dose-escalation uncertainty without implying monitoring removes unknown or serious risk. Compensation: inconvenience compensation proportionate to burden, not improperly influencing the decision; prorating and expense reimbursement distinguished; matches P1. Insurance: Patienterstatningen or the independent arrangement in participant-friendly terms.",
+   "sources": [
+    "DK-HV"
+   ]
+  },
+  {
+   "id": "minors",
+   "trigger": "population.minors",
+   "documents": [
+    {
+     "title": "L1_SIS_parents_<population>_DK_da",
+     "icf_title": "L1_ICF_parents_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_parents_DK_da.json"
+    },
+    {
+     "title": "L1_SIS_children 5-11_<population>_DK_da",
+     "icf_title": "L1_ICF_children 5-11_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_age 6-11_DK_da.json",
+     "when": "population.minors_age_bands includes ages 5-11 and the child can understand written information"
+    },
+    {
+     "title": "L1_SIS_adolescents 12-14_<population>_DK_da",
+     "icf_title": "L1_ICF_adolescents 12-14_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_age 12-17_DK_da.json",
+     "when": "population.minors_age_bands includes ages 12-14",
+     "route": "A (12-14: agreement or objection; delete route B)"
+    },
+    {
+     "title": "L1_SIS_adolescents 15-17_<population>_DK_da",
+     "icf_title": "L1_ICF_adolescents 15-17_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_age 12-17_DK_da.json",
+     "when": "population.minors_age_bands includes ages 15-17, and for every participant who turns 15 during the trial",
+     "route": "B (15-17: own written consent together with parental consent; delete route A)"
+    }
+   ],
+   "note": "Legal consent from the holder or holders of parental authority (both when joint). Under 15: the child is informed and involved as far as age and maturity allow, with age-appropriate written information where the child can understand it; parental consent does not permit research against the child's will (verbal or behavioural opposition). 15-17 and able to consent: own written consent together with the parents' consent, using a dedicated 15-17 information sheet and consent form (VMK publishes a dedicated CTR form for 15-17-year-olds and holders of parental authority; DECISIONS.md D6). Temporarily unable 15-17: parental surrogate pathway, then own consent when able. Re-consent at 18 with DK-PT-main or DK-PT-healthy before further trial-specific actions. Exact set follows the protocol age bands; avoid arbitrary bands. Translations where a child or parent does not understand Danish.",
+   "sources": [
+    "DK-MINORS"
+   ]
+  },
+  {
+   "id": "parental_power_of_attorney",
+   "trigger": "population.minors and consent.parental_power_of_attorney",
+   "documents": [
+    {
+     "title": "L1_ICF_power of attorney parental authority_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_parents_DK_da.json",
+     "sections": [
+      11
+     ]
+    }
+   ],
+   "note": "Parental-authority power of attorney where the approved Danish route uses it (one holder authorises the other for this trial at this site, with an end date). VMK publishes its own power-of-attorney form (not supplied); the parents template's section 11 is used until then (DECISIONS.md D2).",
+   "sources": [
+    "DK-MINORS"
+   ]
+  },
+  {
+   "id": "adults_without_capacity",
+   "trigger": "population.adults_without_capacity",
+   "documents": [
+    {
+     "title": "L1_SIS_legal representative_<population>_DK_da",
+     "icf_title": "L1_ICF_legal representative_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_legal rep_DK_da.json"
+    },
+    {
+     "title": "L1_SIS_limited capacity_<population>_DK_da",
+     "icf_title": "L1_ICF_limited capacity_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_limited capacity_DK_da.json"
+    }
+   ],
+   "note": "CTR Article 31 conditions. Not under guardianship: nearest relative and trial guardian both consent in writing (route B; VMK CTR form for nearest relatives with a trial guardian). Under guardianship covering research consent: the guardian (route A; mandate confirmed by the site). Keep the two roles distinct. Adapted participant information as far as possible; genuine current refusal is respected. Own consent with DK-PT-main when capacity returns.",
+   "sources": [
+    "DK-CAPACITY"
+   ]
+  },
+  {
+   "id": "emergency",
+   "trigger": "consent.emergency_enrolment",
+   "documents": [
+    {
+     "title": "L1_SIS_emergency_<population>_DK_da",
+     "icf_title": "L1_ICF_emergency_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_emergency_DK_da.json"
+    }
+   ],
+   "note": "All Article 35 conditions plus the Danish supplementary requirements (VMK 2026). The document set may need separate information and consent for a participant who regains capacity, the nearest relative, the trial guardian, the holder or holders of parental authority, a capable 15-17-year-old and a legal guardian. The emergency template covers the adult routes; minors use the parents and 12-17 templates adapted to subsequent consent (DECISIONS.md D21); limited-capacity information when the participant can receive it.",
+   "sources": [
+    "DK-EMERGENCY"
+   ]
+  },
+  {
+   "id": "impartial_witness",
+   "trigger": "consent.impartial_witness_possible",
+   "documents": [
+    {
+     "title": "L1_SIS_impartial witness_<population>_DK_da",
+     "icf_title": "L1_ICF_impartial witness_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_witness_DK_da.json"
+    }
+   ],
+   "note": "Only when a participant (or legally designated representative) can decide but is unable to write; not for incapacity or emergency inclusion. Submitted blank when the pathway is foreseeable. The template is for capable adult patients; a representative or healthy volunteer unable to write: DECISIONS.md D15.",
+   "sources": [
+    "DK-WITNESS"
+   ]
+  },
+  {
+   "id": "pregnancy_participant",
+   "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+   "documents": [
+    {
+     "title": "L1_SIS_pregnancy follow-up_<population>_DK_da",
+     "icf_title": "L1_ICF_pregnancy follow-up_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_pregnancy_DK_da.json"
+    }
+   ],
+   "note": "Only when follow-up involves additional trial procedures, additional record access, new participant-facing information or a change in the trial pathway that the main documents do not cover. Scope and duration match the protocol and pharmacovigilance plan. Child data after birth need separate consent from the holder or holders of parental authority (template section 12).",
+   "sources": [
+    "DK-PREGNANCY"
+   ]
+  },
+  {
+   "id": "pregnancy_partner_participant",
+   "trigger": "pregnancy.partner_follow_up and pregnancy.partner_is_trial_participant",
+   "documents": [
+    {
+     "title": "L1_SIS_pregnant partner_<population>_DK_da",
+     "icf_title": "L1_ICF_pregnant partner_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_pregnant partner_DK_da.json",
+     "route": "B (partner becomes a trial participant; delete route A)"
+    }
+   ],
+   "note": "The pregnant partner undergoes trial procedures (for example blood sampling) or is included in the research purpose or endpoints (for example pregnancy outcome as an endpoint): she is a participant and the document needs Part II review. Do not label an invasive research procedure as safety follow-up. The enrolled participant cannot consent for the partner and the participant's consent is no authority to access her records. Data-only follow-up: outside_part_ii DK-PREGNANT-PARTNER-DATA.",
+   "sources": [
+    "DK-PREGNANCY"
+   ]
+  },
+  {
+   "id": "optional_substudy",
+   "trigger": "samples.optional_substudy",
+   "documents": [
+    {
+     "title": "L1_SIS_optional substudy_<substudy>_<population>_DK_da",
+     "icf_title": "L1_ICF_optional substudy_<substudy>_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_main_DK_da.json"
+    }
+   ],
+   "note": "An optional substudy that is an integrated, defined part of the trial (research purpose and analyses sufficiently defined, within the approved purpose and endpoints) is within VMK's Part II approval: the main PIS mentions it, and it has its own PIS and ICF submitted in CTIS. Explain sample type and amount, purpose, analyses, storage, transfers, possible findings and withdrawal. Refusing it does not affect main participation. For minors or adults without capacity, the population's own consent-giver templates are used instead of the main template.",
+   "sources": [
+    "DK-SECONDARY",
+    "DK-QC#8"
+   ]
+  },
+  {
+   "id": "secondary_data_use",
+   "trigger": "data.future_use_outside_protocol",
+   "documents": [
+    {
+     "title": "L1_SIS_secondary data use_<population>_DK_da",
+     "icf_title": "L1_ICF_secondary data use_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_secondary_DK_da.json",
+     "route": "existing archive or data source (delete the extra-collection route)"
+    }
+   ],
+   "note": "Consent under CTR Article 28(2) for research use of the participant's data outside the protocol: a separate consent form from the main trial consent (no optional yes/no inside the main ICF); the participant or representative is told the consent can be withdrawn; it does not replace the controller's GDPR and Danish Data Protection Act obligations. Choose the template's Danish decision route for the population (competent adult, child under 15, 15-17, adult without capacity only where expressly permitted).",
+   "sources": [
+    "DK-SECONDARY",
+    "DK-QC#7"
+   ]
+  },
+  {
+   "id": "right_not_to_know",
+   "trigger": "samples.significant_health_findings_likely",
+   "documents": [
+    {
+     "title": "L1_ICF_right not to know_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_main_DK_da.json",
+     "sections": [
+      11
+     ],
+     "when": "population uses DK-PT-main"
+    },
+    {
+     "title": "L1_ICF_right not to know_healthy volunteers_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_healthy_DK_da.json",
+     "sections": [
+      11
+     ],
+     "when": "population uses DK-PT-healthy"
+    },
+    {
+     "title": "L1_ICF_right not to know_impartial witness_<population>_DK_da",
+     "template": "templates/participant/L1_SIS and ICF_witness_DK_da.json",
+     "sections": [
+      11
+     ],
+     "when": "population uses DK-PT-witness"
+    }
+   ],
+   "note": "Where new significant health findings are reasonably likely, the PIS explains the possible findings and the Danish feedback process; a participant who does not want qualifying findings is informed about the consequences and uses the separate right-not-to-know form (VMK addendum). Only three templates carry that form; for the other consent givers see DECISIONS.md D18.",
+   "sources": [
+    "DK-ICF",
+    "DK-SECONDARY",
+    "DK-QC#8"
+   ]
+  }
+ ],
+ "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents. Each participant template yields two uploads per population: the information sheet (title, DK-L1-SIS, the template's sis_sections) and the blank consent form (icf_title, DK-L1-ICF, the template's icf_sections), with the same version and date. Entries with 'sections' are separate forms taken from those template sections. 'route' names the template route to keep.",
+ "participant_templates": [
+  {
+   "id": "DK-PT-main",
+   "file": "templates/participant/L1_SIS and ICF_main_DK_da.json",
+   "name_en": "Subject Information and Consent Form - Adult Patients",
+   "name_da": "Deltagerinformation og samtykkeerklæring",
+   "role": "main information and consent (capable adult patients); also re-consent at 18, regained capacity and a defined optional substudy",
+   "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms.",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "icf_sections": [
+    12,
+    13
+   ],
+   "right_not_to_know_section": 11
+  },
+  {
+   "id": "DK-PT-healthy",
+   "file": "templates/participant/L1_SIS and ICF_healthy_DK_da.json",
+   "name_en": "Subject Information and Consent Form - Healthy Adults",
+   "name_da": "Deltagerinformation og samtykkeerklæring for raske voksne",
+   "role": "main information and consent (healthy volunteers, VMK competent-person pathway)",
+   "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+   "authority_note": "Danish ethics guidance treats a person with an unrelated condition that has no relevance to the research as healthy in relation to the trial; the authority's definition is used (templates/README.md, conflict 6).",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "icf_sections": [
+    12,
+    13
+   ],
+   "right_not_to_know_section": 11
+  },
+  {
+   "id": "DK-PT-parents",
+   "file": "templates/participant/L1_SIS and ICF_parents_DK_da.json",
+   "name_en": "Trial Information and Consent Form - Parents",
+   "name_da": "Information til forældremyndighedsindehavere og samtykkeerklæring",
+   "role": "information and consent for the holder or holders of parental authority of a minor",
+   "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years).",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "icf_sections": [
+    12,
+    13
+   ],
+   "power_of_attorney_section": 11
+  },
+  {
+   "id": "DK-PT-age-6-11",
+   "file": "templates/participant/L1_SIS and ICF_age 6-11_DK_da.json",
+   "name_en": "Subject Information and Assent Form - Children",
+   "name_da": "Information til børn og erklæring om tilsagn",
+   "role": "age-adapted information for children and record of the child's agreement or objection (not legal consent)",
+   "when_to_use": "Must be completed for studies involving children participants (aged 5 - 11 years).",
+   "authority_note": "The template's description and instructions say 5-11; the file name says 6-11 and is kept as supplied (DECISIONS.md D5). VMK sets no band below 15: age-appropriate written information where the child can understand it.",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "icf_sections": [
+    9
+   ]
+  },
+  {
+   "id": "DK-PT-age-12-17",
+   "file": "templates/participant/L1_SIS and ICF_age 12-17_DK_da.json",
+   "name_en": "Subject Information and Assent Form - Adolescents",
+   "name_da": "Deltagerinformation og samtykke-/tilkendegivelseserklæring for unge 12-17 år",
+   "role": "age-adapted information for adolescents with two Danish decision routes: route A 12-14 (agreement or objection; parents consent), route B 15-17 (own written consent together with parental consent)",
+   "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+   "authority_note": "VMK splits at 15: a capable 15-17-year-old gives own consent together with the parents and gets a dedicated 15-17 information sheet and consent form. One document per route is drafted from this template (non-relevant route deleted), so 12-14 and 15-17 are separate documents (templates/README.md, conflict 2).",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "icf_sections": [
+    10
+   ]
+  },
+  {
+   "id": "DK-PT-legal-rep",
+   "file": "templates/participant/L1_SIS and ICF_legal rep_DK_da.json",
+   "name_en": "Trial Information and Consent Form - Legal Representative",
+   "name_da": "Information til stedfortræder og samtykkeerklæring",
+   "role": "information and surrogate consent: route A legal guardian whose guardianship covers research consent; route B nearest relative plus trial guardian (both required)",
+   "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative.",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "icf_sections": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "DK-PT-limited-capacity",
+   "file": "templates/participant/L1_SIS and ICF_limited capacity_DK_da.json",
+   "name_en": "Subject Information and Assent Form - Limited Capacity",
+   "name_da": "Tilpasset deltagerinformation og erklæring om tilsagn eller modstand",
+   "role": "adapted information for the adult without capacity and record of agreement, uncertainty or objection (accompanies the representative's consent)",
+   "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+   "authority_note": "The Denmark guide requires information adapted to the participant's capacity and understanding as far as possible; planned with every representative set, adapted to the person's level.",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "icf_sections": [
+    9
+   ]
+  },
+  {
+   "id": "DK-PT-emergency",
+   "file": "templates/participant/L1_SIS and ICF_emergency_DK_da.json",
+   "name_en": "Emergency Enrolment and Deferred Consent Form",
+   "name_da": "Information om akut inklusion og efterfølgende samtykke",
+   "role": "information and subsequent consent to continued participation after Article 35 inclusion: participant, legal guardian, or nearest relative plus trial guardian",
+   "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+   "authority_note": "Covers adults (participant, guardian, nearest relative plus trial guardian). Minors use the parents and 12-17 templates adapted to subsequent consent (DECISIONS.md D21).",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "icf_sections": [
+    11,
+    12,
+    13
+   ]
+  },
+  {
+   "id": "DK-PT-witness",
+   "file": "templates/participant/L1_SIS and ICF_witness_DK_da.json",
+   "name_en": "Subject Information and Consent Form - Impartial Witness",
+   "name_da": "Deltagerinformation og samtykkeerklæring med upartisk vidne",
+   "role": "consent with an impartial witness for a capable adult who cannot write",
+   "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process.",
+   "authority_note": "The Denmark guide uses the witness route when the participant or legally designated representative can consent but is unable to write; inability to read alone is not the trigger (templates/README.md, conflict 5; DECISIONS.md D15).",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "icf_sections": [
+    12,
+    13
+   ],
+   "right_not_to_know_section": 11
+  },
+  {
+   "id": "DK-PT-pregnancy",
+   "file": "templates/participant/L1_SIS and ICF_pregnancy_DK_da.json",
+   "name_en": "Pregnancy Follow-up and Consent - Participants",
+   "name_da": "Information og samtykke til graviditetsopfølgning – gravid forsøgsdeltager",
+   "role": "pregnancy follow-up of a pregnant trial participant; separate consent after birth for child data",
+   "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "icf_sections": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "DK-PT-pregnant-partner",
+   "file": "templates/participant/L1_SIS and ICF_pregnant partner_DK_da.json",
+   "name_en": "Pregnancy Follow-up and Consent - Partners",
+   "name_da": "Information og samtykke til graviditetsopfølgning – gravid partner",
+   "role": "pregnant partner of a participant: route A data-only follow-up (outside VMK Part II approval), route B partner who becomes a trial participant (Part II)",
+   "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant.",
+   "authority_note": "VMK recommends omitting data-only partner material from Part II (DECISIONS.md D12); route B is a Part II participant document.",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "icf_sections": [
+    10,
+    11
+   ]
+  },
+  {
+   "id": "DK-PT-secondary",
+   "file": "templates/participant/L1_SIS and ICF_secondary_DK_da.json",
+   "name_en": "Secondary and Future Use of Data or Biosamples",
+   "name_da": "Information og valg om sekundær eller fremtidig brug af data og biologisk materiale",
+   "role": "separate, optional information and consent for data or material collected extra or taken from an existing archive solely for future research outside the main trial (not for surplus main-trial material)",
+   "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+   "authority_note": "Article 28(2) secondary data use: a separate consent form in Part II, withdrawable. Extra material collected for unspecified future research: outside VMK's Part II approval; VMK recommends omitting it from Part II, and if submitted it must state that it is not approved by VMK (DECISIONS.md D13). Surplus main-trial material uses the main document's opt-out checkbox, not this template.",
+   "sis_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "icf_sections": [
+    10
+   ]
+  }
+ ],
+ "population_rules": {
+  "authority": "De Videnskabsetiske Medicinske Komitéer (VMK): Guidance for preparation of Part II (updated September 2026), CTR and CTIS questions and answers (updated September 2026), CTR consent forms, General guidance on informed and surrogate consent (September 2024), Guidance on clinical trials in emergency situations under CTR (2026), Guidance on compensation to research participants; European Commission CTR Q&A version 7.3 (July 2026); Regulation (EU) No 536/2014 Articles 28 to 35. As recorded in the TrialAgents Denmark guides reviewed 23 September 2026.",
+  "consent_taker": "A duly qualified medical doctor with Danish authorisation, with appropriate clinical-trial and GCP experience and knowledge of the trial, gives the oral information and receives consent. Normally the same physician; after a reflection period another qualified, delegated physician may receive consent and attest separately, provided that physician can answer remaining questions. Written agreement with the principal investigator when the physician is not the PI. Witness route: the same physician gives the information and receives the consent.",
+  "minors": {
+   "age_bands": [
+    {
+     "band": "5-11",
+     "template": "DK-PT-age-6-11",
+     "reader": "child",
+     "legal_role": "information and record of the child's agreement or objection; not legal consent"
+    },
+    {
+     "band": "12-14",
+     "template": "DK-PT-age-12-17",
+     "route": "A",
+     "reader": "adolescent",
+     "legal_role": "information and record of agreement or objection; parents give the legal consent"
+    },
+    {
+     "band": "15-17",
+     "template": "DK-PT-age-12-17",
+     "route": "B",
+     "reader": "adolescent",
+     "legal_role": "own written informed consent together with the parents' consent (when able to consent)"
+    }
+   ],
+   "always": [
+    "DK-PT-parents"
+   ],
+   "band_basis": "15 is the authority's threshold (VMK: a capable 15-17-year-old gives own consent together with the holders of parental authority; dedicated 15-17 PIS and consent form). Below 15 VMK sets no band: age-appropriate written information where the child can understand it, following the protocol age bands. 5-11 and 12-14 are the templates' drafting bands.",
+   "band_conflicts": [
+    "The adolescent template covers 12-17 in one file; the authority treats 15-17 as its own consent pathway with a dedicated PIS and consent form. Authority wins: one document per route (12-14 route A, 15-17 route B), never one combined 12-17 document.",
+    "The children's template file name says 6-11; its description and instructions say 5-11. VMK sets no band, so this is not an authority conflict; the file name is kept as supplied and the band 5-11 from the template text is used (DECISIONS.md D5)."
+   ],
+   "parental_authority": "Both holders consent when parental authority is joint; one signature only with sole parental authority, a valid written power of attorney (population set parental_power_of_attorney) or another documented approved basis.",
+   "turning_15": "Own written consent with the 15-17 document (route B) when the participant turns 15 and is able to consent.",
+   "reconsent_at_18": "DK-PT-main or DK-PT-healthy: new written consent after reaching 18 and before further trial-specific actions, without harmful interruption of treatment or care (CTR Q&A 7.3).",
+   "under_5": "No template. Information adapted to the child as far as age and maturity allow; written information only where the child can understand it; opposition respected (DECISIONS.md D5).",
+   "information_giver": "The Danish medical-doctor requirement applies to the participant information process in a CTR medicinal trial, also for minors; the templates' 'person with pedagogical prerequisites' supports but does not replace the physician (templates/README.md, conflict 3; DECISIONS.md D7).",
+   "dissent": "A minor is not forced to participate against a current objection, verbal or non-verbal; the consent procedure explains how refusal of a procedure or a wish to stop is handled.",
+   "exceptions": "Exceptions in general Danish research guidance for low-burden non-drug projects (for example a dispensation from parental consent) are not relied on unless VMK has expressly confirmed that they apply to the CTR trial; the 12-17 template's dispensation alternative is deleted by default."
+  },
+  "adults_without_capacity": {
+   "always": [
+    "DK-PT-legal-rep",
+    "DK-PT-limited-capacity"
+   ],
+   "routes": {
+    "not_under_guardianship": "Nearest relative and trial guardian (independent physician with relevant knowledge, independent of the investigator and the trial); both written consents required.",
+    "under_guardianship": "Legal guardian only if the guardianship covers consent to research participation; mandate confirmed before relying on it."
+   },
+   "regained_capacity": "DK-PT-main for own consent as soon as the participant can receive the information and consent.",
+   "note": "The participant's present wishes are respected; surrogate consent cannot justify research against the participant's will."
+  },
+  "emergency": {
+   "always": [
+    "DK-PT-emergency"
+   ],
+   "as_applicable": [
+    "DK-PT-legal-rep",
+    "DK-PT-limited-capacity",
+    "DK-PT-parents",
+    "DK-PT-age-12-17",
+    "DK-PT-main"
+   ],
+   "note": "DK-PT-emergency covers the participant, the guardian and the nearest relative plus trial guardian after inclusion; minors: parents and 15-17 documents adapted to subsequent consent (DECISIONS.md D21); regained capacity: the emergency template's participant route or DK-PT-main."
+  },
+  "impartial_witness": {
+   "always": [
+    "DK-PT-witness"
+   ],
+   "note": "Participant or legally designated representative able to decide but unable to write; at least one impartial witness who signs and dates; not a substitute for a representative and not for emergency inclusion."
+  },
+  "pregnancy": {
+   "participant": [
+    "DK-PT-pregnancy"
+   ],
+   "partner": [
+    "DK-PT-pregnant-partner"
+   ],
+   "note": "Ask first: is the pregnant person a trial participant, or is the sponsor only collecting follow-up data about a non-participant partner? Data-only partner follow-up is usually outside VMK Part II approval (outside_part_ii); a partner who undergoes trial procedures or is in the endpoints is a participant (population set pregnancy_partner_participant)."
+  },
+  "secondary_use_pathways": {
+   "optional_substudy": "Integrated, defined optional substudy: within Part II, own PIS and ICF (population set optional_substudy).",
+   "surplus_material": "Surplus material from trial samples stored after trial end for unspecified future research: explained in the main PIS (storage, whether optional, duration; Danish ethics-committee and new-consent default if stored in Denmark; foreign rules if abroad), with the VMK opt-out checkbox at the bottom of the main consent form. No separate yes/no consent and no other future-research boxes on the main ICF. An optional separate future-research sheet sits outside VMK approval.",
+   "extra_material": "Extra material collected specifically for unspecified future research: outside VMK Part II approval; VMK recommends omitting its information and consent from Part II (outside_part_ii DK-FUTURE-RESEARCH-EXTRA).",
+   "article_28_2_data": "Secondary research use of trial data outside the protocol: separate consent form, withdrawable (population set secondary_data_use)."
+  },
+  "translations": "If a participant or legal representative does not understand Danish: validated written translations of both the PIS and the ICF into the person's native language or another language understood to the same degree; same population, version and date, language code in the title (population.non_danish_speakers).",
+  "shareable_templates": [
+   "DK-PT-pregnant-partner",
+   "DK-PT-secondary"
+  ],
+  "shareable_note": "One shared document for several populations only when nothing in it would differ, including the consent giver; agree with the user.",
+  "separate_document_rules": [
+   "Each consent pathway has its own document set; the competent-adult form is never used for a legal-representative pathway because it is easier to adapt (DK-ICF).",
+   "The participant information (DK-L1-SIS) and the blank consent form (DK-L1-ICF) are separate uploads with the same version and date (DECISIONS.md D1).",
+   "Minors: parental-authority information and consent, age-appropriate child information for younger participants who can understand it, a dedicated 15-17 information sheet and consent form when that age group is enrolled, the parental-authority power of attorney where used (DK-MINORS).",
+   "Adults without capacity: representative information and consent with the nearest relative and the trial guardian as distinct roles, plus adapted participant information (DK-CAPACITY).",
+   "A defined optional substudy has its own PIS and ICF in Part II (DK-SECONDARY).",
+   "Article 28(2) secondary data use needs a separate consent form from the main ICF (DK-SECONDARY).",
+   "The right-not-to-know declaration is a separate form (DK-ICF).",
+   "Do not create a separate form simply because a global master package contains one; the question is whether the document belongs to the Danish Part II approval and which consent pathway it supports (DK-QC#4)."
+  ]
+ },
+ "drafting_rules": [
+  "Participant documents: keep the supplied CTIS_DK templates' structure and model text (their consent declarations follow the VMK CTR standard wording); add all study-specific information; record every deviation as a finding. Where the sponsor follows the VMK standard form, keep its standard text fields unchanged so the sponsor can confirm that to VMK (DECISIONS.md D2).",
+  "Concise, clear language suitable for a lay reader; explain what the protocol means for a Danish participant rather than copying protocol language; define unavoidable clinical terms at first use (DK-ICF, DK-QC#5).",
+  "Consent physician: the participant documents and K1 say that a duly qualified physician with Danish authorisation gives the oral information and receives consent. The newest VMK guidance (September 2026) allows a later qualified, delegated physician to receive consent after a reflection period and attest separately; the templates say the same physician must receive consent. The guidance wins: when the protocol or K1 uses that route, add a separate attestation block for the later physician and adjust the sentence, visibly as a deviation (templates/README.md, conflict 1; DECISIONS.md D4). The witness route keeps the same physician.",
+  "Record access wording (mandatory when records are accessed): sponsor, sponsor representatives and investigator may obtain and process necessary health information from the medical record and supplementing systems for trial conduct, quality control and monitoring; Danish Medicines Agency inspectors may access necessary health information; foreign medicines authorities where relevant. Record-based follow-up after withdrawal: extent, conditions and purpose, consistent with the protocol.",
+  "Privacy: understandable privacy information and data-subject rights; the ethics consent to participation is not GDPR consent and the main ICF does not regulate ordinary data-law matters; any distinct GDPR consent clearly separated. Processing or transfer outside Denmark: purpose of each; outside the EU/EEA: the countries and compliance with GDPR Chapter V. No separate yes/no choice only for a transfer (template rule).",
+  "Biological material: types, number or amount per participant, purpose of each, analysis place, storage place and duration, purpose of storage, destruction after analysis or at trial end, transfers outside Denmark (third countries with transfer information). Archived material used in the trial: inform the participant; no separate consent solely for that. Research biobank where material is stored beyond about 5-7 days (template).",
+  "Significant health findings, where reasonably likely: possibility of findings, the Danish feedback approach and the separate right-not-to-know form after information about the consequences.",
+  "Surplus trial material for unspecified future research: only the VMK opt-out checkbox on the main consent form; no other future-research boxes on the main ICF. Optional substudy: its own PIS and ICF. Article 28(2) secondary data use: separate consent form, withdrawable.",
+  "State clearly when no direct benefit is expected; compensation, reimbursement and the Patienterstatningen or insurance wording match P1, P2 and O1; compensation must not improperly drive the decision.",
+  "Availability of trial results as required by the CTR (results in CTIS under the EU trial number).",
+  "Version number and date consistent across the PIS and the ICF; blank, unsigned submission copies; no legacy non-CTR consent form substituted for the CTR form; optional checkboxes do not create consent logic VMK does not accept; internal references to protocol sections, appendices and contacts correct (DK-QC#9).",
+  "Risk frequency: the Denmark guides set no categories; the templates use numeric or plain categories when reliable data exist (for example 'hyppig / 1-10 %'). Use the categories of the IB or SmPC until the user decides (DECISIONS.md D16).",
+  "Enclose or refer to the current Danish information 'Dine rettigheder som forsøgsperson i forsøg med medicin' as the templates instruct (DECISIONS.md D14).",
+  "Participant templates (JSON): <i>[Redaktionsnote: …]</i> notes, other [square-bracket] alternatives and gaps such as [indsæt], legacy ' FORMTEXT ' field prompts and non-selected routes are drafting instructions; follow and remove them, and keep fields completed by hand at consent blank. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE: …] labels. Nothing of either may remain in a final document."
+ ],
+ "sources": {
+  "DK-HUB": "https://trialagents.com/ctis/denmark/en",
+  "DK-PII-CHECKLIST": "https://trialagents.com/ctis/denmark/en/part-ii-document-checklist",
+  "DK-ICF": "https://trialagents.com/ctis/denmark/en/patient-information-consent-requirements",
+  "DK-QC": "https://trialagents.com/ctis/denmark/en/patient-facing-document-qc-checklist",
+  "DK-HV": "https://trialagents.com/ctis/denmark/en/healthy-volunteer-consent-requirements",
+  "DK-MINORS": "https://trialagents.com/ctis/denmark/en/minor-consent-assent-requirements",
+  "DK-CAPACITY": "https://trialagents.com/ctis/denmark/en/limited-capacity-legal-representative-consent-requirements",
+  "DK-EMERGENCY": "https://trialagents.com/ctis/denmark/en/emergency-enrollment-consent-requirements",
+  "DK-WITNESS": "https://trialagents.com/ctis/denmark/en/impartial-witness-consent-requirements",
+  "DK-PREGNANCY": "https://trialagents.com/ctis/denmark/en/pregnancy-follow-up-requirements",
+  "DK-SECONDARY": "https://trialagents.com/ctis/denmark/en/secondary-use-consent-requirements",
+  "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention"
+ },
+ "sources_note": "All eleven Denmark guide pages under /ctis/denmark/en/ reviewed 23 September 2026. Anchors #1-#12 refer to the numbered core items of the Part II checklist page (#presubmission to its 'Denmark pre-submission check'); DK-QC#1-#10 to the numbered sections of the QC checklist page. The Danish-language guides (/ctis/denmark/dk) were not read (outside the /ctis/denmark/en/ scope). Template sources: the CTIS_DK folder (Part II DOCX forms, Variable Templates_DK_de.xlsx, DK_Participant-facing_templates_05082026.txt and its DOCX copy).",
+ "naming": {
+  "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+  "denmark_note": "CTCG pattern with _DK_da on every document as the controlled Danish country version (_DK_en when an administrative document is filed in English; a translation carries its own language code). The Denmark guide names CTIS categories, not titles; the CTCG examples are used. Participant information and consent form are separate L1 uploads, L1_SIS_… and L1_ICF_… (DECISIONS.md D1). Documents without a CTCG example: P2 (budget/CTA), the Patienterstatningen statement and the fee document use provisional titles (DECISIONS.md D8-D10). Drop <population> when the study has one population. Personal names only for the principal investigator in M1/M2. The filename must not rely on date or version information that conflicts with the CTIS structured fields (DK-QC#9)."
+ },
+ "document_kinds": {
+  "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+  "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+  "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+  "third_party_document": "Document issued by someone else (insurer, sponsor finance or legal, sponsor statement). Recorded as a source when received; only checked.",
+  "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+ },
+ "default_steps_by_kind": {
+  "participant_document": [
+   "Draft",
+   "Source QC",
+   "Checklist",
+   "Style"
+  ],
+  "form": [
+   "Draft",
+   "Check"
+  ],
+  "third_party_template": [
+   "Prepare (trial fields only)",
+   "Check"
+  ],
+  "third_party_document": [
+   "Check"
+  ],
+  "ctis_data": [
+   "Check"
+  ]
+ },
+ "styling": {
+  "base": "styles/base.md",
+  "country": "countries/DK/styling.md"
+ },
+ "checklists": {
+  "participant_document": "countries/DK/checklists/participant-documents.json",
+  "check": "countries/DK/checklists/forms-and-supplied.json",
+  "package": "countries/DK/checklists/part-ii-package.json"
+ },
+ "playbook": [
+  "playbook/planning.md",
+  "playbook/naming.md",
+  "playbook/steps.md",
+  "conventions/template-instructions.md"
+ ],
+ "decisions": "countries/DK/DECISIONS.md",
+ "answer_languages": [
+  "da"
+ ],
+ "answer_languages_note": "Danish for every Part II document in this package; participant-facing documents must be Danish (plus validated translations), administrative documents may also be English (language_rules.by_language)."
+}
