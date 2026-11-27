@@ -2,10 +2,14 @@
 
 Returned by `get_planning_guide` together with the country requirements (for example `countries/DE/requirements.json`). It tells the assistant how to agree a plan with the user. The plan is saved with `save_project`.
 
+## 0. Principle
+
+Follow the competent authorities' and ethics bodies' own guidance exactly, as recorded in the country file (for Germany: AKEK, BfArM/PEI, AMG). Do not simplify their rules. Where two sources disagree, the newer official guidance wins; record the conflict as a finding.
+
 ## 1. What a good plan contains
 
 - Every document the application needs, per country and language, each with a CTIS title (section 6).
-- For each document: the population or site it is for, whether TrialAgents drafts it or it is **provided** by someone else (investigator CV, insurer certificate, contract), its starting document, and its `based_on` reference document if it is adapted.
+- The study's populations (section 2a), and for each document the population or site it is for, its template, whether TrialAgents drafts it or it is **provided** by someone else (investigator CV, insurer certificate, contract), its starting document, and its `based_on` reference document if it is adapted.
 - The steps every document goes through, with steps marked not applicable where they make no sense (for example no Draft for an insurer certificate).
 - The planning choices: Part I scope, reference package, format choice.
 - The study facts that decided which documents are needed, so the plan can be re-checked when a fact changes.
@@ -49,6 +53,32 @@ Ask only what the sources do not already answer. Read the protocol (and any syno
 
 Save facts with `save_project`. If a fact is unknown, plan the document as *needs decision* rather than guessing.
 
+## 2a. Populations and participant documents
+
+Decide populations before listing participant documents. Populations belong to the study and are saved on the project once; template choices are made per country.
+
+**Step 1: identify the populations** from the protocol.
+
+- A population is a group of **enrolled** participants who need materially different participant information because of differences in age or consent framework, study stage or part, participant type, mandatory procedures, treatment pathway, visit schedule, risk or expected benefit, safety monitoring, or burden.
+- Populations are mutually exclusive within one consent stage: every participant belongs to exactly one. If criteria overlap, define combined populations.
+- Protocol stages or parts are separate populations when participants enter them separately and the stages differ in purpose, randomisation options, dose certainty, treatment pathway, mandatory procedures, monitoring, risk, burden or the information needed to consent (for example single-dose and multiple-dose adults, or the phase 1 and phase 2 stages of a phase 1/2 trial).
+- An optional extension, crossover, retreatment, rollover or continued-access phase is a separate population only when participants make a new consent decision before entering it.
+- These never create a population on their own: treatment arms, active versus placebo or comparator, randomised dose levels, investigator-selected options, cohort numbers or arm labels, biomarker or statistical subgroups, assignments within the same stage and consent pathway, optional samples, biopsies or genetic testing, optional pregnancy data, optional future research, partner information.
+- Parents, guardians, legal representatives, partners and caregivers are not populations unless the protocol enrols them as participants. Using a legal representative for an adult does not by itself create a population. Age groups among minors are not separate populations unless their procedures differ; age-adapted documents are handled by templates (step 2).
+- A study with one homogeneous group has one population ("All study participants", or the protocol's term).
+- For each population save: a short label in the protocol's terms, a one-sentence operational description that tells it apart from the others, and the reason it needs its own documents.
+
+**Step 2: assign templates per country.** For each population, add every participant template of the country that applies (see the country file's `participant_templates` and `population_rules`):
+
+- A population can need several templates; for minors in Germany: the parents' document, the age-adapted documents for the AKEK age bands, and the adult document for re-consent when participants can reach 18 during the trial.
+- A template can serve several populations; each population then gets its own document from it.
+- Templates whose content does not depend on the population (in Germany: pregnant partner, secondary use) may be **one shared document** for several populations when nothing in it would differ. Agree this with the user.
+- Age bands, separate-document rules and representative rules come from the country file, which follows the national authority's guidance.
+
+**Step 3: name and show.** Use the population label as the subtype in the CTIS title, for example `L1_SIS and ICF_single dose adults_DE_de`, `L1_SIS and ICF_parents_minors_DE_de`. Show the user a population × document table per package and confirm it. Every inclusion pathway in the protocol must have a document set (checklist item C4.01).
+
+Other packages keep the same populations and adapt each population's documents from the reference package; a country may add or drop documents for a population according to its own rules.
+
 ## 3. Recommended strategy
 
 Recommend this order; plan another if the user prefers:
@@ -64,7 +94,7 @@ Alternatives to offer when they fit: draft every country from the sources in par
 ## 4. Building the document list
 
 1. Take every `mandatory` document of the country, then every `conditional` document whose trigger is true, then the population sets whose trigger is true.
-2. Expand `per`: one document per site, per population, per recruitment item, as stated.
+2. Expand `per`: one document per site, per recruitment item, as stated; participant documents per population × template (section 2a).
 3. Set each document's kind from the country file; documents others complete or issue get no Draft (see section 5).
 4. Add the Part I documents if Part I is in the plan, and the English sources of endpoint-related patient-facing documents.
 5. Name each document with its CTIS title (section 6).
@@ -77,12 +107,12 @@ Each document in the plan records its **kind** and, where there is one, its **te
 | Kind | Examples | Default steps |
 |---|---|---|
 | `participant_document` | L1 information and consent sets, recruitment material | Draft → Source QC → Checklist → Style |
-| `form` | K1, N1, S1, P1, R1 | Draft → Check → Style |
+| `form` | K1, N1, S1, P1, R1 | Draft → Check |
 | `third_party_template` | PI CV, declaration of interest | Prepare (trial title and EU trial number only; every other field stays empty for the investigator) → Check |
 | `third_party_document` | insurance certificate and terms, training certificates, contracts, radiation documents | Check (recorded as a source when received) |
 | `ctis_data` | list of sites | Check |
 
-Draft is always the first content step: written from the template, from a starting document, or adapted from a reference document. The Draft step receives the checklist items as requirements to meet; the Checklist step then verifies them in a separate turn and records one result per item. Check is a single short review for forms and supplied documents (identity of the trial, consistency with the rest of the package, completeness). Add Team review, Compare versions or Compare across documents when the user wants them.
+Draft is always the first content step: written from the template, from a starting document, or adapted from a reference document. The Draft step receives the checklist items as requirements to meet; the Checklist step then verifies them in a separate turn and records one result per item. For forms, Draft fills the Word template directly: `get_step_context` lists the form's fields (id, question, instruction, condition) and `save_version` takes one answer per field id, which the server writes into that exact place in the DOCX, so the result is already the final layout and needs no Style step. Style applies to participant documents, which are written section by section and then laid out (site letterhead, running footer with EU trial number and version, highlighted summary). Check is a single short review for forms and supplied documents (identity of the trial, consistency with the rest of the package, completeness). Add Team review, Compare versions or Compare across documents when the user wants them.
 
 ## 6. CTIS naming
 

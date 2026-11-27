@@ -21,6 +21,13 @@ def instr_run(text,rpr_src=None):
     etree.SubElement(rp,w+'highlight').set(w+'val','yellow')
     t=etree.SubElement(r,w+'t'); t.text=text; t.set('{http://www.w3.org/XML/1998/namespace}space','preserve')
     return r
+def field(run,fid,alias=''):
+    """Wrap an instruction run in a content control tagged with a stable field id."""
+    if not fid: return run
+    sdt=etree.Element(w+'sdt'); pr=etree.SubElement(sdt,w+'sdtPr')
+    if alias: etree.SubElement(pr,w+'alias').set(w+'val',alias[:60])
+    etree.SubElement(pr,w+'tag').set(w+'val',fid)
+    c=etree.SubElement(sdt,w+'sdtContent'); c.append(run); return sdt
 def ptext(p): return ''.join(t.text or '' for t in p.iter(w+'t'))
 def first_rpr(p):
     r=p.find('.//'+w+'r'); return r.find(w+'rPr') if r is not None else None
@@ -32,9 +39,10 @@ def set_text_runs(p,segments):
     # drop empty sdt wrappers inside paragraph
     for sdt in list(p.findall(w+'sdt')):
         p.remove(sdt)
-    for kind,text in segments:
+    for seg in segments:
+        kind,text=seg[0],seg[1]; fid=seg[2] if len(seg)>2 else None
         if not text: continue
-        if kind=='i': p.append(instr_run(text,rpr))
+        if kind=='i': p.append(field(instr_run(text,rpr),fid))
         else:
             r=etree.SubElement(p,w+'r')
             if rpr is not None:
@@ -54,18 +62,18 @@ def inline_segments(s):
             kv,val,inner=m.group(1),m.group(2),m.group(3).strip()
             vm=re.fullmatch(r'\{\{(v\d{5})\}\}',inner)
             if val=='true':
-                segs.append(('i','[FALLS '+COND[kv]+' – EINFÜGEN: '+(desc(vm.group(1)) if vm else inner)+']'))
+                segs.append(('i','[FALLS '+COND[kv]+' – EINFÜGEN: '+(desc(vm.group(1)) if vm else inner)+']',vm.group(1) if vm else None))
             else:
                 segs.append(('i','[SONST: „'+(inner or 'N/A')+'“ eintragen]'))
-        elif m.group(4): segs.append(('i','[EINFÜGEN: '+desc(m.group(4))+']'))
-        else: segs.append(('i','[EINFÜGEN: '+KV[m.group(5)]+']'))
+        elif m.group(4): segs.append(('i','[EINFÜGEN: '+desc(m.group(4))+']',m.group(4)))
+        else: segs.append(('i','[EINFÜGEN: '+KV[m.group(5)]+']',m.group(5)))
     segs.append(('t',s[pos:]))
     return segs
-def make_p(text,ref_p):
+def make_p(text,ref_p,fid=None):
     p=etree.Element(w+'p')
     ppr=ref_p.find(w+'pPr')
     if ppr is not None: p.append(copy.deepcopy(ppr))
-    p.append(instr_run(text,first_rpr(ref_p))); return p
+    p.append(field(instr_run(text,first_rpr(ref_p)),fid)); return p
 KEEP_WORD_PLACEHOLDERS=False
 stats={'vars':0,'cond_blocks':0,'inline':0,'cyan':0,'sdt_placeholders':0,'empty_cells':0}
 def convert(root):
@@ -85,7 +93,7 @@ def convert(root):
             while j<len(ps) and ptext(ps[j]).strip()!='{{/}}': inner.append(ps[j]); j+=1
             end=ps[j] if j<len(ps) else None
             if val=='true':
-                p.addprevious(make_p('[AUSWAHL: Zutreffendes ankreuzen. „Ja“ nur, falls '+COND[kv]+'; sonst „Nein“.]',p))
+                p.addprevious(make_p('[AUSWAHL: Zutreffendes ankreuzen. „Ja“ nur, falls '+COND[kv]+'; sonst „Nein“.]',p,kv))
                 for q in inner:
                     for t_ in q.iter(w+'t'):
                         if t_.text: t_.text=t_.text.replace('☒','☐')
@@ -109,7 +117,8 @@ def convert(root):
         if txt.lstrip().startswith('['):
             inner=txt.strip().strip('[]').strip()
             kw='EINFÜGEN' if re.match(r'(Enter|Provide|provide)',inner) else 'HINWEIS'
-            new=instr_run('['+kw+': '+inner+']',rp)
+            stats['auto']=stats.get('auto',0)+1
+            new=field(instr_run('['+kw+': '+inner+']',rp),'f%02d'%stats['auto'] if kw=='EINFÜGEN' else None)
             r.addprevious(new); r.getparent().remove(r); stats['cyan']+=1
         else:
             rp.remove(h)  # checkbox options etc stay as form text
@@ -119,6 +128,13 @@ def convert(root):
             r=t.getparent(); label=context_label(r)
             new=instr_run('[EINFÜGEN'+(': '+label if label else '')+']',r.find(w+'rPr'))
             r.addprevious(new); r.getparent().remove(r); stats['sdt_placeholders']+=1
+            sdt=next((a for a in new.iterancestors(w+'sdt')),None)
+            if sdt is not None:
+                pr=sdt.find(w+'sdtPr')
+                for x in pr.findall(w+'showingPlcHdr'): pr.remove(x)
+                tg=pr.find(w+'tag')
+                if tg is None: tg=etree.SubElement(pr,w+'tag')
+                stats['auto']=stats.get('auto',0)+1; tg.set(w+'val','f%02d'%stats['auto'])
 def context_label(r):
     p=next(r.iterancestors(w+'p'))
     before=''

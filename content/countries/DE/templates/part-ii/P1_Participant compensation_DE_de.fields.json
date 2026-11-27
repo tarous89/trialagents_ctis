@@ -1,0 +1,282 @@
+[
+ {
+  "id": "kv102",
+  "kind": "text",
+  "question": "EU trial number",
+  "instruction": "[EINFÜGEN: EU-Prüfungsnummer (EU CT number); bei Erstantrag vor Vergabe leer lassen und in CTIS ergänzen]",
+  "condition": null
+ },
+ {
+  "id": "kv101",
+  "kind": "text",
+  "question": "Title of clinical trial",
+  "instruction": "[EINFÜGEN: Vollständiger Titel der klinischen Prüfung, wie im Prüfplan]",
+  "condition": null
+ },
+ {
+  "id": "cb01",
+  "kind": "checkbox",
+  "question": "Will compensation be offered? (select only one box) — No ☐ Please explain why not [EINFÜGEN: Please explain why not]",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "f01",
+  "kind": "text",
+  "question": "Will compensation be offered? (select only one box) — No ☐ Please explain why not",
+  "instruction": "[EINFÜGEN: Please explain why not]",
+  "condition": null
+ },
+ {
+  "id": "cb02",
+  "kind": "checkbox",
+  "question": "Will compensation be offered? (select only one box) — Yes ☐ Please complete sections 2 - 3",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb03",
+  "kind": "checkbox",
+  "question": "travel expenses | subjects",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb04",
+  "kind": "checkbox",
+  "question": "travel expenses | parent/carer",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb05",
+  "kind": "checkbox",
+  "question": "travel expenses | legal representatives",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb06",
+  "kind": "checkbox",
+  "question": "travel expenses | Other individuals",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb07",
+  "kind": "checkbox",
+  "question": "accommodation expenses | subjects",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb08",
+  "kind": "checkbox",
+  "question": "accommodation expenses | parent/carer",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb09",
+  "kind": "checkbox",
+  "question": "accommodation expenses | legal representatives",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb10",
+  "kind": "checkbox",
+  "question": "accommodation expenses | Other individuals",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb11",
+  "kind": "checkbox",
+  "question": "meal expenses | subjects",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb12",
+  "kind": "checkbox",
+  "question": "meal expenses | parent/carer",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb13",
+  "kind": "checkbox",
+  "question": "meal expenses | legal representatives",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb14",
+  "kind": "checkbox",
+  "question": "meal expenses | Other individuals",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb15",
+  "kind": "checkbox",
+  "question": "loss of earnings | subjects",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb16",
+  "kind": "checkbox",
+  "question": "loss of earnings | parent/carer",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb17",
+  "kind": "checkbox",
+  "question": "loss of earnings | legal representatives",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb18",
+  "kind": "checkbox",
+  "question": "loss of earnings | Other individuals",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb19",
+  "kind": "checkbox",
+  "question": "monetary payment | subjects",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb20",
+  "kind": "checkbox",
+  "question": "monetary payment | parent/carer",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb21",
+  "kind": "checkbox",
+  "question": "monetary payment | legal representatives",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb22",
+  "kind": "checkbox",
+  "question": "monetary payment | Other individuals",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb23",
+  "kind": "checkbox",
+  "question": "non-monetary payment | subjects",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb24",
+  "kind": "checkbox",
+  "question": "non-monetary payment | parent/carer",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb25",
+  "kind": "checkbox",
+  "question": "non-monetary payment | legal representatives",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb26",
+  "kind": "checkbox",
+  "question": "non-monetary payment | Other individuals",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb27",
+  "kind": "checkbox",
+  "question": "other | subjects",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb28",
+  "kind": "checkbox",
+  "question": "other | parent/carer",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb29",
+  "kind": "checkbox",
+  "question": "other | legal representatives",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb30",
+  "kind": "checkbox",
+  "question": "other | Other individuals",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "f02",
+  "kind": "text",
+  "question": "Who will compensation be offered to and in what format? (select all boxes that apply) — If this information is included in a different document in the application dossier (eg. Subject Information Sheet), a reference to this document is sufficient:",
+  "instruction": "[EINFÜGEN: Subject Information Sheet), a reference to this document is sufficient]",
+  "condition": null
+ },
+ {
+  "id": "f03",
+  "kind": "text",
+  "question": "Who will compensation be offered to and in what format? (select all boxes that apply) — If you enter “other individuals”, please specify who will be the recipient of the compensation or the type of compensation:",
+  "instruction": "[EINFÜGEN: If you enter “other individuals”, please specify who will be the recipient of the compensation or the type of compensation]",
+  "condition": null
+ },
+ {
+  "id": "f04",
+  "kind": "text",
+  "question": "Who will compensation be offered to and in what format? (select all boxes that apply) — If monetary payment is offered, please specify the amount with justification:",
+  "instruction": "[EINFÜGEN: If monetary payment is offered, please specify the amount with justification]",
+  "condition": null
+ },
+ {
+  "id": "f05",
+  "kind": "text",
+  "question": "Who will compensation be offered to and in what format? (select all boxes that apply) — If non-monetary payment is offered, please specify the type and value of the benefit with justification:",
+  "instruction": "[EINFÜGEN: If non-monetary payment is offered, please specify the type and value of the benefit with justification]",
+  "condition": null
+ },
+ {
+  "id": "cb31",
+  "kind": "checkbox",
+  "question": "Are there any conditions attached to the payment of compensation? (for example, where the full trial or stages of the trial must be completed) — No ☐ Yes ☐ If yes please describe below | Will compensation be offered? (select only one box)No ☐ Please explain why not [EINFÜGEN: Please explain why not]",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb32",
+  "kind": "checkbox",
+  "question": "Are there any conditions attached to the payment of compensation? (for example, where the full trial or stages of the trial must be completed) — No ☐ Yes ☐ If yes please describe below | Will compensation be offered? (select only one box)No ☐ Please explain why not [EINFÜGEN: Please explain why not]",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "f06",
+  "kind": "text",
+  "question": "Are there any conditions attached to the payment of compensation? (for example, where the full trial or stages of the trial must be completed)",
+  "instruction": "[EINFÜGEN: vom Prüfzentrum bzw. Sponsor bereitzustellende Angabe; nicht erfinden]",
+  "condition": null
+ }
+]

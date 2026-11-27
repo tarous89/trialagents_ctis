@@ -1,0 +1,219 @@
+[
+ {
+  "id": "kv101",
+  "kind": "text",
+  "question": "Full title of the clinical trialEU trial number",
+  "instruction": "[EINFÜGEN: Vollständiger Titel der klinischen Prüfung, wie im Prüfplan]",
+  "condition": null
+ },
+ {
+  "id": "kv102",
+  "kind": "text",
+  "question": "Full title of the clinical trialEU trial number",
+  "instruction": "[EINFÜGEN: EU-Prüfungsnummer (EU CT number); bei Erstantrag vor Vergabe leer lassen und in CTIS ergänzen]",
+  "condition": null
+ },
+ {
+  "id": "kv103",
+  "kind": "text",
+  "question": "[EINFÜGEN: Vollständiger Titel der klinischen Prüfung, wie im Prüfplan][EINFÜGEN: EU-Prüfungsnummer (EU CT number); bei Erstantrag vor Vergabe leer lassen und in CTIS ergänzen]",
+  "instruction": "[EINFÜGEN: Sponsor mit vollständiger Anschrift]",
+  "condition": null
+ },
+ {
+  "id": "kv104",
+  "kind": "choice",
+  "question": "I - Description of the biological samples involved in the clinical trial",
+  "instruction": "[AUSWAHL: Zutreffendes ankreuzen. „Ja“ nur, falls in der Prüfung neue Proben von den Teilnehmenden entnommen werden; sonst „Nein“.]",
+  "condition": null
+ },
+ {
+  "id": "v01130",
+  "kind": "text",
+  "question": "Section 1 - Does this clinical trial involve new sampling of the subjects (newly collected samples)?[AUSWAHL: Zutreffendes ankreuzen. „Ja“ nur, falls in der Prüfung neue Proben von den Teilnehmenden entnommen werden; sonst „Nein“.] Yes, please fill in the requested information in section 1 No, not applicable. Please continue with section 2Note: The sponsor needs to fill in at least one of the sect",
+  "instruction": "[FALLS in der Prüfung neue Proben von den Teilnehmenden entnommen werden – EINFÜGEN: A paragraph in German explaining to regulators the types of biological samples collected in the study. Indicate all types of biological material that will taken from the study participants, e.g. blood, tissue (state the type of tissue), urine, saliva, etc. Do not include information on sample preparation. Consider strictly the new collection of samples and not archival samples or material. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "in der Prüfung neue Proben von den Teilnehmenden entnommen werden"
+ },
+ {
+  "id": "v01131",
+  "kind": "text",
+  "question": "1.1 What type(s) of samples will be collected from the subject?[FALLS in der Prüfung neue Proben von den Teilnehmenden entnommen werden – EINFÜGEN: A paragraph in German explaining to regulators the types of biological samples collected in the study. Indicate all types of biological material that will taken from the study participants, e.g. blood, tissue (state the type of tissue), urine, saliva, ",
+  "instruction": "[FALLS in der Prüfung neue Proben von den Teilnehmenden entnommen werden – EINFÜGEN: A paragraph in German explaining to regulators the total number of biological samples or fragments (e.g., aliquots, tissue blocks, sections) collected from participants during the study, together with the total volume (if applicable) per individual subject. Consider strictly the new collection of samples and not archival samples or material. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "in der Prüfung neue Proben von den Teilnehmenden entnommen werden"
+ },
+ {
+  "id": "v01132",
+  "kind": "text",
+  "question": "Total number of samples, fragments (e.g. aliquots, tissue blocks, sections) and the total volume (if applicable) per individual subject:[FALLS in der Prüfung neue Proben von den Teilnehmenden entnommen werden – EINFÜGEN: A paragraph in German explaining to regulators the total number of biological samples or fragments (e.g., aliquots, tissue blocks, sections) collected from participants during the",
+  "instruction": "[FALLS in der Prüfung neue Proben von den Teilnehmenden entnommen werden – EINFÜGEN: A paragraph in German explaining to regulators the maximum number of biological samples or fragments (e.g., aliquots, tissue blocks, sections) collected from participants during the study, together with the maximum volume (if applicable) per individual subject. Consider strictly the new collection of samples and not archival samples or material. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "in der Prüfung neue Proben von den Teilnehmenden entnommen werden"
+ },
+ {
+  "id": "v01133",
+  "kind": "text",
+  "question": "The maximum number of samples and maximum volume (if applicable) on one single occasion:[FALLS in der Prüfung neue Proben von den Teilnehmenden entnommen werden – EINFÜGEN: A paragraph in German explaining to regulators the maximum number of biological samples or fragments (e.g., aliquots, tissue blocks, sections) collected from participants during the study, together with the maximum volume (if a",
+  "instruction": "[FALLS in der Prüfung neue Proben von den Teilnehmenden entnommen werden – EINFÜGEN: A paragraph in German explaining to regulators which of the biological samples or fragments (e.g. aliquots, tissue blocks, sections) collected from participants during the study, are in fact collected as part of the routine care.. Consider strictly the new collection of samples and not archival samples or material. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "in der Prüfung neue Proben von den Teilnehmenden entnommen werden"
+ },
+ {
+  "id": "kv105",
+  "kind": "choice",
+  "question": "Will the samples be collected as part of routine health care? [FALLS in der Prüfung neue Proben von den Teilnehmenden entnommen werden – EINFÜGEN: A paragraph in German explaining to regulators which of the biological samples or fragments (e.g. aliquots, tissue blocks, sections) collected from participants during the study, are in fact collected as part of the routine care.. Consider strictly the ",
+  "instruction": "[AUSWAHL: Zutreffendes ankreuzen. „Ja“ nur, falls vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden; sonst „Nein“.]",
+  "condition": null
+ },
+ {
+  "id": "v01134",
+  "kind": "text",
+  "question": "Section 2 - Does this clinical trial involve the collection of existing archive samples (e.g. archived diagnostic material or other biobank material)?[AUSWAHL: Zutreffendes ankreuzen. „Ja“ nur, falls vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden; sonst „Nein“.] Yes, please fill in the requested information in section 2 No, not applicable. Please continue w",
+  "instruction": "[FALLS vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden – EINFÜGEN: A paragraph in German explaining to regulators the types of archived biological material/samples collected in the study. Indicate all types of biological material and sample that will taken from the site or biobank, e.g. blood, tissue (state the type of tissue), urine, saliva, etc. Do not include information on sample preparation. Consider strictly the collection of existing archival samples and not the ones collected newly for the study. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden"
+ },
+ {
+  "id": "v01135",
+  "kind": "text",
+  "question": "2.1 What type(s) of archived material/samples will be used?[FALLS vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden – EINFÜGEN: A paragraph in German explaining to regulators the types of archived biological material/samples collected in the study. Indicate all types of biological material and sample that will taken from the site or biobank, e.g. blood, tissue",
+  "instruction": "[FALLS vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden – EINFÜGEN: A paragraph in German explaining to regulators the total number of archival samples, fragments (e.g. aliquots, tissue blocks, sections) and total volume (if applicable) that the Sponsor needs access to from each individual subject. Consider strictly the collection of existing archival samples that will be accessed from site, biobank etc. and not the ones collected newly for the study. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden"
+ },
+ {
+  "id": "f01",
+  "kind": "text",
+  "question": "2.2 Provide the total number of samples, fragments (e.g. aliquots, tissue blocks, sections) and total volume (if applicable) that the Sponsor needs access to from each individual subject.[FALLS vorhandene archivierte Proben (z. B. Diagnostik- oder Biobankmaterial) verwendet werden – EINFÜGEN: A paragraph in German explaining to regulators the total number of archival samples, fragments (e.g. aliqu",
+  "instruction": "[EINFÜGEN: Provide a detailed response. if applicable, add the text of the original consent]",
+  "condition": null
+ },
+ {
+  "id": "v01136",
+  "kind": "text",
+  "question": "Section 3 – Use of samples for a purpose within the objective of this clinical trial (i.e. for use described in the protocol)Note: This section must be filled in for both newly collected and existing archive samples",
+  "instruction": "[EINFÜGEN: A paragraph in German explaining to regulators where the biological samples collected in the study will be analyzed. e.g., within the clinical laboratory, within/outside the sponsor's organization, within/outside the Member State in which they were collected or within/outside the EU/EEA. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer differs based on country/language, localize for Germanyl.]",
+  "condition": null
+ },
+ {
+  "id": "v01137",
+  "kind": "text",
+  "question": "3.1 Where will the samples be analysed? [EINFÜGEN: A paragraph in German explaining to regulators where the biological samples collected in the study will be analyzed. e.g., within the clinical laboratory, within/outside the sponsor's organization, within/outside the Member State in which they were collected or within/outside the EU/EEA. If the answer differs based on sample type, patient subgroup",
+  "instruction": "[EINFÜGEN: A paragraph in German explaining to regulators if the samples will be sent to another organization for analyses (within the scope of the trial), how will they be managed after the analyses? e.g., destroyed, returned to the legally responsible subject for the samples, stored at the site where they were analyzed, anonymized, etc. Respond briefly in the event that sending the samples to another organization is not applicable. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer differs based on country or language, localize for Germany.]",
+  "condition": null
+ },
+ {
+  "id": "v01138",
+  "kind": "text",
+  "question": "If the samples will be sent to another organisation for analyses (as part of the trial), how will they be managed after the analyses have been carried out? [EINFÜGEN: A paragraph in German explaining to regulators if the samples will be sent to another organization for analyses (within the scope of the trial), how will they be managed after the analyses? e.g., destroyed, returned to the legally re",
+  "instruction": "[EINFÜGEN: A paragraph in German explaining to regulators where the biological samples collected in the study will be stored. e.g., within/outside the sponsor’s organization, within/outside the Member State in which they were collected or within/outside the EU/EEA. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer differs based on country or language, localize for Germany.]",
+  "condition": null
+ },
+ {
+  "id": "v01139",
+  "kind": "text",
+  "question": "Where will the samples be stored?[EINFÜGEN: A paragraph in German explaining to regulators where the biological samples collected in the study will be stored. e.g., within/outside the sponsor’s organization, within/outside the Member State in which they were collected or within/outside the EU/EEA. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer d",
+  "instruction": "[EINFÜGEN: A paragraph in German explaining to regulators who long the biological samples collected in the study will be stored. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer differs based on country or language, localize for Germany.]",
+  "condition": null
+ },
+ {
+  "id": "choice01",
+  "kind": "choice",
+  "question": "How long will the samples be stored?[EINFÜGEN: A paragraph in German explaining to regulators who long the biological samples collected in the study will be stored. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer differs based on country or language, localize for Germany.]",
+  "instruction": "[AUSWAHL: Zutreffende Option ankreuzen (☒), die anderen leer lassen.]",
+  "condition": null
+ },
+ {
+  "id": "v01140",
+  "kind": "text",
+  "question": "What type of connection is available between samples and individual subjects? [AUSWAHL: Zutreffende Option ankreuzen (☒), die anderen leer lassen.]☐Direct connection (samples marked with e.g. initials, date of birth)☐Pseudonymised connection (samples marked with code)☐No connection, samples are anonymised (i.e. samples can neither directly nor indirectly, with reasonably means according to recital",
+  "instruction": "[EINFÜGEN: A paragraph in German explaining to regulators who will have access to the biological samples collected in the study. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer differs based on country or language, localize for Germany.]",
+  "condition": null
+ },
+ {
+  "id": "v01141",
+  "kind": "text",
+  "question": "Who will have access to the samples?[EINFÜGEN: A paragraph in German explaining to regulators who will have access to the biological samples collected in the study. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer differs based on country or language, localize for Germany.]",
+  "instruction": "[EINFÜGEN: A paragraph in German explaining to regulators who will have access to the codes of the biological samples collected in the study, if applicable. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer differs based on country or language, localize for Germany.]",
+  "condition": null
+ },
+ {
+  "id": "kv106",
+  "kind": "choice",
+  "question": "Who will have access to the sample code list (if applicable)?[EINFÜGEN: A paragraph in German explaining to regulators who will have access to the codes of the biological samples collected in the study, if applicable. If the answer differs based on sample type, patient subgroups, clarify all in detail. If the answer differs based on country or language, localize for Germany.]",
+  "instruction": "[AUSWAHL: Zutreffendes ankreuzen. „Ja“ nur, falls Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden; sonst „Nein“.]",
+  "condition": null
+ },
+ {
+  "id": "v01142",
+  "kind": "text",
+  "question": "Section 4 - Will newly collected samples or existing archive samples be stored for future use?For other use than described in the protocol. Note that some purposes (secondary use of samples) may require additional approval, in Most Member States by an ethics committee[AUSWAHL: Zutreffendes ankreuzen. „Ja“ nur, falls Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden; sons",
+  "instruction": "[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators the purpose of the future use of the biological material/samples collected in the study. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden"
+ },
+ {
+  "id": "v01143",
+  "kind": "text",
+  "question": "What is the purpose of the future use?[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators the purpose of the future use of the biological material/samples collected in the study. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups,",
+  "instruction": "[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators for how long will the biological material/samples collected in the study for future use be stored. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden"
+ },
+ {
+  "id": "v01144",
+  "kind": "text",
+  "question": "How long will the samples be stored?[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators for how long will the biological material/samples collected in the study for future use be stored. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on su",
+  "instruction": "[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators when will the biological material/samples collected in the study for future use be stored. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden"
+ },
+ {
+  "id": "choice02",
+  "kind": "choice",
+  "question": "Where will the samples be stored?[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators when will the biological material/samples collected in the study for future use be stored. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, cl",
+  "instruction": "[AUSWAHL: Zutreffende Option ankreuzen (☒), die anderen leer lassen.]",
+  "condition": null
+ },
+ {
+  "id": "v01145",
+  "kind": "text",
+  "question": "4.4 What type of connection is available between samples and individual subject? [AUSWAHL: Zutreffende Option ankreuzen (☒), die anderen leer lassen.]☐ Direct connection (samples marked with e.g. initials, date of birth)☐ Pseudonymised connection (samples marked with code)☐ No connection, samples are anonymised (i.e. samples can neither directly nor indirectly,with reasonably means according to re",
+  "instruction": "[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators who will access the biological material/samples collected in the study for future use. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden"
+ },
+ {
+  "id": "v01146",
+  "kind": "text",
+  "question": "Who will have access to the samples?[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators who will access the biological material/samples collected in the study for future use. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, cla",
+  "instruction": "[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators who will access the codes of the biological material/samples collected in the study for future use, if applicable. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden"
+ },
+ {
+  "id": "v01147",
+  "kind": "text",
+  "question": "Who will have access to the sample code list (if applicable)?[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators who will access the codes of the biological material/samples collected in the study for future use, if applicable. Consider strictly the samples collected/stored for future use outside the study p",
+  "instruction": "[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators whether the donors of the samples will be contacted to provide new consent for the future use of their samples. If not explain. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden"
+ },
+ {
+  "id": "v01148",
+  "kind": "text",
+  "question": "Will the donor be recontacted to give new consent to the use of the samples in future research? If not, explain[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators whether the donors of the samples will be contacted to provide new consent for the future use of their samples. If not explain. Consider strictly ",
+  "instruction": "[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators whether an ethics committee or a biobank committee will be consulted to assess the future use of biological samples. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden"
+ },
+ {
+  "id": "v01149",
+  "kind": "text",
+  "question": "If secondary future use of the samples will be in question, will an ethics committee or biobank committee be reviewing whether the purpose of the new study is within the scope of the original provided consent (if applicable according to national legislation)?[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulator",
+  "instruction": "[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators who will be able to use the biological samples in the future outside the context of the study. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden"
+ },
+ {
+  "id": "v01150",
+  "kind": "text",
+  "question": "Who will be able to make use of the samples?[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators who will be able to use the biological samples in the future outside the context of the study. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based o",
+  "instruction": "[FALLS Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden – EINFÜGEN: A paragraph in German explaining to regulators how any future unsolicited results of the biological samples will be managed. Consider strictly the samples collected/stored for future use outside the study protocol. If the answer varies based on subgroups, clarify in detail. If the answer contains geography or language specifics, localize your answer to Germany.]",
+  "condition": "Proben über den Prüfplan hinaus für eine künftige Verwendung gelagert werden"
+ },
+ {
+  "id": "f03",
+  "kind": "text",
+  "question": "Section 5 - Additional information that is required by the current Member States national arrangements and regulations. The sponsor should confirm this prior to submission Note: This section will only be filled in if applicable",
+  "instruction": "[EINFÜGEN: provide a detailed response if applicable]",
+  "condition": null
+ }
+]

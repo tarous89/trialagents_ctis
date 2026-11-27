@@ -36,10 +36,11 @@ def curate(root,key):
         if not text: continue
         for p in list(body.iter(w+'p')):
             if C.ptext(p).strip().startswith(anchor):
+                fid=key.lower()+'_'+re.sub(r'[^a-z]+','_',anchor.lower()).strip('_')[:20]
                 if anchor.endswith(':') or anchor in('Name and surname','Role in the sponsor'):
-                    p.append(C.instr_run(' '+text,C.first_rpr(p)))
+                    p.append(C.field(C.instr_run(' '+text,C.first_rpr(p)),fid))
                 else:
-                    p.addnext(C.make_p(text,p))
+                    p.addnext(C.make_p(text,p,None if text.startswith('[HINWEIS') else fid))
                 break
     first=next(x for x in body if x.tag in (w+'p',w+'tbl'))
     ref=first if first.tag==w+'p' else next(body.iter(w+'p'))
@@ -51,6 +52,16 @@ def curate(root,key):
             for t in cells[1].iter(w+'t'):
                 if t.text and t.text.strip()=='[EINFÜGEN: Enter text]': t.getparent().getparent().remove(t.getparent())
             pass
+    n=0
+    for sdt in body.iter(w+'sdt'):
+        pr=sdt.find(w+'sdtPr'); txt=C.ptext(sdt)
+        if txt.strip() in ('☐','☒') and pr.find(w+'tag') is None:
+            n+=1; etree.SubElement(pr,w+'tag').set(w+'val','cb%02d'%n)
+    k=0
+    for tc in body.iter(w+'tc'):
+        ps=[p for p in tc.findall(w+'p') if C.ptext(p).strip().startswith('☐') and p.find('.//'+w+'sdt') is None]
+        if ps and not any('AUSWAHL' in C.ptext(p) for p in tc.findall(w+'p')):
+            k+=1; ps[0].addprevious(C.make_p('[AUSWAHL: Zutreffende Option ankreuzen (☒), die anderen leer lassen.]',ps[0],'choice%02d'%k))
     # generic labels left: make them explicit
     for r in body.iter(w+'r'):
         for t in r.iter(w+'t'):

@@ -166,7 +166,7 @@
       "items": [
         {
           "id": "C4.01",
-          "check": "Every population that can enter the trial has its own information and consent set.",
+          "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its full document set (main, representative, age-adapted, re-consent and other templates that apply).",
           "applies_when": "always"
         },
         {

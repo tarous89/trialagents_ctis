@@ -59,7 +59,8 @@
       "template": {
         "file": "templates/part-ii/K1_Recruitment arrangements_DE_de.docx",
         "basis": "EudraLex Volume 10 recruitment and informed-consent procedure template, version 2.0 (applies to new Part II submissions from 1 September 2026, including initial applications, additional Member States and Article 11 completions)",
-        "recommended": true
+        "recommended": true,
+        "fields": "templates/part-ii/K1_Recruitment arrangements_DE_de.fields.json"
       },
       "signature_at_submission": false,
       "content": "How potential participants are identified, approached, informed, given time to decide and consented; who conducts the consent interview; capacity, vulnerable populations, remote elements, interpreters and re-consent where relevant. Every population pathway in the plan (minors, adults without capacity, impartial witness, emergency) needs its section completed.",
@@ -71,8 +72,7 @@
       "filled_by": "assistant",
       "default_steps": [
         "Draft",
-        "Check",
-        "Style"
+        "Check"
       ],
       "drafting_notes_de": "CTIS Teil II, Abschnitt K. Pflichtdokument. Verwaltungsdokument: Deutsch oder Englisch zulässig; Antworten in dieser Vorlage auf Deutsch. Keine Unterschrift bei Einreichung. Grundlage: EudraLex-Vorlage „Recruitment and informed consent procedure“ Version 2.0 (gilt für neue Teil-II-Einreichungen ab 1. September 2026). Für jede Population mit eigenem Einwilligungsweg (Minderjährige, nicht Einwilligungsfähige, Notfall, unparteiischer Zeuge) den jeweiligen Abschnitt ausfüllen; Abschnitte 1.6, 2.3, 3.2, 4.4, 5.3 und 6.4 mit den deutschen Anforderungen nach §§ 40a, 40b AMG füllen (z. B. Aufklärung durch Prüfarzt/Ärztin, Ausdrückliche Einwilligung in die Datenverarbeitung nach § 40b Abs. 6 AMG, qualifizierte Übersetzungen bei nicht deutschsprachigen Teilnehmenden)."
     },
@@ -199,7 +199,8 @@
       "template": {
         "file": "templates/part-ii/M1_CV Principal investigator_DE_de.docx",
         "basis": "EU CV template",
-        "recommended": true
+        "recommended": true,
+        "fields": "templates/part-ii/M1_CV Principal investigator_DE_de.fields.json"
       },
       "signature_at_submission": false,
       "content": "Professional qualification, relevant clinical experience, trial experience and GCP knowledge. The German site template asks for a CV no more than one year old. Personal details come from the investigator; the assistant fills only trial fields.",
@@ -253,7 +254,8 @@
       "template": {
         "file": "templates/part-ii/M2_DoI Principal investigator_DE_de.docx",
         "basis": "EU declaration-of-interest template",
-        "recommended": true
+        "recommended": true,
+        "fields": "templates/part-ii/M2_DoI Principal investigator_DE_de.fields.json"
       },
       "signature_at_submission": false,
       "sources": [
@@ -282,7 +284,8 @@
       "template": {
         "file": "templates/part-ii/N1_Site suitability_DE_de.docx",
         "basis": "EU site-suitability template (CTAG); the current AKEK Germany site-suitability template is the recommended alternative; either must cover Annex I point 67",
-        "recommended": true
+        "recommended": true,
+        "fields": "templates/part-ii/N1_Site suitability_DE_de.fields.json"
       },
       "signature_at_submission": false,
       "note": "Head of institution or delegate approves internally; AKEK instructs not to include the signature in the CTIS upload.",
@@ -294,8 +297,7 @@
       "filled_by": "assistant; site fields left empty for the site",
       "default_steps": [
         "Draft",
-        "Check",
-        "Style"
+        "Check"
       ],
       "drafting_notes_de": "CTIS Teil II, Abschnitt N. Pflichtdokument, je Prüfstelle ein Dokument. Deutsch oder Englisch zulässig. Für Deutschland wird die aktuelle AKEK-Vorlage zur Eignung der Prüfstelle empfohlen; diese EU-Vorlage ist gleichwertig, wenn sie Anhang I Nr. 67 abdeckt. Leiter/in der Einrichtung oder Bevollmächtigte/r genehmigt intern; die Unterschrift NICHT in die in CTIS hochgeladene Fassung aufnehmen. Prüfstellenangaben (Name, Hauptprüfer/in, Teilnehmerzahl, Kennnummer) bleiben für das Prüfzentrum leer. Strahlenschutz: Falls eine Genehmigung nach § 31 StrlSchG nötig ist, die Unterlagen ebenfalls unter N hochladen."
     },
@@ -408,7 +410,8 @@
       "template": {
         "file": "templates/part-ii/P1_Participant compensation_DE_de.docx",
         "basis": "EU compensation template (CTAG), version 5, June 2023",
-        "recommended": true
+        "recommended": true,
+        "fields": "templates/part-ii/P1_Participant compensation_DE_de.fields.json"
       },
       "signature_at_submission": false,
       "content": "Travel and expense reimbursement, inconvenience payments, prorating and any other payment. State clearly when no payment is offered.",
@@ -420,8 +423,7 @@
       "filled_by": "assistant",
       "default_steps": [
         "Draft",
-        "Check",
-        "Style"
+        "Check"
       ],
       "drafting_notes_de": "CTIS Teil II, Abschnitt P. Pflichtdokument als Erklärung, auch wenn keine Vergütung erfolgt (dann ausdrücklich angeben). Deutsch oder Englisch zulässig; keine Unterschrift. Bei Minderjährigen, nicht Einwilligungsfähigen und Stillenden nur Aufwandsentschädigung bzw. Verdienstausfall. Beträge und Bedingungen müssen mit der Patienteninformation übereinstimmen. Ein Vertragsentwurf Sponsor–Prüfstelle wird ggf. separat unter P2 eingereicht."
     },
@@ -464,7 +466,8 @@
       "template": {
         "file": "templates/part-ii/R1_Data protection_DE_de.docx",
         "basis": "EudraLex GDPR statement, with a German national data-protection sentence added",
-        "recommended": true
+        "recommended": true,
+        "fields": "templates/part-ii/R1_Data protection_DE_de.fields.json"
       },
       "signature_at_submission": false,
       "content": "Confirm compliance with GDPR and, for Germany, that national data-protection rules are respected where GDPR opening clauses apply. If the national point is not in the common statement, submit a separate Part II document.",
@@ -476,8 +479,7 @@
       "filled_by": "assistant",
       "default_steps": [
         "Draft",
-        "Check",
-        "Style"
+        "Check"
       ],
       "drafting_notes_de": "CTIS Teil II, Abschnitt R. Pflichtdokument. Deutsch oder Englisch zulässig; keine Unterschrift nach der CTR erforderlich. Für Deutschland zusätzlich bestätigen, dass nationale Datenschutzvorschriften beachtet werden, soweit die DSGVO Öffnungsklauseln enthält (siehe Einfügung unten)."
     },
@@ -497,7 +499,8 @@
       "template": {
         "file": "templates/part-ii/S1_Biological samples_DE_de.docx",
         "basis": "EudraLex biological-samples form",
-        "recommended": true
+        "recommended": true,
+        "fields": "templates/part-ii/S1_Biological samples_DE_de.fields.json"
       },
       "signature_at_submission": false,
       "sources": [
@@ -509,8 +512,7 @@
       "filled_by": "assistant",
       "default_steps": [
         "Draft",
-        "Check",
-        "Style"
+        "Check"
       ],
       "drafting_notes_de": "CTIS Teil II, Abschnitt S. Bedingt: nur einreichen, wenn biologische Proben entnommen, gelagert, verwendet oder übermittelt werden. Deutsch oder Englisch zulässig; keine Unterschrift. Angaben müssen mit Prüfplan, Probenplan, Patienteninformation und ggf. separater Information zur Sekundärnutzung übereinstimmen. Nutzung außerhalb des Prüfplans erfordert in Deutschland eine separate Information und Einwilligung (AKEK)."
     }
@@ -521,7 +523,7 @@
       "trigger": "population.adult_patients",
       "documents": [
         {
-          "title": "L1_SIS and ICF_adult patients_DE_de",
+          "title": "L1_SIS and ICF_adult patients_<population>_DE_de",
           "template": "templates/participant/L1_SIS and ICF_main_DE_de.json"
         }
       ],
@@ -535,7 +537,7 @@
       "trigger": "population.healthy_volunteers",
       "documents": [
         {
-          "title": "L1_SIS and ICF_healthy volunteers_DE_de",
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_DE_de",
           "template": "templates/participant/L1_SIS and ICF_healthy_DE_de.json"
         }
       ],
@@ -702,8 +704,7 @@
     ],
     "form": [
       "Draft",
-      "Check",
-      "Style"
+      "Check"
     ],
     "third_party_template": [
       "Prepare (trial fields only)",
@@ -813,5 +814,56 @@
       "role": "consent with impartial witness for a capable participant unable to write",
       "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process."
     }
-  ]
+  ],
+  "population_rules": {
+    "authority": "AKEK (Arbeitskreis Medizinischer Ethik-Kommissionen) guideline for ethics-committee review of participant information and consent, effective 9 April 2026; AMG sections 40a and 40b",
+    "minors": {
+      "age_bands": [
+        {
+          "band": "7-11",
+          "template": "DE-PT-age-7-11",
+          "reader": "child"
+        },
+        {
+          "band": "12-17",
+          "template": "DE-PT-age-12-17",
+          "reader": "adolescent"
+        }
+      ],
+      "always": [
+        "DE-PT-parents"
+      ],
+      "reconsent_at_18": "DE-PT-main or DE-PT-healthy, when participants can reach 18 during treatment or follow-up",
+      "under_7": "No age-band template; inform the child in a form appropriate to age and document the information given and the child's response. An expressed refusal is decisive.",
+      "note": "There is no fixed statutory assent age in Germany; bands are drafting bands. A minor with sufficient understanding signs their own written consent in addition to the legal representative."
+    },
+    "adults_without_capacity": {
+      "always": [
+        "DE-PT-legal-rep",
+        "DE-PT-limited-capacity"
+      ],
+      "note": "Group-benefit research additionally needs the prior written advance statement (AMG)"
+    },
+    "emergency": {
+      "always": [
+        "DE-PT-emergency"
+      ],
+      "note": "Later legal-representative consent uses DE-PT-legal-rep when the participant stays unable to consent."
+    },
+    "impartial_witness": {
+      "always": [
+        "DE-PT-witness"
+      ]
+    },
+    "shareable_templates": [
+      "DE-PT-pregnant-partner",
+      "DE-PT-secondary"
+    ],
+    "separate_document_rules": [
+      "Optional use of samples or data outside the protocol always needs its own information and consent (DE-PT-secondary), separate from the main consent (AKEK).",
+      "A pregnant partner receives a separate document addressed to them; the enrolled participant cannot consent for the partner.",
+      "Re-consent of already enrolled participants after a material change: a short version-dated document on the change (AKEK)."
+    ]
+  },
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents."
 }
