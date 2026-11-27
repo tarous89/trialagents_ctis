@@ -1,0 +1,66 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Information und Einwilligung für Kinder im Alter von etwa 7–11 Jahren",
+  "target_country": "Deutschland",
+  "country_code": "DE",
+  "target_language": "Deutsch",
+  "language_code": "de",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 7-11",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving children participants (aged 7 - 11 years).",
+  "target_population": "[Beschreibung der Population laut Prüfplan]",
+  "target_population_label": "[Kurzbezeichnung der Population]",
+  "footer": [
+   "[Dokumentname] - [Kurzbezeichnung der Population] - Version 1.0 - [Datum]",
+   "Prüfplannummer: [ausfüllen] | EU-Prüfungsnummer: [ausfüllen]"
+  ],
+  "info_table": [
+   "Titel der klinischen Prüfung",
+   "Kurztitel der klinischen Prüfung",
+   "Prüfplannummer [Version und Datum ergänzen]",
+   "EU-Prüfungsnummer",
+   "Sponsor [mit vollständiger Anschrift]",
+   "Hauptprüfer",
+   "Name der Prüfstelle",
+   "Anschrift der Prüfstelle",
+   "Telefonnummer der Prüfstelle",
+   "E-Mail-Adresse der Prüfstelle"
+  ],
+  "content_instructions": "An die jeweilige klinische Prüfung anpassen. Die Information muss in kindgerechter, an den individuellen Verständnismöglichkeiten des Kindes ausgerichteter Sprache verfasst sein, ohne zu verharmlosen. Der Prüfarzt muss die Einsichtsfähigkeit des Kindes beurteilen und dokumentieren. Vor der studienbezogenen Aufklärung muss das Kind bereits altersgerecht über seine Erkrankung und die Notwendigkeit der Behandlung informiert worden sein. Die Aufklärung beginnt mit einem mündlichen Gespräch; das Dokument dient nur der Unterstützung. Das Kind soll erst informiert werden, nachdem die Sorgeberechtigten aufgeklärt wurden und eine Teilnahme grundsätzlich erwägen. Lehnen die Sorgeberechtigten die Teilnahme ab, soll das Kind nicht weiter mit der Studie behelligt werden. Mit den Sorgeberechtigten ist vorab zu besprechen, in welchem Umfang das Kind über Verhütung informiert werden soll. Die rechtswirksame Einwilligung erteilen ausschließlich die Sorgeberechtigten. Die Ablehnung des Kindes ist zu beachten; seine Unterschrift dokumentiert lediglich, dass es die Teilnahme nicht ablehnt. Alternativ kann der Prüfarzt das Verständnis und die fehlende Ablehnung bestätigen. Die Elterninformation muss ausführlichere Angaben, insbesondere zum Datenschutz, enthalten. Nicht zutreffende Hinweise und alternative Formulierungen sind zu entfernen.",
+  "styling_instructions": "Kindgerechte Gestaltung verwenden. Bilder, Comics und farbige Elemente können zur Unterstützung des Verständnisses eingesetzt werden. Kursiv gesetzte Textstellen kennzeichnen Erstellungshinweise oder alternative Formulierungen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Liebe/r ……….,\n\nDu wirst wegen ... (Symptome verständlich beschreiben, z. B. Husten, Ausschlag, Fieber) von Deinen Ärzten behandelt. Deine Krankheit heißt … Um gesund zu werden, sollst Du Medizin bekommen. \n\nEs gibt eine Medizin, die schon viele Kinder bekommen haben. Wir Ärzte wollen nun herausfinden, ob eine neue Medizin vielleicht besser hilft. Wir möchten von Dir wissen, ob Du bei dieser Studie, an der auch andere Kinder teilnehmen, mitmachen möchtest. \n\nOb Du bei der Studie mitmachen möchtest, kannst Du zusammen mit Deinen Eltern entscheiden. Keiner zwingt Dich zur Teilnahme. Du kannst auch einfach nein sagen. Wir behandeln Deine Krankheit dann so, wie es immer gemacht wurde, also mit einer Medizin, die schon viele Kinder bekommen haben und die gut hilft (ggf. anpassen, falls keine Standardtherapie verfügbar ist)..\n\nDu musst nicht gleich entscheiden; lass Dir ruhig einige Tage Zeit (ggf. anpassen), um darüber nachzudenken. Deine Eltern werden sicher die meisten Fragen, die Du hast, beantworten können. Und Dein Arzt wird wegen dieser Studie auch alles mit Dir besprechen. Dem kannst Du auch alle Deine Fragen stellen, er wird sie Dir beantworten. ",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Was wird bei der Studie gemacht und was geschieht mit Dir?\nAm Anfang müssen wir aufschreiben, was für Krankheiten Du bisher gehabt hast. Dann wirst Du untersucht … (z.B. Abhören, in den Mund schauen, in die Ohren leuchten, …). \nDie neue Medizin ist … und Du bekommst sie ... (z.B. morgens und abends) als….\nAußerdem .... (Die wesentlichen Maßnahmen knapp und verständlich erklären, insbesondere\n- Einnahme der Studienmedikamente\n- ggf. Absetzen anderer Medikamente\n - Besuche in der Sprechstunde oder Klinik\n- Untersuchungen wie Blutentnahme, wie oft?\n- Dauer der Teilnahme, wann beendet? )\n\nGgf.: Damit wir erkennen können, ob die neue Medizin wirklich besser hilft, teilen wir alle Kinder zum Vergleich in zwei Gruppen ein. Die eine Gruppe erhält die neue Medizin ..., die andere Gruppe die bisherige Medizin. Für Placebo-kontrollierte Studien: Die eine Gruppe erhält die neue Medizin ..., die andere Gruppe Tabletten / Tropfen, die genau so aussehen, aber keine Medizin enthalten. Wenn Du an dieser Studie teilnimmst, wird ausgelost, zu welcher Gruppe Du gehörst. Ggf.: Du wirst nicht merken, in welche Gruppe Du gekommen bist. Auch der Arzt und Deine Eltern wissen nicht, was Du bekommst. \n\nSehr wichtig ist, dass Du die Medizin genau so einnimmst, wie es Dein Arzt Dir gesagt hat. Wenn Du zu wenig davon einnimmst, wirkt es nicht. Und wenn Du zu viel einnimmst, kann es Dich krank machen.\n\nWenn Du aus Versehen einmal mehr oder weniger von Deiner Medizin eingenommen hast, sage das sofort Deinen Eltern und dem Arzt. Du musst keine Angst haben, dass wir deshalb mit Dir böse sind; wir müssen es aber wissen, um Dir helfen zu können.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Kann es unangenehm werden oder kann etwas Schlimmes passieren?\n\nWenn Du meinst, dass die Medizin für Dich nicht gut ist, oder Dir etwas komisch vorkommt, sag es sofort Deinen Eltern oder Deinem Arzt. Das ist ganz wichtig, damit wir Dir richtig helfen können. Zum Beispiel kann es vorkommen, dass ... (nur die häufigsten Nebenwirkungen beschreiben ….. ). \n\nManchmal müssen wir bei Dir Blut abnehmen, weil wir Ärzte dadurch erkennen können, wie Dein Körper arbeitet. Zum Blutabnehmen müssen wir Dich pieksen. Damit Dir der Stich nicht so weh tut, bekommst Du von uns vorher ein besonderes Pflaster. \n(Nebenwirkungen weiterer studienbedingter Maßnahmen wahrheitsgemäß beschreiben)\n\nAls Extrablatt nur bei geschlechtsreifen Minderjährigen mit ausdrücklicher Zustimmung der Eltern aufnehmen, wobei eine hormonelle Antikonzeption ausschließlich aus Studiengründen nicht vertretbar ist: Bei Mädchen, die schon ihre Regelblutung (manche sagen auch „die Tage“) haben, muss man etwas Besonderes beachten. Wenn ein solches Mädchen mit einem Jungen Geschlechtsverkehr hat, kann es schwanger werden. Dann wächst, wie Du weißt, in seinem Bauch ein Baby heran. Und wenn das Mädchen dann eine neue Medizin einnimmt, könnte das dem Baby schaden, ohne dass jemand etwas davon merkt. Aus diesem Grund darf kein Mädchen, das ein Baby erwartet, beim Ausprobieren einer neuen Medizin mitmachen.\n\nDeshalb muss bei jedem Mädchen, das vielleicht schwanger sein könnte, vorher eine Untersuchung gemacht werden. Die nennt man „Schwangerschafts-Test“. Dazu wird etwas Urin in einem Labor untersucht und dann weiß man genau, ob das Mädchen ein Baby erwartet. \n\nUm zu verhindern, dass ein Baby durch die Medizin geschädigt wird, die bei dieser Studie verwendet wird, muss eine Schwangerschaft sicher vermieden werden. Was Du dafür tun kannst, wird Dein Doktor mit Dir besprechen. \n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Musst Du bis zum Ende der Studie mitmachen?\n\nWeil Du freiwillig bei der Studie mitmachst, kannst Du auch jederzeit aufhören. Wenn Du das möchtest, musst Du uns keinen Grund nennen. Solltest Du aufhören, wirst Du mit dem bisherigen Medikament behandelt.\n\n(Wenn die Studie bis zu einem Zeitpunkt fortgeführt wird, an dem Du selbst einwilligen kannst: Wenn Du später selbst einwilligen kannst, wirst Du erneut informiert und um Deine eigene Einwilligung gebeten.)\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "\nAn wen kannst Du noch Fragen stellen?\nWenn Du weitere Fragen hast, kannst Du Dich gerne an uns wenden. Wir beantworten alle Deine Fragen sehr gerne. Wenn es wichtige neue Informationen gibt, erklären wir sie Dir.\n\nInformationen über Dich und Deine Gesundheit werden mit einem Code statt mit Deinem Namen für die Studie verwendet. Genauere Informationen haben Deine Eltern erhalten.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Möchtest Du mitmachen? (ggf. lediglich Bestätigung durch den Prüfer)\n\nWenn Du bei der Studie mitmachen möchtest, bitten wir Dich, auf diesem Blatt zu unterschreiben. Du sagst uns damit, dass Du an der Studie teilnehmen möchtest und weißt, dass dies freiwillig ist. Du kannst aber auch später zu jeder Zeit sagen, dass Du nicht mehr an der Studie teilnehmen möchtest. Du wirst dadurch auch keine Nachteile haben. Du erhältst ein Exemplar dieser Information und Deiner unterschriebenen Bestätigung.\n\nIch möchte an dieser Studie teilnehmen.\n\n\n__________________________________________________\nName des Kindes in Druckbuchstaben\n\n_________________\t_____________________\nOrt, Datum\tUnterschrift Kind\n\nIch habe das Aufklärungsgespräch geführt und mich davon überzeugt, dass das Kind die Information über die Studie verstanden hat, keine weiteren Fragen hat und die Teilnahme nicht ablehnt.\n\n_____________________________\nName des Prüfarztes in Druckbuchstaben\n\n_________________\t\t\t _____________________\nOrt, Datum \tUnterschrift des Prüfarztes\nEU-Prüfungsnummer ………. Information Version … vom … Seite # von #",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

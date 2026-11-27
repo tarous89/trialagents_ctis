@@ -74,16 +74,9 @@ Alternatives to offer when they fit: draft every country from the sources in par
 
 Draft, Source QC, Checklist, Style for documents TrialAgents writes. Draft is always the first content step: written from scratch, from a starting document, or adapted from a reference document. Add Team review, Compare versions or Compare across documents when the user wants them. Mark Draft not applicable for provided documents.
 
-## 6. CTIS naming (CTCG best-practice guide v3.0, 10 February 2026)
+## 6. CTIS naming
 
-- Title: `<section code>_<document type>_<subtype>_<country>_<language>_<special attribute>`, only with the fields that distinguish the document; unique, self-explanatory, at most 100 characters.
-- Section prefixes: B (cover letter), D–J (Part I), K–P, R, S (Part II).
-- Version and date go in CTIS metadata, never in the title.
-- Personal names only where disclosure allows (principal investigator in CV and DoI).
-- Distinguish clean, tracked-change, redacted/public and split-file variants.
-- Uploaded filename base without `( ) / , . ; | [ ]`.
-- Article 11 Part I-only country: every mandatory Part II slot holds the official placeholder PDF titled `Part_II_placeholder_document_Article_11_workaround`.
-- On resubmission CTIS changes the last two digits of the EU trial number; omitting them inside documents is accepted.
+Name every document with its CTIS title following `naming.md` (CTCG v3.0 as published in the TrialAgents naming guide): `<section code>_<document type>_<subtype>_<country>_<language>_<special attribute>`, only the fields that distinguish the document, at most 100 characters, version and date in metadata. Use the country file's `ctis_title` patterns. Where a country guide shows an older name, the naming guide wins.
 
 ## 7. Application types
 
