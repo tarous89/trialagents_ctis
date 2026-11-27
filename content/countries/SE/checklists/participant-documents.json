@@ -1,0 +1,443 @@
+{
+  "id": "SE-QC-PARTICIPANT",
+  "name": "Sweden: participant-facing document QC",
+  "applies_to": [
+    "SE-L1",
+    "SE-L2",
+    "SE-K2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/sweden/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); population items also from the Sweden population guides named in each item's source",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Trial purpose, interventions, visit schedule, duration, procedures, risks, inconveniences and expected benefits are stated accurately.",
+          "source": "SE-QC#1"
+        },
+        {
+          "id": "C1.02",
+          "check": "Where no direct therapeutic benefit is expected, the wording does not imply one.",
+          "source": "SE-QC#1"
+        },
+        {
+          "id": "C1.03",
+          "check": "The EU trial number is present and the participant is told how trial results can later be located in the EU database.",
+          "source": "SE-QC#1"
+        },
+        {
+          "id": "C1.04",
+          "check": "The right to refuse and the right to withdraw at any time without negative consequences and without giving a reason are stated clearly.",
+          "source": "SE-QC#1, SE-ICF"
+        },
+        {
+          "id": "C1.05",
+          "check": "Treatment alternatives (where relevant) and follow-up if participation stops are explained.",
+          "source": "SE-ICF"
+        },
+        {
+          "id": "C1.06",
+          "check": "Practical contacts are given for trial questions, medical issues and rights or complaints.",
+          "source": "SE-ICF"
+        },
+        {
+          "id": "C1.07",
+          "check": "Trial title, protocol number and version, sponsor, principal investigator and site details in the info table match the protocol and CTIS.",
+          "source": "SE-QC#8, template info_table"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-patient-document consistency",
+      "instruction": "Compare every participant-facing statement against the current protocol version; resolve any meaningful difference before submission.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Visit frequency and expected duration match the protocol.",
+          "source": "SE-QC#2"
+        },
+        {
+          "id": "C2.02",
+          "check": "Invasive procedures and sample collection match the protocol.",
+          "source": "SE-QC#2"
+        },
+        {
+          "id": "C2.03",
+          "check": "Randomisation, placebo or comparator descriptions match the protocol.",
+          "source": "SE-QC#2"
+        },
+        {
+          "id": "C2.04",
+          "check": "Pregnancy testing and contraception match the protocol.",
+          "source": "SE-QC#2",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.05",
+          "check": "Treatment interruption and withdrawal procedures match the protocol.",
+          "source": "SE-QC#2"
+        },
+        {
+          "id": "C2.06",
+          "check": "Emergency enrolment is described as in the protocol.",
+          "source": "SE-QC#2",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C2.07",
+          "check": "Remote or decentralised activities are described as in the protocol.",
+          "source": "SE-QC#2",
+          "applies_when": "decentralised.elements"
+        },
+        {
+          "id": "C2.08",
+          "check": "Safety follow-up after treatment discontinuation matches the protocol.",
+          "source": "SE-QC#2"
+        },
+        {
+          "id": "C2.09",
+          "check": "Planned future use of samples or data matches the protocol.",
+          "source": "SE-QC#2",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C2.10",
+          "check": "After a material change to the approved information or consent logic, the need for a substantial modification and participant re-consent has been assessed and every affected document reopened.",
+          "source": "SE-ICF",
+          "applies_when": "modification or revised protocol"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The consent form has signature and date fields for the participant or legally designated representative and for the person providing the information.",
+          "source": "SE-QC#3"
+        },
+        {
+          "id": "C3.02",
+          "check": "The protocol and K1 identify who obtains consent; the normal rule is a licensed physician or licensed dentist who also conducts the Article 29 interview (HSLF-FS 2021:109).",
+          "source": "SE-QC#3, SE-ICF"
+        },
+        {
+          "id": "C3.03",
+          "check": "If another healthcare professional obtains consent, special reasons are documented in the protocol and the required Läkemedelsverket exception is addressed.",
+          "source": "SE-QC#3",
+          "applies_when": "consent.non_physician_consent_taker"
+        },
+        {
+          "id": "C3.04",
+          "check": "The submitted CTIS copy is not signed; the blank form is uploaded.",
+          "source": "SE-QC#3"
+        },
+        {
+          "id": "C3.05",
+          "check": "States that the signed consent and written information are retained at the site and a copy is given to the participant or representative.",
+          "source": "SE-ICF"
+        },
+        {
+          "id": "C3.06",
+          "check": "The person signing has legal authority for the decision (participant, guardians, god man or förvaltare).",
+          "source": "SE-MINORS, SE-CAPACITY"
+        },
+        {
+          "id": "C3.07",
+          "check": "Optional activities are separate from the main participation decision; refusing one is not drafted as refusing the main trial unless the protocol makes it necessary.",
+          "source": "SE-SECONDARY"
+        },
+        {
+          "id": "C3.08",
+          "check": "A research consent checkbox is not used as a substitute for the sponsor's separate data-protection obligations.",
+          "source": "SE-ICF"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its specific Swedish information and consent pathway and full document set.",
+          "source": "SE-QC#4",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Healthy volunteers: no implied therapeutic benefit; purpose of exposing healthy volunteers, dosing and escalation, confinement, washout, fasting or activity restrictions, blood volume and repeated sampling, foreseeable adverse effects and uncertainty, stopping rules, contraception and pregnancy restrictions, follow-up after dosing, reimbursement and compensation, injury protection and insurance explained; payment not presented as a benefit.",
+          "source": "SE-HV",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.03",
+          "check": "Non-therapeutic trials do not enrol persons under compulsory psychiatric care or forensic psychiatric care.",
+          "source": "SE-HV",
+          "applies_when": "trial.non_therapeutic"
+        },
+        {
+          "id": "C4.04",
+          "check": "Minors: Swedish guardian document with both guardians' signature and date blocks; age-appropriate child information adapted to age and maturity; the child's right to say no or ask to stop; the child's document does not contradict the guardian document.",
+          "source": "SE-MINORS",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.05",
+          "check": "Minors 15-17: if they may understand what participation means, a separate adolescent information and own informed-consent form is present and the two legal roles are clear; own consent is planned for participants who turn 15 during the trial.",
+          "source": "SE-MINORS, SE-QC#4",
+          "applies_when": "population.minors_15_17_own_consent or population.minors_age_bands includes ages 12-17"
+        },
+        {
+          "id": "C4.06",
+          "check": "Minors: re-consent at 18 is not demanded solely for age when valid own consent was given after 15; other re-consent triggers (amendment, new risk information) remain.",
+          "source": "SE-MINORS",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.07",
+          "check": "Adults without capacity: Article 31 conditions; Swedish representative information and consent identifying the god man or förvaltare and their capacity; adapted participant information; explicit refusal respected and not overridable by the representative; transition to own consent when capacity returns; no incentives beyond expenses and loss of earnings.",
+          "source": "SE-CAPACITY",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.08",
+          "check": "Emergency enrolment: every Article 35 condition; documents for each realistic post-emergency pathway (participant, representative, minors and guardians, limited capacity); consent for continued participation sought as soon as possible; right to object to use of data already collected; no retroactive approval of the first intervention.",
+          "source": "SE-EMERGENCY",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.09",
+          "check": "Participant unable to write or sign: witness route not confused with interpreter needs, limited health literacy or legal-representative consent; witness independent of the trial; witness statement with date and signature fields; how the participant's decision is expressed is recorded; the participant receives a copy.",
+          "source": "SE-WITNESS",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.10",
+          "check": "Pregnancy: pregnant participant and pregnant partner are distinguished; the partner has a separate Swedish document when identifiable information is collected from her; the participant does not consent for the partner; maternal and infant data limited to what the protocol needs; medical-record access explained; protocol-defined follow-up duration stated.",
+          "source": "SE-PREGNANCY",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or pregnancy.infant_follow_up"
+        },
+        {
+          "id": "C4.11",
+          "check": "Intentional enrolment of pregnant or breastfeeding women: Article 33 conditions addressed in the documents.",
+          "source": "SE-PREGNANCY",
+          "applies_when": "pregnancy.pregnant_or_breastfeeding_enrolled"
+        },
+        {
+          "id": "C4.12",
+          "check": "Optional future use: optional, separate from the main decision, refusal without loss of main participation.",
+          "source": "SE-SECONDARY",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Privacy information matches the actual study data flow: controllers, categories of data, transfers, access, retention and participant rights match the approved data-protection documentation (R1).",
+          "source": "SE-QC#5"
+        },
+        {
+          "id": "C5.02",
+          "check": "No internal contradictions: no promise such as permanent deletion on request that the protocol, safety obligations or legal record-retention requirements do not support.",
+          "source": "SE-QC#5"
+        },
+        {
+          "id": "C5.03",
+          "check": "Research consent and the legal basis for personal-data processing are not presented as interchangeable.",
+          "source": "SE-SECONDARY"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological samples and future use",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Participant information matches the protocol, the CTIS biological-sample compliance document (S1) and, where the Biobank Act applies, the Swedish biobank application.",
+          "source": "SE-QC#6",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.02",
+          "check": "Sample destinations and planned analyses, retention period or retention logic, current-study use, any optional future-use purpose and withdrawal or restriction choices are stated.",
+          "source": "SE-QC#6",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.03",
+          "check": "Use within the authorised study is distinguished from a genuinely new purpose; broad future-use language does not replace the information and consent required for the later use or promise to remove later ethical or biobank review.",
+          "source": "SE-QC#6, SE-SECONDARY",
+          "applies_when": "samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.04",
+          "check": "Withdrawal and restriction effects are stated accurately (destruction, or de-identification where destruction is impossible without destroying other samples); no promises conflicting with the law or with analyses already done.",
+          "source": "SE-SECONDARY",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C6.05",
+          "check": "Transfers of samples to another legal entity, laboratory or country are explained consistently with the protocol and biobank documentation.",
+          "source": "SE-SECONDARY",
+          "applies_when": "samples.collected or samples.archive_used"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Compensation and insurance",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "Reimbursement, compensation and injury protection in the participant information match P1, O1 and O2.",
+          "source": "SE-QC#7"
+        },
+        {
+          "id": "C7.02",
+          "check": "Incapacitated participants, their representatives and minors: no incentives or financial inducements beyond compensation for expenses and loss of earnings directly related to participation.",
+          "source": "SE-QC#7, SE-CAPACITY",
+          "applies_when": "population.adults_without_capacity or population.minors"
+        },
+        {
+          "id": "C7.03",
+          "check": "The right to compensation for trial-related injury is explained in a way the participant can understand.",
+          "source": "SE-ICF, SE-PII-CHECKLIST#7"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administration",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Each Swedish document has a controlled title, version and date; the version matches the references in the protocol and K1.",
+          "source": "SE-QC#8"
+        },
+        {
+          "id": "C8.02",
+          "check": "The correct blank form is uploaded for each population.",
+          "source": "SE-QC#8"
+        },
+        {
+          "id": "C8.03",
+          "check": "No accidental site, participant, representative or witness signatures or completed personal data in the submission copy.",
+          "source": "SE-QC#8"
+        },
+        {
+          "id": "C8.04",
+          "check": "Recruitment advertisements and participant-facing material are in Swedish.",
+          "source": "SE-QC#8"
+        },
+        {
+          "id": "C8.05",
+          "check": "Two guardian signature and date blocks in guardian documents; signatures need not be given at the same time.",
+          "source": "SE-MINORS",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C8.06",
+          "check": "Witness fields only where the impartial-witness route can apply.",
+          "source": "SE-WITNESS"
+        },
+        {
+          "id": "C8.07",
+          "check": "Representative name and basis of authority recorded where a representative signs.",
+          "source": "SE-CAPACITY, SE-MINORS"
+        },
+        {
+          "id": "C8.08",
+          "check": "Statement that the participant or representative receives a copy.",
+          "source": "SE-ICF"
+        },
+        {
+          "id": "C8.09",
+          "check": "Correct CTIS section and naming convention (naming guide, requirements.json).",
+          "source": "NAMING"
+        },
+        {
+          "id": "C8.10",
+          "check": "Running footer and header carry document name, population, version, date, protocol number and EU trial number.",
+          "source": "template footer and styling_instructions"
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version ([INSTRUKTION – TA BORT FÖRE SLUTVERSION: …], [FYLL I: …], [VALFRI TEXT – BEHÅLL ELLER TA BORT], unchosen alternatives, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank.",
+          "source": "conventions/template-instructions.md, template styling_instructions"
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and language",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Swedish understandable to the intended participant population, not only grammatically correct.",
+          "source": "SE-QC#9"
+        },
+        {
+          "id": "C9.02",
+          "check": "Clinical terms defined; dense sentences shortened; decision-relevant information visible.",
+          "source": "SE-QC#9"
+        },
+        {
+          "id": "C9.03",
+          "check": "Exhaustive enough for an informed decision but concise, clear, relevant and understandable to a lay person.",
+          "source": "SE-ICF"
+        },
+        {
+          "id": "C9.04",
+          "check": "Optional choices look optional.",
+          "source": "SE-SECONDARY"
+        },
+        {
+          "id": "C9.05",
+          "check": "Child and adolescent documents are age-adapted and shorter than the adult or guardian information without dropping decision-critical information.",
+          "source": "SE-MINORS, template styling_instructions",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C9.06",
+          "check": "Translations from a reference document reviewed and matching the approved source.",
+          "source": "SE-PII-CHECKLIST#language",
+          "applies_when": "document is adapted from a reference document in another language"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final package check",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "The patient-facing set has been compared against the Sweden Part II document checklist (requirements.json documents).",
+          "source": "SE-QC#10"
+        },
+        {
+          "id": "C10.02",
+          "check": "The entire set has been reviewed once from the participant's perspective and once from the assessor's perspective, as one system rather than file by file.",
+          "source": "SE-QC#10"
+        }
+      ]
+    }
+  ]
+}
