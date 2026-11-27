@@ -6,7 +6,7 @@ import {fileURLToPath} from 'node:url'
 import {PGlite} from '@electric-sql/pglite'
 import {ctis} from '../app/server/store.mjs'
 import {publishCatalog} from '../app/server/catalog.mjs'
-import {loadCatalogDir} from '../app/server/catalog-files.mjs'
+import {loadCoreCatalogDir as loadCatalogDir} from '../app/server/catalog-files.mjs'
 import {ctisHttp,protectedResource,claudeResource,metadataPath} from '../mcp/http.mjs'
 
 test('Claude runs a submission over MCP: plan, loop, block, resume in a new conversation, revise',async t=>{

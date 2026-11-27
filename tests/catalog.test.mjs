@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url'
 import {randomUUID} from 'node:crypto'
 import {PGlite} from '@electric-sql/pglite'
 import {buildCatalog,catalogView,publishCatalog,currentCatalog,catalogFile,docxFields} from '../app/server/catalog.mjs'
-import {readCatalogDir} from '../app/server/catalog-files.mjs'
+import {readCatalogDir,readCoreCatalogDir} from '../app/server/catalog-files.mjs'
 import {ctis} from '../app/server/store.mjs'
 
 const catalogDir=fileURLToPath(new URL('../catalog',import.meta.url))
@@ -91,7 +91,7 @@ use_when: Later.`,'## S01 · Summary\nFill: study')}
 ]
 
 test('the shipped catalog is valid: naming, default and L1 styling, the K1 form, workflow guides',async()=>{
-  const built=await buildCatalog(await readCatalogDir(catalogDir))
+  const built=await buildCatalog(await readCoreCatalogDir(catalogDir))
   assert.deepEqual(built.errors,[])
   const ids=built.items.map(i=>i.category+'/'+i.id)
   for(const x of ['planning/naming','styling/default','styling/L1_SIS-ICF','styling/K1_recruitment-arrangements_DE'])assert.ok(ids.includes(x),x)
@@ -103,7 +103,7 @@ test('the shipped catalog is valid: naming, default and L1 styling, the K1 form,
 })
 
 test('validation explains what to fix',async()=>{
-  const bad=await buildCatalog([...await readCatalogDir(catalogDir),...fixtures,
+  const bad=await buildCatalog([...await readCoreCatalogDir(catalogDir),...fixtures,
     {path:'content/broken.md',text:md('id: broken\nname: Broken\ncode: X1_broken\npart: II\nversion: 1\neffective: 2026-01-01\nuse_when: x\nstyling: nowhere','## S01 Title\n## S02 · Ok\nFill: maybe\n## S03 · Std\nFill: standard')},
     {path:'styling/no-file.md',text:md('id: no-file\nname: x\ncode: X1_broken\nkind: layout\nfile: no-file.docx\nversion: 1\neffective: 2026-01-01\nuse_when: x\nslots:\n  - {id: title}')},
     {path:'styling/orphan.md',text:md('id: orphan\nname: x\ncode: X1_broken\nbase: missing-base\nversion: 1\neffective: 2026-01-01\nuse_when: x')},
@@ -122,7 +122,7 @@ test('validation explains what to fix',async()=>{
 })
 
 test('matching by regulatory code, variant and country; styling instructions in two layers',async()=>{
-  const built=await buildCatalog([...await readCatalogDir(catalogDir),...fixtures])
+  const built=await buildCatalog([...await readCoreCatalogDir(catalogDir),...fixtures])
   assert.deepEqual(built.errors,[])
   const cat=catalogView({id:1,items:built.items},{today:'2026-11-26'})
   const plan=cat.planning({countries:['DE','ES'],submission_type:'Initial application'})
@@ -160,7 +160,7 @@ test('publishing is idempotent and a store document resolves its catalog items',
   const pg=new PGlite(),db={transaction:fn=>pg.transaction(tx=>fn(async(sql,p)=>(await tx.query(sql,p)).rows))}
   try{
     await pg.exec(await readFile(new URL('../app/server/schema.sql',import.meta.url),'utf8'))
-    const built=await buildCatalog([...await readCatalogDir(catalogDir),...fixtures])
+    const built=await buildCatalog([...await readCoreCatalogDir(catalogDir),...fixtures])
     assert.deepEqual(await publishCatalog(db,built,{sha:'abc'}),{release:1,published:true})
     assert.deepEqual(await publishCatalog(db,built,{sha:'abc'}),{release:1,published:false})
     await assert.rejects(publishCatalog(db,{...built,errors:['x']}),/errors/)
@@ -179,3 +179,17 @@ test('publishing is idempotent and a store document resolves its catalog items',
     assert.deepEqual((await docxFields(file.buffer)).map(t=>t.id).sort(),['body','footer','footer_ids','page_label','page_of','subtitle','title'])
   }finally{await pg.close()}
 })
+
+test('the full catalog with all imported countries builds without errors', async()=>{
+  const built=await buildCatalog(await readCatalogDir(catalogDir))
+  assert.deepEqual(built.errors,[])
+  const countries=built.items.filter(i=>i.category==='planning'&&i.header.kind==='checklist'&&i.header.part==='II').map(i=>i.header.country)
+  assert.ok(countries.length>=25,'25 member states')
+  for(const code of ['K1_recruitment-arrangements','N1_site-suitability','S1_biological-samples','P1_compensation','R1_data-protection','M1_CV','M2_DoI'])
+    assert.equal(built.items.find(i=>i.id===code)?.header.kind,'form',code)
+  const cat=catalogView({id:1,items:built.items})
+  const doc={id:'D01',part:'II',country:'AT',language:'de',code:'L1_SIS-ICF',variant:'adults',catalog:{}}
+  assert.equal(cat.contentTemplate(doc).id,'L1_SIS-ICF_adults_AT')
+  assert.equal(cat.styling({...doc,code:'N1_site-suitability',variant:''}).item.id,'N1_site-suitability')
+})
+

@@ -1,0 +1,513 @@
+---
+id: L1_SIS-ICF_emergency_DE
+name: L1 SIS and ICF – emergency – Germany (Patienteninformation und Einwilligung zur weiteren Teilnahme nach Notfalleinschluss)
+code: L1_SIS-ICF
+variant: emergency
+part: II
+countries:
+- DE
+languages:
+- de
+version: '1.0'
+effective: '2026-11-27'
+use_when: Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.
+styling: L1_SIS-ICF_emergency_DE_styling
+---
+Template supplied for Germany, in Deutsch: **Patienteninformation und Einwilligung zur weiteren Teilnahme nach Notfalleinschluss** (Emergency Enrolment and Deferred Consent Form).
+
+Keep the model text and its order. Fill the [bracketed] notes and the ........... gaps from the study; follow the italic and bracketed instructions and remove them from the final document. Fields completed by hand at the consent visit (names, dates, signatures) stay blank.
+
+**Content instructions:** An die konkrete klinische Prüfung und den genehmigten Prüfplan anpassen. Für erwachsene Patienten verwenden, die in einer medizinischen Notfallsituation vor vorheriger Einwilligung aufgenommen wurden, weil weder sie noch ein gesetzlicher Vertreter innerhalb des erforderlichen Behandlungszeitfensters einwilligen konnten, und die nun wieder selbst über die weitere Teilnahme entscheiden können. In klarer, kurzer und allgemeinverständlicher Sprache die Notfallaufnahme und den Grund der fehlenden vorherigen Einwilligung erläutern. Bereits durchgeführte und künftig vorgesehene studienbedingte Maßnahmen, Risiken, Datenverarbeitungen und gegebenenfalls Bioproben getrennt darstellen. Studienzweck, Prüfpräparat, Studiendesign, Dauer, Nutzen, Risiken und Belastungen, Behandlungsalternativen, Freiwilligkeit, weitere Teilnahme, Widerruf, Kosten oder Aufwandsentschädigung, Versicherung, neue Erkenntnisse, Beendigung und Kontaktstellen beschreiben. Die Kurzdarstellung darf höchstens 2 Seiten umfassen. Datenkategorien, Pseudonymisierung, Rechtsgrundlagen, Verantwortliche, Zwecke, Empfänger, Drittlandübermittlungen, Betroffenenrechte, Aufbewahrung und Veröffentlichung studienspezifisch angeben. Bei fehlender Einwilligung zur weiteren Teilnahme über das Recht zum Widerspruch gegen die Verwendung bereits erhobener Daten und dessen gesetzliche Grenzen informieren. Optionales Biobanking, zukünftige Datennutzung oder andere vom Hauptzweck unabhängige Zwecke gesondert kennzeichnen und eine separate Einwilligung vorsehen. Randomisierung, Placebo, Vergleichstherapie, Verblindung, genetische Untersuchungen, reproduktionsbezogene Anforderungen, Drittlandübermittlungen und Bioproben nur aufnehmen, sofern zutreffend. Nicht zutreffende Alternativen und redaktionelle Hinweise vor Verwendung entfernen und alle Platzhalter studienspezifisch ausfüllen. Eine mündliche Aufklärung durch einen Prüfarzt, ausreichende Zeit für die Entscheidung über die weitere Teilnahme sowie die Aushändigung einer Ausfertigung der Patienteninformation, Einwilligung und Versicherungsunterlagen sicherstellen.
+
+**Study information table:** Titel der klinischen Prüfung; Kurztitel der klinischen Prüfung; Prüfplannummer [Version und Datum ergänzen]; EU-Prüfungsnummer; Sponsor [mit vollständiger Anschrift]; Hauptprüfer; Name der Prüfstelle; Anschrift der Prüfstelle; Telefonnummer der Prüfstelle; Vertreter des Sponsors in der EU [mit vollständiger Anschrift]
+
+**Footer:** [Dokumentname] – [Kurzbezeichnung der Population] – Version 1.0 – [Datum] | Prüfplannummer: [ausfüllen] | EU-Prüfungsnummer: [ausfüllen]
+
+## S01 · Sehr geehrte Patientin, sehr geehrter Patient,
+Fill: standard
+Layout elements: Rich body text
+Standard wording: Sehr geehrte Patientin, sehr geehrter Patient,
+Standard wording: Sie wurden im Rahmen einer medizinischen Notfallsituation in die nachfolgend beschriebene klinische Prüfung (Studie) aufgenommen. Vor Ihrer Aufnahme konnten Sie nicht über die klinische Prüfung aufgeklärt und um Ihre Einwilligung gebeten werden, weil Sie aufgrund von ........... <i>[akute Erkrankung/Notfallsituation allgemeinverständlich beschreiben]</i> nicht in der Lage waren, eine Einwilligung zu erteilen. Innerhalb des für die notwendige Behandlung zur Verfügung stehenden Zeitfensters konnte auch kein gesetzlicher Vertreter erreicht werden.
+Standard wording: Sie erhalten diese Information unverzüglich, nachdem Sie wieder in der Lage sind, selbst über Ihre weitere Teilnahme zu entscheiden.
+Standard wording: Klinische Prüfungen sind notwendig, um Erkenntnisse über die Wirksamkeit und Verträglichkeit von Arzneimitteln zu gewinnen oder zu erweitern. Deshalb schreibt der Gesetzgeber im Arzneimittelgesetz vor, dass neue Arzneimittel klinisch geprüft werden müssen.
+Standard wording: Die klinische Prüfung, die wir Ihnen hier vorstellen, wurde – wie es das Gesetz verlangt – von der zuständigen nationalen Behörde unter Einbeziehung der national zuständigen Ethikkommission genehmigt. Dabei wurde auch das Verfahren für die Aufnahme von Patienten in einer Notfallsituation geprüft und genehmigt.
+Standard wording: Diese klinische Prüfung wird in........... <i>[Ort der Durchführung] </i>/ an mehreren Orten durchgeführt; es sollen insgesamt ungefähr ........... Personen daran teilnehmen. Die Studie wird durch den oben genannten Sponsor veranlasst und finanziert.
+Standard wording: <b>Ihre Entscheidung über die weitere Teilnahme an dieser klinischen Prüfung ist freiwillig.</b> Sie entscheiden jetzt, ob Sie weiterhin an der klinischen Prüfung teilnehmen möchten. Wenn Sie nicht in die weitere Teilnahme einwilligen oder Ihre Einwilligung später widerrufen, entstehen Ihnen daraus keine Nachteile für Ihre weitere medizinische Behandlung oder Ihre sonstigen Rechte.
+Standard wording: Der nachfolgende Text soll Ihnen die Ziele und den Ablauf erläutern. Dabei wird beschrieben, welche studienbedingten Maßnahmen bereits durchgeführt wurden und welche Maßnahmen bei einer weiteren Teilnahme vorgesehen sind. Der Text ist in drei Teile gegliedert:
+Standard wording: - Kurzdarstellung der Studie.
+Standard wording: - Teil I: Informationen zum Ablauf der klinischen Prüfung einschließlich der damit zusammenhängenden gesundheitlichen Gesichtspunkte.
+Standard wording: - Teil II: spezifische Informationen zum Datenschutz und zu den Bioproben (Blut, Gewebe etc.).
+Standard wording: Auf jeden Fall wird ein Prüfarzt ein Aufklärungsgespräch mit Ihnen führen. Bitte zögern Sie nicht, alle Punkte anzusprechen, die Ihnen unklar sind. Sie können gerne Sätze/Abschnitte markieren, die Sie nicht verstanden haben, um sie mit dem aufklärenden Arzt zu besprechen. Sie erhalten jetzt ausreichend Zeit, um über Ihre weitere Teilnahme zu entscheiden.
+
+## S02 · Kurzdarstellung der Studie
+Fill: standard
+Layout elements: H2 document subline, Summary section, Rich body text
+Standard wording: <b>Kurzdarstellung der Studie</b>
+Standard wording: <i>(Die Kurzdarstellung darf einen Umfang von maximal 2 Seiten NICHT überschreiten.)</i>
+Standard wording: <b>Grund für die Studie</b>: Sie sind an ...........<i>. </i>erkrankt und werden mit der Standardtherapie behandelt <i>[alternativ, wenn der Patient noch nicht medikamentös behandelt wird: Für diese Erkrankung gibt es eine Standardtherapie]</i>. Der oben genannte Sponsor der Studie entwickelt eine neue Therapie. Deswegen soll das Prüfpräparat mit dem Namen ●●● in der Studie getestet werden. Damit will der Sponsor herausfinden, ob …. <i>[Folgende Beispiele sind an die jeweilige Studie und den Kenntnisstand über das Prüfpräparat anzupassen</i>: „<i>das Prüfpräparat auch zur Behandlung Ihrer Erkrankung eingesetzt werden kann und gegenüber der Standardtherapie Vorteile haben könnte / ob das Prüfpräparat sicher ist“].</i>
+Standard wording: <b>Das getestete Prüfpräparat: </b>●●● <i>[Bezeichnung des Prüfpräparats]</i> ist noch in der klinischen Prüfung und wurde für Ihre Behandlung bisher nicht zugelassen. Es wurde bisher bei ca. ........... Personen geprüft / Es wird in dieser Studie zum ersten Mal bei Menschen angewendet.
+Standard wording: <b>Studienablauf: </b>Seit Ihrer Aufnahme wurden bereits folgende wesentliche studienbedingte Maßnahmen durchgeführt: ........... <i>[wesentliche bereits durchgeführte Maßnahmen knapp nennen].</i> Wenn Sie in die weitere Teilnahme einwilligen, dauert die Studie für Sie ab jetzt noch …… <i>Wochen/Monate</i>. Sie werden in dieser Zeit <i>xmal</i> für Untersuchungen in die Prüfstelle kommen <i>[durchschnittlich notwendige Zeit angeben; stationäre Aufenthalte sind zusätzlich anzugeben</i>. <i>Weiter zu informieren ist über die </i><i><u>wesentlichen Merkmale der Studie</u></i> <i>wie z.B</i>. <i>Absetzen von Medikamenten/Vortherapie; Studienarme/Placebokontrolle mit Erklärung des Begriffs; Randomisierung / invasive / belastende Untersuchungen im Überblick, z. B. Röntgenuntersuchungen, Punktionen, Biopsien (Anzahl)]. </i>
+Standard wording: <b>Möglicher Nutzen für Sie:</b> Aufgrund der bisherigen Forschungsergebnisse erhoffen sich Sponsor und Prüfarzt, dass die Behandlung mit ●●●  [<i>erhofften Vorteil ggü. anderen Therapien knapp beschreiben].</i> Das ist bisher jedoch nicht nachgewiesen. Es kann deshalb sein, dass diese Behandlung für Sie keinen Nutzen haben wird.
+Standard wording: <b>Risiken und Belastungen: </b>Die Teilnahme an einer Studie ist mit Risiken und Belastungen verbunden:
+Standard wording: · Das Prüfpräparat kann Nebenwirkungen haben, die über die Risiken Ihrer Standardtherapie hinausgehen. Dazu gehören vor allem ... <i>[Gesundheitsbeeinträchtigungen benennen, die eine substantielle Schwere und Wahrscheinlichkeit haben].</i> Daneben sind leichtere Nebenwirkungen zu erwarten. In seltenen Fällen können aber auch andere schwere Nebenwirkungen auftreten.
+Standard wording: · Die studienbedingten Untersuchungen sind regelmäßig mit Belastungen und ggf. Beeinträchtigungen verbunden. Darüber hinaus haben sie vor allem folgende Risiken: <i>[Risiken von substantieller Schwere und Wahrscheinlichkeit anführen].</i>
+Standard wording: Eine ausführlichere Angabe der Risiken und Belastungen finden Sie auf Seite … [<i>Teil 1 oder im Anhang dazu]</i>. Der Prüfarzt wird mit Ihnen darüber ausführlich sprechen.
+Standard wording: <b>Freiwilligkeit:   </b>Es ist Ihre freie Entscheidung, ob Sie weiterhin an dieser Studie teilnehmen möchten oder nicht. Sie können jetzt oder jederzeit später NEIN sagen. Sie brauchen dafür keine Gründe anzugeben und haben keine Nachteile.
+Standard wording: Zusätzlich zur schriftlichen Information werden Sie mündlich aufgeklärt. Fragen Sie den Prüfarzt, wenn Sie etwas nicht verstehen. Sie haben anschließend ausreichend Zeit, um sich für oder gegen die weitere Teilnahme zu entscheiden. Wenn Sie sich für die weitere Teilnahme entscheiden, unterschreiben Sie bitte die Einwilligungserklärung.
+
+## S03 · Inhaltsverzeichnis
+Fill: standard
+Layout elements: H2 document subline, TOC
+Standard wording: Inhaltsverzeichnis
+
+## S04 · Teil I: Informationen zum Ablauf der klinischen Prüfung und zu gesundheitlichen Aspekten
+Fill: standard
+Layout elements: H2 document subline, H3 module title, Rich body text
+Standard wording: <b>Teil I: Informationen zum Ablauf der klinischen Prüfung und zu gesundheitlichen Aspekten</b>
+Standard wording: <b>I. 1. Warum und mit welchem Prüfpräparat wird diese Prüfung durchgeführt?</b>
+Standard wording: Bislang hat man bei Ihrer Erkrankung ...........<i>. </i>Von der Durchführung der vorgesehenen klinischen Prüfung erhoffen wir uns ........... .
+Standard wording: <i>Den Studienzweck und den Wirkmechanismus / die Art der Wirkung knapp und allgemeinverständlich beschreiben.</i>
+Standard wording: ●●● <i>[Bezeichnung des Prüfpräparat]</i> ist ein Arzneimittel in klinischer Erprobung, d. h. es ist von der Behörde für die Behandlung Ihrer Krankheit noch nicht zugelassen <i>[ggf. Hinweis auf bereits bestehende Zulassungen]. </i>Es wurde bisher bei ca. ........... Personen geprüft <i>[Erstanwendung am Menschen muss besonders hervorgehoben werden].</i>
+
+## S05 · I. 2. Erhalte ich das Prüfpräparat auf jeden Fall?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 2. Erhalte ich das Prüfpräparat auf jeden Fall?</b>
+Standard wording: <i><u>Alternativ</u></i>
+Standard wording: <i>Entweder [placebokontrollierte Studie, soweit ärztlich vertretbar]:</i>
+Standard wording: Im Rahmen dieser klinischen Prüfung wird ●●● <i>[Bezeichnung des Prüfpräparats]</i> mit einem Placebo verglichen. Zusätzlich erhalten alle Patienten die Standardtherapie <i>[ggf. anpassen]</i> Bei einem Placebo handelt es sich um eine identisch aussehende ........... <i>[z. B. Tablette oder Kapsel]</i>, die jedoch keinen Wirkstoff enthält. Bei Ihrer Aufnahme wurden Sie entweder ●●● oder dem Placebo zugeteilt <i>[anpassen, falls die Zuteilung erst nach der vorliegenden Einwilligung erfolgt]</i>. Der Vergleich mit dem Placebo dient dazu, die Wirkungen und Nebenwirkungen von ●●● besser beurteilen zu können.  Ob Sie Placebo oder das Prüfpräparat erhalten haben bzw. bei weiterer Teilnahme erhalten, wurde/wird durch ein Zufallsverfahren entschieden. Das Verfahren wird Randomisierung genannt. Es ist vergleichbar mit dem Werfen einer Münze. Die Wahrscheinlichkeit, ●●● zu erhalten, beträgt ........... %<i>.</i>
+Standard wording: <i>oder</i>
+Standard wording: <i>[Studie mit Vergleichspräparat]:</i>
+Standard wording: Im Rahmen dieser klinischen Prüfung wird ●●● <i>[Bezeichnung des Prüfpräparats]</i> mit ◆◆◆ <i>[Bezeichnung des Vergleichspräparats/der Standardtherapie]</i> verglichen, einem bereits für die Behandlung von ........... (<i>zu behandelnde Erkrankung</i>) zugelassenen Arzneimittel. Bei Ihrer Aufnahme wurden Sie entweder ●●● oder ◆◆◆ zugeteilt <i>[anpassen, falls die Zuteilung erst nach der vorliegenden Einwilligung erfolgt]</i>. Darüber wurde/wird durch ein Zufallsverfahren entschieden. Das Verfahren wird Randomisierung genannt. Es ist vergleichbar mit dem Werfen einer Münze. Die Wahrscheinlichkeit, ●●●<i>[Bezeichnung des Prüfpräparats]</i> zu erhalten, beträgt ........... %<i>.</i>
+Standard wording: Zur objektiven Gewinnung von Studiendaten ist es notwendig, dass weder Sie noch Ihr Prüfarzt wissen, ob Sie das Prüfpräparat, die Standardtherapie oder Placebo erhalten haben bzw. erhalten <i>[ggf. anpassen]</i> (dieses Verfahren wird als „doppelblind“ bezeichnet). Sollte es aus Sicherheitsgründen notwendig sein, kann unverzüglich festgestellt werden, welche Behandlung Sie im Rahmen der Studie erhalten haben <i>[falls andere Art der Verblindung vorgenommen wird, Text anpassen].</i>
+
+## S06 · I. 3. Wie ist der Ablauf der Studie und was muss ich bei Teilnahme beachten?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 3. Wie ist der Ablauf der Studie und was muss ich bei Teilnahme beachten?</b>
+Standard wording: <b>Bereits vor dieser Aufklärung durchgeführte studienbedingte Maßnahmen</b>
+Standard wording: Bei Ihrer Aufnahme in die klinische Prüfung während der Notfallsituation wurden folgende studienbedingte Maßnahmen durchgeführt: ........... <i>[Behandlung, Randomisierung, Untersuchungen, Eingriffe, Datenerhebung und Bioproben vollständig und laienverständlich aufführen; Maßnahmen der normalen Notfallbehandlung eindeutig von zusätzlichen studienbedingten Maßnahmen unterscheiden].</i>
+Standard wording: <b>Weitere Maßnahmen bei Ihrer Einwilligung zur Fortsetzung</b>
+Standard wording: Wenn Sie in die weitere Teilnahme einwilligen, wird die Studie folgendermaßen ablaufen: ........... .
+Standard wording: <i>Hier </i><b><i>allgemeinverständlich</i></b><i>, übersichtlich und kurz [auf das Wesentliche beschränkt/gleichartige Maßnahmen zusammenfassend] die bereits durchgeführten und die künftig vorgesehenen studienbedingten Maßnahmen getrennt aufführen [ggf. graphische Darstellung]. Nicht studienbedingte Maßnahmen – deutlich als solche gekennzeichnet – nur dann aufführen, wenn es zum Verständnis erforderlich ist:</i>
+Standard wording: · <i>Gesamtdauer der Teilnahme</i>
+Standard wording: · <i>Einnahme der Studienmedikamente / von Begleitmedikamenten</i>
+Standard wording: · <i>ggf. Absetzen anderer Medikamente</i>
+Standard wording: · <i>Besuche in der Klinik oder in der Praxis</i>
+Standard wording: · <i>Untersuchungen (z. B. Röntgenuntersuchungen, Blutentnahmen –
+Standard wording: Wie oft? Wie viel jeweils? Wie viel insgesamt?) </i>
+Standard wording: · <i>Hinweise auf Bedeutung der Einhaltung von Besuchsterminen	</i>
+Standard wording: <i>für die Sicherheit der Patienten und für den Erfolg der klinischen Prüfung</i>
+Standard wording: · <i>Nachbeobachtungen</i>
+Standard wording: · <i>Angaben zur Weiterbehandlung und medizinischen Betreuung nach Studienende</i>
+Standard wording: Für Einzelheiten erhalten Sie einen gesonderten Ablaufplan (s. Anhang).
+Standard wording: Zusätzliche Medikamente (auch rezeptfreie), von denen der Prüfarzt noch nichts weiß, dürfen Sie – außer bei Notfällen – nur nach Rücksprache mit Ihrem Prüfarzt einnehmen. Wenn Sie von anderen Ärzten behandelt werden, müssen Sie diese über Ihre Teilnahme an der klinischen Prüfung informieren. Auch Ihr Prüfarzt muss über jede medizinische Behandlung, die Sie durch einen anderen Arzt während der klinischen Prüfung erhalten, informiert werden. Sie erhalten einen Studienausweis, den Sie auch für den Notfall immer mit sich führen sollten.
+Standard wording: <i>Ggf. erforderliche eigene (Vorsichts-)Maßnahmen des Patienten benennen, z.B. zu Lebensmitteln, Alkohol- oder Drogenkonsum.</i>
+Standard wording: Alle Medikamente, die Sie im Verlauf dieser klinischen Prüfung bekommen, sollten Sie so sicher aufbewahren, dass sie für Kinder oder andere Personen nicht erreichbar sind. Die Weitergabe an Dritte ist untersagt.
+Standard wording: <i>Sofern zutreffend, spezielle Anweisungen zur Lagerung</i>
+Standard wording: <i>der Medikamente z. B. im Kühlschrank</i>.
+
+## S07 · I. 4. Welchen persönlichen Nutzen habe ich von der Teilnahme an der Studie?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 4. Welchen persönlichen Nutzen habe ich von der Teilnahme an der Studie?</b>
+Standard wording: <i><u>Die folgenden Bausteine bitte an das jeweilige Studiendesign anpassen:</u></i>
+Standard wording: Zum Zeitpunkt Ihrer Aufnahme in der Notfallsituation bestand aufgrund der verfügbaren wissenschaftlichen Erkenntnisse die begründete Erwartung, dass Ihre Teilnahme für Sie einen direkten klinisch relevanten Nutzen haben könnte: ........... <i>[potenziellen direkten Nutzen studienspezifisch und laienverständlich beschreiben].</i>
+Standard wording: Wenn Sie das Prüfpräparat erhalten, kann möglicherweise Ihre Erkrankung geheilt oder gelindert werden. <i>[Bitte näher konkretisieren, insbesondere durch Erläuterung des gegenwärtigen Wissenstands zum auf der Basis der Fallzahlschätzung erwarteten Nutzen und ggf. seiner Wahrscheinlichkeit].</i> Da die Wirksamkeit des Prüfpräparats noch nicht erwiesen ist, ist es jedoch auch möglich, dass Sie durch Ihre Teilnahme an dieser klinischen Prüfung nicht den erhofften Nutzen haben. Einen zusätzlichen Nutzen durch die Teilnahme haben Sie auch dann nicht, wenn Sie nicht das Prüfpräparat erhalten, sondern die Standardtherapie oder ein Placebo.
+Standard wording: Unabhängig davon, ob Sie einen persönlichen Nutzen von der Teilnahme haben, können die Ergebnisse der Studie möglicherweise dazu beitragen, die Behandlung von □□□ <i>[Name der Erkrankung]</i> zukünftig zu verbessern/besser beurteilen zu können.
+
+## S08 · I. 5. Welche gesundheitlichen Risiken und Belastungen sind mit der Teilnahme an der Studie verbunden?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 5. Welche gesundheitlichen Risiken und Belastungen sind mit der Teilnahme an der Studie verbunden?</b>
+Standard wording: <i>Hier nur studienbedingte Risiken aufführen!</i>
+Standard wording: Ein Teil der studienbedingten Behandlung oder Untersuchungen wurde bei Ihnen bereits vor dieser Aufklärung durchgeführt. Die damit verbundenen bekannten und möglichen Risiken, bereits aufgetretenen Beschwerden sowie erforderlichen Sicherheits- und Nachbeobachtungsmaßnahmen sind gesondert zu beschreiben. Künftige Risiken und Belastungen sind davon klar zu unterscheiden.
+Standard wording: <i>Dabei sind bekannte und mögliche Risiken und unerwünschte Wirkungen des Prüfpräparats sowie der Vergleichspräparate zu beschreiben. Kommen mehrere Präparate zum Einsatz, sind ihre unerwünschten Wirkungen, soweit sie sich gleichen, in verständlicher Weise aggregiert darzustellen. Eine umfangreiche Aneinanderreihung von unerwünschten Wirkungen kann ein Patient nicht verstehen. Wichtig ist hier vor allem die Angabe von Risiken, die im Vergleich zur Standardtherapie bestehen. Soweit notwendig kann eine umfangreichere Auflistung möglicher Risiken/UAWs als Anhang ergänzt werden. Darüber hinaus müssen mögliche Risiken und Belastungen durch studienbedingte Maßnahmen genannt werden.</i>
+Standard wording: <i>Es sollen für den Patienten verständliche Begriffe verwendet werden. Die Häufigkeiten unerwünschter Wirkungen sollen beschrieben werden. Dazu sollen folgende Begriffe mit den entsprechenden Prozentangaben verwendet werden: „sehr häufig“ (> 10 %), „häufig“ (1 – 10 %), „gelegentlich“ (0,1 – 1 %) und „selten“ (< 0,1 %). Ggf. ist auf unterschiedliche Dosisgruppen und damit verbundene Risiken hinzuweisen. Je größer die Gefahren sind, umso deutlicher muss auf sie hingewiesen werden, auch wenn sie selten auftreten. Bitte, wenn immer möglich, eine zusammenfassende und möglichst übersichtliche Darstellung wählen. Dies gilt insbesondere für Kombinationstherapien.</i>
+Standard wording: Die Behandlung mit ●●● <i>[Bezeichnung des Prüfpräparats]</i> kann zu unerwünschten Wirkungen oder Beschwerden führen. Die bislang beobachteten unerwünschten Wirkungen und Beschwerden umfassen: ........... .
+Standard wording: Wie bei jedem Arzneimittel können auch bei der Anwendung von ●●● <i>(Bezeichnung des Prüfpräparats)</i> neue, bisher unbekannte Nebenwirkungen auftreten.
+Standard wording: Die bislang beobachteten Nebenwirkungen und Beschwerden bei der Behandlung mit ◆◆◆ <i>[Bezeichnung des Vergleichspräparats]</i> umfassen: ........... .
+Standard wording: <i>Sofern zutreffend ist auch auf Risiken durch Wechselwirkungen bei Begleitmedikation</i>
+Standard wording: <i>sowie auf Risiken durch das Absetzen einer Vormedikation hinzuweisen.</i>
+Standard wording: Darüber hinaus können die im Rahmen dieser klinischen Prüfung studienbedingt durchgeführten Maßnahmen mit Risiken behaftet sein oder zu Beschwerden führen. Im Einzelnen handelt es sich um ........... <i>[z. B. Risiken und Belastungen der Blutentnahme, Röntgen</i>].
+Standard wording: Bitte teilen Sie den Mitarbeitern der Prüfstelle <i>alle</i> Beschwerden, Erkrankungen oder Verletzungen mit, die im Verlauf der klinischen Prüfung auftreten. Falls Sie diese als schwerwiegend empfinden, teilen Sie den Mitarbeitern der Prüfstelle diese bitte umgehend mit, ggf. telefonisch.
+Standard wording: <i>Sofern zutreffend, Hinweis auf Gefahren durch Teilnahme am</i>
+Standard wording: <i>Straßenverkehr, Führen von Maschinen, etc.</i>
+
+## S09 · I. 6. Welche anderen Behandlungsmöglichkeiten gibt es außerhalb der Studie?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 6. Welche anderen Behandlungsmöglichkeiten gibt es außerhalb der Studie?</b>
+Standard wording: Zur Behandlung Ihrer Erkrankung stehen auch die folgenden Möglichkeiten zur Verfügung: ........... .
+Standard wording: <i>[Sofern es eine Standardbehandlung gibt, ist diese darzustellen. Dabei sind insbesondere die Vor- und Nachteile im Vergleich zur Teilnahme an der Studie zu erläutern. </i>
+Standard wording: <i>Ggf. sind auch andere ernsthaft in Betracht kommende Alternativen zu benennen.</i>
+Standard wording: <i>Auf die Möglichkeit anderer klinischer Prüfungen ist allenfalls dann hinzuweisen, wenn sie für den Patienten konkret in Betracht kommen.]  </i>
+Standard wording: Über weitere Einzelheiten kann Sie der Prüfarzt informieren.
+
+## S10 · I. 7. Wer darf an dieser klinischen Prüfung nicht teilnehmen?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 7. Wer darf an dieser klinischen Prüfung nicht teilnehmen?</b>
+Standard wording: An dieser klinischen Prüfung dürfen Sie nicht teilnehmen, wenn Sie gleichzeitig an anderen klinischen Prüfungen teilnehmen oder in den vergangenen xxx Wochen/Monaten teilgenommen haben<i>.</i>
+Standard wording: <i>Die jeweiligen </i>Ausschlusskriterien<i> des Prüfplans sollten </i><i><u>nicht</u></i><i> in der Patienteninformation</i>
+Standard wording: <i>aufgeführt werden; vielmehr hat der Prüfarzt die entsprechenden Kriterien zu prüfen.</i>
+Standard wording: <i>Für klinische Prüfungen, an denen möglicherweise Frauen im gebärfähigen Alter teilnehmen,</i>
+Standard wording: <i>sind die folgenden Absätze einzufügen und ggf. an das Studienprotokoll anzupassen:</i>
+Standard wording: <b>Schwangere Frauen</b> dürfen an dieser klinischen Prüfung <b>nicht teilnehmen</b>.
+Standard wording: Zu Beginn der klinischen Prüfung müssen sich deshalb alle Frauen einem Schwangerschaftstest unterziehen. Durch einen Schwangerschaftstest kann jedoch eine Schwangerschaft erst einige Tage nach der Empfängnis verlässlich nachgewiesen werden. Vom Schwangerschaftstest ausgenommen sind Frauen, die nicht mehr schwanger werden können.
+Standard wording: Im Falle Ihrer Teilnahme an dieser klinischen Prüfung müssen Sie eine Schwangerschaft zuverlässig verhüten. <i>[die im Prüfplan geforderten Empfängnisverhütungsmaßnahmen präzise angeben; ggf. Schutzmaßnahmen auch über längere Zeit nach Ausscheiden aus der Studie; ggf. Umstände angeben, unter denen eine orale Kontrazeption unwirksam werden kann (z.B. Diarrhoe/Erbrechen als UAW der Prüfsubstanz)].</i>
+Standard wording: Der Grund dafür ist, dass ...........        <i><u>Alternativen</u></i>
+Standard wording: <i>entweder:</i>
+Standard wording: bislang nicht geklärt ist, ob ●●● <i>[Bezeichnung des Prüfpräparats]</i> zu einer Schädigung des Ungeborenen führen kann/können, wenn es/sie während der Schwangerschaft eingenommen wird/werden<i>. </i>
+Standard wording: <i>oder:</i>
+Standard wording: <i>´</i>
+Standard wording: ●●● <i>[Bezeichnung des Prüfpräparats]</i> <b>das ungeborene Kind schädigen kann.</b>
+Standard wording: Sollten Sie während der klinischen Prüfung schwanger werden oder den Verdacht haben, dass Sie schwanger geworden sind, müssen Sie umgehend den Prüfarzt informieren.
+Standard wording: Das ●●●[<i>(Bezeichnung des Prüfpräparats]</i> gelangt mit der Muttermilch in den Körper des Kindes und kann das Kind schädigen. Deswegen dürfen auch <b>stillende Frauen</b> an dieser klinischen Prüfung <b>nicht teilnehmen.</b>
+Standard wording: <i>Für </i><b><i>Männer </i></b><i>notwendige Informationen in Abhängigkeit</i>
+Standard wording: <i>vom Prüfpräparat hier anfügen.</i>
+
+## S11 · I. 8. Entstehen für mich Kosten durch die Teilnahme an der klinischen Prüfung? Erhalte ich eine Aufwandsentschädigung?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 8. Entstehen für mich Kosten durch die Teilnahme an der klinischen Prüfung? Erhalte ich eine Aufwandsentschädigung?</b>
+Standard wording: Durch Ihre Teilnahme an dieser klinischen Prüfung entstehen für Sie keine zusätzlichen Kosten<i>.</i>
+Standard wording: <i>Sofern Patienten für ihre Teilnahme eine Fahrtkostenerstattung und / oder Aufwandsentschädigung erhalten,</i>
+Standard wording: <i>sollte der folgende Absatz angefügt werden:</i>
+Standard wording: Für Ihre Teilnahme an dieser klinischen Prüfung erhalten Sie eine Aufwandsentschädigung entsprechend den folgenden Bedingungen: ........... <i>[es sollte genau beschrieben werden, unter welchen Voraussetzungen der Patient wie viel erhält].</i> Die Ihnen entstehenden Fahrtkosten werden in folgender Weise erstattet: ....
+
+## S12 · I. 9. Bin ich während der klinischen Prüfung versichert?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 9. Bin ich während der klinischen Prüfung versichert?</b>
+Standard wording: Bei der klinischen Prüfung eines Arzneimittels müssen alle Studienteilnehmer gemäß dem Arzneimittelgesetz versichert sein. Der Umfang des Versicherungsschutzes ergibt sich aus den Versicherungsunterlagen, die Sie ausgehändigt bekommen.
+Standard wording: Wenn Sie vermuten, dass durch die Teilnahme an der klinischen Prüfung Ihre Gesundheit geschädigt oder vorher bestehende Leiden verstärkt wurden, müssen Sie dies unverzüglich dem Versicherer
+Standard wording: <b>Name und Anschrift der Versicherung</b>:	...........
+Standard wording: <b>Telefon</b>:					...........
+Standard wording: <b>Fax</b>:						...........
+Standard wording: Versicherungsnummer:			...........
+Standard wording: direkt anzeigen, gegebenenfalls mit Unterstützung durch Ihren Prüfarzt, um Ihren Versicherungsschutz nicht zu gefährden. Sofern Ihr Prüfarzt Sie dabei unterstützt, erhalten Sie eine Kopie der Meldung. Sofern Sie Ihre Anzeige direkt an den Versicherer richten, informieren Sie bitte zusätzlich Ihren Prüfarzt.
+Standard wording: Bei der Aufklärung der Ursache oder des Umfangs eines Schadens müssen Sie mitwirken und alles unternehmen, um weiteren Schaden abzuwenden.
+Standard wording: Während der Dauer der klinischen Prüfung dürfen Sie sich einer anderen medizinischen Behandlung – außer in Notfällen – nur nach vorheriger Rücksprache mit dem Prüfarzt unterziehen. Von einer erfolgten Notfallbehandlung müssen Sie den Prüfarzt unverzüglich unterrichten.
+Standard wording: Sie erhalten ein Exemplar der Versicherungsbestätigung einschließlich der Versicherungsbedingungen. Wir weisen Sie insbesondere auf § ... (zu den Ausschlüssen) und § ... (zum Umfang der Leistungen) hin. Bitte beachten Sie außerdem die Obliegenheiten in § .... (das sind Pflichten, die Sie im eigenen Interesse beachten müssen, um Ihren Versicherungsschutz zu erhalten).
+Standard wording: Wir weisen Sie ferner darauf hin, dass Sie auf dem Weg von und zur Prüfstelle nicht unfallversichert sind / in folgender Weise auf dem direkten Weg von und zur Prüfstelle versichert sind <i>[sofern zutreffend, hier die Angaben zur Versicherung wie oben]</i>.
+
+## S13 · I. 10. Werden mir neue Erkenntnisse zu der klinischen Prüfung mitgeteilt?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 10. Werden mir neue Erkenntnisse zu der klinischen Prüfung mitgeteilt?</b>
+Standard wording: Sie werden während Ihrer Teilnahme über neue Erkenntnisse in Bezug auf diese klinische Prüfung informiert, die für Ihre Bereitschaft zur weiteren Teilnahme wesentlich sein können.
+Standard wording: Spätestens ein Jahr nach Beendigung der gesamten klinischen Prüfung werden zusammenfassende Ergebnisse und eine laienverständliche Zusammenfassung im öffentlichen Bereich des Clinical Trials Information System (CTIS) bereitgestellt. Dies kann von Ihnen unter der oben angegebenen EU-Prüfungsnummer eingesehen werden. Sie können sich zur Information über die Studienergebnisse zudem gerne an Ihren Prüfarzt wenden. Auf Wunsch erhalten Sie die Ergebnisse und, soweit angemessen und verfügbar, Angaben zur tatsächlich erhaltenen Behandlung.
+
+## S14 · I. 11. Wer entscheidet, ob ich weiter an der klinischen Prüfung teilnehme oder aus ihr ausscheide?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 11. Wer entscheidet, ob ich weiter an der klinischen Prüfung teilnehme oder aus ihr ausscheide?</b>
+Standard wording: <b>Sie entscheiden jetzt freiwillig, ob Sie weiterhin an der klinischen Prüfung teilnehmen möchten. Wenn Sie nicht einwilligen, werden keine weiteren studienbedingten Maßnahmen durchgeführt, soweit diese nicht aus medizinischen Sicherheitsgründen erforderlich sind. Sie erhalten dann diejenige Therapie, die man Ihnen außerhalb der Studie empfohlen hätte.</b>
+Standard wording: Auch nach Ihrer Einwilligung können Sie jederzeit, ohne Angabe von Gründen, Ihre weitere Teilnahme beenden, ohne dass Ihnen dadurch Nachteile entstehen.
+Standard wording: Es ist auch möglich, dass der Prüfarzt oder der Sponsor entscheidet, Ihre Teilnahme an der klinischen Prüfung vorzeitig zu beenden, ohne dass Sie auf die Entscheidung Einfluss haben. Die Gründe hierfür können z. B. sein:
+Standard wording: · Ihre weitere Teilnahme an der klinischen Prüfung ist ärztlich nicht mehr vertretbar;
+Standard wording: · es wird die gesamte klinische Prüfung abgebrochen.
+Standard wording: Wenn Sie nicht weiter teilnehmen oder die klinische Prüfung vorzeitig beenden, ist es für Ihre eigene Sicherheit wichtig, dass eine Abschlussuntersuchung durchgeführt wird. <i>[evtl. sonstige studienspezifische Angaben ergänzen, insbesondere zu weiteren Nachsorgemaßnahmen]</i>.
+Standard wording: Der Prüfarzt wird mit Ihnen besprechen, wie und wo Ihre weitere Behandlung stattfindet.
+
+## S15 · I. 12. An wen wende ich mich bei weiteren Fragen?
+Fill: standard
+Layout elements: H3 module title, Rich body text
+Standard wording: <b>I. 12. An wen wende ich mich bei weiteren Fragen?</b>
+Standard wording: <b>Beratungsgespräche an der Prüfstelle </b>
+Standard wording: Sie haben stets die Gelegenheit zu weiteren Beratungsgesprächen mit dem auf Seite 1 genannten oder einem anderen Prüfarzt.
+Standard wording: <b>Kontaktstelle</b>
+Standard wording: Es existiert außerdem eine Kontaktstelle bei der zuständigen Bundesoberbehörde. Teilnehmer an klinischen Prüfungen, ihre gesetzlichen Vertreter oder Bevollmächtigte können sich an diese Kontaktstelle wenden:
+Standard wording: <i><u>Alternativ</u></i>
+Standard wording: <i>- nur die zuständige Stelle angeben -</i>
+Standard wording: <i>entweder:</i>
+Standard wording: <b>Bundesinstitut für Arzneimittel und Medizinprodukte</b>
+Standard wording: Fachgruppe Klinische Prüfungen
+Standard wording: Kurt-Georg-Kiesinger-Allee 3
+Standard wording: <b>53175 Bonn</b>
+Standard wording: Telefon: 0228 / 207-4318    Fax: 0228 / 207-4355
+Standard wording: e-mail: ct@bfarm.de
+Standard wording: <i>oder:</i>
+Standard wording: <b>Paul-Ehrlich-Institut</b>
+Standard wording: Referat Klinische Prüfungen
+Standard wording: Paul-Ehrlich-Str. 51-59
+Standard wording: <b>63225 Langen</b>
+Standard wording: Telefon: 06103 / 77-1810    Fax: 06103 / 77-1277
+Standard wording: e-mail: ct@pei.de
+
+## S16 · Teil II: Informationen zum Datenschutz und zu den Bioproben
+Fill: standard
+Layout elements: H2 document subline, H3 module title, H4 section title, Rich body text
+Standard wording: <b>Teil II: Informationen zum Datenschutz und zu den Bioproben</b>
+Standard wording: <b>II. 1. Was geschieht mit den über mich erhobenen Daten?</b>
+Standard wording: a) Allgemeine Informationen
+Standard wording: Seit Ihrer Aufnahme in die klinische Prüfung während der Notfallsituation wurden bereits folgende personenbezogene Daten über Sie erhoben und verarbeitet: Gesundheitsdaten, [genetische Daten, sofern zutreffend] sowie [jede weitere tatsächlich erhobene besondere Datenkategorie ausdrücklich benennen, z. B. Angaben zur ethnischen Herkunft oder zum Sexualleben]. Bereits erhoben wurden insbesondere: ........... <i>[Datenkategorien, Erhebungszeitraum und ggf. bereits erfolgte Übermittlungen nennen].</i> Wenn Sie in die weitere Teilnahme einwilligen, werden künftig folgende weitere Daten erhoben und verarbeitet: ........... . Die Erhebung von [Datenkategorie] ist erforderlich, weil [konkrete, laienverständliche studienspezifische Begründung]. Die für die klinische Prüfung wichtigen Daten werden zusätzlich in pseudonymisierter Form gespeichert.
+Standard wording: Pseudonymisiert bedeutet, dass keine Angaben, mit denen Sie direkt identifiziert werden können (z.B. Namen, Kontaktinformationen, Geburtsdatum, etc.) verwendet werden, sondern nur ein Nummern- und/oder Buchstabencode<i>. </i>
+Standard wording: <i>Sofern der Geburtsmonat oder sogar das vollständige Geburtsdatum ausnahmsweise aus triftigen Gründen Teil des Datensatzes sein muss, ist das im Einzelfall entsprechend darzustellen.</i>
+Standard wording: Ihr Prüfarzt erstellt eine Pseudonymisierungsliste, die gegen unbefugten Zugriff geschützt an der jeweiligen Prüfstelle verbleibt. Das ist notwendig, damit Ihnen diese personenbeziehbaren Daten, falls erforderlich, wieder zugeordnet werden können. Eine solche Entschlüsselung erfolgt nur, soweit rechtlich zulässig, insbesondere in folgenden Fällen ........... <i>[Angaben aus dem Studienprotokoll]. </i>Es lässt sich allerdings niemals völlig ausschließen, dass auch ohne diese Liste Rückschlüsse auf Ihre Person gezogen werden könnten.
+Standard wording: <i>Die pseudonymisierten Daten </i>werden insbesondere an den Sponsor dieser klinischen Prüfung weitergegeben und dort gespeichert (siehe II. 1. Buchst. e) Weitergabe/Empfänger).
+Standard wording: <i>[sofern zutreffend, wenn zwingend erforderlich]</i> Es ist für die Durchführung der klinischen Prüfung erforderlich, personenbezogene Daten aus vorangegangenen Untersuchungen an Ihnen oder aus Untersuchungen von Ärzten außerhalb der Prüfstelle zu den Sie betreffenden Studienunterlagen hinzugefügt werden. Daher kann Ihr Prüfarzt Ihren Hausarzt und/oder mitbehandelnde Ärzte <i>[ggf. weitere Einrichtungen anführen]</i> kontaktieren, um diese Informationen zu ergänzen. Mit Ihrer Einwilligung zur weiteren Teilnahme an der klinischen Prüfung entbinden Sie Ihren Hausarzt bzw. die behandelnden Ärzte für die künftig erforderliche Übermittlung von ihrer Schweigepflicht.
+Standard wording: <i>[sofern zutreffend, wenn optional] </i> Es ist für die Durchführung der klinischen Prüfung von erheblichem Vorteil, wenn personenbezogene Daten aus vorangegangenen Untersuchungen an Ihnen oder aus Untersuchungen von Ärzten außerhalb der Prüfstelle zu den Sie betreffenden Studienunterlagen hinzugefügt werden können, indem Ihr Prüfarzt Ihren Hausarzt und/oder mitbehandelnde Ärzte <i>[ggf. weitere Einrichtungen anführen]</i> kontaktiert, um diese Informationen zu ergänzen. Sofern Sie einer Erfassung Ihrer Daten im Rahmen der Studie zustimmen, kreuzen Sie bitte das entsprechende Kontrollkästchen in der Einwilligungserklärung an. Sie entbinden damit Ihren Hausarzt bzw. die behandelnden Ärzte von ihrer Schweigepflicht.
+Standard wording: b) Rechtsgrundlage
+Standard wording: Die bis zu dieser Aufklärung für die Aufnahme, Durchführung und Sicherheitsüberwachung erforderliche Verarbeitung Ihrer Daten erfolgte im Rahmen des gemäß Artikel 35 der Verordnung (EU) Nr. 536/2014 und § 40b Abs. 5 Arzneimittelgesetz genehmigten Notfallverfahrens. <i>[Die konkrete datenschutzrechtliche Rechtsgrundlage für die bis zur Einholung der Einwilligung erfolgte Verarbeitung ist einzusetzen.]</i>
+Standard wording: Rechtsgrundlage für die Verarbeitung Ihrer Daten im Rahmen der weiteren Teilnahme ist Ihre informierte Einwilligung gemäß Art. 6 Abs. 1 Buchst. a und Art. 9 Abs. 2 Buchst. a der EU Datenschutzgrundverordnung (DSGVO) sowie § 40b Abs. 6 Arzneimittelgesetz (AMG) und Art. 9 Abs. 2 Buchstabe j DSGVO.
+Standard wording: Die Bereitstellung Ihrer personenbezogenen Daten für die weitere Teilnahme ist freiwillig. Ohne Ihre ausdrückliche Einwilligung in die weitere Verarbeitung Ihrer Daten können Sie nicht weiter an dieser klinischen Prüfung teilnehmen.
+Standard wording: c) Verantwortlichkeit
+Standard wording: Verantwortlich für die Datenverarbeitung ist/sind: <i>[Name und Kontaktdaten aller Verantwortlichen]</i>.
+Standard wording: Die Prüfstelle bleibt davon unabhängig für Ihre Behandlungsdaten verantwortlich (unkodierte Patientendaten).
+Standard wording: d) Zweck(e)
+Standard wording: Mit Hilfe der erhobenen Daten soll die Unbedenklichkeit oder Wirksamkeit von <i>[Prüfpräparat]</i> bei Menschen mit <i>[Erkrankung]</i> klinisch untersucht werden.
+Standard wording: Zudem werden die erhobenen Daten auch bei den notwendigen Zulassungsverfahren für das zu untersuchende Arzneimittel verwendet.
+Standard wording: <i>[Optional, sofern weitere vom Hauptzweck unabhängige Zwecke definiert sind, z.B. Biobanking, zukünftige Weiternutzung von Daten, Nachbeobachtung einer Schwangerschaft]</i>
+Standard wording: Ggf. werden Sie zu weiteren optionalen Verwendungszwecken gesondert angesprochen und entsprechend aufgeklärt und um eine separate Einwilligung gebeten.
+Standard wording: e) Weitergabe/Empfänger
+Standard wording: Die für die klinische Prüfung wichtigen Daten, <i>[sofern zutreffend]</i> Bioproben und Aufnahmen aus bildgebenden Verfahren werden zusätzlich in pseudonymisierter Form verarbeitet und gegebenenfalls weitergegeben.
+Standard wording: Die von Ihnen erhobenen Daten werden pseudonymisiert an folgende Empfänger oder Empfängerkategorien weitergegeben: <i>[vollständig angeben]</i>:
+Standard wording: 1) den Sponsor <i>[Name, Sitz]</i> und von diesem beauftragte Stellen zum Zweck der Durch­führung und wissenschaftlichen Auswertung,
+Standard wording: 2) im Falle unerwünschter Ereignisse:
+Standard wording: - an den Sponsor,
+Standard wording: - sowie von diesem ggf. an die zuständigen Behörden der Mitgliedstaaten der Europäischen Union oder des Abkommens über den Europäischen Wirtschaftsraum, in deren Hoheitsgebiet die o.g. klinische Prüfung durchgeführt wird
+Standard wording: - oder an die für die Überwachung der Arzneimittelsicherheit eingerichtete Europäische Datenbank (EudraVigilance), auf die die zuständigen Überwachungsbehörden in der gesamten Europäischen Union und dem Europäischen Wirtschaftsraum Zugriff haben.
+Standard wording: 3) im Fall eines Antrags auf Zulassung als Arzneimittel an den Antragsteller und die für die Zulassung zuständige Behörde,
+Standard wording: 4) <i>[die Liste ist ggf. zu vervollständigen; z.B. Aufnahme in wissenschaftliche Datenbanken, Patientensuchdienste, Abrechnungsdienste]</i>
+Standard wording: Die von Ihnen im Rahmen der oben genannten klinischen Studie erhobenen und gespeicherten Daten (auch die originalen Klardaten) können soweit erforderlich und gesetzlich erlaubt, durch die zuständige Überwachungsbehörde im Rahmen von Inspektionen oder Beauftragte des Sponsors (s.g. Auditoren oder Monitore) zur Überprüfung der ordnungsgemäßen Durchführung der klinischen Prüfung in der Prüfstelle eingesehen werden. <i>[Falls eine Einsichtnahme durch Zulassungs- oder Überwachungsbehörden von außereuropäischen Drittländern erfolgen soll, ist darauf – auch in der Einwilligungserklärung – hinzuweisen]</i> Diese sind zur Vertraulichkeit verpflichtet, eine Weitergabe der erhobenen Daten erfolgt in diesem Zusammenhang nicht.
+Standard wording: <i>[Entweder:]</i> Im Rahmen dieser klinischen Prüfung erfolgt eine Weitergabe Ihrer pseudonymisierten Daten zum Zweck der Datenauswertung, Zulassung und Überwachung nur innerhalb der Europäischen Union und des Europäischen Wirtschaftsraumes.
+Standard wording: [Oder:] Im Rahmen dieser klinischen Prüfung erfolgt eine Weitergabe Ihrer pseudonymisierten Daten auch in folgende Drittländer außerhalb der Europäischen Union und des Europäischen Wirtschaftsraumes: <i>[Länder benennen]</i>. Die Übermittlung erfolgt zum Zweck der Datenauswertung, Zulassung und Überwachung. Es handelt sich um Länder, für die die Europäische Kommission ein angemessenes gesetzliches Datenschutzniveau festgestellt hat.
+Standard wording: <i>[Falls tatsächlich zutreffend:]</i>
+Standard wording: Mit Empfängern in anderen Ländern werden geeignete Garantien vereinbart in Form von <i>[benennen: vertragliche Datenschutzklauseln und / oder verbindlichen internen Datenschutzvorschriften]</i>, die von der Europäischen Kommission oder der zuständigen Aufsichtsbehörde beschlossen oder genehmigt wurden, so dass Ihnen vergleichbar durchsetzbare Rechte und wirksame Rechtsbehelfe wie innerhalb der EU zur Verfügung stehen. Sie können bei <i>[Ort angeben: Sponsor oder Prüfstelle] </i>eine Kopie dieser und weitere Informationen hierzu erhalten.
+Standard wording: <i>[Falls zutreffend und notwendig:]</i>
+Standard wording: Es gibt allerdings auch Länder oder Empfänger von Studiendaten, mit denen solche Garantien nicht vereinbart werden können. In diesen Fällen ist nicht gewährleistet, dass die Datenverarbeitung in gleichwertiger Weise durch unabhängige Behörden und Gerichte kontrolliert werden kann und/oder Ihnen durchsetzbare Rechte und wirksame Rechtsbehelfe zur Verfügung stehen. Des Weiteren können umfangreichere Zugriffsrechte durch staatliche Organe und/oder private Stellen bestehen, wodurch Ihnen erhebliche persönliche Nachteile entstehen können.
+Standard wording: <b>Eine Weitergabe Ihrer pseudonymisierten Daten kann in diese Länder nur erfolgen, wenn Sie dem ausdrücklich zugestimmt haben. </b>
+Standard wording: Sie können bei <i>[Ort angeben: Sponsor oder Prüfstelle]</i> weitere Informationen hierzu, insbesondere auch zu den betreffenden Ländern, erhalten.
+Standard wording: <i>[Entweder:]</i> Ohne Ihre ausdrückliche Einwilligung in die Weitergabe Ihrer Daten in Länder ohne Angemessenheitsbeschluss und geeignete Garantien können Sie nicht an dieser klinischen Prüfung teilnehmen.
+Standard wording: <i>[oder:] </i><b>Dazu können Sie in der Einwilligungserklärung das entsprechende Kästchen ankreuzen.</b>
+Standard wording: f) Ihre Rechte
+Standard wording: Sie haben grundsätzlich folgende Rechte bezüglich Ihrer personenbezogenen Daten, sofern dies nicht aufgrund einer zwischenzeitlich vorgenommenen Löschung der identifizierenden Merkmale zur Entschlüsselung technisch oder anderweitig gesetzlich unmöglich ist:
+Standard wording: <b>Recht auf Widerspruch bei nicht erteilter Einwilligung zur weiteren Teilnahme</b>
+Standard wording: Wenn Sie nicht in die weitere Teilnahme einwilligen, werden keine weiteren studienbedingten Daten erhoben. Bereits erhobene Daten werden nur weiterverwendet, soweit dies gesetzlich erforderlich ist.
+Standard wording: <b>Recht auf Widerruf ihrer Einwilligung </b>
+Standard wording: So wie die Einwilligung zur weiteren Teilnahme an der klinischen Prüfung können Sie auch Ihre Einwilligung zur Verarbeitung der ab Ihrer Einwilligung erhobenen Daten jederzeit widerrufen.  Gemäß § 40b Abs. 6 Nr. 2 AMG dürfen im Falle eines Widerrufs Ihre gespeicherten Daten jedoch weiterverwendet werden, soweit dies erforderlich ist, um
+Standard wording: 1. die Wirkungen des zu prüfenden Arzneimittels festzustellen,
+Standard wording: 2. sicherzustellen, dass Ihre schutzwürdigen Interessen nicht beeinträchtigt werden,
+Standard wording: 3. der Pflicht zur Vorlage vollständiger Zulassungsunterlagen zu genügen.
+Standard wording: Im Falle eines Widerrufs Ihrer Einwilligung werden die verantwortlichen Stellen unverzüglich prüfen, inwieweit die gespeicherten Daten noch erforderlich sind. Nicht mehr benötigte Daten werden unverzüglich gelöscht, sofern nicht gesetzliche Dokumentations- und Meldepflichten entgegenstehen. Die bis zum Widerruf erfolgte Datenverarbeitung bleibt jedoch rechtmäßig.
+Standard wording: <b>Sie haben weiterhin folgende Rechte</b>
+Standard wording: Recht auf Auskunft (inkl. unentgeltlicher Überlassung einer Kopie) über Ihre personenbezogenen Daten, die im Rahmen der klinischen Prüfung erhoben, verarbeitet oder ggf. an Dritte übermittelt werden.
+Standard wording: Recht auf Datenübertragung der zu Ihrer Person erhobenen Daten an Sie oder eine von Ihnen bestimmte Stelle.
+Standard wording: Recht auf Berichtigung unrichtiger personenbezogener Daten, auf Löschung, auf Einschränkung der Verarbeitung und auf Widerspruch gegen die Nutzung der Daten.
+Standard wording: <b>Mögliche Einschränkungen Ihrer Rechte</b>
+Standard wording: Da die Daten im Rahmen einer klinischen Prüfung eines Arzneimittels gemäß den Bestimmungen des Arzneimittelgesetzes verwendet werden, können die oben genannten Rechte unter Umständen nach Prüfung des Einzelfalls eingeschränkt werden (insbesondere nach Art. 17 Abs. 3 Buchst. d und Art. 89 DSGVO). Dies gilt insbesondere, wenn der Anwendung eines dieser Rechte vertragliche, gesetzliche und/oder behördliche Dokumentations- und Meldepflichten entgegenstehen oder die Durchführung der Klinischen Prüfung hierdurch unmöglich gemacht oder ernsthaft beeinträchtigt würde <i>[Die Rechteeinschränkung ist – dem Prüfplan entsprechend - möglichst konkret zu begründen, z.B. Aufrechterhaltung der Verblindung]</i>.
+Standard wording: <b>Wahrnehmung Ihrer Rechte</b>
+Standard wording: Wollen Sie von einem oder mehreren der genannten Rechten Gebrauch machen, kontaktieren Sie bitte Ihren Prüfarzt. Bei Anliegen zur Datenverarbeitung und zur Einhaltung der datenschutzrechtlichen Anforderungen können Sie sich auch an folgende Datenschutzbeauftragte wenden:
+Standard wording: Datenschutzbeauftragter der Prüfstelle
+Standard wording: <i>[Kontaktdaten einfügen]</i>
+Standard wording: Datenschutzbeauftragter des Sponsors:
+Standard wording: <i>[Kontaktdaten einfügen]</i>
+Standard wording: Sie haben grundsätzlich auch das Recht jederzeit den Sponsor selbst zu kontaktieren. Bitte wenden Sie sich jedoch im Regelfall an den Prüfarzt bzw. den Datenschutzbeauftragten Ihrer Prüfstelle, da aufgrund der Pseudonymisierung nur hier Ihre Identität bekannt ist und damit sinnvollerweise weitere Schritte unternommen werden können, bzw. eine unbeabsichtigte Identifikation Ihrer Person durch den Sponsor vermieden werden kann.
+Standard wording: Sie haben außerdem ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde. Sollten Sie Bedenken hinsichtlich des Umgangs mit Ihren personenbezogenen Daten haben, können Sie sich an folgende Stellen wenden:
+Standard wording: Datenschutzaufsichtsbehörde des Bundeslandes, in dem Ihre Prüfstelle liegt:
+Standard wording: <i>[Kontaktdaten einfügen]</i>
+Standard wording: Für den Sponsor bzw. dessen Vertreter innerhalb der EU zuständige Datenschutzaufsichtsbehörde:
+Standard wording: <i>[Kontaktdaten einfügen]</i>
+Standard wording: Eine Liste aller in Deutschland und der Europäischen Union zuständigen Datenschutzaufsichtsbehörden finden Sie hier:
+Standard wording: https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html
+Standard wording: g) Dauer der Speicherung der Daten:
+Standard wording: Die Daten werden bei der Prüfstelle und beim Sponsor für <i>[konkrete Dauer]</i> gespeichert. Für Unterlagen nach Artikel 58 der Verordnung (EU) Nr. 536/2014 beträgt die Aufbewahrungsfrist mindestens 25 Jahre. Danach werden Ihre personenbezogenen Daten gelöscht, sofern keine gesetzliche Aufbewahrungspflicht entgegensteht.
+Standard wording: h) Veröffentlichung
+Standard wording: Wissenschaftliche Veröffentlichungen von Ergebnissen erfolgen in einer Form, die keine direkten Rückschlüsse auf Ihre Person zulässt.
+
+## S17 · II. 2. Was geschieht mit meinen Bioproben?
+Fill: standard
+Layout elements: H3 module title, H4 section title, Rich body text
+Standard wording: <b>II. 2. Was geschieht mit meinen Bioproben?</b>
+Standard wording: Seit Ihrer Aufnahme in die klinische Prüfung während der Notfallsituation wurden Ihnen bereits folgende Bioproben entnommen: ........... (Blut / Gewebe / etc. <b><i>[an die jeweilige Studie anpassen; Art, Anzahl, Menge, Zeitpunkt und Zweck nennen]</i></b>). Wenn Sie in die weitere Teilnahme einwilligen, werden Ihnen künftig folgende weitere Bioproben entnommen: ........... . Die Proben werden ebenso wie die Daten in pseudonymisierter Form aufbewahrt (siehe zur Pseudonymisierung oben II. 1. Buchst. a)).
+Standard wording: Die Pseudonymisierung Ihrer Bioproben bietet allerdings nicht zwangsläufig den gleichen Schutz wie die Pseudonymisierung der erhobenen Daten. Ihre Bioproben beinhalten immer Informationen zu Ihrer Erbsubstanz, die eine Identifizierung ermöglichen könnte. Zudem sind in Ihren Bioproben sensible genetische Informationen gespeichert, die etwa Aussagen zu Verwandtschaftsbeziehungen oder auch Erbkrankheiten zulassen. Ein Identifizierungsrisiko lässt sich nicht völlig ausschließen und steigt, je mehr Daten miteinander verknüpft werden können,<i> [sofern erforderlich]</i> z.B. dann, wenn Sie selbst (z.B. zur Ahnenforschung) genetische Daten im Internet veröffentlichen.
+Standard wording: <b>Da somit aus Ihren Bioproben Informationen gewonnen werden können, gelten die oben unter II. 1. genannten datenschutzrechtlichen Aspekte entsprechend auch für Ihre Bioproben.</b>
+Standard wording: a) Verwendung Ihrer Bioproben
+Standard wording: Mit Hilfe der Bioproben soll die Unbedenklichkeit oder Wirksamkeit von <i>[Prüfpräparat]</i> bei Menschen mit <i>[Erkrankung]</i> klinisch untersucht werden.
+Standard wording: Zudem können die Bioproben auch bei den notwendigen Zulassungsverfahren für das zu untersuchende Arzneimittel verwendet werden.
+Standard wording: <i>[Optional, sofern weitere vom Hauptzweck unabhängige Zwecke definiert sind, z.B. Biobanking]</i>
+Standard wording: Ggf. werden Sie zu weiteren optionalen Verwendungszwecken gesondert angesprochen und entsprechend aufgeklärt und um eine separate Einwilligung gebeten.
+Standard wording: <i>[Sofern zutreffend]</i> <b>An Ihren Proben werden auch genetische Untersuchungen durchgeführt, und zwar unter Umständen auch eine Untersuchung Ihrer gesamten Erbsubstanz (Genom). </b>Wir wissen heute, dass Gene sowohl die erwünschten als auch die unerwünschten Medikamentenwirkungen (Nebenwirkungen) beeinflussen können.
+Standard wording: <i>[Sofern genomweite Analysen stattfinden, ist darüber ausdrücklich aufzuklären. Gleiches gilt, wenn nach dem jeweiligen Stand des Wissens in der konkreten Studie Zusatzbefunde anfallen können. [s. zu beiden Aspekten den Mustertext Biobanken des Arbeitskreises medizinischer Ethik-Kommissionen.]</i>
+Standard wording: Ihre Proben werden Eigentum von …
+Standard wording: Dessen ungeachtet bleiben Ihre Rechte, die Ihre Persönlichkeit im Zusammenhang mit dem Körpermaterial schützen, davon unberührt.
+Standard wording: b) Lagerung
+Standard wording: Die Aufbewahrung der Bioproben erfolgt unter Verantwortung von <i>[Angaben zum Verantwortlichen der Aufbewahrung].</i> Sie werden bei Abschluss der Prüfung <i>[alternativ falls zutreffend: nach Vornahme der Untersuchung / nach Ablauf von [xx] Jahren nach Abschluss der klinischen Prüfung]</i> vernichtet, soweit keine gesetzliche Aufbewahrungspflicht besteht.
+Standard wording: <i>[Entweder]</i> Ihre Bioproben werden unter Verantwortung ausschließlich innerhalb der Europäischen Union gelagert.
+Standard wording: <i>[Oder]</i> Ihre Bioproben werden unter Verantwortung von <i>[Sponsor, CRO, etc.]</i> auch außerhalb der Europäischen Union gelagert, nämlich in <i>[Land/Länder].</i> Beachten Sie dazu bitte die Informationen unter II. 1. Buchst. e).
+Standard wording: c) Weitergabe/Empfänger
+Standard wording: Ihre Bioproben werden an folgende Empfänger weitergegeben: <i>[Art der Empfänger ergänzen] ......</i> Es gelten die Ausführungen unter II. 1. Buchst. e) entsprechend, insbesondere auch zur Weitergabe in andere Länder.
+Standard wording: d) Umgang mit den Bioproben bei nicht erteilter Einwilligung oder vorzeitiger Beendigung der Teilnahme
+Standard wording: Wenn Sie nicht in die weitere Teilnahme einwilligen, werden keine weiteren Bioproben für die klinische Prüfung entnommen. Bereits entnommene Proben werden vernichtet, soweit ihre weitere Aufbewahrung nicht gesetzlich erforderlich ist oder sie bereits verbraucht oder anonymisiert wurden.
+Standard wording: Wenn Sie Ihre Teilnahme an der klinischen Prüfung nach erteilter Einwilligung vorzeitig beenden möchten, werden Ihre Proben vernichtet, es sei denn, Sie stimmen aufgrund Ihres Persönlichkeitsrechts einer Weiterverwendung (ggf. in anonymisierter / pseudonymisierter Form) zu.
+
+## S18 · Briefkopf der Prüfstelle
+Fill: standard
+Layout elements: Section/page break, Header, Info table, Rich body text
+Standard wording: <b>Briefkopf der Prüfstelle</b>
+Standard wording: <b>Prüfstelle:</b>	...........	<i>[Angaben zur jeweiligen Prüfstelle mit Adresse und Telefonnummer]</i>
+Standard wording: <b>Hauptprüfer oder einziger Prüfer:</b>	...........
+Standard wording: EU trial number: .........	<i>[Diese gehört wie die Angabe der Version der Patienten-Information	</i>
+Standard wording: 				<i>auch in die fortlaufende Fußzeile]</i>
+Standard wording: Name und Anschrift des Sponsors:
+Standard wording: Name und Anschrift des Vertreters des Sponsors in der EU:
+Standard wording: <b>Patienten-Information nach Einschluss in einer klinischen Prüfung in einer Notfallsituation und Einwilligung zur weiteren Teilnahme</b>
+Standard wording: <b>Titel der Studie</b>
+Standard wording: <i>deutsch, inklusive Prüfplancode</i>
+
+## S19 · Einwilligungserklärung zur weiteren Teilnahme nach Aufnahme in einer Notfallsituation
+Fill: standard
+Layout elements: H2 document subline, Signature section, Rich body text
+Standard wording: <b>Einwilligungserklärung zur weiteren Teilnahme nach Aufnahme in einer Notfallsituation</b>
+Standard wording: ............................................................................................................................
+Standard wording: Name des Patienten in Druckbuchstaben
+Standard wording: geb. am ........................................
+Standard wording: Ich bin in einem persönlichen Gespräch durch den Prüfarzt
+Standard wording: ............................................................................................................................
+Standard wording: Name der Ärztin/des Arztes
+Standard wording: ausführlich und verständlich darüber aufgeklärt worden, dass ich während einer medizinischen Notfallsituation in die klinische Prüfung aufgenommen wurde, bevor ich selbst oder ein gesetzlicher Vertreter eine Einwilligung erteilen konnte. Mir wurde erläutert, warum eine vorherige Aufklärung und Einwilligung innerhalb des erforderlichen Behandlungszeitfensters nicht möglich war.
+Standard wording: Ich bin ausführlich und verständlich über Wesen, Bedeutung, Risiken und Tragweite der klinischen Prüfung sowie über die weitere Teilnahme aufgeklärt worden. Ich habe darüber hinaus den Text der Patienteninformation mit seinen beiden Teilen (Teil I: Informationen zu gesundheitlichen Aspekten; Teil II: Informationen zur Verwendung der Daten und Bioproben) gelesen und verstanden. Ich hatte die Gelegenheit, mit dem Prüfarzt über die Durchführung der klinischen Prüfung zu sprechen. Alle meine Fragen wurden zufrieden stellend beantwortet.
+Standard wording: Ich hatte ausreichend Zeit, mich zu entscheiden.
+Standard wording: Mir ist bekannt, dass ich die weitere Teilnahme ablehnen oder eine erteilte Einwilligung jederzeit und ohne Angabe von Gründen zurückziehen kann (mündlich oder schriftlich), ohne dass mir daraus Nachteile entstehen.
+Standard wording: <b>Ergänzungen durch die aufklärende Person:</b>
+Standard wording: <b><u>Folgende wesentliche Gesichtspunkte oder Fragen sind in dem mündlichen Aufklärungsgespräch genauer besprochen worden. Ich habe mich dabei davon überzeugt, dass der Patient alle für ihn wichtigen Fragen stellen konnte und die Aufklärung für ihn verständlich war.</u></b>
+
+## S20 · Datenschutzrechtliche Einwilligung:
+Fill: standard
+Layout elements: H2 document subline, Info/warning/note box, Checkbox group, Signature section, Rich body text
+Standard wording: <b>Datenschutzrechtliche Einwilligung:</b>
+Standard wording: I. Mir ist bekannt, dass seit meiner Aufnahme in die klinische Prüfung <b>personenbezogene Daten</b>, insbesondere medizinische Befunde über mich erhoben, gespeichert und ausgewertet wurden. Die weitere Erhebung und Verarbeitung meiner personenbezogenen Daten setzt für meine weitere Teilnahme an der klinischen Prüfung folgende freiwillig abgegebene Einwilligungserklärung voraus; ohne die nachfolgende Einwilligung kann ich nicht weiter an der klinischen Prüfung teilnehmen.
+Standard wording: 1.	Ich willige ausdrücklich ein, dass im Rahmen meiner weiteren Teilnahme meine Gesundheitsdaten sowie [jede weitere tatsächlich verarbeitete besondere Datenkategorie ausdrücklich benennen, z. B. genetische Daten, Angaben zur ethnischen Herkunft oder zum Sexualleben] zu den in der Informationsschrift Teil II. 1. beschriebenen Zwecken weiter erhoben, gespeichert, ausgewertet und weitergegeben werden. Die dort genannten gesetzlichen Einschränkungen meiner Rechte sind mir bewusst.
+Standard wording: 2. <i>[Sofern zutreffend; sofern eine Übermittlung von Daten in entsprechende Länder nicht zwingend ist, ist eine ausdrückliche Ankreuzoption vorzusehen.]</i>  Ich bin darüber aufgeklärt worden, dass meine Daten auch in Drittländer und an Empfänger weitergegeben werden, für die kein Angemessenheitsbeschluss der Europäischen Kommission und auch keine anderen, gleichwertigen Datenschutzgarantien vorliegen.
+Standard wording: <i>[Falls zutreffend:]</i> Ich bin darüber aufgeklärt worden, dass ich ohne meine Einwilligung in die Weitergabe meiner Daten in diese Länder nicht weiter an dieser klinischen Prüfung teilnehmen kann.
+Standard wording: 	□ <b>Ich willige</b> ausdrücklich<b> in eine Weitergabe meiner Daten in Länder außerhalb der Europäischen Union und des Europäischen Wirtschaftsraumes ein, in denen ein Schutz meiner Daten nicht in vergleichbarer Weise garantiert werden kann.</b> Der erheblichen persönlichen Nachteile, die eine solche Datenübermittlung mit sich bringen kann, bin ich mir bewusst.
+Standard wording: 3. <i>[Falls zutreffend]</i> Ich willige ein, dass mein Hausarzt
+Standard wording: 	...................................................................................................................................
+Standard wording: 	Name
+Standard wording:      über meine weitere Teilnahme an der klinischen Prüfung informiert wird.
+Standard wording: 4.	<i>[sofern zwingend erforderlich; siehe Teil II. 1. Buchst. a)]</i>
+Standard wording: 	Ich willige ein, dass künftig Gesundheitsdaten von mitbehandelnden Ärzten / von folgenden Ärzten
+Standard wording:  ........................................................................................................................................
+Standard wording: Name(n)
+Standard wording: erhoben werden, soweit dies für die ordnungsgemäße weitere Durchführung und Überwachung der Studie notwendig ist. Insoweit entbinde ich diese Ärzte von der Schweigepflicht.
+Standard wording: 	<i>[sofern optional; siehe Teil II. 1 Buchst. a)]</i>
+Standard wording: 	Ich willige ein, dass künftig Gesundheitsdaten von mitbehandelnden Ärzten / von folgenden Ärzten
+Standard wording:  ........................................................................................................................................
+Standard wording: Name(n)
+Standard wording: erhoben werden. Insoweit entbinde ich diese Ärzte von der Schweigepflicht.
+Standard wording: 	□ 	Ich willige ein und entbinde o.g. Arzt/Ärzte von ihrer Schweigepflicht.
+Standard wording: 	□ 	Ich entbinde o.g. Arzt/Ärzte <u>nicht</u> von ihrer Schweigepflicht. Ich kann gleichwohl weiter an der klinischen Prüfung teilnehmen.
+Standard wording: II. 1. Ich willige ein, dass meine bei weiterer Teilnahme künftig entnommenen <b>Bioproben</b> gemäß den Angaben der Informationsschrift Teil II. 2. aufbewahrt, verwendet und weitergegeben werden.
+Standard wording: 	Das Eigentum an den Bioproben übertrage ich an <i>[…]</i>.
+Standard wording: 2. <i>[Sofern zutreffend; sofern eine Übermittlung von Bioproben in entsprechende Länder nicht zwingend ist, ist eine ausdrückliche Ankreuzoption vorzusehen.]</i>  Ich bin darüber aufgeklärt worden, dass meine Bioproben auch in Drittländer und an Empfänger weitergegeben werden, für die kein Angemessenheitsbeschluss der Europäischen Kommission und auch keine anderen, gleichwertigen Datenschutzgarantien vorliegen. Ich bin darüber aufgeklärt worden, dass ich ohne meine Einwilligung in die Weitergabe meiner Bioproben in diese Länder nicht weiter an der klinischen Prüfung teilnehmen kann.
+Standard wording: 	<b>Ich willige ausdrücklich in eine Weitergabe meiner Bioproben in Länder außerhalb der Europäischen Union ein, in denen ein Schutz meiner Bioproben nicht in vergleichbarer Weise garantiert werden kann.</b>
+Standard wording: <b>Ich willige freiwillig ein, weiterhin an der oben genannten klinischen Prüfung teilzunehmen.</b>
+Standard wording: <b>Zugleich willige ich in die weitere Verarbeitung meiner personenbezogenen Daten und </b><i>[sofern zutreffend]</i><b> der bei weiterer Teilnahme künftig entnommenen Bioproben wie beschrieben und von mir angegeben ein.</b>
+Standard wording: Ein Exemplar der Patienten-Information und der unterzeichneten und datierten Einwilligungserklärung sowie die Versicherungsunterlagen habe ich erhalten. Aktualisierte Unterlagen werden mir ebenfalls ausgehändigt. Ein Exemplar verbleibt in der Prüfstelle.
+Standard wording: ...........................................................................................................................
+Standard wording: Name des Patienten in Druckbuchstaben
+Standard wording: ....................................	...............................................................................
+Standard wording: Ort/Datum	Unterschrift des <b>Patienten</b>
+Standard wording: Ich habe das Aufklärungsgespräch geführt und die Einwilligung des Patienten zur weiteren Teilnahme eingeholt.
+Standard wording: ...........................................................................................................................
+Standard wording: Name des aufklärenden Arztes der Prüfstelle in Druckbuchstaben
+Standard wording: ....................................	...............................................................................
+Standard wording: Ort/Datum	Unterschrift des aufklärenden <b>Arztes der Prüfstelle</b>
+
+## Checklist
+- C1.01 Protocol title, code, EU trial number, version and date match the current protocol.
+- C1.02 Sponsor and site information are current and complete.
+- C1.03 Investigational and comparator treatments are named and described as in the protocol and IB/SmPC.
+- C1.04 Study purpose, phase and participant population match the protocol.
+- C1.05 Randomisation ratio, treatment groups, placebo and blinding are explained correctly in plain language.
+- C1.06 Visit schedule, duration, procedures, tests and follow-up match the schedule of activities.
+- C1.07 Number and volume of samples match the protocol and sample plan.
+- C1.08 Participant restrictions and prohibited treatments are stated.
+- C1.09 Expected benefits and treatment alternatives are stated without overstating benefit.
+- C1.10 Reimbursement, compensation, insurance and contacts are present and correct.
+- C1.11 No statements carried over from another protocol, country, cohort or study phase.
+- C2.01 Every research-only procedure is visible to the participant.
+- C2.02 Risk frequency and severity are not softened compared with the IB/protocol.
+- C2.03 Pregnancy testing and contraception periods match the protocol. (applies when: protocol has reproductive requirements)
+- C2.04 Treatment interruption and withdrawal rules match the protocol.
+- C2.05 Optional procedures are not described as mandatory.
+- C2.06 Planned remote visits, electronic consent, home nursing, wearables or direct-to-participant shipment are explained. (applies when: any decentralised element)
+- C2.07 Insurance wording matches the certificate and policy terms (DE-O1, DE-O2).
+- C2.08 Data and sample retention periods are consistent across all documents.
+- C2.09 After a protocol change, every affected participant document has been reopened, not only the main adult form. (applies when: modification or revised protocol)
+- C3.01 The main participation decision is separate from optional choices.
+- C3.02 Express consent to processing personal and health data is present.
+- C3.03 Optional future use, genetics, additional sampling, re-contact and pregnancy follow-up have separate choices where required.
+- C3.04 Refusing an optional activity does not block main-study participation, unless scientifically necessary and justified in the application.
+- C3.05 Withdrawal language explains the right to stop and the lawful limits on deleting data already collected.
+- C3.06 The person signing has legal authority for the decision.
+- C3.07 Participant and physician signature order and timing are clear (before any trial-specific procedure).
+- C3.08 A signed copy is provided to the participant or representative.
+- C3.09 Re-consent triggers are defined: new information, new versions, regained capacity, reaching adulthood.
+- C3.10 The consent form does not introduce information absent from the information sheet.
+- C4.01 Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its full document set (main, representative, age-adapted, re-consent and other templates that apply). (applies when: always)
+- C4.02 Healthy volunteers: states no therapeutic benefit, explains early-phase uncertainty, restrictions, payment, contraception and confinement accurately. (applies when: population.healthy_volunteers)
+- C4.03 Minors: legal-representative consent, age- and maturity-appropriate information, the capable minor's own written consent, dissent, and re-consent at 18. (applies when: population.minors)
+- C4.04 Adults without capacity: representative authority, adapted participant information, objection handling, capacity reassessment, and the German advance-consent condition for group-benefit research. (applies when: population.adults_without_capacity)
+- C4.05 Emergency enrolment: every Article 35 condition, absence of known objection, investigator certification, later information and consent, right to object to use of data. (applies when: consent.emergency_enrolment)
+- C4.06 Participant unable to write: inability to sign is not confused with lack of capacity; alternative-recording method and impartial-witness block present. (applies when: consent.impartial_witness_possible)
+- C4.07 Pregnancy follow-up: pregnant participant vs pregnant partner identified; record holders, infant data and whose consent is required are clear. (applies when: pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up)
+- C4.08 Secondary or future use is optional and has a separate information and consent document. (applies when: samples.future_use_outside_protocol or data.future_use_outside_protocol)
+- C5.01 Controller and data-protection contact identified.
+- C5.02 Categories of personal and health data listed; only special categories actually processed, each with a study-specific lay justification.
+- C5.03 Each processing purpose explained.
+- C5.04 Coding or pseudonymisation explained, and where the key is held.
+- C5.05 Direct access by monitors, auditors, inspectors and authorities explained.
+- C5.06 Recipients and transfers to sponsor, processors, authorities and regulatory applicants explained.
+- C5.07 Safety reporting and CTIS reporting explained.
+- C5.08 Transfers outside the EEA, safeguards or risks, and an explicit choice where the transfer is not essential. (applies when: data transferred outside the EEA)
+- C5.09 Retention periods stated.
+- C5.10 Participant rights and a practical contact route.
+- C5.11 Withdrawal and the German rules allowing necessary continued processing.
+- C5.12 Express written or electronic health-data consent with all disclosures under section 40b(6) AMG.
+- C5.13 No promise of anonymity where coded data are used, and no promise of deletion that conflicts with safety, scientific-integrity or regulatory duties.
+- C6.01 Sample type, volume, frequency and timing for every sample.
+- C6.02 Protocol purpose and planned analyses.
+- C6.03 Whether genetic testing is involved.
+- C6.04 Coding, storage location, duration and responsible organisation.
+- C6.05 Transfers and recipient categories.
+- C6.06 Exhaustion, return or destruction.
+- C6.07 Handling of incidental findings where applicable.
+- C6.08 Whether commercial research is possible.
+- C6.09 Withdrawal options and practical limits.
+- C6.10 Protocol use clearly separated from optional use outside the protocol; separate optional document present where needed (AKEK). (applies when: samples.future_use_outside_protocol)
+- C6.11 Consistent with the S1 biological-samples form and the GDPR statement.
+- C7.01 All participant and representative documents are in German.
+- C7.02 Planned non-German enrolment has qualified translations and a communication plan. (applies when: population.non_german_speakers)
+- C7.03 The AKEK adult patient or healthy-volunteer model was used as baseline; every deviation from the model text is justified and visibly identifiable (AKEK guideline, 9 April 2026).
+- C7.04 The physician-led information process matches section 40b(2) AMG.
+- C7.05 Trial-participant insurance wording matches German coverage (min. EUR 500,000 per case of death or continuing incapacity).
+- C7.06 Vulnerable-population pathways match sections 40b(3) to 40b(5) AMG. (applies when: population.minors or population.adults_without_capacity or consent.emergency_enrolment)
+- C7.07 The data section contains every disclosure in section 40b(6) AMG.
+- C7.08 Recruitment material avoids promotional claims and undue emphasis on payment. (applies when: recruitment.material_used)
+- C7.09 Endpoint-related patient-facing documents follow the Part I (English source) / Part II (German translation) route. (applies when: endpoint_documents.participant_facing)
+- C7.10 Radiation information and Part II documentation are included where the 2025 German radiation route applies. (applies when: radiation.requires_authorisation_or_notification)
+- C7.11 Short summary of at most two pages, visually highlighted; Part I and Part II structure; risk frequencies use the four German categories.
+- C8.01 Correct document title, population, language code, version and date.
+- C8.02 Version references inside the consent form match the information sheet.
+- C8.03 No participant, representative or physician signature in the blank CTIS submission copy.
+- C8.04 Complete signature and date fields for use at consent.
+- C8.05 Witness fields only where the alternative-signature pathway can apply.
+- C8.06 Representative capacity or relationship field where relevant.
+- C8.07 Page numbering; participant initials only if the process requires them.
+- C8.08 Statement that the participant receives a signed copy.
+- C8.09 Correct CTIS section and naming convention.
+- C8.10 No personal data that should not appear in the CTIS upload.
+- C8.11 No drafting instruction remains in the final version (italic notes, [bracket] notes, ........... gaps, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank.
+- C9.01 The first pages answer what the trial is, what happens, the main risks and the alternatives.
+- C9.02 Short sentences; medical terms explained at first use.
+- C9.03 Risks grouped and prioritised.
+- C9.04 Numbers, probabilities, visit counts and periods are easy to find.
+- C9.05 Headings make the document easy to scan.
+- C9.06 Optional choices look optional.
+- C9.07 German terminology consistent and natural.
+- C9.08 Translations reviewed by a qualified person and matching the approved source. (applies when: document is adapted from a reference document in another language)
+- C9.09 Usable printed, on a phone and electronically.
+- C10.01 The participant document list matches the protocol's population, country, site, procedure, data and sample matrices, and the Germany Part II package checklist.

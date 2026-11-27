@@ -10,7 +10,7 @@ import {chromium} from 'playwright-core'
 import {PGlite} from '@electric-sql/pglite'
 import {ctis} from '../app/server/store.mjs'
 import {publishCatalog} from '../app/server/catalog.mjs'
-import {loadCatalogDir} from '../app/server/catalog-files.mjs'
+import {loadCoreCatalogDir as loadCatalogDir} from '../app/server/catalog-files.mjs'
 import {seedExamples,people} from '../app/server/examples.mjs'
 import {ctisHttp,claudeResource} from '../mcp/http.mjs'
 

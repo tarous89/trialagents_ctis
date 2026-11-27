@@ -221,4 +221,9 @@ Add or change files in `catalog/` and run `npm run check:catalog`: it lists erro
 - `styling/L1_SIS-ICF.md`: L1 styling rules for every country, on top of the default.
 - `styling/K1_recruitment-arrangements_DE.md` + `.docx`: the MedEthicsEU and CTAG recruitment and informed consent procedure template v2.0, coded, with all 29 fields described.
 - Workflow guides.
-- To be provided: planning checklists for Part I and each country, content templates, and country styling.
+- Planning checklists for 25 member states (`planning/AT.md` … `planning/SK.md`): every Part II document with its requirement, condition, languages, variants and national notes (CTIS title, signature rule, template basis, national additions), and the national rules in the body (authorities, language rules, populations and age bands, drafting rules, sources). Built from the TrialAgents country guides (reviewed 23 September 2026).
+- Content templates for the participant documents of 17 countries (`content/L1_SIS-ICF_<variant>_<country>.md`, 226 in total), from the supplied national templates with the model text kept as standard wording and the country's participant-document checklist as the template checklist.
+- Country styling for L1 (`styling/L1_SIS-ICF_<country>.md`) and each template's own styling (`styling/L1_SIS-ICF_<variant>_<country>_styling.md`).
+- Shared EU forms for all countries: K1, N1, S1, P1, R1, M1 and M2 (`styling/<code>.md` + `.docx`), the original coded files with every field described. A country form, where one exists (for example `K1_recruitment-arrangements_DE`), is more specific and wins.
+- Imported with `scripts/import_country_content.py` and `scripts/build_shared_forms.py` from the content source in trialagents_ctis (`content/`).
+- To be provided: the Part I planning checklist; participant templates for Belgium, Croatia, Estonia, Latvia, Lithuania, Slovenia, Slovakia and Finland (Swedish); national forms that replace the shared EU forms in some countries (listed in each country's national notes).

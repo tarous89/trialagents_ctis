@@ -4,9 +4,9 @@ Content TrialAgents serves to Claude and ChatGPT through the MCP. The formats ar
 
 | Folder | One file per | Status |
 |---|---|---|
-| `planning/` | Planning checklist for Part I (`Part-I.md`) and each member state (`DE.md`, `ES.md`, …), plus `naming.md` | Naming included; checklists to be provided |
-| `content/` | Content template per regulatory document, optionally per variant and country (`L1_SIS-ICF_adults_ES.md`), with its checklist | To be provided |
-| `styling/` | Styling instructions per regulatory document and country: a form or layout `.docx` with its `.md`, or instructions on top of a base styling | Default, L1 and K1 (Germany) included |
+| `planning/` | Planning checklist for Part I (`Part-I.md`) and each member state (`DE.md`, `ES.md`, …), plus `naming.md` | Naming and 25 member states included; Part I to be provided |
+| `content/` | Content template per regulatory document, optionally per variant and country (`L1_SIS-ICF_adults_ES.md`), with its checklist | Participant templates for 17 countries included |
+| `styling/` | Styling instructions per regulatory document and country: a form or layout `.docx` with its `.md`, or instructions on top of a base styling | Default, L1, country L1 styling, shared EU forms (K1, N1, S1, P1, R1, M1, M2) and K1 (Germany) included |
 | `workflow/` | How the assistant plans, drafts, checks, styles and revises | Included |
 
 Check your changes with `node scripts/check-catalog.mjs` (CI runs it too). A deploy publishes the catalog as a new release when anything changed; no plugin release is needed. Runs record the catalog versions they used.

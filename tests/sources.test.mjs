@@ -7,7 +7,7 @@ import JSZip from 'jszip'
 import {PGlite} from '@electric-sql/pglite'
 import {ctis} from '../app/server/store.mjs'
 import {publishCatalog} from '../app/server/catalog.mjs'
-import {loadCatalogDir} from '../app/server/catalog-files.mjs'
+import {loadCoreCatalogDir as loadCatalogDir} from '../app/server/catalog-files.mjs'
 import {fillTemplate} from '../app/server/word.mjs'
 
 const pg=new PGlite(),db={transaction:fn=>pg.transaction(tx=>fn(async(sql,p)=>(await tx.query(sql,p)).rows))}
