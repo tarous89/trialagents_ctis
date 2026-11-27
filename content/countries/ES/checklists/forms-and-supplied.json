@@ -1,0 +1,218 @@
+{
+  "id": "ES-CHECK",
+  "name": "Spain: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/spain/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor finance are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains."
+    },
+    {
+      "id": "X.04",
+      "check": "Language is Spanish or English, except the insurance documents (ES-O1, ES-O2-*), which are in Spanish."
+    },
+    {
+      "id": "X.05",
+      "check": "Signature as required: N1 signed by the site director or delegate; insurance certificates and commitments executed; no signature on K1, M1, M2, P and S1 at submission."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json; no version or date in the title; version and date in CTIS metadata."
+    }
+  ],
+  "by_document": {
+    "ES-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the European template version 2.0 (all new Part II submissions after 1 September 2026, including additional Member State and Article 11 completions)."
+      },
+      {
+        "id": "K1.02",
+        "check": "Describes how potential participants are identified and approached, including the first act of recruitment, and how and where each recruitment item (K2) is used."
+      },
+      {
+        "id": "K1.03",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each \"yes\" section is completed with the Spanish additions in national_fields, each \"no\" section says not applicable."
+      },
+      {
+        "id": "K1.04",
+        "check": "If no separate K1 is submitted because the protocol fully describes the process, the cover letter identifies where.",
+        "applies_when": "recruitment.procedure_fully_in_protocol"
+      },
+      {
+        "id": "K1.05",
+        "check": "Emergency logic (trigger, therapeutic window, absence of objection, representative search, family consultation, investigator confirmation, later consent and ratification, data objection) is the same in the protocol, K1 and the participant documents.",
+        "applies_when": "consent.emergency_enrolment"
+      },
+      {
+        "id": "K1.06",
+        "check": "Minors: age bands and signature logic (one-parent route, under-12 hearing, consent from 12, adult consent at 18) are the same in the protocol, K1 and the participant documents.",
+        "applies_when": "population.minors"
+      },
+      {
+        "id": "K1.07",
+        "check": "Impartial witness: explains why a witness may be used, how the witness is selected and how consent is recorded.",
+        "applies_when": "consent.impartial_witness_possible"
+      },
+      {
+        "id": "K1.08",
+        "check": "Adults unable to consent: describes how prior instructions are checked, who may consent (legal representative or person connected by family or factual relationship) and how capacity is reviewed.",
+        "applies_when": "population.adults_without_capacity"
+      }
+    ],
+    "ES-GDPR-STATEMENT": [
+      {
+        "id": "GDPR.01",
+        "check": "EU statement of compliance with Regulation (EU) 2016/679 uploaded in the CTIS Form, not in a Part II placeholder; no separate national data-protection Part II document."
+      },
+      {
+        "id": "GDPR.02",
+        "check": "Sponsor details match the CTIS application; the conditional national sentence is removed (not required for Spain); name and role of the responsible person come from the sponsor."
+      }
+    ],
+    "ES-M1": [
+      {
+        "id": "M1.01",
+        "check": "One CV per principal investigator, in the CTIS \"Investigator CV\" subsection; updated within the previous two years."
+      },
+      {
+        "id": "M1.02",
+        "check": "Shows suitable clinical-trial and Good Clinical Practice experience."
+      }
+    ],
+    "ES-M2-DOI": [
+      {
+        "id": "M2D.01",
+        "check": "One declaration per principal investigator on the European template, in the \"Suitability of the investigator\" subsection; updated within the previous year."
+      },
+      {
+        "id": "M2D.02",
+        "check": "States the relevant interests or that none exist; submitted even when no conflict exists; answered by the investigator."
+      }
+    ],
+    "ES-N1": [
+      {
+        "id": "N1.01",
+        "check": "One form per site, on the European form or AEMPS Annex IV."
+      },
+      {
+        "id": "N1.02",
+        "check": "Identifies the trial, department, site, planned participant number and any collaborating departments."
+      },
+      {
+        "id": "N1.03",
+        "check": "Confirms that the site has the required staff, equipment, facilities and expertise, specific to this protocol."
+      },
+      {
+        "id": "N1.04",
+        "check": "Signed at submission by the director of the healthcare site or institution, or a delegated person."
+      }
+    ],
+    "ES-O1": [
+      {
+        "id": "O1.01",
+        "check": "AEMPS Annex VA certificate in Spanish, completed and executed (signature line of insurer, sponsor or site representative)."
+      },
+      {
+        "id": "O1.02",
+        "check": "Lists each participating site and principal investigator, matching N1, M1 and CTIS."
+      },
+      {
+        "id": "O1.03",
+        "check": "Reflects the Spanish statutory coverage limits (Royal Decree 1090/2015)."
+      },
+      {
+        "id": "O1.04",
+        "check": "Provided within 30 calendar days of the Annex VI commitment.",
+        "applies_when": "trial.non_commercial"
+      }
+    ],
+    "ES-O2-SPONSOR-COMMITMENT": [
+      {
+        "id": "O2S.01",
+        "check": "Signed AEMPS Annex VB commitment in Spanish, addressing the exclusions of the international policy; the CEIm decides on acceptance."
+      }
+    ],
+    "ES-O2-NON-COMMERCIAL": [
+      {
+        "id": "O2N.01",
+        "check": "Signed AEMPS Annex VI commitment by a qualifying non-commercial sponsor; the Annex VA certificate is planned within 30 calendar days; trial start waits for CEIm confirmation."
+      }
+    ],
+    "ES-O2-LOW-INTERVENTION": [
+      {
+        "id": "O2L.01",
+        "check": "Signed AEMPS Annex VII certificate from the site or organisation representative confirming that professional civil-liability coverage protects against trial-related harm; Annex VA used instead if a specific trial policy is bought."
+      }
+    ],
+    "ES-P1-BUDGET": [
+      {
+        "id": "P1B.01",
+        "check": "One budget for the trial (single budget with variable site amounts, or the set of individual site budgets)."
+      },
+      {
+        "id": "P1B.02",
+        "check": "Covers additional tests, cost per visit and per recruited participant, indirect and administrative costs, free supply of the IMPs, any additional participant cost and all planned participant and investigator compensation."
+      },
+      {
+        "id": "P1B.03",
+        "check": "Amount, nature and payment procedure of participant compensation are clear and match every participant document and ES-P2-COMPENSATION."
+      }
+    ],
+    "ES-P2-COMPENSATION": [
+      {
+        "id": "P2C.01",
+        "check": "States explicitly when no compensation is offered."
+      },
+      {
+        "id": "P2C.02",
+        "check": "Amounts, conditions and recipients identical to the financial budget and every participant document; the form does not replace the budget."
+      },
+      {
+        "id": "P2C.03",
+        "check": "Minors and adults unable to consent: no incentive or financial inducement beyond compensation of expenses and loss of earnings directly related to participation (template note).",
+        "applies_when": "population.minors or population.adults_without_capacity"
+      }
+    ],
+    "ES-S1": [
+      {
+        "id": "S1.01",
+        "check": "New and archive sample sections match the protocol and laboratory manual; at least one is completed."
+      },
+      {
+        "id": "S1.02",
+        "check": "Quantities, collection procedures, responsible entity, analysis and storage locations, retention, coding, access and transfers match the participant documents (Annex VIIIB text)."
+      },
+      {
+        "id": "S1.03",
+        "check": "Future use, recontact, ethics review and handling of findings answered consistently with the future-use document and the participant's choices; the Spanish storage route (biobank, collection or foreign repository) is named.",
+        "applies_when": "samples.future_use_outside_protocol"
+      },
+      {
+        "id": "S1.04",
+        "check": "Covers the same information as AEMPS Annex XIII, or Annex XIII itself is used."
+      }
+    ]
+  }
+}
