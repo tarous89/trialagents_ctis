@@ -76,7 +76,7 @@ async function projectsPage(){
 
 function newProjectDialog(){
   modal('<div class="modalhead"><div><h2 id="overlaytitle">Start a project in your assistant</h2></div><button type="button" class="iconbtn" data-close aria-label="Close">'+icon('close')+'</button></div>'
-    +'<div class="modalbody pad"><p>Projects are planned with Claude or ChatGPT. The assistant reads your protocol, uses the TrialAgents planning checklists for each country, and saves the plan here for you to review.</p>'
+    +'<div class="modalbody pad"><p>New projects are created in Claude or ChatGPT. The assistant reads your protocol, uses the TrialAgents planning checklists for each country, and saves the plan. It then appears here in Projects for you and your team to review.</p>'
     +'<p class="prompt">“Start a new TrialAgents CTIS project for our study EX-102 in France and Italy.”</p>'
     +'<div class="rowbtns">'+['Claude','ChatGPT'].map(n=>'<a class="btn primary" href="'+assistantUrl[n]+'" target="_blank" rel="noopener">'+marks[n]+' Continue in '+n+'</a>').join(' ')+'</div></div>')
 }
