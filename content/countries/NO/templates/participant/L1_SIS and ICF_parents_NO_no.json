@@ -1,0 +1,114 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Trial Information and Consent Form - Parents",
+  "doc_name_local": "Forespørsel til den eller de med foreldreansvar om barnets deltakelse i en legemiddelstudie",
+  "target_country": "Norway",
+  "country_code": "NO",
+  "target_language": "Norwegian",
+  "language_code": "no",
+  "doc_type": "parents",
+  "file_name": "L1_SIS and ICF_parents",
+  "sort_order": "5",
+  "description": "Must be completed for studies involving minor participants (younger than 18 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versjon 1.0 - [date]",
+   "Protokollnummer: [fyll inn] | EU CT-nummer: [fyll inn]"
+  ],
+  "info_table": [
+   "Studietittel",
+   "Forkortet studietittel",
+   "Protokollnummer [legg til versjon og dato]",
+   "EU CT-nummer",
+   "Sponsor [med fullstendig adresse]",
+   "Hovedutprøver",
+   "Navn på studiesenter",
+   "Adresse til studiesenter"
+  ],
+  "content_instructions": "Bruk denne fullstendige malen for den eller de med foreldreansvar for en mindreårig deltaker i en legemiddelutprøving som omfattes av Clinical Trials Regulation (CTR) EU nr. 536/2014. Barnet er studiedeltakeren. Teksten skal henvende seg til den eller de med foreldreansvar med «du/dere» og omtale deltakeren som «barnet» eller «barnet ditt/deres». Malen skal speile den norske voksenmalen og inneholde den samme studiespesifikke informasjonen om formål, studielegemiddel, randomisering, placebo, prosedyrer, varighet, fordeler, risikoer, alternativer, opplysninger, prøver, genetiske undersøkelser, utgifter, erstatning, kontakter og resultater. Den studiespesifikke informasjonen i denne malen og i ungdomsmalen for 16–17 år skal genereres fra samme innholdskilde. Bare tiltaleform, forklaringer som er nødvendige for forståelsen, barnespesifikke praktiske forhold og signaturvei skal tilpasses. Barnet skal få et separat alderstilpasset informasjonsskriv og skal høres. Barnets uttrykte nei eller senere ønske om å stoppe skal respekteres. Alle personer med foreldreansvar skal samtykke og signere. Behold begge signaturfelt når to personer har foreldreansvar. Behold ett signaturfelt bare når én person alene har foreldreansvaret. Dersom barnet fyller 16 år mens studien pågår, skal barnet få fullstendig informasjon og avgi eget informert samtykke i den separate 16–17-årsmalen før videre deltakelse. Oppgi dato for End of Trial, forventet måned/år for avslutning av all forskningsrelatert aktivitet inkludert analyser og publisering, og et konkret lagringsår som er minst 25 år etter End of Trial. Ikke oppgi behandlingsgrunnlag eller rettigheter etter GDPR i dette samtykket; separat personverninformasjon skal gis. Reelt valgfrie, protokollbestemte prosedyrer eller analyser innenfor hovedstudien krever separat signatur etter hovedsamtykket. I sluttversjonen skal datadelen organiseres i korte underavsnitt med følgende overskrifter når de er relevante: «Hvilke opplysninger bruker vi?», «Hvor kommer opplysningene fra?», «Hvem kan få tilgang?» og «Hvor og hvor lenge lagres opplysningene?». Ikke gjenta detaljert GDPR-informasjon som gis i det separate personvernskrivet. Når studien omfatter mange besøk eller prosedyrer, skal studieforløpet presenteres i en kort tabell eller oversikt med «Tidspunkt», «Hva skjer», «Omtrentlig tidsbruk» og «Hva er ekstra på grunn av studien». Tabellen erstatter gjentakende prosedyretekst, men skal ikke utelate vesentlige prosedyrer, belastninger eller risikoer. [Hvis materialet lagres i en studiespesifikk forskningsbiobank: Oppgi biobankens navn, institusjon og lokalisering, ansvarshavende for biobanken [navn eller rolle], lagringsperiode, analyse- og lagringsland og hva som skjer med materialet ved lagringsperiodens slutt, inkludert forventet dato/år for destruksjon eller retur.] Bruk denne modulen bare for en reelt valgfri, protokollbestemt prosedyre eller analyse innenfor hovedstudien som kan avslås uten å hindre hoveddeltakelsen. For mindreårige skal fremtidig forskning bare omtales når dette er forsvarlig og en lovlig samtykkevei finnes; et barn skal som hovedregel ikke inkluderes i fremtidig forskning. Når sponsor planlegger separat fremtidig eller annen forskning utover hovedstudiens formål med kodede eller på annen måte identifiserbare opplysninger eller prøver, og en lovlig samtykkevei foreligger, brukes Template 14. Dersom data eller prøver skal anonymiseres fullt ut før videre forskning, skal det kort forklares hvordan de anonymiseres og hvordan de skal brukes videre. Det er ikke nødvendig med eget samtykkeskriv eller eget signaturfelt for forskning på reelt anonymiserte data eller prøver, men de med foreldreansvar og barnet, i den grad det er alderstilpasset, skal informeres om dette. Hvis protokollen inneholder reproduksjonsrisiko eller krav knyttet til graviditetstest, prevensjon, amming eller sæd-/eggdonasjon, skal dette tas med bare når det er relevant for målgruppen. Beskriv kort den studiespesifikke risikoen, hva som kreves og i hvilken periode, samt hva deltakeren skal gjøre dersom graviditet oppstår hos deltakeren eller en partner når relevant. Bruk maksimalt 3–5 korte setninger og ikke gjenta informasjonen flere steder. Eksempel: «Du må bruke [prevensjonsmetode] fra [tidspunkt] til [tidspunkt]. Kontakt studiesenteret straks dersom du eller partneren din blir gravid.» Fjern hele denne informasjonen når reproduksjonsforhold ikke er relevante for studien eller målgruppen. Hvis det er aktuelt med oppfølgingsprosjekt utenfor selve studien, så opplys om at deltaker kan bli kontaktet igjen. Angi dersom det er planlagt å overføre data til annen studie, for eksempel oppfølgingsstudie, og hvilke opplysninger dette gjelder.",
+  "styling_instructions": "Behold hovedmalens struktur og norske overskrifter. Bruk skrifttype uten seriffer og tydelige signaturfelt for barnets identitet, foreldreansvarlige og personen som ga informasjon. Fjern ikke-relevante alternativer før utlevering."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Dette er en invitasjon til å samtykke til at barnet ditt/deres deltar i en forskningsstudie hvor vi skal prøve ut legemiddelet [sett inn navnet på legemiddelet, eventuelt generisk navn].\n\nFormålet med studien er [sett inn samme fullstendige studiespesifikke hovedformål og delformål som i voksen- og 16–17-årsmalen. Forklar hvorfor studien gjennomføres på barn og fremstill begrunnelsen og betydningen nøytralt og allment forståelig].\n\nBarnet blir spurt fordi [beskriv hvorfor barnet er valgt ut, hvordan institusjonen har identifisert barnet og hvem som er ansvarlig for studien].\n\nBarnet vil få egen muntlig og skriftlig informasjon tilpasset alder og modenhet. Barnets syn skal tas med i avgjørelsen, og et uttrykt nei eller senere ønske om å stoppe skal respekteres.",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "HVA INNEBÆRER DET FOR BARNET Å DELTA?\n\n[Sett inn den samme fullstendige studiespesifikke informasjonen om studielegemidler, sammenligningsbehandling, placebo, randomisering, blinding, stopp eller begrensning av annen behandling, prosedyrer, undersøkelser, prøver, spørreskjemaer og oppfølging som i voksen- og 16–17-årsmalen. Forklar hva som er ordinær behandling og hva som gjøres bare på grunn av studien.]\n\n[Beskriv omtrentlig tidsbruk, antall og type besøk, fysisk oppmøte, telefon- eller videokontakter, innleggelser, skolefravær og praktiske oppgaver for barnet og familien. Oppgi antall prøverør og samlet blodvolum. Forklar hvordan smerte, frykt og ubehag reduseres, og hvem som kan være sammen med barnet.]\n\n[Forklar hvilke behandlingsalternativer barnet får dersom barnet ikke deltar, og hvilken oppfølging barnet får dersom deltakelsen avsluttes.]\n\n[Angi planlagt antall deltakere totalt og antall mindreårige deltakere.]\n\nBarnets deltakelse varer i [antall måneder/år]. Studien er totalt forventet å vare til [dd.mmm.åååå («end of trial»)].\nAlt forskningsrelatert arbeid i studien, inkludert analyser og publisering, forventes avsluttet innen [måned/år].\n\nDere og barnet vil få informasjon så snart vi får ny, viktig kunnskap som kan påvirke om barnet bør fortsette i studien.\n\nStudien eller barnets deltakelse kan avsluttes tidligere av følgende grunner: [sett inn aktuelle grunner].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "MULIGE FORDELER OG ULEMPER FOR BARNET\n\nPå dette tidspunktet er det ikke mulig å si med sikkerhet om deltakelsen vil være en fordel for barnet. Studien kan skaffe nyttig informasjon om legemiddelet og sykdommen som undersøkes.\n\n[Gi den samme fullstendige studiespesifikke informasjonen om mulig nytte, bivirkninger, risiko, smerte, frykt, belastninger, ekstra undersøkelser, ekstra tidsbruk, placebo og ukjente risikoer som i voksen- og 16–17-årsmalen. Beskriv i tillegg barnespesifikke og utviklingsrelaterte usikkerheter. Bruk norske, allment forståelige ord og oppgi hyppighet når pålitelige data finnes.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "FRIVILLIG DELTAKELSE OG MULIGHET FOR Å TREKKE SAMTYKKET\n\nDet er frivillig å samtykke til at barnet deltar. Dere kan når som helst trekke samtykket uten å oppgi noen grunn og uten at det får konsekvenser for barnets videre behandling. Barnet kan også når som helst si nei eller vise at hen ikke ønsker å fortsette, og dette skal respekteres.\n\nHvis samtykket trekkes, vil vi ikke samle inn flere opplysninger eller ta flere prøver fra barnet. Prøver som allerede er innsamlet og ennå ikke analysert, vil bli destruert / ikke bli brukt videre i studien, men lagres under studietiden for kontrollformål, med mindre dere krever at ubrukte prøver destrueres. Opplysninger som allerede er registrert, blir ikke slettet og kan brukes i det videre forskningsarbeidet i denne studien.\n\nHvis dere eller barnet ønsker å avslutte deltakelsen eller har spørsmål, kan dere kontakte forskeren/legen som har ansvar for studien, se KONTAKTOPPLYSNINGER.\n\nDersom barnet fyller 16 år mens studien pågår, vil barnet få fullstendig informasjon og bli bedt om å samtykke selv i et separat samtykkeskriv før videre deltakelse.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "HVILKE OPPLYSNINGER SAMLES INN OM BARNET OG HVA SKJER MED DISSE OPPLYSNINGENE?\n\nVi vil bare samle inn opplysninger som er nødvendige for studien.\n\nHVILKE OPPLYSNINGER BRUKER VI?\n[Beskriv de samme studiespesifikke opplysningskategoriene som i voksen- og 16–17-årsmalen. Dersom opplysninger om genetisk opphav eller etnisitet innhentes, forklar hvorfor og hvordan.]\n\nHVOR KOMMER OPPLYSNINGENE FRA?\n[Beskriv konkrete undersøkelser, journaler, registre, fastlege eller andre behandlingssteder, hvilke opplysninger som innhentes, hvilken tidsperiode som omfattes og hvorfor dette er nødvendig. Fjern kilder som ikke brukes.]\n\n[Dersom spørreskjemaer eller PROMs brukes, opplys om svarene overvåkes fortløpende eller om barnet eller foreldrene selv må kontakte studiepersonalet ved forhold det haster å melde.]\n\nHVORDAN BRUKES OG LAGRES OPPLYSNINGENE?\nOpplysningene skal bare brukes til formålet med studien. Endret bruk eller vesentlig forlenget varighet kan bare skje etter godkjenning fra REK KULMU.\nOpplysningene lagres frem til [konkret år, minst 25 år etter End of Trial] slik at opplysningene kan kontrolleres. De kan ikke selges eller brukes til andre formål.\nAlle opplysningene vil bli avidentifisert. Det betyr at vi bruker en kode for å knytte opplysningene til barnet. Navnelisten som kobler koden til barnet, oppbevares på [sted] og er bare tilgjengelig for ansvarlig studiepersonell.\n\nHVEM KAN FÅ TILGANG?\n[Ved overføring: Oppgi land eller «innenfor EU/EØS», formålet og mottakerne.] Sponsor og studiesenteret er ansvarlige for at opplysningene håndteres i samsvar med norsk rett og GDPR. Dere får separat personverninformasjon.\nKoden som knytter barnet til personopplysningene, vil ikke bli utlevert.\nResultatene publiseres slik at det er svært lite sannsynlig at barnet kan gjenkjennes. [Tilpass dersom det foreligger en reell gjenkjenningsrisiko.]\n[Angi dersom det er aktuelt å anonymisere data for eventuell videre bruk, med presisering om at disse dataene er fullt ut anonyme, og at det ikke vil være mulig å identifisere deltakerne. Det er sponsors ansvar å påse at dataene er reelt anonyme, jf. Datatilsynets veileder om anonymiseringsteknikker. Det er ikke nødvendig med eget samtykkeskriv til forskning på anonymiserte data, men deltakere må informeres om dette.]\nRepresentanter fra sponsor, Direktoratet for medisinske produkter og kontrollmyndigheter kan få innsyn i relevante deler av barnets journal og studieopplysninger for kontroll. Alle har taushetsplikt.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "HVILKE PRØVER BLIR TATT AV BARNET OG HVA SKJER MED PRØVENE? [TAS KUN MED HVIS AKTUELT]\n\nSom del av studien vil det bli tatt [beskriv prøvetype, mengde, antall prøverør, samlet volum, hyppighet, formål og hvordan smerte og ubehag begrenses]. Vi vil bare ta prøver som er nødvendige for hovedstudien.\n\nPrøvene skal bare brukes til formålet med studien. De kan ikke selges eller brukes til andre formål.\n\n[Ved overføring: Oppgi land for analyse og eventuell lagring, hvor lenge prøvene skal lagres der, om materialet skal destrueres eller returneres etter den forskningsaktive perioden, samt antatt dato/år for destruksjon av prøvene og eventuelt restmateriale.]\n\nPrøvene kan analyseres frem til [dato] og destrueres deretter.\n\n[Hvis materialet lagres i en studiespesifikk forskningsbiobank: Oppgi biobankens navn, institusjon og lokalisering, ansvarshavende [navn eller rolle], lagringsperiode og hva som skjer med prøvene ved lagringsperiodens slutt.]\n\n[Hvis prøver mellomlagres i Norge i mer enn to måneder før utsending, oppgi institusjon og mellomlagringstid.]\n\n[Dersom prøvene skal anonymiseres og forskes videre på, må det kort forklares hvordan prøvene skal anonymiseres og hvordan de skal brukes videre. Det er ikke nødvendig med eget samtykkeskriv til forskning på anonymiserte prøver, men deltaker må informeres om dette.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "GENETISKE UNDERSØKELSER [TAS KUN MED HVIS AKTUELT]\n\n[Forklar det samme studiespesifikke formålet, typen genetisk analyse og hva analysen innebærer som i voksen- og 16–17-årsmalen. Bruk allment forståelig språk.]\n\n[Ved genomsekvensering og planlagt tilbakemelding om tilfeldige funn: Forklar hvilke alvorlige, behandlingsbare eller forebyggbare funn som kan formidles, retten til å avstå fra tilbakemelding, hvordan valget dokumenteres og tilbudet om genetisk veiledning. Tilpass informasjonen også til barnet etter alder og modenhet.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "OPPFØLGINGSPROSJEKT [TAS KUN MED HVIS DET ER AKTUELT]\n[Hvis det er aktuelt med oppfølgingsprosjekt utenfor selve studien, så opplys om at deltaker kan bli kontaktet igjen.]\n\nFREMTIDIG ELLER ANNEN FORSKNING [TAS KUN MED HVIS AKTUELT]\n\nBarnet kan bli spurt separat om fremtidig eller annen forskning. Dette beskrives i et eget informasjonsskriv og krever et eget samtykke. Et nei påvirker ikke barnets deltakelse i hovedstudien.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "GODKJENNINGER\n\nStudien [sett inn EU CT-nummer] er vurdert og godkjent av Etisk komité for klinisk utprøving av legemidler og medisinsk utstyr (REK KULMU) og Direktoratet for medisinske produkter (DMP).",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "KONTAKTOPPLYSNINGER\n\nHar dere eller barnet spørsmål til studien, opplever barnet bivirkninger eller ønsker dere eller barnet å avslutte deltakelsen, kan dere kontakte [samme navn, telefonnummer og e-postadresse til utprøver eller varig kontaktperson som brukes i voksen- og 16–17-årsmalen]. Kontaktpersonen skal kunne kommunisere godt med barn og foreldre.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "FINANSIERING OG REFUSJON AV UTGIFTER\n\nStudien er finansiert av [sett inn navn på sponsor]. [Beskriv sponsors rolle, økonomiske ytelser til institusjonen og eventuelt utprøver, samt mulige interessekonflikter.]\n\nUtgifter som følger av barnets deltakelse utover ordinær behandling, blant annet reiser, prosedyrer og besøk, dekkes av [angi hvem og vilkårene]. Dere får informasjon fra studiepersonalet om hvordan refusjon gjennomføres.\n\n[Dersom honorar, godtgjørelse eller refusjon av dokumentert inntektstap er aktuelt, beskriv dette. Godtgjørelse må ikke være et utilbørlig insentiv.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "ERSTATNING\n\nBarnets deltakelse i studien er omfattet av pasientskadeloven og produktansvarsloven. Dersom barnet blir skadet som følge av deltakelsen, kan barnet ha krav på erstatning. Mer informasjon finnes hos Norsk pasientskadeerstatning (NPE) og Legemiddelansvarsforeningen (LAF). Dere kan også kontakte studiepersonalet.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "INFORMASJON OM UTFALLET AV STUDIEN\n\nDere og barnet har rett til informasjon om resultatene. Et sammendrag tilpasset allmennheten gjøres tilgjengelig i Clinical Trials Information System (CTIS) innen ett år etter studieslutt. [Hvis senere, angi når resultatene forventes.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "SAMTYKKE FRA DEN ELLER DE SOM HAR FORELDREANSVAR\n\nSom den eller de som har foreldreansvar for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ [barnets fulle navn], samtykker jeg/vi til at barnet deltar i studien.\n\nJeg/vi bekrefter at vi har fått full informasjon om studien, at spørsmål er blitt besvart, at vi har hatt tilstrekkelig tid til å ta stilling, at barnets syn er tatt med i avgjørelsen og at vi har mottatt en kopi av informasjonsskrivet.\n\nSted og dato\tSignatur foreldreansvarlig\n\n\tNavn med store bokstaver\n\nSted og dato\tSignatur foreldreansvarlig\n\n\tNavn med store bokstaver\n\n[Redaksjonsnote: Behold begge signaturfelt når to personer har foreldreansvar. Behold ett signaturfelt bare når én person alene har foreldreansvaret. Dokumenter grunnlaget. Fjern denne redaksjonsnoten før dokumentet gis til mottakeren.]\n\nVALGFRITT TILLEGGSSAMTYKKE – [NAVN PÅ PROSEDYRE ELLER ANALYSE]\n\n[Redaksjonsnote: Bruk bare for en reelt valgfri, protokollbestemt prosedyre eller analyse innenfor hovedstudien. Gjenta separat for hvert uavhengig valg. Fjern modulen dersom den ikke er relevant.]\n\nSom den eller de med foreldreansvar samtykker jeg/vi til at barnet deltar i [presis beskrivelse av prosedyren eller analysen, formålet og håndteringen]. Dette er valgfritt. Barnet kan delta i hovedstudien selv om vi ikke samtykker.\n\nSted og dato\tSignatur foreldreansvarlig\n\tNavn med store bokstaver\n\nSted og dato\tSignatur foreldreansvarlig\n\tNavn med store bokstaver\n\n[Hvis det er nødvendig å innhente informasjon om barnets sykdomsstatus fra fastlegen som del av hovedstudien:]\n\nSom den eller de med foreldreansvar samtykker jeg/vi til at barnets fastlege kan kontaktes for informasjon om [presiser relevant sykdomsstatus/opplysninger] til studien.\n\nSted og dato\tSignatur foreldreansvarlig\n\tNavn med store bokstaver\n\nSted og dato\tSignatur foreldreansvarlig\n\tNavn med store bokstaver\n\n[Redaksjonsnote: Behold begge signaturfelt når to personer har foreldreansvar. Behold ett signaturfelt bare når én person alene har foreldreansvaret. Fjern hele modulen dersom opplysninger ikke skal innhentes fra fastlegen.]",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  },
+  {
+   "section_number": 15,
+   "section_content": "BEKREFTELSE PÅ AT INFORMASJON ER GITT\n\nJeg bekrefter å ha gitt den eller de med foreldreansvar informasjon om studien, at barnet har fått informasjon tilpasset alder og modenhet, og at alle har hatt anledning til å stille spørsmål.\n\nSted og dato\tSignatur\n\n\nRolle i studien",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  },
+  {
+   "section_number": 16,
+   "section_content": "BEKREFTELSE PÅ AT SAMTYKKE ER AVGITT\n\nJeg bekrefter at samtykket er avgitt frivillig, at barnets syn er vurdert, og at barnet ikke har uttrykt motstand mot deltakelsen.\n\nSted og dato\tSignatur\n\n\nRolle i studien",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

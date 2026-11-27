@@ -1,0 +1,9 @@
+[
+ {
+  "id": "kv102",
+  "kind": "text",
+  "question": "— EU CT number:",
+  "instruction": "[INSERT: EU trial number; leave empty in an initial application until CTIS assigns it]",
+  "condition": null
+ }
+]

@@ -1,0 +1,82 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Informacja o badaniu klinicznym dla uczestnika małoletniego",
+  "target_country": "Poland",
+  "country_code": "PL",
+  "target_language": "Polish",
+  "language_code": "pl",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - wersja 1.0 - [date]",
+   "Numer protokołu: [wstawić] | Numer badania UE: [wstawić]"
+  ],
+  "info_table": [
+   "Tytuł badania",
+   "Skrócony tytuł badania",
+   "Numer protokołu [dodać wersję i datę]",
+   "Numer badania UE",
+   "Sponsor [z pełnym adresem]",
+   "Główny badacz",
+   "Nazwa ośrodka",
+   "Adres ośrodka",
+   "Numer telefonu lekarza prowadzącego badanie",
+   "Imię i nazwisko dziecka",
+   "Data urodzenia dziecka"
+  ],
+  "content_instructions": "Dokument jest polską, uproszczoną informacją dla dziecka, które ukończyło 6 lat i nie ukończyło 12 lat. Pole doc_pop i angielska nazwa pozostają zgodne ze wspólną taksonomią projektu. Zgodnie z polską praktyką dziecko, które nie ukończyło 13 lat, nie składa oświadczenia woli o świadomej zgodzie na udział w badaniu i nie podpisuje dokumentu zawierającego takie oświadczenie. Dlatego polski dokument nie może zawierać formularza zgody ani formalnego formularza assent, pola podpisu dziecka, pola daty podpisu dziecka ani oświadczenia badacza o uzyskaniu zgody lub assent. Informacja służy wyjaśnieniu badania i poznaniu zdania dziecka. Zgoda przedstawiciela ustawowego jest uzyskiwana w oddzielnym formularzu dla rodziców lub opiekunów. Dziecku należy jasno powiedzieć, że może powiedzieć „nie”, może prosić o przerwę lub zakończenie udziału, a jego sprzeciw lub późniejsza niechęć do dalszego udziału powinny zostać uszanowane i udokumentowane w dokumentacji badania, a nie jako świadoma zgoda dziecka. Zwracaj się bezpośrednio do dziecka. Używaj bardzo krótkich zdań, znanych słów i jednej informacji na zdanie. Wyjaśnij tylko informacje potrzebne dziecku: że jest to badanie, dlaczego jest prowadzone, dlaczego dziecko zostało zaproszone, jaki lek lub leczenie jest badane, co dokładnie będzie się działo, ile będzie wizyt i jak długo potrwa udział, czy może boleć lub powodować złe samopoczucie, czy może pomóc, jakie są inne możliwości leczenia, że udział nie jest obowiązkowy, że dziecko może powiedzieć o bólu, strachu lub chęci przerwania oraz komu może zadawać pytania. Randomizację, placebo i zaślepienie dodawaj tylko wtedy, gdy dotyczą badania, i wyjaśniaj je jednym lub dwoma prostymi zdaniami. Informacje o danych i próbkach ogranicz do krótkiego wyjaśnienia, że informacje będą chronione, a nazwisko zwykle zastąpi kod. Jeżeli próbki lub badania genetyczne są częścią głównego badania, wyjaśnij je w najwyżej kilku prostych zdaniach i wskaż, że pełne informacje oraz decyzje prawne otrzymują rodzice lub opiekunowie. Nie dodawaj przyszłego lub wtórnego wykorzystania danych i próbek; należy ono do oddzielnego formularza. Nie zamieszczaj pełnej klauzuli RODO, szczegółów prawnych, podstaw prawnych, transferów danych, ubezpieczenia ani Funduszu Kompensacyjnego w języku dla dorosłych. Wystarczy krótkie wyjaśnienie, że rodzice lub opiekunowie otrzymali pełne informacje o ochronie danych, kosztach, ubezpieczeniu i pomocy w razie szkody. Jeżeli dziecko ukończy 13 lat podczas badania, należy zastosować oddzielny, aktualny dokument dla uczestnika małoletniego w wieku od 13 do 18 lat i uzyskać jego pisemną świadomą zgodę; nie dodawaj tego procesu jako modułu ani podpisu w niniejszym dokumencie. Wszystkie warianty i przykłady należy dostosować do badania i usunąć, jeżeli nie mają zastosowania.",
+  "styling_instructions": "Stosuj bardzo duże, czytelne nagłówki pytaniowe, krótkie akapity i dużo wolnego miejsca. Każde zdanie powinno przekazywać jedną prostą myśl. Unikaj terminów prawnych, skrótów i słów takich jak „pseudonimizacja”, „administrator danych”, „interwencja”, „zdarzenie niepożądane” lub „randomizacja” bez prostego wyjaśnienia. W razie potrzeby użyj obrazków, symboli, osi czasu, prostego planu wizyt, rysunku sprzętu albo prawdziwej probówki pokazującej ilość pobieranej krwi. Stosuj krótkie listy zamiast rozbudowanych tabel. Instrukcje redakcyjne zapisuj kursywą, a przykładowe brzmienie oznaczaj słowem „Przykład”. Dodawaj proste pytania sprawdzające zrozumienie. Nie stosuj sekcji podpisowej ani checkboxów wyrażających zgodę dziecka."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "\n<b>Co to jest za badanie?</b>\n\n<i>Przedstaw się dziecku. Powiedz jednym lub dwoma zdaniami, że jest to badanie naukowe. Wyjaśnij, dlaczego badanie jest prowadzone i dlaczego zaproszono właśnie to dziecko. Nie używaj długiego opisu organów ani przepisów.</i>\n\n<i><u>Przykład:</u></i> Mam na imię [imię]. Jestem [lekarzem/pielęgniarką/osobą z zespołu badania].\n\nProwadzimy badanie. Chcemy sprawdzić, czy [lek lub leczenie] może pomóc dzieciom z [choroba lub problem zdrowotny].\n\nZapraszamy Cię, bo masz [prosty powód zaproszenia]. W badaniu weźmie udział około [liczba] dzieci.\n\nMożesz pytać o wszystko. Gdy czegoś nie rozumiesz, powiedz nam. Możesz też porozmawiać z rodzicami lub opiekunem.\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "\n<b>Czy muszę brać udział?</b>\n\n<i>Powiedz jasno, że dokument nie jest formularzem zgody dziecka. Wyjaśnij, że rodzice lub opiekunowie otrzymują osobny formularz, ale zdanie dziecka jest ważne. Nie proś dziecka o podpis ani formalne oświadczenie assent.</i>\n\n<i><u>Przykład:</u></i> Nie musisz brać udziału, jeśli nie chcesz.\n\nTwoi rodzice lub opiekunowie dostaną osobny dokument. To oni podpisują zgodę.\n\nTy nie podpisujesz tego dokumentu. Chcemy jednak wiedzieć, co myślisz.\n\nMożesz powiedzieć „nie”. Możesz też później powiedzieć, że chcesz przestać. Powiedz o tym rodzicom, lekarzowi, pielęgniarce albo innej zaufanej osobie.\n\nNikt nie będzie na Ciebie zły. Nadal będziesz mieć zwykłą opiekę i leczenie.\n\n<b>Proste pytania sprawdzające:</b>\n· Czy musisz brać udział?\n· Komu możesz powiedzieć, że nie chcesz?\n· Co możesz zrobić, gdy czegoś nie rozumiesz?\n",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "\n<b>Jaki lek albo leczenie będziemy badać?</b>\n\n<i>Opisz nazwę, postać i sposób podawania produktu badanego. Podaj tylko najważniejsze informacje. Randomizację, placebo i zaślepienie dodaj wyłącznie wtedy, gdy dotyczą badania.</i>\n\n<i><u>Przykład:</u></i> Lek nazywa się [nazwa]. Będziesz go dostawać jako [tabletka/syrop/zastrzyk/kroplówka/inne].\n\nLek będziesz dostawać [jak często i jak długo].\n\nNie wiemy jeszcze wszystkiego o tym leku. Dlatego prowadzimy badanie.\n\n[Jeżeli dotyczy:] Komputer wybierze, który lek dostaniesz. To jest losowanie. Nikt nie wybiera grupy sam.\n\n[Jeżeli dotyczy:] Możesz dostać placebo. Placebo wygląda jak lek, ale nie ma w nim badanego składnika.\n\n[Jeżeli dotyczy:] Przez pewien czas Ty i lekarz możecie nie wiedzieć, który lek dostajesz. Gdy będzie to potrzebne dla Twojego bezpieczeństwa, lekarz może to sprawdzić.\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "\n<b>Co będzie się ze mną działo?</b>\n\n<i>Opisz wszystkie najważniejsze procedury w kolejności. Podaj liczbę wizyt, pobrań krwi, zastrzyków, badań i pobytów. Pokaż dziecku sprzęt albo ilość krwi, jeżeli to pomoże. Nie mieszaj rutynowego leczenia z dodatkowymi badaniami wykonywanymi tylko na potrzeby badania.</i>\n\n<i><u>Przykład:</u></i> Najpierw przyjdziesz z rodzicem lub opiekunem na wizytę. Sprawdzimy, czy możesz brać udział.\n\nJeśli weźmiesz udział:\n1. Przyjdziesz do ośrodka [liczba] razy.\n2. Każda wizyta potrwa około [czas].\n3. Będziemy [krótka lista najważniejszych badań].\n4. Pobierzemy krew [liczba] razy. Za każdym razem będzie to około [ilość; pokaż probówkę lub obrazek].\n5. Dostaniesz [lek lub leczenie] [liczba i sposób podania].\n6. Cały udział potrwa około [czas].\n\n<i>Dodaj prosty obrazek lub plan wizyt, jeśli ułatwi to zrozumienie.</i>\n\nPodczas badania powiedz dorosłemu, gdy:\n· coś Cię boli;\n· czujesz się źle;\n· boisz się;\n· nie chcesz czegoś zrobić;\n· chcesz zrobić przerwę.\n",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 5,
+   "section_content": "\n<b>Czy coś może boleć albo sprawić, że źle się poczuję?</b>\n\n<i>Opisz tylko najważniejsze i najbardziej prawdopodobne ryzyka oraz poważne ryzyka, które dziecko powinno znać. Używaj prostych słów. Nie zapewniaj, że nic złego się nie stanie. Nie używaj rozbudowanej tabeli częstości, chyba że jest naprawdę potrzebna i można ją przedstawić obrazkowo.</i>\n\n<i><u>Przykład:</u></i> Nie wiemy jeszcze wszystkiego o badanym leku.\n\nMożesz czuć [najczęstsze objawy, np. ból głowy, ból brzucha, zmęczenie].\n\n[Procedura] może trochę boleć. Ból zwykle trwa [czas]. Może też powstać siniak albo obrzęk.\n\nMoże wydarzyć się coś, czego jeszcze nie znamy. Będziemy sprawdzać, jak się czujesz.\n\nOd razu powiedz rodzicowi, opiekunowi, lekarzowi lub pielęgniarce, gdy czujesz się źle albo coś Cię martwi. Nie musisz czekać do następnej wizyty.\n\n<i>Jeżeli badanie wymaga informacji związanych z dojrzewaniem, testów ciążowych lub ochrony przed ciążą u starszych dzieci, wyjaśnij je indywidualnie, spokojnie i odpowiednio do wieku. Pełne informacje i decyzje prawne pozostają w formularzu rodzica lub opiekuna.</i>\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "\n<b>Czy badanie może mi pomóc?</b>\n\n<i>Powiedz uczciwie, czy dziecko może odnieść bezpośrednią korzyść. Nie obiecuj poprawy. Wyjaśnij bardzo krótko, co stanie się, jeśli dziecko nie weźmie udziału.</i>\n\n<i><u>Przykład:</u></i> Lek może Ci pomóc, ale nie wiemy, czy tak będzie.\n\nMoże też nie pomóc.\n\nTo, czego dowiemy się w badaniu, może pomóc innym dzieciom w przyszłości.\n\nJeśli nie weźmiesz udziału, nadal będziesz mieć zwykłą opiekę. Lekarz i Twoi rodzice lub opiekunowie porozmawiają o innych możliwościach leczenia: [krótko wymienić, jeśli dziecko powinno je znać].\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "\n<b>Co stanie się z informacjami o mnie i z moimi próbkami?</b>\n\n<i>Podaj tylko proste informacje potrzebne dziecku. Szczegółowa klauzula dotycząca danych, podstaw prawnych, odbiorców, transferów i okresów przechowywania należy do formularza rodziców lub opiekunów. Opcjonalne przyszłe wykorzystanie danych lub próbek należy wyłączyć z tego dokumentu.</i>\n\n<i><u>Przykład:</u></i> Zapiszemy informacje o Twoim zdrowiu i o tym, co dzieje się w badaniu.\n\nBędziemy je chronić. W wielu dokumentach zamiast Twojego imienia będzie numer albo kod.\n\nInformacje mogą zobaczyć osoby, które prowadzą albo sprawdzają badanie. Nie będą mówić innym osobom, że chodzi o Ciebie.\n\nTwoi rodzice lub opiekunowie dostali dokładne informacje o ochronie danych.\n\n[Jeżeli próbki są częścią głównego badania:] Pobierzemy [krew/inny materiał], aby sprawdzić [prosty cel]. Próbka będzie oznaczona kodem. Będzie przechowywana przez [czas] i potem [zniszczona/inne postępowanie].\n\n[Jeżeli badanie genetyczne jest częścią głównego badania:] Możemy też sprawdzić małe części materiału w Twoich komórkach, które nazywają się genami. Geny pomagają organizmowi rosnąć i działać. Dokładne informacje otrzymali Twoi rodzice lub opiekunowie.\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "\n<b>Co się stanie, gdy będę chciał/a przestać albo coś mi się stanie?</b>\n\n<i>Połącz prawo dziecka do wyrażenia sprzeciwu, bezpieczne zakończenie udziału, pomoc medyczną i krótką informację o ochronie przewidzianej dla uczestników. Nie przedstawiaj dziecku szczegółów prawnych dotyczących ubezpieczenia lub Funduszu Kompensacyjnego.</i>\n\n<i><u>Przykład:</u></i> Możesz powiedzieć, że chcesz przestać.\n\nPowiedz o tym rodzicom, opiekunowi, lekarzowi albo pielęgniarce. Lekarz wyjaśni, co trzeba zrobić, aby bezpiecznie zakończyć udział.\n\nJeśli zachorujesz albo coś Ci się stanie, lekarze Ci pomogą.\n\nTwoi rodzice lub opiekunowie dostali dokładne informacje o kosztach, ubezpieczeniu i pomocy, gdyby udział w badaniu spowodował szkodę.\n\nGdy badanie się skończy, powiemy Tobie i Twoim rodzicom lub opiekunom, co będzie dalej. [Jeżeli dotyczy:] Powiemy też w prosty sposób, czego dowiedzieliśmy się w badaniu.\n",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "\n<b>Kogo mogę zapytać?</b>\n\n<i>Podaj krótkie, łatwe do znalezienia kontakty. Dziecko powinno wiedzieć, z kim może rozmawiać podczas wizyty i poza nią. Pełne kontakty prawne i administracyjne pozostają w formularzu rodziców lub opiekunów.</i>\n\nMożesz porozmawiać z:\n· rodzicem lub opiekunem;\n· lekarzem prowadzącym badanie: [imię i nazwisko];\n· pielęgniarką lub inną osobą z zespołu: [imię i nazwisko];\n· inną zaufaną osobą.\n\nNumer telefonu do zespołu badania: [wstawić].\n\nGdy czegoś nie rozumiesz, poproś, abyśmy wyjaśnili to jeszcze raz.\n\nGdy coś Cię boli, boisz się albo nie chcesz dalej brać udziału, powiedz o tym od razu.\n",
+   "section_style": "H3 module title, Rich body text"
+  }
+ ]
+}

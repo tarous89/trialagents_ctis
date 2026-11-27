@@ -1,0 +1,114 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Consent Form - Healthy Adults",
+  "doc_name_local": "Forespørsel om deltakelse i en legemiddelstudie for friske voksne",
+  "target_country": "Norway",
+  "country_code": "NO",
+  "target_language": "Norwegian",
+  "language_code": "no",
+  "doc_type": "healthy_adults",
+  "file_name": "L1_SIS and ICF_healthy",
+  "sort_order": "1",
+  "description": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versjon 1.0 - [date]",
+   "Protokollnummer: [fyll inn] | EU CT-nummer: [fyll inn]"
+  ],
+  "info_table": [
+   "Studietittel",
+   "Forkortet studietittel",
+   "Protokollnummer [legg til versjon og dato]",
+   "EU CT-nummer",
+   "Sponsor [med fullstendig adresse]",
+   "Hovedutprøver",
+   "Navn på studiesenter",
+   "Adresse til studiesenter"
+  ],
+  "content_instructions": "Bruk denne malen kun for friske voksne som selv kan samtykke. Bevar den norske hovedmalens struktur, nøytrale språk og nasjonale formuleringer. Erstatt pasient-, sykdoms-, behandling- og standardbehandlingsspråk med deltaker, frisk frivillig og studielegemiddel/studieintervensjon. Forklar hvorfor friske voksne inkluderes og oppgi studiespesifikke mål som sikkerhet, tolerabilitet, farmakokinetikk eller farmakodynamikk. Opplys tydelig at ingen direkte helsemessig fordel forventes; betaling, screening og prøvesvar er ikke helsemessige fordeler. Beskriv screening, første-gang-i-mennesker, doseeskalering, placebo/randomisering, opphold, alle prosedyrer og prøvevolumer, restriksjoner, kjente og ukjente risikoer, reproduksjonsrisiko, refusjon og eventuell godtgjørelse. Beskriv forholdsmessig betaling ved tidlig avslutning når relevant. Ta bare med journaltilgang, kontakt med fastlege, data og prøver som faktisk er nødvendige. Når sponsor planlegger fremtidig eller annen forskning utover hovedstudiens formål med kodede eller på annen måte identifiserbare opplysninger eller prøver, skal dette beskrives i et eget informasjonsskriv og samtykkes til separat; bruk Template 14. Dersom data eller prøver skal anonymiseres fullt ut før videre forskning, skal det kort forklares hvordan de anonymiseres og hvordan de skal brukes videre. Det er ikke nødvendig med eget samtykkeskriv eller eget signaturfelt for forskning på reelt anonymiserte data eller prøver, men deltakeren må informeres om dette. Ikke oppgi behandlingsgrunnlag eller rettigheter etter GDPR i dette samtykket; separat personverninformasjon skal gis. Bruk aktive, daterte signaturfelt og ikke avkrysningsbokser for hovedsamtykket. Oppgi tre separate og realistiske tidspunkter i sluttversjonen: dato for End of Trial, dato eller år for når all forskningsrelatert aktivitet i studien, inkludert analyser og publisering, forventes avsluttet, og et konkret år for når lagringsperioden for opplysningene avsluttes. Tidspunktene skal være konsistente med protokollen og øvrig studiedokumentasjon. I sluttversjonen skal datadelen organiseres i korte underavsnitt med følgende overskrifter når de er relevante: «Hvilke opplysninger bruker vi?», «Hvor kommer opplysningene fra?», «Hvem kan få tilgang?» og «Hvor og hvor lenge lagres opplysningene?». Ikke gjenta detaljert GDPR-informasjon som gis i det separate personvernskrivet. Når studien omfatter mange besøk eller prosedyrer, skal studieforløpet presenteres i en kort tabell eller oversikt med «Tidspunkt», «Hva skjer», «Omtrentlig tidsbruk» og «Hva er ekstra på grunn av studien». Tabellen erstatter gjentakende prosedyretekst, men skal ikke utelate vesentlige prosedyrer, belastninger eller risikoer. [Hvis materialet lagres i en studiespesifikk forskningsbiobank: Oppgi biobankens navn, institusjon og lokalisering, ansvarshavende for biobanken [navn eller rolle], lagringsperiode, analyse- og lagringsland og hva som skjer med materialet ved lagringsperiodens slutt, inkludert forventet dato/år for destruksjon eller retur.] Bruk denne modulen bare for en reelt valgfri, protokollbestemt prosedyre eller analyse innenfor hovedstudien som kan avslås uten å hindre hoveddeltakelsen.  Hvis det er aktuelt med oppfølgingsprosjekt utenfor selve studien, så opplys om at deltaker kan bli kontaktet igjen. Angi dersom det er planlagt å overføre data til annen studie, for eksempel oppfølgingsstudie, og hvilke opplysninger dette gjelder.",
+  "styling_instructions": "Bruk god lesbarhet og skrifttype uten seriffer. Behold tydelige norske moduloverskrifter. Bruk tabell eller vedlegg bare når det forenkler studieplan eller lange risikolister. Fjern markert instruksjonstekst, alternativer og hakeparenteser som ikke gjelder før utlevering."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Dette er en invitasjon til å være med i en forskningsstudie hvor vi skal prøve ut legemiddelet [Sett inn navnet på legemiddelet, eventuelt generisk navn].\n\nDu blir spurt fordi du er en frisk voksen og kan oppfylle kriteriene for studien. Før du kan delta, vil vi undersøke om studien er forsvarlig for deg.\n\nFormålet med studien er [Sett inn informasjon om hovedformål og delformål, for eksempel sikkerhet, tolerabilitet, hvordan legemiddelet tas opp, fordeles og brytes ned i kroppen, eller hvilken virkning det har på kroppen. Forklar hvorfor friske voksne må inkluderes. Opplys dersom dette er første gang legemiddelet gis til mennesker, dersom dosen økes mellom grupper, eller hvor mye erfaring som finnes fra tidligere studier.]\n\n[Beskriv hvordan institusjonen har identifisert den forespurte og hvem som er ansvarlig. Informasjonen skal være kortfattet, nøytral og allment forståelig.]",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "HVA INNEBÆRER DET FOR DEG Å DELTA?\n\n[Beskriv screening, tilfeldig fordeling, placebo, blinding, doser, doseeskalering, antall deltakere, studiebesøk, eventuelle innleggelser, prøver, undersøkelser, spørreskjemaer og oppfølging. Oppgi omtrentlig tidsbruk, antall prøverør og samlet blodvolum. Forklar hvilke aktiviteter som skjer fysisk, på telefon, digitalt eller hjemme.]\n\n[Beskriv hvilke begrensninger som gjelder for legemidler, naturpreparater, kosttilskudd, alkohol, mat, røyking, fysisk aktivitet, bilkjøring, prevensjon, amming, sæd- eller eggdonasjon og deltakelse i andre studier. Ta bare med begrensninger som er nødvendige og forklar hvorfor og hvor lenge de gjelder.]\n\nDin deltakelse varer i [antall uker/måneder]. Studien er totalt forventet å vare til [dd.mmm.åååå («end of trial»)].\n\n\nAlt forskningsrelatert arbeid i studien, inkludert analyser og publisering, forventes avsluttet innen [måned/år].\nDu vil få informasjon så snart vi får ny, viktig kunnskap som kan påvirke om du vil fortsette i studien.\n\nStudien eller din deltakelse kan avsluttes tidligere av følgende grunner: [Sett inn aktuelle grunner og eventuell sikkerhetsoppfølging etter siste dose eller tidlig avslutning.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "MULIGE FORDELER OG ULEMPER\n\nDu forventes ikke å få noen direkte helsemessig fordel av å delta. Studielegemiddelet gis ikke som behandling. Screening, ekstra helsekontroller, prøvesvar, refusjon eller godtgjørelse er ikke helsemessige fordeler.\n\nStudien kan gi nyttig kunnskap om legemiddelets sikkerhet, tolerabilitet og virkning, men det er ikke sikkert at kunnskapen fører til en ny eller bedre behandling.\n\n[Beskriv kjente og rimelig forutsigbare bivirkninger og risikoer, ukjente risikoer, doseavhengige risikoer, risiko ved første bruk hos mennesker, risiko ved placebo eller sammenligningsbehandling, risiko ved prøver og undersøkelser, reproduksjonsrisiko og praktiske belastninger. Oppgi hvor ofte bivirkninger forekommer når pålitelige data finnes. Bruk norske, allment forståelige ord og fremhev sjeldne, alvorlige risikoer.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "FRIVILLIG DELTAKELSE OG MULIGHET FOR Å TREKKE DITT SAMTYKKE\n\nDet er frivillig å delta i studien. Hvis du ønsker å delta, undertegner du samtykkeerklæringen på siste side. Du kan når som helst trekke deg uten å oppgi noen grunn og uten at det får konsekvenser for din tilgang til ordinære helsetjenester eller dine øvrige rettigheter.\n\nHvis du trekker samtykket, vil vi ikke gjennomføre nye studieaktiviteter eller samle inn nye opplysninger og prøver, bortsett fra [beskriv eventuell medisinsk nødvendig eller frivillig protokollbestemt sikkerhetsoppfølging]. Opplysninger som allerede er registrert, blir ikke slettet og kan brukes videre i denne studien. [Beskriv studiespesifikt hva som skjer med uanalyserte og resterende prøver.]\n\nHvis du ønsker å trekke deg eller har spørsmål, kan du kontakte personen som har ansvar for studien ved studiesenteret, se KONTAKTOPPLYSNINGER. Dersom du avslutter uten å gi beskjed, kan studiepersonalet forsøke å kontakte deg på telefon, via brev eller, bare dersom det er nødvendig og beskrevet, gjennom fastlegen din.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "HVILKE OPPLYSNINGER SAMLES INN OM DEG OG HVA SKJER MED DISSE OPPLYSNINGENE?\nVi vil kun samle inn opplysninger som er nødvendige for studien. I denne studien vil vi samle inn følgende informasjon: [Forklar på en overordnet måte hvilke typer opplysninger som vil registreres. Dersom det skal innhentes opplysninger om rase/genetisk opphav og/eller etnisitet, må det forklares hvorfor og hvordan denne informasjonen skal innhentes (f.eks. egenrapportering).] [Dersom studien faktisk bruker journalopplysninger eller kobling til registre, beskriv konkret hvilke kilder som brukes, hvilke opplysninger som innhentes, hvilken tidsperiode som omfattes og hvorfor dette er nødvendig. Fjern hele avsnittet dersom journaler eller registre ikke brukes.]\n[Dersom det skal benyttes spørreskjema/PROMs i studien, bør deltaker informeres om hvorvidt svarene som avgis her monitoreres fortløpende eller om deltaker må ta kontakt med studiepersonalet om det skulle oppstå hendelser/tilstander det haster å melde fra om.]\nOpplysningene skal kun brukes til formålet med studien, slik formålet er beskrevet i dette informasjonsskrivet. Endret bruk eller vesentlig forlenget varighet av studien kan kun skje etter godkjenning fra REK KULMU.\nOpplysningene lagres frem til [dato/årstall; et konkret år må oppgis, det kan ikke være kortere enn 25 år fra datoen for End of Trial], i tilfelle det er behov for å kontrollere opplysningene som er samlet inn. De kan ikke selges eller brukes til andre formål.\nAlle opplysningene vil bli avidentifisert. Det betyr at vi bruker en kode for å knytte opplysningene til deg. Navnelisten som kobler denne koden til deg oppbevares på studiesenteret/sykehuset [Revider stedet for oppbevaring til det som er aktuelt for studien] og bare ansvarlig studiepersonell har tilgang til denne listen. [Eventuelle avvik fra dette må redegjøres for i teksten. Dersom opplysningene skal oppbevares et annet sted enn i egen institusjon, må dette redegjøres for.]\n[Hvis det er aktuelt å overføre data til andre land:] I denne studien vil opplysningene om deg bli overført til [Angi hvilke land, hvis innenfor EU/EØS er det tilstrekkelig å oppgi “innenfor EU/EØS”] for analyse eller lagring. Sponsor og studiesenteret/sykehuset [Revider stedet for oppbevaring til det som er aktuelt for studien] er ansvarlig for personvernet i studien og for at utleveringen og overføringen av opplysninger skjer i samsvar med norsk rett og EU sin personvernlovgivning (GDPR). Du vil få mer informasjon om dette. [Det skal ikke oppgis behandlingsgrunnlag etter GDPR i dette samtykket eller ytterligere informasjon om personvern, da dette er et samtykke til deltakelse i en klinisk studie og ikke til databehandling etter GDPR.]\nKoden som knytter deg til dine personopplysninger vil ikke bli utlevert.\nPublisering av resultater er en nødvendig del av forskningen. Resultatene publiseres på en måte som gjør det svært lite sannsynlig at du vil kunne bli gjenkjent. [Vurder om studiens størrelse eller planlagte publiseringsform medfører en reell risiko for gjenkjenning, for eksempel ved svært få deltakere eller publisering av enkelttilfeller.]\n[Angi dersom det er aktuelt å anonymisere data for eventuell videre bruk, med presisering om at disse dataene er fullt ut anonyme, og at det ikke vil være mulig å identifisere deltakerne. Det er sponsors ansvar å påse at dataene er reelt anonyme, jf. Datatilsynets veileder om anonymiseringsteknikker. Det er ikke nødvendig med eget samtykkeskriv til forskning på anonymiserte data, men deltakere må informeres om dette.]\nRepresentanter fra sponsor, Direktoratet for medisinske produkter og kontrollmyndigheter i inn- og utland kan få innsyn i relevante deler av journal og få utlevert studieopplysninger. Dette er for å kontrollere at innsamlingen av data er korrekt. Alle som får innsyn i informasjon om deg har taushetsplikt.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "HVILKE PRØVER BLIR TATT AV DEG OG HVA SKJER MED DISSE PRØVENE? [Tas <u>kun</u> med hvis det er aktuelt]\nSom en del av denne studien, vil det bli tatt prøver av deg. Vi vil kun ta prøver som er nødvendige for studien. [Forklar hvilke prøver som tas, hva de skal analyseres for, og om/hvor de skal lagres. Informer om hvor ofte det skal tas blodprøver.]\nPrøvene skal kun brukes til formålet med studien, slik formålet er beskrevet i dette informasjonsskrivet. De kan ikke selges videre eller brukes til andre formål.\n[Hvis det er aktuelt å overføre biologisk materiale til andre land: Som en del av studien vil prøver fra deg bli overført til [angi i hvilke land analyser vil bli gjort og i hvilke land eventuelt restmateriale vil bli lagret som en del av studien]. Oppgi hvor lenge prøvene skal lagres der, om materialet skal destrueres eller returneres etter at studiens forskningsaktive periode er avsluttet, samt antatt dato/år for destruksjon av prøvene og eventuelt restmateriale.]\nPrøvene kan analyseres frem til [dato], etter dette vil prøvene destrueres.\n[Hvis materialet lagres i en studiespesifikk forskningsbiobank: Oppgi biobankens navn, institusjon og lokalisering, ansvarshavende for biobanken [navn eller rolle], lagringsperiode, analyse- og lagringsland og hva som skjer med materialet ved lagringsperiodens slutt, inkludert forventet dato/år for destruksjon eller retur. Dersom prøver mellomlagres i Norge i mer enn to måneder før utsending, oppgi institusjon og mellomlagringstid.]\n\n[Dersom prøvene skal anonymiseres og forskes videre på, må det kort forklares hvordan prøvene skal anonymiseres og hvordan de skal brukes videre. Det er ikke nødvendig med eget samtykkeskriv til forskning på anonymiserte prøver, men deltaker må informeres om dette.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "GENETISKE UNDERSØKELSER [tas <u>kun</u> med hvis det er aktuelt]\nFormålet med genetisk forskning må fremkomme klart (f.eks. å undersøke hvilke gener som kan påvirke effekten og sikkerheten av legemiddelet).\n[Forklar på en allment forståelig måte hvilken type genetisk analyse (analyse av ett eller noen få gener vs. mer omfattende kartlegging av genomet) som skal utføres som en del av studien og kort hva dette innebærer.]\n[Dersom man skal gjøre genomsekvensering, og sponsor ønsker å gi tilbakemelding til deltakeren om eventuelle tilfeldige funn, må deltaker informeres om det. Deltaker må også informeres om retten til å frasi seg slik tilbakemelding. Dersom deltaker reserverer seg mot å få slik tilbakemelding, må det dokumenteres i f.eks. journal. Det skal kun gis tilbakemelding om funn av genvarianter som tilsier at deltakeren har høy risiko for alvorlig sykdom og at sykdommen kan behandles eller forebygges. Tilbakemelding om slike funn fordrer også at deltaker får henvisning til genetisk veiledning.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "OPPFØLGINGSPROSJEKT [TAS KUN MED HVIS DET ER AKTUELT]\n[Hvis det er aktuelt med oppfølgingsprosjekt utenfor selve studien, så opplys om at deltaker kan bli kontaktet igjen.]\n\nFREMTIDIG ELLER ANNEN FORSKNING [TAS KUN MED HVIS AKTUELT]\nDu kan bli spurt separat om fremtidig eller annen forskning. Dette beskrives i et eget informasjonsskriv og krever et eget samtykke. Et nei påvirker ikke deltakelsen i hovedstudien.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "GODKJENNINGER\nStudien [sett inn EU CT-nummer] er vurdert og godkjent av Etisk komité for klinisk utprøving av legemidler og medisinsk utstyr (REK KULMU) og Direktoratet for medisinske produkter (DMP).",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "KONTAKTOPPLYSNINGER\nHar du spørsmål til studien, opplever bivirkninger eller ønsker å trekke deg fra deltakelse, kan du kontakte [Sett inn navn, telefonnummer og e-postadresse til utprøver eller eventuelt annen varig kontaktperson].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "FINANSIERING OG REFUSJON AV UTGIFTER\n\nStudien er finansiert av [sett inn navn på sponsor]. [Dersom studien får økonomisk støtte, informer om sponsors rolle, økonomiske ytelser til institusjonen og eventuelt utprøver, samt mulige interessekonflikter.]\n\nUtgifter som følger av deltakelsen, blant annet reiser, prosedyrer og besøk, dekkes av [angi hvem og vilkårene]. Du vil få informasjon fra studiepersonalet om hvordan refusjon gjennomføres.\n\n[Dersom deltakerne får honorar eller annen godtgjørelse, beskriv beløp, beregningsmåte, utbetalingstidspunkt, eventuell skatteplikt og hvilken forholdsmessig betaling som gis dersom deltakelsen avsluttes tidlig.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "ERSTATNING\nDeltakelse i studien er omfattet av pasientskadeloven og produktansvarsloven. Dersom du blir skadet som følge av å delta i studien, kan du ha krav på erstatning. Du kan finne mer informasjon om erstatningsordningene hos Norsk pasientskadeerstatning (NPE) og Legemiddelansvarsforeningen (LAF). Du kan også ta kontakt med studiepersonalet dersom du har spørsmål.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "INFORMASJON OM UTFALLET AV STUDIEN\nDu har rett til å få informasjon om resultatene av studien. Et sammendrag av studieresultatene tilpasset allmennheten gjøres tilgjengelig via EU-portalen Clinical Trials Information System (CTIS) innen ett år etter studieslutt. [Dersom sammendraget ikke vil være tilgjengelig innen ett år, sett inn når det er forventet at resultatene vil være klare.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "SAMTYKKE\n\nJeg samtykker til å delta i studien som frisk voksen.\n\nMed dette bekrefter jeg også at jeg har fått informasjon om studien, at eventuelle spørsmål er blitt besvart, at jeg har hatt tilstrekkelig tid til å ta stilling og at jeg har mottatt en kopi av informasjonsskrivet.\n\nSted og dato\tDeltakers signatur\n\n\tDeltakers navn med store bokstaver\n\nVALGFRITT TILLEGGSSAMTYKKE – [NAVN PÅ PROSEDYRE ELLER ANALYSE]\n\n[Redaksjonsnote: Bruk bare for en reelt valgfri, protokollbestemt prosedyre eller analyse innenfor hovedstudien. Gjenta modulen separat for hvert uavhengig valg. Fjern modulen dersom studien ikke har slike valg.]\n\nJeg samtykker til [presis beskrivelse av prosedyren eller analysen, formålet og håndteringen]. Dette er valgfritt. Jeg kan delta i hovedstudien selv om jeg ikke samtykker.\n\nSted og dato\tDeltakers signatur\n\n\tDeltakers navn med store bokstaver\n\n[Hvis det er nødvendig å innhente opplysninger fra fastlegen som del av hovedstudien:]\n\nJeg samtykker til at min fastlege kan kontaktes for å gi [presis beskrivelse av nødvendige opplysninger] til studien.\n\nSted og dato\tDeltakers signatur\n\n\tDeltakers navn med store bokstaver",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  },
+  {
+   "section_number": 15,
+   "section_content": "BEKREFTELSE PÅ AT INFORMASJON ER GITT\n\nJeg bekrefter å ha gitt deltaker informasjon om studien og at deltakeren har hatt anledning til å stille spørsmål.\n\n\nSted og dato\tSignatur\n\n\nRolle i studien",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  },
+  {
+   "section_number": 16,
+   "section_content": "BEKREFTELSE PÅ AT SAMTYKKE ER AVGITT\n\nJeg bekrefter at samtykke er avgitt frivillig.\n\nSted og dato\tSignatur\n\n\nRolle i studien",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

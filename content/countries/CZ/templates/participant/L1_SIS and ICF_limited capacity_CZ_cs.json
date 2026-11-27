@@ -1,0 +1,85 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Přizpůsobené informace pro dospělého účastníka / Vyjádření vůle, souhlasu nebo nesouhlasu",
+  "target_country": "Czech Republic",
+  "country_code": "CZ",
+  "target_language": "Czech",
+  "language_code": "cs",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": 2,
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - verze 1.0 - [date]",
+   "Číslo protokolu: [doplňte] | EU CT číslo: [doplňte]",
+   "Identifikace klinického hodnocení: [doplňte] | verze dokumentu: [doplňte]"
+  ],
+  "info_table": [
+   "Celý název klinického hodnocení",
+   "Zkrácený název klinického hodnocení",
+   "Číslo protokolu [doplňte verzi a datum]",
+   "EU CT číslo",
+   "Zadavatel [včetně úplné adresy]",
+   "Hlavní zkoušející",
+   "Název pracoviště",
+   "Adresa pracoviště"
+  ],
+  "content_instructions": "Použijte pouze jako přizpůsobenou informaci pro dospělého účastníka, který nemůže udělit právně platný informovaný souhlas, ale může alespoň částečně porozumět, vyjádřit ochotu, nejistotu nebo nesouhlas. Dokument vždy doprovází samostatný informovaný souhlas zákonně ustanoveného zástupce. Neprezentujte podpis nebo značku účastníka jako právně účinný informovaný souhlas. Použijte krátké věty, konkrétní příklady, obrázky, symboly nebo komunikační pomůcky podle potřeby. Vysvětlete pouze podstatné informace: že jde o výzkum, co se bude dít, hlavní rizika a nepohodlí, možný přínos nebo jeho nepřítomnost, jiné možnosti, dobrovolnost, údaje, vzorky, pojištění a kontakty. Účastník může odmítnout celé hodnocení nebo jednotlivý výkon a jeho výslovné přání přestat musí být respektováno. Zaznamenejte způsob komunikace a vyjádřenou nebo pozorovanou vůli. Pokud účastník znovu nabude schopnost souhlasu, použijte standardní dospělý formulář. Budoucí nebo sekundární použití údajů či vzorků nezahrnujte. Konečný dokument musí být kratší než standardní informace pro dospělé, přizpůsobený schopnosti účastníka číst a porozumět a nesmí přesáhnout 8 stran; pouze ve specifických případech lze akceptovat až 10 stran. Použijte větší písmo.",
+  "styling_instructions": "Konečný dokument musí být pouze v češtině. Dokument musí být kratší než standardní informace pro dospělé a musí používat větší, dobře čitelné písmo odpovídající schopnosti účastníka číst a vnímat obsah. Použijte přehledné kapitoly a odstavce, standardní velikost písma, například Times New Roman 12 nebo Arial 11, a srozumitelný, citlivý jazyk bez nevysvětlených zkratek a odborných výrazů. Každá strana musí být očíslována a označena číslem verze, datem vydání a identifikací klinického hodnocení. Před finalizací odstraňte všechny pokyny pro zpracovatele, příklady, nevybrané alternativy a neaplikovatelné části. Pro plán návštěv a výkonů použijte přehlednou tabulku, pokud to zlepšuje srozumitelnost. Obecné zaškrtávací otázky ano/ne nepoužívejte; výjimkou jsou odůvodněné, skutečně nezávislé volitelné činnosti s vlastním podpisem a datem."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>PŘIZPŮSOBENÉ INFORMACE PRO DOSPĚLÉHO ÚČASTNÍKA / VYJÁDŘENÍ VŮLE, SOUHLASU NEBO NESOUHLASU</b>\n\n<b>Pokyn pro zpracovatele:</b> Text upravte podle skutečné schopnosti účastníka porozumět. Použijte krátké věty, obrázky, symboly, snadno čitelný formát nebo podporovanou komunikaci. Tento dokument není náhradou informovaného souhlasu zákonně ustanoveného zástupce.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Co je klinické hodnocení?</b>\n\nLékaři dělají výzkum. Chtějí zjistit více o [lék / léčba / vyšetření].\n\nVýzkum není stejný jako běžná léčba. Některé věci se dělají navíc jen kvůli výzkumu.\n\nVáš zákonně ustanovený zástupce dostane úplné informace a rozhodne o právním souhlasu. Lékař se ale ptá také Vás. Váš názor je důležitý.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Proč se Vás ptáme?</b>\n\nPtáme se Vás, protože [jednoduše popište zdravotní stav a důvod].\n\nZkoumá se [název nebo jednoduchý popis]. Cílem je zjistit [jedna až dvě jednoduché věty].\n\nStudie se zúčastní asi [počet] lidí v České republice a [počet] celkem.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Co se bude dít?</b>\n\nPokud budete v klinickém hodnocení:\n• budete dostávat [lék / placebo / léčbu] [jak a jak často];\n• přijdete na [počet] návštěv;\n• lékař udělá [hlavní vyšetření];\n• odebere se celkem asi [X] ml krve;\n• hodnocení pro Vás potrvá asi [doba].\n\n<b>Pokud je použito losování nebo placebo:</b>\nSkupinu určí náhoda. Placebo vypadá jako lék, ale nemá účinnou látku. [Vy / Vy ani lékař] nebudete vědět, co dostáváte, pokud to nebude nutné zjistit kvůli bezpečnosti.\n\n<b>Pokyn:</b> Povinné vzorky, genetická vyšetření nebo bolestivé výkony vysvětlete konkrétně a jednoduše. Skutečně volitelný výkon lze odmítnout bez ztráty hlavní účasti.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Co může být dobré a co může být nepříjemné?</b>\n\n<b>Možný přínos:</b>\n[Možná Vám léčba pomůže, ale není to jisté. / Neočekává se, že Vám účast přímo pomůže.]\n\n<b>Rizika a nepohodlí:</b>\n• [nejdůležitější nežádoucí účinek jednoduchými slovy]\n• [bolest nebo nepohodlí při vyšetření]\n• [časová nebo jiná zátěž]\n\nMohou existovat i rizika, která ještě neznáme. Když se necítíte dobře, řekněte to hned lékaři nebo osobě, které důvěřujete.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Můžete říci ne nebo přestat?</b>\n\nAno. Můžete říci „ne“, ukázat nesouhlas, odmítnout jednotlivý výkon nebo kdykoliv říci, že chcete přestat.\n\nNemusíte vysvětlovat proč. Vaše běžná léčba tím nebude horší. Lékař a zástupce musí Vaše jasné přání respektovat.\n\nPokud si nejste jistý/á, můžete to říci. Můžete se ptát a vzít si více času.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Co se stane s Vašimi údaji a vzorky?</b>\n\nLékaři zapíší informace o Vašem zdraví a výsledcích. Údaje a vzorky dostanou kód. Zadavatel běžně neuvidí Vaše jméno.\n\nPro kontrolu mohou do zdravotnické dokumentace nahlížet členové studijního týmu, monitor, auditoři, regulační orgány a etická komise. Musí zachovat mlčenlivost.\n\nPovinné vzorky se použijí jen pro hlavní hodnocení popsané zde. Budoucí výzkum vyžaduje jiný samostatný souhlas.\n\nSamostatné sdělení vysvětluje zpracování osobních údajů.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Co dalšího je důležité?</b>\n\nVšichni účastníci jsou pojištěni podle platné legislativy ČR. Pokud by hodnocení způsobilo újmu, kontaktujte zkoušejícího lékaře.\n\nÚčastníku ani zástupci nesmí být nabízena nepřiměřená odměna. Přiměřené výdaje mohou být nahrazeny podle pravidel [doplňte].\n\nNové důležité informace Vám budou vysvětleny způsobem, kterému můžete rozumět. Výsledky budou na https://euclinicaltrials.eu.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Koho můžete požádat o pomoc?</b>\n\nZkoušející lékař: [jméno]\nTelefon: [číslo]\nE-mail: [e-mail]\n\nOsoba, které důvěřujete: [jméno / vztah / kontakt, pouze pokud účastník chce]\n\nEtická komise – otázky o právech: [název]\nE-mail: [eticka.komise@sukl.gov.cz nebo konkrétní e-mail]\n<b>Pokyn:</b> U etické komise neuvádějte telefonní číslo.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>ZÁZNAM VYJÁDŘENÍ ÚČASTNÍKA</b>\n\nInformace mi byly vysvětleny způsobem, kterému mohu rozumět. Mohl/a jsem se ptát.\n\n<b>Moje vyjádření:</b>\n□ Chci se účastnit / souhlasím.\n□ Nechci se účastnit / nesouhlasím.\n□ Nejsem si jistý/á.\n□ Nedokážu svůj názor jasně vyjádřit.\n\nMůj názor byl vyjádřen: □ slovy  □ gestem  □ komunikační pomůckou  □ chováním  □ jinak: __________\n\nJméno účastníka: ______________________________\nPodpis / značka, je-li smysluplná a možná: __________________\nDatum: ____ / ____ / ______\n\n<b>Záznam zkoušejícího lékaře:</b>\nPoužitý způsob vysvětlení a podpory komunikace: ______________________________________________\nJak účastník projevil vůli nebo nesouhlas: ______________________________________________\nByl zaznamenán nesouhlas s konkrétním výkonem? □ Ne □ Ano: ______________________________\n\nPotvrzuji, že jsem informace přizpůsobil/a schopnostem účastníka, ověřoval/a porozumění, poskytl/a možnost klást otázky a respektoval/a jeho vyjádřenou vůli.\n\nJméno a příjmení zkoušejícího lékaře: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\n<b>Pokyn pro zpracovatele:</b> Právně účinný souhlas zákonně ustanoveného zástupce musí být zaznamenán v samostatném formuláři. Pokud účastník znovu nabude schopnost souhlasu, vyžádejte jeho vlastní standardní informovaný souhlas.\n\nÚčastník a zákonně ustanovený zástupce obdrželi datovaný stejnopis přizpůsobené informace a záznamu, pokud je to vzhledem ke schopnostem účastníka přiměřené; jeden stejnopis zůstává na pracovišti klinického hodnocení.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

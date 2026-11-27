@@ -1,0 +1,97 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Partners",
+  "doc_name_local": "Informace a souhlas se sledováním těhotenství – těhotná partnerka účastníka",
+  "target_country": "Czech Republic",
+  "country_code": "CZ",
+  "target_language": "Czech",
+  "language_code": "cs",
+  "doc_type": "pregnant_partners",
+  "file_name": "L1_SIS and ICF_pregnant partner",
+  "sort_order": 7,
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - verze 1.0 - [date]",
+   "Číslo protokolu: [doplňte] | EU CT číslo: [doplňte]",
+   "Identifikace klinického hodnocení: [doplňte] | verze dokumentu: [doplňte]"
+  ],
+  "info_table": [
+   "Celý název klinického hodnocení",
+   "Zkrácený název klinického hodnocení",
+   "Číslo protokolu [doplňte verzi a datum]",
+   "EU CT číslo",
+   "Zadavatel [včetně úplné adresy]",
+   "Hlavní zkoušející",
+   "Název pracoviště",
+   "Adresa pracoviště",
+   "Kód účastníka hlavního klinického hodnocení",
+   "Identifikace těhotenství / číslo sledování"
+  ],
+  "content_instructions": "Použijte pouze pro těhotnou partnerku mužského účastníka. Partnerka není účastnicí hlavního klinického hodnocení a souhlasí pouze se sledováním a zpracováním vlastních údajů o těhotenství a jeho výsledku. Odstraňte obecné části o diagnóze, randomizaci, léčebných skupinách, alternativách a běžných studijních návštěvách, pokud nejsou přímo relevantní pro těhotenství. Popište pouze známá nebo rozumně předvídatelná rizika a nejistoty pro těhotenství, plod a dítě, nezbytná okamžitá bezpečnostní opatření, přesné kategorie údajů, zdroje, časové body a konec sledování. Nezařazujte další vyšetření, vzorky ani prodloužené sledování, pokud nejsou skutečně plánovány a samostatně vysvětleny. Odmítnutí nebo odvolání souhlasu nesmí ovlivnit zdravotní péči ani účast mužského partnera v hlavním hodnocení. Údaje o dítěti po narození vyžadují samostatný souhlas osoby nebo osob s rodičovskou odpovědností podle českého práva; souhlas udělený během těhotenství se nepovažuje automaticky za souhlas se zpracováním osobních údajů dítěte. Zachovejte EU CT číslo, kód účastníka, samostatné sdělení ke zpracování osobních údajů, kódování, oprávněný přístup, stejnopis a české kontaktní požadavky. Rozsah konečného dokumentu nesmí přesáhnout 4 strany.",
+  "styling_instructions": "Konečný dokument musí být pouze v češtině. Použijte přehledné kapitoly a odstavce, standardní velikost písma, například Times New Roman 12 nebo Arial 11, a srozumitelný, citlivý jazyk bez nevysvětlených zkratek a odborných výrazů. Každá strana musí být očíslována a označena číslem verze, datem vydání a identifikací klinického hodnocení. Před finalizací odstraňte všechny pokyny pro zpracovatele, příklady, nevybrané alternativy a neaplikovatelné části. Pro plán návštěv a výkonů použijte přehlednou tabulku, pokud to zlepšuje srozumitelnost. Obecné zaškrtávací otázky ano/ne nepoužívejte; výjimkou jsou odůvodněné, skutečně nezávislé volitelné činnosti s vlastním podpisem a datem."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMACE A SOUHLAS SE SLEDOVÁNÍM TĚHOTENSTVÍ – TĚHOTNÁ PARTNERKA ÚČASTNÍKA</b>\n\n<b>Pokyn pro zpracovatele:</b> V konečné verzi ponechte celý název klinického hodnocení, EU CT číslo, číslo protokolu, kód účastníka hlavního hodnocení a verzi dokumentu. Tento dokument je určen pouze pro těhotenské bezpečnostní sledování.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Vážená paní,\n\nJste těhotnou partnerkou muže, který se účastní klinického hodnocení [název]. Vy sama nejste účastnicí hlavního klinického hodnocení a nedostáváte hodnocený přípravek. Žádáme Vás pouze o dobrovolný souhlas se sledováním těhotenství a jeho výsledku.\n\nÚčast ve sledování je dobrovolná. Můžete odmítnout nebo později souhlas odvolat bez udání důvodu. Dostanete dostatek času, můžete klást otázky a obdržíte datovaný a podepsaný stejnopis.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. Proč se údaje o těhotenství shromažďují?</b>\n\nÚčastník byl vystaven [název přípravku / postup]. Není zcela známo, zda otcovská expozice může ovlivnit početí, těhotenství, plod nebo dítě. Shromažďujeme proto údaje o těhotenství, jeho výsledku a případně o dítěti, abychom lépe hodnotili bezpečnost.\n\nÚdaje budou použity pouze pro sledování bezpečnosti související s klinickým hodnocením a pro splnění zákonných bezpečnostních povinností. Neočekává se pro Vás ani pro dítě přímý zdravotní přínos. Výsledky mohou pomoci lépe informovat budoucí účastníky a lékaře.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Jaká rizika a lékařská opatření jsou důležitá?</b>\n\nZnámá nebo možná rizika pro těhotenství, embryo, plod nebo dítě jsou: [uveďte pouze protokolem a dostupnými údaji podložená rizika a nejistoty].\n\n<b>Okamžitá bezpečnostní opatření:</b>\n• [kontaktovat zkoušejícího / ošetřujícího lékaře]\n• [přerušení nebo ukončení přípravku, pouze pokud relevantní]\n• [změna souběžné léčby, potřebné lékařské vyšetření nebo odslepení]\n\n<b>Pokyn pro zpracovatele:</b> Nevytvářejte obecný seznam spekulativních rizik. Běžnou porodnickou péči neurčuje zadavatel klinického hodnocení.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Jaké údaje budou shromažďovány?</b>\n\nRelevantní kódované údaje o expozici mužského účastníka, například dávka, termíny podání a souběžná léčba, budou propojeny s Vašimi údaji o těhotenství.\n\n<b>Údaje o ženě a těhotenství:</b>\n• věk a relevantní zdravotní anamnéza;\n• datum poslední menstruace, odhad početí a termín porodu;\n• relevantní léky, onemocnění, komplikace, vyšetření a průběh těhotenství;\n• výsledek těhotenství, porod, potrat nebo jiné ukončení;\n• relevantní informace o novorozenci při narození, pouze v rozsahu, který lze zákonně získat před samostatným souhlasem pro další sledování dítěte.\n\n<b>Podmíněný modul – údaje o dítěti po narození:</b>\n[konkrétní údaje, návštěvy a délka sledování]. Tyto údaje lze nově shromažďovat až po samostatném souhlasu osoby nebo osob s rodičovskou odpovědností.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Jak a jak dlouho budou údaje získávány?</b>\n\nÚdaje budou získány v těchto časových bodech: [při oznámení těhotenství / v jednotlivých trimestrech / při výsledku těhotenství / po porodu]. Sledování těhotenství skončí [přesný konec].\n\nZdrojem může být: □ rozhovor s Vámi  □ zdravotnická dokumentace  □ porodník / gynekolog  □ porodnice  □ jiný poskytovatel: [doplňte].\n\nKontaktování ošetřujících zdravotníků nebo získání dokumentace proběhne pouze v popsaném rozsahu a podle schváleného postupu. Uveďte počet kontaktů, přibližnou délku a zda jsou plánována pouze data, nebo také skutečně schválené dodatečné výkony.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Jak sledování souvisí s hlavním klinickým hodnocením?</b>\n\nVaše rozhodnutí neovlivní účast Vašeho partnera v hlavním klinickém hodnocení ani Vaši nebo jeho zdravotní péči.\n\nMužský účastník nemůže udělit souhlas se zpracováním Vašich zdravotních a těhotenských údajů. Vaše údaje budou získány pouze na základě Vašeho vlastního rozhodnutí a příslušných právních pravidel.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Jaké jsou nevýhody, náklady, případný přínos a pojištění?</b>\n\nHlavní zátěží je čas potřebný k rozhovorům a možné sdílení citlivých zdravotních údajů. Pokud jsou plánována další vyšetření nebo odběry, popište jejich fyzická rizika a nepohodlí samostatně.\n\nZa sledování neočekávejte přímý zdravotní přínos. Přiměřené výdaje budou hrazeny takto: [doplňte / žádné].\n\n<b>Pojištění a újma:</b>\nPokud sledování zahrnuje pouze získávání údajů, uveďte tuto skutečnost. Pokud zahrnuje dodatečný výzkumný výkon, popište schválené pojištění, léčbu a odškodnění pro případ újmy. Podpisem se nevzdáváte žádného zákonného práva.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Jak budou údaje chráněny?</b>\n\nSamostatné sdělení ke zpracování osobních údajů obdržíte. Údaje budou spojeny s hlavním klinickým hodnocením pomocí kódu a zadavatel běžně neuvidí Vaše jméno.\n\nÚdaje mohou obdržet [zadavatel, CRO, laboratoře, bezpečnostní databáze, regulační orgány a další konkrétní příjemci]. Pro kontrolu mohou do zdrojové dokumentace nahlížet oprávněné osoby včetně studijního týmu, monitorů, auditorů, regulačních orgánů a etické komise; jsou vázány mlčenlivostí.\n\nUveďte dobu uchování, konkrétní země mimo EHP a záruky, pokud se údaje předávají do třetích zemí. Ve zveřejněných výsledcích nebude možné Vás ani dítě rozpoznat.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Je sledování dobrovolné a co se stane po odvolání souhlasu?</b>\n\nMůžete odmítnout nebo kdykoliv odvolat souhlas bez udání důvodu. Nové dobrovolné získávání údajů se zastaví od okamžiku, kdy je odvolání prakticky zpracováno.\n\nÚdaje již zákonně získané mohou být dále uchovány a použity, pokud je to nutné pro bezpečnostní hlášení, spolehlivost výsledků nebo zákonné povinnosti. Uveďte konkrétní kontakt pro odvolání a vysvětlete, zda může pokračovat omezené zákonem vyžadované bezpečnostní zpracování.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Kontakty a výsledky</b>\n\nZkoušející lékař / kontakt pro těhotenské sledování: [jméno, telefon, e-mail a dostupnost]\nOšetřující gynekolog nebo porodník zůstává odpovědný za běžnou zdravotní péči.\n\nOtázky o právech: Etická komise [název], e-mail [eticka.komise@sukl.gov.cz nebo konkrétní e-mail]. U etické komise neuvádějte telefonní číslo.\n\nOtázky o osobních údajích: [odkaz na samostatné sdělení a kontakt].\n\nSouhrn výsledků hlavního klinického hodnocení bude dostupný na https://euclinicaltrials.eu. Individuální výsledek sledování bude sdělen pouze takto: [doplňte / nebude sdělován].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>SOUHLAS TĚHOTNÉ PARTNERKY SE SLEDOVÁNÍM TĚHOTENSTVÍ</b>\n\nPotvrzuji, že:\n• jsem obdržela a porozuměla informacím o účelu, rozsahu, rizicích, zátěži a ochraně údajů;\n• měla jsem možnost klást otázky a dostatek času k rozhodnutí;\n• vím, že sledování je dobrovolné a mohu souhlas odvolat bez nepříznivého vlivu na zdravotní péči nebo účast partnera v hlavním hodnocení;\n• souhlasím se shromažďováním, kódováním, propojováním a používáním popsaných údajů o mém zdraví, těhotenství a jeho výsledku pro bezpečnostní sledování;\n• souhlasím, aby byly v popsaném rozsahu získány údaje od [jmenovaný poskytovatel / zdravotnické zařízení] a aby oprávněné osoby mohly nahlížet do zdrojové dokumentace pro kontrolu;\n• rozumím možným předáním kódovaných údajů uvedeným v samostatném sdělení ke zpracování osobních údajů;\n• rozumím tomu, že tento souhlas automaticky nezahrnuje nové získávání osobních údajů dítěte po narození;\n• obdržela jsem datovaný a podepsaný stejnopis.\n\nJméno a příjmení ženy: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\n<b>Podmíněný samostatný souhlas – dodatečné vyšetření nebo odběr:</b>\nSouhlasím s [přesný výkon a účel], který není součástí běžné péče ani pouhého sledování údajů. Ano □ Ne □\nPodpis: __________________  Datum: __________\n\nProhlašuji, že jsem informace poskytl/a srozumitelně, odpověděl/a na otázky a poskytl/a dostatek času k rozhodnutí.\n\nJméno a funkce osoby poskytující informace: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\n<b>SAMOSTATNÝ SOUHLAS PO NAROZENÍ – ÚDAJE O DÍTĚTI</b>\n\n<b>Pokyn:</b> Použijte pouze tehdy, pokud se po narození nově shromažďují osobní nebo zdravotní údaje dítěte. Získejte souhlas rodiče nebo zákonného zástupce podle schváleného českého postupu. Druhý podpis ponechte pouze tehdy, pokud jej vyžaduje schválený postup nebo právní postavení dítěte.\n\nSouhlasím/souhlasíme se shromažďováním a používáním těchto údajů dítěte: [konkrétní kategorie, zdroje, časové body a konec sledování].\n\nJméno dítěte: __________________  Datum narození: __________\nRodič / zákonný zástupce: __________________  Podpis: __________  Datum: __________\n\n<b>Podmíněný druhý podpis – ponechte pouze tehdy, pokud jej vyžaduje schválený postup nebo právní postavení dítěte:</b>\nRodič / zákonný zástupce: __________________  Podpis: __________  Datum: __________\n\nJeden datovaný a podepsaný stejnopis obdržela podepisující osoba a jeden zůstává na pracovišti.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

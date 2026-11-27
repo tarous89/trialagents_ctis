@@ -1,0 +1,64 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Informasjonsskriv til barn og ungdom 12–15 år",
+  "target_country": "Norway",
+  "country_code": "NO",
+  "target_language": "Norwegian",
+  "language_code": "no",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 12-15",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versjon 1.0 - [date]",
+   "Protokollnummer: [fyll inn] | EU CT-nummer: [fyll inn]"
+  ],
+  "info_table": [
+   "Studietittel",
+   "Forkortet studietittel",
+   "Protokollnummer [legg til versjon og dato]",
+   "EU CT-nummer",
+   "Sponsor [med fullstendig adresse]",
+   "Hovedutprøver",
+   "Navn på studiesenter",
+   "Adresse til studiesenter"
+  ],
+  "content_instructions": "Bruk malen for skriftlig informasjon til barn og ungdom fra og med 12 år til og med 15 år som skal delta i legemiddelutprøvinger omfattet av Clinical Trials Regulation (CTR) EU nr. 536/2014. Fjern markert tekst og tekst i hakeparenteser og erstatt den med studiespesifikt innhold. Informasjonen skal være rettet direkte til ungdommen og tilpasses ungdommens alder og forståelse. Informasjonen skal først og fremst forklare hva som skal skje i studien, herunder bakgrunn og hensikt, hva som er nytt eller kommer i tillegg til standard behandling, undersøkelser, prøver, oppgaver, sted, varighet, hvem som er til stede, mulig smerte eller ubehag, innsamlede opplysninger, forventet nytte, risiko, belastninger og håndtering av prøver og informasjon. Opplys tydelig at det er frivillig å delta, at ungdommen kan si nei eller stoppe når som helst uten negative konsekvenser, og hvem ungdommen kan kontakte; kontaktpersonen bør være vant til å snakke med barn og unge. Denne malen skal ikke inneholde signaturfelt for personer med foreldreansvar.",
+  "styling_instructions": "Bruk et enkelt, alderspasset oppsett med tydelige moduloverskrifter. Bruk bilder og illustrasjoner der det er hensiktsmessig. Behold eventuell signaturdel som en tydelig signaturseksjon. Fjern markert instruksjonstekst og hakeparenteser i sluttversjonen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Bakgrunn og hensikt\n[Dette forklares på en enkel måte som barnet/ungdommen kan forstå. Bakgrunnen kan være at barnet/ungdommen har en sykdom eller tilstand og at man nå skal prøve ut en ny medisin for å se om dette kan gi bedre behandling for barn/ungdom med denne sykdommen/tilstanden.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "\n\nHva innebærer studien?\n[Forbered barnet/ungdommen på hva som skal skje. Det må komme frem hva som eventuelt er nytt eller kommer i tillegg sammenliknet med standard behandling. Noen begreper kan være vanskelige å forstå for barn og ungdom, og bør derfor unngås eller omskrives slik at det blir forståelig. For barn og ungdom er det først og fremst prosedyrene som er viktig (hvilke undersøkelser skal gjøres, hvilke prøver skal tas og hvor skal dette skje). Dersom barnet/ungdommen skal utføre bestemte typer oppgaver må det fremkomme. Det oppfordres til å bruke bilder og/eller illustrasjoner.]\n[Det er viktig for barnet/ungdommen å vite hvor lang tid undersøkelsene tar, og/eller hvor lenge en eventuell behandling skal vare, om man blir sliten, hvem som skal være til stede osv. Barn har rett til å ha følge fra pårørende. Det er også godt for barnet/ungdommen å vite at andre barn er med i studien.]\n[Dersom det kan være vondt eller ubehagelig å delta, må det opplyses om det.]\n[Det skal fremgå hvilke opplysninger som skal samles inn om dem, fra undersøkelser, journal og/eller registre.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "MULIGE FORDELER OG ULEMPER\n[Barnet/ungdommen må få vite om forventet nytte og forventet risiko, belastninger og ulemper, at det kan ta litt tid, at ungdommen kanskje ikke kan gå på skolen den eller de dagene, at det kan være litt vondt eller ubehagelig (eller ikke), eller om det er usikkert.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Hva skjer med prøvene og informasjonen om deg?\n[Barnet/ungdommen skal få vite at prøver og informasjon blir tatt godt vare på.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Deltakelse\n[Barnet/ungdommen skal få vite at det er frivillig å delta i studien og at hen når som helst og uten å oppgi noen grunn kan trekke seg fra studien uten at dette får konsekvenser for behandlingen eller oppfølgingen hen får fra sykehuset. Barnet/ungdommen må få vite hvem hen kan henvende seg til ved eventuelle ønsker om å trekke seg eller spørsmål til prosjektet. Dette bør være en person som er vant til å snakke med barn og unge. Navn, telefonnummer og e-postadresse til personen oppgis.]\n\n[Legg deretter til svært kort, alderspasset informasjon om følgende: (1) om deltakelsen medfører kostnader og om nødvendige utgifter som reise dekkes, (2) at skade som skyldes studien kan gi rett til erstatning, og (3) hvordan ungdommen kan få informasjon om studiens hovedresultater. Bruk samlet maksimalt 3–5 korte setninger. Eksempler: «Det koster ikke deg eller familien din noe ekstra å være med. [Nødvendige reiseutgifter dekkes av ...].» «Hvis du blir skadet på grunn av studien, kan du ha rett til erstatning.» «Når studien er ferdig, kan du få vite hva forskerne fant [via studiepersonalet/CTIS].» Tilpass bare det som faktisk gjelder. Ikke legg inn detaljer om finansiering, erstatningsvilkår eller publiseringsprosesser som ikke er nødvendige for ungdommens forståelse.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "SIGNATUR FRA BARNET/UNGDOMMEN (HVIS ØNSKELIG Å HA MED)\n\nJeg ønsker å være med på denne studien.\n\nSted og dato\tBarnets/ungdommens signatur",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

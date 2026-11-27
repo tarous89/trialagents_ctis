@@ -1,0 +1,70 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Informatie Formulier 12-16 jaar",
+  "target_country": "Netherlands",
+  "country_code": "NL",
+  "target_language": "Dutch",
+  "language_code": "nl",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 12-17",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versie 1.0 - [date]",
+   "Protocolnummer: [invullen] | EU-onderzoeksnummer: [invullen]",
+   "Studiecode: [XXX] | versie [nr.]"
+  ],
+  "info_table": [
+   "Titel van het onderzoek",
+   "Korte titel van het onderzoek",
+   "Protocolnummer [voeg versie en datum toe]",
+   "EU-onderzoeksnummer",
+   "Opdrachtgever [met volledig adres]",
+   "Hoofdonderzoeker",
+   "Naam onderzoekscentrum",
+   "Adres onderzoekscentrum"
+  ],
+  "content_instructions": "Write directly to adolescents aged 12–16 in clear, age-appropriate Dutch. Insert and adapt study-specific text using the handbook example texts, complete sections where applicable, and retain conditional content only when relevant. State that parents receive separate information and make the participation decision together with the adolescent.",
+  "styling_instructions": "Use prominent blue-shaded module headings, bold subsection headings, grey-highlighted drafting placeholders, and simple study-relevant images or pictograms where helpful. Include a bordered question-writing box, tables for procedure images and data categories, and place the consent form in a separate appendix on a new page."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Beste……. \nDoe je mee aan een onderzoek? Hier lees je meer over het onderzoek en jouw rechten. Lees dit goed, want dan weet je waarover je kunt beslissen. Je mag rustig nadenken voordat je beslist.\nJe ouders krijgen ook informatie over dit onderzoek. Je kunt samen met hen praten over het onderzoek. Zij zullen samen met jou een beslissing nemen. ",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Vragen en contact</b>\nHeb je vragen? Bespreek ze met je ouders. Of stel ze aan de onderzoeker. Je kunt je vragen hieronder opschrijven. \nJe mag de onderzoeker ook altijd bellen/mailen: [naam, evt. foto, contactgegevens]. \nWil je praten over het onderzoek met een arts die er niet bij betrokken is? Bel of mail dan met: [naam ] [mailadres en/of telefoonnummer].\n\n<b><u>Ruimte op jouw vragen op te schrijven:</u></b>\n\n\n\n\n\n\n\n\n<b>Tip:</b> neem een foto van je vragen, dan heb je ze bij je als je met de arts/onderzoeker gaat praten.\n\n",
+   "section_style": "H3 module title, Rich body text, Small image, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>Over het onderzoek</b>\nDit onderzoek gebeurt in het [naam ziekenhuis] / in X ziekenhuizen in Nederland in X landen. Er doen [X – of: ongeveer 50/100/etc] kinderen en/of jongeren mee. Het onderzoek is gecontroleerd en goedgekeurd. De naam van de commissie die de beoordeling heeft gedaan is: [naam METC].\n\n\n<b>Waarom dit onderzoek?</b>\n[tekst invoegen, zie voorbeeldteksten in de handleiding]\n\n<b>Achtergrond:</b>\n[tekst invoegen, zie voorbeeldteksten in de handleiding]\n\n<b>Hoe werkt meedoen?</b>\n[tekst invoegen, zie voorbeeldteksten in de handleiding]\n\n[Tabel om evt. plaatjes van procedures en apparaten in te voegen]\t[Tabel om evt. plaatjes van procedures en apparaten in te voegen]\n\n<i>Uitleggend bijschrift</i>\t<i>Uitleggend bijschrift</i>\n\n\n<b>Over het medicijn/de behandeling [alleen indien van toepassing]</b>\n[tekst invoegen, zie voorbeeldteksten in de handleiding]\n\n<b>Ongemakken</b>\n[tekst invoegen, zie voorbeeldteksten in de handleiding]\n\n<b>Anders dan normaal [alleen indien van toepassing]</b>\n[tekst invoegen, zie voorbeeldteksten in de handleiding]\n\n<b>Belangrijk om te weten:</b>\n• [tekst invoegen, zie voorbeeldteksten in de handleiding]\n• [tekst invoegen, zie voorbeeldteksten in de handleiding]\n\n<b>Voordelen en nadelen:</b>\n• [tekst invoegen, zie voorbeeldteksten in de handleiding]\n• [tekst invoegen, zie voorbeeldteksten in de handleiding]\n\n<b>Vergoeding</b>\n• [tekst invoegen, zie voorbeeldteksten in de handleiding]\n",
+   "section_style": "H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 4,
+   "section_content": "\n<b>Jouw rechten</b>\n<b>Moet je meedoen?</b>\nNee, je mag <b>zelf weten</b> of je meedoet. Als je niet wilt meedoen, dan hoeft dit niet, ook als je ouders dat liever wel willen. Als je wilt meedoen, zet je je handtekening op het formulier. Ook daarna <b>mag je altijd nog stoppen</b>, als je liever niet meer wilt. Vertel dat dan wel aan de onderzoeker. Je hoeft niet uit te leggen waarom je stopt. \n[aanvullen waar van toepassing, zie voorbeeldteksten in de handleiding]\n\n<b>Toestemming intrekken</b>\nAls je wilt stoppen, vertel je dit aan de onderzoeker. Dit heet: je toestemming intrekken. De informatie die al is verzameld gebruiken we nog voor het onderzoek. \n\n<b>Jouw gegevens</b>\n [tekst aanpassen en aanvullen waar van toepassing, zie voorbeeldteksten in de handleiding]\nVoor het onderzoek hebben we [drie] dingen nodig die van jou zijn:\n• <b><i>Persoonsgegevens</i></b> = informatie over wie jij bent, bijvoorbeeld je geboortedatum en waar je woont.\n\t\n• <b><i>Medische gegevens</i></b> = (ook een soort persoonsgegevens) informatie over je gezondheid, bijvoorbeeld of je ziek bent en of je medicijnen gebruikt.\n\t\n• <b><i>Je ‘bloed, beenmerg, hersenvocht, poep, etc.’.[indien van toepassing; plaatje evt. aanpassen]</i></b>\t\nDeze <b>drie dingen zijn nodig bij het doen van het onderzoek</b>. Je ouders geven toestemming zodat wij deze dingen mogen gebruiken. Wil je meer weten over wat we precies doen met jouw gegevens? Vraag het dan aan je ouders, het staat in hun informatiebrief. Je kunt het ook aan de onderzoeker vragen.\n\n<b>Verzekering [indien van toepassing]</b>\n[tekst invoegen, zie voorbeeldteksten in de handleiding]",
+   "section_style": "H3 module title, H4 section title, Rich body text, Standard table, Small image"
+  },
+  {
+   "section_number": 5,
+   "section_content": "\n<b>Jouw beslissing</b>\n<b>Het formulier</b>\nWil je meedoen? Dan zet je een handtekening op het toestemmingsformulier. We hebben ook een handtekening van jouw ouders/voogd nodig.\n[Indien van toepassing] Ook kun je kiezen of je we je later mogen vragen voor een volgend onderzoek. We geven je later informatie over het nieuwe onderzoek, dan kun jij beslissen of je wilt meedoen.",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "\n<b>Meer weten?</b>\n\n\t\nWil je meer weten over onderzoek of over jouw rechten?\n\nKijk dan op <u>www.kindenonderzoek.nl</u>\n\nOp deze website staat ook de strip ‘Anne en de Groeneneuzengriep’ over onderzoek.\n\n[invoegen welke termen/hoofdstukken van toepassing zijn voor de studie]\n\n\n\n<b>Bijlagen: [aanvullen waar van toepassing]</b>\nA.\t<b>Contactgegevens</b> \nB.\t<b>Overzicht van het onderzoek</b> [indien van toepassing]\nC.\t<b>Toestemmingsformulier</b>\n\n",
+   "section_style": "H3 module title, Standard table, Small image, Rich body text, H4 section title"
+  },
+  {
+   "section_number": 7,
+   "section_content": "\f\n<b>Bijlage [X] Toestemmingsformulier voor het onderzoek:</b>\n- Ik heb de informatie <b>begrepen</b>. Ook kon ik vragen stellen. Mijn <b>vragen zijn beantwoord</b>.\n- Ik had <b>genoeg tijd om te beslissen</b> of ik meedoe.\n- Ik weet dat ik <b>niet verplicht</b> ben om mee te doen.\n- Ik begrijp dat ik <b>altijd mag stoppen</b> als ik niet meer mee wil doen. \n- Ik geef\t□ <b>wel</b> \t□ <b>geen</b>\ttoestemming om mij  later te vragen voor een vervolgonderzoek.\n\n- Ik wil \t□ <b>wel</b> \t□ <b>niet</b>\tweten welke behandeling ik heb gehad/in welke groep ik zat.\n\n<b>Ik wil meedoen aan dit onderzoek.</b>\nNaam deelnemer:\t\t\t\t\nHandtekening:\t\t\t\t\t\t\tDatum\t: __ / __ / __\n\n<b><u>Dit stuk is voor de onderzoeker:</u></b>\nIk verklaar dat ik deze deelnemer  volledig heb geïnformeerd over het genoemde onderzoek.\nAls er tijdens het onderzoek informatie bekend wordt die de toestemming van de deelnemer zou kunnen beïnvloeden, dan breng ik hem/haar daarvan tijdig op de hoogte.\nNaam onderzoeker (of diens vertegenwoordiger):\nHandtekening:\t\t\t\t\t\t\tDatum: __ / __ / __\n-----------------------------------------------------------------------------------------------------------------\n<<i>indien van toepassing</i>> Aanvullende informatie is gegeven door: \nNaam:\nFunctie:\nHandtekening:\t\t\t\t\t\t\tDatum: __ / __ / __\n<i>De deelnemer krijgt een volledige informatiebrief mee, samen met een getekende versie van het toestemmingsformulier.</i>",
+   "section_style": "Section break, H2 document subline, Checkbox group, Signature section, H4 section title, Rich body text"
+  }
+ ]
+}

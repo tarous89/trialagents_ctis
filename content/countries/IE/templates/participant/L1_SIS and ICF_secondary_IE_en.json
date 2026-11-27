@@ -1,0 +1,93 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Secondary and Future Use of Data or Biosamples",
+  "doc_name_local": "Secondary and Future Use of Data or Biosamples – Information and Consent Form",
+  "target_country": "Ireland",
+  "country_code": "IE",
+  "target_language": "English",
+  "language_code": "en",
+  "doc_type": "secondary_use",
+  "file_name": "L1_SIS and ICF_secondary",
+  "sort_order": "8",
+  "description": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protocol number: [fill in] | EU trial number: [fill in]"
+  ],
+  "info_table": [
+   "Trial title",
+   "Short trial title",
+   "Protocol number [add version and date]",
+   "EU trial number",
+   "Sponsor [with full address]",
+   "Principal investigator",
+   "Site name",
+   "Site address",
+   "Study identification number",
+   "Co-investigator(s) [names, titles and contact details]",
+   "Data controller(s)",
+   "Data Protection Officer [name and contact details]"
+  ],
+  "content_instructions": "Use only for optional storage or secondary/future use of data, biological samples or genetic material beyond the main trial. Refusal or withdrawal must not affect main-trial participation or ordinary care. Retain trial identifiers and a brief link to the main trial, but do not repeat investigational treatment, randomisation, routine visits, treatment alternatives or general trial risks. Specify what data or samples will be used, whether samples are residual or additionally collected, the permitted research area/purpose, storage location and duration, coding, recipients/access, international transfers, relevant commercial involvement, foreseeable privacy or sampling risks, return of findings where applicable, and withdrawal consequences. Describe genetic/genomic analysis when applicable. Use the Required acknowledgements list with an individual confirmation checkbox for each applicable core informed-consent statement and separate Yes/No choices only for genuinely independent optional uses. For a capable participant, the applicable Yes choice for future/secondary use of health data should expressly record explicit consent; use an approved Irish alternative or consent-declaration route only where applicable. Include the applicable participant, parent/guardian or legally designated representative pathway and dated signatures.",
+  "styling_instructions": "Use clear participant-facing question headings and short sections. Use a clean readable font such as Calibri, Arial, Verdana or Tahoma at about 12 point. Avoid block capitals and unnecessary legalistic text. Use tables or simple flow charts when they improve understanding. Present required acknowledgements as a clear list with one checkbox beside each applicable acknowledgement and the final dated signature. Do not use Yes/No choices or initials for required acknowledgements. Use Yes/No choices only for genuinely optional components. Where optional components are included, present their confirmation/signature separately from the main consent signature. Use separate fields for printed name, date and signature."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Optional secondary and future research</b>\n<b>Drafting note:</b> Do not use blanket or unrestricted consent. Define the research area as specifically as possible (for example, the disease/condition, drug under study or a related health-research area). Any future research carried out under this consent must receive the appropriate further ethics approval from a recognised research ethics committee before it begins.\nThis is a separate, optional choice from the main clinical trial. You can say no and still take part in the main trial. We are asking whether specified data and/or biological samples may be stored or used for research beyond the mandatory purposes of the main trial.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>What data and samples are included?</b>\nList exactly the data categories and biological material, whether samples are residual from the main trial or require an additional collection, quantity/source, collection period and any linkage with other datasets. Clearly separate data, samples and genetic material.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>What future or secondary research may be done?</b>\nDescribe the specified disease/health/research area and the kinds of research reasonably covered. Explain whether researchers may include hospitals, universities, non-profit organisations or commercial companies and whether research may occur in Ireland, the EEA or other named/defined locations. Do not promise approval of undefined projects.\n\nAny future research using your data or samples under this consent will only begin after the appropriate further ethics approval has been obtained from a recognised research ethics committee.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>Will genetic or genomic research be done?</b>\n<b>Drafting note:</b> Include only if genetic/genomic secondary research is proposed.\n\nExplain the type/scope of genetic analysis (including whole-genome/exome sequencing if relevant), why it may be done, that DNA is unique and cannot be considered completely anonymous, foreseeable privacy/family/discrimination risks, possible germline/incidental findings, whether individual results will be returned or not, counselling, ownership/control or commercial interests, storage/security and transfers. Genetic research should have a separate explicit Yes/No choice in the consent form.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>How will data and samples be stored and protected?</b>\nIdentify the controller/collection custodian, storage location, coding/pseudonymisation or anonymisation, access governance, retention period, recipients, transfer safeguards, publication in non-identifiable form and what happens to remaining samples. Explain if the signed consent form is retained while samples remain.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>Could there be benefits or risks?</b>\nState whether any personal benefit is expected. Explain confidentiality/re-identification risks, genetic risks where applicable, and physical risks only if additional sampling is required. Explain any policy for clinically relevant individual findings.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>Can you withdraw this consent?</b>\nYes. Explain how to withdraw, whom to contact and what happens to identifiable/coded data and remaining samples. Explain limits where material has already been used, results generated, data irreversibly anonymised, published or incorporated into analyses. Withdrawal from this optional research must not affect the main trial.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>What are your data-protection rights and contacts?</b>\nExplain controllers, lawful basis/explicit consent required for the specified health research, relevant rights/limitations, Data Protection Officer, study/repository contact and Data Protection Commission complaint route. If data are transferred outside the EEA, explain countries/recipients and safeguards.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>What happens for participants under 16 or when a participant turns 16?</b>\nFor a participant under 16, use parent/guardian consent and age-appropriate assent where possible.\n\n<b>[Conditional – include only if identifiable data/samples may remain stored or used after the participant turns 16]</b>\nIf data/samples are to remain available for this secondary use after the participant reaches 16, obtain the participant’s own consent for ongoing use.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>OPTIONAL CONSENT – secondary/future use</b>\n<b>Required acknowledgements</b>\n<b>Drafting note:</b> Keep the core informed-decision statements below. Do not use Yes/No choices or initials for required acknowledgements. Place one confirmation checkbox beside each applicable required acknowledgement.\n\nBy signing below, I confirm that:\n☐ I have read or received and understood this information and had enough time to ask questions.\n☐ I understand that this secondary/future use is optional and that saying no or later withdrawing will not affect the main trial or my usual care.\n☐ I understand the limits of withdrawal explained in this document.\n\n\n<b>Optional choices</b>\n<b>Each choice below is optional and independent from participation in the main clinical trial.</b>\n<b>Drafting note:</b> Include only genuinely optional uses or permissions that can be refused independently.\n\n<b>A. Secondary/future use of specified data</b>\nI give explicit consent to the storage and use of my coded personal data for future/secondary health research in the specified area of [INSERT AREA], as described.\nYes ☐    No ☐\n\n<b>B. Secondary/future use of biological samples</b>\nI consent to the storage and use of my [sample types] for future/secondary research in the specified area of [INSERT AREA], as described.\nYes ☐    No ☐\n\n<b>C. Genetic/genomic secondary research</b>\nI consent to the genetic/genomic research described in this document using my data and/or samples.\nYes ☐    No ☐\n\n<b>D. Recontact</b>\nI agree that the study/repository team may contact me about a future research project that is not covered by this consent, so that I can decide whether to take part.\nYes ☐    No ☐\n\n<b>[Conditional – individual findings]</b>\nI wish to receive the types of individual findings described in this document, if they arise and meet the stated criteria.\nYes ☐    No ☐\n\n<b>[Conditional – irreversible anonymisation]</b>\nI agree that my coded data may be irreversibly anonymised as described. I understand that once this is done, it may no longer be possible to identify or remove my data.\nYes ☐    No ☐\n\n<b>[Conditional – include when one or more optional choices are present]</b>\n<b>Confirmation of optional choices</b>\nI confirm that the optional choices marked above reflect my decisions.\nName of person giving consent: ____________________\nRole (participant / parent or guardian / legally designated representative): ____________________\nDate: __________  Signature: ____________________",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>Signatures</b>\n<b>Drafting note:</b> Use the applicable signature pathway only. A signed copy should be provided to the person giving consent.\n\n<b>[Capable participant]</b>\nParticipant name: ____________________  Date: __________  Signature: ____________________\n\n<b>[Conditional – participant under 16]</b>\nParent/guardian name: ____________________  Relationship/authority: ____________________\nDate: __________  Signature: ____________________\nUse age-appropriate assent where the child/adolescent can express a view.\n\n<b>[Conditional – adult participant lacking capacity]</b>\n<b>Drafting note:</b> Include only where the adult participant cannot provide consent and the approved Irish process allows a legally designated representative to act for this secondary-use decision. The participant should receive adapted information as far as possible and any clear refusal must be respected. If capacity returns while identifiable data or samples remain subject to this consent, obtain the participant’s own consent where required. Do not state that representative consent itself resolves the separate Irish requirements for processing the incapacitated adult’s health-research data.\n\nI am acting as the legally designated representative for [PARTICIPANT NAME/ID]. I have received and understood the information and consent, on the participant’s behalf, to the optional choices marked “Yes” above.\n\nRepresentative name: ____________________\nBasis for acting / relationship: ____________________\nSignature: ____________________  Date: __________\n\nPerson taking consent: ____________________  Role/qualification: ____________________\nDate: __________  Signature: ____________________\n\nA signed copy should be provided to the person giving consent.",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Trial Information and Consent Form - Parents",
+  "doc_name_local": "Information till vårdnadshavare och samtycke till barns deltagande",
+  "target_country": "Sweden",
+  "country_code": "SE",
+  "target_language": "Swedish",
+  "language_code": "sv",
+  "doc_type": "parents",
+  "file_name": "L1_SIS and ICF_parents",
+  "sort_order": "5",
+  "description": "Must be completed for studies involving minor participants (younger than 18 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protokollnummer: [FYLL I: protokollnummer] | EU-prövningsnummer: [FYLL I: EU-prövningsnummer]"
+  ],
+  "info_table": [
+   "Prövningens titel",
+   "Kort titel för prövningen",
+   "Protokollnummer [FYLL I: version och datum]",
+   "EU-prövningsnummer",
+   "Sponsor [FYLL I: fullständig adress]",
+   "Ansvarig prövare",
+   "Prövningsställets namn",
+   "Prövningsställets adress"
+  ],
+  "content_instructions": "Utgå från Kliniska Studier Sveriges svenska mall för klinisk läkemedelsprövning enligt CTR och ICH-GCP E6 (R3), version 7 daterad 2025-11-12. Använd ett klart, enkelt, neutralt och sakligt språk, rikta texten direkt till mottagaren, skriv ut förkortningar första gången och undvik vädjande eller förskönande formuleringar. Anpassa alla exempel och platshållare till protokollet och ta bort instruktioner och alternativ som inte gäller. Beskriv tydligt vad som är forskning och vad som är ordinarie vård. Ange sponsor, prövningsställe, ansvarig prövare, EU-prövningsnummer, prövningens titel, version och kontaktuppgifter. Beskriv endast faktiska data, prov, procedurer, mottagare och överföringar. Ange personuppgiftsansvarig, ändamål, rättslig grund, pseudonymisering, lagring, rättigheter, dataskyddsombud och klagomål till Integritetsskyddsmyndigheten. När Biobankslag (2023:38) är tillämplig ska ansvarig svensk biobank, provtyper, kodning, ändamål, lagringstid, mottagare, hantering efter analys och återkallelse beskrivas. Obligatoriska prov och analyser inom huvudprövningen omfattas av huvudsamtycket när de är fullt beskrivna. Fristående framtida eller sekundär användning ska hanteras i mallen för sekundär och framtida användning. Använd för vårdnadshavare till försökspersoner under 18 år. Barnet är försöksperson; alla procedurer, risker, nyttor, data och prov avser barnet. Om barnet har två vårdnadshavare ska båda samtycka. Barnet ska få separat ålders- och mognadsanpassad information. För barn under 15 år får prövningen inte genomföras om barnet förstår vad den innebär och motsätter sig. För ungdomar som fyllt 15 år och förstår vad läkemedelsprövningen innebär krävs både vårdnadshavarnas samtycke och ungdomens eget informerade samtycke. När barnet fyller 15 år under prövningen och förstår vad prövningen innebär ska eget samtycke inhämtas innan fortsatt deltagande. Inga incitament får ges utöver ersättning för deltaganderelaterade utgifter och inkomstförlust. Den muntliga informationen och inhämtandet av samtycket ska som huvudregel genomföras av samma legitimerade läkare eller legitimerade tandläkare. Om Läkemedelsverket har beviljat undantag får annan hälso- och sjukvårdspersonal genomföra samtalet och inhämta samtycket enligt den godkända proceduren. Informationen till barnet eller ungdomen ska ges både muntligt och skriftligt, vara anpassad till ålder och mognad och lämnas av prövaren eller en annan medlem av prövningsteamet med erfarenhet av att arbeta med barn. Barnets vägran att genomföra en viss procedur ska respekteras. Om proceduren är nödvändig för säkerheten eller krävs enligt det godkända prövningsprotokollet kan deltagandet behöva avslutas; detta och den fortsatta medicinska uppföljningen ska förklaras.",
+  "styling_instructions": "Behåll den svenska källmallens tydliga avsnittsstruktur. Sidhuvudet ska ange EU-prövningsnummer, prövningens titel på svenska och dokumentversion. Använd endast följande tydligt typade markeringar i template_content och metadata: [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] som en fristående rad eller ett fristående stycke för text som endast är riktad till författaren och alltid ska tas bort; [FYLL I: ...] inline för uppgifter eller ord som ska ersättas med prövningsspecifik deltagartext; och [VALFRI TEXT – BEHÅLL ELLER TA BORT] som en fristående rad direkt före ett fullständigt valfritt stycke, en fullständig punkt, ett fullständigt samtyckesval, ett helt valfritt avsnitt eller ett helt valfritt signaturblock. [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] och [VALFRI TEXT – BEHÅLL ELLER TA BORT] får aldrig placeras inne i en deltagarmening eller punkt. Markeringar får inte nästlas. Alla markeringar, ej valda alternativ och irrelevanta avsnitt ska vara borttagna innan dokumentet lämnas till läsaren. Behåll systemvariablerna [document name], [population label] och [date] oförändrade. Använd korta stycken, tydliga rubriker och separata fält för namn, datum och underskrift."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Information till vårdnadshavare\n\nVi vill fråga om ni samtycker till att ert barn deltar i en klinisk prövning. Barnet är försökspersonen. Läs informationen noggrant, diskutera med barnet på ett sätt som passar barnets ålder och mognad och ställ frågor innan ni beslutar.\n\nOm barnet har två vårdnadshavare ska båda underteckna och datera samtycket innan någon prövningsrelaterad åtgärd utförs. Underskrifterna behöver inte lämnas samtidigt. Barnet får separat information anpassad för [FYLL I: 6–11 år/12–14 år/15–17 år]. Barnets uttryckta motstånd ska respekteras. En ungdom som har fyllt 15 år och förstår vad prövningen innebär ska också själv lämna informerat samtycke.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om endast en vårdnadshavare finns eller ensam är behörig ska grunden kontrolleras och dokumenteras i prövningsdokumentationen. Ta bort denna instruktion ur det slutliga deltagardokumentet.]",
+   "section_style": "H2 document subline, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Vad är syftet med prövningen och varför tillfrågas ert barn?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv bakgrund, syfte, barnets sjukdom eller tillstånd, varför prövningen behöver genomföras på minderåriga och varför barnet kan vara lämpligt. Ange sponsor, prövningsställe och ansvarig prövare.]\n\nDenna kliniska prövning är granskad och godkänd av regulatorisk läkemedelsmyndighet i Sverige.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Hur går prövningen till för ert barn?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv prövningsläkemedel, standardbehandling, randomisering, placebo och blindning, antal deltagare, besök, behandling, procedurer, prov, total blodmängd, tidsåtgång, deltagandets längd och vad vårdnadshavarna behöver göra. Skilj tydligt mellan ordinarie vård och prövningsmoment.]\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Förklara hur information ges till barnet, hur barnets förståelse och inställning följs och hur ny information diskuteras under prövningen.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Anpassa följande text och behåll den endast om den gäller.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nBesök 1 – information och screening\n\nNi och barnet får anpassad information. Följande undersökningar görs: [FYLL I: prövningsspecifik uppgift]. Besöket tar cirka [FYLL I: prövningsspecifik uppgift].",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Anpassa följande text och behåll den endast om den gäller.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nBesök 2 – behandling och undersökningar\n\nBarnet får [FYLL I: prövningsspecifik uppgift] och genomgår [FYLL I: prövningsspecifik uppgift]. Ni ansvarar för [FYLL I: läkemedelsadministrering, dagbok, besök eller andra uppgifter].",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Anpassa avsnittet och ange vad som händer efter prövningens slut eller om deltagandet avslutas tidigt.]\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Anpassa följande text och behåll den endast om den gäller.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nBesök 3 – uppföljning\n\nBarnet följs upp under [FYLL I: prövningsspecifik uppgift] genom [FYLL I: prövningsspecifik uppgift]. Efter prövningens slut eller om deltagandet avslutas tidigt kommer [FYLL I: prövningsspecifik uppgift].",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Möjliga konsekvenser, risker och olägenheter för ert barn\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv kända, allvarliga och okända risker, smärta, rädsla, obehag, tidsbörda, integritetsrisker, procedurrisker och åldersrelevanta reproduktionsrisker. Ange hur risker minimeras, hur barnets signaler om obehag eller motstånd följs och när behandling eller deltagande stoppas.]\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv realistisk möjlig direkt nytta för barnet eller nyttan för den berörda barnpopulationen. Nytta får inte överdrivas och betalning eller extra kontroller är inte medicinsk nytta.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Vad händer med ert barns uppgifter?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv vilka uppgifter som samlas in, källor, personuppgiftsansvarig, rättslig grund, kodning, mottagare, journalåtkomst, lagring, tredjelandsöverföring, rättigheter och klagomål till Integritetsskyddsmyndigheten.]\n\nBarnet är den registrerade personen. Vårdnadshavarnas kontakt- och behörighetsuppgifter får bara behandlas i nödvändig omfattning.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Datainsamling och barnets rättigheter\n\nUppgifter om [FYLL I: barnets hälsa, behandling och prövningsresultat] samlas in från [FYLL I: prövningsspecifik uppgift] och pseudonymiseras.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Förklara i deltagartexten hur vårdnadshavare kan utöva rättigheter för barnet och hur barnets egen ökande mognad beaktas.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "Kvalitetskontroll och arkivering\n\nBehöriga sponsorrepresentanter och myndigheter kan kontrollera relevanta uppgifter mot barnets patientjournal under sekretess eller tystnadsplikt. Dokumentation sparas normalt i 25 år, eller 30 år för ATMP-prövningar.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "Vad händer med ert barns prov?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv provtyper, mängder, ansvarig svensk biobank, kodning, ändamål, genetiska analyser, lagringstid, mottagare, överföring och hantering efter analys. Ange vem som kan återkalla samtycke och hur barnets ålder och mognad påverkar beslut om bevarande eller förstöring.]\n\nFramtida eller sekundär användning ska vara separat och får inte påverka barnets deltagande i huvudprövningen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "Hur får ni och barnet information om resultaten?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv tillgång till prövningens samlade resultat, eventuella individuella resultat, behandlingsgrupp och oförutsedda fynd.]\n\nInformationen till barnet ska anpassas till ålder och mognad.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "Försäkring, kostnader och ersättning\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Ange försäkringsskydd för barnet och kontakt vid misstänkt prövningsskada. Beskriv kostnader och ersättning för faktiska resor, utgifter och inkomstförlust med direkt koppling till barnets deltagande. Ersättning får inte utformas som otillbörlig påverkan.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "Deltagandet är frivilligt\n\nNi kan säga nej eller återkalla samtycket utan att ange anledning och utan att barnets vård påverkas. Barnet får säga nej, vilja sluta eller säga eller visa att det inte vill genomföra en viss procedur. Motståndet ska respekteras. Om proceduren är nödvändig för barnets säkerhet eller krävs enligt det godkända prövningsprotokollet kan deltagandet behöva avslutas. Prövningspersonalen ska då förklara vad detta innebär och vilken medicinsk uppföljning som erbjuds.\n\nNär barnet fyller 15 år under prövningen och förstår vad prövningen innebär ska barnets uttryckliga informerade samtycke inhämtas innan deltagandet fortsätter. En ungdom som redan har lämnat giltigt eget informerat samtycke efter fyllda 15 år behöver inte lämna ett nytt samtycke enbart för att personen fyller 18 år under prövningen.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv vad som händer med redan insamlade uppgifter och prov och vilken medicinsk uppföljning som erbjuds.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "Andra behandlingsmöjligheter\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv neutralt ordinarie behandling, annan godkänd behandling, stödjande vård eller annan relevant möjlighet om barnet inte deltar eller slutar.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "Ansvariga för prövningen\n\nAnsvarig prövare: [FYLL I: namn, telefon, e-post]\nForskningssjuksköterska/kontaktperson: [FYLL I: namn, telefon, e-post]\nAkut kontakt: [FYLL I: prövningsspecifik uppgift]\nDataskyddskontakt: [FYLL I: prövningsspecifik uppgift]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "Vårdnadshavarnas samtycke till barnets deltagande\n\nBarnets namn och försökspersons-ID: [FYLL I: prövningsspecifik uppgift]\n\nVi har fått muntlig och skriftlig information, kunnat ställa frågor och haft tillräcklig tid att besluta. Vi har fått information om barnets rätt till åldersanpassad information och att barnets motstånd ska respekteras.\n\nVi bekräftar att:\n• Vi samtycker frivilligt till att barnet deltar i prövningen enligt den information som vi har fått.\n• Vi vet att samtycket omfattar prövningens obligatoriska procedurer som beskrivs. Självständiga frivilliga aktiviteter beslutas separat.\n• Vi har tagit del av informationen om hur barnets personuppgifter behandlas.\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om journalåtkomst ingår.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\n• Vi tillåter den journalinsyn som beskrivs i informationen.\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om tillämpligt.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\n• Vi samtycker till att barnets prov hanteras och bevaras i en svensk biobank på beskrivet sätt.\n• Vi vet att samtycket kan återkallas utan att barnets vård påverkas.\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om barnet är 15–17 år och förstår prövningen.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\n• Vi vet att barnet också måste lämna eget informerat samtycke i en separat handling.\n\nOm barnet har två vårdnadshavare ska båda underteckna och datera samtycket innan någon prövningsrelaterad åtgärd utförs. Underskrifterna behöver inte lämnas samtidigt.\n\n| Vårdnadshavare 1 – underskrift | Namnförtydligande | Datum |\n|  |  |  |\n\n| Vårdnadshavare 2 – underskrift | Namnförtydligande | Datum |\n|  |  |  |\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om endast en vårdnadshavare finns eller ensam är behörig ska grunden kontrolleras och dokumenteras i prövningsdokumentationen. Ta bort denna instruktion ur slutdokumentet.]\n\nJag intygar att jag personligen har genomfört informationssamtalet med vårdnadshavaren eller vårdnadshavarna, besvarat frågor, kontrollerat förståelsen och inhämtat samtycket. Jag intygar också att barnet har fått muntlig och skriftlig information anpassad till ålder och mognad och att barnets inställning har bedömts. En signerad kopia lämnas till vårdnadshavaren eller vårdnadshavarna.\n\n| Underskrift | Namnförtydligande | Datum |\n| Legitimerad läkare eller legitimerad tandläkare som genomfört informationssamtalet och inhämtat samtycket, eller annan hälso- och sjukvårdspersonal enligt ett av Läkemedelsverket beviljat undantag |  |  |",
+   "section_style": "H2 document subline, Rich body text, Signature section, Standard table"
+  }
+ ]
+}

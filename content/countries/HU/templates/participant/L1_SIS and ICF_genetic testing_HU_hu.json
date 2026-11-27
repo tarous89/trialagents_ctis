@@ -1,0 +1,77 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Genetic Testing Information and Consent",
+  "doc_name_local": "Humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező nyilatkozat",
+  "target_country": "Hungary",
+  "country_code": "HU",
+  "target_language": "Hungarian",
+  "language_code": "hu",
+  "doc_type": "genetic_testing",
+  "file_name": "L1_SIS and ICF_genetic testing",
+  "sort_order": 9,
+  "description": "Must be completed for all participant populations with a planned genetic testing in the context of study protocol, both mandatory and optional.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - 1.0 verzió - [date]",
+   "Protokollszám: [töltse ki] | EUCT szám: [töltse ki]"
+  ],
+  "info_table": [
+   "A klinikai vizsgálat teljes címe",
+   "A klinikai vizsgálat rövid címe",
+   "Protokollszám [adja meg a verziót és a dátumot]",
+   "EUCT szám",
+   "Szponzor [teljes címmel]",
+   "Vizsgálatvezető",
+   "Vizsgálóhely neve",
+   "Vizsgálóhely címe",
+   "A genetikai tájékoztatást végző személy neve",
+   "A genetikai tájékoztatást végző személy beosztása / munkaköre",
+   "A vizsgálati alany neve",
+   "A vizsgálati alany születési helye",
+   "A vizsgálati alany születési ideje",
+   "[Ha alkalmazandó:] A nyilatkozattételre jogosult személy neve",
+   "[Ha alkalmazandó:] A nyilatkozattételre jogosult személy születési helye és ideje",
+   "[Ha alkalmazandó:] A nyilatkozattételre jogosult személy jogállása / jogosultságának alapja"
+  ],
+  "content_instructions": "Ezt a sablont kizárólag a klinikai vizsgálati protokoll keretében tervezett humángenetikai vizsgálathoz használja, függetlenül attól, hogy a protokoll azt kötelező vagy opcionális vizsgálatként jelöli. [Genetikai tanácsadás:] A mintavétel előtt a genetikai tájékoztatást genetikai tanácsadás keretében adja meg, kivéve, ha az adott humángenetikai vizsgálatnál annak mellőzését az alkalmazandó magyar szabályok lehetővé teszik. A szükséges tájékoztatás és írásbeli beleegyezés ettől függetlenül kötelező. Ne használja a fő klinikai vizsgálati célon kívüli jövőbeni vagy másodlagos genetikai kutatás engedélyezésére; ehhez a secondary-use sablont és az alkalmazandó külön genetikai követelményeket használja. A dokumentum alapértelmezett címzettje a vizsgálati alany, és a nyelvezetet a tényleges populáció életkorához, érettségéhez és megértési képességéhez igazítsa. Ismertesse a genetikai vizsgálat pontos célját, a minta típusát és mennyiségét, a vizsgálat elvégzésének vagy elmaradásának lehetséges előnyeit és kockázatait, az eredmények lehetséges jelentőségét a vizsgálati alany és közeli hozzátartozói számára, a genetikai eredmények megismerésének vagy meg nem ismerésének lehetőségét, az eredményközlés módját, a minta és genetikai adatok pontos felhasználását, azonosíthatóságát/kódolását, tárolási helyét és idejét, esetleges továbbítását és a releváns biobank- vagy archívumtárolást. A genetikai mintavétel és vizsgálat önkéntes, külön visszautasítható, és visszautasítása önmagában nem akadályozhatja a klinikai vizsgálat további részében való részvételt. Ismertesse a genetikai beleegyezés visszavonásának módját és a még azonosítható/kódolt minta és genetikai adatok kezelésének alkalmazandó következményeit. A fő vizsgálati célon kívüli jövőbeni/másodlagos felhasználást kifejezetten zárja ki ebből a dokumentumból. [Cselekvőképtelen vizsgálati alany esetén:] A humángenetikai vizsgálat alkalmazhatóságát a 2008. évi XXI. törvény 13. § (3) szerint külön ellenőrizze; csak a törvényben megengedett esetben alkalmazza. A végleges dokumentumban csak a tényleges jogi helyzetnek megfelelő aláírási útvonalat tartsa meg: a vizsgálati alany saját beleegyezését; nyilatkozattételre jogosult személy esetén a megfelelő képviseleti beleegyezést; kiskorúnál a parents logikát, ideértve a 14. életévét betöltött kiskorú saját beleegyezését; saját döntésre képes, de írni/olvasni/aláírni nem képes résztvevőnél a két tanús eljárást. Egy dokumentumhoz egyetlen végleges aláírássorozat tartozzon.",
+  "styling_instructions": "Használjon világos, rövid fejezeteket és közérthető magyar nyelvet, a fő SIS/ICF és a secondary-use sablon szerkezetéhez igazodva. Egyszerű, protokoll szerinti farmakogenetikai/farmakogenomikai vizsgálatnál szerzői célként körülbelül 1 oldal tájékoztatás és fél oldal beleegyezés megfelelő; ez nem merev oldalkorlát. Összetettebb tárolási vagy biobank-megoldásnál használjon annyi terjedelmet, amennyi a teljes és érthető tájékoztatáshoz szükséges. A véglegesítés előtt távolítson el minden nem alkalmazandó feltételes blokkot és szerzői utasítást."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>HUMÁNGENETIKAI VIZSGÁLATRA VONATKOZÓ TÁJÉKOZTATÓ ÉS BELEEGYEZŐ NYILATKOZAT</b>\n\n<b>Szerzői utasítás:</b> Ez a dokumentum kizárólag a klinikai vizsgálati protokoll keretében végzett genetikai vizsgálatra vonatkozzon. Ne tartalmazzon jövőbeni vagy másodlagos genetikai kutatási felhasználást.\n\nA(z) [vizsgálat rövid neve] klinikai vizsgálat részeként [farmakogenetikai / farmakogenomikai / egyéb humángenetikai] vizsgálatot tervezünk a(z) [pontos protokoll szerinti cél] céljából. A genetikai vizsgálatról és az Ön döntési lehetőségeiről ebben a külön dokumentumban kap tájékoztatást.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Miért végzünk genetikai vizsgálatot, és milyen mintát használunk?</b>\n\nA genetikai vizsgálat célja: [pontos, protokoll szerinti cél]. A vizsgálat során [gén/variáns/panel vagy közérthető leírás] elemzésére kerül sor.\n\nEhhez [mintatípus] mintából [mennyiség] kerül levételre / az Ön korábban levett [minta] mintáját használjuk fel. A mintavétel módja, gyakorisága és esetleges kellemetlensége/kockázata: [töltse ki].\n\nA genetikai mintavételt vagy vizsgálatot külön visszautasíthatja. Ez önmagában nem akadályozza a klinikai vizsgálat további részében való részvételét. Ha visszautasítja, az Önnel kapcsolatos genetikai adatok a továbbiakban még anonim módon sem használhatók fel.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Milyen előnyei, kockázatai vagy következményei lehetnek?</b>\n\nA genetikai vizsgálat lehetséges előnye: [nincs közvetlen előny / pontos lehetséges előny]. A vizsgálat elvégzésének és elmaradásának lehetséges kockázatai vagy következményei: [töltse ki].\n\n[Ha alkalmazandó:] A genetikai eredmény Önre és közeli hozzátartozóira is hordozhat egészségügyi vagy személyes jelentőségű információt: [röviden ismertesse].\n\n<b>Genetikai eredmények</b>\nÖn jogosult a rá vonatkozó genetikai eredmények megismerésére, és dönthet úgy is, hogy nem kívánja azokat megismerni. E döntését később korlátozás nélkül megváltoztathatja. Az eredmények közlésének módja: [ki, mikor és hogyan; akkor is töltse ki, ha az egyéni eredményhez a résztvevő nem fér hozzá]. [Ha alkalmazandó:] Az egészség szempontjából jelentős váratlan genetikai eredmény kezelésének módja: [töltse ki].",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Hogyan használjuk és tároljuk a mintát és a genetikai adatokat?</b>\n\nA mintát és a genetikai adatokat kizárólag a következő, klinikai vizsgálati protokoll szerinti célra használjuk: [pontos cél és felhasználás].\n\nA minta és genetikai adatok [azonosítható / kódolt / pszeudonimizált / anonimizált] formában kerülnek kezelésre. Tárolási hely: [hely]. Tárolási idő: [időtartam]. A mintát/adatokat [laboratórium/szervezet, ország] kapja meg. [Ha továbbítás történik:] címzett, ország, továbbítás célja és alkalmazott adatvédelmi garancia: [töltse ki].\n\n<b>Adatvédelem</b>\nA fő klinikai vizsgálati tájékoztató adatvédelmi tájékoztatása továbbra is alkalmazandó. A humángenetikai vizsgálat sajátos adatkezelése: adatkezelő(k): [név/cím]; adatvédelmi kapcsolat: [elérhetőség]; cél és jogalap: [pontosítsa]; kezelt genetikai és kapcsolódó adatok: [tételesen]; címzettek/országok: [töltse ki]; tárolási idő: [töltse ki]. A vizsgálóhelyről személyes és különleges adatok csak [kódolt/anonimizált] formában továbbíthatók; a kódkulcs nem továbbítható. [Harmadik országba továbbítás esetén:] [ország és garancia]. Az azonosítható forrásadatokhoz jogosult személyek: [töltse ki]; ezekbe csak a vizsgálóhelyen tekinthetnek be, másolatot nem készíthetnek. NAIH: [aktuális postai cím és webcím].\n\n[Ha archivált gyűjtemény alkalmazandó:] A minta [archivált gyűjtemény neve és helye] területén [időtartam] ideig kerül tárolásra. Az esetleges továbbítás: [címzett, ország, cél].\n\n[Ha biobank alkalmazandó:] A minta [biobank neve és helye] területén [időtartam] ideig kerül tárolásra. A tárolás módja: [személyazonosító adatokkal / kódolt / pszeudonimizált / anonimizált]. Az alkalmazandó, ténylegesen választható tárolási módokat ismertesse.\n\nA vizsgálati cél befejezése után a mintát és a genetikai adatokat [megsemmisítik / törlik / a protokoll és jogszabályok szerint tovább őrzik: pontosítsa].\n\n<b>Ez a beleegyezés nem terjed ki a minta vagy genetikai adat fő klinikai vizsgálati célon kívüli jövőbeni vagy másodlagos kutatási felhasználására.</b>",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Önkéntes-e a genetikai vizsgálat, és visszavonhatja-e a beleegyezését?</b>\n\nIgen. A genetikai vizsgálathoz adott beleegyezés önkéntes. A genetikai mintavételt vagy vizsgálatot visszautasíthatja anélkül, hogy ez önmagában kizárná a klinikai vizsgálat további részéből.\n\nGenetikai beleegyezését bármikor, indokolás nélkül, szóban vagy írásban visszavonhatja. A visszavonás módja: [kapcsolattartó és eljárás]. A visszavonáskor kérheti a még személyazonosító adatokkal együtt tárolt, kódolt vagy pszeudonimizált genetikai minta és az abból származó genetikai adatok megsemmisítését. Ennek módja és határideje: [pontosan ismertesse]. A genetikai beleegyezés visszavonása önmagában nem jelenti a klinikai vizsgálatból való kilépést.\n\n<b>Szerzői utasítás:</b> Genetikai vizsgálat céljából tárolt minta/adat esetén alkalmazza a 2008. évi XXI. törvény 10. § szerinti 30–45 napos megsemmisítési szabályt és a közeli hozzátartozó érdekében fennálló kivételt.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Kit kereshet kérdéseivel?</b>\n\nGenetikai tájékoztatást végző személy / vizsgálatvezető: [név, beosztás/munkakör]\nVizsgálóhely: [név és cím]\nTelefon: [telefonszám]\nE-mail: [e-mail]\n\nAdatvédelmi kapcsolattartó: [név és elérhetőség]\nA minta/genetikai adatok tárolásával vagy továbbításával kapcsolatos kapcsolat: [ha alkalmazandó].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>BELEEGYEZŐ NYILATKOZAT HUMÁNGENETIKAI VIZSGÁLATHOZ</b>\n\nKijelentem, hogy megkaptam és megértettem a humángenetikai vizsgálatra vonatkozó tájékoztatást; lehetőségem volt kérdezni és elegendő időt kaptam a döntésre; tudom, hogy a genetikai mintavételt vagy vizsgálatot visszautasíthatom anélkül, hogy ez önmagában kizárna a klinikai vizsgálat további részéből; tudom, hogyan kezelik a mintát és genetikai adatokat; és tudom, hogy genetikai beleegyezésemet később visszavonhatom.\n\nBeleegyezem a(z) [pontos mintatípus és mennyiség] levételébe/felhasználásába, a jelen dokumentumban ismertetett [pontos genetikai vizsgálat] elvégzésébe, valamint genetikai és kapcsolódó személyes/egészségügyi adataim e célú felhasználásába: Igen □   Nem □\n\n<b>[Ha biobank alkalmazandó:]</b>\nHozzájárulok a mintám [biobank neve] biobankban, [választott tárolási mód] formában történő elhelyezéséhez: Igen □   Nem □\n\nA jelen beleegyezés nem terjed ki a minta fő klinikai vizsgálati célon kívüli további kutatási felhasználására; ehhez külön tájékoztatás és beleegyezés szükséges.\n\n[Ha egyéni genetikai eredmény közölhető:] Genetikai eredményeimet: meg kívánom ismerni □   nem kívánom megismerni □\n\n<b>Későbbi kapcsolatfelvétel</b>\nHozzájárulok ahhoz, hogy a jelen protokoll szerinti genetikai vizsgálat eredményével vagy utánkövetésével kapcsolatban később megkeressenek: Igen □   Nem □\n\n<b>Szerzői utasítás:</b> A megkeresés célját pontosítsa; ez a döntés ne terjedjen ki jövőbeni/másodlagos kutatásra.\n\nA jelen beleegyezés nem vonatkozik jövőbeni vagy másodlagos genetikai kutatásra.\n\n<b>Alapértelmezett út – a vizsgálati alany saját beleegyezése</b>\nNév: ____________________\nSzületési hely: ____________________\nSzületési idő: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\n<b>[Ha nyilatkozattételre jogosult személy beleegyezése szükséges:]</b>\nA nyilatkozattételre jogosult személy neve: ____________________\nSzületési hely és idő: ____________________\nJogállás / jogosultság alapja: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n[Ha a képviselt nagykorú saját beleegyezése jogilag is szükséges:] a vizsgálati alany saját aláírását is tartsa meg.\n\n<b>[Kiskorú esetén:]</b>\nA nyilatkozattételre jogosult szülő/személy neve: ____________________\nSzületési hely és idő: ____________________\nJogállás / jogosultság alapja: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n[A 14. életévét betöltött kiskorú esetén:] a kiskorú saját beleegyezése és aláírása is szükséges: ____________________  Dátum: ____ / ____ / ______\n\n<b>[Ha a saját döntésre képes vizsgálati alany nem tud olvasni/írni/aláírni, és a beleegyezés szóban történik:]</b>\nA vizsgálati alany szóban beleegyezett; aláírás/jel, ha lehetséges: ____________________\n1. tanú – Név: ____________________  Lakcím/elérhetőség: ____________________  Aláírás: ____________________  Dátum: ____ / ____ / ______\n2. tanú – Név: ____________________  Lakcím/elérhetőség: ____________________  Aláírás: ____________________  Dátum: ____ / ____ / ______\n\n<b>A genetikai tájékoztatást végző személy / vizsgálatvezető</b>\nKijelentem, hogy a humángenetikai vizsgálatra vonatkozó tájékoztatást a vizsgálati alany, illetve az alkalmazandó döntéshozó számára érthetően megadtam, kérdéseit megválaszoltam, és megfelelő időt biztosítottam a döntéshez.\nNév: ____________________\nBeosztás / munkakör: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\n<b>Szerzői utasítás:</b> A végleges dokumentumban csak a tényleges jogi helyzetnek megfelelő aláírási útvonalat tartsa meg; ne hozzon létre párhuzamos vagy második beleegyezési folyamatot. A dokumentum egy eredeti, aláírt és dátummal ellátott példányát az érintett kapja meg; egy eredeti példány a kutatási dokumentációban kerül megőrzésre.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

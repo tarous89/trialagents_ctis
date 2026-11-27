@@ -1,0 +1,81 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Information til børn og erklæring om tilsagn",
+  "target_country": "Denmark",
+  "country_code": "DK",
+  "target_language": "Danish",
+  "language_code": "da",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving children participants (aged 5 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protokolnummer: [udfyld] | EU-forsøgsnummer: [udfyld]"
+  ],
+  "info_table": [
+   "Forsøgets titel",
+   "Forsøgets korte titel",
+   "Protokolnummer [tilføj version og dato]",
+   "EU-forsøgsnummer",
+   "Sponsor [med fuld adresse]",
+   "Forsøgsansvarlig (investigator)",
+   "Forsøgsstedets navn",
+   "Forsøgsstedets adresse",
+   "Forsøgsstedets telefonnummer og e-mail",
+   "Dokumentversion og dato"
+  ],
+  "content_instructions": "Brug kun til børn på 5-11 år. Dokumentet skal henvende sig direkte til barnet og forklare hovedforsøget med korte, konkrete og alderssvarende sætninger. Barnet giver ikke det juridisk gyldige samtykke; forældremyndighedsindehaveren eller værgen giver samtykke i den separate forældre-/værgeskabelon. Barnet skal informeres og inddrages i det omfang, barnet kan forstå forsøget, og barnets tydelige nej, modstand mod en enkelt handling eller ønske om at stoppe skal respekteres. Informationen skal gives af en person med kendskab til forsøget og pædagogiske forudsætninger for aldersgruppen. Brug billeder, symboler eller andre hjælpemidler, hvis det forbedrer forståelsen. Beskriv kun hovedforsøgets behandling, besøg, obligatoriske prøver, eventuelle protokolbeskrevne valgfrie prøver eller tests, risici, belastninger og data. Forklar valgfrie aktiviteter enkelt og registrér barnets holdning, men præsenter ikke barnets underskrift som juridisk samtykke. Medtag ikke samtykke til sekundær eller fremtidig brug, graviditetsopfølgning, stedfortrædende samtykke eller et forældresignaturfelt. Hvis barnet fylder 12 år, 15 år eller 18 år under forsøget, skal den relevante alders- eller voksenskabelon anvendes efter danske regler. <i>[Redaktionsnote: Hvis personoplysninger eller biologisk materiale behandles i eller overføres til lande uden for EU/EØS, angiv de konkrete lande, formålet med hver behandling eller overførsel og de relevante garantier efter GDPR kapitel V. Tilføj ikke et særskilt Ja/Nej-valg alene for overførslen. Hvis overførslen kun sker som led i en reelt valgfri og uafhængig aktivitet, knyttes Ja/Nej-valget til selve aktiviteten og ikke til GDPR-overførselsmekanismen.]</i> Bevar redaktionsnoterne i denne skabelon. Alle instruktioner til skabelonbrugeren skal markeres som <i>[Redaktionsnote: ...]</i>. Redaktionsnoter, tomme alternativer og ikke-relevante moduler fjernes først fra det endelige deltagerdokument før udlevering til deltageren eller beslutningstageren.",
+  "styling_instructions": "Bevar skabelonens afsnitsstruktur og overskrifter. Angiv dokumentversion og dato ved hver ændring, og gentag protokolnummer, EU-forsøgsnummer, dokumentversion og dato i sidefoden. Brug korte afsnit, tydelige overskrifter og tabeller eller bokse, når det forbedrer forståelsen. Fjern alle redaktionsnoter, ikke-valgte alternativer og ikke-relevante tekstblokke før udlevering. Erklæringsafsnit skal have tydelige felter til navn, dato og underskrift eller anden meningsfuld dokumentation. Brug stor, letlæselig skrift, korte linjer, meget luft og alderssvarende billeder eller piktogrammer. Hold dokumentet klart kortere end forældreinformationen og undgå juridiske og tekniske detaljer."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Kære [barnets navn]\n\nVi vil spørge, om du vil være med i et forskningsforsøg.\n\nForskning betyder, at læger og forskere prøver at lære noget nyt. Du bliver spurgt, fordi [forklar kort og venligt, hvorfor barnet kan være med].\n\nDine forældre eller din værge får en anden information og skal sige ja, før du kan være med. Men din mening er også vigtig.\n\nDu må sige nej. Du må også sige stop senere. Hvis du ikke vil have lavet en bestemt undersøgelse, skal du sige det eller vise det. Forskerne må ikke gennemføre forsøget mod din vilje.\n\nDu må gerne læse eller høre informationen sammen med en voksen, du stoler på. Du må stille alle de spørgsmål, du vil.\n\n<i>[Redaktionsnote: Tilpas ord, sætningslængde, billeder og forklaringer til den konkrete aldersgruppe og det enkelte barns forståelse. Fjern alle noter før udlevering.]</i>\n\n<b>Den person, du kan spørge:</b>\nNavn: [indsæt]\nTelefon: [indsæt]\nE-mail: [indsæt]\n[Hvis relevant: Akut telefonnummer: [indsæt].]",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Hvorfor laver vi forsøget?</b>\n\nVi vil lære mere om [sygdom, medicin, behandling eller undersøgelse].\n\n[Hvis relevant: Du har [sygdom/tilstand]. Vi vil undersøge, om [medicin/behandling] kan hjælpe børn med denne sygdom.]\n\n[Hvis der ikke forventes personlig nytte: Forsøget hjælper måske ikke dig. Det kan hjælpe læger med at lære noget, som senere kan hjælpe andre børn.]\n\n[Hvis der kan være en mulig personlig nytte: [Medicin/behandling] kan måske hjælpe med [konkret mulig nytte], men vi ved det ikke sikkert.]\n\n[Hvis placebo bruges: Nogle børn får måske en medicin uden aktivt stof. Det kaldes placebo. Læg enkelt forklaret ind, hvorfor placebo bruges.]\n\n[Hvis tilfældig fordeling bruges: En computer bestemmer tilfældigt, hvilken gruppe du kommer i. Hverken du eller lægen vælger gruppen.]\n\n<b>Vil du have mere forklaret?</b>\n□ Ja\n\n<b>Dine spørgsmål:</b>\n\n",
+   "section_style": "H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>Hvad skal der ske?</b>\n\nHvis du er med, varer forsøget cirka [uger/måneder/år].\n\nDu skal komme til [antal] besøg på [sted]. Et besøg varer cirka [tid].\n\n<b>Før forsøget</b>\nVi undersøger, om forsøget passer til dig. Vi skal [forklar undersøgelser enkelt].\n\n<b>Under forsøget</b>\n[Hvis relevant: Du får [navn på medicin/behandling] som [tablet, drik, sprøjte, infusion eller andet] [hvor tit og hvor længe].]\n\nVi skal gøre følgende:\n• [undersøgelse eller behandling i en kort sætning]\n• [undersøgelse eller behandling]\n• [spørgeskema, dagbog eller digital måling]\n• [eventuel indlæggelse eller hjemmebesøg]\n\n[Hvis relevant: Nogle ting er anderledes end din almindelige behandling: [forklar].]\n\n[Hvis barnet skal gøre noget særligt: Du skal [fx komme fastende, tage medicin på et bestemt tidspunkt eller undgå noget]. Forklar hvorfor.]\n\n<i>[Redaktionsnote: Brug gerne et enkelt skema eller billeder. Skriv antal, varighed og samlet belastning tydeligt.]</i>\n\n| Hvornår | Hvad sker der? | Hvor længe? |\n| [indsæt] | [indsæt] | [indsæt] |",
+   "section_style": "H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>Skal vi tage prøver eller bruge oplysninger om dig?</b>\n\n[Hvis forsøget ikke bruger biologisk materiale: Slet teksten om prøver.]\n\nVi skal bruge [blod, urin, spyt, væv eller andet]. Vi tager [antal] prøver. I alt tager vi cirka [mængde]. Prøverne bruges til [forklar formålet enkelt].\n\n[Hvis obligatorisk genetisk analyse indgår: Vi undersøger også [et eller flere gener/DNA] for at [kort konkret formål]. Dette er en nødvendig del af forsøget. Forklar med alderssvarende ord, hvad DNA er.]\n\n[Hvis en prøve eller test er valgfri i hovedforsøget: Du kan være med i resten af forsøget, selv om du ikke vil have [prøve/test]. Vi spørger dig og dine forældre særskilt. Hvis du tydeligt siger eller viser nej, bliver den valgfrie handling ikke lavet.]\n\nDine oplysninger får en kode. Det betyder, at de fleste, der arbejder med forsøget, ikke ser dit navn. Nogle godkendte personer kan kontrollere oplysningerne og skal holde dem hemmelige.\n\nVi gemmer oplysningerne i [periode]. [Hvis relevant: Prøverne gemmes i [periode] hos [sted] og bliver derefter [destrueret/anonymiseret].]\n\nDenne information omfatter kun prøver og oplysninger, der bruges til dette forsøg. Den omfatter ikke fremtidig eller anden forskning.\n\n<b>Vil du have mere forklaret?</b>\n□ Ja",
+   "section_style": "H3 module title, Rich body text, Checkbox group, Info/warning/note box"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>Hvad kan være godt eller svært?</b>\n\n<b>Det, der måske kan være godt</b>\n[Vælg én:]\n• Forsøget forventes ikke at hjælpe dig direkte.\n• [Behandling] kan måske hjælpe dig med [konkret nytte], men vi ved det ikke sikkert.\n\n<b>Det, der kan være svært eller gøre ondt</b>\n• [medicin] kan give [de vigtigste bivirkninger]\n• blodprøver kan svie og give et blåt mærke\n• [undersøgelse] kan være [ubehagelig, støjende, kedelig eller gøre ondt]\n• besøgene tager tid\n• der kan være risici, som lægerne endnu ikke kender\n\nFortæl det med det samme, hvis du får det dårligt, bliver bange eller ikke vil fortsætte med en undersøgelse.\n\n[Hvis stråling bruges: Forklar meget enkelt, hvor mange undersøgelser der laves, og at der er en lille langsigtet risiko.]\n\n[Hvis relevant for ældre børn i aldersgruppen: Beskriv kun nødvendige og alderssvarende forholdsregler vedrørende graviditet eller et ufødt barn. Graviditetsopfølgning må ikke beskrives her.]\n\n<b>Vil du have mere forklaret?</b>\n□ Ja",
+   "section_style": "H3 module title, H4 section title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>Må du sige nej eller stoppe?</b>\n\nJa.\n\nDu må sige nej, selv om dine forældre synes, at du skal være med.\n\nDu må også stoppe senere. Du behøver ikke fortælle hvorfor.\n\nHvis du ikke kan sige det med ord, kan du vise det med dit ansigt, din krop, tegn eller på en anden måde. Forskerne skal lytte til dig.\n\nHvis du siger nej eller stopper, får du stadig den almindelige behandling og hjælp, du har brug for.\n\nLægen kan også stoppe forsøget for dig, hvis det ikke er sikkert at fortsætte.\n\nHvis der kommer vigtig ny viden, forklarer forskeren den for dig på en måde, du kan forstå, og spørger igen, hvad du synes.\n\n[Hvis du stopper: Forklar enkelt, om der er en nødvendig sikkerhedskontrol, og hvad der sker med allerede indsamlede oplysninger og prøver.]",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>Hvad sker der, hvis du ikke er med?</b>\n\n[Hvis forsøget har et behandlingsmæssigt sigte: Du får stadig den almindelige behandling. Din læge forklarer, hvilke andre behandlinger der findes.]\n\n[Hvis forsøget ikke er behandling: Hvis du ikke er med, får du ikke forsøgsmedicinen eller forsøgsundersøgelserne. Det ændrer ikke din almindelige hjælp eller behandling.]\n\n<b>Skader, erstatning og udgifter</b>\nHvis du bliver skadet på grund af forsøget, gælder de danske regler om behandling, klage og erstatning. Dine forældre får den fulde information.\n\n[Hvis relevant: I får dækket [transport eller andre nødvendige udgifter].]\n\n<b>Resultater</b>\nNår forsøget er færdigt, bliver resultaterne offentliggjort uden dit navn. [Hvis relevant: Forskeren kan forklare de vigtigste resultater for dig og dine forældre.]",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Hvem kan du spørge?</b>\n\nForsøgsansvarlig eller kontaktperson: [navn og titel]\nSted: [afdeling og hospital]\nTelefon: [indsæt]\nE-mail: [indsæt]\nTræffetid: [indsæt]\n[Hvis relevant: Akut telefon: [indsæt].]\n\nDu må altid bede om, at en voksen, du stoler på, er med til samtalen.\n\n<b>Skriv eller tegn dine spørgsmål her:</b>\n\n\n\n\n\n",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>Erklæring om barnets tilsagn eller modstand</b>\n\n<i>[Redaktionsnote: Dette er ikke juridisk informeret samtykke. Det dokumenterer barnets egen holdning. Forældremyndighedsindehaverens eller værgens samtykke dokumenteres i den separate forældre-/værgeskabelon.]</i>\n\nForsøget er blevet forklaret for mig med [ord, billeder, film, tegn eller andet hjælpemiddel].\n\nJeg har kunnet stille spørgsmål.\n\nJeg ved, at jeg må sige nej og må stoppe senere.\n\n<b>Min mening:</b>\n□ Jeg vil gerne være med.\n□ Jeg vil ikke være med.\n□ Jeg ved det ikke endnu.\n□ Jeg kan ikke vise eller fortælle tydeligt, hvad jeg mener.\n\n[Hvis relevant: Min mening om den valgfrie [prøve/test]:\n□ Jeg vil gerne have, at den bliver lavet.\n□ Jeg vil ikke have, at den bliver lavet.\n□ Jeg kan ikke vise eller fortælle tydeligt, hvad jeg mener.]\n\nBarnets navn: ______________________________\n\n[Kun hvis det er meningsfuldt for barnet:]\nBarnets underskrift, tegn eller mærke: __________________  Dato: __________\n\n<b>Erklæring fra den person, der gav informationen</b>\n\nJeg har tilpasset informationen til barnets alder og forståelse og har brugt [beskriv hjælpemidler].\n\nBarnet udtrykte følgende mening eller reaktion: [beskriv ord, tegn, kropssprog eller adfærd].\n\nBarnets tilkendegivelse var:\n□ tydeligt tilsagn til deltagelse\n□ tydelig modstand mod deltagelse\n□ tydelig modstand mod følgende handling: [indsæt]\n□ usikker eller uklar tilkendegivelse\n□ barnet kunne ikke tydeligt vise eller fortælle sin mening på dette tidspunkt\n\nManglende protest er ikke i sig selv et tilsagn om deltagelse.\n\nNavn og funktion: ______________________________\nUnderskrift: ______________________________  Dato: __________\n\nBarnet og forældremyndighedsindehaveren/værgen får en kopi af den relevante information og de underskrevne erklæringer.",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section, Info/warning/note box"
+  }
+ ]
+}

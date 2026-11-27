@@ -1,0 +1,94 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Informații pentru adolescent (12–17 ani) și acord privind participarea la studiul clinic",
+  "target_country": "Romania",
+  "country_code": "RO",
+  "target_language": "Romanian",
+  "language_code": "ro",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 12-17",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versiunea 1.0 - [date]",
+   "Numărul protocolului: [completați] | Numărul studiului UE: [completați]"
+  ],
+  "info_table": [
+   "Titlul complet al studiului clinic",
+   "Titlul scurt al studiului clinic",
+   "Numărul protocolului [adăugați versiunea și data]",
+   "Numărul studiului UE",
+   "Sponsor [cu adresa completă]",
+   "Investigator principal",
+   "Denumirea centrului",
+   "Adresa centrului"
+  ],
+  "content_instructions": "Utilizați pentru adolescenți cu vârsta de aproximativ 12–17 ani ca bandă de lizibilitate. România nu stabilește în Ordinul nr. 3390/2022 un prag separat la 15 ani pentru consimțământul adolescentului; nu împărțiți această categorie doar pe criteriul vârstei. Documentul completează consimțământul părintelui/reprezentantului legal. Conform art. 15 alin. (2) din Ordinul nr. 3390/2022, acordul minorului este obligatoriu atunci când adolescentul este capabil să își formeze o opinie și să evalueze informațiile oferite. Refuzul expres sau dorința ulterioară de a se opri trebuie respectate. Adresați-vă direct adolescentului într-un limbaj clar, apropiat de nivelul adult dar simplificat. Includeți scopul, tratamentul, randomizarea/placebo/orbirea dacă sunt aplicabile, vizitele/procedurile, durata, riscurile, beneficiile, alternativele, măsurile reproductive dacă sunt relevante, voluntaritatea, datele/probele, asigurarea și contactele. Probele biologice și testarea moleculară/genetică obligatorii pentru studiul principal se explică în mod adecvat vârstei. Pentru fiecare activitate opțională independentă, adolescentul capabil trebuie să aibă propria alegere DA/NU și semnătură/dată; consimțământul juridic al reprezentantului legal pentru aceeași activitate se documentează separat. Nu includeți utilizare secundară/viitoare. Dacă adolescentul împlinește 18 ani în timpul studiului și continuă, obțineți propriul consimțământ informat ca adult. Nu includeți stimulente; menționați numai rambursarea cheltuielilor/pierderilor de venit direct legate de participare, conform regulilor aprobate.",
+  "styling_instructions": "Folosiți limbaj direct, clar și respectuos, potrivit pentru 12–17 ani. Documentul trebuie să fie mai simplu și mai scurt decât șablonul pentru adult, dar să păstreze toate informațiile relevante pentru decizia adolescentului. Explicați termenii precum randomizare, placebo și orbire. Eliminați instrucțiunile și modulele neaplicabile."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMAȚII PENTRU ADOLESCENT (12–17 ANI) / ACORD PRIVIND PARTICIPAREA LA STUDIUL CLINIC</b>\n\n<b>Instrucțiune pentru autor:</b> Intervalul 12–17 ani este o bandă de comunicare. În România, acordul minorului depinde de capacitatea de a-și forma o opinie și de a evalua informațiile, nu de un prag legal separat la 15 ani.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. De ce ți se propune participarea?</b>\n\nȚi se propune să participi la studiul [titlu] deoarece [afecțiune/motiv explicat simplu]. Un studiu clinic este cercetare: unele medicamente, investigații sau vizite sunt făcute numai pentru a obține informații noi.\n\nPărintele/reprezentantul tău legal primește informații detaliate și consimțământul lui este obținut separat. Tu primești propriile informații și părerea ta contează. Dacă poți înțelege și evalua informațiile, acordul tău de a participa este obligatoriu.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Ce se studiază și de ce?</b>\n\nSe studiază [medicament/tratament]. Scopul este să se afle [eficacitatea/siguranța/doza/alt obiectiv]. [Explică dacă medicamentul nu este autorizat pentru această utilizare, este autorizat pentru altă utilizare sau este testat într-o doză/combinație nouă și rezumă experiența relevantă.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Ce se va întâmpla dacă participi?</b>\n\nParticiparea va dura aproximativ [durată] și vei avea aproximativ [număr] vizite. Vei primi [medicament/tratament standard/placebo] ca [formă/doză/frecvență].\n\n<b>Dacă există randomizare:</b> grupa este aleasă la întâmplare; șansa pentru fiecare grupă este [X].\n<b>Dacă există placebo:</b> placebo arată ca medicamentul, dar nu conține substanța activă studiată.\n<b>Dacă studiul este orbit:</b> [tu / tu și medicul] nu veți ști ce tratament primești, cu excepția situațiilor în care este necesar pentru siguranță.\n\nVizită\tCând\tDurată\tCe se va întâmpla\n[completați]\t[completați]\t[completați]\t[completați]\n\n<b>Dacă se recoltează sânge:</b> În total se vor recolta aproximativ [X] ml de sânge.\n\n<b>Module condiționale:</b>\n• [probe biologice obligatorii: ce se recoltează și de ce];\n• [testare moleculară/genetică obligatorie: ce se testează, scopul și implicațiile importante];\n• [proceduri invazive/radiații/jurnale/dispozitive: ce presupun];\n• [activitate opțională: descrieți separat și spuneți clar că poate fi refuzată fără pierderea participării principale].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Ce se așteaptă de la tine?</b>\n\nEste important să vii la vizite, să urmezi instrucțiunile privind tratamentul și să spui medicului despre alte medicamente, simptome noi sau internări. [Descrieți numai restricțiile reale privind alimentele, alcoolul, fumatul, sportul, soarele, conducerea etc.]\n\n<b>Text condițional - măsuri reproductive:</b> Dacă aceste măsuri sunt relevante pentru tine, medicul îți va explica pe înțelesul tău [testele de sarcină/contracepția/perioada aplicabilă/restricțiile privind donarea de spermă sau ovocite]. Dacă apare o sarcină la tine sau la partenera ta, spune imediat medicului. Urmărirea sarcinii se face printr-un document separat.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Care sunt riscurile și neplăcerile?</b>\n\n[Medicamentul] poate provoca reacții adverse și este posibil ca unele riscuri să nu fie încă cunoscute.\n\n<b>Riscuri importante:</b>\n• [risc, cât de des poate apărea și ce se face]\n\n<b>Riscuri ale procedurilor:</b>\n• [recoltare, biopsie, radiații, contrast etc.]\n\n<b>Sarcină practică:</b>\n• [timp, călătorii, școală, sport etc.]\n\nDacă te simți rău sau ai îngrijorări, spune imediat medicului, părintelui/reprezentantului sau unui adult în care ai încredere.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Poți avea un beneficiu?</b>\n\n[Este posibil ca tratamentul să te ajute, dar nu este sigur / nu se așteaptă un beneficiu medical direct.] Starea ta poate să nu se îmbunătățească sau se poate agrava. Rambursările, plățile sau controalele suplimentare nu sunt beneficii medicale.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Ce alte opțiuni ai?</b>\n\nDacă nu participi, poți continua îngrijirea și tratamentele disponibile în România: [opțiuni, beneficii și riscuri pe scurt]. Medicul le va discuta cu tine și cu părintele/reprezentantul tău.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Poți spune „nu” sau te poți opri?</b>\n\nDa. Participarea este voluntară. Poți spune „nu” sau te poți opri mai târziu fără să explici de ce și fără ca îngrijirea ta obișnuită să fie afectată. Refuzul tău expres trebuie respectat.\n\nPoți spune și că nu vrei o anumită procedură. După oprire, medicul poate recomanda o evaluare de siguranță.\n\nDacă împlinești 18 ani în timp ce studiul continuă, vei primi informațiile pentru adult și ți se va cere propriul consimțământ informat pentru continuare.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>9. Ce se întâmplă cu datele și probele tale?</b>\n\nDatele tale vor fi protejate și, de regulă, codificate/pseudonimizate. [Dacă se folosesc probe biologice: Și probele tale vor fi protejate și gestionate conform regulilor studiului.] Persoanele autorizate pot verifica documentele medicale pentru controlul studiului și trebuie să respecte confidențialitatea.\n\n[Păstrați numai dacă se aplică: Probele necesare studiului se folosesc numai pentru studiul principal descris aici.] Utilizarea secundară sau viitoare este separată și nu este inclusă în acest acord.\n\n[Includeți pe scurt contactul pentru protecția datelor și eventualele transferuri relevante, fără detalii juridice inutile.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>10. Asigurare, costuri, informații noi și contacte</b>\n\nPentru studiu există [asigurare/mecanism de despăgubire]. Dacă studiul îți provoacă o problemă de sănătate, spune imediat medicului.\n\n[Dacă studiul prevede rambursări: Părinților/reprezentanților li se pot rambursa cheltuieli sau pierderi de venit direct legate de participarea ta, conform regulilor aprobate.] Nu ți se oferă stimulente pentru a accepta participarea.\n\nInformațiile noi importante pentru siguranță sau decizia de continuare îți vor fi explicate. Rezultatele studiului vor fi publicate în sistemul UE pentru studii clinice fără numele tău.\n\nMedic investigator: [nume, telefon, e-mail]\nÎntrebări privind drepturile: [contact aprobat]\nProtecția datelor: [contact DPO/operator].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>ACORDUL ADOLESCENTULUI</b>\n\nAm primit informațiile într-un mod pe care îl înțeleg, am putut pune întrebări și am avut timp să mă gândesc.\n\n□ Doresc să particip la studiul clinic.\n□ Nu doresc să particip.\n□ Nu sunt încă sigur/ă și doresc mai multe informații sau timp.\n\nNumele adolescentului: ______________________________\nSemnătura: ______________________________\nData: ____ / ____ / ______\n\n<b>Instrucțiune pentru autor:</b> Documentați acordul atunci când adolescentul este capabil să își formeze o opinie și să evalueze informațiile. Acesta completează, nu înlocuiește, consimțământul reprezentantului legal.\n\n<b>Activitate opțională independentă - repetați pentru fiecare:</b>\nDoresc să particip la [test/procedură/recoltare/analiză și scop]. DA □ NU □\nSemnătura adolescentului: __________________  Data: __________\n<b>Instrucțiune:</b> Consimțământul reprezentantului legal pentru aceeași activitate se documentează în formularul pentru părinți/reprezentanți.\n\n<b>Declarația medicului:</b>\nDeclar că sunt medic, membru al echipei de investigație, cu pregătire/experiență în lucrul cu copii și instruit corespunzător privind protocolul și buna practică în studiul clinic. Am informat adolescentul într-un limbaj adecvat vârstei și maturității, am răspuns întrebărilor și am documentat voința exprimată. Refuzul expres va fi respectat.\nNume: __________________  Semnătură: __________________  Data: __________\n\nAdolescentul primește un exemplar al informației sale. Consimțământul părintelui/reprezentantului legal este documentat separat.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

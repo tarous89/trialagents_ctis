@@ -1,0 +1,95 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Informace pro dospívající ve věku 12–14 let / Vyjádření vůle účastnit se klinického hodnocení",
+  "target_country": "Czech Republic",
+  "country_code": "CZ",
+  "target_language": "Czech",
+  "language_code": "cs",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 12-14",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - verze 1.0 - [date]",
+   "Číslo protokolu: [doplňte] | EU CT číslo: [doplňte]",
+   "Identifikace klinického hodnocení: [doplňte] | verze dokumentu: [doplňte]"
+  ],
+  "info_table": [
+   "Celý název klinického hodnocení",
+   "Zkrácený název klinického hodnocení",
+   "Číslo protokolu [doplňte verzi a datum]",
+   "EU CT číslo",
+   "Zadavatel [včetně úplné adresy]",
+   "Hlavní zkoušející",
+   "Název pracoviště",
+   "Adresa pracoviště"
+  ],
+  "content_instructions": "Použijte pouze pro dospívající ve věku 12–14 let jako samostatnou věkově přiměřenou informaci a záznam jejich svobodné vůle; právně účinný souhlas rodiče nebo zákonného zástupce se získává v samostatném rodičovském formuláři. Používejte přímé oslovení „Ty“, krátké věty, jednoduché příklady a vysvětlete každý odborný pojem. Dospívající podpisem nebo jiným přiměřeným způsobem vyjadřuje svou vůli účastnit se; toto vyjádření nenahrazuje souhlas rodiče nebo zákonného zástupce. Výslovné odmítnutí nebo pozdější přání přestat musí být respektováno. Zachovejte informace důležité pro rozhodnutí: výzkumný účel, léčbu, randomizaci, placebo a zaslepení, návštěvy, výkony, rizika, možný přínos, alternativy, pojištění, náklady, údaje a vzorky, dobrovolnost, kontakty, EU CT číslo a výsledky na euclinicaltrials.eu. Povinné vzorky a genetická vyšetření hlavního hodnocení patří do hlavního souhlasu rodiče a musí být vysvětleny dospívajícímu; skutečně volitelnou činnost lze odmítnout samostatně. Nezařazujte pokyny k antikoncepci. Pokud může hodnocený přípravek nebo postup poškodit nenarozené dítě, ponechte pouze stručné věkově přiměřené vysvětlení tohoto rizika. Budoucí nebo sekundární použití údajů či vzorků nezahrnujte. Pokud dospívající během hodnocení přejde do starší věkové skupiny, poskytněte mu verzi pro věk 15–17 let; po dosažení 18 let vyžádejte jeho vlastní standardní informovaný souhlas pro pokračování. Rozsah konečných informací pro dospívající ve věku 12–14 let nesmí přesáhnout 4 strany.",
+  "styling_instructions": "Konečný dokument musí být pouze v češtině. Konečné informace pro dospívající ve věku 12–14 let mají mít nejvýše 4 strany. Nepoužívejte přílohy. Použijte přehledné kapitoly a odstavce, standardní velikost písma, například Times New Roman 12 nebo Arial 11, a srozumitelný, citlivý jazyk bez nevysvětlených zkratek a odborných výrazů. Každá strana musí být očíslována a označena číslem verze, datem vydání a identifikací klinického hodnocení. Před finalizací odstraňte všechny pokyny pro zpracovatele, příklady, nevybrané alternativy a neaplikovatelné části. Pro plán návštěv a výkonů použijte přehlednou tabulku, pokud to zlepšuje srozumitelnost. Obecné zaškrtávací otázky ano/ne nepoužívejte; výjimkou jsou odůvodněné, skutečně nezávislé volitelné činnosti s vlastním podpisem a datem."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMACE PRO DOSPÍVAJÍCÍ VE VĚKU 12–14 LET / VYJÁDŘENÍ VŮLE ÚČASTNIT SE KLINICKÉHO HODNOCENÍ</b>\n\n<b>Pokyn pro zpracovatele:</b> Tato šablona je určena pouze pro dospívající ve věku 12–14 let. V konečné verzi ponechte celý název klinického hodnocení a EU CT číslo. Používejte přímé oslovení „Ty“, krátké věty, jednoduché příklady a vysvětlete každý odborný pojem.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Proč se na Tebe obracíme?</b>\n\nNabízíme Ti účast v klinickém hodnocení [název], protože [máš diagnózu / zdravotní stav / jiný srozumitelný důvod].\n\nKlinické hodnocení je výzkum. Některé léky, vyšetření nebo návštěvy se dělají jen kvůli výzkumu a nejsou běžnou léčbou.\n\nTvoji rodiče nebo zákonný zástupce dostanou podrobné informace a jejich souhlas bude získán samostatně. Ty dostáváš vlastní informace a vyjadřuješ svou vůli, zda se chceš účastnit. Tvoje jasné „ne“ nebo pozdější přání přestat musí být respektováno.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Co se zkoumá a proč?</b>\n\nZkoumá se [název přípravku nebo léčby]. Cílem je zjistit [účinnost / bezpečnost / dávku / jiný cíl].\n\nPřípravek je [dosud neschválen / schválen pro jinou nemoc / zkoumán v nové dávce nebo kombinaci]. Dosud ho dostalo přibližně [počet] lidí a víme o něm [hlavní relevantní poznatky].\n\nStudie se zúčastní asi [počet] lidí v České republice a [počet] celkem.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Co se bude dít, pokud se zapojíš?</b>\n\nÚčast potrvá asi [doba]. Přijdeš na [počet] návštěv a každá bude trvat přibližně [doba].\n\nDostaneš [přípravek / standardní léčbu / placebo] jako [forma] v dávce [doplňte].\n\n<b>Pokud je použito losování:</b> Skupinu určí náhoda. Pravděpodobnost jednotlivých možností je [doplňte].\n<b>Pokud je použito placebo:</b> Placebo vypadá jako lék, ale nemá účinnou látku.\n<b>Pokud je hodnocení zaslepené:</b> [Ty / Ty ani lékař] nebudete vědět, co dostáváš, pokud to nebude nutné zjistit kvůli bezpečnosti.\n\n<b>Plán návštěv:</b>\nNávštěva\tKdy\tJak dlouho\tCo se bude dít\n[doplňte]\t[doplňte]\t[doplňte]\t[doplňte]\n\nCelkem se odebere asi [X] ml krve. Povinné vzorky, genetická vyšetření, zobrazování, biopsie, deníky nebo digitální nástroje vysvětlete konkrétně. Skutečně volitelný test nebo odběr můžeš odmítnout, aniž bys ztratil/a možnost účasti v hlavní části.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Co se od Tebe očekává?</b>\n\nJe důležité chodit na návštěvy, užívat přípravek podle pokynů a říct lékaři o dalších lécích, doplňcích, očkování, nových potížích nebo hospitalizaci.\n\nPodle protokolu může být potřeba omezit [některé léky / alkohol / kouření / jídlo / sport / řízení / slunění]. Vysvětlete proč a na jak dlouho.\n\n<b>Tato informace se Tě týká pouze tehdy, pokud může hodnocený přípravek nebo některý postup poškodit nenarozené dítě:</b> Zkoušející lékař Ti srozumitelně vysvětlí známá nebo možná rizika pro nenarozené dítě a odpoví na Tvé otázky.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Jaká jsou možná rizika a nepříjemnosti?</b>\n\nPřípravek [název] může způsobit nežádoucí účinky. Ne všechny mohou být známé.\n\n<b>Nejdůležitější rizika:</b>\n• [riziko, jak často se může stát a co se pak dělá]\n\n<b>Rizika vyšetření:</b>\n• [odběr krve, biopsie, záření, kontrastní látka, další výkon]\n\n<b>Praktická zátěž:</b>\n• [čas, cestování, pobyt, omezení školy nebo sportu]\n\nKdyž se necítíš dobře, něco Tě bolí nebo máš obavy, řekni to hned lékaři, rodiči nebo jiné dospělé osobě, které věříš.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Můžeš mít z účasti prospěch?</b>\n\nVyberte jednu možnost:\n• Přípravek Ti možná pomůže [konkrétně], ale není to jisté.\n• Neočekává se, že by Ti účast přímo zdravotně pomohla. Výzkum může pomoci budoucím pacientům.\n\nTvůj stav se může také nezměnit nebo zhoršit. Odměna, proplacení cestovného nebo více kontrol nejsou zdravotním přínosem.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Jaké jsou jiné možnosti?</b>\n\nKdyž se nezúčastníš, můžeš dostávat léčbu běžně dostupnou v České republice: [možnosti, hlavní výhody a rizika].\n\nLékař probere vhodné možnosti s Tebou a rodiči. Odmítnutí účasti nezhorší Tvou běžnou léčbu.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Můžeš říci ne nebo přestat?</b>\n\nAno. Účast je dobrovolná. Můžeš říci „ne“ nebo kdykoliv později přestat bez udání důvodu.\n\nTvoje jasné odmítnutí musí být respektováno, i když rodiče souhlasili. Můžeš také odmítnout jednotlivý výkon.\n\nPo skončení může lékař doporučit bezpečnostní kontrolu. Vysvětlí, co se stane s léčbou, již získanými údaji a vzorky.\n\nPokud během hodnocení dosáhneš 18 let, dostaneš standardní informace pro dospělého a budeš požádán/a o vlastní informovaný souhlas s pokračováním.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>9. Co se stane s Tvými údaji a vzorky?</b>\n\nTvé údaje a vzorky budou označeny kódem. Zadavatel běžně neuvidí Tvé jméno. Pro kontrolu mohou do zdravotnické dokumentace nahlížet členové studijního týmu, monitor, auditoři, regulační orgány a etická komise; musí zachovat mlčenlivost.\n\nPovinné vzorky se použijí jen pro hlavní hodnocení popsané zde. Budoucí nebo sekundární použití vyžaduje jiný samostatný dokument.\n\nPokud je to pro toto klinické hodnocení vhodné, dostaneš také stručné samostatné informace o tom, jak budou používány a chráněny Tvé osobní údaje. Tvoji rodiče nebo zákonný zástupce obdrží příslušné informace podle schváleného postupu.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>10. Pojištění, náklady, nové informace a výsledky</b>\n\nVšichni účastníci jsou pojištěni podle platné legislativy ČR. Pokud by hodnocení poškodilo Tvé zdraví, kontaktuj zkoušejícího lékaře.\n\nVýzkumné léky a vyšetření hradí zadavatel. Přiměřené výdaje mohou být nahrazeny podle pravidel [doplňte].\n\nNové informace důležité pro bezpečnost nebo rozhodnutí pokračovat Ti lékař vysvětlí. Souhrn výsledků bude na https://euclinicaltrials.eu.\n\nKontakt: zkoušející lékař [jméno, telefon, e-mail].\nEtická komise – otázky o právech: [název], e-mail [eticka.komise@sukl.gov.cz nebo konkrétní e-mail]. U etické komise neuvádějte telefonní číslo.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>VYJÁDŘENÍ VŮLE DOSPÍVAJÍCÍHO VE VĚKU 12–14 LET</b>\n\nInformace mi byly vysvětleny způsobem, kterému rozumím. Mohl/a jsem se ptát a měl/a jsem čas přemýšlet.\n□ Chci se klinického hodnocení účastnit.\n□ Nechci se účastnit.\n□ Nejsem si jistý/á a chci další vysvětlení nebo čas.\n\nJméno a příjmení dospívajícího: ______________________________\nPodpis: ______________________________\nDatum: ____ / ____ / ______\n\n<b>Podmíněný blok – skutečně volitelný test nebo odběr:</b>\nRozhodnutí dospívajícího: Ano □ Ne □\nPodpis: __________________  Datum: __________\n<b>Pokyn:</b> Právní souhlas rodiče/zákonného zástupce k této volbě zaznamenejte v rodičovském formuláři, pokud je vyžadován.\n\nProhlašuji, že jsem dospívajícího informoval/a jazykem přiměřeným věku a vyspělosti, odpověděl/a na otázky, poskytl/a dostatek času a zaznamenal/a jeho skutečnou vůli. Výslovný nesouhlas bude respektován.\n\nJméno a příjmení zkoušejícího lékaře: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\nDospívající obdržel datovaný stejnopis své věkově přiměřené informace a záznamu. Právní souhlas rodiče/zákonného zástupce je získán samostatně.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

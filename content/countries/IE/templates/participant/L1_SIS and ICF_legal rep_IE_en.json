@@ -1,0 +1,128 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Trial Information and Consent Form - Legal Representative",
+  "doc_name_local": "Trial Information and Consent Form – Legally Designated Representative",
+  "target_country": "Ireland",
+  "country_code": "IE",
+  "target_language": "English",
+  "language_code": "en",
+  "doc_type": "legal_rep",
+  "file_name": "L1_SIS and ICF_legal rep",
+  "sort_order": "2",
+  "description": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protocol number: [fill in] | EU trial number: [fill in]"
+  ],
+  "info_table": [
+   "Trial title",
+   "Short trial title",
+   "Protocol number [add version and date]",
+   "EU trial number",
+   "Sponsor [with full address]",
+   "Principal investigator",
+   "Site name",
+   "Site address",
+   "Study identification number",
+   "Co-investigator(s) [names, titles and contact details]",
+   "Data controller(s)",
+   "Data Protection Officer [name and contact details]"
+  ],
+  "content_instructions": "Tailor the document to the specific clinical trial; remove sections and alternatives that do not apply and add study-specific information needed for an informed decision. Use clear Irish English, plain language consistent with National Adult Literacy Agency principles, approximately a 12-year-old reading level where feasible, short paragraphs, descriptive headings and bullets. Spell out abbreviations on first use and explain unavoidable medical or technical terms. Keep the document consistent with the approved protocol, CTIS Part II dossier and Irish site arrangements. Describe research versus usual care, purpose, why the person is invited, procedures in the order experienced, duration, risks and burdens, possible benefits, alternatives where relevant, voluntariness and withdrawal, insurance/injury arrangements, costs/reimbursement, results, contacts and ethics approval. For Irish data protection, identify the personal data used, sources, controllers/processors/recipients, retention, security, medical-record access, transfers outside the EEA and participant-facing safeguards, rights, Data Protection Officer and complaint route; use a simple study-specific explanation of the GDPR lawful basis and include explicit consent for health-research data where applicable. For biological samples used within the main trial, state sample type and amount, whether collection/use is mandatory or optional, purpose, coding, storage location and duration, analyses, recipients/transfers, security and what happens after analysis or withdrawal. For genetic or genomic testing within the main trial, state whether it is mandatory or optional, the type and purpose of testing, limits to anonymity, foreseeable privacy/family risks, handling of individual or incidental findings, storage/security, transfers and any relevant commercial involvement. Required study procedures, required biological samples and required genetic/genomic testing must be clearly described and, when applicable, included in the Required acknowledgements list with an individual confirmation checkbox. Use separate Yes/No choices only for genuinely optional activities that may be refused without preventing the main activity covered by the form. Do not include optional storage or secondary/future research beyond the approved main-trial purposes; that belongs only in the separate Secondary and Future Use template. Use when an adult lacks decision-making capacity and trial participation must be authorised by an Irish legally designated representative. The representative is the addressee; all procedures, risks, benefits, data and samples concern the participant. Under current NREC guidance, a family member or person with a personal relationship who can best interpret the participant’s will and preferences may act; if none is available, a medical practitioner primarily responsible for the participant’s treatment and not involved in the trial may act. The participant must be informed/involved as far as possible and any refusal respected. The representative’s trial-participation consent must not be presented as consent to processing the incapacitated adult’s health-research data; confirm the separate Irish data-processing basis/HRCDC pathway where applicable. If capacity returns, obtain the participant’s own consent promptly.",
+  "styling_instructions": "Use clear participant-facing question headings and short sections. Use a clean readable font such as Calibri, Arial, Verdana or Tahoma at about 12 point. Avoid block capitals and unnecessary legalistic text. Use tables or simple flow charts when they improve understanding. Present required acknowledgements as a clear list with one checkbox beside each applicable acknowledgement and the final dated signature. Do not use Yes/No choices or initials for required acknowledgements. Use Yes/No choices only for genuinely optional components. Where optional components are included, present their confirmation/signature separately from the main consent signature. Use separate fields for printed name, date and signature."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Information for the legally designated representative</b>\n<b>Drafting note:</b> In Ireland use the term “legally designated representative”. Do not use “legally authorised representative”, “legally acceptable representative”, “proxy assent” or “next of kin” as substitutes. Confirm outside this participant-facing document that the person acting as representative meets the applicable Irish definition.\nYou are being asked to decide whether the adult participant you represent may take part in this clinical trial. The participant, not you, is the person taking part. Read this information carefully, ask questions and take the time you need.\n\nThe participant should receive information adapted to their ability to understand and should be involved as far as possible. Any clear refusal or wish to stop must be respected.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Why is the trial being done and why is the participant being invited?</b>\nDescribe the condition, study purpose, why this population must be studied, expected number of participants and why the person represented may be eligible. Explain any experimental treatment or procedure in plain language.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>What will happen if you agree?</b>\nDescribe the study treatment, comparator/placebo, randomisation/blinding, screening, visits, procedures, duration, sample volumes and follow-up from the participant’s perspective. State what is research versus usual care and what responsibilities, if any, fall on the representative.\n\nThe participant’s expressed or observed wishes must be checked throughout. If the participant refuses a procedure, explain whether the study can continue safely or whether participation must end.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>What are the possible benefits?</b>\nExplain any realistic possible direct benefit to the participant or state clearly if no direct benefit is expected. Do not promise benefit.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>What are the risks, side effects and burdens?</b>\nDescribe foreseeable and unknown risks, side effects, discomforts, practical burdens, reproductive risks and privacy risks. Explain precautions, safety monitoring and what happens if something goes wrong. Include genetic-testing risks when applicable.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>What other treatment options are available?</b>\nDescribe relevant usual treatment, other approved options, supportive care or no active treatment where applicable, and the main practical differences from trial participation.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>What will happen to the participant's samples and genetic information?</b>\n<b>Drafting note:</b> Include this section whenever biological samples are collected, used or stored for the main trial. Remove only if no biological material is involved.\n\nState exactly which samples are collected or used, including existing clinical samples where applicable, the amount, when and how they are collected, and whether each sample or test is required for the main trial or genuinely optional. Explain the main-trial purpose, coding/pseudonymisation, storage location and duration, laboratories or other recipients, transfers outside the EEA, security, and whether samples are destroyed, used up or retained only for the approved main-trial purpose after analysis.\n\n<b>[Conditional – genetic/genomic testing within the main trial]</b>\nExplain the type and purpose of genetic testing in plain language; whether it is required or optional; the fact that DNA is unique and cannot be regarded as completely anonymous; foreseeable privacy, family or discrimination risks; whether individual results or incidental findings may be returned and how; any counselling available; storage/security and transfers of genetic material/data; and any relevant commercial involvement.\n\nDo not include storage or use for unspecified future or secondary research here. Use the separate Secondary and Future Use template for any activity outside the main-trial purposes.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>What information about the participant will be used?</b>\nDescribe the participant’s personal and health data, sources, relevant medical-record access, coding/pseudonymisation, controllers/processors/recipients, study-specific lawful basis, storage, retention, security, transfers outside the EEA and safeguards. Identify the Data Protection Officer and complaint route.\n\n<b>Drafting note:</b> In Ireland, consent by a legally designated representative to trial participation must not be presented as automatically providing consent for processing the personal data of an adult lacking decision-making capacity. Confirm the appropriate Irish data-processing route, including whether a Health Research Consent Declaration Committee declaration is required, and describe the participant-facing effect without unnecessary legal detail.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>What are the participant's data-protection rights?</b>\nExplain how applicable rights may be exercised for the participant, together with any lawful research limitations. Provide study contact, Data Protection Officer details and the Data Protection Commission complaint route.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Will the participant be told study or individual results?</b>\nExplain how overall results will be made available and whether clinically relevant individual findings or incidental findings may be communicated, taking account of the participant’s ability and previously expressed wishes.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>What happens if something goes wrong?</b>\nDescribe study-related injury arrangements, insurance/indemnity and the contact route for suspected harm.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>Are there costs or reimbursements?</b>\nState participant and representative expenses, reimbursement and any permitted compensation. Avoid incentives linked to agreeing on the participant’s behalf.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>Is participation voluntary and can consent be withdrawn?</b>\nYou may refuse or later withdraw permission without giving a reason and without affecting the participant’s usual care. The participant’s own refusal or wish to stop must be respected at any time. Explain what happens to treatment, safety follow-up, data and main-trial samples after withdrawal.\n\nIf the participant regains capacity, provide the capable adult information and obtain the participant’s own informed consent promptly for continued participation.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>Who is organising, funding and approving the trial?</b>\nIdentify the sponsor, investigator/site, funding, relevant commercial interests and the approving Irish research ethics committee. Explain any material financial relationship consistently with the master template.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>Who can I contact?</b>\nProvide the principal investigator/study contact, urgent contact where relevant, Data Protection Officer and complaint routes.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>CONSENT FORM – legally designated representative</b>\n<b>Required acknowledgements and permission for trial participation</b>\n<b>Drafting note:</b> Keep only statements that apply. Delete non-applicable conditional statements. Do not use Yes/No choices or initials for required acknowledgements. Place one confirmation checkbox beside each applicable required acknowledgement.\n\n<b>Participant name / study ID:</b> [INSERT]\n<b>Representative name:</b> [INSERT]\n<b>Relationship / basis for acting as legally designated representative:</b> [INSERT]\n\nBy signing below, I confirm that:\n☐ I have received and understood the information about this trial, had enough time to decide and had my questions answered.\n☐ I understand that the participant will be informed and involved as far as possible and that a clear refusal or wish to stop must be respected.\n☐ I give permission for the participant to take part in this trial, including the required trial procedures described in the information leaflet.\n☐ I have received information about how the participant’s personal data will be handled for the trial.\n<b>[Conditional – required biological samples]</b> ☐ I agree to the required collection, use and storage of the participant’s biological samples for the main-trial purposes described.\n<b>[Conditional – required genetic/genomic testing]</b> ☐ I agree to the required genetic/genomic testing within the main trial as described.\n<b>[Conditional – other required study procedure]</b> ☐ [INSERT REQUIRED STUDY-SPECIFIC ACKNOWLEDGEMENT].\n☐ I will receive a signed copy of the information and Consent Form.\n\n<b>Drafting note:</b> Do not present this representative consent as consent to processing the incapacitated adult’s health-research data. Apply the approved Irish data-processing route separately where required.\n",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>Optional choices</b>\n<b>The participant may still take part in the remainder of the main trial if an optional choice below is answered “No”.</b>\n<b>Drafting note:</b> Include only genuinely optional components that can be refused without preventing the main activity covered by this form.\n\n<b>[Conditional – optional biological sample/test]</b>\nI agree to the optional [sample/test] for the participant described in the information leaflet.\nYes ☐    No ☐\n\n<b>[Conditional – optional genetic/genomic testing]</b>\nI agree to the optional genetic/genomic testing for the participant described in the information leaflet.\nYes ☐    No ☐\n\n<b>[Add other genuinely optional main-trial procedures only where applicable.]</b>\n\n<b>[Conditional – include when one or more optional choices are present]</b>\n<b>Confirmation of optional choices</b>\nI confirm that the optional choices marked above reflect my decisions on behalf of the participant.\nLegally designated representative name: ____________________  Date: __________  Signature: ____________________",
+   "section_style": "H3 module title, Rich body text, Checkbox group, Signature section"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>Signatures</b>\n__________________________    ____________________    ____________________\nRepresentative name            Date                   Signature\n\n__________________________    ____________________    ____________________    ____________________\nPerson taking consent name     Role/qualification     Date                   Signature\n\n<b>Drafting note:</b> Record how the representative’s status/eligibility was checked. Provide a signed copy. If the participant regains capacity, use the capable adult template for re-consent.",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Trial Information and Consent Form - Legal Representative",
+  "doc_name_local": "Informace pro zákonně ustanoveného zástupce / Informovaný souhlas s účastí zastupované osoby",
+  "target_country": "Czech Republic",
+  "country_code": "CZ",
+  "target_language": "Czech",
+  "language_code": "cs",
+  "doc_type": "legal_rep",
+  "file_name": "L1_SIS and ICF_legal rep",
+  "sort_order": 2,
+  "description": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - verze 1.0 - [date]",
+   "Číslo protokolu: [doplňte] | EU CT číslo: [doplňte]",
+   "Identifikace klinického hodnocení: [doplňte] | verze dokumentu: [doplňte]"
+  ],
+  "info_table": [
+   "Celý název klinického hodnocení",
+   "Zkrácený název klinického hodnocení",
+   "Číslo protokolu [doplňte verzi a datum]",
+   "EU CT číslo",
+   "Zadavatel [včetně úplné adresy]",
+   "Hlavní zkoušející",
+   "Název pracoviště",
+   "Adresa pracoviště"
+  ],
+  "content_instructions": "Použijte pouze tehdy, když dospělý účastník nemůže udělit platný informovaný souhlas a souhlas musí poskytnout zákonně ustanovený zástupce podle českého práva. Zachovejte úplné informace o hlavním klinickém hodnocení, ale důsledně rozlišujte zástupce a účastníka: zástupce rozhoduje, účastník dostává léčbu, podstupuje výkony a je subjektem údajů a vzorků. Účastníka informujte způsobem odpovídajícím jeho schopnosti porozumět a respektujte jeho výslovné odmítnutí nebo přání přestat. Použijte samostatnou přizpůsobenou informaci a formulář vyjádření vůle, pokud účastník může částečně porozumět. Neuvádějte pobídky; pouze přiměřené náhrady výdajů a ztráty příjmu. V českém prostředí může být zákonně ustanoveným zástupcem zejména soudem jmenovaný opatrovník. Z pravomocného rozhodnutí soudu ověřte a zdokumentujte, že rozsah jeho oprávnění zahrnuje rozhodnutí o účasti zastupované osoby v klinickém hodnocení. Pokud účastník znovu nabude schopnost souhlasu, použijte standardní dospělý formulář pro vlastní re-souhlas. Budoucí nebo sekundární použití údajů či vzorků nezahrnujte. Zachovejte české požadavky na EU CT číslo, stejnopis, přístup ke zdravotnické dokumentaci, EMA výsledky a etickou komisi pouze e-mailem. Rozsah konečných základních informací pro zákonně ustanoveného zástupce nesmí přesáhnout 8 stran; pouze ve specifických případech lze akceptovat až 10 stran.",
+  "styling_instructions": "Konečný dokument musí být pouze v češtině. Konečné základní informace pro zákonně ustanoveného zástupce mají mít nejvýše 8 stran; pouze ve specifických případech lze akceptovat až 10 stran. Nepoužívejte přílohy. Použijte přehledné kapitoly a odstavce, standardní velikost písma, například Times New Roman 12 nebo Arial 11, a srozumitelný, citlivý jazyk bez nevysvětlených zkratek a odborných výrazů. Každá strana musí být očíslována a označena číslem verze, datem vydání a identifikací klinického hodnocení. Před finalizací odstraňte všechny pokyny pro zpracovatele, příklady, nevybrané alternativy a neaplikovatelné části. Pro plán návštěv a výkonů použijte přehlednou tabulku, pokud to zlepšuje srozumitelnost. Obecné zaškrtávací otázky ano/ne nepoužívejte; výjimkou jsou odůvodněné, skutečně nezávislé volitelné činnosti s vlastním podpisem a datem."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMACE PRO ZÁKONNĚ USTANOVENÉHO ZÁSTUPCE / INFORMOVANÝ SOUHLAS S ÚČASTÍ ZASTUPOVANÉ OSOBY</b>\n\n<b>Pokyn pro zpracovatele:</b> V konečné verzi ponechte celý název klinického hodnocení a EU CT číslo. Odstraňte všechny pokyny, příklady a neaplikovatelné možnosti. Tento dokument nenahrazuje samostatné věkově nebo schopnostně přizpůsobené informace pro účastníka.",
+   "section_style": "H1 document headline, Rich body text, Info table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Vážená paní, vážený pane,\n\nžádáme Vás, abyste zvážil/a účast, kterou má podstoupit dospělý účastník, kterého zastupujete, v klinickém hodnocení [název]. Klinické hodnocení je výzkumná činnost. Dospělý účastník, kterého zastupujete je osobou, která bude dostávat léčbu, podstupovat vyšetření a jejíž údaje a vzorky budou používány.\n\nRozhodnutí je dobrovolné. Před rozhodnutím obdržíte dostatek času a můžete klást otázky. Odmítnutí nebo pozdější odvolání souhlasu nebude mít nepříznivý vliv na léčbu a péči účastníka.\n\nDospělý účastník, kterého zastupujete, dostane informace přizpůsobené jeho zdravotnímu stavu, schopnosti porozumět a způsobu komunikace a bude zapojen do rozhodování v nejvyšší možné míře. Výslovné odmítnutí nebo přání přestat musí být respektováno.\n\nZadavatelem je [název zadavatele].\n\n<b>Podmíněný text – komerční zadavatel:</b>\nZkoušející lékař je zadavatelem za práci související s hodnocením odměněn.",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. Proč je účast nabízena a co se zkoumá?</b>\n\nÚčast je nabízena proto, že dospělý účastník, kterého zastupujete [má diagnózu / zdravotní stav / patří do cílové skupiny: popište srozumitelně bez seznamu kritérií].\n\nZkoumá se [název přípravku] pro [zkoumané použití]. Stručně vysvětlete, zda přípravek není schválen, je schválen v jiné indikaci nebo se používá v nové dávce či kombinaci. Uveďte dosavadní zkušenosti důležité pro rozhodnutí.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Cíl klinického hodnocení</b>\n\nCílem je zjistit [účinnost / bezpečnost / snášenlivost / dávku / jiný přesný cíl] přípravku [název] u [populace].\n\n<b>Ochranný kontext:</b>\nVysvětlete stručně, proč nelze potřebné údaje získat od osob schopných samostatného souhlasu a jak jsou splněny podmínky ochrany osob neschopných souhlasu.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Jak bude léčba probíhat?</b>\n\nDospělý účastník, kterého zastupujete bude dostávat [přípravek / standardní léčbu / placebo] jako [forma], v dávce [doplňte] po dobu [doplňte].\n\n<b>Skupiny:</b>\n• Skupina A: [léčba, dávka a délka]\n• Skupina B: [léčba, dávka a délka]\n\nPokud je použito náhodné rozdělení, placebo nebo zaslepení, vysvětlete pravděpodobnost a význam srozumitelně. V naléhavém případě lze zaslepení odhalit pro bezpečnost.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Jaká vyšetření a postupy čekají zastupovaného účastníka?</b>\n\nÚčast bude trvat [doba] a zahrne přibližně [počet] návštěv. Před zařazením budou provedena vyšetření potřebná k ověření vhodnosti.\n\nNávštěva / období\tKdy\tDélka\tLéčba a vyšetření\tCo je navíc oproti běžné péči\n[Screening]\t[doplňte]\t[doplňte]\t[doplňte]\t[doplňte]\n[Další návštěvy]\t[doplňte]\t[doplňte]\t[doplňte]\t[doplňte]\n\nCelkové množství odebrané krve bude přibližně [X] ml.\n\n<b>Podmíněné moduly:</b>\n• Povinné vzorky nebo genetická vyšetření pro hlavní hodnocení: [typ, množství, účel, rizika].\n• Skutečně volitelný test nebo odběr v hlavním protokolu: odmítnutí nebrání hlavní účasti a má samostatnou volbu.\n• Invazivní vyšetření, záření, hospitalizace, dotazníky, deník nebo elektronické sledování: [rozsah a rizika].",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Co se očekává od Vás a od účastníka?</b>\n\nPomozte zajistit návštěvy, podávání léčby, vedení deníku a dodržování pokynů. Informujte studijní tým o dalších lécích, nových potížích, hospitalizaci nebo změně péče.\n\nPožadavky vysvětlete také zastupovanému účastníkovi způsobem, kterému může rozumět. Pokud dospělý účastník, kterého zastupujete odmítne konkrétní výkon nebo si přeje přestat, sdělte to ihned zkoušejícímu.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Co je jiné oproti běžné léčbě?</b>\n\nVe srovnání s běžnou péčí bude dospělý účastník, kterého zastupujete [chodit častěji na návštěvy / podstupovat další vyšetření / dostávat hodnocený přípravek / být náhodně zařazen/a / podstupovat jiné výzkumné postupy]. Uveďte konkrétní časovou a praktickou zátěž.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Jaká jsou možná rizika, nežádoucí účinky a nepříjemnosti?</b>\n\nPřípravek [název] může způsobit známé i dosud neznámé nežádoucí účinky. Při novém nebo zhoršujícím se zdravotním problému účastníka kontaktujte zkoušejícího lékaře [kontakt].\n\n<b>Nejdůležitější rizika:</b>\n• [riziko, četnost a závažnost]\n\n<b>Rizika výkonů a zátěž:</b>\n• [odběr krve, biopsie, záření, bolest, strach, časová zátěž]\n\n<b>Pokyn:</b> Rizika nesnižujte a přizpůsobte jejich vysvětlení také účastníkovi.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Těhotenství, kojení a antikoncepce</b>\n\nCelou kapitolu odstraňte, pokud není relevantní. Popište známá nebo neznámá reprodukční rizika, těhotenské testy, antikoncepci, zákaz darování zárodečných buněk a postup při těhotenství účastníka nebo partnerky účastníka. Sledování těhotenství musí být řešeno samostatným dokumentem.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Jaký může mít dospělý účastník, kterého zastupujete prospěch?</b>\n\nVyberte jednu možnost:\n• Neočekává se přímý zdravotní přínos; získané informace mohou pomoci budoucím pacientům.\n• Přípravek může [konkrétní možný přínos], ale přínos není zaručen.\n\nZdravotní stav se může nezměnit nebo zhoršit.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>10. Jiné dostupné možnosti léčby</b>\n\nPokud dospělý účastník, kterého zastupujete nebude zařazen/a nebo účast skončí, může dostávat léčbu běžně dostupnou v České republice: [možnosti, hlavní přínosy a rizika]. Zkoušející lékař vysvětlí vhodné možnosti.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>11. Pojištění, újma na zdraví a odškodnění</b>\n\nVšichni účastníci klinického hodnocení jsou pojištěni podle platné legislativy ČR.\n\nPokud v souvislosti s účastí dojde k újmě na zdraví účastníka, obraťte se na zkoušejícího lékaře [jméno a kontakt]. Bude zajištěna a zdarma poskytnuta odpovídající lékařská péče. Dotčená osoba má právo na odškodnění v souladu s platnými právními předpisy.\n\nPodpisem informovaného souhlasu se nikdo nevzdává žádného zákonného práva.\n\n<b>Pokyn pro zpracovatele:</b> Kapitolu ponechte stručnou a neomezujte zákonná práva.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>12. Náklady, náhrada výdajů a případná odměna</b>\n\nHodnocené přípravky a výzkumná vyšetření hradí zadavatel. Přiměřené výdaje spojené s účastí účastníka, například cestovné, stravné nebo doložená ztráta příjmu doprovázející osoby, budou hrazeny takto: [pravidla].\n\nZa souhlas zástupce ani za účast zranitelné osoby nesmí být nabízena pobídka; lze hradit pouze přiměřené výdaje a ztrátu příjmu.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>13. Je souhlas dobrovolný a lze jej odvolat?</b>\n\nMůžete souhlas odmítnout nebo odvolat bez udání důvodu a bez nepříznivého vlivu na léčbu účastníka. Dospělý účastník, kterého zastupujete může odmítnout nebo kdykoliv vyjádřit přání přestat; toto přání musí být respektováno.\n\nPo ukončení může být nabídnuta zdravotně potřebná bezpečnostní kontrola. Popište, co se stane s léčbou, údaji a vzorky. Již zákonně získané údaje mohou být uchovány pro bezpečnost a spolehlivost.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>14. Jak bude nakládáno s údaji a biologickými vzorky účastníka?</b>\n\nSamostatné sdělení ke zpracování osobních údajů obdržíte. Údaje a vzorky budou zadavateli předávány pouze v kódované podobě. Totožnost účastníka zůstává na pracovišti.\n\nDo zdravotnické dokumentace mohou pro kontrolu nahlížet zkoušející, studijní tým, monitor, auditoři, regulační orgány a etická komise; jsou vázáni mlčenlivostí.\n\nPovinné vzorky pro hlavní hodnocení budou uchovávány v [místo] po dobu [doba] a použity jen pro popsané účely. Budoucí nebo sekundární použití nepatří do tohoto dokumentu.\n\nPokud se zpracovávají také identifikační nebo kontaktní údaje rodiče/zástupce, popište je odděleně od údajů účastníka.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>15. Budete informováni o nových skutečnostech a výsledcích?</b>\n\nPokud se objeví nová informace, která může ovlivnit bezpečnost nebo rozhodnutí pokračovat, zkoušející lékař ji Vám a účastníkovi neprodleně sdělí. Bude možné znovu zvážit pokračování a podle potřeby bude vyžádáno nové potvrzení.\n\n<b>Výsledky klinického hodnocení:</b>\nSouhrn výsledků bude zveřejněn na webu Evropské agentury pro léčivé přípravky (EMA): https://euclinicaltrials.eu.\n\n<b>Podmíněné texty:</b>\n• Po ukončení hodnocení budou sděleny [hlavní výsledky / léčebná skupina], pokud je to možné a bylo o to požádáno.\n• Individuální výsledky nebo závažný náhodný nález budou sděleny a řešeny takto: [doplňte].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>16. Kolik účastníků se zapojí?</b>\n\nPředpokládá se přibližně [počet] účastníků v České republice a [počet] celosvětově.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>17. Koho můžete kontaktovat?</b>\n\n<b>Zdravotní problémy, otázky o klinickém hodnocení a naléhavé situace:</b>\nZkoušející lékař: [jméno]\nTelefon: [číslo]\nE-mail: [e-mail]\nDostupnost / pohotovostní kontakt: [doplňte]\n\n<b>Další kvalifikovaný a snadno dostupný lékař určený zadavatelem:</b>\n[jméno, pracoviště, telefon, e-mail a dostupnost]\n\n<b>Otázky týkající se etických aspektů a práv účastníka:</b>\nEtická komise: [název přidělené etické komise]\nE-mail: [eticka.komise@sukl.gov.cz nebo e-mail konkrétní etické komise]\n\n<b>Pokyn pro zpracovatele:</b> U etické komise neuvádějte telefonní číslo.\n\n<b>Otázky týkající se zpracování osobních údajů:</b>\n[Odkaz na samostatné sdělení ke zpracování osobních údajů a příslušné kontakty.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b>INFORMOVANÝ SOUHLAS ZÁKONNĚ USTANOVENÉHO ZÁSTUPCE</b>\n\nPotvrzuji, že:\n• jsem obdržel/a a porozuměl/a informacím o klinickém hodnocení a měl/a dostatek času k rozhodnutí;\n• zkoušející lékař mi vysvětlil účel, léčbu, postupy, rizika, možné přínosy, alternativy, pojištění, náklady a nakládání s údaji a vzorky zastupovaného účastníka;\n• měl/a jsem možnost klást otázky a obdržel/a jsem odpovědi;\n• rozumím tomu, že rozhoduji jménem účastníka, nikoli ve vlastním zájmu, a že účastník bude zapojen do rozhodnutí podle svých schopností;\n• vím, že výslovné odmítnutí nebo pozdější přání účastníka přestat musí být respektováno;\n• souhlas je dobrovolný a mohu jej odvolat bez nepříznivého vlivu na péči účastníka;\n• souhlasím s účastí zastupovaného účastníka a s povinnými postupy popsanými v informacích;\n• obdržel/a jsem samostatné sdělení ke zpracování osobních údajů;\n• souhlasím s oprávněným přístupem ke zdravotnické dokumentaci účastníka pro kontrolu klinického hodnocení;\n• rozumím tomu, že údaje a vzorky budou předávány pouze v kódované podobě;\n• podpisem se účastník ani já nevzdáváme žádného zákonného práva;\n• obdržel/a jsem datovaný a podepsaný stejnopis.\n\n<b>Údaje o zastupovaném účastníkovi:</b>\nJméno a příjmení: ______________________________\nDatum narození / identifikátor: __________________\n\n<b>Údaje a oprávnění zástupce:</b>\nJméno a příjmení: ______________________________\nVztah k účastníkovi / právní postavení, například soudem jmenovaný opatrovník: ______________________________\nSoud, spisová značka, datum rozhodnutí a rozsah oprávnění, pokud je relevantní: ______________________________\nJiný doklad nebo záznam o oprávnění, pokud je relevantní: ______________________________\n\nSouhlasím s účastí zastupované osoby v klinickém hodnocení.\n\nPodpis zástupce: __________________________  Datum: ____ / ____ / ______  Čas: ____ : ____ [je-li odůvodněno]\n\n<b>Podmíněný blok – skutečně volitelný test nebo odběr:</b>\nRozhodnutí se týká účastníka a může být odmítnuto bez dopadu na hlavní účast.\nSouhlasím s [název a účel]. Ano □ Ne □\nPodpis zástupce: __________________  Datum: ____ / ____ / ______\n\n<b>Vyjádření účastníka:</b>\nÚčastník obdržel přizpůsobené informace a jeho vyjádření bylo: □ souhlas / ochota  □ nesouhlas  □ nejistota  □ nebylo možné spolehlivě zjistit.\nZpůsob komunikace a poznámka: ______________________________________________\nPodpis nebo značka účastníka, je-li smysluplná a možná: __________________  Datum: __________\n\nProhlašuji, že jsem informace poskytl/a srozumitelně zástupci i účastníkovi podle jeho schopností, ověřil/a oprávnění zástupce, odpověděl/a na otázky a získal/a souhlas jako zkoušející lékař.\n\nJméno a příjmení zkoušejícího lékaře: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\n<b>Pokyn pro zpracovatele:</b> Pokud účastník znovu nabude schopnost samostatného souhlasu, musí před pokračováním obdržet standardní informace pro dospělého pacienta a udělit vlastní informovaný souhlas.\n\nJeden datovaný a podepsaný stejnopis obdržel zástupce a jeden stejnopis zůstává na pracovišti. Pokud je to přiměřené, obdrží přizpůsobené informace také účastník.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Standard table, Signature section"
+  }
+ ]
+}

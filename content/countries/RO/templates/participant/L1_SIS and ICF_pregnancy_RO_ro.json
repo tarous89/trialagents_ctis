@@ -1,0 +1,94 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Participants",
+  "doc_name_local": "Informații și consimțământ pentru urmărirea sarcinii – participantă însărcinată",
+  "target_country": "Romania",
+  "country_code": "RO",
+  "target_language": "Romanian",
+  "language_code": "ro",
+  "doc_type": "pregnant_participants",
+  "file_name": "L1_SIS and ICF_pregnancy",
+  "sort_order": 7,
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versiunea 1.0 - [date]",
+   "Numărul protocolului: [completați] | Numărul studiului UE: [completați]"
+  ],
+  "info_table": [
+   "Titlul complet al studiului clinic",
+   "Titlul scurt al studiului clinic",
+   "Numărul protocolului [adăugați versiunea și data]",
+   "Numărul studiului UE",
+   "Sponsor [cu adresa completă]",
+   "Investigator principal",
+   "Denumirea centrului",
+   "Adresa centrului"
+  ],
+  "content_instructions": "Utilizați numai pentru o participantă la studiul clinic principal care rămâne însărcinată în timpul studiului sau în perioada de urmărire prevăzută de protocol și pentru care se colectează voluntar informații despre evoluția și rezultatul sarcinii. Documentul se adresează direct participantei și nu înlocuiește consimțământul pentru studiul principal. Nu autorizează prin el însuși continuarea medicamentului de studiu sau a altor proceduri experimentale în timpul sarcinii; orice continuare trebuie justificată de protocol, evaluarea medicală și procesul de consimțământ aplicabil. Păstrați documentul scurt și limitat la scopul urmăririi, riscurile reproductive relevante, măsurile medicale imediate, datele colectate, sursele și durata, eventualele contacte cu furnizori medicali, voluntaritatea, protecția datelor conform GDPR și Legii nr. 190/2018, și eventualele proceduri suplimentare de cercetare. Orice investigație/recoltare suplimentară exclusiv pentru urmărirea de cercetare trebuie să aibă o alegere separată DA/NU, semnătură și dată. Date noi despre copil după naștere se colectează numai prin calea de consimțământ aplicabilă persoanei/persoanelor cu autoritate legală. Nu includeți utilizare secundară/viitoare. Dacă femeia alăptează și este încă participantă într-un context acoperit de Anexa nr. 7, nu includeți stimulente financiare sau de altă natură, în afara compensării cheltuielilor/pierderilor de venit direct legate de participare.",
+  "styling_instructions": "Folosiți un document scurt, sensibil și orientat exclusiv către participantă și urmărirea sarcinii. Nu repetați întregul formular de consimțământ al studiului principal. Eliminați toate modulele neaplicabile."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMAȚII ȘI CONSIMȚĂMÂNT PENTRU URMĂRIREA SARCINII – PARTICIPANTĂ ÎNSĂRCINATĂ</b>\n\n<b>Instrucțiune pentru autor:</b> Păstrați titlul studiului principal, numărul protocolului, numărul studiului UE și codul participantei. Acest document este numai pentru urmărirea sarcinii.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Stimată doamnă,\n\nParticipați la studiul clinic [titlu] și ați rămas însărcinată în timpul studiului sau în perioada relevantă după expunere. Vă solicităm acordul voluntar pentru colectarea unor informații despre evoluția și rezultatul sarcinii.\n\nAcest document nu înlocuiește consimțământul pentru studiul principal și nu autorizează automat continuarea medicamentului de studiu sau a altor proceduri de cercetare în timpul sarcinii. Aceste decizii vor fi discutate separat cu medicul.\n\nPuteți refuza sau retrage acordul pentru urmărire fără motiv și fără efect negativ asupra îngrijirii medicale obișnuite.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. De ce se colectează informații despre sarcină?</b>\n\nEfectele [medicamentului/procedurii] asupra sarcinii, embrionului, fătului sau copilului sunt [cunoscute/parțial cunoscute/necunoscute]. Informațiile despre sarcină sunt colectate pentru evaluarea siguranței și îndeplinirea obligațiilor de raportare. Nu se garantează un beneficiu medical direct pentru dumneavoastră sau copil.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Ce riscuri și măsuri medicale sunt importante?</b>\n\nRiscurile cunoscute sau posibile relevante sunt: [descrieți numai riscurile susținute de protocol și datele disponibile].\n\n<b>Măsuri imediate, dacă se aplică:</b>\n• [contactarea medicului investigator/obstetricianului];\n• [oprirea/întreruperea medicamentului de studiu dacă protocolul o cere];\n• [modificarea tratamentului concomitent, investigație sau deschiderea orbirii].\n\nÎngrijirea obstetricală obișnuită rămâne responsabilitatea medicilor dumneavoastră.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Ce informații vor fi colectate?</b>\n\nPot fi corelate date relevante din studiul principal (expunere, doză, datele administrării, tratamente concomitente) cu informații despre sarcină: istoricul relevant, data ultimei menstruații și estimarea concepției, medicamentele, complicațiile și investigațiile relevante, rezultatul sarcinii și informațiile relevante despre nou-născut disponibile la naștere.\n\n<b>Instrucțiune pentru autor:</b> Includeți numai categoriile prevăzute de protocol. Date noi ale copilului după naștere necesită calea de consimțământ separată descrisă mai jos.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Cum și cât timp vor fi obținute informațiile?</b>\n\nInformațiile vor fi obținute la [momente] până la [sfârșit]. Sursele pot fi [discuții cu dumneavoastră / documente medicale / obstetrician-ginecolog / maternitate / alt furnizor]. Dacă echipa trebuie să contacteze direct un furnizor sau să obțină documente, descrieți exact informațiile necesare și includeți autorizarea în formular.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Cum se leagă urmărirea de studiul principal?</b>\n\nDecizia privind această urmărire nu stabilește dacă medicamentul de studiu sau alte proceduri de cercetare vor continua. Dacă protocolul permite expunerea în timpul sarcinii, beneficiile și riscurile trebuie evaluate și explicate separat înainte de continuare. Refuzul urmăririi nu afectează îngrijirea obstetricală obișnuită.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Există proceduri suplimentare, costuri sau plăți?</b>\n\nPrincipala sarcină este timpul pentru contacte și utilizarea unor informații medicale sensibile.\n\n<b>Procedură/recoltare suplimentară numai pentru cercetare - dacă se aplică:</b> [procedură, scop, riscuri/disconfort]. Aceasta este opțională și are o alegere separată în formular.\n\n<b>Rambursări - păstrați numai dacă se aplică:</b>\nVeți primi rambursarea următoarelor cheltuieli sau pierderi de venit direct legate de această urmărire: [călătorie / cazare / hrană / pierderi de venit / alte cheltuieli: sume și condiții].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Cum vor fi protejate datele?</b>\n\nDatele vor fi prelucrate conform Regulamentului (UE) 2016/679 și Legii nr. 190/2018. [Indicați operatorii, DPO, destinatarii, transferurile și păstrarea.] Datele vor fi, de regulă, codificate/pseudonimizate și corelate cu studiul principal. Persoanele autorizate pot accesa documentele sursă numai pentru controlul studiului și trebuie să respecte confidențialitatea.\n\nAveți drepturile aplicabile privind protecția datelor și puteți contacta [operator/DPO] sau ANSPDCP.\n\n<b>Instrucțiune condițională:</b> Dacă date genetice/biometrice/de sănătate sunt utilizate pentru decizii automatizate sau profilare, verificați art. 3 alin. (1) din Legea nr. 190/2018.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Urmărirea este voluntară și ce se întâmplă după retragere?</b>\n\nPuteți refuza sau retrage acordul în orice moment. Colectarea voluntară de informații noi se oprește după procesarea retragerii. Datele deja obținute legal pot trebui păstrate sau utilizate pentru raportarea siguranței, integritatea datelor ori obligații legale. Contact pentru retragere: [contact].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Contacte și urmărirea copilului după naștere</b>\n\nContact pentru urmărirea sarcinii: [medic/nume, telefon, e-mail]\nObstetricianul/ginecologul rămâne responsabil pentru îngrijirea obișnuită.\nÎntrebări privind drepturile/etica: [contact aprobat]\nProtecția datelor: [operator/DPO].\n\n<b>Urmărirea copilului după naștere - dacă se aplică:</b> Descrieți datele noi, sursele și durata. Obțineți separat consimțământul persoanei/persoanelor cu autoritate legală pentru copil.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>CONSIMȚĂMÂNTUL PARTICIPANTEI PENTRU URMĂRIREA SARCINII</b>\n\nConfirm că am primit informațiile, am putut pune întrebări și am avut suficient timp. Știu că urmărirea este voluntară și nu autorizează automat continuarea tratamentului de studiu în timpul sarcinii. Sunt de acord cu colectarea, codificarea, corelarea și utilizarea informațiilor descrise pentru monitorizarea siguranței.\n\n<b>Autorizare condițională pentru obținerea informațiilor de la un furnizor medical:</b>\nSunt de acord ca echipa să obțină de la [medic/unitate] informațiile [categorii] pentru această urmărire. DA □ NU □\nSemnătură: __________________  Data: __________\n\n<b>Procedură/recoltare suplimentară de cercetare - dacă se aplică:</b>\nSunt de acord cu [procedură/scop]. DA □ NU □\nSemnătură: __________________  Data: __________\n\n<b>Text condițional - decizii automatizate/profilare:</b>\nDacă art. 3 alin. (1) din Legea nr. 190/2018 este aplicabil și temeiul este consimțământul explicit:\nSunt de acord în mod explicit ca datele mele [genetice/biometrice/de sănătate] să fie utilizate pentru [proces/scop].\nDA □ NU □\nSemnătură: __________________  Data: __________\n\nNumele participantei: ______________________________\nSemnătura: ______________________________  Data: __________\n\nPersoana care a furnizat informațiile: [nume/funcție] __________________\nSemnătură: __________________  Data: __________\n\n<b>Consimțământ separat după naștere - numai dacă se colectează date noi ale copilului:</b>\nSunt de acord cu colectarea și utilizarea următoarelor date ale copilului: [categorii/surse/perioadă].\nNumele copilului: __________________  Data nașterii: __________\nPărinte/reprezentant legal: __________________  Semnătură: __________  Data: __________\n[Al doilea reprezentant: păstrați numai dacă autoritatea legală/procedura aprobată îl impune.]\n\nUn exemplar datat și semnat este oferit persoanei care consimte și unul este păstrat la centru.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

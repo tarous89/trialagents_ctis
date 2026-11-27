@@ -1,0 +1,80 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Lapsen tutkimustiedote ja oma suostumus (6–11-vuotiaat)",
+  "target_country": "Finland",
+  "country_code": "FI",
+  "target_language": "Finnish",
+  "language_code": "fi",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versio 1.0 - [date]",
+   "Tutkimussuunnitelman numero: [täytä] | EU-tutkimusnumero: [täytä]"
+  ],
+  "info_table": [
+   "Tutkimuksen nimi",
+   "Tutkimuksen lyhyt nimi",
+   "Tutkimuksen koodi [jos soveltuu]",
+   "Tutkimussuunnitelman numero [lisää versio ja päivämäärä]",
+   "EU-tutkimusnumero",
+   "Toimeksiantaja [täydellinen osoite]",
+   "Johtava tutkija",
+   "Tutkimuskeskuksen nimi",
+   "Tutkimuskeskuksen osoite"
+  ],
+  "content_instructions": "Perusta asiakirja Tukijan T/447/2026-malliin ja Suomen kliinistä lääketutkimusta koskevaan sääntelyyn. Kirjoita vain päätöksenteon kannalta olennaiset tiedot tiiviillä, ymmärrettävällä suomen kielellä. Vältä toistoa, tarpeetonta ammattisanastoa, käskevää tai houkuttelevaa ilmaisua sekä sanamuotoja, jotka olettavat osallistumisen. Selitä vierasperäiset ja tekniset termit ensimmäisellä käyttökerralla. Käytä valittua puhuttelumuotoa johdonmukaisesti. Suullinen tieto, mahdollisuus kysymyksiin ja riittävä harkinta-aika kuuluvat suostumusprosessiin. Kuvaa vain tutkimussuunnitelman mukaiset toimenpiteet, tiedot, näytteet, vastaanottajat, siirrot, säilytysajat, korvaukset ja riskit. Pidä yksityiskohtaiset toimintaohjeet erillisessä ohjeessa, mutta kerro tiedotteessa kaikki osallistumispäätökseen vaikuttavat rasitteet ja rajoitukset. Jos tutkimuksessa käytetään ionisoivaa säteilyä, noudata Tukijan T/447/2026-säteilyohjetta: kerro joko ettei lisäaltistusta synny tavanomaiseen hoitoon verrattuna tai kuvaa tutkimuskohtaisesti kuvantaminen, hyöty, annos, riskin ymmärrettävä merkitys, toistojen määrä ja kokonaisaltistus. Jos tutkimuksessa on hajautettuja elementtejä, kuten etävastaanottoja tai sähköinen suostumus, kuvaa ne siltä osin kuin ne vaikuttavat osallistumiseen. Tietosuojassa yksilöi rekisterinpitäjä(t), todelliset käsittelyperusteet sanallisesti ja GDPR:n artikla-/alakohtatasolla, tietolähteet, vastaanottajat, mahdollinen suora etäpääsy potilastietoihin, säilytys, EU/ETA:n ulkopuoliset maat ja siirtomekanismi sekä tosiasiassa soveltuvat rekisteröidyn oikeudet. Älä käytä tutkittaville suunnatussa materiaalissa sanaa rotu; käytä tarvittaessa käsitettä etninen tausta. Tuleva tai muu tutkimussuunnitelman ulkopuolinen käyttö ei kuulu näihin malleihin; sitä varten käytetään erillistä tulevan/toissijaisen käytön tiedotetta ja suostumusta. Poista kaikki laatimisohjeet, vaihtoehdot ja soveltumattomat moduulit ennen osallistujalle annettavaa lopullista asiakirjaa. Käytä tätä mallia 6–11-vuotiaalle lapselle suorana lapselle osoitettuna, selkeänä ja lyhyenä versiona. Suomen lainsäädännössä ainoa kiinteä ikäraja alaikäisen itsenäiselle kliinisen lääketutkimuksen suostumukselle on 15 vuotta, mutta FINPEDMED suosittelee alle 15-vuotiaille iän ja kehitystason mukaan eriytettyjä materiaaleja. Alle 15-vuotiaan lapsen oma kirjallinen suostumus ei yksin anna laillista lupaa osallistumiseen; huoltajan tai muun laillisen edustajan erillinen suostumus tarvitaan. Lapsen oma suostumus-/tahdonilmaisulohko säilytetään aina lopullisessa asiakirjassa. Tutkijalääkäri arvioi lapsen iän, kehitystason, terveydentilan ja ymmärryksen perusteella, kykeneekö lapsi muodostamaan mielipiteen ja arvioimaan hänelle annettuja tietoja. Jos lapsi kykenee tähän, häneltä pyydetään oma kirjallinen suostumus. Muussa tapauksessa hänen mielipiteensä ja tahtonsa selvitetään mahdollisuuksien mukaan. Lapsen vastustusta ja myöhempää halua lopettaa kunnioitetaan. Lapsen vastustusta ja myöhempää halua lopettaa kunnioitetaan. Kerro vain lapselle olennaiset asiat lyhyillä lauseilla: miksi tutkimus tehdään, mitä tapahtuu, tärkeimmät käynnit ja toimenpiteet, mahdollinen hyöty, tärkeimmät kivut/riskit, muut hoitovaihtoehdot, vapaaehtoisuus ja oikeus lopettaa. Tietosuoja ja vakuutukset selitetään vain käytännön vaikutuksen tasolla; täydellinen tieto annetaan huoltajalle. Käytä tarvittaessa kuvia ja FINPEDMEDin kuvamateriaalia. Ehkäisyyn ja raskauteen liittyvät asiat eivät Tukijan T/447/2026 mukaan lähtökohtaisesti kuulu alle 12-vuotiaan omaan tiedotteeseen. Älä lisää niitä tähän malliin. Tutkimuksesta kertoneen henkilön on varmistettava lapsen ja huoltajan ymmärtäminen, lapsen osalta ikä ja kehitystaso huomioiden. Renderöi ennen info_tablea/varsinaista sisältöä otsikko ”TIEDOTE KLIINISESTÄ LÄÄKETUTKIMUKSESTA” (ikä-/käyttötarkennus voidaan lisätä alaotsikoksi), vaikka otsikko ei sisälly template_content-kenttään.",
+  "styling_instructions": "A4 pystysuunnassa. Käytä selkeää, helposti luettavaa 11–12 pt tai kohderyhmän mukaan suurempaa kirjasinta, lyhyitä kappaleita, runsaasti tyhjää tilaa ja selkeitä otsikoita. Käytä kuvia, symboleja tai muuta viestintätukea vain, jos ne parantavat ymmärtämistä. Allekirjoitus- ja tahdonilmaisukohdissa on oltava selkeät nimi-, päiväys- ja allekirjoitus/merkintäkentät."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Sinua pyydetään mukaan tutkimukseen\n\nHei [lapsen nimi].\n\nSinua pyydetään mukaan kliiniseen lääketutkimukseen. Tutkimuksessa halutaan oppia lisää [sairaudesta/tilanteesta] ja [tutkimuslääkkeestä/hoidosta]. Sinua pyydetään mukaan, koska [lyhyt ja lapselle ymmärrettävä syy].\n\nSinulle kerrotaan tutkimuksesta niin, että voit itse kertoa, haluatko olla mukana. Myös huoltajallesi kerrotaan tutkimuksesta ja häneltä pyydetään erillinen suostumus.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Miksi tutkimus tehdään?\n\nTutkimuksessa halutaan selvittää [1–3 lyhyttä lausetta tutkimuksen tarkoituksesta].\n\nTutkimuslääke on nimeltään [nimi]. [Selitä hyvin lyhyesti, mitä lääkkeestä jo tiedetään ja miksi sitä tutkitaan lapsilla.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Mitä tutkimuksessa tapahtuu?\n\nJos olet mukana:\n• käyt lääkärin tai hoitajan luona noin [x] kertaa;\n• tutkimus kestää noin [aika];\n• saat [tutkimuslääkkeen/vertailuhoidon/placebon – selitä tarvittaessa yksinkertaisesti];\n• sinulta otetaan [veri-/muu näyte] [x kertaa];\n• sinulle tehdään [tärkeimmät tutkimukset];\n• [muut lapsen arkeen vaikuttavat asiat].\n\n<i>(Kerro lapselle etukäteen, mikä voi olla uutta tai erilaista tavalliseen hoitoon verrattuna. Käytä kuvia tai kuvakortteja, jos ne auttavat.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Voiko tutkimuksesta olla sinulle hyötyä?\n\n[Valitse ja mukauta:] Tutkimus voi ehkä auttaa sinua [mahdollinen konkreettinen hyöty], mutta emme tiedä sitä varmasti. / Tutkimus ei ehkä auta sinua itseäsi, mutta siitä voidaan oppia asioita, jotka voivat auttaa muita lapsia myöhemmin.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Voiko jokin tuntua pahalta?\n\nTutkimuksessa voi tulla [tärkeimmät haitat tai tuntemukset hyvin yksinkertaisin sanoin]. Verinäyte tai muu tutkimus voi tuntua [kipu/epämukavuus].\n\nJos sinulla on kipua, pelottaa, voit huonosti tai jokin tuntuu ikävältä, kerro siitä heti lääkärille, hoitajalle tai turvalliselle aikuiselle. Kaikkia haittoja ei ehkä vielä tunneta.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Saat sanoa ei ja voit lopettaa\n\nSinun ei ole pakko osallistua tutkimukseen. Saat sanoa ei. Kukaan ei saa suuttua siitä.\n\nJos olet ensin mukana ja myöhemmin et enää halua jatkaa, saat lopettaa. Sinun ei tarvitse kertoa syytä. Kerro siitä lääkärille, hoitajalle, huoltajallesi tai muulle turvalliselle aikuiselle.\n\n[Jos kyseessä on potilastutkimus: Jos et osallistu tai lopetat, saat silti tarvitsemasi tavallisen hoidon. Kerro tarvittaessa lyhyesti muut hoitovaihtoehdot.] [Muussa tutkimuksessa: Jos et osallistu tai lopetat, tutkimukseen liittyviä lääkkeitä tai tutkimustoimenpiteitä ei enää tehdä.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Mitä tiedoillesi ja näytteillesi tapahtuu?\n\nTutkimusta varten kerätään vain tarvittavia tietoja ja näytteitä. Niitä käsitellään luottamuksellisesti ja niihin käytetään koodia nimesi sijasta. Tutkimusta tarkastavat henkilöt voivat nähdä tarpeellisia tietoja, mutta heillä on salassapitovelvollisuus.\n\n<i>(Jos tutkimukseen kuuluu geenitesti, selitä se lapselle vain, jos hän pystyy ymmärtämään asian ja tieto on päätöksen kannalta olennainen. Älä lisää teknistä yksityiskohtaa.)</i>\n\nHuoltajasi saa tarkemmat tiedot siitä, miten tietoja ja näytteitä käytetään ja säilytetään.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Keneltä voit kysyä?\n\nSaat kysyä tutkimuksesta milloin tahansa.\n\nTutkimuslääkäri/hoitaja: [nimi]\nPuhelin: [numero]\n\nVoit kysyä myös huoltajaltasi tai muulta turvalliselta aikuiselta.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "LAPSEN OMA SUOSTUMUS / TAHDON ILMAISU\n\nMinulle on kerrottu tästä tutkimuksesta tavalla, jonka ymmärrän. Olen saanut kysyä kysymyksiä. Olen saanut kertoa, haluanko osallistua. Tiedän, ettei minun tarvitse osallistua ja että voin myöhemmin lopettaa.\n\n[ ] Haluan olla mukana tutkimuksessa.\n[ ] En halua olla mukana tutkimuksessa.\n[ ] En ole vielä varma.\n\nTutkijalääkäri arvioi lapsen iän, kehitystason, terveydentilan ja ymmärryksen perusteella, pyydetäänkö lapselta oma kirjallinen suostumus. Jos lapselta ei pyydetä kirjallista suostumusta, hänen mielipiteensä ja tahtonsa selvitetään mahdollisuuksien mukaan.\n\nLapsen oma suostumus tai tahdonilmaisu ei yksin anna laillista lupaa osallistumiseen. Huoltaja tai muu laillinen edustaja antaa erillisen suostumuksen.\n\nLapsen nimi: ____________________________________\n____________________________________    _________________\nLapsen allekirjoitus/nimimerkintä (jos tutkijalääkäri on arvioinut kirjallisen suostumuksen soveltuvan)   Päiväys\n\n<b>Tiedon antaneen henkilön vahvistus</b>\nOlen antanut lapselle ikä- ja kehitystasoon sopivaa tietoa, antanut mahdollisuuden kysymyksiin ja varmistanut ymmärtämistä mahdollisuuksien mukaan. Olen dokumentoinut lapsen oman tahdon.\n\n____________________________________    _________________\nAllekirjoitus                            Päiväys\n____________________________________\nNimi ja ammattinimike",
+   "section_style": "Section break, H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

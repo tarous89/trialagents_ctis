@@ -1,0 +1,72 @@
+{
+  "id": "AT-CHECK",
+  "name": "Austria: check of forms and supplied documents",
+  "applies_to_kinds": ["form", "third_party_template", "third_party_document", "ctis_data"],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/austria/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": ["met", "unmet", "needs_decision", "not_applicable"],
+  "common": [
+    {"id": "X.01", "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS; where the German title is used it is identical to the German full title entered for Austria in CTIS."},
+    {"id": "X.02", "check": "Every field the assistant answers is answered; fields that belong to the site, investigator or insurer are left empty, not invented."},
+    {"id": "X.03", "check": "No drafting instruction remains (yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels)."},
+    {"id": "X.04", "check": "Language matches requirements.json language_rules (English administrative dossier for multinational trials); signature only where the Austrian rule for that document requires it (N1 signed before upload; K, L and M not signed at submission)."},
+    {"id": "X.05", "check": "CTIS title follows the naming guide and requirements.json."}
+  ],
+  "by_document": {
+    "AT-K1": [
+      {"id": "K1.01", "check": "Uses the European Commission informed-consent and recruitment-procedure template v2.0, not the superseded version."},
+      {"id": "K1.02", "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed, each 'no' section gives the not-applicable answer."},
+      {"id": "K1.03", "check": "Member State fields carry the Austrian rules: German participant documents and certified translations, wet-ink or qualified electronic consent signature, signature and dating by the person conducting the consent interview, section 41 AMG data information and consent, no new study-purpose data collection after full withdrawal."},
+      {"id": "K1.04", "check": "Incapacitated adults: separate legal-representative form, participant involvement according to capacity, section 39 AMG no-prior-refusal condition for population-benefit research, post-hoc form after temporary incapacity, section 39 AMG excluded groups.", "applies_when": "population.adults_without_capacity or population.temporary_incapacity"},
+      {"id": "K1.05", "check": "Minors: representative consent with legal entitlement confirmed per case, separate age-appropriate documents from age 8, decision-capable minor's own consent (section 39 AMG), refusal respected, re-consent at adulthood.", "applies_when": "population.minors"},
+      {"id": "K1.06", "check": "Impartial witness only for a person who cannot write; reason, witness selection and impartiality described.", "applies_when": "consent.impartial_witness_possible"},
+      {"id": "K1.07", "check": "Emergency: every Article 35 condition, Austrian post-hoc form, sequence of representative and participant consent, section 41(3) AMG data rule.", "applies_when": "consent.emergency_enrolment"},
+      {"id": "K1.08", "check": "Recruitment routes and first act of recruitment match the recruitment material (K2) and the protocol."}
+    ],
+    "AT-M1": [
+      {"id": "M1.01", "check": "One CV per principal investigator and Austrian site; dated and not older than one year."},
+      {"id": "M1.02", "check": "Shows the section 43 AMG qualification including authority to practise independently in Austria, and relevant clinical-trial and indication experience."},
+      {"id": "M1.03", "check": "No signature in the CTIS copy; the signed and dated CV is archived in the TMF or ISF."}
+    ],
+    "AT-M2-DOI": [
+      {"id": "M2D.01", "check": "One declaration per principal investigator and Austrian site; dated and current; interests answered by the investigator; no signature at submission."}
+    ],
+    "AT-M-GCP": [
+      {"id": "GCP.01", "check": "Evidence of completed ICH GCP training for each principal investigator, uploaded under the title agreed in DECISIONS.md D7."}
+    ],
+    "AT-N1": [
+      {"id": "N1.01", "check": "The national Austrian Trial Site Suitability Form is used for every Austrian centre; not the generic EU site-suitability form."},
+      {"id": "N1.02", "check": "Signed before upload by the site-specific responsible person (medical director, deputy medical director or equivalent functionary, or the signatory named in the current institution-specific list)."},
+      {"id": "N1.03", "check": "Signature is wet ink, advanced electronic or qualified electronic; no pasted scanned signature."},
+      {"id": "N1.04", "check": "Planned participant numbers per site are recorded and reconciled with the insured number (O1/O2)."}
+    ],
+    "AT-O1": [
+      {"id": "O1.01", "check": "Insurer-issued confirmation of no-fault personal injury insurance under section 40 AMG for this trial."},
+      {"id": "O1.02", "check": "Cover spans the full planned trial duration."},
+      {"id": "O1.03", "check": "Insured participant number is at least the higher of the sum planned across the Austrian site-suitability forms and the number entered for Austria in the CTIS Member State Concerned data."},
+      {"id": "O1.04", "check": "Unredacted except information irrelevant to the insurance assessment, such as a clearly identified premium amount."}
+    ],
+    "AT-O2": [
+      {"id": "O2.01", "check": "Insurance policy and terms and conditions are provided."},
+      {"id": "O2.02", "check": "The package allows assessment of participant insurance, extended investigator liability insurance and extended investigator criminal legal-protection insurance."},
+      {"id": "O2.03", "check": "Insurer, policy number, contact route and participant obligations match the completed Austrian insurance passage in every participant document."},
+      {"id": "O2.04", "check": "Combination study with different sponsors and insurers: the evidence covers both insurers and both are named in the participant documents.", "applies_when": "trial.combination_different_sponsors_insurers"}
+    ],
+    "AT-P1": [
+      {"id": "P1.01", "check": "Covers participant compensation, investigator compensation, funding and other relevant financial arrangements; states clearly when no compensation is offered."},
+      {"id": "P1.02", "check": "Reimbursement of reasonable expenses is not presented as an incentive to participate."},
+      {"id": "P1.03", "check": "Amounts, methods and conditions are identical in every participant document."},
+      {"id": "P1.04", "check": "All reimbursement methods available at Austrian sites are listed and the consent form offers a choice where a site has more than one.", "applies_when": "reimbursement.multiple_methods"},
+      {"id": "P1.05", "check": "External reimbursement provider identified with its data processing; where optional, another permitted reimbursement route remains without loss of participation.", "applies_when": "reimbursement.external_service_provider"}
+    ],
+    "AT-R1": [
+      {"id": "R1.01", "check": "Contains the confirmation that Austrian national data-protection rules will also be followed (in the Commission template or as an additional Part II confirmation)."},
+      {"id": "R1.02", "check": "Sponsor details match the CTIS application."}
+    ],
+    "AT-S1": [
+      {"id": "S1.01", "check": "New and archive sample sections match the protocol and sample plan; at least one is completed."},
+      {"id": "S1.02", "check": "Analysis, storage, duration, access, coding and transfers match the participant documents and R1."},
+      {"id": "S1.03", "check": "Future use: research field delimited (not unlimited), retained samples, storage location and duration, responsible function for storage and destruction, destruction right for pseudonymised samples; consistent with the separate secondary-use information and consent.", "applies_when": "samples.future_use_outside_protocol"}
+    ]
+  }
+}

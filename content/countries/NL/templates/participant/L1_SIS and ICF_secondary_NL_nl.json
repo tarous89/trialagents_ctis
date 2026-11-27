@@ -1,0 +1,85 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Secondary and Future Use of Data or Biosamples",
+  "doc_name_local": "Informatie en toestemming voor ander of toekomstig gebruik van gegevens en lichaamsmateriaal",
+  "target_country": "Netherlands",
+  "country_code": "NL",
+  "target_language": "Dutch",
+  "language_code": "nl",
+  "doc_type": "secondary_use",
+  "file_name": "L1_SIS and ICF_secondary",
+  "sort_order": 8,
+  "description": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versie 1.0 - [date]",
+   "Protocolnummer: [invullen] | EU-onderzoeksnummer: [invullen]",
+   "Studiecode: [XXX] | versie [nr.]"
+  ],
+  "info_table": [
+   "Titel van het onderzoek",
+   "Korte titel van het onderzoek",
+   "Protocolnummer [voeg versie en datum toe]",
+   "EU-onderzoeksnummer",
+   "Opdrachtgever [met volledig adres]",
+   "Hoofdonderzoeker",
+   "Naam onderzoekscentrum",
+   "Adres onderzoekscentrum"
+  ],
+  "content_instructions": "Gebruik als afzonderlijk optioneel document voor opslag of gebruik buiten de verplichte doelen van het hoofdonderzoek. Behoud alleen de koppeling met het hoofdonderzoek en verwijder uitleg over onderzoeksmiddel, behandelarmen, gewone onderzoeksbezoeken en algemene trialrisico’s. Specificeer exact welke gegevens of monsters worden gebruikt, bron en hoeveelheid, genetische analyses, onderzoeksgebied, bewaartermijn, beheerder, toegangsvoorwaarden, ontvangers, internationale doorgifte, publicatie, vernietiging en gevolgen van intrekking. Maak weigering zonder gevolgen voor het hoofdonderzoek expliciet. Gebruik afzonderlijke ja/nee-keuzes alleen voor werkelijk onafhankelijke opties. Kies één toepasselijke beslissingsroute: de deelnemer zelf, ouder/voogd of wettelijk vertegenwoordiger. Verwijder de andere routes. Bij ouderlijke of vertegenwoordigerstoestemming blijven de gegevens en het lichaamsmateriaal van de deelnemer centraal staan en wordt een duidelijke weigering van de deelnemer gerespecteerd. Dit document is de enige template voor ander of toekomstig gebruik. Genetische analyses, extra testen en extra afnames binnen dit secundaire gebruik worden alleen als afzonderlijke optionele keuzes opgenomen; tekst over verplichte hoofdonderzoeksprocedures hoort hier niet thuis.",
+  "styling_instructions": "Gebruik Arial, Calibri, Open Sans of Atkinson Hyperlegible met een minimale lettergrootte van 12 pt of 16 px. Gebruik een gelaagde opbouw, duidelijke sectietitels, deelnemersvragen met selectievakjes en voldoende schrijfruimte. Verwijder vóór afronding alle instructietekst, niet-gekozen alternatieven, niet-toepasselijke secties en overmatige witruimte. Houd paginanummering, bijlagen en interne verwijzingen consistent."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Beste lezer,\n\nWe vragen toestemming om gegevens <indien van toepassing> en lichaamsmateriaal van de deelnemer te bewaren en te gebruiken voor ander of toekomstig onderzoek. Dit staat los van deelname aan het hoofdonderzoek. Weigeren heeft geen gevolgen voor deelname aan het hoofdonderzoek of voor de gewone zorg.\n\n<b>Kies één doelgroep en verwijder de andere teksten:</b>\n• <De deelnemer beslist zelf> U bent de deelnemer en beslist zelf over dit andere of toekomstige gebruik.\n• <Ouder of voogd> U beslist namens uw kind. Uw kind is de deelnemer. Gebruik alleen wanneer ouderlijke of voogdijtoestemming volgens de Nederlandse regels nodig is.\n• <Wettelijk vertegenwoordiger> U beslist namens de volwassen persoon die u wettelijk vertegenwoordigt. Deze persoon is de deelnemer. Betrek de deelnemer zo veel mogelijk en respecteer een duidelijke weigering of wens om te stoppen.\n\nDeze toestemming gaat alleen over de gegevens, het lichaamsmateriaal en de analyses die in deze brief staan. Lees alles rustig door, stel vragen en vul daarna het toepasselijke toestemmingsblok in.",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "\n\n\f\n<b>1. Welke gegevens en welk lichaamsmateriaal willen we gebruiken?</b>\n\n<b>Vul in en verwijder alles wat niet van toepassing is:</b>\n• Gegevens: [concrete categorieën].\n• Lichaamsmateriaal: [bloed/ weefsel/ DNA/ ander materiaal en hoeveelheid].\n• Bron: [overgebleven materiaal uit het hoofdonderzoek/ extra afname/ eerder verzameld of opgeslagen lichaamsmateriaal uit [bron en periode]].\n• Verzameld in de periode: [periode].\n• <indien van toepassing> Genetische of genomische analyses: [soort en doel].\n• <indien van toepassing> Scans, foto’s, pathologiebeelden of koppeling met andere gegevensbestanden: [beschrijf].\n\nAls extra bloed, weefsel, beeldvorming of een andere handeling nodig is, beschrijf dan apart wat er gebeurt, hoeveel wordt afgenomen en welke pijn, risico’s of belasting dit geeft.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "\n\n\f\n<b>2. Voor welk ander onderzoek mogen de gegevens en het materiaal worden gebruikt?</b>\n\n<b>Vul in:</b> Het andere onderzoek gaat over [aandoening/ onderzoeksgebied/ verdere ontwikkeling van product of behandelmethode].\n\nBeschrijf zo precies mogelijk welke soorten onderzoek zijn toegestaan, of toekomstige onderzoeksvragen al bekend zijn en welke grenzen gelden. Gebruik niet bredere toestemming dan nodig.\n\nDe gegevens en het materiaal worden niet gebruikt voor doelen die niet in deze brief staan zonder nieuwe toestemming, tenzij de wet anders bepaalt.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "\n\n\f\n<b>3. Hoe en hoe lang worden de gegevens en het materiaal bewaard?</b>\n\n<b>Vul in:</b>\n• Beheerder/verantwoordelijke: [naam organisatie].\n• Bewaarplaats: [locatie].\n• Bewaartermijn gegevens: [X jaar].\n• Bewaartermijn lichaamsmateriaal: [X jaar].\n• Code of pseudoniem: [beschrijf].\n• Voorwaarden voor toegang door toekomstige onderzoekers: [commissie, aanvraag, overeenkomst].\n• Wat gebeurt aan het einde van de bewaartermijn: [vernietiging/anonimisering/andere regeling].\n\nWe delen gegevens en lichaamsmateriaal niet met de naam van de deelnemer. Alleen bevoegde personen kunnen de code koppelen aan de identiteit van de deelnemer.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "\n\n\f\n<b>4. Met wie worden gegevens of lichaamsmateriaal gedeeld?</b>\n\n<b>Vul in en verwijder wat niet van toepassing is:</b>\n• Onderzoekers binnen [organisatie/consortium].\n• Andere onderzoekers die aan de toegangsvoorwaarden voldoen.\n• Laboratoria of dienstverleners die analyses uitvoeren.\n• Nationale en internationale toezichthouders of controleurs voor zover nodig.\n\n<b>Gegevens of materiaal buiten de Europese Unie</b>\nWe sturen gecodeerde gegevens <indien van toepassing> en lichaamsmateriaal naar [land/organisatie], omdat [reden]. In die landen kunnen andere privacyregels gelden. Beschrijf welke afspraken de gegevens van de deelnemer vergelijkbaar beschermen.\n\nOnderzoeksresultaten kunnen worden gepubliceerd, maar niet op een manier waarmee de deelnemer rechtstreeks herkenbaar is.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "\n\n\f\n<b>5. Heeft de deelnemer voordeel of zijn er risico’s?</b>\n\nDe deelnemer heeft meestal geen persoonlijk voordeel van dit andere onderzoek. De belangrijkste risico’s zijn verlies van vertrouwelijkheid of een kleine kans dat gecodeerde gegevens opnieuw aan de deelnemer worden gekoppeld. Beschrijf extra lichamelijke risico’s alleen als een extra handeling nodig is.\n\n<b>Onverwachte of individuele bevindingen</b>\n<b>Kies en vul in:</b>\n• Individuele bevindingen worden niet aan de deelnemer teruggegeven.\n• <indien van toepassing> Een bevinding die belangrijk kan zijn voor de gezondheid van de deelnemer wordt volgens deze procedure beoordeeld en met toestemming van de bevoegde beslisser via [huisarts/specialist] met de deelnemer en de bevoegde beslisser besproken.\n\nMaak duidelijk of familieleden geraakt kunnen worden door genetische bevindingen en wat daarmee gebeurt.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "\n\n\f\n<b>6. Kan de toestemming later worden ingetrokken?</b>\n\nJa. Neem contact op met [contactpersoon en contactgegevens]. Vanaf dat moment verzamelen of gebruiken we geen nieuw identificeerbaar materiaal of nieuwe gegevens voor dit andere onderzoek, voor zover dit nog mogelijk is.\n\n<b>Vul in:</b> Leg duidelijk uit wat gebeurt met resterend lichaamsmateriaal en gegevens die nog aan de deelnemer gekoppeld kunnen worden. Leg ook de grenzen uit: gegevens of resultaten die al zijn geanalyseerd, geanonimiseerd, gepubliceerd of opgenomen in samengevoegde resultaten kunnen meestal niet worden teruggehaald.\n\nIntrekken heeft geen gevolgen voor deelname aan het hoofdonderzoek of voor de gewone zorg van de deelnemer.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "\n\n\f\n<b>7. Heeft u vragen of klachten?</b>\n\nNeem contact op met de hoofdonderzoeker, gegevensbeschermingsfunctionaris of andere contactpersoon in bijlage A. Bij de Autoriteit Persoonsgegevens kunt u terecht voor vragen over uw rechten en voor klachten.\n\n<b>Vul in:</b> Naam, telefoonnummer, e-mailadres en website van de verantwoordelijke(n), functionaris voor gegevensbescherming en klachtcontact.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "\n\n\f\n<b>Bijlage A: Contactgegevens</b>\n\nHoofdonderzoeker/onderzoekscentrum: [naam en contactgegevens]\nBeheerder van gegevens en lichaamsmateriaal: [naam en contactgegevens]\nVerantwoordelijke(n) voor gegevensverwerking: [naam en contactgegevens]\nFunctionaris voor de Gegevensbescherming: [contactgegevens]\nKlachten: [dienst of persoon]\nAutoriteit Persoonsgegevens: www.autoriteitpersoonsgegevens.nl",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "\n\n\f\n<b>Bijlage B: Toestemmingsformulier voor ander of toekomstig gebruik</b>\n\n<b>Vul in: Begrijpelijke titel van het hoofdonderzoek</b>\n\nIk heb de informatie gelezen. Ik kon vragen stellen. Mijn vragen zijn goed genoeg beantwoord. Ik had genoeg tijd om te beslissen.\n\n• Ik weet dat deze toestemming vrijwillig is en losstaat van deelname aan het hoofdonderzoek.\n• Ik weet dat de toestemming later kan worden ingetrokken en welke grenzen daarbij gelden.\n• Ik weet wie de gegevens en het lichaamsmateriaal beheert, hoe lang deze worden bewaard en met wie deze kunnen worden gedeeld.\n\n<b>Kruis voor iedere zelfstandige keuze ja of nee aan. Verwijder keuzes die niet zelfstandig of niet van toepassing zijn.</b>\n\nIk geef toestemming om de beschreven gegevens van de deelnemer te bewaren en te gebruiken voor het beschreven andere of toekomstige onderzoek.\t<b>Ja □  Nee □</b>\n\n<indien van toepassing> Ik geef toestemming om het overgebleven lichaamsmateriaal van de deelnemer te bewaren en te gebruiken voor het beschreven andere of toekomstige onderzoek.\t<b>Ja □  Nee □</b>\n\n<indien eerder verzameld of opgeslagen lichaamsmateriaal wordt gebruikt en de deelnemer zelf beslist> Ik geef toestemming om mijn eerder verzamelde of opgeslagen [weefsel/ ander lichaamsmateriaal] te bewaren en te gebruiken voor het beschreven andere of toekomstige onderzoek.\t<b>Ja □  Nee □</b>\n\n<indien eerder verzameld of opgeslagen lichaamsmateriaal van een kind wordt gebruikt> Ik geef toestemming om het eerder verzamelde of opgeslagen [weefsel/ andere lichaamsmateriaal] van mijn kind te bewaren en te gebruiken voor het beschreven andere of toekomstige onderzoek.\t<b>Ja □  Nee □</b>\n\n<indien eerder verzameld of opgeslagen lichaamsmateriaal van een vertegenwoordigde volwassen deelnemer wordt gebruikt> Ik geef toestemming om het eerder verzamelde of opgeslagen [weefsel/ andere lichaamsmateriaal] van de deelnemer te bewaren en te gebruiken voor het beschreven andere of toekomstige onderzoek.\t<b>Ja □  Nee □</b>\n\n<indien van toepassing> Ik geef toestemming voor de beschreven genetische of genomische analyses met de gegevens of het lichaamsmateriaal van de deelnemer.\t<b>Ja □  Nee □</b>\n\n<indien een extra test of afname voor dit andere onderzoek is gepland> Ik geef toestemming voor de beschreven extra [test/afname van lichaamsmateriaal] bij de deelnemer.\t<b>Ja □  Nee □</b>\n\n<indien van toepassing> Ik geef toestemming om de deelnemer later te benaderen over een nieuw onderzoek.\t<b>Ja □  Nee □</b>\n\n<indien van toepassing> Ik wil dat de deelnemer en de bevoegde beslisser volgens de beschreven procedure worden geïnformeerd over relevante individuele bevindingen.\t<b>Ja □  Nee □</b>\n\n<b>Kies één ondertekeningsblok en verwijder de andere blokken.</b>\n\n<b><De deelnemer beslist zelf></b>\nNaam deelnemer: …………………………..\nHandtekening: ………………………….. Datum: __ /__ /__\n\n<b><Ouder of voogd></b>\nNaam kind/deelnemer: …………………………..\nNaam ouder/voogd*: …………………………..\nHandtekening: ………………………….. Datum: __ /__ /__\nNaam andere ouder/voogd*, indien vereist: …………………………..\nHandtekening: ………………………….. Datum: __ /__ /__\n*Gebruik het aantal handtekeningen dat volgens de Nederlandse regels vereist is. Een kind dat informatie kan begrijpen, wordt betrokken en een duidelijke weigering wordt gerespecteerd.\n\n<b><Wettelijk vertegenwoordiger van een volwassen deelnemer></b>\nNaam deelnemer: …………………………..\nNaam wettelijk vertegenwoordiger: …………………………..\nRelatie/wettelijke bevoegdheid: …………………………..\nHandtekening: ………………………….. Datum: __ /__ /__\n\n----------------------------------------------------------------------------------------------------------\n\nIk verklaar dat ik de informatie heb besproken, vragen heb beantwoord en een getekende kopie heb gegeven.\n\nNaam onderzoeker of bevoegde medewerker: …………………………..\nHandtekening: ………………………….. Datum: __ /__ /__\n\n----------------------------------------------------------------------------------------------------------\n\nDe deelnemer en/of de bevoegde beslisser krijgt een volledige informatiebrief en een getekende kopie van dit formulier.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Standard table, Signature section"
+  }
+ ]
+}

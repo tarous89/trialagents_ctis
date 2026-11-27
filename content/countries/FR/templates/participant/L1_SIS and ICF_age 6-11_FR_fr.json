@@ -1,0 +1,96 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Document d’information adaptée et formulaire d’adhésion pour l’enfant",
+  "target_country": "France",
+  "country_code": "FR",
+  "target_language": "French",
+  "language_code": "fr",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Numéro de protocole : [à compléter] | Numéro d’essai UE : [à compléter]"
+  ],
+  "info_table": [
+   "Titre de la recherche",
+   "Titre abrégé de la recherche",
+   "Numéro de protocole [ajouter la version et la date]",
+   "Numéro d’essai UE [ou, le cas échéant, numéro EudraCT / ID-RCB applicable]",
+   "Promoteur [avec adresse complète]",
+   "Investigateur principal / coordonnateur",
+   "Nom du lieu de recherche",
+   "Adresse du lieu de recherche",
+   "Version et date du document",
+   "Prénom et date de naissance de l’enfant"
+  ],
+  "content_instructions": "Adapt the French adult-patient template for children aged 6-11. This is an age-adapted information and personal-adherence form, not legally effective consent, and it accompanies the parental or representative consent. Use very short sentences, concrete words and only information needed by the child to understand what will happen. Explain pain, fear and inconvenience honestly. Seek an affirmative personal willingness where the child can express one; silence or cooperation is not assent. A refusal or later wish to stop must be respected. Include samples, genetic testing, puberty-related precautions, recordings or devices only where applicable and explain them simply.",
+  "styling_instructions": "Use a child-friendly, uncluttered layout, preferably 2-5 pages, with 12-14 point highly legible type, short question headings, generous spacing, neutral pictures or icons where useful and a simple activity calendar."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>BONJOUR, NOUS VOULONS TE PARLER D’UNE RECHERCHE</b>\nBonjour [<i>prénom</i>].\n\nTu es soigné(e) parce que [<i>expliquer simplement le problème de santé</i>]. Nous voulons apprendre si [<i>médicament ou traitement</i>] peut aider les enfants et s’il est assez sûr.\n\nTes parents ou la personne qui s’occupe légalement de toi recevront aussi des informations. Toi aussi, tu as le droit de savoir et de donner ton avis.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b><u>Pourquoi fait-on cette recherche ?</u></b>\n<i>Expliquer en quelques phrases ce que les médecins veulent apprendre et pourquoi ils ont besoin de la participation d’enfants.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b><u>Quel médicament ou traitement est étudié ?</u></b>\n<i>Expliquer simplement ce qui sera donné. Si le choix se fait au hasard ou si un placebo est utilisé, l’expliquer avec des mots simples et sans promettre un traitement.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b><u>Que va-t-il se passer ?</u></b>\n<i>Montrer avec un petit calendrier les visites, les prises de médicament, les prises de sang, les examens et la durée.</i>\nExplique ce qui peut faire mal, faire peur, prendre du temps ou changer l’école, les jeux, les repas ou les déplacements.\nTu peux toujours demander ce qui va se passer avant qu’on le fasse.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b><u>Est-ce que cela peut t’aider ?</u></b>\n<i>Dire simplement si la recherche peut peut-être aider l’enfant ou s’il n’y a pas de bénéfice personnel attendu.</i> Même si les médecins espèrent un effet utile, ils ne peuvent pas le promettre.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b><u>Qu’est-ce qui peut être désagréable ou dangereux ?</u></b>\n<i>Expliquer les risques les plus importants, les effets fréquents, les effets graves même rares et les risques que l’on ne connaît pas encore.</i>\nSi tu te sens mal, si quelque chose te fait peur ou si tu ne veux pas qu’un geste continue, dis-le tout de suite à un parent, à l’investigateur ou à un adulte de confiance.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b><u>As-tu d’autres choix ?</u></b>\n<i>Expliquer simplement les autres soins possibles si l’enfant ne participe pas.</i> Dire non ne changera pas les soins habituels.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b><u>Peux-tu dire non ou arrêter ?</u></b>\nOui. Tu peux dire non maintenant. Tu peux aussi demander d’arrêter plus tard ou refuser un geste. Tu n’as pas besoin de donner une raison. Personne ne doit te punir ni te priver de soins. Ton refus doit être écouté.\n\nAprès l’arrêt, l’équipe t’expliquera les soins ou le suivi de sécurité encore nécessaires.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b><u>[Si cela s’applique] Que deviennent le sang, les autres prélèvements ou les tests génétiques ?</u></b>\n<i>Expliquer avec des mots simples ce qui sera prélevé, pourquoi, si cela fait mal, combien de temps cela sera gardé et si un test génétique est prévu.</i> Ton avis sera demandé.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b><u>Que devient l’information sur toi ?</u></b>\nLes informations sur ta santé seront protégées. Dans les dossiers utilisés pour la recherche, ton nom sera remplacé par un numéro. Seules les personnes autorisées pourront voir les informations nécessaires.\n\nTu peux demander à tes parents ou à l’équipe de recherche de t’expliquer comment ces informations sont utilisées.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b><u>À qui peux-tu poser des questions ?</u></b>\nTu peux poser des questions à tes parents et à l’équipe de recherche, maintenant ou plus tard.\nPersonne de contact : [<i>nom et téléphone</i>].\nSi une nouvelle information importante apparaît, on te l’expliquera avec des mots adaptés.\n\nQuand la recherche sera terminée, les résultats généraux pourront t’être expliqués si tu le souhaites.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>CE QUE JE CHOISIS</b>\nOn m’a expliqué la recherche avec des mots que je peux comprendre. J’ai pu poser mes questions.\n\n□ Je veux bien essayer de participer.\n□ Je ne veux pas participer.\n□ Je ne sais pas encore et je veux en reparler.\n\nPrénom de l’enfant : ______________________________\nSignature, dessin, marque ou autre façon de montrer son choix, si cela a du sens pour l’enfant : __________________\nDate : __________\n\nL’information a été adaptée à l’enfant. Son choix, ses mots, gestes ou comportements ont été pris en compte.\nSignature de l’investigateur / professionnel : __________ Date : __________\nNom et fonction : __________________________________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Emergency Enrolment Withdrawal Notice",
+  "doc_name_local": "Informasjon om reservasjonsrett mot bruk av helseopplysninger etter inklusjon i en klinisk nødsituasjon",
+  "target_country": "Norway",
+  "country_code": "NO",
+  "target_language": "Norwegian",
+  "language_code": "no",
+  "doc_type": "emergency_enrollment",
+  "file_name": "L1_SIS and ICF_withdrawal notice",
+  "sort_order": "3",
+  "description": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versjon 1.0 - [date]",
+   "Protokollnummer: [fyll inn] | EU CT-nummer: [fyll inn]"
+  ],
+  "info_table": [
+   "Studietittel",
+   "Forkortet studietittel",
+   "Protokollnummer [legg til versjon og dato]",
+   "EU CT-nummer",
+   "Sponsor [med fullstendig adresse]",
+   "Hovedutprøver",
+   "Navn på studiesenter",
+   "Adresse til studiesenter",
+   "REK-nummer"
+  ],
+  "content_instructions": "Denne malen er et særskilt reservasjonsbrev om bruk av allerede innsamlede helseopplysninger etter en klinisk nødsituasjon; den er ikke det fullstendige informasjonsskrivet eller samtykket til videre deltakelse. Bruk den bare for en legemiddelutprøving omfattet av CTR artikkel 35 nr. 3, etter at deltakeren eller pårørende har fått fullstendig studieinformasjon og har valgt ikke å fortsette i studien. Fjern markert tekst og tekst i hakeparenteser og erstatt den med studiespesifikt innhold. Informasjonen skal være kort, enkel, forståelig for lekpersoner og tilpasset mottakeren. Den skal forklare hvorfor opplysninger ble samlet inn uten forhåndssamtykke, hvilke allerede innsamlede opplysninger som ønskes brukt, at ingen nye opplysninger, studiebesøk eller studiespesifikke prosedyrer vil bli gjennomført, og hvordan personen kan reservere seg. Opplys tydelig at ingen handling betyr at opplysningene brukes, at reservasjon skal gis innen fire uker, og at senere tilbaketrekking fortsatt er mulig innen grensene for anonymiserte data og allerede utførte analyser. Beskriv sletting, avidentifisering, oppbevaringssted og et konkret lagringsår som er minst 25 år etter End of Trial. Beskriv relevante overføringer, publisering, kontrollinnsyn, godkjenninger og en varig kontaktkanal. Reservasjon skal ikke få negative konsekvenser for behandling. Dokumentet skal ikke fremstå som en kontrakt eller inneholde juridiske ansvarsbegrensninger. Det er ikke et samtykke til databehandling etter GDPR; behandlingsgrunnlag og personvernrettigheter skal gis separat. Dersom både deltakeren og pårørende skal kunne reservere seg, skal det utarbeides to likelydende, separat adresserte skriv. For dokumenter generert som del av dette norske CTR-legemiddelbiblioteket skal sluttversjonen bruke et konkret lagringsår som er minst 25 år etter End of Trial.",
+  "styling_instructions": "Sørg for god lesbarhet ved valg av skrift. Bruk tydelige seksjonsoverskrifter, fremhev fristen og reservasjonsalternativene, og behold en klar svarslipp med signaturfelt og innsending-/kontaktinformasjon. Fjern markert instruksjonstekst og hakeparenteser i sluttversjonen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "BAKGRUNN OG HENSIKT\n\nEtisk komité for klinisk utprøving av legemidler og medisinsk utstyr (REK KULMU) har vurdert og godkjent at du ble inkludert i en studie uten å ha samtykket til dette på forhånd. Formålet med studien er [sett inn kort beskrivelse av hva som er testet ut og hvorfor inklusjonen skjedde uten samtykke, f.eks. fordi deltaker var bevisstløs, fordi det var en akuttsituasjon]. Du har sagt at du ikke ønsker å være med i studien videre, og får dette skrivet fordi vi vil be deg ta stilling til om opplysningene som ble innsamlet under akuttsituasjonen kan brukes til forskning. Dersom du ikke vil at opplysninger fra deg skal brukes i studien, må du aktivt reservere deg innen fire uker.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "HVA INNEBÆRER DETTE FOR DEG?\nI studien vil vi fortsette å bruke allerede innhentede opplysninger om deg som ble samlet inn under nødsituasjonen. Dette er opplysninger om [Forklar hvilke typer opplysninger som har blitt innsamlet og hvor disse opplysningene kommer fra. Informasjonen skal være kort og konsis.]\nDet vil ikke samles inn noen nye opplysninger om deg og du vil ikke bli bedt om å møte til studiebesøk eller gjennomgå studiespesifikke prosedyrer utover dette.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "RETT TIL RESERVASJON\n<b>Hvis du aksepterer at dine helseopplysninger brukes som beskrevet over, trenger du ikke foreta deg noe. </b>\n<b>Hvis du ikke aksepterer at dine helseopplysninger brukes som beskrevet over, ber vi om at du reserverer deg innen fire uker.</b> Det gjør du ved å ringe, sende en e-post eller SMS, eller fylle ut svarslippen på siste side og sende den inn til angitte adresse. Vennligst se avsnittet om kontaktinformasjon. [Angi ev. andre måter å reservere seg på.]\n\n\nHvis vi ikke har hørt fra deg innen fire uker, vil de allerede innsamlede opplysningene om deg bli inkludert i forskningsdatasettet sammen med opplysningene fra de øvrige studiedeltakerne. Dersom vi mottar din reservasjon på et senere tidspunkt, vil vi slette dataene dine fra databasen med mindre de er inngått i allerede utførte analyser.\nHvis du ikke reserverer deg nå, kan du likevel når som helst og uten å oppgi noen grunn ta kontakt for å trekke dine opplysninger fra studien. Da kan du kontakte de samme personene som oppgitt nedenfor.\nDet vil ikke ha noen negative konsekvenser for deg eller din behandling [dersom pasient] hvis du benytter deg av reservasjonsretten. Dersom du senere vil reservere deg mot at dine helseopplysninger brukes i forskning, vil det ikke forskes videre på dine helseopplysninger.\nAdgangen til å kreve sletting eller utlevering gjelder ikke dersom opplysningene er anonymisert, det vil si at de ikke lenger kan kobles til deg ved hjelp av navn og fødselsnummer eller indirekte ved hjelp av en kodeliste. Denne adgangen kan også begrenses dersom opplysningene er inngått i utførte analyser.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "HVILKE OPPLYSNINGER SAMLES INN OM DEG OG HVA SKJER MED OPPLYSNINGENE?\nOpplysningene skal kun brukes til formålet som er beskrevet i dette informasjonsskrivet. Endret bruk eller vesentlig forlengelse av studien kan kun skje etter godkjenning fra REK KULMU.\nAlle opplysningene vil bli avidentifisert. Det betyr at vi bruker en kode for å knytte opplysningene til deg. Navnelisten som kobler denne koden til deg oppbevares på legesenteret/sykehuset og bare ansvarlig studiepersonell har tilgang til denne listen. [Eventuelle avvik fra dette må angis i teksten.] Opplysningene om deg vil bli lagret frem til [Dato/årstall: Oppgi et konkret år som ikke er tidligere enn 25 år etter End of Trial. Redegjør dersom opplysningene oppbevares et annet sted enn ved egen institusjon.] De kan ikke selges videre til andre aktører for andre formål eller økonomisk vinning.\n[Hvis det er aktuelt å overføre data til andre land:] I denne studien vil opplysningene om deg overføres til [angi hvilke land] for analyse og lagring. Sponsor og legesenteret/sykehuset [revider stedet for oppbevaring til det som er aktuelt for studien] er ansvarlig for personvernet i studien og for at utleveringen og overføringen av opplysninger skjer i samsvar med norsk rett og EU sin personvernlovgivning (GDPR). [Det skal ikke oppgis behandlingsgrunnlag etter GDPR i denne informasjonen eller ytterligere informasjon om personvern, da dette gjelder deltakelse i forskning og ikke til databehandling etter GDPR.]\nKoden som knytter deg til dine personopplysninger vil ikke bli utlevert.\n\n\nPublisering av resultater er en nødvendig del av forskningen. Resultatene publiseres samlet for mange deltakere slik at det er svært lite sannsynlig at du vil kunne bli gjenkjent. [Vurder om studien er av en slik art at denne setningen bør endres, slik at det fremkommer at det kan foreligge en risiko for å bli gjenkjent, f.eks. hvis studien gjøres på få.]\n\nRepresentanter fra sponsor, Direktoratet for medisinske produkter og kontrollmyndigheter i inn- og utland kan få innsyn i relevante deler av journal og få utlevert studieopplysninger. Dette er for å kontrollere korrekt innsamling av data. Alle som får innsyn i informasjon om deg har taushetsplikt.\n[Angi dersom det er aktuelt å anonymisere opplysninger for eventuell videre bruk, med presisering om at disse opplysningene er fullt ut anonyme, og at det ikke vil være mulig å identifisere deltakerne. Det er sponsors ansvar å påse at opplysningene er reelt anonyme, jf. Datatilsynets veileder om anonymiseringsteknikker. Det er ikke nødvendig med eget samtykkeskriv til forskning på anonymiserte opplysninger og eventuelt prøver, men deltakere må informeres om dette.]\n[Dersom prøvene skal anonymiseres og forskes videre på, må det kort forklares hvordan prøvene skal anonymiseres og hvordan de skal brukes videre.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "GODKJENNINGER\nStudien [sett inn EU CT nummer / REK-nummer] er vurdert og godkjent av Etisk komité for klinisk utprøving av legemidler og medisinsk utstyr (REK KULMU) og Direktoratet for medisinske produkter (DMP).",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "KONTAKTOPPLYSNINGER\nHar du spørsmål til studien eller ønsker å reservere deg mot bruk av dine opplysninger, kan du ta kontakt med [sett inn navn, postadresse, telefonnummer og e-postadresse til sponsor eller utprøver, eventuelt annen varig kontaktperson].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "JEG ØNSKER <u>IKKE</u> AT MINE HELSEOPPLYSNINGER BRUKES I STUDIEN\nDersom du vil reservere deg mot at helseopplysninger som ble innhentet under [klinisk nødsituasjon eller annen beskrivelse av når opplysningene ble innsamlet] inngår i studien, kontakter du sponsor eller utprøver via [sett inn e-postadresse og telefonnummer]. Du kan også fylle ut denne svarslippen og sende inn [angi adresse eller henvis til tidligere oppgitt adresse]. Opplysninger som er samlet inn om deg vil da slettes innen [angi tidsrom] etter mottatt beskjed om reservasjon.\n\n\n----------------------------------------------------------------------------------------------------------------------------\nSted og dato\t\tDin signatur\n\n\nDitt navn med blokkbokstaver",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

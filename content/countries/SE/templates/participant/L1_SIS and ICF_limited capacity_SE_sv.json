@@ -1,0 +1,79 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Information till försöksperson med begränsad beslutsförmåga och dokumentation av inställning",
+  "target_country": "Sweden",
+  "country_code": "SE",
+  "target_language": "Swedish",
+  "language_code": "sv",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": "2",
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protokollnummer: [FYLL I: protokollnummer] | EU-prövningsnummer: [FYLL I: EU-prövningsnummer]"
+  ],
+  "info_table": [
+   "Prövningens titel",
+   "Kort titel för prövningen",
+   "Protokollnummer [FYLL I: version och datum]",
+   "EU-prövningsnummer",
+   "Sponsor [FYLL I: fullständig adress]",
+   "Ansvarig prövare",
+   "Prövningsställets namn",
+   "Prövningsställets adress"
+  ],
+  "content_instructions": "Utgå från Kliniska Studier Sveriges svenska mall för klinisk läkemedelsprövning enligt CTR och ICH-GCP E6 (R3), version 7 daterad 2025-11-12. Använd ett klart, enkelt, neutralt och sakligt språk, rikta texten direkt till mottagaren, skriv ut förkortningar första gången och undvik vädjande eller förskönande formuleringar. Anpassa alla exempel och platshållare till protokollet och ta bort instruktioner och alternativ som inte gäller. Beskriv tydligt vad som är forskning och vad som är ordinarie vård. Ange sponsor, prövningsställe, ansvarig prövare, EU-prövningsnummer, prövningens titel, version och kontaktuppgifter. Beskriv endast faktiska data, prov, procedurer, mottagare och överföringar. Ange personuppgiftsansvarig, ändamål, rättslig grund, pseudonymisering, lagring, rättigheter, dataskyddsombud och klagomål till Integritetsskyddsmyndigheten. När Biobankslag (2023:38) är tillämplig ska ansvarig svensk biobank, provtyper, kodning, ändamål, lagringstid, mottagare, hantering efter analys och återkallelse beskrivas. Obligatoriska prov och analyser inom huvudprövningen omfattas av huvudsamtycket när de är fullt beskrivna. Fristående framtida eller sekundär användning ska hanteras i mallen för sekundär och framtida användning. Använd endast för en vuxen som saknar rättslig beslutsförmåga för samtycke men kan förstå viss anpassad information eller uttrycka vilja, tvekan eller motstånd. Dokumentet följer alltid med den separata informationen och samtycket för lagligen utsedd ställföreträdare. Använd korta meningar, konkret språk och vid behov bilder, symboler, kommunikationshjälp eller stödperson. Dokumentet ska inte påstå att personen lämnar juridiskt samtycke. Personens uttryckliga eller observerade motstånd mot deltagande eller en enskild procedur ska respekteras. Om beslutsförmågan återkommer ska vuxeninformation ges och eget samtycke inhämtas utan dröjsmål.",
+  "styling_instructions": "Behåll den svenska källmallens tydliga avsnittsstruktur. Sidhuvudet ska ange EU-prövningsnummer, prövningens titel på svenska och dokumentversion. Använd endast följande tydligt typade markeringar i template_content och metadata: [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] som en fristående rad eller ett fristående stycke för text som endast är riktad till författaren och alltid ska tas bort; [FYLL I: ...] inline för uppgifter eller ord som ska ersättas med prövningsspecifik deltagartext; och [VALFRI TEXT – BEHÅLL ELLER TA BORT] som en fristående rad direkt före ett fullständigt valfritt stycke, en fullständig punkt, ett fullständigt samtyckesval, ett helt valfritt avsnitt eller ett helt valfritt signaturblock. [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] och [VALFRI TEXT – BEHÅLL ELLER TA BORT] får aldrig placeras inne i en deltagarmening eller punkt. Markeringar får inte nästlas. Alla markeringar, ej valda alternativ och irrelevanta avsnitt ska vara borttagna innan dokumentet lämnas till läsaren. Behåll systemvariablerna [document name], [population label] och [date] oförändrade. Använd korta stycken, tydliga rubriker och separata fält för namn, datum och underskrift. Använd stor lättläst text och vid behov bilder, symboler eller kommunikationsstöd. Håll dokumentet väsentligt kortare än ställföreträdarens information."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Information till dig om en klinisk prövning\n\nVi vill berätta om en studie med läkemedel. Din lagligen utsedda ställföreträdare får den fullständiga informationen och kan ge det samtycke som krävs enligt lag. Vi vill ändå förklara vad som kan hända och veta vad du själv vill.\n\nDu får säga nej, visa att du inte vill eller ändra dig senare.",
+   "section_style": "H2 document subline, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Varför görs prövningen och varför frågar vi dig?\n\nDu har [FYLL I: sjukdom eller tillstånd]. Prövningen undersöker [FYLL I: läkemedel, säkerhet, dos eller effekt]. Du får frågan eftersom [FYLL I: enkel konkret förklaring].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Vad händer om du är med?\n\nPrövningen pågår för dig i ungefär [FYLL I: prövningsspecifik uppgift]. Du kommer att [FYLL I: få medicin eller placebo, göra undersökningar, lämna prov och komma på antal besök].\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Behåll följande text endast om placebo används.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nPlacebo ser ut som läkemedlet men innehåller inte det verksamma ämnet.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Behåll följande text endast om slumpmässig tilldelning används.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nEn slump kan bestämma vilken behandling du får.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Använd bilder, symboler eller en enkel besökstabell om det hjälper personen att förstå.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "Vilka risker och jobbiga saker finns?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv enkelt de viktigaste biverkningarna, smärtan, obehagen och praktiska bördorna.]\n\nBerätta eller visa direkt om du har ont, blir rädd eller inte vill fortsätta. Personalen ska lyssna och kan pausa eller stoppa.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "Kan prövningen hjälpa, och finns annan behandling?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Välj ett av alternativen och anpassa det till prövningen.]\nPrövningen kanske kan hjälpa genom [FYLL I: prövningsspecifik uppgift], men det är inte säkert. / Prövningen förväntas inte hjälpa dig direkt.\n\nOm du inte är med får du [FYLL I: vanlig behandling, annan behandling eller uppföljning]. Din läkare kan förklara alternativen.\n\nDet vi lär oss kan hjälpa andra i framtiden.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "Vad händer med uppgifter och prov om dig?\n\nVi sparar information om [FYLL I: prövningsspecifik uppgift] och kanske [FYLL I: prov]. Ditt namn ersätts med en kod så långt det går.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om journalåtkomst ingår.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\nPersoner som kontrollerar prövningen kan behöva se de delar av din journal som beskrivs i informationen.\n\nDen fullständiga förklaringen om uppgifter, prov, lagring och rättigheter finns i informationen till din ställföreträdare.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Försäkring, kostnader och resultat\n\nOm du skadas på grund av prövningen gäller det försäkringsskydd som beskrivs i informationen till din ställföreträdare.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv kort om deltagandet medför kostnader eller om resor ersätts.]\n\nPrövningens samlade resultat kommer att finnas i EU:s databas och kan sökas fram med EU-prövningsnumret. Du eller din ställföreträdare kan fråga ansvarig prövare om resultaten.",
+   "section_style": "H3 module title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Du får säga nej eller sluta\n\nDu behöver inte vara med om du inte vill. Du får säga nej med ord, tecken, hjälpmedel eller genom ditt beteende.\n\nDu får säga eller visa att du inte vill göra en viss undersökning. Personalen ska respektera det. Om undersökningen behövs för att du ska vara säker eller krävs i prövningen kan du behöva sluta. Personalen ska förklara vad som händer och vilken vård du får. Din vanliga vård påverkas inte.\n\nOm du senare kan förstå och själv samtycka får du fullständig vuxeninformation och bestämmer själv om du vill fortsätta.\n\nVem kan du fråga?\n\nAnsvarig läkare: [FYLL I: namn]\nKontaktperson: [FYLL I: namn]\nTelefon: [FYLL I: prövningsspecifik uppgift]\nPerson som hjälper dig att kommunicera: [FYLL I: prövningsspecifik uppgift]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Dokumentation av din inställning\n\nDet här visar vad du själv vill. Din lagligen utsedda ställföreträdare lämnar det samtycke som krävs enligt lag.\n\n□ Vill delta.\n□ Vill inte delta.\n□ Är osäker och vill ha mer information.\n□ Kan inte uttrycka en tydlig inställning just nu.\n□ Motsätter sig följande moment: [FYLL I: prövningsspecifik uppgift].\n\nInformationen anpassades med: [FYLL I: enkelt språk/bilder/symboler/tolk/kommunikationshjälp/stödperson].\nPersonens egna ord, tecken eller beteende: [FYLL I: prövningsspecifik uppgift].\n\n| Personens underskrift eller märke, om meningsfullt och möjligt | Namn | Datum |\n|  |  |  |\n\nJag intygar att informationen anpassades till personens förmåga att förstå, att frågor besvarades och att personens uttryckta eller observerade inställning dokumenterades.\n\n| Underskrift av den som informerade | Namn och funktion | Datum |\n|  |  |  |",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section, Standard table"
+  }
+ ]
+}

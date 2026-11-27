@@ -1,0 +1,134 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Emergency Enrolment and Deferred Consent Form",
+  "doc_name_local": "Informații privind înrolarea în situație de urgență și consimțământ informat ulterior pentru continuarea studiului",
+  "target_country": "Romania",
+  "country_code": "RO",
+  "target_language": "Romanian",
+  "language_code": "ro",
+  "doc_type": "emergency_enrollment",
+  "file_name": "L1_SIS and ICF_emergency",
+  "sort_order": 3,
+  "description": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versiunea 1.0 - [date]",
+   "Numărul protocolului: [completați] | Numărul studiului UE: [completați]"
+  ],
+  "info_table": [
+   "Titlul complet al studiului clinic",
+   "Titlul scurt al studiului clinic",
+   "Numărul protocolului [adăugați versiunea și data]",
+   "Numărul studiului UE",
+   "Sponsor [cu adresa completă]",
+   "Investigator principal",
+   "Denumirea centrului",
+   "Adresa centrului"
+  ],
+  "content_instructions": "Utilizați numai pentru un participant adult inclus în studiul clinic într-o situație de urgență, înainte de consimțământ, deoarece participantul nu putea consimți și un reprezentant legal nu putea fi identificat în intervalul primei intervenții prevăzute de protocol. Documentul se adresează în primul rând participantului și explică participarea direct acestuia; păstrați blocul reprezentantului legal numai când reprezentantul este persoana de la care consimțământul poate fi obținut prima dată. Conform Anexei nr. 3 la Ordinul nr. 3390/2022, obțineți consimțământul de la participant sau reprezentantul legal, oricare poate fi abordat primul, și documentați că participantul nu exprimase anterior o obiecție față de participare. Dacă reprezentantul consimte primul, obțineți propriul consimțământ al participantului imediat ce acesta își recapătă capacitatea. Dacă participantul aflat în incapacitate este totuși în măsură să își formeze o opinie și să evalueze informațiile, aplicați art. 15 alin. (3): pe formular sunt obligatorii atât semnătura participantului, cât și semnătura reprezentantului legal. Nu prezentați consimțământul ulterior ca aprobare retroactivă a intervențiilor deja efectuate. Separați clar tratamentul, procedurile, datele și probele deja obținute de activitățile viitoare care necesită continuarea participării. Păstrați din șablonul principal informațiile relevante privind scopul, tratamentul, riscurile, beneficiile, alternativele, asigurarea, costurile, datele, probele, rezultatele și contactele. Probele biologice și testarea moleculară/genetică obligatorii se descriu condițional; fiecare activitate viitoare cu adevărat opțională are alegere separată DA/NU, semnătură și dată. Nu includeți utilizare secundară/viitoare. Interviul de consimțământ trebuie realizat de un medic, membru al echipei de investigație și instruit corespunzător privind protocolul și buna practică în studiul clinic.",
+  "styling_instructions": "Folosiți capitole scurte, titluri clare și paragrafe ușor de parcurs. Explicați termenii medicali într-un limbaj simplu și păstrați un ton neutru, necoercitiv. Eliminați toate instrucțiunile pentru autor, exemplele, alternativele nealese și secțiunile neaplicabile înainte de finalizare. Păstrați formatarea, terminologia și logica generală consecvente cu șablonul românesc pentru pacienți adulți."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMAȚII PRIVIND ÎNROLAREA ÎN SITUAȚIE DE URGENȚĂ / CONSIMȚĂMÂNT INFORMAT ULTERIOR PENTRU CONTINUAREA STUDIULUI</b>\n\n<b>Instrucțiune pentru autor:</b> Utilizați numai după înrolarea de urgență permisă de protocolul aprobat. Separați clar acțiunile deja efectuate de activitățile viitoare.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Stimată doamnă / Stimate domn,\n\nÎn timpul unei situații medicale urgente [descriere], ați fost inclus/ă în studiul clinic [titlu] înainte de obținerea consimțământului informat. La acel moment nu ați putut primi informațiile și nu ați putut consimți, iar un reprezentant legal nu a putut fi identificat în intervalul în care trebuia realizată prima intervenție conform protocolului.\n\nAcum vă oferim informațiile necesare pentru a decide dacă doriți să continuați participarea. Această decizie nu reprezintă aprobarea retroactivă a îngrijirii de urgență sau a intervențiilor deja efectuate. Puteți refuza continuarea sau vă puteți retrage ulterior fără efect negativ asupra îngrijirii medicale obișnuite.\n\n<b>Text condițional - dacă participantul nu poate încă să își exprime consimțământul:</b>\nAceste informații sunt prezentate reprezentantului legal pentru a decide dacă participarea poate continua până când participantul poate decide singur. Consimțământul trebuie solicitat fără întârziere nejustificată de la participant sau reprezentantul legal, oricare poate fi abordat primul. Când participantul își recapătă capacitatea de a consimți, i se solicită propriul consimțământ pentru continuare.\n\nSponsorul studiului este [denumire].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. De ce ați fost inclus/ă și ce se studiază?</b>\n\nAți fost inclus/ă deoarece a apărut [starea de urgență], iar studiul se referă direct la această situație. Nu a fost posibilă obținerea consimțământului prealabil în intervalul terapeutic relevant.\n\nSe investighează [medicament/procedură] pentru [scop]. [Descrieți pe scurt statutul de autorizare, experiența anterioară și posibila relevanță clinică.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Care este scopul studiului?</b>\n\nScopul este să se afle [eficacitatea/siguranța/tolerabilitatea/doza/alt obiectiv] pentru [medicament] în [starea medicală].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Ce tratament ați primit deja și ce va urma?</b>\n\n<b>Înainte de acest consimțământ:</b>\n• [medicament de studiu/placebo/tratament standard, doză și moment]\n• [randomizare/orbire, dacă se aplică]\n• [alte intervenții de cercetare deja efectuate]\n\n<b>Dacă sunteți de acord să continuați:</b>\n• [doze/tratamente viitoare]\n• [vizite și monitorizare]\n• [durata rămasă]\n\nDacă studiul este orbit, tratamentul poate fi identificat într-o situație urgentă dacă este necesar pentru siguranța dumneavoastră.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Ce proceduri au fost deja efectuate și ce proceduri urmează?</b>\n\n<b>Deja efectuate:</b>\n[investigații, recoltări, probe și alte proceduri].\n\n<b>Planificate dacă sunteți de acord să continuați:</b>\nVizită/perioadă\tCând\tDurată\tTratament/investigații\tCe este suplimentar față de îngrijirea obișnuită\n[completați]\t[completați]\t[completați]\t[completați]\t[completați]\n\n<b>Recoltare de sânge - păstrați numai dacă se aplică:</b>\nCantitatea totală de sânge, incluzând sângele deja recoltat, va fi aproximativ [X] ml; înainte de acest consimțământ s-au recoltat aproximativ [Y] ml.\n\n<b>Module condiționale:</b>\n• probe biologice obligatorii pentru studiul principal: separați clar probele deja recoltate de cele care vor fi recoltate numai dacă participarea continuă;\n• testare moleculară/genetică obligatorie: separați clar analizele deja efectuate de cele viitoare și explicați concis scopul și implicațiile relevante;\n• activitate cu adevărat opțională: orice test/procedură/recoltare/analiză opțională viitoare necesită alegere separată DA/NU, semnătură și dată.\n\nNu includeți utilizare secundară/viitoare în acest document.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Ce se așteaptă de la dumneavoastră dacă veți continua?</b>\n\n[Dacă sunteți de acord să continuați, descrieți vizitele, administrarea tratamentului, raportarea simptomelor/medicamentelor, restricțiile și evaluările de siguranță care se aplică participării viitoare.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Ce a fost și ce va fi diferit față de îngrijirea obișnuită?</b>\n\n<b>Elemente de cercetare deja efectuate:</b> [medicament de studiu/randomizare/proceduri].\n<b>Elemente de cercetare viitoare dacă sunteți de acord să continuați:</b> [tratament/proceduri/recoltări/vizite].\n\nNu descrieți intervențiile de cercetare ca și cum ar fi fost toate parte din îngrijirea standard de urgență.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>7. Care sunt riscurile și neplăcerile?</b>\n\nDescrieți riscurile tratamentului/procedurilor pe care le-ați primit deja și, separat, riscurile continuării. Includeți riscurile cunoscute și necunoscute, riscurile procedurilor și ce trebuie să faceți dacă apar probleme. Contact medical: [telefon].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>8. Sarcina, alăptarea și contracepția</b>\n\n<b>Instrucțiune pentru autor:</b> Eliminați întreaga secțiune dacă nu se aplică populației sau medicamentului/procedurilor din studiu. Cerințele trebuie să corespundă exact protocolului și evaluării riscului reproductiv.\n\nEfectele [medicamentului de studiu] asupra unei sarcini, fătului sau copilului alăptat [nu sunt cunoscute / pot include: completați]. Din acest motiv, [femeile care pot rămâne însărcinate / bărbații cu partenere care pot rămâne însărcinate] trebuie să utilizeze [metoda/metodele acceptate] pe durata [perioada exactă].\n\n<b>Selectați și adaptați:</b>\n• Dacă puteți rămâne însărcinată, se vor efectua teste de sarcină la [momentele prevăzute].\n• Dacă alăptați, [nu puteți participa / trebuie discutată oprirea alăptării, conform protocolului și recomandării medicale].\n• Dacă rămâneți însărcinată în timpul studiului sau dacă partenera dumneavoastră rămâne însărcinată, informați imediat medicul investigator. Tratamentul de studiu și pașii medicali următori vor fi stabiliți conform protocolului și situației dumneavoastră medicale.\n• Dacă este planificată colectarea de informații despre evoluția sau rezultatul sarcinii, vi se va prezenta separat procesul de informare și consimțământ aplicabil.\n• Nu donați [spermă / ovocite] pentru o perioadă de [completați], dacă acest lucru este cerut de protocol.\n\nMedicul investigator vă va explica măsurile aplicabile și vă va răspunde la întrebări.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>9. Ce beneficii puteți avea?</b>\n\n<b>Alegeți varianta care corespunde studiului:</b>\n• Nu se așteaptă un beneficiu medical direct pentru dumneavoastră. Informațiile obținute pot contribui la îmbunătățirea viitoare a tratamentului pentru pacienți cu [afecțiune].\n• [Medicamentul de studiu] ar putea [beneficiu posibil, concret], dar nu se poate garanta că vă va ajuta.\n• Este posibil să beneficiați de [beneficiu medical realist și susținut de protocol], dar acest lucru nu poate fi garantat.\n\nStarea dumneavoastră de sănătate poate să nu se îmbunătățească sau se poate agrava în timpul studiului.\n\n<b>Instrucțiune pentru autor:</b> Nu prezentați monitorizarea suplimentară, rambursarea cheltuielilor sau accesul la investigații drept beneficii medicale dacă acestea nu reprezintă un beneficiu clinic real.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>10. Ce opțiuni aveți de acum înainte?</b>\n\nDacă nu doriți să continuați, veți primi îngrijirea și tratamentele disponibile în România potrivit stării dumneavoastră actuale: [opțiuni]. Medicul va explica beneficiile și riscurile relevante.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>11. Asigurare, vătămare legată de studiu și despăgubire</b>\n\nPentru acest studiu există [asigurare / mecanism de despăgubire] conform cerințelor aplicabile studiului clinic. Detaliile relevante sunt:\n• sponsor: [denumire]\n• asigurător / entitate responsabilă: [denumire, dacă este cazul]\n• numărul poliței / referință: [completați, dacă este cazul]\n• date de contact pentru o cerere: [completați]\n\nDacă suferiți o vătămare sau o problemă de sănătate care ar putea avea legătură cu participarea la studiu, contactați imediat medicul investigator la [date de contact]. Vi se va asigura evaluarea și îngrijirea medicală necesară, iar dreptul la despăgubire se va stabili în conformitate cu legea aplicabilă și cu mecanismul de asigurare/despăgubire al studiului.\n\nPrin semnarea acestui formular nu renunțați la niciun drept legal pe care îl aveți.\n\n<b>Instrucțiune pentru autor:</b> Descrieți numai mecanismul real aprobat pentru studiu și evitați clauzele care limitează nejustificat drepturile participantului.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "<b>12. Costuri și rambursări</b>\n\n[Descrieți pe scurt eventualele costuri pentru participant.]\n\n<b>Rambursări/compensații - păstrați numai dacă se aplică:</b>\nVeți primi [tipul rambursării/compensației], conform următoarelor reguli: [sumă și condiții].\n\n<b>Participantă însărcinată sau care alăptează - păstrați numai dacă se aplică:</b>\nRambursările oferite sunt [călătorie / cazare / hrană / pierderi de venit / alte cheltuieli direct legate de participare: sume și condiții].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "<b>13. Continuarea este voluntară și o puteți opri?</b>\n\nContinuarea este voluntară. O puteți refuza sau puteți opri participarea ulterior fără motiv și fără efect negativ asupra îngrijirii obișnuite. Dacă nu continuați, nu vor fi efectuate noi proceduri de cercetare, în afară de activități de siguranță/îngrijire justificate și explicate.\n\nDacă nu sunteți de acord cu continuarea, aveți dreptul să vă opuneți utilizării datelor obținute în cadrul studiului până în acel moment. Echipa de studiu vă va explica ce înseamnă această alegere. [Dacă au fost recoltate sau utilizate probe biologice: explicați ce poate fi distrus și ce nu mai poate fi retras din analizele deja efectuate.]\n\n<b>Text condițional - decizia este luată inițial de reprezentantul legal:</b>\nReprezentantul legal poate refuza sau retrage consimțământul pentru continuare fără efect negativ asupra îngrijirii participantului. Când participantul își recapătă capacitatea, propria sa decizie prevalează pentru continuarea participării.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "<b>14. Cum vor fi gestionate datele și, dacă se aplică, probele?</b>\n\nDatele și, dacă se aplică, probele obținute înainte de acest consimțământ și cele care ar urma să fie obținute după consimțământ trebuie descrise separat. Se aplică Regulamentul (UE) 2016/679 și Legea nr. 190/2018. [Indicați operatorii, DPO, destinatarii, transferurile și perioadele de păstrare reale.] Accesul la documentele sursă este limitat la persoanele autorizate pentru monitorizare, audit, inspecție și evaluare.\n\n<b>Instrucțiune pentru autor:</b> Dacă persoana refuză continuarea, explicați ce utilizări/păstrări ale datelor și probelor deja obținute sunt încă necesare sau permise și ce opțiuni reale există; nu promiteți ștergerea automată. Nu includeți utilizare secundară/viitoare în acest document.\n\n<b>Instrucțiune condițională - decizii automatizate/profilare:</b>\nDacă date genetice, biometrice sau privind sănătatea sunt utilizate pentru decizii automatizate/profilare, aplicați art. 3 alin. (1) din Legea nr. 190/2018 și adăugați consimțământ explicit separat numai dacă acesta este temeiul aplicabil.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "<b>15. Veți fi informat/ă despre informații noi și despre rezultatele studiului?</b>\n\nDacă apare o informație nouă care poate influența siguranța dumneavoastră sau decizia de a continua participarea, medicul investigator vă va informa cât mai curând. Veți putea reevalua decizia de participare și, dacă este necesar, vi se va solicita un nou consimțământ sau confirmarea consimțământului pentru continuare.\n\n<b>Rezultatele studiului:</b>\nUn rezumat al rezultatelor studiului și rezumatul destinat persoanelor fără pregătire de specialitate vor fi făcute publice în sistemul/baza de date a Uniunii Europene pentru studii clinice, conform cerințelor aplicabile. Informațiile publicate nu vă vor identifica.\n\n<b>Texte condiționale - selectați după protocol:</b>\n• La finalul studiului, medicul investigator vă poate comunica [principalele rezultate / grupa de tratament], dacă doriți și dacă acest lucru este posibil.\n• Rezultatele individuale ale investigațiilor vor fi comunicate astfel: [completați].\n• O constatare neașteptată cu posibilă importanță pentru sănătatea dumneavoastră va fi gestionată astfel: [completați].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 18,
+   "section_content": "<b>16. Câți participanți vor lua parte?</b>\n\nSe estimează aproximativ [număr] participanți în România și [număr] la nivel global.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 19,
+   "section_content": "<b>17. Pe cine puteți contacta?</b>\n\n<b>Pentru probleme medicale, întrebări despre studiu sau situații urgente:</b>\nMedic investigator / investigator principal: [nume]\nTelefon: [număr]\nE-mail: [e-mail]\nDisponibilitate / contact în afara programului: [completați]\n\n<b>Pentru întrebări despre drepturile dumneavoastră ca participant sau aspecte etice:</b>\n[contact independent / contact CNBMDM sau alt contact aprobat pentru studiu, dacă este prevăzut]\n\n<b>Pentru întrebări privind protecția datelor:</b>\nOperator / responsabil cu protecția datelor: [date de contact]\n\n<b>Instrucțiune pentru autor:</b> Introduceți numai contacte reale, actuale și aprobate pentru studiu. Nu hard-codați date de contact ale autorităților în șablon dacă acestea nu sunt cerute pentru documentul participantului.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 20,
+   "section_content": "<b>CONSIMȚĂMÂNT INFORMAT ULTERIOR PENTRU CONTINUARE</b>\n\nConfirm că am fost informat/ă despre includerea mea în situație de urgență, despre ceea ce s-a întâmplat deja și despre ceea ce urmează. Știu că acest formular nu aprobă retroactiv îngrijirea de urgență sau intervențiile deja efectuate. Am avut timp și posibilitatea de a pune întrebări și pot refuza continuarea fără efect negativ asupra îngrijirii obișnuite.\n\n<b>Opoziție la utilizarea datelor deja obținute - completați numai dacă nu sunteți de acord cu continuarea și doriți să vă exercitați acest drept:</b>\nMă opun utilizării datelor obținute în cadrul studiului până în acest moment.\nNumele participantului/reprezentantului legal: __________________\nSemnătura: __________________  Data: __________\n\n<b>Texte condiționale - proceduri viitoare ale studiului principal:</b>\n• Sunt de acord cu recoltarea și utilizarea probelor biologice obligatorii viitoare, astfel cum sunt descrise. [Păstrați numai dacă se aplică.]\n• Sunt de acord cu testarea moleculară/genetică obligatorie viitoare, astfel cum este descrisă. [Păstrați numai dacă se aplică.]\n\n<b>Activitate opțională independentă viitoare - repetați pentru fiecare:</b>\nSunt de acord cu [activitate și scop]. DA □ NU □\nSemnătura persoanei care consimte: __________________  Data: __________\n\n<b>Text condițional - decizii automatizate/profilare:</b>\nDacă art. 3 alin. (1) din Legea nr. 190/2018 este aplicabil și temeiul este consimțământul explicit:\nSunt de acord în mod explicit ca datele mele [genetice/biometrice/de sănătate] să fie utilizate pentru [proces/scop].\nDA □ NU □\nSemnătura persoanei care consimte: __________________  Data: __________\n\n<b>Consimțământul participantului - utilizați dacă participantul poate consimți:</b>\nSunt de acord să continui participarea la studiu și cu procedurile obligatorii viitoare descrise.\nNumele și prenumele participantului: __________________\nSemnătura: __________________  Data: __________\n\n<b>Bloc opțional - reprezentant legal, utilizați numai dacă participantul nu poate încă să consimtă:</b>\nConfirm că am primit informațiile adresate participantului și explicațiile necesare pentru a decide în numele persoanei reprezentate. Sunt de acord cu continuarea participării până când participantul poate decide singur.\nParticipant: __________________\nReprezentant legal: __________________  Calitate juridică: __________________\nSemnătură: __________________  Data: __________\n\n<b>Bloc opțional - părinte/reprezentant legal al minorului, păstrați numai dacă se aplică:</b>\nConfirm că am primit informațiile necesare și sunt de acord cu continuarea participării minorului.\nMinor: __________________\nPărinte/reprezentant legal: __________________\nSemnătură: __________________  Data: __________\n\n<b>Decizia minorului - păstrați numai dacă minorul este capabil să își formeze o opinie și să evalueze informațiile:</b>\n□ Doresc să continui participarea.\n□ Nu doresc să continui participarea.\nNumele minorului: __________________\nSemnătura/semnul, dacă este potrivit: __________________  Data: __________\n\n<b>Bloc opțional - martor imparțial, păstrați numai dacă este necesar:</b>\nConfirm că informațiile și formularul au fost citite sau explicate participantului, că acesta a putut pune întrebări și că și-a exprimat liber decizia.\nNumele martorului: __________________\nSemnătura martorului: __________________  Data: __________\n\n<b>Text condițional - participantul este în măsură să își formeze o opinie și să evalueze informațiile, dar nu poate acorda singur consimțământul juridic:</b>\nConform art. 15 alin. (3) din Ordinul nr. 3390/2022, pe formular sunt obligatorii atât semnătura participantului, cât și cea a reprezentantului legal.\nSemnătura participantului: __________________  Data: __________\n\n<b>Instrucțiune pentru autor:</b> Consimțământul informat trebuie solicitat fără întârziere nejustificată de la participant sau reprezentantul legal, oricare poate fi abordat primul. Dacă reprezentantul consimte primul, obțineți propriul consimțământ al participantului imediat ce acesta își recapătă capacitatea.\n\n<b>Declarația medicului:</b>\nDeclar că sunt medic, membru al echipei de investigație și instruit corespunzător privind protocolul și buna practică în studiul clinic. [Dacă participantul este minor: cu pregătire/experiență în lucrul cu copii.] Am furnizat informațiile fără întârziere nejustificată, am explicat distinct partea deja efectuată și partea viitoare și am oferit posibilitatea de a pune întrebări.\n\nLa momentul includerii de urgență, conform procedurii aprobate, a fost verificat că participantul nu exprimase anterior o obiecție față de participarea la acest studiu: [descrieți/documentați sursa verificării].\n\nNume medic: __________________  Semnătură: __________________  Data: __________\n\nUn exemplar datat și semnat este oferit participantului sau reprezentantului legal și unul este păstrat la centru.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

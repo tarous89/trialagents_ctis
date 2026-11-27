@@ -1,0 +1,975 @@
+{
+  "country": "AT",
+  "name": "Austria",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "BASG (Federal Office for Safety in Health Care / Bundesamt für Sicherheit im Gesundheitswesen); competent authority, issues the national decision",
+    "ethics": "The Austrian CTR ethics committees assess Part II and defined Part I ethical aspects through their national platform (AustrianEthics). Sponsors submit and communicate through CTIS; no separate national ethics application.",
+    "fee": "BASG bills separately from the application assessment: actual proof of payment is not part of a valid submission. Upload a national contact and billing address in the CTIS 'Proof of Payment of Fee' area so the invoice and national decision can be delivered."
+  },
+  "language_rules": {
+    "participant_documents": "de",
+    "administrative_documents": [
+      "en"
+    ],
+    "rule": "For multinational trials the application dossier is submitted in English. The full and public trial titles, the protocol synopsis and the participant-facing materials required by Austria must also be in German. Part II sections K and L participant-facing materials are German; participant-facing insurance information is also subject to the German-language rule. The full German title must match the title on the ICF and insurance materials.",
+    "non_german_speakers": "If an Austrian site plans to enrol a participant (or representative) who does not sufficiently understand German, all participant-facing documents for that participant must be available as certified translations into a language they understand. An English master ICF is not a substitute for the German Austria version, and the impartial-witness route is never a substitute for translation.",
+    "endpoint_documents": "Participant-facing endpoint documents (questionnaires, diaries) may belong in Part I under current EU guidance; Austria still applies the participant-language rule to their use. The Austria Part II checklist names no Part II slot for them.",
+    "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in English, matching the English dossier for multinational trials. The supplied CTIS_AT template set was prepared for German answers; the language for national-only trials is not stated in the guides (DECISIONS.md D1).",
+    "by_language": {
+      "en": [
+        "AT-K1",
+        "AT-M1",
+        "AT-M2-DOI",
+        "AT-M-GCP",
+        "AT-N1",
+        "AT-O1",
+        "AT-O2",
+        "AT-P1",
+        "AT-R1",
+        "AT-S1"
+      ],
+      "de": [
+        "AT-K2",
+        "AT-L1",
+        "AT-L2"
+      ]
+    },
+    "drafting_notes_language": "drafting_notes_en for administrative documents, drafting_notes_de for participant documents."
+  },
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.adults_without_capacity",
+    "population.group_benefit_research_without_capacity",
+    "population.temporary_incapacity",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "consent.electronic",
+    "population.non_german_speakers",
+    "recruitment.material_used",
+    "recruitment.call_centre",
+    "recruitment.other_information_material",
+    "endpoint_documents.participant_facing",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.future_use_outside_protocol",
+    "samples.anonymisation_planned",
+    "data.future_use_outside_protocol",
+    "data.secondary_use_new_technologies",
+    "data.transfer_third_countries",
+    "data.ethnic_origin_collected",
+    "genetics.optional_investigation",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "pregnancy.treating_physician_contact",
+    "reimbursement.multiple_methods",
+    "reimbursement.external_service_provider",
+    "trial.combination_different_sponsors_insurers",
+    "trial.multinational",
+    "sites.count",
+    "sites.contact_placeholders"
+  ],
+  "study_facts_note": "Country-specific keys added for Austria: population.temporary_incapacity, samples.anonymisation_planned, data.secondary_use_new_technologies, data.transfer_third_countries, data.ethnic_origin_collected, genetics.optional_investigation, pregnancy.treating_physician_contact, reimbursement.multiple_methods, reimbursement.external_service_provider, trial.combination_different_sponsors_insurers, trial.multinational, sites.contact_placeholders.",
+  "documents": [
+    {
+      "id": "AT-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment and informed consent procedure",
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "European Commission 'Informed consent and patient recruitment procedure' template v2.0; applies to new Part II submissions (full implementation 1 September 2026). Use v2.0 for new work, not the superseded version.",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "How potential participants are identified, approached, informed and consented, including the procedure for every population pathway in the plan (incapacitated adults, minors, impartial witness, emergency). Annex I requires the emergency consent procedure and the reason for, selection of and procedure with an impartial witness where those pathways apply.",
+      "national_fields": {
+        "v105": "Austria: participant-facing recruitment content is German; a certified translation is needed when recruitment is directed to a planned population that does not sufficiently understand German.",
+        "v108": "Austria: consent is written, dated and signed by the participant or legally designated representative and by the person conducting the consent interview, using wet ink or a qualified electronic signature (Austrian national CTR requirements portal); explicit written information on purpose and scope of personal-data processing and consent to it (section 41 AMG); certified translations for planned participants who do not sufficiently understand German; after full withdrawal no new study-purpose data collection through visits, follow-up or re-contact (CTR safety reporting unaffected).",
+        "v110": "Austria: separate information and consent form for the legally designated representative; the participant is informed according to capacity and an explicit refusal is respected; for the Article 31 population-benefit pathway, section 39 AMG requires that there are no indications the participant refused this kind of trial before losing capacity; for temporary incapacity, an additional post-hoc information and consent form is given when capacity returns. Section 39 AMG excludes persons in compulsory military service and persons detained by judicial or administrative order or placed under the Accommodation Act, whatever the representative consents.",
+        "v114": "Austria: consent of the person(s) legally entitled to represent the particular minor (confirm per case; no fixed one- or two-parent rule); separate age-appropriate information and consent from age 8 (AustrianEthics bands 8-9, 10-13, 14-17); younger children informed according to understanding; a decision-capable minor must also consent (section 39 AMG) and refusal is respected (Article 32 CTR); the trial cannot proceed if a required consent is missing or withdrawn; express re-consent when the participant reaches adulthood.",
+        "v117": "Austria: the witness route applies only when the person giving consent cannot write (Article 29 CTR); never for a language barrier (certified translations instead) or lack of capacity (legal representative instead). State how impartiality is ensured and how the witness is selected; the witness and the person conducting the interview sign and date, by wet ink or qualified electronic signature.",
+        "v121": "Austria: all Article 35 conditions; an Austrian post-hoc information and consent form is given when the participant regains capacity; representative information and consent where a representative becomes available first, and the participant's own consent as soon as capable; for minors read together with Article 32 and the Austrian minor rules; if the trial ends for the participant or the participant dies before delayed consent, section 41(3) AMG allows use of data already processed and of autopsy results for that trial."
+      },
+      "sources": [
+        "AT-PII-CHECKLIST#1",
+        "AT-EMERGENCY",
+        "AT-WITNESS",
+        "AT-MINORS",
+        "AT-CAPACITY",
+        "AT-ICF"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section K. Mandatory. Answer in English (multinational dossier; see language_rules). No signature at submission. Use the EU v2.0 template. Complete the section for every population pathway in the plan and answer each 'no' pathway with the template's not-applicable answer. Put the Austrian rules in the Member State fields (national_fields): German participant documents and certified translations, wet-ink or qualified electronic consent signature, section 39 and 41 AMG, post-hoc forms after temporary incapacity or emergency inclusion, the restricted impartial-witness trigger. The recruitment routes must match every K2 item.",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_AT_de",
+      "name_en": "Recruitment material",
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Advertisements, invitation letters, scripts, social-media materials or other recruitment materials used before a participant decides whether to join.",
+      "per": "item",
+      "language": [
+        "de"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Final German material as it will be used. Certified translation in addition when recruitment is directed to a planned population that does not sufficiently understand German.",
+      "sources": [
+        "AT-PII-CHECKLIST#1"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_de": "CTIS Teil II, Abschnitt K. Bedingt: nur wenn Rekrutierungsmaterial (Anzeigen, Einladungsschreiben, Skripte, Social-Media-Inhalte u. a.) vor der Teilnahmeentscheidung verwendet wird; je Material ein Dokument. Sprache Deutsch; beglaubigte Übersetzung zusätzlich, wenn sich die Rekrutierung an eine geplante Gruppe richtet, die Deutsch nicht ausreichend versteht. Keine Unterschrift. Keine Vorlage vorhanden: aus Prüfplan und K1 entwerfen; Inhalte müssen mit K1 und der Teilnehmerinformation übereinstimmen; Aufwandsersatz nicht als Anreiz darstellen."
+    },
+    {
+      "id": "AT-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_AT_de",
+      "name_en": "Participant information and informed consent form, one set per population, plus the separate documents Austria requires",
+      "requirement": "mandatory",
+      "per": "population",
+      "language": [
+        "de"
+      ],
+      "template": null,
+      "template_note": "Participant templates are bound per population through population_sets.",
+      "signature_at_submission": false,
+      "content": "Blank German information sheet and consent form for the standard adult population and, conditionally, separate or additional documents for minors, adults unable to consent, temporary incapacity, emergency enrolment, impartial witness, pregnancy follow-up requiring separate consent, optional genetic investigations and optional secondary or future use. See population_sets.",
+      "sources": [
+        "AT-PII-CHECKLIST#2",
+        "AT-ICF"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_de": "CTIS Teil II, Abschnitt L. Pflichtdokument je Population; Sprache Deutsch (eine englische Master-Information ersetzt die österreichische Fassung nicht). Die österreichische nationale ICF-Vorlage wird empfohlen; ein anderes Format muss alle Themen der nationalen Vorlage abdecken. Die Passagen zu Versicherung und Datenschutz aus der österreichischen Musterinformation sind wörtlich zu übernehmen; notwendige Ergänzungen nur am Ende des jeweiligen Abschnitts und ohne Widersprüche oder Wiederholungen. Der deutsche vollständige Titel muss mit dem in CTIS für Österreich eingetragenen deutschen Titel und den Versicherungsunterlagen übereinstimmen. Kontaktangaben sind integraler Bestandteil: vollständiger Name des Prüfzentrums, Prüfärztin/Prüfarzt und ggf. Stellvertretung, 24-Stunden-Notfallnummer, Datenschutzbeauftragte/r des Zentrums, Patientenvertretung sowie die nationale Kontaktstelle für Versicherungsfragen; bei multizentrischen Prüfungen sind Platzhalter mit separater Kontaktliste „nicht zur Veröffentlichung“ zulässig. Nach vollständigem Widerruf keine neue Datenerhebung zu Studienzwecken (Sicherheitsmeldungen unberührt). Guidance V5: bei Kombinationsstudien mit verschiedenen Sponsoren und Versicherern beide Versicherer nennen; bekannte Empfängerländer pseudonymisierter Daten nennen, Drittländer ohne Angemessenheitsbeschluss ausdrücklich nennen und ausdrückliche Einwilligung einholen; bei unterschiedlichen Erstattungswegen alle Optionen der österreichischen Zentren nennen und bei mehreren Optionen an einem Zentrum eine Auswahl im Einwilligungsformular vorsehen. Optionale genetische Untersuchungen erfordern ein gesondertes Einwilligungsformular (AustrianEthics). Unterschrift bei der Einwilligung: Tinte oder qualifizierte elektronische Signatur; in CTIS nur die leere Vorlage hochladen. Beglaubigte Übersetzungen für geplante Teilnehmende, die Deutsch nicht ausreichend verstehen.",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-L2",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_<type>_AT_de",
+      "name_en": "Other information given to participants before the participation decision",
+      "requirement": "conditional",
+      "trigger": "recruitment.other_information_material",
+      "trigger_text": "Any additional participant information material submitted in section L besides the information sheets and consent forms.",
+      "per": "item",
+      "language": [
+        "de"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "note": "AustrianEthics Guidance V5: a separate third-party reimbursement document is unnecessary when the main ICF includes all required information completely and concisely.",
+      "sources": [
+        "AT-PII-CHECKLIST#2",
+        "AT-ICF"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_de": "CTIS Teil II, Abschnitt L. Bedingt: nur für zusätzliches Informationsmaterial für Teilnehmende; je Material ein Dokument. Sprache Deutsch; beglaubigte Übersetzungen für geplante Teilnehmende, die Deutsch nicht ausreichend verstehen. Keine Vorlage vorhanden. Inhalte dürfen der Teilnehmerinformation nicht widersprechen. Ein eigenes Dokument zur Kostenerstattung über Dritte ist nicht nötig, wenn die Haupt-ICF alle erforderlichen Angaben vollständig und knapp enthält."
+    },
+    {
+      "id": "AT-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "name_en": "Principal investigator CV",
+      "requirement": "mandatory",
+      "per": "site",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+        "basis": "EU CV template (accepted and recommended in Austria)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Qualifications required under section 43 AMG, including authority to practise independently in Austria, relevant clinical-trial and indication experience. Dated and not older than one year (AustrianEthics). No signature at submission (BASG); a signed and dated CV is archived in the TMF or ISF. Personal details come from the investigator; the assistant fills only trial fields.",
+      "sources": [
+        "AT-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section M. Mandatory, one per principal investigator and Austrian site. EU template accepted and recommended. Fill only the trial fields (EU trial number; title if present); every personal field stays empty for the investigator. Check on receipt: dated, not older than one year, shows section 43 AMG qualification (independent practice in Austria) and relevant trial and indication experience. No signature in the CTIS copy; the signed and dated CV stays in the TMF/ISF. Personal names in the title are permitted for the PI only.",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-M2-DOI",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Declaration of interest",
+      "requirement": "mandatory",
+      "per": "site",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+        "basis": "EU declaration-of-interest template (accepted and recommended in Austria)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Dated and current; no signature at submission (BASG). Interests are declared by the investigator.",
+      "sources": [
+        "AT-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section M. Mandatory, one per principal investigator and Austrian site. EU template accepted and recommended. Fill only trial title and EU trial number; the investigator answers every interest question. Dated and current; no signature at submission.",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-M-GCP",
+      "ctis_section": "M",
+      "ctis_title": "M2_GCP training_<investigator>_<site>",
+      "name_en": "Evidence of completed ICH GCP training",
+      "requirement": "mandatory",
+      "per": "site",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "note": "The Austria guide requires the evidence but names no CTIS title; the title follows the Germany precedent pending DECISIONS.md D7.",
+      "content": "Certificate or other evidence that the principal investigator has completed ICH Good Clinical Practice training.",
+      "sources": [
+        "AT-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "investigator / training provider",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section M. Mandatory evidence of completed ICH GCP training per principal investigator. Supplied by the investigator or training provider; only checked. CTIS title and slot to be confirmed (DECISIONS.md D7).",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Austrian Trial Site Suitability Form",
+      "requirement": "mandatory",
+      "per": "site",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "national_template": "Austrian national Trial Site Suitability Form (official DOCX from AustrianEthics). Not supplied in CTIS_AT; the shared EU form eu/templates/part-ii/N1_Site suitability.docx is NOT accepted as a substitute in Austria.",
+      "signature_at_submission": true,
+      "signature_rule": "Signed before CTIS upload by the site-specific responsible person; for Austrian healthcare facilities the medical director, deputy medical director or equivalent functionary, subject to institution-specific signature rules. Wet-ink, advanced electronic or qualified electronic signature; a pasted scanned signature is not accepted.",
+      "content": "One national form per Austrian centre. The planned participant numbers on the site forms feed the insurance check (O1/O2).",
+      "sources": [
+        "AT-PII-CHECKLIST#4",
+        "AT-HUB#austria-specific-site-suitability"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'form' (Draft trial fields, then Check) once the official national DOCX is supplied and converted into countries/AT/templates/part-ii (DECISIONS.md D2).",
+      "reader": "regulatory",
+      "filled_by": "site (national form, signed by the site-specific responsible person)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section N. Mandatory, one per Austrian site, on the national Austrian Trial Site Suitability Form only (the generic EU form is not accepted). Signed before upload by the site-specific responsible person (medical director, deputy or equivalent; check the current institution-specific signatory list of hospitals and federal states). Accepted signatures: wet ink, advanced electronic, qualified electronic; never a pasted scan. The national form is not in the template set: do not draft it on the EU form. Check that the planned participant number per site is consistent with the insurance cover.",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_AT",
+      "name_en": "Insurance confirmation (trial-participant insurance certificate)",
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "As issued by the insurer; the Austria guides state no rule.",
+      "content": "No-fault personal injury insurance for participants under section 40 AMG. Together with O2 the package must let the ethics committee assess participant insurance, extended investigator liability insurance and extended investigator criminal legal-protection insurance. Unredacted except information irrelevant to the insurance assessment (for example a clearly identified premium). Cover for the full planned trial duration and for at least the higher of the sum of planned participants across the Austrian site-suitability forms and the number entered for Austria in the CTIS Member State Concerned data.",
+      "sources": [
+        "AT-PII-CHECKLIST#5",
+        "AT-HUB#insurance-evidence"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section O. Mandatory. Insurer-issued confirmation; only checked. Check: section 40 AMG no-fault cover; full planned trial duration; insured participant number at least the higher of the Austrian site-form total and the CTIS MSC number; unredacted apart from irrelevant items such as the premium; trial title matching the German CTIS title where the German title is used. Combination studies with different sponsors and insurers: both insurers appear in the participant information.",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-O2",
+      "ctis_section": "O",
+      "ctis_title": "O2_Proof of coverage_<sponsor or site>",
+      "name_en": "Insurance policy and terms and conditions (proof of coverage)",
+      "requirement": "mandatory",
+      "requirement_note": "The Austria checklist labels O2 'where needed'; AustrianEthics requires the policy and the terms and conditions in addition to the confirmation, so they are planned here (DECISIONS.md D8).",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "As issued by the insurer; the Austria guides state no rule.",
+      "content": "Insurance policy and applicable terms and conditions, including the information on extended investigator liability and extended investigator criminal legal-protection coverage. Unredacted except irrelevant items such as a clearly identified premium.",
+      "sources": [
+        "AT-PII-CHECKLIST#5",
+        "AT-HUB#insurance-evidence"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section O. Policy and terms and conditions required by AustrianEthics; only checked. Insurer, policy number, obligations and contact must match the verbatim Austrian insurance passage as completed in every participant document.",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_AT",
+      "name_en": "Participant compensation, investigator compensation, funding and other financial arrangements",
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "European Commission compensation template (accepted and recommended in Austria)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": null,
+      "signature_note": "The Austria guides state no signature rule for P1 (DECISIONS.md D10).",
+      "content": "Participant compensation, investigator compensation, funding and other relevant financial arrangements. Reimbursement of reasonable expenses is not presented as an incentive. Where Austrian sites use different reimbursement methods, show all options; where a site offers more than one, the consent form gives a choice. Additional rules apply when an external service provider handles reimbursement.",
+      "sources": [
+        "AT-PII-CHECKLIST#6",
+        "AT-HV"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section P. Mandatory. Answer in English (see language_rules). EC compensation template accepted and recommended. Cover participant compensation and, as Austria asks for section P, investigator compensation, funding and other financial arrangements. Do not present expense reimbursement as an incentive. List every reimbursement method used at Austrian sites; amounts, methods and conditions must be identical in every participant document. External reimbursement provider: name it and its data processing, and where optional keep another permitted route open without loss of participation.",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-R1",
+      "ctis_section": "R",
+      "ctis_title": "R1_Compliance collection and use personal data_AT",
+      "name_en": "GDPR compliance statement with Austrian national data-protection confirmation",
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/R1_Data protection.docx",
+        "basis": "European Commission GDPR compliance statement, with the Austrian national data-protection confirmation added",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": null,
+      "signature_note": "The Austria guides state no signature rule; the form's own date, name and role fields are completed for the sponsor (DECISIONS.md D10).",
+      "content": "The statement must confirm that Austrian national data-protection rules will also be followed, within the Commission template or as an additional Part II confirmation. Separate from the participant-facing data-protection section of the ICF.",
+      "national_fields": {
+        "r1_the_sponsor_declares": "Required in Austria: confirm that Austrian national data-protection rules will also be followed (AustrianEthics), including the section 41 AMG duty to inform the participant or legal representative explicitly in writing about purpose and scope of personal-data collection and processing and to obtain consent to it."
+      },
+      "sources": [
+        "AT-PII-CHECKLIST#7"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section R. Mandatory. Answer in English (see language_rules). Add the Austrian national confirmation in field r1_the_sponsor_declares (national_fields); this replaces a separate national document. The participant-facing privacy text stays in the ICF (verbatim Austrian passage).",
+      "trigger": "always"
+    },
+    {
+      "id": "AT-S1",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_AT",
+      "name_en": "Compliance with applicable rules for biological samples",
+      "requirement": "conditional",
+      "trigger": "samples.collected or samples.archive_used",
+      "trigger_text": "Biological samples are collected, stored or used.",
+      "per": "trial",
+      "language": [
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "European Commission 'Compliance with applicable rules for biological samples' template (accepted and recommended in Austria)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": null,
+      "signature_note": "The Austria guides state no signature rule for S1 (DECISIONS.md D10).",
+      "content": "If samples are also stored for optional future research, S1 is not enough by itself: the future research field must be delimited and the participant information must explain which samples are kept, where, for how long, who is responsible for storage and destruction, and the participant's choices.",
+      "national_fields": {
+        "f03": "Austria: state that future research on stored samples is limited to a delimited research field (section 2d(3) Research Organisation Act, AustrianEthics Guidance V5), that participants may request destruction of pseudonymised samples, and that any planned anonymisation is a separate optional choice; consistent with the separate secondary-use information and consent."
+      },
+      "sources": [
+        "AT-PII-CHECKLIST#8",
+        "AT-SECONDARY"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_en": "CTIS Part II section S. Conditional: only when biological samples are collected, stored or used. Answer in English (see language_rules). Section 4 (future use) only when samples are stored for future use outside the protocol; then name the delimited research field (no 'any future research'), storage location and duration, responsible function for storage and destruction, and the destruction right; the separate optional information and consent goes in section L."
+    }
+  ],
+  "outside_part_ii": [
+    {
+      "id": "AT-SYNOPSIS-DE",
+      "what": "German protocol synopsis",
+      "requirement": "mandatory for the application",
+      "where": "Part I protocol package (not Part II); title per naming guide D1_Protocol synopsis_AT_<EU CT number>_de",
+      "note": "A separate lay synopsis is not required by Austria. The German full and public titles are entered in CTIS and must match the ICF and insurance materials.",
+      "sources": [
+        "AT-PII-CHECKLIST#outside"
+      ]
+    },
+    {
+      "id": "AT-BILLING",
+      "what": "National contact and billing address",
+      "requirement": "administrative",
+      "where": "CTIS 'Proof of Payment of Fee' area (Forms section)",
+      "note": "BASG bills separately; actual proof of payment is not part of a valid submission.",
+      "sources": [
+        "AT-PII-CHECKLIST#outside"
+      ]
+    }
+  ],
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_adult patients_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_main_AT_de.json"
+        }
+      ],
+      "basis": "Austrian national Patient Information and Informed Consent template (recommended); insurance and data-protection passages verbatim",
+      "sources": [
+        "AT-ICF",
+        "AT-PII-CHECKLIST#2"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_healthy_AT_de.json"
+        }
+      ],
+      "note": "Use when the protocol enrols people because they meet non-disease eligibility criteria, following the protocol rather than the phase label. Austria publishes no separate national healthy-volunteer template: this is a variation of the standard Austrian ICF (same verbatim insurance and data-protection passages, Austrian insurance contact). No implied therapeutic benefit; compensation consistent with P1. Separate pathway documents (witness, pregnancy, genetics, future use) still apply.",
+      "sources": [
+        "AT-HV"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_parents_AT_de.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 8-9_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_age 8-9_AT_de.json",
+          "when": "population.minors_age_bands includes ages 8-9"
+        },
+        {
+          "title": "L1_SIS and ICF_children 10-13_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_age 10-13_AT_de.json",
+          "when": "population.minors_age_bands includes ages 10-13"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 14-17_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_age 14-17_AT_de.json",
+          "when": "population.minors_age_bands includes ages 14-17"
+        }
+      ],
+      "note": "AustrianEthics requires separate parent or legal-guardian consent and separate age-appropriate information and consent from age 8, with distinct language levels for 8-9, 10-13 and 14-17. A decision-capable minor must also consent (section 39 AMG). Re-consent with the adult document when the participant reaches adulthood. Under 8: no age-band document is required; inform the child according to understanding (see DECISIONS.md D11).",
+      "sources": [
+        "AT-MINORS"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_AT_de.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_AT_de.json",
+          "when": "the participant can understand adapted information or express a wish (information adapted to capacity is mandatory as applicable)"
+        }
+      ],
+      "note": "Article 31 conditions; for the population-benefit pathway section 39 AMG additionally requires no indication of prior refusal of this kind of trial. Excluded groups under section 39 AMG cannot be included by representative consent.",
+      "sources": [
+        "AT-CAPACITY"
+      ]
+    },
+    {
+      "id": "temporary_incapacity",
+      "trigger": "population.temporary_incapacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_post-hoc consent_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_emergency_AT_de.json",
+          "status": "needs_decision",
+          "template_note": "No dedicated template for post-hoc consent after temporary incapacity outside an emergency; provisionally adapt the emergency post-hoc template (DECISIONS.md D5)."
+        }
+      ],
+      "note": "Mandatory in Austria (AustrianEthics): an additional post-hoc information and consent form given when the participant regains capacity, in addition to the legal-representative documents of adults_without_capacity. It explains what occurred during incapacity, proposed continuing procedures, the right to refuse continued participation and the handling of data already collected.",
+      "sources": [
+        "AT-CAPACITY"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency post-hoc_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_emergency_AT_de.json"
+        }
+      ],
+      "note": "All Article 35 conditions; the Austrian post-hoc information and consent form is mandatory. Representative documents (adults_without_capacity) when a representative becomes available first; minors' documents when the emergency participant is a minor. K1 section on emergency inclusion must describe the procedure.",
+      "sources": [
+        "AT-EMERGENCY"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_witness_AT_de.json"
+        }
+      ],
+      "note": "Only when the person giving consent can consent but cannot write (Article 29 CTR). Not for language barriers (certified translations) or lack of capacity (legal representative). Austria publishes no national witness template or eligibility criteria.",
+      "sources": [
+        "AT-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.infant_follow_up or pregnancy.treating_physician_contact",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_AT_de.json"
+        }
+      ],
+      "note": "The main ICF may cover follow-up of the pregnant participant herself until birth when the scope is defined. A separate document is mandatory for additional data beyond the protocol or pregnancy-monitoring form, the child's health data after birth, or contact with treating physicians. Follow-up of the child beyond six months must be justified.",
+      "sources": [
+        "AT-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_AT_de.json"
+        }
+      ],
+      "note": "Not a universal Austrian requirement and no national template: plan it only when the protocol collects identifiable health information from a pregnant partner; same Austrian language and privacy rules. Do not present it as a national requirement.",
+      "sources": [
+        "AT-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_secondary_AT_de.json"
+        }
+      ],
+      "note": "Optional future use is a separate decision with yes/no choices; refusal must not affect main participation. Samples: delimited research field, retained samples, storage place and duration, responsible function, destruction right for pseudonymised samples, anonymisation as a separate optional choice with its consequence. Data reuse for new technologies (AI, machine learning): separate subsection at the end of the data-protection passage or a separate document, commercial nature stated, yes/no option. For minors the optional choice also appears in the parent and age-appropriate documents.",
+      "sources": [
+        "AT-SECONDARY"
+      ]
+    },
+    {
+      "id": "optional_genetics",
+      "trigger": "genetics.optional_investigation",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_optional genetic investigation_<population>_AT_de",
+          "template": "templates/participant/L1_SIS and ICF_main_AT_de.json",
+          "status": "needs_decision",
+          "template_note": "No dedicated template. The supplied templates carry a 'Gesonderte Einwilligung zur optionalen genetischen Untersuchung' block inside the main consent form; AustrianEthics requires a separate consent form. Provisionally build a separate document from the genetic module of the population's own template (DECISIONS.md D4)."
+        }
+      ],
+      "note": "AustrianEthics: optional genetic investigations require a separate consent form, addressing disclosure of results where relevant and the optional nature. Not a condition of joining the main trial unless the protocol makes the investigation part of the trial.",
+      "sources": [
+        "AT-ICF",
+        "AT-SECONDARY"
+      ]
+    }
+  ],
+  "drafting_rules": [
+    "Participant documents: the Austrian national ICF template is the recommended structure; another format must cover every topic of the national template (AustrianEthics). The supplied AT participant templates are based on it.",
+    "The insurance and data-protection passages of the Austrian sample ICF are used verbatim, not linguistically rewritten; necessary additions only at the end of the relevant section and without contradiction or repetition. This applies in Draft and in Style.",
+    "Plain German for lay readers; avoid unexplained technical terms and redundant content; explain unavoidable terms at first use; graphics or tables only where they improve understanding. Terms from the Austrian sample text stay unchanged (template instructions).",
+    "Cover at least: nature and purpose; procedures, allocation and duration; risks, inconveniences and burdens; benefits without overstatement; alternatives; right to refuse or withdraw; what happens after stopping; compensation and reimbursement; Austrian no-fault insurance and the insurance contact point; personal-data processing with the mandatory privacy wording; source-record access; samples; pregnancy and contraception where relevant; study, site, emergency, data-protection and patient-advocacy contacts; how and where results become available under the CTR.",
+    "Site contacts are an integral part of the information: full centre name, PI and deputy PI, 24-hour emergency number, site data-protection officer, patient advocacy, and the national contact point for insurance questions. Multicentre: placeholders in the master ICF plus a current site contact list marked 'not for publication' (DECISIONS.md D9).",
+    "Optional services, optional genetic investigations, future research and secondary data use are not buried in the main participation decision: separate yes/no choices or separate documents as population_sets require.",
+    "Withdrawal: after full withdrawal no new study-purpose data are collected through visits, follow-up or re-contact; CTR safety reporting is unaffected. Explain the effect of withdrawal on data already processed (section 41 AMG) with the national wording.",
+    "AustrianEthics Guidance V5: name both insurers in combination studies with different sponsors and insurers; name known recipient countries of pseudonymised data, and for a country without an adequacy decision name it and obtain informed explicit consent; describe ethnic-origin data explicitly when collected; with different reimbursement methods list all options of the Austrian sites and give a choice where a site offers more than one; external reimbursement provider named with its data processing.",
+    "Pregnancy of a participant: state that study medication is stopped, the right to withdraw without reason, which protocol measures continue, whether blinding is broken, which additional data are collected and how; only minimal additional burden and risk (Article 33 CTR).",
+    "Minors: explain the representative's decision and the child's own right to refuse in age-appropriate language; do not merely shorten the adult text; privacy and insurance explained at the child's level without contradicting the legal text in the representative document.",
+    "Consent signatures at the consent visit: wet ink or qualified electronic signature (Austrian national CTR requirements portal); the person conducting the consent interview also signs and dates; the participant or representative receives a copy. The CTIS upload is the blank controlled template.",
+    "Participant templates (JSON): italic text, [square-bracket] notes and \"......\" gaps are drafting instructions or gaps; follow them and remove them. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels. Nothing of either may remain in a final document."
+  ],
+  "sources": {
+    "AT-HUB": "https://trialagents.com/ctis/austria/en",
+    "AT-PII-CHECKLIST": "https://trialagents.com/ctis/austria/en/part-ii-document-checklist",
+    "AT-ICF": "https://trialagents.com/ctis/austria/en/patient-information-consent-requirements",
+    "AT-QC": "https://trialagents.com/ctis/austria/en/patient-facing-document-qc-checklist",
+    "AT-HV": "https://trialagents.com/ctis/austria/en/healthy-volunteer-consent-requirements",
+    "AT-MINORS": "https://trialagents.com/ctis/austria/en/minor-consent-assent-requirements",
+    "AT-CAPACITY": "https://trialagents.com/ctis/austria/en/limited-capacity-legal-representative-consent-requirements",
+    "AT-EMERGENCY": "https://trialagents.com/ctis/austria/en/emergency-enrollment-consent-requirements",
+    "AT-WITNESS": "https://trialagents.com/ctis/austria/en/impartial-witness-consent-requirements",
+    "AT-PREGNANCY": "https://trialagents.com/ctis/austria/en/pregnancy-follow-up-requirements",
+    "AT-SECONDARY": "https://trialagents.com/ctis/austria/en/secondary-use-consent-requirements",
+    "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention"
+  },
+  "sources_note": "All Austria guides reviewed 23 September 2026; they record BASG national requirements, AustrianEthics application requirements and Guidance Austria concerning Part II SIS/ICF Version 5.0 (17 September 2026), the Austrian Medicines Act (AMG) and the Forum of Austrian Ethics Committees minors recommendation v1.1 (28 May 2002). Anchors #1-#8 refer to the numbered items of the Part II checklist page; #outside to its 'Austria items outside the Part II K to S list'.",
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "austria_note": "Use the CTCG pattern. The Austria checklist page uses descriptive names (for example 'P1 Compensation trial participants, investigator, funding and other arrangements', 'R1 Compliance on the collection and use of personal data', 'M2 Declaration of Interest', 'K2 Recruitment material description'); the CTCG v3.0 examples supersede them. Country and language only where they distinguish the document: _AT_de on participant-facing documents, _AT on O1, P1, R1, S1. The Austria guides give no further national naming instructions."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued or completed by someone else (insurer, training provider, site). Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "participant_templates": [
+    {
+      "id": "AT-PT-age-10-13",
+      "file": "templates/participant/L1_SIS and ICF_age 10-13_AT_de.json",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_de": "Kinder- und Jugendlicheninformation und Zustimmungserklärung (10–13 Jahre)",
+      "role": "age-adapted information and assent for children 10-13",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+      "authority_note": "The template description says 'aged 12 - 17 years'; the AustrianEthics band for this template is 10-13 (authority wins; file name and content already say 10-13)."
+    },
+    {
+      "id": "AT-PT-age-14-17",
+      "file": "templates/participant/L1_SIS and ICF_age 14-17_AT_de.json",
+      "name_en": "Subject Information and Consent Form - Adolescents",
+      "name_de": "Jugendlicheninformation und Einwilligungserklärung (14–17 Jahre)",
+      "role": "age-adapted information and consent for adolescents 14-17",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+      "authority_note": "The template description says 'aged 12 - 17 years'; the AustrianEthics band for this template is 14-17 (authority wins)."
+    },
+    {
+      "id": "AT-PT-age-8-9",
+      "file": "templates/participant/L1_SIS and ICF_age 8-9_AT_de.json",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_de": "Kinderinformation und Zustimmungserklärung (8–9 Jahre)",
+      "role": "age-adapted information and assent for children 8-9",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+      "authority_note": "The template description says 'aged 6 - 11 years'; the AustrianEthics band for this template is 8-9 (authority wins). Under 8 no age-band document is required."
+    },
+    {
+      "id": "AT-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_AT_de.json",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_de": "Nachträgliche Teilnehmerinformation und Einwilligungserklärung nach Notfalleinschluss",
+      "role": "post-hoc information and consent after emergency enrolment",
+      "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window.",
+      "authority_note": "Also the provisional basis for the post-hoc form after temporary incapacity outside an emergency (DECISIONS.md D5)."
+    },
+    {
+      "id": "AT-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_AT_de.json",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_de": "Teilnehmerinformation und Einwilligungserklärung für gesunde Erwachsene",
+      "role": "main information and consent (healthy volunteers)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies."
+    },
+    {
+      "id": "AT-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_AT_de.json",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_de": "Information und Einwilligungserklärung für Erwachsenenvertreter:innen",
+      "role": "information and consent for the legal representative (Erwachsenenvertretung) of an adult without capacity",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "AT-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_AT_de.json",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_de": "Angepasste Teilnehmerinformation und Zustimmungserklärung",
+      "role": "adapted information and assent for the adult without capacity",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent."
+    },
+    {
+      "id": "AT-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_AT_de.json",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_de": "Teilnehmerinformation und Einwilligungserklärung",
+      "role": "main information and consent (capable adult patients)",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms.",
+      "authority_note": "Contains the optional genetic consent as a block inside the consent form; AustrianEthics requires a separate consent form (DECISIONS.md D4)."
+    },
+    {
+      "id": "AT-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_AT_de.json",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_de": "Information und Einwilligungserklärung für Eltern/Obsorgeberechtigte",
+      "role": "information and consent for parents or persons with custody (Obsorgeberechtigte) of a minor",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years).",
+      "authority_note": "The consent block has one signature line for 'der obsorgeberechtigten Person'; the Austria guide says to confirm who is legally entitled to represent the particular minor rather than hard-coding a one- or two-parent rule (DECISIONS.md D6)."
+    },
+    {
+      "id": "AT-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_AT_de.json",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_de": "Information und Einwilligung zur Schwangerschaftsnachbeobachtung – Teilnehmerin",
+      "role": "pregnancy follow-up of a participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant."
+    },
+    {
+      "id": "AT-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_AT_de.json",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_de": "Information und Einwilligung zur Schwangerschaftsnachbeobachtung – schwangere Partnerin",
+      "role": "information and consent for the pregnant partner of a participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant.",
+      "authority_note": "Austria has no national requirement or template for partner follow-up; use only when the protocol collects identifiable data from the partner."
+    },
+    {
+      "id": "AT-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_AT_de.json",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_de": "Information und Einwilligung zur sekundären und zukünftigen Verwendung von Daten oder Bioproben",
+      "role": "optional secondary or future use of data or samples",
+      "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial."
+    },
+    {
+      "id": "AT-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_AT_de.json",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_de": "Teilnehmerinformation und Einwilligungserklärung mit unparteiischer Zeugin/unparteiischem Zeugen",
+      "role": "consent with impartial witness for a capable participant unable to write",
+      "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process.",
+      "authority_note": "The template description and opening also cover a person who cannot read; Article 29 CTR (Austria guide) triggers the witness route only when the person cannot write. Use only in that case; never for a language barrier."
+    }
+  ],
+  "population_rules": {
+    "authority": "AustrianEthics (national platform of the Austrian CTR ethics committees): application requirements and Guidance Austria concerning Part II SIS/ICF Version 5.0, 17 September 2026; Austrian Medicines Act (AMG) sections 39 to 43; Forum of Austrian Ethics Committees recommendation on minors v1.1, 28 May 2002 (linked by AustrianEthics for linguistic design)",
+    "minors": {
+      "age_bands": [
+        {
+          "band": "8-9",
+          "template": "AT-PT-age-8-9",
+          "reader": "child"
+        },
+        {
+          "band": "10-13",
+          "template": "AT-PT-age-10-13",
+          "reader": "child"
+        },
+        {
+          "band": "14-17",
+          "template": "AT-PT-age-14-17",
+          "reader": "adolescent"
+        }
+      ],
+      "always": [
+        "AT-PT-parents"
+      ],
+      "reconsent_at_18": "AT-PT-main or AT-PT-healthy, ready before the participant reaches adulthood when continued participation is expected (Article 32 CTR)",
+      "under_8": "Parent or representative consent required; no age-band document required. Inform the child according to understanding where possible (Forum recommendation).",
+      "written_signature_from_14": "Forum recommendation v1.1 (2002): from age 14 the minor's consent is also obtained in writing with the minor's personally dated signature; read together with the newer AustrianEthics bands and section 39 AMG.",
+      "own_consent": "A decision-capable minor must also consent (section 39 AMG); refusal or withdrawal is respected (Article 32 CTR); the trial cannot proceed if a required consent is missing or withdrawn.",
+      "representatives": "Confirm who is legally entitled to represent the particular minor; do not hard-code a one-parent or two-parent rule.",
+      "conflicts": [
+        "Template descriptions give 'aged 12 - 17 years' (10-13 and 14-17 templates) and 'aged 6 - 11 years' (8-9 template); AustrianEthics bands 8-9, 10-13 and 14-17 win. File names and content already follow the authority."
+      ]
+    },
+    "adults_without_capacity": {
+      "always": [
+        "AT-PT-legal-rep"
+      ],
+      "as_applicable": [
+        "AT-PT-limited-capacity"
+      ],
+      "note": "Information adapted to capacity is mandatory as applicable: use AT-PT-limited-capacity when the participant can understand adapted information or express a wish. Population-benefit research: section 39 AMG requires no indication of a prior refusal."
+    },
+    "temporary_incapacity": {
+      "always": [
+        "AT-PT-legal-rep"
+      ],
+      "post_hoc": "Mandatory additional post-hoc information and consent form when capacity returns; no dedicated template, provisionally AT-PT-emergency adapted (DECISIONS.md D5)."
+    },
+    "emergency": {
+      "always": [
+        "AT-PT-emergency"
+      ],
+      "note": "Representative documents (AT-PT-legal-rep) when a representative becomes available first; minors' set when the participant is a minor."
+    },
+    "impartial_witness": {
+      "always": [
+        "AT-PT-witness"
+      ],
+      "note": "Only when the consenting person cannot write."
+    },
+    "pregnancy": {
+      "participant": "Separate AT-PT-pregnancy document when data beyond the protocol or pregnancy-monitoring form, post-birth child data or treating-physician contact are planned; otherwise the main ICF may cover follow-up of the participant until birth.",
+      "partner": "AT-PT-pregnant-partner only when the protocol collects identifiable data from a pregnant partner; not a national requirement."
+    },
+    "excluded_groups": "Section 39 AMG: no clinical trials in persons performing compulsory military service or persons detained by judicial or administrative order or placed under the Accommodation Act (Unterbringungsgesetz).",
+    "shareable_templates": [
+      "AT-PT-pregnant-partner",
+      "AT-PT-secondary"
+    ],
+    "shareable_note": "One shared document for several populations only when nothing in it would differ; with minors the optional future-use choice must also appear in the parent and age-appropriate documents (AT-MINORS).",
+    "separate_document_rules": [
+      "Legal representative of an adult unable to consent: separate information and consent form (AustrianEthics).",
+      "Temporary incapacity and emergency inclusion: additional post-hoc information and consent form when capacity returns (AustrianEthics).",
+      "Minors from age 8: separate parent or guardian document and separate age-appropriate child or adolescent document (AustrianEthics).",
+      "Optional genetic investigations: separate consent form (AustrianEthics).",
+      "Optional future use of samples or data: separate optional decision with yes/no choices; new-technology data reuse may instead be a separate subsection at the end of the data-protection passage (AustrianEthics Guidance V5).",
+      "Pregnancy: separate document for data beyond the protocol or pregnancy-monitoring form, post-birth child data or treating-physician contact (AustrianEthics Guidance V5)."
+    ]
+  },
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents.",
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/AT/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/AT/checklists/participant-documents.json",
+    "check": "countries/AT/checklists/forms-and-supplied.json",
+    "package": "countries/AT/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/AT/DECISIONS.md",
+  "answer_languages": [
+    "en"
+  ],
+  "answer_languages_note": "English for the Part II forms (multinational dossier). Participant documents are German (language_rules.by_language). German form answers only if the user decides so for a national-only trial (DECISIONS.md D1)."
+}

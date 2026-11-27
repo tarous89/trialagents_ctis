@@ -1,0 +1,96 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Secondary and Future Use of Data or Biosamples",
+  "doc_name_local": "Informação e Declaração de Consentimento Esclarecido para Utilização Secundária/Futura de Dados e/ou Amostras Biológicas",
+  "target_country": "Portugal",
+  "country_code": "PT",
+  "target_language": "Portuguese",
+  "language_code": "pt",
+  "doc_type": "secondary_use",
+  "file_name": "L1_SIS and ICF_secondary",
+  "sort_order": 8,
+  "description": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versão 1.0 - [date]",
+   "Número do protocolo: [preencher] | Número do ensaio UE: [preencher]"
+  ],
+  "info_table": [
+   "Título do ensaio",
+   "Título curto do ensaio",
+   "Número do protocolo [adicionar versão e data]",
+   "Número do ensaio UE",
+   "Promotor [com endereço completo]",
+   "Investigador principal",
+   "Nome do centro de ensaio",
+   "Endereço do centro de ensaio",
+   "Contacto do centro",
+   "Contacto de emergência",
+   "Representante local",
+   "Entidade financiadora do ensaio",
+   "Versão do FCI",
+   "Título/descrição da utilização secundária ou futura",
+   "Responsável pelo armazenamento/repositório [se aplicável]"
+  ],
+  "content_instructions": "Documento autónomo, voluntário e materialmente mais curto do que o FCI principal. Utilizar apenas para armazenamento ou utilização secundária/futura de dados, amostras biológicas ou material genético fora dos objetivos obrigatórios do ensaio principal. Não repetir tratamento, randomização, visitas, alternativas, riscos gerais ou outros módulos do ensaio. Descrever de forma concreta quais os dados/amostras, origem, eventual colheita adicional, finalidade/área de investigação, genética quando aplicável, local e duração de armazenamento, acesso, partilha/transferências, anonimização irreversível, resultados/recontacto e retirada. A participação no ensaio principal deve permanecer independente desta decisão. O uso secundário deve ser avaliado por Comissão de Ética competente e independente antes do projeto futuro. Para amostras e informação genética, respeitar a Lei n.º 12/2005 e o Decreto-Lei n.º 131/2014, quando aplicáveis. Se o participante não puder consentir pessoalmente, adaptar a declaração ao representante legalmente autorizado e aplicar o modelo de Informação Adaptada e Registo da Vontade ou o procedimento de testemunha imparcial, conforme o caso.",
+  "styling_instructions": "O negrito identifica secções ou texto cuja inclusão é recomendada; o texto sugerido pode ser adaptado. As caixas de texto e notas entre parênteses retos contêm informação de apoio à elaboração e devem ser adaptadas ou removidas antes da versão final. Utilizar títulos claros, parágrafos curtos, espaçamento confortável e tamanho de letra facilmente legível, mantendo o documento simples, objetivo e sem redundâncias."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Esta decisão é separada e opcional</b>\n\nAlém da utilização necessária dos seus dados e/ou amostras no ensaio clínico principal, gostaríamos de pedir a sua autorização para os conservar e/ou utilizar em investigação secundária ou futura fora dos objetivos obrigatórios desse ensaio.\n\n<b>Esta decisão é voluntária e independente da sua participação no ensaio clínico.</b> Pode aceitar participar no ensaio principal e recusar esta utilização adicional, sem qualquer prejuízo para os seus cuidados de saúde ou para a sua participação no ensaio.\n\nLeia apenas as opções que se aplicam ao projeto e assinale a sua decisão no final.",
+   "section_style": "H1 document headline, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Que dados e/ou amostras estão incluídos?</b>\n\n[Manter apenas o que se aplica e indicar origem, quantidade/alcance e período.]\n\n<b>Dados:</b> [dados pessoais e de saúde pseudonimizados do ensaio / resultados laboratoriais / imagens / dados de dispositivos / outros].\n\n<b>Amostras biológicas já disponíveis:</b> [sangue/urina/tecido/DNA/outras], obtidas durante [ensaio/cuidados clínicos], em quantidade aproximada de [indicar].\n\n<b>[Se aplicável] Colheitas adicionais apenas para investigação futura:</b> será recolhida [tipo e quantidade] através de [procedimento], em [momento]. Os incómodos/riscos são [descrever de forma simples]. Esta colheita adicional é uma decisão separada.\n\n<b>[Se aplicável] Material genético:</b> [indicar se serão utilizados DNA/RNA, sequenciação, genes/painéis/genoma ou outros elementos e a origem da amostra].\n\nNenhuma categoria não descrita neste documento fica automaticamente autorizada.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Para que investigação poderão ser utilizados?</b>\n\nOs dados e/ou amostras serão utilizados apenas para investigação na seguinte área/finalidade: <b>[definir a área ou finalidade da forma mais concreta possível]</b>.\n\nExemplos a incluir apenas quando efetivamente previstos:\n- investigação relacionada com [doença/condição/medicamento/classe terapêutica];\n- desenvolvimento ou validação de métodos de diagnóstico ou investigação;\n- desenvolvimento/validação de ferramentas analíticas ou de inteligência artificial [descrever objetivo];\n- colaboração com [universidades/hospitais/empresas/outros], quando aplicável.\n\n[Se houver possível desenvolvimento comercial, propriedade intelectual ou colaboração com entidades comerciais, explicá-lo de forma transparente. Não descrever as amostras biológicas enquanto tais como objeto de comercialização.]\n\n<b>Antes de qualquer utilização secundária/futura num projeto de investigação, o respetivo estudo deverá ser submetido à apreciação de uma Comissão de Ética competente e independente.</b>\n\nSe no futuro for proposta uma utilização fora da área/finalidades autorizadas neste documento e os dados/amostras continuarem identificáveis ou pseudonimizados, deverá ser obtido novo consentimento específico antes dessa utilização.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Serão realizadas análises genéticas?</b>\n\n[Eliminar esta secção se não forem previstas análises genéticas.]\n\nSerão realizadas [tipo de análise genética/genómica] utilizando [amostra/material], com o objetivo de [explicar de forma compreensível].\n\n[Indicar se a análise tem finalidade científica e/ou médica, se poderá revelar variantes relacionadas com outras condições e como serão tratados eventuais achados relevantes.]\n\n[Nota para o autor: confirmar conformidade das análises genéticas e da utilização de material biológico com a Lei n.º 12/2005 e o Decreto-Lei n.º 131/2014, quando aplicáveis. Se o participante for menor, aplicar como regra que o teste genético deve ser realizado em seu benefício e nunca em seu prejuízo, com autorização do representante e assentimento do menor quando aplicável. Qualquer exceção ou fundamento diferente deve ser juridicamente identificado, justificado e confirmado pela Comissão de Ética competente.]\n\n[Se a análise genética for uma decisão verdadeiramente independente da utilização geral das amostras, manter uma opção Sim/Não específica na declaração de consentimento; caso contrário, integrá-la claramente no âmbito da autorização principal.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Onde e durante quanto tempo serão conservados?</b>\n\n<b>Dados:</b> serão conservados em [local/sistema/responsável] durante [prazo ou critério] e depois [eliminados/anonimizados/conservados de acordo com a opção autorizada].\n\n<b>Amostras:</b> serão conservadas em [local/repositório, entidade responsável e prazo] e depois [destino aplicável]. [Nota para o autor: confirmar que o armazenamento cumpre o artigo 19.º da Lei n.º 12/2005. Por defeito, utilizar amostras anónimas ou irreversivelmente anonimizadas. Amostras identificadas ou identificáveis apenas devem ser conservadas quando a investigação não puder ser realizada de outro modo; material biológico humano não anonimizado não pode ser armazenado por entidades com fins comerciais. Se for necessária uma configuração diferente, identificar e justificar o fundamento e confirmar a aprovação ética antes de finalizar.]\n\n[Se o armazenamento das amostras ultrapassar o período previsto no ensaio principal ou ocorrer para uma finalidade diferente, este documento constitui a informação/consentimento específico para essa utilização, devendo o prazo e a finalidade ficar claramente preenchidos.]\n\nAs amostras e dados pseudonimizados permanecem ligados a si através de um código cuja chave é guardada separadamente e com acesso limitado. [As amostras pseudonimizadas continuam a ser identificáveis enquanto existir esta ligação e devem cumprir os requisitos aplicáveis às amostras identificáveis.]\n\n<b>[Se estiver prevista anonimização irreversível]</b> Depois da anonimização irreversível deixa de ser possível relacionar os dados/amostras consigo. A partir desse momento já não será possível localizá-los individualmente para exercer direitos sobre esses elementos ou pedir a destruição das amostras. Esta opção deve ser autorizada separadamente.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Quem poderá utilizar ou receber os dados e/ou amostras?</b>\n\nPoderão ter acesso, apenas para as finalidades autorizadas, [Promotor/grupo do Promotor/instituições académicas/laboratórios/prestadores de serviços/outros investigadores], de acordo com [processo de aprovação/acesso]. [O acesso ou utilização de amostras não implica automaticamente autorização para as armazenar; confirmar separadamente que qualquer armazenamento cumpre os requisitos portugueses aplicáveis.]\n\nOs dados e amostras serão, sempre que possível, fornecidos de forma pseudonimizada ou anonimizada. A chave que permite relacionar o código com a sua identidade será mantida separadamente no centro/entidade responsável.\n\n[Se houver transferências para fora do Espaço Económico Europeu, indicar países ou destinatários/categorias, finalidade e garantia aplicável, como decisão de adequação, cláusulas contratuais-tipo ou outras medidas válidas.]\n\n[Se for transferida uma coleção ou um número significativo de amostras para outra entidade, confirmar que a transferência permanece dentro das finalidades consentidas e possui a aprovação ética aplicável.]\n\nAs publicações e apresentações não deverão conter informação que permita identificá-lo diretamente.\n\nO tratamento de dados pessoais deve cumprir o RGPD e a Lei n.º 58/2019. [Indicar a base legal aplicável a cada responsável/finalidade; o consentimento ético para esta utilização não deve ser apresentado automaticamente como a única base jurídica de todos os tratamentos de dados.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Quais são os possíveis benefícios, riscos, custos e interesses económicos?</b>\n\nNão é esperado um benefício direto para a sua saúde. A investigação poderá contribuir para aumentar o conhecimento científico e, no futuro, ajudar outras pessoas.\n\nOs principais riscos dizem respeito à privacidade e à possibilidade residual de reidentificação enquanto os dados/amostras forem pseudonimizados. As medidas de segurança destinadas a reduzir este risco são [descrever de forma simples].\n\n[Se houver colheita adicional, incluir os riscos físicos do procedimento.]\n\nNão terá custos por autorizar o armazenamento/utilização descritos. Não receberá pagamento pela utilização dos seus dados ou amostras. [Se houver colaboração comercial ou possibilidade de gerar produtos/propriedade intelectual, explicar a natureza dessa colaboração de forma transparente.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Receberá resultados ou poderá ser contactado novamente?</b>\n\n[Escolher e adaptar apenas a opção aplicável.]\n\n□ Não está prevista a comunicação de resultados individuais desta investigação futura.\n\n□ Poderão ser comunicados os seguintes resultados clinicamente relevantes: [descrever], através de [processo/profissional], incluindo aconselhamento adequado quando necessário.\n\n[Se aplicável] Achados incidentais: [explicar se poderão ocorrer e como serão geridos].\n\n[Se aplicável] Poderá ser contactado no futuro para:\n- fornecer nova informação relevante;\n- ser informado sobre um resultado clinicamente relevante;\n- ser convidado para outro estudo.\n\nA autorização para ser contactado novamente deve ser uma escolha separada se não for indispensável à utilização descrita.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. O que acontece se mudar de opinião?</b>\n\nPode retirar esta autorização a qualquer momento, sem explicar o motivo e sem afetar a sua participação no ensaio principal ou os seus cuidados de saúde. Para isso, contacte [nome/contacto].\n\nApós a retirada:\n- não serão iniciadas novas utilizações dos seus dados ou amostras com base nesta autorização;\n- por defeito, as amostras biológicas e derivados ainda localizáveis abrangidos por esta autorização serão definitivamente destruídos; quando estejam em causa informação genética ou material utilizado para testes genéticos, estes serão igualmente destruídos/eliminados nos termos legais aplicáveis;\n- resultados agregados, análises já concluídas ou dados/amostras já anonimizados de forma irreversível podem não poder ser retirados individualmente;\n- [Se existir uma exceção legal à destruição, identificar o material, fundamento legal, finalidade e prazo de conservação e justificar expressamente a exceção.]\n\n<b>Se os dados ou amostras já tiverem sido anonimizados de forma verdadeiramente irreversível, já não será possível saber quais eram os seus e, por isso, não será possível retirá-los ou destruí-los individualmente.</b>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>9. Com quem pode falar?</b>\n\nMédico investigador / contacto do centro: [nome e contacto]\n\nResponsável pela investigação/repositório: [nome, função e contacto]\n\nContacto para retirar consentimento ou pedir destruição de amostras: [contacto]\n\nEncarregado de Proteção de Dados do centro: [contacto]\n\nEncarregado de Proteção de Dados do Promotor/entidade responsável: [contacto]\n\nSe considerar que o tratamento dos seus dados viola as regras de proteção de dados, poderá apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD):\n\n<b>CNPD - Comissão Nacional de Proteção de Dados</b>\n<b>Av. D. Carlos I, 134 - 1.º, 1200-651 Lisboa</b>\n<b>Tel.: +351 213 928 400 | E-mail: geral@cnpd.pt</b>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>10. DECLARAÇÃO DE CONSENTIMENTO PARA UTILIZAÇÃO SECUNDÁRIA/FUTURA</b>\n\n<b>Nome do participante:</b> _______________________________________________\n\nDeclaro que:\n- li [ou foi-me lida, se aplicável] e compreendi a informação deste documento;\n- tive oportunidade para colocar questões e recebi respostas satisfatórias;\n- compreendo que esta decisão é voluntária e independente do ensaio clínico principal;\n- compreendo quais os dados/amostras, finalidades, duração, destinatários e riscos autorizados;\n- compreendo que os projetos futuros serão submetidos a apreciação ética por Comissão de Ética competente e independente;\n- compreendo como posso retirar a minha autorização e os limites após análise concluída ou anonimização irreversível;\n- receberei uma cópia deste documento depois de assinado.\n\n<b>Manter apenas decisões verdadeiramente independentes e aplicáveis:</b>\n\n1. <b>Autorizo a utilização secundária/futura dos meus dados pessoais e de saúde pseudonimizados para as finalidades descritas neste documento.</b>\nSim □   Não □\n\n2. <b>[Se aplicável] Autorizo a conservação e utilização secundária/futura das minhas amostras biológicas pseudonimizadas para as finalidades descritas neste documento.</b>\nSim □   Não □\n\n3. <b>[Se aplicável] Autorizo a colheita adicional de [tipo/quantidade] exclusivamente para a investigação futura descrita.</b>\nSim □   Não □\n\n4. <b>[Se aplicável e independente] Autorizo as análises genéticas/genómicas descritas neste documento.</b>\nSim □   Não □\n\n5. <b>[Se aplicável] Autorizo a anonimização irreversível dos meus dados, compreendendo que depois não será possível relacioná-los comigo nem exercer direitos individuais sobre esses dados.</b>\nSim □   Não □\n\n6. <b>[Se aplicável] Autorizo a anonimização irreversível das minhas amostras, compreendendo que depois não será possível identificá-las como minhas nem solicitar a sua destruição individual.</b>\nSim □   Não □\n\n7. <b>[Se aplicável] Autorizo que seja novamente contactado para os fins descritos neste documento.</b>\nSim □   Não □\n\n8. <b>[Se a comunicação de resultados clinicamente relevantes depender da preferência do participante] Desejo receber os resultados clinicamente relevantes descritos neste documento.</b>\nSim □   Não □\n\nNome: ______________________________________\nAssinatura: _________________________________\nData: ___/___/_____\n\n<b>MÉDICO INVESTIGADOR / PROFISSIONAL QUE PRESTOU A INFORMAÇÃO</b>\n\nConfirmo que expliquei de forma clara a natureza opcional desta utilização, os dados/amostras abrangidos, finalidade, armazenamento, acesso/partilha, riscos, eventual anonimização, resultados/recontacto e retirada, respondi às questões e disponibilizei tempo adequado para decisão.\n\nNome: ______________________________________\nAssinatura: _________________________________\nData: ___/___/_____\n\n[Se o participante não puder consentir pessoalmente, adaptar esta declaração ao representante legalmente autorizado e aplicar, conforme o caso, o documento de Informação Adaptada e Registo da Vontade do Participante ou o procedimento de testemunha imparcial. Não utilizar este bloco de assinatura do participante como se constituísse consentimento legal de terceiro.]",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

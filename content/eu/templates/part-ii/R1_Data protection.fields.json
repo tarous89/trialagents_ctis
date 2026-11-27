@@ -1,0 +1,51 @@
+[
+ {
+  "id": "kv103",
+  "kind": "text",
+  "question": "Sponsor",
+  "instruction": "[INSERT: Sponsor with full address]",
+  "condition": null
+ },
+ {
+  "id": "kv101",
+  "kind": "text",
+  "question": "Title of the clinical trial",
+  "instruction": "[INSERT: Full title of the clinical trial, as in the protocol]",
+  "condition": null
+ },
+ {
+  "id": "kv102",
+  "kind": "text",
+  "question": "EU CT Number",
+  "instruction": "[INSERT: EU trial number; leave empty in an initial application until CTIS assigns it]",
+  "condition": null
+ },
+ {
+  "id": "r1_the_sponsor_declares",
+  "kind": "text",
+  "question": "—",
+  "instruction": "[IF the Member State requires a statement on national data-protection rules (see the country requirements) – INSERT: that statement, in the answer language.]",
+  "condition": "the Member State requires a statement on national data-protection rules (see the country requirements)"
+ },
+ {
+  "id": "r1_date",
+  "kind": "text",
+  "question": "— Date:",
+  "instruction": "[INSERT: date]",
+  "condition": null
+ },
+ {
+  "id": "r1_name_and_surname",
+  "kind": "text",
+  "question": "— Name and surname :",
+  "instruction": "[INSERT: name of the responsible person at the sponsor]",
+  "condition": null
+ },
+ {
+  "id": "r1_role_in_the_sponsor",
+  "kind": "text",
+  "question": "— Role in the sponsor organisation :",
+  "instruction": "[INSERT: role in the sponsor organisation]",
+  "condition": null
+ }
+]

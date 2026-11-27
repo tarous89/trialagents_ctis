@@ -1,0 +1,88 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Study Participant Information and Assent Form – Limited Capacity",
+  "target_country": "Ireland",
+  "country_code": "IE",
+  "target_language": "English",
+  "language_code": "en",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": "2",
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protocol number: [fill in] | EU trial number: [fill in]"
+  ],
+  "info_table": [
+   "Trial title",
+   "Short trial title",
+   "Protocol number [add version and date]",
+   "EU trial number",
+   "Sponsor [with full address]",
+   "Principal investigator",
+   "Site name",
+   "Site address",
+   "Study identification number",
+   "Co-investigator(s) [names, titles and contact details]",
+   "Data controller(s)",
+   "Data Protection Officer [name and contact details]"
+  ],
+  "content_instructions": "Use only for an adult who cannot give legally valid consent but can understand adapted information or express willingness, uncertainty or refusal. Address the participant directly using short, concrete language. Explain only the essential study purpose, treatment/procedures, duration, main risks and possible benefit, applicable biological samples/genetic testing, basic data confidentiality, contacts and the right to refuse or stop. State once that the legally designated representative provides the legal consent. Record the participant’s willingness or objection; do not reproduce the representative’s consent. If capacity returns, use the adult consent template. Exclude secondary/future use.",
+  "styling_instructions": "Use clear participant-facing question headings and short sections. Use a clean readable font such as Calibri, Arial, Verdana or Tahoma at about 12 point. Avoid block capitals and unnecessary legalistic text. Use tables or simple flow charts when they improve understanding. Keep the participant’s assent/willingness record visually distinct from any genuinely optional choices. Use Yes/No boxes only for optional activities. Use separate fields for printed name, date and signature."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>Information for you about a clinical trial</b>\n<b>Drafting note:</b> Use short concrete sentences and communication support, pictures or symbols where helpful. This form records the person’s views; it is not the legally effective consent form.\nWe would like to explain a research study to you. Someone who is allowed to decide about trial participation on your behalf will receive a separate information and consent form. We still want to tell you what will happen and hear what you want.\n\nYou can say yes, no, stop, or that you are not sure. If you clearly do not want to take part or want to stop, the study team must respect that.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>Why are we doing the study?</b>\nExplain simply what condition or health problem is being studied, what researchers hope to learn and why the person is being asked.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>What will happen if you take part?</b>\nExplain the study medicine/intervention, visits, tests, randomisation/placebo if relevant, how long participation lasts, and what is different from usual care. Explain only the most important details needed for this person’s understanding.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>Could anything hurt or feel uncomfortable?</b>\nExplain the main side effects, pain, discomfort, inconvenience and unknown risks in simple terms. Explain what staff will do if the person is uncomfortable or wants a procedure to stop.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>Could the study help you? What other treatment is there?</b>\nState simply whether personal benefit is possible or not guaranteed, and explain relevant usual treatment or other options.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>What happens to information and samples about you?</b>\nExplain in simple language that health information and, if applicable, blood/tissue/other samples are used for this study and protected with a code. Explain who may see relevant information and that it is kept safely.\n\n<b>[Conditional – biological samples]</b> Say what sample is taken, why, how much and whether it is required or optional.\n\n<b>[Conditional – genetic testing]</b> Explain in simple terms that genes/DNA may be tested, why, whether it is required or optional, and that genetic information is especially personal. Do not include future or secondary research.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>What if something goes wrong, will it cost you anything, and will you hear the results?</b>\nExplain simply that the study has arrangements to help if the participant is harmed, whether taking part causes any costs or reimbursement, and how the participant can hear about important results where appropriate. The full details are provided to the legally designated representative.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>Can you say no or stop?</b>\nYes. You can say no before the study starts, refuse an individual procedure, or ask to stop later. You do not have to give a reason. This will not take away your usual care. Tell the study team, the person supporting you, or another trusted person.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>Who can you ask?</b>\nGive the study doctor/contact details. Explain that the person may ask questions at any time.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>Your view about the trial</b>\n<b>Drafting note:</b> Use the communication method that is meaningful for the participant. A signature or mark is optional if meaningful; absence of a signature is not agreement. Required main-trial samples/genetic testing should be explained as part of the overall main-trial choice; only genuinely optional procedures receive separate choices below.\n\nI have been told about the study in a way I can understand.\n\n☐ I want to take part.\n☐ I do not want to take part.\n☐ I am not sure.\n☐ I cannot clearly show what I want right now.\n\n<b>[Conditional – optional main-trial sample/test]</b>\n☐ I am willing to have the optional [sample/test].\n☐ I do not want the optional [sample/test].\n\n<b>[Conditional – optional genetic/genomic testing]</b>\n☐ I am willing to have the optional genetic/genomic test explained to me.\n☐ I do not want that optional genetic/genomic test.\n\nParticipant name: ____________________\nParticipant signature/mark (if meaningful): ____________________  Date: __________\n\n<b>Study-team documentation</b>\nHow information was adapted / communication support used: [INSERT]\nParticipant’s expressed or observed wishes: [INSERT]\nName, role, signature and date of person documenting the discussion: ____________________",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

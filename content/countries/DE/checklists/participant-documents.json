@@ -418,7 +418,7 @@
         },
         {
           "id": "C8.11",
-          "check": "No drafting instruction remains in the final version (italic notes, [bracket] notes, ........... gaps, yellow [EINFÜGEN/FALLS/AUSWAHL/HINWEIS] labels); fields completed by hand at consent stay blank."
+          "check": "No drafting instruction remains in the final version (italic notes, [bracket] notes, ........... gaps, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank."
         }
       ]
     },

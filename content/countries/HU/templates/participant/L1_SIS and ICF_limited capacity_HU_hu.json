@@ -1,0 +1,89 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Limited Capacity",
+  "doc_name_local": "Egyszerűsített tájékoztató és véleménynyilatkozat – korlátozott beleegyezési képességű felnőtt",
+  "target_country": "Hungary",
+  "country_code": "HU",
+  "target_language": "Hungarian",
+  "language_code": "hu",
+  "doc_type": "limited_capacity",
+  "file_name": "L1_SIS and ICF_limited capacity",
+  "sort_order": 2,
+  "description": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - 1.0 verzió - [date]",
+   "Protokollszám: [töltse ki] | EUCT szám: [töltse ki]"
+  ],
+  "info_table": [
+   "A klinikai vizsgálat teljes címe",
+   "A klinikai vizsgálat rövid címe",
+   "Protokollszám [adja meg a verziót és a dátumot]",
+   "EUCT szám",
+   "Szponzor [teljes címmel]",
+   "Vizsgálatvezető",
+   "Vizsgálóhely neve",
+   "Vizsgálóhely címe",
+   "A tájékoztatást végző személy neve",
+   "A tájékoztatást végző személy beosztása / munkaköre",
+   "A vizsgálati alany neve",
+   "A vizsgálati alany születési helye",
+   "A vizsgálati alany születési ideje"
+  ],
+  "content_instructions": "Ezt a sablont olyan nagykorú vizsgálati alanynak készítse, aki jogilag nem képes önálló tájékoztatáson alapuló beleegyezést adni, de állapotához mérten képes a klinikai vizsgálat lényegét megérteni és saját véleményét, együttműködési szándékát vagy ellenkezését kifejezni. A dokumentum közvetlenül a résztvevőhöz szóljon, egyszerű, rövid magyar mondatokkal és szükség szerint képekkel/szimbólumokkal. Ez a dokumentum nem helyettesíti a nyilatkozattételre jogosult személy külön jogilag érvényes beleegyezését. A résztvevő kifejezett ellenkezését és a részvétel befejezésére irányuló akaratát a vonatkozó szabályok szerint tiszteletben kell tartani. Ismertesse a kutatási jelleget, legfontosabb kezelést/eljárásokat, fő kockázatokat és kellemetlenségeket, lehetséges előnyt vagy annak hiányát, más lehetőségeket, önkéntességet, adat- és mintakezelést, biztosítást és kapcsolatokat. A külön dokumentumra vonatkozó KFEB-ajánlás miatt ebben a rövid tájékoztatóban is legyen közérthető adatvédelmi tájékoztatás. Humángenetikai vizsgálat esetén külön genetikai tájékoztató és jogszerű beleegyezés szükséges; a résztvevő ellenkezését figyelembe kell venni. Ha a résztvevő visszanyeri beleegyezési képességét, a folytatás előtt standard felnőtt ICF-fel saját beleegyezését kell kérni.",
+  "styling_instructions": "Használjon rövid mondatokat, nagy és jól olvasható betűméretet, sok fehér teret, egyszerű alcímeket, és szükség szerint képeket, piktogramokat vagy támogatott kommunikációt. A szöveg legyen lényegesen rövidebb a standard felnőtt ICF-nél. Ne használjon indokolatlan jogi vagy szakmai zsargont."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>EGYSZERŰSÍTETT TÁJÉKOZTATÓ ÉS VÉLEMÉNYNYILATKOZAT</b>\n\n<b>Szerzői utasítás:</b> Ezt a dokumentumot a résztvevő tényleges megértési és kommunikációs képességéhez igazítsa. Ez nem helyettesíti a nyilatkozattételre jogosult személy külön beleegyezését.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Mi ez a vizsgálat?</b>\n\nOrvosok kutatást végeznek. A kutatásban a(z) [vizsgálati gyógyszer / kezelés] hatását vizsgálják. A kutatás nem ugyanaz, mint a szokásos kezelés.\n\nAz Ön véleménye fontos. A jogi beleegyezést az Ön helyett erre jogosult személy adja meg, de Önnek is elmondjuk, mi fog történni, és megkérdezzük, mit szeretne.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Mi fog történni Önnel?</b>\n\nHa részt vesz:\n• [vizsgálati gyógyszert / kezelést / placebót] kap [egyszerűen];\n• körülbelül [szám] alkalommal jön vizsgálatra;\n• [legfontosabb vizsgálatok] történnek;\n• összesen körülbelül [X] ml vért vesznek;\n• a részvétel körülbelül [időtartam] tart.\n\n[Ha randomizáció/placebo/vakítás van: magyarázza el legfeljebb 2–3 egyszerű mondatban.]\n\n[Mintavétel esetén:] [minta, cél, mennyiség, kellemetlenség]. Humángenetikai mintavételhez külön humángenetikai vizsgálatra vonatkozó tájékoztató és beleegyező dokumentum kell; Ön jelezheti, ha ezt nem szeretné.\n\n[Ha reproduktív kor miatt releváns:] Egyszerűen ismertesse, hogy a vizsgálat hatással lehet-e a gyermekvállalásra vagy terhességre, és milyen protokoll szerinti óvintézkedések szükségesek.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Mi lehet jó, és mi lehet kellemetlen vagy veszélyes?</b>\n\n[Lehetséges előny:] [Lehet, hogy a kezelés segít, de ezt nem lehet biztosan ígérni. / Önnek közvetlen előny nem várható.]\n\nA legfontosabb kockázatok és kellemetlenségek:\n• [egyszerű leírás];\n• [egyszerű leírás];\n• [vizsgálati eljárás kellemetlensége].\n\nOlyan mellékhatás is lehet, amelyet még nem ismerünk. Ha rosszul érzi magát, szóljon az orvosnak vagy annak a személynek, akiben megbízik.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Mondhat nemet vagy kérheti, hogy hagyják abba?</b>\n\nIgen. Elmondhatja vagy más módon jelezheti, hogy nem szeretne részt venni, egy vizsgálatot nem szeretne, vagy szeretné abbahagyni. Nem kell megindokolnia. A szokásos ellátása emiatt nem lehet rosszabb.\n\nHa bizonytalan, kérdezhet és kérhet több időt. Ha később már teljesen képes önállóan dönteni, a folytatás előtt új, saját felnőtt beleegyezést kérünk Öntől.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Mi történik az adataival és mintáival?</b>\n\nAz Ön adatainak kezelésére a GDPR és a vonatkozó magyar adatvédelmi, egészségügyi és klinikai vizsgálati szabályok vonatkoznak. A jogilag szükséges hozzájárulást az Ön helyett jogszerűen nyilatkozó személy dokumentuma tartalmazza. Az orvosok adatokat írnak le az Ön egészségéről és a vizsgálat eredményeiről. A vizsgálóhelyről ezeket csak kódolt vagy anonimizált formában továbbítják; a kódkulcsot nem adják tovább. A jogosult ellenőrzők az azonosítható adatokba csak a vizsgálóhelyen nézhetnek bele és nem készíthetnek róluk másolatot.\n\nAz adatokat [címzettek és országok] kapják, és [hely] helyen [időtartam] ideig tárolják. [Ha harmadik országba továbbítják: rövid garancia.]\n\nA fő vizsgálathoz szükséges mintákat [hely] helyen [időtartam] ideig tárolják és csak [fő vizsgálati cél] céljára használják, majd [megsemmisítés/kezelés].\n\nHa adatvédelmi kérdése van, kérdezheti [adatvédelmi kapcsolattartó]. Panaszt tehet a NAIH-nál is: [aktuális postai cím és webcím].",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Mi történik, ha a vizsgálat miatt baja lesz?</b>\n\nA résztvevőket a magyar szabályok szerint biztosítás védi. Ha úgy gondolja, hogy a vizsgálat miatt egészségkárosodás érte, szóljon az orvosnak. A kezelésre és a törvény szerinti kártérítésre, kártalanításra vagy sérelemdíjra vonatkozó részletes tájékoztatást az Ön helyett döntő személynek szóló dokumentum tartalmazza.\n\nBiztosító / kapcsolat: [név, magyarországi elérhetőség, telefon].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Betegkártya és költségek</b>\n\n[Ha betegkártya alkalmazandó:] Betegkártyát kap, amelyet saját biztonsága érdekében a vizsgálat alatt tartson magánál.\n\n[Ha költségtérítés van:] A(z) [pontos költségtípusok] ténylegesen felmerült és igazolt költségeit a Szponzor megtéríti. [Ha nincs költségtérítés:] Költségtérítés nem jár. A részvételért nem kaphat olyan jutalmat, amely befolyásolhatná a döntést.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>Kit kereshet kérdéseivel?</b>\nVizsgálatvezető: [név, beosztás/munkakör]\nVizsgálóhely: [név és cím]\nTelefon: [telefonszám]\nE-mail: [e-mail]\n24 órás sürgősségi kapcsolat: [ha alkalmazandó]\n\nAdatvédelmi kapcsolattartó: [név és elérhetőség]\nNAIH: [aktuális postai cím és internetes elérhetőség]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>AZ ÖN VÉLEMÉNYE</b>\n\nA tájékoztatást számomra érthető módon elmondták. Kérdezhettem.\n\nAz én véleményem:\n□ Szeretnék részt venni / együttműködni.\n□ Nem szeretnék részt venni / ellenzem.\n□ Még nem tudom.\n□ Nem tudom egyértelműen kifejezni a véleményemet.\n\nA véleményemet így fejeztem ki: □ szóban  □ gesztussal  □ kommunikációs segédeszközzel  □ viselkedéssel  □ másként: __________\n\nNév: ____________________\nAláírás / jel, ha értelmesen és lehetséges: ____________________\nDátum: ____ / ____ / ______\n\n<b>A tájékoztatást végző személy feljegyzése</b>\nA kommunikáció módja: ____________________\nA résztvevő kifejezett akarata/ellenkezése: ____________________\nKonkrét eljárással szembeni ellenkezés: ____________________\n\nNév: ____________________\nBeosztás / munkakör: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\n<b>Szerzői utasítás:</b> A jogilag érvényes beleegyezést a nyilatkozattételre jogosult személy külön legal-representative dokumentumban adja meg. A jelen aláírás vagy jel nem minősül önálló jogi beleegyezésnek. A résztvevő és – ha indokolt – a nyilatkozattételre jogosult személy kapjon egy eredeti, aláírt és dátummal ellátott példányt; egy eredeti példány maradjon a kutatási dokumentációban.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

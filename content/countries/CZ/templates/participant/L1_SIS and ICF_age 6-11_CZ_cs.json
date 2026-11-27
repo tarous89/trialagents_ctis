@@ -1,0 +1,80 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Informace pro dítě / Vyjádření vůle účastnit se klinického hodnocení",
+  "target_country": "Czech Republic",
+  "country_code": "CZ",
+  "target_language": "Czech",
+  "language_code": "cs",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - verze 1.0 - [date]",
+   "Číslo protokolu: [doplňte] | EU CT číslo: [doplňte]",
+   "Identifikace klinického hodnocení: [doplňte] | verze dokumentu: [doplňte]"
+  ],
+  "info_table": [
+   "Celý název klinického hodnocení",
+   "Zkrácený název klinického hodnocení",
+   "Číslo protokolu [doplňte verzi a datum]",
+   "EU CT číslo",
+   "Zadavatel [včetně úplné adresy]",
+   "Hlavní zkoušející",
+   "Název pracoviště",
+   "Adresa pracoviště"
+  ],
+  "content_instructions": "Použijte pro děti ve věku 6–11 let jako samostatnou věkově přiměřenou informaci a záznam jejich vůle; právně účinný souhlas poskytuje rodič nebo zákonný zástupce v samostatném formuláři. Pište krátkými větami a běžnými slovy, používejte obrázky nebo symboly, pokud pomohou. Vysvětlete, že jde o výzkum, proč je dítě osloveno, co přesně se bude dít, jak dlouho to potrvá, co může bolet nebo být nepříjemné, možný přínos nebo jeho nepřítomnost, jiné možnosti a právo říci ne nebo přestat. Dítěti neříkejte, že jeho podpis je právním informovaným souhlasem. Jeho výslovné odmítnutí nebo přání přestat musí být respektováno. Podpis dítěte mladšího 11 let není podle požadavků SÚKL povinný; u dítěte, které je schopné podpisu nebo jiného vyjádření, lze vůli zaznamenat přiměřeným způsobem. Povinné vzorky, genetická vyšetření, těhotenské testy nebo jiné citlivé moduly zahrňte jen tehdy, jsou-li skutečně relevantní a lze je věku přiměřeně vysvětlit. Budoucí nebo sekundární použití údajů a vzorků nezahrnujte. Rozsah konečných informací pro děti ve věku 6–11 let nesmí přesáhnout 4 strany a musí být co nejkratší a přiměřený věku.",
+  "styling_instructions": "Konečný dokument musí být pouze v češtině. Použijte přehledné kapitoly a odstavce, standardní velikost písma, například Times New Roman 12 nebo Arial 11, a srozumitelný, citlivý jazyk bez nevysvětlených zkratek a odborných výrazů. Každá strana musí být očíslována a označena číslem verze, datem vydání a identifikací klinického hodnocení. Před finalizací odstraňte všechny pokyny pro zpracovatele, příklady, nevybrané alternativy a neaplikovatelné části. Pro plán návštěv a výkonů použijte přehlednou tabulku, pokud to zlepšuje srozumitelnost. Obecné zaškrtávací otázky ano/ne nepoužívejte; výjimkou jsou odůvodněné, skutečně nezávislé volitelné činnosti s vlastním podpisem a datem."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMACE PRO DÍTĚ / VYJÁDŘENÍ VŮLE (ASSENT) ÚČASTNIT SE KLINICKÉHO HODNOCENÍ</b>\n\nAhoj,\n\nlékař se Tě chce zeptat, jestli chceš být v jednom výzkumu. Výzkum znamená, že se lékaři učí nové věci o [léku / léčbě / nemoci].\n\nTvoje maminka, tatínek nebo jiný zákonný zástupce dostanou podrobné informace. Lékař se ale ptá také Tebe, protože Tvůj názor je důležitý.\n\nTento formulář zaznamenává Tvé vlastní souhlasné nebo nesouhlasné vyjádření (assent). Není právním informovaným souhlasem. Právní souhlas dává rodič nebo zákonný zástupce, ale Tvé jasné odmítnutí se musí respektovat.",
+   "section_style": "H1 document headline, Rich body text, Info table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Proč se Tě ptáme?</b>\n\nPtáme se Tě, protože [jednoduchý důvod, například máš nemoc nebo potíže].\n\nLékaři chtějí zjistit, jestli [jednoduchý cíl].\n\nTento výzkum se jmenuje [krátký název]. EU CT číslo je [doplňte].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Co se bude dít?</b>\n\nPokud budeš ve výzkumu:\n• dostaneš [lék / placebo / léčbu] [jak];\n• přijdeš do nemocnice [počet]krát;\n• lékař udělá [hlavní vyšetření];\n• vezmeme Ti [krev / jiný vzorek] [kolikrát a přibližně kolik];\n• bude to trvat asi [doba].\n\n<b>Pokud se používá losování:</b>\nSkupinu vybere náhoda. Ty ani lékař si ji nevyberete.\n\n<b>Pokud se používá placebo:</b>\nPlacebo vypadá jako lék, ale není v něm účinná látka.\n\n<b>Pokyn pro zpracovatele:</b> Vysvětlete jeden výkon po druhém. Použijte obrázek nebo jednoduchý plán návštěv, pokud pomůže.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Co může být dobré a co může být nepříjemné?</b>\n\n<b>Co může být dobré:</b>\n[Možná Ti léčba pomůže, ale nevíme to jistě. / Tobě výzkum nejspíš přímo nepomůže, ale může pomoci jiným dětem v budoucnu.]\n\n<b>Co může být nepříjemné:</b>\n• [například píchnutí může krátce bolet]\n• [hlavní nežádoucí účinek jednoduchými slovy]\n• [delší návštěva nebo pobyt]\n\nKdyž se budeš bát, něco Tě bude bolet nebo se nebudeš cítit dobře, řekni to hned dospělému, kterému věříš.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Musíš se zúčastnit?</b>\n\nNe. Můžeš říci „ne“.\n\nMůžeš také později říci, že chceš přestat. Nemusíš vysvětlovat proč.\n\nKdyž řekneš ne nebo přestaneš, lékaři se o Tebe budou dál starat. Nikdo se na Tebe nebude zlobit.\n\nMůžeš odmítnout i jednotlivý výkon. Řekni to lékaři, rodiči nebo jinému dospělému, kterému věříš.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Co se stane s informacemi o Tobě?</b>\n\nLékaři si zapíší informace o Tvém zdraví. Tvoje údaje a vzorky dostanou kód. Lidé mimo nemocnici běžně neuvidí Tvé jméno.\n\nDo zdravotnické dokumentace mohou pro kontrolu nahlížet členové studijního týmu, monitor, auditoři, regulační orgány a etická komise. Musí Tvé údaje chránit a zachovat mlčenlivost. Výsledky výzkumu budou zveřejněny bez Tvého jména na https://euclinicaltrials.eu.\n\nVzorky pro tento výzkum se použijí jen tak, jak je vysvětleno rodičům a Tobě. Pro jiný budoucí výzkum je potřeba jiný souhlas.\n\nPokud je to pro toto klinické hodnocení vhodné, dostaneš také krátké samostatné informace o tom, jak budou používány a chráněny Tvé osobní údaje.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Kdo Ti může pomoci?</b>\n\nMůžeš se ptát lékaře, rodiče nebo jiného dospělého.\n\nLékař: [jméno]\nTelefon: [číslo]\n\nEtická komise chrání práva lidí ve výzkumu. E-mail: [eticka.komise@sukl.gov.cz nebo konkrétní e-mail]\n\n<b>Místo pro Tvé otázky nebo obrázek:</b>\n\n____________________________________________________________\n\n____________________________________________________________",
+   "section_style": "Section break, H3 module title, Rich body text, Standard table"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Pojištění, náklady a běžná léčba</b>\n\nPokud by výzkum poškodil Tvé zdraví, řekni to lékaři nebo rodiči. Účastníci jsou pojištěni podle českých pravidel.\n\nVýzkumný lék a vyšetření platí zadavatel. Rodičům mohou být nahrazeny přiměřené výdaje [doplňte].\n\nKdyž se nezúčastníš, dostaneš běžnou léčbu, kterou s Tebou a rodiči probere lékař.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>MOJE VYJÁDŘENÍ</b>\n\nLékař mi vysvětlil výzkum způsobem, kterému rozumím. Mohl/a jsem se ptát.\n\n□ Chci se výzkumu účastnit.\n□ Nechci se výzkumu účastnit.\n□ Nejsem si jistý/á a chci více času nebo vysvětlení.\n\nJméno dítěte: ______________________________\nPodpis nebo značka dítěte, je-li přiměřená: ______________________________\nDatum: ____ / ____ / ______\n\n<b>Pokyn pro zpracovatele:</b> Podpis dítěte mladšího 11 let není povinný. Chybějící podpis nesmí být automaticky vykládán jako souhlas. Zaznamenejte skutečně vyjádřenou vůli slovem, gestem, obrázkem nebo jiným vhodným způsobem.\n\nProhlašuji, že jsem dítěti vysvětlil/a informace přiměřeně věku a vyspělosti, odpověděl/a na otázky a zaznamenal/a jeho skutečné vyjádření. Výslovný nesouhlas bude respektován.\n\nJméno a příjmení zkoušejícího lékaře: ______________________________\nPodpis: __________________  Datum: ____ / ____ / ______\n\nDítě obdrželo svou věkově přiměřenou informaci. Právní souhlas rodiče nebo zákonného zástupce je zaznamenán samostatně.\n\nDítě a rodič nebo zákonný zástupce obdrželi datovaný stejnopis dětské informace a záznamu; jeden stejnopis zůstává na pracovišti klinického hodnocení.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

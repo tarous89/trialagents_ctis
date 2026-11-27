@@ -1,0 +1,84 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Pregnancy Follow-up and Consent - Participants",
+  "doc_name_local": "Tájékoztatáson alapuló beleegyező nyilatkozat – várandós vizsgálati alany terhesség-utánkövetése",
+  "target_country": "Hungary",
+  "country_code": "HU",
+  "target_language": "Hungarian",
+  "language_code": "hu",
+  "doc_type": "pregnant_participants",
+  "file_name": "L1_SIS and ICF_pregnancy",
+  "sort_order": 7,
+  "description": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - 1.0 verzió - [date]",
+   "Protokollszám: [töltse ki] | EUCT szám: [töltse ki]"
+  ],
+  "info_table": [
+   "A klinikai vizsgálat teljes címe",
+   "A klinikai vizsgálat rövid címe",
+   "Protokollszám [adja meg a verziót és a dátumot]",
+   "EUCT szám",
+   "Szponzor [teljes címmel]",
+   "Vizsgálatvezető",
+   "Vizsgálóhely neve",
+   "Vizsgálóhely címe",
+   "A tájékoztatást végző személy neve",
+   "A tájékoztatást végző személy beosztása / munkaköre",
+   "A vizsgálati alany neve",
+   "A vizsgálati alany születési helye",
+   "A vizsgálati alany születési ideje"
+  ],
+  "content_instructions": "Ezt a sablont olyan, már klinikai vizsgálatba bevont nő számára használja, akinél a vizsgálat alatt vagy a protokoll szerinti expozíciós időszakban terhesség következik be, és a terhesség kimenetelére, az anya egészségére vagy – születés után külön jogszerű beleegyezéssel – a gyermek egészségére vonatkozó adatokat kívánnak gyűjteni. Ez a dokumentum kiegészíti, de nem helyettesíti a fő klinikai vizsgálati ICF-et. Ne használja arra, hogy automatikusan engedélyezze a vizsgálati gyógyszer terhesség alatti folytatását; a további vizsgálati kezelés csak a protokoll, az orvosi kockázatértékelés és a terhes nők kutatására vonatkozó alkalmazandó magyar/uniós feltételek teljesülése esetén történhet, és ezt a fő vizsgálati dokumentációban kell kezelni. A jelen beleegyezés kizárólag a terhességi utánkövetésben meghatározott adatgyűjtésre és – ha külön ismertetett – eljárásra terjedjen ki. A külső szülész/nőgyógyász vagy más szolgáltató megkeresését csak protokoll szerinti esetben és külön döntési ponttal tartsa meg. A születés utáni gyermek saját személyes/egészségügyi adatainak kutatási célú gyűjtéséhez külön gyermekre vonatkozó beleegyezés szükséges. A KFEB-ajánlás szerint ebben a külön dokumentumban is legyen megfelelő GDPR-tájékoztatás, amely hivatkozhat a fő ICF részletes adatvédelmi részére, de a terhességi utánkövetés saját adatkategóriáit, célját, címzettjeit és tárolását meg kell neveznie. Humángenetikai vizsgálatot és másodlagos/jövőbeni felhasználást ne építsen be; ezekhez külön dokumentum szükséges. Egyetlen végleges aláírássorozat legyen. A végleges, jogilag beleegyezést tartalmazó dokumentum címében tartsa meg a KFEB által használt „Tájékoztatáson alapuló beleegyező nyilatkozat” megnevezést. Humángenetikai vizsgálatot csak külön genetikai tájékoztatással és külön beleegyező nyilatkozattal kezeljen; a jelen terhesség-utánkövetési aláírás erre nem terjed ki.",
+  "styling_instructions": "Használjon rövid, közérthető, tiszteletteljes magyar nyelvet. A dokumentum legyen lényegesen rövidebb a fő klinikai vizsgálati ICF-nél, és csak a terhességi utánkövetéshez szükséges információkat tartalmazza."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>TÁJÉKOZTATÁSON ALAPULÓ BELEEGYEZŐ NYILATKOZAT – VÁRANDÓS VIZSGÁLATI ALANY TERHESSÉG-UTÁNKÖVETÉSE</b>\n<b>Szerzői utasítás:</b> Ez a dokumentum a terhességi utánkövetéshez készült kiegészítő beleegyezés; nem engedély a vizsgálati gyógyszer terhesség alatti automatikus folytatására.",
+   "section_style": "H1 document headline, Rich body text, Info table"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Tisztelt Hölgyem!\n\nÖn már részt vesz a(z) [vizsgálat rövid neve] klinikai vizsgálatban, és terhesség következett be [a vizsgálati gyógyszer alkalmazása alatt / a protokoll szerinti expozíciós időszakban]. A Szponzor szeretné követni a terhesség lefolyását és kimenetelét, hogy többet tudjon meg a vizsgálati gyógyszer reprodukciós biztonságáról.\n\nA terhességi utánkövetésben való részvétel önkéntes. A jelen dokumentum aláírása nem jelenti azt, hogy a vizsgálati gyógyszer alkalmazása a terhesség alatt folytatódik. A vizsgálati kezelés sorsát a vizsgálatvezető Önnel külön, az egészségügyi és protokoll szerinti feltételek alapján beszéli meg.",
+   "section_style": "Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>1. Mit követünk és meddig?</b>\n\nA terhességi utánkövetés [időtartam / terhesség végéig és meghatározott anyai utánkövetésig] tart. A következő adatokat gyűjtjük: [terhesség kezdete, vizsgálati gyógyszer-expozíció, egyéb gyógyszerek, előzmények, terhességi vizsgálatok, szövődmények, szülés/terhességi kimenetel, egyéb tényleges kategóriák].\n\nAz utánkövetéshez [telefonos kapcsolat / vizit / kérdőív / egészségügyi dokumentációból adat] történik [gyakoriság]. [Ha külön eljárás/mintavétel van: pontos cél, mennyiség, kockázat; genetikai vizsgálatot ne foglaljon ide.]",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>2. Megkereshetjük-e az Ön szülészét vagy más kezelőorvosát?</b>\n\n[Csak ha a protokoll ténylegesen tervezi:] Szeretnénk megkeresni [szülész-nőgyógyász / háziorvos / kórház] szolgáltatót, hogy [pontos adatok] rendelkezésre álljanak. Átadott kapcsolattartási adatok: [tételesen].\n\nHozzájárulok ehhez a megkereséshez: Igen □  Nem □\n\n<b>Szerzői utasítás:</b> Ne készítsen külön aláírássorozatot; az egyetlen végleges aláírás vonatkozik erre a döntésre.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>3. Mi történik a gyermek adataival?</b>\n\nA terhesség kimenetelének leírásához a születés tényére és a terhességi kimenetelre vonatkozó információ kezelhető az Ön terhességi adatának részeként. Ha a gyermek megszületése után a gyermek saját személyes vagy egészségügyi adatait kutatási célból szeretnék gyűjteni vagy a gyermeket utánkövetni, ehhez külön, a gyermekre vonatkozó tájékoztatás és a törvényes képviselő külön beleegyezése szükséges.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>4. Milyen előny és kockázat várható?</b>\n\nA terhességi utánkövetésből közvetlen egészségügyi előny általában nem várható. A fő kockázat a személyes adatok és a magánélet védelmével kapcsolatos. [Ha külön eljárás van: annak kockázatai.] A terhesség egészségügyi ellátását továbbra is az Ön kezelőorvosai biztosítják.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>5. Hogyan kezeljük az Ön adatait?</b>\n\nA fő klinikai vizsgálati ICF adatvédelmi tájékoztatása továbbra is alkalmazandó. A terhességi utánkövetés sajátos adatkezelése:\n\n<b>Adatvédelem</b>\nA személyes és egészségügyi adatok kezelésére különösen az (EU) 2016/679 rendelet (GDPR), a 2011. évi CXII. törvény, az 1997. évi XLVII. törvény, a 2005. évi XCV. törvény, az 1997. évi CLIV. törvény és a 35/2005. (VIII. 26.) EüM rendelet vonatkozik. [Humángenetikai vizsgálat esetén: továbbá a 2008. évi XXI. törvény.]\n\nAdatkezelő(k): [név, cím és szerep]\nAdatvédelmi tisztviselő / adatvédelmi kapcsolat: [név és elérhetőség]\nAz adatkezelés célja: [pontos cél]. Az adatkezelés jogalapja a KFEB követelménye szerint az érintett hozzájárulása.\nA kezelt adatok: [a tényleges adatkategóriák tételes felsorolása].\n\nA vizsgálóhelyről személyes és különleges adatok kizárólag [kódolt / anonimizált] formában továbbíthatók. Kódolt adatok esetén a kódkulcs nem továbbítható. Az azonosítható adatokba csak a vizsgálóhelyen tekinthetnek be az erre jogosult [vizsgálati személyzet / monitor / auditor / hatósági ellenőr / etikai bizottság erre jogosult személye / egyéb tényleges jogosult], és azokról nem készíthetnek másolatot. Titoktartási kötelezettség terheli őket.\n\nA kódolt/anonimizált adatok címzettjei: [szervezetek/szervezettípusok és országok]. [Ha harmadik országba történik továbbítás: ország és alkalmazott garancia.] Az adatokat [hely] helyen [időtartam / végdátum] ideig tárolják.\n\nHa adatkezelési jogai sérülnek, kapcsolatba léphet [adatkezelő/adatvédelmi tisztviselő], és panaszt tehet a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH). NAIH postai cím: [aktuális cím]. Internet: [aktuális webcím].\n\nA terhességi adatok a fő klinikai vizsgálatban meglévő kódolt adatokkal [kapcsolási módszer] útján kapcsolhatók össze. A jelen utánkövetés célján kívüli jövőbeni/másodlagos felhasználáshoz külön beleegyezés szükséges.",
+   "section_style": "Section break, H3 module title, H4 section title, Rich body text, Info/warning/note box"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>6. Önkéntes-e az utánkövetés és hogyan vonhatja vissza?</b>\n\nAz utánkövetés önkéntes, és hozzájárulását bármikor, indoklás nélkül visszavonhatja. A visszavonás után új terhességi utánkövetési adat nem gyűjthető Önről. A korábban jogszerűen gyűjtött adatok a biztonsági értékeléshez továbbra is felhasználhatók, ha ezt az alkalmazandó szabályok megkövetelik. A terhességi utánkövetés visszavonása önmagában nem azonos a fő klinikai vizsgálatból való visszavonással; a fő vizsgálati részvételről külön kell dönteni.\n\nKapcsolat: [vizsgálatvezető, telefon/e-mail]. Adatvédelmi kapcsolat/NAIH: [adatok].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>BELEEGYEZŐ NYILATKOZAT</b>\n\nKijelentem, hogy megkaptam és megértettem a terhességi utánkövetésről szóló tájékoztatást; kérdezhettem és elegendő időt kaptam; megértettem, hogy ez a beleegyezés nem engedélyezi automatikusan a vizsgálati gyógyszer terhesség alatti folytatását; tudom, hogy az utánkövetés önkéntes és külön visszavonható; hozzájárulok a jelen dokumentumban felsorolt terhességi adataim gyűjtéséhez és kezeléséhez; és tudom, hogy a gyermek születés utáni saját adatainak kutatási célú gyűjtéséhez külön beleegyezés szükséges.\n\nNév: ____________________\nSzületési hely: ____________________\nSzületési idő: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\n<b>A tájékoztatást végző személy</b>\nNév: ____________________\nBeosztás / munkakör: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\nA dokumentum egy eredeti, aláírt és dátummal ellátott példányát az érintett kapja meg; egy eredeti példány a kutatási dokumentációban kerül megőrzésre.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

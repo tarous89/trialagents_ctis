@@ -1,0 +1,89 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Gyermekeknek szóló tájékoztató és véleménynyilatkozat (6–11 év)",
+  "target_country": "Hungary",
+  "country_code": "HU",
+  "target_language": "Hungarian",
+  "language_code": "hu",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - 1.0 verzió - [date]",
+   "Protokollszám: [töltse ki] | EUCT szám: [töltse ki]"
+  ],
+  "info_table": [
+   "A klinikai vizsgálat teljes címe",
+   "A klinikai vizsgálat rövid címe",
+   "Protokollszám [adja meg a verziót és a dátumot]",
+   "EUCT szám",
+   "Szponzor [teljes címmel]",
+   "Vizsgálatvezető",
+   "Vizsgálóhely neve",
+   "Vizsgálóhely címe",
+   "A tájékoztatást végző személy neve",
+   "A tájékoztatást végző személy beosztása / munkaköre",
+   "A kiskorú vizsgálati alany neve",
+   "A kiskorú vizsgálati alany születési helye",
+   "A kiskorú vizsgálati alany születési ideje"
+  ],
+  "content_instructions": "Ezt a sablont 6–11 éves kiskorú vizsgálati alany életkorhoz igazított tájékoztatására és véleményének/együttműködési szándékának rögzítésére használja. Közvetlenül a gyermekhez szóljon, következetesen tegező formában, rövid, konkrét mondatokkal és szükség szerint képekkel/piktogramokkal. A gyermek aláírása vagy jelzése nem helyettesíti a nyilatkozattételre jogosult személy külön jogilag érvényes beleegyezését. A gyermek véleményét és egyértelmű ellenkezését a vonatkozó szabályok szerint figyelembe kell venni. Ismertesse csak a döntéshez szükséges lényegi információkat: kutatási jelleg, miért kérik, mi fog történni, fő kockázatok/kellemetlenségek, lehetséges előny vagy annak hiánya, más ellátási lehetőség, nemet mondás és abbahagyás, adat- és mintakezelés, biztosítás és kapcsolatok. A gyermekgyógyászati vizsgálatban a fájdalmat, szorongást és félelmet minimalizálni kell. A külön dokumentumra vonatkozó KFEB-ajánlás miatt közérthetően foglalja össze az adatvédelmet is. Humángenetikai vizsgálat esetén jelezze, hogy ehhez külön genetikai tájékoztatás és a jogszabály szerinti külön beleegyezés szükséges; a gyermek ellenkezését is figyelembe kell venni. A fő vizsgálaton kívüli jövőbeni/másodlagos felhasználást ne tartalmazza.",
+  "styling_instructions": "Használjon 6–11 éves gyermek számára könnyen olvasható, rövid mondatokat, nagyobb betűméretet, sok fehér teret, egyszerű alcímeket, valamint szükség szerint képeket vagy piktogramokat. Kerülje a jogi és szakmai zsargont. A szöveg legyen lényegesen rövidebb a felnőtt ICF-nél, és következetesen tegező legyen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>GYERMEKEKNEK SZÓLÓ TÁJÉKOZTATÓ ÉS VÉLEMÉNYNYILATKOZAT (6–11 ÉV)</b>\n\n<b>Szerzői utasítás:</b> A szöveget a konkrét életkorhoz és fejlettséghez igazítsd. Ez a dokumentum nem helyettesíti a szülő/nyilatkozattételre jogosult személy külön beleegyezését.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Mi ez a vizsgálat?</b>\n\nOrvosok egy kutatást végeznek. A kutatás neve: [rövid név]. A kutatásban azt szeretnék megtudni, hogy [egyszerű cél].\n\nAzért kérdezünk meg téged, mert [egyszerű ok]. A szülőd vagy az a felnőtt, aki jogosult helyetted dönteni, külön részletes tájékoztatást kap. Neked is elmondjuk, mi fog történni, mert a te véleményed is fontos.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Mi fog történni?</b>\n\nHa részt veszel:\n• [gyógyszert/kezelést] kapsz [hogyan és milyen gyakran];\n• körülbelül [szám] alkalommal jössz a vizsgálóhelyre;\n• [legfontosabb vizsgálatok] történnek;\n• összesen körülbelül [X] ml vért vesznek;\n• a vizsgálat neked körülbelül [időtartam] tart.\n\n[Ha sorsolás/placebo van:] A csoportot véletlen választás dönti el. A placebo úgy néz ki, mint a gyógyszer, de nincs benne hatóanyag. [Te / te és az orvos] nem tudjátok, melyiket kapod, kivéve, ha ezt a biztonságod miatt sürgősen meg kell tudni.\n\n[Minták esetén:] [minta és egyszerű cél]. Genetikai mintavételhez külön genetikai tájékoztató és beleegyező dokumentum kell; jelezheted, ha ezt nem szeretnéd.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Mi lehet jó, és mi lehet kellemetlen?</b>\n\n[Lehetséges előny:] [Lehet, hogy a kezelés segít neked, de ezt nem tudjuk biztosan. / Neked valószínűleg nem lesz közvetlen egészségügyi előnyöd.]\n\nA legfontosabb kellemetlenségek vagy veszélyek:\n• [egyszerű leírás];\n• [egyszerű leírás];\n• [pl. vérvétel csíphet vagy fájhat rövid ideig].\n\nAz orvosok igyekeznek a fájdalmat, félelmet és szorongást a lehető legkisebbre csökkenteni. Ha valami fáj, félsz vagy rosszul érzed magad, szólj.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Mondhatsz nemet?</b>\n\nIgen. Mondhatod, hogy nem szeretnél részt venni, vagy később szeretnéd abbahagyni. Azt is mondhatod, ha egy vizsgálatot nem szeretnél. Nem kell megmagyaráznod, miért. Emiatt nem kaphatsz rosszabb szokásos ellátást.\n\nHa kérdésed van vagy nem érted, kérdezz bátran.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Mi történik az adataiddal és a mintáiddal?</b>\n\nA személyes adataidat a GDPR és a magyar adatvédelmi, egészségügyi és klinikai vizsgálati szabályok szerint védik; a jogi hozzájárulást a helyetted nyilatkozni jogosult felnőtt adja meg. Az orvosok adatokat írnak le az egészségedről és a vizsgálat eredményeiről. A vizsgálóhelyről ezeket csak kódolt vagy név nélküli formában adják tovább. A kód kulcsát nem adják tovább. A jogosult ellenőrzők a neveddel együtt látható adatokat csak a vizsgálóhelyen nézhetik meg, és nem készíthetnek róluk másolatot.\n\nAz adatokat [ki/ország] kapja és [hely] helyen [időtartam] ideig tárolják. [Ha más országba továbbítják: rövid, egyszerű magyarázat.]\n\nA fő vizsgálathoz vett [minták] [hely] helyen [időtartam] ideig maradnak, és csak [cél] céljára használják, majd [mi történik velük].\n\nHa adatvédelmi kérdésed van, te vagy a szülőd/jogosult felnőtt kérdezheti [kapcsolattartó]. A NAIH-hoz is lehet fordulni: [aktuális cím és webcím].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Mi történik, ha a vizsgálat miatt bajod lesz?</b>\n\nA vizsgálat résztvevőit biztosítás védi. Ha úgy érzed, hogy a vizsgálat miatt bajod lett, azonnal szólj az orvosnak vagy egy felnőttnek, akiben megbízol. A részletes biztosítási és kártérítési szabályokat a szülőd/jogosult felnőtt dokumentuma tartalmazza.\n\n[Ha betegkártya alkalmazandó:] Betegkártyát kapsz; ezt a biztonságod miatt a vizsgálat alatt tartsd magadnál / a gondviselőd tartsa elérhetően.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Kihez fordulhatsz?</b>\n\nVizsgálatvezető/orvos: [név]\nTelefon: [telefonszám]\nE-mail: [e-mail]\n\nBeszélhetsz a szülőddel/jogosult felnőttel vagy más olyan felnőttel is, akiben megbízol.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Ha új fontos dolgot tudunk meg</b>\n\nHa a vizsgálat közben olyan új dolog derül ki, ami fontos lehet a biztonságodhoz vagy ahhoz, hogy szeretnéd-e folytatni, azt neked is elmagyarázzuk úgy, hogy megérthesd.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>AZ ÉN VÉLEMÉNYEM</b>\n\nElmondták nekem a vizsgálatot úgy, hogy megérthessem. Kérdezhettem.\n\n□ Szeretnék részt venni / folytatni.\n□ Nem szeretnék részt venni / folytatni.\n□ Még nem tudom.\n\n[Csak ha a protokoll szerint van valóban külön választható, nem genetikai tevékenység:] [tevékenység] – Szeretném: Igen □  Nem □\n\nNév: ____________________\nAláírás / jel, ha lehetséges és értelmes: ____________________\nDátum: ____ / ____ / ______\n\n<b>A tájékoztatást végző személy</b>\nKijelentem, hogy a gyermek életkorához és megértéséhez igazodva adtam tájékoztatást, lehetőséget adtam kérdezni és rögzítettem a gyermek kifejezett véleményét/ellenkezését.\nNév: ____________________\nBeosztás / munkakör: ____________________\nAláírás: ____________________  Dátum: ____ / ____ / ______\n\n<b>Szerzői utasítás:</b> A jogilag érvényes beleegyezést külön parents dokumentumban kell megszerezni. A jelen dokumentum egy eredeti, aláírt és dátummal ellátott példányát a gyermeknek/szülőnek a gyermek életkorához igazodva adja át; egy eredeti példány maradjon a kutatási dokumentációban.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

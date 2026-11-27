@@ -1,0 +1,69 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Secondary and Future Use of Data or Biosamples",
+  "doc_name_local": "Forespørsel om deltakelse i fremtidig forskning",
+  "target_country": "Norway",
+  "country_code": "NO",
+  "target_language": "Norwegian",
+  "language_code": "no",
+  "doc_type": "secondary_use",
+  "file_name": "L1_SIS and ICF_secondary",
+  "sort_order": "8",
+  "description": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versjon 1.0 - [date]",
+   "Protokollnummer: [fyll inn] | EU CT-nummer: [fyll inn]"
+  ],
+  "info_table": [
+   "Studietittel",
+   "Forkortet studietittel",
+   "Protokollnummer [legg til versjon og dato]",
+   "EU CT-nummer",
+   "Sponsor [med fullstendig adresse]",
+   "Hovedutprøver",
+   "Navn på studiesenter",
+   "Adresse til studiesenter"
+  ],
+  "content_instructions": "Bruk malen når det skal innhentes separat samtykke til valgfri lagring eller annen og/eller fremtidig bruk av prøver eller helseopplysninger utover formålet med en legemiddelutprøving som omfattes av Clinical Trials Regulation (CTR) EU nr. 536/2014. Fjern markert tekst og tekst i hakeparenteser og erstatt den med studiespesifikt innhold. Informasjonen skal være kort, konsis, uten gjentakelser, forståelig for lekpersoner og skrevet i enkelt språk tilpasset mottakeren. Dokumentet skal gi tilstrekkelig informasjon til å ta stilling til fremtidig forskning, men skal ikke fremstå som en kontrakt eller inneholde juridiske formuleringer som avgrenser sponsors ansvar. Det er ikke et samtykke til databehandling etter GDPR; behandlingsgrunnlag og GDPR-rettigheter skal ikke beskrives her og må håndteres separat. Formålet med den fremtidige forskningen skal være nærmere bestemt, men bredt definert i samsvar med helseforskningsloven § 14. Beskriv hvilke opplysninger og/eller prøver som samles inn, bruksformål, lagringsland og lagringstid, eventuell genetisk analyse, genomsekvensering og håndtering av tilfeldige funn, deling med institusjoner i Norge eller utlandet, samt sponsors ansvar. Materialet kan ikke selges eller brukes for økonomisk vinning. Opplys at det ikke forventes direkte fordel, at det finnes en liten risiko for at opplysninger eller prøver kan komme på avveie, og bruk den norske malens ordlyd for tilbaketrekking: ingen videre innsamling, uanalyserte prøver destrueres når relevant, og allerede registrerte opplysninger slettes ikke og kan brukes videre i forskningsarbeidet som beskrevet. Fremtidige prosjekter i Norge skal forhåndsgodkjennes av REK; bruk i utlandet skal følge loven der materialet oppbevares. Bruk aktivt, skriftlig samtykke og unngå avkrysningsbokser. Fremtidig bruk tillates vanligvis ikke for personer uten beslutningskompetanse, som mindreårige eller bevisstløse deltakere. Malen skal være kort og grunnleggende og skal bare dekke valgfri innsamling, lagring, testing, analyse eller bruk som faller utenfor hovedstudiens formål. Den skal ikke gjenta hovedstudiens behandling, randomisering, prosedyrer, generelle risikoer eller resultatinformasjon. [Hvis prøvene lagres i en studiespesifikk forskningsbiobank: Oppgi biobankens navn, institusjon og lokalisering, ansvarshavende for biobanken [navn eller rolle], lagringsperiode og hva som skjer med prøvene ved lagringsperiodens slutt.]",
+  "styling_instructions": "Sørg for god lesbarhet ved valg av skrift og bruk tydelige seksjonsoverskrifter. Unngå avkrysningsbokser og bruk daterte signaturfelt. Behold separate signaturseksjoner for deltakeren og personen som ga informasjon. Fjern markert instruksjonstekst og hakeparenteser i sluttversjonen."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Dette er en invitasjon til å samtykke til at [opplysninger, inkludert helseopplysninger, og/eller biologisk materiale] blir samlet inn, lagret og brukt til fremtidig forskning.\nFormålet med den fremtidige forskningen er [beskriv formålet som et nærmere bestemt, bredt definert forskningsområde].\nInnsamlede [opplysninger og/eller prøver] kan brukes i fremtidige forskningsprosjekter innenfor dette formålet.",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "HVILKE OPPLYSNINGER OG/ELLER PRØVER SKAL SAMLES INN?\n\nHVA SAMLES INN?\n[Beskriv kort hvilke opplysninger og/eller prøver som samles inn. Oppgi om materialet allerede finnes eller skal samles inn spesielt for fremtidig forskning.]\n\nHVA SKAL DET BRUKES TIL?\n[Beskriv kort hvordan opplysningene og/eller prøvene kan brukes innenfor det angitte forskningsformålet.]\n\nHVOR OG HVOR LENGE LAGRES DET?\n[Oppgi land, institusjon og konkret lagringsperiode.]\n\n[Hvis prøvene lagres i en studiespesifikk forskningsbiobank: Oppgi biobankens navn, institusjon og lokalisering, ansvarshavende [navn eller rolle], lagringsperiode og hva som skjer med prøvene ved lagringsperiodens slutt.]\n\nHVEM KAN MATERIALET DELES MED?\n[Beskriv planlagt deling med navngitte typer forskningsinstitusjoner i Norge eller utlandet.] Prøver utleveres uten navn, fødselsnummer eller andre direkte identifiserende opplysninger.\n\nGENETISKE ANALYSER [TAS KUN MED HVIS AKTUELT]\n[Forklar kort og forståelig hvilke genetiske analyser som kan gjennomføres. Dersom genomsekvensering og tilbakemelding om tilfeldige funn er planlagt, beskriv retten til å avstå fra tilbakemelding og eventuell genetisk veiledning.]\n\n[Mine opplysninger og/eller prøver] skal bare brukes som beskrevet i dette informasjonsskrivet. Materialet kan ikke selges eller brukes for økonomisk vinning.\nSponsor [Sett inn navn på sponsor/forskningsansvarlig institusjon], som er ansvarlig for [de innsamlede opplysningene og/eller prøvene], er forpliktet til å følge EUs personvernforordning, GDPR, ved overføring, bruk og oppbevaring av [opplysningene og/eller prøvene].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "MULIGE FORDELER OG ULEMPER\nDu vil ikke ha noen direkte fordel av å delta i fremtidig forskning. Den fremtidige forskningen kan på sikt bidra til vitenskapelige fremskritt som kan være til nytte for pasienter i fremtiden. Deltakelse innebærer vanligvis liten ekstra belastning, men det vil alltid være en liten risiko for at [opplysninger og/eller prøver] kan komme på avveie, selv om [sett inn navn på sponsor/forskningsansvarlig institusjon] gjør tiltak for å redusere denne risikoen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "FRIVILLIG DELTAKELSE OG MULIGHET FOR Å TREKKE DITT SAMTYKKE\nDet er frivillig å samtykke til at [opplysninger og/eller prøver som er tatt av deg] kan benyttes i fremtidig forskning. [Hvis relevant: Du kan fortsatt delta i hovedstudien, selv om du takker nei til å fremtidig forskning.] Hvis du ønsker å samtykke til dette, undertegner du samtykkeerklæringen på siste side. Du kan når som helst trekke deg fra studien uten å oppgi noen grunn og uten at det får konsekvenser for din videre behandling.\nHvis du trekker samtykket ditt til å delta i fremtidig forskning, vil vi ikke samle inn flere [opplysninger og/eller prøver] fra deg. [Prøver som allerede er innsamlet og ennå ikke analysert, vil bli destruert.] Opplysninger som allerede er registrert, blir ikke slettet, og kan brukes i det videre forskningsarbeidet i denne studien.\nHvis du senere ønsker å trekke deg eller har spørsmål til den fremtidige forskningen, kan du kontakte [Sett inn navn, telefonnummer og e-postadresse til ansvarlig forsker eller eventuelt annen varig kontaktperson. Det skal være like lett å trekke seg som å avgi samtykke.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "GODKJENNING AV FREMTIDIGE FORSKNINGSPROSJEKTER\n[Ta med dersom opplysningene og/eller det biologisk materialet skal lagres og brukes i Norge:] Fremtidige forskningsprosjekter i Norge som benytter [opplysningene og/eller det biologisk materialet] skal forhåndsgodkjennes av en regional komité for medisinsk og helsefaglig forskningsetikk, men du vil kun unntaksvis bli spurt på nytt om slik bruk.\n[Ta med dersom opplysningene og/eller det biologisk materialet skal sendes til utlandet:] Fremtidige forskningsprosjekter i utlandet som benytter [opplysningene og/eller det biologisk materialet] må følge lovverket i det landet der [opplysningene og/eller det biologisk materialet] oppbevares.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "SAMTYKKE\nJeg samtykker til at mine [opplysninger og/eller prøver] blir samlet inn, lagret og brukt til fremtidig forskning som beskrevet i dette informasjonsskrivet.\nMed dette bekrefter jeg også at jeg har fått informasjon om den fremtidige forskningen, at eventuelle spørsmål er blitt besvart og at jeg har mottatt en kopi av dette informasjonsskrivet.\n\nSted og dato\tDeltakers signatur\n\n\tDeltakers navn med store bokstaver",
+   "section_style": "H3 module title, Rich body text, Signature section"
+  },
+  {
+   "section_number": 7,
+   "section_content": "BEKREFTELSE PÅ AT INFORMASJON ER GITT DELTAKEREN\n\nJeg bekrefter å ha gitt informasjon om den fremtidige forskningen.\n\n\nSted og dato\tSignatur\n\n\nRolle",
+   "section_style": "Section break, H3 module title, Rich body text, Signature section"
+  }
+ ]
+}

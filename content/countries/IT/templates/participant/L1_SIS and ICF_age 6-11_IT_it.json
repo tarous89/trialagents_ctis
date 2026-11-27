@@ -1,0 +1,74 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Scheda informativa e assenso per bambini",
+  "target_country": "Italia",
+  "country_code": "IT",
+  "target_language": "Italiano",
+  "language_code": "it",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - Versione 1.0 - [date]",
+   "Numero di protocollo: [compilare] | Numero UE della sperimentazione: [compilare]"
+  ],
+  "info_table": [
+   "Titolo della sperimentazione",
+   "Titolo breve della sperimentazione",
+   "Numero di protocollo [aggiungere versione e data]",
+   "Numero UE della sperimentazione",
+   "Promotore [con indirizzo completo]",
+   "Sperimentatore principale",
+   "Nome del centro",
+   "Indirizzo del centro"
+  ],
+  "content_instructions": "Adattare il testo a minori di età compresa tra 6 e 11 anni, usando spiegazioni semplici e sintetiche. Indicare lo scopo e il razionale dello studio, il trattamento sperimentale e/o standard, gli esami e le visite, la durata, i benefici attesi e i potenziali effetti avversi. Sollecitare ulteriori domande del minore, chiarire che il consenso informato è firmato dai genitori e documentare la risposta del minore alla partecipazione.",
+  "styling_instructions": "Usare un formato adatto ai bambini con domande sottolineate, istruzioni redazionali in corsivo rosso, esempi in blu e illustrazioni esplicative."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Caro/a …………………………………,\ni medici hanno chiesto a (<i>nome della persona che esercita la responsabilità genitoriale</i>) l’autorizzazione a farti partecipare ad uno studio per vedere se nuove medicine funzionano meglio di quelle vecchie. I tuoi genitori decideranno se tu potrai partecipare allo studio, ma è importante che anche tu capisca di cosa si tratta. \nAbbiamo pensato ad alcune domande che potresti fare tu e abbiamo dato le risposte. Tu potrai fare al medico tutte le altre domande che vorrai per capire meglio!\nSe tuoi genitori decideranno che partecipare allo studio sia bene per te, firmeranno un documento che si chiama “consenso informato”.",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "\n<u>A cosa serve questo studio?</u>\n<i>[Adattare la descrizione a ciò che si intende sperimentare: Farmaco esistente? Nuovo farmaco? Nuova tecnologia?]</i>\n\nEsempio per un nuovo farmaco:\nVogliamo capire se la nuova medicina chiamata XXXXXXX <i>(specificare nel dettaglio</i>) funziona per curare la tua malattia.",
+   "section_style": "H3 module title, Rich body text, Small image"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<u>Cosa ci aspettiamo dallo studio? </u>\n<i>[Spiegare il razionale dello studio in termini semplici e sintetici identificando con chiarezza l’obiettivo dello studio]</i>\n\nEsempio per un nuovo farmaco:\nVogliamo vedere se il farmaco aumenta le possibilità di guarire (oppure: sia più efficace/sia più tollerato/abbia minori effetti collaterali o disturbi/tardivi) rispetto agli altri, ecc.\n\n\n\n\n",
+   "section_style": "H3 module title, Rich body text, Small image"
+  },
+  {
+   "section_number": 4,
+   "section_content": "\n<u>Che cosa mi succederà durante lo studio?</u>\n<i>[Indicare il trattamento sperimentale e/o quello standard. Indicare gli esami e le visite previste]</i>\n\nEsempio per un nuovo farmaco: \nPrima di tutto ti faranno alcuni esami per controllare che tu possa davvero partecipare allo studio.\n\nSe il medico dirà che puoi partecipare e i tuoi genitori hanno dato il consenso, ti daremo una medicina e ti spiegheremo come prenderla. Per questo ti aiuteranno i tuoi genitori.\nTi spiegheremo quando fare le analisi e quando tornare per le visite di controllo in cui il medico ti chiederà come ti senti. Se non ti senti bene, non aspettare la visita. Dillo subito ai tuoi genitori che avvertiranno il medico. ",
+   "section_style": "H3 module title, Rich body text, Small image"
+  },
+  {
+   "section_number": 5,
+   "section_content": "\n<u>Quanto durerà lo studio?</u>\n<i>[Indicare la durata dello studio]</i>\n\nLo studio durerà …………. mesi. In questi mesi sarai sempre seguito dai medici.",
+   "section_style": "H3 module title, Rich body text, Small image"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<u>Avrò qualche beneficio partecipando  allo studio?</u>\n<i>[Indicare i benefici attesi dalla partecipazione allo studio, anche con riferimento al progresso delle conoscenze scientifiche]</i>\n\nEsempio per un nuovo farmaco:\nI medici pensano che questa nuova medicina sia più utile contro la tua malattia rispetto alle altre, [in particolare per …. (specificare benefici?)], ma al momento ancora non ne sono sicuri. Questo studio aiuterà i medici a conoscere meglio la nuova medicina e queste informazioni potrebbero aiutare i bambini in futuro con la tua stessa malattia.",
+   "section_style": "H3 module title, Rich body text, Small image"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<u>È pericoloso partecipare allo studio?</u>\n<i>[Indicare i potenziali effetti avversi legati alla sperimentazione, ai farmaci e alle procedure che saranno utilizzate]</i>\nTutte le cure mediche possono dare qualche fastidio. \nIn particolare, questa medicina potrebbe causare qualche fastidio come………… (specificare).\nSarai però sempre sotto controllo, come già sei adesso. Segnala subito ai tuoi genitori se hai qualche fastidio, come ad esempio mal di testa, mal di pancia, nausea, e i medici ti aiuteranno a stare meglio.",
+   "section_style": "H3 module title, Rich body text, Small image"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<u>Mi spieghi meglio?</u>\n\n<i>[Sollecitare ulteriori domande da parte del minore]</i>\n\nSe hai dei dubbi puoi fare ai medici tutte le domande che vuoi. Loro ti risponderanno in modo chiaro.\n\n--------\nSperiamo che queste parole siano servite per capire cosa sia uno studio. A questo punto, parlane con i tuoi genitori. \n\n\n\nDopo la nostra spiegazione sei d’accordo a partecipare a questo studio?\n SI/NO",
+   "section_style": "H3 module title, Rich body text, Small image, Section break"
+  }
+ ]
+}

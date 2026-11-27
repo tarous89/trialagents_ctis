@@ -1,0 +1,79 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Informații pentru copil și acord privind participarea la studiul clinic",
+  "target_country": "Romania",
+  "country_code": "RO",
+  "target_language": "Romanian",
+  "language_code": "ro",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 6-11",
+  "sort_order": 6,
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - versiunea 1.0 - [date]",
+   "Numărul protocolului: [completați] | Numărul studiului UE: [completați]"
+  ],
+  "info_table": [
+   "Titlul complet al studiului clinic",
+   "Titlul scurt al studiului clinic",
+   "Numărul protocolului [adăugați versiunea și data]",
+   "Numărul studiului UE",
+   "Sponsor [cu adresa completă]",
+   "Investigator principal",
+   "Denumirea centrului",
+   "Adresa centrului"
+  ],
+  "content_instructions": "Utilizați pentru copii cu vârsta de aproximativ 6–11 ani ca bandă de lizibilitate, nu ca prag juridic de consimțământ. Documentul completează, nu înlocuiește, consimțământul părintelui/reprezentantului legal. Conform art. 15 alin. (2) din Ordinul nr. 3390/2022, acordul minorului este obligatoriu atunci când copilul este capabil să își formeze o opinie și să evalueze informațiile oferite; evaluați individual capacitatea, fără a presupune că orice copil din această bandă trebuie sau nu trebuie să semneze. Folosiți propoziții scurte, exemple simple, imagini sau un plan vizual al vizitelor dacă ajută. Explicați direct copilului de ce se face studiul, ce medicament/tratament se studiază, ce i se va întâmpla, durata, principalele riscuri/neplăceri, beneficiul posibil sau lipsa lui, opțiunea de a spune nu sau a se opri și protecția de bază a datelor. Explicați condițional probele biologice și testarea moleculară/genetică obligatorii numai dacă se aplică și la un nivel adecvat vârstei. Pentru fiecare activitate opțională independentă, copilul capabil să își formeze o opinie și să evalueze informația trebuie să poată spune separat da sau nu; reprezentantul legal documentează consimțământul juridic în formularul pentru părinți. Nu includeți cercetare secundară/viitoare. Nu includeți stimulente; menționați doar că părinților/reprezentanților li se pot rambursa cheltuieli direct legate de participare conform regulilor aprobate.",
+  "styling_instructions": "Documentul trebuie să fie evident mai scurt și mai simplu decât informația pentru adult. Folosiți propoziții scurte, spațiu alb, font ușor de citit și, dacă ajută, imagini, pictograme sau un calendar vizual. Evitați jargonul, formulele juridice și detaliile operaționale care nu ajută copilul să decidă."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "<b>INFORMAȚII PENTRU COPIL / ACORD PRIVIND PARTICIPAREA LA STUDIUL CLINIC</b>\n\nBună,\n\nMedicul vrea să te întrebe dacă vrei să participi la un studiu. Un studiu îi ajută pe medici să afle lucruri noi despre [medicament/tratament/boală].\n\nPărintele sau reprezentantul tău legal va primi informații mai detaliate și va decide dacă își dă consimțământul. Medicul te întreabă și pe tine, pentru că părerea ta este importantă.\n\n<b>Instrucțiune pentru autor:</b> Această bandă 6–11 ani este pentru nivelul limbajului. În România, acordul este obligatoriu dacă minorul este capabil să își formeze o opinie și să evalueze informațiile, indiferent de o vârstă fixă.",
+   "section_style": "H1 document headline, Rich body text, Info table, Info/warning/note box"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. De ce te întrebăm?</b>\n\nTe întrebăm pentru că [motiv simplu legat de boală/situație]. Medicii vor să afle dacă [scop simplu]. Studiul se numește [titlu scurt].",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Ce se va întâmpla?</b>\n\nDacă participi:\n• vei primi [medicament/placebo/tratament] [cum];\n• vei veni la spital/clinică de aproximativ [număr] ori;\n• medicul va face [investigațiile principale];\n• [Dacă se recoltează sânge:] se vor recolta aproximativ [X] ml de sânge în total;\n• participarea va dura aproximativ [durată].\n\n<b>Dacă există tragere la sorți:</b> Grupa este aleasă la întâmplare.\n<b>Dacă există placebo:</b> Placebo arată ca medicamentul, dar nu conține substanța activă studiată.\n\n<b>Module condiționale:</b>\n• [probă biologică obligatorie: explicație simplă despre ce se recoltează și de ce];\n• [testare moleculară/genetică obligatorie: explicație simplă, numai dacă se aplică];\n• [procedură dureroasă/solicitantă: explicație simplă].\n\nO activitate cu adevărat opțională poate fi refuzată fără să pierzi participarea la partea principală.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Ce poate fi bun și ce poate fi neplăcut?</b>\n\n<b>Ce poate fi bun:</b> [Este posibil ca tratamentul să te ajute, dar nu știm sigur / nu ne așteptăm ca studiul să te ajute direct, dar poate ajuta alți copii în viitor.]\n\n<b>Ce poate fi neplăcut:</b>\n• [înțepătura poate durea puțin]\n• [principalul efect advers explicat simplu]\n• [vizite mai lungi/alte neplăceri]\n\nDacă te doare ceva, te sperie ceva sau nu te simți bine, spune imediat medicului, părintelui sau unui alt adult în care ai încredere.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Trebuie să participi?</b>\n\nNu. Poți spune „nu”. Poți spune și mai târziu că vrei să te oprești. Nu trebuie să explici de ce.\n\nDacă spui nu sau vrei să te oprești, medicii vor continua să aibă grijă de tine. Poți spune și că nu vrei o anumită procedură. Spune medicului sau părintelui.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Ce se întâmplă cu informațiile și probele tale?</b>\n\nMedicii vor nota informații despre sănătatea ta. Datele tale vor fi protejate și, de regulă, marcate cu un cod. [Dacă în studiu se folosesc probe biologice: Și probele tale vor fi protejate și gestionate cu grijă.] Unele persoane autorizate pot verifica dosarul medical pentru a se asigura că studiul este făcut corect și trebuie să păstreze confidențialitatea.\n\n[Păstrați numai dacă se aplică: Probele necesare studiului se folosesc numai pentru studiul principal explicat aici.] Cercetarea viitoare are un document separat.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Cine te poate ajuta?</b>\n\nPoți întreba medicul, părintele sau un alt adult în care ai încredere.\n\nMedic: [nume]\nTelefon: [număr]\nÎntrebări despre drepturile tale: [contact aprobat]\n\n<b>Loc pentru întrebările sau desenul tău:</b>\n__________________________________________________",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Asigurare, costuri și îngrijirea obișnuită</b>\n\nDacă studiul îți provoacă o problemă de sănătate, spune medicului sau părintelui. Pentru studiu există [asigurare/mecanism de despăgubire].\n\n[Dacă studiul prevede rambursarea cheltuielilor: Părinților/reprezentanților li se pot rambursa cheltuieli direct legate de participarea ta, conform regulilor aprobate.] Nu ți se oferă bani sau cadouri ca să accepți participarea.\n\nDacă nu participi, medicul va discuta cu tine și cu părintele/reprezentantul despre îngrijirea obișnuită.",
+   "section_style": "Section break, H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>ACORDUL COPILULUI</b>\n\nMedicul mi-a explicat studiul într-un mod pe care îl înțeleg. Am putut pune întrebări.\n\n□ Vreau să particip.\n□ Nu vreau să particip.\n□ Nu sunt sigur/ă și vreau mai multe explicații sau timp.\n\nNumele copilului: ______________________________\nSemnătura sau marca copilului, dacă este potrivită și posibilă: ______________________________\nData: ____ / ____ / ______\n\n<b>Instrucțiune pentru autor:</b> Nu tratați lipsa unei semnături ca acord. Dacă minorul este capabil să își formeze o opinie și să evalueze informațiile, acordul său trebuie obținut și documentat prin metoda adecvată capacității sale.\n\n<b>Activitate opțională independentă - dacă se aplică și copilul este capabil să decidă asupra ei:</b>\nVreau să particip la [activitate]. DA □ NU □\nSemnătură/marcă, dacă este potrivită: __________________  Data: __________\n\n<b>Declarația medicului:</b>\nDeclar că sunt medic, membru al echipei de investigație, cu pregătire/experiență în lucrul cu copii și instruit corespunzător privind protocolul și buna practică în studiul clinic. Am explicat informațiile potrivit vârstei și maturității copilului, am răspuns întrebărilor și am documentat opinia exprimată. Refuzul expres va fi respectat.\nNume: __________________  Semnătură: __________________  Data: __________\n\nConsimțământul părintelui/reprezentantului legal este documentat separat. Copilul primește un exemplar al informației adecvate vârstei.",
+   "section_style": "Section break, H2 document subline, H3 module title, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

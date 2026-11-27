@@ -5,6 +5,9 @@ os.chdir(os.path.join(os.path.dirname(__file__),'..','..','content'))
 base=f'countries/{cc}'; errs=[]
 def exists(rel):
     if not any(os.path.exists(os.path.join(b,rel)) for b in (base,'.')): errs.append('missing file: '+rel)
+for f in glob.glob('eu/templates/part-ii/*.docx'):
+    x=zipfile.ZipFile(f).read('word/document.xml').decode()
+    if re.search(r'\{\{|\{#',''.join(re.findall(r'<w:t[^>]*>([^<]*)',x))): errs.append('old variable in '+f)
 for f in glob.glob('**/*.json',recursive=True):
     try: json.load(open(f))
     except Exception as e: errs.append(f'invalid json {f}: {e}')
@@ -37,7 +40,7 @@ for doc in d['documents']:
     if doc['kind']!='participant_document' and doc['id'] not in chk['by_document']: errs.append('no Check items for '+doc['id'])
 for f in glob.glob(f'{base}/templates/**/*.json',recursive=True):
     if '{{' in open(f).read(): errs.append('old variable in '+f)
-for f in glob.glob(f'{base}/templates/part-ii/*.docx'):
+for f in glob.glob(f'{base}/templates/part-ii/*.docx'):  # country-specific extra forms, if any
     x=zipfile.ZipFile(f).read('word/document.xml').decode()
     if re.search(r'\{\{|\{#',''.join(re.findall(r'<w:t[^>]*>([^<]*)',x))): errs.append('old variable in '+f)
 print(f'{cc}: {len(ids)} documents, {len(tids)} participant templates;','errors:',errs or 'none')

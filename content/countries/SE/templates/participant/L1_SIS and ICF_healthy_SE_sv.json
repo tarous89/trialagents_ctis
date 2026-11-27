@@ -1,0 +1,119 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Consent Form - Healthy Adults",
+  "doc_name_local": "Information till frisk försöksperson och samtycke till klinisk prövning",
+  "target_country": "Sweden",
+  "country_code": "SE",
+  "target_language": "Swedish",
+  "language_code": "sv",
+  "doc_type": "healthy_adults",
+  "file_name": "L1_SIS and ICF_healthy",
+  "sort_order": "1",
+  "description": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies.",
+  "target_population": "[population description from the protocol]",
+  "target_population_label": "[population label]",
+  "footer": [
+   "[document name] - [population label] - version 1.0 - [date]",
+   "Protokollnummer: [FYLL I: protokollnummer] | EU-prövningsnummer: [FYLL I: EU-prövningsnummer]"
+  ],
+  "info_table": [
+   "Prövningens titel",
+   "Kort titel för prövningen",
+   "Protokollnummer [FYLL I: version och datum]",
+   "EU-prövningsnummer",
+   "Sponsor [FYLL I: fullständig adress]",
+   "Ansvarig prövare",
+   "Prövningsställets namn",
+   "Prövningsställets adress"
+  ],
+  "content_instructions": "Utgå från Kliniska Studier Sveriges svenska mall för klinisk läkemedelsprövning enligt CTR och ICH-GCP E6 (R3), version 7 daterad 2025-11-12. Använd ett klart, enkelt, neutralt och sakligt språk, rikta texten direkt till mottagaren, skriv ut förkortningar första gången och undvik vädjande eller förskönande formuleringar. Anpassa alla exempel och platshållare till protokollet och ta bort instruktioner och alternativ som inte gäller. Beskriv tydligt vad som är forskning och vad som är ordinarie vård. Ange sponsor, prövningsställe, ansvarig prövare, EU-prövningsnummer, prövningens titel, version och kontaktuppgifter. Beskriv endast faktiska data, prov, procedurer, mottagare och överföringar. Ange personuppgiftsansvarig, ändamål, rättslig grund, pseudonymisering, lagring, rättigheter, dataskyddsombud och klagomål till Integritetsskyddsmyndigheten. När Biobankslag (2023:38) är tillämplig ska ansvarig svensk biobank, provtyper, kodning, ändamål, lagringstid, mottagare, hantering efter analys och återkallelse beskrivas. Obligatoriska prov och analyser inom huvudprövningen omfattas av huvudsamtycket när de är fullt beskrivna. Fristående framtida eller sekundär användning ska hanteras i mallen för sekundär och framtida användning. Använd endast för beslutskompetenta friska vuxna. Ersätt patient-, diagnos-, behandling- och standardvårdsspråk med neutral terminologi. Förklara varför friska vuxna behövs och ange relevanta mål såsom säkerhet, tolerabilitet, farmakokinetik eller farmakodynamik. Ange tydligt att personlig hälsovinst inte förväntas och att screening, provsvar, betalning eller extra kontroller inte är hälsovinster. Beskriv screening, eventuell första-gången-i-människa-exponering, doseskalering, okända och dosrelaterade risker, restriktioner, proportionerlig ersättning vid tidigt avbrott och säkerhetsuppföljning. Ta endast med journalåtkomst eller kontakt med ordinarie vårdgivare om protokollet faktiskt kräver det. Den muntliga informationen och inhämtandet av samtycket ska som huvudregel genomföras av samma legitimerade läkare eller legitimerade tandläkare. Om Läkemedelsverket har beviljat undantag får annan hälso- och sjukvårdspersonal genomföra samtalet och inhämta samtycket enligt den godkända proceduren.",
+  "styling_instructions": "Behåll den svenska källmallens tydliga avsnittsstruktur. Sidhuvudet ska ange EU-prövningsnummer, prövningens titel på svenska och dokumentversion. Använd endast följande tydligt typade markeringar i template_content och metadata: [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] som en fristående rad eller ett fristående stycke för text som endast är riktad till författaren och alltid ska tas bort; [FYLL I: ...] inline för uppgifter eller ord som ska ersättas med prövningsspecifik deltagartext; och [VALFRI TEXT – BEHÅLL ELLER TA BORT] som en fristående rad direkt före ett fullständigt valfritt stycke, en fullständig punkt, ett fullständigt samtyckesval, ett helt valfritt avsnitt eller ett helt valfritt signaturblock. [INSTRUKTION – TA BORT FÖRE SLUTVERSION: ...] och [VALFRI TEXT – BEHÅLL ELLER TA BORT] får aldrig placeras inne i en deltagarmening eller punkt. Markeringar får inte nästlas. Alla markeringar, ej valda alternativ och irrelevanta avsnitt ska vara borttagna innan dokumentet lämnas till läsaren. Behåll systemvariablerna [document name], [population label] och [date] oförändrade. Använd korta stycken, tydliga rubriker och separata fält för namn, datum och underskrift."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Använd ett enkelt språk. Undvik svåra ord och ovanliga förkortningar. Undvik vädjande formuleringar.]\n\nInformation till friska försökspersoner\n\nVi vill fråga dig om du vill delta som frisk försöksperson i en klinisk prövning. I dokumentet får du information om varför prövningen genomförs, vad som förväntas av dig samt vilka risker, olägenheter och ersättningar som gäller. Deltagandet är forskning och inte behandling. Ställ frågor om allt du undrar över innan du bestämmer dig.",
+   "section_style": "H2 document subline, Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "Vad är syftet med den kliniska prövningen och varför vill ni att jag ska delta?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv bakgrund, syfte och varför friska vuxna behövs. Ange om målen gäller säkerhet, tolerabilitet, farmakokinetik, farmakodynamik, födoeffekt, interaktion eller annat. Nämn första-gången-i-människa eller doseskalering endast när det gäller.]\n\nDu tillfrågas eftersom du är en frisk vuxen och kan uppfylla prövningens kriterier. Screening visar om du kan delta.\n\nPrövningen bedrivs vid [FYLL I: sjukhus/klinik/prövningsenhet] i samarbete med [FYLL I: sponsororganisation]. Huvudansvarig sponsor är [FYLL I: företag eller organisation]. Denna kliniska prövning är granskad och godkänd av regulatorisk läkemedelsmyndighet i Sverige.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "Hur går prövningen till?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv screening, grupper, doser, randomisering, placebo, blindning, eventuella inläggningar, besök, telefonkontakter, undersökningar, provmängder och deltagandets längd. Ange alla relevanta begränsningar för läkemedel, kosttillskott, alkohol, mat, fasta, rökning, motion, bilkörning, graviditet, donation och deltagande i andra prövningar.]\n\nDu kommer att få [FYLL I: prövningsläkemedel/placebo/jämförelseintervention]. Detta är inte behandling.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om relevant.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\nDetta är första gången läkemedlet ges till människor. / Läkemedlet har tidigare getts till cirka [FYLL I: antal] personer.\n\nDetta kommer att ske om du väljer att delta:",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Anpassa följande text och behåll den endast om den gäller.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nBesök 1 – screening\n\nVi går igenom din sjukdomshistoria, läkemedel, kosttillskott, alkohol- och tobaksanvändning och genomför [FYLL I: läkarundersökning, blod- och urinprov, EKG, drogtest, graviditetstest och andra relevanta undersökningar]. Resultaten kan innebära att du inte kan delta.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Ange i deltagartexten vilka resultat som meddelas och om ordinarie vårdgivare kontaktas.]\n\nBesöket tar cirka [FYLL I: prövningsspecifik uppgift] minuter.",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Anpassa följande text och behåll den endast om den gäller.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nBesök 2 – dosering eller inläggning\n\nDu får [FYLL I: läkemedel/placebo] som [FYLL I: form] i dosen [FYLL I: prövningsspecifik uppgift].\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Vid doseskalering.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\nDu ingår i dosgrupp [FYLL I: dosgrupp]. Nästa dosnivå ges först efter att säkerhetsuppgifter har bedömts. Under [FYLL I: X timmar/dagar] genomförs upprepade kontroller och totalt högst [FYLL I: prövningsspecifik uppgift] ml blod tas.\n\nDu ska följa följande restriktioner: [FYLL I: prövningsspecifik uppgift]. Besöket eller inläggningen varar cirka [FYLL I: prövningsspecifik uppgift].",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Anpassa följande text och behåll den endast om den gäller.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nBesök 3 – säkerhetsuppföljning\n\nEfter sista dosen följs du upp under [FYLL I: X dagar/veckor] med [FYLL I: besök, telefonkontakter, blodprov och andra kontroller]. Uppföljningen kan behöva fortsätta även om du slutar ta prövningsläkemedlet för att kontrollera din säkerhet.\n\nEfter [FYLL I: slutbesöket/sista telefonkontakten] är deltagandet klart.",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "Möjliga konsekvenser, risker och olägenheter med att delta i prövningen\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv kända och rimligt förutsebara risker utan jämförelse med en underliggande sjukdom. Framför allt ska okända risker, första-gången-i-människa-risker och dosrelaterade risker förklaras när de är relevanta.]\n\n[FYLL I: Prövningsläkemedlet/interventionen] kan ge [FYLL I: biverkningar med frekvens och allvarlighetsgrad]. Det kan finnas risker som ännu inte är kända. Högre doser kan medföra fler eller allvarligare biverkningar. För att minska riskerna används [FYLL I: stegvis dosering, övervakning, stoppregler och akut beredskap].\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv även risker och olägenheter vid blodprov, nålstick, biopsier, strålning, fasta, inläggning, aktivitet- eller kostrestriktioner samt reproduktionsrisker för dig, partner, embryo, foster eller ammande barn.]\n\nDu förväntas inte få någon direkt hälsomässig fördel av att delta. Screening, extra kontroller, provsvar, betalning och kostnadsersättning är inte hälsovinster. Prövningen kan ge kunskap som bidrar till framtida utveckling av [FYLL I: läkemedlet/behandlingen].",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "Vad händer med mina uppgifter?\n\nI denna kliniska prövning kommer information om dig att samlas in och registreras.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Förklara vilka uppgifter som samlas in, varifrån de hämtas, hur de hanteras, skyddas, lagras och analyseras, hur länge de bevaras och vilka som får tillgång. Ange ändamål och rättslig grund enligt dataskyddsförordningen. Om uppgifter överförs utanför EU/EES ska land eller internationell organisation, skyddsnivå och tillämpliga skyddsåtgärder beskrivas.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "Datainsamling\n\nUnder prövningen kommer uppgifter om [FYLL I: ålder, kön, nuvarande och tidigare sjukdomar, behandlingar, laboratorieresultat, undersökningsresultat och andra relevanta uppgifter] att samlas in från [FYLL I: dig, patientjournalen, prövningsundersökningar och andra specificerade källor].\n\nInsamlade uppgifter kommer att lagras och databehandlas. En analys kommer att göras av [FYLL I: prövningsspecifik uppgift], vilket innebär att dina personuppgifter även kommer att hanteras av [FYLL I: prövningsspecifik uppgift]. Personuppgifterna kommer att vara kodade (pseudonymiserade). [FYLL I: prövningsspecifik uppgift] kommer inte att ha tillgång till kodnyckeln.\n\nÄndamålet med personuppgiftsbehandlingen är [FYLL I: genomförande av prövningen, forskning, säkerhetsrapportering, kvalitetskontroll och myndighetskrav]. För myndigheter och andra inom offentlig verksamhet kan forskning som uppgift av allmänt intresse vara rättslig grund.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: För privata företag, föreningar och organisationer ska den rättsliga grund som faktiskt gäller för deras behandling anges.]\n\nDina uppgifter behandlas så att obehöriga inte kan ta del av dem.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "Mina rättigheter\n\nAnsvarig för dina personuppgifter är [FYLL I: ange personuppgiftsansvarig organisation]. Enligt EU:s dataskyddsförordning har du rätt att kostnadsfritt få information om och ta del av de uppgifter om dig som hanteras i prövningen och vid behov få fel rättade. Du kan också begära radering eller begränsning av behandling. Dessa rättigheter kan vara begränsade när uppgifterna är nödvändiga för forskningen eller måste bevaras enligt lag.\n\nOm du vill använda dina rättigheter ska du kontakta [FYLL I: personuppgiftsansvarig/ansvarig prövare]. Dataskyddsombud nås på [FYLL I: kontaktuppgifter]. Om du är missnöjd med hur dina personuppgifter behandlas har du rätt att lämna klagomål till Integritetsskyddsmyndigheten.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "Kvalitetskontroll och arkivering\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Ta endast med följande text om prövningen faktiskt kräver åtkomst till patientjournal eller andra vårduppgifter.]\n\nOm journalåtkomst ingår kan en person utsedd av sponsor eller en myndighetsrepresentant jämföra insamlade uppgifter med relevanta journaluppgifter för att säkra kvaliteten och kontrollera att prövningen genomförts korrekt. Den som granskar uppgifterna omfattas av sekretess eller tystnadsplikt. Genom att skriva under samtycket tillåter du den journalinsyn som uttryckligen beskrivs i denna information.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om journalåtkomst inte ingår ska detta anges och all hänvisning till journalinsyn tas bort från informationen och samtycket.]\n\nData och personuppgifter bevaras enligt gällande regler. För prövningar enligt CTR sparas dokumentation normalt i 25 år efter prövningens slut och för ATMP-prövningar i 30 år.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "Vad händer med mina prov?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Ta bort avsnittet om inga biologiska prov samlas in, används eller bevaras. Om Biobankslag (2023:38) är tillämplig ska ansvarig svensk biobank, provtyper, kodning, lagringstid och hantering beskrivas. Ange vilka prov som inte bevaras i biobank.]\n\nDe prov [FYLL I: ange specifikt vilka prov] som tas eller används i prövningen kommer att [FYLL I: analyseras direkt/bevaras] i [FYLL I: namn på svensk biobank och huvudman]. De sparas i upp till [FYLL I: prövningsspecifik uppgift] år efter prövningens slut för [FYLL I: prövningens konkreta ändamål].\n\nProven kodas så att de inte direkt kan kopplas till dig. Kodnyckeln förvaras hos [FYLL I: vårdgivaren/prövningsstället] och skyddas mot obehörig åtkomst. Proven får endast användas för de ändamål som beskrivs här och som du har samtyckt till.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Behåll och anpassa följande text endast om prov analyseras för en allmänfarlig sjukdom enligt smittskyddslagen.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\nOm ett analyssvar visar en allmänfarlig sjukdom rapporteras och hanteras det enligt klinikens normala rutiner.\n\nKodade prov kan analyseras hos [FYLL I: laboratorium eller samarbetspartner] i [FYLL I: Sverige/annat EU- eller EES-land/tredjeland]. Efter analysen kommer proven att [FYLL I: återlämnas/förstöras/förbrukas/fortsätta förvaras hos mottagaren i X år].\n\nDu kan återkalla samtycket till bevarande eller användning av identifierbara prov genom att kontakta [FYLL I: ansvarig prövare]. Proven ska då förstöras. Om det inte är möjligt att förstöra endast dina prov utan att andra prov förstörs ska de i stället avidentifieras. Resultat som redan har tagits fram kan fortsatt användas.\n\nOm prov ska bevaras för framtida ännu inte planerad forskning ska detta beskrivas och samtyckas till separat i mallen ”Sekundär och framtida användning av uppgifter eller biologiska prov”. Ett sådant samtycke gäller bevarandet; innan prov används i ett nytt projekt krävs ny etisk prövning, och Etikprövningsmyndigheten eller Överklagandenämnden för etikprövning avgör om nytt samtycke krävs.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "Hur får jag information om resultatet av prövningen?\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Informera om hur försökspersonen kan ta del av egna relevanta resultat och prövningens samlade resultat, möjligheten att avstå från individuella resultat och hur oförutsedda fynd hanteras.]\n\nPrövningens resultat registreras i EU:s databas för kliniska läkemedelsprövningar och kan publiceras i vetenskapliga tidskrifter och presenteras vid vetenskapliga möten. Resultaten redovisas på gruppnivå så att enskilda personer inte kan identifieras.\n\nDu kan be ansvarig prövare informera dig om resultaten när de finns tillgängliga.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Beskriv om, när och hur individuella resultat eller behandlingsgrupp meddelas.]",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 14,
+   "section_content": "Försäkring och ersättning\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Ange det heltäckande försäkrings- och skadeersättningsskydd som faktiskt gäller för friska försökspersoner. Kontrollera om Patientskadeförsäkringen, Läkemedelsförsäkringen eller ett kompletterande försäkringsskydd gäller.]\n\nFör denna prövning gäller följande försäkringsskydd: [FYLL I: prövningsspecifik uppgift]. Om du anser att du har skadats ska du kontakta [FYLL I: kontaktväg].\n\nDu får [FYLL I: X kronor] för [FYLL I: genomförda besök, tid och olägenheter]. Betalningen sker [FYLL I: villkor och tidpunkt]. Om deltagandet avslutas i förtid får du ersättning i förhållande till genomförda moment, om inte [FYLL I: tydlig och saklig undantagsregel] gäller. Ersättningen kan vara skattepliktig.\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Behåll följande text endast om den gäller.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\nRese- och andra rimliga kostnader ersätts mot kvitto.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 15,
+   "section_content": "Deltagandet är frivilligt\n\nDu väljer själv om du vill delta och kan när som helst avbryta utan att ange någon anledning. Det påverkar inte din tillgång till vanlig hälso- och sjukvård eller dina övriga rättigheter.\n\nNär du avbryter upphör nya prövningsaktiviteter, förutom om du frivilligt går med på en beskriven säkerhetsuppföljning eller om medicinskt nödvändig vård krävs. Redan insamlade uppgifter kan fortsatt användas när det behövs för prövningens tillförlitlighet, säkerhetsrapportering eller lagstadgad dokumentation. För prov gäller avsnittet ”Vad händer med mina prov?”.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 16,
+   "section_content": "Ansvariga för prövningen\n\n<b>Ansvarig prövare</b>\nNamn: [FYLL I: prövningsspecifik uppgift]\nTelefonnummer: [FYLL I: prövningsspecifik uppgift]\nE-postadress: [FYLL I: prövningsspecifik uppgift]\n\n<b>Forskningssjuksköterska eller annan kontaktperson</b>\nNamn: [FYLL I: prövningsspecifik uppgift]\nTelefonnummer: [FYLL I: prövningsspecifik uppgift]\nE-postadress: [FYLL I: prövningsspecifik uppgift]\n\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Ange akut kontaktväg och tillgänglighet om relevant.]",
+   "section_style": "H3 module title, H4 section title, Rich body text"
+  },
+  {
+   "section_number": 17,
+   "section_content": "Samtycke till att delta som frisk försöksperson\n\nFörsökspersons-ID: [FYLL I: prövningsspecifik uppgift]\n\nJag har fått muntlig och skriftlig information, har haft möjlighet att ställa frågor och har haft tillräcklig tid att besluta. Jag får en kopia av informationen och den signerade samtyckeshandlingen.\n\nJag bekräftar att:\n• Jag deltar frivilligt och vet att deltagandet inte är behandling och att direkt hälsovinst inte förväntas.\n• Jag vet att samtycket till deltagande omfattar prövningens obligatoriska procedurer som beskrivs i informationen. Självständiga frivilliga aktiviteter beslutas separat.\n• Jag har tagit del av informationen om hur mina personuppgifter behandlas.\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om journalåtkomst ingår.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\n• Jag tillåter den journalinsyn som beskrivs i informationen.\n• Jag vet att jag när som helst kan återkalla mitt samtycke utan att ange anledning.\n[INSTRUKTION – TA BORT FÖRE SLUTVERSION: Om tillämpligt.]\n\n[VALFRI TEXT – BEHÅLL ELLER TA BORT]\n\n• Jag samtycker till att mina prov hanteras och bevaras i en svensk biobank på beskrivet sätt.\n\n<b>Jag samtycker frivilligt till att delta i prövningen enligt den information som jag har fått.</b>\n\n| Underskrift (försöksperson) | Namnförtydligande | Datum |\n|  |  |  |\n\nJag intygar att jag personligen har genomfört informationssamtalet, besvarat frågor, kontrollerat att försökspersonen har förstått informationen och inhämtat ett frivilligt samtycke.\n\n| Underskrift | Namnförtydligande | Datum |\n| Legitimerad läkare eller legitimerad tandläkare som genomfört informationssamtalet och inhämtat samtycket, eller annan hälso- och sjukvårdspersonal enligt ett av Läkemedelsverket beviljat undantag |  |  |\n\n<b><i>En signerad kopia lämnas till försökspersonen.</i></b>",
+   "section_style": "H2 document subline, Rich body text, Signature section, Standard table"
+  }
+ ]
+}

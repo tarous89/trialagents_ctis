@@ -1,0 +1,99 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Adolescents",
+  "doc_name_local": "Kinder- und Jugendlicheninformation und Zustimmungserklärung (10–13 Jahre)",
+  "target_country": "Austria",
+  "country_code": "AT",
+  "target_language": "German",
+  "language_code": "de",
+  "doc_type": "adolescents",
+  "file_name": "L1_SIS and ICF_age 10-13",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+  "target_population": "[Beschreibung der Population laut Prüfplan]",
+  "target_population_label": "[Kurzbezeichnung der Population]",
+  "footer": [
+   "[Dokumentname] - [Kurzbezeichnung der Population] - Version 1.0 - [Datum]",
+   "Prüfplannummer: [ausfüllen] | EU-CT-Nummer: [ausfüllen]"
+  ],
+  "info_table": [
+   "Titel der klinischen Prüfung",
+   "Kurztitel der klinischen Prüfung",
+   "Prüfplannummer [Version und Datum ergänzen]",
+   "EU-CT-Nummer",
+   "Sponsor [mit vollständiger Anschrift und Länderangabe]",
+   "Verantwortliche Prüfärztin/verantwortlicher Prüfarzt",
+   "Name des Prüfzentrums",
+   "Anschrift des Prüfzentrums"
+  ],
+  "content_instructions": "LÄNGENLIMIT: Zielumfang höchstens 6 bis 8 Seiten; kürzer und direkter als die Elterninformation. Bei mehr als 10 Seiten ist zusätzlich eine 1- bis höchstens 2-seitige Kurzzusammenfassung erforderlich. Diese österreichische Fassung richtet sich an 10- bis 13-Jährige und ergänzt, ersetzt aber nicht, die Information und Einwilligung der obsorgeberechtigten Person. Minderjährige sind alters- und reifegerecht zu informieren; ab etwa dem 8. Lebensjahr ist ihre eigene Zustimmung einzuholen, und die Studie darf nicht durchgeführt oder fortgesetzt werden, wenn eine erforderliche Zustimmung fehlt oder widerrufen wird. Verwenden Sie direkte Du-Ansprache, kurze Erklärungen von Randomisierung, Placebo und unbekannten Risiken und behalten Sie alle entscheidungsrelevanten Inhalte. Das Dokument erfasst die ausdrückliche Zustimmung/Assent; Schweigen gilt nicht als Zustimmung. Ein Nein oder späterer Widerruf ist zu respektieren. Sensible reproduktive, genetische oder optionale Module nur bei tatsächlicher Relevanz und verständlicher Erklärung aufnehmen. Neu ergänzte oder angepasste Texte sind in kurzen, leicht verständlichen Sätzen zu formulieren; Fachbegriffe aus der österreichischen Musterinformation bleiben unverändert, neu eingeführte Fachbegriffe sind kurz zu erklären.",
+  "styling_instructions": "LÄNGEN- UND LAYOUTVORGABE: Das Dokument deutlich kürzer als die Erwachseneninformation halten. Kurze Sätze, große gut lesbare Schrift, viel Weißraum und höchstens eine wesentliche Aussage pro Absatz verwenden. Für Kinder nach Möglichkeit Bilder, Symbole, Ablaufgrafiken oder einfache Tabellen einsetzen. Die Information soll regelmäßig höchstens 3 bis 5 Seiten umfassen; falls ausnahmsweise mehr als 10 Seiten entstehen, ist zusätzlich eine 1- bis höchstens 2-seitige Kurzzusammenfassung erforderlich. Bearbeitungshinweise und nicht anwendbare Alternativen vor Ausgabe entfernen. Die Zustimmung/Assent-Seite muss übersichtlich sein und einfache Ja/Nein-Felder sowie ausreichend Platz für Name, Datum, Unterschrift oder ein anderes sinnvolles Zeichen enthalten."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Liebe/r ......!\n\nWir möchten dich fragen, ob du bei der oben genannten klinischen Prüfung mitmachen möchtest. Deine Eltern oder andere obsorgeberechtigte Personen erhalten eine eigene ausführliche Information und müssen rechtlich zustimmen. Du bekommst diese Fassung, damit du selbst verstehen und mitentscheiden kannst.\n\n<b>Deine Teilnahme ist freiwillig. Du kannst Nein sagen oder später jederzeit ohne Grund aufhören. Das hat keine Nachteile für deine normale medizinische Behandlung.</b>\n\nBitte lies die Information in Ruhe. Du kannst alle Fragen stellen und mit einer Person deines Vertrauens darüber sprechen.",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Warum wird diese klinische Prüfung gemacht?</b>\n\nDu hast ...... . Die Ärztinnen und Ärzte möchten herausfinden, ob ...... . <i>(Zweck und warum Kinder beziehungsweise jüngere Jugendliche einbezogen werden in direkter, nicht technischer Sprache erklären.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Welche anderen Behandlungen gibt es?</b>\n\nWenn du nicht mitmachst, bekommst du weiterhin die normale Behandlung. Diese Möglichkeiten gibt es: ...... . Deine Ärztin/dein Arzt erklärt dir Vor- und Nachteile.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Wie läuft die Prüfung ab?</b>\n\nDie Prüfung dauert für dich ungefähr ...... . Insgesamt machen NN Personen mit. Du kommst ...... Mal und bleibst gegebenenfalls ...... .\n\nEs werden folgende Untersuchungen und Behandlungen gemacht: ...... . Erkläre Blutmengen, Eingriffe und was zusätzlich zur normalen Behandlung geschieht.\n\n<i>(Randomisierung, Placebo und Verblindung in kurzen Beispielen erklären.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Was ist das Prüfmedikament?</b>\n\nXXXX ist ...... . Es ist für deine Erkrankung noch nicht zugelassen / bereits für ...... zugelassen. Es wurde bisher bei ...... Erwachsenen/Jugendlichen/Kindern verwendet. Du bekommst ...... .",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Kann die Teilnahme dir helfen?</b>\n\nVielleicht ...... . Das ist aber nicht sicher. / Du wirst wahrscheinlich keinen direkten gesundheitlichen Nutzen haben. Was wir lernen, kann später anderen Kindern und Jugendlichen helfen. <i>(Nicht anwendbare Alternative löschen.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Welche Risiken und Beschwerden gibt es?</b>\n\nDie wichtigsten bekannten Nebenwirkungen sind: ...... . Erkläre, wie oft sie ungefähr vorkommen. Es können auch Wirkungen auftreten, die noch nicht bekannt sind.\n\nUntersuchungen können ...... verursachen. Melde sofort Beschwerden, Angst, Schmerzen oder den Wunsch, eine Maßnahme abzubrechen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Was musst du beachten?</b>\n\n...... <i>(Medikamente, Ernährung, Termine, Sport, Autofahren, Verhütung oder andere Regeln nur soweit anwendbar und mit Grund erklären.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Schwangerschaft und Verhütung</b>\n\n<i>(Nur bei tatsächlicher Relevanz und in angemessener, respektvoller Sprache aufnehmen.)</i> Erkläre Tests, Verhütung, Dauer und sofortige Information bei Schwangerschaft. Besprich sensible Fragen vertraulich nach den geltenden Regeln.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 10,
+   "section_content": "<b>9. Was passiert mit deinen Daten und Proben?</b>\n\nDeine Gesundheitsdaten und gegebenenfalls Proben erhalten einen Code. Wer sie sehen darf, wohin sie geschickt werden und wie lange sie gespeichert werden, steht ausführlich in der Elterninformation. Veröffentlichungen nennen dich nicht. Optionale Tests oder Proben müssen klar getrennt sein; du darfst auch dazu Nein sagen.\n\n<i>(Falls genetische Untersuchungen stattfinden, sind Zweck und praktische Bedeutung alters- beziehungsweise verständnisgerecht zu erklären; genetische Untersuchungen außerhalb des beschriebenen Studienumfangs sind nicht umfasst.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 11,
+   "section_content": "<b>10. Wann endet deine Teilnahme?</b>\n\nDu kannst jederzeit Nein sagen oder aufhören. Auch deine obsorgeberechtigte Person kann die Einwilligung widerrufen. Die Ärztin/der Arzt kann die Teilnahme aus Sicherheitsgründen beenden. Neue wichtige Informationen werden dir so erklärt, dass du erneut entscheiden kannst.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 12,
+   "section_content": "<b>11. Wen kannst du fragen?</b>\n\nPrüfärztin/Prüfarzt: ......\nTelefon, auch für Notfälle: ......\nDu kannst auch deine Eltern oder eine andere Vertrauensperson fragen.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 13,
+   "section_content": "<b>12. Deine Zustimmung</b>\n\nMein Name: ...... Geburtsdatum: ......\n\n□ Ich habe die Information gelesen oder erklärt bekommen.\n□ Meine Fragen wurden beantwortet.\n□ Ich weiß, dass ich Nein sagen und jederzeit aufhören darf.\n□ Ich möchte mitmachen.\n□ Ich möchte nicht mitmachen.\n□ Ich bin noch unsicher und möchte ein weiteres Gespräch.\n\n<i>(Nur aufnehmen, wenn die genetische Untersuchung freiwillig und optional ist.)</i>\n\n<b>Meine Entscheidung zur optionalen genetischen Untersuchung</b>\n\n□ Ich möchte bei der beschriebenen genetischen Untersuchung mitmachen.\n□ Ich möchte bei der beschriebenen genetischen Untersuchung nicht mitmachen.\n\n......................................................................................................\nDatum und Unterschrift des Kindes beziehungsweise der oder des Jugendlichen\n\nDie Information wurde altersgerecht erklärt und der geäußerte Wille dokumentiert.\n......................................................................................................\nDatum, Name und Unterschrift der aufklärenden Prüfärztin/des aufklärenden Prüfarztes",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}

@@ -1,0 +1,261 @@
+[
+ {
+  "id": "kv102",
+  "kind": "text",
+  "question": "EU clinical trial number",
+  "instruction": "[INSERT: EU trial number; leave empty in an initial application until CTIS assigns it]",
+  "condition": null
+ },
+ {
+  "id": "kv101",
+  "kind": "text",
+  "question": "Full title of the clinical trial",
+  "instruction": "[INSERT: Full title of the clinical trial, as in the protocol]",
+  "condition": null
+ },
+ {
+  "id": "date",
+  "kind": "text",
+  "question": "Sponsor version/date of the document",
+  "instruction": "[INSERT: Date of this document version]",
+  "condition": null
+ },
+ {
+  "id": "v100",
+  "kind": "text",
+  "question": "Specify how potential participants will be identified and if it involves access to identifiable information. (e.g. at the clinic/trial site, via referrals, publicising of the trial/advertisement, via access to identifiable information such as existing patient lists and medical records, or a combination of several methods) —",
+  "instruction": "[INSERT: A paragraph in the answer language explaining to regulators how potential clinical trial participants will be identified and whether identification will involve access to identifiable information. Use broad, flexible categories supported by the study context: site sources such as electronic medical records, patient lists, clinic databases, routine-care chart review or specialist-centre cohorts; external clinical sources such as referrals from GPs, specialists, hospitals, clinics, laboratories, diagnostic networks, medical societies or disease registries; and public or self-referral routes such as clinical trial registries, sponsor trial-finder websites, EC-approved online or offline advertising, social media, posters, websites or patient organisations. State who identifies potential participants, such as the investigator or delegated site staff, and that identification is guided by the protocol inclusion and exclusion criteria. State whether identifiable information will be accessed and, if so, who may access it, when and on what basis, such as the treating physician or authorised site staff during routine care or pre-screening under institutional policy and applicable law. State that the sponsor will not access identifiable information before informed consent and that confidentiality and GDPR requirements will be respected. Include only routes supported by the study information and use flexible wording such as “may,” “where applicable” or “including but not limited to.” If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": null
+ },
+ {
+  "id": "v101",
+  "kind": "text",
+  "question": "Specify what the first act of recruitment is. (e.g. approaching potential participants at the clinic, recruitment letter, posting of advertisement. CTR, Annex I, K59) —",
+  "instruction": "[INSERT: A paragraph in the answer language explaining to regulators what the first act of recruitment is. Define the study-specific first recruitment activity using simple and unambiguous wording. Select the appropriate trigger supported by the study information, such as the first direct approach to a potential participant, first recruitment letter, first advertisement publication, first pre-screening activity, first provision of recruitment information or another protocol-defined activity. Clearly state that the selected activity “is considered the first act of recruitment” and that it occurs only after all required approvals and authorisations are in place. Do not invent a trigger where it is not provided. If the first act is defined at country or site level, state this clearly. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": null
+ },
+ {
+  "id": "v102",
+  "kind": "text",
+  "question": "If communication material (such as advertisement) is used for recruitment purposes, specify how the material will be used and why the material is necessary for recruiting the intended number of participants in this Member State. (Specify the format of the material, e.g. paper or electronic (digital form, AI tools, video and audio files), and how the material will be presented to potential particip",
+  "instruction": "[INSERT: A paragraph in the answer language explaining to regulators what participant-facing communication materials will be used for recruitment, how they will be used and why they are necessary to recruit the intended number of participants in the Member State. Include only materials supported by the study context, such as recruitment brochures, flyers, posters, invitation letters or emails, patient guides, website or clinic-page postings, registry listings, sponsor trial-finder pages, social-media advertisements, print or radio advertisements, digital forms, AI-supported tools, video or audio materials, or patient-organisation communications. For each material category mentioned, specify the format, such as paper, electronic, video, audio or both paper and electronic, and how it will be presented, such as in the clinic, by post, email, website, social media, waiting-room display or physician discussion. Briefly explain why the material is needed, for example because the eligible population is uncommon, dispersed, difficult to identify through routine care alone or because multiple channels are needed to meet the Member State recruitment target. State that only approved materials will be used and that they will be non-coercive and provided before consent. Use flexible wording and do not invent materials or recruitment challenges. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": null
+ },
+ {
+  "id": "v103",
+  "kind": "text",
+  "question": "In case communication material (such as advertisement) is used for recruitment purposes, specify the procedures in place for handling responses to the advertisements, including arrangements for information or advice to respondents found not to be suitable for inclusion in the clinical trial. (CTR, Annex I, K60) —",
+  "instruction": "[INSERT: A paragraph in the answer language explaining to regulators how responses to recruitment communications or advertisements will be handled. State who will receive and review responses, such as the investigator, study nurse, delegated site staff or an authorised external pre-screening provider, and describe the high-level process, such as acknowledging the enquiry, providing approved information, conducting an initial eligibility or pre-screening assessment and referring potentially eligible respondents to the trial site. Explain how privacy and confidentiality will be protected and that identifiable information will be collected or shared only as permitted by applicable law and with appropriate consent. Describe arrangements for respondents found unsuitable, such as informing them respectfully that they are not eligible, referring them back to their treating physician, providing general advice to seek appropriate medical care or directing them to other suitable resources where appropriate. Do not promise alternative treatment or trial participation and do not invent a specific response process. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": null
+ },
+ {
+  "id": "v104",
+  "kind": "text",
+  "question": "Specify who initially will be approaching potential participants regarding participation in the trial. (Specify the professional role and whether there is a prior clinical relationship with potential participants and/or if there is an external service provider for pre-screening of potential participants in place) —",
+  "instruction": "[INSERT: A paragraph in the answer language explaining to regulators who will initially approach potential participants regarding trial participation. Use role-based, flexible wording. State that the initial approach may be made by the treating or attending physician, Principal Investigator, Sub-Investigator, study nurse, referral physician or other appropriately delegated site staff during routine care, referral or a dedicated recruitment contact. State whether a prior clinical relationship may exist and, where applicable, that such a relationship is not required. If an external service provider or platform is used for pre-screening, describe its role at a high level and state that it will operate under appropriate agreements, privacy safeguards and site oversight, without independently obtaining informed consent unless expressly permitted. Do not invent providers or roles not supported by the study information. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": null
+ },
+ {
+  "id": "v105",
+  "kind": "text",
+  "question": "Specify any additional information that is of relevance to the Member State applicable rules on recruitment procedure, e.g. specific national requirements and legislation. (It is recommended that you refer to national law and/or legal guidance to ensure that all required information has been provided) —",
+  "instruction": "[INSERT: A paragraph in the answer language explaining to regulators any additional information relevant to applicable Member State rules on recruitment. Include only requirements relevant to the study, such as rules concerning access to patient records, direct approaches by treating or non-treating staff, use and approval of advertisements, social-media recruitment, patient organisations, external recruitment providers, pre-screening, privacy, data protection or reimbursement-related recruitment wording. Refer to applicable national law, legal guidance, ethics committee requirements or institutional policy at a high level without inventing legal citations. State “Not applicable” where no additional Member State-specific recruitment requirements have been identified beyond those described elsewhere. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": null
+ },
+ {
+  "id": "v106",
+  "kind": "text",
+  "question": "Specify the procedure for providing potential participants (or their legally designated representative, if applicable) with sufficient details on the trial to ensure that they have understood the information and can provide an informed consent. (Specify the various formats of information e.g. written, oral, video and if any information is given using decentralised methods. Specify who will provide",
+  "instruction": "[INSERT: A paragraph in the answer language explaining to regulators how potential participants or their legally designated representatives will receive sufficient information to understand the trial and provide informed consent. State that the Principal Investigator or appropriately delegated qualified staff will explain the trial in clear, lay language, including its purpose, procedures, risks, potential benefits, alternatives and voluntary nature. Specify the information formats used, such as written information, oral discussion, video or other approved formats, and whether any decentralised methods, remote discussions or electronic information tools may be used. Describe the setting and whether the person providing the information has a prior clinical relationship with the participant. Explain how understanding will be assessed, such as questions, discussion, clarification or ask-back, and how individual needs relating to language, literacy, age, capacity, disability or need for a representative, interpreter or witness will be addressed. State that sufficient time will be provided to review the information, take it home where appropriate, discuss it with family, companions or personal doctors and ask questions. Include safeguards such as privacy, confidentiality, the right to bring a companion, the right to refuse or withdraw without detriment and provision of a copy of the relevant information and signed consent documentation. Use flexible wording and do not invent formats or procedures. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": null
+ },
+ {
+  "id": "v107",
+  "kind": "text",
+  "question": "Specify the procedure for obtaining informed consent. (Specify when and where informed consent will be obtained, how privacy will be ensured, the professional role of the person obtaining the informed consent, whether there is a prior clinical relationship with the potential participant, and if there are any decentralised elements) —",
+  "instruction": "[INSERT: A paragraph in the answer language explaining to regulators when, where and how informed consent will be obtained. State that informed consent will be obtained before any trial-specific procedures, generally after an initial eligibility review and after the participant or representative has received sufficient information and time to decide. Specify the setting, such as a private consultation room, dedicated consent visit, remote consultation or another appropriate confidential environment. State that consent will be obtained by the Principal Investigator or an appropriately delegated and qualified investigator or Sub-Investigator and describe whether a prior clinical relationship with the potential participant may exist. Specify whether consent will be documented on paper, electronically or through another legally permitted method and describe any decentralised elements, such as remote consent discussions, electronic signatures, home visits or consent at a satellite site, only where supported by the study. State that privacy will be protected, questions will be answered, consent will be documented in the source records and a copy will be provided. Include parents, legal representatives or witnesses only where applicable. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": null
+ },
+ {
+  "id": "v108",
+  "kind": "text",
+  "question": "Specify any additional information that is of relevance to the Member State applicable rules on informed consent procedure, e.g. specific national requirements and legislation. (It is recommended that you refer to national law and/or legal guidance to ensure that all required information has been provided) —",
+  "instruction": "[INSERT: A paragraph in the answer language explaining to regulators any additional information relevant to applicable Member State rules on informed consent. Include only requirements relevant to the study, such as national rules for translated or validated participant materials, qualified interpreters, electronic consent, remote consent, required signatures, legal representatives, impartial witnesses, consent documentation, retention of records, withdrawal, re-consent or consent involving vulnerable populations. Where participants do not speak the required language, describe whether eligibility requires language proficiency or whether approved translations, interpreters or multilingual staff may be used, and state that consent will be obtained only when comprehension is assured. Refer to applicable national law, legal guidance, ethics committee requirements or institutional policy without inventing citations. State “Not applicable” where no additional Member State-specific consent requirements have been identified. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": null
+ },
+ {
+  "id": "kv108",
+  "kind": "choice",
+  "question": "Recruitment and informed consent procedure for incapacitated adults",
+  "instruction": "[CHOOSE: tick \"Yes\" only if incapacitated adults are included in this Member State; otherwise tick \"No\".]",
+  "condition": null
+ },
+ {
+  "id": "cb01",
+  "kind": "checkbox",
+  "question": "Does the clinical trial involve inclusion of incapacitated adults in the Member State? (See article 31 in CTR for all conditions)[CHOOSE: tick \"Yes\" only if incapacitated adults are included in this Member State; otherwise tick \"No\".]☐ Yes, please fill in the requested information in section 3.☐ No,",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb02",
+  "kind": "checkbox",
+  "question": "Does the clinical trial involve inclusion of incapacitated adults in the Member State? (See article 31 in CTR for all conditions)[CHOOSE: tick \"Yes\" only if incapacitated adults are included in this Member State; otherwise tick \"No\".]☐ Yes, please fill in the requested information in section 3.☐ No,",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "v109",
+  "kind": "text",
+  "question": "Specify how the potential participant will be involved in the decision to participate in the trial in a way that is adequate in view of their capacity. (This should include how information will be tailored to ensure participants are able to understand the information.) — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF incapacitated adults are included in this Member State – INSERT: A paragraph in the answer language explaining to regulators how an incapacitated adult will be involved in the decision to participate in a manner appropriate to their capacity. State that the participant will be involved as much as possible and that information will be adapted using simple language, shorter or repeated discussions, visual or alternative formats, opportunities for questions and checks of understanding. Where capacity is partial, borderline or fluctuating, describe how capacity will be assessed or reassessed and how the timing and format of the discussion may be adjusted. State that the participant’s wishes, assent, willingness, dissent or objection will be respected and documented as required. Where the participant has capacity, consent will be obtained directly; where capacity is absent, the legally designated representative process will be followed under applicable law. Include interpreter, support-person or communication assistance only where relevant. Do not invent specific assessment tools or participant limitations. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "incapacitated adults are included in this Member State"
+ },
+ {
+  "id": "v110",
+  "kind": "text",
+  "question": "Specify any additional information that is of relevance to the Member State applicable rules on the procedure for inclusion of incapacitated adults e.g. designation of the legal representative or other specific national requirements and legislation. (It is recommended that you refer to national law and/or legal guidance to ensure that all required information has been provided) — [OTHERWISE: enter",
+  "instruction": "[IF incapacitated adults are included in this Member State – INSERT: A paragraph in the answer language explaining to regulators the applicable Member State rules for including incapacitated adults. Describe how a legally designated representative will be identified and verified under local law and institutional policy, using appropriate role categories such as a court-appointed guardian, family member, next of kin or another legally authorised representative where permitted. State who performs the identification or verification, such as the treating physician, Principal Investigator or delegated site staff. Include other relevant national requirements only where applicable, such as capacity assessment, hierarchy of representatives, documentation of authority, participant objection, reassessment of capacity, re-consent or additional safeguards. Do not invent specific documents, representative categories or legal citations. State “Not applicable” where no additional Member State-specific requirements apply. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "incapacitated adults are included in this Member State"
+ },
+ {
+  "id": "kv107",
+  "kind": "choice",
+  "question": "Recruitment and informed consent procedure for minors",
+  "instruction": "[CHOOSE: tick \"Yes\" only if minors are included in this Member State; otherwise tick \"No\".]",
+  "condition": null
+ },
+ {
+  "id": "cb03",
+  "kind": "checkbox",
+  "question": "Does the clinical trial involve inclusion of minors in the Member State? (See article 32 in CTR for all conditions)[CHOOSE: tick \"Yes\" only if minors are included in this Member State; otherwise tick \"No\".]☐ Yes, please fill in the requested information in section 4.☐ No, not applicable. Please cont",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb04",
+  "kind": "checkbox",
+  "question": "Does the clinical trial involve inclusion of minors in the Member State? (See article 32 in CTR for all conditions)[CHOOSE: tick \"Yes\" only if minors are included in this Member State; otherwise tick \"No\".]☐ Yes, please fill in the requested information in section 4.☐ No, not applicable. Please cont",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "v111",
+  "kind": "text",
+  "question": "Specify how the potential minor participant will be involved in the informed consent and/or assent procedure. (Specify appropriate arrangements for obtaining and recording assent) — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF minors are included in this Member State – INSERT: A paragraph in the answer language explaining to regulators how potential minor participants will be involved in the decision to participate. State that children or adolescents will receive information and participate in the discussion in a manner appropriate to their age, maturity and ability to understand. Describe arrangements for obtaining assent where required, such as an age-appropriate assent form, oral assent or another documented method, while the parent or legal guardian provides informed consent. Include clear, age-appropriate language, opportunities to ask questions, sufficient time to consider participation, respect for dissent or objection, the right to withdraw and documentation of assent and consent. Where different arrangements apply to different age groups, describe them only if supported by the study information. Do not invent age thresholds or assent forms. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "minors are included in this Member State"
+ },
+ {
+  "id": "v112",
+  "kind": "text",
+  "question": "Specify who will obtain consent/assent from a minor participant. (Specify what kind of training and experience the members of the investigating team have in working with children) — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF minors are included in this Member State – INSERT: A paragraph in the answer language explaining to regulators who will obtain informed consent and assent from minor participants and their legal representatives. State that the process will be conducted by the Principal Investigator, Sub-Investigator or appropriately delegated and qualified site staff. Describe their relevant training or experience using flexible role-based categories, such as clinicians experienced in paediatric care, paediatric research, age-appropriate communication or working with children and families. State that the person conducting the process will explain the study in language appropriate to the child’s age and maturity, answer questions, assess understanding and document the consent and assent process. Do not invent training programmes, qualifications or experience not supported by the study information. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "minors are included in this Member State"
+ },
+ {
+  "id": "v113",
+  "kind": "text",
+  "question": "Specify the procedure for obtaining informed consent when the participant reach the age of legal competence. (See Question 9.4 in CTR Q&A) — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF minors are included in this Member State – INSERT: A paragraph in the answer language explaining to regulators how participants will be consented to continue in the trial when they reach the age of legal competence. State that, when the participant reaches legal competence under applicable national law, they will receive the current adult participant information and informed consent form, receive a full explanation of the study and be given sufficient time to ask questions and decide whether to continue. State that the participant will sign the adult informed consent form before further participation where required and that the previous parental consent or assent arrangements will be replaced or supplemented as applicable. If the participant declines, their participation will stop and withdrawal consequences will be handled according to the protocol and applicable law. Include interpreter, witness or communication accommodations only where relevant. Do not invent ages or timing requirements. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "minors are included in this Member State"
+ },
+ {
+  "id": "v114",
+  "kind": "text",
+  "question": "Specify any additional information that is of relevance to the Member State applicable rules on the procedure for inclusion of minors e.g. designation of the legal representative or other specific national requirements and legislation. (It is recommended that you refer to national law and/or legal guidance to ensure that all required information has been provided) — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF minors are included in this Member State – INSERT: A paragraph in the answer language explaining to regulators the applicable Member State rules for including minors. Describe how the child’s legally designated representative will be identified and verified under local law, typically using role categories such as parent or parents with parental responsibility, legal guardian or court-appointed guardian. State that the Principal Investigator or delegated site staff will verify the representative’s authority and retain documentation where required by site policy. Include other relevant national requirements only where applicable, such as the number of required parental signatures, assent age thresholds, treatment of dissent, separated parents, emergency guardianship, re-consent at legal competence or required paediatric expertise. Do not invent specific documents, age limits, representative roles or legal citations. State “Not applicable” where no additional Member State-specific requirements apply. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "minors are included in this Member State"
+ },
+ {
+  "id": "kv109",
+  "kind": "choice",
+  "question": "Recruitment and informed consent procedure where consent is witnessed by an impartial witness",
+  "instruction": "[CHOOSE: tick \"Yes\" only if participants may need consent witnessed by an impartial witness; otherwise tick \"No\".]",
+  "condition": null
+ },
+ {
+  "id": "cb05",
+  "kind": "checkbox",
+  "question": "Does the clinical trial involve a study population that might need consent witnessed by an impartial witness in the Member State? (See article 29 in CTR and section 2.8.9. in ICH E6(R3) for all conditions)[CHOOSE: tick \"Yes\" only if participants may need consent witnessed by an impartial witness; ot",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb06",
+  "kind": "checkbox",
+  "question": "Does the clinical trial involve a study population that might need consent witnessed by an impartial witness in the Member State? (See article 29 in CTR and section 2.8.9. in ICH E6(R3) for all conditions)[CHOOSE: tick \"Yes\" only if participants may need consent witnessed by an impartial witness; ot",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "v115",
+  "kind": "text",
+  "question": "Specify why is it expected that an impartial witness might be required. — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF participants may need consent witnessed by an impartial witness – INSERT: A paragraph in the answer language explaining to regulators why an impartial witness may be required. State that a witness may be needed where a participant or legally designated representative can understand the consent information but cannot read, write or sign the consent documentation, for example because of illiteracy, visual impairment, physical impairment, injury, acute illness or limitations associated with the clinical setting. Explain briefly why this possibility is relevant to the anticipated study population or setting. Distinguish inability to read, write or sign from lack of capacity to consent. Use flexible wording such as “may” or “where applicable” and do not invent specific impairments. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "participants may need consent witnessed by an impartial witness"
+ },
+ {
+  "id": "v116",
+  "kind": "text",
+  "question": "Specify how an impartial witness will be selected and the procedure for involving the impartial witness in the informed consent situation. — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF participants may need consent witnessed by an impartial witness – INSERT: A paragraph in the answer language explaining to regulators how an impartial witness will be selected and involved in the informed-consent process. State that the consenting investigator or delegated site staff will identify a suitable independent person who is not involved in the trial conduct, is independent of persons who may improperly influence the participant and can understand the information being presented. Appropriate examples may include an independent clinician, staff member not involved in the trial or another suitable independent individual permitted by local requirements. State that the witness will attend the consent discussion, observe the information being read or explained, observe the participant’s questions and expression of agreement and confirm that the information was accurately explained and apparently understood. Where the participant cannot sign, describe at a high level how oral or alternative consent will be documented. State that the witness will sign and date the consent form and that the process will be recorded in the source documents. Do not invent witness roles or additional procedures. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "participants may need consent witnessed by an impartial witness"
+ },
+ {
+  "id": "v117",
+  "kind": "text",
+  "question": "Specify any additional information that is of relevance to the Member State applicable rules on the procedure for clinical trials where consent witnessed by an impartial witness will occur e.g. specific national requirements and legislation. (It is recommended that you refer to national law and/or legal guidance to ensure that all required information has been provided) — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF participants may need consent witnessed by an impartial witness – INSERT: A paragraph in the answer language explaining to regulators any additional Member State rules applicable where consent is witnessed by an impartial witness. Include only relevant requirements, such as who may or may not act as the witness, independence criteria, whether the witness must attend the entire discussion, how information must be read or explained, how the participant expresses consent, required signatures and dates, documentation in source records, use of alternative signature methods or requirements for translated information and interpreters. Refer to applicable national law, legal guidance, ethics committee requirements or institutional policy without inventing legal citations. State “Not applicable” where no additional Member State-specific requirements have been identified. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "participants may need consent witnessed by an impartial witness"
+ },
+ {
+  "id": "kv110",
+  "kind": "choice",
+  "question": "Recruitment and informed consent procedure in an emergency situation",
+  "instruction": "[CHOOSE: tick \"Yes\" only if participants are included in an emergency situation; otherwise tick \"No\".]",
+  "condition": null
+ },
+ {
+  "id": "cb07",
+  "kind": "checkbox",
+  "question": "Does the clinical trial involve inclusion of participants in an emergency situation in the Member State? (See article 35 in CTR for all conditions)[CHOOSE: tick \"Yes\" only if participants are included in an emergency situation; otherwise tick \"No\".]☐ Yes, please fill in the requested information in ",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "cb08",
+  "kind": "checkbox",
+  "question": "Does the clinical trial involve inclusion of participants in an emergency situation in the Member State? (See article 35 in CTR for all conditions)[CHOOSE: tick \"Yes\" only if participants are included in an emergency situation; otherwise tick \"No\".]☐ Yes, please fill in the requested information in ",
+  "instruction": null,
+  "condition": null
+ },
+ {
+  "id": "v118",
+  "kind": "text",
+  "question": "Specify why it would not be possible to obtain informed consent from potential participants or a legal representative prior to enrolment into the clinical trial. — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF participants are included in an emergency situation – INSERT: A paragraph in the answer language explaining to regulators why it would not be possible to obtain informed consent from the potential participant or a legal representative before enrolment. State that the clinical situation may be acute, serious or life-threatening and require immediate protocol-defined intervention, and that delaying treatment to obtain consent could expose the participant to additional risk or make participation impossible within the required treatment window. Explain that the participant may be unconscious, cognitively impaired, medically unstable or otherwise unable to consent and that a legally designated representative may not be identifiable or reachable in time. Keep the justification high-level and study-specific and do not invent diagnoses, timelines or emergency circumstances. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "participants are included in an emergency situation"
+ },
+ {
+  "id": "v119",
+  "kind": "text",
+  "question": "Specify the arrangements in place for obtaining informed consent from the participant or from a legal representative, whichever can be obtained soonest. (Where a legal representative is expected to be required due to the participant not having capacity to consent, please also complete section 3 and 4 (if relevant) of this document) — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF participants are included in an emergency situation – INSERT: A paragraph in the answer language explaining to regulators the arrangements for obtaining informed consent after emergency enrolment. Describe a hierarchical and time-sequenced pathway in which informed consent will be sought from the participant as soon as they have capacity or from a legally designated representative at the earliest feasible opportunity, whichever can be obtained soonest. State who will assess capacity, identify the representative and obtain consent, referring to the relevant sections where appropriate. Explain that the participant or representative will receive full study information, have an opportunity to ask questions and receive the applicable information and consent documents. State that the process and timing will be documented and that continued participation will require consent where applicable. Include the right to refuse or withdraw and describe privacy safeguards at a high level. Do not invent a fixed timeframe or representative hierarchy. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "participants are included in an emergency situation"
+ },
+ {
+  "id": "v120",
+  "kind": "text",
+  "question": "If the participant regains capacity, specify how the informed consent will be obtained from the participant in situations where the legally designated representative initially provided the informed consent. — [OTHERWISE: enter \"N/A\"]",
+  "instruction": "[IF participants are included in an emergency situation – INSERT: A paragraph in the answer language explaining to regulators how informed consent will be obtained from a participant who regains capacity after consent was initially provided by a legally designated representative. State that capacity will be reassessed by an appropriately qualified clinician or investigator and that, once capacity is confirmed, the participant will be informed promptly about the trial, their enrolment and the consent previously provided on their behalf. State that the participant will receive the current participant information and informed consent form, be given sufficient time to review the information and ask questions and be asked to provide their own informed consent for continued participation. Explain that the participant may decline or withdraw without detriment and that this decision and any resulting actions will be documented. Use flexible wording and do not invent assessment tools, timelines or procedures. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "participants are included in an emergency situation"
+ },
+ {
+  "id": "v121",
+  "kind": "text",
+  "question": "Specify any additional information that is of relevance to the Member State applicable rules on the procedure for inclusion of participants in emergency situations e.g. designation of the legal representative or other specific national requirements and legislation. (It is recommended that you refer to national law and/or legal guidance to ensure that all required information has been provided) — [",
+  "instruction": "[IF participants are included in an emergency situation – INSERT: A paragraph in the answer language explaining to regulators any additional Member State rules applicable to inclusion of participants in emergency situations. Include only requirements relevant to the study, such as designation or hierarchy of legally designated representatives, capacity assessment, confirmation that no prior objection is known, permitted emergency-enrolment conditions, required documentation, timelines for deferred consent, re-consent after recovery, treatment of refusal or withdrawal and information or data handling where consent is not subsequently obtained. State how the site will comply with applicable national law, legal guidance, ethics committee requirements and institutional policy without inventing legal citations or procedures. State “Not applicable” where no additional Member State-specific requirements have been identified. If country-level or language-specific information is included, localise the answer to the Member State concerned.]",
+  "condition": "participants are included in an emergency situation"
+ }
+]

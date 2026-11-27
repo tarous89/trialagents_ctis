@@ -1,0 +1,79 @@
+{
+ "template_instructions": {
+  "doc_name_en": "Subject Information and Assent Form - Children",
+  "doc_name_local": "Kinderinformation und Zustimmungserklärung (8–9 Jahre)",
+  "target_country": "Austria",
+  "country_code": "AT",
+  "target_language": "German",
+  "language_code": "de",
+  "doc_type": "children",
+  "file_name": "L1_SIS and ICF_age 8-9",
+  "sort_order": "6",
+  "description": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+  "target_population": "[Beschreibung der Population laut Prüfplan]",
+  "target_population_label": "[Kurzbezeichnung der Population]",
+  "footer": [
+   "[Dokumentname] - [Kurzbezeichnung der Population] - Version 1.0 - [Datum]",
+   "Prüfplannummer: [ausfüllen] | EU-CT-Nummer: [ausfüllen]"
+  ],
+  "info_table": [
+   "Titel der klinischen Prüfung",
+   "Kurztitel der klinischen Prüfung",
+   "Prüfplannummer [Version und Datum ergänzen]",
+   "EU-CT-Nummer",
+   "Sponsor [mit vollständiger Anschrift und Länderangabe]",
+   "Verantwortliche Prüfärztin/verantwortlicher Prüfarzt",
+   "Name des Prüfzentrums",
+   "Anschrift des Prüfzentrums"
+  ],
+  "content_instructions": "LÄNGENLIMIT: Zielumfang 3 bis höchstens 5 Seiten; deutlich kürzer als die Erwachsenen-/Elterninformation. Bei einem ausnahmsweise über 10 Seiten langen Dokument wäre zusätzlich eine 1- bis höchstens 2-seitige Kurzzusammenfassung erforderlich. Verwenden Sie diese Vorlage für Kinder von 8 bis 9 Jahren und passen Sie Wortschatz, Satzlänge, Beispiele und Bilder an das konkrete Alter und Verständnis an. Zusätzlich zur Elterninformation ist eine eigene altersgerechte Information und Zustimmung des Kindes erforderlich. Erklären Sie nur entscheidungsrelevante Inhalte: Zweck, Medikament, Ablauf, Dauer, Besuche, Auslosen/Placebo, möglicher Nutzen, wichtigste Risiken und Beschwerden, Regeln, einfache Vertraulichkeit und Kontakt. Stellen Sie das Recht des Kindes auf Nein, Stopp und späteres Aufhören besonders deutlich dar. Die Unterschrift ist Zustimmung/Assent und keine alleinige rechtswirksame Einwilligung; die Eltern-/Obsorgeberechtigtenvorlage bleibt erforderlich. Reproduktive, genetische oder optionale Probenmodule nur bei tatsächlicher Relevanz und altersgerechter Erklärbarkeit aufnehmen. Neu ergänzte oder angepasste Texte sind in kurzen, leicht verständlichen Sätzen zu formulieren; Fachbegriffe aus der österreichischen Musterinformation bleiben unverändert, neu eingeführte Fachbegriffe sind kurz zu erklären.",
+  "styling_instructions": "LÄNGEN- UND LAYOUTVORGABE: Das Dokument deutlich kürzer als die Erwachseneninformation halten. Kurze Sätze, große gut lesbare Schrift, viel Weißraum und höchstens eine wesentliche Aussage pro Absatz verwenden. Für Kinder nach Möglichkeit Bilder, Symbole, Ablaufgrafiken oder einfache Tabellen einsetzen. Die Information soll regelmäßig höchstens 3 bis 5 Seiten umfassen; falls ausnahmsweise mehr als 10 Seiten entstehen, ist zusätzlich eine 1- bis höchstens 2-seitige Kurzzusammenfassung erforderlich. Bearbeitungshinweise und nicht anwendbare Alternativen vor Ausgabe entfernen. Die Zustimmung/Assent-Seite muss übersichtlich sein und einfache Ja/Nein-Felder sowie ausreichend Platz für Name, Datum, Unterschrift oder ein anderes sinnvolles Zeichen enthalten."
+ },
+ "template_content": [
+  {
+   "section_number": 1,
+   "section_content": "Liebe/r ......!\n\nWir möchten dir erklären, warum wir dich fragen, ob du bei einer klinischen Prüfung mitmachen möchtest. Eine klinische Prüfung ist eine besondere Untersuchung, bei der Ärztinnen und Ärzte etwas über ein Medikament oder eine Behandlung lernen.\n\nDeine Eltern oder andere obsorgeberechtigte Personen bekommen eine ausführliche Information und müssen zustimmen. <b>Auch deine Meinung ist wichtig.</b> Du darfst Nein sagen. Du darfst auch später sagen, dass du nicht mehr mitmachen möchtest. Niemand ist dir böse, und du wirst trotzdem gut behandelt.\n\nDu kannst jederzeit Fragen stellen. Bitte sage uns, wenn du etwas nicht verstehst, Angst hast oder eine Pause brauchst.",
+   "section_style": "Rich body text"
+  },
+  {
+   "section_number": 2,
+   "section_content": "<b>1. Warum machen wir diese Prüfung?</b>\n\nDu hast ...... . Wir möchten herausfinden, ob ...... . <i>(Mit einfachen, konkreten Worten erklären. Höchstens 3 kurze Absätze.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 3,
+   "section_content": "<b>2. Was wird gemacht?</b>\n\nWenn du mitmachst, dauert es ungefähr ...... . Du kommst ...... Mal zu uns / bleibst ...... .\n\nWir machen: ...... <i>(jeden wichtigen Schritt einfach erklären, z. B. Medizin nehmen, Blut abnehmen, Untersuchung, Bild oder Fragebogen).</i>\n\n<i>(Wenn gelost wird:) Ein Computer entscheidet zufällig, welche Behandlung du bekommst. Das ist wie Auslosen.\n(Wenn ein Placebo verwendet wird:) Ein Placebo sieht wie das Medikament aus, enthält aber keinen Wirkstoff.\n(Wenn verblindet:) Du und/oder dein Arzt wissen zunächst nicht, welche Behandlung du bekommst. Wenn es für deine Sicherheit wichtig ist, kann der Arzt es herausfinden.</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 4,
+   "section_content": "<b>3. Kann dir die Prüfung helfen?</b>\n\nVielleicht hilft dir ...... . Wir wissen das aber nicht sicher. / Die Prüfung wird dir wahrscheinlich nicht direkt helfen. Was wir lernen, kann später anderen Kindern helfen. <i>(Nicht anwendbare Alternative löschen.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 5,
+   "section_content": "<b>4. Kann etwas unangenehm sein oder wehtun?</b>\n\nEs kann ...... . <i>(Die wichtigsten Schmerzen, Beschwerden, Nebenwirkungen und Ängste ehrlich und einfach erklären.)</i>\n\nManche Wirkungen kennen wir noch nicht. Sage bitte sofort Bescheid, wenn dir schlecht ist, etwas weh tut, du Angst hast oder du aufhören möchtest.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 6,
+   "section_content": "<b>5. Musst du etwas beachten?</b>\n\nBitte ...... . <i>(Nur kindrelevante Regeln nennen: Medizin, Essen/Trinken, Termine, Sport oder andere Behandlung.)</i> Deine Eltern helfen dir dabei. Bei einem Notfall bekommst du immer die nötige Hilfe.",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 7,
+   "section_content": "<b>6. Was passiert mit deinen Daten?</b>\n\nWir schreiben Informationen über deine Gesundheit auf und geben ihnen einen Code. Menschen, die die Prüfung kontrollieren, dürfen sie sehen und müssen sie geheim halten. In Berichten steht nicht dein Name. Deine Eltern erhalten die ausführlichen Datenschutzinformationen.\n\n<i>(Proben, Bilder oder DNA nur nennen, wenn sie in dieser Prüfung wirklich verwendet werden und kindgerecht erklärt werden können.)</i>\n\n<i>(Falls genetische Untersuchungen stattfinden, sind Zweck und praktische Bedeutung alters- beziehungsweise verständnisgerecht zu erklären; genetische Untersuchungen außerhalb des beschriebenen Studienumfangs sind nicht umfasst.)</i>",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 8,
+   "section_content": "<b>7. Du entscheidest mit</b>\n\nDu musst nicht mitmachen. Du darfst Nein sagen, auch wenn Erwachsene zugestimmt haben. Du darfst bei einer einzelnen Untersuchung Stopp sagen und du darfst später aufhören. Du musst keinen Grund nennen. Sage es deiner Ärztin/deinem Arzt, deinen Eltern oder einer anderen Person, der du vertraust.\n\nMöchtest du etwas fragen? ......",
+   "section_style": "H3 module title, Rich body text"
+  },
+  {
+   "section_number": 9,
+   "section_content": "<b>8. Deine Zustimmung</b>\n\nMein Name: ...... Geburtsdatum: ......\n\n□ Ich habe die Information mit einer Ärztin/einem Arzt besprochen.\n□ Ich konnte Fragen stellen.\n□ Ich weiß, dass ich Nein sagen und jederzeit aufhören darf.\n□ Ich möchte bei der klinischen Prüfung mitmachen.\n□ Ich möchte nicht mitmachen.\n□ Ich bin mir noch nicht sicher und möchte nochmals sprechen.\n\n<i>(Diese Fassung ist für Kinder von 8 bis 9 Jahren bestimmt. Das Kind unterschreibt, sofern es fähig ist, seine Zustimmung zu erteilen.)</i>\n\n<i>(Nur aufnehmen, wenn die genetische Untersuchung freiwillig und optional ist.)</i>\n\n<b>Meine Entscheidung zur optionalen genetischen Untersuchung</b>\n\n□ Ich möchte bei der beschriebenen genetischen Untersuchung mitmachen.\n□ Ich möchte bei der beschriebenen genetischen Untersuchung nicht mitmachen.\n\n......................................................................................................\nDatum und Unterschrift/Zeichen des Kindes, wenn sinnvoll und möglich\n\nDie Information wurde dem Alter und Verständnis des Kindes angepasst erklärt. Der geäußerte Wille wurde wie folgt festgestellt: ......\n\n......................................................................................................\nDatum, Name und Unterschrift der erklärenden Prüfärztin/des erklärenden Prüfarztes",
+   "section_style": "H2 document subline, Rich body text, Checkbox group, Signature section"
+  }
+ ]
+}
