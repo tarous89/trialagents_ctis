@@ -32,4 +32,4 @@ Nothing was converted into `countries/LV/templates/part-ii`. Latvia makes the EU
 - The whole Latvian participant template set is missing (16 planned templates, DECISIONS.md D14).
 - K2, L2, O1 and P2 have no template. They are drafted from the sources or supplied by others.
 - The contact details of ZVA, the assigned ethics committee and the Data State Inspectorate must appear in every main consent set. The guides do not give them.
-- The guides cite the Compensation template as version 5 (June 2023), the Site Suitability template as version 3.0 (September 2023), the CV as version 3.6, the DoI as version 1.2 and the biological samples template as 28 January 2022. The shared forms carry no version marking, so these versions could not be checked against them.
+- Template versions were checked against the shared forms' headers and footers, and all match the Latvia checklist: K1 v2.0 (January 2026), M1 v3.6 (September 2022), M2 v1.2 (September 2022), N1 v3.0 (September 2023), P1 version 5 (June 2023), S1 CTEG 28/01/2022. R1 carries no version.
