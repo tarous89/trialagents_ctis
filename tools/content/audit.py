@@ -24,14 +24,15 @@ for ps in d['population_sets']:
     for x in ps['documents']:
         if x.get('template') not in MISSING: exists(x['template'])
 tids={c['id'] for c in d['participant_templates']}
+missing_ids={(m['id'] if isinstance(m,dict) else m) for m in d.get('participant_templates_missing',[])}
 for c in d['participant_templates']: exists(c['file'])
 pr=d['population_rules']
 for key,v in pr.items():
     if isinstance(v,dict):
         for u in v.get('always',[])+[b['template'] for b in v.get('age_bands',[])]:
-            if u not in tids: errs.append('unknown template id '+u)
+            if u not in tids|missing_ids: errs.append('unknown template id '+u)
 for u in pr.get('shareable_templates',[]):
-    if u not in tids: errs.append('unknown template id '+u)
+    if u not in tids|missing_ids: errs.append('unknown template id '+u)
 for group in ('styling','checklists'):
     for v in d[group].values(): exists(v)
 for v in d['playbook']: exists(v)
