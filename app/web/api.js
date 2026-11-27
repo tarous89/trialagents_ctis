@@ -8,6 +8,8 @@ export async function call(op,{project,input={},revision,write=false}={}){
   const res=await fetch('/api/ctis',{method:'POST',credentials:'same-origin',headers:{'content-type':'application/json'},
     body:JSON.stringify({op,project,input,revision,requestId:write?uuid():undefined})})
   const body=await res.json().catch(()=>({error:'The server did not answer. Try again.'}))
+  // Signed out, or the session ended while the app was open: go to the TrialAgents CTIS sign-in page.
+  if(res.status===401){location.replace('/auth?mode=login&ctis=1');await new Promise(()=>{})}
   if(!res.ok)throw new ApiError(body.error||'Something went wrong',res.status,body.details)
   return body
 }

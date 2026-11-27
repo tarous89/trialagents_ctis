@@ -228,6 +228,6 @@ document.addEventListener('submit',async e=>{
   Object.assign(nav,{state,render,go})
   if(host==='browser')readUrl()
   else{try{await window.ctisHost.ready}catch{};const t=window.ctisHost.initial();if(t)Object.assign(state,{view:t.view,project:t.project,deliverable:t.deliverable})}
-  try{state.account=await call('account.read')}catch(e){if(e.status===401){$('#page').innerHTML='<section class="panel empty-panel"><h2>Sign in to TrialAgents CTIS</h2><p><a class="primary btn" href="'+(host==='browser'?'':'https://ctis.trialagents.com')+'/auth?mode=login&ctis=1">Sign in</a></p></section>';return}}
+  try{state.account=await call('account.read')}catch(e){if(e.status===401){if(host==='browser'){location.replace('/auth?mode=login&ctis=1');return}$('#page').innerHTML='<section class="panel empty-panel"><h2>Sign in to TrialAgents CTIS</h2><p><a class="primary btn" href="'+(host==='browser'?'':'https://ctis.trialagents.com')+'/auth?mode=login&ctis=1">Sign in</a></p></section>';return}}
   render()
 })()
