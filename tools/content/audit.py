@@ -29,7 +29,12 @@ for c in d['participant_templates']: exists(c['file'])
 pr=d['population_rules']
 for key,v in pr.items():
     if isinstance(v,dict):
-        for u in v.get('always',[])+[b['template'] for b in v.get('age_bands',[])]:
+        lists=[]
+        for key in ('always','conditional','optional'):
+            x=v.get(key,[]); lists+=list(x.keys()) if isinstance(x,dict) else list(x)
+        lists+=[b['template'] for b in v.get('age_bands',[]) if isinstance(b,dict) and 'template' in b]
+        for u in lists:
+            if not isinstance(u,str): continue
             if u not in tids|missing_ids: errs.append('unknown template id '+u)
 for u in pr.get('shareable_templates',[]):
     if u not in tids|missing_ids: errs.append('unknown template id '+u)

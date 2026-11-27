@@ -642,25 +642,73 @@
     ]
   },
   "participant_templates": [],
-  "participant_templates_missing": {
-    "status": "No Slovak participant templates were supplied for Slovakia. The participant-template text file in the CTIS_SK folder is the Bulgarian set (already filed under BG) and was not used.",
-    "planned_template_ids": [
-      "SK-PT-main",
-      "SK-PT-healthy",
-      "SK-PT-parents",
-      "SK-PT-adolescents-12-17",
-      "SK-PT-children",
-      "SK-PT-legal-rep",
-      "SK-PT-limited-capacity",
-      "SK-PT-emergency",
-      "SK-PT-emergency-notice",
-      "SK-PT-witness",
-      "SK-PT-pregnancy",
-      "SK-PT-pregnant-partner",
-      "SK-PT-secondary"
-    ],
-    "handling": "Draft each participant document from the Slovakia guides (drafting_rules, population_sets notes, checklists/participant-documents.json) with styles/base.md, or adapt it from the reference-package counterpart (based_on), until a Slovak set is supplied and split into templates/participant (DECISIONS.md D15)."
-  },
+  "participant_templates_missing": [
+    {
+      "id": "SK-PT-main",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-healthy",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-parents",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-adolescents-12-17",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-children",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-legal-rep",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-limited-capacity",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-emergency",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-emergency-notice",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-witness",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-pregnancy",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-pregnant-partner",
+      "name": "",
+      "role": ""
+    },
+    {
+      "id": "SK-PT-secondary",
+      "name": "",
+      "role": ""
+    }
+  ],
   "population_sets": [
     {
       "id": "adult_patients",
@@ -854,68 +902,65 @@
     "authority": "Ethics Committee established by the Ministry of Health of the Slovak Republic (national Part II assessment) and ŠÚKL; Slovak Act No. 362/2011 Coll., sections 29a(5), 29a(7) to 29a(9) and 29h; Act No. 576/2004 Coll., section 6; ŠÚKL Good Clinical Practice for investigators, section 4.8; Regulation (EU) No 536/2014 Articles 28 to 35; as recorded in the Slovakia guides reviewed 23 September 2026.",
     "template_status": "missing: no Slovak participant templates were supplied. Every template id below is a planned id with no file (\"template\": \"missing\" in population_sets). Keys ending in _missing hold the template ids that the Germany-shaped keys (always, age_bands) would hold; the audit script checks those keys against participant_templates, which is empty.",
     "minors": {
-      "age_bands_missing": [
-        {
-          "band": "12-17",
-          "template_id": "SK-PT-adolescents-12-17",
-          "template": "missing",
-          "reader": "adolescent",
-          "basis": "Slovak national Part II guidance identifies a separate information and consent set for ages 12 to 18 as a typical submission document; the minors guide gives 'commonly 12 to 17'. Both mean 12 up to the 18th birthday."
-        },
-        {
-          "band": "school-age children under 12 who can understand (lower bound defined per study)",
-          "template_id": "SK-PT-children",
-          "template": "missing",
-          "reader": "child",
-          "basis": "Minors guide: child information and assent material for younger children who can understand; no fixed band (DECISIONS.md D9)."
-        }
-      ],
-      "always_missing": [
-        "SK-PT-parents"
-      ],
       "young_children": "Parent or legal-representative information and permission, plus a short verbal or visual explanation suited to the child; no signed child form. Children below 12 are not excluded from information; capacity to understand is assessed individually.",
       "band_rule": "Explain and justify the age bands in K1 (v114). The Ethics Committee may expect more than one child version when the age range is wide or the procedures are complex.",
       "representatives": "Parent or legal representative recognised under Slovak law; whose permission is obtained in each family situation and how legal authority is verified is stated in the submission. If national law or the custody arrangement requires two representatives, plan two signature blocks; where one signature is proposed, document the legal basis and site procedure (DECISIONS.md D10).",
       "assent_dissent": "Child information and assent mandatory when the child can form an opinion; assent does not replace the representative's consent; verbal assent recorded when a written form is not suitable; explicit refusal and later dissent of a minor capable of forming an opinion is respected.",
       "reconsent_at_18": "SK-PT-main or SK-PT-healthy (approved adult form) promptly when participation or follow-up continues; earlier parental permission is not adult consent.",
-      "payment": "No financial inducement to the parent or legal representative beyond compensation for expenses and loss connected with participation."
+      "payment": "No financial inducement to the parent or legal representative beyond compensation for expenses and loss connected with participation.",
+      "always": [
+        "SK-PT-parents"
+      ],
+      "age_bands": [
+        {
+          "band": "12-17",
+          "template": "SK-PT-adolescents-12-17",
+          "reader": "adolescent",
+          "basis": "Slovak national Part II guidance identifies a separate information and consent set for ages 12 to 18 as a typical submission document; the minors guide gives 'commonly 12 to 17'. Both mean 12 up to the 18th birthday."
+        },
+        {
+          "band": "school-age children under 12 who can understand (lower bound defined per study)",
+          "template": "SK-PT-children",
+          "reader": "child",
+          "basis": "Minors guide: child information and assent material for younger children who can understand; no fixed band (DECISIONS.md D9)."
+        }
+      ]
     },
     "adults_without_capacity": {
-      "always_missing": [
+      "note": "SK-PT-limited-capacity when the participant can understand part of the trial. Capacity is decision-specific; legally designated representative under Slovak law with verified authority; objection of a participant who can form an opinion cannot be overridden; the participant's views recorded (Act No. 576/2004 Coll.). Participant's own consent with SK-PT-main when capacity is regained.",
+      "always": [
         "SK-PT-legal-rep",
         "SK-PT-limited-capacity"
-      ],
-      "note": "SK-PT-limited-capacity when the participant can understand part of the trial. Capacity is decision-specific; legally designated representative under Slovak law with verified authority; objection of a participant who can form an opinion cannot be overridden; the participant's views recorded (Act No. 576/2004 Coll.). Participant's own consent with SK-PT-main when capacity is regained."
+      ]
     },
     "emergency": {
-      "always_missing": [
+      "note": "Full participant and legal-representative documents; short initial notice only if it does not delay urgent care. No national emergency-consent template exists; do not invent a national waiver form.",
+      "always": [
         "SK-PT-emergency",
         "SK-PT-legal-rep"
       ],
-      "optional_missing": [
+      "optional": [
         "SK-PT-emergency-notice"
-      ],
-      "note": "Full participant and legal-representative documents; short initial notice only if it does not delay urgent care. No national emergency-consent template exists; do not invent a national waiver form."
+      ]
     },
     "impartial_witness": {
-      "always_missing": [
+      "note": "Witness when the participant or representative cannot read; oral consent record signed by at least one witness when the person can consent but cannot write. A representative who cannot read needs the witness block in the representative document (DECISIONS.md D17).",
+      "always": [
         "SK-PT-witness"
-      ],
-      "note": "Witness when the participant or representative cannot read; oral consent record signed by at least one witness when the person can consent but cannot write. A representative who cannot read needs the witness block in the representative document (DECISIONS.md D17)."
+      ]
     },
     "pregnancy": {
       "participant": "SK-PT-pregnancy only for data beyond what the main trial information covers",
       "partner": "SK-PT-pregnant-partner whenever partner or infant data are collected from the partner"
     },
     "secondary_use": {
-      "always_missing": [
+      "note": "Separate form or clearly separate optional section; separate choices for disease-related storage, genetic research, sharing with external researchers, transfer outside the EEA and re-contact, as applicable.",
+      "always": [
         "SK-PT-secondary"
-      ],
-      "note": "Separate form or clearly separate optional section; separate choices for disease-related storage, genetic research, sharing with external researchers, transfer outside the EEA and re-contact, as applicable."
+      ]
     },
     "prohibited_population": "Slovak law prohibits enrolment of people in custody, serving a prison sentence or held in detention. No consent pathway or document is created for them (study fact population.persons_in_custody must be false).",
-    "shareable_templates": [],
-    "shareable_templates_missing": [
+    "shareable_templates": [
       "SK-PT-pregnant-partner",
       "SK-PT-secondary"
     ],
@@ -978,5 +1023,9 @@
     "SK-SECONDARY": "https://trialagents.com/ctis/slovakia/en/secondary-use-consent-requirements",
     "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention"
   },
-  "sources_note": "All Slovakia guides reviewed 23 September 2026, read 27 November 2026. '#n' after SK-PII-CHECKLIST is the item number on that page. Supplied: CTIS_SK Part II DOCX set and Slovak variable sheet (compared with the shared forms); no Slovak participant templates."
+  "sources_note": "All Slovakia guides reviewed 23 September 2026, read 27 November 2026. '#n' after SK-PII-CHECKLIST is the item number on that page. Supplied: CTIS_SK Part II DOCX set and Slovak variable sheet (compared with the shared forms); no Slovak participant templates.",
+  "participant_templates_missing_note": {
+    "status": "No Slovak participant templates were supplied for Slovakia. The participant-template text file in the CTIS_SK folder is the Bulgarian set (already filed under BG) and was not used.",
+    "handling": "Draft each participant document from the Slovakia guides (drafting_rules, population_sets notes, checklists/participant-documents.json) with styles/base.md, or adapt it from the reference-package counterpart (based_on), until a Slovak set is supplied and split into templates/participant (DECISIONS.md D15)."
+  }
 }

@@ -1743,59 +1743,51 @@
     },
     "language_choice": "Each document is prepared in every language its population needs at the trial's sites: nl (Flanders), fr (Wallonia), de (German-speaking region), fr and nl at Brussels sites when both groups may be recruited (language_rules).",
     "adult_patients": {
-      "required_templates": [
+      "note": "CT-College adult-patient template mandatory for new initial interventional medicinal-product trials submitted from 1 August 2025.",
+      "always": [
         "BE-PT-main-fr",
         "BE-PT-main-nl",
         "BE-PT-main-de"
-      ],
-      "note": "CT-College adult-patient template mandatory for new initial interventional medicinal-product trials submitted from 1 August 2025."
+      ]
     },
     "healthy_volunteers": {
-      "required_templates": [
-        "BE-PT-healthy-fr",
-        "BE-PT-healthy-nl",
-        "BE-PT-healthy-de"
-      ],
       "vaccine_templates": [
         "BE-PT-vaccine-healthy-fr",
         "BE-PT-vaccine-healthy-nl",
         "BE-PT-vaccine-healthy-de"
       ],
-      "note": "CT-College healthy-adult template mandatory; for vaccines the vaccine template is recommended while under revision. Healthy status does not remove the separate pregnancy, optional sample research or capacity pathways."
+      "note": "CT-College healthy-adult template mandatory; for vaccines the vaccine template is recommended while under revision. Healthy status does not remove the separate pregnancy, optional sample research or capacity pathways.",
+      "always": [
+        "BE-PT-healthy-fr",
+        "BE-PT-healthy-nl",
+        "BE-PT-healthy-de"
+      ]
     },
     "minors": {
       "age_bands": [],
       "age_band_rule": "Belgium sets no single statutory assent age and no national age bands. The principal investigator assesses each minor's capacity for discernment case by case (age, maturity, impact of the intervention, mental state, personality, family and social environment, education). Age-adapted documents are based on the actual population: for example a short illustrated explanation for a young child and a fuller assent document for an older child or adolescent, defined in the protocol and consent procedure (DECISIONS.md D19).",
-      "required_templates": [
-        "BE-PT-parents-fr",
-        "BE-PT-parents-nl",
-        "BE-PT-parents-de"
-      ],
-      "conditional_templates": [
-        "BE-PT-child-fr",
-        "BE-PT-child-nl",
-        "BE-PT-child-de",
-        "BE-PT-adolescent-fr",
-        "BE-PT-adolescent-nl",
-        "BE-PT-adolescent-de"
-      ],
       "representative": "The person exercising parental authority or the legal guardian (Law of 7 May 2017; Patients' Rights Act, Article 12). Confirm parental authority or guardianship before consent.",
       "two_parent_rule": "Two parent signature lines in the parent ICF and efforts to obtain both parents' written consent (BAREC and CT-College v3.0, 10 July 2026). Signing need not be simultaneous; one parent may take the form to the other, with enough time before enrolment.",
       "single_parent_exception": "Only when the other parent is genuinely unavailable (deceased, incarcerated, unreachable, or truly estranged with no indication of disagreement), not because of absence from the visit, separation or divorce; after reasonable efforts to inform and involve both parents and in the child's best interest. Ask whether the other parent agrees; document whether the parent signs personally or on behalf of both, and the justification.",
       "known_refusal": "If the investigator knows that the other parent refuses, the child is not enrolled on one signature.",
       "assent_dissent": "Assent or dissent actively sought and documented; a capable minor's explicit refusal or wish to withdraw is respected; lack of a signature line is no reason to ignore dissent. Assent is not described as legal consent.",
       "optional_choices": "Parent choices for optional research (future sample use, genetic analysis, pregnancy follow-up, substudies) stay distinct from consent to the main trial.",
-      "reconsent": "Renewed age-appropriate information and assent when understanding develops or documents change; the participant's own consent as soon as possible after reaching 18 (adult template); explain what happens if the new adult refuses."
+      "reconsent": "Renewed age-appropriate information and assent when understanding develops or documents change; the participant's own consent as soon as possible after reaching 18 (adult template); explain what happens if the new adult refuses.",
+      "always": [
+        "BE-PT-parents-fr",
+        "BE-PT-parents-nl",
+        "BE-PT-parents-de"
+      ],
+      "conditional": [
+        "BE-PT-child-fr",
+        "BE-PT-child-nl",
+        "BE-PT-child-de",
+        "BE-PT-adolescent-fr",
+        "BE-PT-adolescent-nl",
+        "BE-PT-adolescent-de"
+      ]
     },
     "adults_without_capacity": {
-      "required_templates": [
-        "BE-PT-legal-rep-fr",
-        "BE-PT-legal-rep-nl",
-        "BE-PT-legal-rep-de",
-        "BE-PT-limited-capacity-fr",
-        "BE-PT-limited-capacity-nl",
-        "BE-PT-limited-capacity-de"
-      ],
       "representative_hierarchy": [
         "A representative designated by the adult in a specific written, dated and jointly signed mandate.",
         "A court-appointed administrator authorised to exercise the relevant patient rights.",
@@ -1803,10 +1795,19 @@
         "In order, an adult child, a parent, or an adult sibling.",
         "If nobody in the hierarchy acts, or representatives conflict, the healthcare professional safeguards the patient's interests, where appropriate through multidisciplinary consultation."
       ],
-      "note": "Capacity is decision-specific and may change; a diagnosis, disability, temporary confusion or supported communication does not automatically remove capacity. A trusted person who merely assists is not automatically the representative. No enrolment after a relevant prior refusal; an explicit objection is respected. Representative consent and participant assent are kept apart; an assent signature is not presented as legal authorisation. Reassessment points and personal re-consent without undue delay once capable. Optional broad future use is not assumed from representative consent to the main trial."
+      "note": "Capacity is decision-specific and may change; a diagnosis, disability, temporary confusion or supported communication does not automatically remove capacity. A trusted person who merely assists is not automatically the representative. No enrolment after a relevant prior refusal; an explicit objection is respected. Representative consent and participant assent are kept apart; an assent signature is not presented as legal authorisation. Reassessment points and personal re-consent without undue delay once capable. Optional broad future use is not assumed from representative consent to the main trial.",
+      "always": [
+        "BE-PT-legal-rep-fr",
+        "BE-PT-legal-rep-nl",
+        "BE-PT-legal-rep-de",
+        "BE-PT-limited-capacity-fr",
+        "BE-PT-limited-capacity-nl",
+        "BE-PT-limited-capacity-de"
+      ]
     },
     "emergency": {
-      "required_templates": [
+      "note": "Only when every Article 35 condition is met and the protocol and K1 describe the pathway; not to solve recruitment difficulty or avoidable planning problems. Representative hierarchy as for adults without capacity. The forms explain what already occurred and never read as if consent had preceded enrolment.",
+      "always": [
         "BE-PT-emergency-fr",
         "BE-PT-emergency-nl",
         "BE-PT-emergency-de",
@@ -1814,7 +1815,7 @@
         "BE-PT-emergency-rep-nl",
         "BE-PT-emergency-rep-de"
       ],
-      "conditional_templates": [
+      "conditional": [
         "BE-PT-parents-fr",
         "BE-PT-parents-nl",
         "BE-PT-parents-de",
@@ -1824,16 +1825,15 @@
         "BE-PT-adolescent-fr",
         "BE-PT-adolescent-nl",
         "BE-PT-adolescent-de"
-      ],
-      "note": "Only when every Article 35 condition is met and the protocol and K1 describe the pathway; not to solve recruitment difficulty or avoidable planning problems. Representative hierarchy as for adults without capacity. The forms explain what already occurred and never read as if consent had preceded enrolment."
+      ]
     },
     "impartial_witness": {
-      "required_templates": [
+      "note": "Only for a participant who can decide but cannot write; not for a language difference (interpreter and translated documents instead) and not as a substitute for a legally designated representative. The guides do not address a representative who cannot write.",
+      "always": [
         "BE-PT-witness-fr",
         "BE-PT-witness-nl",
         "BE-PT-witness-de"
-      ],
-      "note": "Only for a participant who can decide but cannot write; not for a language difference (interpreter and translated documents instead) and not as a substitute for a legally designated representative. The guides do not address a representative who cannot write."
+      ]
     },
     "pregnancy": {
       "participant": "Pharmacovigilance follow-up; privacy information (GDPR Articles 13 and 14) preferably in the main ICF pregnancy section, or a separate letter or ICF (BE-PT-pregnancy-fr, BE-PT-pregnancy-nl, BE-PT-pregnancy-de). No separate consent for processing required by law.",
@@ -1842,12 +1842,12 @@
       "duration": "Follow-up duration defined in time in the protocol and justified (preclinical and clinical exposure data, class effects, fetal-development risks, pharmacokinetics)."
     },
     "secondary_use": {
-      "required_templates": [
+      "note": "Separate optional consent for use of identifiable or coded data or material outside the protocol; refusal does not prevent participation unless scientifically integral and assessed as such. Minors: parent permission, assent, personal consent at adulthood for continued optional use where required.",
+      "always": [
         "BE-PT-secondary-fr",
         "BE-PT-secondary-nl",
         "BE-PT-secondary-de"
-      ],
-      "note": "Separate optional consent for use of identifiable or coded data or material outside the protocol; refusal does not prevent participation unless scientifically integral and assessed as such. Minors: parent permission, assent, personal consent at adulthood for continued optional use where required."
+      ]
     },
     "shareable_when_supplied": [
       "BE-PT-pregnant-partner-fr",
