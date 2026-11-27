@@ -972,7 +972,7 @@
   ],
   "naming": {
     "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
-    "lithuania_note": "Use the CTCG pattern. The Lithuania guides use descriptive names and give no national naming instruction beyond titles and filenames that distinguish population and use case. _LT_lt on participant-facing documents, _LT on O1, P1, P2, R1, S1 and national documents. The site list (N2), the investigator qualification statement (M3), the financing document (P2) and the proof of payment carry proposed titles to confirm (DECISIONS.md D5, D7, D10)."
+    "lithuania_note": "Use the CTCG pattern. The Lithuania guides use descriptive names and give no national naming instruction beyond titles and filenames that distinguish population and use case. _LT_lt on participant-facing documents, _LT on O1, P1, P2, R1, S1 and national documents. The site list (N2), the investigator qualification statement (M3), the financing document (P2) and the proof of payment carry proposed titles to confirm (DECISIONS.md D5, D7, D9, D16)."
   },
   "styling": {
     "base": "styles/base.md",
