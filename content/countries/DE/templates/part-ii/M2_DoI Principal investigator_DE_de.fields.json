@@ -1,0 +1,16 @@
+[
+ {
+  "id": "kv101",
+  "kind": "text",
+  "question": "—",
+  "instruction": "[EINFÜGEN: Vollständiger Titel der klinischen Prüfung, wie im Prüfplan]",
+  "condition": null
+ },
+ {
+  "id": "kv102",
+  "kind": "text",
+  "question": "— EU Trial Number:",
+  "instruction": "[EINFÜGEN: EU-Prüfungsnummer (EU CT number); bei Erstantrag vor Vergabe leer lassen und in CTIS ergänzen]",
+  "condition": null
+ }
+]

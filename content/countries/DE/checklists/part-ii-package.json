@@ -1,0 +1,217 @@
+{
+  "id": "DE-PACKAGE",
+  "name": "Germany: Part II package and CTIS upload check",
+  "applies_to": "the Germany package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/germany/en/part-ii-document-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026)",
+    "https://trialagents.com/ctis/eu/ctis-transparency-redaction-guide"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "K1 recruitment and informed-consent procedure present, on EudraLex template v2.0 for submissions from 1 September 2026, with a section for every population pathway in the plan."
+        },
+        {
+          "id": "P1.02",
+          "check": "K2 recruitment material present for every recruitment tool, call-centre script included where a call centre is used.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "P1.03",
+          "check": "One L1 information and consent set per population in population_sets whose trigger is true."
+        },
+        {
+          "id": "P1.04",
+          "check": "L2 other information material present.",
+          "applies_when": "recruitment.other_information_material"
+        },
+        {
+          "id": "P1.05",
+          "check": "German translations of endpoint-related patient-facing documents in Part II (R area); English sources in Part I.",
+          "applies_when": "endpoint_documents.participant_facing"
+        },
+        {
+          "id": "P1.06",
+          "check": "For every German site: M1 CV (not older than one year), M2 regulatory-training certificates (CTR, AMG, GCP), M2 declaration of interest, N1 site suitability."
+        },
+        {
+          "id": "P1.07",
+          "check": "Sites, principal investigators, roles and planned participant numbers entered in CTIS (N2)."
+        },
+        {
+          "id": "P1.08",
+          "check": "Radiation authorisation documents under N.",
+          "applies_when": "radiation.requires_authorisation_or_notification"
+        },
+        {
+          "id": "P1.09",
+          "check": "O1 insurer-issued certificate identifying the trial or German coverage, with at least EUR 500,000 per case of death or continuing incapacity; O2 policy terms.",
+          "applies_when": "not (trial.low_intervention with German statutory conditions met)"
+        },
+        {
+          "id": "P1.10",
+          "check": "P1 compensation statement present, stating explicitly when no payment is offered."
+        },
+        {
+          "id": "P1.11",
+          "check": "P2 draft sponsor–site contract per site without signatures.",
+          "applies_when": "contract.financial_arrangements_in_site_contract"
+        },
+        {
+          "id": "P1.12",
+          "check": "R1 GDPR statement including the German national data-protection confirmation (or a separate document)."
+        },
+        {
+          "id": "P1.13",
+          "check": "S1 biological-samples form, consistent with the protocol, participant information and any secondary-use document.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "P1.14",
+          "check": "Proof of fee handled in the CTIS Forms section according to the federal authority's invoicing instructions."
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every participant- or representative-facing document is in German."
+        },
+        {
+          "id": "P2.02",
+          "check": "Administrative documents are in German or English."
+        },
+        {
+          "id": "P2.03",
+          "check": "No signatures in uploaded K1, K2, L, M, N1, P and S documents, unless the ethics committee or a selected form requires them; the N1 signature is kept internally only."
+        },
+        {
+          "id": "P2.04",
+          "check": "Non-German-speaking enrolment: qualified-translation commitment and communication plan included.",
+          "applies_when": "population.non_german_speakers"
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Compensation amounts and conditions identical in P1 and every participant document."
+        },
+        {
+          "id": "P3.02",
+          "check": "Insurer, policy number, contact and obligations identical in O1/O2 and every participant document."
+        },
+        {
+          "id": "P3.03",
+          "check": "Sample types, storage, transfers and retention identical in S1, the protocol and the participant documents."
+        },
+        {
+          "id": "P3.04",
+          "check": "Data flows, recipients, transfers and retention identical in R1, the participant documents and the protocol."
+        },
+        {
+          "id": "P3.05",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.06",
+          "check": "Documents adapted from the reference package contain all German national additions and no leftovers from the reference country.",
+          "applies_when": "Germany is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B–S section prefix and CTIS placeholder for each document."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version and date entered in CTIS metadata, not in the title."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (principal investigator in M1/M2)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine)."
+        },
+        {
+          "id": "P4.07",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "Germany receives Part I only under Article 11"
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (EMA/263067/2023 revised rules; ACT EU guidance v2.2, 30 April 2026)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material, irreversibly and unsearchably; author metadata removed; signatures never disclosed."
+        },
+        {
+          "id": "P5.03",
+          "check": "CCI redaction only after both tests: not in the public domain, and disclosure would undermine a legitimate economic interest."
+        },
+        {
+          "id": "P5.04",
+          "check": "Public and assessment versions differ only by the intended redactions; each in the correct CTIS slot."
+        },
+        {
+          "id": "P5.05",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        }
+      ]
+    }
+  ]
+}

@@ -9,6 +9,8 @@ TrialAgents CTIS helps regulatory teams prepare CTIS clinical trial applications
 | [docs/FEATURES.md](docs/FEATURES.md) | Plain-English feature list: what the product does and how people use it. |
 | [docs/TECHNICAL.md](docs/TECHNICAL.md) | Technical design: data model, statuses, assistant loop, sharing and permissions, MCP tools, hosting, UI rules. |
 | [docs/product-spec-2026-11-26.md](docs/product-spec-2026-11-26.md) | Earlier product spec, kept for history. TECHNICAL.md supersedes it. |
+| [content](content) | Catalog content served by the MCP server: planning playbook, naming, step instructions, base style, and country requirements, templates, styling and checklists (Germany done). How to add a country: [content/COUNTRY_ONBOARDING.md](content/COUNTRY_ONBOARDING.md). |
+| [tools/content](tools/content) | Scripts that convert a country's Part II Word templates and list their fields. |
 | [prototype/TrialAgents-CTIS.html](prototype/TrialAgents-CTIS.html) | Clickable prototype. Download it and open it in a browser. |
 | [prototype/source](prototype/source) | Sources and build script for the prototype. |
 

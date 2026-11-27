@@ -1,0 +1,479 @@
+{
+  "id": "DE-QC-PARTICIPANT",
+  "name": "Germany: participant-facing document QC",
+  "applies_to": [
+    "DE-L1",
+    "DE-L2",
+    "DE-K2",
+    "DE-R2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/germany/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Protocol title, code, EU trial number, version and date match the current protocol."
+        },
+        {
+          "id": "C1.02",
+          "check": "Sponsor and site information are current and complete."
+        },
+        {
+          "id": "C1.03",
+          "check": "Investigational and comparator treatments are named and described as in the protocol and IB/SmPC."
+        },
+        {
+          "id": "C1.04",
+          "check": "Study purpose, phase and participant population match the protocol."
+        },
+        {
+          "id": "C1.05",
+          "check": "Randomisation ratio, treatment groups, placebo and blinding are explained correctly in plain language."
+        },
+        {
+          "id": "C1.06",
+          "check": "Visit schedule, duration, procedures, tests and follow-up match the schedule of activities."
+        },
+        {
+          "id": "C1.07",
+          "check": "Number and volume of samples match the protocol and sample plan."
+        },
+        {
+          "id": "C1.08",
+          "check": "Participant restrictions and prohibited treatments are stated."
+        },
+        {
+          "id": "C1.09",
+          "check": "Expected benefits and treatment alternatives are stated without overstating benefit."
+        },
+        {
+          "id": "C1.10",
+          "check": "Reimbursement, compensation, insurance and contacts are present and correct."
+        },
+        {
+          "id": "C1.11",
+          "check": "No statements carried over from another protocol, country, cohort or study phase."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-participant-document consistency",
+      "instruction": "Compare line by line with the protocol, IB, risk section, pharmacy information, data-flow description, sample plan and insurance evidence.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Every research-only procedure is visible to the participant."
+        },
+        {
+          "id": "C2.02",
+          "check": "Risk frequency and severity are not softened compared with the IB/protocol."
+        },
+        {
+          "id": "C2.03",
+          "check": "Pregnancy testing and contraception periods match the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.04",
+          "check": "Treatment interruption and withdrawal rules match the protocol."
+        },
+        {
+          "id": "C2.05",
+          "check": "Optional procedures are not described as mandatory."
+        },
+        {
+          "id": "C2.06",
+          "check": "Planned remote visits, electronic consent, home nursing, wearables or direct-to-participant shipment are explained.",
+          "applies_when": "any decentralised element"
+        },
+        {
+          "id": "C2.07",
+          "check": "Insurance wording matches the certificate and policy terms (DE-O1, DE-O2)."
+        },
+        {
+          "id": "C2.08",
+          "check": "Data and sample retention periods are consistent across all documents."
+        },
+        {
+          "id": "C2.09",
+          "check": "After a protocol change, every affected participant document has been reopened, not only the main adult form.",
+          "applies_when": "modification or revised protocol"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The main participation decision is separate from optional choices."
+        },
+        {
+          "id": "C3.02",
+          "check": "Express consent to processing personal and health data is present."
+        },
+        {
+          "id": "C3.03",
+          "check": "Optional future use, genetics, additional sampling, re-contact and pregnancy follow-up have separate choices where required."
+        },
+        {
+          "id": "C3.04",
+          "check": "Refusing an optional activity does not block main-study participation, unless scientifically necessary and justified in the application."
+        },
+        {
+          "id": "C3.05",
+          "check": "Withdrawal language explains the right to stop and the lawful limits on deleting data already collected."
+        },
+        {
+          "id": "C3.06",
+          "check": "The person signing has legal authority for the decision."
+        },
+        {
+          "id": "C3.07",
+          "check": "Participant and physician signature order and timing are clear (before any trial-specific procedure)."
+        },
+        {
+          "id": "C3.08",
+          "check": "A signed copy is provided to the participant or representative."
+        },
+        {
+          "id": "C3.09",
+          "check": "Re-consent triggers are defined: new information, new versions, regained capacity, reaching adulthood."
+        },
+        {
+          "id": "C3.10",
+          "check": "The consent form does not introduce information absent from the information sheet."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "instruction": "Map every inclusion pathway in the protocol to an information and consent set (see requirements.json population_sets).",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its full document set (main, representative, age-adapted, re-consent and other templates that apply).",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Healthy volunteers: states no therapeutic benefit, explains early-phase uncertainty, restrictions, payment, contraception and confinement accurately.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.03",
+          "check": "Minors: legal-representative consent, age- and maturity-appropriate information, the capable minor's own written consent, dissent, and re-consent at 18.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.04",
+          "check": "Adults without capacity: representative authority, adapted participant information, objection handling, capacity reassessment, and the German advance-consent condition for group-benefit research.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.05",
+          "check": "Emergency enrolment: every Article 35 condition, absence of known objection, investigator certification, later information and consent, right to object to use of data.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.06",
+          "check": "Participant unable to write: inability to sign is not confused with lack of capacity; alternative-recording method and impartial-witness block present.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.07",
+          "check": "Pregnancy follow-up: pregnant participant vs pregnant partner identified; record holders, infant data and whose consent is required are clear.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.08",
+          "check": "Secondary or future use is optional and has a separate information and consent document.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Controller and data-protection contact identified."
+        },
+        {
+          "id": "C5.02",
+          "check": "Categories of personal and health data listed; only special categories actually processed, each with a study-specific lay justification."
+        },
+        {
+          "id": "C5.03",
+          "check": "Each processing purpose explained."
+        },
+        {
+          "id": "C5.04",
+          "check": "Coding or pseudonymisation explained, and where the key is held."
+        },
+        {
+          "id": "C5.05",
+          "check": "Direct access by monitors, auditors, inspectors and authorities explained."
+        },
+        {
+          "id": "C5.06",
+          "check": "Recipients and transfers to sponsor, processors, authorities and regulatory applicants explained."
+        },
+        {
+          "id": "C5.07",
+          "check": "Safety reporting and CTIS reporting explained."
+        },
+        {
+          "id": "C5.08",
+          "check": "Transfers outside the EEA, safeguards or risks, and an explicit choice where the transfer is not essential.",
+          "applies_when": "data transferred outside the EEA"
+        },
+        {
+          "id": "C5.09",
+          "check": "Retention periods stated."
+        },
+        {
+          "id": "C5.10",
+          "check": "Participant rights and a practical contact route."
+        },
+        {
+          "id": "C5.11",
+          "check": "Withdrawal and the German rules allowing necessary continued processing."
+        },
+        {
+          "id": "C5.12",
+          "check": "Express written or electronic health-data consent with all disclosures under section 40b(6) AMG."
+        },
+        {
+          "id": "C5.13",
+          "check": "No promise of anonymity where coded data are used, and no promise of deletion that conflicts with safety, scientific-integrity or regulatory duties."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological samples and secondary use",
+      "applies_when": "samples.collected or samples.archive_used",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Sample type, volume, frequency and timing for every sample."
+        },
+        {
+          "id": "C6.02",
+          "check": "Protocol purpose and planned analyses."
+        },
+        {
+          "id": "C6.03",
+          "check": "Whether genetic testing is involved."
+        },
+        {
+          "id": "C6.04",
+          "check": "Coding, storage location, duration and responsible organisation."
+        },
+        {
+          "id": "C6.05",
+          "check": "Transfers and recipient categories."
+        },
+        {
+          "id": "C6.06",
+          "check": "Exhaustion, return or destruction."
+        },
+        {
+          "id": "C6.07",
+          "check": "Handling of incidental findings where applicable."
+        },
+        {
+          "id": "C6.08",
+          "check": "Whether commercial research is possible."
+        },
+        {
+          "id": "C6.09",
+          "check": "Withdrawal options and practical limits."
+        },
+        {
+          "id": "C6.10",
+          "check": "Protocol use clearly separated from optional use outside the protocol; separate optional document present where needed (AKEK).",
+          "applies_when": "samples.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.11",
+          "check": "Consistent with the S1 biological-samples form and the GDPR statement."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Germany-specific regulatory checks",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "All participant and representative documents are in German."
+        },
+        {
+          "id": "C7.02",
+          "check": "Planned non-German enrolment has qualified translations and a communication plan.",
+          "applies_when": "population.non_german_speakers"
+        },
+        {
+          "id": "C7.03",
+          "check": "The AKEK adult patient or healthy-volunteer model was used as baseline; every deviation from the model text is justified and visibly identifiable (AKEK guideline, 9 April 2026)."
+        },
+        {
+          "id": "C7.04",
+          "check": "The physician-led information process matches section 40b(2) AMG."
+        },
+        {
+          "id": "C7.05",
+          "check": "Trial-participant insurance wording matches German coverage (min. EUR 500,000 per case of death or continuing incapacity)."
+        },
+        {
+          "id": "C7.06",
+          "check": "Vulnerable-population pathways match sections 40b(3) to 40b(5) AMG.",
+          "applies_when": "population.minors or population.adults_without_capacity or consent.emergency_enrolment"
+        },
+        {
+          "id": "C7.07",
+          "check": "The data section contains every disclosure in section 40b(6) AMG."
+        },
+        {
+          "id": "C7.08",
+          "check": "Recruitment material avoids promotional claims and undue emphasis on payment.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "C7.09",
+          "check": "Endpoint-related patient-facing documents follow the Part I (English source) / Part II (German translation) route.",
+          "applies_when": "endpoint_documents.participant_facing"
+        },
+        {
+          "id": "C7.10",
+          "check": "Radiation information and Part II documentation are included where the 2025 German radiation route applies.",
+          "applies_when": "radiation.requires_authorisation_or_notification"
+        },
+        {
+          "id": "C7.11",
+          "check": "Short summary of at most two pages, visually highlighted; Part I and Part II structure; risk frequencies use the four German categories."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administration",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Correct document title, population, language code, version and date."
+        },
+        {
+          "id": "C8.02",
+          "check": "Version references inside the consent form match the information sheet."
+        },
+        {
+          "id": "C8.03",
+          "check": "No participant, representative or physician signature in the blank CTIS submission copy."
+        },
+        {
+          "id": "C8.04",
+          "check": "Complete signature and date fields for use at consent."
+        },
+        {
+          "id": "C8.05",
+          "check": "Witness fields only where the alternative-signature pathway can apply."
+        },
+        {
+          "id": "C8.06",
+          "check": "Representative capacity or relationship field where relevant."
+        },
+        {
+          "id": "C8.07",
+          "check": "Page numbering; participant initials only if the process requires them."
+        },
+        {
+          "id": "C8.08",
+          "check": "Statement that the participant receives a signed copy."
+        },
+        {
+          "id": "C8.09",
+          "check": "Correct CTIS section and naming convention."
+        },
+        {
+          "id": "C8.10",
+          "check": "No personal data that should not appear in the CTIS upload."
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version (italic notes, [bracket] notes, ........... gaps, yellow [EINFÜGEN/FALLS/AUSWAHL/HINWEIS] labels); fields completed by hand at consent stay blank."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability, language and design",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "The first pages answer what the trial is, what happens, the main risks and the alternatives."
+        },
+        {
+          "id": "C9.02",
+          "check": "Short sentences; medical terms explained at first use."
+        },
+        {
+          "id": "C9.03",
+          "check": "Risks grouped and prioritised."
+        },
+        {
+          "id": "C9.04",
+          "check": "Numbers, probabilities, visit counts and periods are easy to find."
+        },
+        {
+          "id": "C9.05",
+          "check": "Headings make the document easy to scan."
+        },
+        {
+          "id": "C9.06",
+          "check": "Optional choices look optional."
+        },
+        {
+          "id": "C9.07",
+          "check": "German terminology consistent and natural."
+        },
+        {
+          "id": "C9.08",
+          "check": "Translations reviewed by a qualified person and matching the approved source.",
+          "applies_when": "document is adapted from a reference document in another language"
+        },
+        {
+          "id": "C9.09",
+          "check": "Usable printed, on a phone and electronically."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final package",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "The participant document list matches the protocol's population, country, site, procedure, data and sample matrices, and the Germany Part II package checklist."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "DE-CHECK",
+  "name": "Germany: check of forms and supplied documents",
+  "applies_to_kinds": ["form", "third_party_template", "third_party_document", "ctis_data"],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/germany/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": ["met", "unmet", "needs_decision", "not_applicable"],
+  "common": [
+    {"id": "X.01", "check": "Trial title and EU trial number (if assigned) match the protocol and CTIS."},
+    {"id": "X.02", "check": "Every field the assistant answers is answered; fields that belong to the site or investigator are left empty, not invented."},
+    {"id": "X.03", "check": "No drafting instruction remains."},
+    {"id": "X.04", "check": "Language is German or English; no signature unless the ethics committee or the selected form requires one."},
+    {"id": "X.05", "check": "CTIS title follows the naming guide and requirements.json."}
+  ],
+  "by_document": {
+    "DE-K1": [
+      {"id": "K1.01", "check": "Uses the EudraLex template version 2.0 (submissions from 1 September 2026)."},
+      {"id": "K1.02", "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed, each 'no' section says not applicable."},
+      {"id": "K1.03", "check": "Who conducts the consent interview matches section 40b(2) AMG (investigator who is a physician or dentist, or a physician or dentist on the trial team)."},
+      {"id": "K1.04", "check": "German additions in the national sections: express consent to data processing (section 40b(6) AMG), qualified translations and communication plan for planned non-German speakers, protected-population consent by the investigator, AMG advance statement for group-benefit research where it applies."},
+      {"id": "K1.05", "check": "Recruitment routes and first act of recruitment match the recruitment material (K2) and the protocol."}
+    ],
+    "DE-N1": [
+      {"id": "N1.01", "check": "One form per German site; covers Annex I point 67 (facilities, equipment, procedures, human resources)."},
+      {"id": "N1.02", "check": "Statements are specific to this protocol (IMP handling, procedures, population, safety management) and mark site capabilities for the site to confirm."},
+      {"id": "N1.03", "check": "No signature in the CTIS copy (AKEK)."},
+      {"id": "N1.04", "check": "Radiation authorisation documents are planned under N where the 2025 route applies.", "applies_when": "radiation.requires_authorisation_or_notification"}
+    ],
+    "DE-S1": [
+      {"id": "S1.01", "check": "New and archive sample sections match the protocol and sample plan; at least one is completed."},
+      {"id": "S1.02", "check": "Analysis, storage, duration, access, coding and transfers match the participant documents and R1."},
+      {"id": "S1.03", "check": "Future use outside the protocol is answered consistently with the separate secondary-use document (AKEK separate-document rule).", "applies_when": "samples.future_use_outside_protocol"}
+    ],
+    "DE-P1": [
+      {"id": "P1.01", "check": "States explicitly when no compensation is offered."},
+      {"id": "P1.02", "check": "Amounts, conditions and recipients identical to every participant document."},
+      {"id": "P1.03", "check": "Minors, incapacitated adults and breastfeeding women receive only compensation of expenses and loss of earnings directly related to participation.", "applies_when": "population.minors or population.adults_without_capacity"}
+    ],
+    "DE-R1": [
+      {"id": "R1.01", "check": "Contains the German national data-protection confirmation (GDPR opening clauses), or a separate national statement is planned."},
+      {"id": "R1.02", "check": "Sponsor details match the CTIS application."}
+    ],
+    "DE-M1": [
+      {"id": "M1.01", "check": "One CV per principal investigator and site; not older than one year."},
+      {"id": "M1.02", "check": "Shows professional qualification, relevant clinical experience, trial experience and GCP knowledge."}
+    ],
+    "DE-M2-TRAINING": [
+      {"id": "M2T.01", "check": "Certificates cover CTR, AMG and GCP according to the German curricular recommendations and are current for the investigator's role."}
+    ],
+    "DE-M2-DOI": [
+      {"id": "M2D.01", "check": "One declaration per principal investigator and site; economic interests, institutional affiliations and other conditions are answered by the investigator."}
+    ],
+    "DE-N2": [
+      {"id": "N2.01", "check": "CTIS lists every planned German site with principal investigator, role and planned participants, matching the M and N documents."}
+    ],
+    "DE-O1": [
+      {"id": "O1.01", "check": "Insurer-issued certificate identifies the trial or clearly establishes coverage in Germany."},
+      {"id": "O1.02", "check": "Cover at least EUR 500,000 per case of death or continuing incapacity for work, proportionate to the risk; or the low-intervention exception applies with its German conditions met."}
+    ],
+    "DE-O2": [
+      {"id": "O2.01", "check": "Policy terms provided; insurer name and address, policy number, contact route, main cover and participant obligations match every participant document."}
+    ],
+    "DE-P2": [
+      {"id": "P2.01", "check": "Draft contract per German site, without signatures; financial arrangements consistent with P1."}
+    ],
+    "DE-N-RADIATION": [
+      {"id": "RAD.01", "check": "File set matches the radiation procedure and the current BfArM or PEI route (since 1 July 2025)."}
+    ]
+  }
+}
