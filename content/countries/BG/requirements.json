@@ -1,0 +1,1004 @@
+{
+  "country": "BG",
+  "name": "Bulgaria",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "Bulgarian Drug Agency (BDA, Изпълнителна агенция по лекарствата): national competent authority; publishes the national list of Part I and Part II documents and language expectations (10 July 2024) and the Bulgaria site-suitability declaration template",
+    "ethics": "Ethics Committee for Clinical Trials (EKKI, Комисия по етика за клинични изпитвания), established under the Minister of Health, performs the national ethics assessment and publishes its CTIS procedures",
+    "submission": "Initial applications under Regulation (EU) No 536/2014 are submitted through CTIS, not through the BDA registry.",
+    "fee": "Not covered by the Bulgaria guides (reviewed 23 September 2026). Proof of fee payment uses the CTIS Forms section, not Part II (naming guide). See DECISIONS.md, Missing."
+  },
+  "language_rules": {
+    "participant_documents": "bg",
+    "participant_documents_english_version": true,
+    "administrative_documents": [
+      "bg",
+      "en"
+    ],
+    "rule": "Participant information, the ICF and recruitment arrangements and materials must be in Bulgarian. The BDA also requires the corresponding Bulgaria version in English of the participant information and consent set. Investigator CV and DoI, insurance, financial arrangements, GDPR and biological-sample declarations may be Bulgarian and/or English. The site-suitability declaration is Bulgarian; the planned-site list is Bulgarian with site name, address and PI name also in English. The national cover letter is Bulgarian.",
+    "by_language": {
+      "bg_only": [
+        "BG-K1",
+        "BG-K2",
+        "BG-L2",
+        "BG-N1",
+        "BG-B1-CONTACT"
+      ],
+      "bg_and_en_version": [
+        "BG-L1"
+      ],
+      "bg_with_english_site_details": [
+        "BG-N2"
+      ],
+      "bg_or_en": [
+        "BG-M1",
+        "BG-M2",
+        "BG-O1",
+        "BG-P1",
+        "BG-P2",
+        "BG-R1",
+        "BG-S1"
+      ]
+    },
+    "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in Bulgarian, matching the supplied Bulgarian variable sheet; K1 must be Bulgarian. English is accepted for P1, R1 and S1 if the user prefers (DECISIONS.md D11).",
+    "drafting_notes_language": "drafting_notes_bg for every document."
+  },
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.adults_without_capacity",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "consent.participant_or_representative_cannot_read",
+    "consent.electronic",
+    "recruitment.fully_described_in_protocol",
+    "recruitment.material_used",
+    "recruitment.other_information_material",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.future_use_outside_protocol",
+    "data.future_use_outside_protocol",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "contract.financial_arrangements_in_site_contract",
+    "sites.count"
+  ],
+  "study_facts_note": "Country-specific keys: recruitment.fully_described_in_protocol (BDA: K1 is mandatory when recruitment is not fully described in the protocol); consent.participant_or_representative_cannot_read (Bulgarian GCP independent-witness trigger, in addition to the CTR inability to write).",
+  "documents": [
+    {
+      "id": "BG-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment arrangements and informed-consent procedure",
+      "requirement": "conditional",
+      "trigger": "not recruitment.fully_described_in_protocol",
+      "trigger_text": "BDA: mandatory when recruitment is not fully described in the protocol. Planned in every package by default because template v2.0 also carries the informed-consent procedure for every consent pathway (DECISIONS.md D2).",
+      "per": "trial",
+      "language": [
+        "bg"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "European Commission recruitment and informed-consent procedure template, version 2.0 (applies to new Part II submissions from 1 September 2026, including initial applications, additional Member States and Article 11 completions)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "No separate national signature requirement is stated for the recruitment document.",
+      "content": "Inclusion procedures with the first recruitment action clearly identified; if advertisements are used, a general description of how responses will be handled and how unsuitable respondents will receive information or advice. Version and date on the document. The consent-procedure sections of template v2.0 are completed for every consent pathway in the plan (incapacitated adults, minors, impartial witness, emergency) with the Bulgarian rules in national_fields.",
+      "national_fields": {
+        "v105": "Bulgaria: recruitment arrangements and every recruitment material are in Bulgarian (BDA); each recruitment document carries its version and date.",
+        "v108": "Bulgaria: participant information and ICF in Bulgarian, with the corresponding Bulgaria version in English (BDA). Under Ordinance No 31 on Good Clinical Practice the oral and written information avoids medical jargon and is understandable for the participant, legal representative and, where needed, independent witness; enough time and opportunity to discuss and decide; the participant or legal representative and the person conducting the consent discussion sign and personally date the written consent before enrolment; the participant or representative receives a copy of the signed and dated form and the written information.",
+        "v110": "Bulgaria: under Article 96 of the Medicinal Products in Human Medicine Act consent for an incapacitated adult is given by the legal representative; in the situation of Article 162(3) of the Health Act by the person appointed by the court. The representative's consent represents the participant's presumed will and may be withdrawn without negative consequences. The participant is informed at a level consistent with their ability to understand and personally signs and dates the written consent if able (Ordinance No 31); an expressed wish to refuse or withdraw is taken into account by the investigator and, when necessary, the principal investigator. The participant's own consent is obtained if capacity returns. Legal incapacity is not inferred from a diagnosis alone.",
+        "v114": "Bulgaria (Article 97 of the Medicinal Products in Human Medicine Act): under 14, written informed consent from both parents or the guardians; 14 to 17, written informed consent from the minor and both parents, or from the custodian where applicable, and the ICF for this age group contains a signature field for the minor (BDA). If one parent is unknown, deceased, deprived of parental rights or does not hold parental rights after divorce, consent is given by the minor (14 to 17) and the parent who exercises parental rights. Information on the trial, risks and benefits is given in a form the minor understands by a physician experienced with children and adolescents. The minor's explicit refusal or wish to withdraw is taken into account; parental or custodian consent may be withdrawn without negative consequences. The participant's own express consent is obtained on reaching 18.",
+        "v117": "Bulgaria: Ordinance No 31 requires an independent witness when the participant or the legal representative cannot read; the witness does not participate in and has no interest in the trial, cannot be influenced by the trial participants, is present during the whole consent discussion, and signs and personally dates the ICF after the oral confirmation of the decision. Where the participant cannot write, consent is given and recorded by appropriate alternative means in the presence of at least one impartial witness (Regulation (EU) No 536/2014). Describe the intended alternative means. The witness is not a legal representative and the interviewer still signs.",
+        "v121": "Bulgaria: in addition to Article 35, the Bulgarian minor (Article 97) and adult representative (Article 96) rules apply to the consent sought after the intervention; consent to continue is sought without undue delay; the participant's own consent is obtained when capacity returns; the person is informed of the right to object to the use of data obtained; the later consent documents are in Bulgarian with the Bulgaria English version (no English-only exception); the record distinguishes the Article 35 enrolment decision from the later informed-consent event (no retrospective consent date)."
+      },
+      "sources": [
+        "BG-PII-CHECKLIST#1",
+        "BG-ICF",
+        "BG-HUB"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел K. Условно задължителен документ: според ИАЛ се подава, когато наемането на участници не е напълно описано в протокола; в плана се включва по подразбиране, защото шаблонът версия 2.0 съдържа и процедурата за информирано съгласие за всички пътеки на съгласие (DECISIONS.md D2). Отговорите в шаблона се пишат на български език (ИАЛ изисква документите за наемане да бъдат на български). Шаблон: „Recruitment and informed consent procedure“ на Европейската комисия, версия 2.0 (прилага се за нови подавания на Част II от 1 септември 2026 г., включително първоначални заявления, допълнителни държави членки и допълване на заявление по чл. 11). Опишете процедурите по включване и ясно посочете първото действие по наемане. Ако се използват обяви, опишете общо как ще се обработват отговорите и как неподходящите кандидати ще получат информация или съвет. Документът носи версия и дата; не се подписва. Попълнете раздела за всяка пътека на съгласие в плана (недееспособни пълнолетни, непълнолетни, безпристрастен свидетел, спешни обстоятелства) с българските изисквания от national_fields (чл. 96 и 97 ЗЛПХМ, Наредба № 31 за добра клинична практика); за неприложимите пътеки отбележете „Не е приложимо“. Текстът „How to use this document“ и другите бележки на шаблона се изтриват."
+    },
+    {
+      "id": "BG-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_BG_bg",
+      "name_en": "Recruitment material (advertisements and other recruitment items)",
+      "requirement": "conditional",
+      "trigger": "recruitment.material_used",
+      "trigger_text": "Advertisements or other recruitment material: copies of printed material and any audio or visual content.",
+      "per": "item",
+      "language": [
+        "bg"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Final Bulgarian material as it will be used, each item with its version and date. Payment statements, eligibility claims and study-burden wording consistent with the PIS and ICF and with K1.",
+      "sources": [
+        "BG-PII-CHECKLIST#1",
+        "BG-HV"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел K. Условен документ: само когато се използват обяви или други материали за наемане; по един документ за всеки материал (копие на печатния материал, текст на аудио- или видеосъдържанието). Език: български (ИАЛ). Всеки документ носи версия и дата. Без подпис. Няма шаблон: изготвя се от протокола и K1. Изявленията за плащания, критериите за допустимост и натовареността трябва да съвпадат с информацията за участника, формуляра за съгласие и K1; описанието как се обработват отговорите е в K1."
+    },
+    {
+      "id": "BG-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_BG_bg",
+      "ctis_titles": {
+        "bg": "L1_SIS and ICF_<population>_BG_bg",
+        "en": "L1_SIS and ICF_<population>_BG_en"
+      },
+      "name_en": "Patient Information Sheet and Informed Consent Form, one set per population, in Bulgarian with the corresponding Bulgaria version in English",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "population",
+      "language": [
+        "bg",
+        "en"
+      ],
+      "language_note": "Both versions are required: the Bulgarian document is the participant-facing version; the English version is the corresponding Bulgaria version in English (BDA), aligned in content, document identity, version and date. The English version is a translation of the final Bulgarian version (DECISIONS.md D3).",
+      "template": null,
+      "template_note": "Participant templates are bound per population through population_sets. The BDA publishes no mandatory national PIS or ICF text template.",
+      "signature_at_submission": false,
+      "content": "All written information given to the potential participant or legally designated representative before the decision to participate, together with the written ICF, for every population (see population_sets). Review copies: not signed by participants at submission.",
+      "sources": [
+        "BG-PII-CHECKLIST#2",
+        "BG-ICF",
+        "BG-QC"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел L. Задължителен документ за всяка популация: цялата писмена информация, предоставяна на потенциалния участник или законния представител преди решението, заедно с писмения формуляр за информирано съгласие. Език: български; ИАЛ изисква и съответната версия за България на английски език – двете версии съвпадат по съдържание, идентификация на документа, версия и дата (английската версия е превод на окончателния български текст). Няма национален задължителен образец на ИАЛ: използвайте доставения шаблон за популацията (population_sets), Регламент (ЕС) № 536/2014, ЗЛПХМ (чл. 96 и 97) и Наредба № 31 за добра клинична практика. Текстът е без медицински жаргон и разбираем; обяснете практическите последици (напр. какво означава рандомизацията за участника). Информацията за застраховка, компенсации, контакти и обработване на данни трябва да съвпада с административните документи от Част II (O1, P1, R1, S1). Подаваните в CTIS копия са версии за оценка без подписи на участници; подписните полета остават празни."
+    },
+    {
+      "id": "BG-L2",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_<type>_BG_bg",
+      "name_en": "Other written information given before the participation decision",
+      "requirement": "conditional",
+      "trigger": "recruitment.other_information_material",
+      "trigger_text": "Any other written information given to the potential participant before the decision (for example a diary, instruction or procedure information that forms part of the consent package).",
+      "per": "item",
+      "language": [
+        "bg"
+      ],
+      "language_note": "Bulgarian required. Whether the Bulgaria English version is also required for this material is not stated separately (DECISIONS.md D4).",
+      "template": null,
+      "signature_at_submission": false,
+      "sources": [
+        "BG-PII-CHECKLIST#2",
+        "BG-HV"
+      ],
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел L. Условен документ: друга писмена информация, предоставяна преди решението за участие (напр. дневник, инструкция или информация за процедури, когато са част от пакета за съгласие); по един документ за всеки материал. Език: български; дали е нужна и английска версия за България – вж. DECISIONS.md D4. Без шаблон и без подпис. Съдържанието не трябва да противоречи на информацията за участника и формуляра за съгласие."
+    },
+    {
+      "id": "BG-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "name_en": "Principal investigator CV (investigator suitability)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "bg",
+        "en"
+      ],
+      "language_note": "Bulgarian and/or English (BDA).",
+      "template": {
+        "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+        "basis": "EudraLex investigator CV template (the BDA asks for the EudraLex template)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+        "shared": true,
+        "mandatory_template": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "The guide names the DoI and the site-suitability declaration as the signed Part II documents; no signature rule is stated for the CV.",
+      "content": "Current information on investigator qualifications, including relevant Good Clinical Practice training, clinical-trial experience and patient-care experience. Personal details come from the investigator; the assistant fills only trial fields.",
+      "sources": [
+        "BG-PII-CHECKLIST#3"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел M. Задължителен документ за всеки главен изследовател и център. Шаблон за автобиография на EudraLex (ИАЛ насочва към шаблоните на EudraLex). Български и/или английски език. Трябва да показва актуална информация за квалификацията, включително съответното обучение по добра клинична практика, опита в клинични изпитвания и опита в грижата за пациенти. Асистентът попълва само данните за изпитването (номер на изпитването в ЕС); всички лични данни и професионалният опит се попълват от изследователя и не се измислят. Не е посочено изискване за подпис при подаване. Име на лице в наименованието в CTIS само за главния изследовател."
+    },
+    {
+      "id": "BG-M2",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Declaration of interests of the principal investigator",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "bg",
+        "en"
+      ],
+      "language_note": "Bulgarian and/or English (BDA).",
+      "template": {
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+        "basis": "EudraLex declaration-of-interest template (the BDA asks for the EudraLex template)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true,
+        "mandatory_template": true
+      },
+      "signature_at_submission": true,
+      "signature_rule": "Signed by the principal investigator before upload (BDA).",
+      "content": "Interests that may influence impartiality, declared by the principal investigator, who signs the declaration.",
+      "sources": [
+        "BG-PII-CHECKLIST#3",
+        "BG-PII-CHECKLIST#signatures"
+      ],
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел M. Задължителен документ за всеки главен изследовател и център. Шаблон за декларация за интереси на EudraLex. Български и/или английски език. Декларацията трябва да бъде подписана от главния изследовател (ИАЛ) и подписаното копие се качва в CTIS. Асистентът попълва само наименованието и номера на изпитването в ЕС; на въпросите за интереси отговаря изследователят, който попълва име, институция и дата и подписва. Нищо не се попълва предварително от името на изследователя."
+    },
+    {
+      "id": "BG-N2",
+      "ctis_section": "N",
+      "ctis_title": "N2_List of trial sites and principal investigators_BG",
+      "ctis_title_note": "The Bulgaria guide names no CTIS slot or title for the list; title after the naming-guide pattern and the Czech precedent (DECISIONS.md D6).",
+      "name_en": "Planned trial-site list",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "bg",
+        "en"
+      ],
+      "language_note": "The list is in Bulgarian; site name and address and the principal investigator's name are also given in English so that the information can be matched during assessment (BDA).",
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Planned trial sites, the name and position of each principal investigator and the planned number of participants at each site. Must agree with CTIS, every N1 declaration, the insurance documents (O1) and K1.",
+      "sources": [
+        "BG-PII-CHECKLIST#4",
+        "BG-QC"
+      ],
+      "kind": "ctis_data",
+      "reader": "regulatory",
+      "filled_by": "sponsor (site data from CTIS and the site agreements)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II. Задължителен документ: списък на планираните центрове с име и длъжност на всеки главен изследовател и планиран брой участници във всеки център. Език: български; наименованието и адресът на центъра и името на главния изследовател се посочват и на английски, за да може информацията да бъде съпоставена при оценката. Не се изисква подпис. Данните се предоставят от възложителя и трябва да съвпадат с CTIS, с декларациите за пригодност на центровете (N1), със застрахователните документи (O1) и с K1. Раздел и наименование в CTIS: вж. DECISIONS.md D6."
+    },
+    {
+      "id": "BG-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Bulgaria site-suitability declaration (national BDA template)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "site",
+      "language": [
+        "bg"
+      ],
+      "template": null,
+      "national_template": "Bulgaria-specific site-suitability declaration template available from the BDA. Not supplied in CTIS_BG: the folder's N1_Site suitability_BG_bg.docx is the generic EU (CTAG) form, which the Bulgaria guide says must not be assumed sufficient on its own. The shared EU form is therefore not bound.",
+      "signature_at_submission": true,
+      "signature_rule": "Signed by the head of the institution at the trial site before upload (BDA).",
+      "content": "Why the site is suitable for the trial: facilities, equipment, human resources and relevant expertise. One declaration per site, in Bulgarian.",
+      "sources": [
+        "BG-PII-CHECKLIST#5",
+        "BG-PII-CHECKLIST#signatures",
+        "BG-HUB"
+      ],
+      "kind": "third_party_document",
+      "kind_note": "Becomes kind 'form' (Draft trial and site-description fields, then Check) once the national BDA template is supplied and converted into countries/BG/templates/part-ii (DECISIONS.md D1).",
+      "reader": "regulatory",
+      "filled_by": "site (national BDA template, signed by the head of the institution)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел N. Задължителен документ, по един за всеки център. Използва се българският образец на декларация за пригодност на центъра, публикуван от ИАЛ; националният образец има предимство и общият шаблон на ЕС сам по себе си не се приема за достатъчен. Образецът не е включен в CTIS_BG (в папката е само шаблонът на ЕС) – не изготвяйте N1 върху шаблона на ЕС (DECISIONS.md D1). Език: български. Декларацията описва защо центърът е подходящ за изпитването: помещения, оборудване, човешки ресурси и съответен опит. Подписва се от ръководителя на институцията в центъра преди качване в CTIS. Планираният брой участници трябва да съвпада със списъка на центровете (N2), CTIS и застраховката (O1)."
+    },
+    {
+      "id": "BG-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_BG",
+      "name_en": "Insurance documentation (sponsor and principal investigator liability)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "bg",
+        "en"
+      ],
+      "language_note": "Bulgarian and/or English (BDA).",
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "As issued by the insurer. If signed with a qualified electronic signature, submitted in a format that permits verification of the signature.",
+      "content": "Valid insurance covering sponsor and principal investigator liability as required by Bulgarian law (Article 91 of the Medicinal Products in Human Medicine Act: trial-related material and non-material harm). Includes all proposed sites with the relevant departments or clinics and principal investigators; insured participant number equal to or greater than the number planned for Bulgaria in CTIS; valid for the relevant trial period and national scope.",
+      "sources": [
+        "BG-PII-CHECKLIST#6",
+        "BG-HV",
+        "BG-HUB"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел O. Задължителен документ. Валидна застрахователна документация, покриваща отговорността на възложителя и на главния изследовател съгласно българското законодателство (чл. 91 ЗЛПХМ: имуществени и неимуществени вреди, свързани с изпитването). Трябва да включва всички предложени центрове със съответните отделения или клиники и главни изследователи; застрахованият брой участници трябва да е равен на или по-голям от броя, планиран за България в CTIS. Полицата трябва да е валидна за съответния период на изпитването и с национален обхват. Български и/или английски език. Ако документът е подписан с квалифициран електронен подпис, подава се във формат, който позволява проверка на подписа. Издава се от застрахователя; асистентът само проверява. Текстът за застраховката в документите за участниците трябва да съвпада с тази документация."
+    },
+    {
+      "id": "BG-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_BG",
+      "name_en": "Participant compensation (EU compensation template)",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "bg",
+        "en"
+      ],
+      "language_note": "Bulgarian and/or English (BDA); answers in Bulgarian (answer_languages).",
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "European Commission participant-compensation template (the BDA points sponsors to it)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "No signature rule is stated; no invented signature block (BDA list and official template).",
+      "content": "Compensation and reimbursement offered to participants, with conditions; consistent with every participant document. Healthy-volunteer studies: payment and reimbursement information agrees with the participant-facing documents.",
+      "sources": [
+        "BG-PII-CHECKLIST#7",
+        "BG-HV"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел P. Задължителен документ (точка 7 от списъка на ИАЛ: финансови и други договорености). ИАЛ насочва към шаблона на Европейската комисия за компенсация на участниците. Отговори на български език (допуска се и английски). Опишете възстановяването на разходи и плащанията към участниците и условията им; ако не се предлага компенсация, посочете го изрично. Сумите и условията трябва да съвпадат с всички документи за участниците; при здрави доброволци посочете дали плащането е свързано с проведени посещения, време, неудобство или възстановими разходи и правилото при ранно оттегляне. Плащането не се представя като полза от изпитвания продукт. Без подпис. Описанието на финансирането и плащанията към изследователи и центрове се подава в P2."
+    },
+    {
+      "id": "BG-P2",
+      "ctis_section": "P",
+      "ctis_title": "P2_Financial arrangements_BG",
+      "ctis_title_note": "If the information is given in the draft sponsor-investigator and sponsor-institution contracts, one upload per site titled P2_Financial arrangements_<site> (DECISIONS.md D7).",
+      "name_en": "Trial financing and financial arrangements with investigators and sites",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "bg",
+        "en"
+      ],
+      "language_note": "Bulgarian and/or English (BDA).",
+      "template": null,
+      "signature_at_submission": false,
+      "content": "A short description of trial financing and information on financial transactions and compensation paid to participants, investigators and sites; may be contained in draft sponsor-investigator and sponsor-institution contracts.",
+      "sources": [
+        "BG-PII-CHECKLIST#7",
+        "BG-HV"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor (finance or legal)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел P. Задължителен документ (точка 7 от списъка на ИАЛ). Кратко описание на финансирането на изпитването и информация за финансовите транзакции и компенсациите, изплащани на участници, изследователи и центрове; информацията може да се съдържа в проектодоговорите възложител–изследовател и възложител–институция. Български и/или английски език. Предоставя се от възложителя; асистентът само проверява съответствието с P1 и с документите за участниците. Проектодоговорите се подават без подписи."
+    },
+    {
+      "id": "BG-R1",
+      "ctis_section": "R",
+      "ctis_title": "R1_Compliance collection and use personal data_BG",
+      "name_en": "GDPR compliance declaration",
+      "requirement": "mandatory",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "bg",
+        "en"
+      ],
+      "language_note": "Bulgarian and/or English (BDA); answers in Bulgarian (answer_languages).",
+      "template": {
+        "file": "eu/templates/part-ii/R1_Data protection.docx",
+        "basis": "EudraLex GDPR compliance statement; the BDA national list adds no Bulgaria-specific form beyond the EU template",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/R1_Data protection.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "The template carries date, name and role of the responsible person at the sponsor; these are completed. No signature rule is stated and no signature block is added.",
+      "content": "Declaration from the sponsor or its representative that personal data will be collected and processed in accordance with Regulation (EU) 2016/679. No national data-protection statement is required (field r1_the_sponsor_declares: not applicable). The participant-facing privacy explanation stays consistent with it.",
+      "sources": [
+        "BG-PII-CHECKLIST#8",
+        "BG-ICF"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел R. Задължителен документ. Декларация на EudraLex от възложителя или негов представител, че личните данни ще се събират и обработват в съответствие с Регламент (ЕС) 2016/679. Националният списък на ИАЛ не добавя отделна българска форма извън шаблона на ЕС: не се изисква национално изявление (полето r1_the_sponsor_declares остава неприложимо). Отговори на български език (допуска се английски). Попълнете датата, името и ролята на отговорното лице при възложителя от данните на възложителя (не се измислят); не добавяйте блок за подпис. Обяснението за личните данни в документите за участниците трябва да съответства на тази декларация."
+    },
+    {
+      "id": "BG-S1",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_BG",
+      "name_en": "Declaration on compliance with applicable rules for human biological samples",
+      "requirement": "conditional",
+      "trigger": "samples.collected or samples.archive_used or samples.future_use_outside_protocol",
+      "trigger_text": "Human biological samples are collected, stored or planned for future use (Article 7(1)(h) of Regulation (EU) No 536/2014).",
+      "per": "trial",
+      "language": [
+        "bg",
+        "en"
+      ],
+      "language_note": "Bulgarian and/or English (BDA); answers in Bulgarian (answer_languages).",
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "EudraLex declaration on compliance with applicable rules for the collection, storage and future use of human biological samples",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "signature_note": "No signature rule is stated; no invented signature block.",
+      "content": "Sample types, collection, use, storage, transfer and future use as in the protocol and sample plan. The declaration does not replace participant information or consent; optional future use beyond the protocol needs a separate participant choice (secondary_use population set).",
+      "sources": [
+        "BG-PII-CHECKLIST#9",
+        "BG-SECONDARY",
+        "BG-ICF"
+      ],
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_bg": "CTIS, Част II, раздел S. Условен документ: подава се, когато се събират, съхраняват или се планира бъдещо използване на човешки биологични проби (чл. 7, параграф 1, буква з) от Регламент (ЕС) № 536/2014). Шаблон на EudraLex. Български и/или английски език; отговори на български. Видът, количеството, целта, мястото и срокът на съхранение, трансферите и бъдещото използване трябва да съвпадат с протокола, плана за пробите и документите за участниците. Декларацията не замества информацията и съгласието на участника: незадължителното бъдещо използване извън протокола изисква отделен избор или документ за участника (шаблон BG-PT-secondary). Раздел 5 (национални изисквания): ръководствата за България не посочват допълнителни национални изисквания – отбележете „Не е приложимо“, освен ако възложителят посочи такива. Без подпис."
+    },
+    {
+      "id": "BG-B1-CONTACT",
+      "ctis_section": "B",
+      "ctis_title": "B1_Cover letter_<EU CT number>_BG_bg",
+      "ctis_title_note": "Forms section (B), not Part II. Country and language distinguish the national cover letter from the application's main cover letter (DECISIONS.md D8).",
+      "name_en": "National cover letter with Bulgaria contact person",
+      "requirement": "recommended",
+      "trigger": "always",
+      "per": "trial",
+      "language": [
+        "bg"
+      ],
+      "template": null,
+      "signature_at_submission": null,
+      "signature_note": "No rule stated; as prepared by the sponsor.",
+      "content": "Names a national contact person for the trial with telephone and email details. The national cover letter is in Bulgarian.",
+      "sources": [
+        "BG-PII-CHECKLIST#10"
+      ],
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_bg": "Раздел „Форми“ на CTIS (B), не Част II. Препоръчително: ИАЛ препоръчва в придружителното писмо да се посочи национално лице за контакт за изпитването с телефон и имейл. Националното придружително писмо е на български език. Данните за контакт се предоставят от възложителя и не се измислят; асистентът само проверява."
+    }
+  ],
+  "outside_part_ii": [
+    {
+      "id": "BG-FEE",
+      "what": "Proof of fee payment",
+      "requirement": "not covered by the Bulgaria guides",
+      "where": "CTIS Forms section (naming guide), not Part II",
+      "sources": [
+        "NAMING"
+      ]
+    }
+  ],
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_main_BG_bg.json"
+        }
+      ],
+      "note": "Capable adults 18 or older with the condition under study. Also used for re-consent at 18 and when capacity returns.",
+      "basis": "Supplied BG main template; no national BDA ICF template exists.",
+      "sources": [
+        "BG-ICF",
+        "BG-PII-CHECKLIST#2"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_healthy volunteers_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_healthy_BG_bg.json"
+        }
+      ],
+      "note": "Do not reuse a patient ICF implying therapeutic need, clinical benefit or treatment alternatives that do not apply. State whether any direct clinical benefit can be expected (often none). Describe confinement, fasting, dosing, blood draws, ECGs, imaging, restrictions and follow-up; payment or reimbursement structure in the wording of the Part II financial document (link to visits, time, inconvenience or expenses; rule on early withdrawal); payment never presented as a benefit of the product. No separate national healthy-volunteer form.",
+      "sources": [
+        "BG-HV"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_parents_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_parents_BG_bg.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 6-11_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_children 6-11_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_age 6-11_BG_bg.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 12-13_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_children 12-13_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_age 12-13_BG_bg.json"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 14-17_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_adolescents 14-17_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_age 14-17_BG_bg.json"
+        }
+      ],
+      "note": "Article 97: under 14, written consent of both parents or the guardians, the child informed in an understandable form by a physician experienced with children and adolescents (age-adapted 6–11 and 12–13 documents record the child's opinion, not a legal consent); 14–17, the minor's own written informed consent plus both parents or the custodian, with a signature field for the minor. Single-parent exception only when the other parent is unknown, deceased, deprived of parental rights or lacks parental rights after divorce. Refusal or wish to withdraw taken into account. A participant who turns 14 moves to the 14–17 consent before continuing; at 18, the adult main or healthy document. Only the age-band documents for the ages enrolled.",
+      "sources": [
+        "BG-MINORS",
+        "BG-QC"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_legal representative_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_BG_bg.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_limited capacity_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_BG_bg.json"
+        }
+      ],
+      "note": "Only for adults legally unable to consent (not inferred from a diagnosis). Consent by the legal representative (Article 96) or, under Article 162(3) of the Health Act, the person appointed by the court; the participant receives adapted information, takes part as far as possible, signs and dates if able, and their objection is respected. Re-consent with the main document if capacity returns. No national legal-representative template.",
+      "sources": [
+        "BG-CAPACITY"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_emergency_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_emergency_BG_bg.json"
+        }
+      ],
+      "note": "Only when every Article 35 condition is met. Consent to continue sought without undue delay from the participant or, while the participant cannot decide, the legally designated representative; the participant's own consent when capable (main document). Right to object to use of data already obtained. For minors add the parents document and the age-band document (14–17: own written consent). Bulgarian documents with the English Bulgaria version; no English-only exception. No national emergency template.",
+      "sources": [
+        "BG-EMERGENCY"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible or consent.participant_or_representative_cannot_read",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_impartial witness_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_witness_BG_bg.json"
+        }
+      ],
+      "note": "Bulgarian GCP: independent witness when the participant or the legal representative cannot read; Regulation 536/2014: impartial witness when the participant cannot write and consent is recorded by alternative means. Functional triggers only (not age, disability or vulnerability). The supplied witness template covers a capable adult; for a legal representative, parent or minor who cannot read, a witness block is added to that pathway's document (DECISIONS.md D5). No national witness template.",
+      "sources": [
+        "BG-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_<population>_BG_bg",
+          "title_en": "L1_SIS and ICF_pregnancy follow-up_<population>_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_BG_bg.json"
+        }
+      ],
+      "note": "Only when follow-up goes beyond what the main consent clearly covers (more information, longer follow-up, medical-record access, infant data); not created merely for duplication. Continued participation while pregnant is an Article 33 question, not a follow-up form. Minor participant: the minor pathway for age and legal status. No named national form.",
+      "sources": [
+        "BG-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_BG_bg",
+          "title_en": "L1_SIS and ICF_pregnant partner_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_BG_bg.json"
+        }
+      ],
+      "note": "Separate partner-facing information and consent before collecting identifiable data or accessing records; the enrolled participant cannot sign for the partner. Bulgarian document; the English Bulgaria version is a recommendation (no partner-specific BDA rule).",
+      "sources": [
+        "BG-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_BG_bg",
+          "title_en": "L1_SIS and ICF_secondary use_BG_en",
+          "template": "templates/participant/L1_SIS and ICF_secondary_BG_bg.json"
+        }
+      ],
+      "note": "Optional use outside the protocol: separate signature, tick-box or clearly separated consent; refusal does not affect main participation; withdrawal limits stated for the actual data and sample flow. Representative and minor rules apply to the optional choice. Consistent with S1 and R1. No national secondary-use form.",
+      "sources": [
+        "BG-SECONDARY"
+      ]
+    }
+  ],
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents, each in Bulgarian (title) and as the Bulgaria English version (title_en). All belong to BG-L1.",
+  "drafting_rules": [
+    "Participant documents: the BDA publishes no mandatory national PIS or ICF text. Use the supplied Bulgarian template for each population, Regulation (EU) No 536/2014, the Medicinal Products in Human Medicine Act (Articles 96 and 97), Ordinance No 31 on Good Clinical Practice and the current EU Part II procedure template v2.0.",
+    "Every participant document is in Bulgarian, with the corresponding Bulgaria version in English; both identify the same content version and date. A technically correct translation is not enough: the Bulgarian text must read as a participant document.",
+    "Plain Bulgarian without medical jargon (Ordinance No 31): short sentences, necessary clinical terms defined at first use, practical consequences explained (for example what randomisation means for the participant), headings that help the reader find risks, visits, alternatives, withdrawal, contacts and compensation; no dense blocks copied from the protocol.",
+    "Cover, as the protocol requires: research nature and purpose; investigational treatment and chance of assignment to each treatment; procedures including invasive ones; participant responsibilities and experimental aspects; reasonably foreseeable risks and inconveniences; risks to an embryo, fetus or nursing infant; expected benefits or a clear statement that no direct clinical benefit is expected; alternatives with their important risks and benefits; compensation or treatment for trial-related injury; payment or reimbursement; expected costs; voluntariness and the right to refuse or withdraw; access to source medical records for monitoring, audit, ethics and regulators with confidentiality protections; protection of identity; new information; contacts for trial information, participant rights and injury; foreseeable reasons participation may end; expected duration; approximate number of participants.",
+    "Insurance, compensation, contacts and data-processing wording agrees with O1, P1/P2, R1 and S1. Do not insert policy details that may change unless the participant needs them.",
+    "Data protection: explain practical processing, confidentiality, source-record access, recipients and participant rights consistently with R1; do not present trial-participation consent as the only GDPR legal basis; distinguish stopping participation from handling of data already lawfully collected; never promise deletion of all data or samples where the protocol or law provides otherwise.",
+    "Samples: what is collected, why, how long it is kept, where it may be transferred and what happens to remaining material; optional future use is a separate choice.",
+    "Optional choices are visibly separate from the main decision and refusing them does not affect main participation.",
+    "Signatures happen only during trial conduct: the participant or legally designated representative and the person conducting the consent interview sign and personally date before enrolment, and a copy of the signed form and the information is given. The CTIS copies are blank review versions. Witness fields only where the witness pathway applies; no invented signature blocks.",
+    "Each document carries its title, version and date (in the footer); Bulgarian and English versions match.",
+    "Risk frequency categories: the Bulgaria guides name none; use the categories of the IB or SmPC and record them as a source (DECISIONS.md D10).",
+    "Participant templates (JSON): bold 'Инструкция за автора' paragraphs, 'Условен блок' labels, [square-bracket] notes (for example [попълнете], [population label], [date]), examples and unselected alternatives are drafting instructions; follow them and remove them. Underscore lines (____) for the consent visit stay blank. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels. Nothing of either may remain in a final document."
+  ],
+  "sources": {
+    "BG-HUB": "https://trialagents.com/ctis/bulgaria/en",
+    "BG-PII-CHECKLIST": "https://trialagents.com/ctis/bulgaria/en/part-ii-document-checklist",
+    "BG-ICF": "https://trialagents.com/ctis/bulgaria/en/patient-information-consent-requirements",
+    "BG-QC": "https://trialagents.com/ctis/bulgaria/en/patient-facing-document-qc-checklist",
+    "BG-HV": "https://trialagents.com/ctis/bulgaria/en/healthy-volunteer-consent-requirements",
+    "BG-MINORS": "https://trialagents.com/ctis/bulgaria/en/minor-consent-assent-requirements",
+    "BG-CAPACITY": "https://trialagents.com/ctis/bulgaria/en/limited-capacity-legal-representative-consent-requirements",
+    "BG-EMERGENCY": "https://trialagents.com/ctis/bulgaria/en/emergency-enrollment-consent-requirements",
+    "BG-WITNESS": "https://trialagents.com/ctis/bulgaria/en/impartial-witness-consent-requirements",
+    "BG-PREGNANCY": "https://trialagents.com/ctis/bulgaria/en/pregnancy-follow-up-requirements",
+    "BG-SECONDARY": "https://trialagents.com/ctis/bulgaria/en/secondary-use-consent-requirements",
+    "NAMING": "content/playbook/naming.md (https://trialagents.com/ctis/ctis-document-naming-convention, CTCG v3.0)",
+    "CTIS_BG": "CTIS_BG template folder (Part II DOCX forms and Variable Templates_BG_de.xlsx) and the Bulgarian participant-template text BG_13 participant-facing templates_12082026.txt (delivered in the CTIS_SK folder), supplied 27 November 2026"
+  },
+  "sources_note": "Document sources BG-PII-CHECKLIST#n refer to item n of the Part II checklist page; #signatures to its section 'What must be signed at CTIS submission'.",
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "bulgaria_note": "Use the CTCG pattern: _BG for country-level documents (O1, P1, P2, R1, S1, N2), _BG_bg for Bulgarian participant-facing documents and _BG_en for their Bulgaria English versions. Each recruitment or participant document also carries version and date in the document itself (BDA); under CTCG v3.0 version and date go in the CTIS metadata, not the title. Personal names only for the principal investigator in M1/M2 (DECISIONS.md D8)."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population; Bulgarian version first, then the Bulgaria English version translated from it.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued by someone else (insurer, site, sponsor). Recorded as a source when received; only checked.",
+    "ctis_data": "Site and investigator information held in CTIS; for Bulgaria also submitted as a Bulgarian list; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "participant_templates": [
+    {
+      "id": "BG-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_BG_bg.json",
+      "language": "bg",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_bg": "Информация за пациента и формуляр за информирано съгласие за участие в клинично изпитване",
+      "role": "main information and consent (capable adult patients)",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms."
+    },
+    {
+      "id": "BG-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_BG_bg.json",
+      "language": "bg",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_bg": "Информация за участника и формуляр за информирано съгласие – здрави пълнолетни доброволци",
+      "role": "main information and consent (healthy adult volunteers)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies."
+    },
+    {
+      "id": "BG-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_BG_bg.json",
+      "language": "bg",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_bg": "Информация и информирано съгласие за родители/настойник/попечител на малолетен или непълнолетен участник",
+      "role": "information and written consent for both parents, the guardian(s) or the custodian of a minor",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years)."
+    },
+    {
+      "id": "BG-PT-age-6-11",
+      "file": "templates/participant/L1_SIS and ICF_age 6-11_BG_bg.json",
+      "language": "bg",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_bg": "Информация за деца и формуляр за изразяване на съгласие/мнение (6–11 години)",
+      "role": "age-adapted information and record of the child's own opinion or assent, children 6–11 (under 14: not a legally valid consent)",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years).",
+      "age_band": "6-11"
+    },
+    {
+      "id": "BG-PT-age-12-13",
+      "file": "templates/participant/L1_SIS and ICF_age 12-13_BG_bg.json",
+      "language": "bg",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_bg": "Информация за юноши и формуляр за изразяване на съгласие/мнение (12–13 години)",
+      "role": "age-adapted information and record of the minor's own opinion or assent, 12–13 (under 14 under Bulgarian law: not a legally valid consent)",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+      "age_band": "12-13",
+      "description_note": "The template's own description field says 'aged 12 - 17 years'; its file band, title and content instructions are 12-13. The Bulgarian legal split at 14 (Article 97) decides which template applies; the description is kept as supplied (templates/README.md, conflict 2)."
+    },
+    {
+      "id": "BG-PT-age-14-17",
+      "file": "templates/participant/L1_SIS and ICF_age 14-17_BG_bg.json",
+      "language": "bg",
+      "name_en": "Subject Information and Consent Form - Adolescents",
+      "name_bg": "Информация и формуляр за писмено информирано съгласие – непълнолетни участници 14–17 години",
+      "role": "information and the minor's own written informed consent, 14–17, with the minor's signature field required by the BDA",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years).",
+      "age_band": "14-17",
+      "description_note": "The template's own description field says 'aged 12 - 17 years'; its file band, title and content instructions are 14-17. The Bulgarian legal split at 14 (Article 97) decides which template applies; the description is kept as supplied (templates/README.md, conflict 2)."
+    },
+    {
+      "id": "BG-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_BG_bg.json",
+      "language": "bg",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_bg": "Информация и информирано съгласие за законен представител на пълнолетен участник",
+      "role": "information and consent for the legal representative (or court-appointed person) of an adult who cannot legally consent",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "BG-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_BG_bg.json",
+      "language": "bg",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_bg": "Опростена информация и формуляр за изразяване на воля – пълнолетен участник с ограничена способност за разбиране",
+      "role": "simplified information and expression of will for the adult who cannot legally consent; accompanies the representative's consent",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent."
+    },
+    {
+      "id": "BG-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_BG_bg.json",
+      "language": "bg",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_bg": "Информация за включване при спешни обстоятелства и отложено съгласие за продължаване",
+      "role": "information and consent to continue after emergency enrolment (Article 35)",
+      "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window."
+    },
+    {
+      "id": "BG-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_BG_bg.json",
+      "language": "bg",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_bg": "Информация за участника и информирано съгласие в присъствието на безпристрастен свидетел",
+      "role": "information and consent of a capable adult who cannot read, write or sign, with impartial-witness attestation",
+      "when_to_use": "Must be used when the study involves an adult participant who has capacity to consent but cannot read, write or sign the standard consent form. The participant decides personally, while an impartial witness confirms and documents the consent process."
+    },
+    {
+      "id": "BG-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_BG_bg.json",
+      "language": "bg",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_bg": "Информация и съгласие за проследяване на бременност – участничка в клинично изпитване",
+      "role": "pregnancy follow-up of a trial participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant."
+    },
+    {
+      "id": "BG-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_BG_bg.json",
+      "language": "bg",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_bg": "Информация и съгласие за проследяване на бременност – бременна партньорка на участник",
+      "role": "information and consent for the pregnant partner of a male participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant."
+    },
+    {
+      "id": "BG-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_BG_bg.json",
+      "language": "bg",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_bg": "Информация и съгласие за вторично или бъдещо използване на данни и биологични проби",
+      "role": "optional secondary or future use of data or samples outside the protocol",
+      "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial."
+    }
+  ],
+  "population_rules": {
+    "authority": "Bulgarian Drug Agency (BDA), Documents submitted under Annex I and Annex II of Regulation (EU) No 536/2014, 10 July 2024; Medicinal Products in Human Medicine Act, Articles 91, 96 and 97; Ordinance No 31 on Good Clinical Practice (sections 4.8.6 to 4.8.12 and the definition of independent witness); Health Act, Article 162(3); Regulation (EU) No 536/2014, Articles 28 to 35 (as recorded in the Bulgaria guides, reviewed 23 September 2026)",
+    "minors": {
+      "legal_age_groups": [
+        {
+          "group": "under 14",
+          "consent": "written informed consent of both parents or of the guardians; represents the child's presumed will and can be withdrawn",
+          "child_role": "age-appropriate information from a physician experienced with children and adolescents; explicit refusal or wish to withdraw taken into account"
+        },
+        {
+          "group": "14-17",
+          "consent": "written informed consent of the minor and of both parents, or of the custodian where applicable",
+          "child_role": "own written informed consent; the ICF contains a signature field for the minor (BDA), not only an assent line"
+        }
+      ],
+      "age_bands": [
+        {
+          "band": "6-11",
+          "legal_group": "under 14",
+          "template": "BG-PT-age-6-11",
+          "reader": "child"
+        },
+        {
+          "band": "12-13",
+          "legal_group": "under 14",
+          "template": "BG-PT-age-12-13",
+          "reader": "child (minor under 14)"
+        },
+        {
+          "band": "14-17",
+          "legal_group": "14-17",
+          "template": "BG-PT-age-14-17",
+          "reader": "adolescent"
+        }
+      ],
+      "always": [
+        "BG-PT-parents"
+      ],
+      "single_parent_exception": "Written consent by the minor (14–17) and the parent who exercises parental rights only when the other parent is unknown, deceased, deprived of parental rights or does not hold parental rights after divorce; the CTIS document makes this route identifiable.",
+      "band_change": "A participant who reaches 14 during the trial gives their own written consent on BG-PT-age-14-17 before continuing (template instruction, consistent with Article 97).",
+      "reconsent_at_18": "BG-PT-main or BG-PT-healthy: the participant's express consent before continuing after reaching 18, reflecting the current trial stage.",
+      "under_6": "No age-band template. The child still receives information in a form the child can understand (Article 97); whether to prepare a separate document is decided per study (DECISIONS.md D9).",
+      "note": "The template bands 6–11 and 12–13 subdivide the authority's under-14 group and 14–17 matches it, so there is no band conflict. Do not create one generic minor form that hides which signatures apply to which age group."
+    },
+    "adults_without_capacity": {
+      "always": [
+        "BG-PT-legal-rep",
+        "BG-PT-limited-capacity"
+      ],
+      "representative": "Legal representative (Article 96); in the situation of Article 162(3) of the Health Act the person appointed by the court. Do not invent a broader category of proxy decision-maker.",
+      "reconsent_on_capacity": "BG-PT-main when the participant becomes capable of legally valid consent.",
+      "note": "Legal incapacity is not inferred from dementia, psychiatric illness, acute disease or communication difficulty alone. The participant's objection is taken into account by the investigator and, when necessary, the principal investigator."
+    },
+    "emergency": {
+      "always": [
+        "BG-PT-emergency"
+      ],
+      "note": "Later representative consent uses BG-PT-legal-rep while the adult cannot decide; minors also need BG-PT-parents and the age-band document. The participant's own consent with BG-PT-main once capable."
+    },
+    "impartial_witness": {
+      "always": [
+        "BG-PT-witness"
+      ],
+      "triggers": "Participant or legal representative cannot read (Ordinance No 31); participant cannot write (Regulation 536/2014).",
+      "note": "BG-PT-witness is written for a capable adult participant. When a legal representative, parent or minor cannot read, the witness block goes into that pathway's document (DECISIONS.md D5)."
+    },
+    "pregnancy": {
+      "participant": "BG-PT-pregnancy only when follow-up goes beyond the main consent",
+      "partner": "BG-PT-pregnant-partner whenever identifiable data are collected from the partner or her records are accessed"
+    },
+    "shareable_templates": [
+      "BG-PT-pregnant-partner",
+      "BG-PT-secondary"
+    ],
+    "separate_document_rules": [
+      "Every participant document is prepared in Bulgarian with the corresponding Bulgaria version in English, aligned in content, version and date (BDA).",
+      "The standard adult PIS and ICF is not stretched to cover every population with one signature page; each consent pathway has its own clear document or signature structure.",
+      "Optional future use of data or samples outside the protocol is a separate optional choice or document (BG-PT-secondary) whose refusal does not affect main-study participation.",
+      "A pregnant partner receives a separate document; the enrolled participant cannot sign for her.",
+      "Identifiable infant data after birth need a separate post-natal consent of the persons with parental rights (pregnancy templates' instruction).",
+      "Re-consent after a material change: assess whether updated Part II documents and re-consent are needed before implementing the change."
+    ]
+  },
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/BG/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/BG/checklists/participant-documents.json",
+    "check": "countries/BG/checklists/forms-and-supplied.json",
+    "package": "countries/BG/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/BG/DECISIONS.md",
+  "answer_languages": [
+    "bg"
+  ],
+  "answer_languages_note": "Package language Bulgarian. English is not a separate package: it is the required Bulgaria English version of each participant document (BG-L1 and its population sets, titles _BG_en), translated from the final Bulgarian version, and an accepted language for the administrative documents listed in language_rules.by_language.bg_or_en."
+}

@@ -1,0 +1,196 @@
+{
+  "id": "BG-CHECK",
+  "name": "Bulgaria: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/bulgaria/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned), protocol number, sponsor, version and date match the protocol, CTIS and the rest of the package."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or sponsor are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains (yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels, template 'How to use this document' text); tracked changes and comments removed."
+    },
+    {
+      "id": "X.04",
+      "check": "Language matches requirements.json language_rules (Bulgarian for K1, N1, the site list and the cover letter; Bulgarian and/or English for M1, M2, O1, P1, P2, R1, S1)."
+    },
+    {
+      "id": "X.05",
+      "check": "Signature only where the Bulgarian rule for that document requires it (M2 signed by the PI; N1 signed by the head of the institution; insurance as issued); no invented signature blocks."
+    },
+    {
+      "id": "X.06",
+      "check": "CTIS title follows the naming guide and requirements.json."
+    }
+  ],
+  "by_document": {
+    "BG-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the European Commission recruitment and informed-consent procedure template version 2.0 (new Part II submissions from 1 September 2026, including additional Member States and Article 11 completion)."
+      },
+      {
+        "id": "K1.02",
+        "check": "Answers are in Bulgarian; version and date on the document; not signed."
+      },
+      {
+        "id": "K1.03",
+        "check": "Inclusion procedures are explained and the first recruitment action is clearly identified."
+      },
+      {
+        "id": "K1.04",
+        "check": "If advertisements are used: a general description of how responses will be handled and how unsuitable respondents will receive information or advice.",
+        "applies_when": "recruitment.material_used"
+      },
+      {
+        "id": "K1.05",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations; each 'yes' section is completed with the Bulgarian rules in national_fields (Articles 96 and 97, Ordinance No 31 witness rule, Article 35 with national representative rules); each 'no' section says not applicable."
+      },
+      {
+        "id": "K1.06",
+        "check": "Recruitment routes match the recruitment material (BG-K2) and the protocol.",
+        "applies_when": "recruitment.material_used"
+      }
+    ],
+    "BG-M1": [
+      {
+        "id": "M1.01",
+        "check": "One CV per principal investigator and site, on the EudraLex CV template, in Bulgarian and/or English."
+      },
+      {
+        "id": "M1.02",
+        "check": "Shows current qualifications, relevant GCP training, clinical-trial experience and patient-care experience; only trial fields were prepared by the assistant."
+      }
+    ],
+    "BG-M2": [
+      {
+        "id": "M2.01",
+        "check": "One declaration per principal investigator and site, on the EudraLex DoI template, in Bulgarian and/or English; interests answered by the investigator."
+      },
+      {
+        "id": "M2.02",
+        "check": "Signed by the principal investigator."
+      }
+    ],
+    "BG-N2": [
+      {
+        "id": "N2.01",
+        "check": "In Bulgarian: every planned site, the name and position of each principal investigator and the planned participant number per site; site name and address and PI name also in English."
+      },
+      {
+        "id": "N2.02",
+        "check": "Sites, principal investigators and participant numbers agree with CTIS, every N1 declaration, BG-O1 and K1; no signature."
+      }
+    ],
+    "BG-N1": [
+      {
+        "id": "N1.01",
+        "check": "The Bulgaria-specific site-suitability template from the BDA is used for every site, not the generic EU form alone."
+      },
+      {
+        "id": "N1.02",
+        "check": "In Bulgarian; describes why the site is suitable, including facilities, equipment, human resources and relevant expertise."
+      },
+      {
+        "id": "N1.03",
+        "check": "Signed by the head of the institution at the trial site."
+      },
+      {
+        "id": "N1.04",
+        "check": "Site name, principal investigator and planned participant number agree with BG-N2, CTIS and BG-O1."
+      }
+    ],
+    "BG-O1": [
+      {
+        "id": "O1.01",
+        "check": "Valid insurance covering sponsor and principal investigator liability as required by Bulgarian law, valid for the trial period and national scope."
+      },
+      {
+        "id": "O1.02",
+        "check": "Includes all proposed sites with the relevant departments or clinics and principal investigators."
+      },
+      {
+        "id": "O1.03",
+        "check": "Insured participant number is equal to or greater than the number planned for Bulgaria in CTIS."
+      },
+      {
+        "id": "O1.04",
+        "check": "If signed with a qualified electronic signature, submitted in a format that permits verification of the signature; Bulgarian and/or English."
+      }
+    ],
+    "BG-P1": [
+      {
+        "id": "P1.01",
+        "check": "On the European Commission participant-compensation template; states explicitly when no compensation is offered."
+      },
+      {
+        "id": "P1.02",
+        "check": "Amounts, payment links (visits, time, inconvenience, expenses), early-withdrawal rules and conditions are identical in every participant document; payment not presented as a benefit."
+      },
+      {
+        "id": "P1.03",
+        "check": "Trials with minors or incapacitated adults: only compensation of expenses or loss of earnings directly related to participation (template note).",
+        "applies_when": "population.minors or population.adults_without_capacity"
+      }
+    ],
+    "BG-P2": [
+      {
+        "id": "P2.01",
+        "check": "A short description of trial financing and of financial transactions and compensation to participants, investigators and sites is present, as a description or in the draft sponsor-investigator and sponsor-institution contracts."
+      },
+      {
+        "id": "P2.02",
+        "check": "Consistent with BG-P1 and the participant documents; draft contracts without signatures; Bulgarian and/or English."
+      }
+    ],
+    "BG-R1": [
+      {
+        "id": "R1.01",
+        "check": "EudraLex GDPR declaration from the sponsor or its representative; no national statement added (none required in Bulgaria); date, name and role completed from sponsor data."
+      },
+      {
+        "id": "R1.02",
+        "check": "Consistent with the participant-facing privacy explanation and the protocol data flows."
+      }
+    ],
+    "BG-S1": [
+      {
+        "id": "S1.01",
+        "check": "EudraLex biological-samples declaration present when samples are collected, stored or planned for future use; new and archive sample sections match the protocol and sample plan."
+      },
+      {
+        "id": "S1.02",
+        "check": "Storage, transfer, coding, access and future use match the participant documents; optional future use is consistent with the separate participant choice.",
+        "applies_when": "samples.future_use_outside_protocol"
+      },
+      {
+        "id": "S1.03",
+        "check": "Section 5 (national requirements) is answered without invented national rules."
+      }
+    ],
+    "BG-B1-CONTACT": [
+      {
+        "id": "B1.01",
+        "check": "The national cover letter is in Bulgarian and names a national contact person for the trial with telephone and email details supplied by the sponsor."
+      }
+    ]
+  }
+}
