@@ -37,3 +37,6 @@
 .ctis #overlay .modalbody.pad,.ctis #overlay form.pad{padding:18px 22px}
 .pl table.logs td{font-size:.875rem}
 @media (max-width:600px){.ctis .paper .timeline{flex-direction:column}.ctis .paper .tlArrow{transform:rotate(90deg)}}
+/* Space above the buttons in dialogs, and below the account at the foot of the sidebar. */
+#overlay .rowbtns{margin-top:18px}
+.pl #rail button.rail-account,#rail.pl button.rail-account,#rail button.rail-account{margin:6px 0 14px}
