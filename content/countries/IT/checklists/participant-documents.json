@@ -1,0 +1,462 @@
+{
+  "id": "IT-QC-PARTICIPANT",
+  "name": "Italy: participant-facing document QC",
+  "applies_to": [
+    "IT-K2",
+    "IT-L1",
+    "IT-PRIVACY",
+    "IT-L1-POPULATION",
+    "IT-R2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/italy/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); population items also from the connected Italy population guides",
+  "source_note": "Item sources: IT-QC#n is section n of the QC checklist page; other keys as in requirements.json sources.",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content and decision-critical information",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Protocol title, protocol number, EU trial number, sponsor name, lay title, principal investigator and site name match controlled source data.",
+          "source": "IT-QC#3"
+        },
+        {
+          "id": "C1.02",
+          "check": "The opening pages tell the reader why they are invited, what the study tests, what participation changes, the main risks and burdens, expected or absent benefit, alternatives and the right to decline; these facts are not hidden in a long appendix.",
+          "source": "IT-QC#7"
+        },
+        {
+          "id": "C1.03",
+          "check": "Costs, reimbursement, injury insurance, complaint routes and urgent contacts are present; every phone number is complete and operating hours match the service offered.",
+          "source": "IT-QC#7"
+        },
+        {
+          "id": "C1.04",
+          "check": "How overall results and important incidental findings will be communicated is stated.",
+          "source": "IT-QC#7"
+        },
+        {
+          "id": "C1.05",
+          "check": "Risks and benefits are balanced: the investigational treatment is not described as proven, safe or better; uncertain or absent direct benefit is stated.",
+          "source": "IT-QC#5"
+        },
+        {
+          "id": "C1.06",
+          "check": "Phase I and healthy-volunteer material makes unknown risk and the non-therapeutic purpose especially clear.",
+          "applies_when": "population.healthy_volunteers or protocol is Phase I or first-in-human",
+          "source": "IT-QC#5"
+        },
+        {
+          "id": "C1.07",
+          "check": "Reimbursements are described as actual trial-related expenses or another specifically approved arrangement; every amount and condition matches the Part II financial document (IT-P1); no promotional emphasis and no suggestion that accepting risk earns a reward.",
+          "source": "IT-QC#5"
+        },
+        {
+          "id": "C1.08",
+          "check": "Whether the participant's general practitioner or paediatrician will be informed is stated and any necessary permission is obtained.",
+          "source": "IT-ICF"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol and procedure consistency",
+      "instruction": "Compare with the protocol, investigator's brochure or SmPC, current risk assessment, sample plan and participant tools.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Study purpose, arms, randomisation ratio, placebo, blinding, duration, visit count, treatment periods and follow-up match the protocol.",
+          "source": "IT-QC#6"
+        },
+        {
+          "id": "C2.02",
+          "check": "Blood volume, sampling frequency and optional procedures are recalculated and correct.",
+          "source": "IT-QC#6"
+        },
+        {
+          "id": "C2.03",
+          "check": "Standard care is distinguished from research-only procedures.",
+          "source": "IT-QC#6"
+        },
+        {
+          "id": "C2.04",
+          "check": "Expected and foreseeable risks match the investigator's brochure or SmPC and the current risk assessment.",
+          "source": "IT-QC#6"
+        },
+        {
+          "id": "C2.05",
+          "check": "Reproductive precautions, washout periods, prohibited medicines and lifestyle restrictions are identical across the protocol, consent and participant tools.",
+          "source": "IT-QC#6"
+        },
+        {
+          "id": "C2.06",
+          "check": "Withdrawal, early termination, lost-to-follow-up and safety follow-up language is verified; no promise of immediate deletion of data or samples where law, safety or scientific-integrity duties limit withdrawal.",
+          "source": "IT-QC#6"
+        },
+        {
+          "id": "C2.07",
+          "check": "Insurance wording matches the insurance certificate and any policy terms (IT-O1).",
+          "source": "IT-ICF"
+        },
+        {
+          "id": "C2.08",
+          "check": "Electronic consent, if used, is approved case by case by the ethics committee and the workflow provides identity verification, audit trail, version control, access to information and delivery of the completed record.",
+          "applies_when": "consent.electronic",
+          "source": "IT-ICF; IT-QC#11"
+        },
+        {
+          "id": "C2.09",
+          "check": "After a protocol change or new information, every affected participant document has been reopened and re-consent is planned with the approved new version.",
+          "applies_when": "modification or revised protocol",
+          "source": "IT-ICF"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Voluntariness and consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "Participation is stated as voluntary; refusal or withdrawal does not affect ordinary care, benefits or legal rights.",
+          "source": "IT-QC#5"
+        },
+        {
+          "id": "C3.02",
+          "check": "No waiver of liability and no language suggesting the participant must remain in the trial.",
+          "source": "IT-QC#5"
+        },
+        {
+          "id": "C3.03",
+          "check": "Optional choices are independently answerable, each with its own signature or initial field; refusal of an optional activity does not prevent main-trial participation unless the protocol establishes it as essential.",
+          "source": "IT-QC#11; IT-PII-CHECKLIST#3"
+        },
+        {
+          "id": "C3.04",
+          "check": "The form supports the real workflow: the person providing information can record that questions were answered, understanding was checked and a copy was given.",
+          "source": "IT-QC#11"
+        },
+        {
+          "id": "C3.05",
+          "check": "Withdrawal language is aligned across the clinical consent, the privacy notice and the sample consent: withdrawal stops new optional collection while lawfully collected data may remain in the trial database and regulatory archive.",
+          "source": "IT-QC#8"
+        },
+        {
+          "id": "C3.06",
+          "check": "The person signing has legal authority for the decision (participant, parent or guardian, legal representative).",
+          "source": "IT-QC#10"
+        },
+        {
+          "id": "C3.07",
+          "check": "Re-consent triggers are defined: new safety information, protocol change, new optional activity, reaching 18, regained capacity.",
+          "source": "IT-ICF; IT-MINORS; IT-CAPACITY"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Inventory, applicability and population safeguards",
+      "instruction": "Map every inclusion pathway in the protocol to an information and consent set (requirements.json population_sets) and each document to a CTIS category.",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its full document set (main or population-specific form, separate privacy notice and consent, and recruitment, sample, optional sub-study, pregnancy, representative, age-appropriate and witness documents where applicable); 'not applicable' is recorded only when the study genuinely lacks that activity.",
+          "applies_when": "always",
+          "source": "IT-QC#1"
+        },
+        {
+          "id": "C4.02",
+          "check": "Each document is mapped to a CTIS category and to the population or activity it covers, and completeness is tested against the Italy Part II document checklist.",
+          "source": "IT-QC#1"
+        },
+        {
+          "id": "C4.03",
+          "check": "Healthy volunteers: invited because they meet the healthy-volunteer definition; no direct benefit expected; screening is not a health assessment; first-in-human and dose-escalation facts in the key information; schedule, confinement, restrictions and total blood volume stated.",
+          "applies_when": "population.healthy_volunteers",
+          "source": "IT-HV"
+        },
+        {
+          "id": "C4.04",
+          "check": "Minors: legally operative parent or guardian consent (mother and father or legal guardian routes), age-appropriate information, the child's assent or objection respected, a new adult consent at 18; the parent form, adolescent assent (12–17) and child information sheet (6–11) do not contradict one another.",
+          "applies_when": "population.minors",
+          "source": "IT-QC#10; IT-QC#4; IT-MINORS"
+        },
+        {
+          "id": "C4.05",
+          "check": "Adults with limited capacity: representative's authority and scope verified (tutore, curatore, amministratore di sostegno; a fiduciario is not automatically the representative); adapted information for the participant; objection respected; reassessment and personal consent when capacity returns.",
+          "applies_when": "population.adults_without_capacity",
+          "source": "IT-QC#10; IT-CAPACITY"
+        },
+        {
+          "id": "C4.06",
+          "check": "Emergency enrolment: all Article 35 conditions confirmed; prompt deferred-consent pathway to representative and then participant; right to object to use of data already collected; no broad permission for optional future research.",
+          "applies_when": "consent.emergency_enrolment",
+          "source": "IT-QC#10; IT-EMERGENCY"
+        },
+        {
+          "id": "C4.07",
+          "check": "Capable person unable to write: impartial-witness wording and an acceptable alternative means of recording consent; at least one impartial witness; witness not confused with a legal representative.",
+          "applies_when": "consent.impartial_witness_possible",
+          "source": "IT-QC#10; IT-WITNESS"
+        },
+        {
+          "id": "C4.08",
+          "check": "Pregnancy follow-up: a trial participant is distinguished from a pregnant partner who is a separate data subject with her own information, privacy and consent; infant data after birth follow the parent or guardian route.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up",
+          "source": "IT-QC#10; IT-PREGNANCY"
+        },
+        {
+          "id": "C4.09",
+          "check": "Secondary or future use is optional and has separate Italian information and consent.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+          "source": "IT-SECONDARY"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Privacy separation and consistency",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Detailed GDPR information and data-processing consent are in a distinct Italian privacy document, not in the clinical-consent signature block.",
+          "source": "IT-QC#8"
+        },
+        {
+          "id": "C5.02",
+          "check": "The privacy document identifies the controller or controllers, contact points, purposes, legal bases, recipients, processors, transfers, safeguards, retention and rights according to the actual data flow.",
+          "source": "IT-QC#8"
+        },
+        {
+          "id": "C5.03",
+          "check": "The privacy document is cross-checked against the protocol, data-management plan, vendor list, laboratories, central imaging, electronic systems and contracts.",
+          "source": "IT-QC#8"
+        },
+        {
+          "id": "C5.04",
+          "check": "Coding is explained accurately; coded or pseudonymised data are not called anonymous.",
+          "source": "IT-QC#8"
+        },
+        {
+          "id": "C5.05",
+          "check": "International-transfer language reflects the destination and safeguard actually used.",
+          "applies_when": "data transferred outside the EEA",
+          "source": "IT-QC#8"
+        },
+        {
+          "id": "C5.06",
+          "check": "The clinical-consent form explains in plain language that authorised persons may review coded trial data and relevant medical records.",
+          "source": "IT-ICF"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Samples, genetics and future use",
+      "applies_when": "samples.collected or samples.archive_used",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Every sample type, amount, collection point, analysis, storage location, transfer and retention period is listed.",
+          "source": "IT-QC#9"
+        },
+        {
+          "id": "C6.02",
+          "check": "Samples required for the main protocol are separated from optional future storage.",
+          "source": "IT-QC#9"
+        },
+        {
+          "id": "C6.03",
+          "check": "Optional genetic analysis, biobanking and secondary research have distinct choices where applicable.",
+          "source": "IT-QC#9"
+        },
+        {
+          "id": "C6.04",
+          "check": "Governance, access, coding, commercial or academic collaborators, possible international transfers, return of individual findings and destruction or anonymisation at the end of storage are identified.",
+          "source": "IT-QC#9"
+        },
+        {
+          "id": "C6.05",
+          "check": "Consistent with the S1 biological-samples form (IT-S1), the privacy notice and the data-protection statement (IT-R1).",
+          "source": "IT-SECONDARY"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Italy national source and version",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "The main form was developed against the CCNCE consent guidance and models dated 27 May 2026.",
+          "source": "IT-QC#2"
+        },
+        {
+          "id": "C7.02",
+          "check": "The privacy document follows the separate CCNCE model announced on 13 August 2026.",
+          "source": "IT-QC#2"
+        },
+        {
+          "id": "C7.03",
+          "check": "AIFA has been checked for updates to either source since 23 September 2026.",
+          "source": "IT-QC#2"
+        },
+        {
+          "id": "C7.04",
+          "check": "The recruitment and informed-consent procedure uses the EU template version 2.0 (new Part II submissions from 1 September 2026) and evidence of the version used is retained.",
+          "source": "IT-QC#2"
+        },
+        {
+          "id": "C7.05",
+          "check": "One national core form; site variables limited to genuine local facts; authorised documents are not altered locally (CCNCE FAQ, June 2026).",
+          "source": "IT-QC#3"
+        },
+        {
+          "id": "C7.06",
+          "check": "All participant and representative documents are in Italian; people who do not understand Italian get qualified language support, translated material and a cultural mediator, with the process documented.",
+          "applies_when": "population.non_italian_speakers",
+          "source": "IT-ICF"
+        },
+        {
+          "id": "C7.07",
+          "check": "Recruitment material is in Italian, clear and non-coercive, promises no benefit, does not overemphasise payment and is age-appropriate for children.",
+          "applies_when": "recruitment.material_used",
+          "source": "IT-PII-CHECKLIST#2"
+        },
+        {
+          "id": "C7.08",
+          "check": "Layered structure: key information of one or two pages, then detailed information, then consent declarations and signatures.",
+          "source": "IT-ICF"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Document control, signatures and administration",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Document title, language, version and date are in the header or footer, identical on every page and in the uploaded filename.",
+          "source": "IT-QC#3"
+        },
+        {
+          "id": "C8.02",
+          "check": "Version references inside the consent form match the information sheet and the privacy document.",
+          "source": "IT-QC#3"
+        },
+        {
+          "id": "C8.03",
+          "check": "Blank signature fields remain blank in the submission copy; no pre-signed, backdated or completed participant fields.",
+          "source": "IT-QC#3; IT-ICF"
+        },
+        {
+          "id": "C8.04",
+          "check": "Participant and investigator signature, name, date, place and time fields match the applicable CCNCE model.",
+          "source": "IT-QC#11"
+        },
+        {
+          "id": "C8.05",
+          "check": "Legal-representative, parent and witness fields only for the pathway concerned, labelled by role.",
+          "source": "IT-QC#11; IT-WITNESS"
+        },
+        {
+          "id": "C8.06",
+          "check": "Statement that the participant receives a copy of the signed and dated documents.",
+          "source": "IT-ICF"
+        },
+        {
+          "id": "C8.07",
+          "check": "Section numbering, page numbering, contents lists and cross-references checked after PDF conversion.",
+          "source": "IT-QC#3"
+        },
+        {
+          "id": "C8.08",
+          "check": "Tracked changes, comments and hidden text removed.",
+          "source": "IT-QC#3"
+        },
+        {
+          "id": "C8.09",
+          "check": "Correct CTIS section and naming convention.",
+          "source": "NAMING"
+        },
+        {
+          "id": "C8.10",
+          "check": "No personal data that should not appear in the CTIS upload (no custody details or court information beyond what shows the valid pathway).",
+          "source": "IT-MINORS; IT-CAPACITY"
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version (italic and red-italic notes, blue examples, [bracket] notes, ALL-CAPITALS instructions, ........... gaps, yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels) and no unresolved placeholder; fields completed by hand at consent stay blank.",
+          "source": "IT-QC#3"
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Italian language and readability",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "The Italian reads as original participant communication, not a literal regulatory translation.",
+          "source": "IT-QC#4"
+        },
+        {
+          "id": "C9.02",
+          "check": "Terminology checked by a qualified Italian medical translator and a second reviewer; ambiguous source text resolved with the medical writer.",
+          "applies_when": "document is translated or adapted from a reference document in another language",
+          "source": "IT-QC#4"
+        },
+        {
+          "id": "C9.03",
+          "check": "Short sentences, active voice and everyday terms; acronyms expanded on first use; avoidable English terminology removed; unavoidable technical concepts explained where they first appear.",
+          "source": "IT-QC#4"
+        },
+        {
+          "id": "C9.04",
+          "check": "Headings, bullet lists, type size, contrast and white space tested; final rendered document checked on screen and in print.",
+          "source": "IT-QC#4"
+        },
+        {
+          "id": "C9.05",
+          "check": "Language adapted to age, health literacy and decision-making capacity; accessible formats and language mediation arranged where needed.",
+          "source": "IT-QC#4"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final bilingual and rendered-file review",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "If an English master is retained, a clause-level reconciliation after Italian review shows no missing or extra obligations in either language; the approved Italian document is the controlled version.",
+          "applies_when": "an English master is retained",
+          "source": "IT-QC#12"
+        },
+        {
+          "id": "C10.02",
+          "check": "Every final file opened: page breaks, clipped text, symbols, accented characters, fillable fields, hyperlinks and signature blocks inspected.",
+          "source": "IT-QC#12"
+        },
+        {
+          "id": "C10.03",
+          "check": "Obsolete versions searched for and quarantined from the upload set; the CTIS upload inventory compared with the approved document register.",
+          "source": "IT-QC#12"
+        },
+        {
+          "id": "C10.04",
+          "check": "The participant document list matches the protocol's populations, sites, procedures, data and samples, and the Italy Part II package checklist.",
+          "source": "IT-QC#1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "id": "FR-PACKAGE",
+  "name": "France: Part II package and CTIS upload check",
+  "applies_to": "the France package as a whole (plan-level checklist step)",
+  "reviewed": "2026-11-27",
+  "sources": [
+    "https://trialagents.com/ctis/france/en/part-ii-document-checklist",
+    "https://trialagents.com/ctis/ctis-document-naming-convention (CTCG naming guide v3.0, 10 Feb 2026; content/playbook/naming.md)",
+    "content/playbook/planning.md section 8 (transparency)"
+  ],
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "sections": [
+    {
+      "id": "P1",
+      "title": "Completeness against requirements.json",
+      "items": [
+        {
+          "id": "P1.01",
+          "check": "K1 recruitment and informed-consent procedure (FR-K1) on the harmonised template version 2.0, in French, with a section for every population pathway in the plan."
+        },
+        {
+          "id": "P1.02",
+          "check": "K2 recruitment material (FR-K2) for every participant-facing recruitment item, or a clear statement that no separate advertising is used."
+        },
+        {
+          "id": "P1.03",
+          "check": "Additional France application document (FR-K-ADDITIONAL), signed and dated by the CTIS applicant."
+        },
+        {
+          "id": "P1.04",
+          "check": "Main information and consent form (FR-L1) for every participant group."
+        },
+        {
+          "id": "P1.05",
+          "check": "Separate genetic testing information and consent (FR-L1-GENETIC).",
+          "applies_when": "genetics.examination_planned"
+        },
+        {
+          "id": "P1.06",
+          "check": "Other participant-facing materials (FR-L2) for every diary, questionnaire, instruction sheet, alert card, digital screen or similar item.",
+          "applies_when": "participant_materials.other_used or endpoint_documents.participant_facing or recruitment.other_information_material"
+        },
+        {
+          "id": "P1.07",
+          "check": "One population-specific information and consent set (FR-L1-POPULATION) per population in population_sets whose trigger is true."
+        },
+        {
+          "id": "P1.08",
+          "check": "List of sites and principal investigators (FR-M-SITE-LIST) complete and current."
+        },
+        {
+          "id": "P1.09",
+          "check": "CV (FR-M1) and declaration of interest (FR-M2) for every investigator listed for France, each dated within one year."
+        },
+        {
+          "id": "P1.10",
+          "check": "Site suitability statement (FR-N1) for every France site, signed by the person responsible for the site."
+        },
+        {
+          "id": "P1.11",
+          "check": "ARS site authorisation (FR-N-ARS) for each site concerned.",
+          "applies_when": "sites.non_routine_acts_requiring_ars_authorisation"
+        },
+        {
+          "id": "P1.12",
+          "check": "Insurance certificate (FR-O1) issued and dated by an EU insurer covering the France trial period."
+        },
+        {
+          "id": "P1.13",
+          "check": "Compensation form (FR-P1), stating explicitly when no payment is offered."
+        },
+        {
+          "id": "P1.14",
+          "check": "CNIL MR-001 receipt or CNIL authorisation (FR-R1) in the data-protection subsection."
+        },
+        {
+          "id": "P1.15",
+          "check": "Biological-sample compliance form (FR-S1)."
+        },
+        {
+          "id": "P1.16",
+          "check": "No proof of fee submitted: France charges no clinical trial application fee under the current CTIS pathway."
+        }
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Language and signatures",
+      "items": [
+        {
+          "id": "P2.01",
+          "check": "Every participant- or representative-facing document is in French and carries a clear version and date."
+        },
+        {
+          "id": "P2.02",
+          "check": "Administrative documents are in French; CVs and declarations of interest in French or English."
+        },
+        {
+          "id": "P2.03",
+          "check": "Signed at submission: Additional France application document (CTIS applicant) and N1 (person responsible for the site); ARS decision and CNIL receipt as official signed documents; all other documents unsigned."
+        },
+        {
+          "id": "P2.04",
+          "check": "Consent forms include signature fields even though unsigned versions are filed."
+        }
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Cross-document consistency",
+      "items": [
+        {
+          "id": "P3.01",
+          "check": "Every France site and investigator matches across CTIS, the protocol, insurance and suitability documents."
+        },
+        {
+          "id": "P3.02",
+          "check": "CV and declaration-of-interest dates checked against the France recency rules (less than one year; GCP training normally within three years)."
+        },
+        {
+          "id": "P3.03",
+          "check": "No contradictory statements across the protocol, recruitment procedure, consent documents, Additional France application document, MR-001 materials and sample template."
+        },
+        {
+          "id": "P3.04",
+          "check": "Compensation amounts and conditions identical in P1, the Additional France application document and every participant document."
+        },
+        {
+          "id": "P3.05",
+          "check": "Insurance route in the participant documents consistent with the certificate."
+        },
+        {
+          "id": "P3.06",
+          "check": "Sample types, storage, transfers and retention identical in S1, the protocol, the laboratory manual and the participant documents."
+        },
+        {
+          "id": "P3.07",
+          "check": "Data flows, recipients, transfers and retention identical in the participant notices, the MR-001 route and the protocol."
+        },
+        {
+          "id": "P3.08",
+          "check": "Consent pathways in K1 match the L1 sets in the package."
+        },
+        {
+          "id": "P3.09",
+          "check": "Documents adapted from the reference package contain all French national additions and no leftovers from the reference country.",
+          "applies_when": "France is not the reference package"
+        }
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "CTIS naming and upload",
+      "items": [
+        {
+          "id": "P4.01",
+          "check": "Correct B–S section prefix and CTIS placeholder for each document (biological samples S1; data-protection evidence in the dedicated data-protection subsection)."
+        },
+        {
+          "id": "P4.02",
+          "check": "Unique, self-explanatory title of at most 100 characters: <section code>_<document type>_<subtype>_<country>_<language>_<special attribute>, with only the fields that distinguish the document; _FR_fr on participant-facing documents."
+        },
+        {
+          "id": "P4.03",
+          "check": "Version and date entered in CTIS metadata, not in the title."
+        },
+        {
+          "id": "P4.04",
+          "check": "Personal names only where disclosure permits (investigator in M1/M2)."
+        },
+        {
+          "id": "P4.05",
+          "check": "Clean, tracked-change, redacted or public and split-file variants clearly distinguished."
+        },
+        {
+          "id": "P4.06",
+          "check": "Uploaded filename base contains none of ( ) / , . ; | [ ] (the period before the extension is fine); PDFs contain searchable text."
+        },
+        {
+          "id": "P4.07",
+          "check": "Article 11 workaround: every mandatory Part II placeholder holds the official placeholder PDF titled Part_II_placeholder_document_Article_11_workaround.",
+          "applies_when": "France receives Part I only under Article 11"
+        },
+        {
+          "id": "P4.08",
+          "check": "The recruitment procedure template version is the one required on the intended submission date."
+        }
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "Transparency and redaction",
+      "items": [
+        {
+          "id": "P5.01",
+          "check": "For each document, publication status checked against the current Annex I publication tables (revised rules applicable from 18 June 2024; ACT EU guidance v2.2, 30 April 2026)."
+        },
+        {
+          "id": "P5.02",
+          "check": "Publishable documents: personal data and CCI identified separately; public version redacts only qualifying material, irreversibly; signatures never disclosed."
+        },
+        {
+          "id": "P5.03",
+          "check": "Public and assessment versions differ only by the intended redactions; each in the correct CTIS slot."
+        },
+        {
+          "id": "P5.04",
+          "check": "No personal data or CCI in public structured fields."
+        }
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Final form",
+      "items": [
+        {
+          "id": "P6.01",
+          "check": "No drafting instruction remains in any document (see content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "P6.02",
+          "check": "Every document approved by the owner in TrialAgents, or the user has explicitly chosen to export unapproved versions."
+        },
+        {
+          "id": "P6.03",
+          "check": "No participant-facing set is released while a protocol fact, consent giver, optional choice, data transfer, sample purpose, payment or signature block is unresolved."
+        }
+      ]
+    }
+  ]
+}

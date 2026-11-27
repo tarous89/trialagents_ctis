@@ -1,0 +1,1111 @@
+{
+  "country": "FR",
+  "name": "France",
+  "reviewed": "2026-11-27",
+  "source_review_date": "2026-09-23",
+  "authorities": {
+    "competent_authority": "ANSM (Agence nationale de sécurité du médicament et des produits de santé) assesses Part I.",
+    "ethics": "A Comité de protection des personnes (CPP), allocated nationally when the application is deposited in CTIS, assesses Part II (recruitment, information and consent, investigator and site suitability, insurance, financial arrangements, data protection, biological samples). Part II questions are handled through CTIS; responses are normally filed in French; a question on a CV or declaration of interest may be answered in that document's permitted language.",
+    "data_protection": "CNIL: declaration of conformity with MR-001 (receipt filed in CTIS), or CNIL authorisation after the CPP opinion for non-compliant processing.",
+    "national_guidance": "CNRIPH publishes the national France recommendations and the Additional France application document; French Ministry of Health list of documents expected for Part II (English version 18 July 2025); ANSM sponsor notice for CTIS Part II applications (11 February 2026).",
+    "regional": "Agence régionale de santé (ARS): site authorisation only where the research requires acts not usually performed at the site (Article L1121-13 CSP).",
+    "fee": "France charges no clinical trial application fee under the current CTIS pathway; no proof of fee payment is submitted (section Q)."
+  },
+  "language_rules": {
+    "participant_documents": "fr",
+    "administrative_documents": [
+      "fr"
+    ],
+    "investigator_documents": [
+      "fr",
+      "en"
+    ],
+    "rule": "The France Part II dossier is prepared in French. Participant-facing documents and most France-specific Part II documents must be in French, even when much of Part I is in English. Investigator CVs and declarations of interest may be in French or English.",
+    "rfi_responses": "Normally in French; a request for information on a CV or declaration of interest may use the same permitted language as that document.",
+    "english_source": "The English source may support drafting and sponsor review, but the CPP reviews the French participant version. Translate all participant-facing appendices, diagrams, questionnaires and digital screens.",
+    "form_answers": "Part II forms (shared EU templates in content/eu/templates/part-ii) are answered in French; M1 and M2 are completed by the investigator in French or English."
+  },
+  "study_facts_used": [
+    "population.adult_patients",
+    "population.healthy_volunteers",
+    "population.minors",
+    "population.minors_age_bands",
+    "population.adults_without_capacity",
+    "population.adults_under_curatorship",
+    "population.group_benefit_research_without_capacity",
+    "consent.emergency_enrolment",
+    "consent.impartial_witness_possible",
+    "consent.electronic",
+    "recruitment.material_used",
+    "recruitment.call_centre",
+    "recruitment.other_information_material",
+    "participant_materials.other_used",
+    "endpoint_documents.participant_facing",
+    "genetics.examination_planned",
+    "samples.collected",
+    "samples.archive_used",
+    "samples.future_use_outside_protocol",
+    "data.future_use_outside_protocol",
+    "data.mr001_compliant",
+    "data.transfer_outside_eea",
+    "pregnancy.participant_follow_up_beyond_main_consent",
+    "pregnancy.partner_follow_up",
+    "pregnancy.infant_follow_up",
+    "healthy_volunteers.exclusion_period",
+    "payment.constraint_indemnity",
+    "sites.non_routine_acts_requiring_ars_authorisation",
+    "sites.count"
+  ],
+  "study_facts_country_specific": {
+    "population.adults_under_curatorship": "Are adults under curatelle enrolled (they consent with the curator's assistance)?",
+    "participant_materials.other_used": "Are diaries, questionnaires, instruction sheets, alert cards, digital screens, wearable instructions or home-procedure materials given to participants?",
+    "genetics.examination_planned": "Does the trial include a genetic examination?",
+    "data.mr001_compliant": "Does the processing strictly comply with CNIL MR-001 (otherwise CNIL authorisation after the CPP opinion)?",
+    "data.transfer_outside_eea": "Are data transferred to countries outside the EEA (countries, recipients, purpose and adequacy status must be listed)?",
+    "healthy_volunteers.exclusion_period": "Is there a period during which volunteers may not take part in another research project?",
+    "payment.constraint_indemnity": "Is an indemnity for the constraints of the research paid?",
+    "sites.non_routine_acts_requiring_ars_authorisation": "Does the research require acts not usually performed at a proposed site (Article L1121-13 CSP)?"
+  },
+  "documents": [
+    {
+      "id": "FR-K1",
+      "ctis_section": "K",
+      "ctis_title": "K1_Recruitment arrangements",
+      "name_en": "Recruitment and informed consent procedure",
+      "checklist_item": 1,
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "fr"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+        "basis": "Harmonised EU Recruitment and Informed Consent Procedure Template, version 2.0 (applies to new Part II submissions from 1 September 2026)",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/K1_Recruitment arrangements.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "How potential participants are identified, approached, informed, given time to decide and documented as consenting; who presents the information, how understanding is checked, how much decision time is given, how questions are answered and which version is signed. Must map every population pathway and any emergency route in the protocol (minors, limited capacity, impartial witness, emergency, healthy volunteers).",
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section K (Recruitment arrangements). Document obligatoire, à déposer avec la demande initiale. Rédigé en français ; réponses du formulaire en français. Aucune signature lors du dépôt CTIS. Utiliser le modèle européen harmonisé « Recruitment and Informed Consent Procedure » version 2.0 (applicable aux nouvelles soumissions de la Partie II à partir du 1er septembre 2026). Décrire chaque voie d'inclusion du protocole : identification, première approche, information, délai de réflexion, vérification de la compréhension, version signée, recueil du consentement écrit (participant et investigateur ou personne qui mène l'entretien). Mineurs : vérification de l'autorité parentale, information par tranche d'âge, recherche de l'adhésion personnelle, enregistrement du refus, nouveau consentement à 18 ans. Majeurs protégés : évaluation de la capacité, vérification du statut juridique (curatelle, tutelle ou autre mesure avec représentation, absence de mesure) et de l'habilitation, implication du participant, suivi de l'opposition, consentement ultérieur. Témoin : quand la voie s'applique, distinction entre incapacité d'écrire et défaut de capacité, choix du tiers, mode d'expression du consentement, signataires. Urgence : reproduire la procédure opérationnelle de l'article 35 (vérification de l'absence d'opposition préalable, indisponibilité du représentant, autres conditions) ; une simple phrase du protocole sur le consentement différé ne suffit pas. Volontaires sains : identification, sélection, délai de réflexion, indemnisation, période d'exclusion et processus de consentement. Si aucun support de recrutement séparé n'est prévu, l'indiquer clairement (voir FR-K2). Consentement électronique ou à distance : décrire l'information, l'identification, la signature, la copie et l'archivage.",
+      "national_fields": {
+        "v105": "Required in France: in French, state how recruitment material is handled (every participant-facing item filed before use; new or materially changed items through a CTIS modification; or a clear statement that no separate advertising is used) and, for healthy volunteers, identification, screening, decision time, compensation and any exclusion period (also stated in the Additional France application document).",
+        "v108": "Required in France: in French, state that the participant and the investigator or other person conducting the consent interview sign and date the approved French form before any trial-specific procedure, that the participant receives a copy, that the consent record identifies the information version, that a genetic examination needs separate express written prior consent (Civil Code Article 16-10) in a separate document, and how any electronic or remote consent meets the same information, identity, signature, copy and record requirements.",
+        "v110": "Required in France when adults lacking capacity are included: in French, describe the route by verified protective status (Article L1122-2 CSP): curatorship, where the participant consents with the curator's assistance; guardianship or another measure with representation, where the authorised representative authorises within the scope of the order or mandate; adult unable to consent without a formal measure, where authorisation is sought from the trusted person, otherwise a family member, otherwise a person with close and stable ties. Persons under sauvegarde de justice are not enrolled. Judge or family-council authorisation where the CPP considers there is a serious risk to private life or bodily integrity. Personal adherence is sought; an explicit refusal cannot be overridden; own consent when capacity returns.",
+        "v114": "Required in France when minors are included: in French, state that both holders of parental authority authorise and sign where two hold it; the one-holder exception only when all statutory conditions are met (minimal foreseeable risk and burden, the minor is not a healthy volunteer, the other holder cannot authorise in a time compatible with the trial) and is documented; authority is verified from evidence, not inferred from family relationship; information is adapted to age and maturity by trained or experienced staff; the minor's personal adherence is sought and a refusal cannot be overridden; own adult consent when the participant reaches 18 (Article L1122-2 CSP, Article 32 CTR).",
+        "v117": "Required in France when an impartial witness may be used: in French, state that the attesting person is the participant's trusted person, a family member or a close person, independent of the investigator and sponsor (Article L1122-1-1 CSP); not a member of the trial team, sponsor staff or anyone with a trial interest; present for the information and the expression of consent; relationship and independence documented; interpreter and witness roles not combined unless the approved procedure permits it.",
+        "v121": "Required in France when emergency enrolment is used: in French, describe the Article 35 checks before the first intervention (prior objection, representative availability, therapeutic window, direct-benefit basis, minimal risk and burden), the source record of each condition, information and consent of the participant without undue delay, authorisation by the legally designated representative as soon as available, the participant's own consent if capacity returns, and information on the right to object to use of data already obtained (Article L1122-1-3 CSP)."
+      },
+      "sources": [
+        "FR-PII-CHECKLIST#1",
+        "FR-ICF",
+        "FR-HV",
+        "FR-MINORS",
+        "FR-CAPACITY",
+        "FR-EMERGENCY",
+        "FR-WITNESS",
+        "FR-QC"
+      ]
+    },
+    {
+      "id": "FR-K2",
+      "ctis_section": "K",
+      "ctis_title": "K2_Recruitment material_<type>_FR_fr",
+      "name_en": "Recruitment materials and documentation",
+      "checklist_item": 2,
+      "requirement": "mandatory",
+      "per": "item",
+      "language": [
+        "fr"
+      ],
+      "trigger_text": "Every participant-facing recruitment item intended for France: advertisements, posters, letters, call scripts, social-media content, video scripts or storyboards, recruitment websites and data-collection pages. Where no separate advertising is planned, the recruitment-material position must be clear in the filed recruitment set.",
+      "template": null,
+      "signature_at_submission": false,
+      "content": "Final French wording with enough visual context for the CPP to review presentation, claims and privacy notices. Upload before use; a new or materially changed item needs the appropriate CTIS modification route. No mandatory national content template.",
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section K. Obligatoire : chaque support de recrutement destiné aux participants en France (annonces, affiches, lettres, scripts d'appel, contenus réseaux sociaux, scripts ou storyboards vidéo, sites de recrutement, pages de recueil de données). Contenu en français. Aucune signature lors du dépôt. Pas de modèle national obligatoire : présenter le texte final et un contexte visuel suffisant (présentation, allégations, mentions d'information sur les données). Déposer avant toute utilisation ; tout support nouveau ou modifié de façon substantielle passe par une modification CTIS. Si aucun support séparé n'est prévu, l'indiquer clairement dans le dossier de recrutement (voir DECISIONS.md). Vérifier les mentions relatives aux données personnelles des sites, questionnaires de présélection et applications.",
+      "sources": [
+        "FR-PII-CHECKLIST#2",
+        "FR-QC"
+      ]
+    },
+    {
+      "id": "FR-K-ADDITIONAL",
+      "ctis_section": "K",
+      "ctis_title": "K3_Additional application document_FR",
+      "name_en": "Additional France application document",
+      "checklist_item": 3,
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "fr"
+      ],
+      "template": null,
+      "template_needed": "Current CNRIPH Additional France application document published with the national Part II guidance (not in the CTIS_FR folder; see DECISIONS.md, Missing).",
+      "signature_at_submission": true,
+      "signature_rule": "Dated and signed by the CTIS applicant at submission: the sponsor or the organisation submitting on the sponsor's behalf.",
+      "content": "Records any exclusion period, the financial arrangements between sponsor and investigator, and the sponsor's MR-001 compliance position (declaration of conformity, or non-compliance with CNIL authorisation to be obtained after the CPP opinion).",
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "sponsor / CTIS applicant (national form; becomes a form drafted by the assistant once the CNRIPH template is supplied and converted)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section K. Document obligatoire, à déposer avec la demande initiale. Rédigé en français. Daté et signé lors du dépôt CTIS par le demandeur CTIS (promoteur ou organisme déposant pour son compte). Utiliser le « Document additionnel France » en vigueur publié par la CNRIPH avec les recommandations nationales pour la Partie II. Contenu : période d'exclusion éventuelle, dispositions financières entre promoteur et investigateur, position du promoteur vis-à-vis de la MR-001 (conformité déclarée à la CNIL, ou non-conformité et autorisation CNIL demandée après l'avis du CPP). Les montants doivent être cohérents avec le formulaire de compensation (FR-P1) et les documents d'information ; ne pas dupliquer de chiffres contradictoires. La période d'exclusion doit correspondre au protocole et à l'information des volontaires. Modèle non fourni : voir DECISIONS.md.",
+      "sources": [
+        "FR-PII-CHECKLIST#3",
+        "FR-HUB",
+        "FR-HV",
+        "FR-ICF"
+      ]
+    },
+    {
+      "id": "FR-L1",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<population>_FR_fr",
+      "name_en": "Main participant information sheet and informed consent form",
+      "checklist_item": 4,
+      "requirement": "mandatory",
+      "per": "population",
+      "language": [
+        "fr"
+      ],
+      "template": null,
+      "participant_templates": [
+        "FR-PT-main"
+      ],
+      "population_sets": [
+        "adult_patients"
+      ],
+      "signature_at_submission": false,
+      "content": "One document for every participant group; separate or clearly differentiated versions where the information, consent giver, procedures or risks differ. Filed unsigned with signature and date fields for the participant and the investigator or other person who conducts the consent interview. No mandatory national template: Article 29 CTR, the French Public Health Code and the national Part II guidance.",
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section L. Obligatoire pour chaque groupe de participants, avec la demande initiale. En français, clair, concis, loyal et compréhensible ; une longueur excessive nuit à la compréhension. Pas de modèle national obligatoire : respecter l'article 29 du règlement (UE) n° 536/2014, le Code de la santé publique (L1122-1, L1122-1-1) et les recommandations nationales ; le modèle TrialAgents FR-PT-main sert de base. Déposé non signé, avec champs de signature et de date pour le participant et l'investigateur ou la personne qui mène l'entretien ; signé lors du recueil du consentement, avant tout acte spécifique. Mentionner l'avis favorable du CPP et l'autorisation de l'ANSM (formulation à finaliser après décision), le numéro d'essai UE, le caractère de recherche, le droit à l'information sur sa santé et aux résultats globaux. Transferts de données : lister pays, destinataires, finalité de chaque transfert et statut d'adéquation. Indemnisation des contraintes : plafond de 6 000 EUR sur douze mois consécutifs. Examen génétique : document séparé (FR-L1-GENETIC). Chaque page porte titre, version et date ; la page de consentement identifie la version de l'information.",
+      "sources": [
+        "FR-PII-CHECKLIST#4",
+        "FR-ICF"
+      ]
+    },
+    {
+      "id": "FR-L1-GENETIC",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_genetic testing_<population>_FR_fr",
+      "name_en": "Separate genetic testing information and consent",
+      "checklist_item": 5,
+      "requirement": "conditional",
+      "trigger": "genetics.examination_planned",
+      "trigger_text": "The trial includes a genetic examination (Civil Code Article 16-10: express written prior consent after information on the nature and purpose of the examination).",
+      "per": "population",
+      "language": [
+        "fr"
+      ],
+      "template": null,
+      "template_needed": "No template supplied (see DECISIONS.md, Missing). The supplied participant templates contain only an in-document genetics section and checkbox.",
+      "signature_at_submission": false,
+      "content": "Separate from the main information and consent form. States the nature and purpose of the genetic examination; keeps the choice distinct from main participation where the testing is optional. Filed unsigned with signature and date fields; the participant signs before testing. Consent giver follows the population pathway (parents for minors, the person authorised under the exact protective status for protected adults).",
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section L. Conditionnel : requis lorsque l'essai comporte un examen des caractéristiques génétiques. Document séparé du document d'information et de consentement principal (recommandations nationales) ; consentement exprès, écrit et préalable après information sur la nature et la finalité de l'examen (article 16-10 du Code civil). En français. Non signé lors du dépôt ; champs de signature et de date ; le participant signe avant l'examen. Choix distinct de la participation principale si l'examen est optionnel. Pour un examen génétique futur, appliquer aussi le guide sur l'utilisation secondaire (restitution des résultats, implications familiales, conservation, partage, retrait). Pour les mineurs et majeurs protégés, confirmer qui peut autoriser l'examen selon le statut exact. Pas de modèle national obligatoire ; aucun modèle fourni : voir DECISIONS.md.",
+      "sources": [
+        "FR-PII-CHECKLIST#5",
+        "FR-ICF",
+        "FR-SECONDARY",
+        "FR-MINORS",
+        "FR-CAPACITY"
+      ]
+    },
+    {
+      "id": "FR-L2",
+      "ctis_section": "L",
+      "ctis_title": "L2_Other subject information material_<type>_FR_fr",
+      "ctis_title_endpoint_related": "R2_Patient-facing document_<type>_FR_fr",
+      "name_en": "Other participant-facing materials",
+      "checklist_item": 6,
+      "requirement": "conditional",
+      "trigger": "participant_materials.other_used or endpoint_documents.participant_facing or recruitment.other_information_material",
+      "trigger_text": "Diaries, questionnaires, instruction sheets, alert cards, digital screens, wearable instructions, home-procedure materials and similar items given to participants.",
+      "per": "item",
+      "language": [
+        "fr"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "Normally none. A separate signature only if the material itself records a consent or authorisation choice.",
+      "content": "Submit before use. May explain a task but cannot replace the main information and consent document or become more exhaustive than it. No general national template. Section L, or the most specific CTIS participant-document category available: endpoint-related questionnaires and diaries use the naming guide's R2 Patient-facing document title (ctis_title_endpoint_related).",
+      "kind": "participant_document",
+      "reader": "participant",
+      "filled_by": "assistant (translation where an English source exists)",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section L, ou la catégorie CTIS de document destiné au participant la plus spécifique (documents liés aux critères d'évaluation : « R2_Patient-facing document », selon le guide de nommage). Conditionnel : journaux, questionnaires, fiches d'instructions, cartes d'alerte, écrans numériques, instructions de dispositifs portables, supports pour actes à domicile. En français ; traduire toutes les annexes, schémas, questionnaires et écrans utilisés pour obtenir ou soutenir le consentement. Déposer avant utilisation. Ces supports peuvent expliquer une tâche mais ne remplacent pas le document d'information principal et ne doivent pas être plus détaillés que lui. Signature seulement si le support enregistre lui-même un choix de consentement ou d'autorisation. Vérifier les mentions relatives aux données personnelles (applications, journaux). Pas de modèle national.",
+      "sources": [
+        "FR-PII-CHECKLIST#6",
+        "FR-ICF",
+        "FR-QC",
+        "naming guide (R2_Patient-facing document)"
+      ]
+    },
+    {
+      "id": "FR-L1-POPULATION",
+      "ctis_section": "L",
+      "ctis_title": "L1_SIS and ICF_<type>_<population>_FR_fr",
+      "name_en": "Population-specific information and consent versions",
+      "checklist_item": 7,
+      "requirement": "conditional",
+      "trigger": "population.healthy_volunteers or population.minors or population.adults_without_capacity or population.adults_under_curatorship or consent.emergency_enrolment or consent.impartial_witness_possible or pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "trigger_text": "The protocol includes healthy volunteers, minors, participants with limited capacity, an emergency enrolment route, an inability-to-write route, pregnancy follow-up or secondary use that is not fully and validly covered by the standard document.",
+      "per": "population",
+      "language": [
+        "fr"
+      ],
+      "template": null,
+      "population_sets": [
+        "healthy_volunteers",
+        "minors",
+        "adults_without_capacity",
+        "adults_under_curatorship",
+        "emergency",
+        "impartial_witness",
+        "pregnancy_participant",
+        "pregnancy_partner",
+        "secondary_use"
+      ],
+      "signature_at_submission": false,
+      "content": "Submit each applicable version before that pathway is used, with the correct later signature and date fields for the participant, parent, representative, curator, witness, investigator or separate data subject. No general French template; follow the applicable legal pathway and the France population guide. See population_sets and population_rules.",
+      "kind": "participant_document",
+      "reader": "participant or representative",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Source QC",
+        "Checklist",
+        "Style"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section L. Conditionnel : volontaires sains, mineurs, majeurs hors d'état de consentir ou protégés, inclusion en urgence, impossibilité d'écrire, suivi de grossesse, utilisation secondaire non couverte valablement par le document principal. Déposer chaque version avant l'utilisation de la voie concernée. En français. Non signé lors du dépôt ; prévoir les champs de signature et de date corrects (participant, titulaires de l'autorité parentale, représentant, curateur, tiers attestant, investigateur, personne concernée distincte) et indiquer en français le rôle de chacun (autorisation, assistance, attestation ou consentement). Pas de modèle français général : suivre la voie légale applicable (CSP L1122-1-1, L1122-1-3, L1122-2 ; articles 29 à 35 du règlement) et le guide de population correspondant.",
+      "sources": [
+        "FR-PII-CHECKLIST#7",
+        "FR-HV",
+        "FR-MINORS",
+        "FR-CAPACITY",
+        "FR-EMERGENCY",
+        "FR-WITNESS",
+        "FR-PREGNANCY",
+        "FR-SECONDARY"
+      ]
+    },
+    {
+      "id": "FR-M-SITE-LIST",
+      "ctis_section": "M",
+      "ctis_title": "M3_List of sites and principal investigators_FR",
+      "name_en": "List of sites and principal investigators",
+      "checklist_item": 8,
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "fr"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "No signature; a principal-investigator signature is not required on the list.",
+      "content": "Complete France site and principal-investigator list with the initial application, kept current through the relevant CTIS procedure. Uses the CTIS structured site and investigator data where requested, in the current EU or CTIS list format.",
+      "note": "The France guide places this under Suitability of the investigator (section M). The naming guide has no site-list example; M3 is the next free M number after M1 CV and M2 DoI.",
+      "kind": "ctis_data",
+      "reader": "regulatory",
+      "filled_by": "sponsor in CTIS (structured data; list document only where requested)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section M (Suitability of the investigator). Obligatoire : liste complète des lieux de recherche et investigateurs principaux en France, déposée avec la demande initiale et tenue à jour par la procédure CTIS appropriée. En français. Aucune signature, pas de signature de l'investigateur principal. Utiliser les données structurées CTIS lorsque demandé et le format de liste UE ou CTIS en vigueur. Chaque site et investigateur doit correspondre dans CTIS, le protocole, l'assurance et les déclarations d'adéquation.",
+      "sources": [
+        "FR-PII-CHECKLIST#8"
+      ]
+    },
+    {
+      "id": "FR-M1",
+      "ctis_section": "M",
+      "ctis_title": "M1_CV_<investigator>_<site>",
+      "name_en": "Curriculum vitae for each investigator",
+      "checklist_item": 9,
+      "requirement": "mandatory",
+      "per": "investigator",
+      "language": [
+        "fr",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M1_CV Principal investigator.docx",
+        "basis": "EU CV template",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M1_CV Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "A CV for every investigator listed for France, dated less than one year before submission, demonstrating relevant experience; recent GCP training (normally within three years) and the investigator's RPPS professional identifier are expected. Personal details come from the investigator; the assistant fills only trial fields.",
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section M. Obligatoire pour chaque investigateur listé pour la France. Français ou anglais acceptés (une demande d'information associée peut utiliser la même langue). Aucune signature lors du dépôt. Utiliser le modèle de CV de l'UE. CV daté de moins d'un an avant le dépôt, démontrant l'expérience pertinente ; formation récente aux bonnes pratiques cliniques (normalement dans les trois ans) et numéro RPPS attendus. Les données personnelles sont fournies par l'investigateur : l'assistant ne renseigne que le titre de l'essai et le numéro d'essai UE et n'invente aucune donnée.",
+      "sources": [
+        "FR-PII-CHECKLIST#9"
+      ]
+    },
+    {
+      "id": "FR-M2",
+      "ctis_section": "M",
+      "ctis_title": "M2_DoI_<investigator>_<site>",
+      "name_en": "Declaration of interest for each investigator",
+      "checklist_item": 10,
+      "requirement": "mandatory",
+      "per": "investigator",
+      "language": [
+        "fr",
+        "en"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/M2_DoI Principal investigator.docx",
+        "basis": "EU declaration-of-interest template",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/M2_DoI Principal investigator.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "A declaration for every investigator, dated within one year before submission and updated if a relevant interest changes. Interests are declared by the investigator; the assistant fills only the trial title and EU trial number.",
+      "kind": "third_party_template",
+      "reader": "regulatory",
+      "filled_by": "investigator",
+      "default_steps": [
+        "Prepare (trial fields only)",
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section M. Obligatoire pour chaque investigateur. Français ou anglais acceptés. Aucune signature lors du dépôt selon les recommandations françaises actuelles. Utiliser le modèle européen de déclaration d'intérêts. Daté de moins d'un an avant le dépôt et mis à jour si un intérêt pertinent change. Les intérêts sont déclarés par l'investigateur ; l'assistant ne renseigne que le titre de l'essai et le numéro d'essai UE.",
+      "sources": [
+        "FR-PII-CHECKLIST#10"
+      ]
+    },
+    {
+      "id": "FR-N1",
+      "ctis_section": "N",
+      "ctis_title": "N1_Site suitability form_<site>",
+      "name_en": "Site suitability statement",
+      "checklist_item": 11,
+      "requirement": "mandatory",
+      "per": "site",
+      "language": [
+        "fr"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/N1_Site suitability.docx",
+        "basis": "EU site-suitability template",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/N1_Site suitability.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": true,
+      "signature_rule": "Dated and signed at CTIS submission by the person responsible for the site. A delegated department head may sign only with visibility over the full trial activities at the site. The assistant leaves the signature block empty for that person.",
+      "content": "One statement for every France site, confirming that facilities, equipment, staff and organisation are suitable for the protocol.",
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant; site fields and signature left empty for the site",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section N (Suitability of the facilities). Obligatoire : une déclaration par lieu de recherche en France, déposée avec la demande. En français. Datée et signée lors du dépôt CTIS par le responsable du lieu de recherche ; un chef de service délégué ne peut signer que s'il a une vision de l'ensemble des activités de l'essai sur le site. Utiliser le modèle européen. Confirmer l'adéquation des locaux, équipements, personnels et de l'organisation au protocole. Les données propres au site (nom, investigateur principal, nombre de participants, capacités) et le bloc de signature restent vides pour le site. Si des actes non habituellement pratiqués sur le site sont requis (article L1121-13 CSP), prévoir l'autorisation de l'ARS (FR-N-ARS).",
+      "national_fields": {
+        "n1_issued_by": "Required in France: the statement is dated and signed at CTIS submission by the person responsible for the site (a delegated department head only with visibility over all trial activities at the site). Keep the signature block in the form, empty for that person; the signed version is uploaded."
+      },
+      "sources": [
+        "FR-PII-CHECKLIST#11"
+      ]
+    },
+    {
+      "id": "FR-N-ARS",
+      "ctis_section": "N",
+      "ctis_title": "N2_ARS site authorisation_<site>",
+      "name_en": "Regional Health Agency (ARS) site authorisation",
+      "checklist_item": 12,
+      "requirement": "conditional",
+      "trigger": "sites.non_routine_acts_requiring_ars_authorisation",
+      "trigger_text": "The interventional research requires acts that are not usually performed at the proposed site within Article L1121-13 of the French Public Health Code.",
+      "per": "site",
+      "language": [
+        "fr"
+      ],
+      "template": null,
+      "signature_at_submission": true,
+      "signature_rule": "The submitted item is the official signed ARS decision; no extra sponsor signature.",
+      "content": "The Agence régionale de santé decision for that site, submitted before the non-routine acts are performed, following the applicable ARS application and decision process.",
+      "note": "The naming guide gives no fixed code; N2 is the next free N number after N1.",
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "ARS (requested by the site or sponsor)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section N. Conditionnel : uniquement si la recherche requiert des actes non habituellement pratiqués sur le lieu proposé au sens de l'article L1121-13 du Code de la santé publique. Décision officielle et signée de l'Agence régionale de santé pour ce site, en français, déposée avant la réalisation des actes concernés ; aucune signature supplémentaire du promoteur. Suivre la procédure de demande et de décision de l'ARS.",
+      "sources": [
+        "FR-PII-CHECKLIST#12",
+        "FR-HUB"
+      ]
+    },
+    {
+      "id": "FR-O1",
+      "ctis_section": "O",
+      "ctis_title": "O1_Trial participant insurance certificate_FR",
+      "name_en": "Clinical trial insurance certificate",
+      "checklist_item": 13,
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "fr"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "No extra signature; must be an issued and dated insurer document.",
+      "content": "Coverage of the France trial period from the first participant included in France to the last participant's last visit; an annual certificate is accepted when it states the trial end date and is continuously renewed. Insurer established in the European Union. Identifies the trial and gives sponsor or legal-representative contact details.",
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "insurer",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section O (Proof of insurance or indemnification). Obligatoire, avec la demande. En français. Document émis et daté par l'assureur, sans signature supplémentaire. Couverture de la période de l'essai en France, de la première inclusion en France à la dernière visite du dernier participant ; une attestation annuelle est acceptée si elle mentionne la date de fin de l'essai et est renouvelée sans interruption. Assureur établi dans l'Union européenne. L'attestation identifie l'essai et donne les coordonnées du promoteur ou de son représentant légal. Les documents d'information doivent décrire la voie d'assurance française sans contredire l'attestation.",
+      "sources": [
+        "FR-PII-CHECKLIST#13",
+        "FR-QC"
+      ]
+    },
+    {
+      "id": "FR-P1",
+      "ctis_section": "P",
+      "ctis_title": "P1_Compensation participants and financial arrangements_FR",
+      "name_en": "Compensation and other financial arrangements",
+      "checklist_item": 14,
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "fr"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/P1_Participant compensation.docx",
+        "basis": "EU compensation-for-trial-participants template",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/P1_Participant compensation.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Required even where no participant payment is planned. Reimbursement of expenses, any constraint indemnity and any other participant payment. French law bars a financial advantage beyond reimbursement of expenses and the permitted indemnity for constraints; the total indemnity for one person is capped at EUR 6,000 over twelve consecutive months. Sponsor-investigator financial arrangements go in the signed Additional France application document, without inconsistent figures.",
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section P (Financial and other arrangements). Obligatoire, même si aucun paiement des participants n'est prévu (l'indiquer explicitement). En français ; aucune signature lors du dépôt. Utiliser le modèle européen de compensation des participants. Indiquer le remboursement des frais, l'indemnité en compensation des contraintes éventuelle et tout autre paiement. Le droit français interdit tout avantage financier au-delà du remboursement des frais et de l'indemnité autorisée ; plafond de 6 000 EUR par personne sur douze mois consécutifs (arrêté du 15 février 2023). Pas d'indemnité de contraintes pour les mineurs ; appliquer les restrictions pour les personnes protégées. Les dispositions financières promoteur–investigateur figurent dans le Document additionnel France signé ; ne pas reprendre de chiffres incohérents. Montants et conditions identiques aux documents d'information.",
+      "national_fields": {
+        "f04": "Required in France when a monetary payment is offered: state in French that it is an indemnity for the constraints of the research (Article L1121-11 CSP), with amount, calculation, payment schedule and effect of early withdrawal; that no other financial advantage is given; that the total indemnity for one person does not exceed EUR 6,000 over twelve consecutive months (Order of 15 February 2023); and that no constraint indemnity is paid to minors or to protected persons for whom French law prohibits it.",
+        "f06": "Required in France: the conditions and the effect of early withdrawal must match the participant documents and the Additional France application document; refusal or withdrawal creates no penalty."
+      },
+      "sources": [
+        "FR-PII-CHECKLIST#14",
+        "FR-HV",
+        "FR-MINORS",
+        "FR-CAPACITY",
+        "FR-ICF"
+      ]
+    },
+    {
+      "id": "FR-R1",
+      "ctis_section": "R",
+      "ctis_title": "R1_Compliance collection and use personal data_<MR-001 receipt or CNIL authorisation>_FR",
+      "name_en": "CNIL MR-001 declaration-of-conformity receipt or CNIL authorisation",
+      "checklist_item": 15,
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "fr"
+      ],
+      "template": null,
+      "signature_at_submission": false,
+      "signature_rule": "The MR-001 receipt is the dated document issued and signed by CNIL; a later authorisation is the official CNIL decision. No extra sponsor signature.",
+      "content": "Evidence of the applicable route. Processing that strictly complies with MR-001: the controller makes one declaration of conformity to CNIL (online declaration) and retains the receipt, submitted in CTIS; a new receipt is not needed for every study by the same controller. Processing that does not comply: disclose this in the Additional France application document, obtain CNIL authorisation after the CPP opinion and before non-compliant processing begins, and upload the authorisation when issued. File in the dedicated data-protection subsection, not the biological-sample subsection. No study-specific sponsor template.",
+      "note": "The shared EU data-protection statement (eu/templates/part-ii/R1_Data protection.docx) is not on the France Part II checklist; see DECISIONS.md.",
+      "kind": "third_party_document",
+      "reader": "regulatory",
+      "filled_by": "CNIL (declaration made by the controller)",
+      "default_steps": [
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, section R (Compliance with national requirements on data protection), sous-section dédiée à la protection des données (jamais la sous-section échantillons biologiques). Obligatoire : preuve de la voie applicable. Traitement strictement conforme à la MR-001 : le responsable de traitement fait une déclaration de conformité en ligne auprès de la CNIL et conserve le récépissé, déposé dans CTIS ; un nouveau récépissé n'est pas requis pour chaque étude du même responsable. Traitement non conforme : le déclarer dans le Document additionnel France, obtenir l'autorisation de la CNIL après l'avis du CPP et avant le début du traitement non conforme, puis la déposer. Récépissé daté, émis et signé par la CNIL ; aucune signature supplémentaire du promoteur. L'information des participants doit correspondre à la voie déclarée.",
+      "sources": [
+        "FR-PII-CHECKLIST#15",
+        "FR-HUB",
+        "FR-ICF"
+      ]
+    },
+    {
+      "id": "FR-S1",
+      "ctis_section": "S",
+      "ctis_title": "S1_Compliance collection use storage biological samples_FR",
+      "name_en": "Compliance with rules for biological samples",
+      "checklist_item": 16,
+      "requirement": "mandatory",
+      "per": "trial",
+      "language": [
+        "fr"
+      ],
+      "template": {
+        "file": "eu/templates/part-ii/S1_Biological samples.docx",
+        "basis": "EU template on compliance with national requirements for biological samples",
+        "recommended": true,
+        "fields": "eu/templates/part-ii/S1_Biological samples.fields.json",
+        "shared": true
+      },
+      "signature_at_submission": false,
+      "content": "Submitted with the application, including where the protocol specifies collection, storage, transfer or future use. Answers aligned with the protocol, laboratory manual and consent choices. A change of sample purpose may require new consent before the changed use begins.",
+      "note": "The France checklist page places this form in section R; the CTCG naming guide v3.0 (newer) uses S1. S1 is used (see templates/README.md).",
+      "kind": "form",
+      "reader": "regulatory",
+      "filled_by": "assistant",
+      "default_steps": [
+        "Draft",
+        "Check"
+      ],
+      "drafting_notes_fr": "CTIS Partie II, Compliance with applicable rules for biological samples (section S selon le guide de nommage CTCG v3.0 ; la page France indique R). Obligatoire selon la liste France, avec la demande, y compris lorsque le protocole prévoit prélèvement, conservation, transfert ou utilisation future. En français ; aucune signature lors du dépôt selon les recommandations françaises actuelles. Utiliser le modèle européen. Réponses cohérentes avec le protocole, le manuel de laboratoire, les choix de consentement et le document d'utilisation secondaire. Respecter les articles L1243-3 et L1243-4 du Code de la santé publique (collection et changement de finalité) ; un nouveau consentement est recueilli avant l'utilisation d'échantillons pour une finalité modifiée ; effectuer les déclarations ou autorisations de collection requises avant la nouvelle utilisation. Examen génétique : consentement séparé (FR-L1-GENETIC).",
+      "national_fields": {
+        "f03": "Required in France: state in French compliance with Articles L1243-3 and L1243-4 of the Public Health Code for the collection and any changed use of samples; that new consent is obtained before samples are used for a changed purpose and any required collection declaration or authorisation is completed before the new use begins; and that any genetic examination has separate express written prior consent (Civil Code Article 16-10)."
+      },
+      "sources": [
+        "FR-PII-CHECKLIST#16",
+        "FR-SECONDARY",
+        "FR-ICF"
+      ]
+    }
+  ],
+  "national_fields": {
+    "FR-K1": {
+      "form": "eu/templates/part-ii/K1_Recruitment arrangements.docx",
+      "fields": {
+        "v105": "Required in France: in French, state how recruitment material is handled (every participant-facing item filed before use; new or materially changed items through a CTIS modification; or a clear statement that no separate advertising is used) and, for healthy volunteers, identification, screening, decision time, compensation and any exclusion period (also stated in the Additional France application document).",
+        "v108": "Required in France: in French, state that the participant and the investigator or other person conducting the consent interview sign and date the approved French form before any trial-specific procedure, that the participant receives a copy, that the consent record identifies the information version, that a genetic examination needs separate express written prior consent (Civil Code Article 16-10) in a separate document, and how any electronic or remote consent meets the same information, identity, signature, copy and record requirements.",
+        "v110": "Required in France when adults lacking capacity are included: in French, describe the route by verified protective status (Article L1122-2 CSP): curatorship, where the participant consents with the curator's assistance; guardianship or another measure with representation, where the authorised representative authorises within the scope of the order or mandate; adult unable to consent without a formal measure, where authorisation is sought from the trusted person, otherwise a family member, otherwise a person with close and stable ties. Persons under sauvegarde de justice are not enrolled. Judge or family-council authorisation where the CPP considers there is a serious risk to private life or bodily integrity. Personal adherence is sought; an explicit refusal cannot be overridden; own consent when capacity returns.",
+        "v114": "Required in France when minors are included: in French, state that both holders of parental authority authorise and sign where two hold it; the one-holder exception only when all statutory conditions are met (minimal foreseeable risk and burden, the minor is not a healthy volunteer, the other holder cannot authorise in a time compatible with the trial) and is documented; authority is verified from evidence, not inferred from family relationship; information is adapted to age and maturity by trained or experienced staff; the minor's personal adherence is sought and a refusal cannot be overridden; own adult consent when the participant reaches 18 (Article L1122-2 CSP, Article 32 CTR).",
+        "v117": "Required in France when an impartial witness may be used: in French, state that the attesting person is the participant's trusted person, a family member or a close person, independent of the investigator and sponsor (Article L1122-1-1 CSP); not a member of the trial team, sponsor staff or anyone with a trial interest; present for the information and the expression of consent; relationship and independence documented; interpreter and witness roles not combined unless the approved procedure permits it.",
+        "v121": "Required in France when emergency enrolment is used: in French, describe the Article 35 checks before the first intervention (prior objection, representative availability, therapeutic window, direct-benefit basis, minimal risk and burden), the source record of each condition, information and consent of the participant without undue delay, authorisation by the legally designated representative as soon as available, the participant's own consent if capacity returns, and information on the right to object to use of data already obtained (Article L1122-1-3 CSP)."
+      }
+    },
+    "FR-N1": {
+      "form": "eu/templates/part-ii/N1_Site suitability.docx",
+      "fields": {
+        "n1_issued_by": "Required in France: the statement is dated and signed at CTIS submission by the person responsible for the site (a delegated department head only with visibility over all trial activities at the site). Keep the signature block in the form, empty for that person; the signed version is uploaded."
+      }
+    },
+    "FR-P1": {
+      "form": "eu/templates/part-ii/P1_Participant compensation.docx",
+      "fields": {
+        "f04": "Required in France when a monetary payment is offered: state in French that it is an indemnity for the constraints of the research (Article L1121-11 CSP), with amount, calculation, payment schedule and effect of early withdrawal; that no other financial advantage is given; that the total indemnity for one person does not exceed EUR 6,000 over twelve consecutive months (Order of 15 February 2023); and that no constraint indemnity is paid to minors or to protected persons for whom French law prohibits it.",
+        "f06": "Required in France: the conditions and the effect of early withdrawal must match the participant documents and the Additional France application document; refusal or withdrawal creates no penalty."
+      }
+    },
+    "FR-S1": {
+      "form": "eu/templates/part-ii/S1_Biological samples.docx",
+      "fields": {
+        "f03": "Required in France: state in French compliance with Articles L1243-3 and L1243-4 of the Public Health Code for the collection and any changed use of samples; that new consent is obtained before samples are used for a changed purpose and any required collection declaration or authorisation is completed before the new use begins; and that any genetic examination has separate express written prior consent (Civil Code Article 16-10)."
+      }
+    }
+  },
+  "national_fields_note": "Index of the national additions to shared forms; the same text is on each document (documents[].national_fields). Field ids are those of the shared <form>.fields.json.",
+  "population_sets": [
+    {
+      "id": "adult_patients",
+      "trigger": "population.adult_patients",
+      "document": "FR-L1",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_main_FR_fr.json"
+        }
+      ],
+      "basis": "TrialAgents France adult-patient model (CTIS_FR set); no mandatory national template (Article 29 CTR, CSP, national Part II guidance)",
+      "sources": [
+        "FR-ICF",
+        "FR-PII-CHECKLIST#4"
+      ]
+    },
+    {
+      "id": "healthy_volunteers",
+      "trigger": "population.healthy_volunteers",
+      "document": "FR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_healthy volunteers_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_healthy_FR_fr.json"
+        }
+      ],
+      "note": "Use for people enrolled without the disease or condition under study, including a healthy cohort within a patient trial. Non-therapeutic purpose; no promised direct benefit; early-phase uncertainty; restrictions with periods; screening results and incidental findings; reimbursement and constraint indemnity (cap EUR 6,000 over twelve consecutive months, Order of 15 February 2023); exclusion period (also in the Additional France application document); national register of research participants (Article R1121-16 CSP) where it applies. Not to be adapted into a minor pathway.",
+      "sources": [
+        "FR-HV"
+      ]
+    },
+    {
+      "id": "minors",
+      "trigger": "population.minors",
+      "document": "FR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_parents_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_parents_FR_fr.json"
+        },
+        {
+          "title": "L1_SIS and ICF_children 6-11_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_age 6-11_FR_fr.json"
+        },
+        {
+          "title": "L1_SIS and ICF_adolescents 12-17_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_age 12-17_FR_fr.json"
+        }
+      ],
+      "note": "Under 18 is a minor (Civil Code Article 388). Parent document with full information and the signature blocks of the parental route (both holders where two hold parental authority). Age-adapted information for each minor who can understand any part of the decision; bands are drafting bands justified by readability and maturity, not statutory French bands. Personal adherence sought; refusal cannot be overridden. Own adult consent at 18 (FR-PT-main). No constraint indemnity for minors.",
+      "sources": [
+        "FR-MINORS"
+      ]
+    },
+    {
+      "id": "adults_without_capacity",
+      "trigger": "population.adults_without_capacity",
+      "document": "FR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_legal representative_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_FR_fr.json"
+        },
+        {
+          "title": "L1_SIS and ICF_limited capacity_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_limited capacity_FR_fr.json"
+        }
+      ],
+      "note": "Adults under guardianship or another measure with representation (tutelle, future-protection mandate, family authorisation with representation), and adults unable to consent without a formal measure (trusted person, otherwise family member, otherwise person with close and stable ties). Verify the exact French status before choosing the consent giver. Persons under sauvegarde de justice are excluded. Judge or family-council authorisation where the CPP considers there is a serious risk. Article 31 CTR conditions. Own consent when capacity returns (FR-PT-main).",
+      "sources": [
+        "FR-CAPACITY"
+      ]
+    },
+    {
+      "id": "adults_under_curatorship",
+      "trigger": "population.adults_under_curatorship",
+      "document": "FR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_curatorship_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_main_FR_fr.json"
+        }
+      ],
+      "note": "Under curatelle the participant consents with the curator's assistance; the curator does not replace the decision. The guide requires an adapted participant document with signature fields showing the participant's consent and the curator's assistance. No dedicated template was supplied and the legal-representative template must not be used for curatorship; the main template (\"when no other template applies\") is the starting point, with the curator-assistance block added. Needs decision (DECISIONS.md).",
+      "status": "needs_decision",
+      "sources": [
+        "FR-CAPACITY"
+      ]
+    },
+    {
+      "id": "emergency",
+      "trigger": "consent.emergency_enrolment",
+      "document": "FR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_emergency_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_emergency_FR_fr.json"
+        },
+        {
+          "title": "L1_SIS and ICF_legal representative emergency_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_legal rep_FR_fr.json"
+        }
+      ],
+      "note": "Only when every Article 35 condition is met. Mandatory: full French information and consent for use as soon as the participant can decide, and a legal-representative information and authorisation version for when the participant remains unable and a representative becomes available. Recommended: a short emergency information aid (no template supplied). Explain the right to object to use of data already obtained.",
+      "sources": [
+        "FR-EMERGENCY"
+      ]
+    },
+    {
+      "id": "impartial_witness",
+      "trigger": "consent.impartial_witness_possible",
+      "document": "FR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_impartial witness_<population>_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_witness_FR_fr.json"
+        }
+      ],
+      "note": "Only for a capable participant who cannot write. Attesting person: trusted person, family member or close person independent of investigator and sponsor (Article L1122-1-1 CSP); witness attestation identifies participant, document version, alternative means, consent date, relationship and independence. Not a legal-representative route. The template states it must not be used for healthy volunteers; the guide does not say so (DECISIONS.md).",
+      "sources": [
+        "FR-WITNESS"
+      ]
+    },
+    {
+      "id": "pregnancy_participant",
+      "trigger": "pregnancy.participant_follow_up_beyond_main_consent",
+      "document": "FR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnancy follow-up_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_pregnancy_FR_fr.json"
+        }
+      ],
+      "note": "Addendum or separate form when follow-up adds direct contacts, medical-record access, obstetric, delivery or infant information, or a duration not covered by the main consent. Identifiable infant follow-up after birth needs the holders of parental authority.",
+      "sources": [
+        "FR-PREGNANCY"
+      ]
+    },
+    {
+      "id": "pregnancy_partner",
+      "trigger": "pregnancy.partner_follow_up",
+      "document": "FR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_pregnant partner_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_pregnant partner_FR_fr.json"
+        }
+      ],
+      "note": "Mandatory when partner data are collected: separate document with its own privacy notice and signature blocks. The participant cannot consent for the partner. Article 14 GDPR route for information received indirectly, Article 13 once she provides information directly.",
+      "sources": [
+        "FR-PREGNANCY"
+      ]
+    },
+    {
+      "id": "secondary_use",
+      "trigger": "samples.future_use_outside_protocol or data.future_use_outside_protocol",
+      "document": "FR-L1-POPULATION",
+      "documents": [
+        {
+          "title": "L1_SIS and ICF_secondary use_FR_fr",
+          "template": "templates/participant/L1_SIS and ICF_secondary_FR_fr.json"
+        }
+      ],
+      "note": "Optional (Article 28(2) CTR); refusal must not prevent main participation. Separate section or document; a separate document is preferable where the purpose, retention, recipients, sample governance or withdrawal needs substantial explanation. Separate yes/no choices. For minors and protected adults, confirm who authorises and how the participant is involved.",
+      "sources": [
+        "FR-SECONDARY"
+      ]
+    }
+  ],
+  "population_sets_note": "population_sets list which templates a kind of population triggers; the actual populations are defined per study (playbook section 2a) and each population gets its own documents. adult_patients belongs to FR-L1 (checklist item 4); every other set belongs to FR-L1-POPULATION (item 7).",
+  "drafting_rules": [
+    "France has no mandatory national template for participant documents: content and signature logic follow Article 29 CTR, the French Public Health Code, CNIL requirements and the national Part II guidance. The supplied TrialAgents French templates are the baseline; follow their content_instructions.",
+    "French that a lay reader in the intended population understands: clear, concise and fair; excessive length can itself impair understanding. Short sentences, active voice, terms and abbreviations defined at first use, consistent wording for each concept. Do not use the expression « tomber enceinte » (templates).",
+    "Structure per the templates: Part 1 information about the research; Part 2 participant rights and management of collected data; Part 3 glossary where useful; consent form visually separate.",
+    "State that the project is research, not ordinary care; distinguish routine care from research-only procedures, risks and constraints.",
+    "Identify the favourable CPP opinion and the ANSM authorisation, with wording that can be finalised once the decisions are available; include the EU trial number.",
+    "Do not promise personal benefit; describe individual benefit only where reasonably possible and wider scientific benefit separately; balanced risks; alternatives including not participating; planned care after the trial.",
+    "Data protection: controller, any EU representative and DPO; data categories and sources, purposes, legal basis (do not equate trial consent with the GDPR legal basis without the controller's analysis), recipients, retention, security, rights and CNIL complaint route; Article 13 for direct collection, Article 14 for other sources.",
+    "Transfers: list the destination countries, recipients or recipient categories, the purpose of each transfer and whether the destination has an adequacy decision; a vague statement such as 'transfer outside Europe' is not enough.",
+    "The participant notice matches the MR-001 or CNIL-authorisation route declared in the Additional France application document.",
+    "Compensation: reimbursement of expenses and any constraint indemnity only; no other financial advantage; total indemnity capped at EUR 6,000 per person over twelve consecutive months; none for minors or protected persons where prohibited; amounts identical to P1 and the Additional France application document.",
+    "Insurance: explain the mandatory insurance arrangements and the practical route for a research-related injury without turning the document into a policy summary.",
+    "Withdrawal: distinguish withdrawal from the trial, objection to future data processing, destruction of remaining samples and withdrawal of an optional secondary-use choice; do not promise deletion the law or scientific integrity does not permit.",
+    "Results and rights: the right to receive personal health information and, after the research, the overall results; when and how a results summary is available.",
+    "Genetic examination: separate document with express written prior consent (FR-L1-GENETIC); a checkbox in the main form is not enough.",
+    "Optional activities: separate yes/no choices; no bundled signature for unrelated permissions; optional elements are not conditions of entry unless genuinely part of the protocol and justified.",
+    "Signatures: filed unsigned with final signature blocks for the participant and the investigator or person conducting the consent interview (plus parent, representative, curator, witness or separate data subject only where the route requires); roles labelled in French (authorisation, assistance, attestation or consent); no predating; traceable corrections; the signer receives a copy; the consent record identifies the information version.",
+    "Every page carries a consistent title, version and date; searchable-text PDFs, no image-only PDFs.",
+    "Translate all participant-facing appendices, diagrams, questionnaires and digital screens used to obtain or support consent; the CPP reviews the French version.",
+    "Participant templates (JSON): italic text, [square-bracket] notes and \"...........\" gaps are drafting instructions or gaps; follow them and remove them. Part II templates (DOCX): yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE: …] labels. Nothing of either may remain in a final document."
+  ],
+  "sources": {
+    "FR-HUB": "https://trialagents.com/ctis/france/en",
+    "FR-PII-CHECKLIST": "https://trialagents.com/ctis/france/en/part-ii-document-checklist",
+    "FR-ICF": "https://trialagents.com/ctis/france/en/patient-information-consent-requirements",
+    "FR-QC": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist",
+    "FR-HV": "https://trialagents.com/ctis/france/en/healthy-volunteer-consent-requirements",
+    "FR-MINORS": "https://trialagents.com/ctis/france/en/minor-consent-assent-requirements",
+    "FR-CAPACITY": "https://trialagents.com/ctis/france/en/limited-capacity-legal-representative-consent-requirements",
+    "FR-EMERGENCY": "https://trialagents.com/ctis/france/en/emergency-enrollment-consent-requirements",
+    "FR-WITNESS": "https://trialagents.com/ctis/france/en/impartial-witness-consent-requirements",
+    "FR-PREGNANCY": "https://trialagents.com/ctis/france/en/pregnancy-follow-up-requirements",
+    "FR-SECONDARY": "https://trialagents.com/ctis/france/en/secondary-use-consent-requirements",
+    "NAMING": "https://trialagents.com/ctis/ctis-document-naming-convention (content/playbook/naming.md)"
+  },
+  "naming": {
+    "convention": "content/playbook/naming.md (CTCG Best Practice Guide: Naming of Documents in CTIS, v3.0, 10 February 2026)",
+    "france_note": "CTCG pattern with country FR and language fr where they distinguish the document; always kept for participant-facing documents (_FR_fr). Sections follow the CTCG structure: biological samples S1 (the France page says section R), data-protection evidence R1, site list M3 (France page: section M), Additional France application document K3, ARS authorisation N2 (next free numbers; the naming guide gives no fixed code). Drop <population> when the study has one population. Personal names only for the investigator in M1/M2."
+  },
+  "document_kinds": {
+    "form": "Regulatory form the assistant answers question by question. Keep the template layout and questions unchanged.",
+    "participant_document": "Participant- or representative-facing document written section by section from a participant template, for one population.",
+    "third_party_template": "Template completed by someone else (investigator). The assistant fills only trial fields (title, EU trial number) and leaves every other field empty for that person.",
+    "third_party_document": "Document issued by someone else (insurer, CNIL, ARS, sponsor/applicant national form without a supplied template). Recorded as a source when received; only checked.",
+    "ctis_data": "Information entered as structured data in CTIS; checked against the plan."
+  },
+  "default_steps_by_kind": {
+    "participant_document": [
+      "Draft",
+      "Source QC",
+      "Checklist",
+      "Style"
+    ],
+    "form": [
+      "Draft",
+      "Check"
+    ],
+    "third_party_template": [
+      "Prepare (trial fields only)",
+      "Check"
+    ],
+    "third_party_document": [
+      "Check"
+    ],
+    "ctis_data": [
+      "Check"
+    ]
+  },
+  "participant_templates": [
+    {
+      "id": "FR-PT-age-12-17",
+      "file": "templates/participant/L1_SIS and ICF_age 12-17_FR_fr.json",
+      "name_en": "Subject Information and Assent Form - Adolescents",
+      "name_fr": "Document d’information adaptée et formulaire d’adhésion pour l’adolescent",
+      "doc_type": "adolescents",
+      "role": "age-adapted information and personal-adherence form for adolescents 12–17",
+      "when_to_use": "Must be completed for studies involving adolescent participants (aged 12 - 17 years)."
+    },
+    {
+      "id": "FR-PT-age-6-11",
+      "file": "templates/participant/L1_SIS and ICF_age 6-11_FR_fr.json",
+      "name_en": "Subject Information and Assent Form - Children",
+      "name_fr": "Document d’information adaptée et formulaire d’adhésion pour l’enfant",
+      "doc_type": "children",
+      "role": "age-adapted information and personal-adherence form for children 6–11",
+      "when_to_use": "Must be completed for studies involving children participants (aged 6 - 11 years)."
+    },
+    {
+      "id": "FR-PT-emergency",
+      "file": "templates/participant/L1_SIS and ICF_emergency_FR_fr.json",
+      "name_en": "Emergency Enrolment and Deferred Consent Form",
+      "name_fr": "Document d’information et formulaire de consentement différé après inclusion en situation d’urgence",
+      "doc_type": "emergency_enrollment",
+      "role": "information and deferred consent to continuation after emergency enrolment",
+      "when_to_use": "Must be used when the study involves emergency enrolment before prior informed consent because neither the participant nor a legal representative can provide consent within the required treatment window."
+    },
+    {
+      "id": "FR-PT-healthy",
+      "file": "templates/participant/L1_SIS and ICF_healthy_FR_fr.json",
+      "name_en": "Subject Information and Consent Form - Healthy Adults",
+      "name_fr": "Document d’information et formulaire de consentement - volontaire sain",
+      "doc_type": "healthy_adults",
+      "role": "main information and consent (healthy volunteers)",
+      "when_to_use": "Must be completed for studies involving healthy adult participants (18 or older without a specific health condition). Can be used for non-treated participants when no other template applies."
+    },
+    {
+      "id": "FR-PT-legal-rep",
+      "file": "templates/participant/L1_SIS and ICF_legal rep_FR_fr.json",
+      "name_en": "Trial Information and Consent Form - Legal Representative",
+      "name_fr": "Document d’information et formulaire d’autorisation de la personne habilitée pour un majeur hors d’état de consentir",
+      "doc_type": "legal_rep",
+      "role": "information and authorisation by the authorised person for an adult unable to consent (representation measure or no formal measure); not for curatorship",
+      "when_to_use": "Must be used when the study involves adult participants who cannot provide informed consent and participation must be authorised by a legally authorised representative."
+    },
+    {
+      "id": "FR-PT-limited-capacity",
+      "file": "templates/participant/L1_SIS and ICF_limited capacity_FR_fr.json",
+      "name_en": "Subject Information and Assent Form - Limited Capacity",
+      "name_fr": "Document d’information adaptée et formulaire d’adhésion du participant majeur hors d’état de consentir",
+      "doc_type": "limited_capacity",
+      "role": "adapted information and personal-adherence form for the adult unable to consent; accompanies the authorisation",
+      "when_to_use": "Must be used when the study involves an adult lacking consent capacity who retains sufficient understanding to receive adapted information and express assent, willingness or objection. It accompanies the legal representative’s consent."
+    },
+    {
+      "id": "FR-PT-main",
+      "file": "templates/participant/L1_SIS and ICF_main_FR_fr.json",
+      "name_en": "Subject Information and Consent Form - Adult Patients",
+      "name_fr": "Document d’information à l’attention du participant à la recherche et formulaire de consentement",
+      "doc_type": "adult_patients",
+      "role": "main information and consent (capable adult patients)",
+      "when_to_use": "Must be completed for studies involving adult patients (18 or older & diagnosed with a specific health condition). Can be used for patients when no other template applies such as re-consent after reaching adulthood, regained capacity, prescreening, or optional substudies or extension arms."
+    },
+    {
+      "id": "FR-PT-parents",
+      "file": "templates/participant/L1_SIS and ICF_parents_FR_fr.json",
+      "name_en": "Trial Information and Consent Form - Parents",
+      "name_fr": "Document d’information et formulaire de consentement des titulaires de l’autorité parentale",
+      "doc_type": "parents",
+      "role": "information and authorisation for the holders of parental authority of a minor",
+      "when_to_use": "Must be completed for studies involving minor participants (younger than 18 years)."
+    },
+    {
+      "id": "FR-PT-pregnancy",
+      "file": "templates/participant/L1_SIS and ICF_pregnancy_FR_fr.json",
+      "name_en": "Pregnancy Follow-up and Consent - Participants",
+      "name_fr": "Document d’information et formulaire de consentement au suivi de grossesse - participante enceinte",
+      "doc_type": "pregnant_participants",
+      "role": "pregnancy follow-up of a pregnant trial participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from a pregnant trial participant."
+    },
+    {
+      "id": "FR-PT-pregnant-partner",
+      "file": "templates/participant/L1_SIS and ICF_pregnant partner_FR_fr.json",
+      "name_en": "Pregnancy Follow-up and Consent - Partners",
+      "name_fr": "Document d’information et formulaire de consentement au suivi de grossesse - partenaire enceinte",
+      "doc_type": "pregnant_partners",
+      "role": "information and consent for the pregnant partner of a male participant",
+      "when_to_use": "Must be used when the study involves collection of pregnancy outcome, maternal-health or infant-health information from the pregnant partner of a male trial participant."
+    },
+    {
+      "id": "FR-PT-secondary",
+      "file": "templates/participant/L1_SIS and ICF_secondary_FR_fr.json",
+      "name_en": "Secondary and Future Use of Data or Biosamples",
+      "name_fr": "Document d’information et formulaire de consentement à l’utilisation secondaire des données et/ou échantillons biologiques",
+      "doc_type": "secondary_use",
+      "role": "optional storage or secondary use of data or samples",
+      "when_to_use": "Must be used when the study involves optional storage or secondary use of participant data, biological samples or genetic material beyond the mandatory purposes of the main clinical trial."
+    },
+    {
+      "id": "FR-PT-witness",
+      "file": "templates/participant/L1_SIS and ICF_witness_FR_fr.json",
+      "name_en": "Subject Information and Consent Form - Impartial Witness",
+      "name_fr": "Document d’information et formulaire de consentement avec attestation d’un tiers indépendant",
+      "doc_type": "impartial_witness",
+      "role": "consent with attestation by an independent third party for a capable participant unable to write",
+      "when_to_use": "Must be used when the study involves an adult patient who has capacity to consent but cannot express consent in writing. The patient decides personally, while an independent attesting person confirms and documents the consent process. It must not be used for healthy volunteers."
+    }
+  ],
+  "population_rules": {
+    "authority": "No national template or statutory age bands. Regulation (EU) No 536/2014 Articles 28 to 35; French Public Health Code Articles L1122-1, L1122-1-1, L1122-1-3, L1122-2, L1121-11, R1121-16; Civil Code Articles 16-10 and 388; national Part II guidance (French Ministry of Health list, 18 July 2025); CNIL MR-001 (May 2026); as recorded in the France guides reviewed 23 September 2026.",
+    "minors": {
+      "age_bands": [
+        {
+          "band": "6-11",
+          "template": "FR-PT-age-6-11",
+          "reader": "child"
+        },
+        {
+          "band": "12-17",
+          "template": "FR-PT-age-12-17",
+          "reader": "adolescent"
+        }
+      ],
+      "always": [
+        "FR-PT-parents"
+      ],
+      "band_rule": "France sets no statutory child or adolescent bands. The template bands (6-11, 12-17) are drafting bands; per study they must be justified by readability and maturity. A single age-adapted document may be enough for a narrow cohort; a broad paediatric range usually needs more than one version.",
+      "band_conflict": "None: the national authority sets no band, so the supplied 6-11 band is kept (unlike Germany, where AKEK's 7-11 replaced 6-11).",
+      "reconsent_at_18": "FR-PT-main, when participants can reach 18 during the trial; plan the timing in K1.",
+      "under_6": "No template. French information adapted to each minor who can understand any part of the decision is mandatory; use a developmentally appropriate format and record the minor's response. A refusal cannot be overridden (DECISIONS.md, Missing).",
+      "parental_authorisation": "Both holders of parental authority authorise and sign where two hold it. One holder only when all statutory conditions are met (minimal foreseeable risk and burden, not a healthy volunteer, other holder unable to authorise in time), documented with the reason. Authority verified from evidence.",
+      "payment": "No constraint indemnity for minors; only reimbursement of justified expenses.",
+      "note": "Healthy-volunteer forms are not adapted into a minor pathway."
+    },
+    "adults_without_capacity": {
+      "always": [
+        "FR-PT-legal-rep",
+        "FR-PT-limited-capacity"
+      ],
+      "routes": {
+        "curatorship": "Participant consents with the curator's assistance; adapted participant document with participant and curator-assistance signature fields (population set adults_under_curatorship; FR-PT-legal-rep must not be used).",
+        "representation_measure": "Guardianship, future-protection mandate or family authorisation with representation: the authorised representative authorises within the scope of the order or mandate (FR-PT-legal-rep + FR-PT-limited-capacity).",
+        "no_formal_measure": "Trusted person, otherwise family member, otherwise person with close and stable ties; document why the participant could not consent and the absence of a higher-priority person (FR-PT-legal-rep + FR-PT-limited-capacity).",
+        "sauvegarde_de_justice": "Excluded from this interventional research route.",
+        "serious_risk": "Judge or family-council authorisation where the CPP considers there is a serious risk to private life or bodily integrity (conditional, retained in the site file)."
+      },
+      "regained_capacity": "FR-PT-main for the participant's own consent without undue delay.",
+      "payment": "No constraint indemnity where French law prohibits it for the category; reimbursement of justified expenses only.",
+      "note": "An explicit refusal or withdrawal by the participant cannot be overridden by the representative."
+    },
+    "emergency": {
+      "always": [
+        "FR-PT-emergency",
+        "FR-PT-legal-rep"
+      ],
+      "recommended": "Short French emergency information aid; site checklist or source-note template for the Article 35 conditions (internal). No templates supplied.",
+      "note": "FR-PT-legal-rep is used for the representative's later authorisation when the participant remains unable to consent; FR-PT-main or the emergency form for the participant's own consent once capable."
+    },
+    "impartial_witness": {
+      "always": [
+        "FR-PT-witness"
+      ],
+      "note": "Capable participant unable to write. Witness independent of investigator and sponsor; never a trial-team member or sponsor staff."
+    },
+    "healthy_volunteers": {
+      "always": [
+        "FR-PT-healthy"
+      ],
+      "note": "Exclusion period in the Additional France application document; national register information where it applies; constraint indemnity cap EUR 6,000 over twelve consecutive months."
+    },
+    "pregnancy": {
+      "participant": [
+        "FR-PT-pregnancy"
+      ],
+      "partner": [
+        "FR-PT-pregnant-partner"
+      ],
+      "note": "Participant form conditional (when the main consent does not cover the follow-up); partner form mandatory when partner data are collected; parental-authority authorisation for identifiable infant follow-up."
+    },
+    "shareable_templates": [
+      "FR-PT-pregnant-partner",
+      "FR-PT-secondary"
+    ],
+    "shareable_note": "May be one shared document for several populations when nothing in it would differ; agree with the user. Secondary-use authorisation for minors and protected adults follows the population's consent giver, so a separate version may be needed.",
+    "separate_document_rules": [
+      "A genetic examination needs a separate French information and express written prior consent document (Civil Code Article 16-10; national guidance), not only a checkbox in the main form (FR-L1-GENETIC).",
+      "Create separate or clearly differentiated versions where the information, consent giver, procedures or risks differ.",
+      "Where an activity needs its own legally distinct consent, use a separate document rather than only an extra checkbox.",
+      "Secondary use outside the protocol: separate section or document; a separate document where the purpose, retention, recipients, sample governance or withdrawal needs substantial explanation.",
+      "A pregnant partner receives her own document; the participant cannot consent for her.",
+      "A changed sample purpose or materially different secondary use needs updated information and new consent before it begins.",
+      "Re-consent with the current adult French information at 18 and when capacity returns."
+    ]
+  },
+  "styling": {
+    "base": "styles/base.md",
+    "country": "countries/FR/styling.md"
+  },
+  "checklists": {
+    "participant_document": "countries/FR/checklists/participant-documents.json",
+    "check": "countries/FR/checklists/forms-and-supplied.json",
+    "package": "countries/FR/checklists/part-ii-package.json"
+  },
+  "playbook": [
+    "playbook/planning.md",
+    "playbook/naming.md",
+    "playbook/steps.md",
+    "conventions/template-instructions.md"
+  ],
+  "decisions": "countries/FR/DECISIONS.md",
+  "answer_languages": [
+    "fr"
+  ]
+}

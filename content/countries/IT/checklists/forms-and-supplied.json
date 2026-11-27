@@ -1,0 +1,191 @@
+{
+  "id": "IT-CHECK",
+  "name": "Italy: check of forms and supplied documents",
+  "applies_to_kinds": [
+    "form",
+    "third_party_template",
+    "third_party_document",
+    "ctis_data"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/italy/en/part-ii-document-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "common": [
+    {
+      "id": "X.01",
+      "check": "Trial title and EU trial number (if assigned), protocol number, sponsor, version and date match the protocol, CTIS and the rest of the package."
+    },
+    {
+      "id": "X.02",
+      "check": "Every field the assistant answers is answered; fields that belong to the site, investigator, insurer or another party are left empty, not invented."
+    },
+    {
+      "id": "X.03",
+      "check": "No drafting instruction remains; tracked changes, comments and hidden text removed."
+    },
+    {
+      "id": "X.04",
+      "check": "Language is Italian or English (insurance certificate: Italian); no signature unless this document's signature rule requires one (N1: institution's legal representative or delegate; O1: insurer)."
+    },
+    {
+      "id": "X.05",
+      "check": "CTIS title follows the naming guide and requirements.json; the visible version matches the uploaded filename."
+    }
+  ],
+  "by_document": {
+    "IT-K1": [
+      {
+        "id": "K1.01",
+        "check": "Uses the EudraLex recruitment and informed-consent procedure template version 2.0 (new Part II submissions from 1 September 2026, including additional Member States and Article 11 completion); evidence of the version retained."
+      },
+      {
+        "id": "K1.02",
+        "check": "The yes/no answers for incapacitated adults, minors, impartial witness and emergency match the project's populations and study facts; each 'yes' section is completed, each 'no' section says N/A."
+      },
+      {
+        "id": "K1.03",
+        "check": "National sections contain the Italian additions in national_fields (CCNCE ongoing-communication process, Italian language and cultural mediator, separate privacy notice, electronic consent only with ethics approval, nationally valid forms; representative types and fiduciario rule; parental signature routes; at least one impartial witness; Article 35 safeguards)."
+      },
+      {
+        "id": "K1.04",
+        "check": "Recruitment routes and first act of recruitment match the recruitment material (IT-K2) and the protocol, without contradictory duplication of the protocol."
+      },
+      {
+        "id": "K1.05",
+        "check": "No participant, investigator or sponsor signature on the upload."
+      }
+    ],
+    "IT-S1": [
+      {
+        "id": "S1.01",
+        "check": "New and archive sample sections match the protocol and sample plan; at least one is completed."
+      },
+      {
+        "id": "S1.02",
+        "check": "Section 5 describes compliance with Italian national law and custodianship; coding, storage location, access, transfer, retention and destruction match the participant documents, the privacy notice and IT-R1."
+      },
+      {
+        "id": "S1.03",
+        "check": "Protocol-required analysis is distinguished from optional future research; future use outside the protocol is answered consistently with the separate Italian sample consent (secondary-use document).",
+        "applies_when": "samples.future_use_outside_protocol"
+      },
+      {
+        "id": "S1.04",
+        "check": "The model used is the latest applicable EU or Italian model listed by AIFA (decision recorded in DECISIONS.md)."
+      }
+    ],
+    "IT-M1": [
+      {
+        "id": "M1.01",
+        "check": "One CV per principal investigator and site on the current EU principal-investigator CV template (mandatory in Italy); not CVs for the whole site team."
+      },
+      {
+        "id": "M1.02",
+        "check": "Shows education, clinical-trial experience, relevant therapeutic expertise and GCP training; current; all required fields completed."
+      },
+      {
+        "id": "M1.03",
+        "check": "No signature requirement added beyond the EU form; filename identifies investigator and site without unnecessary personal data."
+      }
+    ],
+    "IT-M2-DOI": [
+      {
+        "id": "M2D.01",
+        "check": "On the current CCNCE national declaration-of-interests model (version 4, 21 April 2024, or a newer AIFA version), Italian or English as provided by AIFA, not the EU form."
+      },
+      {
+        "id": "M2D.02",
+        "check": "One declaration per principal investigator and site, completed and dated by the investigator; financial, institutional and other interests answered by the investigator."
+      },
+      {
+        "id": "M2D.03",
+        "check": "Consistent with the CV, site name and CTIS site record; no coordinating centre invented to satisfy a legacy label."
+      }
+    ],
+    "IT-N1": [
+      {
+        "id": "N1.01",
+        "check": "One form per trial site on the current EU site-suitability template (mandatory in Italy); facilities, equipment, staffing, patient population, pharmacy, laboratories and other resources needed for the protocol described."
+      },
+      {
+        "id": "N1.02",
+        "check": "Statements are specific to this protocol and mark site capabilities for the site to confirm; site fields left empty for the site."
+      },
+      {
+        "id": "N1.03",
+        "check": "Signed at submission by the institution's legal representative or authorised delegate with PAdES or an equivalent accepted digital signature; delegation existed before signature and is retained, not uploaded."
+      },
+      {
+        "id": "N1.04",
+        "check": "External facilities performing part of the investigational treatment are treated as trial sites with their own form and local principal investigator; facilities performing only specific examinations are not listed as sites; private facilities meet the Ministerial Decree of 19 March 1998; contract in place and insurance covers the external activities.",
+        "applies_when": "sites.external_facilities"
+      }
+    ],
+    "IT-O1": [
+      {
+        "id": "O1.01",
+        "check": "Study-specific certificate satisfying the Ministerial Decree of 14 July 2009 (updated 16 December 2014), in Italian and signed by the insurer."
+      },
+      {
+        "id": "O1.02",
+        "check": "Covers the sponsor's and investigators' civil liability for trial-related injury for the whole trial; insured parties, protocol identifier, sites or territorial scope, policy dates, limits, exclusions and post-trial claim period checked against the study."
+      },
+      {
+        "id": "O1.03",
+        "check": "Extended post-trial period where the decree requires it for minors or certain advanced treatments.",
+        "applies_when": "population.minors or trial.atmp"
+      },
+      {
+        "id": "O1.04",
+        "check": "Policy terms included when needed to demonstrate the required cover; insurer, policy number and claim route match every participant document."
+      }
+    ],
+    "IT-P1": [
+      {
+        "id": "P1.01",
+        "check": "Submitted on the current CCNCE national reimbursement and allowance model, not the interim EU compensation form."
+      },
+      {
+        "id": "P1.02",
+        "check": "Discloses all participant payments, reimbursements and documented loss-of-income arrangements with amounts, eligible costs, payment method, timing and the party administering payment."
+      },
+      {
+        "id": "P1.03",
+        "check": "Reimbursement of actual, documented trial-related costs; no promotional language; current Italian rules for vulnerable participants and healthy volunteers applied; no payment category taken over from another country's materials."
+      },
+      {
+        "id": "P1.04",
+        "check": "Amounts, conditions and recipients identical to every participant document."
+      }
+    ],
+    "IT-P2": [
+      {
+        "id": "P2.01",
+        "check": "Contractual information on the national clinical-trial agreement version 3 (commercial 28 January 2026 as the minimum model; non-commercial 22 July 2026); the version matching trial.commercial."
+      },
+      {
+        "id": "P2.02",
+        "check": "Financial arrangements consistent with IT-P1 and the participant documents; execution with the contracting parties' signatures planned before site activation."
+      }
+    ],
+    "IT-R1": [
+      {
+        "id": "R1.01",
+        "check": "Covers lawful processing, security, confidentiality, data-subject information, rights, transfers, retention and the handling of coded data."
+      },
+      {
+        "id": "R1.02",
+        "check": "The national-statement field is answered as not applicable (no separate national form or statement for Italy); sponsor details match the CTIS application."
+      },
+      {
+        "id": "R1.03",
+        "check": "Aligned with the separate Italian privacy notice (IT-PRIVACY), the protocol, data-management plan, contracts and vendor flows; both documents are in the package."
+      }
+    ]
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "id": "FR-QC-PARTICIPANT",
+  "name": "France: participant-facing document QC",
+  "applies_to": [
+    "FR-K2",
+    "FR-L1",
+    "FR-L1-GENETIC",
+    "FR-L2",
+    "FR-L1-POPULATION"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content checks",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Trial title, short title, protocol number, EU trial number, sponsor and investigational treatment are correct and consistent."
+        },
+        {
+          "id": "C1.02",
+          "check": "States why the person is invited and whether the cohort is a patient or healthy-volunteer cohort."
+        },
+        {
+          "id": "C1.03",
+          "check": "Randomisation, blinding, placebo and treatment allocation are explained in language that matches the protocol."
+        },
+        {
+          "id": "C1.04",
+          "check": "Visit schedule, treatment period, follow-up, tests, procedures, devices and remote contacts match the latest protocol."
+        },
+        {
+          "id": "C1.05",
+          "check": "Routine care is distinguished from research-only procedures."
+        },
+        {
+          "id": "C1.06",
+          "check": "Benefits are not promised or overstated."
+        },
+        {
+          "id": "C1.07",
+          "check": "Foreseeable treatment, control, procedural and reproductive risks are covered without copying a technical safety table into the participant document."
+        },
+        {
+          "id": "C1.08",
+          "check": "Realistic alternatives to participation and planned care after the trial are described."
+        },
+        {
+          "id": "C1.09",
+          "check": "Contact routes work for routine questions, urgent safety matters, participant rights and privacy issues."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency checks",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Every eligibility-sensitive restriction participants must follow is stated as in the protocol, including medicines, food, activity, contraception and donation restrictions."
+        },
+        {
+          "id": "C2.02",
+          "check": "Number and timing of blood draws, biopsies, imaging procedures, questionnaires and home activities match the protocol."
+        },
+        {
+          "id": "C2.03",
+          "check": "Sample types, analyses, storage, transfers, retention, optional future use and destruction are reconciled across the protocol, laboratory manual, consent forms and the biological-sample compliance template (FR-S1).",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C2.04",
+          "check": "Data sources, recipients, transfers and retention are reconciled across the protocol, data-management material, MR-001 analysis and the participant notice."
+        },
+        {
+          "id": "C2.05",
+          "check": "Expense reimbursement and constraint indemnity match the EU compensation form (FR-P1) and the Additional France application document (FR-K-ADDITIONAL)."
+        },
+        {
+          "id": "C2.06",
+          "check": "The insurance description identifies the correct France route and does not conflict with the certificate (FR-O1)."
+        },
+        {
+          "id": "C2.07",
+          "check": "Pregnancy reporting and follow-up are described consistently in the protocol and participant documents.",
+          "applies_when": "protocol has reproductive requirements or pregnancy follow-up"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic checks",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "Main participation is separate from optional substudies, future research and any other choice that may be refused without losing trial access."
+        },
+        {
+          "id": "C3.02",
+          "check": "A clear yes and no choice is provided where an optional activity requires a recorded decision."
+        },
+        {
+          "id": "C3.03",
+          "check": "Genetic testing is not bundled into a general signature: separate information and express written prior consent for a genetic examination (FR-L1-GENETIC).",
+          "applies_when": "genetics.examination_planned"
+        },
+        {
+          "id": "C3.04",
+          "check": "The recruitment and informed consent procedure (FR-K1) identifies who informs, who consents, when consent occurs and how understanding is assessed."
+        },
+        {
+          "id": "C3.05",
+          "check": "The participant has adequate time to decide, except where a legally valid emergency route applies."
+        },
+        {
+          "id": "C3.06",
+          "check": "Withdrawal effects are explained separately for trial procedures, new data collection, existing data and stored samples."
+        },
+        {
+          "id": "C3.07",
+          "check": "The participant receives a signed copy of the consent record."
+        },
+        {
+          "id": "C3.08",
+          "check": "Electronic or remote consent methods meet the same information, identity, signature, copy and record requirements and are described in the submitted procedure.",
+          "applies_when": "consent.electronic"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage checks",
+      "instruction": "Build a list of every cohort and consent pathway in the protocol, then map an information version, consent form and recruitment route to each (see requirements.json population_sets).",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every cohort and consent pathway in the protocol maps to a population with an information version, consent form and recruitment route; populations are mutually exclusive within each consent stage and each has its full document set.",
+          "applies_when": "always"
+        },
+        {
+          "id": "C4.02",
+          "check": "Healthy volunteers: non-therapeutic purpose, exclusion period, payment, restrictions and national-register information.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.03",
+          "check": "Minors: age-adapted information, parent authorisation, personal adherence, refusal and re-consent at adulthood.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.04",
+          "check": "Limited-capacity adults: the exact French protective status is verified before selecting a legal representative or assisted-consent (curatorship) route.",
+          "applies_when": "population.adults_without_capacity or population.adults_under_curatorship"
+        },
+        {
+          "id": "C4.05",
+          "check": "Emergency enrolment: every Article 35 condition is addressed and later consent is sought without undue delay.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.06",
+          "check": "Capable participant who cannot write: the correct witnessed process and attestation are included.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.07",
+          "check": "Pregnancy follow-up: a pregnant participant is separated from a pregnant partner who is a new data subject.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C4.08",
+          "check": "Optional future data or sample use: separate choices, transfers, genetics and withdrawal are checked.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy checks",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Controller, any EU representative and the data-protection officer or privacy contact are identified."
+        },
+        {
+          "id": "C5.02",
+          "check": "Processing purposes, data categories, sources, recipients, retention and participant rights are stated in clear French."
+        },
+        {
+          "id": "C5.03",
+          "check": "Direct collection under GDPR Article 13 is distinguished from collection through another person or record source under Article 14."
+        },
+        {
+          "id": "C5.04",
+          "check": "The selected legal bases are confirmed with the privacy team; trial consent is not equated with the GDPR legal basis by default."
+        },
+        {
+          "id": "C5.05",
+          "check": "The countries receiving data, the recipients or recipient categories, each transfer purpose and the adequacy status are listed as the France guidance expects.",
+          "applies_when": "data.transfer_outside_eea"
+        },
+        {
+          "id": "C5.06",
+          "check": "Rights to access, rectify, restrict or object and the right to complain to CNIL are stated, subject to lawful research limitations."
+        },
+        {
+          "id": "C5.07",
+          "check": "What happens to previously collected data after withdrawal is explained without promising deletion that law or scientific-integrity duties do not permit."
+        },
+        {
+          "id": "C5.08",
+          "check": "The notice matches the MR-001 declaration or CNIL authorisation route stated in the Additional France application document (FR-R1, FR-K-ADDITIONAL)."
+        },
+        {
+          "id": "C5.09",
+          "check": "Privacy text is checked in recruitment websites, screeners, apps, diaries and pregnancy follow-up forms, not only in the main consent document."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biosample and secondary-use checks",
+      "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol or data.future_use_outside_protocol or genetics.examination_planned",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Every sample, collection point, quantity or frequency and analysis is identified."
+        },
+        {
+          "id": "C6.02",
+          "check": "Storage location, access, coded status, retention, transfers and end-of-storage action are stated."
+        },
+        {
+          "id": "C6.03",
+          "check": "Protocol-defined analyses are separated from optional future research."
+        },
+        {
+          "id": "C6.04",
+          "check": "Any future purpose is specific enough to support an informed choice.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.05",
+          "check": "A changed sample purpose triggers a new-consent assessment before use."
+        },
+        {
+          "id": "C6.06",
+          "check": "The separate French genetic-testing information and consent form is prepared where a genetic examination is planned.",
+          "applies_when": "genetics.examination_planned"
+        },
+        {
+          "id": "C6.07",
+          "check": "The main form, optional form and EU biological-sample compliance template use the same choices and terminology."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "France-specific regulatory checks",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "All participant-facing documents for France are in French."
+        },
+        {
+          "id": "C7.02",
+          "check": "The main information is clear, concise, fair and not so long that it impairs understanding."
+        },
+        {
+          "id": "C7.03",
+          "check": "The document identifies the CPP opinion and ANSM authorisation as required by French law."
+        },
+        {
+          "id": "C7.04",
+          "check": "The information explains the right to personal health information and access to overall research results."
+        },
+        {
+          "id": "C7.05",
+          "check": "Any constraint indemnity aligns with French restrictions and the EUR 6,000 cap over twelve consecutive months.",
+          "applies_when": "payment.constraint_indemnity"
+        },
+        {
+          "id": "C7.06",
+          "check": "The data-transfer disclosure is exhaustive enough for the national Part II guidance."
+        },
+        {
+          "id": "C7.07",
+          "check": "The separate genetics route is used where applicable.",
+          "applies_when": "genetics.examination_planned"
+        },
+        {
+          "id": "C7.08",
+          "check": "The recruitment procedure uses the harmonised version required on the intended submission date (version 2.0 from 1 September 2026)."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signature, version and administrative checks",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); items C8.10 and C8.11 from content/playbook/naming.md and content/conventions/template-instructions.md",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "Each submitted file has a unique, consistent title, version and date."
+        },
+        {
+          "id": "C8.02",
+          "check": "The information-document version and date are on the consent page."
+        },
+        {
+          "id": "C8.03",
+          "check": "Signature and date fields are present for the participant and the person conducting the consent interview."
+        },
+        {
+          "id": "C8.04",
+          "check": "Parent, representative, curator, witness or separate data-subject fields are added only where the applicable route requires them."
+        },
+        {
+          "id": "C8.05",
+          "check": "Each role is labelled in French and it is clear whether a person signs for authorisation, assistance, attestation or consent."
+        },
+        {
+          "id": "C8.06",
+          "check": "Unsigned templates are uploaded at application; approved versions are signed during conduct."
+        },
+        {
+          "id": "C8.07",
+          "check": "Headers, footers, page numbers, blank pages, tracked changes, comments and hidden text are checked."
+        },
+        {
+          "id": "C8.08",
+          "check": "Filenames are intelligible in CTIS and PDFs contain searchable text."
+        },
+        {
+          "id": "C8.09",
+          "check": "Local contact placeholders are reconciled before site use through the approved document-control process."
+        },
+        {
+          "id": "C8.10",
+          "check": "Correct CTIS section and title per the naming guide and requirements.json (filename base without ( ) / , . ; | [ ])."
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version (italic notes, [bracket] notes, ........... gaps, yellow [INSERT/IF/OTHERWISE/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability, language and document-design checks",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Plain French appropriate to the intended age, condition and health literacy."
+        },
+        {
+          "id": "C9.02",
+          "check": "Medical and regulatory terms are defined at first use."
+        },
+        {
+          "id": "C9.03",
+          "check": "Sentences and paragraphs are short and headings help a participant find an answer."
+        },
+        {
+          "id": "C9.04",
+          "check": "Legible type, contrast, spacing and page layout."
+        },
+        {
+          "id": "C9.05",
+          "check": "Diagrams and icons are explained in words where needed for accessibility."
+        },
+        {
+          "id": "C9.06",
+          "check": "No coercive tone, sponsor marketing language or statements that could waive legal rights."
+        },
+        {
+          "id": "C9.07",
+          "check": "An independent French reviewer has checked meaning, not only grammar."
+        },
+        {
+          "id": "C9.08",
+          "check": "Digital screens are tested on the devices participants will use and keep the CPP-reviewed content and flow.",
+          "applies_when": "digital screens or electronic materials are used"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Final release decision",
+      "source": "https://trialagents.com/ctis/france/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "No protocol fact, consent giver, optional choice, data transfer, sample purpose, payment or signature block is unresolved; each resolution is recorded and the affected checks rerun."
+        }
+      ]
+    }
+  ]
+}
