@@ -6,7 +6,17 @@ This file describes what the product does, in plain English. The technical desig
 
 ## How it works in one paragraph
 
-You ask Claude or ChatGPT to prepare a submission. The assistant uses the TrialAgents country rules to propose a plan: every document the submission needs, per country and language. You confirm it. The assistant then takes each document through the agreed steps (for example Draft, Source QC, Checklist, Style), one document at a time, top to bottom. It stops only where a person is needed. You review the final document, comment where something is wrong, and approve it. Approved documents can be downloaded together.
+You ask Claude or ChatGPT to prepare a submission. The assistant uses the TrialAgents country rules to propose a plan: every document the submission needs, per country and language. Before proposing it, it agrees a few choices with you: whether Part I is part of the plan, done elsewhere or left for later; which documents you already have; whether to keep your own document format across countries or use the TrialAgents country format; and which country and language to complete first. You confirm the plan. The assistant then takes each document through the agreed steps (for example Draft, Source QC, Checklist, Style), one document at a time, top to bottom. It stops only where a person is needed. You review the final document, comment where something is wrong, and approve it. Approved documents can be downloaded together.
+
+## The recommended way to work
+
+1. **Part I**, if it is in the plan.
+2. **One full country-language package first**, for example Germany · German, or any language you are comfortable with. It goes through every step and you approve it.
+3. **The other countries**, adapted from the approved package: translated, extended with what that country needs, and checked against its checklist. A country may need more or fewer documents, extra details or several languages; documents with no counterpart are written from the sources.
+
+The assistant recommends this order, but you can choose another, for example every country written from the sources in parallel. If an approved document of the first package changes later, the documents adapted from it show "Reference changed" so you can decide whether to revise them.
+
+**Amendments and replies to requests for information** are planned the same way: the assistant reads the previous project's approved documents and the TrialAgents modification rules, agrees with you what changes, and creates a new linked project with only the affected documents.
 
 ## Where things are
 
@@ -37,7 +47,7 @@ Member states are chosen from a searchable list of all countries in CTIS: the 27
 
 The plan is a table. Each row is a document. Each column is a step. The last column, pinned on the right, is the final document.
 
-- Documents are grouped into **Part I** (shared across countries) and **Part II** per country.
+- Documents are grouped into **Part I** (shared across countries) and **Part II** per country and language. The country-language package completed first is marked as the reference.
 - Under the project name you see the sponsor, the countries as two-letter codes, and links to the project's sources and templates.
 - **Filters:** part, country, language.
 - **Edit steps:** add, remove, reorder or pause steps for the whole plan. A paused step does not run for any document until you resume it.
@@ -51,7 +61,7 @@ Each cell shows the status of one deliverable, with its version (for example "Do
 |---|---|
 | **Done** | The step finished and nothing is open. |
 | **Action required** | Something needs a person: missing data, conflicting information, a decision, or an open comment. |
-| **Waiting** | The step has not run yet, or an earlier step needs action first. |
+| **Waiting** | The step has not run yet, an earlier step needs action first, or the document it is adapted from is not approved yet. |
 | **Not applicable** | The step is not part of the plan for this document, for example drafting the protocol, which comes from the team. This is set in the plan, not in a document. |
 
 The final document column shows **Approved v1**, **Awaiting approval** or **Waiting**. When a newer version of the last step exists, the approved version stays in the final column until the new one is approved.
@@ -116,7 +126,7 @@ Using the app for your own projects is free. Sharing with other people is part o
 - You can share **one deliverable**, **one document** (all its deliverables) or a **whole project**.
 - For each item you choose **Can comment** or **Can edit**. Can edit also lets them ask their own assistant for revisions.
 - Access starts immediately. There is nothing to accept, so you can mention them right away.
-- You invite from a deliverable, from Settings → Team, or while mentioning someone in a comment.
+- You invite from a deliverable, from Settings → Team, or while mentioning someone in a comment. Sharing and approving are done in the TrialAgents web app, not through the assistant.
 - Settings → Team lists everyone you share with, what they can see, their access, and whether they have opened it. You can change access per item, share more, stop sharing an item or remove them.
 
 ### What someone you share with sees
@@ -140,8 +150,8 @@ Using the app for your own projects is free. Sharing with other people is part o
 
 ## What the assistant does
 
-- Proposes the plan from the TrialAgents country rules and your answers.
-- Runs each document through its steps, document by document, Part I first.
+- Agrees the planning choices with you, then proposes the plan from the TrialAgents country rules and your answers.
+- Runs each document through its steps, document by document: Part I if planned, then the first country-language package, then the other countries adapted from it.
 - Records every source and template it uses, by name and version.
 - Stops when a person is needed and continues when the issue is resolved or set aside.
 - Revises on request, using the comments and the current sources and templates.
