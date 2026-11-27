@@ -1,0 +1,399 @@
+{
+  "id": "GR-QC-PARTICIPANT",
+  "name": "Greece: participant-facing document QC",
+  "applies_to": [
+    "GR-L1",
+    "GR-L2",
+    "GR-K2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/greece/en/patient-facing-document-qc-checklist (reviewed 23 September 2026)",
+  "sources_note": "Items without a source come from the QC checklist page; others name the page or file they come from.",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Exact trial title, sponsor, EU trial number, protocol code and current protocol version are confirmed."
+        },
+        {
+          "id": "C1.02",
+          "check": "Correct Greek site, department, principal investigator and contact information."
+        },
+        {
+          "id": "C1.03",
+          "check": "Purpose and design stated in plain Greek without overstating efficacy or expected benefit."
+        },
+        {
+          "id": "C1.04",
+          "check": "Every treatment arm, randomisation, placebo or comparator and assignment probability described accurately."
+        },
+        {
+          "id": "C1.05",
+          "check": "Participant duration, visits, procedures and follow-up that change burden or risk are included."
+        },
+        {
+          "id": "C1.06",
+          "check": "Available alternatives outside the trial are explained."
+        },
+        {
+          "id": "C1.07",
+          "check": "Trial treatment distinguished from standard care; any post-trial treatment arrangements identified."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-document consistency",
+      "instruction": "Compare with the protocol, IB, safety information, sample plan, data-flow description and insurance certificate.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "Inclusion-relevant facts such as age, reproductive status and disease population match the protocol."
+        },
+        {
+          "id": "C2.02",
+          "check": "Doses, administration routes, visit schedules, invasive procedures and sample volumes match the protocol."
+        },
+        {
+          "id": "C2.03",
+          "check": "Risks reconciled with the current protocol, Investigator's Brochure and safety information."
+        },
+        {
+          "id": "C2.04",
+          "check": "Contraception methods, duration and pregnancy-testing requirements match the protocol.",
+          "applies_when": "protocol has reproductive requirements"
+        },
+        {
+          "id": "C2.05",
+          "check": "Optional substudies are optional in both the protocol and the consent package."
+        },
+        {
+          "id": "C2.06",
+          "check": "Participant-facing endpoint questionnaires handled under Part I are not misplaced in Part II or omitted from the scientific dossier.",
+          "applies_when": "endpoint_documents.participant_facing"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "Voluntary participation and withdrawal are clear."
+        },
+        {
+          "id": "C3.02",
+          "check": "Adequate space for questions and decision time."
+        },
+        {
+          "id": "C3.03",
+          "check": "Main-trial consent is separate from optional future research, genetic testing or long-term sample storage."
+        },
+        {
+          "id": "C3.04",
+          "check": "What happens to data and samples after withdrawal is explained without promising actions that conflict with law or scientific integrity."
+        },
+        {
+          "id": "C3.05",
+          "check": "States when new information may lead to re-consent."
+        },
+        {
+          "id": "C3.06",
+          "check": "Confirms that the person receives a signed copy after consent."
+        },
+        {
+          "id": "C3.07",
+          "check": "The approved process matches Greece's in-person paper-consent guidance unless a different approach has been expressly accepted for the trial."
+        },
+        {
+          "id": "C3.08",
+          "check": "Each genuinely separable optional activity has its own clear choice recorded with a separate dated signature of the person consenting and the investigator (no YES/NO box or initials); refusal does not affect the main trial, treatment, ordinary care or reimbursement.",
+          "applies_when": "optional activity planned",
+          "source": "GR-SECONDARY; GR templates"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and form coverage",
+      "instruction": "Map every inclusion pathway in the protocol to an information and consent set (see requirements.json population_sets).",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every inclusion pathway in the protocol maps to a population, populations are mutually exclusive within each consent stage, and every population has its full document set (see requirements.json population_sets).",
+          "applies_when": "always",
+          "source": "playbook section 2a"
+        },
+        {
+          "id": "C4.02",
+          "check": "The correct adult form is prepared for the ordinary pathway.",
+          "applies_when": "population.adult_patients"
+        },
+        {
+          "id": "C4.03",
+          "check": "Healthy volunteers: disease-treatment assumptions removed and the absence of therapeutic intent explained.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C4.04",
+          "check": "Minors: age-appropriate information, written assent from age 10, and both-parent or guardian signatures.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C4.05",
+          "check": "Minors: protocol, CTIS age ranges and every document agree; the 10th and 18th birthday transitions are operationally defined; the form does not treat parental permission as a substitute for the child's information; refusal, dissent and withdrawal described without pressure.",
+          "applies_when": "population.minors",
+          "source": "GR-MINORS (QC before submission)"
+        },
+        {
+          "id": "C4.06",
+          "check": "Adults under court-appointed support: the participant's own information and expression of will plus the judicial supporter's consent.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C4.07",
+          "check": "Emergency enrolment: Article 35 eligibility documented and the prompt later-consent route described; participant and emergency-representative forms present.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C4.08",
+          "check": "Participants who cannot use the ordinary written route: the correct witness fields and procedure (one witness for deaf or unable to speak, two for unable to read or write, audio/video with one witness where approved).",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C4.09",
+          "check": "Pregnancy follow-up: the pregnant person's permission is separate from later infant-data permission.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or pregnancy.infant_follow_up"
+        },
+        {
+          "id": "C4.10",
+          "check": "Optional future use: separate choices and withdrawal language.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Data privacy checks",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Controller identified with contact details."
+        },
+        {
+          "id": "C5.02",
+          "check": "Data Protection Officer contact of the sponsor or applicable controller provided."
+        },
+        {
+          "id": "C5.03",
+          "check": "Each processing purpose and legal basis stated accurately."
+        },
+        {
+          "id": "C5.04",
+          "check": "Recipients or categories of recipients identified."
+        },
+        {
+          "id": "C5.05",
+          "check": "Transfers outside the European Economic Area and the safeguards used explained.",
+          "applies_when": "data transferred outside the EEA"
+        },
+        {
+          "id": "C5.06",
+          "check": "Retention period or the criteria used to set it stated."
+        },
+        {
+          "id": "C5.07",
+          "check": "Applicable access, correction, restriction, objection and complaint rights explained."
+        },
+        {
+          "id": "C5.08",
+          "check": "The Hellenic Data Protection Authority named as the national complaint authority."
+        },
+        {
+          "id": "C5.09",
+          "check": "Automated decision-making or profiling explained.",
+          "applies_when": "automated decision-making or profiling applies"
+        },
+        {
+          "id": "C5.10",
+          "check": "Privacy wording consistent with the sponsor's CTIS GDPR compliance statement (GR-R1)."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Biological samples and secondary use",
+      "applies_when": "samples.collected or samples.archive_used or samples.future_use_outside_protocol",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "Sample type, volume, collection schedule, storage location and planned retention described."
+        },
+        {
+          "id": "C6.02",
+          "check": "States whether samples are required for the main trial or optional."
+        },
+        {
+          "id": "C6.03",
+          "check": "Optional future research separated from main-study consent.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.04",
+          "check": "Scientific scope of future use and any transfer or sharing defined.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        },
+        {
+          "id": "C6.05",
+          "check": "Coding, who can re-identify the sample, and when destruction or anonymisation is possible explained."
+        },
+        {
+          "id": "C6.06",
+          "check": "The Greek consent aligns with the CTIS biological-sample compliance template (GR-S1)."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Greece-specific regulatory checks",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "Every participant-facing version is in Greek."
+        },
+        {
+          "id": "C7.02",
+          "check": "A valid or certified translation exists for any expected participant who does not understand Greek.",
+          "applies_when": "population.non_greek_speakers"
+        },
+        {
+          "id": "C7.03",
+          "check": "No participant or public or private insurer is charged for trial-specific products, tests or procedures."
+        },
+        {
+          "id": "C7.04",
+          "check": "Insurance and injury-compensation information matches the certificate (GR-O1), including the pregnancy clause."
+        },
+        {
+          "id": "C7.05",
+          "check": "The document allows direct record access by authorised sponsor representatives and competent authorities while protecting confidentiality."
+        },
+        {
+          "id": "C7.06",
+          "check": "The National Ethics Committee contact is used correctly for ethics questions and is not described as the complaints authority."
+        },
+        {
+          "id": "C7.07",
+          "check": "Prohibited participant groups under the Greek implementing decision (compulsory military service, custodial sentence, barred by court decision, living in institutions) have not been included."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Signatures, versions and administration",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "The blank submission form contains complete date fields for every signer."
+        },
+        {
+          "id": "C8.02",
+          "check": "The participant and investigator or authorised team member fields are present."
+        },
+        {
+          "id": "C8.03",
+          "check": "Both-parent fields appear for minors, subject to the documented national exceptions.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C8.04",
+          "check": "Legal-representative fields appear only for an applicable pathway."
+        },
+        {
+          "id": "C8.05",
+          "check": "One-witness or two-witness fields match the planned Greek procedure.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C8.06",
+          "check": "Pregnant-partner follow-up forms contain the nationally requested representative and two-witness fields.",
+          "applies_when": "pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C8.07",
+          "check": "Each page shows document type, protocol code or acronym, version and date."
+        },
+        {
+          "id": "C8.08",
+          "check": "Pagination is continuous and shows the total page count."
+        },
+        {
+          "id": "C8.09",
+          "check": "Clean and tracked-change versions are prepared for a modification.",
+          "applies_when": "modification or revised document"
+        },
+        {
+          "id": "C8.10",
+          "check": "CTIS publication versions have been checked for personal data and confidential information."
+        },
+        {
+          "id": "C8.11",
+          "check": "No drafting instruction remains in the final version (italic notes, [bracket] notes, ........... gaps, yellow [INSERT/IF/CHOOSE/NOTE] labels); fields completed by hand at consent stay blank; no participant, representative, witness or investigator signature in the blank CTIS copy.",
+          "source": "conventions/template-instructions.md; GR-PII-CHECKLIST#3"
+        },
+        {
+          "id": "C8.12",
+          "check": "Correct CTIS section and title per requirements.json (CTCG naming guide, _EL_el).",
+          "source": "playbook/naming.md"
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Readability and design",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "Plain, non-promotional Greek."
+        },
+        {
+          "id": "C9.02",
+          "check": "Abbreviations and medical terms explained."
+        },
+        {
+          "id": "C9.03",
+          "check": "Short sections, readable type and enough white space."
+        },
+        {
+          "id": "C9.04",
+          "check": "Risks presented by likelihood and seriousness where the evidence supports it."
+        },
+        {
+          "id": "C9.05",
+          "check": "Consent statements kept close to the signature page."
+        },
+        {
+          "id": "C9.06",
+          "check": "The final PDF is searchable, selectable and correctly rendered."
+        },
+        {
+          "id": "C9.07",
+          "check": "Translations reviewed by a qualified person and matching the approved source.",
+          "applies_when": "document is adapted from a reference document in another language",
+          "source": "playbook section 3"
+        }
+      ]
+    }
+  ]
+}
