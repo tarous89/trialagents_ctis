@@ -1,0 +1,293 @@
+{
+  "id": "PL-QC-PARTICIPANT",
+  "name": "Poland: participant-facing document QC",
+  "applies_to": [
+    "PL-K2",
+    "PL-L1",
+    "PL-L1-POPULATION",
+    "PL-L2",
+    "PL-R2"
+  ],
+  "reviewed": "2026-11-27",
+  "source": "https://trialagents.com/ctis/poland/en/patient-facing-document-qc-checklist (reviewed 23 September 2026); section C13 from the Poland population guides linked from it",
+  "result_values": [
+    "met",
+    "unmet",
+    "needs_decision",
+    "not_applicable"
+  ],
+  "item_format": "Each result records the item id, the outcome, a short rationale and evidence (quoted passage and source locator) or an explicit gap.",
+  "sections": [
+    {
+      "id": "C1",
+      "title": "Trial content",
+      "items": [
+        {
+          "id": "C1.01",
+          "check": "Current trial title, EU trial number where included, sponsor name and the correct study population."
+        },
+        {
+          "id": "C1.02",
+          "check": "Study purpose, treatment arms, randomisation, blinding, placebo or comparator use and duration match the protocol."
+        },
+        {
+          "id": "C1.03",
+          "check": "Visits, procedures, hospital stays, home activities, sampling, imaging and questionnaires are described completely enough for informed consent, and no procedure appears that is not in the protocol."
+        },
+        {
+          "id": "C1.04",
+          "check": "Numerical details agree with the protocol and schedules: dose schedules, visit frequency, treatment periods, follow-up duration and approximate blood volumes."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "title": "Protocol-to-patient-document consistency",
+      "instruction": "Compare with the protocol, current safety information (IB or SmPC), sample plan, data-flow description and insurance documents.",
+      "items": [
+        {
+          "id": "C2.01",
+          "check": "The PIS is consistent with the protocol's objectives, interventions, schedule of activities, risk sections, contraception requirements, prohibited medicines, withdrawal rules and follow-up plan."
+        },
+        {
+          "id": "C2.02",
+          "check": "Risks material to the decision are in understandable language; investigator-facing safety language is translated into its practical meaning for the participant."
+        },
+        {
+          "id": "C2.03",
+          "check": "Every optional procedure is genuinely optional in the protocol, and refusing it does not exclude the participant unless the protocol requires it."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "title": "Consent logic",
+      "items": [
+        {
+          "id": "C3.01",
+          "check": "The ICF records the decisions actually described in the PIS; the main agreement to participate is distinguishable from optional choices (future research, optional genetic work, other activities outside the core protocol)."
+        },
+        {
+          "id": "C3.02",
+          "check": "The signature block supports the Article 29 pathway: the participant or legally designated representative signs and dates, and the person performing the consent interview signs and dates. The blank CTIS submission version is not signed."
+        },
+        {
+          "id": "C3.03",
+          "check": "Where people unable to write may be enrolled, the form supports the impartial-witness pathway (one witness) rather than adding a second legal representative.",
+          "applies_when": "consent.impartial_witness_possible"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "title": "Population and document coverage",
+      "items": [
+        {
+          "id": "C4.01",
+          "check": "Every population and inclusion pathway in the protocol is mapped to a participant document; the adult ICF is not assumed to cover every situation."
+        },
+        {
+          "id": "C4.02",
+          "check": "Checked specifically: minors and age-specific information; adults who may lack capacity; emergency enrolment; participants who can consent but cannot write; pregnancy follow-up of a participant; pregnancy follow-up of a pregnant partner; optional secondary or future use of data or samples; healthy volunteers where risk, benefit and payment differ from patient trials."
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "title": "Minors",
+      "items": [
+        {
+          "id": "C5.01",
+          "check": "Age bands match current Polish rules: under 13 the legal representative consents; a minor who has reached 13 also consents (own written consent with the legal representative's consent).",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C5.02",
+          "check": "Parent signature design: where both parents hold parental authority, the joint parental decision is documented by both parents' signatures or by one parent's signature with an attestation that the decision is a joint decision with the other parent; the route is built into the form, not left to the site.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C5.03",
+          "check": "Age-band labels are unambiguous and follow NKB notation (13-18 years = has reached 13, has not reached 18); no label spans the 13-year threshold.",
+          "applies_when": "population.minors"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "title": "Data privacy",
+      "items": [
+        {
+          "id": "C6.01",
+          "check": "The Polish privacy wording matches the real data flow: controller identities, trial-site roles where described, categories of recipients, monitoring and audit access, international transfers, retention and contact routes for data-protection questions."
+        },
+        {
+          "id": "C6.02",
+          "check": "Withdrawal is not presented as automatically requiring deletion of every item of lawfully collected trial data; the explanation matches the CTR, the GDPR framework and the sponsor's actual legal basis."
+        },
+        {
+          "id": "C6.03",
+          "check": "Where access to medical records is requested, the document says who may access them and for what trial-related purpose; no vague statement allowing unlimited access."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "title": "Biological samples and secondary use",
+      "items": [
+        {
+          "id": "C7.01",
+          "check": "Each planned sample matches the protocol: what is collected, why, where it may be analysed, how long it may be stored and whether any use continues after the main trial.",
+          "applies_when": "samples.collected or samples.archive_used"
+        },
+        {
+          "id": "C7.02",
+          "check": "Scientific use outside the protocol is optional and separable from main participation; the withdrawal wording explains what can and cannot be stopped once data have been used or samples anonymised, where that applies.",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "title": "Poland compensation and insurance",
+      "items": [
+        {
+          "id": "C8.01",
+          "check": "The PIS explains the Polish system for compensation of trial-related harm: the right to seek a benefit from the Clinical Trials Compensation Fund and the mandatory civil liability insurance of the sponsor and investigator, with the current Patient Rights Ombudsman wording as reference. No generic global insurance paragraph that does not explain the Polish Fund."
+        },
+        {
+          "id": "C8.02",
+          "check": "Any reimbursement or payment described (amount or method) is consistent with the Part II financial-arrangements information (PL-P1)."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "title": "Signature, version and administrative checks",
+      "items": [
+        {
+          "id": "C9.01",
+          "check": "The Polish document is planned for the correct CTIS participant-document category."
+        },
+        {
+          "id": "C9.02",
+          "check": "The title identifies the intended population clearly."
+        },
+        {
+          "id": "C9.03",
+          "check": "Version and date match the version referenced in the recruitment and informed consent procedure (K1)."
+        },
+        {
+          "id": "C9.04",
+          "check": "Headers, footers and page numbers are consistent."
+        },
+        {
+          "id": "C9.05",
+          "check": "No tracked changes, drafting comments, translation notes or template instructions remain in the clean version (content/conventions/template-instructions.md)."
+        },
+        {
+          "id": "C9.06",
+          "check": "Signature lines match the consent pathway and do not demand a signature from someone who is not a consent-giver."
+        },
+        {
+          "id": "C9.07",
+          "check": "The participant-copy requirement is reflected (statement that the participant or representative receives a copy; site procedure)."
+        },
+        {
+          "id": "C9.08",
+          "check": "Contact details are current and usable in Poland."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Readability and Polish language",
+      "items": [
+        {
+          "id": "C10.01",
+          "check": "The document is in Polish and the final text has been reviewed clinically, not only linguistically: drug names, procedures, reproductive precautions, risks and withdrawal instructions are understandable to a Polish participant."
+        },
+        {
+          "id": "C10.02",
+          "check": "Defined terms are consistent across the PIS, ICF, recruitment materials, pregnancy forms and optional future-use forms; no translation changes the meaning of a protocol criterion or an optional consent choice."
+        },
+        {
+          "id": "C10.03",
+          "check": "Long legal passages are shortened where the legal meaning is kept; the participant's actions are visible (who to call, when to stop a medicine, when to report a pregnancy, how to withdraw)."
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "title": "Recruitment materials",
+      "items": [
+        {
+          "id": "C11.01",
+          "check": "Advertisements or invitations do not promise benefit, minimise risk or use payment in a way that could distort the decision; target population and study purpose match the authorised trial.",
+          "applies_when": "recruitment.material_used"
+        },
+        {
+          "id": "C11.02",
+          "check": "Recruitment material and K1 tell the same story about who makes first contact and how personal data are accessed during pre-screening.",
+          "applies_when": "recruitment.material_used"
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "title": "Final release",
+      "items": [
+        {
+          "id": "C12.01",
+          "check": "The Polish patient-facing set is released only when these are aligned: protocol and current safety information; Poland PIS and ICF; population-specific consent documents; recruitment and informed consent procedure; recruitment materials; privacy wording and the CTIS GDPR statement; biological-sample and secondary-use documentation; compensation, insurance and payment descriptions; version and date control across CTIS."
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "title": "Population-specific rules (Poland population guides)",
+      "items": [
+        {
+          "id": "C13.01",
+          "check": "Healthy volunteers: the absence of direct health benefit is stated; no 'treatment', 'therapy' or 'may help you' wording unless accurate; only the protocol's applicable burdens (first-in-human, restrictions, confinement, blood volume, contraception, washout); screening tests stated before consent; payment for time kept separate from reimbursement and from injury compensation; effect of withdrawal on payment explained.",
+          "applies_when": "population.healthy_volunteers"
+        },
+        {
+          "id": "C13.02",
+          "check": "Minors: no legally binding child signature under 13 (the child information has no consent or assent form); the adolescent document supports a genuine informed decision; the parent PIS does not suggest parental permission overrides the child's expressed opposition; adolescent consent when a child reaches 13 and adult re-consent at 18 are planned; only expenses and loss of earnings compensated.",
+          "applies_when": "population.minors"
+        },
+        {
+          "id": "C13.03",
+          "check": "Adults without capacity: the representative's legal authority is defined (no generic family-member line); the adapted participant document is not presented as the legal consent; refusal or withdrawal by a participant able to form an opinion is respected in both documents; regained-capacity re-consent planned; main adult content (risks, alternatives, insurance and Fund, data protection, contacts) kept in the representative document.",
+          "applies_when": "population.adults_without_capacity"
+        },
+        {
+          "id": "C13.04",
+          "check": "Emergency: the document is for continued participation after the intervention, not presented as prior consent; it separates what has already happened from future activities; consequences of refusing subsequent consent are clear; Fund, insurance and withdrawal information is not hidden in an appendix.",
+          "applies_when": "consent.emergency_enrolment"
+        },
+        {
+          "id": "C13.05",
+          "check": "Impartial witness: a clearly labelled single witness block with name, signature and date; the witness statement covers only what the witness observed (no medical facts or capacity assessment); an approved alternative recording method is described where used.",
+          "applies_when": "consent.impartial_witness_possible"
+        },
+        {
+          "id": "C13.06",
+          "check": "Pregnancy follow-up: the exact follow-up is defined (what, from whom, how long, contacts with other professionals, medical-record scope); consistent with protocol contraception, testing and discontinuation rules; infant data permitted by the person legally able to do so; withdrawal from follow-up explained.",
+          "applies_when": "pregnancy.participant_follow_up_beyond_main_consent or pregnancy.partner_follow_up or pregnancy.infant_follow_up"
+        },
+        {
+          "id": "C13.07",
+          "check": "Pregnant partner: separate document from the partner's perspective; does not imply the partner is a trial participant or copy participant compensation language; privacy information given to the partner as a separate data subject; declining does not affect the participant's care.",
+          "applies_when": "pregnancy.partner_follow_up"
+        },
+        {
+          "id": "C13.08",
+          "check": "Secondary use: never described as 'irrevocable'; withdrawable at any time (Article 28(2)); scope, coding state (coded, pseudonymised or anonymised), recipients, commercial research, transfers outside Poland or the EEA, retention and recontact stated accurately; choices made by the person legally entitled (parent, representative, adolescent).",
+          "applies_when": "samples.future_use_outside_protocol or data.future_use_outside_protocol"
+        }
+      ]
+    }
+  ]
+}
