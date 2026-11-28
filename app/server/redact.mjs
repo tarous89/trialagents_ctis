@@ -7,7 +7,6 @@
 // After redacting, the result is read back and refused if any redacted text can still be found.
 import JSZip from 'jszip'
 import {DOMParser,XMLSerializer} from '@xmldom/xmldom'
-import {createRequire} from 'node:module'
 import path from 'node:path'
 
 export const BLOCK='█'
@@ -151,9 +150,12 @@ export async function redactDocx(buffer,termList){
 let pdfjsLib
 const pdfjs=async()=>pdfjsLib??=await import('pdfjs-dist/legacy/build/pdf.mjs')
 // Rendering in Node needs pdf.js's own standard fonts and character maps (for PDFs that do not embed their fonts).
-const pdfjsDir=path.dirname(createRequire(import.meta.url).resolve('pdfjs-dist/package.json'))+path.sep
+// Resolved at run time and only when needed: bundlers (Turbopack) rewrite a static createRequire(...).resolve() into a module id.
+const runtimeRequire=()=>process.getBuiltinModule('module').createRequire(import.meta.url)
+let pdfjsDirCache
+const pdfjsDir=()=>pdfjsDirCache??=path.dirname(runtimeRequire().resolve('pdfjs-dist/package.json'))+path.sep
 const openPdf=async data=>(await pdfjs()).getDocument({data:new Uint8Array(data),useSystemFonts:false,isEvalSupported:false,disableFontFace:true,verbosity:0,
-  standardFontDataUrl:pdfjsDir+'standard_fonts'+path.sep,cMapUrl:pdfjsDir+'cmaps'+path.sep,cMapPacked:true}).promise
+  standardFontDataUrl:pdfjsDir()+'standard_fonts'+path.sep,cMapUrl:pdfjsDir()+'cmaps'+path.sep,cMapPacked:true}).promise
 
 // The characters of a page in reading order, each pointing back to its text item; a virtual space between items.
 function pageChars(items){
@@ -168,7 +170,7 @@ function pageChars(items){
 // width of the text before them in serif, sans-serif and monospace fonts and by character count (the widest span), plus a margin
 // of a third of the character height on each side for the difference to the real font. Covering a little more is safe; less is not.
 // The canvas library is native code: load it at run time, as pdf.js does, so a bundler never tries to pack it.
-const nativeCanvas=()=>process.getBuiltinModule('module').createRequire(import.meta.url)('@napi-rs/canvas')
+const nativeCanvas=()=>runtimeRequire()('@napi-rs/canvas')
 let measureCtx
 async function measurer(){
   if(!measureCtx){const {createCanvas}=nativeCanvas();measureCtx=createCanvas(10,10).getContext('2d')}
