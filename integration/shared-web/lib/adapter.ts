@@ -29,4 +29,6 @@ async function authorize(token:string,audience:string){
 }
 const widget=()=>readFile(path.join(process.cwd(),'public/ctis-assets/ctis-claude.html'),'utf8');
 export const ctisClaudeMcp=ctisHttp({authorize,run:runCtis,readWidget:widget,audience:ctisResource()});
-export const ctisClaudeResourceMetadata=()=>protectedResource(oauthIssuer(),ctisResource());
+// The authorization server is the shared service's MCP OAuth issuer (<issuer>/oauth/intel), as for Intel's Claude
+// connector. The bare host's metadata belongs to another connector and refuses Claude's redirect URI.
+export const ctisClaudeResourceMetadata=()=>protectedResource(oauthIssuer()+'/oauth/intel',ctisResource());

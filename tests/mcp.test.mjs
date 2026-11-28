@@ -33,6 +33,10 @@ test('Claude runs a submission over MCP: plan, loop, block, resume in a new conv
     assert.ok(res.headers.get('www-authenticate').includes(metadataPath(claudeResource)))
     const meta=await protectedResource(undefined,claudeResource).json()
     assert.equal(meta.resource,'https://mcp.trialagents.com/ctis/claude');assert.equal(meta.resource_documentation,'https://ctis.trialagents.com/ctis-info/connectors')
+    // Claude registers with this issuer; the bare host's metadata belongs to another connector and refuses Claude's redirect URI.
+    assert.deepEqual(meta.authorization_servers,['https://intel.trialagents.com/oauth/intel'])
+    const adapter=await (await import('node:fs/promises')).readFile(new URL('../integration/shared-web/lib/adapter.ts',import.meta.url),'utf8')
+    assert.match(adapter,/protectedResource\(oauthIssuer\(\)\+'\/oauth\/intel',ctisResource\(\)\)/,'the host passes the same issuer')
     const init=await rpc('initialize',{protocolVersion:'2025-11-25',clientInfo:{name:'test',version:'1'},capabilities:{}})
     assert.equal(init.serverInfo.name,'TrialAgents CTIS');assert.match(init.instructions,/get_ctis_step/)
   })
