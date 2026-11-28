@@ -48,7 +48,8 @@ const schemas={
     code:s.optional().describe('create_project, update_project: study code, for example EX-101.'),
     name:s.optional().describe('create_project, update_project: project name. record_resource: source or template name.'),
     sponsor:s.optional(),phase:s.optional(),submission_type:s.optional(),eu_ct_number:s.optional(),countries:z.array(s).optional(),
-    documents:z.array(z.object({}).passthrough()).optional().describe('save_plan: [{id: "D01", name, part: "I"|"II", country: "EU" or member state, language, code (regulatory code), variant, filename}] in plan order.'),
+    documents:z.array(z.object({}).passthrough()).optional().describe('save_plan: [{id: "D01", name, part: "I"|"II", country: "EU" or member state, language, code (regulatory code), variant, filename, population (id from planning.populations), based_on (the document it is adapted from, for example "D04")}] in plan order.'),
+    planning:z.object({}).passthrough().optional().describe('save_plan: {populations: [{id, label, description, reason}], part1_scope: in_plan|completed_outside|later, reference_package: {country, language} or null, format_choice: sponsor_format|country_format, notes}. Agree these with the user first (see the planning guide).'),
     steps:z.array(z.object({}).passthrough()).optional().describe('save_plan: [{type: draft|qc|style|checklist|team|guide|custom, name?, instruction?, paused?}] in order. Default: draft, qc, style.'),
     not_applicable:z.array(z.object({document:s,step:s})).optional().describe('save_plan: cells that do not apply, for example {document: "D01", step: "DR"}.'),
     category:z.enum(['source','template']).optional(),type:s.optional().describe('record_resource: Protocol, Investigator’s brochure, Study manual, Writing template, Checklist, Word layout, SOP or guideline …'),
@@ -113,6 +114,7 @@ function nextText(result){
     const sm=n.summary
     return 'Stop: nothing left to run. Awaiting approval: '+(sm.awaitingApproval.join(', ')||'none')+'. Blocked: '+(sm.blocked.map(b=>b.deliverable).join(', ')||'none')+'. Approved: '+(sm.approved.join(', ')||'none')+'. Tell the user; approvals happen in TrialAgents CTIS.'
   }
+  if(n.unapproved_reference)return 'Pause: next is '+n.deliverable+', adapted from '+n.unapproved_reference.document+' ('+n.unapproved_reference.name+'), which is not approved yet. Ask the user whether to approve '+n.unapproved_reference.document+' first in TrialAgents CTIS or go ahead with its current version; continue with get_ctis_step only after they answer.'
   return 'Continue with get_ctis_step (next is '+n.deliverable+').'
 }
 
@@ -151,8 +153,9 @@ const handlers={
       case 'update_project':needs(a,['project','revision']);return {...await run({...base,op:'project.update',project:a.project,revision:a.revision,input:pick(a,projectFields)}),open:{view:'plan',project:a.project},url:link(a.project)}
       case 'save_plan':{
         needs(a,['project','revision','documents','steps'])
-        const r=await run({...base,op:'plan.save',project:a.project,revision:a.revision,input:{documents:a.documents,steps:a.steps,not_applicable:a.not_applicable??[]}})
-        return {project:r.project,open:{view:'plan',project:a.project},documents:r.documents.map(d=>({id:d.id,name:d.name,code:d.code,variant:d.variant,country:d.country,language:d.language,filename:d.filename})),
+        const r=await run({...base,op:'plan.save',project:a.project,revision:a.revision,input:{documents:a.documents,steps:a.steps,not_applicable:a.not_applicable??[],...(a.planning?{planning:a.planning}:{})}})
+        return {project:r.project,open:{view:'plan',project:a.project},documents:r.documents.map(d=>({id:d.id,name:d.name,code:d.code,variant:d.variant,country:d.country,language:d.language,filename:d.filename,
+            ...(d.population?{population:d.population}:{}),...(d.based_on?{based_on:d.based_on}:{}),...(d.reference_package?{reference_package:true}:{})})),
           steps:r.steps.map(x=>x.id+' '+x.name),url:link(a.project),
           next_hint:'The plan is saved and the workspace shows it. Summarise it for the user, and when they say to start, call get_ctis_step with project '+a.project+'.'}
       }

@@ -1,5 +1,5 @@
 // The bundle get_ctis_step returns (docs/MCP.md §4): everything one step needs, from the server, never from chat history.
-import {cell,documentStatuses,nextStep} from './status.mjs'
+import {cell,documentStatuses,nextStep,referenceOf,applicableSteps} from './status.mjs'
 import {effectiveResources} from './board.mjs'
 
 const outputs={
@@ -53,10 +53,25 @@ export async function stepContext({q,project,board,catalog,deliverable,revise=fa
   }
   const workflow=[...(revise?catalog.workflow('revision'):[]),...cat.workflow].map(itemText)
   const blocked=status.blockedBy?docId+'-'+status.blockedBy:null
+  // Adapted documents: the reference document's approved version (or its latest, marked not approved) for the first content step and revisions.
+  const ref=referenceOf(board,docId),firstStep=applicableSteps(board,docId)[0]?.id===stepId
+  let reference=null
+  if(ref&&(firstStep||revise)){
+    const use=ref.approved??ref.latest
+    const v=use&&(await q('SELECT n,content FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[project.id,ref.document,use.step,use.n]))[0]
+    const used=current&&(await q('SELECT reference FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[project.id,docId,stepId,current.n]))[0]?.reference
+    const refDoc=board.documents.find(d=>d.id===ref.document)
+    reference={document:ref.document,name:ref.name,country:refDoc.country,language:refDoc.language,approved:!!ref.approved,
+      version:use?{deliverable:ref.document+'-'+use.step,n:use.n}:null,content:v?.content??null,used_for_current:used??null}
+  }
+  const unapprovedRef=reference&&!reference.approved&&firstStep&&!current
   const base=current?.n??0
   return {
     deliverable:code,project:project.id,
-    document:{id:doc.id,name:doc.name,code:doc.code,variant:doc.variant,part:doc.part,country:doc.country,language:doc.language,filename:doc.filename},
+    document:{id:doc.id,name:doc.name,code:doc.code,variant:doc.variant,part:doc.part,country:doc.country,language:doc.language,filename:doc.filename,
+      population:(project.planning?.populations??[]).find(p=>p.id===doc.population)??null,based_on:doc.based_on??null},
+    planning:{part1_scope:project.planning?.part1_scope??null,reference_package:project.planning?.reference_package??null,format_choice:project.planning?.format_choice??null},
+    reference,
     step:{id:step.id,type:step.type,name:step.name,instruction:step.instruction},
     status:status.status,base,blocked_by:blocked,earlier_issues:earlier,
     instructions:workflow,
@@ -71,6 +86,7 @@ export async function stepContext({q,project,board,catalog,deliverable,revise=fa
     output:revise?'save_ctis action save_version with base '+base+' and changes (only the changed sections), claims for those sections, and addressed (each comment you answered, with a one-line reply).':outputs[step.type],
     next:!canRun?'You can work on this deliverable, but only the owner or a project editor can run the rest of the plan.'
       :blocked?code+' waits for '+blocked+', which needs action. Tell the user what is unresolved; if they ask to move on anyway, save with continue_past: true.'
+      :unapprovedRef?code+' is adapted from '+reference.document+' ('+reference.name+'), which is not approved yet'+(reference.version?' (latest '+reference.version.deliverable+' v'+reference.version.n+')':' and has no version yet')+'. Before drafting, ask the user: approve '+reference.document+' first in TrialAgents CTIS, or go ahead with the current version? Going ahead is fine; a later approval of a different version flags this document as Reference changed. Draft only after the user answers.'
       :'Do the work, then save with save_ctis (action save_version, deliverable '+code+', base '+base+'). The result says what to run next.'
   }
 }

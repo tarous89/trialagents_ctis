@@ -1389,3 +1389,5 @@ main#app{min-height:0;margin-block:0;align-self:stretch;overflow-y:auto;overflow
 .planhead .eyebrow:empty{display:none}
 .ctis .cellbutton{flex-direction:row;align-items:center;gap:6px}
 .ctis .vtag{font-size:.72rem;opacity:.75;font-weight:500;margin-left:2px}
+.docnote{display:block;margin-top:2px;font-size:12px;color:var(--muted,#5b6670);font-weight:400}.docnote.warn{color:#8a5a00}
+.refpkg{font-weight:600;color:var(--pipeline-accent,#14644e)}.planinfo{margin:2px 0 0;font-size:13px;color:var(--muted,#5b6670)}

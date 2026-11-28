@@ -133,11 +133,19 @@ async function planPage(){
   }
   const groups=[];for(const d of docs){const k=d.part==='I'?'I':'II|'+d.country;let g=groups.find(x=>x.k===k);if(!g)groups.push(g={k,part:d.part,country:d.country,docs:[]});g.docs.push(d)}
   const total=plan.documents.length,cols=steps.length+3
-  const body=groups.map(g=>'<tbody><tr class="subrow"><th scope="rowgroup" class="grouptitle" colspan="'+(cols-1)+'"><span class="groupline"><span class="flag '+(g.part==='I'?'EU':g.country)+'">'+(g.part==='I'?'EU':'')+'</span>'+(g.part==='I'?'Part I':'Part II · '+E(countryName(g.country)))+'<span class="groupcount">/ '+g.docs.length+'</span></span></th><td class="lastcol"></td></tr>'
-    +g.docs.map(d=>'<tr class="docline"><td class="doccell"><span class="docname plain" title="'+E(d.code+(d.variant?' · '+d.variant:''))+'">'+E(d.name)+'</span></td><td><span class="outlang">'+E(languageName(d.language))+'</span><span class="variant">'+E(d.variant)+'</span></td>'+d.cells.map(c=>cell(d,c)).join('')+final(d)+'</tr>').join('')+'</tbody>').join('')
+  // Planning choices and populations (saved with the plan by the assistant).
+  const pl=plan.project.planning??{},pops=pl.populations??[],popLabel=id=>pops.find(p=>p.id===id)?.label??id
+  const part1={in_plan:'in this plan',completed_outside:'completed outside TrialAgents',later:'left for later'}[pl.part1_scope]
+  const planInfo=[pops.length?'Populations: '+pops.map(p=>E(p.label)).join(', '):'',part1?'Part I: '+part1:'',
+    pl.reference_package?'Reference package: '+E(countryName(pl.reference_package.country))+' · '+E(languageName(pl.reference_package.language)):'',
+    pl.format_choice?(pl.format_choice==='sponsor_format'?'Sponsor format kept':'Country format'):''].filter(Boolean)
+  const docNotes=d=>[d.population?'<small class="docnote" title="Population">'+E(popLabel(d.population))+'</small>':'',
+    d.reference?'<small class="docnote'+(d.reference.approved?'':' warn')+'" title="'+(d.reference.approved?'Drafted from the approved version of '+E(d.reference.document):E(d.reference.document)+' is not approved yet')+'">Adapted from '+E(d.reference.document)+(d.reference.approved?'':' · not approved yet')+'</small>':''].join('')
+  const body=groups.map(g=>'<tbody><tr class="subrow"><th scope="rowgroup" class="grouptitle" colspan="'+(cols-1)+'"><span class="groupline"><span class="flag '+(g.part==='I'?'EU':g.country)+'">'+(g.part==='I'?'EU':'')+'</span>'+(g.part==='I'?'Part I':'Part II · '+E(countryName(g.country)))+(g.docs.some(d=>d.reference_package)?' · <span class="refpkg" title="Completed and approved first; the other packages are adapted from it">Reference package</span>':'')+'<span class="groupcount">/ '+g.docs.length+'</span></span></th><td class="lastcol"></td></tr>'
+    +g.docs.map(d=>'<tr class="docline"><td class="doccell"><span class="docname plain" title="'+E(d.code+(d.variant?' · '+d.variant:''))+'">'+E(d.name)+'</span>'+docNotes(d)+'</td><td><span class="outlang">'+E(languageName(d.language))+'</span><span class="variant">'+E(d.variant)+'</span></td>'+d.cells.map(c=>cell(d,c)).join('')+final(d)+'</tr>').join('')+'</tbody>').join('')
   const countries=[...new Set(plan.documents.map(d=>d.country))],langs=[...new Set(plan.documents.map(d=>d.language))]
   const legend='<details class="legend"><summary>'+icon('info')+' Alert guide</summary><div class="legendPanel"><h3>Review alerts</h3>'+Object.entries(categories).map(([k,a])=>'<div class="legendRow" style="'+tone(k)+'"><i>'+icon(a.icon)+'</i><div><strong>'+a.label+'</strong><small>'+a.who+'</small><p>'+a.description+'</p></div></div>').join('')+'</div></details>'
-  return head+'<section class="sheet"><div class="sheethead"><div><h2>Document plan</h2><p id="tally">'+plural(total,'document')+' · '+plural(steps.length,'step')+(plan.summary.need_action?' · '+plan.summary.need_action+' need action':'')+'</p></div><div class="tools">'
+  return head+'<section class="sheet"><div class="sheethead"><div><h2>Document plan</h2><p id="tally">'+plural(total,'document')+' · '+plural(steps.length,'step')+(plan.summary.need_action?' · '+plan.summary.need_action+' need action':'')+'</p>'+(planInfo.length?'<p class="planinfo">'+planInfo.join(' · ')+'</p>':'')+'</div><div class="tools">'
     +(owner?'<button class="btn" data-edit-steps title="Choose which steps run for every document">'+icon('sliders')+'Edit steps</button>':'')
     +(host!=='browser'&&plan.next?.deliverable?'<button class="btn" data-continue-plan title="Ask '+E(window.ctisHost?.name??'the assistant')+' to run the plan from '+E(plan.next.deliverable)+'">'+icon('play')+'Continue ('+E(plan.next.deliverable)+')</button>':'')
     +'<a class="btn primary" href="'+exportUrl(p.id)+'" title="Download every approved final document as one ZIP file">'+icon('download')+'Download all</a></div></div>'
@@ -170,7 +178,8 @@ function stepsDialog(){
     if(b.hasAttribute('data-steps-save')){
       const na=plan.documents.flatMap(d=>d.cells.filter(c=>c.status==='not_applicable'&&!plan.steps.find(s=>s.id===c.step)?.paused).map(c=>({document:d.id,step:c.step}))).filter(x=>list.some(s=>s.id===x.step))
       await write('plan.save',{project:plan.project.id,revision:plan.project.revision,input:{
-        documents:plan.documents.map(d=>({id:d.id,name:d.name,part:d.part,country:d.country,language:d.language,variant:d.variant,code:d.code,filename:d.filename,catalog:d.catalog??{}})),
+        documents:plan.documents.map(d=>({id:d.id,name:d.name,part:d.part,country:d.country,language:d.language,variant:d.variant,code:d.code,filename:d.filename,catalog:d.catalog??{},
+          population:d.population??'',...(d.based_on?{based_on:d.based_on}:{})})),
         steps:list.map(s=>({...(s.id?{id:s.id}:{}),type:s.type,name:s.name,instruction:s.instruction??'',paused:!!s.paused})),not_applicable:na}}).then(()=>{closeModal();toast('Steps saved');render()},err=>toast(err.message))
     }
   }

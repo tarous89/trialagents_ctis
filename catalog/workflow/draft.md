@@ -1,13 +1,15 @@
 ---
 id: draft
 name: Draft
-version: 1.0
-effective: 2026-11-26
+version: 1.1
+effective: 2026-11-28
 use_when: Running a Draft step.
 applies_to: [draft]
 ---
 Write the document from the content template, the sources and the fill levels, then check it against the template checklist.
 
+- **Adapted documents** (the step's `reference` is set): start from the reference document's content (`reference.content`), not from scratch. Translate it into this document's language, apply this country's content template, national notes and checklist, add what the country requires, remove what does not apply, and keep the reference's substance otherwise. With `format_choice: sponsor_format`, keep the reference's structure as far as the country allows. If `reference.approved` is false, the user has agreed to go ahead with that version; say so in `note`.
+- **Population:** write for the document's population (`document.population`): its procedures, risks, burden and consent route only.
 - Follow the content template's sections, in order, with the same section ids (S01, S02, …). Without a content template, choose clear sections and ids yourself.
 - `study`: write from the sources only. Use the protocol's facts exactly (numbers, visits, durations, doses). Do not invent.
 - `standard`: use the standard wording; adapt only grammar, language and the study's own terms.

@@ -3,7 +3,7 @@ import {z} from 'zod'
 import {check,parse,inputs,splitDeliverable,stepTypes,stepNames,uuid} from './rules.mjs'
 import {projectAccess,requireOwner,requireEdit,requireComment,teamActive} from './access.mjs'
 import {loadBoard,visibleBoard,effectiveResources} from './board.mjs'
-import {cell,documentStatuses,finalStatus,nextStep,canApprove,orderedDocuments,issueCount,ACTION_REQUIRED,APPROVED} from './status.mjs'
+import {cell,documentStatuses,finalStatus,nextStep,canApprove,orderedDocuments,issueCount,referenceOf,inReferencePackage,ACTION_REQUIRED,APPROVED} from './status.mjs'
 import {applyChanges} from './content.mjs'
 import {attachUpload,searchPassages,snippet,storeFile,readFile as readStoredFile} from './sources.mjs'
 import {currentCatalog,catalogFile} from './catalog.mjs'
@@ -44,7 +44,7 @@ function deliverableOf(c,board,code){
 }
 
 const projectView=(p,extra={})=>({id:p.id,code:p.code,name:p.name,sponsor:p.sponsor,phase:p.phase,eu_ct_number:p.eu_ct_number,
-  submission_type:p.submission_type,countries:p.countries,revision:p.revision,plan_rev:p.plan_rev,updated_at:p.updated_at,created_at:p.created_at,...extra})
+  submission_type:p.submission_type,countries:p.countries,planning:p.planning??{},revision:p.revision,plan_rev:p.plan_rev,updated_at:p.updated_at,created_at:p.created_at,...extra})
 
 function summarize(board){
   let needAction=0,approved=0
@@ -60,7 +60,9 @@ function planView(c,board){
   const a=c.access,b=visibleBoard(board,a)
   const documents=orderedDocuments(b).map(d=>{
     const statuses=documentStatuses(board,d.id).filter(s=>a.canSeeStep(d.id,s.step))
-    return {...d,cells:statuses.map(s=>({...s,deliverable:d.id+'-'+s.step,issues:board.issues.get(cell(d.id,s.step))||0})),final:finalStatus(board,d.id)}
+    const ref=referenceOf(board,d.id)
+    return {...d,cells:statuses.map(s=>({...s,deliverable:d.id+'-'+s.step,issues:board.issues.get(cell(d.id,s.step))||0})),final:finalStatus(board,d.id),
+      ...(inReferencePackage(board,d)?{reference_package:true}:{}),...(ref?{reference:{document:ref.document,approved:!!ref.approved}}:{})}
   })
   const canRun=a.owner||a.projectRole==='editor'
   return {project:projectView(a.project),role:a.owner?'owner':a.projectRole||'shared',steps:board.steps,documents,
@@ -150,7 +152,7 @@ const ops={
 
   'plan.save':{project:true,write:true,async run(c){
     requireOwner(c.access);expectRevision(c)
-    const {documents,steps,not_applicable}=c.input,pid=c.access.project.id,q=c.q
+    const {documents,steps,not_applicable,planning}=c.input,pid=c.access.project.id,q=c.q
     // Steps: standard types keep their code (DR, CL, QC, ST, TR, IG); custom steps are CS1, CS2, ...
     const existing=await q('SELECT id,type,removed_at FROM ctis.step WHERE project_id=$1',[pid])
     const taken=new Set(),resolved=[],reserved=new Set([...existing.map(e=>e.id),...steps.map(s=>s.id).filter(Boolean)])
@@ -169,6 +171,19 @@ const ops={
       check(!docIds.has(d.id),'Document '+d.id+' appears twice');docIds.add(d.id)
       check(d.part==='I'?d.country==='EU':d.country!=='EU',d.id+': Part I documents use country EU; Part II documents use a member state code')
     }
+    // Populations and reference documents: a document's population is one of the plan's populations,
+    // and it may be adapted from another document of the plan (no cycles).
+    const pops=new Set((planning?.populations??c.access.project.planning?.populations??[]).map(p=>p.id))
+    for(const d of documents){
+      check(!d.population||pops.has(d.population),d.id+': population '+d.population+' is not one of the plan\'s populations')
+      if(d.based_on){
+        check(d.based_on!==d.id&&docIds.has(d.based_on),d.id+': based_on '+d.based_on+' is not another document of the plan')
+        const seen=new Set([d.id]);let x=d.based_on
+        while(x){check(!seen.has(x),d.id+': based_on links form a cycle');seen.add(x);x=documents.find(y=>y.id===x)?.based_on}
+      }
+    }
+    const rp=planning?.reference_package
+    check(!rp||documents.some(d=>d.country===rp.country&&d.language===rp.language),'The reference package '+(rp&&rp.country+' '+rp.language)+' has no documents in the plan')
     const stepOf=new Map(resolved.map(s=>[s.id,s.id]))
     for(const s of resolved)stepOf.set(stepTypes[s.type],s.id)
     const na=not_applicable.map(x=>{check(docIds.has(x.document)&&stepOf.has(x.step),'Not applicable cell '+x.document+'-'+x.step+' is not in the plan');return {document:x.document,step:stepOf.get(x.step)}})
@@ -179,19 +194,19 @@ const ops={
         [pid,s.id,s.type,s.name||stepNames[s.type],s.instruction,i,s.paused])
     await q('UPDATE ctis.step SET removed_at=now() WHERE project_id=$1 AND removed_at IS NULL AND NOT (id=ANY($2))',[pid,[...taken]])
     for(const [i,d] of documents.entries())
-      await q(`INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,code,filename,position,catalog) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
+      await q(`INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,code,filename,position,catalog,population,based_on) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)
         ON CONFLICT(project_id,id) DO UPDATE SET name=EXCLUDED.name,part=EXCLUDED.part,country=EXCLUDED.country,language=EXCLUDED.language,variant=EXCLUDED.variant,
-          code=EXCLUDED.code,filename=EXCLUDED.filename,position=EXCLUDED.position,catalog=EXCLUDED.catalog,removed_at=NULL`,
-        [pid,d.id,d.name,d.part,d.country,d.language,d.variant,d.code,d.filename,i,json(d.catalog)])
+          code=EXCLUDED.code,filename=EXCLUDED.filename,position=EXCLUDED.position,catalog=EXCLUDED.catalog,population=EXCLUDED.population,based_on=EXCLUDED.based_on,removed_at=NULL`,
+        [pid,d.id,d.name,d.part,d.country,d.language,d.variant,d.code,d.filename,i,json(d.catalog),d.population,d.based_on??null])
     await q('UPDATE ctis.document SET removed_at=now() WHERE project_id=$1 AND removed_at IS NULL AND NOT (id=ANY($2))',[pid,[...docIds]])
     await q('DELETE FROM ctis.cell_na WHERE project_id=$1',[pid])
     for(const x of na)await q('INSERT INTO ctis.cell_na VALUES($1,$2,$3) ON CONFLICT DO NOTHING',[pid,x.document,x.step])
     // Countries used by the plan are added to the project, keeping the existing order.
     const countries=[...c.access.project.countries]
     for(const d of documents)if(d.part==='II'&&!countries.includes(d.country))countries.push(d.country)
-    await q('UPDATE ctis.project SET countries=$2 WHERE id=$1',[pid,countries])
+    await q('UPDATE ctis.project SET countries=$2'+(planning?',planning=$3':'')+' WHERE id=$1',planning?[pid,countries,json(planning)]:[pid,countries])
     const r=await bumpRevision(c,',plan_rev=plan_rev+1')
-    const body={documents,steps:resolved,not_applicable:na}
+    const body={documents,steps:resolved,not_applicable:na,...(planning?{planning}:{})}
     await q('INSERT INTO ctis.plan_revision(project_id,rev,body,actor,actor_name,source) VALUES($1,$2,$3,$4,$5,$6)',[pid,r.plan_rev,json(body),c.user.id,person(c.user),c.source])
     const was=new Set(before.map(x=>x.id))
     await audit(c,'plan.saved',c.access.project.code,{plan_rev:r.plan_rev,documents:documents.length,steps:resolved.map(s=>s.id),
@@ -262,6 +277,8 @@ const ops={
       }
     }
     const basis=prev?{step:prev.step,n:prev.version}:null
+    // The first content step of an adapted document records which version of its reference it was drafted from.
+    const ref=!prev&&referenceOf(board,doc),refUsed=ref&&(ref.approved?{document:ref.document,...ref.approved,approved:true}:ref.latest?{document:ref.document,...ref.latest,approved:false}:null)
     let content=i.content,claims=i.claims??[],touched=null
     if(i.changes){
       check(curN>0,'There is no version to revise yet. Send the full content.',409)
@@ -296,9 +313,9 @@ const ops={
       }
     }
     const findings=[...i.findings,...wordFindings.filter(w=>!i.findings.some(f=>f.key===w.key))]
-    await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,file_id,basis,resources,catalog,note,past_issues,actor,actor_name,source)
-      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16)`,
-      [pid,doc,step,n,json(content),json(claims),i.fill?json(i.fill):null,fileId,json(basis),json(await effectiveResources(q,pid,doc)),json(used),i.note,json(flagged),c.user.id,person(c.user),c.source])
+    await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,file_id,basis,resources,catalog,note,past_issues,actor,actor_name,source,reference)
+      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17)`,
+      [pid,doc,step,n,json(content),json(claims),i.fill?json(i.fill):null,fileId,json(basis),json(await effectiveResources(q,pid,doc)),json(used),i.note,json(flagged),c.user.id,person(c.user),c.source,refUsed?json(refUsed):null])
     // Findings: re-reported keys keep their thread and number; in a revision, findings on untouched sections carry over; others are superseded.
     const open=await q("SELECT id,number,key,anchor FROM ctis.thread WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND kind='finding' AND status='open'",[pid,doc,step])
     const keep=new Set(),saved=[]

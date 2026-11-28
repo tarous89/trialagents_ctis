@@ -55,6 +55,15 @@ export const finding=z.strictObject({
 })
 export const addressed=z.strictObject({thread:z.int().positive(),reply:text(4000).min(1),resolve:z.boolean().default(true)})
 
+// Planning choices and the study's populations, saved with the plan (docs/TECHNICAL.md §1 and §3).
+export const planning=z.strictObject({
+  populations:z.array(z.strictObject({id:z.string().regex(/^[a-z0-9][a-z0-9-]{0,59}$/,'use a short lower-case id, for example single-dose-adults'),
+    label:text(100).min(1),description:text(1000).default(''),reason:text(1000).default('')})).max(30).default([]),
+  part1_scope:z.enum(['in_plan','completed_outside','later']).optional(),
+  reference_package:z.strictObject({country,language:z.string().regex(/^[a-z]{2}$/)}).nullable().optional(),
+  format_choice:z.enum(['sponsor_format','country_format']).optional(),
+  notes:text(4000).default('')
+})
 export const inputs={
   'project.create':z.strictObject({code:text(40).min(1),name,sponsor:text(200).default(''),phase:text(40).default(''),
     submission_type:text(200).default(''),eu_ct_number:text(40).default(''),countries:z.array(country).max(30).default([])}),
@@ -63,7 +72,9 @@ export const inputs={
   'project.duplicate':z.strictObject({code:text(40).min(1).optional(),name:name.optional()}),
   'plan.save':z.strictObject({
     documents:z.array(z.strictObject({id:documentId,name,part:z.enum(['I','II']),country:z.union([country,z.literal('EU')]),language:z.string().regex(/^[a-z]{2}$/),
-      variant:text(100).default(''),code:z.string().regex(/^([A-Za-z0-9][A-Za-z0-9_.-]{0,60})?$/,'use the regulatory code, for example L1_SIS-ICF').default(''),filename:text(200).min(1),catalog:z.record(z.string(),z.string()).default({})})).max(300),
+      variant:text(100).default(''),code:z.string().regex(/^([A-Za-z0-9][A-Za-z0-9_.-]{0,60})?$/,'use the regulatory code, for example L1_SIS-ICF').default(''),filename:text(200).min(1),catalog:z.record(z.string(),z.string()).default({}),
+      population:text(60).default(''),based_on:documentId.optional()})).max(300),
+    planning:planning.optional(),
     steps:z.array(z.strictObject({id:stepId.optional(),type:z.enum(Object.keys(stepTypes)),name:text(100).optional(),instruction:text(4000).default(''),paused:z.boolean().default(false)})).min(1).max(20),
     not_applicable:z.array(z.strictObject({document:documentId,step:stepId})).max(3000).default([])
   }),

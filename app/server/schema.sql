@@ -180,3 +180,10 @@ CREATE TABLE IF NOT EXISTS ctis.mail (
  created_at timestamptz NOT NULL DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS ctis_mail_due ON ctis.mail(due_at) WHERE sent_at IS NULL;
+
+-- Planning choices and populations (docs/TECHNICAL.md §1), the reference document a document is adapted from,
+-- and which version of that reference a version was drafted from.
+ALTER TABLE ctis.project ADD COLUMN IF NOT EXISTS planning jsonb NOT NULL DEFAULT '{}';
+ALTER TABLE ctis.document ADD COLUMN IF NOT EXISTS population text NOT NULL DEFAULT '';
+ALTER TABLE ctis.document ADD COLUMN IF NOT EXISTS based_on text;
+ALTER TABLE ctis.version ADD COLUMN IF NOT EXISTS reference jsonb;
