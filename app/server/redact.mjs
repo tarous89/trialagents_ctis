@@ -167,9 +167,11 @@ function pageChars(items){
 // The box (user space) covering characters k0..k1 of a text item. Positions inside the item come from the measured
 // width of the text before them in serif, sans-serif and monospace fonts and by character count (the widest span), plus a margin
 // of a third of the character height on each side for the difference to the real font. Covering a little more is safe; less is not.
+// The canvas library is native code: load it at run time, as pdf.js does, so a bundler never tries to pack it.
+const nativeCanvas=()=>process.getBuiltinModule('module').createRequire(import.meta.url)('@napi-rs/canvas')
 let measureCtx
 async function measurer(){
-  if(!measureCtx){const {createCanvas}=await import('@napi-rs/canvas');measureCtx=createCanvas(10,10).getContext('2d')}
+  if(!measureCtx){const {createCanvas}=nativeCanvas();measureCtx=createCanvas(10,10).getContext('2d')}
   return measureCtx
 }
 function fraction(ctx,family,str,k){
@@ -216,7 +218,7 @@ async function pdfMatches(doc,terms){
   return pages
 }
 async function renderPage(doc,index,boxes){
-  const {createCanvas}=await import('@napi-rs/canvas')
+  const {createCanvas}=nativeCanvas()
   const page=await doc.getPage(index),scale=2,viewport=page.getViewport({scale}),base=page.getViewport({scale:1})
   const canvas=createCanvas(Math.ceil(viewport.width),Math.ceil(viewport.height)),ctx=canvas.getContext('2d')
   ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height)
