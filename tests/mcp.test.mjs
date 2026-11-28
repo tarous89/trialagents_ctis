@@ -42,6 +42,7 @@ test('Claude runs a submission over MCP: plan, loop, block, resume in a new conv
     const appOnly=listed.filter(x=>x._meta.ui?.visibility?.includes('app')),tools=listed.filter(x=>!appOnly.includes(x))
     assert.deepEqual(appOnly.map(x=>x.name),['ctis_workspace_request'],'the workspace view’s own tool is hidden from the model')
     assert.deepEqual(tools.map(x=>x.name),['open_ctis','read_ctis','read_ctis_catalog','get_ctis_step','read_ctis_source','save_ctis'])
+    assert.deepEqual(tools.filter(x=>x._meta.ui?.resourceUri).map(x=>x.name),['open_ctis','save_ctis'],'opening and every save show the workspace view')
     for(const x of tools){
       assert.equal(x.inputSchema.type,'object');assert.ok(!x.inputSchema.oneOf&&!x.inputSchema.anyOf)
       assert.equal(x.annotations.readOnlyHint,x.name!=='save_ctis',x.name)
@@ -63,7 +64,8 @@ test('Claude runs a submission over MCP: plan, loop, block, resume in a new conv
         {id:'D05',name:'Recruitment arrangements',part:'II',country:'DE',language:'en',code:'K1_recruitment-arrangements',filename:'EX101_K1_recruitment-arrangements_DE_en'}],
       steps:[{type:'draft'},{type:'qc'},{type:'style'}],not_applicable:[{document:'D01',step:'ST'}]})
     assert.deepEqual(plan.steps,['DR Draft','QC Source QC','ST Style']);assert.match(plan.url,/^https:\/\/ctis\.trialagents\.com\/\?project=/)
-    assert.match(plan.next_hint,/open_ctis/,'after saving a plan, Claude shows it')
+    assert.deepEqual(plan.open,{view:'plan',project},'after saving a plan, the workspace opens on it')
+    assert.doesNotMatch(plan.next_hint,/open_ctis/,'no second call: the save shows the workspace itself')
     await fails('save_ctis',{action:'save_plan',request_id:randomUUID(),project,revision:0,documents:[],steps:[{type:'draft'}]})
   })
 

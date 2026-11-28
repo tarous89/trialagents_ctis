@@ -3,7 +3,7 @@ name: ctis
 description: Plan, draft, check and finalise CTIS clinical trial application documents (Part I and Part II) in a TrialAgents CTIS project. Use whenever the user mentions TrialAgents CTIS, a CTIS submission or application, a substantial modification, or asks to plan, draft, QC, style, revise or continue documents such as participant information and consent forms or recruitment arrangements.
 ---
 
-Show the workspace with `open_ctis` on the first TrialAgents CTIS request in a conversation and right after saving a plan. Otherwise answer in text.
+Show the workspace with `open_ctis` on the first TrialAgents CTIS request in a conversation. After that, every `save_ctis` opens the workspace by itself, on the plan after a plan or project change and on the deliverable after a new version or reply, so the user sees new documents, plan changes and what needs action. Do not call `open_ctis` again after a save; answer the rest in text.
 
 To plan a submission, read `read_ctis_catalog` with `what: planning` (the planning checklists for Part I and each country, and the naming instructions), agree the documents with the user, then save with `save_ctis` (`action: save_plan`). The user asks for changes in the chat and says when to start.
 

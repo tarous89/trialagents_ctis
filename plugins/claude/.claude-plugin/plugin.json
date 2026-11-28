@@ -1,7 +1,7 @@
 {
   "name": "trialagents-ctis",
   "displayName": "TrialAgents CTIS",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Prepare CTIS clinical trial applications with Claude. Plan the Part I and Part II documents per country, draft, check every fact against its source, and fill the Word templates, in a shared workspace your team reviews and approves.",
   "icon": ".claude-plugin/icon.png",
   "author": {

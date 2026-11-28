@@ -193,7 +193,7 @@ document.addEventListener('click',async e=>{
   const d=b.dataset
   try{
     if(d.onlyAssistant!==undefined){e.preventDefault();toast('Available in Claude or ChatGPT');return}
-    if(b.classList.contains('sidebar-toggle')){const r=$('#rail');r.hidden=!r.hidden;b.setAttribute('aria-expanded',String(!r.hidden));return}
+    if(b.classList.contains('sidebar-toggle')){setSidebar($('#rail').hidden);return}
     if(d.tab){if(d.filterProject)state.filters[d.tab]={project:d.filterProject};return go(d.tab)}
     if(d.project)return go('plan',{project:d.project})
     if(d.cell)return go('plan',{project:state.project,deliverable:d.cell})
@@ -224,8 +224,15 @@ document.addEventListener('submit',async e=>{
   }catch(err){const out=form.querySelector('output');if(out)out.textContent=err.message;else toast(err.message)}
 })
 
+// The sidebar starts hidden inside Claude and ChatGPT, where the workspace shares the chat's width; the menu button
+// left of the logo shows and hides it (as in TrialAgents Pipeline). The browser app starts with it shown.
+function setSidebar(show){
+  const r=$('#rail'),t=document.querySelector('.sidebar-toggle');r.hidden=!show
+  if(t){const label=show?'Hide sidebar':'Show sidebar';t.setAttribute('aria-expanded',String(show));t.setAttribute('aria-label',label);t.title=label}
+}
 ;(async()=>{
   Object.assign(nav,{state,render,go})
+  if(host!=='browser')setSidebar(false)
   if(host==='browser')readUrl()
   else{try{await window.ctisHost.ready}catch{};const t=window.ctisHost.initial();if(t)Object.assign(state,{view:t.view,project:t.project,deliverable:t.deliverable})}
   try{state.account=await call('account.read')}catch(e){if(e.status===401){if(host==='browser'){location.replace('/auth?mode=login&ctis=1');return}$('#page').innerHTML='<section class="panel empty-panel"><h2>Sign in to TrialAgents CTIS</h2><p><a class="primary btn" href="'+(host==='browser'?'':'https://ctis.trialagents.com')+'/auth?mode=login&ctis=1">Sign in</a></p></section>';return}}

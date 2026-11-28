@@ -37,7 +37,8 @@ window.ctisHost={
   }
 }
 app.ontoolresult=result=>{
-  const next=result.structuredContent?.result
+  // open_ctis returns the view itself; every save_ctis result says where to open in "open".
+  const r=result.structuredContent?.result,next=r?.open??(r?.view?r:null)
   if(!next?.view)return
   target={view:next.view,project:next.project??null,deliverable:next.deliverable??null}
   if(nav.state)void nav.go(target.view,{project:target.project,deliverable:target.deliverable})
