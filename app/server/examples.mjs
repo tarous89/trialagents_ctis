@@ -1,6 +1,7 @@
 // Fictional example data (EX-101 and a shared BX-212) for the dev server, design checks and browser tests.
 // Everything is created through the store, as people and assistants would, so it exercises the real rules.
 import {randomUUID} from 'node:crypto'
+import {PDFDocument,StandardFonts} from 'pdf-lib'
 
 const doc=(title,...sections)=>({title,sections:sections.map(([id,heading,...blocks])=>({id,heading,blocks:blocks.map(b=>typeof b==='string'?{type:'paragraph',text:b}:b)}))})
 
@@ -20,11 +21,26 @@ export async function seedExamples(run,{db}){
   await w(alex,'resource.record',p,{category:'source',name:'Investigator’s brochure EX-101',type:'Investigator’s brochure',version:'7.0',doc_date:'2026-06-01'})
   await w(alex,'resource.record',p,{category:'template',name:'Sponsor consent outline',type:'Writing template',version:'2.1',notes:'Sections: purpose, visits, expenses, local contact.'})
   await w(alex,'plan.save',p,{documents:[
+    {id:'D02',name:'Protocol',part:'I',country:'EU',language:'en',code:'D1_protocol',filename:'EX101_D1_protocol_EU_en',supplied:true},
     {id:'D01',name:'Protocol synopsis',part:'I',country:'EU',language:'en',code:'D1_protocol-synopsis',filename:'EX101_D1_protocol-synopsis_EU_en'},
+    {id:'D03',name:'Investigator’s brochure',part:'I',country:'EU',language:'en',code:'E1_IB',filename:'EX101_E1_IB_EU_en',supplied:true},
+    {id:'D06',name:'IMPD – quality',part:'I',country:'EU',language:'en',code:'G1_IMPD-Q',filename:'EX101_G1_IMPD-Q_EU_en',supplied:true},
     {id:'D04',name:'Subject information sheet and informed consent form – adults',part:'II',country:'DE',language:'de',code:'L1_SIS-ICF',variant:'adults',filename:'EX101_L1_SIS-ICF_adults_DE_de'},
     {id:'D05',name:'Recruitment arrangements',part:'II',country:'DE',language:'en',code:'K1_recruitment-arrangements',filename:'EX101_K1_recruitment-arrangements_DE_en'},
     {id:'D07',name:'Subject information sheet and informed consent form – adults',part:'II',country:'ES',language:'es',code:'L1_SIS-ICF',variant:'adults',filename:'EX101_L1_SIS-ICF_adults_ES_es'}],
-    steps:[{type:'draft'},{type:'qc'},{type:'style'}],not_applicable:[{document:'D01',step:'ST'}]},{revision:0})
+    steps:[{type:'draft'},{type:'qc'},{type:'checklist'},{type:'style'}],not_applicable:[{document:'D01',step:'ST'},{document:'D01',step:'CL'},
+      ...['D02','D03','D06'].flatMap(d=>[{document:d,step:'QC'},{document:d,step:'ST'}]),...['D04','D05','D07'].map(d=>({document:d,step:'CL'}))]},{revision:0})
+  // Part I documents supplied by the sponsor: the protocol as a PDF (checked, approved and redacted), the IB held outside, the IMPD awaiting its file.
+  const pdf=await PDFDocument.create(),font=await pdf.embedFont(StandardFonts.Helvetica),page=pdf.addPage([595,842])
+  page.drawText('Clinical Study Protocol EX-101, version 3.0',{x:60,y:780,size:16,font})
+  page.drawText('Sponsor signatory: Dr. Lena Brandt, Head of Clinical Development',{x:60,y:740,size:10,font})
+  pdf.addPage([595,842]).drawText('4.1 Study population: male or female adults aged 18 years or older.',{x:60,y:780,size:11,font})
+  await w(alex,'document.supply',p,{document:'D02',file:{name:'EX-101 protocol v3.0.pdf',mime:'application/pdf',content_base64:Buffer.from(await pdf.save()).toString('base64')},sponsor_version:'3.0'})
+  await w(alex,'version.save',p,{deliverable:'D02-CL',base:0,note:'S01–S07 passed.'})
+  await w(alex,'approval.create',p,{deliverable:'D02-CL',n:1},{},'web')
+  await w(alex,'redaction.save',p,{document:'D02',terms:[{text:'Lena Brandt',category:'name'}],pdf_method:'pages_as_images'})
+  await w(alex,'document.supply',p,{document:'D03',held_outside:true,sponsor_version:'7.0'})
+  await w(alex,'version.save',p,{deliverable:'D03-CL',base:0,findings:[{category:'conflict',text:'IB edition 7.0 covers EX-101 tablets only; the protocol also uses the oral solution.',key:'ib-formulation'}]})
   const synopsis=doc('Protocol synopsis',['S01','Population','The study enrols adults aged 18 years or older with condition Y.'],['S02','Visit schedule',{type:'timeline',items:[{label:'Week 0',detail:'Baseline'},{label:'Week 6',detail:'Telephone call'},{label:'Week 12',detail:'Follow-up visit'}]}])
   await w(alex,'version.save',p,{deliverable:'D01-DR',base:0,content:synopsis})
   await w(alex,'version.save',p,{deliverable:'D01-QC',base:0,content:synopsis,claims:[

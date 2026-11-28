@@ -1,5 +1,5 @@
 // TrialAgents CTIS browser app: navigation, Projects and the document plan.
-import {call,write,exportUrl} from './api.js'
+import {call,write,exportUrl,redactedUrl} from './api.js'
 import {E,$,all,icon,railIcon,host,ctry,countryName,languageName,fmtDate,plural,statusLabel,statusClass,finalLabel,categories,tone,
   toast,modal,closeModal,drawer,closeDrawer,field,options,formData,memberStates,assistantOnly,initials,askAssistant} from './ui.js'
 import {marks,pencil,dupIcon} from './icons.js'
@@ -122,27 +122,43 @@ async function planPage(){
   if(!plan.documents.length)return head+'<section class="sheet"><div class="pad empty-panel"><h2>No submission plan yet</h2><p>Ask Claude or ChatGPT to propose the documents for this submission. The assistant uses the TrialAgents planning checklists for each country, lists each document with its regulatory code, language and filename, and saves the plan here.</p><p class="prompt">“Plan the CTIS documents for '+E(p.code)+'.”</p></div></section>'
   const docs=plan.documents.filter(d=>(!f.part||d.part===f.part)&&(!f.country||d.country===f.country)&&(!f.language||d.language===f.language))
   const steps=plan.steps
+  const firstCell=d=>d.cells.find(c=>c.status!=='not_applicable')
   const cell=(d,c)=>{
     if(c.status==='not_applicable')return '<td class="workcell"><span class="state na" title="Not part of the plan for this document">Not applicable</span></td>'
-    const label=c.continued&&c.status==='action_required'?'Continued':statusLabel[c.status]
+    // Supplied documents: the first step shows the sponsor's file ("Supplied") instead of a draft.
+    const awaiting=d.awaiting_file&&firstCell(d)===c
+    const label=awaiting?'Awaiting file':c.supplied&&c.status!=='waiting'?(c.supplied.held_outside?'Held outside':'Supplied'):c.continued&&c.status==='action_required'?'Continued':statusLabel[c.status]
     return '<td class="workcell"><button type="button" class="cellbutton" data-cell="'+c.deliverable+'" title="Open '+c.deliverable+' · '+E(steps.find(s=>s.id===c.step).name)+(c.sourceChanged?' · source changed':'')+'"><span class="state '+(c.continued&&c.status==='action_required'?'ignored':statusClass[c.status])+'">'+label+(c.version&&c.status!=='waiting'?' <span class="vtag">v'+c.version+'</span>':'')+'</span></button></td>'
   }
   const final=d=>{
-    const s=d.final,name=d.filename+(s.version?'_v'+s.version:'')+(steps.find(x=>x.id===s.step)?.type==='style'?'.docx':'')
-    return '<td class="lastcol">'+(s.step?'<button type="button" class="fn" data-cell="'+d.id+'-'+s.step+'" aria-label="'+d.id+' · Final document · '+finalLabel[s.status]+'"><span class="finalstate'+(s.status==='approved'?' isready':'')+'">'+finalLabel[s.status]+(s.status==='approved'?' v'+s.version:'')+'</span><span class="fnametxt">'+E(name).replace(/_/g,'_<wbr>')+'</span></button>':'<span class="muted">—</span>')+'</td>'
+    const s=d.final,name=d.filename+(s.version?'_v'+s.version:'')+(s.ext??(steps.find(x=>x.id===s.step)?.type==='style'?'.docx':''))
+    return '<td class="lastcol finalcol">'+(s.step?'<button type="button" class="fn" data-cell="'+d.id+'-'+s.step+'" aria-label="'+d.id+' · Final document · '+finalLabel[s.status]+'"><span class="finalstate'+(s.status==='approved'?' isready':'')+'">'+finalLabel[s.status]+(s.status==='approved'?' v'+s.version:'')+'</span><span class="fnametxt">'+E(name).replace(/_/g,'_<wbr>')+'</span></button>':'<span class="muted">—</span>')+'</td>'
+  }
+  // Redacted documents for publication: made from the approved final version only (docs/TECHNICAL.md §12).
+  const redacted=d=>{
+    const r=d.redaction??{status:'not_published'},ext=r.mime==='application/pdf'?'.pdf':r.mime?.includes('word')?'.docx':'.txt'
+    const name=d.filename+'_redacted_v'+r.version+ext
+    const redact='<button type="button" class="btn sm redactbtn" data-redact="'+d.id+'"'+assistantOnly()+(assistantOnly()?'':' title="Ask '+E(window.ctisHost?.name??'the assistant')+' to prepare the redacted version for publication"')+'>Redact</button>'
+    const file=(state,label)=>'<a class="fn redfile" href="'+redactedUrl(plan.project.id,d.id,r.n)+'" title="Download the redacted version"><span class="'+state+'">'+label+'</span><span class="fnametxt">'+E(name).replace(/_/g,'_<wbr>')+'</span></a>'
+    const inner={not_published:'<span class="state na" title="CTIS does not publish this document">Not published</span>',
+      after_approval:'<span class="redwait" title="The redacted version is made from the approved final document">After approval</span>',
+      ready:redact,
+      done:file('finalstate isready','Redacted v'+r.version),
+      outdated:file('state action','Out of date <span class="vtag">v'+r.version+'</span>')+redact}[r.status]
+    return '<td class="lastcol redcol">'+inner+'</td>'
   }
   const groups=[];for(const d of docs){const k=d.part==='I'?'I':'II|'+d.country;let g=groups.find(x=>x.k===k);if(!g)groups.push(g={k,part:d.part,country:d.country,docs:[]});g.docs.push(d)}
-  const total=plan.documents.length,cols=steps.length+3
+  const total=plan.documents.length,cols=steps.length+4
   // Planning choices and populations (saved with the plan by the assistant).
   const pl=plan.project.planning??{},pops=pl.populations??[],popLabel=id=>pops.find(p=>p.id===id)?.label??id
   const part1={in_plan:'in this plan',completed_outside:'completed outside TrialAgents',later:'left for later'}[pl.part1_scope]
   const planInfo=[pops.length?'Populations: '+pops.map(p=>E(p.label)).join(', '):'',part1?'Part I: '+part1:'',
     pl.reference_package?'Reference package: '+E(countryName(pl.reference_package.country))+' · '+E(languageName(pl.reference_package.language)):'',
     pl.format_choice?(pl.format_choice==='sponsor_format'?'Sponsor format kept':'Country format'):''].filter(Boolean)
-  const docNotes=d=>[d.population?'<small class="docnote" title="Population">'+E(popLabel(d.population))+'</small>':'',
+  const docNotes=d=>[d.supplied?'<small class="docnote" title="Provided by the sponsor; checked, not drafted">Provided by sponsor</small>':'',d.population?'<small class="docnote" title="Population">'+E(popLabel(d.population))+'</small>':'',
     d.reference?'<small class="docnote'+(d.reference.approved?'':' warn')+'" title="'+(d.reference.approved?'Drafted from the approved version of '+E(d.reference.document):E(d.reference.document)+' is not approved yet')+'">Adapted from '+E(d.reference.document)+(d.reference.approved?'':' · not approved yet')+'</small>':''].join('')
-  const body=groups.map(g=>'<tbody><tr class="subrow"><th scope="rowgroup" class="grouptitle" colspan="'+(cols-1)+'"><span class="groupline"><span class="flag '+(g.part==='I'?'EU':g.country)+'">'+(g.part==='I'?'EU':'')+'</span>'+(g.part==='I'?'Part I':'Part II · '+E(countryName(g.country)))+(g.docs.some(d=>d.reference_package)?' · <span class="refpkg" title="Completed and approved first; the other packages are adapted from it">Reference package</span>':'')+'<span class="groupcount">/ '+g.docs.length+'</span></span></th><td class="lastcol"></td></tr>'
-    +g.docs.map(d=>'<tr class="docline"><td class="doccell"><span class="docname plain" title="'+E(d.code+(d.variant?' · '+d.variant:''))+'">'+E(d.name)+'</span>'+docNotes(d)+'</td><td><span class="outlang">'+E(languageName(d.language))+'</span><span class="variant">'+E(d.variant)+'</span></td>'+d.cells.map(c=>cell(d,c)).join('')+final(d)+'</tr>').join('')+'</tbody>').join('')
+  const body=groups.map(g=>'<tbody><tr class="subrow"><th scope="rowgroup" class="grouptitle" colspan="'+(cols-2)+'"><span class="groupline"><span class="flag '+(g.part==='I'?'EU':g.country)+'">'+(g.part==='I'?'EU':'')+'</span>'+(g.part==='I'?'Part I':'Part II · '+E(countryName(g.country)))+(g.docs.some(d=>d.reference_package)?' · <span class="refpkg" title="Completed and approved first; the other packages are adapted from it">Reference package</span>':'')+'<span class="groupcount">/ '+g.docs.length+'</span></span></th><td class="lastcol finalcol"></td><td class="lastcol redcol"></td></tr>'
+    +g.docs.map(d=>'<tr class="docline"><td class="doccell"><span class="docname plain" title="'+E(d.code+(d.variant?' · '+d.variant:''))+'">'+E(d.name)+'</span>'+docNotes(d)+'</td><td><span class="outlang">'+E(languageName(d.language))+'</span><span class="variant">'+E(d.variant)+'</span></td>'+d.cells.map(c=>cell(d,c)).join('')+final(d)+redacted(d)+'</tr>').join('')+'</tbody>').join('')
   const countries=[...new Set(plan.documents.map(d=>d.country))],langs=[...new Set(plan.documents.map(d=>d.language))]
   const legend='<details class="legend"><summary>'+icon('info')+' Alert guide</summary><div class="legendPanel"><h3>Review alerts</h3>'+Object.entries(categories).map(([k,a])=>'<div class="legendRow" style="'+tone(k)+'"><i>'+icon(a.icon)+'</i><div><strong>'+a.label+'</strong><small>'+a.who+'</small><p>'+a.description+'</p></div></div>').join('')+'</div></details>'
   return head+'<section class="sheet"><div class="sheethead"><div><h2>Document plan</h2><p id="tally">'+plural(total,'document')+' · '+plural(steps.length,'step')+(plan.summary.need_action?' · '+plan.summary.need_action+' need action':'')+'</p>'+(planInfo.length?'<p class="planinfo">'+planInfo.join(' · ')+'</p>':'')+'</div><div class="tools">'
@@ -153,8 +169,8 @@ async function planPage(){
     +'<select data-filter="country" aria-label="Filter by country">'+options([['','All countries'],...countries.map(c=>[c,countryName(c)])],f.country)+'</select>'
     +'<select data-filter="language" aria-label="Filter by language">'+options([['','All languages'],...langs.map(l=>[l,languageName(l)])],f.language)+'</select>'
     +(f.part||f.country||f.language?'<button class="textbtn" data-clear-filters>Clear</button>':'')+'</div><div>'+legend+'</div></div>'
-    +'<div class="scroll" tabindex="0" aria-label="Submission plan table"><table id="matrix" style="min-width:'+(240+119+steps.length*160+220)+'px"><colgroup><col style="width:240px"><col style="width:119px">'+steps.map(()=>'<col style="width:160px">').join('')+'<col style="width:220px"></colgroup>'
-    +'<thead><tr class="tablehead"><th scope="col">Document</th><th scope="col">Language</th>'+steps.map(s=>'<th scope="col"><span class="thlabel">'+E(s.name)+(s.paused?' <small>(paused)</small>':'')+'</span></th>').join('')+'<th scope="col" class="lastcol"><span class="lasttitle">'+icon('pin')+' Final document</span></th></tr></thead>'
+    +'<div class="scroll" tabindex="0" aria-label="Submission plan table"><table id="matrix" style="min-width:'+(240+119+steps.length*160+440)+'px"><colgroup><col style="width:240px"><col style="width:119px">'+steps.map(()=>'<col style="width:160px">').join('')+'<col style="width:220px"><col style="width:220px"></colgroup>'
+    +'<thead><tr class="tablehead"><th scope="col">Document</th><th scope="col">Language</th>'+steps.map(s=>'<th scope="col"><span class="thlabel">'+E(s.name)+(s.paused?' <small>(paused)</small>':'')+'</span></th>').join('')+'<th scope="col" class="lastcol finalcol"><span class="lasttitle">'+icon('pin')+' Final document</span></th><th scope="col" class="lastcol redcol"><span class="lasttitle" title="The version for publication, made from the approved final document">Redacted documents</span></th></tr></thead>'
     +(body||'<tbody><tr><td colspan="'+cols+'" class="empty">No documents match these filters. <button class="textbtn" data-clear-filters>Clear filters</button></td></tr></tbody>')+'</table></div>'
     +'<footer class="sheetfoot"><span>'+docs.length+' of '+total+' documents</span><span>'+icon('pin')+' Final document pinned</span></footer></section>'
 }
@@ -179,7 +195,7 @@ function stepsDialog(){
       const na=plan.documents.flatMap(d=>d.cells.filter(c=>c.status==='not_applicable'&&!plan.steps.find(s=>s.id===c.step)?.paused).map(c=>({document:d.id,step:c.step}))).filter(x=>list.some(s=>s.id===x.step))
       await write('plan.save',{project:plan.project.id,revision:plan.project.revision,input:{
         documents:plan.documents.map(d=>({id:d.id,name:d.name,part:d.part,country:d.country,language:d.language,variant:d.variant,code:d.code,filename:d.filename,catalog:d.catalog??{},
-          population:d.population??'',...(d.based_on?{based_on:d.based_on}:{})})),
+          population:d.population??'',...(d.based_on?{based_on:d.based_on}:{}),supplied:!!d.supplied,...(d.redact!==null&&d.redact!==undefined?{redact:d.redact}:{})})),
         steps:list.map(s=>({...(s.id?{id:s.id}:{}),type:s.type,name:s.name,instruction:s.instruction??'',paused:!!s.paused})),not_applicable:na}}).then(()=>{closeModal();toast('Steps saved');render()},err=>toast(err.message))
     }
   }
@@ -189,6 +205,10 @@ function stepsDialog(){
 const appLink=()=>'https://ctis.trialagents.com/'+(state.project?'?project='+encodeURIComponent(state.project)+(state.deliverable?'&deliverable='+encodeURIComponent(state.deliverable):''):'')
 async function hostLink(href){
   const u=new URL(href,'https://ctis.trialagents.com')
+  if(u.pathname==='/api/ctis/download'&&u.searchParams.get('redaction')){
+    const f=await call('redaction.file',{project:u.searchParams.get('project'),input:{document:u.searchParams.get('redaction'),...(u.searchParams.get('n')?{n:+u.searchParams.get('n')}:{})}})
+    return window.ctisHost.download(f).catch(()=>window.ctisHost.openLink(u.href))
+  }
   if(u.pathname==='/api/ctis/download'){
     const f=await call('version.file',{project:u.searchParams.get('project'),input:{deliverable:u.searchParams.get('deliverable'),...(u.searchParams.get('n')?{n:+u.searchParams.get('n')}:{})}})
     return window.ctisHost.download(f).catch(()=>window.ctisHost.openLink(u.href))
@@ -208,6 +228,8 @@ document.addEventListener('click',async e=>{
     if(d.cell)return go('plan',{project:state.project,deliverable:d.cell})
     if(d.newProject!==undefined)return host==='browser'?newProjectDialog():askAssistant('Start a new TrialAgents CTIS project.')
     if(d.openApp!==undefined)return window.ctisHost.openLink(appLink())
+    if(d.redact){const doc=state.plan.documents.find(x=>x.id===d.redact),v=doc.final.version
+      return askAssistant('Redact '+doc.id+' ('+doc.name+', approved v'+v+') in TrialAgents CTIS project '+state.plan.project.code+' (project '+state.plan.project.id+'): prepare its redacted version for publication.')}
     if(d.continuePlan!==undefined)return askAssistant('Continue the TrialAgents CTIS plan for '+state.plan.project.code+' (project '+state.plan.project.id+').')
     // Inside an assistant, links open through the host; Word files download through it.
     if(host!=='browser'&&b.tagName==='A'){e.preventDefault();return hostLink(b.getAttribute('href'))}

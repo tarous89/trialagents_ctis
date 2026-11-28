@@ -24,6 +24,10 @@ export function ctisApi({run,currentUser,origin='https://ctis.trialagents.com',s
       }
       if(request.method!=='GET')return json({error:'Not found'},404)
       const p=url.searchParams
+      if(url.pathname==='/api/ctis/download'&&p.get('redaction')){
+        const f=await run(user,{op:'redaction.file',project:p.get('project'),input:{document:p.get('redaction'),...(p.get('n')?{n:Number(p.get('n'))}:{})}},source)
+        return download(Buffer.from(f.content_base64,'base64'),f.name,f.mime)
+      }
       if(url.pathname==='/api/ctis/download'){
         const f=await run(user,{op:'version.file',project:p.get('project'),input:{deliverable:p.get('deliverable'),...(p.get('n')?{n:Number(p.get('n'))}:{})}},source)
         return download(Buffer.from(f.content_base64,'base64'),f.name,f.mime)

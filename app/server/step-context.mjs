@@ -1,5 +1,5 @@
 // The bundle get_ctis_step returns (docs/MCP.md §4): everything one step needs, from the server, never from chat history.
-import {cell,documentStatuses,nextStep,referenceOf,applicableSteps} from './status.mjs'
+import {cell,documentStatuses,nextStep,referenceOf,applicableSteps,needsRedaction} from './status.mjs'
 import {effectiveResources} from './board.mjs'
 
 const outputs={
@@ -22,7 +22,9 @@ export async function stepContext({q,project,board,catalog,deliverable,revise=fa
   let code=deliverable
   if(!code){
     const n=nextStep(board)
-    if(n.stop)return {stop:true,summary:n.summary,next:'Nothing left to run. Tell the user the summary: which documents await approval (they approve in TrialAgents CTIS) and which are blocked, with what needs a person.'}
+    if(n.stop)return {stop:true,summary:n.summary,next:'Nothing left to run. Tell the user the summary: which documents await approval (they approve in TrialAgents CTIS), which are blocked, with what needs a person'
+      +(n.summary.awaitingFile.length?', which supplied documents still need their file ('+n.summary.awaitingFile.join(', ')+': the user uploads it in the workspace, gives it to you, or confirms it is held outside TrialAgents CTIS)':'')
+      +(n.summary.toRedact.length?', and which approved documents can now get a redacted version for publication ('+n.summary.toRedact.join(', ')+'; redact only when the user asks or clicks Redact)':'')+'.'}
     code=n.deliverable
   }
   const [docId,stepId]=code.split('-')
@@ -66,10 +68,13 @@ export async function stepContext({q,project,board,catalog,deliverable,revise=fa
   }
   const unapprovedRef=reference&&!reference.approved&&firstStep&&!current
   const base=current?.n??0
+  // A supplied document's first step records the sponsor's file; the assistant never drafts it.
+  const supplyStep=doc.supplied&&firstStep
   return {
     deliverable:code,project:project.id,
     document:{id:doc.id,name:doc.name,code:doc.code,variant:doc.variant,part:doc.part,country:doc.country,language:doc.language,filename:doc.filename,
-      population:(project.planning?.populations??[]).find(p=>p.id===doc.population)??null,based_on:doc.based_on??null},
+      population:(project.planning?.populations??[]).find(p=>p.id===doc.population)??null,based_on:doc.based_on??null,
+      supplied:!!doc.supplied,published:needsRedaction(doc)},
     planning:{part1_scope:project.planning?.part1_scope??null,reference_package:project.planning?.reference_package??null,format_choice:project.planning?.format_choice??null},
     reference,
     step:{id:step.id,type:step.type,name:step.name,instruction:step.instruction},
@@ -83,8 +88,12 @@ export async function stepContext({q,project,board,catalog,deliverable,revise=fa
     current:current??null,
     sources:resources.map(r=>({id:r.id,category:r.category,name:r.name,type:r.type,version:r.version,searchable:r.file_mode==='stored'})),
     threads,revision,
-    output:revise?'save_ctis action save_version with base '+base+' and changes (only the changed sections), claims for those sections, and addressed (each comment you answered, with a one-line reply).':outputs[step.type],
+    output:supplyStep?'save_ctis action supply_document with document '+docId+' and one of: file_base64 and file_name (a file the user gave you, if you can read its bytes), resource (a stored source holding the file), or held_outside: true (the user confirms the final file is ready outside TrialAgents CTIS). Add sponsor_version when you know it.'
+      :revise?'save_ctis action save_version with base '+base+' and changes (only the changed sections), claims for those sections, and addressed (each comment you answered, with a one-line reply).'
+      :doc.supplied?outputs[step.type]+' This document is supplied by the sponsor: do not rewrite it. Save without content or changes to keep the supplied file as it is, with findings for anything the user must fix in their file (they then supply a new version).'
+      :outputs[step.type],
     next:!canRun?'You can work on this deliverable, but only the owner or a project editor can run the rest of the plan.'
+      :supplyStep?docId+' ('+doc.name+') is supplied by the sponsor and is not drafted. Ask the user for the final file: they can upload it in the workspace (on this document), give it to you here, or confirm that it is ready and held outside TrialAgents CTIS. Then record it with save_ctis action supply_document. Other documents do not wait for it.'
       :blocked?code+' waits for '+blocked+', which needs action. Tell the user what is unresolved; if they ask to move on anyway, save with continue_past: true.'
       :unapprovedRef?code+' is adapted from '+reference.document+' ('+reference.name+'), which is not approved yet'+(reference.version?' (latest '+reference.version.deliverable+' v'+reference.version.n+')':' and has no version yet')+'. Before drafting, ask the user: approve '+reference.document+' first in TrialAgents CTIS, or go ahead with the current version? Going ahead is fine; a later approval of a different version flags this document as Reference changed. Draft only after the user answers.'
       :'Do the work, then save with save_ctis (action save_version, deliverable '+code+', base '+base+'). The result says what to run next.'

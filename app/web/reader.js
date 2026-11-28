@@ -1,5 +1,5 @@
 // The deliverable dialog: the document, its review threads, versions, sources, and the workflow actions.
-import {call,write,downloadUrl} from './api.js'
+import {call,write,downloadUrl,fileToBase64} from './api.js'
 import {E,$,icon,host,statusLabel,statusClass,categories,tone,languageName,fmtDate,fmtTime,initials,inline,plural,toast,modal,closeModal,drawer,closeDrawer,field,options,assistantOnly,formData,askAssistant} from './ui.js'
 
 let ctx=null // {project, code, data, n, history, compose, quote, section, onChange}
@@ -30,8 +30,18 @@ function block(b){
   }
 }
 
+// A supplied document's first step: the sponsor's file is uploaded, given to the assistant, or confirmed as held outside.
+const supplyStep=()=>!!(ctx.data.document.supplied&&ctx.data.first_step)
+const canEditDoc=()=>['owner','editor'].includes(ctx.data.role)
+const supplyButtons=again=>canEditDoc()?'<div class="rowbtns"><label class="btn'+(again?'':' primary')+'">'+icon('download')+' '+(again?'Upload a new version':'Upload file')+'<input type="file" accept=".pdf,.docx,.txt,.md" hidden data-supply-upload></label>'
+  +(again?'':'<button type="button" class="btn" data-supply-outside title="The final file is ready, but kept outside TrialAgents CTIS">Held outside TrialAgents CTIS</button>')+'</div><output class="supplyout"></output>':''
 function paper(){
   const {data}=ctx,v=data.version,doc=data.document
+  if(!v&&supplyStep()){
+    return '<article class="paper stepbrief"><div class="paperKicker"><span class="frag">'+E(doc.code||doc.id)+'</span><span>'+E(languageName(doc.language))+'</span></div><h2>'+E(doc.name)+'</h2>'
+      +'<p>Provided by the sponsor. TrialAgents CTIS checks it and prepares its redacted version when needed; it does not draft it.</p>'
+      +'<p>Upload the final file here, give it to '+E(window.ctisHost?.name??'Claude or ChatGPT')+' in the chat, or confirm that it is ready and kept outside TrialAgents CTIS.</p>'+supplyButtons(false)+'</article>'
+  }
   if(!v){
     const s=data.status
     return '<article class="paper stepbrief"><div class="paperKicker"><span class="frag">'+E(doc.code||doc.id)+'</span><span>'+E(languageName(doc.language))+'</span></div><h2>'+E(doc.name)+'</h2>'
@@ -40,7 +50,9 @@ function paper(){
   const open=data.threads.filter(t=>t.status==='open')
   const markers=id=>open.filter(t=>t.anchor?.section===id).map(t=>'<button type="button" class="marker" style="'+tone(t.category)+'" data-focus-thread="'+t.number+'" aria-label="Open thread '+t.number+'">#'+t.number+'</button>').join('')
   const claims=id=>v.claims.filter(c=>c.section===id).length
+  const sup=v.supplied
   return '<article class="paper" aria-label="Full document"><div class="paperKicker"><span class="frag">'+E(doc.code||doc.id)+'</span> <span>'+E(languageName(doc.language))+' · v'+v.n+(ctx.n&&ctx.n!==data.versions.at(-1)?.n?' (earlier version)':'')+'</span></div>'
+    +(sup?'<div class="noteBox info">'+(sup.held_outside?'Held outside TrialAgents CTIS':'Supplied file: '+E(sup.name))+(sup.sponsor_version?' · version '+E(sup.sponsor_version):'')+(sup.held_outside?'':'. The text below is read from the file, for checking.')+'</div>':'')
     +'<h2>'+inline(v.content.title||doc.name)+'</h2>'
     +v.content.sections.map(s=>'<section class="para'+(ctx.section===s.id?' activePara':'')+'" data-section="'+E(s.id)+'" tabindex="0">'+(s.heading?'<h3>'+inline(s.heading)+'</h3>':'')
       +'<div class="paraline"><div class="prose">'+s.blocks.map(block).join('')+'</div>'+(markers(s.id)||claims(s.id)?'<span class="inlinetools">'+markers(s.id)+(claims(s.id)?'<span class="claimtag" title="Facts with a source passage">'+icon('book')+claims(s.id)+'</span>':'')+'</span>':'')+'</div></section>').join('')
@@ -88,12 +100,13 @@ function bottom(){
   if(latest&&canEdit&&s.status==='action_required')btns.push(s.continued
     ?'<button type="button" class="btn" data-undo-continue title="Stop the next step from running past the open issues">'+icon('rewind')+' Undo continue</button>'
     :'<button type="button" class="btn" data-continue title="Let the next step run. The issues here stay open and still need action.">'+icon('skip')+' Ignore and continue</button>')
-  if(canEdit&&v)btns.push('<button type="button" class="btn'+(role==='owner'&&data.final.step===data.step.id?'':' primary')+'" data-revise'+assistantOnly()+(assistantOnly()?'':' title="Ask the assistant for a new version using your comments and any changed sources"')+'>'+icon('redo')+' Revise</button>')
+  if(canEdit&&v&&supplyStep()&&latest)btns.push(supplyButtons(true))
+  else if(canEdit&&v)btns.push('<button type="button" class="btn'+(role==='owner'&&data.final.step===data.step.id?'':' primary')+'" data-revise'+assistantOnly()+(assistantOnly()?'':' title="Ask the assistant for a new version using your comments and any changed sources"')+'>'+icon('redo')+' Revise</button>')
   const isLast=data.final.step===data.step.id
   if(role==='owner'&&latest&&isLast&&(s.status==='done'||(s.status==='action_required'&&s.continued))&&!(data.final.status==='approved'&&data.final.version===v.n))
     btns.push('<button type="button" class="btn primary" data-approve="'+v.n+'" title="Approve v'+v.n+' as the final document">'+icon('check')+' Approve final document</button>')
   if(isLast&&data.final.status==='approved')btns.unshift('<span class="tag good">Approved v'+data.final.version+'</span>')
-  return '<div class="readerBottom"><span>'+E(stepOutput[data.step.type]??'')+'</span><div class="actions">'+btns.join('')+'</div></div>'
+  return '<div class="readerBottom"><span>'+E(supplyStep()?'Supplied file':stepOutput[data.step.type]??'')+'</span><div class="actions">'+btns.join('')+'</div></div>'
 }
 
 function draw(){
@@ -170,9 +183,21 @@ document.addEventListener('click',async e=>{
     if(d.docResRemove)return write('document.resources.set',{project:ctx.project,input:{document:ctx.data.document.id,remove:[d.docResRemove]}}).then(async()=>{await load();sourcesDialog()})
     if(d.docResAdd!==undefined)return write('document.resources.set',{project:ctx.project,input:{document:ctx.data.document.id,add:[$('#docresadd').value]}}).then(async()=>{await load();sourcesDialog()})
     if(d.invite!==undefined)return inviteDialog()
+    if(d.supplyOutside!==undefined)return write('document.supply',{project:ctx.project,input:{document:ctx.data.document.id,held_outside:true}}).then(()=>changed('Recorded as held outside TrialAgents CTIS'))
     if(d.revise!==undefined&&host!=='browser')return askAssistant('Revise '+ctx.code+' in TrialAgents CTIS (project '+ctx.project+'), using the open comments and any changed sources.')
     if(b.id==='selection-toolbar'){const sel=getSelection(),node=sel.anchorNode?.parentElement?.closest('.para');ctx.compose={quote:sel.toString().trim().slice(0,2000),section:node?.dataset.section};sel.removeAllRanges();return redraw()}
   }catch(err){toast(err.message)}
+})
+document.addEventListener('change',async e=>{
+  if(!ctx)return
+  const t=e.target;if(!t.matches?.('[data-supply-upload]')||!t.files?.[0])return
+  const file=t.files[0],out=$('.supplyout'),limit=host==='browser'?25:8
+  if(file.size>limit*1024*1024){if(out)out.textContent=host==='browser'?'Files can be up to 25 MB':'Files over 8 MB: upload them in the TrialAgents CTIS app';else toast('File too large');return}
+  try{
+    if(out)out.textContent='Uploading…'
+    await write('document.supply',{project:ctx.project,input:{document:ctx.data.document.id,file:{name:file.name,mime:file.type,content_base64:await fileToBase64(file)}}})
+    await changed('File supplied')
+  }catch(err){if(out)out.textContent=err.message;else toast(err.message)}
 })
 document.addEventListener('mouseup',()=>{
   if(!ctx)return

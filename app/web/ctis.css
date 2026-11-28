@@ -1391,3 +1391,11 @@ main#app{min-height:0;margin-block:0;align-self:stretch;overflow-y:auto;overflow
 .ctis .vtag{font-size:.72rem;opacity:.75;font-weight:500;margin-left:2px}
 .docnote{display:block;margin-top:2px;font-size:12px;color:var(--muted,#5b6670);font-weight:400}.docnote.warn{color:#8a5a00}
 .refpkg{font-weight:600;color:var(--pipeline-accent,#14644e)}.planinfo{margin:2px 0 0;font-size:13px;color:var(--muted,#5b6670)}
+/* Final document and Redacted documents: two pinned columns on the right. */
+.ctis tr .lastcol.finalcol{right:220px}
+.ctis tr .lastcol.redcol{right:0;box-shadow:none}
+.ctis .redcol .fn{text-decoration:none;color:inherit;display:block}
+.ctis .redcol .fn .state,.ctis .redcol .fn .finalstate{display:inline-flex;margin-bottom:3px}
+.ctis .redcol .redactbtn{margin-top:4px}
+.ctis .redwait{font-size:.86rem;font-style:italic;color:#7a8781}
+@media(max-width:600px){.ctis tr .lastcol.finalcol{right:127px}}

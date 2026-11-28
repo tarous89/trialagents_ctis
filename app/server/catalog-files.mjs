@@ -18,9 +18,9 @@ export async function readCatalogDir(dir){
 }
 export const loadCatalogDir=async dir=>buildCatalog(await readCatalogDir(dir))
 
-// Country content (planning checklists per member state, content templates, country stylings and the shared
+// Country content (the Part I and member-state planning checklists, content templates, country stylings and the shared
 // EU forms) is imported from the content source. Tests that use their own sample countries load the core only.
-export const isCountryContent=path=>/^(planning\/[A-Z]{2}\.md|content\/.+|styling\/(L1_SIS-ICF_.+|(K1_recruitment-arrangements|N1_site-suitability|S1_biological-samples|P1_compensation|R1_data-protection|M1_CV|M2_DoI)\.(md|docx)))$/.test(path)
+export const isCountryContent=path=>/^(planning\/([A-Z]{2}|Part-I)\.md|content\/.+|styling\/(L1_SIS-ICF_.+|(K1_recruitment-arrangements|N1_site-suitability|S1_biological-samples|P1_compensation|R1_data-protection|M1_CV|M2_DoI)\.(md|docx)))$/.test(path)
 export const readCoreCatalogDir=async dir=>(await readCatalogDir(dir)).filter(f=>!isCountryContent(f.path))
 export const loadCoreCatalogDir=async dir=>buildCatalog(await readCoreCatalogDir(dir))
 

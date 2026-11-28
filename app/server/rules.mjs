@@ -21,6 +21,12 @@ export const stepTypes={draft:'DR',checklist:'CL',qc:'QC',style:'ST',team:'TR',g
 export const stepNames={draft:'Draft',checklist:'Checklist',qc:'Source QC',style:'Style',team:'Team review',guide:'Internal guidelines',custom:'Custom step'}
 export const defaultSteps=['draft','qc','style']
 
+// Documents CTIS publishes in a version 'for publication' (EMA/194159/2023 Annex I v2.2, Table II): the protocol, its
+// synopsis and patient-facing documents (D1, D4), the SmPC (E2), recruitment arrangements and material (K1, K2) and
+// subject information (L1, L2). A plan can say otherwise per document (redact).
+export const publishedByDefault=code=>/^(D1|D4|E2|K1|K2|L1|L2)_/i.test(code??'')
+export const redactionCategories=['name','signature','email','phone','address','date_of_birth','identifier','company','other']
+
 // Content: ordered sections of typed blocks. Block types follow the old CTIS renderer.
 const block=z.discriminatedUnion('type',[
   z.strictObject({type:z.literal('heading'),level:z.int().min(1).max(4).default(2),text:text(500)}),
@@ -73,7 +79,7 @@ export const inputs={
   'plan.save':z.strictObject({
     documents:z.array(z.strictObject({id:documentId,name,part:z.enum(['I','II']),country:z.union([country,z.literal('EU')]),language:z.string().regex(/^[a-z]{2}$/),
       variant:text(100).default(''),code:z.string().regex(/^([A-Za-z0-9][A-Za-z0-9_.-]{0,60})?$/,'use the regulatory code, for example L1_SIS-ICF').default(''),filename:text(200).min(1),catalog:z.record(z.string(),z.string()).default({}),
-      population:text(60).default(''),based_on:documentId.optional()})).max(300),
+      population:text(60).default(''),based_on:documentId.optional(),supplied:z.boolean().default(false),redact:z.boolean().optional()})).max(300),
     planning:planning.optional(),
     steps:z.array(z.strictObject({id:stepId.optional(),type:z.enum(Object.keys(stepTypes)),name:text(100).optional(),instruction:text(4000).default(''),paused:z.boolean().default(false)})).min(1).max(20),
     not_applicable:z.array(z.strictObject({document:documentId,step:stepId})).max(3000).default([])
@@ -85,7 +91,17 @@ export const inputs={
     addressed:z.array(addressed).max(200).default([]),
     fill:z.record(z.string(),z.unknown()).optional(), catalog:z.array(z.strictObject({id:text(200),version:text(50)})).max(50).default([]),
     note:text(1000).default(''), continue_past:z.boolean().default(false)
-  }).refine(v=>!!v.content!==!!v.changes,'send either content or changes'),
+  }).refine(v=>!(v.content&&v.changes),'send either content or changes, not both'),
+  // A supplied document's file: uploaded here, a stored source, or confirmed as held outside TrialAgents CTIS.
+  'document.supply':z.strictObject({document:documentId,resource:uuid.optional(),
+    file:z.strictObject({name:text(255).min(1),mime:text(200).default(''),content_base64:z.string().min(1).max(36_000_000)}).optional(),
+    held_outside:z.boolean().default(false),sponsor_version:text(50).default(''),note:text(1000).default('')})
+    .refine(v=>[!!v.resource,!!v.file,v.held_outside].filter(Boolean).length===1,'give one of resource, file or held_outside'),
+  'redaction.context':z.strictObject({document:documentId}),
+  'redaction.save':z.strictObject({document:documentId,
+    terms:z.array(z.strictObject({text:text(500).min(2),category:z.enum(redactionCategories),reason:text(300).default('')})).max(300),
+    pdf_method:z.enum(['pages_as_images']).optional(),note:text(1000).default('')}),
+  'redaction.file':z.strictObject({document:documentId,n:z.int().positive().optional()}),
   'version.restore':z.strictObject({deliverable,n:z.int().positive(),base:z.int().positive()}),
   'deliverable.read':z.strictObject({deliverable,n:z.int().positive().optional()}),
   'comment.create':z.strictObject({deliverable,text:text(4000).min(1),version:z.int().positive(),

@@ -27,7 +27,8 @@ const headers={
       part:z.enum(['I','II']),country:z.string().regex(/^([A-Z]{2}|EU)$/),reference:z.string().optional(),checked:date.optional(),naming:z.string().optional(),
       documents:z.array(z.strictObject({
         code,name:z.string().min(1),variants:z.array(z.string()).default([]),required:z.enum(['always','conditional','optional']),condition:z.string().optional(),
-        submission_types:all,languages:all,per:z.enum(['trial','site','population']).default('trial'),national_notes:z.string().optional()
+        submission_types:all,languages:all,per:z.enum(['trial','site','population']).default('trial'),national_notes:z.string().optional(),
+        provided_by:z.enum(['sponsor','assistant','either']).optional()
       })).min(1)}).refine(h=>(h.part==='I')===(h.country==='EU'),'Part I uses country EU; Part II uses a member state code')
   ]),
   content:z.strictObject({...common,category:z.literal('content').optional(),code,variant:z.string().default(''),part:z.enum(['I','II']),countries:all,languages:all,styling:id.optional()}),
@@ -147,7 +148,7 @@ export async function buildCatalog(files){
   for(const r of items.filter(i=>i.category==='planning'&&i.header.kind==='checklist'))
     for(const d of r.header.documents)
       if(!items.some(i=>i.category==='content'&&i.header.code===d.code))warnings.push(r.path+': no content template yet for '+d.code)
-  const wfTargets=['planning','draft','checklist','qc','style','team','guide','custom','revision','findings','design']
+  const wfTargets=['planning','draft','checklist','qc','style','team','guide','custom','revision','findings','design','redaction']
   for(const w of items.filter(i=>i.category==='workflow'))for(const a of w.header.applies_to)if(!wfTargets.includes(a))errors.push(w.path+': applies_to '+a+' is not one of '+wfTargets.join(', '))
   if(!items.some(i=>i.id==='default'&&i.category==='styling'&&i.header.file))errors.push('styling/default.md: the default styling (with its .docx) is required')
   return {items,errors,warnings,digest:sha(json(items.map(({file,path,...i})=>({...i,file:file&&{sha256:file.sha256}})).sort((a,b)=>a.id<b.id?-1:1)))}

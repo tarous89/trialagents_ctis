@@ -27,7 +27,7 @@ await writeFile(path.join(lib,'SOURCE.md'),'Vendored from https://github.com/tar
 // Dependencies the CTIS server needs at run time, at the versions it is tested with.
 const ours=JSON.parse(await readFile(path.join(root,'package.json'),'utf8')).dependencies
 const pkgPath=path.join(host,'package.json'),pkg=JSON.parse(await readFile(pkgPath,'utf8'))
-for(const name of ['zod','yaml','jszip','@xmldom/xmldom','mammoth','pdfjs-dist','@modelcontextprotocol/server'])if(!pkg.dependencies[name])pkg.dependencies[name]=ours[name]
+for(const name of ['zod','yaml','jszip','@xmldom/xmldom','mammoth','pdfjs-dist','pdf-lib','@napi-rs/canvas','@modelcontextprotocol/server'])if(!pkg.dependencies[name])pkg.dependencies[name]=ours[name]
 pkg.dependencies=Object.fromEntries(Object.entries(pkg.dependencies).sort(([a],[b])=>a<b?-1:1))
 await writeFile(pkgPath,JSON.stringify(pkg,null,2)+'\n')
 // Render stages Pipeline onto the same checkout at every deploy (trialagents_pipeline scripts/stage-app.mjs), and its

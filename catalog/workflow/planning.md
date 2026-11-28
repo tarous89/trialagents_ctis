@@ -1,7 +1,7 @@
 ---
 id: planning
 name: Planning a submission
-version: 1.1
+version: 1.2
 effective: 2026-11-28
 use_when: Before saving or changing a project's document plan.
 applies_to: [planning]
@@ -14,7 +14,7 @@ Follow the competent authorities' and ethics bodies' own guidance exactly, as gi
 
 Read the protocol (and any synopsis, IB, previous submission or sponsor documents the user gives you). Confirm with the user only what you cannot find: submission type, member states and languages, sponsor, study code. Then agree these planning choices with the user, proposing an answer for each:
 
-- **Part I:** include it in the plan, completed outside TrialAgents (record its documents as sources), or left for later. Part I never blocks Part II.
+- **Part I:** include it in the plan, completed outside TrialAgents (record its documents as sources), or left for later. Part I never blocks Part II. In the plan, Part I is mostly a readiness check of the sponsor's documents (see section 5).
 - **Starting material:** what already exists (protocol only, or sponsor documents such as an existing participant information). Record existing documents as sources; they are the starting point of a Draft.
 - **Format** (only when the sponsor brings its own documents): keep the sponsor's structure across countries as far as each country allows (`sponsor_format`), or use their content with the TrialAgents country format (`country_format`).
 - **Reference package:** which country and language to complete first (see section 3).
@@ -52,5 +52,8 @@ Nothing waits for approval. When the next document is adapted from a reference d
 2. One document per row, per variant and per `per` value: `trial` once, `population` once per population (with its `population` id), `site` once as a site template unless the user wants one per site. Participant-facing documents need each language the country requires.
 3. Name every document by the naming instructions (and the country's naming rule): its regulatory `code`, `variant` (the template variant, for example `adults`, `minors-12-17`), name and filename; add the population to the name and filename when a country has more than one population for the same template. Plan rows are numbered D01, D02, … in plan order: Part I, then the reference package, then the other countries.
 4. The `code` and `variant` select the content template and styling, so use the codes from the planning checklist.
-5. Steps: Draft, Source QC, Style, unless the user asks otherwise. The Draft step already checks the content template's checklist. Add Checklist, Team review or Internal guidelines only when the user wants a separate step for them. Mark a step not applicable where it makes no sense, for example Draft for a document someone else supplies (an insurance certificate, a CV).
-6. Save with `save_ctis` (`save_plan`): the documents (with `population` and `based_on` where they apply) and `planning` (`populations`, `part1_scope`, `reference_package`, `format_choice`). The plan opens in the workspace. Summarise it in a few lines: populations, documents per part and country, the order, assumptions, and anything the catalog did not cover. Do not start drafting until the user says to start.
+5. Steps: Draft, Source QC, Style, unless the user asks otherwise. The Draft step already checks the content template's checklist. Add Checklist, Team review or Internal guidelines only when the user wants a separate step for them; a plan with supplied documents needs the Checklist step. Mark a step not applicable where it makes no sense.
+6. **Supplied documents** (`supplied: true`): documents the sponsor or someone else provides, which TrialAgents does not draft: most of Part I (protocol, synopsis, IB, IMPD, GMP documents, labels, scientific advice) and, in Part II, documents such as the insurance certificate or CVs. Their Draft column shows "Supplied" once the file is recorded; their steps are Draft and Checklist, with Source QC and Style not applicable. Use the planning checklist's `provided_by`: `sponsor` rows are supplied; `either` rows (for example a national-language synopsis or label) are supplied when the sponsor has them, otherwise the assistant prepares them from the approved English document (`based_on`) with all steps.
+7. **Part I from the protocol.** List the Part I rows that apply to this study from the protocol or synopsis: an IB or an SmPC per product, an IMPD per product (simplified where allowed), GMP documents by where the product is made, an AxMPD for auxiliary products, scientific advice and PIP documents if any, the labels, a DSMB charter if there is a committee, and a D4 document for each questionnaire, diary or scale used for a primary or secondary endpoint. Add the national-language versions the member states in the plan require (the Part I checklist lists them per member state). Say which rows you assumed.
+8. **Redacted documents:** the documents CTIS publishes (protocol, synopsis, endpoint patient-facing documents, SmPC, recruitment and subject information documents) get a "Redacted documents" entry automatically, made after their final version is approved. Set `redact: false` for one that will not be published, or `redact: true` for another document the user wants redacted.
+9. Save with `save_ctis` (`save_plan`): the documents (with `population`, `based_on`, `supplied` and `redact` where they apply) and `planning` (`populations`, `part1_scope`, `reference_package`, `format_choice`). The plan opens in the workspace. Summarise it in a few lines: populations, documents per part and country, the order, assumptions, and anything the catalog did not cover. Do not start drafting until the user says to start.

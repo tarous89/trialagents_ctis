@@ -1,6 +1,8 @@
 // Statuses are derived from the stored plan, versions, threads, continues and approvals. Nothing here is stored.
 // See docs/TECHNICAL.md §2 and docs/MCP.md §5.
 
+import {publishedByDefault} from './rules.mjs'
+
 export const NOT_APPLICABLE='not_applicable',WAITING='waiting',ACTION_REQUIRED='action_required',DONE='done'
 export const APPROVED='approved',AWAITING_APPROVAL='awaiting_approval'
 export const cell=(document,step)=>document+'|'+step
@@ -91,6 +93,28 @@ export function canApprove(board,documentId,stepId,n){
   return 'This document is not ready for approval'
 }
 
+// The redacted version for publication (docs/TECHNICAL.md §12). It is made from the approved final version only, so it
+// follows approval and needs none of its own: not_published (the document is not published), after_approval,
+// ready (approved, no redacted version yet), done (made from the approved version) or outdated (made from an earlier one).
+export const needsRedaction=d=>d.redact??publishedByDefault(d.code)
+export function redactionStatus(board,documentId){
+  const d=board.documents.find(x=>x.id===documentId)
+  if(!d||!needsRedaction(d))return {status:'not_published'}
+  const f=finalStatus(board,documentId)
+  if(f.status!==APPROVED)return {status:'after_approval'}
+  const r=board.redactions?.get(documentId)
+  if(!r)return {status:'ready',version:f.version}
+  const base={n:r.n,version:r.version_n,file:r.file_name??null,mime:r.file_mime??null}
+  return r.step_id===f.step&&r.version_n===f.version?{status:'done',...base}:{status:'outdated',...base,final:f.version}
+}
+
+// A supplied document waits for its file on its first step; nothing else waits for it.
+export function awaitingFile(board,d){
+  if(!d.supplied)return false
+  const first=applicableSteps(board,d.id)[0]
+  return !!first&&!board.current.get(cell(d.id,first.id))
+}
+
 // Part I first, then the reference package (country and language), then each country in project order, then by position.
 export const inReferencePackage=(board,d)=>{const rp=board.planning?.reference_package;return !!rp&&d.part==='II'&&d.country===rp.country&&d.language===rp.language}
 export function orderedDocuments(board){
@@ -100,20 +124,23 @@ export function orderedDocuments(board){
 
 // The next deliverable the assistant should work on, or a stop summary.
 export function nextStep(board){
-  const summary={approved:[],awaitingApproval:[],blocked:[],waiting:[]}
+  const summary={approved:[],awaitingApproval:[],blocked:[],waiting:[],awaitingFile:[],toRedact:[]}
+  const awaiting=[]
   for(const d of orderedDocuments(board)){
+    if(awaitingFile(board,d)){awaiting.push(d.id);summary.awaitingFile.push(d.id);continue}
     const statuses=documentStatuses(board,d.id)
     const blocking=statuses.find(s=>s.status===ACTION_REQUIRED&&!s.continued)
     if(blocking){summary.blocked.push({document:d.id,step:blocking.step,deliverable:d.id+'-'+blocking.step});continue}
     const todo=statuses.find(s=>s.status===WAITING)
     if(todo){
-      const next={deliverable:d.id+'-'+todo.step,document:d.id,step:todo.step}
+      const next={deliverable:d.id+'-'+todo.step,document:d.id,step:todo.step,...(awaiting.length?{awaiting_file:awaiting}:{})}
       // Drafting from a reference document that is not approved yet: no automatic continue; the assistant asks the user.
       const ref=applicableSteps(board,d.id)[0]?.id===todo.step&&referenceOf(board,d.id)
       if(ref&&!ref.approved)next.unapproved_reference={document:ref.document,name:ref.name,latest:ref.latest}
       return next
     }
     const final=finalStatus(board,d.id,statuses)
+    if(final.status===APPROVED&&['ready','outdated'].includes(redactionStatus(board,d.id).status))summary.toRedact.push(d.id)
     if(final.status===APPROVED)summary.approved.push(d.id)
     else if(final.status===AWAITING_APPROVAL)summary.awaitingApproval.push(d.id)
     else summary.waiting.push(d.id)

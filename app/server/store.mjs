@@ -1,15 +1,18 @@
 import {createHash,randomUUID} from 'node:crypto'
 import {z} from 'zod'
 import {check,parse,inputs,splitDeliverable,stepTypes,stepNames,uuid} from './rules.mjs'
+import {redactDocx,redactPdf,redactContent} from './redact.mjs'
 import {projectAccess,requireOwner,requireEdit,requireComment,teamActive} from './access.mjs'
 import {loadBoard,visibleBoard,effectiveResources} from './board.mjs'
-import {cell,documentStatuses,finalStatus,nextStep,canApprove,orderedDocuments,issueCount,referenceOf,inReferencePackage,ACTION_REQUIRED,APPROVED} from './status.mjs'
+import {cell,documentStatuses,finalStatus,nextStep,canApprove,orderedDocuments,issueCount,referenceOf,inReferencePackage,applicableSteps,redactionStatus,awaitingFile,needsRedaction,ACTION_REQUIRED,APPROVED} from './status.mjs'
 import {applyChanges} from './content.mjs'
-import {attachUpload,searchPassages,snippet,storeFile,readFile as readStoredFile} from './sources.mjs'
+import {attachUpload,searchPassages,snippet,storeFile,readFile as readStoredFile,extractChunks,kindOf,MAX_FILE_BYTES} from './sources.mjs'
 import {currentCatalog,catalogFile} from './catalog.mjs'
 import {fillTemplate} from './word.mjs'
 import {stepContext} from './step-context.mjs'
 const DOCX='application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+const extOf=mime=>mime==='application/pdf'?'.pdf':mime===DOCX?'.docx':'.txt'
+const mimeOfKind={pdf:'application/pdf',docx:DOCX,text:'text/plain'}
 import {enqueue,link as mailLink,mailTypes,wants} from './mail.mjs'
 
 // Notifications go to the project owner (and mentioned people); the outbox checks access and switches again at send time.
@@ -61,7 +64,11 @@ function planView(c,board){
   const documents=orderedDocuments(b).map(d=>{
     const statuses=documentStatuses(board,d.id).filter(s=>a.canSeeStep(d.id,s.step))
     const ref=referenceOf(board,d.id)
-    return {...d,cells:statuses.map(s=>({...s,deliverable:d.id+'-'+s.step,issues:board.issues.get(cell(d.id,s.step))||0})),final:finalStatus(board,d.id),
+    const fin=finalStatus(board,d.id),mime=fin.version&&board.files.get(cell(d.id,fin.step)+'|'+fin.version)
+    return {...d,published:needsRedaction(d),
+      cells:statuses.map(s=>{const sup=s.step===applicableSteps(board,d.id)[0]?.id&&board.current.get(cell(d.id,s.step))?.supplied
+        return {...s,deliverable:d.id+'-'+s.step,issues:board.issues.get(cell(d.id,s.step))||0,...(sup?{supplied:{held_outside:!!sup.held_outside,name:sup.name??''}}:{})}}),
+      final:{...fin,...(mime?{ext:extOf(mime)}:{})},redaction:redactionStatus(board,d.id),...(awaitingFile(board,d)?{awaiting_file:true}:{}),
       ...(inReferencePackage(board,d)?{reference_package:true}:{}),...(ref?{reference:{document:ref.document,approved:!!ref.approved}}:{})}
   })
   const canRun=a.owner||a.projectRole==='editor'
@@ -89,6 +96,45 @@ async function threadOf(c,doc,step,number){
 
 // ---------- operations ----------
 // write: needs a requestId and is replayed from its receipt; people: never from an assistant; project: needs request.project
+// Plain text of a content version (for documents without a file).
+const contentText=content=>[content.title,...content.sections.map(x=>[x.heading,...x.blocks.map(b=>b.text??(b.items??[]).map(i=>typeof i==='string'?i:[i.label,i.detail].filter(Boolean).join(': ')).join('\n')??(b.rows??[]).map(r=>r.join(' | ')).join('\n'))].filter(Boolean).join('\n\n'))].filter(Boolean).join('\n\n')
+
+// A supplied file's text as content: one section per page (PDF) or heading (Word), at most 300 sections.
+function suppliedContent(title,chunks){
+  const groups=[]
+  for(const ch of chunks){
+    const label=ch.locator?.page?'Page '+ch.locator.page:ch.locator?.section??''
+    const g=groups.at(-1)
+    if(g&&g.label===label)g.texts.push(ch.text);else groups.push({label,texts:[ch.text]})
+  }
+  const per=Math.ceil(groups.length/300)||1,sections=[]
+  for(let k=0;k<groups.length;k+=per){
+    const part=groups.slice(k,k+per),label=part.length>1&&part[0].label.startsWith('Page ')?part[0].label.replace('Page','Pages')+'–'+part.at(-1).label.slice(5):part[0].label
+    sections.push({id:'S'+String(sections.length+1).padStart(2,'0'),heading:label,
+      blocks:part.flatMap(g=>g.texts).flatMap(t=>t.split(/\n{2,}/)).map(t=>t.trim()).filter(Boolean).slice(0,400).map(text=>({type:'paragraph',text:text.slice(0,20000)}))})
+  }
+  return {title,sections}
+}
+
+// The approved final version of a document that needs a redacted version, with its file.
+async function finalForRedaction(c,board,documentId){
+  const d=board.documents.find(x=>x.id===documentId)
+  check(d&&c.access.canSeeDocument(documentId),'Document '+documentId+' not found',404)
+  check(needsRedaction(d),documentId+' is not published in CTIS, so it needs no redacted version. If the user wants one anyway, set redact: true for it in the plan.',409)
+  const f=finalStatus(board,documentId)
+  check(f.status===APPROVED,'Approve the final document of '+documentId+' first: the redacted version is made from the approved final version.',409)
+  const v=await one(c.q,'SELECT n,content,file_id,supplied FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[c.access.project.id,documentId,f.step,f.version])
+  const file=v.file_id?await readStoredFile(c.q,v.file_id):null
+  const kind=file?kindOf(file.name,file.mime):'content'
+  return {d,f,v,file,kind}
+}
+async function redactedFile(c,d,n){
+  const r=await one(c.q,'SELECT n,version_n,file_id,content,method FROM ctis.redaction WHERE project_id=$1 AND document_id=$2 AND n=$3',[c.access.project.id,d.id,n])
+  check(r,'Redacted version not found',404)
+  if(r.file_id){const f=await readStoredFile(c.q,r.file_id);return {name:f.name,mime:f.mime,buffer:f.buffer}}
+  return {name:d.filename+'_redacted_v'+r.version_n+'.txt',mime:'text/plain',buffer:Buffer.from(contentText(r.content))}
+}
+
 const ops={
   'project.list':{input:empty,async run(c){
     const own=await c.q('SELECT * FROM ctis.project WHERE owner_id=$1 AND archived_at IS NULL ORDER BY updated_at DESC',[c.user.id])
@@ -140,7 +186,7 @@ const ops={
     const p=await one(q,`INSERT INTO ctis.project(id,owner_id,code,name,sponsor,phase,submission_type,eu_ct_number,countries,duplicated_from,plan_rev)
       SELECT $2,owner_id,coalesce($3,code),coalesce($4,name||' (copy)'),sponsor,phase,submission_type,'',countries,id,1 FROM ctis.project WHERE id=$1 RETURNING *`,[src.id,id,c.input.code??null,c.input.name??null])
     await q('INSERT INTO ctis.project_resource SELECT $2,resource_id FROM ctis.project_resource WHERE project_id=$1',[src.id,id])
-    await q('INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,code,filename,position,catalog) SELECT $2,id,name,part,country,language,variant,code,filename,position,catalog FROM ctis.document WHERE project_id=$1 AND removed_at IS NULL',[src.id,id])
+    await q('INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,code,filename,position,catalog,population,based_on,supplied,redact) SELECT $2,id,name,part,country,language,variant,code,filename,position,catalog,population,based_on,supplied,redact FROM ctis.document WHERE project_id=$1 AND removed_at IS NULL',[src.id,id])
     await q('INSERT INTO ctis.step(project_id,id,type,name,instruction,position,paused) SELECT $2,id,type,name,instruction,position,paused FROM ctis.step WHERE project_id=$1 AND removed_at IS NULL',[src.id,id])
     await q('INSERT INTO ctis.cell_na SELECT $2,n.document_id,n.step_id FROM ctis.cell_na n JOIN ctis.document d ON d.project_id=$2 AND d.id=n.document_id JOIN ctis.step s ON s.project_id=$2 AND s.id=n.step_id WHERE n.project_id=$1',[src.id,id])
     await q('INSERT INTO ctis.document_resource_override SELECT $2,o.document_id,o.resource_id,o.op FROM ctis.document_resource_override o JOIN ctis.document d ON d.project_id=$2 AND d.id=o.document_id WHERE o.project_id=$1',[src.id,id])
@@ -194,10 +240,11 @@ const ops={
         [pid,s.id,s.type,s.name||stepNames[s.type],s.instruction,i,s.paused])
     await q('UPDATE ctis.step SET removed_at=now() WHERE project_id=$1 AND removed_at IS NULL AND NOT (id=ANY($2))',[pid,[...taken]])
     for(const [i,d] of documents.entries())
-      await q(`INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,code,filename,position,catalog,population,based_on) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13)
+      await q(`INSERT INTO ctis.document(project_id,id,name,part,country,language,variant,code,filename,position,catalog,population,based_on,supplied,redact) VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15)
         ON CONFLICT(project_id,id) DO UPDATE SET name=EXCLUDED.name,part=EXCLUDED.part,country=EXCLUDED.country,language=EXCLUDED.language,variant=EXCLUDED.variant,
-          code=EXCLUDED.code,filename=EXCLUDED.filename,position=EXCLUDED.position,catalog=EXCLUDED.catalog,population=EXCLUDED.population,based_on=EXCLUDED.based_on,removed_at=NULL`,
-        [pid,d.id,d.name,d.part,d.country,d.language,d.variant,d.code,d.filename,i,json(d.catalog),d.population,d.based_on??null])
+          code=EXCLUDED.code,filename=EXCLUDED.filename,position=EXCLUDED.position,catalog=EXCLUDED.catalog,population=EXCLUDED.population,based_on=EXCLUDED.based_on,
+          supplied=EXCLUDED.supplied,redact=EXCLUDED.redact,removed_at=NULL`,
+        [pid,d.id,d.name,d.part,d.country,d.language,d.variant,d.code,d.filename,i,json(d.catalog),d.population,d.based_on??null,d.supplied,d.redact??null])
     await q('UPDATE ctis.document SET removed_at=now() WHERE project_id=$1 AND removed_at IS NULL AND NOT (id=ANY($2))',[pid,[...docIds]])
     await q('DELETE FROM ctis.cell_na WHERE project_id=$1',[pid])
     for(const x of na)await q('INSERT INTO ctis.cell_na VALUES($1,$2,$3) ON CONFLICT DO NOTHING',[pid,x.document,x.step])
@@ -241,13 +288,14 @@ const ops={
     const board=await loadBoard(c.q,c.access.project),{doc,step,d,s,key}=deliverableOf(c,board,c.input.deliverable),pid=c.access.project.id
     const versions=await c.q('SELECT n,created_at,actor_name,source,restored_from,note FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 ORDER BY n',[pid,doc,step])
     const n=c.input.n??versions.at(-1)?.n
-    const version=n?await one(c.q,'SELECT n,content,claims,fill,file_id,basis,resources,catalog,note,past_issues,restored_from,actor_name,source,created_at FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[pid,doc,step,n]):null
+    const version=n?await one(c.q,'SELECT n,content,claims,fill,file_id,basis,resources,catalog,note,past_issues,restored_from,supplied,actor_name,source,created_at FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[pid,doc,step,n]):null
     check(!c.input.n||version,'Version '+c.input.n+' not found',404)
     const threads=await c.q(`SELECT t.number,t.kind,t.category,t.version_n,t.anchor,t.text,t.status,t.mentions,t.actor_name,t.source,t.created_at,t.resolved_by,
         coalesce((SELECT json_agg(json_build_object('text',r.text,'by',r.actor_name,'source',r.source,'at',r.created_at) ORDER BY r.id) FROM ctis.thread_reply r WHERE r.thread_id=t.id),'[]') AS replies
       FROM ctis.thread t WHERE t.project_id=$1 AND t.document_id=$2 AND t.step_id=$3 ORDER BY t.number`,[pid,doc,step])
     const status=documentStatuses(board,doc).find(x=>x.step===step)
     return {deliverable:c.input.deliverable,document:d,step:s,status,final:finalStatus(board,doc),versions,version,threads,
+      first_step:applicableSteps(board,doc)[0]?.id===step,redaction:redactionStatus(board,doc),
       role:c.access.role(doc,step),resources:c.access.canSeeResources?await effectiveResources(c.q,pid,doc):null}
   }},
 
@@ -260,6 +308,9 @@ const ops={
     const cur=board.current.get(key),curN=cur?.n||0
     check(i.base===curN,'A newer version of '+i.deliverable+' exists. Read it and retry.',409,{current:curN})
     const applicable=statuses.filter(x=>x.status!=='not_applicable'),idx=applicable.findIndex(x=>x.step===step),prev=applicable[idx-1]
+    const docRow=board.documents.find(x=>x.id===doc),stepRow=board.steps.find(x=>x.id===step)
+    // A supplied document is never drafted: its first step records the sponsor's file (document.supply).
+    check(!(docRow.supplied&&idx===0),doc+' is supplied by the sponsor. Record its file with save_ctis action supply_document (a file the user gave you, a stored source, or held_outside), or ask the user to upload it in the workspace.',409)
     if(prev){
       check(prev.version,'Run '+doc+'-'+prev.step+' first: this step works on its output.',409,{blocked_by:doc+'-'+prev.step})
     }
@@ -280,6 +331,11 @@ const ops={
     // The first content step of an adapted document records which version of its reference it was drafted from.
     const ref=!prev&&referenceOf(board,doc),refUsed=ref&&(ref.approved?{document:ref.document,...ref.approved,approved:true}:ref.latest?{document:ref.document,...ref.latest,approved:false}:null)
     let content=i.content,claims=i.claims??[],touched=null
+    // Neither content nor changes: the step keeps its input as it is (for example a Checklist on a supplied document).
+    if(!i.content&&!i.changes){
+      check(prev,'Send the content: '+i.deliverable+' is the first step of '+doc+'.')
+      content=(await one(q,'SELECT content FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[pid,doc,prev.step,prev.version])).content
+    }
     if(i.changes){
       check(curN>0,'There is no version to revise yet. Send the full content.',409)
       const old=await one(q,'SELECT content,claims FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[pid,doc,step,curN])
@@ -290,7 +346,6 @@ const ops={
     for(const x of [...claims,...i.findings])check(!x.section||ids.has(x.section),'Unknown section '+x.section)
     const n=curN+1
     // Catalog items used, and for a Style step the filled Word file.
-    const docRow=board.documents.find(x=>x.id===doc),stepRow=board.steps.find(x=>x.id===step)
     const cat=await currentCatalog(q),guide=cat.contentTemplate(docRow)
     const used=[...i.catalog,...(guide?[{id:guide.id,version:guide.version}]:[])]
     let fileId=null
@@ -313,9 +368,15 @@ const ops={
       }
     }
     const findings=[...i.findings,...wordFindings.filter(w=>!i.findings.some(f=>f.key===w.key))]
-    await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,file_id,basis,resources,catalog,note,past_issues,actor,actor_name,source,reference)
-      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17)`,
-      [pid,doc,step,n,json(content),json(claims),i.fill?json(i.fill):null,fileId,json(basis),json(await effectiveResources(q,pid,doc)),json(used),i.note,json(flagged),c.user.id,person(c.user),c.source,refUsed?json(refUsed):null])
+    // The sponsor's file passes through the later steps of a supplied document unchanged.
+    let supplied=null
+    if(docRow.supplied&&prev&&!fileId){
+      const b=await one(q,'SELECT file_id,supplied FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[pid,doc,prev.step,prev.version])
+      fileId=b.file_id;supplied=b.supplied
+    }
+    await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,file_id,basis,resources,catalog,note,past_issues,actor,actor_name,source,reference,supplied)
+      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18)`,
+      [pid,doc,step,n,json(content),json(claims),i.fill?json(i.fill):null,fileId,json(basis),json(await effectiveResources(q,pid,doc)),json(used),i.note,json(flagged),c.user.id,person(c.user),c.source,refUsed?json(refUsed):null,supplied?json(supplied):null])
     // Findings: re-reported keys keep their thread and number; in a revision, findings on untouched sections carry over; others are superseded.
     const open=await q("SELECT id,number,key,anchor FROM ctis.thread WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND kind='finding' AND status='open'",[pid,doc,step])
     const keep=new Set(),saved=[]
@@ -358,8 +419,106 @@ const ops={
     if(fin.status==='awaiting_approval'&&fin.step===step){const p=c.access.project,to=await ownerEmail(q,p)
       await enqueue(q,{owner:p.owner_id,project:pid,recipient:to,category:'approval',dedupe:'approval:'+pid+':'+i.deliverable+':'+n,
         subject:docRow.name+' is ready for your approval',message:i.deliverable+' v'+n+' in '+p.code+' is ready. Approve the final document in TrialAgents CTIS.',link:mailLink(pid,i.deliverable)})}
-    return {deliverable:i.deliverable,n,status:documentStatuses(after,doc).find(x=>x.step===step),findings:saved,past_issues:flagged,file:fileId?docRow.filename+'_v'+n+'.docx':null,
+    return {deliverable:i.deliverable,n,status:documentStatuses(after,doc).find(x=>x.step===step),findings:saved,past_issues:flagged,file:fileId?(stepRow.type==='style'?docRow.filename+'_v'+n+'.docx':supplied?.name??null):null,
       next:c.access.owner||c.access.projectRole==='editor'?nextStep(after):null}
+  }},
+
+  // A supplied document's file, recorded on its first step: uploaded (by a person or by the assistant from a file the
+  // user gave it), a stored source, or confirmed as held outside TrialAgents CTIS. It is not drafted.
+  'document.supply':{project:true,write:true,async run(c){
+    const i=c.input,q=c.q,pid=c.access.project.id,board=await loadBoard(q,c.access.project)
+    const d=board.documents.find(x=>x.id===i.document)
+    check(d&&c.access.canSeeDocument(i.document),'Document '+i.document+' not found',404)
+    check(d.supplied,i.document+' is not marked as supplied in the plan. Save the plan with supplied: true for it first.',409)
+    const first=applicableSteps(board,d.id)[0];check(first,i.document+' has no step that applies',409)
+    requireEdit(c.access,d.id,first.id)
+    const owner=c.access.project.owner_id
+    let fileId=null,chunks=[],name='',kind=null,resource=null
+    if(i.file){
+      const buffer=Buffer.from(i.file.content_base64,'base64');kind=kindOf(i.file.name,i.file.mime);name=i.file.name
+      check(kind,'Upload a PDF, Word (.docx) or text file')
+      check(buffer.length<=MAX_FILE_BYTES,'Files can be up to 25 MB',413)
+      try{chunks=await extractChunks(buffer,kind)}catch{check(false,'The file could not be read. Check that it is not password protected or damaged.')}
+      fileId=await storeFile(q,{ownerId:owner,name,mime:mimeOfKind[kind],buffer})
+    }else if(i.resource){
+      const ok=await one(q,`SELECT 1 FROM ctis.project_resource WHERE project_id=$1 AND resource_id=$2 UNION SELECT 1 FROM ctis.document_resource_override WHERE project_id=$1 AND resource_id=$2 AND op='add'`,[pid,i.resource])
+      check(ok,'That source is not used in this project',404)
+      const r=await one(q,'SELECT r.name,r.file_id,f.name AS file_name,f.mime FROM ctis.resource r LEFT JOIN ctis.file f ON f.id=r.file_id WHERE r.id=$1',[i.resource])
+      check(r.file_id,'That source has no stored file. Ask the user to upload it in the workspace.',409)
+      fileId=r.file_id;name=r.file_name;kind=kindOf(r.file_name,r.mime);resource=i.resource
+      chunks=await q('SELECT locator,text FROM ctis.resource_text WHERE resource_id=$1 ORDER BY chunk',[i.resource])
+    }
+    const when=new Date().toISOString().slice(0,10)
+    const content=i.held_outside
+      ?{title:d.name,sections:[{id:'S01',heading:'Held outside TrialAgents CTIS',blocks:[{type:'note',tone:'info',
+        text:'The final file is held by the sponsor outside TrialAgents CTIS'+(i.sponsor_version?' (version '+i.sponsor_version+')':'')+'. Confirmed as ready by '+person(c.user)+' ('+c.source+') on '+when+'.'}]}]}
+      :suppliedContent(d.name,chunks)
+    if(!content.sections.length)content.sections.push({id:'S01',heading:'',blocks:[{type:'note',tone:'warning',text:'No text was found in '+name+' (it may be a scan). The file is stored, but its text cannot be checked or redacted.'}]})
+    const supplied={name:i.held_outside?'':name,kind:kind??null,held_outside:i.held_outside,sponsor_version:i.sponsor_version,...(resource?{resource}:{})}
+    const key=cell(d.id,first.id),n=(board.current.get(key)?.n||0)+1
+    await q(`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,file_id,basis,resources,catalog,note,actor,actor_name,source,supplied)
+      VALUES($1,$2,$3,$4,$5,'[]',$6,NULL,$7,'[]',$8,$9,$10,$11,$12)`,
+      [pid,d.id,first.id,n,json(content),fileId,json(await effectiveResources(q,pid,d.id)),i.note||(i.held_outside?'Held outside TrialAgents CTIS':'Supplied: '+name),c.user.id,person(c.user),c.source,json(supplied)])
+    // A new file supersedes the findings on the previous one.
+    await q("UPDATE ctis.thread SET status='resolved',resolved_by='system',resolved_at=now() WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND kind='finding' AND status='open'",[pid,d.id,first.id])
+    await touch(c)
+    await audit(c,'document.supplied',d.id+'-'+first.id,{n,file:name||null,held_outside:i.held_outside,resource})
+    const after=await loadBoard(q,c.access.project)
+    return {deliverable:d.id+'-'+first.id,n,supplied,passages:chunks.length,
+      note:kind==='pdf'&&!chunks.length&&!i.held_outside?'No text was found: the PDF may be a scan. It is stored, but cannot be checked or redacted; ask for the Word version.':null,
+      next:c.access.owner||c.access.projectRole==='editor'?nextStep(after):null}
+  }},
+
+  // What the assistant needs to prepare a redacted version: the approved final text, the file kind and the redaction guide.
+  'redaction.context':{project:true,async run(c){
+    const board=await loadBoard(c.q,c.access.project),{d,f,v,file,kind}=await finalForRedaction(c,board,c.input.document)
+    const prev=await one(c.q,'SELECT n,version_n,terms,note FROM ctis.redaction WHERE project_id=$1 AND document_id=$2 ORDER BY n DESC LIMIT 1',[c.access.project.id,d.id])
+    const cat=await currentCatalog(c.q),guide=cat.workflow('redaction').map(w=>({id:w.id,name:w.name,version:w.version,text:w.body}))
+    return {project:c.access.project.id,
+      document:{id:d.id,name:d.name,code:d.code,variant:d.variant,part:d.part,country:d.country,language:d.language,filename:d.filename,supplied:d.supplied},
+      final:{deliverable:d.id+'-'+f.step,version:f.version,file:file?{name:file.name,kind}:null},
+      content:v.content,status:redactionStatus(board,d.id),
+      previous:prev?{n:prev.n,from_version:prev.version_n,terms:prev.terms,note:prev.note}:null,
+      instructions:guide,
+      output:kind==='pdf'
+        ?'The final document is a PDF. Before redacting, ask the user to choose: upload the Word version as a new supplied version (best), or redact this PDF with the pages that contain redactions turned into images (their text can no longer be copied or searched). Then save_ctis action save_redaction with document '+d.id+', terms and pdf_method: pages_as_images.'
+        :'save_ctis action save_redaction with document '+d.id+' and terms: each exact text to redact as it appears in the document, with its category. The server redacts the approved file and checks the result.'}
+  }},
+  'redaction.save':{project:true,write:true,async run(c){
+    check(c.access.owner||c.access.projectRole==='editor','Only the owner or a project editor can redact documents',403)
+    const i=c.input,q=c.q,pid=c.access.project.id,board=await loadBoard(q,c.access.project)
+    const {d,f,v,file,kind}=await finalForRedaction(c,board,i.document)
+    check(kind!=='pdf'||i.pdf_method,'The final document of '+d.id+' is a PDF. Ask the user to choose: upload the Word version (as a new supplied version) or redact the PDF with the affected pages turned into images; then call again with pdf_method: pages_as_images.',409)
+    const base=d.filename+'_redacted_v'+f.version
+    let r,method,fileId=null,content=null
+    try{
+      if(kind==='docx'){r=await redactDocx(file.buffer,i.terms);method='docx'}
+      else if(kind==='pdf'){r=await redactPdf(file.buffer,i.terms,{title:base});method='pdf_pages_as_images'}
+      else if(kind==='text'){
+        const t=redactContent({title:'',sections:[{id:'S01',heading:'',blocks:[{type:'paragraph',text:file.buffer.toString('utf8')}]}]},i.terms)
+        r={buffer:Buffer.from(t.content.sections[0].blocks[0].text),terms:t.terms,warnings:[],pages:[]};method='text'
+      }else{r=redactContent(v.content,i.terms);method='text';content=r.content;r.warnings=[];r.pages=[]}
+    }catch(e){check(false,e.message,e.status??422)}
+    if(r.buffer)fileId=await storeFile(q,{ownerId:c.access.project.owner_id,name:base+(kind==='content'?'.txt':extOf(mimeOfKind[kind])),mime:mimeOfKind[kind]??'text/plain',buffer:r.buffer})
+    const n=(await one(q,'SELECT coalesce(max(n),0)+1 AS n FROM ctis.redaction WHERE project_id=$1 AND document_id=$2',[pid,d.id])).n
+    const terms=r.terms.map(t=>({text:t.text,category:t.category,reason:t.reason??'',count:t.count}))
+    await q(`INSERT INTO ctis.redaction(project_id,document_id,n,step_id,version_n,file_id,content,method,terms,pages,warnings,note,actor,actor_name,source)
+      VALUES($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15)`,
+      [pid,d.id,n,f.step,f.version,fileId,content?json(content):null,method,json(terms),json(r.pages),json(r.warnings),i.note,c.user.id,person(c.user),c.source])
+    await touch(c)
+    await audit(c,'document.redacted',d.id,{n,from_version:f.version,method,redactions:terms.reduce((a,t)=>a+t.count,0),pages:r.pages})
+    return {document:d.id,n,from:{deliverable:d.id+'-'+f.step,version:f.version},method,
+      file:kind==='content'?base+'.txt':base+extOf(mimeOfKind[kind]),
+      found:terms.filter(t=>t.count).map(t=>({text:t.text,category:t.category,count:t.count})),
+      not_found:terms.filter(t=>!t.count).map(t=>t.text),pages_as_images:r.pages,warnings:r.warnings}
+  }},
+  'redaction.file':{project:true,async run(c){
+    const board=await loadBoard(c.q,c.access.project),d=board.documents.find(x=>x.id===c.input.document)
+    check(d&&c.access.canSeeDocument(d.id),'Document '+c.input.document+' not found',404)
+    const n=c.input.n??board.redactions.get(d.id)?.n
+    check(n,'There is no redacted version of '+d.id+' yet',404)
+    const f=await redactedFile(c,d,n)
+    return {name:f.name,mime:f.mime,size:f.buffer.length,content_base64:f.buffer.toString('base64')}
   }},
 
   'version.restore':{project:true,write:true,people:true,async run(c){
@@ -370,8 +529,8 @@ const ops={
     check(i.base===curN,'A newer version of '+i.deliverable+' exists.',409,{current:curN})
     check(i.n<curN,'Choose an earlier version to restore')
     const n=curN+1
-    const v=await one(q,`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,file_id,basis,resources,catalog,note,restored_from,actor,actor_name,source)
-      SELECT project_id,document_id,step_id,$5,content,claims,fill,file_id,basis,resources,catalog,'Restored from v'||n,n,$6,$7,$8 FROM ctis.version
+    const v=await one(q,`INSERT INTO ctis.version(project_id,document_id,step_id,n,content,claims,fill,file_id,basis,resources,catalog,note,restored_from,actor,actor_name,source,supplied)
+      SELECT project_id,document_id,step_id,$5,content,claims,fill,file_id,basis,resources,catalog,'Restored from v'||n,n,$6,$7,$8,supplied FROM ctis.version
       WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4 RETURNING n`,[pid,doc,step,i.n,n,c.user.id,person(c.user),c.source])
     check(v,'Version '+i.n+' not found',404)
     // The restored version's own findings come back on their original threads; the current ones are superseded.
@@ -626,9 +785,16 @@ const ops={
       const f=finalStatus(board,d.id)
       if(f.status!=='approved'){manifest.push({document:d.id,name:d.name,status:f.status});continue}
       const v=await one(c.q,'SELECT file_id,content FROM ctis.version WHERE project_id=$1 AND document_id=$2 AND step_id=$3 AND n=$4',[c.access.project.id,d.id,f.step,f.version])
-      const name=d.filename+'_v'+f.version+(v.file_id?'.docx':'.txt')
-      const buffer=v.file_id?(await readStoredFile(c.q,v.file_id)).buffer:Buffer.from(v.content.sections.map(x=>(x.heading?x.heading+'\n\n':'')+x.blocks.map(b=>b.text??(b.items??[]).join('\n')??'').join('\n\n')).join('\n\n'))
+      const stored=v.file_id&&await readStoredFile(c.q,v.file_id)
+      const name=d.filename+'_v'+f.version+(stored?extOf(stored.mime):'.txt')
+      const buffer=stored?stored.buffer:Buffer.from(contentText(v.content))
       files.push({name,buffer});manifest.push({document:d.id,name:d.name,file:name,deliverable:d.id+'-'+f.step,version:f.version,status:'approved'})
+      // The redacted version for publication, when it was made from this approved version.
+      const r=redactionStatus(board,d.id)
+      if(r.status==='done'){
+        const red=await redactedFile(c,d,r.n)
+        files.push({name:red.name,buffer:red.buffer});manifest.push({document:d.id,name:d.name+' (redacted for publication)',file:red.name,version:f.version,status:'redacted'})
+      }else if(r.status==='outdated')manifest.push({document:d.id,name:d.name+' (redacted for publication)',status:'out_of_date',redacted_from_version:r.version})
     }
     return {project:c.access.project.code,files:files.map(f=>({name:f.name,content_base64:f.buffer.toString('base64')})),manifest}
   }},

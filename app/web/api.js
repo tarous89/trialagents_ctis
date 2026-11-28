@@ -15,6 +15,7 @@ export async function call(op,{project,input={},revision,write=false}={}){
 }
 export const write=(op,opts={})=>call(op,{...opts,write:true})
 export const downloadUrl=(project,deliverable,n)=>'/api/ctis/download?project='+encodeURIComponent(project)+'&deliverable='+encodeURIComponent(deliverable)+(n?'&n='+n:'')
+export const redactedUrl=(project,document,n)=>'/api/ctis/download?project='+encodeURIComponent(project)+'&redaction='+encodeURIComponent(document)+(n?'&n='+n:'')
 export const exportUrl=project=>'/api/ctis/export?project='+encodeURIComponent(project)
 export const sourceUrl=id=>'/api/ctis/source?id='+encodeURIComponent(id)
 export const fileToBase64=file=>new Promise((ok,fail)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(',')[1]);r.onerror=()=>fail(r.error);r.readAsDataURL(file)})

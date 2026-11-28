@@ -10,7 +10,7 @@ Everything uses regulatory naming: the Annex I section letter and number and a s
 
 | Item | Folder and file | One per | Used for |
 |---|---|---|---|
-| **Planning checklist** | `planning/Part-I.md`, `planning/DE.md`, … | Part I, and each member state | Which documents a submission needs, by regulatory code, when, in which language and variants, with national notes and an optional country naming rule |
+| **Planning checklist** | `planning/Part-I.md`, `planning/DE.md`, … | Part I (all member states, with the national-language versions some require), and each member state | Which documents a submission needs, by regulatory code, when, in which language and variants, with national notes and an optional country naming rule |
 | **Naming instructions** | `planning/naming.md` | One | Codes, variants, names and filenames of documents |
 | **Content template** | `content/L1_SIS-ICF_adults_ES.md` | Regulatory document, optionally per variant, country and language | What the document says: sections, fill levels, standard wording, and its **template checklist** |
 | **Styling instructions** | `styling/K1_recruitment-arrangements_DE.md` (+ `.docx`), `styling/L1_SIS-ICF.md` | Regulatory document, optionally per variant, country and language | How the document looks: an authority form filled as is, or a layout, plus written styling rules |
@@ -78,6 +78,7 @@ National notes that apply to the whole country.
 | `languages` | Required languages; default `all` |
 | `per` | `trial` (default), `site` or `population` |
 | `national_notes` | Country rules for this document, passed to the assistant with the styling instructions |
+| `provided_by` | `sponsor` (supplied: checked, not drafted), `assistant` or `either` (supplied when the sponsor has it, otherwise prepared from the English document) |
 
 Part I uses `id: Part-I`, `part: I` and `country: EU`. Submission types are open: the assistant plans any type.
 
@@ -203,12 +204,13 @@ Every field is declared as a slot with a description, so the assistant knows wha
 |---|---|
 | `planning` | Reading the protocol, planning checklists, populations and variants, naming, default steps |
 | `draft` | Using the content template, sources and fill levels; the template checklist; choosing blocks by the styling instructions |
-| `checklist` | The optional separate Checklist step |
+| `checklist` | The Checklist step, including the readiness checks of supplied documents (S01–S07) |
 | `source-qc` | Fact-level evidence; standard wording checked for contradiction; quoting and locating passages |
 | `fill-word` | Filling forms and layouts |
 | `revision` | Using comments, source changes and the previous version; changing only what is needed |
 | `findings` | The finding types and when each blocks |
 | `design` | General styling instructions for documents that are not authority forms |
+| `redaction` | Redacted versions for publication: when, which documents, what to redact and keep by category, PDF choice (applies_to `redaction`) |
 
 ## 8. How you deliver it
 
@@ -226,4 +228,5 @@ Add or change files in `catalog/` and run `npm run check:catalog`: it lists erro
 - Country styling for L1 (`styling/L1_SIS-ICF_<country>.md`) and each template's own styling (`styling/L1_SIS-ICF_<variant>_<country>_styling.md`).
 - Shared EU forms for all countries: K1, N1, S1, P1, R1, M1 and M2 (`styling/<code>.md` + `.docx`), the original coded files with every field described. A country form, where one exists (for example `K1_recruitment-arrangements_DE`), is more specific and wins.
 - Imported with `scripts/import_country_content.py` and `scripts/build_shared_forms.py` from the content source in trialagents_ctis (`content/`).
-- To be provided: the Part I planning checklist; participant templates for Belgium, Croatia, Estonia, Latvia, Lithuania, Slovenia, Slovakia and Finland (Swedish); national forms that replace the shared EU forms in some countries (listed in each country's national notes).
+- `planning/Part-I.md`: the Part I planning checklist: every Part I document (CTR Annex I B–J) with its condition, who provides it, CTIS title and publication, and the national-language versions member states require (CTR Q&A v7.4 Annex II).
+- To be provided: participant templates for Belgium, Croatia, Estonia, Latvia, Lithuania, Slovenia, Slovakia and Finland (Swedish); national forms that replace the shared EU forms in some countries (listed in each country's national notes).

@@ -187,3 +187,20 @@ ALTER TABLE ctis.project ADD COLUMN IF NOT EXISTS planning jsonb NOT NULL DEFAUL
 ALTER TABLE ctis.document ADD COLUMN IF NOT EXISTS population text NOT NULL DEFAULT '';
 ALTER TABLE ctis.document ADD COLUMN IF NOT EXISTS based_on text;
 ALTER TABLE ctis.version ADD COLUMN IF NOT EXISTS reference jsonb;
+
+-- Supplied documents (provided by the sponsor, not drafted): the plan marks them, and the version that records the
+-- file (or that it is held outside TrialAgents CTIS) carries supplied. redact: whether the document needs a redacted
+-- version for publication; NULL follows the regulatory code (docs/TECHNICAL.md §12).
+ALTER TABLE ctis.document ADD COLUMN IF NOT EXISTS supplied boolean NOT NULL DEFAULT false;
+ALTER TABLE ctis.document ADD COLUMN IF NOT EXISTS redact boolean;
+ALTER TABLE ctis.version ADD COLUMN IF NOT EXISTS supplied jsonb;
+-- Redacted versions of approved final documents. Immutable, numbered per document; each records the final version it was made from.
+CREATE TABLE IF NOT EXISTS ctis.redaction (
+ project_id uuid NOT NULL, document_id text NOT NULL, n integer NOT NULL CHECK(n>0),
+ step_id text NOT NULL, version_n integer NOT NULL, file_id uuid REFERENCES ctis.file, content jsonb,
+ method text NOT NULL CHECK(method IN ('docx','pdf_pages_as_images','text')), terms jsonb NOT NULL DEFAULT '[]',
+ pages jsonb NOT NULL DEFAULT '[]', warnings jsonb NOT NULL DEFAULT '[]', note text NOT NULL DEFAULT '',
+ actor text NOT NULL, actor_name text NOT NULL, source text NOT NULL, created_at timestamptz NOT NULL DEFAULT now(),
+ PRIMARY KEY(project_id,document_id,n),
+ FOREIGN KEY(project_id,document_id) REFERENCES ctis.document ON DELETE CASCADE
+);

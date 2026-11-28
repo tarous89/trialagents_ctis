@@ -75,5 +75,5 @@ test('the loop runs one document at a time and skips blocked documents',()=>{
 
 test('the loop stops when every document is final or blocked',()=>{
   const b=board({current:{...chain('D01'),...chain('D04'),...chain('D07')},issues:{[cell('D04','QC')]:1},approvals:{D07:[{step:'ST',n:1}]}})
-  assert.deepEqual(nextStep(b),{stop:true,summary:{approved:['D07'],awaitingApproval:['D01'],blocked:[{document:'D04',step:'QC',deliverable:'D04-QC'}],waiting:[]}})
+  assert.deepEqual(nextStep(b),{stop:true,summary:{approved:['D07'],awaitingApproval:['D01'],blocked:[{document:'D04',step:'QC',deliverable:'D04-QC'}],waiting:[],awaitingFile:[],toRedact:[]}})
 })

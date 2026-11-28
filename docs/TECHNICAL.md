@@ -128,7 +128,7 @@ Changes write to an outbox in the same transaction; a worker delivers them and c
 
 ## 7. MCP tools
 
-Specified in [MCP.md §3](MCP.md#3-tools): five read-only tools (`open_ctis`, `read_ctis`, `read_ctis_catalog`, `get_ctis_step`, `read_ctis_source`) and one write tool, `save_ctis`, so a user approves a single write tool. Approval, Ignore and continue, sharing, billing, deletion, restore, duplication and uploads are people-only actions in the app and are not tools.
+Specified in [MCP.md §3](MCP.md#3-tools): five read-only tools (`open_ctis`, `read_ctis`, `read_ctis_catalog`, `get_ctis_step`, `read_ctis_source`) and one write tool, `save_ctis`, so a user approves a single write tool. Approval, Ignore and continue, sharing, billing, deletion, restore, duplication and uploading sources are people-only actions in the app and are not tools. A supplied document's file may come from the assistant (§12).
 
 Writes take an idempotency key and the expected current version number. A stale write returns the current version instead of overwriting.
 
@@ -186,3 +186,25 @@ Rebuild with `python3 prototype/source/build.py`. The prototype is a design refe
 - Should a shared person see the rest of the plan greyed out for context? Currently they see only what is shared.
 - Exact host support for a widget posting a message into the chat, and for file upload from the widget, in Claude and ChatGPT.
 - Price and trial for the Team plan beyond €49 per month.
+
+## 12. Supplied documents and redacted documents
+
+Added 28 November 2026.
+
+**Supplied documents.** Most Part I documents (protocol, synopsis, IB, IMPD, GMP documents, labels, scientific advice) and some Part II documents (insurance certificate, CVs) are written by the sponsor long before the submission. TrialAgents does not draft them. The plan marks them `supplied: true`.
+
+- Same columns as every other document. The first step (Draft) records the sponsor's file and shows **Supplied vN**, or **Held outside vN** when the user confirms the final file is ready but kept outside TrialAgents CTIS. Before that it shows **Awaiting file**.
+- The file arrives three ways: a person uploads it on the document in the workspace; the assistant uploads a file the user gave it in the chat (`save_ctis` `supply_document` with the file); or the assistant records it as held outside. A stored source can also be used.
+- The file's text becomes the version's content (one section per page or heading), so the Checklist step can check it. Later steps keep the supplied file unchanged (a `save_version` with neither content nor changes keeps its input); fixes are findings the user resolves by supplying a new version. Source QC and Style are not applicable.
+- A supplied document waiting for its file never blocks the run: the next step skips it and lists it in `awaiting_file`.
+- Documents that need writing (a synopsis or label in a member state's language) are normal documents `based_on` the approved English one, with all steps.
+
+**Redacted documents.** CTIS publishes the protocol, synopsis and endpoint patient-facing documents (D1, D4), the SmPC (E2), recruitment documents (K1, K2) and subject information (L1, L2) in a version "for publication" (EMA/194159/2023 Annex I v2.2, Table II). The plan can override per document (`redact`).
+
+- A pinned **Redacted documents** column next to Final document: *Not published*, *After approval*, **Redact** (approved, none yet), **Redacted vN** (made from the approved version N; click to download) or **Out of date vN** (a newer final was approved) with Redact.
+- Made only from the approved final version, and needs no approval of its own. Redact in the workspace sends the request to the assistant (like Revise); the user can also ask in the chat. The assistant reads the text (`get_ctis_step` with `redaction`), lists the terms by category (redaction guide in the catalog) and saves them (`save_redaction`); the server redacts.
+- Word (.docx): every matching character becomes a solid block in the body, headers, footers, notes, comments and tracked changes; change and comment authors and the file properties are cleared. Content without a file: the same, in the text.
+- PDF: the user chooses first: supply the Word version (best), or turn the pages that contain redactions into images with black boxes burned in (`pdf_method: pages_as_images`); other pages are copied unchanged and the file properties are cleared. An overlay alone is never used, because the text under it would remain in the file. Box positions are measured generously (covering a little more is safe).
+- Every result is read back; if any term can still be found, nothing is stored.
+- Stored in `ctis.redaction` (immutable, numbered per document, with the final version it was made from). Download all holds the final document and, when current, its redacted version.
+

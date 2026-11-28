@@ -33,11 +33,16 @@ test('Plan: Part I and each country, statuses, final column, filters',async()=>{
   assert.match(body,/Part I[\s\S]*Protocol synopsis[\s\S]*Approved v1/)
   assert.match(body,/Part II · Germany[\s\S]*Action required/)
   assert.match(body,/Part II · Spain/)
+  // Supplied Part I documents and the Redacted documents column.
+  assert.match(body,/Protocol[\s\S]*Provided by sponsor[\s\S]*Supplied[\s\S]*Approved v1[\s\S]*Redacted v1/)
+  assert.match(body,/Held outside/);assert.match(body,/Awaiting file/);assert.match(body,/Not published/);assert.match(body,/After approval/)
+  assert.match(await text('#matrix thead'),/Redacted documents/i)
+  assert.ok(await page.locator('[data-redact]').count()>=1,'approved synopsis offers Redact')
   await page.selectOption('[data-filter="country"]','ES')
   await page.waitForFunction(()=>document.querySelectorAll('#matrix .docline').length===1)
   assert.match(await text('#matrix'),/Spain/)
   await page.click('[data-clear-filters]')
-  await page.waitForFunction(()=>document.querySelectorAll('#matrix .docline').length===4)
+  await page.waitForFunction(()=>document.querySelectorAll('#matrix .docline').length===7)
 })
 
 test('Deliverable: threads, comment, resolve, ignore and continue; Revise is for the assistant',async()=>{
@@ -67,12 +72,14 @@ test('Edit steps adds a column; Download all holds the approved final document',
   assert.equal(res.status(),200)
   const zip=await JSZip.loadAsync(await res.body())
   assert.ok(zip.file('manifest.json'));assert.ok(Object.keys(zip.files).some(n=>n.startsWith('EX101_D1_protocol-synopsis_EU_en_v1')))
-  await page.click('[data-edit-steps]');await page.selectOption('#addstep','checklist');await page.click('[data-step-add]');await page.click('[data-steps-save]')
-  await page.waitForFunction(()=>/checklist/i.test(document.querySelector('#matrix thead').innerText))
+  assert.ok(zip.file('EX101_D1_protocol_EU_en_v1.pdf')&&zip.file('EX101_D1_protocol_EU_en_redacted_v1.pdf'),'the final and the redacted protocol')
+  await page.click('[data-edit-steps]');await page.selectOption('#addstep','team');await page.click('[data-step-add]');await page.click('[data-steps-save]')
+  await page.waitForFunction(()=>/team review/i.test(document.querySelector('#matrix thead').innerText))
   const heads=await page.locator('#matrix thead th').allInnerTexts()
-  assert.deepEqual(heads.slice(2,6).map(h=>h.trim().toLowerCase()),['draft','source qc','checklist','style'],'a new step goes before Style')
-  // The approval belonged to the old last step of D01; its new last step must be run and approved again.
+  assert.deepEqual(heads.slice(2,7).map(h=>h.trim().toLowerCase()),['draft','source qc','checklist','team review','style'],'a new step goes before Style')
+  // The approval belonged to the old last step of the protocol; its new last step must be run and approved again.
   assert.match(await page.locator('#matrix .docline >> nth=0').innerText(),/Waiting/)
+  assert.match(await page.locator('#matrix .docline >> nth=0').innerText(),/After approval/,'its redacted version waits for the new approval')
 })
 
 test('Sources: upload a file and correct details',async()=>{

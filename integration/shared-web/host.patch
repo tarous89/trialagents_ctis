@@ -197,8 +197,8 @@ index d5fc576..7d5f4eb 100644
 -  experimental: { proxyClientMaxBodySize: 16 * 1024 * 1024 },
 +  // TrialAgents CTIS uploads source files up to 25 MB as base64 JSON (about 34 MB).
 +  experimental: { proxyClientMaxBodySize: 40 * 1024 * 1024 },
-+  // pdf.js and mammoth (CTIS source text extraction) load their own files at run time.
-+  serverExternalPackages: ["pdfjs-dist", "mammoth"],
++  // pdf.js, mammoth, pdf-lib and the canvas library (CTIS text extraction and redaction) load their own files at run time.
++  serverExternalPackages: ["pdfjs-dist", "mammoth", "pdf-lib", "@napi-rs/canvas"],
  };
  
  export default async function config(phase: string): Promise<NextConfig> {

@@ -33,9 +33,9 @@ All detailed instructions (planning, steps, QC, Word, revision) come from the se
 | `open_ctis` | Yes | Show the workspace: projects, a project's plan, or one deliverable. |
 | `read_ctis` | Yes | Projects, a plan with statuses, a deliverable with its versions and threads, the sources and templates of a project. Text answers without opening the workspace. |
 | `read_ctis_catalog` | Yes | Search and read catalog items by regulatory code, country and language: planning checklists (Part I and each country), naming instructions, content templates, styling instructions, workflow guides. Used mainly for planning. |
-| `get_ctis_step` | Yes | Everything for one deliverable, or for the next one in a project (`next: true`): see §4. With `revise: true` it returns the revision context. |
+| `get_ctis_step` | Yes | Everything for one deliverable, or for the next one in a project (`next: true`): see §4. With `revise: true` it returns the revision context. With `redaction: "D01"` it returns what the assistant needs to prepare that document's redacted version (TECHNICAL.md §12). |
 | `read_ctis_source` | Yes | Search and read passages of a stored source (protocol, IB, manuals) by text, section or page, with locators for quoting. |
-| `save_ctis` | **No** | The only write tool. One `action` per call: `create_project`, `update_project`, `save_plan`, `record_resource`, `save_version`, `reply`. Returns the saved IDs, versions and `next_hint`. Its input is one flat object (Claude does not accept a top-level choice of schemas); the server checks the fields each action needs. |
+| `save_ctis` | **No** | The only write tool. One `action` per call: `create_project`, `update_project`, `save_plan`, `record_resource`, `save_version`, `reply`, `supply_document` (a supplied document's file: uploaded from the chat, a stored source, or held outside), `save_redaction` (the redacted version of an approved final document, from a list of terms). Returns the saved IDs, versions and `next_hint`. Its input is one flat object (Claude does not accept a top-level choice of schemas); the server checks the fields each action needs. |
 
 Annotations: the five read tools have `readOnlyHint: true`, `openWorldHint: false`. `save_ctis` has `readOnlyHint: false`, `destructiveHint: false` (everything it writes is a new version or a new record; nothing is overwritten or deleted), `idempotentHint: true` (every call carries a `request_id`; a retry returns the first result), `openWorldHint: false`. Owners can turn on email notifications for drafts and findings; those go only to people the owner already shares with.
 
@@ -51,7 +51,7 @@ Done in the app (browser or the workspace inside Claude) through the app's own A
 - Ignore and continue / Undo as a button. In the chat, the user can ask Claude to move on past unresolved issues; see §5.
 - Share, change or revoke access, invite, billing
 - Delete or archive a project, restore a version, duplicate a project
-- Upload files (sources, Word layouts)
+- Upload source and template files (a supplied document's file can also come from the assistant, see `supply_document`)
 
 The workspace inside Claude is one bundled file (an MCP App) and makes no requests to `ctis.trialagents.com`. It reads and saves through an app-only tool, `ctis_workspace_request`, on the same MCP connection, as in Pipeline. Claude keeps that tool from the model. It runs as the signed-in person and is recorded as "Claude workspace" in Logs, so people's own clicks (approve, Ignore and continue, comments) work there; creating projects and recording sources stay with the assistant. Word files download through Claude; other links open in the browser.
 
